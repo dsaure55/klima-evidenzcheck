@@ -1,4 +1,4 @@
-﻿#-------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------
 # Titel:   DE-Emissionen: Trendprojektion 2040 vs. gesetzlichem Zielpfad (-88% ggue. 1990)
 # SAP:     SAP_DE-Emissionen-Trendprojektion-2040.md, Version 1.0
 # Quelle:  Umweltbundesamt via klimadashboard.de (CC BY 4.0), Zugriff 2026-08-27
@@ -124,3 +124,4 @@ p <- ggplot() +
 
 ggsave("output/emissionen_trendprojektion_2040.png", p, width = 7, height = 4.5, dpi = 200)
 print(p)
+
