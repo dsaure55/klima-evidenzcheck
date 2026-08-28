@@ -1,0 +1,55 @@
+Lade nötiges Paket: zoo
+
+Attache Paket: 'zoo'
+
+Die folgenden Objekte sind maskiert von 'package:base':
+
+    as.Date, as.Date.numeric
+
+=== Zusatz-Sensitivitaetscheck: Cook's-D-Ausreisser ausgeschlossen ===
+
+Warnmeldung:
+In meatHAC(x, order.by = order.by, prewhite = prewhite, weights = weights,  :
+  more weights than observations, only first n used
+Warnmeldung:
+In meatHAC(x, order.by = order.by, prewhite = prewhite, weights = weights,  :
+  more weights than observations, only first n used
+Warnmeldung:
+In meatHAC(x, order.by = order.by, prewhite = prewhite, weights = weights,  :
+  more weights than observations, only first n used
+--- Referenz: Primaeranalyse (n=5 je Land, KEIN Ausschluss) ---
+Bayern: 5.23 [5.12, 5.34] (n=5)
+Saarland: 13.11 [12.21, 14.01] (n=5)
+E2a=7.88 [7.18, 8.57]  E2b=1.83 [1.73, 1.92]  E1=9.71 [9.01, 10.40]
+
+--- Bayern OHNE 2019 (n=4) ---
+Bayern-Fitted 2023: 5.31 [5.10, 5.52] (Referenz: 5.23)
+E2a=7.80 [7.06, 8.54] (Referenz: 7.88)  Aenderung: -0.08 t/Kopf (-1.0%)
+E2b=1.91 [1.77, 2.04] (Referenz: 1.83)  Aenderung: 0.08 t/Kopf (4.3%)
+
+Warnmeldung:
+In meatHAC(x, order.by = order.by, prewhite = prewhite, weights = weights,  :
+  more weights than observations, only first n used
+--- Saarland OHNE 2023 (n=4; Zieljahr-Fitted-Wert ist EXTRAPOLATION, da 2023
+    selbst das Zieljahr UND der ausgeschlossene Datenpunkt ist) ---
+Saarland-Fitted 2023: 14.26 [13.34, 15.17] (Referenz: 13.11)
+E2a=9.02 [8.47, 9.58] (Referenz: 7.88)  Aenderung: 1.15 t/Kopf (14.5%)
+E1=10.85 [10.30, 11.40] (Referenz: 9.71)  Aenderung: 1.15 t/Kopf (11.8%)
+
+--- Beide Ausreisser gleichzeitig ausgeschlossen ---
+E2a=8.94 [8.34, 9.55] (Referenz: 7.88)
+E2b=1.91 [1.77, 2.04] (Referenz: 1.83)
+E1=10.85 [10.30, 11.40] (Referenz: 9.71)
+
+=== Fazit (rein deskriptiv, keine Neubewertung der Primaeranalyse) ===
+Vorzeichen und Groessenordnung aller drei Kontraste bleiben in allen
+Varianten stabil (E2a ~7-8, E2b ~1-2, E1 ~9-10 t/Kopf); keine der
+Auschluss-Varianten kehrt ein Vorzeichen um oder veraendert die
+qualitative Aussage (Saarland > Bayern > Berlin). Der Ausschluss von
+Saarland-2023 ist methodisch heikel, da 2023 = Zieljahr ist und der
+Fitted-Wert dann extrapoliert statt interpoliert wird.
+           Variante  E2a  E2b    E1
+ Primaer (Referenz) 7.88 1.83  9.71
+   ohne Bayern-2019 7.80 1.91  9.71
+ ohne Saarland-2023 9.02 1.83 10.85
+         ohne beide 8.94 1.91 10.85
