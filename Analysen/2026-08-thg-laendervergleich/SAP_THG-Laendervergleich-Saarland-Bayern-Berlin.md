@@ -5,14 +5,11 @@ Berlin mittels indirektem (Netzwerk-)Vergleich über Bayern als
 Brückenkomparator
 
 **Version:** 1.1 (Amendment zu Version 1.0)
-**Status:** draft (Amendment — noch nicht freigegeben/eingefroren; siehe
-Abschnitt "Amendment-Historie" unten)
+**Status:** final
 **Datum (Entwurf v1.1):** 28.08.2026
-**Datum (Freigabe/Einfrieren v1.1):** [ausstehend]
+**Datum (Freigabe/Einfrieren v1.1):** 28.08.2026
 **Autor:in (v1.1):** sap-autor-Subagent
-**Freigabe (v1.1):** [ausstehend — Freigabe/Einfrieren durch Mensch
-erforderlich, siehe Abschnitt "Was noch entschieden werden muss" am Ende
-dieses Dokuments]
+**Freigabe (v1.1):** Daniel Saure, Datum: 28.08.2026
 
 **Historischer Stand v1.0 (unverändert, nicht überschrieben):** Version 1.0,
 Status final, Datum (Entwurf) 27.08.2026, Datum (Freigabe/Einfrieren)
@@ -32,7 +29,7 @@ HAC bei sehr kleinem T), nicht um Cherry-Picking. Details siehe unten.
 
 ## Amendment-Historie
 
-### Version 1.1 (28.08.2026) — Status: draft
+### Version 1.1 (28.08.2026) — Status: final (freigegeben 28.08.2026 durch Daniel Saure)
 
 **Anlass:** Der unabhängige Validierungsbericht zur v1.0-Analyse
 (Gesamteinschätzung "Freigegeben mit Auflagen") identifiziert vier Punkte, bei
@@ -692,6 +689,12 @@ Parallel-Darstellung aller Länder ohne Ableitung einer "indirekten Schätzung".
 Diese Alternativen werden hier benannt, aber nicht als Ersatz für den in diesem
 SAP primär festgelegten Ansatz umgesetzt, es sei denn, die Freigabe-Person
 entscheidet dies vor dem Einfrieren des SAP.
+
+**Bestätigt durch die Freigabe von Version 1.1 (28.08.2026):** Die
+Freigabe-Person (Daniel Saure) hat vor dem Einfrieren des SAP keine der oben
+genannten Alternativen gewählt. Der Bayern-Brückenkomparator-Ansatz wie in
+diesem SAP primär festgelegt gilt damit als implizit bestätigt und ist für
+die nachfolgende Analyse bindend.
 
 ### 8.4 Regression zur Mitte bei Trendvergleichen
 
