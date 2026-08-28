@@ -22,6 +22,9 @@ spiegeln primaer Industrie-/Kraftwerksstandorte bzw. Stadtstaat-Struktur, nicht
 Klimapolitik oder Lebensstil wider. Keine Kausal- oder Politikaussage. n=3
 Laender: administrative Vollerhebung, keine Zufallsstichprobe. Die
 Bayern-Bruecke ist hypothesengenerierend/eingeschraenkt belastbar (SAP 8.3).
+Primaere Unsicherheitsquantifizierung (SAP-Amendment v1.1): Moving-Block-
+Bootstrap-Konfidenzintervalle; Newey-West-HAC-KIs sind
+sensitivitaetsanalytisch.
 
 === SAP 3: Struktur-Check der Datenquelle ===
 Quelle: Laenderarbeitskreis Energiebilanzen (LAK), Indikator i300
@@ -40,17 +43,22 @@ Saarland: verfuegbare Jahre 2010-2023, n=12; fehlende Jahre im Bereich: 2017, 20
 
 === Zieljahr (neuestes gemeinsames Jahr aller drei Laender): 2023 ===
 
-=== SAP 4: Primaeres Zeitfenster (10 Jahre) ===
+=== SAP 4: Primaere Fenstervarianten (Amendment v1.1, Aenderung 2) ===
 Naives 10-Jahres-Fenster: 2014-2023
 -> UNVOLLSTAENDIG (Saarland fehlt 2017 und 2018 im naiven Fenster).
-   SAP-4-Fallback-Regel angewendet: Reduktion auf laengsten gemeinsam
-   vollstaendig verfuegbaren ZUSAMMENHAENGENDEN Teilzeitraum:
+   Beide gleichrangigen primaeren Fenstervarianten (SAP 4, Amendment v1.1):
   start  end length
 1  2014 2016      3
 2  2019 2023      5
-=> Gewaehltes primaeres Fenster: 2019-2023 (n=5 Jahre)
+   Variante n=5 (zusammenhaengend): 2019-2023 (n=5 Jahre)
+   Variante n=8 (Luecken einzeln entfernt): 2014, 2015, 2016, 2019, 2020, 2021, 2022, 2023 (n=8 Jahre)
 
-=== SAP 5.1: Primaeranalyse (OLS je Bundesland, 2019 - 2023 ) ===
+
+########################################################
+# Primaere Fenstervariante n5 (Jahre: 2019-2023, n=5)
+########################################################
+
+=== SAP 5.1: OLS-Trendmodelle je Bundesland (Fenster n5) ===
 
 --- Bayern (n=5) ---
                Estimate   Std. Error   t value   Pr(>|t|)
@@ -67,7 +75,7 @@ Jahr         -0.1475564  0.03853383 -3.829270 0.03137595
 (Intercept) -260.3961786 635.2338993 -0.4099217 0.7093781
 Jahr           0.1351986   0.3143165  0.4301352 0.6961240
 
-=== SAP 5.2: Diagnostik je Modell ===
+=== SAP 5.2: Diagnostik je Modell (Fenster n5) ===
 
 --- Bayern ---
 Durbin-Watson: DW=2.416, p=0.400 (nicht signifikant)
@@ -98,26 +106,50 @@ Cook's Distance je Beobachtung (Jahr = Wert):
 -> Auffaellige Jahre (Cook's D > 4/n=0.80): 2023. Werden benannt,
    aber gemaess SAP 5.2 NICHT von der Primaeranalyse ausgeschlossen.
 
-null device 
-          1 
-null device 
-          1 
-=== Transitivitaets-Ordering-Check (SAP 5.2/8.3) ===
+=== Transitivitaets-Ordering-Check (SAP 5.2/8.3, Fenster n5) ===
 Fitted-Werte im Zieljahr 2023: Berlin=3.40, Bayern=5.23, Saarland=13.11 t/Kopf
 -> ORDERING BESTAETIGT: Bayern liegt zahlenmaessig zwischen Berlin und Saarland.
 
-=== SAP 5.3: Korrekturregel ===
+=== SAP 5.3: Korrekturregel (Fenster n5) ===
 Autokorrelation signifikant (DW oder BG, alpha=0.05) bei mind. einem Land: FALSE
-Gemaess SAP 5.4 werden die primaeren Konfidenzintervalle UNABHAENGIG vom
-Ausloese-Status ohnehin HAC-robust (Newey-West) berechnet (SAP 5.4 nennt
-dies explizit 'primaer'); SAP 5.3 wird hier als Bestaetigungs-/Melderegel
-verstanden: das DW/BG-Ergebnis wird -- wie oben -- unabhaengig vom Ergebnis
-in jedem Fall berichtet. HAC wird einheitlich fuer alle drei Modelle
-angewendet (SAP 5.3: 'einheitliche Anwendung ueber alle drei Modelle').
+Gemaess Amendment v1.1 (SAP 5.3/5.4) ist die primaere Unsicherheits-
+quantifizierung ohnehin Moving-Block-Bootstrap (der die Autokorrelations-
+struktur durch blockweises Resampling beruecksichtigt); Newey-West-HAC
+wird UNABHAENGIG vom Ausloese-Status einheitlich als Sensitivitaets-
+analyse fuer alle drei Modelle berichtet (SAP 5.3: 'einheitliche
+Anwendung ueber alle drei Modelle').
 
 Keine signifikante Normalitaetsabweichung (Shapiro-Wilk) gefunden;
 Theil-Sen (S4) wird dennoch gemaess SAP 6 vollstaendig berichtet.
 
+=== Fitted-Werte im Zieljahr 2023, Fenster n5 ===
+(primaer: Moving-Block-Bootstrap-KI; sensitivitaetsanalytisch: HAC-KI -- Amendment v1.1)
+ Fenster     Land  Fit Boot_KI_unten Boot_KI_oben HAC_KI_unten HAC_KI_oben
+      n5   Bayern  5.2           5.3          6.0          5.1         5.3
+      n5   Berlin  3.4           3.4          4.0          3.4         3.5
+      n5 Saarland 13.1          11.5         14.1         12.2        14.0
+
+=== SAP 7: Primaere Kontraste (Fenster n5) -- primaer Bootstrap-KI,
+    sensitivitaetsanalytisch HAC-KI, p-Werte rein deskriptiv (Amendment v1.1) ===
+ Fenster                                                        Kontrast Delta
+      n5                                          E2a: Saarland - Bayern   7.9
+      n5                                            E2b: Bayern - Berlin   1.8
+      n5                                  E1: Saarland - Berlin (direkt)   9.7
+      n5 E1': E2a + E2b (Konsistenzpruefung, kein separater Test, SAP 7)   9.7
+ Boot_KI_unten Boot_KI_oben HAC_KI_unten HAC_KI_oben p_deskriptiv_roh
+           6.0          8.5          7.2         8.6             0.00
+           1.5          2.4          1.7         1.9             0.00
+           7.9         10.4          9.0        10.4             0.00
+            NA           NA           NA          NA             <NA>
+ p_deskriptiv_holm
+              0.00
+              0.00
+              0.00
+              <NA>
+Hinweis: E1' ist eine rein rechnerische Konsistenzpruefung (Delta=9.7,
+  algebraisch identisch zu E1=9.7); kein separater Test/kein separates
+  CI gemaess SAP 7 (Doppelzaehlung wuerde die Fehlerrate verzerren).
+
 Warnmeldungen:
 1: In meatHAC(x, order.by = order.by, prewhite = prewhite, weights = weights,  :
   more weights than observations, only first n used
@@ -125,48 +157,106 @@ Warnmeldungen:
   more weights than observations, only first n used
 3: In meatHAC(x, order.by = order.by, prewhite = prewhite, weights = weights,  :
   more weights than observations, only first n used
-=== Fitted-Werte im Zieljahr 2023 mit 95%-HAC-KI (SAP 5.4) ===
-     Land  Fit KI_unten KI_oben
-   Bayern  5.2      5.1     5.3
-   Berlin  3.4      3.4     3.5
- Saarland 13.1     12.2    14.0
 
-=== SAP 7: Primaere Kontraste (E2a, E2b, E1) mit Holm-Bonferroni-Korrektur ===
-                       Kontrast Delta KI_unten KI_oben p_roh p_holm
-         E2a: Saarland - Bayern   7.9      7.2     8.6  0.00   0.00
-           E2b: Bayern - Berlin   1.8      1.7     1.9  0.00   0.00
- E1: Saarland - Berlin (direkt)   9.7      9.0    10.4  0.00   0.00
+########################################################
+# Primaere Fenstervariante n8 (Jahre: 2014-2023, n=8)
+########################################################
 
-E1': E2a + E2b (Konsistenz): Delta=9.7 t/Kopf (rein rechnerische Konsistenzpruefung,
-  algebraisch identisch zu E1=9.7; kein separater Test gemaess SAP 7)
+=== SAP 5.1: OLS-Trendmodelle je Bundesland (Fenster n8) ===
 
-=== SAP 5.4 (sensitivitaetsanalytisch): Moving-Block-Bootstrap-KIs ===
-Hinweis: bei sehr kurzer Zeitreihe (n=5) ist Block-Bootstrap nur eingeschraenkt aussagekraeftig (vgl. SAP 5.4
-eigene Einschaetzung zu HAC bei T~10 - bei T=5 gilt dies erst recht). Dennoch gemaess SAP vollstaendig berichtet.
-     Land Boot_Fit Boot_KI_unten Boot_KI_oben
-   Bayern      5.6           5.3          6.0
-   Berlin      3.7           3.4          4.0
- Saarland     12.9          11.5         14.1
+--- Bayern (n=8) ---
+                Estimate  Std. Error   t value    Pr(>|t|)
+(Intercept) 177.08713533 47.17774113  3.753616 0.009469372
+Jahr         -0.08486439  0.02336975 -3.631378 0.010947107
+
+--- Berlin (n=8) ---
+               Estimate  Std. Error   t value     Pr(>|t|)
+(Intercept) 388.8488110 29.69487647  13.09481 1.223160e-05
+Jahr         -0.1905629  0.01470952 -12.95508 1.301975e-05
+
+--- Saarland (n=8) ---
+               Estimate  Std. Error   t value    Pr(>|t|)
+(Intercept) 2093.001400 458.3756099  4.566127 0.003826083
+Jahr          -1.029113   0.2270588 -4.532362 0.003965211
+
+=== SAP 5.2: Diagnostik je Modell (Fenster n8) ===
+
+--- Bayern ---
+Durbin-Watson: DW=1.523, p=0.099 (nicht signifikant)
+Breusch-Godfrey (Ordnung 1): LM=0.056, p=0.813 (nicht signifikant)
+Shapiro-Wilk (Normalitaet Residuen): W=0.937, p=0.581 (kein Hinweis auf Abweichung)
+Cook's Distance je Beobachtung (Jahr = Wert):
+ 2014  2015  2016  2019  2020  2021  2022  2023 
+0.729 0.003 0.105 0.261 0.024 0.001 0.004 0.303 
+-> Auffaellige Jahre (Cook's D > 4/n=0.50): 2014. Werden benannt,
+   aber gemaess SAP 5.2 NICHT von der Primaeranalyse ausgeschlossen.
+
+--- Berlin ---
+Durbin-Watson: DW=2.456, p=0.588 (nicht signifikant)
+Breusch-Godfrey (Ordnung 1): LM=0.445, p=0.505 (nicht signifikant)
+Shapiro-Wilk (Normalitaet Residuen): W=0.970, p=0.900 (kein Hinweis auf Abweichung)
+Cook's Distance je Beobachtung (Jahr = Wert):
+ 2014  2015  2016  2019  2020  2021  2022  2023 
+0.011 0.066 0.357 0.012 0.291 0.077 0.026 0.022 
+-> Keine Beobachtung ueberschreitet die Cook's-D-Faustregel (4/n).
+
+--- Saarland ---
+Durbin-Watson: DW=1.155, p=0.024 (signifikant @ 0.05)
+Breusch-Godfrey (Ordnung 1): LM=1.330, p=0.249 (nicht signifikant)
+Shapiro-Wilk (Normalitaet Residuen): W=0.893, p=0.250 (kein Hinweis auf Abweichung)
+Cook's Distance je Beobachtung (Jahr = Wert):
+ 2014  2015  2016  2019  2020  2021  2022  2023 
+0.053 0.411 0.077 0.132 0.148 0.013 0.139 0.158 
+-> Keine Beobachtung ueberschreitet die Cook's-D-Faustregel (4/n).
+
+=== Transitivitaets-Ordering-Check (SAP 5.2/8.3, Fenster n8) ===
+Fitted-Werte im Zieljahr 2023: Berlin=3.34, Bayern=5.41, Saarland=11.11 t/Kopf
+-> ORDERING BESTAETIGT: Bayern liegt zahlenmaessig zwischen Berlin und Saarland.
+
+=== SAP 5.3: Korrekturregel (Fenster n8) ===
+Autokorrelation signifikant (DW oder BG, alpha=0.05) bei mind. einem Land: TRUE
+Gemaess Amendment v1.1 (SAP 5.3/5.4) ist die primaere Unsicherheits-
+quantifizierung ohnehin Moving-Block-Bootstrap (der die Autokorrelations-
+struktur durch blockweises Resampling beruecksichtigt); Newey-West-HAC
+wird UNABHAENGIG vom Ausloese-Status einheitlich als Sensitivitaets-
+analyse fuer alle drei Modelle berichtet (SAP 5.3: 'einheitliche
+Anwendung ueber alle drei Modelle').
+
+Keine signifikante Normalitaetsabweichung (Shapiro-Wilk) gefunden;
+Theil-Sen (S4) wird dennoch gemaess SAP 6 vollstaendig berichtet.
+
+=== Fitted-Werte im Zieljahr 2023, Fenster n8 ===
+(primaer: Moving-Block-Bootstrap-KI; sensitivitaetsanalytisch: HAC-KI -- Amendment v1.1)
+ Fenster     Land  Fit Boot_KI_unten Boot_KI_oben HAC_KI_unten HAC_KI_oben
+      n8   Bayern  5.4           5.3          6.2          5.2         5.6
+      n8   Berlin  3.3           3.3          5.0          3.3         3.4
+      n8 Saarland 11.1          11.3         21.1          8.4        13.8
+
+=== SAP 7: Primaere Kontraste (Fenster n8) -- primaer Bootstrap-KI,
+    sensitivitaetsanalytisch HAC-KI, p-Werte rein deskriptiv (Amendment v1.1) ===
+ Fenster                                                        Kontrast Delta
+      n8                                          E2a: Saarland - Bayern   5.7
+      n8                                            E2b: Bayern - Berlin   2.1
+      n8                                  E1: Saarland - Berlin (direkt)   7.8
+      n8 E1': E2a + E2b (Konsistenzpruefung, kein separater Test, SAP 7)   7.8
+ Boot_KI_unten Boot_KI_oben HAC_KI_unten HAC_KI_oben p_deskriptiv_roh
+           5.4         15.3          3.3         8.1             0.00
+           0.7          2.6          1.9         2.2             0.00
+           6.9         17.2          5.4        10.1             0.00
+            NA           NA           NA          NA             <NA>
+ p_deskriptiv_holm
+              0.00
+              0.00
+              0.00
+              <NA>
+Hinweis: E1' ist eine rein rechnerische Konsistenzpruefung (Delta=7.8,
+  algebraisch identisch zu E1=7.8); kein separater Test/kein separates
+  CI gemaess SAP 7 (Doppelzaehlung wuerde die Fehlerrate verzerren).
 
 === S1: alternative Zielgroesse (THG-Gesamt vs. CO2) ===
 ENTFAELLT: keine Bundeslaender-THG-Gesamtreihe verfuegbar (Abweichung (D)).
 
-=== S2a: 5-Jahres-Fenster ===
-Warnmeldungen:
-1: In meatHAC(x, order.by = order.by, prewhite = prewhite, weights = weights,  :
-  more weights than observations, only first n used
-2: In meatHAC(x, order.by = order.by, prewhite = prewhite, weights = weights,  :
-  more weights than observations, only first n used
-3: In meatHAC(x, order.by = order.by, prewhite = prewhite, weights = weights,  :
-  more weights than observations, only first n used
-Fenster: 2019-2023 (identisch mit dem SAP-4-reduzierten Primaerfenster,
-  da Primaerfenster bereits auf 5 Jahre reduziert wurde -> Ergebnisse
-  numerisch identisch zur Primaeranalyse; dennoch vollstaendig berichtet.)
-  E2a: Delta=7.9 [7.2, 8.6]
-  E2b: Delta=1.8 [1.7, 1.9]
-  E1: Delta=9.7 [9.0, 10.4]
-
-=== S2b: gesamte verfuegbare gemeinsame Zeitreihe ===
+=== S2a: gesamte verfuegbare gemeinsame Zeitreihe (SAP 6, Amendment v1.1) ===
 Fenster: 2010-2023 (fruehestes Jahr mit Saarland-Daten; NA-Jahre je Land
   einzeln aus der jeweiligen Landesregression ausgeschlossen, siehe Log unten)
   Saarland: n=12 Jahre verwendet
@@ -176,20 +266,22 @@ Fenster: 2010-2023 (fruehestes Jahr mit Saarland-Daten; NA-Jahre je Land
   E2b: Delta=2.1 [1.9, 2.3]
   E1: Delta=8.5 [6.4, 10.5]
 
-=== S2c: reiner Einzeljahreswert im Zieljahr (ohne Trendmodell) ===
+=== S2b: reiner Einzeljahreswert im Zieljahr (ohne Trendmodell, SAP 6) ===
 Saarland=12.3, Bayern=5.2, Berlin=3.4 t/Kopf (kein CI: Einzelbeobachtung,
-  kein Extrapolations-/Glaettungseffekt gemaess SAP S2c)
+  kein Extrapolations-/Glaettungseffekt gemaess SAP S2b)
 
 === S3: alternative Bevoelkerungskonvention (31.12. statt Jahresdurchschnitt) ===
-NICHT DURCHGEFUEHRT in dieser Sitzung (Abweichung (C) oben: kein
-automatisiert erreichbarer Destatis-Datenexport verfuegbar).
+NICHT DURCHGEFUEHRT in dieser Sitzung (Abweichung (C) oben, korrigiert gemaess
+Amendment v1.1: kein Netzwerkzugriff in der Analyseumgebung verfuegbar -- ein
+automatisierter Destatis-Zugriff wurde daher NICHT VERSUCHT, nicht 'versucht
+und gescheitert').
 
-=== S4: Theil-Sen-Schaetzer (robust) statt OLS ===
+=== S4: Theil-Sen-Schaetzer (robust) statt OLS (Fenster n=5) ===
   E2a: Delta=7.7 [NA, NA]
   E2b: Delta=1.8 [NA, NA]
   E1: Delta=9.5 [NA, NA]
 
-=== S5: alternative Brueckenkomparatoren ===
+=== S5: alternative Brueckenkomparatoren (Fenster n=5) ===
 --- S5a: Hamburg als Stadtstaat-Bruecke ---
 Warnmeldungen:
 1: In meatHAC(x, order.by = order.by, prewhite = prewhite, weights = weights,  :
@@ -215,10 +307,10 @@ Warnmeldungen:
   E1: Delta=9.7 [9.0, 10.4]
 
 Hinweis: E1 (Saarland-Berlin direkt) ist unabhaengig vom Bruecken-Land
-algebraisch identisch (E1=9.7 in allen Bruecken-Varianten), siehe SAP Abschnitt 2.
+algebraisch identisch (E1=9.7 in allen Bruecken-Varianten, Fenster n=5), siehe SAP Abschnitt 2.
 
 === S6: bruchbereinigtes Fenster fuer Berlin (Ost-West-Zusammenfuehrung) ===
-Hinweis zur Umsetzung: die gemeinsame Trio-Zeitreihe (S2b) beginnt wegen
+Hinweis zur Umsetzung: die gemeinsame Trio-Zeitreihe (S2a) beginnt wegen
 fehlender Saarland-Daten ohnehin erst 2010 und beruehrt den
 Bruch 1990/1991 damit gar nicht. S6 wird daher als eigenstaendiger
 Berlin-Robustheitscheck auf Basis von Berlins LAENGSTER EIGENER Zeitreihe
@@ -226,58 +318,130 @@ Berlin-Robustheitscheck auf Basis von Berlins LAENGSTER EIGENER Zeitreihe
 Berlin-Fitted-Wert 2023 MIT 1990: 3.66 t/Kopf; OHNE 1990 (ab 1991): 3.64 t/Kopf
 Differenz: 0.01 t/Kopf (0.4% des Niveaus)
 
+Warnmeldung:
+In meatHAC(x, order.by = order.by, prewhite = prewhite, weights = weights,  :
+  more weights than observations, only first n used
+Warnmeldung:
+In meatHAC(x, order.by = order.by, prewhite = prewhite, weights = weights,  :
+  more weights than observations, only first n used
+Neuberechnete primaere Kontraste mit bruchbereinigtem Berlin-Wert (Fenster n=5):
+  E2a: Delta=7.9 [7.2, 8.6]
+  E2b: Delta=1.6 [1.3, 1.8]
+  E1: Delta=9.5 [8.8, 10.1]
+
 === Vollstaendige Anhangstabelle S1-S6 (SAP 6/7/11) ===
-                                         Sensitivitaet           Kontrast Delta
-                     S1: alt. Zielgroesse (THG-Gesamt)                E2a    NA
-                     S1: alt. Zielgroesse (THG-Gesamt)                E2b    NA
-                     S1: alt. Zielgroesse (THG-Gesamt)                 E1    NA
-                                 S2a: 5-Jahres-Fenster                E2a  7.90
-                                 S2a: 5-Jahres-Fenster                E2b  1.80
-                                 S2a: 5-Jahres-Fenster                 E1  9.70
-                    S2b: gesamte Zeitreihe (2010-2023)                E2a  6.40
-                    S2b: gesamte Zeitreihe (2010-2023)                E2b  2.10
-                    S2b: gesamte Zeitreihe (2010-2023)                 E1  8.50
-              S2c: Einzeljahreswert (kein Trendmodell)                E2a  7.10
-              S2c: Einzeljahreswert (kein Trendmodell)                E2b  1.90
-              S2c: Einzeljahreswert (kein Trendmodell)                 E1  9.00
-             S3: alt. Bevoelkerungskonvention (31.12.)                E2a    NA
-             S3: alt. Bevoelkerungskonvention (31.12.)                E2b    NA
-             S3: alt. Bevoelkerungskonvention (31.12.)                 E1    NA
-                      S4: Theil-Sen (robust) statt OLS                E2a  7.70
-                      S4: Theil-Sen (robust) statt OLS                E2b  1.80
-                      S4: Theil-Sen (robust) statt OLS                 E1  9.50
-                     S5a: Bruecke Hamburg statt Bayern                E2a  8.60
-                     S5a: Bruecke Hamburg statt Bayern                E2b  1.20
-                     S5a: Bruecke Hamburg statt Bayern                 E1  9.70
-             S5b: Bruecke Rheinland-Pfalz statt Bayern                E2a  7.40
-             S5b: Bruecke Rheinland-Pfalz statt Bayern                E2b  2.30
-             S5b: Bruecke Rheinland-Pfalz statt Bayern                 E1  9.70
- S6: Berlin bruchbereinigt (ab 1991, eigene Langreihe) Berlin_Fitted_Ziel -0.01
- KI_unten KI_oben                                               Anmerkung
-       NA      NA                           entfaellt (keine Datenquelle)
-       NA      NA                           entfaellt (keine Datenquelle)
-       NA      NA                           entfaellt (keine Datenquelle)
-      7.2     8.6 identisch zu Primaerfenster (Zufall d. SAP-4-Reduktion)
-      1.7     1.9 identisch zu Primaerfenster (Zufall d. SAP-4-Reduktion)
-      9.0    10.4 identisch zu Primaerfenster (Zufall d. SAP-4-Reduktion)
-      4.4     8.4                                                        
-      1.9     2.3                                                        
-      6.4    10.5                                                        
-       NA      NA                kein CI (Einzelbeobachtung, kein Modell)
-       NA      NA                kein CI (Einzelbeobachtung, kein Modell)
-       NA      NA                kein CI (Einzelbeobachtung, kein Modell)
-       NA      NA     nicht durchfuehrbar (Datenzugriff, s. Abweichung C)
-       NA      NA     nicht durchfuehrbar (Datenzugriff, s. Abweichung C)
-       NA      NA     nicht durchfuehrbar (Datenzugriff, s. Abweichung C)
-       NA      NA  nur Punktschaetzer (kein CI, s. Skript-Kommentar oben)
-       NA      NA  nur Punktschaetzer (kein CI, s. Skript-Kommentar oben)
-       NA      NA  nur Punktschaetzer (kein CI, s. Skript-Kommentar oben)
-      7.8     9.3                                                        
-      0.8     1.5                                                        
-      9.0    10.4                                                        
-      6.7     8.1                                                        
-      2.1     2.4                                                        
-      9.0    10.4                                                        
-       NA      NA                 mit 1990=3.66, ab 1991=3.64 (siehe Log)
+                                                      Sensitivitaet Kontrast
+                                  S1: alt. Zielgroesse (THG-Gesamt)      E2a
+                                  S1: alt. Zielgroesse (THG-Gesamt)      E2b
+                                  S1: alt. Zielgroesse (THG-Gesamt)       E1
+                                 S2a: gesamte Zeitreihe (2010-2023)      E2a
+                                 S2a: gesamte Zeitreihe (2010-2023)      E2b
+                                 S2a: gesamte Zeitreihe (2010-2023)       E1
+                           S2b: Einzeljahreswert (kein Trendmodell)      E2a
+                           S2b: Einzeljahreswert (kein Trendmodell)      E2b
+                           S2b: Einzeljahreswert (kein Trendmodell)       E1
+                          S3: alt. Bevoelkerungskonvention (31.12.)      E2a
+                          S3: alt. Bevoelkerungskonvention (31.12.)      E2b
+                          S3: alt. Bevoelkerungskonvention (31.12.)       E1
+                     S4: Theil-Sen (robust) statt OLS (Fenster n=5)      E2a
+                     S4: Theil-Sen (robust) statt OLS (Fenster n=5)      E2b
+                     S4: Theil-Sen (robust) statt OLS (Fenster n=5)       E1
+                    S5a: Bruecke Hamburg statt Bayern (Fenster n=5)      E2a
+                    S5a: Bruecke Hamburg statt Bayern (Fenster n=5)      E2b
+                    S5a: Bruecke Hamburg statt Bayern (Fenster n=5)       E1
+            S5b: Bruecke Rheinland-Pfalz statt Bayern (Fenster n=5)      E2a
+            S5b: Bruecke Rheinland-Pfalz statt Bayern (Fenster n=5)      E2b
+            S5b: Bruecke Rheinland-Pfalz statt Bayern (Fenster n=5)       E1
+ S6: Berlin bruchbereinigt (ab 1991, eigene Langreihe; Fenster n=5)      E2a
+ S6: Berlin bruchbereinigt (ab 1991, eigene Langreihe; Fenster n=5)      E2b
+ S6: Berlin bruchbereinigt (ab 1991, eigene Langreihe; Fenster n=5)       E1
+ Delta KI_unten KI_oben
+    NA       NA      NA
+    NA       NA      NA
+    NA       NA      NA
+   6.4      4.4     8.4
+   2.1      1.9     2.3
+   8.5      6.4    10.5
+   7.1       NA      NA
+   1.9       NA      NA
+   9.0       NA      NA
+    NA       NA      NA
+    NA       NA      NA
+    NA       NA      NA
+   7.7       NA      NA
+   1.8       NA      NA
+   9.5       NA      NA
+   8.6      7.8     9.3
+   1.2      0.8     1.5
+   9.7      9.0    10.4
+   7.4      6.7     8.1
+   2.3      2.1     2.4
+   9.7      9.0    10.4
+   7.9      7.2     8.6
+   1.6      1.3     1.8
+   9.5      8.8    10.1
+                                                                              Anmerkung
+                                                          entfaellt (keine Datenquelle)
+                                                          entfaellt (keine Datenquelle)
+                                                          entfaellt (keine Datenquelle)
+                                                                                       
+                                                                                       
+                                                                                       
+                                               kein CI (Einzelbeobachtung, kein Modell)
+                                               kein CI (Einzelbeobachtung, kein Modell)
+                                               kein CI (Einzelbeobachtung, kein Modell)
+ nicht durchfuehrbar: kein Netzwerkzugriff verfuegbar (nicht versucht, s. Abweichung C)
+ nicht durchfuehrbar: kein Netzwerkzugriff verfuegbar (nicht versucht, s. Abweichung C)
+ nicht durchfuehrbar: kein Netzwerkzugriff verfuegbar (nicht versucht, s. Abweichung C)
+                                 nur Punktschaetzer (kein CI, s. Skript-Kommentar oben)
+                                 nur Punktschaetzer (kein CI, s. Skript-Kommentar oben)
+                                 nur Punktschaetzer (kein CI, s. Skript-Kommentar oben)
+                                                                                       
+                                                                                       
+                                                                                       
+                                                                                       
+                                                                                       
+                                                                                       
+                  unveraendert ggue. Primaeranalyse n=5 (Berlin nicht an E2a beteiligt)
+                                        Berlin ab1991-Fitted=3.64 (statt mit-1990=3.66)
+                                        Berlin ab1991-Fitted=3.64 (statt mit-1990=3.66)
+
+=== Kombinierte Tabelle: primaere Niveaus, beide Fenstervarianten (SAP 11a) ===
+ Fenster     Land  Fit Boot_KI_unten Boot_KI_oben HAC_KI_unten HAC_KI_oben
+      n5   Bayern  5.2           5.3          6.0          5.1         5.3
+      n5   Berlin  3.4           3.4          4.0          3.4         3.5
+      n5 Saarland 13.1          11.5         14.1         12.2        14.0
+      n8   Bayern  5.4           5.3          6.2          5.2         5.6
+      n8   Berlin  3.3           3.3          5.0          3.3         3.4
+      n8 Saarland 11.1          11.3         21.1          8.4        13.8
+
+=== Kombinierte Tabelle: primaere Kontraste, beide Fenstervarianten (SAP 11c) ===
+ Fenster                                                        Kontrast Delta
+      n5                                          E2a: Saarland - Bayern   7.9
+      n5                                            E2b: Bayern - Berlin   1.8
+      n5                                  E1: Saarland - Berlin (direkt)   9.7
+      n5 E1': E2a + E2b (Konsistenzpruefung, kein separater Test, SAP 7)   9.7
+      n8                                          E2a: Saarland - Bayern   5.7
+      n8                                            E2b: Bayern - Berlin   2.1
+      n8                                  E1: Saarland - Berlin (direkt)   7.8
+      n8 E1': E2a + E2b (Konsistenzpruefung, kein separater Test, SAP 7)   7.8
+ Boot_KI_unten Boot_KI_oben HAC_KI_unten HAC_KI_oben p_deskriptiv_roh
+           6.0          8.5          7.2         8.6             0.00
+           1.5          2.4          1.7         1.9             0.00
+           7.9         10.4          9.0        10.4             0.00
+            NA           NA           NA          NA             <NA>
+           5.4         15.3          3.3         8.1             0.00
+           0.7          2.6          1.9         2.2             0.00
+           6.9         17.2          5.4        10.1             0.00
+            NA           NA           NA          NA             <NA>
+ p_deskriptiv_holm
+              0.00
+              0.00
+              0.00
+              <NA>
+              0.00
+              0.00
+              0.00
+              <NA>
 
 === Skript vollstaendig durchgelaufen. Outputs in output/ gespeichert. ===

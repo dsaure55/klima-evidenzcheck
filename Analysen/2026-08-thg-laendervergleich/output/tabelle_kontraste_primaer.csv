@@ -1,4 +1,9 @@
-"Kontrast","Delta","KI_unten","KI_oben","p_roh","p_holm"
-"E2a: Saarland - Bayern",7.9,7.2,8.6,"0.00","0.00"
-"E2b: Bayern - Berlin",1.8,1.7,1.9,"0.00","0.00"
-"E1: Saarland - Berlin (direkt)",9.7,9,10.4,"0.00","0.00"
+"Fenster","Kontrast","Delta","Boot_KI_unten","Boot_KI_oben","HAC_KI_unten","HAC_KI_oben","p_deskriptiv_roh","p_deskriptiv_holm"
+"n5","E2a: Saarland - Bayern",7.9,6,8.5,7.2,8.6,"0.00","0.00"
+"n5","E2b: Bayern - Berlin",1.8,1.5,2.4,1.7,1.9,"0.00","0.00"
+"n5","E1: Saarland - Berlin (direkt)",9.7,7.9,10.4,9,10.4,"0.00","0.00"
+"n5","E1': E2a + E2b (Konsistenzpruefung, kein separater Test, SAP 7)",9.7,NA,NA,NA,NA,NA,NA
+"n8","E2a: Saarland - Bayern",5.7,5.4,15.3,3.3,8.1,"0.00","0.00"
+"n8","E2b: Bayern - Berlin",2.1,0.7,2.6,1.9,2.2,"0.00","0.00"
+"n8","E1: Saarland - Berlin (direkt)",7.8,6.9,17.2,5.4,10.1,"0.00","0.00"
+"n8","E1': E2a + E2b (Konsistenzpruefung, kein separater Test, SAP 7)",7.8,NA,NA,NA,NA,NA,NA
