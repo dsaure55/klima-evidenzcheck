@@ -125,9 +125,9 @@ Theil-Sen (S4) wird dennoch gemaess SAP 6 vollstaendig berichtet.
 === Fitted-Werte im Zieljahr 2023, Fenster n5 ===
 (primaer: Moving-Block-Bootstrap-KI; sensitivitaetsanalytisch: HAC-KI -- Amendment v1.1)
  Fenster     Land  Fit Boot_KI_unten Boot_KI_oben HAC_KI_unten HAC_KI_oben
-      n5   Bayern  5.2           5.3          6.0          5.1         5.3
-      n5   Berlin  3.4           3.4          4.0          3.4         3.5
-      n5 Saarland 13.1          11.5         14.1         12.2        14.0
+      n5   Bayern  5.2           5.0          5.4          5.1         5.3
+      n5   Berlin  3.4           3.2          3.5          3.4         3.5
+      n5 Saarland 13.1          12.0         14.2         12.2        14.0
 
 === SAP 7: Primaere Kontraste (Fenster n5) -- primaer Bootstrap-KI,
     sensitivitaetsanalytisch HAC-KI, p-Werte rein deskriptiv (Amendment v1.1) ===
@@ -137,9 +137,9 @@ Theil-Sen (S4) wird dennoch gemaess SAP 6 vollstaendig berichtet.
       n5                                  E1: Saarland - Berlin (direkt)   9.7
       n5 E1': E2a + E2b (Konsistenzpruefung, kein separater Test, SAP 7)   9.7
  Boot_KI_unten Boot_KI_oben HAC_KI_unten HAC_KI_oben p_deskriptiv_roh
-           6.0          8.5          7.2         8.6             0.00
-           1.5          2.4          1.7         1.9             0.00
-           7.9         10.4          9.0        10.4             0.00
+           6.8          9.0          7.2         8.6             0.00
+           1.6          2.0          1.7         1.9             0.00
+           8.6         10.8          9.0        10.4             0.00
             NA           NA           NA          NA             <NA>
  p_deskriptiv_holm
               0.00
@@ -159,7 +159,7 @@ Warnmeldungen:
   more weights than observations, only first n used
 
 ########################################################
-# Primaere Fenstervariante n8 (Jahre: 2014-2023, n=8)
+# Primaere Fenstervariante n8 (Jahre: 2014-2016 + 2019-2023, n=8)
 ########################################################
 
 === SAP 5.1: OLS-Trendmodelle je Bundesland (Fenster n8) ===
@@ -202,6 +202,15 @@ Cook's Distance je Beobachtung (Jahr = Wert):
 
 --- Saarland ---
 Durbin-Watson: DW=1.155, p=0.024 (signifikant @ 0.05)
+  -> SAP-5.2-Anmerkung (Nichtlinearitaet/Struktur, land-/fensterspezifisch):
+     Die signifikante DW-Autokorrelation bei Saarland im Fenster n8 faellt mit
+     einer Datenluecke zwischen 2016 und 2019 zusammen. Das Residuenmuster ist
+     konsistent mit einem moeglichen lokalen Niveau-/Struktur-
+     unterschied zwischen der Teilreihe vor und nach der Luecke, den ein
+     einzelnes lineares Trendmodell nicht vollstaendig abbildet - ein
+     Hinweis auf moegliche Nichtlinearitaet rund um die Luecke, nicht
+     zwingend auf durchgehende Jahr-zu-Jahr-Persistenz. Siehe auch
+     Diagnostik-Plot output/diagnostik_residuen_vs_jahr_n8.png.
 Breusch-Godfrey (Ordnung 1): LM=1.330, p=0.249 (nicht signifikant)
 Shapiro-Wilk (Normalitaet Residuen): W=0.893, p=0.250 (kein Hinweis auf Abweichung)
 Cook's Distance je Beobachtung (Jahr = Wert):
@@ -228,9 +237,9 @@ Theil-Sen (S4) wird dennoch gemaess SAP 6 vollstaendig berichtet.
 === Fitted-Werte im Zieljahr 2023, Fenster n8 ===
 (primaer: Moving-Block-Bootstrap-KI; sensitivitaetsanalytisch: HAC-KI -- Amendment v1.1)
  Fenster     Land  Fit Boot_KI_unten Boot_KI_oben HAC_KI_unten HAC_KI_oben
-      n8   Bayern  5.4           5.3          6.2          5.2         5.6
-      n8   Berlin  3.3           3.3          5.0          3.3         3.4
-      n8 Saarland 11.1          11.3         21.1          8.4        13.8
+      n8   Bayern  5.4           5.3          5.7          5.2         5.6
+      n8   Berlin  3.3           3.2          3.4          3.3         3.4
+      n8 Saarland 11.1           8.5         13.1          8.4        13.8
 
 === SAP 7: Primaere Kontraste (Fenster n8) -- primaer Bootstrap-KI,
     sensitivitaetsanalytisch HAC-KI, p-Werte rein deskriptiv (Amendment v1.1) ===
@@ -240,9 +249,9 @@ Theil-Sen (S4) wird dennoch gemaess SAP 6 vollstaendig berichtet.
       n8                                  E1: Saarland - Berlin (direkt)   7.8
       n8 E1': E2a + E2b (Konsistenzpruefung, kein separater Test, SAP 7)   7.8
  Boot_KI_unten Boot_KI_oben HAC_KI_unten HAC_KI_oben p_deskriptiv_roh
-           5.4         15.3          3.3         8.1             0.00
-           0.7          2.6          1.9         2.2             0.00
-           6.9         17.2          5.4        10.1             0.00
+           3.0          7.7          3.3         8.1             0.00
+           1.9          2.4          1.9         2.2             0.00
+           5.1          9.7          5.4        10.1             0.00
             NA           NA           NA          NA             <NA>
  p_deskriptiv_holm
               0.00
@@ -408,12 +417,12 @@ Neuberechnete primaere Kontraste mit bruchbereinigtem Berlin-Wert (Fenster n=5):
 
 === Kombinierte Tabelle: primaere Niveaus, beide Fenstervarianten (SAP 11a) ===
  Fenster     Land  Fit Boot_KI_unten Boot_KI_oben HAC_KI_unten HAC_KI_oben
-      n5   Bayern  5.2           5.3          6.0          5.1         5.3
-      n5   Berlin  3.4           3.4          4.0          3.4         3.5
-      n5 Saarland 13.1          11.5         14.1         12.2        14.0
-      n8   Bayern  5.4           5.3          6.2          5.2         5.6
-      n8   Berlin  3.3           3.3          5.0          3.3         3.4
-      n8 Saarland 11.1          11.3         21.1          8.4        13.8
+      n5   Bayern  5.2           5.0          5.4          5.1         5.3
+      n5   Berlin  3.4           3.2          3.5          3.4         3.5
+      n5 Saarland 13.1          12.0         14.2         12.2        14.0
+      n8   Bayern  5.4           5.3          5.7          5.2         5.6
+      n8   Berlin  3.3           3.2          3.4          3.3         3.4
+      n8 Saarland 11.1           8.5         13.1          8.4        13.8
 
 === Kombinierte Tabelle: primaere Kontraste, beide Fenstervarianten (SAP 11c) ===
  Fenster                                                        Kontrast Delta
@@ -426,13 +435,13 @@ Neuberechnete primaere Kontraste mit bruchbereinigtem Berlin-Wert (Fenster n=5):
       n8                                  E1: Saarland - Berlin (direkt)   7.8
       n8 E1': E2a + E2b (Konsistenzpruefung, kein separater Test, SAP 7)   7.8
  Boot_KI_unten Boot_KI_oben HAC_KI_unten HAC_KI_oben p_deskriptiv_roh
-           6.0          8.5          7.2         8.6             0.00
-           1.5          2.4          1.7         1.9             0.00
-           7.9         10.4          9.0        10.4             0.00
+           6.8          9.0          7.2         8.6             0.00
+           1.6          2.0          1.7         1.9             0.00
+           8.6         10.8          9.0        10.4             0.00
             NA           NA           NA          NA             <NA>
-           5.4         15.3          3.3         8.1             0.00
-           0.7          2.6          1.9         2.2             0.00
-           6.9         17.2          5.4        10.1             0.00
+           3.0          7.7          3.3         8.1             0.00
+           1.9          2.4          1.9         2.2             0.00
+           5.1          9.7          5.4        10.1             0.00
             NA           NA           NA          NA             <NA>
  p_deskriptiv_holm
               0.00

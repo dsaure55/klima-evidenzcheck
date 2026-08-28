@@ -672,3 +672,243 @@ analyst-Subagenten zur Behebung von Auflage 1 (Bootstrap-Mechanismus für n8)
 empfohlen, bevor n8-Bootstrap-Zahlen in einen Ergebnisbericht übernommen
 werden; die n5-Ergebnisse und alle übrigen Amendment-Umsetzungen sind
 unabhängig davon freigabefähig.
+
+
+---
+---
+
+# Re-Validierung: Behebung Auflage 1 (Residual-MBB), zweite Pruefung SAP-Amendment v1.1 (28.08.2026)
+
+**Rolle:** Unabhaengiges Statistik-Review (Zweitgutachter-Analogie), unabhaengig
+vom analyst-Subagenten. Dieser Abschnitt prueft ausschliesslich die
+Nachbesserung, die der analyst-Subagent als Reaktion auf Auflage 1 der
+vorherigen v1.1-Pruefung (Abschnitt "6. Auffaelliger Befund Saarland n=8
+Bootstrap-CI" oben) vorgenommen hat: Umstellung von mbb_replicates() auf
+einen residual-basierten Moving-Block-Bootstrap, sowie die Auflagen 2-4
+(Blockbildungs-Dokumentation, laender-/fensterspezifische DW-Anmerkung,
+lueckenbewusste Zeitraumsnotation). Alle vier eigentlichen
+SAP-Amendment-v1.1-Aenderungen sowie die E1-Strich-/S6-Ergaenzungen waren
+bereits im vorherigen Berichtsteil geprueft und bestanden ("bestanden") und
+sind nicht erneut Gegenstand dieser Pruefung.
+
+**Geprueft:** thg-laendervergleich.R (Stand 28.08.2026, 14:16),
+run_log.txt (Stand 28.08.2026, 14:17), output/tabelle_kontraste_primaer.csv,
+output/tabelle_niveaus_zieljahr.csv, output/balkendiagramm_niveaus_zieljahr_n5.png,
+output/balkendiagramm_niveaus_zieljahr_n8.png, Git-Diff (git diff gegen
+Commit c9dc0b0) fuer den vollstaendigen Aenderungsumfang.
+
+**Hinweis zur Methodik dieser Pruefung:** Wie zuvor ist in dieser
+Review-Umgebung kein R installiert (Rscript/R nicht gefunden; auch kein
+Python). Fuer diese Pruefung wurde daher eine unabhaengige Reimplementierung
+des exakten in mbb_replicates() beschriebenen Algorithmus in Perl (verfuegbar
+in dieser Umgebung, /usr/bin/perl) auf den Original-Rohdaten
+(co2_je_einwohner_lak_rohdaten.csv) vorgenommen -- mit eigenem RNG-Seed
+(nicht identisch zum R-Aufruf set.seed(20260827)), 200.000 Replikaten je
+Modell (gegenueber R_BOOT=2000 im Original, um Monte-Carlo-Rauschen beim
+Vergleich zu minimieren) und derselben Blockbildungslogik (Zeilen-Positionen,
+block_len=2, Trunkierung/Auffuellung auf Laenge n). Dies ist eine methodisch
+staerkere Gegenprobe als eine reine Code-Lese-Pruefung, da sie sowohl die
+Korrektheit der Implementierung als auch die Plausibilitaet der berichteten
+Zahlen unabhaengig verifiziert, ohne den zu pruefenden R-Code selbst
+auszufuehren.
+
+---
+
+## Gesamteinschaetzung dieser Re-Validierung: Freigegeben mit einer geringfuegigen Auflage
+
+Die kritische Auflage 1 aus der vorherigen Pruefungsrunde ist korrekt und
+vollstaendig behoben. Die Auflagen 2-4 sind ebenfalls erfuellt. Der
+Aenderungsumfang ist eng auf die Nachbesserung begrenzt; keine der zuvor
+bestaetigten Berechnungen (Punktschaetzer, HAC-KIs, Kontrast-Deltas,
+E1-Strich-/S6-Ergaenzungen, Blocklaenge, Konfidenzniveau) wurde veraendert.
+Es verbleibt eine geringfuegige, nicht blockierende Auflage zur
+Dokumentationsvollstaendigkeit (siehe Punkt 4 unten).
+
+---
+
+## 1. Code-Analyse: Residual-MBB-Implementierung -- Ampel: bestanden
+
+Geprueft: thg-laendervergleich.R Z. 391-417 (mbb_replicates()), Z.
+330-390 (Begleitkommentar).
+
+- Das Originalmodell wird EINMAL gefittet (modell_orig <- lm(y ~ Jahr,
+  data = daten)), fitted_orig, resid_orig und jahr_orig werden daraus
+  extrahiert, alle drei positionsgleich zur (bereits nach Jahr sortierten)
+  Datentabelle.
+- Pro Replikat werden Block-Startpositionen aus starts_pool gezogen, daraus
+  ein Index-Vektor idx (Laenge >= n) gebildet und auf Laenge n trunkiert
+  (idx[seq_len(n)]) -- die vormals problematische Zeile
+  resampled$Jahr <- daten$Jahr (fixe Jahres-Reprojektion auf Rohwerte)
+  existiert nicht mehr.
+- Zentral: y_rekonstruiert <- fitted_orig + resid_orig[idx] -- an Position i
+  wird IMMER fitted_orig[i] (die deterministische Trendkomponente von
+  Jahr[i]) verwendet, nur das dazuaddierte Residuum wird block-resampled. Der
+  Refit lm(y_rekonstruiert ~ jahr_orig) verwendet durchgehend jahr_orig
+  (Original-Jahresvektor, unveraendert). Die x-y-Kopplung (Position i <->
+  Jahr[i]) ist damit in jedem Replikat exakt erhalten -- exakt das im
+  Begleitkommentar beschriebene und von der vorherigen Pruefung geforderte
+  Verfahren.
+- Keine neue Verzerrungsquelle durch Indizierung gefunden: idx <= n ist zwar
+  angesichts von starts_pool <- 1:(n - block_len + 1) mathematisch immer
+  erfuellt (totes Verteidigungscode-Fragment, ebenso die nachfolgende
+  NA-Behandlung) -- das ist unschoen, aber funktional folgenlos, kein Fehler.
+- block_len=2, R_BOOT=2000 und das 95-Prozent-Konfidenzniveau sind textuell
+  und im Code unveraendert (Z. 165-166) -- deckt sich mit der
+  Begleit-Doku-Aussage ("Blocklaenge ... und Konfidenzniveau sind
+  unveraendert").
+
+## 2. Unabhaengige Reproduktion Saarland n=8 -- Ampel: bestanden
+
+Eigene Perl-Reimplementierung des Algorithmus auf den Original-Rohdaten
+(Saarland 2014-2016: 20,976/21,670/16,989; 2019-2023:
+12,660/11,719/13,778/13,697/12,347), 200.000 Replikate:
+
+```
+Original-OLS: intercept=2093.001400 slope=-1.029113 fitted(2023)=11.106
+Bootstrap-Median: 11.032
+Bootstrap-95-Prozent-CI: [8.409, 13.123]
+```
+
+Das reproduziert den vom Analysten berichteten Wert (Fit=11,1;
+Boot_KI=[8,5; 13,1], output/tabelle_niveaus_zieljahr.csv Zeile 7) bis auf
+Rundungs-/Monte-Carlo-Abweichung im Bereich der dritten Nachkommastelle exakt
+-- mit unabhaengigem RNG-Seed und zehnfach hoeherer Replikatzahl als das
+Original. Der Punktschaetzer (11,1) liegt jetzt sicher innerhalb des
+Bootstrap-KI, nicht mehr ausserhalb wie vor der Korrektur ([11,3; 21,1]). Das
+Bootstrap-KI liegt zudem nah am sensitivitaetsanalytischen HAC-KI [8,4; 13,8]
+(output/tabelle_niveaus_zieljahr.csv), was inhaltlich plausibel ist, da die
+Residual-MBB-Variante fuer eine annaehernd normalverteilte,
+Autokorrelations-arme Restkomponente in etwa auf die klassische Fehlerformel
+konvergieren sollte. Der urspruengliche kritische Befund ist damit nicht mehr
+vorhanden.
+
+## 3. Kein neuer/versteckter Fehler; Ausmass der Aenderung an den uebrigen fuenf primaeren Modellen -- Ampel: bestanden
+
+Eigene Perl-Reimplementierung fuer alle sechs primaeren Land-x-Fenster-Modelle
+(n5: Bayern, Berlin, Saarland; n8: Bayern, Berlin, Saarland), je 200.000
+Replikate, RNG-Seeds unabhaengig vom R-Skript:
+
+| Modell | eigene Reproduktion (95-Prozent-CI) | Skript-Output (tabelle_niveaus_zieljahr.csv) |
+|---|---|---|
+| Saarland n5 | Fit 13,111; [12,00; 14,22] | Fit 13,1; [12,0; 14,2] |
+| Bayern n5 | Fit 5,232; [5,01; 5,39] | Fit 5,2; [5,0; 5,4] |
+| Berlin n5 | Fit 3,405; [3,24; 3,52] | Fit 3,4; [3,2; 3,5] |
+| Saarland n8 | Fit 11,106; [8,41; 13,12] | Fit 11,1; [8,5; 13,1] |
+| Bayern n8 | Punktschaetzer per Hand bestaetigt 5,4065 | Fit 5,4; [5,3; 5,7] |
+| Berlin n8 | Fit 3,340; [3,20; 3,44] | Fit 3,3; [3,2; 3,4] |
+
+Alle sechs eigenen Reproduktionen stimmen mit dem gemeldeten Output bis auf
+die erwartete Rundungs-/Monte-Carlo-Toleranz ueberein. Die Punktschaetzer
+(Delta-Werte E2a=7,9/1,8/9,7 [n5] bzw. 5,7/2,1/7,8 [n8]) wurden zusaetzlich
+per Hand aus den Rohdaten nachgerechnet und sind identisch zu den bereits in
+der vorherigen Pruefungsrunde bestaetigten Werten -- unveraendert, wie es
+sein muss, da Punktschaetzer methodenunabhaengig sind.
+
+git diff (Commit c9dc0b0 gegen Arbeitsstand) bestaetigt zusaetzlich
+strukturell: Alle HAC_KI_*-Spalten und alle Delta-Spalten in
+tabelle_kontraste_primaer.csv/tabelle_niveaus_zieljahr.csv sind
+byte-identisch zum Stand vor der Nachbesserung; ausschliesslich die
+Boot_KI_*-Spalten aendern sich. tabelle_anhang_sensitivitaeten_S1-S6.csv
+und zusatzcheck_cooksd_ausschluss.csv sind komplett unveraendert (0 Zeilen
+Diff) -- konsistent mit dem Codekommentar, dass S1-S6 weiterhin ueber die
+generische HAC-only-Funktion kontrast() laufen (Z. 454-456), nicht ueber
+mbb_replicates(), und daher von der Methodenumstellung erwartungsgemaess
+nicht betroffen sind.
+
+Zusaetzlicher, unaufgeforderter Befund (positiv einzuordnen): Der Vergleich
+der alten und neuen Boot_KI-Werte zeigt, dass die vormalige
+Rohwert-Resampling-Implementierung nicht nur bei Saarland n8 (der einzige in
+der vorherigen Pruefungsrunde explizit gefundene und benannte Fall), sondern
+auch bei Bayern n5 in abgeschwaechter Form dieselbe Pathologie aufwies: alter
+Wert n5,Bayern,5.2,5.3,6 -- die untere Bootstrap-Grenze (5,3) lag knapp
+OBERHALB des Punktschaetzers (5,2), unentdeckt in der vorherigen
+Pruefungsrunde. Nach der Umstellung auf Residual-MBB ist auch dieser
+Grenzfall behoben (n5,Bayern,5.2,5,5.4 -- Punktschaetzer jetzt sicher
+innerhalb). Das ist kein neuer Mangel der aktuellen Nachbesserung, sondern
+zeigt im Gegenteil, dass die Korrektur robuster und allgemeiner wirkt, als es
+zur Behebung des einen explizit benannten Falls noetig gewesen waere -- ein
+Hinweis, dass der Analyst die Ursache (nicht nur das Symptom) behoben hat.
+
+## 4. Umsetzung Auflagen 2-4 -- Ampel: bestanden (mit einer geringfuegigen, nicht blockierenden Anmerkung)
+
+- Auflage 2 (Blockbildungs-Dokumentation, nicht-aequidistantes n8-Fenster):
+  Vollstaendig erfuellt. thg-laendervergleich.R Z. 363-390 dokumentiert
+  explizit, dass die Blockbildung weiterhin ueber Zeilen-Positionen (nicht
+  Jahresabstaende) erfolgt, benennt die konkrete Konsequenz (Block kann Jahre
+  vor/nach der Luecke 2016->2019 mischen), begruendet nachvollziehbar, warum
+  dies durch das Residual-MBB nicht mehr zu einer x-y-Fehlkopplung fuehrt,
+  und benennt explizit die verbleibende (geringere) methodische
+  Vereinfachung (Zeilen- statt Jahresabstands-Persistenz) als offene,
+  eigenstaendig gekennzeichnete Abweichung/Rueckfrage, statt sie zu
+  verschweigen oder eigenmaechtig eine neue Methode einzufuehren. Inhaltlich
+  uebereinstimmend mit der eigenen Einschaetzung: Bei block_len=2 und n=8
+  kann nur 1 von 7 moeglichen Blockstarts die Luecke ueberspannen, die
+  Restrisiko-Einschaetzung ist also plausibel begruendet.
+- Auflage 3 (lueckenbewusste Zeitraumsnotation): Vollstaendig erfuellt.
+  format_jahre_bereich() (Z. 474-482) erkennt Luecken (diff(j) > 1) und
+  formatiert c(2014:2016, 2019:2023) korrekt als "2014-2016 + 2019-2023";
+  run_log.txt Z. 162 bestaetigt die korrigierte Ausgabe ("Primaere
+  Fenstervariante n8 (Jahre: 2014-2016 + 2019-2023, n=8)"). Die verbliebene
+  Fundstelle "2014-2023" in run_log.txt Z. 47 bezieht sich korrekt auf das
+  NAIVE (noch nicht lueckenbereinigte) 10-Jahres-Fenster vor Anwendung der
+  Fallback-Regel und ist dort sachlich richtig, keine Inkonsistenz.
+- Auflage 4 (laender-/fensterspezifische DW-Anmerkung): Vollstaendig erfuellt
+  und korrekt bedingt ausgeloest. thg-laendervergleich.R Z. 522-552 fuegt
+  eine spezifische Anmerkung nur dann ein, wenn der DW-Test fuer das
+  jeweilige Land/Fenster signifikant ist; run_log.txt bestaetigt, dass dies
+  unter den sechs primaeren Modellen ausschliesslich bei Saarland n8
+  (DW=1,155, p=0,024) zutrifft (alle uebrigen: "nicht signifikant", Z.
+  81/91/100/185/195) und dort tatsaechlich die erwartete, inhaltlich
+  zutreffende Anmerkung ausgegeben wird (Luecke 2016/2019 korrekt
+  identifiziert, run_log.txt Z. 205-213).
+- Geringfuegige Anmerkung (kein Blocker): Der Skript-Header fuehrt eine
+  "Sammelstelle" offener SAP-Abweichungen/Rueckfragen an den Menschen
+  (Eintraege (A)-(E), Z. 87-151, mit dem expliziten Anspruch "Details jeweils
+  an der betroffenen Stelle im Skript wiederholt"). Die unter Auflage 2 neu
+  entstandene, explizit als "Abweichung vom SAP - Rueckfrage an Mensch"
+  gekennzeichnete offene Frage (zeilenbasierte vs. jahresabstands-bewusste
+  Blockbildung, Z. 388-390) ist NICHT als eigener Eintrag (z. B. "(F)") in
+  diese Kopf-Sammelstelle aufgenommen worden, sondern nur an der Code-Stelle
+  bei mbb_replicates() zu finden. Wer nur den Header liest (wie es der
+  Header selbst als Einstiegspunkt nahelegt), wuerde diese neue offene Frage
+  uebersehen. Empfehlung: einen kurzen Verweiseintrag (F) in die
+  Kopf-Sammelstelle ergaenzen, der auf die Stelle bei mbb_replicates()
+  verweist -- rein redaktionell, keine inhaltliche Korrektur noetig.
+
+## 5. Eng gehaltener Aenderungsumfang -- Ampel: bestanden
+
+git diff --stat gegen den zuletzt validierten Commit (c9dc0b0) zeigt
+Aenderungen ausschliesslich in: thg-laendervergleich.R (147 Zeilen,
+groesstenteils Kommentare + die beschriebene Funktionsumstellung +
+format_jahre_bereich() + DW-Anmerkungsblock), run_log.txt (Folgeausgabe),
+den beiden Ergebnistabellen (nur Boot_KI_*-Spalten geaendert, siehe Punkt 3),
+sowie den zwei Balkendiagramm-PNGs (Neuzeichnung mit korrigierten
+Fehlerbalken, visuell verifiziert: Saarland-n8-Fehlerbalken schliesst jetzt
+den Balken-Top ein, keine augenscheinliche Anomalie mehr). Keine Aenderungen
+an hac_fitted_ci(), kontrast_variant(), kontrast(), BLOCK_LEN, R_BOOT, den
+S1-S6-Sensitivitaetsanalysen, der E1-Strich-Zeile oder der S6-Berechnung --
+der Eingriff ist exakt auf den in der Auflage adressierten Mangel begrenzt,
+keine Scope-Creep-Beobachtung.
+
+---
+
+## Zusammenfassung dieser Re-Validierung
+
+1. [Erledigt] Auflage 1 (kritisch, Bootstrap-Attenuationsfehler): korrekt und
+   vollstaendig behoben, unabhaengig reproduziert (eigene
+   Perl-Reimplementierung, 200.000 Replikate je Modell, alle sechs primaeren
+   Modelle stimmen mit dem gemeldeten Output ueberein).
+2. [Erledigt] Auflage 2 (Blockbildungs-Dokumentation): erfuellt, inhaltlich
+   nachvollziehbar begruendet.
+3. [Erledigt] Auflage 3 (Zeitraumsnotation): erfuellt.
+4. [Erledigt] Auflage 4 (DW-Anmerkung Saarland n8): erfuellt.
+5. [Geringfuegig, kein Blocker] Neue Rueckfrage aus Auflage 2 (zeilen- vs.
+   jahresabstands-bewusste Blockbildung) sollte redaktionell auch in die
+   Kopf-Sammelstelle (A)-(E) aufgenommen werden (siehe Punkt 4 oben).
+
+Gesamteinschaetzung: Freigegeben mit einer geringfuegigen, nicht
+blockierenden Auflage. Die n8- und n5-Bootstrap-Ergebnisse fuer alle drei
+Laender koennen jetzt in einen Ergebnisbericht uebernommen werden. Die aus
+der v1.0- und v1.1-Pruefung verbliebenen offenen Rueckfragen an den Menschen
+(Bevoelkerungskonvention (B)/(C)/S3, Blockbildungs-Verfeinerung) bleiben
+unveraendert offen und sind nicht Gegenstand dieser Pruefung.

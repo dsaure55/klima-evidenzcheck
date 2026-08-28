@@ -62,6 +62,28 @@
 # ===========================================================================
 #
 # ===========================================================================
+# NACHBESSERUNG NACH VALIDIERUNG DER v1.1-ANALYSE (28.08.2026) -- IN DIESEM
+# SKRIPT UMGESETZT (Validierungsbericht_THG-Laendervergleich.md, zweiter
+# Berichtsteil "Validierung SAP-Amendment v1.1", Abschnitt 6 "Auffaelliger
+# Befund Saarland n=8 Bootstrap-CI", Ampel: kritisch, Auflagen 1-4):
+# Die reine RESAMPLING-MECHANIK des Moving-Block-Bootstraps in
+# mbb_replicates() wurde von Rohwert-Resampling mit fixer Jahres-
+# Reprojektion (brach die x-y-Kopplung auf, verzerrte insbesondere das
+# Saarland-n8-Bootstrap-KI systematisch nach oben) auf Residual-basiertes
+# MBB umgestellt (Residuen blockweise resampeln, auf die deterministische
+# Trendkomponente der jeweils EIGENEN Original-Jahres-Position zurueck-
+# addieren, Modell neu schaetzen). Details und Begruendung direkt bei
+# mbb_replicates() unten. Zusaetzlich: land-/fensterspezifische
+# SAP-5.2-Anmerkung bei signifikanter DW-Autokorrelation (statt nur
+# generischer Sammelmeldung, Auflage 4) und lueckenbewusste
+# Jahres-Bereichs-Notation im Konsolen-Output (Auflage 3, optional). Die
+# Blocklaenge (block_len=2), das Konfidenzniveau, die vier eigentlichen
+# SAP-Amendment-v1.1-Aenderungen und die E1'-/S6-Ergaenzungen oben sind davon
+# NICHT betroffen und bleiben unveraendert (waren bereits vom Validator als
+# korrekt bestaetigt).
+# ===========================================================================
+#
+# ===========================================================================
 # ABWEICHUNGEN VOM SAP -- RUECKFRAGE AN MENSCH (Sammelstelle, Details jeweils
 # an der betroffenen Stelle im Skript wiederholt):
 #
@@ -308,20 +330,89 @@ hac_fitted_ci <- function(fit_obj, zieljahr, level = 0.95) {
 # zweier Laender werden Kontrast-CIs durch elementweise Differenzbildung
 # gewonnen (Annahme unabhaengiger Laender-Zeitreihen, analog zur HAC-
 # Delta-Formel SE(Delta)=sqrt(SE1^2+SE2^2), SAP 5.4).
+#
+# NACHBESSERUNG (unabhaengiger Validierungsbericht zur v1.1-Pruefung,
+# Analysen/2026-08-thg-laendervergleich/Validierungsbericht_THG-Laendervergleich.md,
+# Abschnitt 6 "Auffaelliger Befund Saarland n=8 Bootstrap-CI", Auflage 1):
+# Fruehere Implementierung resampelte ROHWERTE (y) blockweise ueber die
+# Zeilen und setzte danach die Jahr-Spalte wieder auf die feste Original-
+# Reihenfolge zurueck (resampled$Jahr <- daten$Jahr). Dadurch wurde die x-y-
+# Kopplung im Replikat teilweise aufgebrochen: ein block-resampelter y-Wert
+# konnte einer Jahres-Position zugeordnet werden, aus der er gar nicht
+# stammte. Bei kurzen, stark getrendeten und/oder lueckenhaften Zeitreihen
+# mit Extrapolation aufs Zieljahr (exakt die Konstellation von Saarland
+# n=8, Luecke 2017/2018, steilste Steigung aller sechs Land x
+# Fenster-Modelle) daempft dies die im Replikat geschaetzte Steigung im
+# Mittel Richtung null ("Attenuation") und verschiebt die Bootstrap-
+# Verteilung der extrapolierten Fitted-Werte systematisch nach oben - beim
+# konkreten Befund so stark, dass die untere 2.5%-Perzentil-Grenze ueber dem
+# Punktschaetzer lag (methodisch nicht vertretbar fuer ein Perzentil-CI).
+#
+# Neues Vorgehen (Residual-basierter Moving-Block-Bootstrap): Das
+# Originalmodell wird EINMAL gefittet; anschliessend werden nur die RESIDUEN
+# (nicht die Rohwerte) blockweise resampelt und positionsgetreu auf die
+# deterministische Trendkomponente (fitted() an der jeweils EIGENEN
+# Original-Jahres-Position) zurueckaddiert. Position i im Replikat erhaelt
+# also immer Jahr[i] und fitted_orig[i] + resampeltes Residuum an Position
+# i - die x-y-Kopplung (welcher Wert zu welchem Jahr gehoert) bleibt damit
+# in jedem Replikat exakt erhalten, unabhaengig davon, ob die Zeitreihe
+# aequidistant ist oder Luecken hat. Blocklaenge (block_len=2) und
+# Konfidenzniveau sind unveraendert wie im SAP spezifiziert; geaendert wird
+# ausschliesslich der Resampling-Mechanismus (Residuen statt Rohwerte).
+#
+# Hinweis zur Blockbildung bei nicht-aequidistantem n=8-Fenster (Sprung
+# 2016->2019; Validierungsbericht, Auflage 2, explizit zu pruefen/zu
+# dokumentieren): Die Bloecke werden weiterhin ueber ZEILEN-POSITIONEN
+# (1..n in der nach Jahr sortierten Tabelle) gebildet, nicht ueber
+# tatsaechliche Jahresabstaende. Ein Block kann daher Residuen aus der Zeit
+# VOR und NACH der Luecke zusammenfassen (z. B. Zeilenposition 3 = Jahr 2016
+# und Position 4 = Jahr 2019 im n=8-Fenster). Weil hier ausschliesslich
+# RESIDUEN resampelt und positionsgetreu auf die jeweils EIGENE
+# Jahres-Position zurueckaddiert werden, entsteht dadurch KEINE x-y-
+# Fehlkopplung mehr (das war das eigentliche, jetzt behobene Problem). Es
+# verbleibt jedoch eine inhaltliche Vereinfachung: Die block-interne
+# Korrelationsstruktur, die der MBB eigentlich abbilden soll (Persistenz
+# zwischen benachbarten JAHREN), wird technisch durch Persistenz zwischen
+# benachbarten ZEILEN approximiert; bei einem 3-Jahres-Sprung ist diese
+# Naeherung unscharf. Eine jahresabstands-bewusste Blockbildung (z. B.
+# Bloecke ausschliesslich innerhalb der beiden zusammenhaengenden
+# Teilreihen 2014-2016 und 2019-2023 bilden) ist im SAP nicht spezifiziert.
+# Entscheidung (dokumentiert statt eigenmaechtig geaendert): Die
+# zeilenbasierte Blockbildung wird beibehalten, weil (a) die x-y-Kopplung
+# durch das Residual-MBB bereits gesichert ist, (b) block_len=2 die
+# Wahrscheinlichkeit einer luecken-uebergreifenden Blockbildung ohnehin
+# gering haelt (im n=8-Fenster kann nur EIN Blockstart von sieben moeglichen
+# die Luecke ueberspannen), und (c) SAP-Amendment v1.1 die Blocklaenge und
+# das Resampling-Grundprinzip nicht zur Disposition stellt. Eine
+# abstandsbewusste Blockbildung waere eine methodische Neuerung ueber den
+# SAP-Auftrag hinaus und wird daher NICHT eigenmaechtig eingefuehrt, sondern
+# hier als "Abweichung vom SAP - Rueckfrage an Mensch" dokumentiert, falls
+# eine solche Verfeinerung inhaltlich gewuenscht ist.
 mbb_replicates <- function(daten, zieljahr, R = R_BOOT, block_len = BLOCK_LEN) {
   n <- nrow(daten)
   block_len <- min(block_len, n - 1)
   n_bloecke <- ceiling(n / block_len)
   starts_pool <- 1:(n - block_len + 1)
+
+  # Originalmodell einmal fitten: deterministische Trendkomponente
+  # (fitted_orig) und Residuen (resid_orig), beide positionsgleich zu
+  # daten$Jahr (Tabelle ist bereits nach Jahr sortiert, siehe fit_ols_jahre).
+  modell_orig <- lm(y ~ Jahr, data = daten)
+  fitted_orig <- fitted(modell_orig)
+  resid_orig <- residuals(modell_orig)
+  jahr_orig <- daten$Jahr
+
   sapply(seq_len(R), function(i) {
     idx_start <- sample(starts_pool, n_bloecke, replace = TRUE)
     idx <- unlist(lapply(idx_start, function(s) s:(s + block_len - 1)))
     idx <- idx[idx <= n][seq_len(n)]
     idx[is.na(idx)] <- sample.int(n, sum(is.na(idx)), replace = TRUE)
-    resampled <- daten[idx, ]
-    resampled$Jahr <- daten$Jahr  # Jahr-Achse fix, nur y wird block-resampled
-    m <- lm(y ~ Jahr, data = resampled)
-    as.numeric(predict(m, newdata = data.frame(Jahr = zieljahr)))
+    # Residuen (nicht Rohwerte) blockweise resampeln und positionsgetreu auf
+    # die deterministische Trendkomponente der jeweils EIGENEN Original-
+    # Jahres-Position zurueckaddieren -> x-y-Kopplung bleibt erhalten.
+    y_rekonstruiert <- fitted_orig + resid_orig[idx]
+    m <- lm(y_rekonstruiert ~ jahr_orig)
+    as.numeric(cbind(1, zieljahr) %*% coef(m))
   })
 }
 
@@ -375,6 +466,21 @@ kontrast <- function(fit_a, fit_b, label, df_override = NULL) {
        upr = delta + tcrit * se, df = df, t = tstat, p = p)
 }
 
+# Formatiert einen (ggf. lueckenhaften) Jahres-Vektor als lesbare
+# Bereichs-Notation, z.B. c(2014:2016, 2019:2023) -> "2014-2016 + 2019-2023"
+# statt der irrefuehrenden reinen Min-Max-Bindestrich-Range "2014-2023"
+# (Validierungsbericht zur v1.1-Pruefung, Abschnitt 6, Auflage 3 -- optional/
+# geringe Prioritaet, hier ergaenzt fuer Konsolen-/Log-Klarheit).
+format_jahre_bereich <- function(jahre_vec) {
+  j <- sort(unique(jahre_vec))
+  bruch_pos <- c(0, which(diff(j) > 1), length(j))
+  segs <- sapply(seq_len(length(bruch_pos) - 1), function(i) {
+    seg <- j[(bruch_pos[i] + 1):bruch_pos[i + 1]]
+    if (length(seg) == 1) as.character(seg) else paste(range(seg), collapse = "-")
+  })
+  paste(segs, collapse = " + ")
+}
+
 #===============================================================================
 # SAP 5.1-5.4/7: Vollstaendige Analyse EINER Fenstervariante
 # (wird unten fuer n=5 UND n=8 aufgerufen -- Amendment v1.1, Aenderung 2)
@@ -384,7 +490,7 @@ analysiere_fenster <- function(label, jahre_vec, df_wide, zieljahr) {
 
   cat(sprintf("\n########################################################\n"))
   cat(sprintf("# Primaere Fenstervariante %s (Jahre: %s, n=%d)\n",
-              label, paste(range(jahre_vec), collapse = "-"), length(jahre_vec)))
+              label, format_jahre_bereich(jahre_vec), length(jahre_vec)))
   cat(sprintf("########################################################\n\n"))
 
   landmodelle <- lapply(c("Bayern", "Berlin", "Saarland"), baue_landmodell,
@@ -413,6 +519,37 @@ analysiere_fenster <- function(label, jahre_vec, df_wide, zieljahr) {
                 ifelse(is.null(dw), NA, dw$statistic),
                 ifelse(is.null(dw), NA, dw$p.value),
                 ifelse(!is.null(dw) && dw$p.value < alpha, "(signifikant @ 0.05)", "(nicht signifikant)")))
+    # Laender-/fensterspezifische Nichtlinearitaets-Dokumentation bei
+    # signifikanter DW-Autokorrelation (SAP 5.2: "bei erkennbarer
+    # Nichtlinearitaet ... wird dies dokumentiert"; Validierungsbericht zur
+    # v1.1-Pruefung, Abschnitt 6, Auflage 4 -- ergaenzt eine konkrete,
+    # inhaltliche Anmerkung statt nur der generischen DW/BG-Sammelmeldung
+    # weiter unten in SAP 5.3).
+    if (!is.null(dw) && dw$p.value < alpha) {
+      jahre_sortiert <- sort(landmodelle[[l]]$daten$Jahr)
+      luecken_pos <- which(diff(jahre_sortiert) > 1)
+      if (length(luecken_pos) > 0) {
+        luecken_vor <- jahre_sortiert[luecken_pos]
+        luecken_nach <- jahre_sortiert[luecken_pos + 1]
+        cat(sprintf(paste0(
+          "  -> SAP-5.2-Anmerkung (Nichtlinearitaet/Struktur, land-/fensterspezifisch):\n",
+          "     Die signifikante DW-Autokorrelation bei %s im Fenster %s faellt mit\n",
+          "     einer Datenluecke zwischen %s und %s zusammen. Das Residuenmuster ist\n",
+          "     konsistent mit einem moeglichen lokalen Niveau-/Struktur-\n",
+          "     unterschied zwischen der Teilreihe vor und nach der Luecke, den ein\n",
+          "     einzelnes lineares Trendmodell nicht vollstaendig abbildet - ein\n",
+          "     Hinweis auf moegliche Nichtlinearitaet rund um die Luecke, nicht\n",
+          "     zwingend auf durchgehende Jahr-zu-Jahr-Persistenz. Siehe auch\n",
+          "     Diagnostik-Plot output/diagnostik_residuen_vs_jahr_%s.png.\n"
+        ), l, label, paste(luecken_vor, collapse = "/"), paste(luecken_nach, collapse = "/"), label))
+      } else {
+        cat(sprintf(paste0(
+          "  -> SAP-5.2-Anmerkung: signifikante DW-Autokorrelation bei %s (Fenster %s)\n",
+          "     ohne erkennbare Datenluecke im Fenster; keine spezifische\n",
+          "     Nichtlinearitaets-Zuordnung zu einer Luecke moeglich.\n"
+        ), l, label))
+      }
+    }
     cat(sprintf("Breusch-Godfrey (Ordnung 1): LM=%.3f, p=%.3f %s\n",
                 ifelse(is.null(bg), NA, bg$statistic),
                 ifelse(is.null(bg), NA, bg$p.value),
