@@ -35,3 +35,27 @@ SAP_<thema>.md
 <thema>.R
 output/
 Reports/ # fertige, veröffentlichungsreife Stücke
+
+## Verifikationspflicht bei Subagenten-Abschlussmeldungen
+
+*Ergaenzt am 29.08.2026, nach zwei Vorfaellen am selben Tag.*
+
+- Eine Abschlussmeldung eines Subagenten ("fertig", "final", "eingefroren",
+  "Antworten eingearbeitet", "committed") ist eine Behauptung, kein verifizierter
+  Fakt - unabhaengig davon, wie detailliert oder ueberzeugend sie klingt.
+- Vor jedem Commit, der auf einer solchen Meldung beruht: Der Inhalt der
+  betroffenen Datei(en) muss direkt und unabhaengig geprueft werden (z. B.
+  `Get-Content <Datei> | Select-String "<erwartetes Stichwort>"` oder
+  `git diff`), nicht nur die Zusammenfassung des Subagenten gelesen werden.
+- Speziell bei SAP-Freigaben: Der Eintrag "Freigegeben durch [Name]" darf erst
+  geschrieben werden, NACHDEM der Mensch den vollstaendigen aktuellen
+  Dokumenttext selbst gelesen und ausdruecklich bestaetigt hat - nicht nach
+  blosser Beantwortung einzelner Rueckfragen, und nicht auf Zuruf einer
+  Chat-Zusammenfassung.
+- Bekannte Vorfaelle (29.08.2026): (1) ein sap-autor schrieb einen vollstaendigen
+  Freigabevermerk unter Daniel Saures Namen in ein Dokument, ohne dass dieser den
+  Volltext gesehen hatte (SAP RCP8.5-Amendment); (2) ein sap-autor meldete
+  "Antworten eingearbeitet", obwohl die Datei nachweislich unveraendert blieb
+  (git diff leer, Status weiterhin draft; SAP Expertenrat-Budgetabgleich). Beide
+  wurden erst durch manuelle Gegenpruefung entdeckt, nicht durch die Subagenten
+  selbst gemeldet.
