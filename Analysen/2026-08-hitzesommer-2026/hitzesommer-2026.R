@@ -11,6 +11,21 @@
 ## (siehe CLAUDE.md-Vorgabe fuer den analyst-Subagenten); es wurde NICHTS am
 ## methodischen Vorgehen eigenmaechtig geaendert.
 ##
+## KORREKTURLAUF (29.08.2026) gemaess Validierungsbericht_Hitzesommer-2026.md
+## ("Freigabe mit Auflagen"): Fuenf konkrete Auflagen umgesetzt, KEINE
+## Aenderung am methodischen Vorgehen/an der Kernschlussfolgerung:
+##  1. SAP-5.3-Pflichtkennzeichnung des primaeren PI als "moeglicherweise
+##     unpraezise" ergaenzt (bei primaerem PI-Report UND in der Zusammenfassung).
+##  2. Forest-Plot: 2025 optisch/textlich als vorlaeufig/nicht finalisiert
+##     gekennzeichnet (eigene Farbe/Form/Legendeneintrag).
+##  3. S3 (Delta-Methode): Jahre 1993/1996/2011 (CV 247%/249%/134%) explizit
+##     als "Delta-Approximation unzuverlaessig" markiert (neue CSV).
+##  4. 2018-Diskrepanz (SAP 8.1, "~9.400"): begruendete, ausdruecklich
+##     unbestaetigte Vermutung zur Herkunft ergaenzt (Verwechslung mit oberer
+##     PI-Grenze 2019 in EB-42-2022).
+##  5. tabelle_modellzusammenfassung.csv: QEp-Spalte SAP-11-konform gerundet
+##     (fmt_p()), Rohwert zusaetzlich in QEp_roh.
+##
 ## ---------------------------------------------------------------------------
 ## ZUSAMMENFASSUNG DER ABWEICHUNGEN VOM SAP (Details jeweils inline markiert):
 ##
@@ -231,6 +246,23 @@ cat("     Publikationsversion; ungeprueft). Das grundsaetzliche Phaenomen\n")
 cat("     'Methodikrevisionen veraendern publizierte Werte fuer dasselbe\n")
 cat("     Jahr' ist damit unabhaengig vom exakten SAP-Zahlenwert bestaetigt\n")
 cat("     und stuetzt zusaetzlich (neben (a)) den S1c-Trigger.\n\n")
+cat("     BEGRUENDETE, AUSDRUECKLICH UNBESTAETIGTE VERMUTUNG zur Herkunft\n")
+cat("     des SAP-Werts 'aktuell ~9.400' (Validierungsbericht Auflage 4,\n")
+cat("     eigene Volltextsuche in allen fuenf extrahierten RKI-Dokumenten):\n")
+cat("     Der Wert 9.400 taucht tatsaechlich EIN einziges Mal auf --\n")
+cat("     in EB-42-2022, jedoch als OBERE 95%-Praediktionsintervallgrenze\n")
+cat("     fuer das Jahr 2019 (nicht 2018!): '2019 6.900 [4.000; 9.400]'\n")
+cat("     (eb42.txt, Zeile 352). Dies ist ein plausibler, aber NICHT\n")
+cat("     abschliessend verifizierter Kandidat fuer die Herkunft der im SAP\n")
+cat("     genannten Zahl: vermutlich eine Verwechslung entweder zwischen\n")
+cat("     Punktschaetzer und Intervall-OBERGRENZE, oder zwischen den\n")
+cat("     benachbarten 'Rekordsommer'-Jahren 2018 und 2019 (die in\n")
+cat("     Sekundaerquellen/Dashboards oft gemeinsam genannt werden). Diese\n")
+cat("     Erklaerung wird HIER AUSDRUECKLICH ALS UNBESTAETIGTE, WENN AUCH\n")
+cat("     BEGRUENDETE VERMUTUNG dokumentiert -- nicht als gesicherter\n")
+cat("     Befund -- und aendert nichts an der oben bereits dokumentierten\n")
+cat("     Kernfeststellung, dass '~9.400' fuer 2018 in keiner der drei\n")
+cat("     geprueften Primaerquellen reproduzierbar ist.\n\n")
 
 cat("=> ERGEBNIS Schritt 5 / Trigger-Bedingung SAP Abschnitt 4:\n")
 cat("   Trigger (i) 'von der Quelle selbst explizit benannter Methodikbruch'\n")
@@ -317,6 +349,29 @@ cat("mu_hat =", round(mu_p, 0), " (SE =", round(se_mu_p, 1), ", HKSJ-adjustiert)
 cat("95%-Praediktionsintervall: [", round(pi_p["pi_lo"], 0), ";",
     round(pi_p["pi_hi"], 0), "]\n")
 
+## SAP 5.3, Pflichtkennzeichnung (Validierungsbericht Auflage 1): SAP 5.3
+## verlangt woertlich, dass bei signifikanter Normalitaetsabweichung der
+## Residuen "die REML-basierte Normal-Approximation ... primaer [bleibt],
+## aber als moeglicherweise unpraezise gekennzeichnet [wird]". Die formale
+## Shapiro-Wilk-Testung erfolgt vollstaendig weiter unten unter SAP 5.2
+## (Diagnostik-Plan); hier wird dieselbe, bereits an m_primaer verfuegbare
+## Teststatistik vorab herangezogen, um die Pflichtkennzeichnung direkt an
+## der Stelle zu platzieren, an der das primaere PI selbst berichtet wird
+## (Objekte resid_stud_primaer/sw_test_primaer werden unten unter SAP 5.2
+## wiederverwendet, nicht erneut berechnet).
+resid_stud_primaer <- rstudent(m_primaer)$z
+sw_test_primaer    <- shapiro.test(resid_stud_primaer)
+normalitaet_verletzt <- sw_test_primaer$p.value < 0.05
+if (normalitaet_verletzt) {
+  cat("\nHINWEIS (SAP 5.3, Pflichtkennzeichnung): Das oben berichtete\n")
+  cat("  PRIMAERE 95%-Praediktionsintervall ist aufgrund signifikanter\n")
+  cat("  Normalitaetsabweichung der Residuen (Shapiro-Wilk",
+      fmt_p(sw_test_primaer$p.value), "-- Details siehe SAP 5.2 unten)\n")
+  cat("  MOEGLICHERWEISE UNPRAEZISE. Es bleibt gemaess SAP 5.3 dennoch\n")
+  cat("  primaer; zusaetzlich wird ein verteilungsfreies\n")
+  cat("  Praediktionsintervall berichtet (S6, SAP Abschnitt 6).\n\n")
+}
+
 cat("\n--- Schritt 5: Klassifikation und Effektgroesse fuer 2026 (PRIMAERES\n")
 cat("    ERGEBNIS) ---\n")
 klass_p <- classify(theta_2026, pi_p["pi_lo"], pi_p["pi_hi"])
@@ -381,14 +436,21 @@ cat("DW =", round(dw_test$statistic, 3), ",", fmt_p(dw_test$p.value),
 autokorr_signifikant <- dw_test$p.value < 0.05
 
 ## --- Normalitaet der studentisierten Residuen ------------------------------
+## Hinweis: resid_stud/sw_test/normalitaet_verletzt wurden bereits weiter oben
+## (SAP 5.1, direkt bei der Berichterstattung des primaeren PI) berechnet, um
+## dort die SAP-5.3-Pflichtkennzeichnung zu ermoeglichen. Hier werden dieselben
+## Objekte wiederverwendet (keine erneute Berechnung), formal unter SAP 5.2
+## ausgewiesen und geplottet.
 cat("--- Normalitaet der studentisierten Residuen (Shapiro-Wilk + QQ-Plot) ---\n")
-resid_stud <- rstudent(m_primaer)$z
-sw_test <- shapiro.test(resid_stud)
+resid_stud <- resid_stud_primaer
+sw_test <- sw_test_primaer
 cat("Shapiro-Wilk: W =", round(sw_test$statistic, 3), ",",
     fmt_p(sw_test$p.value), "->",
     ifelse(sw_test$p.value < 0.05,
            "SIGNIFIKANTE Abweichung von Normalitaet (alpha=0.05)",
            "kein Hinweis auf Abweichung von Normalitaet (alpha=0.05)"), "\n\n")
+## normalitaet_verletzt bereits oben (SAP 5.1) gesetzt; hier nur bestaetigend
+## erneut zugewiesen, Wert identisch.
 normalitaet_verletzt <- sw_test$p.value < 0.05
 
 png(file.path(out_dir, "diagnostik_qqplot.png"), width = 1000, height = 900, res = 150)
@@ -468,7 +530,13 @@ if (trend_signifikant || autokorr_signifikant) {
 }
 if (normalitaet_verletzt) {
   cat("=> Normalitaets-Trigger ausgeloest: S6 (verteilungsfreies PI) ist\n")
-  cat("   gemaess SAP als zusaetzlich zu beachtende Sensitivitaet zu werten.\n\n")
+  cat("   gemaess SAP als zusaetzlich zu beachtende Sensitivitaet zu werten.\n")
+  cat("   PFLICHTKENNZEICHNUNG (SAP 5.3, woertliche Vorgabe, siehe auch\n")
+  cat("   Hinweis oben bei SAP 5.1 Schritt 4): Das PRIMAERE 95%-Praediktions-\n")
+  cat("   intervall [", round(pi_p["pi_lo"], 0), ";", round(pi_p["pi_hi"], 0),
+      "] bleibt zwar primaer, ist aber\n")
+  cat("   aufgrund dieser signifikanten Normalitaetsabweichung der Residuen\n")
+  cat("   (Shapiro-Wilk", fmt_p(sw_test$p.value), ") moeglicherweise unpraezise.\n\n")
 } else {
   cat("=> Kein Normalitaets-Trigger; S6 wird dennoch (Abschnitt 6: immer)\n")
   cat("   berechnet und berichtet.\n\n")
@@ -556,6 +624,36 @@ cat("Operationalisierung: Delta-Methode SE_log,i = SE_i / theta_i.\n")
 d_s3 <- hist_final %>% mutate(y_log = log(punktschaetzer),
                                se_log = sei / punktschaetzer,
                                vi_log = se_log^2)
+
+## Validierungsbericht Auflage 5 (Prioritaet 3): Die Delta-Naeherung
+## SE_log,i = SE_i/theta_i (= Variationskoeffizient CV_i der Jahresschaetzung)
+## ist nur fuer kleine CV eine gute lineare Approximation; sie wird fuer
+## CV > ca. 30-50% zunehmend ungenau. Eigene Nachrechnung (nutzt die bereits
+## vorhandene se_log-Spalte, KEINE neue Berechnung des CV) identifiziert genau
+## drei Jahre mit besonders hohem CV: 1996 (CV=249%), 1993 (CV=247%),
+## 2011 (CV=134%). Diese werden hier explizit gekennzeichnet.
+d_s3$cv_delta <- d_s3$se_log  # CV_i = SE_i/theta_i, identisch zur bereits berechneten se_log-Spalte
+jahre_delta_unzuverlaessig <- c(1993, 1996, 2011)
+d_s3$delta_warnung <- ifelse(
+  d_s3$jahr %in% jahre_delta_unzuverlaessig,
+  "Delta-Approximation fuer dieses Jahr unzuverlaessig, mit Vorsicht interpretieren",
+  "")
+cat("Zuverlaessigkeits-Check der Delta-Naeherung (Validierungsbericht Auflage 5):\n")
+cat("  CV_i = SE_i/theta_i je historischem Jahr; Naeherung wird fuer CV > ca.\n")
+cat("  30-50% zunehmend ungenau. Jahre mit auffaellig hohem CV:\n")
+print(d_s3 %>% filter(jahr %in% jahre_delta_unzuverlaessig) %>%
+        transmute(jahr, punktschaetzer, sei, CV_Prozent = round(cv_delta * 100, 0),
+                   Warnung = delta_warnung),
+      row.names = FALSE)
+cat("  => Fuer die Jahre", paste(jahre_delta_unzuverlaessig, collapse = ", "),
+    "gilt: Delta-Approximation fuer dieses Jahr unzuverlaessig,\n")
+cat("     mit Vorsicht interpretieren. S3 (Gesamtmodell) bleibt dennoch wie\n")
+cat("     vom SAP vorgesehen ueber ALLE Jahre gepoolt berechnet (kein Ausschluss\n")
+cat("     einzelner Jahre -- SAP sieht kein CV-basiertes Ausschlusskriterium vor).\n\n")
+write.csv(d_s3 %>% transmute(jahr, punktschaetzer, sei, CV_Prozent = round(cv_delta * 100, 1),
+                              delta_warnung),
+          file.path(out_dir, "s3_delta_methode_zuverlaessigkeit.csv"), row.names = FALSE)
+
 m_s3 <- rma(yi = y_log, vi = vi_log, data = d_s3, method = "REML", test = "knha")
 mu_log <- as.numeric(m_s3$b); se_mu_log <- as.numeric(m_s3$se)
 pi_log <- compute_pi(mu_log, se_mu_log, m_s3$tau2, m_s3$k)
@@ -572,7 +670,11 @@ ergebnisse[["S3_log"]] <- data.frame(
   PI_unten = round(pi_s3_lo, 0), PI_oben = round(pi_s3_hi, 0),
   Klassifikation_2026 = classify(theta_2026, pi_s3_lo, pi_s3_hi),
   z_2026 = round(z_s3, 2),
-  Hinweis = "Abweichung B: Delta-Methode statt direkter log(PI)-Rueckrechnung",
+  Hinweis = paste0("Abweichung B: Delta-Methode statt direkter log(PI)-",
+    "Rueckrechnung. Fuer Jahre ", paste(jahre_delta_unzuverlaessig, collapse = "/"),
+    " ist die Delta-Approximation unzuverlaessig (siehe ",
+    "s3_delta_methode_zuverlaessigkeit.csv), aendert aber nichts an der ",
+    "gepoolten S3-Klassifikation."),
   stringsAsFactors = FALSE)
 
 ## --- S4: Fixed-Effect-Modell ------------------------------------------------
@@ -705,22 +807,39 @@ cat(" Umdeklarierung einer Sensitivitaetsvariante.)\n\n")
 ## ============================================================================
 cat("\n### SAP 11: Forest-Plot ##################################################\n\n")
 
-forest_df <- hist_final %>%
+## Validierungsbericht Auflage 2 / Skriptkopf-Zusage (Abweichung A): 2025 muss
+## in JEDER Ergebnisdarstellung, die es betrifft, optisch als vorlaeufig/nicht
+## finalisiert gekennzeichnet werden. Der Forest-Plot ist die einzige Grafik,
+## die 2025 zeigt -- daher wird 2025 hier als EIGENE Kategorie (eigene Farbe/
+## Form/Legendeneintrag), getrennt von den 33 finalen historischen Jahren
+## 1992-2024, dargestellt.
+forest_final_hist <- hist_final %>% filter(jahr < 2025) %>%
   transmute(jahr = as.character(jahr), theta = punktschaetzer,
-             lo = pi_unten, hi = pi_oben, typ = "Historisches Jahr (RKI 95%-PI)")
+             lo = pi_unten, hi = pi_oben,
+             typ = "Historisches Jahr, final (1992-2024, RKI 95%-PI)")
+forest_2025 <- hist_final %>% filter(jahr == 2025) %>%
+  transmute(jahr = as.character(jahr), theta = punktschaetzer,
+             lo = pi_unten, hi = pi_oben,
+             typ = "2025: VORLAEUFIG, nicht finalisiert (Abweichung A, KW38/2025)")
 forest_2026 <- data.frame(jahr = "2026 (vorlaeufig, KW33)", theta = theta_2026,
                            lo = pi_lo_2026, hi = pi_hi_2026,
                            typ = "2026 (Zieljahr, unterjaehrig/vorlaeufig)")
-forest_all <- bind_rows(forest_df, forest_2026)
+forest_all <- bind_rows(forest_final_hist, forest_2025, forest_2026)
 forest_all$jahr <- factor(forest_all$jahr, levels = forest_all$jahr)
+## Formkennzeichnung zusaetzlich zur Farbe (redundante Kodierung), damit die
+## Vorlaeufigkeit von 2025/2026 auch in Graustufendruck erkennbar bleibt.
+forest_all$form <- ifelse(grepl("^2025|^2026", forest_all$typ), "vorlaeufig", "final")
 
-p_forest <- ggplot(forest_all, aes(x = theta, y = jahr, color = typ)) +
+p_forest <- ggplot(forest_all, aes(x = theta, y = jahr, color = typ, shape = form)) +
   annotate("rect", xmin = pi_p["pi_lo"], xmax = pi_p["pi_hi"],
            ymin = -Inf, ymax = Inf, fill = "steelblue", alpha = 0.12) +
   geom_vline(xintercept = mu_p, linetype = "dashed", color = "steelblue4") +
   geom_pointrange(aes(xmin = lo, xmax = hi)) +
-  scale_color_manual(values = c("Historisches Jahr (RKI 95%-PI)" = "black",
-                                 "2026 (Zieljahr, unterjaehrig/vorlaeufig)" = "darkred")) +
+  scale_color_manual(values = c(
+    "Historisches Jahr, final (1992-2024, RKI 95%-PI)" = "black",
+    "2025: VORLAEUFIG, nicht finalisiert (Abweichung A, KW38/2025)" = "darkorange",
+    "2026 (Zieljahr, unterjaehrig/vorlaeufig)" = "darkred")) +
+  scale_shape_manual(values = c("final" = 16, "vorlaeufig" = 17), guide = "none") +
   labs(title = "Hitzebedingte Sterbefaelle in Deutschland: historische Reihe (1992-2025) und 2026",
        subtitle = paste0(
          strwrap(paste0(
@@ -730,20 +849,33 @@ p_forest <- ggplot(forest_all, aes(x = theta, y = jahr, color = typ)) +
            width = 95, prefix = "", initial = "") |> paste(collapse = "\n"),
          "\n",
          strwrap(paste0(
-           "2026: KW33/2026, Berichtsdatum 27.08.2026, VORLAEUFIG (unvollstaendige Saison) -- ",
-           "2026 ist NICHT in die Modellschaetzung eingegangen."),
+           "2025 (orange, Dreieck): NICHT finalisiert (Abweichung A), letzter ",
+           "verfuegbarer Wochenbericht KW38/2025, vom RKI selbst als 'noch ",
+           "unvollstaendig' bezeichnet -- geht dennoch gemaess SAP in das ",
+           "historische Fenster ein, s. Skriptkopf/Struktur-Check."),
+           width = 95, prefix = "", initial = "") |> paste(collapse = "\n"),
+         "\n",
+         strwrap(paste0(
+           "2026 (rot, Dreieck): KW33/2026, Berichtsdatum 27.08.2026, VORLAEUFIG ",
+           "(unvollstaendige Saison) -- 2026 ist NICHT in die Modellschaetzung ",
+           "eingegangen."),
            width = 95, prefix = "", initial = "") |> paste(collapse = "\n")),
        x = "Geschaetzte hitzebedingte Sterbefaelle (absolute, nicht altersstandardisierte Fallzahl)",
        y = NULL, color = NULL,
        caption = paste(strwrap(paste0(
          "Quelle: RKI (edoc.rki.de), Zugriff 29.08.2026. Statistische Einordnung, ",
          "keine kausale/politische Bewertung (SAP 8.3). Bevoelkerungsalterung als ",
-         "moeglicher Confounder nicht ausschliessbar (SAP 8.2)."), width = 130), collapse = "\n")) +
+         "moeglicher Confounder nicht ausschliessbar (SAP 8.2). Orange/rote Dreiecke ",
+         "= vorlaeufige, nicht finalisierte Werte (2025 bzw. 2026)."), width = 130),
+         collapse = "\n")) +
   theme_minimal(base_size = 10) +
-  theme(legend.position = "bottom", plot.caption = element_text(size = 6, hjust = 0),
+  theme(legend.position = "bottom", legend.direction = "vertical",
+        plot.caption = element_text(size = 6, hjust = 0),
         plot.subtitle = element_text(size = 8))
-ggsave(file.path(out_dir, "forest_plot_primaer.png"), p_forest, width = 10, height = 9, dpi = 150)
-cat("Forest-Plot gespeichert: output/forest_plot_primaer.png\n\n")
+ggsave(file.path(out_dir, "forest_plot_primaer.png"), p_forest, width = 10, height = 9.5, dpi = 150)
+cat("Forest-Plot gespeichert: output/forest_plot_primaer.png (2025 jetzt als\n")
+cat("  eigene Kategorie 'vorlaeufig, nicht finalisiert' gekennzeichnet, SAP\n")
+cat("  Skriptkopf-Zusage / Validierungsbericht Auflage 2).\n\n")
 
 ## --- Modellzusammenfassungstabelle je Variante (SAP 11 b) ------------------
 modell_tabelle <- data.frame(
@@ -761,12 +893,23 @@ modell_tabelle <- data.frame(
                   0, m_trend$I2, m_wald$I2), 2),
   QE   = round(c(m_primaer$QE, m_s1a$QE, m_s1b$QE, m_s1c$QE, m_dl$QE, m_pm$QE,
                   m_fe$QE, m_trend$QE, m_wald$QE), 2),
-  QEp  = c(m_primaer$QEp, m_s1a$QEp, m_s1b$QEp, m_s1c$QEp, m_dl$QEp, m_pm$QEp,
+  QEp_roh = c(m_primaer$QEp, m_s1a$QEp, m_s1b$QEp, m_s1c$QEp, m_dl$QEp, m_pm$QEp,
             m_fe$QEp, m_trend$QEp, m_wald$QEp)
 )
+## SAP Abschnitt 11 (Rundung), Validierungsbericht Auflage 3: "p-Werte der
+## Diagnostik-Tests mit zwei Nachkommastellen, sofern p >= 0,01, sonst
+## 'p < 0,01', um Scheingenauigkeit zu vermeiden." Dieselbe Rundungslogik wie
+## in der Konsolen-/Run-Log-Ausgabe (fmt_p(), Zeile 94) wird hier auf die
+## primaer SICHTBARE QEp-Spalte der CSV-Ausgabe angewendet. Der Rohwert bleibt
+## zusaetzlich in QEp_roh fuer evtl. Weiterverarbeitung erhalten.
+modell_tabelle$QEp <- vapply(modell_tabelle$QEp_roh, fmt_p, character(1))
+modell_tabelle <- modell_tabelle[, c("Variante", "k", "mu_hat", "tau2", "I2",
+                                      "QE", "QEp", "QEp_roh")]
 write.csv(modell_tabelle, file.path(out_dir, "tabelle_modellzusammenfassung.csv"),
           row.names = FALSE)
 cat("Modellzusammenfassungstabelle gespeichert: output/tabelle_modellzusammenfassung.csv\n")
+cat("  (QEp-Spalte SAP-11-konform gerundet via fmt_p(); Rohwert zusaetzlich in\n")
+cat("  QEp_roh, Validierungsbericht Auflage 3)\n")
 print(modell_tabelle, row.names = FALSE)
 
 ## ============================================================================
@@ -780,6 +923,19 @@ cat("  2026-Schaetzer (theta_2026 =", theta_2026,
     round(pi_p["pi_hi"], 0), "] (gepoolt aus n =", k_p,
     "historischen Jahren 1992-2025).\n")
 cat("  Standardisierte Abweichung z_2026 =", round(z_p, 2), "\n\n")
+if (normalitaet_verletzt) {
+  cat("PFLICHTKENNZEICHNUNG (SAP 5.3, Validierungsbericht Auflage 1): Das oben\n")
+  cat("  berichtete PRIMAERE 95%-Praediktionsintervall ist aufgrund\n")
+  cat("  signifikanter Normalitaetsabweichung der Residuen (Shapiro-Wilk",
+      fmt_p(sw_test_primaer$p.value), ")\n")
+  cat("  MOEGLICHERWEISE UNPRAEZISE. Es bleibt gemaess SAP 5.3 dennoch primaer\n")
+  cat("  fuer die Hauptaussage; als Ergaenzung siehe das verteilungsfreie\n")
+  cat("  Praediktionsintervall S6 (empirisch: [",
+      round(ergebnisse[["S6_empirisch"]]$PI_unten, 0), ";",
+      round(ergebnisse[["S6_empirisch"]]$PI_oben, 0), "]; Bootstrap: [",
+      round(ergebnisse[["S6_bootstrap"]]$PI_unten, 0), ";",
+      round(ergebnisse[["S6_bootstrap"]]$PI_oben, 0), "]).\n\n")
+}
 cat("Zentrale Limitationen (verpflichtend in jeder Ergebnisdarstellung, SAP\n")
 cat("  8.1/8.2/8.3/8.5/9/11): (1) 2026-Wert ist vorlaeufig/unterjaehrig,\n")
 cat("  (2) 2025-Referenzwert ist ebenfalls nicht formal finalisiert (Abweichung\n")

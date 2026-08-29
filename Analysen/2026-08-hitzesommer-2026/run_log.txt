@@ -1,6 +1,6 @@
 ========================================================================
 HITZESOMMER 2026 -- Analyse gemaess SAP_hitzesommer-2026.md v1.1 (final)
-Skriptlauf: 2026-08-29 08:08:41 
+Skriptlauf: 2026-08-29 12:50:47 
 ========================================================================
 
 
@@ -113,6 +113,24 @@ Verwendeter Bericht: RKI-Wochenbericht zur hitzebedingten Mortalitaet
      Jahr' ist damit unabhaengig vom exakten SAP-Zahlenwert bestaetigt
      und stuetzt zusaetzlich (neben (a)) den S1c-Trigger.
 
+     BEGRUENDETE, AUSDRUECKLICH UNBESTAETIGTE VERMUTUNG zur Herkunft
+     des SAP-Werts 'aktuell ~9.400' (Validierungsbericht Auflage 4,
+     eigene Volltextsuche in allen fuenf extrahierten RKI-Dokumenten):
+     Der Wert 9.400 taucht tatsaechlich EIN einziges Mal auf --
+     in EB-42-2022, jedoch als OBERE 95%-Praediktionsintervallgrenze
+     fuer das Jahr 2019 (nicht 2018!): '2019 6.900 [4.000; 9.400]'
+     (eb42.txt, Zeile 352). Dies ist ein plausibler, aber NICHT
+     abschliessend verifizierter Kandidat fuer die Herkunft der im SAP
+     genannten Zahl: vermutlich eine Verwechslung entweder zwischen
+     Punktschaetzer und Intervall-OBERGRENZE, oder zwischen den
+     benachbarten 'Rekordsommer'-Jahren 2018 und 2019 (die in
+     Sekundaerquellen/Dashboards oft gemeinsam genannt werden). Diese
+     Erklaerung wird HIER AUSDRUECKLICH ALS UNBESTAETIGTE, WENN AUCH
+     BEGRUENDETE VERMUTUNG dokumentiert -- nicht als gesicherter
+     Befund -- und aendert nichts an der oben bereits dokumentierten
+     Kernfeststellung, dass '~9.400' fuer 2018 in keiner der drei
+     geprueften Primaerquellen reproduzierbar ist.
+
 => ERGEBNIS Schritt 5 / Trigger-Bedingung SAP Abschnitt 4:
    Trigger (i) 'von der Quelle selbst explizit benannter Methodikbruch'
    ist ERFUELLT (COVID-bedingte Modelltrendaenderung ab 2020).
@@ -156,6 +174,14 @@ I^2 = 96.94 % [95%-CI: 95.29 ; 98.26 ]
     Spiegelhalter, df = k-2 = 32 ) ---
 mu_hat = 2955  (SE = 485.4 , HKSJ-adjustiert)
 95%-Praediktionsintervall: [ -2760 ; 8671 ]
+
+HINWEIS (SAP 5.3, Pflichtkennzeichnung): Das oben berichtete
+  PRIMAERE 95%-Praediktionsintervall ist aufgrund signifikanter
+  Normalitaetsabweichung der Residuen (Shapiro-Wilk p < 0.01 -- Details siehe SAP 5.2 unten)
+  MOEGLICHERWEISE UNPRAEZISE. Es bleibt gemaess SAP 5.3 dennoch
+  primaer; zusaetzlich wird ein verteilungsfreies
+  Praediktionsintervall berichtet (S6, SAP Abschnitt 6).
+
 
 --- Schritt 5: Klassifikation und Effektgroesse fuer 2026 (PRIMAERES
     ERGEBNIS) ---
@@ -271,6 +297,11 @@ Signifikante Normalitaetsabweichung (Shapiro-Wilk, alpha=0.05): TRUE
 
 => Normalitaets-Trigger ausgeloest: S6 (verteilungsfreies PI) ist
    gemaess SAP als zusaetzlich zu beachtende Sensitivitaet zu werten.
+   PFLICHTKENNZEICHNUNG (SAP 5.3, woertliche Vorgabe, siehe auch
+   Hinweis oben bei SAP 5.1 Schritt 4): Das PRIMAERE 95%-Praediktions-
+   intervall [ -2760 ; 8671 ] bleibt zwar primaer, ist aber
+   aufgrund dieser signifikanten Normalitaetsabweichung der Residuen
+   (Shapiro-Wilk p < 0.01 ) moeglicherweise unpraezise.
 
 
 ### SAP 6: Sensitivitaetsanalysen S1-S8 ##################################
@@ -292,6 +323,22 @@ Paule-Mandel: tau2 = 7693087 , mu_hat = 2956 , PI = [ -2780 ; 8691 ]
 Abweichung vom SAP (siehe Skriptkopf, Punkt B): 7 von 34 historischen Jahren haben eine untere PI-Grenze <= 0
 (log daher nicht direkt aus den Intervallgrenzen rueckrechenbar).
 Operationalisierung: Delta-Methode SE_log,i = SE_i / theta_i.
+Zuverlaessigkeits-Check der Delta-Naeherung (Validierungsbericht Auflage 5):
+  CV_i = SE_i/theta_i je historischem Jahr; Naeherung wird fuer CV > ca.
+  30-50% zunehmend ungenau. Jahre mit auffaellig hohem CV:
+ jahr punktschaetzer      sei CV_Prozent
+ 1993            100 247.4535        247
+ 1996            160 397.9665        249
+ 2011            230 308.6791        134
+                                                                          Warnung
+ Delta-Approximation fuer dieses Jahr unzuverlaessig, mit Vorsicht interpretieren
+ Delta-Approximation fuer dieses Jahr unzuverlaessig, mit Vorsicht interpretieren
+ Delta-Approximation fuer dieses Jahr unzuverlaessig, mit Vorsicht interpretieren
+  => Fuer die Jahre 1993, 1996, 2011 gilt: Delta-Approximation fuer dieses Jahr unzuverlaessig,
+     mit Vorsicht interpretieren. S3 (Gesamtmodell) bleibt dennoch wie
+     vom SAP vorgesehen ueber ALLE Jahre gepoolt berechnet (kein Ausschluss
+     einzelner Jahre -- SAP sieht kein CV-basiertes Ausschlusskriterium vor).
+
 Log-Skala: mu_hat_log = 7.838 -> rueck-transformiert: 2535 , PI = [ 534 ; 12028 ] (Originalskala)
 
 --- S4: Fixed-Effect-(Common-Effect-)Modell ---
@@ -353,20 +400,20 @@ Wald(z): se(mu_hat) = 483.69 , PI-Breite = 11429
            NA    -2140    8539         oberhalb PI     NA
  7637036.9600    -2760    8671         oberhalb PI   4.46
  7637036.9600    -2759    8670         oberhalb PI   4.46
-                                                          Hinweis
-                             SAP 5.1 -- bindend fuer Hauptaussage
-                                                                 
-                                                                 
-                                                                 
-                                                                 
-                                                                 
- Abweichung B: Delta-Methode statt direkter log(PI)-Rueckrechnung
-                       tau2 auf 0 fixiert; PI=CI unter FE-Annahme
-                                                                 
-       Kein Modell; deskriptive Perzentile der historischen Reihe
-                         Case-Resampling-Bootstrap, seed=20260828
-        identisch zur Primaeranalyse (Referenz fuer S8-Vergleich)
-                                                                 
+                                                                                                                                                                                                                                       Hinweis
+                                                                                                                                                                                                          SAP 5.1 -- bindend fuer Hauptaussage
+                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                              
+ Abweichung B: Delta-Methode statt direkter log(PI)-Rueckrechnung. Fuer Jahre 1993/1996/2011 ist die Delta-Approximation unzuverlaessig (siehe s3_delta_methode_zuverlaessigkeit.csv), aendert aber nichts an der gepoolten S3-Klassifikation.
+                                                                                                                                                                                                    tau2 auf 0 fixiert; PI=CI unter FE-Annahme
+                                                                                                                                                                                                                                              
+                                                                                                                                                                                    Kein Modell; deskriptive Perzentile der historischen Reihe
+                                                                                                                                                                                                      Case-Resampling-Bootstrap, seed=20260828
+                                                                                                                                                                                     identisch zur Primaeranalyse (Referenz fuer S8-Vergleich)
+                                                                                                                                                                                                                                              
 
 Zusammenfassung: In 13 von 13 klassifizierbaren Varianten liegt 2026 ausserhalb des jeweiligen PI.
 (Alle Varianten werden hier gleichrangig vollstaendig berichtet, SAP 7 --
@@ -376,19 +423,33 @@ Zusammenfassung: In 13 von 13 klassifizierbaren Varianten liegt 2026 ausserhalb 
 
 ### SAP 11: Forest-Plot ##################################################
 
-Forest-Plot gespeichert: output/forest_plot_primaer.png
+Forest-Plot gespeichert: output/forest_plot_primaer.png (2025 jetzt als
+  eigene Kategorie 'vorlaeufig, nicht finalisiert' gekennzeichnet, SAP
+  Skriptkopf-Zusage / Validierungsbericht Auflage 2).
 
 Modellzusammenfassungstabelle gespeichert: output/tabelle_modellzusammenfassung.csv
-                       Variante  k mu_hat      tau2    I2     QE           QEp
- Primaer (REML+HKSJ, 1992-2025) 34   2955 7637037.0 96.94 827.76 1.307273e-152
-                S1a (2016-2025) 10   3627 4997218.1 92.34 109.36  1.987743e-19
-                S1b (2011-2025) 15   3291 5418987.1 94.25 233.67  6.764009e-42
-                  S1c (ab 2020)  6   2993  602895.8 56.38  11.73  3.865793e-02
-           S2 DerSimonian-Laird 34   2946 5802368.7 96.01 827.76 1.307273e-152
-                S2 Paule-Mandel 34   2956 7693087.0 96.96 827.76 1.307273e-152
-                S4 Fixed-Effect 34   2014       0.0  0.00 827.76 1.307273e-152
-       S5 Trend-Meta-Regression 34   3566 7759616.3 96.94 782.17 8.694574e-144
-          S8 Wald(z) statt HKSJ 34   2955 7637037.0 96.94 827.76 1.307273e-152
+  (QEp-Spalte SAP-11-konform gerundet via fmt_p(); Rohwert zusaetzlich in
+  QEp_roh, Validierungsbericht Auflage 3)
+                       Variante  k mu_hat      tau2    I2     QE      QEp
+ Primaer (REML+HKSJ, 1992-2025) 34   2955 7637037.0 96.94 827.76 p < 0.01
+                S1a (2016-2025) 10   3627 4997218.1 92.34 109.36 p < 0.01
+                S1b (2011-2025) 15   3291 5418987.1 94.25 233.67 p < 0.01
+                  S1c (ab 2020)  6   2993  602895.8 56.38  11.73 p = 0.04
+           S2 DerSimonian-Laird 34   2946 5802368.7 96.01 827.76 p < 0.01
+                S2 Paule-Mandel 34   2956 7693087.0 96.96 827.76 p < 0.01
+                S4 Fixed-Effect 34   2014       0.0  0.00 827.76 p < 0.01
+       S5 Trend-Meta-Regression 34   3566 7759616.3 96.94 782.17 p < 0.01
+          S8 Wald(z) statt HKSJ 34   2955 7637037.0 96.94 827.76 p < 0.01
+       QEp_roh
+ 1.307273e-152
+  1.987743e-19
+  6.764009e-42
+  3.865793e-02
+ 1.307273e-152
+ 1.307273e-152
+ 1.307273e-152
+ 8.694574e-144
+ 1.307273e-152
 
 
 ### ZUSAMMENFASSUNG #######################################################
@@ -397,6 +458,13 @@ Primaerergebnis (SAP 5.1, bindend fuer Hauptaussage):
   2026-Schaetzer (theta_2026 = 15800 , vorlaeufig/unterjaehrig, KW33/2026) liegt oberhalb PI 
   des primaeren 95%-Praediktionsintervals [ -2760 ; 8671 ] (gepoolt aus n = 34 historischen Jahren 1992-2025).
   Standardisierte Abweichung z_2026 = 4.46 
+
+PFLICHTKENNZEICHNUNG (SAP 5.3, Validierungsbericht Auflage 1): Das oben
+  berichtete PRIMAERE 95%-Praediktionsintervall ist aufgrund
+  signifikanter Normalitaetsabweichung der Residuen (Shapiro-Wilk p < 0.01 )
+  MOEGLICHERWEISE UNPRAEZISE. Es bleibt gemaess SAP 5.3 dennoch primaer
+  fuer die Hauptaussage; als Ergaenzung siehe das verteilungsfreie
+  Praediktionsintervall S6 (empirisch: [ 150 ; 10200 ]; Bootstrap: [ -2140 ; 8539 ]).
 
 Zentrale Limitationen (verpflichtend in jeder Ergebnisdarstellung, SAP
   8.1/8.2/8.3/8.5/9/11): (1) 2026-Wert ist vorlaeufig/unterjaehrig,
@@ -407,4 +475,4 @@ Zentrale Limitationen (verpflichtend in jeder Ergebnisdarstellung, SAP
   Daten nicht trennbarer Confounder, (5) keine kausale oder politische
   Interpretation zulaessig.
 
-Skriptlauf beendet: 2026-08-29 08:10:22 
+Skriptlauf beendet: 2026-08-29 12:51:23 

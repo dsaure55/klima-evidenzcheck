@@ -5,7 +5,7 @@
 "S1c: Jahre ab Bruchjahr 2020 (2020-2025)",6,2993,409.3,602895.75,556,5430,"oberhalb PI",11.8,""
 "S2: tau2-Schaetzer DerSimonian-Laird",34,2946,484.8,5802368.69,-2059,7951,"oberhalb PI",5.06,""
 "S2: tau2-Schaetzer Paule-Mandel",34,2956,485.4,7693086.95,-2780,8691,"oberhalb PI",4.45,""
-"S3: Log-Skalen-Konversion (Delta-Methode)",34,2535,NA,0.5617,534,12028,"oberhalb PI",2.39,"Abweichung B: Delta-Methode statt direkter log(PI)-Rueckrechnung"
+"S3: Log-Skalen-Konversion (Delta-Methode)",34,2535,NA,0.5617,534,12028,"oberhalb PI",2.39,"Abweichung B: Delta-Methode statt direkter log(PI)-Rueckrechnung. Fuer Jahre 1993/1996/2011 ist die Delta-Approximation unzuverlaessig (siehe s3_delta_methode_zuverlaessigkeit.csv), aendert aber nichts an der gepoolten S3-Klassifikation."
 "S4: Fixed-Effect-Modell",34,2014,83.6,0,1844,2184,"oberhalb PI",21.43,"tau2 auf 0 fixiert; PI=CI unter FE-Annahme"
 "S5: Trend-adjustierte Meta-Regression (2026-Prognose)",34,3566,1007.7,7759616.26,-2476,9607,"oberhalb PI",4.04,""
 "S6a: Empirisches Perzentil-Intervall (roh)",34,1810,NA,NA,150,10200,"oberhalb PI",NA,"Kein Modell; deskriptive Perzentile der historischen Reihe"
