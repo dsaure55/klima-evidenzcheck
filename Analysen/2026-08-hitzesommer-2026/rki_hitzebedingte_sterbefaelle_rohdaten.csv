@@ -1,0 +1,36 @@
+jahr,punktschaetzer,pi_unten,pi_oben,quelle,quelle_zugriffsdatum,quelle_url,status
+1992,3100,1900,4200,"EB-19-2025 Anhang (Epid Bull 2025;19:3-9, DOI 10.25646/13135)",2026-08-29,https://edoc.rki.de/handle/176904/12682,final
+1993,100,-380,590,"EB-19-2025 Anhang",2026-08-29,https://edoc.rki.de/handle/176904/12682,final
+1994,10200,8900,11400,"EB-19-2025 Anhang",2026-08-29,https://edoc.rki.de/handle/176904/12682,final
+1995,2900,1900,4000,"EB-19-2025 Anhang",2026-08-29,https://edoc.rki.de/handle/176904/12682,final
+1996,160,-600,960,"EB-19-2025 Anhang",2026-08-29,https://edoc.rki.de/handle/176904/12682,final
+1997,1920,1060,2750,"EB-19-2025 Anhang",2026-08-29,https://edoc.rki.de/handle/176904/12682,final
+1998,900,120,1740,"EB-19-2025 Anhang",2026-08-29,https://edoc.rki.de/handle/176904/12682,final
+1999,880,-70,1790,"EB-19-2025 Anhang",2026-08-29,https://edoc.rki.de/handle/176904/12682,final
+2000,420,-220,1130,"EB-19-2025 Anhang",2026-08-29,https://edoc.rki.de/handle/176904/12682,final
+2001,2300,1000,3400,"EB-19-2025 Anhang",2026-08-29,https://edoc.rki.de/handle/176904/12682,final
+2002,1290,360,2260,"EB-19-2025 Anhang",2026-08-29,https://edoc.rki.de/handle/176904/12682,final
+2003,10200,8900,11600,"EB-19-2025 Anhang",2026-08-29,https://edoc.rki.de/handle/176904/12682,final
+2004,1350,550,2080,"EB-19-2025 Anhang",2026-08-29,https://edoc.rki.de/handle/176904/12682,final
+2005,1660,670,2640,"EB-19-2025 Anhang",2026-08-29,https://edoc.rki.de/handle/176904/12682,final
+2006,7700,6700,8800,"EB-19-2025 Anhang",2026-08-29,https://edoc.rki.de/handle/176904/12682,final
+2007,520,-430,1370,"EB-19-2025 Anhang",2026-08-29,https://edoc.rki.de/handle/176904/12682,final
+2008,1220,190,2140,"EB-19-2025 Anhang",2026-08-29,https://edoc.rki.de/handle/176904/12682,final
+2009,730,-200,1640,"EB-19-2025 Anhang",2026-08-29,https://edoc.rki.de/handle/176904/12682,final
+2010,4090,3160,5090,"EB-19-2025 Anhang",2026-08-29,https://edoc.rki.de/handle/176904/12682,final
+2011,230,-350,860,"EB-19-2025 Anhang",2026-08-29,https://edoc.rki.de/handle/176904/12682,final
+2012,1200,100,2400,"EB-19-2025 Anhang",2026-08-29,https://edoc.rki.de/handle/176904/12682,final
+2013,3500,2400,4600,"EB-19-2025 Anhang",2026-08-29,https://edoc.rki.de/handle/176904/12682,final
+2014,1400,200,2400,"EB-19-2025 Anhang",2026-08-29,https://edoc.rki.de/handle/176904/12682,final
+2015,7000,5600,8100,"EB-19-2025 Anhang",2026-08-29,https://edoc.rki.de/handle/176904/12682,final
+2016,1600,100,2700,"EB-19-2025 Anhang",2026-08-29,https://edoc.rki.de/handle/176904/12682,final
+2017,1400,540,2150,"EB-19-2025 Anhang",2026-08-29,https://edoc.rki.de/handle/176904/12682,final
+2018,8500,7100,10100,"EB-19-2025 Anhang",2026-08-29,https://edoc.rki.de/handle/176904/12682,final
+2019,6800,5400,8300,"EB-19-2025 Anhang",2026-08-29,https://edoc.rki.de/handle/176904/12682,final
+2020,3700,2500,5000,"EB-19-2025 Anhang",2026-08-29,https://edoc.rki.de/handle/176904/12682,final
+2021,1700,700,2800,"EB-19-2025 Anhang",2026-08-29,https://edoc.rki.de/handle/176904/12682,final
+2022,4500,3100,6000,"EB-19-2025 Anhang",2026-08-29,https://edoc.rki.de/handle/176904/12682,final
+2023,3100,1300,4600,"EB-19-2025 Anhang",2026-08-29,https://edoc.rki.de/handle/176904/12682,final
+2024,2800,1200,4400,"EB-19-2025 Anhang",2026-08-29,https://edoc.rki.de/handle/176904/12682,final
+2025,2500,1200,3700,"RKI-Wochenbericht KW38/2025 (Berichtsdatum 02.10.2025), kumulativ KW15-38/2025 -- vom RKI selbst als 'noch unvollstaendig' gekennzeichnet, KEINE finale Jahresschaetzung im Epid-Bull-Format verfuegbar (Abweichung von SAP-Annahme, siehe Struktur-Check)",2026-08-29,https://edoc.rki.de/handle/176904/12995,vorlaeufig_letzter_verfuegbarer_wert
+2026,15800,14500,17000,"RKI-Wochenbericht KW33/2026 (Berichtsdatum 27.08.2026), kumulativ KW15-33/2026 -- Zieljahr, NICHT Teil des historischen Referenzfensters",2026-08-29,https://edoc.rki.de/handle/176904/13866,vorlaeufig_zieljahr

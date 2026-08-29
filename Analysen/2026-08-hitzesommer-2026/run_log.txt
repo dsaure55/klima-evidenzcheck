@@ -1,0 +1,410 @@
+========================================================================
+HITZESOMMER 2026 -- Analyse gemaess SAP_hitzesommer-2026.md v1.1 (final)
+Skriptlauf: 2026-08-29 08:08:41 
+========================================================================
+
+
+### SAP 3: Struktur-Check der Datenquelle #############################
+
+--- Schritt 1: Zeitliche Abdeckung der RKI-Reihe ---
+Fruehestes Jahr in der aktuellen RKI-Primaerquelle (EB-19-2025 Anhang,
+  Deutschland-Blatt): 1992 
+Spaetestes Jahr mit FINALER Jahresschaetzung (EB-19-2025): 2024 
+2025: bester verfuegbarer Wert = letzter Wochenbericht der Saison
+  (KW38/2025), von RKI selbst als 'noch unvollstaendig' bezeichnet.
+2026 (Zieljahr): vorlaeufiger, unterjaehriger Wochenbericht (s. Schritt 4).
+
+--- Schritt 2: Definition der Zielgroesse ---
+Formal bestaetigt anhand RKI-Primaerquelle (Tabelle 1 in allen geprueften
+  Wochen-/Jahresberichten): Die Zielgroesse 'Geschaetzte Anzahl
+  Sterbefaelle' ist eine ABSOLUTE, NICHT altersstandardisierte Fallzahl.
+  Sie steht in der Quelle NEBEN einer separaten Spalte 'Sterbefaelle pro
+  100.000 Einwohner' (bevoelkerungsbezogene Rate, ebenfalls NICHT
+  altersstandardisiert -- nur populationsgroessen-normiert, keine
+  Alterskohorten-Gewichtung). Dies bestaetigt formal die SAP-8.2-Annahme.
+  Zeitliche Abgrenzung: Sommerhalbjahr, kumulativ KW15 bis KW(Berichts-
+  woche); Attributionsmethodik: GAM-basiertes Exzess-Mortalitaetsmodell
+  (Modellwert 'mit Hitze' minus 'ohne Hitze', Schwelle ca. 20 Grad C
+  Wochenmitteltemperatur).
+
+--- Schritt 3: Sicherheitsniveau und Form des Unsicherheitsintervalls ---
+Ausschliesslich anhand RKI-Primaerquelle (PDF, Tabelle 1) festgestellt:
+  Alle geprueften Berichte (EB-19-2025, EB-42-2022, EB-26-2023,
+  Wochenberichte KW33/2026 und KW38/2025) bezeichnen ihr Intervall
+  explizit als '95%-Praediktionsintervall' (kein 'Konfidenzintervall').
+  => Sicherheitsniveau = 95%, z = 1.959964 (SAP 5.1 Schritt 1 unveraendert
+     anwendbar; kein abweichendes Niveau, keine Anpassung von z noetig.
+  (Hinweis C im Skriptkopf: begriffliche Abgrenzung ggue. dem
+   meta-analytischen Praediktionsintervall dieser Analyse.)
+
+Symmetrie-Check (Punktschaetzer vs. untere/obere PI-Grenze), n = 33 historische Jahre:
+  Median(oben-unten Verhaeltnis) = 1 ; Range [ 0.73 ; 1.14 ]
+  -> Intervalle sind ueberwiegend NAEHERUNGSWEISE symmetrisch (kleine
+     Abweichungen durch Rundung auf Zehner-/Hunderterstelle erklaerbar),
+     aber nicht exakt symmetrisch. Gemaess SAP 5.1 wird dies dokumentiert;
+     S3 (log-Skala, Abschnitt 6) wird gemaess SAP-Abschnitt-6-Praeambel
+     ohnehin IMMER (nicht nur konditional) durchgefuehrt.
+
+Bedingte Entscheidungsregel SE_2026 (SAP Abschnitt 3 Schritt 3, finale
+  Ueberarbeitung): PRIMAERER FALL trifft zu -- RKI publiziert im
+  verwendeten Wochenbericht KW33/2026 ein formales 95%-Praediktions-
+  intervall (15.800 [14.500; 17.000]). Der FALLBACK (SE_2026 = sd der
+  historischen Punktschaetzer) wird NICHT benoetigt/angewendet.
+
+--- Schritt 4: 2026-Schaetzung -- Verfuegbarkeit und Vorlaeufigkeit ---
+Verwendeter Bericht: RKI-Wochenbericht zur hitzebedingten Mortalitaet
+  Kalenderwoche (ISO-Woche): KW 33/2026 (10.08.-16.08.2026)
+  Berichtsdatum: 27.08.2026
+  Kumulativer Berichtszeitraum: KW 15 bis KW 33/2026
+  Punktschaetzer / 95%-Praediktionsintervall: 15.800 [14.500; 17.000]
+  VORLAEUFIGKEITS-HINWEIS (Pflichtangabe SAP Abschnitt 11): Diese Zahl
+  ist ausdruecklich UNVOLLSTAENDIG (Sommer-Berichtszeitraum bis
+  September) und wird im Saisonverlauf weiter revidiert. Zum Vergleich:
+  die KW38/2025-Schaetzung fuer 2025 (2.500) stieg gegenueber frueheren
+  Wochenberichten der Saison 2025 im Verlauf an -- ein Beleg dafuer,
+  dass solche unterjaehrigen Schaetzungen tatsaechlich nachtraeglich
+  (i.d.R. nach oben) korrigiert werden koennen (SAP Abschnitt 9).
+
+--- Schritt 5: Methodikbrueche und Quellenabweichungen (systematische
+    Pruefung ALLER Jahre, nicht nur des SAP-Hinweises zu 2018) ---
+
+(a) Von der RKI-Quelle SELBST EXPLIZIT benannter Methodikbruch:
+    EB-19-2025 (Methoden-Abschnitt) dokumentiert woertlich: 'Da es in
+    Folge der COVID-19-Pandemie ... nicht nur zu deutlichen Uebersterb-
+    lichkeiten in Deutschland kam, sondern sich auch das saisonale
+    Sterblichkeitsmuster veraenderte, verwenden wir fuer die Zeit SEIT
+    DEM JAHR 2020 eine flexiblere Kurve zur Modellierung der
+    Sterblichkeit.' => Explizit benannter, DATIERTER Strukturbruch in
+    der Trendmodellierung, Bruchjahr = 2020. Dies ist die primaere
+    Grundlage fuer den Trigger des Sensitivitaetsfensters S1c (SAP
+    Abschnitt 4, Bedingung (i)).
+
+(b) Weiterer von der Quelle selbst dokumentierter Verfahrenswechsel:
+    EB-26-2023 ('Neubestimmung der Praediktionsintervalle...') aendert
+    explizit, welche Kalenderwochen in die Schaetzung eingehen (nur noch
+    Wochen mit tatsaechlicher Hitzewirkung statt pauschal KW15-40) sowie
+    die Rundungskonvention -- mit dem Ergebnis spuerbar schmalerer
+    Unsicherheitsintervalle. Die hier als Primaerquelle verwendete
+    EB-19-2025-Reihe (1992-2024) wendet die AKTUELLE Methodik
+    einheitlich rueckwirkend auf die gesamte Reihe an -- innerhalb
+    dieses fuer die Analyse verwendeten Datensatzes liegt also KEIN
+    Versions-Mischmasch vor. Der 2020-Bruch unter (a) bleibt jedoch
+    bestehen, da er eine strukturelle Eigenschaft der AKTUELLEN Methodik
+    selbst ist (unterschiedliche Modellflexibilitaet vor/nach 2020).
+
+(c) Jahresweise Quellenabweichung, konkretes Beispiel 2018 (SAP 8.1-
+    Hinweis), SYSTEMATISCH ueber drei RKI-Publikationsversionen geprueft:
+                                     Publikation             Wert_2018
+         EB-42-2022 (Okt. 2022, Originaltabelle) 8.300 [5.400; 11.100]
+        EB-26-2023 (Jun. 2023, Neubestimmung PI)  8.400 [7.100; 9.800]
+ EB-19-2025 (Mai 2025, aktuellste Primaerquelle) 8.500 [7.100; 10.100]
+
+  => Es bestaetigt sich eine REALE, aber MODERATE Verschiebung des
+     2018-Schaetzers ueber Publikationsversionen (8.300 -> 8.400 ->
+     8.500; deutlich schmalere Unsicherheitsintervalle in neueren
+     Versionen). Der im SAP (Abschnitt 8.1) als Kontext genannte
+     konkrete Wert 'aktuell ~9.400' konnte in KEINER der drei
+     geprueften RKI-Primaerquellen (edoc.rki.de) reproduziert werden --
+     dies wird hier transparent als NICHT-Bestaetigung des im SAP
+     genannten Einzelwerts dokumentiert (moeglicherweise Sekundaer-
+     quelle/Dashboard-Rundung oder eine hier nicht aufgefundene weitere
+     Publikationsversion; ungeprueft). Das grundsaetzliche Phaenomen
+     'Methodikrevisionen veraendern publizierte Werte fuer dasselbe
+     Jahr' ist damit unabhaengig vom exakten SAP-Zahlenwert bestaetigt
+     und stuetzt zusaetzlich (neben (a)) den S1c-Trigger.
+
+=> ERGEBNIS Schritt 5 / Trigger-Bedingung SAP Abschnitt 4:
+   Trigger (i) 'von der Quelle selbst explizit benannter Methodikbruch'
+   ist ERFUELLT (COVID-bedingte Modelltrendaenderung ab 2020).
+   => S1c-Fenster (Abschnitt 6) = Jahre ab 2020 bis 2025.
+
+Primaeres historisches Referenzfenster (SAP Abschnitt 4):  1992 - 2025 , n = 34 Jahre (keine fehlenden Werte in diesem
+  durchgehenden Fenster; SAP-Ausschlusskriterium 'fehlende Werte' nicht
+  einschlaegig).
+
+2026 (Zieljahr, NICHT im historischen Fenster): 15800 [ 14500 ; 17000 ], SE_2026 = 637.8 (primaerer Fall, aus RKI-PI zurueckgerechnet)
+
+
+### SAP 5.1: Primaeranalyse (REML, HKSJ, volles historisches Fenster) ##
+
+
+Random-Effects Model (k = 34; tau^2 estimator: REML)
+
+tau^2 (estimated amount of total heterogeneity): 7637036.9633 (SE = 1957896.8563)
+tau (square root of estimated tau^2 value):      2763.5189
+I^2 (total heterogeneity / total variability):   96.94%
+H^2 (total variability / sampling variability):  32.70
+
+Test for Heterogeneity:
+Q(df = 33) = 827.7636, p-val < .0001
+
+Model Results:
+
+ estimate        se    tval  df    pval      ci.lb      ci.ub      
+2955.2814  485.3764  6.0886  33  <.0001  1967.7757  3942.7871  *** 
+
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+
+--- Schritt 3: Heterogenitaetsmasse (Primaerfenster) ---
+Cochran's Q(df= 33 ) = 827.76 , p < 0.01 
+tau^2 = 7637037  [95%-CI: 4874791 ; 13602839 ]
+I^2 = 96.94 % [95%-CI: 95.29 ; 98.26 ]
+
+--- Schritt 4: 95%-Praediktionsintervall (Higgins-Thompson-
+    Spiegelhalter, df = k-2 = 32 ) ---
+mu_hat = 2955  (SE = 485.4 , HKSJ-adjustiert)
+95%-Praediktionsintervall: [ -2760 ; 8671 ]
+
+--- Schritt 5: Klassifikation und Effektgroesse fuer 2026 (PRIMAERES
+    ERGEBNIS) ---
+theta_2026 = 15800  liegt oberhalb PI 
+z_2026 = 4.46 
+(Sprachregelung SAP 5.5/8.3: KEINE 'statistisch signifikant
+ aussergewoehnlich'-Formulierung; rein deskriptive Einordnung.)
+
+--- Kreuzvalidierung mit Paket 'meta' (SAP Abschnitt 10) ---
+meta::metagen mu = 2955.3  (metafor: 2955.3 ) -- UEBEREINSTIMMUNG.
+meta::metagen PI: [ -2759 ; 8670 ] (metafor: [ -2760 ; 8671 ])
+
+
+### SAP 5.2: Diagnostik-Plan #############################################
+
+--- Trendpruefung (Meta-Regression theta_i ~ Jahr) ---
+
+Mixed-Effects Model (k = 34; tau^2 estimator: REML)
+
+tau^2 (estimated amount of residual heterogeneity):     7759616.2629 (SE = 2018586.3667)
+tau (square root of estimated tau^2 value):             2785.6088
+I^2 (residual heterogeneity / unaccounted variability): 96.94%
+H^2 (unaccounted variability / sampling variability):   32.69
+R^2 (amount of heterogeneity accounted for):            0.00%
+
+Test for Residual Heterogeneity:
+QE(df = 32) = 782.1662, p-val < .0001
+
+Test of Moderators (coefficient 2):
+F(df1 = 1, df2 = 32) = 0.4793, p-val = 0.4937
+
+Model Results:
+
+            estimate           se     tval  df    pval         ci.lb 
+intrcpt  -66591.1326  100456.5127  -0.6629  32  0.5122  -271214.3529 
+jahr         34.6282      50.0179   0.6923  32  0.4937      -67.2549 
+               ci.ub    
+intrcpt  138032.0877    
+jahr        136.5114    
+
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+
+Steigung beta1 = 34.63 Sterbefaelle/Jahr, p = 0.49 -> Trend NICHT signifikant (alpha=0.05) 
+(SAP 8.1: Der Trend-Test unterscheidet NICHT zwischen realem
+ Erwaermungstrend, Bevoelkerungsalterung (SAP 8.2) und Methodikbruch
+ (s. Struktur-Check, u.a. der 2020-Modellbruch) als Ursache.)
+
+--- Autokorrelation (Durbin-Watson auf Residuen des Trendmodells) ---
+DW = 2.298 , p = 0.76 -> keine signifikante Autokorrelation (alpha=0.05) 
+
+--- Normalitaet der studentisierten Residuen (Shapiro-Wilk + QQ-Plot) ---
+Shapiro-Wilk: W = 0.814 , p < 0.01 -> SIGNIFIKANTE Abweichung von Normalitaet (alpha=0.05) 
+
+null device 
+          1 
+--- Leave-one-out-Diagnostik (SAP 5.2 / S7) ---
+ jahr_ausgeschlossen mu_hat    tau2   I2      Q            Qp
+                1992 2951.9 7887331 97.1 824.27 1.373412e-152
+                1993 3044.7 7618624 96.7 760.23 3.292705e-139
+                1994 2731.5 6193789 96.3 660.14 2.164697e-118
+                1995 2958.0 7890061 97.0 824.96 9.833565e-153
+                1996 3041.8 7634108 96.9 805.06 1.431415e-148
+                1997 2988.1 7859129 97.0 827.71 2.608546e-153
+                1998 3019.2 7754748 96.9 820.19 9.805750e-152
+                1999 3019.4 7752284 97.0 821.87 4.361686e-152
+                2000 3034.3 7679731 96.9 805.00 1.472117e-148
+                2001 2976.0 7874830 97.1 827.54 2.835160e-153
+                2002 3007.0 7802604 97.0 825.46 7.715317e-153
+                2003 2734.0 6226689 96.3 684.41 1.993096e-123
+                2004 3005.7 7809821 97.0 824.73 1.098762e-152
+                2005 2995.7 7838048 97.0 827.25 3.257417e-153
+                2006 2808.7 7136850 96.7 712.31 3.173826e-129
+                2007 3030.4 7698486 97.0 816.81 4.977514e-151
+                2008 3009.0 7794739 97.0 825.14 9.010674e-153
+                2009 3023.9 7730985 97.0 820.04 1.054892e-151
+                2010 2921.4 7846337 97.0 809.46 1.720684e-149
+                2011 3040.3 7644927 96.8 791.72 8.790576e-146
+                2012 3008.9 7791923 97.0 825.80 6.564982e-153
+                2013 2939.7 7878429 97.1 820.59 8.059058e-152
+                2014 3003.1 7813298 97.0 826.54 4.594707e-153
+                2015 2833.0 7355626 96.9 765.58 2.525023e-140
+                2016 2996.5 7829927 97.1 827.37 3.082635e-153
+                2017 3004.0 7814918 97.0 825.43 7.834777e-153
+                2018 2790.2 6935233 96.7 755.07 3.919523e-138
+                2019 2841.3 7419468 96.9 785.37 1.860497e-144
+                2020 2933.9 7867246 97.1 820.65 7.834326e-152
+                2021 2994.3 7840727 97.0 827.41 3.018312e-153
+                2022 2910.5 7805697 97.1 816.33 6.298605e-151
+                2023 2952.1 7876734 97.1 826.08 5.725068e-153
+                2024 2960.8 7878390 97.1 826.83 4.000494e-153
+                2025 2969.9 7880669 97.1 827.17 3.386056e-153
+
+Spannweite mu_hat ueber alle Leave-one-out-Wiederholungen: [ 2732 ; 3045 ] (Primaer-mu_hat: 2955 )
+Auffaelligstes Einzeljahr (groesstes |studentisiertes Residuum| = 2.85 ): 1994 -- wird benannt, gemaess SAP 5.2 NICHT aus der Primaeranalyse
+entfernt.
+
+null device 
+          1 
+null device 
+          1 
+
+### SAP 5.3: Bewertung der Diagnostik-Trigger ###########################
+
+Signifikanter Trend (alpha=0.05): FALSE 
+Signifikante Autokorrelation (DW, alpha=0.05): FALSE 
+Signifikante Normalitaetsabweichung (Shapiro-Wilk, alpha=0.05): TRUE 
+
+=> Kein Trend-/Autokorrelations-Trigger ausgeloest. S5 wird dennoch
+   gemaess SAP Abschnitt 6 (immer durchzufuehren) berechnet und
+   berichtet, aber ohne besondere Kennzeichnung.
+
+=> Normalitaets-Trigger ausgeloest: S6 (verteilungsfreies PI) ist
+   gemaess SAP als zusaetzlich zu beachtende Sensitivitaet zu werten.
+
+
+### SAP 6: Sensitivitaetsanalysen S1-S8 ##################################
+
+--- S1a: letzte 10 Jahre vor 2026 (2016-2025) ---
+k = 10 , mu_hat = 3627 , PI = [ -1803 ; 9058 ]
+
+--- S1b: letzte 15 Jahre vor 2026 (2011-2025) ---
+k = 15 , mu_hat = 3291 , PI = [ -1916 ; 8498 ]
+
+--- S1c: Jahre ab Bruchjahr 2020 (getriggert durch Struktur-Check Schritt 5) ---
+k = 6 , mu_hat = 2993 , PI = [ 556 ; 5430 ]
+
+--- S2: alternative tau^2-Schaetzer (DerSimonian-Laird, Paule-Mandel) ---
+DerSimonian-Laird: tau2 = 5802369 , mu_hat = 2946 , PI = [ -2059 ; 7951 ]
+Paule-Mandel: tau2 = 7693087 , mu_hat = 2956 , PI = [ -2780 ; 8691 ]
+
+--- S3: Log-Skalen-Variante ---
+Abweichung vom SAP (siehe Skriptkopf, Punkt B): 7 von 34 historischen Jahren haben eine untere PI-Grenze <= 0
+(log daher nicht direkt aus den Intervallgrenzen rueckrechenbar).
+Operationalisierung: Delta-Methode SE_log,i = SE_i / theta_i.
+Log-Skala: mu_hat_log = 7.838 -> rueck-transformiert: 2535 , PI = [ 534 ; 12028 ] (Originalskala)
+
+--- S4: Fixed-Effect-(Common-Effect-)Modell ---
+mu_hat = 2014  (tau2 = 0 per Modellannahme),
+PI (= CI, da tau2=0 im FE-Modell) = [ 1844 ; 2184 ]
+
+--- S5: Trend-adjustierte Meta-Regression (Prognose fuer 2026) ---
+Trend-Prognose fuer 2026:  3566  (SE = 1007.7 ), PI = [ -2476 ; 9607 ]
+
+--- S6: Verteilungsfreies Praediktionsintervall ---
+Empirisches Perzentil-Intervall (2.5%/97.5% der historischen
+  Punktschaetzer): [ 150 ; 10200 ]
+Bootstrap-Praediktionsintervall (case-resampling, R=5000, simulierte
+  kuenftige Jahresbeobachtung mu*+u*): [ -2140 ; 8539 ]
+
+--- S7: Leave-one-out-Robustheit ---
+Vollstaendige Tabelle in output/tabelle_leave_one_out.csv (siehe SAP 5.2
+  oben) sowie output/diagnostik_leave_one_out.png. S7 liefert PER
+  DEFINITION keine eigene 2026-Klassifikationsvariante (es werden keine
+  neuen PI-Grenzen fuer 2026 konstruiert, sondern die Stabilitaet der
+  HISTORISCHEN Schaetzung mu_hat/tau2/I2 geprueft) -- daher taucht S7
+  NICHT als Zeile in der Klassifikations-Anhangstabelle auf, sondern
+  wird als eigenstaendige Diagnostik-Tabelle/Grafik gemaess SAP
+  Abschnitt 11(d) berichtet.
+
+--- S8: HKSJ vs. Standard-Wald-Inferenz fuer mu_hat ---
+HKSJ   : se(mu_hat) = 485.38 , PI-Breite = 11431 
+Wald(z): se(mu_hat) = 483.69 , PI-Breite = 11429 
+
+
+### SAP 7: Vollstaendige Ergebnistabelle (Primaer + alle Sensitivitaeten)
+################################################################
+
+                                              Variante  k mu_hat  se_mu
+          PRIMAER: volles Fenster 1992-2025, REML+HKSJ 34   2955  485.4
+                      S1a: letzte 10 Jahre (2016-2025) 10   3627  740.8
+                      S1b: letzte 15 Jahre (2011-2025) 15   3291  624.1
+              S1c: Jahre ab Bruchjahr 2020 (2020-2025)  6   2993  409.3
+                  S2: tau2-Schaetzer DerSimonian-Laird 34   2946  484.8
+                       S2: tau2-Schaetzer Paule-Mandel 34   2956  485.4
+             S3: Log-Skalen-Konversion (Delta-Methode) 34   2535     NA
+                               S4: Fixed-Effect-Modell 34   2014   83.6
+ S5: Trend-adjustierte Meta-Regression (2026-Prognose) 34   3566 1007.7
+            S6a: Empirisches Perzentil-Intervall (roh) 34   1810     NA
+         S6b: Bootstrap-Praediktionsintervall (R=5000) 34   3053     NA
+                 S8a: HKSJ-Inferenz (= Primaeranalyse) 34   2955  485.4
+                        S8b: Standard-Wald(z)-Inferenz 34   2955  483.7
+         tau2 PI_unten PI_oben Klassifikation_2026 z_2026
+ 7637036.9600    -2760    8671         oberhalb PI   4.46
+ 4997218.1100    -1803    9058         oberhalb PI   4.99
+ 5418987.1100    -1916    8498         oberhalb PI   5.02
+  602895.7500      556    5430         oberhalb PI  11.80
+ 5802368.6900    -2059    7951         oberhalb PI   5.06
+ 7693086.9500    -2780    8691         oberhalb PI   4.45
+       0.5617      534   12028         oberhalb PI   2.39
+       0.0000     1844    2184         oberhalb PI  21.43
+ 7759616.2600    -2476    9607         oberhalb PI   4.04
+           NA      150   10200         oberhalb PI     NA
+           NA    -2140    8539         oberhalb PI     NA
+ 7637036.9600    -2760    8671         oberhalb PI   4.46
+ 7637036.9600    -2759    8670         oberhalb PI   4.46
+                                                          Hinweis
+                             SAP 5.1 -- bindend fuer Hauptaussage
+                                                                 
+                                                                 
+                                                                 
+                                                                 
+                                                                 
+ Abweichung B: Delta-Methode statt direkter log(PI)-Rueckrechnung
+                       tau2 auf 0 fixiert; PI=CI unter FE-Annahme
+                                                                 
+       Kein Modell; deskriptive Perzentile der historischen Reihe
+                         Case-Resampling-Bootstrap, seed=20260828
+        identisch zur Primaeranalyse (Referenz fuer S8-Vergleich)
+                                                                 
+
+Zusammenfassung: In 13 von 13 klassifizierbaren Varianten liegt 2026 ausserhalb des jeweiligen PI.
+(Alle Varianten werden hier gleichrangig vollstaendig berichtet, SAP 7 --
+ die PRIMAER-Zeile ist bindend fuer die Hauptaussage, keine nachtraegliche
+ Umdeklarierung einer Sensitivitaetsvariante.)
+
+
+### SAP 11: Forest-Plot ##################################################
+
+Forest-Plot gespeichert: output/forest_plot_primaer.png
+
+Modellzusammenfassungstabelle gespeichert: output/tabelle_modellzusammenfassung.csv
+                       Variante  k mu_hat      tau2    I2     QE           QEp
+ Primaer (REML+HKSJ, 1992-2025) 34   2955 7637037.0 96.94 827.76 1.307273e-152
+                S1a (2016-2025) 10   3627 4997218.1 92.34 109.36  1.987743e-19
+                S1b (2011-2025) 15   3291 5418987.1 94.25 233.67  6.764009e-42
+                  S1c (ab 2020)  6   2993  602895.8 56.38  11.73  3.865793e-02
+           S2 DerSimonian-Laird 34   2946 5802368.7 96.01 827.76 1.307273e-152
+                S2 Paule-Mandel 34   2956 7693087.0 96.96 827.76 1.307273e-152
+                S4 Fixed-Effect 34   2014       0.0  0.00 827.76 1.307273e-152
+       S5 Trend-Meta-Regression 34   3566 7759616.3 96.94 782.17 8.694574e-144
+          S8 Wald(z) statt HKSJ 34   2955 7637037.0 96.94 827.76 1.307273e-152
+
+
+### ZUSAMMENFASSUNG #######################################################
+
+Primaerergebnis (SAP 5.1, bindend fuer Hauptaussage):
+  2026-Schaetzer (theta_2026 = 15800 , vorlaeufig/unterjaehrig, KW33/2026) liegt oberhalb PI 
+  des primaeren 95%-Praediktionsintervals [ -2760 ; 8671 ] (gepoolt aus n = 34 historischen Jahren 1992-2025).
+  Standardisierte Abweichung z_2026 = 4.46 
+
+Zentrale Limitationen (verpflichtend in jeder Ergebnisdarstellung, SAP
+  8.1/8.2/8.3/8.5/9/11): (1) 2026-Wert ist vorlaeufig/unterjaehrig,
+  (2) 2025-Referenzwert ist ebenfalls nicht formal finalisiert (Abweichung
+  A, s. Skriptkopf), (3) dokumentierter Methodikbruch 2020 (COVID-bedingte
+  Modellaenderung) als alternative Erklaerung fuer Trend/Ausreisser,
+  (4) Bevoelkerungsalterung als wahrscheinlich real relevanter, mit diesen
+  Daten nicht trennbarer Confounder, (5) keine kausale oder politische
+  Interpretation zulaessig.
+
+Skriptlauf beendet: 2026-08-29 08:10:22 
