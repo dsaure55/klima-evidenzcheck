@@ -1,0 +1,500 @@
+Epidemiologisches Bulletin  19|2025  7. Mai 2025       3
+
+Hitzebedingte Mortalität in Deutschland 2023 und 2024
+
+Einleitung                                             bis 2023 sowie die Ergebnisse der Bevölkerungspro-
+                                                       jektion für das Jahr 2024 (moderates Szenario zu
+Die gesundheitlichen Auswirkungen von Hitze sind       Geburtenhäufigkeit, Lebens­erwartung und Wande-
+in den letzten Jahren immer stärker in den Fokus       rungssaldo, ,,G2-L2-W2").9
+von Forschung und Öffentlichkeit getreten.1,2 Ins­
+besondere zeigt sich in älteren Altersgruppen ein      Für die Temperaturdaten verwenden wir stündliche
+systematischer Zusammenhang zwischen hohen             Messungen der Lufttemperatur von 52 Stationen des
+Außentemperaturen und erhöhten Sterberaten.3,4         Bodenmessnetzes des Deutschen Wetterdienstes
+Die Gründe für diese hitzebedingte Mortalität sind     (DWD). Diese Daten wurden zuerst über die 24
+vielfältig und reichen von Todesfällen durch Hitze-    Stunden eines Tages und dann über KW und Bun-
+schlag bis zu komplexeren Konstellationen, etwa        desland gemittelt. Wir beschränken die Analyse auf
+bei Menschen mit vorbestehenden Herz-Kreislauf-,       das Sommerhalbjahr (KW 15 - 40) und unterschei-
+Lungen- oder Demenzerkrankungen. In diesen Fäl-        den bei der Analyse der Hitzewirkung vier Zeit­
+len wird typischerweise die Grunderkrankung in         räume: 1992-1999, 2000-2007, 2008-2015 und
+der Todesursachenstatistik erfasst. Daher sind sta-    2016-2024.
+tistische Verfahren notwendig, um die Gesamtzahl
+hitzebedingter Sterbefälle zu schätzen.                Wir unterteilen die Bundesländer in vier Regionen:
+                                                       ,,Norden" (Bremen, Hamburg, Mecklenburg-Vor­
+Die vorliegende Arbeit ergänzt die bisherigen Un-      pomm­ ern, Niedersachsen, Schleswig-Holstein),
+tersuchungen4-7,9 zu Schätzungen hitzebedingter        ,,Osten" (Berlin, Brandenburg, Sachsen, Sachsen-
+Mortalität in den Jahren 2023 und 2024. Die Metho-     Anhalt, Thüringen), ,,Westen" (Nordrhein-West­
+dik stimmt im Wesentlichen mit der Methodik der        falen, Rheinland-Pfalz, Saarland, Hessen) und
+früheren Publikationen überein. Da es in Folge der     ,,Süden" (Baden-Württemberg, Bayern). Dadurch
+Coronavirus Disease 2019-(COVID-19-)Pandemie           können auch regionale Besonderheiten der Wir-
+nicht nur zu deutlichen Übersterblichkeiten in         kung hoher Temperaturen auf die Mortalität erfasst
+Deutschland kam, sondern sich auch das saisonale       werden.
+Sterblichkeitsmuster veränderte, verwenden wir für
+die Zeit seit dem Jahr 2020 eine flexiblere Kurve zur  Methoden
+Modellierung der Sterblichkeit.
+                                                       Für die Schätzung der Anzahl hitzebedingter Sterbe­
+Daten                                                  fälle bilden wir zuerst den Verlauf der Gesamt­
+                                                       mortalität mithilfe eines generalisierten additiven
+Wie auch in den oben genannten Arbeiten beziehen       Modells10 nach. Diese Modellierung berücksichtigt
+wir in die Modellierung Daten des gesamten Zeit-       insbesondere langfristige Mortalitätstrends, saiso-
+raums 1992 bis 2024 ein. Aktuelle Daten zur Ge-        nale Veränderungen sowie Expositions-Wirkungs-
+samtmortalität beziehen wir aus der ,,Sonderauswer­    kurven, die den Einfluss der Wochenmitteltempera-
+tung zu Sterbefallzahlen der Jahre 2020 bis 2024"      tur auf die Mortalitätsrate quantifizieren. Um auch
+des Statistischen Bundesamtes (Destatis).8 Diese       verzögerte Temperatureffekte zu erfassen, schlie-
+sind nach Kalenderwoche (KW), Bundesland und           ßen wir neben der Temperatur der gleichen Woche
+vier Altersgruppen (<65, 65-74, 75-84, 85+ Jahre)      auch die Temperaturen von bis zu drei Vorwochen
+aggregiert.                                            in die Modellierung mit ein.
+
+Zur Bestimmung der Mortalität (Sterbefälle pro         Zur Definition von Hitze verwenden wir einen
+100.000 Einwohner) verwenden wir die offizielle Be-    Schwellenwert, der mithilfe der Expositions-
+völkerungsstatistik von Destatis im Zeitraum 1992
+                      Epidemiologisches Bulletin          19|2025  7. Mai 2025                                                                                                                                                    4
+
+                                        Wirkungskurven bestimmt wird. Für Wochenmit-           weichungen treten bei der Modellierung des Trends
+                                        teltemperaturen über diesem Schwellenwert gehen        im Modell auf: Während die Gesamtmortalität in
+                                        wir von einem kausalen Einfluss der Temperatur         den Jahren zwischen 1992 und 2019 ein stabiles
+                                        auf die Mortalität aus. Der Schwellenwert wird sepa-   saisonales Muster zeigt und sich gut durch einen
+                                        rat pro Region, Altersgruppe und Dekade geschätzt,     bundeslandspezifischen langfristigen Trend be-
+                                        bewegt sich aber im Allgemeinen in der Nähe von        schreiben lässt, zeigen sich nach 2020 in Folge der
+                                        etwa 20°C. Teilweise verwenden wir daher auch den      COVID-19-Pandemie veränderte Muster. Dies wird
+                                        Wert von 20°C zur Definition einer ,,Hitzewoche".      durch eine Erhöhung der Anzahl der Freiheitsgrade
+                                        Wie wir bereits an anderer Stelle gezeigt haben,3      des Spline-Trends für diesen Zeitraum im Modell
+                                        enthält eine solche Woche typischerweise einen         berücksichtigt.
+                                        oder mehrere heiße Tage, das heißt Tage mit einer
+                                        Maximaltemperatur über 30°C. Der vergleichsweise       Ergebnisse
+                                        niedrige Wert von 20°C ergibt sich, da die Tages- und
+                                        Nachtwerte einer ganzen Woche gemittelt werden.        Die Sommer 2023 und 2024 lagen in Deutschland
+                                                                                               mit durchschnittlich 18,6°C und 18,5°C um 2,3°C
+                                        Aus dem Modell können wir den Verlauf einer            und 2,2°C über dem Wert der international gültigen
+                                        hypothetischen ,,Hintergrundmortalität" schätzen,      Referenzperiode 1961 bis 1990 (16,3°C für Deutsch-
+                                        das heißt den erwarteten Mortalitätsverlauf unter      land).11,12
+                                        der Annahme, dass die Wochenmitteltemperatur
+                                        stets unterhalb des Schwellenwertes bleibt. Die An-    Abbildung 1 und Abbildung 2 zeigen die vier be-
+                                        zahl hitzebedingter Sterbefälle ergibt sich dann aus   trachteten Regionen (Norden, Osten, Westen und
+                                        der Differenz des modellierten Mortalitätsverlaufs     Süden) sowie die jeweilige maximale Wochenmit-
+                                        und der Hintergrundmortalität.                         teltemperatur und durchschnittliche Anzahl der
+                                                                                               Hitzewochen im Zeitraum 1992 bis 2024. Die Dar-
+                                        Die vorliegende Modellierung stimmt in den we-         stellung verdeutlicht insbesondere die Expositions-
+                                        sentlichen Komponenten mit früheren Ansätzen4-7,9      unterschiede zwischen den Regionen: Im gesam-
+                                        überein und wird dort detailliert beschrieben. Ab-     ten Zeitraum traten beispielsweise im Norden nur
+
+                                        Temperatur in °C
+                                        28
+
+                                        26
+
+                  28 24Temperatur in °C                                                                                                                                                                                                         Norden
+                                                                                                                                                                                                                                                Osten
+
+                  26                                                                                                                                                                                                     Norden                 Westen
+                                          22                                                                                                                                                                             Osten                  Süden
+                                                                                                                                                                                                                         Westen
+Temperatur in °C  24                                                                                         Norden                                                                                                                 Norden
+                                          20                                                                                                                                                                                        Osten
+
+                                                                                               NNoordrdeenn  OOstsetnen  SüSdüednen                                                                                               WWesetsetnen
+                                                                                                 Osten         Westen                                                                                                              Süden
+                  22 18                       11999922
+                                                        11999944
+                                                                   11999966
+                                                                              11999988
+                                                                                         22000000
+                                                                                                    22000022
+                                                                                                              22000044
+                                                                                                                         22000066
+                                                                                                                                    22000088
+                                                                                                                                               22001100
+                                                                                                                                                          22001122
+                                                                                                                                                                    22001144
+                                                                                                                                                                               22001166
+                                                                                                                                                                                          22001188
+                                                                                                                                                                                                     22002200
+                                                                                                                                                                                                                22002222
+                                                                                                                                                                                                                          22002244
+
+                                                                                               Westen        Süden
+                                        Abb. 1 | Maximale Wochenmitteltemperatur in Deutschland pro Jahr und Region im Zeitraum 1992 bis 2024.
+                  20
+
+                                                                                               Süden
+
+1994              18
+            1996
+               1992
+                        1998
+                           1994
+                                    2000
+                                       1996
+                                                2002
+                                                    1998
+                                                             2004
+                                                                2000
+                                                                         2006
+                                                                            2002
+                                                                                     2008
+                                                                                        2004
+                                                                                                 2010
+                                                                                                     2006
+                                                                                                              2012
+                                                                                                                 2008
+                                                                                                                          2014
+                                                                                                                             2010
+                                                                                                                                      2016
+                                                                                                                                         2012
+                                                                                                                                                  2018
+                                                                                                                                                      2014
+                                                                                                                                                              2020
+                                                                                                                                                                  2016
+                                                                                                                                                                           2022
+                                                                                                                                                                              2018
+                                                                                                                                                                                       2024
+                                                                                                                                                                                          2020
+                                                                                                                                                                                                      2022
+                                                                                                                                                                                                                   2024
+                          Epidemiologisches Bulletin  19|2025  7. Mai 2025                             5
+
+                                                                                Norden  Osten  Westen                                                                                                                           Süden
+
+                              Anzahl Kalenderwochen                             Norden  Osten  Westen  Süden
+                       10 10
+
+                        88
+
+Anzahl Kalenderwochen  66
+
+                       4  4
+
+                       22
+
+                       00
+
+                            Abb. 2 | Durchschnittliche Anzahl ,,Hitzewochen" (Wochenmitteltemperatur >20°C) in den Bundesländern der jeweiligen Region.
+                             11999922
+                                        11999944
+                                                    11999966
+                                                               11999988
+                                                                           22000000
+                                                                                      22000022
+                                                                                                  22000044
+                                                                                                              22000066
+                                                                                                                         22000088
+                                                                                                                                     22001100
+                                                                                                                                                22001122
+                                                                                                                                                            22001144
+                                                                                                                                                                       22001166
+                                                                                                                                                                                   22001188
+                                                                                                                                                                                               22002200
+                                                                                                                                                                                                          22002222
+                                                                                                                                                                                                                      22002244
+
+                          durch­schnittlich 2,3 (Quartile 1,2-2,3) Hitzewochen  definiert als die Temperatur, oberhalb deren sowohl
+                          auf, im Osten durchschnittlich 3,9 (Quartile 2,4-     die Expositions-Wirkungskurve auf die Mortalität in
+                          5,0), im Westen ebenfalls 3,9 (Quartile 2,0-5,8) und  der Woche, in der die Hitzebelastung aufgetreten
+                          im Süden im Durchschnitt 5,0 (Quartile 3,0-6,5).      ist, als auch in der nachfolgenden Woche ansteigt.
+                          Gemittelt über alle Region traten im gesamten Zeit-   Sie liegt typischerweise bei einer Wochenmitteltem-
+                          raum 3,7 (Quartile 2,2-5,1) Hitzewochen auf.          peratur von etwa 20°C. Demgegenüber liegt das
+                                                                                thermische Optimum in Deutschland bei Wochen-
+                          Im Vergleich weisen die Jahre 2023 und 2024 mit       mitteltemperaturen von etwa 17,5°C. In einigen
+                          durchschnittlich 6,0 und 6,8 eine hohe Anzahl von     Arbeiten wird diese Art der Schätzung als mit ,,in-
+                          Hitzewochen auf, vergleichbar mit dem Rekord-         tensiver Hitze" assoziierte Sterbefälle bezeichnet.13
+                          sommer 2018, in dem sogar durchschnittlich 7,5
+                          Hitzewochen in Deutschland auftraten. Die maxi-       Abbildung 4 zeigt die geschätzte Anzahl hitze­
+                          male Wochenmitteltemperatur lag 2023 und 2024         bedingter Sterbefälle im Zeitraum 1992 bis 2024.
+                          mit durchschnittlich 23,4°C und 23,3°C allerdings     Für das Jahr 2023 wurden deutschlandweit 3.100
+                          in allen Regionen deutlich niedriger als 2018. Im     (95 %-Prädiktionsintervall: [1.400; 4.900]) hitze­
+                          Jahr 2018 lag die maximale Wochenmitteltempera-       bedingte Sterbefälle und für das Jahr 2024 2.800
+                          tur im Durchschnitt über die Regionen bei 26,5°C.     (95%-Prädiktionsintervall: [1.000; 5.000]) geschätzt,
+                                                                                vergleiche hierzu auch Tabelle 1. Die höchste Anzahl
+                          Abbildung 3 zeigt den Verlauf der Sterbefälle nach    hitzebedingter Sterbefälle wurde in den Jahren 1994
+                          KW in den Jahren 2023 und 2024 und die daran an-      und 2003 erreicht. Wie Abbildung 5 zeigt, ist die
+                          gepassten Modellverläufe mit und ohne Hitze sowie     Hitzewirkung auf die Mortalität in den Jahren nach
+                          für das sogenannte thermische Optimum, an dem         2007 niedriger als davor, bleibt dann aber etwa auf
+                          die Expositions-Wirkungskurve der Temperatur          gleichem Niveau. In den Jahren seit 2013 wird eine
+                          minimal wird. Diese Temperatur wird daher auch        Verdichtung von Sommern mit mittlerer und hoher
+                          als Minimal Risk Temperature (MRT) bezeichnet.        Anzahl hitzebedingter Sterbefälle sichtbar.
+                          Wie in den früheren Arbeiten weisen wir hier Ster-
+                          befälle nur dann als hitzebedingt aus, wenn sie im    Eine Schätzung der hitzebedingten Mortalität basie-
+                          Zusammenhang mit Temperaturen über der D­ elayed      rend auf dem thermischen Optimum würde eine
+                          Risk Temperature (DRT) entstanden sind. Diese ist     höhere Anzahl hitzeassoziierter Sterbefälle ergeben,
+              Epidemiologisches Bulletin                            19|2025                     7. Mai 2025                                                                  6
+
+                                                                                    mit Hitze   MRT               WMT      >20°C                    >21°C             >22°C
+
+                                                Anzahl Sterbefälle                                                                                   >20°C
+
+                                  Anzahml SitteHrbitezfeälle  bbeoeboacbhatecthtet  ohne Hitze  beobachtet
+                                                                                    mit Hitze  ohne Hitze    MRT  Wochenmitteltemperatur                    >21°C            >22°C
+
+zahl Sterbefälle
+
+                                        ohne Hitze
+
+                                  2244.0.00000
+
+                                  2222.0.00000
+
+              Anzahl Sterbefälle  2200.0.00000
+
+                                  1188.0.00000
+
+                                  1166.0.00000
+
+        5 10  15 20 25 530 1035 1450 2405 5205 30 35 400 4455 500                                                 5 100 155 20 25 300 355 4400 4455 5500
+erwoche
+                                  2024                        2023                                                                2024
+                                                                    2023                                                                      2024
+                                                                                                Kalenderwoche
+
+                                                                                                                                                                      Kalenderwoche
+
+                                  Abb. 3 | Verlauf der Sterbefälle in den Jahren 2023 und 2024 und erwartete Verläufe des Modells mit und ohne Hitze.
+                                  Die grüne Linie zeigt den modellierten Verlauf der Sterbefälle für das thermische Optimum (Minimal risk temperature, MRT).
+                                  Die vertikalen Streifen kennzeichnen Wochen mit einer bundesweiten Mitteltemperatur von 20°C und mehr.
+
+                                                              Hitzebedingte Sterbefälle           nicht signifikant        grenzsignifikant         signifikant
+
+                                   Anzahl Sterbefälle                                           Hitzebedingte Sterbefälle  nicht signifikant        grenzsignifikant  signifikant
+                                  1122..000000
+
+                                  1100..000000
+
+                                  88..000000
+
+              Anzahl Sterbefälle  66..000000
+
+                                  44..000000
+
+                                  22..000000
+
+                                  00
+
+                                                1199922
+                                                          1199944
+                                                                     1199966
+                                                                               1199988
+                                                                                          2200000
+                                                                                                    2200022
+                                                                                                               2200044
+                                                                                                                          2200066
+                                                                                                                                    2200088
+                                                                                                                                               2200100
+                                                                                                                                                         2200122
+                                                                                                                                                                    2200144
+                                                                                                                                                                              2200166
+                                                                                                                                                                                         2200188
+                                                                                                                                                                                                    2200200
+                                                                                                                                                                                                              2200222
+                                                                                                                                                                                                                         2200244
+
+                                  Abb. 4 | Geschätzte Anzahl hitzebedingter Sterbefälle im Zeitraum 1992 bis 2024 in Deutschland. Es kam in den meisten Jahren
+                                  zu einer signifikanten Anzahl hitzebedingter Sterbefälle (Untergrenze des 95%-Prädiktionsintervalls ist größer Null). Besonders
+                                  stark betroffen waren die Sommer 1994, 2003, 2006, 2015, 2018 und 2019.
+Epidemiologisches Bulletin      19|2025                                                                                            7. Mai 2025                                                                                                                                                   7
+
+        85+ 85+
+        85+ 85+
+
+             ZeitraumZeitraum       1992-19919992-1999 2000-20027000-2007 2008-20125008-2015 2016-20224016-2024
+             ZeitraumZeitraum       198952+-19891599+92-8159+99 825+ 000-20027000-2007 2008-20125008-2015 2016-20224016-2024
+
+relative Mortalitätsrate                       Zeitraum 1992-1999 2000-2007 2008-2015 2016-2024 ZeitraumZ 19e9i2 tr-a1u9m 99Z 19 e9it2r- a1u9m 9912909020- -1290909712909020--1290909722000008- -2200017522000008--2200017522000186- -2200125422000186--220012542016-20242016-2024
+
+                                                                                                                                   Norden               Norden  Norden     Norden        Osten      Osten                                                     Osten               Osten
+                                                                                                                                                   2.5                                                                                                                            Süden
+                                2.5Norden Norden2.5                                                                           2.5                  2.0                        Osten      Osten Osten
+                                                                                                                              2.0                  1.5
+                                2.0      2.0                                                                                  1.5                  1.0                     Westen        Osten Osten
+                                Norden1.5 Nord1e.5n                                                                           1.0
+              Norden                                                                                                               Westen
+relraetlivatieveMorMtoarlittaläittsärtastreate                                                                                2.5                  2.5
+22.5.5   relraetliavtieveMorMtoarltitaläittsärtastreate2.51.01.0                                                              2.0                  2.0  Westen We2s.te 5n
+
+                                                                   relative Mortalitätsrate                                                                                              Süden      Süden                                                     Süden
+                                                                               relative Mortalitätsrate
+2.5                                                                                       relative Mortalitätsrate2.52.52.5
+                                                                                                      relative Mortalitätsrate2.02.0
+
+                                1.5      1.5                                                                                  1.5          1.5
+                                                                                                                              1.0
+22.0.0        2.0               1.0      1.0                                                                                               1.0           2.0 25 20
+                                                                                                                                    20 15         20 15
+                                     15              15                                                                                                         25 20 15 25  15 25 20 15        20 15 25 20                                                                25 20  25         25
+                                                                                                                                                                                                                                                              [°C]
+                                                                                                                                                         Wochenmitteltemperatur [°C]
+2.0           2.0                                                                                                                                               Wochenm Wio ttc eh lte en mm W pieto trea clh ttu eerm n[m °pC eitr]ta etlu term [°pCe]ratur
+
+1.15.5        1.5                                                                                                                                               1.5
+
+1.5           1.5
+
+1.10.0        1.0                                                                                                                                               1.0
+                                                                                                                                                                        15
+1.0 15 1.0                20             25                                                                                                                                                     20                                                                                       25
+
+                                Westen Westen                                                                                                                                            Süden Süden
+
+                                Westen Westen                                                                                                                                            Süden Süden
+
+2.5 W2es.5ten                                                                                                                                                             Süden
+              2.5                                                                                                                                               2.5
+22.5.5
+
+2.0           2.0
+
+22.0.0        2.0                                                                                                                                               2.0
+
+1.5           1.5
+
+1.15.5        1.5                                                                                                                                               1.5
+
+1.0           1.0
+
+1.10.0 15 1.0 15          20    20       25                                                                                        25                    15 1.0 15                   20         20                                                            25                      25
+
+        1155          15  2200  20 W2255ochenW2m5oitctehletenm15piteterlatetum11r55p[°eCra] tu2r0[°C] 2200                                                                                                                                                    25                      2255
+
+                                         WochenWmoitctheeltenmpitteerlatetumr p[°eCra] tur [°C]                                                                                                                                                               Wochenmitteltemperatur [°C]
+
+Abb. 5 | Veränderungen der kumulativen Expositions-Wirkungskurven in der Altersgruppe 85+ über die vier betrachteten Zeiträu-
+me zwischen 1992 und 2024 getrennt für die Regionen.
+
+die im Median etwa 1.200 höher als die Anzahl                                                                                                                   Die Schätzwerte zur Anzahl hitzebedingter Sterbe-
+hitze­bedingter Sterbefälle ausfallen würde. Die                                                                                                                fälle in Deutschland und den Bundesländer von
+höchsten Abweichungen traten mit 2.000 bis 2.200                                                                                                                1992 bis 2024 sind als Excel-Datei im Anhang
+Sterbefällen in den Jahren 1994, 2003, 2018, 2022                                                                                                               dieser Ausgabe verfügbar.
+und 2024 auf. Wie Abbildung 2 zeigt, gab es in die-
+sen Jahren besonders viele heiße Wochen.                                                                                                                        Diskussion
+
+              Jahr              Hitzebedingte Sterbefälle                                                                                                       Die Sommer 2023 und 2024 zeigen eine mittelhohe
+                                                                                                                                                                geschätzte Anzahl hitzebedingter Sterbefälle. Mit
+              2015              7.000 [5.800; 8.300]                                                                                                            ­jeweils etwa 3.000 hitzebedingten Sterbefällen lie-
+                                                                                                                                                                gen sie etwa im Bereich der medianen Anzahl von
+              2016              1.600 [500; 2.900]                                                                                                              3.300 hitzebedingten Sterbefällen in den Jahren 2013
+                                                                                                                                                                bis 2022. Das liegt vor allem daran, dass weniger
+              2017              1.440 [460; 2.460]                                                                                                              sehr hohe Tages- und Wochenmitteltemperaturen
+                                                                                                                                                                vorkamen als etwa in den Jahren 2018, 2020 und
+              2018              8.500 [7.200; 9.800]                                                                                                            2022. Die Hitzewirkung blieb - wie Abbildung 5
+                                                                                                                                                                zeigt - insgesamt auf einem ähnlichen Niveau wie
+              2019              7.000 [5.700; 8.500]                                                                                                            in den Jahren seit 2008.
+
+              2020              3.700 [2.600; 5.200]                                                                                                            Hitzebedingte Sterbefälle treten vor allem bei Men-
+                                                                                                                                                                schen im Alter von >75 Jahren auf und betreffen
+              2021              1.700 [600; 2.900]                                                                                                              häufig Menschen mit psychischen Störungen wie
+
+              2022              4.500 [3.200; 6.200]
+
+              2023              3.100 [1.400; 4.900]
+
+              2024              2.800 [1.000; 5.000]
+
+Tab. 1 | Anzahl hitzebedingter Sterbefälle im Zeitraum 2015
+bis 2024 für Deutschland. Die 95%-Prädiktionsintervalle sind
+jeweils in eckigen Klammern angegeben.
+Epidemiologisches Bulletin  19|2025  7. Mai 2025        8
+
+Demenz, Herz-Kreislauf- oder Lungenerkrankun-           Gesundheitsrisiken (zum Beispiel Schwindel, Ver-
+gen.14,15                                               wirrtheit, Erschöpfung, Hitzschlag) stellt die Morta-
+                                                        lität nur eine, wenn auch besonders drastische
+Eine Limitation der vorliegenden Analyse ist, dass      Komponente dar, die sich auf der Basis des Mortali-
+nur wöchentliche Anzahlen von Sterbefällen analy-       tätsverlaufs aber gut quantifizieren lässt. Sie kann
+siert wurden. Eine tagesgenaue und räumlich höher       daher auch als Indikator für die Hitzebelastung der
+aufgelöste Analyse führt zu einer vollständ­ igeren     Gesellschaft betrachtet werden. Im Sachstands­
+Schätzung der hitzebedingten Sterblichkeit.16,17 Wie    bericht zu Klimawandel und Gesundheit in Deutsch-
+in den früheren Analysen wurden auch in dieser          land18 wurde die aktuelle Evidenz von Autorinnen
+Analyse wöchentliche Daten gewählt, da nur diese        und Autoren aus mehr als 30 nationalen Behörden
+getrennt nach Bundesländern und Altersgruppen           und Institutionen zusammengestellt und Hand-
+von Destatis zeitnah bereitgestellt werden.8 Detail-    lungsoptionen in verschiedenen Bereichen aufge-
+liertere Daten aus der RKI-Mortalitätssurveillance      zeigt, unter anderem auch zum Thema Hitze in
+liegen nur für den Zeitraum ab November 2021 vor.       Deutschland: Gesundheitliche Risiken und Maß-
+                                                        nahmen zur Prävention.19,20 Aufgrund des Hitze­
+Trotz der aufwendigeren Adjustierung der Hinter-        inseleffekts sind Städte besonders von Hitze betrof-
+grundmortalität ab dem Jahr 2020 konnte der reale       fen21 und benötigen aufgrund des hohen Versie­
+Verlauf - insbesondere in den Sommern 2022 und          gelungsanteils und begrenzten Grünflächen beson-
+2023 - nicht so gut wie in den Jahren davor abgebil-    dere Ausgleichsmaßnahmen.22 Best-Practice-Bei-
+det werden. Dies wirkt sich aber kaum auf die Schät-    ­spiele und Beispiel-Hitzeaktionspläne bietet etwa
+zung der hitzebedingten Mortalität aus.                 der Deutschen Städtetag.23 Individuelle Verhaltens­
+                                                        empfehlungen bei Hitze gibt zum Beispiel der
+Es ist davon auszugehen, dass es durch den Klima-       ,,Hitze­knigge" des Umweltbundesamts.24,25 Ein zeit­
+wandel auch in Zukunft vermehrt zu extremen             nahes Monitoring hitzebedingter Mortalität mit
+­Hitzeperioden in Deutschland kommen wird, die          ­hoher regionaler Auflösung kann dabei helfen,
+weitreichende gesundheitliche Risiken mit sich          ­Risiken zu erkennen und Maßnahmen zielgerichtet
+bringen können. Für die Beurteilung hitzebedingter      anzupassen.
+
+Literatur                                               4 an der Heiden, M., et al., Hitzebedingte Mortalität -
+                                                           Eine Analyse der Auswirkungen von Hitzewellen in
+1 Romanello, M., et al., The 2024 report of the Lancet     Deutschland zwischen 1992 und 2017.
+   Countdown on health and climate change: facing          Dtsch Arztebl Int 2020; 117: 603-9; DOI: 10.3238/
+   record-breaking threats from delayed action.            arztebl.2020.0603
+   The Lancet, 2024. 404(10465): p. 1847-1896.
+                                                        5 Winklmayr, C., et al., Heat-Related Mortality in
+2 Vicedo-Cabrera, A.M., et al., The burden of heat-        Germany From 1992 to 2021. Dtsch Arztebl Int,
+   related mortality attributable to recent human-         2022. 119(26): p. 451-457.
+   induced climate change. Nat Clim Chang, 2021.
+   11(6): p. 492-500.                                   6 Winklmayr, C. and M. an der Heiden, Hitzebedingte
+                                                           Mortalität in Deutschland 2022.
+3 an der Heiden, M., et al., Schätzung hitzebedingter
+   Todesfälle in Deutschland zwischen 2001 und 2015.    7 an der Heiden, M., Neubestimmung der Prädik­
+   Bundesgesundheitsblatt - Gesundheitsforschung -         tionsintervalle zur Schätzung der hitzebedingten
+   Gesundheitsschutz, 2019. 62(5): p. 571-579.             Mortalität. Epid Bull 2023;26:14-16.
+Epidemiologisches Bulletin  19|2025  7. Mai 2025           9
+
+8 Statistisches Bundesamt. Auswertung der unterjäh-        21 Umweltbundesamt, Hitze in der Innenstadt: mehr
+   rigen Sterbefallzahlen seit 2020. https://www.desta-       Bäume und Schatten nötig. 2022: https://www.um-
+   tis.de/DE/Themen/Gesellschaft-Umwelt/Bevoelke-             weltbundesamt.de/presse/pressemitteilungen/hit-
+   rung/Sterbe­faelle-Lebenserwartung/sterbefallzah-          ze-in-der-innenstadt-mehr-baeume-schatten-noetig.
+   len.html.
+                                                           22 Umwelthilfe, D. Hitze-Check von Deutschlands
+9 Statistisches Bundesamt. Bevölkerung.                       Städten. 2024. https://www.duh.de/fileadmin/user_
+   https://www.destatis.de/DE/Themen/Gesell-                  upload/download/Pressemitteilungen/Kommunal/
+   schaft-Umwelt/Bevoelkerung/_inhalt.html.                   Hitze-Check_2024/Hitze-Check_Staedte-Deutsch-
+                                                              land_Uebersicht_240729.pdf.
+10 Wood, S.N., Generalized Additive Models:
+   An Introduction with R. 2006, New York: Chapman         23 Deutscher Städtetag. Hitzeschutz und Hitze­
+   and Hall/CRC. 416.                                         vorsorge in den Städten. https://www.staedtetag.
+                                                              de/themen/klimaschutz-und-energie/hitze-
+11 Deutscher Wetterdienst. Deutschlandwetter im               schutz-hitzevorsorge-staedte.
+   Sommer 2023. https://www.dwd.de/DE/presse/
+   pressemitteilungen/DE/2023/20230830_deutsch-            24 Grothmann, T., R. Becker, and neues handeln AG.
+   landwetter_sommer2023_news.html.                           Der Hitzeknigge - Tipps für das richtige Verhalten
+                                                              bei Hitze. 2021. https://www.umweltbundesamt.
+12 Deutscher Wetterdienst. Deutschlandwetter im               de/en/publikationen/hitzeknigge.
+   Sommer 2024. https://www.dwd.de/DE/presse/
+   pressemitteilungen/DE/2024/20240830_deutsch-            25 Mücke, H.-G. and A. Matzarakis, Klimawandel
+   landwetter_sommer2024_news.html.                           und Gesundheit: Tipps für sommerliche Hitze und
+                                                              Hitzewellen. 2019, Umweltbundesamt. https://
+13 Huber, V., et al., Heat-Related Mortality in the           www.umweltbundesamt.de/publikationen/klima-
+   Extreme Summer of 2022-an Analysis Based on                wandel-gesundheit-tipps-fuer-sommerliche-hitze
+   Daily Data. Dtsch Arztebl Int, 2024. 121(3): p. 79-85.
+                                                           Autor
+14 Fritze, T., The effect of heat and cold waves on the
+   mortality of persons with dementia in Germany.          Dr. Matthias an der Heiden
+   Sustainability, 2020. 12(9): p. 3664.                   Robert Koch-Institut, Abt.3 Infektionsepidemiologie
+                                                           Korrespondenz: AnderHeidenM@rki.de
+15 Ragettli, M.S., et al., Vulnerability to heat-related
+   mortality and the effect of prevention measures:        Vorgeschlagene Zitierweise
+   a time-stratified case-crossover study in Switzer-
+   land. Swiss Medical Weekly, 2024. 154(10): p. 3410-     an der Heiden M: Hitzebedingte Mortalität in
+   3410.                                                   Deutschland 2023 und 2024
+                                                           Epid Bull 2025;19:3-9 | DOI 10.25646/13135
+16 Ballester, J., et al., The effect of temporal data
+   aggregation to assess the impact of changing            Interessenkonflikt
+   temperatures in Europe: an epidemiological
+   modelling study. Lancet Reg Health Eur, 2024.           Der Autor gibt an, dass kein Interessenkonflikt besteht.
+   36: p. 100779.
+
+17 Wang, J., et al., High-resolution modeling and
+   projection of heat-related mortality in Germany
+   under climate change. Commun Med (Lond), 2024.
+   4(1): p. 206.
+
+18 Robert Koch-Institut. Sachstandsbericht Klima­
+   wandel und Gesundheit (2023).
+
+19 Winklmayr, C., et al., Hitze in Deutschland:
+   Gesundheitliche Risiken und Maßnahmen
+   zur Prävention. Journal of Health Monitoring,
+   2023(S4): p. 3-34.
+
+20 Winklmayr, C., et al., Heat in Germany: Health risks
+   and preventive measures. Journal of Health Moni-
+   toring, 2023. 8(Suppl 4): p. 3-32.
+

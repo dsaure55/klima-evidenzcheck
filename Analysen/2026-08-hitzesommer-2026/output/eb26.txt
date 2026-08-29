@@ -1,0 +1,140 @@
+Epidemiologisches Bulletin  26|2023            29. Juni 2023                             14
+
+Neubestimmung der Prädiktionsintervalle zur Schätzung
+der hitzebedingten Mortalität
+
+Kommentar und Erläuterung zu ,,Hitzebedingte Mortalität in Deutschland"
+(Epidemiologisches Bulletin 42/2022)
+
+In der Ausgabe 42/2022 des Epidemiologischen                  typischerweise auf die Zehnerstelle und vierstellige
+Bulletins wurde die hitzebedingte Mortalität in               Zahlen auf die Hunderterstelle gerundet angegeben.
+Deutschland für die Jahre 2012 bis 2022 beschrie-
+ben. Dabei wurden für die Zusammenfassung der                 Diese beiden Änderungen führen dazu, dass einige
+wöchentlichen hitzebedingten Sterbezahlen über                Punktschätzer genauer dargestellt werden und die
+den Sommer jeweils alle Kalenderwochen zwischen               Unsicherheitsbereiche insgesamt deutlich kleiner
+den Kalenderwochen 15 bis 40 berücksichtigt. Das              ausfallen. Nachfolgend wird Tabelle 1 aus Ausgabe
+neue Verfahren sieht dagegen vor, nur die Wochen,             42/2022 nach der oben beschriebenen Rundungs-
+in denen tatsächlich im jeweiligen Bundesland eine            methode dargestellt.
+Hitzewirkung aufgetreten ist, zu verwenden. Da-
+durch verringert sich die Unsicherheit der Schät-             Die Jahre 2018 bis 2020 fallen dadurch auf, dass es
+zung hitzebedingter Sterbefälle deutlich, da die mo-          zum ersten Mal innerhalb des Untersuchungszeit-
+dellierte Anpassung der Mortalität auch in Wochen             raums von 1992 bis 2022 in drei aufeinanderfolgen-
+ohne Hitze mit Unsicherheit behaftet ist.                     den Jahren jeweils über 3.000 hitzebedingte Sterbe-
+                                                              fälle gab.
+Eine weitere Änderung betrifft die angewendete
+Rundung: Im o.g. Artikel wurden die Ergebnisse je-            Auch in der Abbildung 2 des o. g. Artikels ergeben
+weils auf die Hunderterstelle gerundet, was dazu              sich somit kleinere Unsicherheitsbereiche. Insbeson-
+führte, dass diese in den Regionen und Bundeslän-             dere zeigt sich seit 2013 in jedem Jahr eine signifikant
+dern teilweise sehr grob dargestellt wurden. In der           erhöhte Zahl hitzebedingter Sterbefälle. Nachfolgend
+neuen Version werden dagegen dreistellige Zahlen              zeigt Abbildung 1 die angepasste Darstellung.
+
+Jahr  Deutschland                Norden               Osten                Westen               Süden
+                              50 [-390;480]      140 [-280;610]      450 [-170;1.030]      260 [-370;830]
+2012  900 [-100;2.100]         370 [10;730]      660 [180;1.180]      960 [320;1.610]      910 [300;1.510]
+                             280 [-130;690]       330 [-40;720]       330 [-250;890]       210 [-340;750]
+2013  2.900 [1.900;4.000]     380 [-80;820]     1.190 [700;1.670]   2.030 [1.320;2.770]  2.160 [1.400;2.910]
+                             260 [-200;750]      360 [-260;950]       780 [-10;1.500]      350 [-280;950]
+2014  1.140 [220;2.080]                          100 [-370;580]      430 [-130;1.020]      880 [220;1.620]
+                                  0 [0;0]      1.680 [1.070;2.270]  3.510 [2.610;4.380]  1.760 [1.100;2.440]
+2015  5.800 [4.500;7.000]   1.450 [870;2.020]   1.400 [720;2.060]   3.040 [2.150;3.870]   1.510 [800;2.210]
+                             850 [260;1.420]     690 [160;1.150]     1.660 [830;2.410]     740 [170;1.310]
+2016  1.700 [400;3.000]      660 [110;1.170]      430 [-30;940]       730 [210;1.230]      380 [-150;910]
+                                                 790 [240;1.360]    1.960 [1.140;2.760]   1.360 [620;2.090]
+2017  1.400 [400;2.400]      290 [-160;760]
+                              410 [-70;880]
+2018  8.400 [7.100;9.800]
+
+2019  6.800 [5.400;8.200]
+
+2020  3.800 [2.600;4.900]
+
+2021  1.830 [880;2.800]
+
+2022  4.500 [3.200;5.800]
+
+Tab. 1 | Anzahl hitzebedingter Sterbefälle im Zeitraum 2012 bis 2022 in Deutschland insgesamt und in den vier Regionen Norden,
+Osten, Westen und Süden. Die 95 %-Prädiktionsintervalle sind jeweils in eckigen Klammern angegeben. Signifikante Werte sind
+fett dargestellt. (angepasste Tabelle)
+         Epidemiologisches Bulletin                                        26|2023                   29. Juni 2023                                                        15
+
+                                   Anzahl Sterbefälle                                                             signifikant        nicht signifikant
+
+                                   10.000
+
+                                   7.500        signifikant    nicht signifikant
+
+         Anzahl Sterbefälle        5.000
+
+                                   2.500
+
+                                       0
+
+                                                  2012         2013               2014   2015               2016               2017  2018               2019  2020  2021  2022
+
+                                                                                                                                                                                Jahr
+
+                                   Abb. 1 | Geschätzte Anzahl hitzebedingter Sterbefälle im Zeitraum 2012 bis 2022 in Deutschland. Jahre mit einer signifikanten
+
+3  2014  20A15nzahl hi2t0z1e6bedingt2e0r1S7 terbefä2ll0e18(Unterg2re01n9ze des 92502%0 -Prädik2t0i2o1nsinterv2a02ll2s ist größer 0) sind blau hervorgehoben.
+                                   (angepasste Abbildung)
+
+                                   Betrachtet man die Schätzungen innerhalb der vier                                           Jahren 2013, 2015, 2018, 2019, 2020 und 2022. Die
+                                   Regionen Norden, Osten, Westen und Süden in der                                             Schätzwerte zur Anzahl hitzebedingter Sterbefälle
+                                   angepassten Abbildung 2 (Abb.4 aus Epid Bull                                                in Deutschland, den Regionen und darüber hinaus
+                                   42/2022), so zeigen sich in fast allen Regionen                                             den Bundesländer sind als Excel-Datei im Anhang
+                                   Deutschlands mit dem neuen Verfahren signifikant                                            dieser Ausgabe verfügbar
+                                   erhöhte Anzahlen hitzebedingter Sterbefälle in den
+
+                                   Anzahl Sterbefälle pro 100.000 Einwohner
+
+                                   15
+
+                                          Norden        Osten  Westen             Süden  nicht signifikant
+
+         Anzahl Sterbefälle                                                                                                                                                                                                                                           Nor
+            pro 100.000 Einwohner  10
+
+                                                                                                                                                                                                                                                                      Ost
+
+                                                                                                                                                                                                                                                                    We
+                                   5
+
+                                                                                                                                                                                                                                                                    Süd
+
+                                   0                                                                                                                                                                                       nich
+
+2  2013  2014                             2015          2016         2017         2018         2019         2020               2021  2022
+
+                                                2012           2013        2014          2015        2016         2017               2018               2019  2020  2021  2022
+
+                                                                                                                                                                                                                     Jahr
+
+                                   Abb. 2 | Geschätzte Anzahl hitzebedingter Sterbefälle im Zeitraum 2012 bis 2022 in den vier Regionen Norden, Osten, Westen
+                                   und Süden. Farblich hervorgehobene Balken zeigen Jahre bzw. Regionen mit einer signifikanten Anzahl hitzebedingter Sterbefälle.
+                                   (angepasste Abbildung)
+
+                                   Um über die hitzebedingte Mortalität in Deutsch-                                            ternetseite des Robert Koch-Instituts veröffentlicht
+                                   land zu informieren, werden Datenerhebungen und                                             (https://www.rki.de/hitze). Für diese Berichte wird
+                                   Auswertungen im Sommer zwischen Juni und Sep-                                               das hier beschriebene Verfahren angewendet.
+                                   tember 2023 in regelmäßigen Berichten auf der In-
+Epidemiologisches Bulletin  26|2023  29. Juni 2023     16
+
+Autor                                                  Interessenkonflikt
+
+Dr. Matthias an der Heiden                             Der Autor gibt an, dass kein Interessenkonflikt besteht.
+
+Robert Koch-Institut, Abt. 3 Infektionsepidemiologie,  Danksagung
+FG 34 HIV/AIDS und andere sexuell oder durch Blut
+übertragbare Infektionen                               Wir bedanken uns bei Mathias Keitel vom Landesamt
+                                                       für Verbraucherschutz Sachsen-Anhalt für hilfreiche
+Korrespondenz: AnderHeidenM@rki.de                     Diskussionen zur Beschreibung der Unsicherheits­
+                                                       intervalle.
+Vorgeschlagene Zitierweise
+
+an der Heiden M: Neubestimmung
+der Prädiktionsi­ntervalle zur Schätzung der hitze­
+bedingten Mortalität - Kommentar und Erläuterung
+zu ,,Hitzeb­ edingte Mortalität in Deutschland"
+(Epidemiologisches Bulletin 42/2022)
+Epid Bull 2023;26:14-16 | DOI 10.25646/11580
+
