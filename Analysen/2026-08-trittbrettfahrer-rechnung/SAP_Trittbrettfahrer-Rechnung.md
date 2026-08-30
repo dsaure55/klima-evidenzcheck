@@ -401,11 +401,31 @@ Ergebnistexts.*
   Anteilsschwelle dasselbe Argument nutzten"). Dies unterscheidet sich
   grundlegend von einer Fairness- oder Verantwortungsanalyse (die z. B.
   historische kumulierte Pro-Kopf-Emissionen, Entwicklungsstand oder
-  Kolonialgeschichte einbeziehen würde). Sollte im Projekt eine frühere
-  SAP-Analyse zu Emissionen-Trendprojektion oder verwandten Themen
-  existieren, ist im Bericht explizit auf diesen Unterschied hinzuweisen,
-  ohne inhaltliche Aussagen dieser anderen Analyse zu übernehmen oder
-  vorwegzunehmen.
+  Kolonialgeschichte einbeziehen würde).
+- **Explizite Abgrenzung zu `Analysen/2026-08-emissionen/SAP_DE-Emissionen-Trendprojektion-2040.md`:**
+  Im Projektordner existiert bereits eine weitere SAP-Analyse zu
+  Deutschland, die **nicht** mit dieser Rechnung verwechselt werden darf.
+  Beide behandeln zwar Deutschlands Emissionen, beantworten aber
+  grundverschiedene Fragestellungen mit unterschiedlichen statistischen
+  Verfahren:
+  - **`Analysen/2026-08-emissionen/SAP_DE-Emissionen-Trendprojektion-2040.md`:**
+    Wie entwickeln sich Deutschlands **eigene** Emissionen zeitlich? Eine
+    **Trendprojektion/Trendfortschreibung** (lineare Regression über die
+    Zeit inkl. Prognoseintervall) für **ein einzelnes Land** in die
+    **Zukunft** (Projektion bis 2040 gegen das gesetzliche -88 %-Ziel).
+  - **`Analysen/2026-08-trittbrettfahrer-rechnung/SAP_Trittbrettfahrer-Rechnung.md`
+    (dieser SAP):** Wie groß ist der **kumulierte Anteil aller Länder** mit
+    einem Emissionsanteil kleiner oder gleich Deutschlands Anteil an den
+    weltweiten Emissionen? Eine **Querschnitts-Aggregation über viele
+    Länder** zu einem Zeitpunkt (aktuelles Jahr) bzw. kumulativ über die
+    Historie. **Keine Projektion, keine Aussage** über Deutschlands eigene
+    zukünftige Entwicklung.
+
+  Der Bericht dieser Analyse muss diesen Unterschied explizit benennen
+  (Dateiname/Pfad der anderen Analyse nennen, nicht nur vage auf "eine
+  frühere Analyse" verweisen), ohne inhaltliche Aussagen oder Ergebnisse der
+  Trendprojektions-Analyse zu übernehmen, vorwegzunehmen oder mit den
+  Estimands dieses SAP zu vermischen.
 - **Schwellenwahl "Deutschlands Anteil" ist illustrativ, nicht methodisch
   privilegiert:** Die Wahl gerade dieser Schwelle ergibt sich allein aus der
   Fragestellung des Auftrags (Bezug auf ein konkretes, in der öffentlichen
@@ -529,3 +549,5 @@ Ergebnistexts.*
 | Version | Datum | Änderung |
 |---|---|---|
 | 0.1 | 30.08.2026 | Erstentwurf (draft), noch keine Datensichtung, keine Freigabe |
+| 0.1 | 30.08.2026 | Abschnitt 8: Abgrenzungshinweis zu `SAP_DE-Emissionen-Trendprojektion-2040.md` konkretisiert (Dateipfad + zwei Stichpunkte zur Unterscheidung der Fragestellungen). Status weiterhin `draft`, keine Freigabe. |
+</content>
