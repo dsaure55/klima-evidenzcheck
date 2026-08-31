@@ -6,17 +6,37 @@ Solarerzeugung) tatsächlich, und welchen Anteil davon hätte die aktuell
 installierte bzw. die für Ende 2026 / 2030 erwartete Batteriespeicherkapazität
 real decken können?
 
-**Version:** 0.1 (Entwurf)
+**Version:** 0.2 (Entwurf)
 **Status:** draft
-**Datum (Entwurf v0.1):** 31.08.2026
+**Datum (Entwurf v0.1):** 30.08.2026
+**Datum (Überarbeitung v0.2):** 30.08.2026
 **Autor:in:** sap-autor-Subagent (Klima-Evidenzcheck-Projekt)
 **Freigabe/Einfrieren:** ausstehend – **nicht** freigegeben, **nicht**
-eingefroren. Kein Datenzugriff, keine Ergebnisse gesichtet.
+eingefroren. Kein Datenzugriff, keine Ergebnisse gesichtet. Status bleibt
+`draft`, bis der Mensch nach vollständiger Lektüre des aktuellen Volltextes
+ausdrücklich freigibt.
 
 **Versionshistorie:**
-- **v0.1 (31.08.2026):** Erstentwurf, präregistriert vor jedem Zugriff auf
+- **v0.1 (30.08.2026):** Erstentwurf, präregistriert vor jedem Zugriff auf
   SMARD-, Marktstammdatenregister- oder BNetzA-Planungsdaten. Fünf offene
   Rückfragen an den Menschen formuliert (Abschnitt 12).
+- **v0.2 (30.08.2026):** Alle fünf Rückfragen aus v0.1 durch Daniel Saure
+  beantwortet. Rückfragen 1, 2 und 5 als "beantwortet, bestätigt" ohne
+  inhaltliche Änderung markiert (Abschnitt 12). Rückfrage 3 (Estimand 3c,
+  BNetzA-2030-Quelle) führte zu einer verschärften, verbindlichen Regel:
+  ernsthafte dokumentierte Suchpflicht nach einer offiziellen BNetzA-Quelle;
+  bei nachweislich gescheiterter Suche ist 3(c) explizit als "nicht mit
+  Primärqualität durchführbar" zu berichten, **keine** Ersatzzahl aus einer
+  Sekundärquelle (z. B. Frontier Economics) zulässig – Regel wurde explizit
+  in Abschnitt 2.3, 3, 9 und 12 verankert, nicht nur in Abschnitt 12
+  vermerkt. Rückfrage 4 (S8) führte zur Klarstellung, dass S8 als reguläre,
+  verpflichtende Sensitivitätsanalyse im SAP bleibt (nicht streichen), aber
+  als methodisch aufwendigste/fehleranfälligste Komponente gekennzeichnet
+  und – anders als S1–S7/S9 – zeitlich flexibel (verschiebbar/nachlieferbar
+  ohne Blockade der übrigen Analyse) markiert wird (Abschnitt 6). Kein
+  Datenzugriff, keine Ergebnisse gesichtet. Status bleibt **draft**, SAP ist
+  weiterhin **nicht** eingefroren – Freigabe erfolgt erst nach erneuter
+  vollständiger Lektüre des aktualisierten Volltextes durch den Menschen.
 
 ---
 
@@ -112,7 +132,8 @@ Estimand 1 ist eine notwendige deskriptive Vorstufe für Estimand 2 und 3
 ### 2.1 Estimand 1 (Vorstufe, deskriptiv): Dunkelflaute-Identifikation
 
 **Primäre Definition (bindend für die Primäranalyse, siehe Abschnitt 5.1 und
-6 für Sensitivitäten):**
+6 für Sensitivitäten; bestätigt ohne Änderung, siehe Abschnitt 12,
+Rückfrage 1):**
 
 - **Analyseeinheit der Vorstufe:** Kalendertag (00:00–24:00 Uhr,
   Zeitzone Europe/Berlin, inkl. korrekter Behandlung von
@@ -163,30 +184,41 @@ Kapazitäts-Zeitpunkte:
 - **(a) aktuell installierte Speicherkapazität** (Stand Analysezeitpunkt,
   Quelle: Marktstammdatenregister),
 - **(b) für Ende 2026 erwartete Kapazität** (primäre Quelle: amtlichere
-  Quelle falls auffindbar; Fallback: IWR-Prognose, explizit als
-  Sekundärquelle gekennzeichnet – siehe Abschnitt 3 und offene Rückfrage 5),
-- **(c) Bundesnetzagentur-Prognose/-Planung für 2030** (falls als belastbare
-  amtliche Quelle auffindbar; andernfalls "nicht durchführbar", siehe
-  Abschnitt 3 und Limitationen),
+  Quelle falls auffindbar; Fallback: IWR-Prognose – **bestätigt zulässig**,
+  siehe Abschnitt 3 und Abschnitt 12, Rückfrage 5, explizit und durchgängig
+  als Sekundärquelle gekennzeichnet),
+- **(c) Bundesnetzagentur-Prognose/-Planung für 2030** (ausschließlich aus
+  einer offiziellen BNetzA-Quelle; **verbindliche Suchpflicht und
+  ausdrückliches Ersatzzahl-Verbot**, siehe Abschnitt 3, 9 und Abschnitt 12,
+  Rückfrage 3 – scheitert die dort beschriebene, dokumentierte Suche
+  nachweislich, wird 3(c) explizit als **"nicht mit Primärqualität
+  durchführbar"** berichtet; **keine** Ersatzzahl aus einer Sekundärquelle),
 
 wird berechnet:
 
 **entladbare Energie_Szenario (GWh) = installierte nutzbare Speicherkapazität
-(GWh) × Anfangsladezustand vor Episodenbeginn (primär: 80 %) ×
-Entladewirkungsgrad (primär: 0,92, entsprechend einem angenommenen
-AC-AC-Rundtrip-Wirkungsgrad von 85 %, hälftig auf Lade-/Entladeseite
-aufgeteilt: √0,85 ≈ 0,922)**
+(GWh) × Anfangsladezustand vor Episodenbeginn (primär: 80 %, bestätigt ohne
+Änderung, siehe Abschnitt 12, Rückfrage 2) × Entladewirkungsgrad (primär:
+0,92, entsprechend einem angenommenen AC-AC-Rundtrip-Wirkungsgrad von 85 %,
+bestätigt ohne Änderung, siehe Abschnitt 12, Rückfrage 2; hälftig auf
+Lade-/Entladeseite aufgeteilt: √0,85 ≈ 0,922)**
 
 **Deckungsgrad_Episode,Szenario = entladbare Energie_Szenario (GWh) ÷
 Defizit_Episode (GWh)**, primär als reine Energiebilanz ohne
-Nachladung während der Episode (Begründung und Sensitivität siehe Abschnitt
-5.1 und 6, S8) und primär ohne Leistungs-/C-Raten-Begrenzung (Begründung und
-verpflichtende Sensitivität siehe Abschnitt 6, S5).
+Nachladung während der Episode (Begründung siehe Abschnitt 5.1; verpflichtende
+Sensitivität S8, siehe Abschnitt 6) und primär ohne Leistungs-/C-Raten-
+Begrenzung (Begründung und verpflichtende Sensitivität siehe Abschnitt 6,
+S5).
 
 **Berichtsform (bindend):** Für jedes der drei Kapazitätsszenarien wird die
 vollständige Verteilung des Deckungsgrads über alle Episoden berichtet
 (Median, Interquartilsabstand, Minimum, Maximum) – **nicht** nur eine
-einzelne Durchschnittszahl.
+einzelne Durchschnittszahl. Ist Szenario 3(c) gemäß obiger Regel als "nicht
+mit Primärqualität durchführbar" markiert, entfällt für dieses Szenario die
+Deckungsgrad-Berechnung ersatzlos (kein Ausweichen auf eine Ersatzzahl); dies
+wird im Bericht als eigenständiges, benanntes Ergebnis ("3(c) nicht mit
+Primärqualität durchführbar") dargestellt, nicht stillschweigend
+ausgelassen.
 
 Diese Formulierungen sind so gewählt, dass zwei unabhängige Analyst:innen mit
 diesem SAP zu identischer Episodenliste, identischer Defizitberechnung und
@@ -206,27 +238,56 @@ dokumentierten Versuch):**
    aller Stromspeicheranlagen inkl. Nennleistung, nutzbarer
    Speicherkapazität (sofern im Register erfasst) und Inbetriebnahmedatum.
    Primärquelle für Kapazitätsszenario 3(a).
-3. **Bundesnetzagentur-Planungsdokumente** (primär zu prüfen:
-   Netzentwicklungsplan Strom / Szenariorahmen Strom, ggf.
-   Kraftwerkssicherheitsbericht) für Kapazitätsszenario 3(c). Falls keine
-   belastbare amtliche 2030-Kapazitätsangabe für Batteriespeicher auffindbar
-   ist, muss dies explizit dokumentiert und Estimand 3(c) als **"nicht
-   durchführbar, siehe Limitationen"** markiert werden – **keine** Verwendung
-   einer unsicheren Ersatzzahl ohne amtliche Grundlage anstelle dieser
-   Markierung.
+3. **Bundesnetzagentur-Planungsdokumente** (primär und verpflichtend zu
+   prüfen: aktuellster Netzentwicklungsplan-Entwurf Strom / Szenariorahmen
+   Strom, Kraftwerkssicherheitsbericht, sowie weitere amtliche
+   BNetzA-Veröffentlichungen mit expliziter Batteriespeicher-
+   Kapazitätsangabe für 2030) für Kapazitätsszenario 3(c).
+
+   **Verbindliche Regel (Entscheidung des Menschen, 30.08.2026, siehe
+   Abschnitt 12, Rückfrage 3):** Der Analyst muss **ernsthaft und
+   dokumentiert** nach einer offiziellen BNetzA-Quelle suchen (mindestens
+   geprüft werden müssen: aktueller/aktuellster Netzentwicklungsplan-
+   Entwurf, Kraftwerkssicherheitsbericht; weitere amtliche BNetzA-Quellen
+   nach eigenem Ermessen). Geprüfte Dokumente, Fundstelle bzw. Beleg der
+   erfolglosen Suche sind vollständig zu dokumentieren (siehe
+   Software-Anforderung, Abschnitt 10).
+
+   **Nur wenn diese Suche nachweislich scheitert**, wird Estimand 3(c)
+   explizit als **"nicht mit Primärqualität durchführbar"** berichtet. In
+   diesem Fall ist **keine** Ersatzzahl aus einer Sekundärquelle (z. B.
+   Frontier-Economics-Studie, IWR oder vergleichbare Prognosen Dritter) als
+   Substitut für Kapazitätsszenario 3(c) zulässig – weder als vermeintlich
+   "primäre" Zahl noch stillschweigend als Sensitivität, die den Anschein
+   einer eigenen Primärberechnung erweckt. **Begründung:** Zweck dieser
+   Analyse ist eine eigene Primärrechnung auf Basis amtlicher Daten, nicht
+   die Reproduktion einer fünften, methodisch weiteren Fremdzahl – das
+   widerspräche unmittelbar dem in Abschnitt 1 formulierten Zweck dieses
+   SAP. Dieses Verbot gilt **ausschließlich** für Szenario 3(c); es betrifft
+   **nicht** die für Szenario 3(b) ausdrücklich zugelassene IWR-Sekundärquelle
+   (siehe unten) und **nicht** die in Abschnitt 6 (S9) vorgesehene
+   Kreuzprüfung für Szenario 3(a).
 
 **Sekundärquellen (nur zur Einordnung/Kreuzprüfung, nicht als
-Berechnungsgrundlage):**
+Berechnungsgrundlage – Ausnahme: Szenario 3(b), siehe unten):**
 
 - Die vier eingangs genannten Fremdzahlen (2 %-Zahl, Ø-2,3h-Zahl,
   Frontier-Economics-Studie, 5,6-Mrd.-€-Studie) – im Ergebnisbericht dem
   eigenen berechneten Wert gegenübergestellt, mit expliziter Benennung der
   methodischen/zeitlichen Abweichung (siehe Abschnitt 8), **nicht** als
-  "wer hat recht"-Vergleich.
-- IWR-Prognose für die Ende-2026-Kapazität (Szenario 3b), **nur falls** keine
-  amtlichere Quelle (z. B. BNetzA-Kurzfristprognose, Marktstammdatenregister-
-  Trendfortschreibung) auffindbar ist – explizit als Sekundärquelle
-  gekennzeichnet.
+  "wer hat recht"-Vergleich. Ausdrücklich **nicht** als Ersatzwert für
+  Estimand 3(c) verwendbar (siehe verbindliche Regel oben).
+- **IWR-Prognose für die Ende-2026-Kapazität (Szenario 3b) – bestätigt
+  zulässig (Entscheidung des Menschen, 30.08.2026, siehe Abschnitt 12,
+  Rückfrage 5):** zu verwenden, falls keine amtlichere Quelle (z. B.
+  BNetzA-Kurzfristprognose, Marktstammdatenregister-Trendfortschreibung)
+  auffindbar ist. Muss im Bericht **durchgängig und unübersehbar** als
+  Sekundärquelle/Schätzung gekennzeichnet werden (Quellenangabe direkt an
+  jeder Stelle, an der der Wert erscheint – Tabellen, Grafiken, Fließtext –,
+  analog zur Kennzeichnungspraxis für Sekundärdaten in früheren Analysen
+  dieses Projekts), nicht nur einmalig im Methodenteil. Diese Zulässigkeit
+  gilt **ausschließlich** für Szenario 3(b), nicht für 3(c) (siehe
+  verbindliche Regel oben).
 - Sekundäre Industrieaggregate (z. B. Bundesverband Energiespeicher
   Systeme e. V. (BVES), Fraunhofer-ISE/energy-charts.info-Aggregate) **nur**
   zur Plausibilitäts-Kreuzprüfung der MaStR-Summe für Szenario 3(a), falls der
@@ -249,10 +310,10 @@ analog zum in diesem Projekt etablierten Vorgehen, z. B.
    Plausibilitätsvergleich mit Sekundäraggregaten (siehe S9) prüfen und
    dokumentieren, bevor Szenario 3(a) berechnet wird.
 4. Gezielte, dokumentierte Suche nach einer amtlichen BNetzA-Quelle für eine
-   2030-Batteriespeicherkapazitätsangabe (Netzentwicklungsplan/
-   Szenariorahmen); Ergebnis (gefunden/nicht gefunden, mit Fundstelle bzw.
-   Beleg des erfolglosen Suchversuchs) dokumentieren, bevor über Estimand 3(c)
-   entschieden wird.
+   2030-Batteriespeicherkapazitätsangabe (siehe verbindliche Suchpflicht
+   oben); Ergebnis (gefunden/nicht gefunden, mit Fundstelle bzw. Beleg des
+   erfolglosen Suchversuchs) dokumentieren, bevor über Estimand 3(c)
+   final entschieden wird.
 5. Prüfen, ob für Szenario 3(b) eine amtlichere Quelle als IWR existiert;
    Ergebnis dokumentieren.
 
@@ -262,6 +323,9 @@ etablierten Standard): Eine Behauptung eines gescheiterten
 Zugriffsversuchs ist nur zulässig, wenn sie mit einem nachprüfbaren Artefakt
 (Log, Zeitstempel, Fehlermeldung, Code-Pfad) belegt wird; andernfalls ist
 ehrlich zu formulieren "nicht versucht, da kein Netzwerkzugriff verfügbar".
+Dies gilt insbesondere für die Suchpflicht zu Estimand 3(c) oben – eine
+Behauptung "keine BNetzA-Quelle gefunden" ist nur mit dokumentiertem
+Suchprotokoll zulässig.
 
 ## 4. Analysepopulation
 
@@ -336,7 +400,7 @@ Begrenzung.
 | Leistungsbegrenzung | keine (reine Energiebilanz) | C-Raten-/Nennleistungs-Kappung (S5) |
 | Anfangsladezustand | 80 % | 50 %, 100 % (S6) |
 | Rundtrip-Wirkungsgrad | 85 % (η_Entladung 0,92) | 80 %, 90 % (S7) |
-| Nachladung während Episode | keine | vereinfachte Dispatch-Simulation (S8, siehe Rückfrage 4) |
+| Nachladung während Episode | keine | vereinfachte Dispatch-Simulation (S8, zeitlich flexibel, siehe Abschnitt 6) |
 | Kapazitätsquelle 3(a) | MaStR-Summe | Sekundäraggregat-Kreuzprüfung (S9, konditional) |
 
 **Wichtiger Hinweis zur Kombinatorik:** Alle Sensitivitäten in Abschnitt 6
@@ -443,15 +507,29 @@ unabhängig davon, ob sie das primäre Ergebnis bestätigen. Jede Variante
    (zwei getrennte Varianten).
 7. **S7 – Alternative Rundtrip-Wirkungsgrade:** 80 % bzw. 90 % statt 85 %
    (zwei getrennte Varianten).
-8. **S8 – Vereinfachte Nachlade-Simulation während der Episode (bedingt,
-   siehe offene Rückfrage 4):** Erlaubt Nachladung der Batterie aus der
-   während der Episode selbst weiterhin (wenn auch reduziert) verfügbaren
-   Wind-/Solarerzeugung, sofern diese den Tagesverbrauch nicht vollständig
-   deckt (vereinfachtes Dispatch-Modell auf Tagesbasis). Diese Sensitivität
-   ist methodisch aufwendiger als S1–S7 und wird nur durchgeführt, wenn dies
-   im Freigabeprozess ausdrücklich bestätigt wird (siehe Rückfrage 4); wird
-   sie nicht bestätigt, entfällt S8 ersatzlos und wird als bewusste
-   Scope-Begrenzung im Bericht dokumentiert.
+8. **S8 – Vereinfachte Nachlade-Simulation während der Episode (reguläre,
+   verpflichtende Sensitivitätsanalyse – Entscheidung des Menschen,
+   30.08.2026, siehe Abschnitt 12, Rückfrage 4):** Erlaubt Nachladung der
+   Batterie aus der während der Episode selbst weiterhin (wenn auch
+   reduziert) verfügbaren Wind-/Solarerzeugung, sofern diese den
+   Tagesverbrauch nicht vollständig deckt (vereinfachtes Dispatch-Modell
+   auf Tagesbasis).
+
+   **Ausdrückliche Kennzeichnung (verbindlich für den Analyst-Schritt):**
+   S8 ist von allen in diesem SAP spezifizierten Sensitivitäten die
+   **methodisch aufwendigste und fehleranfälligste Komponente**
+   (mehrstufige Tages-Dispatch-Logik statt einfacher Parametervariation wie
+   bei S1–S7/S9). S8 ist fester Bestandteil dieses SAP und darf **nicht
+   ersatzlos gestrichen** werden. Sie ist jedoch – anders als S1–S7 und S9 –
+   **zeitlich flexibel**: Bei Kapazitäts- oder Zeitknappheit im
+   Analyse-Zyklus darf S8 gegenüber der übrigen Primär- und
+   Sensitivitätsanalyse **zeitlich verschoben/nachgeliefert** werden, ohne
+   dass dies den restlichen Analyse- und Validierungsablauf blockiert. Wird
+   S8 in einem ersten Analyse-Durchlauf noch nicht berechnet, ist dies im
+   Ergebnisbericht explizit als **"S8 – noch ausstehend, wird
+   nachgeliefert"** zu kennzeichnen (nicht stillschweigend auszulassen); der
+   übrige Bericht (Primäranalyse und S1–S7/S9) darf davon unabhängig als
+   vollständig behandelt werden.
 9. **S9 – Kreuzprüfung Kapazitätsquelle 3(a) (konditional):** Wird im
    Struktur-Check (Abschnitt 3) eine relevante Unvollständigkeit des
    MaStR-Feldes "nutzbare Speicherkapazität" dokumentiert, wird Szenario 3(a)
@@ -476,7 +554,9 @@ Ergebnistabelle (Anhang) berichtet, unabhängig davon, welche Variante den
 höchsten oder niedrigsten Deckungsgrad ergibt. Die Primärspezifikation aus
 Abschnitt 5.1 ist bindend für die Hauptaussage des Ergebnisberichts; keine
 nachträgliche Umdeklarierung einer Sensitivitätsvariante zur Hauptaussage
-nach Sichtung der Ergebnisse.
+nach Sichtung der Ergebnisse. Ist S8 zum Berichtszeitpunkt noch nicht
+nachgeliefert (siehe Abschnitt 6), wird dies in derselben Tabelle
+transparent als ausstehend gekennzeichnet, nicht ausgelassen.
 
 ## 8. Interpretationsrahmen / Confounder
 
@@ -511,7 +591,11 @@ nach Sichtung der Ergebnisse.
 >    methodische/zeitliche Abweichung (z. B.: andere Systemgrenze, anderer
 >    Zeithorizont wie 2045/2050 statt historisch 2015–2026, andere
 >    Fragestellung wie negative Strompreise statt Dunkelflaute-Abdeckung) –
->    **nicht** als Bewertung, welche Zahl "richtiger" ist.
+>    **nicht** als Bewertung, welche Zahl "richtiger" ist. Dies gilt auch für
+>    Estimand 3(c): Sollte dieses Szenario als "nicht mit Primärqualität
+>    durchführbar" markiert werden, ist dies als eigenständiges Ergebnis zu
+>    kommunizieren, **nicht** stillschweigend durch eine der vier Fremdzahlen
+>    zu ersetzen (siehe Abschnitt 3).
 
 **Weitere Confounder/Einschränkungen:**
 
@@ -549,12 +633,21 @@ nach Sichtung der Ergebnisse.
   Sensitivität S5, aber S5 selbst ist eine vereinfachte Tageskappung, keine
   vollständige Viertelstunden-Dispatch-Simulation).
 - Primäranalyse nimmt keine Nachladung während der Episode an (konservative
-  Vereinfachung); eine realistischere Dispatch-Simulation (S8) ist
-  methodisch aufwendiger und wird nur bei ausdrücklicher Bestätigung
-  durchgeführt (siehe offene Rückfrage 4).
-- Für Kapazitätsszenario 3(c) (BNetzA-2030-Prognose) ist zum Zeitpunkt der
-  SAP-Erstellung ungeprüft, ob eine belastbare amtliche Quelle existiert;
-  ggf. ist dieses Szenario "nicht durchführbar" (siehe Abschnitt 3).
+  Vereinfachung); die realistischere Dispatch-Simulation (S8) ist Teil des
+  SAP, aber methodisch aufwendig und zeitlich flexibel (kann verschoben/
+  nachgeliefert werden, siehe Abschnitt 6) – bis zu ihrer Nachlieferung ist
+  der Deckungsgrad ohne S8 als konservative (eher zu niedrige)
+  Näherung zu verstehen.
+- **Kapazitätsszenario 3(c) (BNetzA-2030-Prognose):** Zum Zeitpunkt der
+  SAP-Erstellung ist ungeprüft, ob eine belastbare amtliche Quelle
+  existiert. Der Analyst muss eine ernsthafte, dokumentierte Suche nach
+  einer offiziellen BNetzA-Quelle durchführen (siehe verbindliche Regel,
+  Abschnitt 3); scheitert diese nachweislich, wird Szenario 3(c) explizit
+  als **"nicht mit Primärqualität durchführbar"** berichtet. Eine
+  Ersatzzahl aus einer Sekundärquelle (z. B. Frontier Economics) ist für
+  dieses Szenario **ausdrücklich nicht zulässig** (siehe Abschnitt 3 und
+  2.3) – dies unterscheidet 3(c) bewusst von Szenario 3(b), für das IWR als
+  gekennzeichnete Sekundärquelle zulässig ist.
 - Keine Berücksichtigung von grenzüberschreitenden Stromflüssen (siehe
   Abschnitt 8).
 - Keine Kausal-/Attributionsaussage zu einem etwaigen Klimawandel-bedingten
@@ -574,10 +667,12 @@ nach Sichtung der Ergebnisse.
   je nach finaler Wahl im Struktur-Check).
 - Skript-Dateiname (Vorschlag): `batteriespeicher-dunkelflaute.R` im Ordner
   `Analysen/2026-08-batteriespeicher-dunkelflaute/`.
-- **Zwingende Zusatzanforderung:** Ein strukturiertes Extraktionsprotokoll
-  für die BNetzA-Planungsdokumenten-Suche (Abschnitt 3, Schritt 4) ist
-  verpflichtend abzulegen (gefundene/nicht gefundene Quelle, Fundstelle oder
-  Beleg des erfolglosen Suchversuchs), unabhängig vom Ausgang.
+- **Zwingende Zusatzanforderung:** Ein strukturiertes Suchprotokoll für die
+  BNetzA-Planungsdokumenten-Suche (Abschnitt 3, Schritt 4) ist verpflichtend
+  abzulegen (geprüfte Dokumente, gefundene/nicht gefundene Quelle, Fundstelle
+  oder Beleg des erfolglosen Suchversuchs), unabhängig vom Ausgang – dies ist
+  Voraussetzung dafür, dass eine Markierung "nicht mit Primärqualität
+  durchführbar" für Estimand 3(c) überhaupt zulässig ist (siehe Abschnitt 3).
 
 ## 11. Reporting
 
@@ -585,15 +680,21 @@ nach Sichtung der Ergebnisse.
   Dauer (Tage), Energiedefizit (GWh).
 - **Tabelle 2 (Deckungsgrad je Szenario):** je Kapazitätsszenario (3a/3b/3c)
   und je Episode der Deckungsgrad (%), plus Verteilungsstatistik
-  (Median, IQR, Min, Max, n) über alle Episoden.
+  (Median, IQR, Min, Max, n) über alle Episoden. Für 3(c): entweder
+  vollständige Deckungsgrad-Verteilung (falls BNetzA-Quelle gefunden) oder
+  eigenständiger Vermerk "nicht mit Primärqualität durchführbar" mit
+  Verweis auf das Suchprotokoll (Abschnitt 3/10) – keine Mischform.
 - **Tabelle 3 (vollständige Sensitivitätsmatrix, Anhang):** alle in
   Abschnitt 6 spezifizierten Varianten (S1–S9) mit jeweiliger
   Verteilungsstatistik des Deckungsgrads, unabhängig vom Ergebnis
-  vollständig berichtet.
+  vollständig berichtet; S8 ggf. mit Vermerk "noch ausstehend, wird
+  nachgeliefert" (siehe Abschnitt 6).
 - **Tabelle/Abschnitt 4 (Einordnung Fremdzahlen):** eigener berechneter
   Primärwert den vier eingangs genannten Fremdzahlen gegenübergestellt, mit
   expliziter Spalte "Methodischer/zeitlicher Unterschied" – keine
-  "richtig/falsch"-Bewertung (siehe Abschnitt 8).
+  "richtig/falsch"-Bewertung (siehe Abschnitt 8). Die "Ø 2,3 h
+  Speicherdauer"-Zahl wird hier explizit mit dem Ergebnis von S5 (Abschnitt
+  6) in Bezug gesetzt.
 - **Pflicht-Disclaimer:** Der finale Ergebnisbericht muss die fünf
   Leitplanken aus Abschnitt 8 wörtlich oder sinngemäß als Disclaimer
   wiederholen, insbesondere die Nichtbewertung alternativer Lösungen und die
@@ -605,30 +706,52 @@ nach Sichtung der Ergebnisse.
   (i. d. R. 1 Nachkommastelle bei GWh, ganzzahlig bei Prozent) berichtet.
 - **Sprachregelung:** "Deckungsgrad" wird ausschließlich als beschreibendes
   Verhältnismaß verwendet, nicht als Wertung ("ausreichend"/"unzureichend").
+- **Kennzeichnung Sekundärquellen:** Jede Verwendung der IWR-Prognose
+  (Szenario 3b) ist an jeder Stelle im Bericht (Tabellen, Grafiken,
+  Fließtext) unübersehbar als Sekundärquelle/Schätzung zu kennzeichnen
+  (siehe Abschnitt 3).
 
 ## 12. Offene Rückfragen an den Menschen (vor Einfrieren zu klären)
 
-1. **Primäre Dunkelflaute-Definition:** Ist die gewählte Primärdefinition
-   (10. Perzentil des Tagesquotienten Wind+Solar/Verbrauch, Mindestdauer 3
-   aufeinanderfolgende Tage, keine Unterbrechungstoleranz) angemessen für die
-   Fragestellung, oder werden andere konkrete Werte gewünscht/vorgegeben?
-2. **Deckungsgrad-Annahmen:** Sind die primären Annahmen zu Anfangsladezustand
-   (80 %) und Rundtrip-Wirkungsgrad (85 %, entsprechend
-   Entladewirkungsgrad 0,92) plausibel, oder sollen andere Werte als primär
-   festgelegt werden (die hier vorgeschlagenen Werte blieben dann
-   sensitivitätsanalytisch)?
-3. **Vorgehen bei fehlender amtlicher 2030-Quelle:** Falls im Struktur-Check
-   keine belastbare amtliche BNetzA-Quelle für eine
-   2030-Batteriespeicherkapazität auffindbar ist – soll Estimand 3(c)
-   tatsächlich als "nicht durchführbar" markiert werden (wie im Auftrag
-   vorgegeben), oder ist eine alternative, explizit als Sekundärquelle
-   gekennzeichnete Ersatzquelle (z. B. Prognos, EWI, Agora Energiewende)
-   zulässig? Falls ja: welche Quelle wird bevorzugt?
-4. **Umfang der Nachlade-Simulation (S8):** Soll die vereinfachte
-   Dispatch-Simulation mit Nachladung während der Episode (S8, Abschnitt 6)
-   durchgeführt werden, oder soll der Scope bewusst auf eine reine
-   Energiebilanz ohne Dispatch-Simulation begrenzt bleiben (Abwägung
-   Analyseaufwand vs. zusätzlicher Erkenntnisgewinn)?
-5. **Sekundärquelle für Szenario 3(b):** Ist IWR als Sekundärquelle für die
-   Ende-2026-Kapazitätsprognose akzeptabel, falls im Struktur-Check keine
-   amtlichere Quelle auffindbar ist, oder wird eine andere Quelle bevorzugt?
+1. ~~**Primäre Dunkelflaute-Definition**~~ — **Beantwortet, bestätigt
+   (30.08.2026, Daniel Saure):** Die primäre Definition (10. Perzentil des
+   Tagesquotienten Wind+Solar/Verbrauch, Mindestdauer 3 aufeinanderfolgende
+   Tage, keine Unterbrechungstoleranz) ist bestätigt, keine Änderung
+   (Abschnitt 2.1, 5.1).
+2. ~~**Deckungsgrad-Annahmen**~~ — **Beantwortet, bestätigt (30.08.2026,
+   Daniel Saure):** Anfangsladezustand 80 % und Rundtrip-Wirkungsgrad 85 %
+   (Entladewirkungsgrad 0,92) sind als primäre Annahmen bestätigt, keine
+   Änderung (Abschnitt 2.3, 5.1).
+3. ~~**Vorgehen bei fehlender amtlicher 2030-Quelle**~~ — **Beantwortet
+   (30.08.2026, Daniel Saure):** Keine alternative Sekundärquelle für
+   Estimand 3(c) zulässig. Der Analyst muss ernsthaft und dokumentiert nach
+   einer offiziellen BNetzA-Quelle suchen (z. B.
+   Netzentwicklungsplan-Entwurf, Kraftwerkssicherheitsbericht) und diesen
+   Suchversuch dokumentieren. Nur bei nachweislich gescheitertem
+   Suchversuch wird Estimand 3(c) explizit als **"nicht mit
+   Primärqualität durchführbar"** berichtet – **keine** Ersatzzahl aus
+   einer Sekundärquelle (z. B. Frontier Economics), da dies dem Zweck der
+   Analyse (eigene Primärrechnung statt einer fünften Fremdzahl)
+   widerspräche. Diese Regel ist verbindlich in Abschnitt 2.3, 3, 9 und 10
+   verankert, nicht nur hier vermerkt.
+4. ~~**Umfang der Nachlade-Simulation (S8)**~~ — **Beantwortet (30.08.2026,
+   Daniel Saure):** S8 bleibt reguläre, verpflichtende Sensitivitätsanalyse
+   im SAP (nicht ersatzlos streichen) und ist als methodisch
+   aufwendigste/fehleranfälligste Komponente gekennzeichnet. Sie ist
+   gegenüber S1–S7 und S9 zeitlich flexibel: Bei Kapazitäts-/Zeitknappheit
+   darf S8 verschoben/nachgeliefert werden, ohne die übrige Analyse zu
+   blockieren; ein Ausstehen ist im Bericht explizit zu kennzeichnen (siehe
+   Abschnitt 6, S8, und Abschnitt 7/11).
+5. ~~**Sekundärquelle für Szenario 3(b)**~~ — **Beantwortet, bestätigt
+   (30.08.2026, Daniel Saure):** IWR ist als Sekundärquelle für die
+   Ende-2026-Kapazitätsprognose zulässig, sofern im Bericht durchgängig und
+   unübersehbar als Sekundärquelle/Schätzung gekennzeichnet (analog zur
+   Kennzeichnungspraxis für Sekundärdaten früherer Analysen dieses
+   Projekts) – siehe Abschnitt 3 und 11.
+
+**Alle fünf ursprünglich offenen Rückfragen sind damit beantwortet.** Es
+bleiben keine offenen inhaltlichen Rückfragen aus v0.1 bestehen. Der SAP ist
+weiterhin **nicht** eingefroren (Status `draft`, Version 0.2) – die Freigabe
+setzt gemäß Projektregel voraus, dass der Mensch den vollständigen
+aktuellen Dokumenttext (nicht nur diese Zusammenfassung) selbst liest und
+ausdrücklich bestätigt.
