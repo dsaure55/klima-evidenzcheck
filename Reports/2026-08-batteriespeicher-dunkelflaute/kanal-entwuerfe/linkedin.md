@@ -1,4 +1,4 @@
-**ENTWURF – nicht veröffentlicht. Freigabe durch Daniel Saure erforderlich vor Publikation.**
+**FREIGEGEBEN durch Daniel Saure am 31.08.2026 und veröffentlicht.**
 
 ---
 
