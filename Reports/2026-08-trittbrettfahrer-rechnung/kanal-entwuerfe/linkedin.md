@@ -1,8 +1,15 @@
-**FREIGEGEBEN durch Daniel Saure am 31.08.2026. Veroeffentlichung erfolgt eigenstaendig durch Daniel Saure (kein automatisierter Publish-Schritt in diesem Projekt).**
+**ENTWURF - nicht veroeffentlicht. Erneute Freigabe durch Daniel Saure erforderlich (Text nach vorheriger Freigabe inhaltlich geaendert: Klassenzimmer-Analogie ergaenzt).**
 
 ---
 
-In der deutschen Klimadebatte wird das Argument vorgebracht, Deutschlands
+Stell dir eine Schulklasse vor, die gemeinsam ihr Klassenzimmer aufräumen
+soll. Ein Kind sagt: "Mein bisschen Müll fällt doch nicht auf, ich muss
+nicht mithelfen." Für sich allein hat das Kind damit sogar recht.
+
+Aber was, wenn alle Kinder mit ähnlich wenig Müll genauso denken?
+
+Diese Frage übertragen wir auf Länder und ihre Emissionen. In der
+deutschen Klimadebatte wird das Argument vorgebracht, Deutschlands
 Emissionsanteil an den weltweiten Emissionen sei ohnehin zu klein, um
 relevant zu sein – oft um deutsche Klimaschutzmaßnahmen als wirkungslos
 oder unnötig darzustellen. Ein reines Gedankenexperiment, keine Aussage
@@ -17,6 +24,11 @@ gleich diesem Wert kommen gemeinsam auf 31,7 % der weltweiten
 Jahresemissionen. Bei kumulierten historischen Emissionen (fossile
 CO2-Emissionen + Zement, 1850–2024) liegt Deutschlands Anteil bei 5,3 %
 (Rang 4 von 214) – die entsprechende Gruppe kommt hier auf 53,1 %.
+
+Zurück zur Klasse: Wenn alle "kleinen" Kinder gleichzeitig sagen "ich bin
+doch zu klein, um zu zählen", bleibt am Ende ein großer Teil des Mülls
+liegen – obwohl jedes einzelne Kind für sich genommen kaum etwas
+beigetragen hat.
 
 Zwei Einordnungen sind uns wichtig: Erstens sind diese beiden Zahlen wegen
 unterschiedlicher Gasbasis und Zeithorizont nicht direkt vergleichbar.
