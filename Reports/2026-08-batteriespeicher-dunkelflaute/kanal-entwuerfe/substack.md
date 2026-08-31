@@ -9,14 +9,31 @@
 In der öffentlichen Debatte kursieren derzeit mehrere Einzelzahlen dazu, wie
 viel deutsche Batteriespeicher zu "Dunkelflauten" beitragen können – also zu
 mehrtägigen Phasen mit gleichzeitig wenig Wind- und Solarstrom. Die Zahlen
-reichen von "2 % des Tagesverbrauchs" über "durchschnittlich 2,3 Stunden
-Speicherdauer" bis zu einer Studie, die 300 GWh Speicherkapazität bis 2050
-mit 1 % des dann erwarteten Bedarfs gleichsetzt. Auch ein aktueller
-Zeitungsartikel nennt eine weitere Zahl: rechnerisch könnten Großbatterien
-zusammen mit den privaten Heimspeichern rund drei Millionen
-Zwei-Personen-Haushalte einen Tag lang versorgen. Diese Zahlen beruhen auf
-unterschiedlichen Methoden, Zeiträumen und Fragestellungen und sind
-untereinander nicht direkt vergleichbar.
+reichen von ["2 % des Tagesverbrauchs"](https://edison.media/wohin-mit-dem-ueberschuss-herausforderungen-der-energiewende/25268453/)
+über ["durchschnittlich 2,3 Stunden
+Speicherdauer"](https://blackout-news.de/energie/batteriespeicher-boom-deutschlands-grossspeicher-loesen-dunkelflauten-nicht/)
+bis zu einer Studie, die 300 GWh Speicherkapazität bis 2050 mit 1 % des dann
+erwarteten Bedarfs gleichsetzt.[^1] Zu einer weiteren, konkret bezifferten
+Studie: eine Fraunhofer-IEE-Analyse beziffert, dass [20 GW zusätzliche
+Speicherflexibilität das Stromsystem zwischen Januar 2025 und Mai 2026 um
+5,6 Milliarden Euro entlastet hätten](https://batteriespeicher-report.de/aktuelles/fraunhofer-iee-flexibilitaet-speicher-milliarden).
+Auch ein aktueller [Zeitungsartikel (SPIEGEL, "Sieg der
+Sonne")](https://www.spiegel.de/wissenschaft/technik/photovoltaik-wie-die-solarenergie-weltweit-zur-wichtigsten-stromquelle-wird-a-39814a29-2095-49b5-80c5-860bcff5ace5)
+nennt eine weitere Zahl: rechnerisch könnten Großbatterien zusammen mit den
+privaten Heimspeichern rund drei Millionen Zwei-Personen-Haushalte einen Tag
+lang versorgen. Diese Zahlen beruhen auf unterschiedlichen Methoden,
+Zeiträumen und Fragestellungen und sind untereinander nicht direkt
+vergleichbar.
+
+[^1]: Diese Zahl haben wir ursprünglich in einer Recherche zur
+    Medienlandschaft notiert; bei der nachträglichen Quellenprüfung für
+    diesen Artikel konnten wir sie keinem einzelnen, eindeutig
+    identifizierbaren Artikel mehr zuordnen (mehrere naheliegende
+    Kandidatenquellen wurden geprüft, enthielten die Zahl beim genauen
+    Nachlesen aber nicht). Wir lassen sie stehen, weil sie unsere
+    Fragestellung motiviert hat, kennzeichnen sie hier aber ausdrücklich als
+    nicht zweifelsfrei quellenbelegt – anders als die drei übrigen Zahlen in
+    diesem Absatz.
 
 Für dieses Projekt haben wir deshalb eine eigene, vorab festgelegte
 (präregistrierte) Berechnung direkt aus amtlichen Rohdaten durchgeführt:
