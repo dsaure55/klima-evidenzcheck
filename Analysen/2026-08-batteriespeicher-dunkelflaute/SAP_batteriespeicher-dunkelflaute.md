@@ -750,8 +750,8 @@ transparent als ausstehend gekennzeichnet, nicht ausgelassen.
    Projekts) – siehe Abschnitt 3 und 11.
 
 **Alle fünf ursprünglich offenen Rückfragen sind damit beantwortet.** Es
-bleiben keine offenen inhaltlichen Rückfragen aus v0.1 bestehen. Der SAP ist
-weiterhin **nicht** eingefroren (Status `draft`, Version 0.2) – die Freigabe
-setzt gemäß Projektregel voraus, dass der Mensch den vollständigen
-aktuellen Dokumenttext (nicht nur diese Zusammenfassung) selbst liest und
-ausdrücklich bestätigt.
+bleiben keine offenen inhaltlichen Rückfragen aus v0.1 bestehen. Der Mensch
+(Daniel Saure) hat den vollständigen, konsistenten v0.2-Dokumenttext (inkl.
+dieses Abschnitts) gelesen und am 31.08.2026 ausdrücklich freigegeben; der
+SAP ist damit **final eingefroren (Version 1.0)** – siehe Kopfbereich am
+Anfang dieses Dokuments.
