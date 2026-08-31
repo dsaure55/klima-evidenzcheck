@@ -23,20 +23,30 @@ PFLICHT-DISCLAIMER (SAP 8, woertlich/sinngemaess zu uebernehmen):
    'nicht mit Primaerqualitaet durchfuehrbar', NICHT stillschweigend durch
    eine Fremdzahl ersetzt.
 
-*** ABWEICHUNG VOM SAP - RUECKFRAGE AN MENSCH (siehe Skriptkopf) ***
-Die MaStR-Rohsumme fuer Szenario 3(a) (1144.8 GWh) ist mit hoher
-Wahrscheinlichkeit durch ein kleines Cluster von Dateneingabefehlern im
-MaStR verzerrt (50 von 2724033 Anlagen [< 0,002%] verursachen 97,5% der
-Summe; groesster Einzelwert 157.252 MWh - groesser als der gesamte laut BVES
-und IWR unabhaengig berichtete deutsche Batteriespeicherbestand). Der Analyst
-hat dies NICHT eigenmaechtig korrigiert, sondern berichtet transparent DREI
-Varianten (Tabelle 2b): (i) 3a-ROH [woertliche SAP-Umsetzung, WARNUNG:
-vermutlich implausibel], (ii) 3a-BEREINIGT [Post-hoc, Ausreisser >100 MWh
-ausgeschlossen, NICHT SAP-spezifiziert], (iii) SAP-6-S9-Kreuzpruefung mit
-BVES-Sekundaeraggregat. WELCHE Variante als tragfaehiges Ergebnis fuer
-Estimand 3(a) zu verwenden ist, muss der Mensch entscheiden - nicht der
-Analyst. Details/Belege: rohdaten/mastr/mastr_speicher_summary_top_ausreisser.csv
-und run_log.txt.
+*** ENTSCHEIDUNG ZU ESTIMAND 3(a) GETROFFEN (Daniel Saure, 31.08.2026,
+    siehe Entscheidung_Estimand3a.md) - fuer diesen Bericht gilt die
+    Variante 3a-BEREINIGT. Pflicht-Kennzeichnung (woertlich): ***
+
+POST-HOC-BEREINIGUNG (nicht im SAP spezifiziert): Die MaStR-Rohdaten fuer die
+aktuelle Speicherkapazitaet enthielten ein Cluster offensichtlicher
+Dateneingabefehler (50 von 2,72 Mio. Anlagen verursachten 97,25% einer sonst
+46-fach ueberhoehten Summe). Der hier fuer Estimand 3(a) berichtete Wert
+(31.5 GWh) beruht auf einem nachtraeglich festgelegten Ausschlusskriterium
+(Einzelanlagen > 100 MWh), NICHT auf der woertlichen SAP-Berechnung. Die
+100-MWh-Schwelle ist NICHT technisch/unabhaengig begruendet, sondern gezielt so
+gewaehlt, dass das Ergebnis am plausibelsten nah an den Sekundaerquellen
+BVES (24 GWh) / IWR (35 GWh) liegt (Alternativschwellen 200/300/500 MWh
+ergaeben 32,6/33,3/33,3 GWh) - dies ist KEINE Bestaetigung der 'Richtigkeit'
+der Schwelle, sondern eine bewusste Post-hoc-Wahl (Confirmation-Bias-Risiko).
+Rohsumme (1.144,8 GWh, nicht plausibel) und unabhaengige Kreuzpruefung (BVES,
+24 GWh) sind in tabelle2b_deckungsgrad_verteilungsstatistik.csv vollstaendig
+dokumentiert. Entscheidung: Entscheidung_Estimand3a.md (Daniel Saure, 31.08.2026).
+
+Rohsumme (3a-ROH, woertliche SAP-Umsetzung, mit hoher Wahrscheinlichkeit
+implausibel) und SAP-6-S9-Kreuzpruefung mit BVES-Sekundaeraggregat bleiben
+als dokumentierte Alternativen in Tabelle 2b erhalten, sind aber NICHT die
+fuer Tabelle 3/4 verwendete Berichtsbasis. Details/Belege:
+rohdaten/mastr/mastr_speicher_summary_top_ausreisser.csv und run_log.txt.
 
 WEITERE LIMITATIONEN (SAP 9):
 - Grenzkuppelstellen/Importe nicht im Defizit beruecksichtigt.

@@ -1,5 +1,20 @@
+# POST-HOC-BEREINIGUNG (nicht im SAP spezifiziert): Die MaStR-Rohdaten fuer die
+# aktuelle Speicherkapazitaet enthielten ein Cluster offensichtlicher
+# Dateneingabefehler (50 von 2,72 Mio. Anlagen verursachten 97,25% einer sonst
+# 46-fach ueberhoehten Summe). Der hier fuer Estimand 3(a) berichtete Wert
+# (31.5 GWh) beruht auf einem nachtraeglich festgelegten Ausschlusskriterium
+# (Einzelanlagen > 100 MWh), NICHT auf der woertlichen SAP-Berechnung. Die
+# 100-MWh-Schwelle ist NICHT technisch/unabhaengig begruendet, sondern gezielt so
+# gewaehlt, dass das Ergebnis am plausibelsten nah an den Sekundaerquellen
+# BVES (24 GWh) / IWR (35 GWh) liegt (Alternativschwellen 200/300/500 MWh
+# ergaeben 32,6/33,3/33,3 GWh) - dies ist KEINE Bestaetigung der 'Richtigkeit'
+# der Schwelle, sondern eine bewusste Post-hoc-Wahl (Confirmation-Bias-Risiko).
+# Rohsumme (1.144,8 GWh, nicht plausibel) und unabhaengige Kreuzpruefung (BVES,
+# 24 GWh) sind in tabelle2b_deckungsgrad_verteilungsstatistik.csv vollstaendig
+# dokumentiert. Entscheidung: Entscheidung_Estimand3a.md (Daniel Saure, 31.08.2026).
+#
 "Fremdzahl","Eigener_Wert_dieser_Analyse","Methodischer_zeitlicher_Unterschied"
-"2% des Tagesverbrauchs","Median Deckungsgrad (3a, MaStR): 19.6% des Episoden-Energiedefizits","Unklare Berechnungsgrundlage der Fremdzahl; eigener Wert bezieht sich auf historische Dunkelflaute-Episoden (SAP-Definition), nicht auf einen einzelnen Tagesverbrauch"
-"Oe 2,3h Speicherdauer","S5 (Leistungskappung, 3a): mittlere Speicherdauer = 38.64 h (Kapazitaet/Leistung)","Fremdzahl vermutlich C-Raten-/Leistungskennzahl, keine Dunkelflaute-Abdeckung; direkter methodischer Bezug ueber S5 hergestellt (siehe Tabelle 3)"
+"2% des Tagesverbrauchs","Median Deckungsgrad (3a, MaStR BEREINIGT [Post-hoc]): 1% des Episoden-Energiedefizits","Unklare Berechnungsgrundlage der Fremdzahl; eigener Wert bezieht sich auf historische Dunkelflaute-Episoden (SAP-Definition), nicht auf einen einzelnen Tagesverbrauch"
+"Oe 2,3h Speicherdauer","S5 (Leistungskappung, 3a BEREINIGT [Post-hoc]): mittlere Speicherdauer = 1.06 h (Kapazitaet/Leistung)","Fremdzahl vermutlich C-Raten-/Leistungskennzahl, keine Dunkelflaute-Abdeckung; direkter methodischer Bezug ueber S5 hergestellt (siehe Tabelle 3)"
 "300 GWh bis 2050 = 1% des Bedarfs (Frontier Economics)","Diese Analyse: rein historisch (2015-2026-07-31), kein Bedarfsszenario 2045/2050","Anderer Zeithorizont (2045/2050 vs. historisch 2015-2026), andere Bedarfsdefinition (SAP 8, Leitplanke 5)"
 "5,6 Mrd. EUR Einsparung durch 20GW/4h-Flexibilitaet","Diese Analyse trifft keine Aussage zu negativen Strompreisen (anderer Estimand)","Andere Fragestellung (Abbau negativer Strompreise vs. Dunkelflaute-Energiedefizit)"

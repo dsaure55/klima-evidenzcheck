@@ -1,6 +1,21 @@
+# POST-HOC-BEREINIGUNG (nicht im SAP spezifiziert): Die MaStR-Rohdaten fuer die
+# aktuelle Speicherkapazitaet enthielten ein Cluster offensichtlicher
+# Dateneingabefehler (50 von 2,72 Mio. Anlagen verursachten 97,25% einer sonst
+# 46-fach ueberhoehten Summe). Der hier fuer Estimand 3(a) berichtete Wert
+# (31.5 GWh) beruht auf einem nachtraeglich festgelegten Ausschlusskriterium
+# (Einzelanlagen > 100 MWh), NICHT auf der woertlichen SAP-Berechnung. Die
+# 100-MWh-Schwelle ist NICHT technisch/unabhaengig begruendet, sondern gezielt so
+# gewaehlt, dass das Ergebnis am plausibelsten nah an den Sekundaerquellen
+# BVES (24 GWh) / IWR (35 GWh) liegt (Alternativschwellen 200/300/500 MWh
+# ergaeben 32,6/33,3/33,3 GWh) - dies ist KEINE Bestaetigung der 'Richtigkeit'
+# der Schwelle, sondern eine bewusste Post-hoc-Wahl (Confirmation-Bias-Risiko).
+# Rohsumme (1.144,8 GWh, nicht plausibel) und unabhaengige Kreuzpruefung (BVES,
+# 24 GWh) sind in tabelle2b_deckungsgrad_verteilungsstatistik.csv vollstaendig
+# dokumentiert. Entscheidung: Entscheidung_Estimand3a.md (Daniel Saure, 31.08.2026).
+#
 "Szenario","Kapazitaet_GWh","n","Median_pct","IQR25_pct","IQR75_pct","Min_pct","Max_pct","Anmerkung"
-"3a_MaStR_ROH",1144.828,50,19.6,14.1,21.5,5.7,28.2,"WARNUNG: mit hoher Wahrscheinlichkeit implausibel (Ausreisser-Cluster, siehe Abweichungshinweis oben) - Primaerquelle, ABER woertliche SAP-Summe ungeprueft irrefuehrend"
-"3a_MaStR_BEREINIGT_PostHoc",31.472,50,0.5,0.4,0.6,0.2,0.8,"Post-hoc, NICHT SAP-spezifiziert: Ausschluss von 50 Einzelanlagen > 100 MWh Kapazitaet - Ruecksprache mit Mensch erforderlich, ob dies als 3(a) verwendet werden soll"
-"S9_BVES_Sekundaeraggregat",24,50,0.4,0.3,0.5,0.1,0.6,"SAP 6, S9: Kreuzpruefung mit BVES Branchenanalyse 2026 (Sekundaerquelle, Stichtag Ende 2025)"
-"3b_SEKUNDAERQUELLE_IWR",35,50,0.6,0.4,0.7,0.2,0.9,"SEKUNDAERQUELLE/SCHAETZUNG (IWR, Prognose Jahresende 2026) - NICHT amtlich"
+"3a_MaStR_ROH",1144.828,50,20,14,22,6,28,"WARNUNG: mit hoher Wahrscheinlichkeit implausibel (Ausreisser-Cluster, siehe Abweichungshinweis oben) - Primaerquelle, ABER woertliche SAP-Summe ungeprueft irrefuehrend"
+"3a_MaStR_BEREINIGT_PostHoc",31.472,50,1,0,1,0,1,"Post-hoc, NICHT SAP-spezifiziert: Ausschluss von 50 Einzelanlagen > 100 MWh Kapazitaet - OFFIZIELLE Berichtsbasis fuer 3(a) gemaess Entscheidung_Estimand3a.md (Daniel Saure, 31.08.2026)"
+"S9_BVES_Sekundaeraggregat",24,50,0,0,0,0,1,"SAP 6, S9: Kreuzpruefung mit BVES Branchenanalyse 2026 (Sekundaerquelle, Stichtag Ende 2025)"
+"3b_SEKUNDAERQUELLE_IWR",35,50,1,0,1,0,1,"SEKUNDAERQUELLE/SCHAETZUNG (IWR, Prognose Jahresende 2026) - NICHT amtlich"
 "3c_BNetzA_2030",NA,NA,NA,NA,NA,NA,NA,"nicht mit Primaerqualitaet durchfuehrbar (siehe Suchprotokoll) - kein Ersatzwert"

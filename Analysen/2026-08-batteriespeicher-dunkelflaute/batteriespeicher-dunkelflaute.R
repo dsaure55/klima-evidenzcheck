@@ -71,7 +71,7 @@
 # "In Betrieb" ergibt 1.144,8 GWh (Stichtag 31.08.2026). Dieser Wert ist mit
 # an Sicherheit grenzender Wahrscheinlichkeit NICHT belastbar: 50 von
 # 2.723.885 Anlagen (< 0,002 %) mit Einzelwerten > 100 MWh verursachen
-# 97,5 % der Summe; der groesste Einzelwert (157.252 MWh = 157 GWh fuer EINE
+# 97,25 % der Summe; der groesste Einzelwert (157.252 MWh = 157 GWh fuer EINE
 # Anlage) ist allein groesser als der gesamte, unabhaengig von BVES
 # (Branchenanalyse 2026, ~24 GWh Ende 2025) und IWR (Juli 2026, ~31,5 GWh)
 # berichtete deutsche Batteriespeicherbestand. Dies wurde im vom SAP selbst
@@ -456,7 +456,7 @@ kapazitaet <- step("07_kapazitaet_szenarien", function() {
   # NutzbareSpeicherkapazitaet-Werte ("in Betrieb") ist um GROESSENORDNUNGEN
   # implausibel (siehe run_log.txt fuer die volle Herleitung): 519-1562
   # Einzelanlagen (von 2,72 Mio., d.h. < 0,06%) mit Werten > 10-100 MWh je
-  # Anlage verursachen 97,5% der Rohsumme; die zwei groessten Einzelwerte
+  # Anlage verursachen 97,25% der Rohsumme; die zwei groessten Einzelwerte
   # (je 157.252 MWh = 157 GWh) sind je einzeln groesser als der gesamte,
   # unabhaengig beim BVES (Branchenanalyse 2026) und IWR (Juli 2026)
   # berichtete deutsche Batteriespeicherbestand (BVES Ende 2025: 20 GWh
@@ -528,12 +528,13 @@ cat(sprintf(
   "IWR Juli 2026: 31,5 GWh, Prognose Jahresende 2026: 35 GWh). Ursache: %d von %d\n",
   kapazitaet$a_n_ausreisser_bereinigt, kapazitaet$a_n_einheiten))
 cat("'In Betrieb'-Anlagen (< 0,002%) mit einzelnen NutzbareSpeicherkapazitaet-Werten\n")
-cat("> 100 MWh verursachen 97,5% der Rohsumme (Top-Werte bis 157.252 MWh je\n")
+cat("> 100 MWh verursachen 97,25% der Rohsumme (Top-Werte bis 157.252 MWh je\n")
 cat("Einzelanlage - siehe rohdaten/mastr/mastr_speicher_summary_top_ausreisser.csv).\n")
 cat("MOEGLICHE Erklaerung: Dateneingabefehler im MaStR (z.B. Einheitenverwechslung).\n")
 cat("Der Analyst hat dies NICHT eigenmaechtig korrigiert. Drei Varianten werden\n")
-cat("transparent berichtet (siehe unten und Tabelle 2b) - Auswahl der fuer den\n")
-cat("Ergebnisbericht zu verwendenden Variante obliegt dem Menschen.\n\n")
+cat("transparent berichtet (siehe unten und Tabelle 2b). ENTSCHEIDUNG (Daniel\n")
+cat("Saure, 31.08.2026, Entscheidung_Estimand3a.md): fuer Tabelle 3/4 und den\n")
+cat("Ergebnisbericht gilt ab sofort 3a-BEREINIGT (Pflicht-Blockzitat siehe unten).\n\n")
 
 cat(sprintf("3(a)-ROH MaStR (Primaerquelle, woertliche SAP-Umsetzung, Stichtag %s): %.3f GWh nutzbare Kapazitaet [WARNUNG: implausibel, s.o.], %.3f GW Nennleistung (n=%d Einheiten 'In Betrieb')\n",
             kapazitaet$a_stichtag, kapazitaet$a_kapazitaet_gwh_roh, kapazitaet$a_leistung_gw, kapazitaet$a_n_einheiten))
@@ -613,9 +614,9 @@ cat("\n----- SAP 6: Sensitivitaetsanalysen S1-S9 -----\n")
 sensitivity_row <- function(label, param_desc, cov_vec, n_episodes) {
   s <- coverage_summary_stats(cov_vec)
   data.frame(sensitivitaet = label, parameter = param_desc, n_episoden = n_episodes,
-             median_pct = round(s["median"], 2), IQR25_pct = round(s["IQR25"], 2),
-             IQR75_pct = round(s["IQR75"], 2), min_pct = round(s["min"], 2),
-             max_pct = round(s["max"], 2), stringsAsFactors = FALSE)
+             median_pct = round(s["median"], 0), IQR25_pct = round(s["IQR25"], 0),
+             IQR75_pct = round(s["IQR75"], 0), min_pct = round(s["min"], 0),
+             max_pct = round(s["max"], 0), stringsAsFactors = FALSE)
 }
 
 sensitivitaeten <- step("09_sensitivitaeten", function() {
@@ -625,24 +626,24 @@ sensitivitaeten <- step("09_sensitivitaeten", function() {
   thr_s1 <- quantile(wide_data$Q, probs = 0.20, na.rm = TRUE, type = 7)
   ep_s1 <- identify_episodes(wide_data$date, wide_data$Q < thr_s1, min_duration = 3)
   def_s1 <- compute_deficit(ep_s1, wide_data, "erzeugung_wind_solar_mwh")
-  cov_s1a <- compute_coverage(def_s1, kapazitaet$a_kapazitaet_gwh)
+  cov_s1a <- compute_coverage(def_s1, kapazitaet$a_kapazitaet_gwh_bereinigt)
   rows[["S1"]] <- sensitivity_row("S1", "20. Perzentil (statt 10.)", cov_s1a$deckungsgrad_pct, nrow(ep_s1))
 
   # ---- S2: Mindestdauer 2 bzw. 5 Tage (statt 3) ----
   ep_s2a <- identify_episodes(wide_data$date, wide_data$Q < threshold_primary, min_duration = 2)
   def_s2a <- compute_deficit(ep_s2a, wide_data, "erzeugung_wind_solar_mwh")
-  cov_s2a <- compute_coverage(def_s2a, kapazitaet$a_kapazitaet_gwh)
+  cov_s2a <- compute_coverage(def_s2a, kapazitaet$a_kapazitaet_gwh_bereinigt)
   rows[["S2_2Tage"]] <- sensitivity_row("S2", "Mindestdauer 2 Tage (statt 3)", cov_s2a$deckungsgrad_pct, nrow(ep_s2a))
 
   ep_s2b <- identify_episodes(wide_data$date, wide_data$Q < threshold_primary, min_duration = 5)
   def_s2b <- compute_deficit(ep_s2b, wide_data, "erzeugung_wind_solar_mwh")
-  cov_s2b <- compute_coverage(def_s2b, kapazitaet$a_kapazitaet_gwh)
+  cov_s2b <- compute_coverage(def_s2b, kapazitaet$a_kapazitaet_gwh_bereinigt)
   rows[["S2_5Tage"]] <- sensitivity_row("S2", "Mindestdauer 5 Tage (statt 3)", cov_s2b$deckungsgrad_pct, nrow(ep_s2b))
 
   # ---- S3: Unterbrechungstoleranz 1 Tag, Episoden verkettet ----
   ep_s3 <- identify_episodes(wide_data$date, wide_data$Q < threshold_primary, min_duration = 3, allow_1day_gap = TRUE)
   def_s3 <- compute_deficit(ep_s3, wide_data, "erzeugung_wind_solar_mwh")
-  cov_s3 <- compute_coverage(def_s3, kapazitaet$a_kapazitaet_gwh)
+  cov_s3 <- compute_coverage(def_s3, kapazitaet$a_kapazitaet_gwh_bereinigt)
   rows[["S3"]] <- sensitivity_row("S3", "1 Tag Unterbrechungstoleranz (verkettet)", cov_s3$deckungsgrad_pct, nrow(ep_s3))
 
   # ---- S4: breitere Systemgrenze (Residuallast), gleiche Primaerepisoden ----
@@ -655,7 +656,7 @@ sensitivitaeten <- step("09_sensitivitaeten", function() {
   # zaehlt dies in n_gap_days und summiert mit na.rm=TRUE (verbleibende Tage).
   wide_s4$erzeugung_breit_mwh[wide_s4$gap_sonstige_ee == 1] <- NA
   def_s4 <- compute_deficit(episodes_primary, wide_s4, "erzeugung_breit_mwh")
-  cov_s4 <- compute_coverage(def_s4, kapazitaet$a_kapazitaet_gwh)
+  cov_s4 <- compute_coverage(def_s4, kapazitaet$a_kapazitaet_gwh_bereinigt)
   n_s4_gap_affected <- sum(def_s4$n_gap_days > 0)
   cat(sprintf("S4-Hinweis: %d von %d Episoden durch die Datenluecke 2016-11-08 (sonstige_ee) betroffen (Tag anteilig ausgeschlossen, kein stiller Ausschluss, siehe SAP 4).\n",
               n_s4_gap_affected, nrow(episodes_primary)))
@@ -677,22 +678,22 @@ sensitivitaeten <- step("09_sensitivitaeten", function() {
   # Energie zusaetzlich zur SOC/Wirkungsgrad-Begrenzung - die entladbare
   # Energie darf nie die (SOC/Wirkungsgrad-bereinigte) Nennkapazitaet
   # UEBERSTEIGEN, auch wenn die Tage-x-Leistung-Grenze rechnerisch hoeher waere.
-  s5a$entladbare_energie_gwh <- pmin(s5a$duration_days * cap_pro_tag_a_gwh, kapazitaet$a_kapazitaet_gwh) * 0.80 * sqrt(0.85)
+  s5a$entladbare_energie_gwh <- pmin(s5a$duration_days * cap_pro_tag_a_gwh, kapazitaet$a_kapazitaet_gwh_bereinigt) * 0.80 * sqrt(0.85)
   s5a$deckungsgrad_pct <- 100 * s5a$entladbare_energie_gwh / s5a$deficit_gwh
   rows[["S5"]] <- sensitivity_row("S5", sprintf("Leistungskappung (MaStR: %.2f GW -> %.2f h Speicherdauer)",
-                                                  kapazitaet$a_leistung_gw, kapazitaet$a_kapazitaet_gwh / kapazitaet$a_leistung_gw),
+                                                  kapazitaet$a_leistung_gw, kapazitaet$a_kapazitaet_gwh_bereinigt / kapazitaet$a_leistung_gw),
                                    s5a$deckungsgrad_pct, nrow(s5a))
 
   # ---- S6: alternative Anfangsladezustaende 50% / 100% (statt 80%) ----
-  cov_s6a <- compute_coverage(episoden_primary_full, kapazitaet$a_kapazitaet_gwh, soc = 0.50)
+  cov_s6a <- compute_coverage(episoden_primary_full, kapazitaet$a_kapazitaet_gwh_bereinigt, soc = 0.50)
   rows[["S6_50"]] <- sensitivity_row("S6", "SOC 50% (statt 80%)", cov_s6a$deckungsgrad_pct, nrow(cov_s6a))
-  cov_s6b <- compute_coverage(episoden_primary_full, kapazitaet$a_kapazitaet_gwh, soc = 1.00)
+  cov_s6b <- compute_coverage(episoden_primary_full, kapazitaet$a_kapazitaet_gwh_bereinigt, soc = 1.00)
   rows[["S6_100"]] <- sensitivity_row("S6", "SOC 100% (statt 80%)", cov_s6b$deckungsgrad_pct, nrow(cov_s6b))
 
   # ---- S7: alternative Rundtrip-Wirkungsgrade 80% / 90% (statt 85%) ----
-  cov_s7a <- compute_coverage(episoden_primary_full, kapazitaet$a_kapazitaet_gwh, eta = sqrt(0.80))
+  cov_s7a <- compute_coverage(episoden_primary_full, kapazitaet$a_kapazitaet_gwh_bereinigt, eta = sqrt(0.80))
   rows[["S7_80"]] <- sensitivity_row("S7", "Rundtrip-Wirkungsgrad 80% (statt 85%)", cov_s7a$deckungsgrad_pct, nrow(cov_s7a))
-  cov_s7b <- compute_coverage(episoden_primary_full, kapazitaet$a_kapazitaet_gwh, eta = sqrt(0.90))
+  cov_s7b <- compute_coverage(episoden_primary_full, kapazitaet$a_kapazitaet_gwh_bereinigt, eta = sqrt(0.90))
   rows[["S7_90"]] <- sensitivity_row("S7", "Rundtrip-Wirkungsgrad 90% (statt 85%)", cov_s7b$deckungsgrad_pct, nrow(cov_s7b))
 
   # ---- S9: konditional (nur falls Abdeckung < 90%, siehe oben) ----
@@ -754,6 +755,38 @@ cat(
 # =============================================================================
 cat("\n----- SAP 11: Reporting -----\n")
 
+# Pflicht-Blockzitat (Entscheidung_Estimand3a.md, 31.08.2026, Auflage
+# Validierungsbericht): muss unuebersehbar an JEDER Stelle erscheinen, an der
+# die BEREINIGT-Kapazitaet (31,5 GWh) fuer Estimand 3(a) verwendet wird -
+# nicht nur als Fussnote. Wird als Kommentarzeilen (#) vor jede betroffene
+# CSV-Tabelle geschrieben sowie auf der Konsole ausgegeben.
+BLOCKZITAT_3A_BEREINIGT <- paste(
+  "POST-HOC-BEREINIGUNG (nicht im SAP spezifiziert): Die MaStR-Rohdaten fuer die",
+  "aktuelle Speicherkapazitaet enthielten ein Cluster offensichtlicher",
+  "Dateneingabefehler (50 von 2,72 Mio. Anlagen verursachten 97,25% einer sonst",
+  "46-fach ueberhoehten Summe). Der hier fuer Estimand 3(a) berichtete Wert",
+  sprintf("(%.1f GWh) beruht auf einem nachtraeglich festgelegten Ausschlusskriterium", kapazitaet$a_kapazitaet_gwh_bereinigt),
+  "(Einzelanlagen > 100 MWh), NICHT auf der woertlichen SAP-Berechnung. Die",
+  "100-MWh-Schwelle ist NICHT technisch/unabhaengig begruendet, sondern gezielt so",
+  "gewaehlt, dass das Ergebnis am plausibelsten nah an den Sekundaerquellen",
+  "BVES (24 GWh) / IWR (35 GWh) liegt (Alternativschwellen 200/300/500 MWh",
+  "ergaeben 32,6/33,3/33,3 GWh) - dies ist KEINE Bestaetigung der 'Richtigkeit'",
+  "der Schwelle, sondern eine bewusste Post-hoc-Wahl (Confirmation-Bias-Risiko).",
+  "Rohsumme (1.144,8 GWh, nicht plausibel) und unabhaengige Kreuzpruefung (BVES,",
+  "24 GWh) sind in tabelle2b_deckungsgrad_verteilungsstatistik.csv vollstaendig",
+  "dokumentiert. Entscheidung: Entscheidung_Estimand3a.md (Daniel Saure, 31.08.2026).",
+  sep = "\n"
+)
+cat("\n", BLOCKZITAT_3A_BEREINIGT, "\n\n", sep = "")
+
+write_csv_mit_blockzitat <- function(df, path) {
+  con <- file(path, "w")
+  writeLines(paste0("# ", strsplit(BLOCKZITAT_3A_BEREINIGT, "\n")[[1]]), con)
+  writeLines("#", con)
+  write.table(df, con, sep = ",", row.names = FALSE, col.names = TRUE, qmethod = "double")
+  close(con)
+}
+
 # ---- Tabelle 1: Episodenliste, Primaerdefinition ----
 tab1 <- episoden_primary_full[, c("episode_id", "start_date", "end_date", "duration_days", "deficit_gwh")]
 names(tab1) <- c("Episode", "Start", "Ende", "Dauer_Tage", "Energiedefizit_GWh")
@@ -770,28 +803,28 @@ tab2 <- data.frame(
   Start = episoden_primary_full$start_date,
   Ende = episoden_primary_full$end_date,
   Energiedefizit_GWh = round(episoden_primary_full$deficit_gwh, 1),
-  `Deckungsgrad_3a_MaStR_ROH_pct_WARNUNG_implausibel` = round(coverage_primary$a$deckungsgrad_pct, 1),
-  `Deckungsgrad_3a_MaStR_BEREINIGT_pct_PostHoc` = round(cov_bereinigt$deckungsgrad_pct, 1),
-  `Deckungsgrad_3a_S9_BVES_Sekundaeraggregat_pct` = round(cov_s9_bves$deckungsgrad_pct, 1),
-  `Deckungsgrad_3b_SEKUNDAERQUELLE_IWR_pct` = round(coverage_primary$b$deckungsgrad_pct, 1),
+  `Deckungsgrad_3a_MaStR_ROH_pct_WARNUNG_implausibel` = round(coverage_primary$a$deckungsgrad_pct, 0),
+  `Deckungsgrad_3a_MaStR_BEREINIGT_pct_PostHoc` = round(cov_bereinigt$deckungsgrad_pct, 0),
+  `Deckungsgrad_3a_S9_BVES_Sekundaeraggregat_pct` = round(cov_s9_bves$deckungsgrad_pct, 0),
+  `Deckungsgrad_3b_SEKUNDAERQUELLE_IWR_pct` = round(coverage_primary$b$deckungsgrad_pct, 0),
   Deckungsgrad_3c_BNetzA2030 = "nicht mit Primaerqualitaet durchfuehrbar",
   check.names = FALSE
 )
-write.csv(tab2, file.path(OUT_DIR, "tabelle2_deckungsgrad_je_szenario.csv"), row.names = FALSE)
+write_csv_mit_blockzitat(tab2, file.path(OUT_DIR, "tabelle2_deckungsgrad_je_szenario.csv"))
 
 mk_vert_row <- function(cov, kap_gwh, label, anmerkung) {
   data.frame(Szenario = label, Kapazitaet_GWh = round(kap_gwh, 3), n = nrow(cov),
-             Median_pct = round(median(cov$deckungsgrad_pct), 1),
-             IQR25_pct = round(quantile(cov$deckungsgrad_pct, .25, type = 7, names = FALSE), 1),
-             IQR75_pct = round(quantile(cov$deckungsgrad_pct, .75, type = 7, names = FALSE), 1),
-             Min_pct = round(min(cov$deckungsgrad_pct), 1), Max_pct = round(max(cov$deckungsgrad_pct), 1),
+             Median_pct = round(median(cov$deckungsgrad_pct), 0),
+             IQR25_pct = round(quantile(cov$deckungsgrad_pct, .25, type = 7, names = FALSE), 0),
+             IQR75_pct = round(quantile(cov$deckungsgrad_pct, .75, type = 7, names = FALSE), 0),
+             Min_pct = round(min(cov$deckungsgrad_pct), 0), Max_pct = round(max(cov$deckungsgrad_pct), 0),
              Anmerkung = anmerkung, stringsAsFactors = FALSE)
 }
 tab2_verteilung <- rbind(
   mk_vert_row(coverage_primary$a, kapazitaet$a_kapazitaet_gwh_roh, "3a_MaStR_ROH",
               "WARNUNG: mit hoher Wahrscheinlichkeit implausibel (Ausreisser-Cluster, siehe Abweichungshinweis oben) - Primaerquelle, ABER woertliche SAP-Summe ungeprueft irrefuehrend"),
   mk_vert_row(cov_bereinigt, kapazitaet$a_kapazitaet_gwh_bereinigt, "3a_MaStR_BEREINIGT_PostHoc",
-              sprintf("Post-hoc, NICHT SAP-spezifiziert: Ausschluss von %d Einzelanlagen > 100 MWh Kapazitaet - Ruecksprache mit Mensch erforderlich, ob dies als 3(a) verwendet werden soll", kapazitaet$a_n_ausreisser_bereinigt)),
+              sprintf("Post-hoc, NICHT SAP-spezifiziert: Ausschluss von %d Einzelanlagen > 100 MWh Kapazitaet - OFFIZIELLE Berichtsbasis fuer 3(a) gemaess Entscheidung_Estimand3a.md (Daniel Saure, 31.08.2026)", kapazitaet$a_n_ausreisser_bereinigt)),
   mk_vert_row(cov_s9_bves, kapazitaet$s9_sekundaer_gwh, "S9_BVES_Sekundaeraggregat",
               "SAP 6, S9: Kreuzpruefung mit BVES Branchenanalyse 2026 (Sekundaerquelle, Stichtag Ende 2025)"),
   mk_vert_row(coverage_primary$b, kapazitaet$b_kapazitaet_gwh, "3b_SEKUNDAERQUELLE_IWR",
@@ -801,13 +834,24 @@ tab2_verteilung <- rbind(
              Anmerkung = "nicht mit Primaerqualitaet durchfuehrbar (siehe Suchprotokoll) - kein Ersatzwert",
              stringsAsFactors = FALSE)
 )
-write.csv(tab2_verteilung, file.path(OUT_DIR, "tabelle2b_deckungsgrad_verteilungsstatistik.csv"), row.names = FALSE)
+write_csv_mit_blockzitat(tab2_verteilung, file.path(OUT_DIR, "tabelle2b_deckungsgrad_verteilungsstatistik.csv"))
 
 # ---- Tabelle 3: vollstaendige Sensitivitaetsmatrix ----
-write.csv(sensitivitaeten, file.path(OUT_DIR, "tabelle3_sensitivitaetsmatrix.csv"), row.names = FALSE)
+# SAP 11 schreibt ganzzahlige Prozentwerte vor - umgesetzt durchgaengig in
+# Tabelle 2/2b/3/4 (Auflage Validierungsbericht, zuvor 1/2 Nachkommastellen).
+# Hinweis (keine stillschweigende Abweichung, sondern explizit dokumentiert):
+# Bei der BEREINIGT-Kapazitaet (31,5 GWh vs. Episoden-Defizite im
+# Tausend-GWh-Bereich) liegen die Deckungsgrade fast durchgehend < 1,5% -
+# ganzzahlige Rundung reduziert diese Werte auf 0%/1% und ist damit fast
+# informationsfrei. Wer mehr Praezision braucht, muss auf die GWh-Rohwerte
+# (Energiedefizit_GWh, Kapazitaet_GWh) in denselben Tabellen zurueckgreifen.
+write_csv_mit_blockzitat(sensitivitaeten, file.path(OUT_DIR, "tabelle3_sensitivitaetsmatrix.csv"))
 
 # ---- Tabelle 4: Einordnung der vier eingangs genannten Fremdzahlen (SAP 8, Leitplanke 5) ----
-eigener_median_3a <- round(median(coverage_primary$a$deckungsgrad_pct), 1)
+# Auflage Validierungsbericht / Entscheidung_Estimand3a.md (31.08.2026): fuer
+# Estimand 3(a) gilt offiziell die BEREINIGT-Variante (Post-hoc, siehe
+# BLOCKZITAT_3A_BEREINIGT oben), nicht die MaStR-Rohsumme.
+eigener_median_3a_bereinigt <- round(median(cov_bereinigt$deckungsgrad_pct), 0)
 tab4 <- data.frame(
   Fremdzahl = c(
     "2% des Tagesverbrauchs",
@@ -816,9 +860,9 @@ tab4 <- data.frame(
     "5,6 Mrd. EUR Einsparung durch 20GW/4h-Flexibilitaet"
   ),
   Eigener_Wert_dieser_Analyse = c(
-    sprintf("Median Deckungsgrad (3a, MaStR): %.1f%% des Episoden-Energiedefizits", eigener_median_3a),
-    sprintf("S5 (Leistungskappung, 3a): mittlere Speicherdauer = %.2f h (Kapazitaet/Leistung)",
-            kapazitaet$a_kapazitaet_gwh / kapazitaet$a_leistung_gw),
+    sprintf("Median Deckungsgrad (3a, MaStR BEREINIGT [Post-hoc]): %.0f%% des Episoden-Energiedefizits", eigener_median_3a_bereinigt),
+    sprintf("S5 (Leistungskappung, 3a BEREINIGT [Post-hoc]): mittlere Speicherdauer = %.2f h (Kapazitaet/Leistung)",
+            kapazitaet$a_kapazitaet_gwh_bereinigt / kapazitaet$a_leistung_gw),
     sprintf("Diese Analyse: rein historisch (2015-%s), kein Bedarfsszenario 2045/2050", struktur_check$date_range[2]),
     "Diese Analyse trifft keine Aussage zu negativen Strompreisen (anderer Estimand)"
   ),
@@ -830,7 +874,7 @@ tab4 <- data.frame(
   ),
   stringsAsFactors = FALSE
 )
-write.csv(tab4, file.path(OUT_DIR, "tabelle4_einordnung_fremdzahlen.csv"), row.names = FALSE)
+write_csv_mit_blockzitat(tab4, file.path(OUT_DIR, "tabelle4_einordnung_fremdzahlen.csv"))
 
 # ---- Pflicht-Disclaimer (SAP 11 / SAP 8) ----
 disclaimer_text <- paste(
@@ -859,20 +903,17 @@ disclaimer_text <- paste(
   "   'nicht mit Primaerqualitaet durchfuehrbar', NICHT stillschweigend durch",
   "   eine Fremdzahl ersetzt.",
   "",
-  "*** ABWEICHUNG VOM SAP - RUECKFRAGE AN MENSCH (siehe Skriptkopf) ***",
-  sprintf("Die MaStR-Rohsumme fuer Szenario 3(a) (%.1f GWh) ist mit hoher", kapazitaet$a_kapazitaet_gwh_roh),
-  "Wahrscheinlichkeit durch ein kleines Cluster von Dateneingabefehlern im",
-  sprintf("MaStR verzerrt (%d von %d Anlagen [< 0,002%%] verursachen 97,5%% der", kapazitaet$a_n_ausreisser_bereinigt, kapazitaet$a_n_einheiten),
-  "Summe; groesster Einzelwert 157.252 MWh - groesser als der gesamte laut BVES",
-  "und IWR unabhaengig berichtete deutsche Batteriespeicherbestand). Der Analyst",
-  "hat dies NICHT eigenmaechtig korrigiert, sondern berichtet transparent DREI",
-  "Varianten (Tabelle 2b): (i) 3a-ROH [woertliche SAP-Umsetzung, WARNUNG:",
-  "vermutlich implausibel], (ii) 3a-BEREINIGT [Post-hoc, Ausreisser >100 MWh",
-  "ausgeschlossen, NICHT SAP-spezifiziert], (iii) SAP-6-S9-Kreuzpruefung mit",
-  "BVES-Sekundaeraggregat. WELCHE Variante als tragfaehiges Ergebnis fuer",
-  "Estimand 3(a) zu verwenden ist, muss der Mensch entscheiden - nicht der",
-  "Analyst. Details/Belege: rohdaten/mastr/mastr_speicher_summary_top_ausreisser.csv",
-  "und run_log.txt.",
+  "*** ENTSCHEIDUNG ZU ESTIMAND 3(a) GETROFFEN (Daniel Saure, 31.08.2026,",
+  "    siehe Entscheidung_Estimand3a.md) - fuer diesen Bericht gilt die",
+  "    Variante 3a-BEREINIGT. Pflicht-Kennzeichnung (woertlich): ***",
+  "",
+  BLOCKZITAT_3A_BEREINIGT,
+  "",
+  "Rohsumme (3a-ROH, woertliche SAP-Umsetzung, mit hoher Wahrscheinlichkeit",
+  "implausibel) und SAP-6-S9-Kreuzpruefung mit BVES-Sekundaeraggregat bleiben",
+  "als dokumentierte Alternativen in Tabelle 2b erhalten, sind aber NICHT die",
+  "fuer Tabelle 3/4 verwendete Berichtsbasis. Details/Belege:",
+  "rohdaten/mastr/mastr_speicher_summary_top_ausreisser.csv und run_log.txt.",
   "",
   "WEITERE LIMITATIONEN (SAP 9):",
   "- Grenzkuppelstellen/Importe nicht im Defizit beruecksichtigt.",
