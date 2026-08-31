@@ -5,33 +5,32 @@ Deutschlands das "wir sind zu klein, um zu zählen"-Argument nutzten, welchen
 kumulierten Anteil der weltweiten Treibhausgasemissionen würde das umfassen?
 Eine deskriptive Konzentrationsanalyse ("Trittbrettfahrer-Rechnung").
 
-**Version:** 0.1 (Entwurf)
-**Datum:** 30.08.2026
-**Autor:in:** sap-autor-Subagent (automatisiert erstellt, Entwurf zur Prüfung)
-**Freigabe:** _________________________ Datum: __________ *(noch ausstehend –
-siehe Abschnitt 0 und Zusammenfassung am Ende dieses Dokuments)*
+**Version:** 1.0 (final)
+**Datum:** 31.08.2026
+**Autor:in:** sap-autor-Subagent (automatisiert erstellt, von Mensch geprüft und freigegeben)
+**Freigabe:** Daniel Saure Datum: 31.08.2026
+**Status: final, eingefroren am 31.08.2026, freigegeben durch Daniel Saure.**
 
 ---
 
 ## 0. Status dieser Analyse
 
-[ ] Präregistriert (SAP vor Datenzugriff verfasst und eingefroren)
+[x] Präregistriert (SAP vor Datenzugriff verfasst und eingefroren)
 [ ] Exploratorisch (Daten wurden vor SAP-Erstellung bereits gesichtet – Grund: ___)
 
-**Aktueller Status: `draft` (weder eingefroren noch präregistriert im
-engeren Sinn).**
+**Aktueller Status: `final` (eingefroren am 31.08.2026, freigegeben durch
+Daniel Saure nach vollständiger Lektüre des Dokuments).**
 
 Dieses Dokument wurde verfasst, **bevor** irgendwelche Länder-, Emissions- oder
 Bevölkerungsdaten für diese Fragestellung gesichtet wurden. Es liegen keine
 Analyseergebnisse, Zahlen oder Grafiken vor, die in diesen SAP eingeflossen
 sind – die Kernzahl aus der Auftragsbeschreibung (Deutschlands Emissionsanteil)
 wurde bewusst **nicht** übernommen, sondern wird in Abschnitt 3/4 als
-Ermittlungsschritt aus der Primärquelle festgeschrieben. Sobald ein
-verantwortlicher Mensch (Karin o. Ä.) den vollständigen Text gelesen und
-ausdrücklich freigegeben hat, wird oben die Checkbox "Präregistriert" gesetzt,
-Version und Datum aktualisiert und der Status auf `final` geändert. Bis dahin
-darf keine Datensichtung und kein Analyse-Code erfolgen (siehe
-Projektanweisung, Workflow-Schritt 2→3).
+Ermittlungsschritt aus der Primärquelle festgeschrieben. Der SAP ist damit
+präregistriert im engeren Sinn: eingefroren vor jeder Datensichtung. Ab jetzt
+darf der analyst-Subagent exakt das hier beschriebene Vorgehen implementieren;
+jede Abweichung muss im Analyse-Skript explizit als "Post-hoc" gekennzeichnet
+werden (siehe Projektanweisung, Workflow-Schritt 3).
 
 ---
 
@@ -550,4 +549,5 @@ Ergebnistexts.*
 |---|---|---|
 | 0.1 | 30.08.2026 | Erstentwurf (draft), noch keine Datensichtung, keine Freigabe |
 | 0.1 | 30.08.2026 | Abschnitt 8: Abgrenzungshinweis zu `SAP_DE-Emissionen-Trendprojektion-2040.md` konkretisiert (Dateipfad + zwei Stichpunkte zur Unterscheidung der Fragestellungen). Status weiterhin `draft`, keine Freigabe. |
+| 1.0 | 31.08.2026 | Eingefroren (final), freigegeben durch Daniel Saure nach vollständiger Lektüre des Dokuments (inkl. präzisiertem Abschnitt 8). |
 </content>
