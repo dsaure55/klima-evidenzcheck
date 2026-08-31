@@ -59,3 +59,31 @@ Reports/ # fertige, veröffentlichungsreife Stücke
   (git diff leer, Status weiterhin draft; SAP Expertenrat-Budgetabgleich). Beide
   wurden erst durch manuelle Gegenpruefung entdeckt, nicht durch die Subagenten
   selbst gemeldet.
+
+## Standard-Datenquellen-Kandidat: Our World in Data
+
+*Ergaenzt am 31.08.2026.*
+
+- Bei jedem neuen SAP soll **Our World in Data** standardmaessig als moeglicher
+  Sekundaer-Quellen-Kandidat mitgedacht werden (Kreuzpruefung/Fallback),
+  zusaetzlich zu den bereits etablierten Primaerquellen (UBA, RKI, EDGAR,
+  Global Carbon Project, SMARD, Marktstammdatenregister).
+- Bleibt Sekundaerquelle: bei Abweichung von einer echten Primaerquelle hat die
+  Primaerquelle Vorrang, OWID dient nur der Plausibilisierung/als Fallback bei
+  dokumentiertem Primaerquellen-Zugriffsproblem.
+
+## Dokumentationspflicht bei Validierungs-Nachkontrollen
+
+*Ergaenzt am 31.08.2026, nach einem Vorfall.*
+
+- Wenn der validator-Subagent Auflagen stellt und der analyst-Subagent diese
+  umsetzt, MUSS die anschliessende fokussierte Nachpruefung des validators als
+  eigene Datei im Analyseordner festgehalten werden (z. B. Anhang/Nachtrag am
+  bestehenden Validierungsbericht), nicht nur als Chat-Zusammenfassung
+  gemeldet werden.
+- Grund: Der kommunikation-Subagent prueft vor Erstellung von Kanal-Entwuerfen,
+  ob ein vollstaendiger, dateibasierter Validierungsnachweis vorliegt. Eine
+  reine Chat-Meldung ohne Datei-Gegenstueck wird zu Recht als nicht ausreichend
+  zurueckgewiesen (siehe CLAUDE.md-Regel "Verifikationspflicht bei
+  Subagenten-Abschlussmeldungen" oben - dieselbe Logik gilt fuer
+  Nachkontrollen, nicht nur Erstpruefungen).
