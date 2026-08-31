@@ -1,4 +1,4 @@
-**ENTWURF - nicht veroeffentlicht. Erneute Freigabe durch Daniel Saure erforderlich (Text nach vorheriger Freigabe inhaltlich geaendert: Klassenzimmer-Analogie ergaenzt).**
+**FREIGEGEBEN durch Daniel Saure am 31.08.2026 (inkl. Klassenzimmer-Analogie). Veroeffentlichung erfolgt eigenstaendig durch Daniel Saure (kein automatisierter Publish-Schritt in diesem Projekt).**
 
 ---
 
