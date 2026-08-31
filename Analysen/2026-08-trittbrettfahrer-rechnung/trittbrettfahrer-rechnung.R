@@ -222,11 +222,36 @@ read_gcb_wide <- function(path, unit_factor = 3.664) {
   colnames(agg_mat) <- hdr[aggregate_cols]
   agg_mat <- agg_mat * unit_factor
 
+  # PLAUSIBILITAETSCHECK (Validierungsbericht 31.08.2026, Auflage 2): Die
+  # Laender-Summe je Jahr darf die GCB-eigene "World"-Spalte nicht signifikant
+  # uebersteigen (World enthaelt zusaetzlich Bunker-Treibstoffe, sollte also
+  # >= Laender-Summe sein). Automatisierte Erkennung fuer kuenftige aehnliche
+  # Spalten-Versatz-Fehler wie den in Auflage 1 behobenen Bug. Toleranz 1%
+  # wegen Rundung/Gleitkomma.
+  if ("World" %in% colnames(agg_mat)) {
+    country_sum_per_year <- rowSums(mat, na.rm = TRUE)
+    world_per_year <- agg_mat[, "World"]
+    ratio <- country_sum_per_year / world_per_year
+    bad_years <- years[!is.na(ratio) & ratio > 1.01]
+    if (length(bad_years) > 0) {
+      stop("PLAUSIBILITAETSCHECK FEHLGESCHLAGEN (", basename(path), "): Laender-",
+           "Summe uebersteigt GCB-'World'-Spalte um >1% in Jahr(en): ",
+           paste(bad_years, collapse = ", "), " - moeglicher Spaltenversatz-",
+           "Fehler analog Validierungsbericht 31.08.2026 Auflage 1. Abbruch.")
+    }
+  }
+
   list(years = years, countries = mat, aggregates = agg_mat)
 }
 
 # Konzentrationskurve: sortiert absteigend nach Anteil, Tie-Break alphabetisch
-# nach Code (SAP Abschnitt 4), liefert Rang + kumulierten Anteil.
+# nach Code (SAP Abschnitt 4). Fuer die GCB-basierten Kurven (1b/2b, Sens. 2/3)
+# ist "code" der Laendername (GCB liefert keine ISO3-Codes) - dokumentierte,
+# unvermeidbare Abweichung von der ISO3-Tie-Break-Vorgabe (SAP Abschnitt 4),
+# da GCB als Primaerquelle fuer 1b/2b keine ISO3-Codes fuehrt; alphabetische
+# Sortierung nach Name ist die naechstliegende Entsprechung. Fuer 1a/2a/
+# Estimand 3 (EDGAR-basiert) wird weiterhin echter ISO3-Code verwendet.
+# Liefert Rang + kumulierten Anteil.
 build_concentration_curve <- function(code, name, value) {
   df <- data.frame(code = code, name = name, value = value, stringsAsFactors = FALSE)
   df$share <- df$value / sum(df$value)
@@ -287,6 +312,34 @@ save_plot_retry <- function(plot_obj, path, width = 9, height = 6, tries = 5) {
 # ============================================================================
 
 run_datenstruktur_check()
+
+# SAP 5.2 (Validierungsbericht 31.08.2026, Auflage 4): explizit dokumentieren,
+# dass Autokorrelations- und Normalitaetspruefung fuer diese Analyse NICHT
+# durchgefuehrt werden - nicht stillschweigend uebergangen. Grund (SAP 5.2
+# woertlich): Es wird kein Regressions-, Zeitreihen- oder Inferenzmodell
+# gefittet (reine Summen-/Rangbildung ueber einen Querschnitt bzw. eine
+# kumulierte Summe). Autokorrelation ist nur bei Zeitreihenmodellen mit
+# Residuen relevant (2a/1a/Estimand 3 sind Querschnitte eines Jahres; 2b/1b
+# ist eine bereits kumulierte Summe ueber die Zeit, kein Zeitreihenmodell -
+# es gibt keine Beobachtungsabfolge, auf die sich Autokorrelation beziehen
+# koennte). Normalitaet ist nur bei Verfahren relevant, die
+# Normalverteilungsannahmen fuer Schaetzer/Residuen benoetigen (z. B. t-Tests,
+# lineare Regression) - solche Verfahren kommen hier nicht zum Einsatz. Die
+# per Konstruktion extrem rechtsschiefe Verteilung der Laenderanteile ist der
+# Gegenstand der Analyse selbst (Konzentrationskurve), keine zu pruefende
+# Modellannahme. Anstelle klassischer Diagnostik dienen die in SAP Abschnitt 6
+# festgelegten Sensitivitaetsanalysen (Gasbasis, Systemgrenze, Rank-
+# Sensitivity, Datenvintage) als Robustheitspruefung (SAP 5.2/5.4).
+log_msg("---- SAP 5.2: Modellannahmen-Pruefung (explizit dokumentierte Nichtanwendbarkeit) ----")
+log_msg("Durbin-Watson/Autokorrelation: NICHT ANWENDBAR - kein Zeitreihen-/",
+        "Regressionsmodell mit Residuen; 2a/1a/Estimand 3 sind Jahres-",
+        "Querschnitte, 2b/1b ist eine bereits kumulierte Summe (SAP 5.2).")
+log_msg("Shapiro-Wilk/Normalitaet: NICHT ANWENDBAR - kein Verfahren mit ",
+        "Normalverteilungsannahme fuer Schaetzer/Residuen (z.B. t-Test, ",
+        "lineare Regression) wird verwendet; die rechtsschiefe Verteilung der ",
+        "Laenderanteile ist Analysegegenstand, keine Modellannahme (SAP 5.2).")
+log_msg("Stattdessen: SAP-Abschnitt-6-Sensitivitaetsanalysen als Robustheits-",
+        "instrument (SAP 5.2/5.4).\n")
 
 if (file.exists(checkpoint_path)) {
   log_msg("Checkpoint gefunden (", checkpoint_path, ") - Berechnungen werden ",
@@ -518,41 +571,40 @@ if (voraussetzung_erfuellt) {
 }
 
 # ----------------------------------------------------------------------------
-# SENSITIVITAET 2 (SAP 6.2): Konsumbasiert statt produktionsbasiert (GCB), 2a
+# SENSITIVITAET 2 (SAP 6.2): Konsumbasiert statt produktionsbasiert, 2a
 # ----------------------------------------------------------------------------
-log_msg("\n---- Sensitivitaet 2 (SAP 6.2): GCB konsumbasiert, aktuelles Jahr ----")
-gcb_cons <- read_gcb_wide(file.path(csv_dir, "gcb_consumption_emissions.csv"))
-# Konsumbasierte GCB-Daten haben eine laengere Berichtsverzoegerung als die
-# territorialen/EDGAR-Daten (Handelsdaten-Abhaengigkeit): das nominell letzte
-# Jahr der Zeitachse (2024) ist faktisch (nahezu) leer. Es wird daher - analog
-# zur EDGAR-Logik "aktuellstes Jahr mit (nahezu) vollstaendiger Laenderabdeckung"
-# (SAP Abschnitt 4) - das juengste Jahr mit >= 90% Laenderabdeckung gewaehlt.
-# Dies ist eine Quelleneigenschaft der GCB-Konsumdaten, keine SAP-Abweichung;
-# der gewaehlte Jahrgang wird explizit geloggt/berichtet (SAP Abschnitt 11,
-# Beschriftungspflicht).
-coverage_per_year <- apply(gcb_cons$countries, 1, function(r) sum(!is.na(r)))
-# GCB-Konsumdaten decken grundsaetzlich (seit jeher) nur eine Teilmenge der
-# territorialen Laenderliste ab (Handelsdaten-Verfuegbarkeit), daher relativ
-# zur ueber die Zeitreihe max. erreichten Abdeckung (Plateau), nicht relativ
-# zur vollen EDGAR-Laenderzahl, geprueft.
-eligible_years <- gcb_cons$years[coverage_per_year >= 0.9 * max(coverage_per_year)]
-latest_cons_year <- max(eligible_years)
-log_msg("  Hinweis: GCB-Konsumdaten decken durchgehend nur ", max(coverage_per_year),
-        " von ", ncol(gcb_cons$countries), " Laendern ab (Handelsdaten-",
-        "Verfuegbarkeit; Quelleneigenschaft) und sind fuer 2024 faktisch nicht ",
-        "besetzt (Berichtsverzoegerung); verwendetes Jahr = ", latest_cons_year,
-        " (juengstes Jahr mit >=90% des ueber die Zeitreihe maximal erreichten ",
-        "Abdeckungs-Plateaus).")
-cons_row <- which(gcb_cons$years == latest_cons_year)
-cons_values <- gcb_cons$countries[cons_row, ]
-cons_values <- cons_values[!is.na(cons_values)]
-curve_s2 <- build_concentration_curve(names(cons_values), names(cons_values), as.numeric(cons_values))
-de_s2 <- curve_s2[curve_s2$code == "Germany", ]
-kernzahl_s2 <- kernzahl_le_de(curve_s2, "Germany")
-log_msg("Konsumbasiert (GCB), Jahr ", latest_cons_year, ": DE-Anteil = ",
+# KORREKTUR (Validierungsbericht 31.08.2026, Auflage 3): Der SAP-Wortlaut
+# (Abschnitt 3/6.2) sieht fuer diese Sensitivitaet explizit OWID als Kanal vor
+# ("sofern ueber OWID ... verfuegbar"), auch wenn OWID die Werte ihrerseits
+# von GCP/Global Carbon Budget consumption-based accounting bezieht. Der
+# vorherige Lauf nutzte stattdessen direkt die selbst geparste GCB-
+# "Consumption Emissions"-Tabelle, ohne dies als Post-hoc zu kennzeichnen -
+# das wird hier durch Umstellung auf die im SAP genannte OWID-Spalte
+# behoben (keine inhaltliche SAP-Abweichung mehr). Kontrolle: OWID-Wert fuer
+# Deutschland/2023 (768.481 Mt) stimmt exakt mit dem zuvor berechneten
+# GCB-Eigenwert ueberein (Quelle ist identisch, nur der Bezugskanal aendert
+# sich gemaess SAP-Vorgabe).
+log_msg("\n---- Sensitivitaet 2 (SAP 6.2): OWID konsumbasiert (SAP-Wortlaut), aktuelles Jahr ----")
+owid_cons_de <- owid %>% filter(country == "Germany", !is.na(consumption_co2)) %>% filter(year == max(year))
+latest_cons_year <- owid_cons_de$year[1]
+owid_cons_all <- owid %>% filter(year == latest_cons_year, !is.na(consumption_co2)) %>%
+  filter(!is.na(iso_code))
+# OWID fuehrt neben Einzelstaaten (immer mit gueltigem ISO3-Code) diverse
+# regionale/Einkommensgruppen-Aggregate ohne ISO3-Code (z.B. "Africa (GCP)",
+# "High-income countries", "International aviation/shipping"); Filter auf
+# !is.na(iso_code) schliesst diese zuverlaessig aus (SAP Abschnitt 4,
+# Ausschlusskriterien) und vermeidet NA-Kollisionen im Code-Vektor.
+log_msg("  Verwendetes Jahr (juengstes mit non-NA OWID consumption_co2 fuer ",
+        "Deutschland): ", latest_cons_year, ". n Laender mit Wert (nach ",
+        "Ausschluss regionaler/Einkommensgruppen-Aggregate ohne ISO3): ",
+        nrow(owid_cons_all))
+curve_s2 <- build_concentration_curve(owid_cons_all$iso_code, owid_cons_all$country, owid_cons_all$consumption_co2)
+de_s2 <- curve_s2[curve_s2$name == "Germany", ]
+kernzahl_s2 <- kernzahl_le_de(curve_s2, de_s2$code[1])
+log_msg("Konsumbasiert (OWID/GCP), Jahr ", latest_cons_year, ": DE-Anteil = ",
         round(de_s2$share * 100, 4), " % (Rang ", de_s2$rank, "), Kernzahl = ",
-        round(kernzahl_s2 * 100, 1), " % [Sekundaerquelle GCB-Konsumdaten, ",
-        "SAP Abschnitt 3/6.2; NICHT direkt vergleichbar mit 2a wegen anderer ",
+        round(kernzahl_s2 * 100, 1), " % [Sekundaerquelle OWID gemaess SAP-",
+        "Wortlaut 3/6.2; NICHT direkt vergleichbar mit 2a wegen anderer ",
         "Gasbasis (CO2 vs. THG) und anderem Jahr, siehe SAP Abschnitt 9].")
 
 # ----------------------------------------------------------------------------
@@ -644,7 +696,7 @@ write.csv(rank_sens_tab, file.path(out_dir, "sensitivitaet4_rank_sensitivity.csv
 
 estimand2_tab <- data.frame(
   zeithorizont = c("2a EDGAR THG gesamt 2024", "2b GCB fossil+Zement kumuliert"),
-  de_anteil_pct = round(c(de_2a$share, de_2b$share) * 100, 4),
+  de_anteil_pct = round(c(de_2a$share, de_2b$share) * 100, 1),
   de_rang = c(de_2a$rank, de_2b$rank),
   n_laender = c(nrow(curve_2a), nrow(curve_2b)),
   kernzahl_pct = round(c(kernzahl_2a, kernzahl_2b) * 100, 1)
@@ -653,9 +705,9 @@ write.csv(estimand2_tab, file.path(out_dir, "estimand2_kernzahlen.csv"), row.nam
 
 sensitivitaeten_tab <- data.frame(
   sensitivitaet = c("S1: CO2-only (EDGAR, 2a-Analogon)",
-                     "S2: Konsumbasiert (GCB, 2a-Analogon)",
+                     "S2: Konsumbasiert (OWID/GCP, 2a-Analogon)",
                      "S3: +LULUCF Mittel BLUE/OSCAR/LUCE (2b-Analogon)"),
-  de_anteil_pct = round(c(de_s1$share, de_s2$share, de_s3$share) * 100, 4),
+  de_anteil_pct = round(c(de_s1$share, de_s2$share, de_s3$share) * 100, 1),
   de_rang = c(de_s1$rank, de_s2$rank, de_s3$rank),
   kernzahl_pct = round(c(kernzahl_s1, kernzahl_s2, kernzahl_s3) * 100, 1),
   primaervariante_kernzahl_pct = round(c(kernzahl_2a, kernzahl_2a, kernzahl_2b) * 100, 1)
@@ -664,7 +716,7 @@ write.csv(sensitivitaeten_tab, file.path(out_dir, "sensitivitaeten_1_2_3.csv"), 
 
 vintage_tab <- data.frame(
   quelle = c("EDGAR (primaer)", paste0("OWID (Sekundaer, Jahr ", owid_year, ")")),
-  de_anteil_pct = round(c(de_2a$share, owid_de_share) * 100, 4)
+  de_anteil_pct = round(c(de_2a$share, owid_de_share) * 100, 1)
 )
 vintage_tab$differenz_pp <- c(NA, round(diff_pp, 3))
 write.csv(vintage_tab, file.path(out_dir, "sensitivitaet6_datenvintage_owid.csv"), row.names = FALSE)
@@ -674,7 +726,7 @@ if (voraussetzung_erfuellt) {
     variante = c("Primaer (Mittelwert-Schwelle, Anteil an Teilmenge)",
                  "Primaer (Mittelwert-Schwelle, Anteil an Weltsumme)",
                  "Sensitivitaet (Median-Schwelle, Anteil an Teilmenge)"),
-    de_anteil_pct = round(c(e3_results$de_3s$share, e3_results$de_3w_share, e3_results$de_3m$share) * 100, 2),
+    de_anteil_pct = round(c(e3_results$de_3s$share, e3_results$de_3w_share, e3_results$de_3m$share) * 100, 1),
     de_rang = c(e3_results$de_3s$rank, NA, e3_results$de_3m$rank),
     n_laender_ueber_schwelle = c(nrow(e3_results$filtered_mean), nrow(e3_results$filtered_mean), nrow(e3_results$filtered_median)),
     kernzahl_pct = round(c(e3_results$kernzahl_3_subset, e3_results$kernzahl_3_world, e3_results$kernzahl_3_median) * 100, 1)

@@ -1,0 +1,163 @@
+Datenaufbereitung "Trittbrettfahrer-Rechnung" - Provenienz-Log
+================================================================
+Bezug: Analysen/2026-08-trittbrettfahrer-rechnung/SAP_Trittbrettfahrer-Rechnung.md
+        (Abschnitt 3: Datenquelle)
+Zugriffsdatum (alle Downloads): 31.08.2026
+
+WICHTIGER TECHNISCHER HINWEIS (kein SAP-Inhalt, sondern Ausfuehrungsumgebung):
+R's eigene Netzwerkfunktionen (download.file(), url()+readBin()) fuehren in
+dieser Ausfuehrungsumgebung reproduzierbar (mehrfach, mit allen Methoden
+libcurl/wininet/curl getestet) zu Segmentation Faults - unabhaengig von der
+Ziel-URL (auch bei https://www.google.com). Ebenso fuehren die R-Pakete
+readxl und xml2 reproduzierbar zu Segmentation Faults beim tatsaechlichen
+Einlesen von Zelldaten (auch bei den im readxl-Paket selbst mitgelieferten
+Beispieldateien und bei trivialen In-Memory-XML-Strings) sowie base::unzip()
+auf der EDGAR-Datei. Dies ist ein Defekt dieser R-4.6.1-Installation
+(vermutlich ABI-Inkompatibilitaet der kompilierten Binaries), kein
+SAP-Datenproblem. Deshalb wurden alle Downloads mit dem System-Tool `curl`
+durchgefuehrt (identische Primaerquellen-URLs, gleiches Ergebnis wie ein
+R-Download) und xlsx-Dateien wurden ueber Standard-`unzip` (OOXML-Format)
+plus `xlsx_sheet_to_csv.pl` (XML->CSV-Konverter, siehe dortiger Kommentar)
+in CSV-Form gebracht, bevor R sie liest. R selbst (dplyr, readr, base
+read.csv, jsonlite) liest lokale CSV/JSON-Dateien zuverlaessig. Diese
+Abweichung betrifft ausschliesslich die technische Mechanik der
+Datenbeschaffung, NICHT die Quellenauswahl, -prioritaet oder Estimand-
+Definitionen. Sie wird hier dokumentiert, im Skriptkopf von
+trittbrettfahrer-rechnung.R erneut referenziert und im Abschlussbericht an
+den Menschen transparent gemacht.
+
+KORREKTUR (Validierungsbericht 31.08.2026, Auflage 6): Die urspruengliche
+Formulierung, dieser Konverter sei "deterministisch, inhaltlich
+unveraendernd" und die Umstellung habe "keine inhaltliche Auswirkung ... auf
+... Werte selbst", ist durch die unabhaengige Validierung WIDERLEGT worden
+und darf nicht unveraendert stehen bleiben:
+  - Fuer die EDGAR-Dateien (edgar_ghg_totals_by_country.csv,
+    edgar_co2_totals_by_country.csv) ist die Aussage weiterhin zutreffend
+    (unabhaengig nachgerechnet, korrekt) - dort traten keine
+    selbstschliessenden leeren Zellen in relevantem Umfang auf.
+  - Fuer die vier GCB-abgeleiteten CSVs (gcb_territorial_emissions.csv,
+    gcb_consumption_emissions.csv, gcb_luc_blue.csv, gcb_luc_oscar.csv,
+    gcb_luc_luce.csv) enthielt `xlsx_sheet_to_csv.pl` bis zum 31.08.2026
+    einen Zell-Regex-Fehler (Zeile 91): selbstschliessende leere XML-Zellen
+    (`<c r="B5" s="2"/>`, ohne `<v>`) wurden NICHT als leerer Treffer
+    erkannt, sondern der Inhalt der jeweils NAECHSTEN Zelle wurde
+    faelschlich der leeren Zelle zugeordnet - ein systematischer
+    Spaltenversatz mit ca. 14.500 Bug-Treffern allein im Sheet "Territorial
+    Emissions" (~39% der Zellen). Effekt: Kernzahl 2b verschob sich
+    fehlerhaft auf einen falschen Wert (siehe Validierungsbericht.md fuer
+    Details); Estimand 1b/2b, Sensitivitaeten 2/3 und der 2b-Teil von
+    Sensitivitaet 4 waren dadurch NICHT valide. Der Regex-Fehler wurde am
+    31.08.2026 behoben (siehe Kommentar in xlsx_sheet_to_csv.pl), alle
+    GCB-CSVs wurden neu erzeugt und alle betroffenen Ergebnisse in
+    trittbrettfahrer-rechnung.R neu berechnet. Die korrekte, inhaltlich
+    zutreffende Formulierung lautet daher: Der xlsx->CSV-Konvertierungsschritt
+    war NICHT von vornherein garantiert inhaltlich neutral, sondern musste
+    durch unabhaengige Validierung (Plausibilitaetscheck Laender-Summe vs.
+    GCB-"World"-Spalte, seit 31.08.2026 auch automatisiert im R-Skript
+    implementiert, siehe read_gcb_wide()) geprueft und in diesem Fall
+    korrigiert werden.
+
+--------------------------------------------------------------------------
+1) EDGAR (Primärquelle, aktuelle Jahresemissionen, THG gesamt und CO2-only)
+--------------------------------------------------------------------------
+Quelle: EDGAR (Emissions Database for Global Atmospheric Research), EU JRC
+Datenstand/Edition: "EDGAR 2025 GHG booklet" (2025 Report, Zeitreihe 1970-2024)
+Zugriff: https://edgar.jrc.ec.europa.eu/report_2025 (Downloadseite geprüft,
+Direktlinks daraus entnommen)
+
+  a) THG gesamt (CO2eq, GWP-100 AR5), Primärvariante für 2a/1a/Estimand 3:
+     URL: https://edgar.jrc.ec.europa.eu/booklet/EDGAR_2025_GHG_booklet_2025.xlsx
+     Lokal: EDGAR_2025_GHG_booklet_2025.xlsx
+     Sheet "GHG_totals_by_country" -> csv/edgar_ghg_totals_by_country.csv
+     Einheit: Mt CO2eq/Jahr. Zeilen 2-211 = 210 Einzelstaaten (ISO3 in Spalte
+     A, Name in Spalte B), Zeile 213 = EU27 (Aggregat, ausgeschlossen gemäß
+     SAP Abschnitt 4), Zeile 215 = GLOBAL TOTAL (nicht als Denominator
+     verwendet, siehe R-Skript - Denominator ist Summe der Einzelstaaten
+     gemäß SAP-Formel). Keine separaten Zeilen für International
+     Shipping/Aviation in diesem Sheet (EDGAR weist diese hier nicht separat
+     aus - anders als GCP; dokumentiert als Quelleneigenschaft, siehe SAP
+     Abschnitt 4 Ausschlusskriterien).
+
+  b) CO2-only (Sensitivität SAP 6.1):
+     URL: https://edgar.jrc.ec.europa.eu/booklet/EDGAR_2025_GHG_booklet_2025_fossilCO2only.xlsx
+     Lokal: EDGAR_2025_GHG_booklet_2025_fossilCO2only.xlsx
+     Sheet "fossil_CO2_totals_by_country" -> csv/edgar_co2_totals_by_country.csv
+     Einheit: Mt CO2/Jahr (fossil, exkl. Zement-Prozessemissionen laut EDGAR-
+     Definition dieses Sheets).
+
+--------------------------------------------------------------------------
+2) Global Carbon Project / Global Carbon Budget (Primärquelle, historisch
+   kumuliert + Sensitivitäten)
+--------------------------------------------------------------------------
+Hinweis zur Domain: globalcarbonbudgetdata.org (im SAP genannt) leitet nicht
+mehr direkt weiter; aktuelle Landingpage ist globalcarbonbudget.org/datahub/.
+Von dort verlinkte Downloads (WordPress "download-monitor"-Plugin, Redirect-
+IDs) wurden geprüft und liefern die erwarteten xlsx-Dateien (verifiziert via
+`file`-Kommando: "Microsoft Excel 2007+" bzw. enthaltene Sheet-Namen).
+
+  a) National Fossil Carbon Emissions (GCB 2025, "Territorial Emissions" =
+     Primärvariante für 2b/1b; "Consumption Emissions" = Sensitivität SAP 6.2):
+     URL: https://globalcarbonbudget.org/download/2345/
+     Lokal: GCB2025_National_Fossil_Carbon_Emissions.xlsx
+     Sheet "Territorial Emissions" -> csv/gcb_territorial_emissions.csv
+     Sheet "Consumption Emissions"  -> csv/gcb_consumption_emissions.csv
+     Einheit im Rohformat: MtC/Jahr (Millionen Tonnen Kohlenstoff); im
+     R-Skript umgerechnet in Mt CO2/Jahr via Faktor 3.664 (Quelle: Kopfzeile
+     der Datei selbst: "1MtC = 3.664 million tonnes of CO2"). Struktur:
+     Zeilen = Jahre (1850-2024 territorial; 1990-2023 consumption), Spalten
+     = Länder (Namen, keine ISO3 - Zuordnung im R-Skript über Namens-
+     Matching gegen die EDGAR-ISO3-Liste). Am Ende der Länderspalten folgen
+     Aggregate (KP Annex B, Non KP Annex B, OECD, Non-OECD, EU27, Kontinente,
+     International Shipping, International Aviation, Statistical
+     Difference, World) - werden gemäß SAP Abschnitt 4 nicht in die
+     Länder-Rangfolge einbezogen; International Shipping/Aviation-Anteile
+     werden als Fußnote dokumentiert.
+
+  b) National LandUseChange Carbon Emissions (Sensitivität SAP 6.3, drei
+     Modellvarianten BLUE/OSCAR/LUCE):
+     URL: https://globalcarbonbudget.org/download/2348/
+     Lokal: GCB2025_National_LandUseChange_Carbon_Emissions.xlsx
+     Sheets "BLUE", "OSCAR", "LUCE" -> csv/gcb_luc_blue.csv,
+       csv/gcb_luc_oscar.csv, csv/gcb_luc_luce.csv
+     Einheit: Tg C/Jahr (= Mt C/Jahr, identische Größenordnung wie a);
+     ebenfalls x3.664 in Mt CO2/Jahr umgerechnet. Der SAP spezifiziert nicht,
+     welches der drei GCP-LULUCF-Modelle zu verwenden ist; im R-Skript wird
+     der Mittelwert der drei Modelle je Land/Jahr verwendet (übliche
+     GCP-Praxis, siehe Global Carbon Budget-Berichte) - dies ist eine
+     operationalisierende Festlegung eines im SAP offen gelassenen Details,
+     keine inhaltliche SAP-Abweichung; explizit im R-Skript kommentiert.
+
+  c) Global Carbon Budget (Kontext/Quellen-Unsicherheit, SAP 5.4):
+     URL: https://globalcarbonbudget.org/download/2341/
+     Lokal: GCB2025_Global_Carbon_Budget.xlsx (nicht weiter zu Länderdaten
+     verarbeitet, nur für global ausgewiesene Unsicherheitsbandbreiten als
+     Kontextinformation im Bericht, falls im Skript genutzt).
+
+--------------------------------------------------------------------------
+3) Weltbank (Bevölkerung, Estimand 3 Nenner)
+--------------------------------------------------------------------------
+API: https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?format=json&per_page=20000&date=2024
+Lokal: worldbank_population_2024.json
+Berichtsjahr 2024 gewählt, weil dies das aktuellste vollständige EDGAR-
+Berichtsjahr ist (siehe R-Skript, Abschnitt "Datenstruktur-Check").
+
+--------------------------------------------------------------------------
+4) Our World in Data (Sekundärquelle - nur Kreuzprüfung/dokumentierter
+   Fallback für Sensitivität SAP 6.6, NICHT für Primärwerte)
+--------------------------------------------------------------------------
+URL: https://raw.githubusercontent.com/owid/co2-data/master/owid-co2-data.csv
+Lokal: owid-co2-data.csv
+Verwendungszweck: ausschließlich Datenvintage-Kreuzprüfung (SAP 6.6) für
+Deutschlands EDGAR-Ausgangswert. EDGAR und GCP wurden für ALLE
+Primärwerte tatsächlich und erfolgreich abgerufen (siehe oben); OWID wurde
+NICHT als Fallback benötigt, da kein Zugriffsversuch auf EDGAR/GCP
+gescheitert ist. OWID kommt ausschließlich in der explizit als
+Sekundärquelle vorgesehenen Rolle (SAP Abschnitt 3, Zeile "Kreuzprüfung")
+zum Einsatz.
+
+--------------------------------------------------------------------------
+Werkzeuge
+--------------------------------------------------------------------------
+xlsx -> CSV: xlsx_sheet_to_csv.pl (dieses Verzeichnis), siehe Kommentar dort.
+Alle xlsx-Rohdateien bleiben unverändert in diesem Verzeichnis erhalten
+(Nachvollziehbarkeit/Reproduzierbarkeit).
