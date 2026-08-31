@@ -1,4 +1,4 @@
-**ENTWURF - nicht veroeffentlicht. Freigabe durch Daniel Saure erforderlich vor Publikation.**
+**FREIGEGEBEN durch Daniel Saure am 31.08.2026. Veroeffentlichung erfolgt eigenstaendig durch Daniel Saure (kein automatisierter Publish-Schritt in diesem Projekt).**
 
 ---
 
@@ -172,7 +172,7 @@ Deutschlands zukünftige Entwicklung.
 
 ## Link zum Repo
 
-[Link zum GitHub-Repository klima-evidenzcheck – vor Veröffentlichung durch
-Daniel Saure einzusetzen]
+https://github.com/dsaure55/klima-evidenzcheck
+*(Hinweis: Vor Veröffentlichung prüfen, ob das Repository öffentlich sichtbar ist – der Link funktioniert für Leser sonst nicht.)*
 
 Analyseordner (Repo-intern): `Analysen/2026-08-trittbrettfahrer-rechnung/`
