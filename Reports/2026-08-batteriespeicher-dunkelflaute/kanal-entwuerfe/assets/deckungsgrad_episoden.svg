@@ -1,0 +1,75 @@
+<svg viewBox="0 0 800 460" xmlns="http://www.w3.org/2000/svg" font-family="system-ui,-apple-system,'Segoe UI',sans-serif">
+  <rect x="0" y="0" width="800" height="460" fill="#fcfcfb"/>
+  <text x="66" y="20" font-size="16" font-weight="600" fill="#0b0b0b">Deckungsgrad je historischer Dunkelflaute-Episode (2015-2025)</text>
+  <line x1="66.0" y1="410.0" x2="776.0" y2="410.0" stroke="#e1e0d9" stroke-width="1"/>
+   <text x="56.0" y="414.0" font-size="12" fill="#898781" text-anchor="end">0,00%</text>
+<line x1="66.0" y1="315.0" x2="776.0" y2="315.0" stroke="#e1e0d9" stroke-width="1"/>
+   <text x="56.0" y="319.0" font-size="12" fill="#898781" text-anchor="end">0,25%</text>
+<line x1="66.0" y1="220.0" x2="776.0" y2="220.0" stroke="#e1e0d9" stroke-width="1"/>
+   <text x="56.0" y="224.0" font-size="12" fill="#898781" text-anchor="end">0,50%</text>
+<line x1="66.0" y1="125.0" x2="776.0" y2="125.0" stroke="#e1e0d9" stroke-width="1"/>
+   <text x="56.0" y="129.0" font-size="12" fill="#898781" text-anchor="end">0,75%</text>
+<line x1="66.0" y1="30.0" x2="776.0" y2="30.0" stroke="#e1e0d9" stroke-width="1"/>
+   <text x="56.0" y="34.0" font-size="12" fill="#898781" text-anchor="end">1,00%</text>
+  <line x1="66.0" y1="204.93" x2="776.0" y2="204.93" stroke="#eb6834" stroke-width="2" stroke-dasharray="5,4"/>
+  <text x="72.0" y="196.93" font-size="13" font-weight="600" fill="#0b0b0b" text-anchor="start">Median: 0,54%</text>
+  <circle cx="93.40" cy="338.34" r="4.5" fill="#2a78d6" fill-opacity="0.75" stroke="#2a78d6" stroke-width="1"/>
+<circle cx="95.60" cy="329.77" r="4.5" fill="#2a78d6" fill-opacity="0.75" stroke="#2a78d6" stroke-width="1"/>
+<circle cx="97.46" cy="285.26" r="4.5" fill="#2a78d6" fill-opacity="0.75" stroke="#2a78d6" stroke-width="1"/>
+<circle cx="138.87" cy="335.71" r="4.5" fill="#2a78d6" fill-opacity="0.75" stroke="#2a78d6" stroke-width="1"/>
+<circle cx="141.41" cy="192.09" r="4.5" fill="#2a78d6" fill-opacity="0.75" stroke="#2a78d6" stroke-width="1"/>
+<circle cx="142.08" cy="271.82" r="4.5" fill="#2a78d6" fill-opacity="0.75" stroke="#2a78d6" stroke-width="1"/>
+<circle cx="154.80" cy="330.96" r="4.5" fill="#2a78d6" fill-opacity="0.75" stroke="#2a78d6" stroke-width="1"/>
+<circle cx="163.25" cy="232.98" r="4.5" fill="#2a78d6" fill-opacity="0.75" stroke="#2a78d6" stroke-width="1"/>
+<circle cx="164.10" cy="177.30" r="4.5" fill="#2a78d6" fill-opacity="0.75" stroke="#2a78d6" stroke-width="1"/>
+<circle cx="180.33" cy="166.65" r="4.5" fill="#2a78d6" fill-opacity="0.75" stroke="#2a78d6" stroke-width="1"/>
+<circle cx="196.72" cy="264.93" r="4.5" fill="#2a78d6" fill-opacity="0.75" stroke="#2a78d6" stroke-width="1"/>
+<circle cx="200.10" cy="166.54" r="4.5" fill="#2a78d6" fill-opacity="0.75" stroke="#2a78d6" stroke-width="1"/>
+<circle cx="201.96" cy="311.11" r="4.5" fill="#2a78d6" fill-opacity="0.75" stroke="#2a78d6" stroke-width="1"/>
+<circle cx="205.00" cy="303.07" r="4.5" fill="#2a78d6" fill-opacity="0.75" stroke="#2a78d6" stroke-width="1"/>
+<circle cx="209.40" cy="246.48" r="4.5" fill="#2a78d6" fill-opacity="0.75" stroke="#2a78d6" stroke-width="1"/>
+<circle cx="210.92" cy="338.69" r="4.5" fill="#2a78d6" fill-opacity="0.75" stroke="#2a78d6" stroke-width="1"/>
+<circle cx="216.71" cy="350.34" r="4.5" fill="#2a78d6" fill-opacity="0.75" stroke="#2a78d6" stroke-width="1"/>
+<circle cx="233.61" cy="180.73" r="4.5" fill="#2a78d6" fill-opacity="0.75" stroke="#2a78d6" stroke-width="1"/>
+<circle cx="257.95" cy="152.32" r="4.5" fill="#2a78d6" fill-opacity="0.75" stroke="#2a78d6" stroke-width="1"/>
+<circle cx="258.63" cy="256.23" r="4.5" fill="#2a78d6" fill-opacity="0.75" stroke="#2a78d6" stroke-width="1"/>
+<circle cx="266.40" cy="248.04" r="4.5" fill="#2a78d6" fill-opacity="0.75" stroke="#2a78d6" stroke-width="1"/>
+<circle cx="267.93" cy="193.40" r="4.5" fill="#2a78d6" fill-opacity="0.75" stroke="#2a78d6" stroke-width="1"/>
+<circle cx="270.29" cy="256.17" r="4.5" fill="#2a78d6" fill-opacity="0.75" stroke="#2a78d6" stroke-width="1"/>
+<circle cx="273.50" cy="207.54" r="4.5" fill="#2a78d6" fill-opacity="0.75" stroke="#2a78d6" stroke-width="1"/>
+<circle cx="277.43" cy="204.33" r="4.5" fill="#2a78d6" fill-opacity="0.75" stroke="#2a78d6" stroke-width="1"/>
+<circle cx="282.00" cy="210.02" r="4.5" fill="#2a78d6" fill-opacity="0.75" stroke="#2a78d6" stroke-width="1"/>
+<circle cx="283.86" cy="275.31" r="4.5" fill="#2a78d6" fill-opacity="0.75" stroke="#2a78d6" stroke-width="1"/>
+<circle cx="330.85" cy="187.15" r="4.5" fill="#2a78d6" fill-opacity="0.75" stroke="#2a78d6" stroke-width="1"/>
+<circle cx="340.69" cy="174.52" r="4.5" fill="#2a78d6" fill-opacity="0.75" stroke="#2a78d6" stroke-width="1"/>
+<circle cx="341.37" cy="211.82" r="4.5" fill="#2a78d6" fill-opacity="0.75" stroke="#2a78d6" stroke-width="1"/>
+<circle cx="452.30" cy="191.07" r="4.5" fill="#2a78d6" fill-opacity="0.75" stroke="#2a78d6" stroke-width="1"/>
+<circle cx="455.17" cy="232.68" r="4.5" fill="#2a78d6" fill-opacity="0.75" stroke="#2a78d6" stroke-width="1"/>
+<circle cx="457.20" cy="205.53" r="4.5" fill="#2a78d6" fill-opacity="0.75" stroke="#2a78d6" stroke-width="1"/>
+<circle cx="462.14" cy="189.28" r="4.5" fill="#2a78d6" fill-opacity="0.75" stroke="#2a78d6" stroke-width="1"/>
+<circle cx="463.50" cy="175.16" r="4.5" fill="#2a78d6" fill-opacity="0.75" stroke="#2a78d6" stroke-width="1"/>
+<circle cx="514.71" cy="173.53" r="4.5" fill="#2a78d6" fill-opacity="0.75" stroke="#2a78d6" stroke-width="1"/>
+<circle cx="518.94" cy="184.75" r="4.5" fill="#2a78d6" fill-opacity="0.75" stroke="#2a78d6" stroke-width="1"/>
+<circle cx="520.80" cy="185.12" r="4.5" fill="#2a78d6" fill-opacity="0.75" stroke="#2a78d6" stroke-width="1"/>
+<circle cx="524.39" cy="197.71" r="4.5" fill="#2a78d6" fill-opacity="0.75" stroke="#2a78d6" stroke-width="1"/>
+<circle cx="526.59" cy="183.74" r="4.5" fill="#2a78d6" fill-opacity="0.75" stroke="#2a78d6" stroke-width="1"/>
+<circle cx="578.99" cy="186.73" r="4.5" fill="#2a78d6" fill-opacity="0.75" stroke="#2a78d6" stroke-width="1"/>
+<circle cx="580.51" cy="267.04" r="4.5" fill="#2a78d6" fill-opacity="0.75" stroke="#2a78d6" stroke-width="1"/>
+<circle cx="588.33" cy="243.49" r="4.5" fill="#2a78d6" fill-opacity="0.75" stroke="#2a78d6" stroke-width="1"/>
+<circle cx="640.90" cy="193.72" r="4.5" fill="#2a78d6" fill-opacity="0.75" stroke="#2a78d6" stroke-width="1"/>
+<circle cx="698.41" cy="235.92" r="4.5" fill="#2a78d6" fill-opacity="0.75" stroke="#2a78d6" stroke-width="1"/>
+<circle cx="704.66" cy="195.77" r="4.5" fill="#2a78d6" fill-opacity="0.75" stroke="#2a78d6" stroke-width="1"/>
+<circle cx="707.20" cy="115.75" r="4.5" fill="#2a78d6" fill-opacity="0.75" stroke="#2a78d6" stroke-width="1"/>
+<circle cx="715.36" cy="185.01" r="4.5" fill="#2a78d6" fill-opacity="0.75" stroke="#2a78d6" stroke-width="1"/>
+<circle cx="760.49" cy="149.14" r="4.5" fill="#2a78d6" fill-opacity="0.75" stroke="#2a78d6" stroke-width="1"/>
+<circle cx="764.88" cy="192.98" r="4.5" fill="#2a78d6" fill-opacity="0.75" stroke="#2a78d6" stroke-width="1"/>
+  <text x="90.7" y="430.0" font-size="12" fill="#898781" text-anchor="middle">2015</text>
+<text x="214.2" y="430.0" font-size="12" fill="#898781" text-anchor="middle">2017</text>
+<text x="337.7" y="430.0" font-size="12" fill="#898781" text-anchor="middle">2019</text>
+<text x="461.1" y="430.0" font-size="12" fill="#898781" text-anchor="middle">2021</text>
+<text x="584.6" y="430.0" font-size="12" fill="#898781" text-anchor="middle">2023</text>
+<text x="708.1" y="430.0" font-size="12" fill="#898781" text-anchor="middle">2025</text>
+  <text x="421" y="446" font-size="12" fill="#898781" text-anchor="middle">Jahr (Episodenbeginn)</text>
+  <text transform="rotate(-90)" x="-220" y="18" font-size="12" fill="#898781" text-anchor="middle">Deckungsgrad (% des Episoden-Energiedefizits)</text>
+  <text x="66" y="458" font-size="11" fill="#898781">Jeder Punkt = eine der 50 identifizierten Dunkelflaute-Episoden (BEREINIGT-Kapazitaet 31,5 GWh, Post-hoc, siehe Text)</text>
+</svg>
