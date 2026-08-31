@@ -187,6 +187,4 @@ Deckungsgrad ist eine rein deskriptive Kennzahl.
 ## Mehr erfahren
 
 Vollständiger Analyseplan, R-Code, alle Rohtabellen und der ausführliche
-Validierungsbericht: **[Link zum Repository/Analyseordner
-"Analysen/2026-08-batteriespeicher-dunkelflaute" – wird von Daniel Saure vor
-Veröffentlichung ergänzt]**
+Validierungsbericht: [github.com/dsaure55/klima-evidenzcheck/.../2026-08-batteriespeicher-dunkelflaute](https://github.com/dsaure55/klima-evidenzcheck/tree/main/Analysen/2026-08-batteriespeicher-dunkelflaute)
