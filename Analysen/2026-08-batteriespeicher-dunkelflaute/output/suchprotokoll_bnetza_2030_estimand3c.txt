@@ -1,0 +1,141 @@
+Suchprotokoll: Estimand 3(c) - BNetzA-Prognose/-Planung fuer 2030
+(Batteriespeicherkapazitaet, Kapazitaetsszenario "2030")
+====================================================================
+Bezug: SAP_batteriespeicher-dunkelflaute.md, Abschnitt 2.3, 3, 9, 10, 12
+        (Rueckfrage 3: verbindliche Suchpflicht + Ersatzzahl-Verbot)
+Suchdatum: 31.08.2026
+Durchgefuehrt von: analyst-Subagent (R-Implementierung dieses SAP)
+
+ERGEBNIS (vorweg): Keine offizielle BNetzA-Quelle liefert eine belastbare,
+mit den Szenarien 3(a)/3(b) inhaltlich vergleichbare Angabe zur gesamten
+installierten/nutzbaren Batteriespeicherkapazitaet (GWh) in Deutschland fuer
+das Jahr 2030. Estimand 3(c) wird gemaess der verbindlichen SAP-Regel als
+"nicht mit Primaerqualitaet durchfuehrbar" berichtet. Keine Ersatzzahl aus
+einer Sekundaerquelle wurde verwendet (SAP-Verbot, Abschnitt 3).
+
+--------------------------------------------------------------------------
+1) Netzentwicklungsplan Strom (aktuellster Entwurf gepueft)
+--------------------------------------------------------------------------
+Quelle: netzentwicklungsplan.de (Betrieben von den UeNB, bestaetigt/
+genehmigt durch die BNetzA gemaess EnWG)
+Aktuellster Zyklus (Stand 31.08.2026): "Netzentwicklungsplan Strom
+2037/2045", Version 2025, 2. Entwurf (NEP_2037_2045_V2025_2_Entwurf,
+Dokumentstand 2026-08).
+Gepruefte Dokumente (heruntergeladen, Volltext durchsucht):
+  - NEP-kompakt_2037_2045_V2025_2_Entwurf_2.pdf (Kompaktfassung,
+    Tabelle 1 "Uebersicht der Szenariokennzahlen")
+Befund: Tabelle 1 enthaelt Spalten "Referenz 2024", "A 2037", "B 2037",
+"C 2037", "A 2045", "B 2045", "C 2045" - jeweils mit Zeilen
+"Kleinbatteriespeicher" und "Grossbatteriespeicher" (GW). Es existiert
+KEINE Spalte/kein Szenariojahr 2030. Textstelle (S. dort, Fliesstext):
+"... ergibt sich fuer den Zeitraum zwischen 2037 und 2045 eine
+Gesamtleistung der Grossbatteriespeicher von 41 bis 94 GW ..." -
+bestaetigt explizit, dass sich die NEP-Szenarien ausschliesslich auf 2037
+und 2045 beziehen, nicht auf 2030.
+Zusaetzlich gefunden: Hinweis auf ein neu eingefuehrtes "Trendszenario
+2032" im 2. Entwurf (Fliesstext: "Zur Erhoehung der Planungssicherheit
+befindet sich darueber hinaus ein Trendszenario 2032 im zweiten
+Entwurf."). Kein numerischer Batteriespeicherwert fuer dieses
+Trendszenario 2032 in der geprueften Kompaktfassung enthalten (nur
+Erwaehnung, keine Tabelle). Selbst wenn verfuegbar: 2032 != 2030,
+daher fuer Estimand 3(c) ohnehin nicht direkt verwendbar ohne
+Umformulierung des SAP (nicht vorgenommen).
+Einordnung: Fruehere NEP-Zyklen (z. B. "Netzentwicklungsplan 2030",
+Zyklen 2017/2019) hatten noch 2030 als Zieljahr, sind aber laengst durch
+neuere Zyklen ersetzt/veraltet (zuletzt gueltiger Zyklus mit Zieljahr
+2030 stammt aus einer Netzausbau- und Marktsituation vor dem massiven
+Batteriespeicher-Zubau der Jahre 2023-2026) und damit nicht "aktuellste"
+Quelle im Sinne der SAP-Vorgabe (Abschnitt 3: "aktuellster
+Netzentwicklungsplan-Entwurf"). Nicht verwendet.
+
+--------------------------------------------------------------------------
+2) BNetzA "Versorgungssicherheit Strom: Bericht 2025" (Monitoring der
+   Versorgungssicherheit gemaess SAP-Vorgabe "Kraftwerkssicherheitsbericht,
+   sowie weitere amtliche BNetzA-Veroeffentlichungen mit expliziter
+   Batteriespeicher-Kapazitaetsangabe fuer 2030")
+--------------------------------------------------------------------------
+Quelle: bundesnetzagentur.de, Fachthemen/ElektrizitaetundGas/
+Versorgungssicherheit/Monitoring_Strom (unmittelbar BNetzA-eigene
+Publikation, keine Sekundaerquelle). Hinweis: Ein Dokument mit dem
+exakten Titel "Kraftwerkssicherheitsbericht" wurde unter diesem Namen
+nicht mehr gefunden; dieser Bericht ("Versorgungssicherheit Strom:
+Bericht 2025") ist die inhaltlich einschlaegige, aktuelle BNetzA-
+Publikation zu Erzeugungs-/Speicherkapazitaeten und Versorgungssicherheit
+und wurde als funktionales Aequivalent geprueft.
+Gepruefte Dokumente (heruntergeladen, Volltext/Tabellen durchsucht):
+  - Anhang_2_Annahmen_Szenarien.pdf: Tabelle 7 "Initialer Bestand als
+    unmittelbares Eingangsdatum des IIEM in MW (Quelle: Bundesnetzagentur)"
+    -> Zeile "PSW" (= Typ-Code fuer "Stationaere Batteriespeichersysteme",
+    siehe Tabelle 6 desselben Dokuments), Spalte DE: 8.698 MW (= 8,698 GW)
+    netto. Dies ist jedoch explizit der Bestand fuer das Basisjahr 2024
+    ("initialer Bestand"), KEINE Prognose/Planung fuer 2030.
+  - Anhang_5_Ergebnisse.pdf: Abbildung 12 ("Installierte Leistung der
+    Speicher in Deutschland im Zielszenario") und zugehoeriger Fliesstext:
+    "Nur die Leistung der stationaeren Batteriespeicher kann
+    modellendogen erhoeht oder reduziert werden. Im Modell wird jedoch
+    nur eine Leistung von etwa 0,8 GW zur kostenminimalen Lastdeckung
+    benoetigt." sowie (VE-Szenario, S. 41 f.): "... ist die Leistung der
+    stationaeren Batteriesysteme im VE-Szenario mit knapp 2,1 GW fuer
+    den ganzen Betrachtungszeitraum mehr als doppelt so hoch im
+    Vergleich zum Zielszenario (0,8 GW)."
+  - Anhang_7.xlsx, Sheet "Leistung (GW)": enthaelt tatsaechlich eine
+    Zeile Zone=Deutschland, Typ=Speicher, Technologie="Stationaere
+    Batteriesysteme" mit Jahresspalten 2025-2040 (also inkl. 2030).
+    Wert fuer 2030: 0,811 GW (Zielszenario) bzw. 2,134 GW
+    (Verzoegerte-Energiewende-Szenario).
+
+  KRITISCHE METHODISCHE PRUEFUNG (Grund fuer Nichtverwendung dieses
+  Werts als Estimand 3c, obwohl technisch eine BNetzA-Quelle mit einer
+  2030-Zahl existiert): Der Wert (~0,8-2,1 GW) ist um mehr als eine
+  Groessenordnung kleiner als der bereits real installierte Bestand
+  2024 (8,7 GW, siehe oben) und auch kleiner als Szenario 3(a)/3(b)
+  dieser Analyse. Grund (im Bericht selbst explizit erklaert, siehe
+  obige Zitate): Diese Kennzahl misst NICHT die gesamte installierte
+  Batteriespeicherkapazitaet in Deutschland, sondern eine schmale,
+  modellendogen optimierte GROESSE - naemlich wie viel ZUSAETZLICHE
+  Batterie-Leistung das Adequacy-Modell (IIEM) der BNetzA fuer eine
+  kostenminimale Versorgungssicherheits-Lastdeckung UEBER die bereits
+  exogen vorgegebenen anderen Flexibilitaeten (bidirektionales Laden von
+  E-Autos, Pumpspeicher, Nachfrageflexibilitaet) hinaus als NOETIG
+  ansieht - nicht die Gesamtkapazitaet der am Markt/im MaStR erfassten
+  Anlagen. Diese Groesse ist mit den fuer Szenario 3(a)/3(b) verwendeten
+  "installierte nutzbare Speicherkapazitaet"-Definitionen (SAP Abschnitt
+  2.3) NICHT vergleichbar (unterschiedlicher Estimand: "modellseitig
+  fuer Adequacy zusaetzlich benoetigte Leistung" vs. "tatsaechlich
+  installierte/geplante Gesamtkapazitaet"). Eine Verwendung dieses
+  Werts als "die" BNetzA-2030-Kapazitaetszahl waere ein Kategorienfehler
+  und wuerde das Ergebnis um Groessenordnungen verzerren (deutlich zu
+  niedriger, methodisch falsch begruendeter Deckungsgrad). Diese Zahl
+  wird daher NICHT als Ersatz fuer Estimand 3(c) verwendet - dies ist
+  keine Umgehung des SAP-Ersatzzahlverbots durch eine externe
+  Sekundaerquelle, sondern die begruendete Ablehnung einer zwar
+  amtlichen, aber estimand-inkompatiblen Kennzahl derselben Quelle.
+
+--------------------------------------------------------------------------
+3) Weitere amtliche BNetzA-Veroeffentlichungen (Kurzsuche)
+--------------------------------------------------------------------------
+- BNetzA-Themenseite "Speicher" (Fachthemen/ElektrizitaetundGas/Speicher):
+  keine eigene 2030-Kapazitaetsprognose gefunden (verweist auf
+  Monitoringberichte, s. o., und auf Versorgungssicherheit-Themenseite).
+- BNetzA-Marktstammdatenregister-Statistikbereich: liefert
+  Bestandsdaten (Stichtag), keine Zukunftsprognose - fuer Szenario 3(a)
+  bereits als Primaerquelle genutzt (getrennt von dieser Suche), nicht
+  fuer 3(c) einschlaegig.
+- Genehmigung Szenariorahmen 2025 (PDF, Genehmigung%20Szenariorahmen%20
+  2025_0.pdf, netzentwicklungsplan.de) nicht separat als eigene
+  Kapazitaetsquelle mit 2030-Zahl identifiziert (bestaetigt den
+  Szenariorahmen, der wie unter Punkt 1 beschrieben nur 2037/2045
+  bzw. das nicht quantifizierte Trendszenario 2032 enthaelt).
+
+--------------------------------------------------------------------------
+Schlussfolgerung
+--------------------------------------------------------------------------
+Die gemaess SAP Abschnitt 3 verbindlich vorgeschriebene, dokumentierte
+Suche wurde durchgefuehrt (Netzentwicklungsplan-Entwurf UND
+Kraftwerkssicherheitsbericht-Aequivalent "Versorgungssicherheit Strom:
+Bericht 2025" geprueft, plus ergaenzende BNetzA-Themenseiten). Sie liefert
+keine mit Szenario 3(a)/3(b) vergleichbare, belastbare
+BNetzA-Kapazitaetsangabe fuer 2030. Estimand 3(c) wird daher gemaess der
+verbindlichen SAP-Regel (Abschnitt 2.3, 3, 9) als "nicht mit
+Primaerqualitaet durchfuehrbar" berichtet. Keine Ersatzzahl aus einer
+Sekundaerquelle (Frontier Economics o. ae.) wurde verwendet.

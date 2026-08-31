@@ -1,0 +1,49 @@
+PFLICHT-DISCLAIMER (SAP 8, woertlich/sinngemaess zu uebernehmen):
+
+1. Keine Bewertung von Batteriespeichern als 'richtige' oder 'beste' Loesung.
+   Diese Analyse trifft keine Aussage darueber, ob Batteriespeicher die
+   geeignete Antwort auf Dunkelflauten sind, und keine vergleichende
+   Bewertung alternativer Loesungen (Gaskraftwerke, Stromimporte,
+   Lastmanagement, Wasserstoff o.ae.).
+
+2. Keine Bewertung oder Motivzuschreibung gegenueber Medien/Publikationen.
+
+3. Die Dunkelflaute-Definition ist eine methodische Festlegung mit
+   Ermessensspielraum, keine 'objektive Wahrheit' - siehe Sensitivitaeten
+   S1-S3 (Tabelle 3).
+
+4. Der Deckungsgrad beruecksichtigt Ladezustand (80% SOC, primaer) und
+   Rundtrip-Verluste (92% Entladewirkungsgrad, primaer) realistisch,
+   NICHT 100% Nennkapazitaet sofort verfuegbar.
+
+5. Kein 'wer hat recht'-Vergleich mit den vier eingangs genannten
+   Fremdzahlen (siehe Tabelle 4) - unterschiedliche Methodik/Zeithorizont/
+   Fragestellung, keine Bewertung, welche Zahl 'richtiger' ist. Dies gilt
+   auch fuer Szenario 3(c) (BNetzA 2030): eigenstaendiges Ergebnis
+   'nicht mit Primaerqualitaet durchfuehrbar', NICHT stillschweigend durch
+   eine Fremdzahl ersetzt.
+
+*** ABWEICHUNG VOM SAP - RUECKFRAGE AN MENSCH (siehe Skriptkopf) ***
+Die MaStR-Rohsumme fuer Szenario 3(a) (1144.8 GWh) ist mit hoher
+Wahrscheinlichkeit durch ein kleines Cluster von Dateneingabefehlern im
+MaStR verzerrt (50 von 2724033 Anlagen [< 0,002%] verursachen 97,5% der
+Summe; groesster Einzelwert 157.252 MWh - groesser als der gesamte laut BVES
+und IWR unabhaengig berichtete deutsche Batteriespeicherbestand). Der Analyst
+hat dies NICHT eigenmaechtig korrigiert, sondern berichtet transparent DREI
+Varianten (Tabelle 2b): (i) 3a-ROH [woertliche SAP-Umsetzung, WARNUNG:
+vermutlich implausibel], (ii) 3a-BEREINIGT [Post-hoc, Ausreisser >100 MWh
+ausgeschlossen, NICHT SAP-spezifiziert], (iii) SAP-6-S9-Kreuzpruefung mit
+BVES-Sekundaeraggregat. WELCHE Variante als tragfaehiges Ergebnis fuer
+Estimand 3(a) zu verwenden ist, muss der Mensch entscheiden - nicht der
+Analyst. Details/Belege: rohdaten/mastr/mastr_speicher_summary_top_ausreisser.csv
+und run_log.txt.
+
+WEITERE LIMITATIONEN (SAP 9):
+- Grenzkuppelstellen/Importe nicht im Defizit beruecksichtigt.
+- Keine Kausal-/Attributionsaussage zu einem etwaigen Klimawandel-
+  bedingten Trend in Haeufigkeit/Schwere von Dunkelflauten.
+- MaStR-Datenqualitaet: siehe Abweichungshinweis oben (Ausreisser-Cluster,
+  nicht nur Untererfassung).
+- Primaeranalyse ist reine Energiebilanz ohne Leistungs-/C-Raten-
+  Begrenzung (adressiert durch S5) und ohne Nachladung waehrend der
+  Episode (adressiert durch S8 - siehe oben, noch ausstehend).

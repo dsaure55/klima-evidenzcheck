@@ -1,0 +1,6 @@
+"Szenario","Kapazitaet_GWh","n","Median_pct","IQR25_pct","IQR75_pct","Min_pct","Max_pct","Anmerkung"
+"3a_MaStR_ROH",1144.828,50,19.6,14.1,21.5,5.7,28.2,"WARNUNG: mit hoher Wahrscheinlichkeit implausibel (Ausreisser-Cluster, siehe Abweichungshinweis oben) - Primaerquelle, ABER woertliche SAP-Summe ungeprueft irrefuehrend"
+"3a_MaStR_BEREINIGT_PostHoc",31.472,50,0.5,0.4,0.6,0.2,0.8,"Post-hoc, NICHT SAP-spezifiziert: Ausschluss von 50 Einzelanlagen > 100 MWh Kapazitaet - Ruecksprache mit Mensch erforderlich, ob dies als 3(a) verwendet werden soll"
+"S9_BVES_Sekundaeraggregat",24,50,0.4,0.3,0.5,0.1,0.6,"SAP 6, S9: Kreuzpruefung mit BVES Branchenanalyse 2026 (Sekundaerquelle, Stichtag Ende 2025)"
+"3b_SEKUNDAERQUELLE_IWR",35,50,0.6,0.4,0.7,0.2,0.9,"SEKUNDAERQUELLE/SCHAETZUNG (IWR, Prognose Jahresende 2026) - NICHT amtlich"
+"3c_BNetzA_2030",NA,NA,NA,NA,NA,NA,NA,"nicht mit Primaerqualitaet durchfuehrbar (siehe Suchprotokoll) - kein Ersatzwert"

@@ -1,0 +1,13 @@
+"sensitivitaet","parameter","n_episoden","median_pct","IQR25_pct","IQR75_pct","min_pct","max_pct"
+"S1","20. Perzentil (statt 10.)",114,17.83,12.2,22.49,5.22,29.46
+"S2","Mindestdauer 2 Tage (statt 3)",100,28.68,19.66,33.2,5.71,40.85
+"S2","Mindestdauer 5 Tage (statt 3)",14,9.85,7.23,13.14,5.71,14.72
+"S3","1 Tag Unterbrechungstoleranz (verkettet)",64,16.55,10.84,21.18,5.66,28.17
+"S4","Residuallast (+Biomasse+Wasserkraft+sonst.EE)",50,22.14,16.26,24.27,6.36,33
+"S5","Leistungskappung (MaStR: 29.63 GW -> 38.64 h Speicherdauer)",50,19.63,14.1,21.53,5.71,28.17
+"S6","SOC 50% (statt 80%)",50,12.27,8.81,13.46,3.57,17.61
+"S6","SOC 100% (statt 80%)",50,24.54,17.62,26.92,7.14,35.21
+"S7","Rundtrip-Wirkungsgrad 80% (statt 85%)",50,19.04,13.67,20.89,5.54,27.33
+"S7","Rundtrip-Wirkungsgrad 90% (statt 85%)",50,20.2,14.5,22.16,5.88,28.98
+"S9","3(a) Kreuzpruefung mit Sekundaeraggregat (BVES/Fraunhofer-ISE)",50,0.41,0.3,0.45,0.12,0.59
+"S8","Nachlade-Dispatch-Simulation - noch ausstehend, wird nachgeliefert (SAP 6: zeitlich flexibel)",NA,NA,NA,NA,NA,NA
