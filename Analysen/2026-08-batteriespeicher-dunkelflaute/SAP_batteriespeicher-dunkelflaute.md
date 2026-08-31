@@ -6,15 +6,14 @@ Solarerzeugung) tatsächlich, und welchen Anteil davon hätte die aktuell
 installierte bzw. die für Ende 2026 / 2030 erwartete Batteriespeicherkapazität
 real decken können?
 
-**Version:** 0.2 (Entwurf)
-**Status:** draft
+**Version:** 1.0 (final)
+**Status:** final, eingefroren am 31.08.2026, freigegeben durch Daniel Saure.
 **Datum (Entwurf v0.1):** 30.08.2026
 **Datum (Überarbeitung v0.2):** 30.08.2026
+**Datum (Freigabe v1.0):** 31.08.2026
 **Autor:in:** sap-autor-Subagent (Klima-Evidenzcheck-Projekt)
-**Freigabe/Einfrieren:** ausstehend – **nicht** freigegeben, **nicht**
-eingefroren. Kein Datenzugriff, keine Ergebnisse gesichtet. Status bleibt
-`draft`, bis der Mensch nach vollständiger Lektüre des aktuellen Volltextes
-ausdrücklich freigibt.
+**Freigabe/Einfrieren:** Daniel Saure, 31.08.2026 – Volltext (inkl. v0.2-
+Überarbeitung) vollständig gelesen und ausdrücklich freigegeben.
 
 **Versionshistorie:**
 - **v0.1 (30.08.2026):** Erstentwurf, präregistriert vor jedem Zugriff auf
@@ -34,9 +33,10 @@ ausdrücklich freigibt.
   als methodisch aufwendigste/fehleranfälligste Komponente gekennzeichnet
   und – anders als S1–S7/S9 – zeitlich flexibel (verschiebbar/nachlieferbar
   ohne Blockade der übrigen Analyse) markiert wird (Abschnitt 6). Kein
-  Datenzugriff, keine Ergebnisse gesichtet. Status bleibt **draft**, SAP ist
-  weiterhin **nicht** eingefroren – Freigabe erfolgt erst nach erneuter
-  vollständiger Lektüre des aktualisierten Volltextes durch den Menschen.
+  Datenzugriff, keine Ergebnisse gesichtet.
+- **v1.0 (31.08.2026):** Eingefroren (final), freigegeben durch Daniel Saure
+  nach vollständiger Lektüre des aktualisierten Volltextes (inkl. v0.2-
+  Überarbeitung). Keine inhaltlichen Änderungen gegenüber v0.2.
 
 ---
 
