@@ -1,0 +1,9 @@
+Modell,Steigung_K_pro_Jahrzehnt,E2a,E2a_KI95,E2b,E2b_KI95
+"Primär: OLS 1971-2025, Fieller",0.5,2051,2038–2075,2033,2023–2049
+"S1: OLS 1961-2025, Fieller",0.4,2056,2042–2078,2036,2026–2052
+"S1: OLS 1991-2025, Fieller",0.5,2050,2034–2112,2033,2022–2070
+"S2: OLS 1971-2026, Fieller",0.5,2048,2036–2069,2031,2022–2045
+"S3: segmentiert 1881-2025 (Bruch 1985.4), letztes Segment, Fieller",0.5,2045,2034–2062,2030,2023–2043
+"S4: ARIMA(1,1,2) mit Drift (CSS, AICc-Auswahl p,q<=2)",,2058,,,
+S6: Residuen-Bootstrap (B=10.000) um Primärmodell,,2051,2037–2073,2033,2022–2049
+"S5: Perzentil-Definition E2b (19,6 °C <= Trend + 90.-Perzentil der Residuen), Fieller",0.5,,,2025,2017–2039

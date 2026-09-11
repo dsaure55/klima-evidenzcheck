@@ -1,0 +1,491 @@
+{
+  "integritaet": {
+    "wert_2026_datei": 19.55,
+    "wert_2026_pm": 19.6,
+    "ok_2026": true,
+    "wert_2003_datei": 19.67,
+    "wert_2003_pm": 19.7,
+    "ok_2003": true,
+    "mittel_1961_1990": 16.267,
+    "abw_vs_6190": 3.2830000000000013,
+    "ok_abw_6190": true,
+    "mittel_1991_2020": 17.552999999999997,
+    "abw_vs_9120": 1.9970000000000034,
+    "ok_abw_9120": true,
+    "rang_2026_seit_1881": 2
+  },
+  "diagnostik": {
+    "durbin_watson": 1.9150598825138743,
+    "dw_p_zweiseitig_mc": 0.64816,
+    "dw_p_einseitig_pos_mc": 0.32408,
+    "dw_signifikant": false,
+    "shapiro_W": 0.9452681030565894,
+    "shapiro_p": 0.014286808298220677,
+    "acf_lag1_10": [
+      0.03700075638831496,
+      -0.09399169874807582,
+      0.04883608259432421,
+      -0.1423484329969974,
+      -0.1632410796844753,
+      -0.012543843078483703,
+      0.023866415576968617,
+      -0.07585794914887467,
+      0.10466437040944847,
+      -0.16999884066268192
+    ],
+    "pacf_lag1_10": [
+      0.03700075638831496,
+      -0.09549148791331098,
+      0.05677391862165617,
+      -0.1580447379298722,
+      -0.14352191400858028,
+      -0.03527971453221001,
+      0.009389601104820317,
+      -0.09387967070895877,
+      0.0748478233263102,
+      -0.24280653376983458
+    ],
+    "acf_grenze": 0.2642863460855909,
+    "aic_linear": 139.04733666564113,
+    "aic_quadratisch": 139.71005673081055,
+    "quad_koeff": 0.000557977275951459,
+    "cook_auffaellig": [
+      {
+        "jahr": 1976,
+        "D": 0.08924274349694941
+      },
+      {
+        "jahr": 1983,
+        "D": 0.08239189386966625
+      },
+      {
+        "jahr": 2003,
+        "D": 0.07684018386846668
+      }
+    ]
+  },
+  "E1": [
+    {
+      "rahmen": "R1 1961-1990",
+      "referenz": 16.267,
+      "sd": 0.7933740692719314,
+      "abweichung_K": 3.2830000000000013,
+      "z": 4.138022815659662,
+      "rang_unter_31": 1,
+      "wiederkehr_jahre": 57092.038183501434,
+      "einstufung": "extrem außergewöhnlich",
+      "grenznah": false,
+      "S5_p10": 15.408999999999999,
+      "S5_p90": 17.283,
+      "S5_ausserhalb_zentrale_80": true,
+      "S5_anteil_ref_kuehler": 1.0
+    },
+    {
+      "rahmen": "R2 1991-2020",
+      "referenz": 17.552999999999997,
+      "sd": 0.8984359973750553,
+      "abweichung_K": 1.9970000000000034,
+      "z": 2.222751543609788,
+      "rang_unter_31": 2,
+      "wiederkehr_jahre": 76.2411346570688,
+      "einstufung": "außergewöhnlich warm",
+      "grenznah": false,
+      "S5_p10": 16.62,
+      "S5_p90": 18.458000000000002,
+      "S5_ausserhalb_zentrale_80": true,
+      "S5_anteil_ref_kuehler": 0.9666666666666667
+    },
+    {
+      "rahmen": "R3 Trend 1971-2025",
+      "referenz": 18.47159595959596,
+      "sd": 0.8565404017622493,
+      "abweichung_K": 1.0784040404040418,
+      "z": 1.2590229698276105,
+      "pi95_lo": 16.753593478933368,
+      "pi95_hi": 20.18959844025855,
+      "in_pi95": true,
+      "wiederkehr_jahre": 9.614366076842414,
+      "einstufung": "ungewöhnlich warm",
+      "grenznah": false,
+      "sigma_res": 0.8262179692769533,
+      "S5_resid_p10": -0.9123203463203449,
+      "S5_resid_p90": 1.1654585858585862,
+      "S5_ausserhalb_zentrale_80": false,
+      "S5_abstand_zu_p90_K": 0.08705454545454439,
+      "empirisch_jahre_mind_so_weit_ueber_trend": 8,
+      "empirisch_n": 55,
+      "residuen_schiefe": 0.7232696751402095
+    }
+  ],
+  "E2": [
+    {
+      "modell": "Primär: OLS 1971-2025, Fieller",
+      "vcov": "classic",
+      "steigung_K_pro_Jahrzehnt": 0.45518037518037485,
+      "steigung_ki_lo": 0.31441723236157004,
+      "steigung_ki_hi": 0.5959435179991797,
+      "sigma_res": 0.8262179692769533,
+      "E2a": {
+        "punkt": 2050.7902612224198,
+        "lo": 2037.5974791351941,
+        "hi": 2075.14782602243,
+        "beschraenkt": true
+      },
+      "E2b": {
+        "punkt": 2032.6388202920073,
+        "lo": 2023.3810341764247,
+        "hi": 2049.222482298941,
+        "beschraenkt": true
+      },
+      "S5_E2b_p90": {
+        "punkt": 2025.185937103728,
+        "lo": 2017.4274405209098,
+        "hi": 2038.6940752601643,
+        "beschraenkt": true
+      }
+    },
+    {
+      "modell": "S1: OLS 1961-2025, Fieller",
+      "vcov": "classic",
+      "steigung_K_pro_Jahrzehnt": 0.40952360139860194,
+      "steigung_ki_lo": 0.3036656824092099,
+      "steigung_ki_hi": 0.515381520387994,
+      "sigma_res": 0.8012754979518896,
+      "E2a": {
+        "punkt": 2055.7295488745876,
+        "lo": 2042.1343648427821,
+        "hi": 2078.3077930479876,
+        "beschraenkt": true
+      },
+      "E2b": {
+        "punkt": 2036.1635093297268,
+        "lo": 2026.2866103746214,
+        "hi": 2052.2215526926516,
+        "beschraenkt": true
+      }
+    },
+    {
+      "modell": "S1: OLS 1991-2025, Fieller",
+      "vcov": "classic",
+      "steigung_K_pro_Jahrzehnt": 0.45518207282913253,
+      "steigung_ki_lo": 0.18586755022406834,
+      "steigung_ki_hi": 0.7244965954341966,
+      "sigma_res": 0.7909206625447336,
+      "E2a": {
+        "punkt": 2050.0491076923076,
+        "lo": 2033.707337582136,
+        "hi": 2111.6875609794743,
+        "beschraenkt": true
+      },
+      "E2b": {
+        "punkt": 2032.6731891367094,
+        "lo": 2022.3101293243508,
+        "hi": 2069.6150205955364,
+        "beschraenkt": true
+      }
+    },
+    {
+      "modell": "S2: OLS 1971-2026, Fieller",
+      "vcov": "classic",
+      "steigung_K_pro_Jahrzehnt": 0.4754511278195491,
+      "steigung_ki_lo": 0.3377615614784869,
+      "steigung_ki_hi": 0.6131406941606112,
+      "sigma_res": 0.8306823175213962,
+      "E2a": {
+        "punkt": 2048.1558472364986,
+        "lo": 2036.2607351537379,
+        "hi": 2069.1423870591316,
+        "beschraenkt": true
+      },
+      "E2b": {
+        "punkt": 2030.684391835163,
+        "lo": 2022.3425772216674,
+        "hi": 2044.9188069983488,
+        "beschraenkt": true
+      }
+    },
+    {
+      "modell": "S3: segmentiert 1881-2025 (Bruch 1985.4), letztes Segment, Fieller",
+      "vcov": "classic",
+      "steigung_K_pro_Jahrzehnt": 0.5332439396121624,
+      "sigma_res": 0.7701682387523304,
+      "E2a": {
+        "punkt": 2044.604152783069,
+        "lo": 2034.2994447810704,
+        "hi": 2061.9333796934825,
+        "beschraenkt": true
+      },
+      "E2b": {
+        "punkt": 2030.1610774559965,
+        "lo": 2022.6657952762037,
+        "hi": 2042.5259945946364,
+        "beschraenkt": true
+      }
+    },
+    {
+      "modell": "S4: ARIMA(1,1,2) mit Drift (CSS, AICc-Auswahl p,q<=2)",
+      "E2a": {
+        "punkt": 2058,
+        "lo": null,
+        "hi": null,
+        "beschraenkt": null,
+        "hinweis": "Punktprognose erreicht 19,6 °C (kein KI im SAP vorgesehen)"
+      }
+    },
+    {
+      "modell": "S6: Residuen-Bootstrap (B=10.000) um Primärmodell",
+      "E2a": {
+        "punkt": 2050.673488858155,
+        "lo": 2037.3798139564485,
+        "hi": 2073.207943076133,
+        "beschraenkt": true,
+        "hinweis": "Median + Perzentil-KI"
+      },
+      "E2b": {
+        "punkt": 2032.9176353902792,
+        "lo": 2022.4363886471879,
+        "hi": 2049.2246713944774,
+        "beschraenkt": true,
+        "hinweis": "Median + Perzentil-KI, inkl. Unsicherheit sigma"
+      }
+    }
+  ],
+  "S1": [
+    {
+      "E1": {
+        "rahmen": "S1 Trend 1961-2025",
+        "referenz": 18.382504807692314,
+        "sd": 0.8261227205060401,
+        "abweichung_K": 1.1674951923076868,
+        "z": 1.4132224708606727,
+        "pi95_lo": 16.731630282207565,
+        "pi95_hi": 20.033379333177063,
+        "in_pi95": true,
+        "wiederkehr_jahre": 12.69113472105868,
+        "einstufung": "ungewöhnlich warm",
+        "grenznah": false,
+        "sigma_res": 0.8012754979518896
+      },
+      "E2": {
+        "modell": "S1: OLS 1961-2025, Fieller",
+        "vcov": "classic",
+        "steigung_K_pro_Jahrzehnt": 0.40952360139860194,
+        "steigung_ki_lo": 0.3036656824092099,
+        "steigung_ki_hi": 0.515381520387994,
+        "sigma_res": 0.8012754979518896,
+        "E2a": {
+          "punkt": 2055.7295488745876,
+          "lo": 2042.1343648427821,
+          "hi": 2078.3077930479876,
+          "beschraenkt": true
+        },
+        "E2b": {
+          "punkt": 2036.1635093297268,
+          "lo": 2026.2866103746214,
+          "hi": 2052.2215526926516,
+          "beschraenkt": true
+        }
+      }
+    },
+    {
+      "E1": {
+        "rahmen": "S1 Trend 1991-2025",
+        "referenz": 18.505327731092443,
+        "sd": 0.8367805042328347,
+        "abweichung_K": 1.0446722689075578,
+        "z": 1.2484424094766877,
+        "pi95_lo": 16.80288499462337,
+        "pi95_hi": 20.207770467561517,
+        "in_pi95": true,
+        "wiederkehr_jahre": 9.439791498574026,
+        "einstufung": "ungewöhnlich warm",
+        "grenznah": false,
+        "sigma_res": 0.7909206625447336
+      },
+      "E2": {
+        "modell": "S1: OLS 1991-2025, Fieller",
+        "vcov": "classic",
+        "steigung_K_pro_Jahrzehnt": 0.45518207282913253,
+        "steigung_ki_lo": 0.18586755022406834,
+        "steigung_ki_hi": 0.7244965954341966,
+        "sigma_res": 0.7909206625447336,
+        "E2a": {
+          "punkt": 2050.0491076923076,
+          "lo": 2033.707337582136,
+          "hi": 2111.6875609794743,
+          "beschraenkt": true
+        },
+        "E2b": {
+          "punkt": 2032.6731891367094,
+          "lo": 2022.3101293243508,
+          "hi": 2069.6150205955364,
+          "beschraenkt": true
+        }
+      }
+    }
+  ],
+  "S2_E1": {
+    "rahmen": "S2 Trend 1971-2026 (2026 im Fit, in-sample)",
+    "referenz": 18.546597744360906,
+    "sd": 0.859083312254513,
+    "abweichung_K": 1.0034022556390951,
+    "z": 1.1679917899997876,
+    "pi95_lo": 16.82423940479384,
+    "pi95_hi": 20.26895608392797,
+    "in_pi95": true,
+    "wiederkehr_jahre": 8.236890446589541,
+    "einstufung": "ungewöhnlich warm",
+    "grenznah": false,
+    "sigma_res": 0.8306823175213962
+  },
+  "S3": {
+    "bruchpunkt": 1985.4,
+    "steigung_vorher_K_pro_Jahrzehnt": 0.03624882862391415,
+    "steigung_nachher_K_pro_Jahrzehnt": 0.5332439396121624,
+    "E1": {
+      "rahmen": "S3 segmentiert 1881-2025",
+      "referenz": 18.607944827680974,
+      "sd": 0.8019119514682803,
+      "abweichung_K": 0.9420551723190265,
+      "z": 1.1747613570219866,
+      "pi95_lo": 17.022619839711187,
+      "pi95_hi": 20.193269815650762,
+      "in_pi95": true,
+      "wiederkehr_jahre": 8.33020241925443,
+      "einstufung": "ungewöhnlich warm",
+      "grenznah": false
+    },
+    "hinweis": "Intervalle bedingt auf geschätzten Bruchpunkt (Bruchpunkt-Unsicherheit nicht enthalten)"
+  },
+  "S4": {
+    "kpss_level_stat": 1.1081150820887684,
+    "kpss_lag": 3,
+    "kpss_krit_5pct": 0.463,
+    "d": 1,
+    "modell": "ARIMA(1,1,2) mit Drift (CSS, AICc-Auswahl p,q<=2)",
+    "aicc_tabelle": [
+      {
+        "p": 0,
+        "q": 0,
+        "aicc": 170.9325893032838
+      },
+      {
+        "p": 0,
+        "q": 1,
+        "aicc": 143.7134787169582
+      },
+      {
+        "p": 0,
+        "q": 2,
+        "aicc": 145.66785390577496
+      },
+      {
+        "p": 1,
+        "q": 0,
+        "aicc": 159.94290543861615
+      },
+      {
+        "p": 1,
+        "q": 1,
+        "aicc": 143.61818913694998
+      },
+      {
+        "p": 1,
+        "q": 2,
+        "aicc": 143.34579870031436
+      },
+      {
+        "p": 2,
+        "q": 0,
+        "aicc": 150.24771110433636
+      },
+      {
+        "p": 2,
+        "q": 1,
+        "aicc": 144.08366636336348
+      },
+      {
+        "p": 2,
+        "q": 2,
+        "aicc": 144.08066498816052
+      }
+    ],
+    "prognose_2026": 18.328435837482456,
+    "pi95_2026": [
+      16.679840785455784,
+      19.977030889509127
+    ],
+    "in_pi95": true,
+    "z_2026": 1.4522800856377234,
+    "jahr_prognose_erreicht_19_6": 2058,
+    "drift_K_pro_Jahrzehnt": 0.3749497368171413,
+    "einstufung_2026": "ungewöhnlich warm"
+  },
+  "S6": {
+    "B": 10000,
+    "seed": 20260911,
+    "anteil_steigung_nicht_positiv": 0.0,
+    "E2a_ki": [
+      2037.3798139564485,
+      2073.207943076133
+    ],
+    "E2a_median": 2050.673488858155,
+    "E2b_ki": [
+      2022.4363886471879,
+      2049.2246713944774
+    ],
+    "E2b_median": 2032.9176353902792
+  },
+  "posthoc_schwelle_1955": {
+    "modell": "POST-HOC (nicht präregistriert): Schwelle 19,55 °C statt 19,6 °C",
+    "vcov": "classic",
+    "steigung_K_pro_Jahrzehnt": 0.45518037518037485,
+    "steigung_ki_lo": 0.31441723236157004,
+    "steigung_ki_hi": 0.5959435179991797,
+    "sigma_res": 0.8262179692769533,
+    "E2a": {
+      "punkt": 2049.6917955871163,
+      "lo": 2036.7437072158773,
+      "hi": 2073.572348628918,
+      "beschraenkt": true
+    },
+    "E2b": {
+      "punkt": 2031.540354656704,
+      "lo": 2022.5098520629585,
+      "hi": 2047.6644150995783,
+      "beschraenkt": true
+    }
+  },
+  "multiplizitaet_abweichung_gt_10J": [],
+  "multiplizitaet_ki_grenzen_gt_10J": [
+    {
+      "modell": "S1: OLS 1991-2025, Fieller",
+      "estimand": "E2a",
+      "grenze": "hi",
+      "wert": 2111.6875609794743,
+      "primaer": 2075.14782602243,
+      "differenz": 36.5397349570444
+    },
+    {
+      "modell": "S1: OLS 1991-2025, Fieller",
+      "estimand": "E2b",
+      "grenze": "hi",
+      "wert": 2069.6150205955364,
+      "primaer": 2049.222482298941,
+      "differenz": 20.392538296595376
+    },
+    {
+      "modell": "S3: segmentiert 1881-2025 (Bruch 1985.4), letztes Segment, Fieller",
+      "estimand": "E2a",
+      "grenze": "hi",
+      "wert": 2061.9333796934825,
+      "primaer": 2075.14782602243,
+      "differenz": -13.21444632894736
+    }
+  ],
+  "abgleich_in_30_jahren_2056": {
+    "E2a_2056_im_KI": true,
+    "E2b_2056_im_KI": false
+  },
+  "hac_lag": 3
+}

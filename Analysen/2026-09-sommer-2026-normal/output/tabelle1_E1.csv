@@ -1,0 +1,7 @@
+Rahmen,Referenzwert_C,Abweichung_K,z,Rang,PI95,Wiederkehr_Normalannahme,Empirisch,Einstufung_z_Konvention,S5_ausserhalb_zentrale_80,Grenznah
+R1 1961-1990,16.3,3.3,4.1,1,,über 1000 Jahre (nicht belastbar),Rang 1 von 31,extrem außergewöhnlich,True,False
+R2 1991-2020,17.6,2.0,2.2,2,,Größenordnung 100 Jahre (nicht belastbar),Rang 2 von 31,außergewöhnlich warm,True,False
+R3 Trend 1971-2025,18.5,1.1,1.3,,16.8–20.2,Größenordnung 10 Jahre (nicht belastbar),8 von 55 Sommern mind. so weit über Trend,ungewöhnlich warm,False,False
+"S2 Trend 1971-2026 (2026 im Fit, in-sample)",18.5,1.0,1.2,,16.8–20.3,Größenordnung 10 Jahre (nicht belastbar),,ungewöhnlich warm,,False
+S3 segmentiert 1881-2025,18.6,0.9,1.2,,17.0–20.2,Größenordnung 10 Jahre (nicht belastbar),,ungewöhnlich warm,,False
+"S4 ARIMA(1,1,2) mit Drift (CSS, AICc-Auswahl p,q<=2)",18.3,1.2,1.5,,,,,ungewöhnlich warm,,
