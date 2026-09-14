@@ -1,0 +1,124 @@
+==============================================================================
+DATENINTEGRITAET (SAP 3.5)
+  Winter 2025/26 Netto-Entnahme berechnet : 133.7 TWh
+  kommuniziert ('knapp 134 TWh')          : 134 TWh
+  Abweichung                              : 0.3 %  -> BESTANDEN (Toleranz 10 %)
+  Gasverbrauch 2025 (Kalenderjahr)        : 865 TWh -> Plausibilitaet 800-900 TWh
+
+==============================================================================
+E1 - VERTEILUNG DER WINTERLICHEN NETTO-ENTNAHMEN
+
+Winter     Entnahme TWh  Wintertemp C  Verbrauch TWh  davon Strom
+2008/09           119.0          3.01            605            -
+2009/10            72.6          2.68            659            -
+2010/11           100.3          2.69            644            -
+2011/12            88.6          4.09            550            -
+2012/13           138.3          2.53            627            -
+2013/14            54.8          5.39            492            -
+2014/15           150.0          4.92            589            -
+2015/16            78.8          5.13            600            -
+2016/17           155.0          3.75            638            -
+2017/18           161.5          3.95            639           90
+2018/19            42.0          5.18            619           88
+2019/20            64.4          5.64            636           90
+2020/21           178.0          4.47            684          105
+2021/22           110.6          4.92            647           89
+2022/23            78.9          5.57            548           81
+2023/24            74.6          6.18            541           83
+2024/25           163.2          4.83            602          104
+2025/26           133.7          4.41            612          113  <- Vergleichswinter B1
+
+PRIMAERFENSTER 2016/17-2025/26 (n=10)
+  Median 122.1 TWh | Mittel 116.2 | SD 48.6 | Spanne 42.0-178.0
+  Winter mit Entnahme > 136 TWh: 4 von 10 = 40 %  [95%-KI 12-74 %]
+  Winter 2025/26: 133.7 TWh, Rang 5 von 10, z = +0.36
+
+S2 - alle Winter ab 2014/15 (SAP-konform) (n=12)
+  Median 122.1 TWh | Mittel 115.9 | SD 46.5 | Spanne 42.0-178.0
+  Winter mit Entnahme > 136 TWh: 5 von 12 = 42 %  [95%-KI 15-72 %]
+  Winter 2025/26: 133.7 TWh, Rang 6 von 12, z = +0.38
+
+nachrichtlich: ab 2008/09 - VORSICHT, geringerer Meldeumfang vor 2015 (n=18)
+  Median 105.5 TWh | Mittel 109.1 | SD 42.0 | Spanne 42.0-178.0
+  Winter mit Entnahme > 136 TWh: 6 von 18 = 33 %  [95%-KI 13-59 %]
+  Winter 2025/26: 133.7 TWh, Rang 7 von 18, z = +0.58
+
+S3 - Primaerfenster ohne Winter 2022/23 (n=9)
+  Median 133.7 TWh | Mittel 120.3 | SD 49.6 | Spanne 42.0-178.0
+  Winter mit Entnahme > 136 TWh: 4 von 9 = 44 %  [95%-KI 14-79 %]
+  Winter 2025/26: 133.7 TWh, Rang 5 von 9, z = +0.27
+
+==============================================================================
+E2 - ENTNAHME UND WINTERTEMPERATUR
+
+PRIMAER 2016/17-2025/26 (n=10)
+  Steigung: -49.1 TWh pro Grad C  [95%-KI -81.0 bis -17.2]
+  R^2 = 0.61 | Residual-SD = 32.1 TWh
+  durchschnittlicher Winter (4.21 C): erwartete Entnahme 150 TWh  [95%-Prognoseintervall 69-230]  -> 136 TWh im Intervall: ja
+  kaeltester Winter im Fitbereich (3.75 C): erwartete Entnahme 172 TWh  [95%-Prognoseintervall 86-258]  -> 136 TWh im Intervall: ja
+  kalter Winter (10. Perzentil) (2.69 C): erwartete Entnahme 224 TWh  [95%-Prognoseintervall 120-329]  -> 136 TWh im Intervall: ja  *** EXTRAPOLATION ausserhalb des Datenbereichs - nicht berichten
+  Schwelle: erwartete Entnahme = 136 TWh bei 4.49 C  ->  60 % der 30 Referenzwinter waren kaelter (deskriptiv, ohne Unsicherheit)
+
+S2 - alle Winter ab 2014/15 (SAP-konform) (n=12)
+  Steigung: -50.1 TWh pro Grad C  [95%-KI -80.5 bis -19.6]
+  R^2 = 0.57 | Residual-SD = 31.9 TWh
+  durchschnittlicher Winter (4.21 C): erwartete Entnahme 151 TWh  [95%-Prognoseintervall 74-228]  -> 136 TWh im Intervall: ja
+  kaeltester Winter im Fitbereich (3.75 C): erwartete Entnahme 174 TWh  [95%-Prognoseintervall 92-256]  -> 136 TWh im Intervall: ja
+  kalter Winter (10. Perzentil) (2.69 C): erwartete Entnahme 227 TWh  [95%-Prognoseintervall 127-328]  -> 136 TWh im Intervall: ja  *** EXTRAPOLATION ausserhalb des Datenbereichs - nicht berichten
+  Schwelle: erwartete Entnahme = 136 TWh bei 4.51 C  ->  60 % der 30 Referenzwinter waren kaelter (deskriptiv, ohne Unsicherheit)
+
+S3 - ohne Winter 2022/23 (n=9)
+  Steigung: -48.5 TWh pro Grad C  [95%-KI -85.3 bis -11.8]
+  R^2 = 0.58 | Residual-SD = 34.3 TWh
+  durchschnittlicher Winter (4.21 C): erwartete Entnahme 150 TWh  [95%-Prognoseintervall 62-238]  -> 136 TWh im Intervall: ja
+  kaeltester Winter im Fitbereich (3.75 C): erwartete Entnahme 172 TWh  [95%-Prognoseintervall 78-266]  -> 136 TWh im Intervall: ja
+  kalter Winter (10. Perzentil) (2.69 C): erwartete Entnahme 224 TWh  [95%-Prognoseintervall 108-339]  -> 136 TWh im Intervall: ja  *** EXTRAPOLATION ausserhalb des Datenbereichs - nicht berichten
+  Schwelle: erwartete Entnahme = 136 TWh bei 4.49 C  ->  60 % der 30 Referenzwinter waren kaelter (deskriptiv, ohne Unsicherheit)
+
+S4 - Primaerfenster mit zusaetzlichem Zeittrend (n=10)
+  Temperatur: -58.5 TWh/C [95%-KI -90.9 bis -26.2]
+  Zeittrend : +5.9 TWh/Jahr [95%-KI -2.4 bis +14.2]
+
+S1 - Winterdefinition November-Maerz (n=10)
+  Steigung: -47.8 TWh pro Grad C  [95%-KI -75.2 bis -20.3]
+  R^2 = 0.67 | Residual-SD = 28.2 TWh
+  durchschnittlicher Winter (4.21 C): erwartete Entnahme 102 TWh  [95%-Prognoseintervall 32-172]  -> 136 TWh im Intervall: ja
+  kaeltester Winter im Fitbereich (2.47 C): erwartete Entnahme 185 TWh  [95%-Prognoseintervall 108-261]  -> 136 TWh im Intervall: ja
+  kalter Winter (10. Perzentil) (2.69 C): erwartete Entnahme 175 TWh  [95%-Prognoseintervall 101-248]  -> 136 TWh im Intervall: ja
+  Schwelle: erwartete Entnahme = 136 TWh bei 3.49 C  ->  33 % der 30 Referenzwinter waren kaelter (deskriptiv, ohne Unsicherheit)
+
+S6 - Brutto-Entnahme (n=10)
+  Steigung: -46.5 TWh pro Grad C  [95%-KI -74.4 bis -18.5]
+  R^2 = 0.65 | Residual-SD = 28.1 TWh
+  durchschnittlicher Winter (4.21 C): erwartete Entnahme 159 TWh  [95%-Prognoseintervall 88-230]  -> 136 TWh im Intervall: ja
+  kaeltester Winter im Fitbereich (3.75 C): erwartete Entnahme 180 TWh  [95%-Prognoseintervall 105-255]  -> 136 TWh im Intervall: ja
+  kalter Winter (10. Perzentil) (2.69 C): erwartete Entnahme 230 TWh  [95%-Prognoseintervall 138-321]  -> 136 TWh im Intervall: nein  *** EXTRAPOLATION ausserhalb des Datenbereichs - nicht berichten
+  Schwelle: erwartete Entnahme = 136 TWh bei 4.70 C  ->  67 % der 30 Referenzwinter waren kaelter (deskriptiv, ohne Unsicherheit)
+
+  S5 (Gradtagzahlen nach VDI 3807): NICHT DURCHGEFUEHRT - Daten in dieser
+  Session nicht beschaffbar (SAP 3.2 sieht diesen Fall ausdruecklich vor).
+
+  Referenzverteilung Wintertemperatur 1996/97-2025/26 (n=30): Mittel 4.21 C, SD 1.10, 10. Perzentil 2.69 C, Minimum 2.47 C
+  Winter 2025/26 (4.41 C) liegt am 53. Perzentil dieser 30 Winter
+
+==============================================================================
+SENSITIVITAETEN S1 / S6 (E1-Kernzahl)
+  S1 - Winterdefinition November-Maerz: 4/10 Winter ueber 136 TWh [95%-KI 12-74 %], Median 126 TWh
+  S6 - Brutto-Entnahme (nur Entnahmemonate): 4/10 Winter ueber 136 TWh [95%-KI 12-74 %], Median 129 TWh
+
+==============================================================================
+E3 - GESAMTER WINTERVERBRAUCH / E4 - GASEINSATZ STROM+WAERME
+  Verbrauch ~ Temperatur (n=18): -21.5 TWh pro Grad C [95%-KI -41.5 bis -1.4], Residual-SD 43 TWh
+  mit Zeittrend: Temperatur -38.0 TWh/C, Trend +5.1 TWh pro Jahr [95%-KI -0.1 bis +10.3]
+
+  Winter     Verbrauch  Strom+Waerme   Anteil  Entnahme/Verbrauch
+  2017/18          639            90      14%                 25%
+  2018/19          619            88      14%                  7%
+  2019/20          636            90      14%                 10%
+  2020/21          684           105      15%                 26%
+  2021/22          647            89      14%                 17%
+  2022/23          548            81      15%                 14%
+  2023/24          541            83      15%                 14%
+  2024/25          602           104      17%                 27%
+  2025/26          612           113      18%                 22%
+==============================================================================

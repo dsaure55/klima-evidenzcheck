@@ -1,0 +1,23 @@
+{
+  "winter_2025_26_entnahme_twh": 133.7,
+  "kernzahl_winter_ueber_136_twh": "4 von 10",
+  "kernzahl_ki_prozent": [
+    12,
+    74
+  ],
+  "median_entnahme_twh": 122.1,
+  "spanne_twh": [
+    42.0,
+    178.0
+  ],
+  "steigung_twh_pro_grad": -49.1,
+  "steigung_ki": [
+    -81.0,
+    -17.2
+  ],
+  "r_quadrat": 0.61,
+  "residual_sd_twh": 32.1,
+  "wintertemp_2025_26_c": 4.41,
+  "perzentil_in_30_wintern": 53,
+  "erstellt": "2026-09-14"
+}

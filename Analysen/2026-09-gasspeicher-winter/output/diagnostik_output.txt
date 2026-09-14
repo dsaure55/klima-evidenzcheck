@@ -1,0 +1,24 @@
+DIAGNOSTIK PRIMAERFENSTER (n=10)
+
+Winter      Temp  Entnahme     Fit  Residuum   Hebel   Cook D  Steigung ohne
+2016/17     3.75     155.0   172.1     -17.1    0.34     0.11          -54.6
+2017/18     3.95     161.5   162.4      -0.9    0.26     0.00          -49.3
+2018/19     5.18      42.0   101.7     -59.7    0.12     0.26          -45.4
+2019/20     5.64      64.4    79.2     -14.8    0.21     0.03          -46.5
+2020/21     4.47     178.0   137.0      40.9    0.13     0.14          -45.4
+2021/22     4.92     110.6   114.9      -4.2    0.10     0.00          -49.1
+2022/23     5.57      78.9    82.6      -3.8    0.19     0.00          -48.5
+2023/24     6.18      74.6    52.8      21.7    0.41     0.27          -57.9
+2024/25     4.83     163.2   119.0      44.1    0.10     0.12          -48.6
+2025/26     4.41     133.7   139.9      -6.3    0.14     0.00          -49.8
+
+Steigung voll: -49.1 TWh/C
+Leave-one-out-Aenderungen >25 %: keine
+groesste Aenderung: ('2023/24', np.float64(-17.933977483904513))
+
+Temperaturbereich im Fit: 3.75 bis 6.18 C
+10. Perzentil der Referenzverteilung: 2.69 C -> AUSSERHALB des Fitbereichs (Extrapolation!)
+Referenzmittel 4.21 C liegt innerhalb des Fitbereichs
+
+Shapiro-Wilk Residuen p=0.37 (nur beschreibend)
+Anteil Speicher am Winterverbrauch (Primaerfenster): Median 19 %, Spanne 7-27 %

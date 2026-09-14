@@ -1,0 +1,8 @@
+Schnellcheck Gasspeicher Winter 2026/27 - Laufprotokoll
+Datum: 14.09.2026
+SAP: v1.0, eingefroren 14.09.2026 durch Daniel Saure ('Volltext gelesen, einfrieren')
+Umgebung: Cowork-Cloud-Session, Python 3 (numpy, scipy, matplotlib); R nicht verfuegbar
+Datenstand Eurostat nrg_cb_gasm: LAST UPDATE 08.09.2026, Zeitraum 2008-01 bis 2026-07
+Datenstand DWD: Dateikopf 'erstellt am: 20260902'
+Integritaetscheck: Entnahme 2025/26 = 133,7 TWh vs. kommuniziert 134 TWh (0,3 % Abweichung) - bestanden
+Zwei unabhaengige Pruefrunden am 14.09.2026; Befunde und Korrekturen im Validierungsbericht
