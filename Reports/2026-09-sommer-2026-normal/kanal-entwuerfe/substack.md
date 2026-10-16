@@ -1,4 +1,6 @@
-**FREIGEGEBEN durch Daniel Saure am 11.09.2026 (im Chat: „Freigabe erteilt“) – noch nicht veröffentlicht. Vor Veröffentlichung: DWD-Originaldatei in `rohdaten/` ablegen (Validierungsauflage 9), Analyseordner nach GitHub pushen.** Kontaktzeile am Ende: Entscheidung Daniel 11.09.2026 (drin, mit E-Mail).
+**VERÖFFENTLICHT auf Substack (bestätigt durch Daniel Saure am 16.10.2026): https://substack.com/home/post/p-213266771**
+
+**FREIGEGEBEN durch Daniel Saure am 11.09.2026 (im Chat: „Freigabe erteilt“). Auflagen vor Veröffentlichung (Erledigung nicht geprüft): DWD-Originaldatei in `rohdaten/` ablegen (Validierungsauflage 9), Analyseordner nach GitHub pushen.** Kontaktzeile am Ende: Entscheidung Daniel 11.09.2026 (drin, mit E-Mail).
 
 ---
 
