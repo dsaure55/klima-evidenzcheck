@@ -1,3 +1,5 @@
+**FREIGEGEBEN zum Posten durch Daniel Saure am 16.10.2026 (im Chat: „sind freigegeben“) – Posten erfolgt manuell durch Daniel.**
+
 **ENTWURF – nicht veröffentlicht. Freigabe durch Daniel Saure erforderlich vor Publikation.**
 **Posten nur nach ausdrücklichem OK von Daniel pro Post. Diese Kopfzeilen nicht mitposten.**
 
