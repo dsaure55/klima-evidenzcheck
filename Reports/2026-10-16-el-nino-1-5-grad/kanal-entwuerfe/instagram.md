@@ -3,7 +3,7 @@
 **ENTWURF – nicht veröffentlicht. Freigabe durch Daniel Saure erforderlich vor Publikation.**
 **Posten nur nach ausdrücklichem OK von Daniel pro Post. Diese Kopfzeilen nicht mitposten.**
 
-Karussell: `assets/karussell.html` (6 Folien, 1080×1350 px; PNG-Export durch Daniel, falls nicht automatisch erzeugt).
+Karussell: `assets/folie-1.png` bis `assets/folie-6.png` (1080×1350 px, exportiert aus `assets/karussell.html`).
 Bio-Link vor dem Posten setzen auf:
 https://klimaevidenzcheck.substack.com/p/monate-uber-15-grad-ist-das-pariser?utm_source=instagram&utm_medium=social&utm_campaign=2026-10-el-nino-1-5-grad
 

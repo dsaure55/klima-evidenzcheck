@@ -3,7 +3,7 @@
 **ENTWURF – nicht veröffentlicht. Freigabe durch Daniel Saure erforderlich vor Publikation.**
 **Posten nur nach ausdrücklichem OK von Daniel pro Post. Diese Kopfzeilen nicht mitposten.**
 
-Bild: Folie 1 aus `assets/karussell.html` wiederverwenden.
+Bild: `assets/folie-1.png`.
 
 ---
 
