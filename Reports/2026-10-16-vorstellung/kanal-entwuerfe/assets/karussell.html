@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--
+  ENTWURF – nicht veröffentlicht. Freigabe durch Daniel Saure erforderlich vor Publikation.
+  Posten nur nach ausdrücklichem OK von Daniel pro Post.
+  Instagram-Karussell „Was ist Klima Kompass?“ (in eigener Sache), 5 Folien à 1080×1350 px.
+  Export: .claude/skills/distribution/scripts/export_karussell.ps1
+-->
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>ENTWURF – Karussell: Was ist Klima Kompass?</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root { --bg: #0E3B43; --surface: #14505A; --text: #F2F5F4; --mint: #5FD3B3; --coral: #F26B5B; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #222; font-family: "IBM Plex Sans", sans-serif; color: var(--text); }
+  .draft-note { max-width: 1080px; margin: 24px auto; padding: 16px 24px; background: #fff3cd; color: #5a4300; font-weight: 600; border-radius: 8px; }
+  .slide { width: 1080px; height: 1350px; margin: 40px auto; padding: 96px 88px 72px; background: var(--bg); display: flex; flex-direction: column; position: relative; }
+  .series { font-family: "IBM Plex Mono", monospace; font-size: 30px; color: var(--mint); letter-spacing: 1px; }
+  h1, h2 { font-family: "Space Grotesk", sans-serif; font-weight: 700; line-height: 1.12; }
+  h1 { font-size: 104px; margin-top: 64px; }
+  h2 { font-size: 64px; margin-top: 40px; }
+  p { font-size: 40px; line-height: 1.4; margin-top: 32px; }
+  .card { background: var(--surface); border-radius: 24px; padding: 36px 44px; margin-top: 32px; }
+  .card .label { font-family: "IBM Plex Mono", monospace; font-size: 28px; text-transform: uppercase; letter-spacing: 2px; color: var(--mint); }
+  .card p { margin-top: 12px; font-size: 36px; }
+  ul.steps { list-style: none; margin-top: 40px; }
+  ul.steps li { font-size: 40px; line-height: 1.35; padding: 22px 0 22px 64px; position: relative; border-bottom: 2px solid var(--surface); }
+  ul.steps li::before { content: "✓"; position: absolute; left: 0; color: var(--mint); font-weight: 700; }
+  .channel { display: flex; justify-content: space-between; align-items: baseline; font-size: 40px; padding: 26px 0; border-bottom: 2px solid var(--surface); }
+  .channel b { font-family: "Space Grotesk", sans-serif; }
+  .channel span { font-family: "IBM Plex Mono", monospace; font-size: 28px; color: var(--mint); }
+  .spacer { flex: 1; }
+  .cta { font-family: "Space Grotesk", sans-serif; font-size: 48px; color: var(--mint); margin-top: 48px; }
+  footer { font-family: "IBM Plex Mono", monospace; font-size: 22px; line-height: 1.5; opacity: 0.85; border-top: 2px solid var(--surface); padding-top: 20px; margin-top: 32px; }
+</style>
+</head>
+<body>
+
+<div class="draft-note">ENTWURF – nicht veröffentlicht. Freigabe durch Daniel Saure erforderlich vor Publikation. Posten nur nach ausdrücklichem OK von Daniel pro Post. (Dieser Hinweis ist keine Folie.)</div>
+
+<section class="slide" id="folie-1">
+  <div class="series">Klima Kompass · in eigener Sache</div>
+  <h1>Stimmt die Zahl eigentlich?</h1>
+  <p>Wir prüfen Aussagen zu Klima und Energie an öffentlichen Daten. Jede Zahl mit Quelle.</p>
+  <div class="spacer"></div>
+  <footer>Klima Kompass · Klimadaten, geprüft</footer>
+</section>
+
+<section class="slide" id="folie-2">
+  <div class="series">So arbeiten wir</div>
+  <h2>Erst der Plan, dann die Rechnung.</h2>
+  <ul class="steps">
+    <li>Analyseplan vorab festgelegt</li>
+    <li>Unabhängige Prüfung vor jeder Veröffentlichung: Validierung oder Faktencheck</li>
+    <li>Fehler korrigieren wir sichtbar</li>
+  </ul>
+  <div class="spacer"></div>
+  <footer>Klima Kompass · Analysepläne und Code: github.com/dsaure55/klima-evidenzcheck</footer>
+</section>
+
+<section class="slide" id="folie-3">
+  <div class="series">Drei Formate</div>
+  <div class="card"><div class="label">Evidenzcheck</div><p>Eigene Analyse mit öffentlichen Daten, z.&nbsp;B. von UBA, DWD oder Bundesnetzagentur.</p></div>
+  <div class="card"><div class="label">Einordnung</div><p>Aktuelle Debatte, eingeordnet mit unseren veröffentlichten Ergebnissen.</p></div>
+  <div class="card"><div class="label">Wissen</div><p>Erklärstücke zu Fragen, die immer wieder auftauchen.</p></div>
+  <div class="spacer"></div>
+  <footer>Klima Kompass · in eigener Sache</footer>
+</section>
+
+<section class="slide" id="folie-4">
+  <div class="series">Wo ihr uns findet</div>
+  <h2>Ein Kompass, vier Kanäle.</h2>
+  <div style="margin-top:40px">
+    <div class="channel"><b>Newsletter</b><span>klimaevidenzcheck.substack.com</span></div>
+    <div class="channel"><b>Instagram</b><span>@klima_kompass</span></div>
+    <div class="channel"><b>WhatsApp-Kanal</b><span>Link in Bio</span></div>
+    <div class="channel"><b>Facebook</b><span>Klima Kompass</span></div>
+  </div>
+  <div class="spacer"></div>
+  <footer>Klima Kompass · Alle Links in der Bio</footer>
+</section>
+
+<section class="slide" id="folie-5">
+  <div class="series">Mitmachen</div>
+  <h2>Welche Zahl sollen wir als Nächstes prüfen?</h2>
+  <p>Schreibt sie in die Kommentare. Gute Fragen können zu Evidenzchecks werden.</p>
+  <div class="cta">Folgen &amp; Newsletter: Link in Bio</div>
+  <div class="spacer"></div>
+  <footer>Klima Kompass · Klimadaten, geprüft</footer>
+</section>
+
+</body>
+</html>
