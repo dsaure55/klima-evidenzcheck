@@ -63,7 +63,7 @@ Befund: Die langfristige Erwärmung schätzte die WMO für 2024 auf 1,34 bis 1,4
 
 [8] WMO: WMO confirms 2025 was one of warmest years on record, 14.01.2026. https://wmo.int/news/media-centre/wmo-confirms-2025-was-one-of-warmest-years-record
 
-[9] Klima Kompass · Evidenzcheck: War der Sommer 2026 „ganz normal“? https://substack.com/home/post/p-213266771
+[9] Klima Kompass · Evidenzcheck: War der Sommer 2026 „ganz normal“? https://klimaevidenzcheck.substack.com/p/war-der-sommer-2026-ganz-normal
 
 [10] NOAA / drought.gov: New NOAA El Niño–Southern Oscillation index supports drought early warning, 11.03.2026. https://www.drought.gov/news/new-noaa-el-nino-southern-oscillation-index-supports-drought-early-warning-2026-03-11
 

@@ -1,4 +1,4 @@
-**VERÖFFENTLICHT auf Substack (bestätigt durch Daniel Saure am 16.10.2026): https://substack.com/home/post/p-213266771**
+**VERÖFFENTLICHT auf Substack am 11.09.2026: https://klimaevidenzcheck.substack.com/p/war-der-sommer-2026-ganz-normal** (Link am 16.10.2026 korrigiert; zuvor irrtümlich p-213266771 = Hitzesommer-Artikel vom 29.08.2026 eingetragen)
 
 **FREIGEGEBEN durch Daniel Saure am 11.09.2026 (im Chat: „Freigabe erteilt“). Auflagen vor Veröffentlichung (Erledigung nicht geprüft): DWD-Originaldatei in `rohdaten/` ablegen (Validierungsauflage 9), Analyseordner nach GitHub pushen.** Kontaktzeile am Ende: Entscheidung Daniel 11.09.2026 (drin, mit E-Mail).
 

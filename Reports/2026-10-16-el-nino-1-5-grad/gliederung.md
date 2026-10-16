@@ -39,7 +39,7 @@ Nein, jedenfalls nicht so, wie die Wissenschaft das Ziel misst: Gemeint ist die 
 - [Q4] IPCC AR6 WG I, Summary for Policymakers (2021): 20-Jahres-Mittel (Fußnote), B.1.4 (Einzeljahre), Zeitpunkt des Überschreitens – https://www.ipcc.ch/report/ar6/wg1/chapter/summary-for-policymakers/ ; ergänzend Technical Summary – https://www.ipcc.ch/report/ar6/wg1/chapter/technical-summary/
 - [Q5] WMO: „WMO confirms 2024 as warmest year on record at about 1.55°C above pre-industrial level“, Januar 2025 – https://wmo.int/news/media-centre/wmo-confirms-2024-warmest-year-record-about-155degc-above-pre-industrial-level
 - [Q6] IPCC SR1.5 (2018), Kapitel 1 / Glossar (Definition über 30 Jahre) – https://www.ipcc.ch/sr15/chapter/chapter-1/
-- [Q8] Klima Kompass · Evidenzcheck: „War der Sommer 2026 ‚ganz normal‘?“ (veröffentlicht laut Daniel Saure, 16.10.2026) – https://substack.com/home/post/p-213266771
+- [Q8] Klima Kompass · Evidenzcheck: „War der Sommer 2026 ‚ganz normal‘?“ (veröffentlicht laut Daniel Saure, 16.10.2026) – https://klimaevidenzcheck.substack.com/p/war-der-sommer-2026-ganz-normal
 - [Q7] WMO-Wert für 2025 (ca. 1,43 °C): **Primärquelle fehlt noch.** Bisher nur aus einer Suchzusammenfassung. Vor dem Volltext auf wmo.int belegen, sonst streichen.
 
 ## Offene Punkte vor dem Volltext
