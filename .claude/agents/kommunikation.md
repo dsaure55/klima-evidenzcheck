@@ -1,6 +1,6 @@
 ---
 name: kommunikation
-description: Erstellt kanalspezifische Entwuerfe (LinkedIn, WhatsApp, Instagram, Facebook) aus einem freigegebenen Klima-Kompass-Artikel. NUR aufrufen, wenn das Gate der Stufe als Datei vorliegt. Veroeffentlicht NIEMALS selbst.
+description: Erstellt kanalspezifische Entwuerfe (WhatsApp, Instagram, Facebook; LinkedIn seit 16.10.2026 eingestellt) aus einem freigegebenen Klima-Kompass-Artikel. NUR aufrufen, wenn das Gate der Stufe als Datei vorliegt. Veroeffentlicht NIEMALS selbst.
 tools: Read, Write
 ---
 

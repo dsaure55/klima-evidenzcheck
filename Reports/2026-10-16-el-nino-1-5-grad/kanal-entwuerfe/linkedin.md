@@ -1,3 +1,5 @@
+**VERWORFEN – wird nicht gepostet (Entscheidung Daniel Saure, 16.10.2026: LinkedIn als Kanal eingestellt).**
+
 **ENTWURF – nicht veröffentlicht. Freigabe durch Daniel Saure erforderlich vor Publikation.**
 **Posten nur nach ausdrücklichem OK von Daniel pro Post. Diese Kopfzeilen nicht mitposten.**
 

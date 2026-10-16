@@ -92,8 +92,9 @@ Reports/ # fertige, veröffentlichungsreife Stücke
 
 *Ergaenzt am 16.10.2026.*
 
-**Marke:** „Klima Kompass“ ist die Dachmarke fuer alle Kanaele (Substack, LinkedIn,
-WhatsApp, Instagram, Facebook). „Evidenzcheck“ bleibt der Name der Analyse-Reihe
+**Marke:** „Klima Kompass“ ist die Dachmarke fuer alle Kanaele (Substack,
+WhatsApp, Instagram, Facebook). LinkedIn ist seit 16.10.2026 eingestellt (Entscheidung
+Daniel Saure), es werden keine LinkedIn-Entwuerfe mehr erstellt. „Evidenzcheck“ bleibt der Name der Analyse-Reihe
 („Klima Kompass · Evidenzcheck #n“). Substack-URL bleibt unveraendert.
 
 **Drei Inhaltsstufen** (jede Pipeline-Zeile in `Redaktion/redaktion.md` traegt genau eine):
