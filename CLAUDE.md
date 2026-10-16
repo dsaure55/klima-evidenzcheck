@@ -129,4 +129,4 @@ Feste URLs (ohne Tracking-Parameter verwenden):
 - **Zentrale Seite:** Die Substack-Seite „Über / Impressum“ ist der Knotenpunkt. Sie verlinkt alle Kanaele und enthaelt das Impressum. Alle anderen Auftritte verlinken auf sie.
 - **Querverweise:** Jeder Auftritt verweist auf alle anderen: Substack-Artikel mit Schlusszeile (Skill `blog-artikel`), Facebook- und WhatsApp-Posts optional mit Kanalzeile (Skill `distribution`), Profile, Bio und Kanalbeschreibung mit Links.
 - **Name:** Daniel Saures Name erscheint oeffentlich nur im Impressum (verantwortlich nach § 18 Abs. 2 MStV), nicht prominent in Posts oder Grafiken.
-- **Byline Substack:** eigenes Konto „Klima Kompass Redaktion“ mit Byline-Rolle (Entscheidung Daniel, 16.10.2026). Beitraege erscheinen unter dieser Byline, nicht unter Daniels persoenlichem Profil.
+- **Byline Substack:** kein zweites Konto (Entscheidung Daniel, 16.10.2026). Das bestehende Profil wird als Redaktionsprofil gefuehrt: Anzeigename „Klima Kompass Redaktion“, Logo als Profilbild, Handle `@klimaevidenzcheck` bleibt. Publikation mit eigenem Theme („Custom“, nicht „Match profile“), Name „Klima Kompass“.
