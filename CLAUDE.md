@@ -87,3 +87,27 @@ Reports/ # fertige, veröffentlichungsreife Stücke
   zurueckgewiesen (siehe CLAUDE.md-Regel "Verifikationspflicht bei
   Subagenten-Abschlussmeldungen" oben - dieselbe Logik gilt fuer
   Nachkontrollen, nicht nur Erstpruefungen).
+
+## Klima Kompass – Redaktionsschicht
+
+*Ergaenzt am 16.10.2026.*
+
+**Marke:** „Klima Kompass“ ist die Dachmarke fuer alle Kanaele (Substack, LinkedIn,
+WhatsApp, Instagram, Facebook). „Evidenzcheck“ bleibt der Name der Analyse-Reihe
+(„Klima Kompass · Evidenzcheck #n“). Substack-URL bleibt unveraendert.
+
+**Drei Inhaltsstufen** (jede Pipeline-Zeile in `Redaktion/redaktion.md` traegt genau eine):
+
+| Stufe | Inhalt | Gate vor Veroeffentlichung |
+|---|---|---|
+| Evidenzcheck | neue SAP-Analyse (bestehender Workflow oben) | Validierungsbericht ohne „kritisch“ |
+| Einordnung | aktuelles Thema + bereits veroeffentlichte eigene Ergebnisse oder rein beschreibende Zahlen aus der Quelle. KEINE neue Inferenz. | Faktencheck-Datei (Subagent `faktenpruefer`) |
+| Wissen | Erklaerstueck auf Basis serioeser Quellen | Faktencheck-Datei (Subagent `faktenpruefer`) |
+
+**Regeln**
+- „Eine Analyse zur Zeit“ gilt weiter und nur fuer die Stufe Evidenzcheck. Einordnung/Wissen laufen parallel, starten aber nie eine Analyse.
+- Braucht eine Einordnung eine neue Berechnung, wird sie zur Evidenzcheck-Idee im Backlog – nicht nebenbei rechnen.
+- Ablauf: `themenradar` (Skill) → Daniel waehlt → Blog (`blog-artikel`) → Gate → Freigabe Daniel → Substack-Veroeffentlichung durch Daniel → `kommunikation` erzeugt Kanalposts (Skill `distribution`) → Posten nur nach ausdruecklichem OK pro Post.
+- Nichts wird automatisch veroeffentlicht. Geplante Aufgaben schreiben nur in `Redaktion/`.
+- Status jeder Idee nur in `Redaktion/redaktion.md` pflegen (eine Zeile pro Stueck).
+- `Redaktion/` ist per `.gitignore` privat (Repo ist oeffentlich).
