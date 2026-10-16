@@ -1,4 +1,4 @@
-**ENTWURF – nicht veröffentlicht. Freigabe durch Daniel Saure erforderlich vor Publikation.**
+**FREIGEGEBEN durch Daniel Saure am 16.10.2026 (im Chat: „Freigabe erteilt“, auf Rückfrage zur Fassung aus Commit 4f7fbfd inkl. offenem Punkt E7) – noch nicht veröffentlicht. Diese Kopfzeile nicht mit nach Substack übernehmen.**
 Klima Kompass · Wissen
 
 # Monate über 1,5 Grad – ist das Pariser Ziel damit schon gerissen?
