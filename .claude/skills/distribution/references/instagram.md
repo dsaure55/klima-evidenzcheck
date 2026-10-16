@@ -7,5 +7,5 @@
 ## Caption
 - Emoji als Abschnitts-Header, kurze Bullets. Instagram kennt kein Fett: Kernaussage als eigene Zeile mit Emoji hervorheben.
 - Abschnitt „Fazit“ am Ende, dann Quellen in einer Zeile.
-- Links sind in Captions nicht klickbar → „Link in Bio“; Bio-Link vor dem Posten auf den Artikel setzen.
+- Links sind in Captions nicht klickbar → „Link in Bio“. Die festen Bio-Links (Substack, Facebook, WhatsApp, Über / Impressum) bleiben stehen. Den Artikel-Link mit UTM vor dem Posten als zusätzlichen bzw. ersten Bio-Link setzen.
 - 5–8 Hashtags am Ende.

@@ -112,3 +112,21 @@ Daniel Saure), es werden keine LinkedIn-Entwuerfe mehr erstellt. „Evidenzcheck
 - Nichts wird automatisch veroeffentlicht. Geplante Aufgaben schreiben nur in `Redaktion/`.
 - Status jeder Idee nur in `Redaktion/redaktion.md` pflegen (eine Zeile pro Stueck).
 - `Redaktion/` ist per `.gitignore` privat (Repo ist oeffentlich).
+
+## Kanaele, Querverweise und Impressum
+
+*Ergaenzt am 16.10.2026.*
+
+Feste URLs (ohne Tracking-Parameter verwenden):
+
+| Kanal | URL |
+|---|---|
+| Substack | https://klimaevidenzcheck.substack.com/ |
+| Instagram | https://www.instagram.com/klima_kompass/ |
+| Facebook | https://www.facebook.com/profile.php?id=61595673411252 |
+| WhatsApp-Kanal | https://whatsapp.com/channel/0029Vb7dScK5kg74YY4ksf1j |
+
+- **Zentrale Seite:** Die Substack-Seite „Über / Impressum“ ist der Knotenpunkt. Sie verlinkt alle Kanaele und enthaelt das Impressum. Alle anderen Auftritte verlinken auf sie.
+- **Querverweise:** Jeder Auftritt verweist auf alle anderen: Substack-Artikel mit Schlusszeile (Skill `blog-artikel`), Facebook- und WhatsApp-Posts optional mit Kanalzeile (Skill `distribution`), Profile, Bio und Kanalbeschreibung mit Links.
+- **Name:** Daniel Saures Name erscheint oeffentlich nur im Impressum (verantwortlich nach § 18 Abs. 2 MStV), nicht prominent in Posts oder Grafiken.
+- **Byline Substack:** eigenes Konto „Klima Kompass Redaktion“ mit Byline-Rolle (Entscheidung Daniel, 16.10.2026). Beitraege erscheinen unter dieser Byline, nicht unter Daniels persoenlichem Profil.

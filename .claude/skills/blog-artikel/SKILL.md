@@ -25,6 +25,13 @@ Hinweiszeile: „Diese Einordnung nutzt bereits veroeffentlichte Ergebnisse; es 
 ## Struktur Wissen (500–900 Woerter)
 Alltagsfrage als Titel → kurze Antwort vorweg → Erklaerung in 3–4 Abschnitten → haeufiger Irrtum vs. Befund → Quellen.
 
+## Schlusszeile (immer, nach den Quellen)
+```
+---
+Klima Kompass auch auf [Instagram](https://www.instagram.com/klima_kompass/) · [Facebook](https://www.facebook.com/profile.php?id=61595673411252) · [WhatsApp-Kanal](https://whatsapp.com/channel/0029Vb7dScK5kg74YY4ksf1j) · [Über / Impressum]([IMPRESSUM-URL])
+```
+`[IMPRESSUM-URL]` durch die URL der Substack-Seite „Über / Impressum“ ersetzen, sobald sie in CLAUDE.md steht. Bis dahin den Platzhalter stehen lassen und Daniel darauf hinweisen.
+
 ## Regeln
 - Jede Zahl mit Quelle im Text oder in der Quellenliste. Unsicherheiten nennen, wo sie zentral sind.
 - Zitate unter 15 Woertern, sonst paraphrasieren.
