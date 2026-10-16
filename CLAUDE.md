@@ -125,6 +125,7 @@ Feste URLs (ohne Tracking-Parameter verwenden):
 | Instagram | https://www.instagram.com/klima_kompass/ |
 | Facebook | https://www.facebook.com/profile.php?id=61595673411252 |
 | WhatsApp-Kanal | https://whatsapp.com/channel/0029Vb7dScK5kg74YY4ksf1j |
+| Über / Impressum | https://klimaevidenzcheck.substack.com/about (Substack-About-Seite, online seit 16.10.2026) |
 
 - **Zentrale Seite:** Die Substack-Seite „Über / Impressum“ ist der Knotenpunkt. Sie verlinkt alle Kanaele und enthaelt das Impressum. Alle anderen Auftritte verlinken auf sie.
 - **Querverweise:** Jeder Auftritt verweist auf alle anderen: Substack-Artikel mit Schlusszeile (Skill `blog-artikel`), Facebook- und WhatsApp-Posts optional mit Kanalzeile (Skill `distribution`), Profile, Bio und Kanalbeschreibung mit Links.

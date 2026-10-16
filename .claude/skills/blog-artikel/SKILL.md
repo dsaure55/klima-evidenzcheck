@@ -28,9 +28,9 @@ Alltagsfrage als Titel → kurze Antwort vorweg → Erklaerung in 3–4 Abschnit
 ## Schlusszeile (immer, nach den Quellen)
 ```
 ---
-Klima Kompass auch auf [Instagram](https://www.instagram.com/klima_kompass/) · [Facebook](https://www.facebook.com/profile.php?id=61595673411252) · [WhatsApp-Kanal](https://whatsapp.com/channel/0029Vb7dScK5kg74YY4ksf1j) · [Über / Impressum]([IMPRESSUM-URL])
+Klima Kompass auch auf [Instagram](https://www.instagram.com/klima_kompass/) · [Facebook](https://www.facebook.com/profile.php?id=61595673411252) · [WhatsApp-Kanal](https://whatsapp.com/channel/0029Vb7dScK5kg74YY4ksf1j) · [Über / Impressum](https://klimaevidenzcheck.substack.com/about)
 ```
-`[IMPRESSUM-URL]` durch die URL der Substack-Seite „Über / Impressum“ ersetzen, sobald sie in CLAUDE.md steht. Bis dahin den Platzhalter stehen lassen und Daniel darauf hinweisen.
+Die Impressum-URL steht in CLAUDE.md (Abschnitt Kanaele).
 
 ## Regeln
 - Jede Zahl mit Quelle im Text oder in der Quellenliste. Unsicherheiten nennen, wo sie zentral sind.

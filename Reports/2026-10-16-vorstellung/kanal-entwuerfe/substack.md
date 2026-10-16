@@ -1,5 +1,4 @@
-**ENTWURF – nicht veröffentlicht. Freigabe durch Daniel Saure erforderlich vor Publikation.**
-**Vor Veröffentlichung: Seite „Über / Impressum“ muss online sein, [IMPRESSUM-URL] ersetzen.**
+**VERÖFFENTLICHT auf Substack am 16.10.2026: https://klimaevidenzcheck.substack.com/p/was-ist-klima-kompass-und-wo-findet** (Impressum-Link am 16.10.2026 nachgetragen, Update ohne E-Mail)
 
 Klima Kompass · in eigener Sache
 
@@ -38,4 +37,4 @@ Zum Beispiel:
 Ihr habt eine Zahl gehört, die ihr gern geprüft hättet? Schreibt uns in die Kommentare. Gute Fragen können zu Evidenzchecks werden.
 
 ---
-Klima Kompass auch auf [Instagram](https://www.instagram.com/klima_kompass/) · [Facebook](https://www.facebook.com/profile.php?id=61595673411252) · [WhatsApp-Kanal](https://whatsapp.com/channel/0029Vb7dScK5kg74YY4ksf1j) · [Über / Impressum]([IMPRESSUM-URL])
+Klima Kompass auch auf [Instagram](https://www.instagram.com/klima_kompass/) · [Facebook](https://www.facebook.com/profile.php?id=61595673411252) · [WhatsApp-Kanal](https://whatsapp.com/channel/0029Vb7dScK5kg74YY4ksf1j) · [Über / Impressum](https://klimaevidenzcheck.substack.com/about)
