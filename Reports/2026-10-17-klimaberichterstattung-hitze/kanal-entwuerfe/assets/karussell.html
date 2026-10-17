@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!--
+  ENTWURF – nicht veröffentlicht. Freigabe durch Daniel Saure erforderlich vor Publikation.
+  Posten nur nach ausdrücklichem OK von Daniel pro Post.
+  Instagram-Karussell „Hitzesommer ohne Klima?“ (Klima Kompass · Einordnung), 6 Folien à 1080×1350 px.
+  Export: jede <section class="slide"> einzeln als PNG (export_karussell.ps1, Hauptsession).
+  Der Entwurfsbanner (.draft-note) gehört nicht zu den Folien und wird nicht exportiert.
+  Alle Zahlen und Aussagen aus dem freigegebenen Artikel (Stand 17.10.2026).
+-->
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>ENTWURF – Karussell: Hitzesommer ohne Klima?</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0E3B43;
+    --surface: #14505A;
+    --text: #F2F5F4;
+    --mint: #5FD3B3;
+    --coral: #F26B5B;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #222; font-family: "IBM Plex Sans", sans-serif; color: var(--text); }
+  .draft-note {
+    max-width: 1080px; margin: 24px auto; padding: 16px 24px;
+    background: #fff3cd; color: #5a4300; font-weight: 600; border-radius: 8px;
+  }
+  .slide {
+    width: 1080px; height: 1350px; margin: 40px auto; padding: 96px 88px 72px;
+    background: var(--bg); display: flex; flex-direction: column; position: relative;
+    overflow: hidden;
+  }
+  .series { font-family: "IBM Plex Mono", monospace; font-size: 30px; color: var(--mint); letter-spacing: 1px; }
+  h1, h2 { font-family: "Space Grotesk", sans-serif; font-weight: 700; line-height: 1.12; }
+  h1 { font-size: 104px; margin-top: 64px; }
+  h2 { font-size: 60px; margin-top: 40px; }
+  p { font-size: 40px; line-height: 1.4; margin-top: 32px; }
+  .big { font-family: "IBM Plex Mono", monospace; font-weight: 600; font-size: 200px; color: var(--mint); line-height: 1; margin-top: 56px; }
+  .big.small { font-size: 150px; }
+  .unit { font-size: 64px; }
+  .card { background: var(--surface); border-radius: 24px; padding: 36px 44px; margin-top: 40px; }
+  .card .label { font-family: "IBM Plex Mono", monospace; font-size: 28px; text-transform: uppercase; letter-spacing: 2px; }
+  .card p { margin-top: 14px; font-size: 36px; }
+  .myth { border-left: 12px solid var(--coral); }
+  .myth .label { color: var(--coral); }
+  .fact { border-left: 12px solid var(--mint); }
+  .fact .label { color: var(--mint); }
+  .pair { display: flex; gap: 32px; margin-top: 56px; }
+  .pair .card { flex: 1; margin-top: 0; }
+  .pair .num { font-family: "IBM Plex Mono", monospace; font-weight: 600; font-size: 84px; color: var(--mint); margin-top: 16px; line-height: 1.05; }
+  .pair .card p { font-size: 32px; }
+  table { width: 100%; border-collapse: collapse; margin-top: 18px; font-family: "IBM Plex Mono", monospace; font-size: 34px; }
+  th, td { text-align: left; padding: 10px 0; }
+  th { font-weight: 400; opacity: 0.85; font-size: 28px; }
+  td.hi { color: var(--mint); font-weight: 600; }
+  ul.limits { list-style: none; margin-top: 36px; }
+  ul.limits li { font-size: 34px; line-height: 1.38; padding-left: 40px; position: relative; margin-top: 26px; }
+  ul.limits li::before { content: "–"; position: absolute; left: 0; color: var(--coral); font-weight: 700; }
+  ul.limits b { font-weight: 600; color: var(--text); }
+  .spacer { flex: 1; }
+  .cta { font-family: "Space Grotesk", sans-serif; font-size: 48px; color: var(--mint); margin-top: 48px; }
+  footer {
+    font-family: "IBM Plex Mono", monospace; font-size: 22px; line-height: 1.5; opacity: 0.85;
+    border-top: 2px solid var(--surface); padding-top: 20px; margin-top: 32px;
+  }
+</style>
+</head>
+<body>
+
+<div class="draft-note">ENTWURF – nicht veröffentlicht. Freigabe durch Daniel Saure erforderlich vor Publikation. Posten nur nach ausdrücklichem OK von Daniel pro Post. (Dieser Hinweis ist keine Folie.)</div>
+
+<!-- Folie 1: Hook -->
+<section class="slide" id="folie-1">
+  <div class="series">Klima Kompass · Einordnung</div>
+  <h1>Hitzesommer ohne Klima?</h1>
+  <p>Zwei Zahlen nebeneinander – was sie zeigen und was nicht.</p>
+  <div class="pair">
+    <div class="card fact">
+      <div class="label">Sommer 2026</div>
+      <div class="num">≈&nbsp;16.000</div>
+      <p>geschätzte hitzebedingte Sterbefälle</p>
+    </div>
+    <div class="card fact">
+      <div class="label">1. Halbjahr 2026</div>
+      <div class="num">&lt;&nbsp;1&nbsp;%</div>
+      <p>der Sendeminuten von Das Erste und ZDF mit „Klima“</p>
+    </div>
+  </div>
+  <div class="spacer"></div>
+  <footer>Klima Kompass · Einordnung<br>Quellen: RKI · KLIMA° vor acht · Klima Kompass</footer>
+</section>
+
+<!-- Folie 2: Erkenntnis 1 – die RKI-Schätzung -->
+<section class="slide" id="folie-2">
+  <div class="series">Die RKI-Schätzung</div>
+  <div class="big small">16.000</div>
+  <p>hitzebedingte Sterbefälle schätzt das Robert Koch-Institut für den Sommer 2026. Unsicherheitsintervall: 14.400 bis 17.600.</p>
+  <div class="card fact">
+    <div class="label">Schätzung, nicht Zählung</div>
+    <p>Die Zahl stammt nicht von Totenscheinen. Sie ist eine Modellschätzung der zusätzlichen Sterbefälle in Hitzephasen – und noch vorläufig.</p>
+  </div>
+  <div class="spacer"></div>
+  <footer>Klima Kompass · Einordnung<br>Quelle: RKI, Wochenbericht KW 37/2026, Stand 24.09.2026</footer>
+</section>
+
+<!-- Folie 3: Erkenntnis 2 – außerhalb der Bandbreite -->
+<section class="slide" id="folie-3">
+  <div class="series">Was unser Evidenzcheck zeigt</div>
+  <div class="big small">≈&nbsp;8.700</div>
+  <p>So viele hätte ein „normales“ Jahr nach unserem Modell höchstens erwarten lassen. Im Mittel 1992 bis 2025: rund 2.955 pro Jahr.</p>
+  <div class="card fact">
+    <div class="label">Daneben gelegt</div>
+    <p>Der damals vorläufige Wert von 15.800 lag weit darüber. Die neuen 16.000 liegen noch etwas höher – ein Abgleich, keine neue Berechnung.</p>
+  </div>
+  <div class="spacer"></div>
+  <footer>Klima Kompass · Einordnung<br>Quellen: Klima Kompass · Evidenzcheck „Der Hitzesommer 2026“, 29.08.2026 · RKI</footer>
+</section>
+
+<!-- Folie 4: Erkenntnis 3 – die Medienzahlen -->
+<section class="slide" id="folie-4">
+  <div class="series">Was die Medienzahlen zeigen</div>
+  <h2>Anteil der Sendeminuten mit dem Wort „Klima“</h2>
+  <div class="card fact">
+    <table>
+      <tr><th></th><th>Das Erste</th><th>ZDF</th></tr>
+      <tr><td>2023</td><td>2,2&nbsp;%</td><td>1,95&nbsp;%</td></tr>
+      <tr><td>2024</td><td>1,49&nbsp;%</td><td>1,43&nbsp;%</td></tr>
+      <tr><td>2025</td><td>1,29&nbsp;%</td><td>1,29&nbsp;%</td></tr>
+      <tr><td>1. Hj. 2026</td><td class="hi">0,95&nbsp;%</td><td class="hi">0,82&nbsp;%</td></tr>
+    </table>
+  </div>
+  <p>Gezählt wird jede Sendeminute, in der „Klima“ vorkommt, etwa in „Klimakrise“. Laut Bericht der niedrigste Stand seit Beginn der Messung.</p>
+  <div class="spacer"></div>
+  <footer>Klima Kompass · Einordnung<br>Quelle: KLIMA° vor acht e. V., MedienKlimaBericht Nr. 1 (Juli 2026)</footer>
+</section>
+
+<!-- Folie 5: Was die Daten nicht sagen -->
+<section class="slide" id="folie-5">
+  <div class="series">Was die Daten nicht sagen</div>
+  <ul class="limits">
+    <li><b>Keine Ursachenaussage.</b> Unser Evidenzcheck zeigt, dass 2026 außerhalb der Bandbreite lag, nicht warum.</li>
+    <li><b>Vorläufig.</b> Ein Einfluss der geänderten RKI-Methodik ist nicht ausgeschlossen.</li>
+    <li><b>Stichwort ist nicht Qualität.</b> Eine Minute mit „Klima“ ist nicht automatisch gute Einordnung.</li>
+    <li><b>Nur zwei Sender.</b> Die Medienzahlen betreffen Das Erste und ZDF und stammen von einem Verein, der sich für mehr Klimaberichterstattung einsetzt.</li>
+    <li><b>Kein Beleg für Absicht.</b> Die Zahlen zeigen, wie viel berichtet wurde, nicht warum so wenig.</li>
+  </ul>
+  <div class="spacer"></div>
+  <footer>Klima Kompass · Einordnung<br>Quellen: RKI · KLIMA° vor acht · Klima Kompass</footer>
+</section>
+
+<!-- Folie 6: Fazit -->
+<section class="slide" id="folie-6">
+  <div class="series">Fazit</div>
+  <h2>Beide Zahlen nebeneinander rechtfertigen die Frage nach dem Kontext in der Berichterstattung.</h2>
+  <p>Die Gründe dafür klären sie nicht.</p>
+  <div class="cta">Ganzer Artikel: Link in Bio</div>
+  <div class="spacer"></div>
+  <footer>Klima Kompass · Einordnung<br>Quellen: RKI · KLIMA° vor acht · Klima Kompass</footer>
+</section>
+
+</body>
+</html>
