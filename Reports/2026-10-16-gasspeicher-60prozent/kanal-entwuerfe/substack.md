@@ -1,3 +1,5 @@
+**VERÖFFENTLICHT auf Substack am 17.10.2026: https://klimaevidenzcheck.substack.com/p/gasspeicher-bei-60-prozent-was-heit**
+
 **FREIGEGEBEN durch Daniel Saure am 16.10.2026 (im Chat: „Freigabe erteilt“) – noch nicht veröffentlicht. BNetzA-Werte am 16.10.2026 nach Freigabe erneut abgeglichen (unverändert: 60,5 %, 149,62 TWh, Lagebewertung 16.10.). Bei Veröffentlichung nach dem 16.10. Werte nochmals abgleichen. Diese Kopfzeile nicht mit nach Substack übernehmen.**
 Klima Kompass · Einordnung
 
