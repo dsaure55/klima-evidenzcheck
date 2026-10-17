@@ -1,4 +1,4 @@
-**ENTWURF – nicht veröffentlicht. Freigabe durch Daniel Saure erforderlich vor Publikation.**
+**FREIGEGEBEN durch Daniel Saure am 17.10.2026 (im Chat: „Ich habe die aktuelle Fassung gelesen. Freigabe erteilt.“) – noch nicht veröffentlicht. Diese Kopfzeile nicht mit nach Substack übernehmen.**
 Klima Kompass · Einordnung
 
 # CO₂-Preis 2027 eingefroren – was das an der Zapfsäule bedeutet
