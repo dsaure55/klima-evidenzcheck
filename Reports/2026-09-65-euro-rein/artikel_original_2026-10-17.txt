@@ -1,0 +1,108 @@
+65 Euro rein, 59 Euro raus
+Der Tankrabatt ist teuer, verteilt ungerecht, schwächt Klimapolitik und hat kaum Wirkung auf das Verhalten. Er nimmt genau das Preissignal weg, das für langfristige Klimasteuerung nötig wäre.
+2026-09-18T14:11:57.099Z id=216309982
+
+Im Juli erreichte der CO₂-Preis bei der ersten Versteigerung sofort den gesetzlichen Höchstwert. Zwei Monate zuvor hatte derselbe Staat mit einer Steuersenkung fast genau denselben Betrag zurückgegeben. Eine Rechnung zur Debatte dieser Woche.
+
+Seit Tagen wird wieder über Entlastung an der Zapfsäule diskutiert. Auf dem Tisch liegen mehrere Modelle: eine Mehrwertsteuersenkung von 19 auf 7 Prozent, die nach Berichten dieser Woche 21 bis 25 Cent je Liter bringen würde und vier bis sieben Milliarden Euro im Jahr kostet. Eine erneute Senkung der Energiesteuer wie im Frühjahr, rund 17 Cent. Dazu eine Übergewinnsteuer und eine staatliche Preisgrenze. Beschlossen ist nichts.
+
+Alle diese Vorschläge werden in derselben Einheit verhandelt: Cent pro Liter. Das ist die Einheit, in der Menschen tanken, und deshalb die Einheit, in der Politik über Sprit spricht.
+
+Es gibt eine zweite Zahl, die sich in dieselbe Einheit übersetzen lässt und in der Debatte praktisch nie vorkommt. Der nationale CO₂-Preis.
+
+Die Rechnung
+
+2026 wird der nationale Emissionshandel erstmals versteigert, in einem gesetzlichen Korridor von 55 bis 65 Euro je Tonne. Bei der ersten Auktion am 1. Juli passierte etwas Bemerkenswertes: Der Preis sprang sofort an die Obergrenze. 101 Teilnehmer boten auf rund 292 Millionen Zertifikate, zugeteilt wurden 21,3 Millionen. Eine 13,7-fache Überzeichnung. Der Markt signalisiert maximale Knappheit — der Preis für 2026 steht bei 65 Euro je Tonne, Restmengen gehen zum Festpreis von 68 Euro.
+
+Was macht das an der Säule aus? Ein Liter Benzin setzt bei der Verbrennung zwischen 2,28 und 2,37 Kilogramm CO₂ frei — die Spanne ergibt sich daraus, dass der Emissionshandel nur den fossilen Anteil bepreist, die Biokraftstoff-Beimischung dagegen nicht. Daraus folgt:
+
+17,6 bis 18,3 Cent je Liter Benzin. Bei Diesel, der pro Liter mehr CO₂ enthält, sind es 19,7 bis 20,5 Cent.
+
+Der Tankrabatt vom Mai und Juni betrug 14,04 Cent Energiesteuer, mit Mehrwertsteuer 16,7 Cent. In derselben Währung ausgedrückt: 59 bis 62 Euro je Tonne.
+
+Das ist keine ungefähre Ähnlichkeit. Der Tankrabatt hob 91 bis 95 Prozent des CO₂-Preises auf Benzin auf und 82 bis 85 Prozent auf Diesel. Zwei Monate lang hat der Staat mit der Energiesteuer fast exakt das zurückgegeben, was er mit dem CO₂-Preis als Lenkungssignal eingenommen hatte. Der Preis blieb im Gesetz stehen. An der Säule war er fast weg.
+
+Das aktuell diskutierte Mehrwertsteuermodell wäre größer als der CO₂-Preis. 21 bis 25 Cent entsprechen 74 bis 92 Euro je Tonne — 115 bis 142 Prozent dessen, was der Emissionshandel kostet. Die zusätzliche Lenkungswirkung des CO₂-Preises wäre dann nicht nur neutralisiert, sondern überkompensiert.
+
+Zwei Einschränkungen gehören sofort dazu, sonst stimmt das Bild nicht: Die Gesamtbelastung eines Liters bliebe selbstverständlich positiv — auf Benzin liegt zusätzlich die Energiesteuer von rund 65 Cent. Und eine Mehrwertsteuersenkung erreicht nur Endverbraucher; gewerbliche Fahrer, die einen großen Teil des Dieselabsatzes ausmachen, ziehen die Vorsteuer ohnehin ab. Was ins Minus kippen würde, ist der marginale Preis auf die Tonne CO₂ — also genau das Instrument, das das Verhalten steuern soll.
+
+Was dasselbe Geld sonst kauft
+
+Hier muss man vorsichtig vergleichen, weil die Zahlen unterschiedliche Zeiträume abdecken. Also alles auf denselben Nenner, Euro pro Monat:
+
+
+
+Der Tankrabatt kostete je Monat rund das Sechseinhalbfache dessen, was der Bund für das Deutschlandticket ausgibt. Zwei Monate Tankrabatt entsprachen etwas mehr als einem vollen Jahr des Bundesanteils.
+
+Bemerkenswert dabei: Auf den Monat gerechnet war die Energiesteuersenkung teurer als das jetzt diskutierte Mehrwertsteuermodell. Wer den Tankrabatt für das kleinere Instrument hält, weil er “nur” 1,6 Milliarden gekostet hat, verwechselt zwei Monate mit einem Jahr.
+
+An dieser Stelle wird es unbequem für die naheliegende Pointe.
+
+Die Gegenrechnung, die man auch machen muss
+
+Das Deutschlandticket ist als Klimapolitik kein Schnäppchen. Zu seiner CO₂-Wirkung kursieren zwei sehr unterschiedliche Zahlen. Die Evaluation im Auftrag des Verkehrsministeriums kommt auf rund 2,5 Millionen Tonnen jährlich, etwa drei Prozent der Pkw-Emissionen. Eine kausale Untersuchung des Ariadne-Verbunds, die Mobilfunkdaten mit einer europäischen Kontrollgruppe vergleicht, kam auf 6,7 Millionen Tonnen weniger CO₂ im Autoverkehr.
+
+Je nachdem, welche Zahl man nimmt, kostet das Ticket zwischen 450 und 1.200 Euro je vermiedener Tonne. Der Emissionshandel bepreist dieselbe Tonne mit 65 Euro. Wer ausschließlich Klimaschutz pro Euro sucht, findet ihn woanders.
+
+Und diese Spanne ist selbst mit Vorsicht zu lesen. Die beiden Studien messen nicht dasselbe: Ariadne betrachtet das erste Jahr, Mai 2023 bis April 2024, als das Ticket 49 Euro kostete; die Evaluation betrachtet den heutigen Zustand bei 58 beziehungsweise 63 Euro. Die eine bezieht sich auf die Emissionen des gesamten Verkehrs, die andere auf die des Pkw-Verkehrs. Der Faktor 2,7 zwischen beiden ist also nicht allein Schätzunsicherheit — er mischt Methoden, Jahre und Bezugsgrößen. Genau deshalb sollte man ihn nicht als “die” Unsicherheit verkaufen, und schon gar nicht eine der beiden Zahlen als “die” Wahrheit.
+
+Das Deutschlandticket ist ohnehin nicht primär Klimapolitik. Es ist Sozial- und Verkehrspolitik mit einem Klima-Nebeneffekt. Man sollte es nicht mit einer Rechnung verteidigen, die es verliert.
+
+Der Unterschied zum Tankrabatt liegt nicht in der Effizienz. Er liegt im Vorzeichen.
+
+Warum der Tankrabatt so wenig verändert — und warum genau das das Problem ist
+
+Man könnte vermuten, billigerer Sprit führe zu deutlich mehr Fahren. Die Evidenz sagt: kaum. Eine Metaanalyse der Preiselastizität der Benzinnachfrage (Havránek, Iršová und Janda, Energy Economics 2012) findet nach Korrektur für Publikationsbias einen kurzfristigen Wert von −0,09. Zehn Prozent billigerer Sprit bedeuten knapp ein Prozent mehr Verbrauch. Die Autoren zeigen zugleich, dass die publizierte Literatur diesen Effekt systematisch um etwa das Doppelte überzeichnet, weil insignifikante Schätzungen selten erscheinen.
+
+Rechnet man das durch — rund 42 Milliarden Liter Jahresabsatz, zwei Monate, tatsächliche Preisweitergabe berücksichtigt —, ergibt sich ein Mehrverbrauch von 0,12 bis 0,25 Millionen Tonnen CO₂. Das sind 0,5 bis 1,0 Prozent der Verkehrsemissionen dieser zwei Monate. Auf die zusätzliche Tonne gerechnet hat der Staat damit zwischen 6.400 und 12.800 Euro ausgegeben — für Emissionen, die er eigentlich verteuern will.
+
+Und das ist die eigentliche Pointe. Der Tankrabatt ist klimapolitisch fast wirkungslos, weil er verhaltensökonomisch fast wirkungslos ist. Er verändert das Fahren kurzfristig kaum, weil Menschen kurzfristig ohnehin fahren müssen. Er kauft kein Verhalten. Er verschiebt nur Geld.
+
+Ein Einwand liegt nahe: Wenn Sprit so unelastisch ist, wirkt dann nicht auch der CO₂-Preis kaum? Kurzfristig stimmt das. Der Unterschied steckt im Zeithorizont. Dieselbe Metaanalyse findet langfristig −0,31, also das Dreieinhalbfache. Kurzfristig entscheidet der Preis über gefahrene Kilometer, langfristig über den nächsten Autokauf, den Wohnort, die Investition der Spedition. Genau diese langfristige Erwartung zerstört man, wenn man den Preis zweimal im Jahr aussetzt.
+
+Und selbst wenn man das Verhalten ignoriert, bleibt die Verteilungsfrage.
+
+Wer 35.000 Kilometer im Jahr mit einem Benziner fährt, bekam in den zwei Monaten rund 88 Euro. Wer 8.000 Kilometer fährt, bekam 14 Euro. Ein Deutschlandticket-Abo wurde im selben Zeitraum mit rund 34 Euro bezuschusst — für jedes Abo gleich, unabhängig von der Fahrleistung. Bei Dieselfahrzeugen fallen die Tankrabatt-Beträge niedriger aus, weil ein Teil gar nicht ankam: Das ifo-Institut hat die Weitergabe mit einem Preisvergleich zu Frankreich verfolgt und fand bei Superbenzin eine nahezu vollständige, bei Diesel eine 73-prozentige Weitergabe. Der Fiskus zahlt in beiden Fällen 100 Prozent.
+
+Fairerweise: Der Ticket-Zuschuss erreicht 14,5 Millionen Abonnentinnen und Abonnenten, etwa ein Fünftel der Bevölkerung. Der Tankrabatt erreicht eine größere Gruppe. Das ist ein echter Unterschied — nur eben keiner, der etwas an der Richtung ändert, in die innerhalb der jeweiligen Gruppe verteilt wird.
+
+Warum es trotzdem immer wieder der Tankrabatt wird
+
+Der Spritpreis ist der sichtbarste Preis der Volkswirtschaft. Er steht in dreißig Zentimeter hohen Ziffern an jeder Ausfallstraße und wird mehrmals täglich gelesen, auch von Menschen, die gerade nicht tanken. Kein Mietpreis, kein Strompreis, kein Lebensmittelpreis hat diese Salienz. Der CO₂-Preis dagegen ist in genau diesem Spritpreis unsichtbar enthalten — er steht auf keinem Schild.
+
+Dazu kommt die Asymmetrie zwischen Verlust und Gewinn: Eine Preiserhöhung um 17 Cent wird deutlich stärker wahrgenommen als eine Entlastung derselben Höhe. Politik, die auf Wahrnehmung reagiert, reagiert deshalb auf Spritpreise — und nicht auf Kosten je vermiedener Tonne, die niemand an einer Straße stehen sieht.
+
+Es gibt eine dritte Vermutung, die ich ausdrücklich als Vermutung kennzeichne, weil sie sich mit einer einzelnen Episode nicht belegen lässt. Als der Rabatt Ende Juni auslief, stieg der Dieselpreis im Juli deutlich stärker, als der Rabatt betragen hatte. Allerdings fielen in dieselben Wochen ein kräftiger Anstieg des Rohölpreises und Niedrigwasser am Rhein, das die Binnenschifffahrt einschränkte. Der Sprung war also überwiegend Markt, nicht Steuerpolitik.
+
+Was sich daraus dennoch als Hypothese formulieren lässt: Eine befristete Entlastung verschiebt den Referenzpunkt, an dem der nächste Preis gemessen wird. Sie könnte damit genau das Gefühl erzeugen, das sie später wieder rechtfertigt. Ob das der Mechanismus ist, aus dem Tankrabatte in Serie entstehen, wäre eine eigene Untersuchung wert — mit mehr als einem Datenpunkt.
+
+Und trotzdem: Die Bahn ist nicht für alle eine Antwort
+
+An dieser Stelle schreiben Texte wie dieser gern, man solle halt aufs Deutschlandticket umsteigen. Das ist für viele Menschen keine ernstzunehmende Option, und es lohnt sich, das nicht als Randnotiz abzuhandeln.
+
+Wer im ländlichen Raum wohnt, wo der Bus dreimal am Tag fährt, wer Schicht arbeitet, wer Angehörige pflegt oder Kinder über drei Orte verteilt zur Schule bringt — für den ist das Auto kein Lebensstil, sondern Infrastruktur. Diese Menschen sind nicht zu wenig klimabewusst. Sie haben schlicht keine Alternative, die man ihnen als Alternative anbieten könnte. Und ein 63-Euro-Ticket für ein Netz, das an ihrem Wohnort nicht existiert, hilft ihnen nicht.
+
+Aber genau daraus folgt nicht, dass die Spritsubvention das richtige Instrument ist. Sie ist es gerade deshalb nicht: Sie zahlt proportional zum Verbrauch — also am meisten an Vielfahrer, und nicht am meisten an jene, die am wenigsten ausweichen können. Wer wenig Geld hat und wenig fährt, bekommt wenig.
+
+Wer wirklich Pendlern helfen will, denen keine Alternative zur Verfügung steht, hat dafür zielgenauere Instrumente: eine Direktzahlung, die nicht am Verbrauch hängt. Eine Pro-Kopf-Rückerstattung der CO₂-Einnahmen — die erste Auktion allein hat rund 1,4 Milliarden Euro eingebracht. Ein Pendlergeld, das an Entfernung und Einkommen anknüpft statt an Liter. All das hilft denselben Menschen mehr — und hebt nebenbei nicht das Preissignal auf, das man mit der anderen Hand gerade erhoben hat.
+
+Der Tankrabatt ist nicht deshalb ein schlechtes Instrument, weil er Autofahrern hilft. Er ist ein schlechtes Instrument, weil er ihnen ungleich hilft, teuer ist, zu einem Teil bei den Konzernen hängen bleibt — und dabei genau die eine Zahl neutralisiert, an der die Verlässlichkeit des gesamten Systems hängt.
+
+Was diese Rechnung nicht ist
+
+Sie ist ein Rechenkommentar, keine präregistrierte Analyse. Alle Eingangswerte stammen aus veröffentlichten Quellen; gerechnet wurden Umrechnungen und Sensitivitäten, keine eigene Schätzung. Fünf Punkte, die man kennen sollte:
+
+Erstens ist der Emissionsfaktor die empfindlichste Stellschraube. Weil der Emissionshandel nur den fossilen Anteil bepreist, die Biokraftstoff-Beimischung aber nicht, habe ich mit einer Spanne von 2,28 bis 2,37 kg CO₂ je Liter Benzin gerechnet statt mit einem Punktwert. Daraus folgt die Spanne von 91 bis 95 Prozent; eine engere Angabe wäre Scheingenauigkeit.
+
+Zweitens konnte ich die amtliche Kostenangabe von 1,6 Milliarden Euro nicht mit einer eigenen Überschlagsrechnung zur Deckung bringen. Absatz mal Steuersatz ergibt für zwei Monate etwa 1,2 Milliarden. Ich habe die amtliche Zahl verwendet, weil sie die belastbarere ist — die Differenz bleibt offen und würde die Kostenvergleiche eher zugunsten des Tankrabatts verschieben.
+
+Drittens ist der Mehrverbrauch die unsicherste Größe. Ich habe als Obergrenze den Wert verwendet, der sich aus der zitierten Studie selbst ableiten lässt (publizierte Schätzungen etwa doppelt so groß wie der korrigierte Wert), nicht einen frei gewählten Literaturwert.
+
+Viertens vergleicht die Gegenüberstellung mit dem Deutschlandticket Fiskalkosten, nicht volkswirtschaftliche Kosten. Beide Instrumente sind überwiegend Transfers, kein verbranntes Geld. Die Evaluation beziffert zudem gesamtwirtschaftliche Effekte des Tickets, die sie oberhalb der Zuschüsse verortet — ein Punkt, der eine eigene Prüfung verdient und den ich hier nicht nachgerechnet habe.
+
+Fünftens ist unklar, ob die Ariadne-Zahl den zusätzlichen Energieverbrauch der verlagerten Fahrten gegenrechnet. Ich habe das nicht auflösen können und formuliere es deshalb als offene Frage statt als Einschränkung, die ich belegen könnte.
+
+Quellen: Erste Versteigerung im nationalen Emissionshandel, DEHSt, 01.07.2026 (Zuschlag am gesetzlichen Höchstpreis 65 €/t; Restmengen 68 €/t) · 2. Energiesteuersenkungsgesetz, Bundestag und Bundesrat 24.04.2026, Bundesfinanzministerium · ifo Tankrabatt-Tracker, Auswertung vom 29.06.2026 · Regionalisierungsgesetz, Bundestagsbeschluss 07.11.2025 · Evaluation des Deutschlandtickets, infas u. a. im Auftrag des BMV, 14.04.2026 · Ariadne D-Ticket Impact Tracker, 2024 · Havránek/Iršová/Janda, Demand for gasoline is more price-inelastic than commonly thought, Energy Economics 34(1), 2012, S. 201–207 · Kraftstoffabsatz 2025, Marktschätzung auf Basis der BAFA-Mineralölstatistik · Emissionsfaktoren nach UBA.
+
+Rechenweg und Skript werden im GitHub-Repository von Klima Evidenzcheck veröffentlicht.
+

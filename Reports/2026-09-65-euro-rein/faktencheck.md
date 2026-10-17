@@ -161,3 +161,117 @@ Hinweis zur Methode: Der Artikeltext wurde über WebFetch von der Substack-Seite
 10. **„Sechseinhalbfache“** zu „gut das Sechsfache“ bzw. „6,4-fach“ präzisieren.
 11. **Quellenliste mit Links versehen** (DEHSt, Drucksache 21/5321, ifo, BMV-Evaluation, Ariadne, Havránek et al., en2x/BAFA, UBA).
 12. **Aktualisierungshinweis:** Die am 25.09.2026 beschlossene erneute Energiesteuersenkung (01.10.–31.12.2026, etwa 2,5 Mrd. €) als Nachtrag erwähnen, da der Artikel die Optionen noch als offen darstellt.
+
+---
+
+## Nachtrag: Bestätigung der Korrekturwerte vom 17.10.2026
+
+*Auftrag: Bestätigung der Ersatzwerte für Option A (sichtbarer Korrekturhinweis plus Korrektur im Text). Prüfgrundlage für Fundstellen: `Reports/2026-09-65-euro-rein/artikel_original_2026-10-17.txt`. Zeilenangaben „Z.“ beziehen sich auf diese Datei. Der Inhalt oberhalb dieses Nachtrags ist unverändert. Wo der Nachtrag einen Wert aus Abschnitt 1–4 präzisiert, gilt der Nachtrag.*
+
+### Ergebnis je Punkt
+
+| # | Ersatzwert (Vorschlag Hauptsession) | Ergebnis | Geprüfter Wert / Anmerkung |
+|---|---|---|---|
+| 1 | Absatzbasis Benzin+Diesel ≈ 62 Mrd. l/Jahr | **bestätigt** | 62,0–62,2 Mrd. l. Zwei unabhängige Wege stimmen überein (siehe N1). |
+| 2 | Mehrverbrauch ≈ 0,18–0,37 Mt; Kosten ≈ 4.300–8.900 €/t | **angepasst** | Mehrverbrauch 0,18–0,37 Mt ist bestätigt. Die Kosten je Tonne werden auf **≈ 4.300–8.700 €/t** angepasst; der Wert 8.900 in Abschnitt 1/2/4 war ein Rundungsartefakt (siehe N2). Der Anteil an den Verkehrsemissionen ändert sich auf **≈ 0,7–1,5 %**. |
+| 3 | MwSt-Modell 23–25 ct/l, 82–92 €/t, 125–142 % | **bestätigt (Methode des Artikels), Präzisierung empfohlen** | Bezugsgröße ist 65 €/t mit dem Benzin-Faktor 2,28–2,37. Dann gilt: 81,6–92,1 €/t und 125–142 %. Allerdings ist 25 ct ein Dieselwert (24,7 ct). Getrennt nach Kraftstoff ergibt sich: Benzin 23 ct → 82–85 €/t, 125–131 %; Diesel 24,7 ct → 78–81 €/t, 120–125 % (siehe N3). |
+| 4 | Verteilung bei 7 l/100 km: 68 € / 16 € | **angepasst** | Für 7 l/100 km wurde kein Beleg gefunden. Belegbar ist **7,7 l/100 km** (UBA-Daten, Benzin-Pkw im Bestand, fahrleistungsgewichtet). Damit ergeben sich **≈ 75 €** bzw. **≈ 17 €** (siehe N4). |
+| 5 | Diesel-Weitergabe „etwa 72 %“ | **bestätigt** | 12 / 16,7 = 71,9 %. ifo schreibt selbst „rund 12 Cent“; „etwa 72 %“ oder „gut 70 %“ sind beide korrekt. |
+| 6 | D-Ticket „6,4-fach“ und Kennzeichnung der Bezugsbasis | **bestätigt** | 0,80 / 0,125 = 6,4 (nur Bundesanteil). Die 34 € und 450–1.200 €/t beruhen auf Bund+Länder (3 Mrd. €). Das muss im Text gekennzeichnet werden (siehe N6). |
+| 7 | CO₂-Preis je Liter brutto 17,6–18,3 ct (Benzin), 19,7–20,5 ct (Diesel); Dieselfaktor 2,55–2,65 kg/l | **Benzin bestätigt; Diesel bestätigt als Rückrechnung; ein direkter UBA-Literwert für Diesel ist nicht belegbar** | Einen direkt zitierbaren UBA-Wert in kg CO₂/l Diesel habe ich nicht gefunden. Zitierbar ist der UBA-Faktor 74,0 t CO₂/TJ. Mit Heizwert und Dichte umgerechnet ergeben sich 2,63–2,68 kg/l (fossil), also 20,4–20,7 ct brutto (siehe N7). |
+
+### Rechenschritte
+
+**N1 – Absatzbasis**
+- Weg A (en2x/AGEB 2024): 17,8 Mt / 0,745 kg/l = 23,89 Mrd. l; 31,9 Mt / 0,832 kg/l = 38,34 Mrd. l; Summe **62,2 Mrd. l**.
+- Weg B (Gesetzentwurf, 1,45 Mrd. € Energiesteuer): 1,45 / 0,1404 = 10,33 Mrd. l für 2 Monate, × 6 = **62,0 Mrd. l**.
+- Vorbehalt: Weg B umfasst den gesamten steuerbegünstigten Kraftstoff, also auch gewerblichen Diesel. Die Dichten sind Standardwerte. Die Abweichung zwischen beiden Wegen beträgt 0,3 %.
+- Gegenprobe zur Überschlagsrechnung des Artikels: 62 / 6 × 0,1404 = 1,45 Mrd. € Energiesteuer. Brutto mit vollem MwSt-Anteil wären es 62 / 6 × 0,1671 = 1,73 Mrd. €. Die amtlichen 1,6 Mrd. € liegen dazwischen, weil gewerbliche Abnehmer die Vorsteuer abziehen. Die „offene Differenz“ (Z. 97) ist damit aufgeklärt.
+
+**N2 – Mehrverbrauch und Kosten je zusätzlicher Tonne**
+- Im Original genannte Annahmen:
+  - kurzfristige Elastizität −0,09 (Z. 55)
+  - Obergrenze: publizierte Schätzungen „etwa doppelt so groß“, also −0,18 (Z. 99)
+  - Jahresabsatz „rund 42 Milliarden Liter“, „zwei Monate“, „tatsächliche Preisweitergabe berücksichtigt“ (Z. 57)
+  - Kosten 1,6 Mrd. € (Z. 37, Z. 97)
+- Im Original **nicht** genannt:
+  - Ausgangspreis bzw. Preisänderung in %
+  - die numerischen Weitergabequoten im Rechengang (73 % erscheinen nur in Z. 65 im Verteilungsabsatz)
+  - Kraftstoffmix und Emissionsfaktor für den Mehrverbrauch
+  - Bezugsgröße der Verkehrsemissionen
+- Weil der Mehrverbrauch linear in der Absatzmenge ist, lässt er sich ohne diese unbekannten Werte korrigieren: Bleiben alle übrigen Annahmen gleich, skaliert er mit dem Faktor 62/42 = 1,476 (bzw. 62,2/42 = 1,481).
+  - 0,12 Mt × 1,476 = 0,177 Mt. Ist 0,125 Mt der ungerundete Wert (er folgt aus 1,6 Mrd. / 12.800 €), ergeben sich 0,185 Mt. Beides wird zu **0,18 Mt**.
+  - 0,25 Mt × 1,476 = **0,369 Mt**, gerundet 0,37 Mt.
+  - Kosten je Tonne: 6.400 / 1,476 = 4.336 € und 12.800 / 1,476 = 8.672 €, also **≈ 4.300–8.700 €/t**. Der frühere Wert 8.900 €/t ergab sich aus 1,6 Mrd. / 0,18 Mt, also aus einer bereits gerundeten Untergrenze; der korrekt skalierte Wert ist 8.700.
+  - Anteil an den Verkehrsemissionen (146 Mt / 6 = 24,3 Mt für zwei Monate): 0,18 / 24,3 = 0,74 % und 0,37 / 24,3 = 1,52 %, also **≈ 0,7–1,5 %**.
+- Vorbehalt: Die lineare Skalierung setzt voraus, dass die zusätzlich erfasste Menge (überwiegend Diesel) mit denselben Annahmen behandelt wird wie die ursprüngliche Basis. Diesel hat einen höheren Emissionsfaktor, wurde schwächer weitergegeben (72 %), und gewerbliche Nachfrage reagiert vermutlich anders als die Benzinnachfrage, auf die sich Havránek et al. beziehen. Ohne Skript ist das nicht auflösbar. Um keine Scheingenauigkeit zu erzeugen, wäre als Formulierung vertretbar: „rund 0,2 bis 0,4 Millionen Tonnen“ und „rund 4.000 bis 9.000 Euro je zusätzlicher Tonne“.
+
+**N3 – MwSt-Modell**
+- Entlastung = Bruttopreis × 12/119. E10 2,291 € → 23,1 ct; Diesel 2,454 € → 24,7 ct (Quelle: auto motor und sport, 17.09.2026, siehe #27).
+- Methode des Artikels (Z. 25): Bruttoentlastung / 1,19 / Benzin-Faktor, Bezugsgröße 65 €/t.
+  - 23 ct: 19,33 ct netto / 2,37 = 81,6 €/t; das sind 125,5 % von 65 €/t.
+  - 25 ct: 21,01 ct netto / 2,28 = 92,1 €/t; das sind 141,7 % von 65 €/t.
+  - Ergebnis: **82–92 €/t bzw. 125–142 %**, bestätigt.
+- Kraftstoffgerechte Variante (empfohlen, weil die Obergrenze von Diesel stammt):
+  - Benzin 23,1 ct: 19,41 / 2,37 = 81,9 €/t (126 %); / 2,28 = 85,1 €/t (131 %).
+  - Diesel 24,7 ct: 20,76 / 2,65 = 78,3 €/t (120 %); / 2,55 = 81,4 €/t (125 %).
+  - Gesamtspanne: **≈ 78–85 €/t bzw. ≈ 120–131 %**. Die Aussage „überkompensiert“ (Z. 25) bleibt in jeder Variante gültig.
+
+**N4 – Verteilungsbeispiele**
+- 7 l/100 km: Dafür habe ich keine amtliche Quelle gefunden. Der Wert liegt unter dem belegten Bestandsdurchschnitt für Benzin-Pkw.
+- Belegbar: 7,68 l/100 km, fahrleistungsgewichteter Durchschnittsverbrauch der Benzin-Pkw im Bestand. Quelle: UBA-Daten in der Antwort der Bundesregierung, [BT-Drs. 19/13944](https://dserver.bundestag.de/btd/19/139/1913944.pdf); Datenstand 2017, für 2016 7,80 und für 2010 8,09.
+- Eine aktuellere Reihe gibt es: „Verkehr in Zahlen 2025/2026“, S. 309, als [UBA-Grafik](https://www.umweltbundesamt.de/system/files/medien/384/bilder/dateien/10_Abb_Durchschn-Kraftstoffverbrauch_2026-05-04.pdf) bzw. auf der [UBA-Bildseite](https://www.umweltbundesamt.de/bild/durchschnittlicher-kraftstoffverbrauch-von-pkw). Das PDF war technisch nicht auslesbar, der aktuelle Benzinwert ist deshalb **nicht bestätigt**. Vor Übernahme sollte er in der VIZ-Tabelle nachgeschlagen werden.
+- Rechnung mit 7,7 l/100 km und 16,71 ct/l:
+  - 35.000 km × 2/12 = 5.833 km; × 0,077 = 449 l; × 0,1671 = **75,1 € ≈ 75 €**
+  - 8.000 km × 2/12 = 1.333 km; × 0,077 = 102,7 l; × 0,1671 = **17,2 € ≈ 17 €**
+- Zum Vergleich mit 7,0 l/100 km: 408 l → 68,2 €; 93,3 l → 15,6 € ≈ 16 €. Die Arithmetik der Hauptsession ist also richtig, nur die Annahme ist nicht belegt.
+- Die Aussage „Entlastung proportional zur Fahrleistung“ (Z. 85) bleibt gültig. Der Faktor zwischen Viel- und Wenigfahrer beträgt bei einheitlichem Verbrauch 4,4 (wie die Fahrleistungen) statt 6,3.
+
+**N5 – Diesel-Weitergabe**
+- 12 / 16,71 = 71,8 %; mit dem gerundeten Nenner 16,7 sind es 71,9 %. „etwa 72 %“ ist korrekt. Da ifo selbst „rund 12 Cent“ angibt, ist die Formulierung „rund 12 von 16,7 Cent“ am quellennächsten.
+
+**N6 – D-Ticket**
+- 1,6 Mrd. € / 2 Monate = 0,80 Mrd. €/Monat. Bundesanteil 1,5 Mrd. € / 12 = 0,125 Mrd. €/Monat. 0,80 / 0,125 = **6,40**.
+- Bezugsbasen im Original:
+  - Z. 35 („Sechseinhalbfache“, „vollen Jahr des Bundesanteils“): **nur Bund** (1,5 Mrd. €/Jahr).
+  - Z. 45 (450–1.200 €/t) und Z. 65 (34 €): **Bund + Länder** (3,0 Mrd. €/Jahr). 3,0 Mrd. / 14,5 Mio. / 6 = 34,5 €; 3,0 Mrd. / 6,7 Mt = 448 €/t; 3,0 Mrd. / 2,5 Mt = 1.200 €/t.
+- Vorschlag: In Z. 45 und Z. 65 „Zuschuss von Bund und Ländern (je 1,5 Mrd. € jährlich)“ ergänzen, in Z. 35 „Bundesanteil“ beibehalten.
+
+**N7 – CO₂-Preis je Liter und Dieselfaktor**
+- Benzin: 65 × 2,28 × 1,19 = 17,64 ct; 65 × 2,37 × 1,19 = 18,33 ct, also **17,6–18,3 ct brutto**, bestätigt (netto 14,8–15,4 ct).
+- Diesel aus der Rückrechnung: 19,7 / 1,19 / 65 = 2,547 kg/l; 20,5 / 1,19 / 65 = 2,650 kg/l, also **2,55–2,65 kg/l**, rechnerisch bestätigt.
+- UBA-Wert: Einen direkt zitierbaren UBA-Wert in **kg CO₂ je Liter Diesel** habe ich nicht gefunden. Zitierbar ist der Emissionsfaktor **74,0 t CO₂/TJ** für Dieselkraftstoff ([UBA Climate Change 28/2022, CO₂-Emissionsfaktoren für fossile Brennstoffe](https://www.umweltbundesamt.de/system/files/medien/11850/publikationen/28_2022_cc.pdf); laut Suchauszug gleicher Wert schon in [CC 27/2016](https://www.umweltbundesamt.de/system/files/medien/1968/publikationen/co2-emissionsfaktoren_fur_fossile_brennstoffe_korrektur.pdf)). Die PDFs selbst waren technisch nicht auslesbar; die Fundstelle (Tabellennummer) sollte vor einem Zitat im Dokument selbst nachgesehen werden.
+- Eigene Umrechnung, nicht UBA-Angabe:
+  - 74,0 kg/GJ × 42,8 GJ/t × 0,832 kg/l = 2,635 kg/l
+  - mit Dichte 0,845 kg/l (EBeV-Wert, laut UBA CC 45/2022): 2,676 kg/l
+  - CO₂-Preis brutto: 65 × 2,635 × 1,19 = 20,4 ct; 65 × 2,676 × 1,19 = 20,7 ct
+- Die Obergrenze des Artikels (20,5 ct) liegt in diesem Bereich. Die Untergrenze 2,55 kg/l lässt sich mit einem Bioanteil von etwa 3–5 % (B7) plausibel erklären, ist aber nicht belegt.
+- Empfohlene Formulierung: „Diesel: 2,55–2,65 kg CO₂/l fossiler Anteil, eigene Umrechnung aus UBA-Faktor 74,0 t CO₂/TJ“.
+
+### Betroffene Originalsätze (Fundstellen in `artikel_original_2026-10-17.txt`)
+
+| Z. | Originalzitat | Betroffen durch | Vorgeschlagene Korrektur |
+|---|---|---|---|
+| 7 | „eine Mehrwertsteuersenkung von 19 auf 7 Prozent, die nach Berichten dieser Woche 21 bis 25 Cent je Liter bringen würde“ | Punkt 3 | „23 bis 25 Cent“ |
+| 7 | „Beschlossen ist nichts.“ | Aktualisierung (Abschnitt 4, Nr. 12) | Nachtrag: am 25.09.2026 erneute Energiesteuersenkung 01.10.–31.12.2026 beschlossen |
+| 17 | „Ein Liter Benzin setzt bei der Verbrennung zwischen 2,28 und 2,37 Kilogramm CO₂ frei“ | Punkt 7 (Quelle) | Quelle präzisieren. Optional Dieselfaktor ergänzen. |
+| 19 | „17,6 bis 18,3 Cent je Liter Benzin. Bei Diesel, der pro Liter mehr CO₂ enthält, sind es 19,7 bis 20,5 Cent.“ | Punkt 7 | „inklusive Mehrwertsteuer“ ergänzen, Dieselfaktor 2,55–2,65 kg/l nennen |
+| 23 | „82 bis 85 Prozent auf Diesel“ | Punkt 7 (Rundungsgrenze) | kann bleiben (81,5 % liegt an der Rundungsschwelle) |
+| 25 | „21 bis 25 Cent entsprechen 74 bis 92 Euro je Tonne — 115 bis 142 Prozent dessen, was der Emissionshandel kostet.“ | Punkt 3 | „23 bis 25 Cent entsprechen 82 bis 92 Euro je Tonne — 125 bis 142 Prozent“ (Methode des Artikels) bzw. kraftstoffgerecht „rund 78 bis 85 Euro je Tonne — 120 bis 131 Prozent“ |
+| 31–33 | „Also alles auf denselben Nenner, Euro pro Monat:“, danach leere Zeilen | **ungeprüft** | In der TXT-Fassung fehlt der folgende Inhalt (vermutlich eine Tabelle oder Grafik). Er war in dieser Prüfung nicht sichtbar und muss separat gegen R5/N6 abgeglichen werden. |
+| 35 | „Der Tankrabatt kostete je Monat rund das Sechseinhalbfache dessen, was der Bund für das Deutschlandticket ausgibt.“ | Punkt 6 | „rund das 6,4-Fache“ bzw. „gut das Sechsfache“ |
+| 45 | „kostet das Ticket zwischen 450 und 1.200 Euro je vermiedener Tonne“ | Punkt 6 | Bezugsbasis „Zuschuss von Bund und Ländern, 3 Mrd. € jährlich“ ergänzen |
+| 57 | „rund 42 Milliarden Liter Jahresabsatz“ | Punkt 1 | „rund 62 Milliarden Liter Jahresabsatz (Benzin und Diesel)“ |
+| 57 | „ergibt sich ein Mehrverbrauch von 0,12 bis 0,25 Millionen Tonnen CO₂. Das sind 0,5 bis 1,0 Prozent der Verkehrsemissionen dieser zwei Monate.“ | Punkt 2 | „0,18 bis 0,37 Millionen Tonnen … 0,7 bis 1,5 Prozent“ (bzw. gerundet „rund 0,2 bis 0,4“) |
+| 57 | „zwischen 6.400 und 12.800 Euro ausgegeben“ | Punkt 2 | „zwischen rund 4.300 und 8.700 Euro“ (bzw. gerundet „rund 4.000 bis 9.000“) |
+| 65 | „bekam in den zwei Monaten rund 88 Euro. Wer 8.000 Kilometer fährt, bekam 14 Euro.“ | Punkt 4 | „rund 75 Euro … rund 17 Euro (bei 7,7 l/100 km)“ |
+| 65 | „mit rund 34 Euro bezuschusst“ | Punkt 6 | Bezugsbasis Bund + Länder ergänzen |
+| 65 | „bei Diesel eine 73-prozentige Weitergabe“ | Punkt 5 | „bei Diesel rund 12 von 16,7 Cent, also etwa 72 Prozent“ |
+| 97 | „Zweitens konnte ich die amtliche Kostenangabe von 1,6 Milliarden Euro nicht mit einer eigenen Überschlagsrechnung zur Deckung bringen. Absatz mal Steuersatz ergibt für zwei Monate etwa 1,2 Milliarden. … die Differenz bleibt offen …“ | Punkt 1 | Neu fassen: Mit der korrigierten Absatzbasis (≈ 62 Mrd. l) ergibt die Überschlagsrechnung 1,45 Mrd. € Energiesteuer, was zur amtlichen Angabe passt. Die frühere Differenz beruhte auf einer zu niedrigen Absatzbasis. |
+| 105 | „Kraftstoffabsatz 2025, Marktschätzung auf Basis der BAFA-Mineralölstatistik · Emissionsfaktoren nach UBA.“ | Punkte 1, 7 | Konkrete Quellen: en2x/AGEB bzw. BAFA-Amtliche Mineralöldaten 2024; UBA CC 28/2022 (Dieselfaktor 74,0 t CO₂/TJ). Links ergänzen. |
+| 107 | „Rechenweg und Skript werden im GitHub-Repository von Klima Evidenzcheck veröffentlicht.“ | Abschnitt 3 | Skript nachreichen oder den Satz durch einen Korrekturhinweis ersetzen |
+
+### Grenzen dieses Nachtrags
+- Die UBA-PDFs (CC 28/2022, CC 45/2022, VIZ-Grafik 2026) waren mit den verfügbaren Werkzeugen nicht auslesbar. Die Werte 74,0 t CO₂/TJ, 42,8 GJ/t und 0,845 kg/l stammen aus Suchauszügen dieser Dokumente und sind vor einem Zitat mit Tabellennummer im Dokument selbst zu bestätigen.
+- Der Verbrauchswert 7,68 l/100 km hat den Datenstand 2017. Ein aktuellerer VIZ-Wert konnte nicht abgelesen werden.
+- Die Korrektur des Mehrverbrauchs ist eine lineare Skalierung mit unveränderten, im Original teils nicht genannten Annahmen. Sie ist keine neue Schätzung.
