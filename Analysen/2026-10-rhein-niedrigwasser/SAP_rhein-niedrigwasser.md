@@ -6,26 +6,86 @@ Tagesmittelabflusses in m³/s) außerhalb der historischen Schwankungsbreite der
 Messreihe, ist er der niedrigste Wert der Messreihe, und zeigen die jährlichen
 NM7Q-Werte über die verfügbare Reihe einen monotonen Trend?
 
-**Version:** 0.1
-**Status:** draft
+**Version:** 1.0
+**Status:** final
 **Datum:** 19.10.2026
-**Autor:in:** sap-autor (Entwurf)
-**Freigabe/Einfrieren:** _________________________ Datum: __________
-(ausstehend; erfolgt ausschließlich durch Daniel Saure, nachdem er den
-vollständigen aktuellen Dokumenttext selbst gelesen und ausdrücklich bestätigt
-hat)
+**Autor:in:** sap-autor (Entwurf v0.1–v0.5)
+**Freigabe/Einfrieren:** Freigegeben durch Daniel Saure, Datum: 19.10.2026
+(im Chat, nachdem ihm der vollständige Text von v0.5 zugeschickt wurde:
+„Ich habe SAP v0.5 vollständig gelesen. Einfrieren als Version 1.0, final.“
+Inhaltlich identisch mit v0.5; geändert wurden nur Kopf und Versionshistorie.)
 
 **Versionshistorie:**
 - **v0.1 (19.10.2026):** Erstentwurf durch den sap-autor-Subagenten vor jedem
   Datenzugriff. Es wurden keine Abfluss- oder Wasserstandsdaten
   heruntergeladen, geöffnet oder grafisch angesehen. Offene Fragen siehe
   Abschnitt 13. Status bleibt **draft**; der SAP ist **nicht** eingefroren.
+- **v0.2 (19.10.2026):** Einarbeitung der Antworten von Daniel Saure
+  (19.10.2026) auf die zehn offenen Fragen aus Abschnitt 13 durch den
+  sap-autor-Subagenten. Geändert: Abschnitt 0 (Status bestätigt), 2.1
+  (Abflussjahr bestätigt; Rhein-km laut PEGELONLINE), 2.3 (δ = 5 % bestätigt),
+  3.1 (Tabelle; neuer Unterabschnitt 3.1a zur verblindeten
+  PEGELONLINE-Sicherung), 3.2 (Frist F = 6 Wochen; Plan C bestätigt), 3.3
+  (S1, S5: Prüfsummenverifikation), 3.4 (Nachtrag als eigenes Update), 6 (S2a,
+  S2b, S3a; keine kombinierten Sensitivitäten bestätigt), 9 (Datenlizenz), 13
+  (umgewandelt in beantwortete Entscheidungen). Methodik, Estimanden und
+  Primär-/Sensitivitätszuordnung sind sonst unverändert. Der sap-autor hat
+  keine Daten gesichtet, auch nicht die Dateien der verblindeten Sicherung.
+  Status bleibt **draft**; der SAP ist **nicht** eingefroren.
+- **v0.3 (19.10.2026):** Einarbeitung der Entscheidungen von Daniel Saure
+  (19.10.2026) zu den drei Rückfragen des sap-autors nach v0.2 durch den
+  sap-autor-Subagenten. Geändert: 3.1 (Tabelle, Rang 3: zweiter
+  PEGELONLINE-Abruf), 3.1a (Abbruch und Eskalation bei Prüfsummenfehler;
+  Emmerich bleibt ungenutzt; neuer Block zum zweiten PEGELONLINE-Abruf für
+  19.10.–31.10.2026 mit Überlappungsprüfung und Vorrang der ersten
+  Sicherung), 3.2 (Plan A: Verweis auf beide PEGELONLINE-Abrufe), 3.3 (S1:
+  Abbruchregel; S5: zweiter Abruf und Überlappungsprüfung), 13 (Verweis in
+  Entscheidung 2; neuer Block „Rückfragen v0.2“). Methodik, Estimanden und
+  Primär-/Sensitivitätszuordnung sind unverändert. Der sap-autor hat keine
+  Daten gesichtet, auch nicht die Dateien der verblindeten Sicherung. Status
+  bleibt **draft**; der SAP ist **nicht** eingefroren.
+- **v0.4 (19.10.2026):** Einarbeitung der Antworten von Daniel Saure
+  (19.10.2026) auf die sechs Rückfragen des sap-autors nach v0.3 („Ja, alle
+  sechs Vorschläge übernehmen und den Kasusfehler korrigieren.“) durch den
+  sap-autor-Subagenten. Geändert: 2.1 (Q(t): Verweis auf die Tagesmittelbildung
+  aus PEGELONLINE-Rohdaten), 3.1 (Tabelle, Rang 3: Anfragezeitraum und
+  spätester Abrufzeitpunkt des zweiten Abrufs, Verweis auf 3.1b), 3.1a
+  (Prüfsummenkontrolle über die gesamte Dateisammlung eines Abrufs; zweiter
+  Abruf: Durchführung durch die Top-Level-Session, Anfragezeitraum ab
+  12.10.2026 mit etwa 7 Tagen Überlappung, spätester Abrufzeitpunkt
+  14.11.2026 mit Rang 4 als Fallback, Köln: Q ausgewertet, W nur zur
+  Dokumentation), neuer Unterabschnitt 3.1b (Tagesmittelbildung aus
+  15-Minuten-Werten), 3.3 (S1, S2, S5), 4 (fehlende Werte), 13 (Kasusfehler in
+  Rückfragen v0.2, Frage 2, korrigiert; Querverweise in Rückfragen v0.2,
+  Fragen 1 und 2; neuer Block „Rückfragen v0.3“). Methodik, Estimanden und
+  Primär-/Sensitivitätszuordnung sind unverändert. Der sap-autor hat keine
+  Daten gesichtet, auch nicht die Dateien der verblindeten Sicherung. Status
+  bleibt **draft**; der SAP ist **nicht** eingefroren.
+- **v1.0 (19.10.2026):** Eingefroren (Status **final**) durch Daniel Saure nach
+  vollständigem Lesen von v0.5. Text von v0.5 unverändert übernommen; nur
+  Kopfzeilen (Version, Status, Freigabe) und dieser Historieneintrag
+  ergänzt. Eingetragen durch die Top-Level-Session. Bis zu diesem Zeitpunkt
+  wurden keine Daten gesichtet; die verblindete PEGELONLINE-Sicherung
+  (3.1a) ist ungeöffnet.
+- **v0.5 (19.10.2026):** Einarbeitung der Festlegung von Daniel Saure
+  (19.10.2026) zur Zuordnung des Mitternachtswerts („Mitternacht: Wert 00:00
+  gehört zum beginnenden Tag (00:00–23:45 MEZ).“) durch den
+  sap-autor-Subagenten. Geändert: 3.1b (Tagesgrenze als halboffenes Intervall
+  [00:00, 24:00) MEZ, also 00:00 bis 23:45 MEZ bei 15-Minuten-Raster mit 96
+  erwarteten Werten; ein Wert mit Zeitstempel genau 00:00 MEZ gehört zum
+  beginnenden Tag; Zeitstempel in anderen Zeitzonen werden vorher nach MEZ
+  umgerechnet), 13 (neuer Block „Rückfrage v0.4“; Querverweis am Ende von
+  „Rückfragen v0.3“, Frage 6). Methodik, Estimanden und
+  Primär-/Sensitivitätszuordnung sind unverändert. Der sap-autor hat keine
+  Daten gesichtet, auch nicht die Dateien der verblindeten Sicherung. Status
+  bleibt **draft**; der SAP ist **nicht** eingefroren.
 
 ---
 
 ## 0. Status dieser Analyse
 
-[x] Präregistriert (vorgesehen): SAP vor Datenzugriff verfasst; Einfrieren
+[x] Präregistriert: SAP vor Datenzugriff verfasst; Status bestätigt durch
+    Daniel Saure am 19.10.2026 (Abschnitt 13, Entscheidung 1); Einfrieren
     steht noch aus
 [ ] Exploratorisch (Daten wurden vor SAP-Erstellung bereits gesichtet – Grund: ___)
 
@@ -48,11 +108,14 @@ entwertet. Allerdings ist die Analyse **ergebnisgetrieben ausgelöst**: Sie wird
 gerechnet, *weil* ein Extremereignis gemeldet wurde. Die Folgen dieser
 Selektion stehen in Abschnitt 8.4 und 9.
 
-Die endgültige Beurteilung, ob dieser Status haltbar ist, liegt bei Daniel
-Saure (Abschnitt 13, Frage 1). Werden vor dem Einfrieren doch Abflussdaten,
-Grafiken oder abgeleitete Kennwerte der Kaub-, Lobith- oder Köln-Reihe
-gesichtet, ist der Status zwingend auf „Exploratorisch (retrospektiv)“ zu
-setzen.
+**Bestätigt:** Daniel Saure teilt diese Einschätzung (19.10.2026, Wortlaut
+„Teile die Einschätzung“, Abschnitt 13, Entscheidung 1). Der Status bleibt
+„präregistriert“ und nicht „exploratory“. Die verblindete Sicherung der
+PEGELONLINE-Rohdaten (Abschnitt 3.1a) ändert daran nichts, solange ihre Dateien
+vor dem Einfrieren nicht geöffnet werden. Werden vor dem Einfrieren doch
+Abflussdaten, Grafiken oder abgeleitete Kennwerte der Kaub-, Lobith- oder
+Köln-Reihe gesichtet, ist der Status zwingend auf „Exploratorisch
+(retrospektiv)“ zu setzen.
 
 ---
 
@@ -101,18 +164,23 @@ D0) gegen Primärquellen verifiziert.
 
 ### 2.1 Begriffe und Kennwerte (verbindlich)
 
-- **Q(t):** Tagesmittel des Abflusses in m³/s am Pegel Kaub (Rhein-km 546,3,
+- **Q(t):** Tagesmittel des Abflusses in m³/s am Pegel Kaub (Rhein-km 546,23
+  laut PEGELONLINE; im Entwurf v0.1 gerundet als km 546,3 angegeben;
   WSV-Pegel; Pegelnummer laut DGJ-Stammblatt 25700100), wie von der
   Primärquelle veröffentlicht. Es werden keine eigenen Umrechnungen von W in
-  Q vorgenommen (Ausnahme: keine; siehe Abschnitt 3, Plan C).
+  Q vorgenommen (Ausnahme: keine; siehe Abschnitt 3, Plan C). Liegen für 2026
+  aus PEGELONLINE nur Rohwerte im 15-Minuten-Raster vor, wird das Tagesmittel
+  nach der Regel in Abschnitt 3.1b aus den Q-Rohwerten gebildet. Das ist eine
+  Mittelung von Q-Werten und keine Umrechnung von W in Q.
 - **Abflussjahr j (primäre Jahresdefinition):** das vom Deutschen
-  Gewässerkundlichen Jahrbuch (DGJ) verwendete Abflussjahr. Nach aktuellem
-  Kenntnisstand ist das der Zeitraum 01.11.(j−1) bis 31.10.(j). **Abflussjahr
-  2026 = 01.11.2025–31.10.2026.** Die Konvention wird im Struktur-Check
-  (Abschnitt 3, Schritt S2) am Stammblatt verifiziert. Weicht sie ab, gilt die
-  dort dokumentierte DGJ-Konvention einheitlich für die gesamte Reihe, und die
-  Abweichung wird im SAP-Amendment-Log des Analyseskripts vermerkt (Frage 3 in
-  Abschnitt 13).
+  Gewässerkundlichen Jahrbuch (DGJ) verwendete Abflussjahr, also der Zeitraum
+  01.11.(j−1) bis 31.10.(j). **Abflussjahr 2026 = 01.11.2025–31.10.2026.**
+  Bestätigt durch Daniel Saure am 19.10.2026 (Abschnitt 13, Entscheidung 3);
+  eine abweichende DGJ-Konvention ist nicht bekannt. Die Konvention wird
+  dennoch im Struktur-Check (Abschnitt 3, Schritt S2) am Stammblatt
+  verifiziert. Weicht sie ab, gilt die dort dokumentierte DGJ-Konvention
+  einheitlich für die gesamte Reihe, und die Abweichung wird im
+  SAP-Amendment-Log des Analyseskripts vermerkt.
   **Begründung für das Abflussjahr statt des Kalenderjahrs:**
   (a) Die amtlichen Jahres-Hauptwerte (NQ, MNQ) im DGJ beziehen sich auf das
   Abflussjahr. Primäranalyse und Fallback-Plan B (Abschnitt 3) verwenden so
@@ -176,7 +244,8 @@ die Messreihe. Er ist deterministisch und kein statistischer Test.
   ausgewiesen.
 - **Rekord-Kategorien** mit δ = relative Messunsicherheit des Niedrigwasser-
   abflusses am Pegel Kaub laut Primärquelle (BfG/WSV). Ist sie dort nicht
-  dokumentiert, gilt vorab festgelegt δ = 5 % (Frage 5 in Abschnitt 13).
+  dokumentiert, gilt vorab festgelegt δ = 5 % (bestätigt durch Daniel Saure am
+  19.10.2026, Abschnitt 13, Entscheidung 5).
   Q_min,H bezeichnet den niedrigsten NM7Q-Wert in H.
   - **„Rekord, eindeutig“:** NM7Q₂₀₂₆ < Q_min,H · (1 − δ)
   - **„Rekord innerhalb der Messunsicherheit“:** Q_min,H · (1 − δ) ≤
@@ -231,8 +300,8 @@ gelangen.
 | Rang | Quelle | Verwendung | Bemerkung |
 |---|---|---|---|
 | 1 | **BfG / Deutsches Gewässerkundliches Jahrbuch (DGJ)**, Stammblatt Kaub: https://dgj-daten.bafg.de/Rhein/Kaub/25700100_WQ.pdf sowie die zugehörigen DGJ-Tageswerte, falls über dgj-daten.bafg.de oder auf Anfrage bei der BfG verfügbar | geprüfte historische Q-Tageswerte, Jahres-Hauptwerte (NQ, MNQ), Messunsicherheit, Pegelgeschichte | Primärquelle; amtlich geprüfte Werte |
-| 2 | **GRDC** (Global Runoff Data Centre, BfG Koblenz), Tageswerte Kaub, Lobith, Köln | historische Q-Tagesreihen, falls Rang 1 keine freien Tageswerte liefert | nach Kenntnisstand Weitergabe der Rohdaten lizenzrechtlich eingeschränkt (Abschnitt 9, Frage 7) |
-| 3 | **WSV / PEGELONLINE** (pegelonline.wsv.de) | Werte des Abflussjahres 2026 (W und, falls angeboten, Q) | **Rohdaten, ungeprüft**; die REST-Schnittstelle hält nach Kenntnisstand nur ein rollierendes Fenster von etwa 30 Tagen vor (Frage 2) |
+| 2 | **GRDC** (Global Runoff Data Centre, BfG Koblenz), Tageswerte Kaub, Lobith, Köln | historische Q-Tagesreihen, falls Rang 1 keine freien Tageswerte liefert | nach Kenntnisstand Weitergabe der Rohdaten lizenzrechtlich eingeschränkt; Rohdaten nur lokal, Prüfsummen eingecheckt (Abschnitt 9; Abschnitt 13, Entscheidung 7) |
+| 3 | **WSV / PEGELONLINE** (pegelonline.wsv.de) | Werte des Abflussjahres 2026 (W und, falls angeboten, Q) | **Rohdaten, ungeprüft**; die REST-Schnittstelle hält nach Kenntnisstand nur ein rollierendes Fenster von etwa 30 Tagen vor. Quelle für 2026 sind die verblindete Sicherung vom 19.10.2026 und der zweite Abruf Anfang November 2026, spätestens am 14.11.2026 (Anfragezeitraum ab 12.10.2026 zur Abdeckung von 19.10.–31.10.2026) (beide Abschnitt 3.1a). Tagesmittelbildung nach Abschnitt 3.1b |
 | 4 | **WSV/BfG auf Anfrage** | vollständige Q-Tageswerte Kaub 01.11.2025–31.10.2026 (vorläufig) | falls Rang 3 das Abflussjahr 2026 nicht vollständig abdeckt |
 | 5 | **Rijkswaterstaat Waterinfo** (waterinfo.rws.nl), Pegel Lobith | Q-Tageswerte Lobith historisch und 2026 | Primärquelle für Lobith |
 | — | Copernicus-Bulletin, Medienberichte | nur D0 (Verifikation des Anlasses) | keine Datenquelle für E1/E2 |
@@ -253,18 +322,156 @@ Plausibilisierung von E1/E2. Bietet OWID entgegen dieser Einschätzung
 pegelbezogene Abflussdaten an, gilt das als dokumentierter Hinweis an Daniel
 und nicht als Änderung dieses SAP.
 
+### 3.1a Verblindete PEGELONLINE-Sicherung (2026-Quelle für Rang 3)
+
+Diese Sicherung ist die 2026-Quelle für PEGELONLINE (Rang 3). Sie wurde vor
+dem Einfrieren durchgeführt, um den Datenverlust durch das rollierende
+Fenster der Schnittstelle zu vermeiden (Abschnitt 13, Entscheidung 2).
+
+- **Abruf:** 2026-10-19, 08:16:33 UTC, durch die Top-Level-Session (nicht
+  durch den analyst-Subagenten).
+- **Umfang:** Stationen Kaub, Köln und Emmerich, jeweils Abfluss Q und
+  Wasserstand W (Rohdaten, ungeprüft). Anfragezeitraum ab 2026-08-01. Welcher
+  Zeitraum tatsächlich geliefert wurde, wird erst nach dem Einfrieren im
+  Struktur-Check S5 festgestellt.
+- **Ablage:** `Analysen/2026-10-rhein-niedrigwasser/rohdaten/pegelonline_blind/`
+  mit `SICHERUNGSPROTOKOLL.md` und `SHA256SUMS.txt`; Commits 3590de4 und
+  d4ed117.
+- **Verblindung:** Die Dateien wurden laut Auftrag nicht geöffnet. Bis zum
+  Einfrieren dürfen sie weder geöffnet noch geplottet noch ausgewertet werden
+  (siehe Abschnitt 0).
+- **Prüfsummenverifikation (verbindlich vor jeder Nutzung):** Vor jeder
+  Nutzung von Dateien eines Abrufs wird die **gesamte Dateisammlung dieses
+  Abrufs** gegen dessen `SHA256SUMS.txt` verifiziert, nicht nur die zu
+  öffnende Datei (Abschnitt 13, Rückfragen v0.3, Frage 5). Das Ergebnis wird
+  im Struktur-Check S1 dokumentiert.
+  **Schlägt die Verifikation fehl** (abweichende Prüfsumme bei mindestens
+  einer Datei der Sammlung, eine in `SHA256SUMS.txt` gelistete Datei fehlt,
+  oder für eine zu nutzende Datei gibt es keinen Eintrag in
+  `SHA256SUMS.txt`), wird die Analyse **abgebrochen und an Daniel Saure
+  eskaliert**. Es gibt **keinen automatischen Ausweichpfad**: Es wird weder
+  auf Rang 4, auf einen erneuten PEGELONLINE-Abruf noch auf Plan B, C oder D
+  gewechselt, und die betroffene Datei wird weder geöffnet noch ersetzt. Über
+  das weitere Vorgehen entscheidet Daniel Saure (Abschnitt 13, Rückfragen
+  v0.2, Frage 2). Die Regel gilt für die erste Sicherung und für den zweiten
+  Abruf (unten) gleichermaßen.
+- **Emmerich:** Emmerich wurde zusätzlich gesichert, weil Lobith keine
+  PEGELONLINE-Station ist. Die Emmerich-Sicherung **bleibt ungenutzt**. Sie
+  ist **kein Ersatz für Lobith** (S1a und Plan C beziehen Lobith
+  ausschließlich aus Rijkswaterstaat Waterinfo, Rang 5) und **keine
+  Sensitivitätsanalyse**. Ihre Dateien werden nicht ausgewertet (Abschnitt
+  13, Rückfragen v0.2, Frage 3).
+- **Stationsangabe:** PEGELONLINE nennt für Kaub Rhein-km 546,23.
+
+**Zweiter PEGELONLINE-Abruf (Abdeckung 19.10.–31.10.2026, Anfragezeitraum ab
+12.10.2026)** (Abschnitt 13, Rückfragen v0.2, Frage 1, und Rückfragen v0.3,
+Fragen 1 bis 4):
+
+Die erste Sicherung endet mit ihrem Abrufzeitpunkt (19.10.2026, 08:16:33 UTC).
+Die restlichen Tage des Abflussjahres 2026 werden durch einen zweiten Abruf
+gesichert.
+
+- **Durchführung:** durch die Top-Level-Session (nicht durch den
+  analyst-Subagenten), wie bei der ersten Sicherung. Die durchführende Stelle
+  wird im `SICHERUNGSPROTOKOLL.md` des zweiten Abrufs vermerkt (Rückfragen
+  v0.3, Frage 2).
+- **Zeitpunkt:** Anfang November 2026, und zwar erst **nach dem Ende des
+  Abflussjahres 2026** (also nach dem 31.10.2026), damit der Zeitraum bis
+  einschließlich 31.10.2026 abgedeckt werden kann. **Spätester
+  Abrufzeitpunkt ist der 14.11.2026.** Das lässt Puffer zum nicht exakt
+  bekannten rollierenden Fenster der Schnittstelle. Erfolgt bis zum
+  14.11.2026 kein Abruf, greift **Rang 4 (WSV/BfG-Anfrage)** für die
+  fehlenden Tage, nach den Regeln in 3.1 und 3.2 (Rückfragen v0.3, Frage 4).
+- **Anfragezeitraum:** 12.10.2026 bis einschließlich 31.10.2026. Der
+  Anfragezeitraum beginnt bewusst vor dem Ende der ersten Sicherung. Daraus
+  ergibt sich eine Überlappung von etwa 7 Tagen (12.10.2026 bis zum
+  Abrufzeitpunkt der ersten Sicherung) für die Überlappungsprüfung (unten;
+  Rückfragen v0.3, Frage 3).
+- **Umfang:** Pegel Kaub, Abfluss Q (Analysegröße) und Wasserstand W (nur zur
+  Dokumentation, keine Verwendung in E1, D1 oder E2). Außerdem die im SAP
+  vorgesehenen Sensitivitätspegel, soweit sie PEGELONLINE-Stationen sind; das
+  ist Köln (S1b), im selben Umfang wie Kaub: Q wird ausgewertet, W nur zur
+  Dokumentation (Rückfragen v0.3, Frage 1).
+  Lobith (S1a) ist keine PEGELONLINE-Station und wird weiterhin aus
+  Rijkswaterstaat Waterinfo (Rang 5) bezogen. Emmerich wird nicht abgerufen
+  (siehe oben).
+- **Dokumentation wie bei der ersten Sicherung:** Abrufzeitpunkt (UTC),
+  durchführende Stelle, SHA-256-Prüfsumme jeder Datei in einer eigenen
+  `SHA256SUMS.txt`, eigenes `SICHERUNGSPROTOKOLL.md`, Ablage in einem eigenen,
+  von `pegelonline_blind/` getrennten Unterordner unter
+  `Analysen/2026-10-rhein-niedrigwasser/rohdaten/`, Commit-Hash.
+- **Verblindung:** Ist der SAP zum Abrufzeitpunkt noch nicht eingefroren,
+  gelten für die Dateien des zweiten Abrufs dieselben Verblindungsregeln wie
+  für die erste Sicherung.
+- **Prüfsummenverifikation:** wie bei der ersten Sicherung (gesamte
+  Dateisammlung des zweiten Abrufs gegen dessen eigene `SHA256SUMS.txt`, vor
+  jeder Nutzung), einschließlich Abbruch und Eskalation bei Fehlschlag.
+- **Überlappungsprüfung:** Zeitpunkte (Zeitstempel der Rohwerte), die in
+  beiden Abrufen enthalten sind, werden je Pegel und Größe (Q, W) auf
+  Übereinstimmung geprüft. Als Abweichung gilt jeder nicht identische Wert am
+  selben Zeitstempel. Berichtet werden die Anzahl überlappender Zeitpunkte,
+  die Anzahl abweichender Zeitpunkte und die maximale absolute und relative
+  Abweichung. **Bei Abweichungen hat die erste Sicherung Vorrang** (in v0.4
+  unverändert bestätigt, Rückfragen v0.3, Frage 3). Werte des
+  zweiten Abrufs werden nur für Zeitpunkte verwendet, die in der ersten
+  Sicherung nicht enthalten sind. Abweichungen werden im Struktur-Check S5
+  und im Ergebnisbericht berichtet. Sie lösen keinen Quellen- oder
+  Planwechsel aus. Diese Vorrangregel betrifft zwei Abrufe derselben Quelle
+  (Rang 3) und berührt die Rangfolge-Vorrangregel in 3.1 nicht.
+- **Unvollständige Abdeckung:** Deckt der zweite Abruf den Zeitraum
+  19.10.–31.10.2026 nicht vollständig ab (etwa weil Werte bereits aus dem
+  rollierenden Fenster gefallen sind oder der Abruf scheitert; Nachweis nach
+  der Dokumentationsanforderung in 3.3), oder erfolgt bis zum 14.11.2026 kein
+  Abruf, bleibt **Rang 4 (WSV/BfG-Anfrage)** der Fallback für die fehlenden
+  Tage, nach den Regeln in 3.1 und 3.2.
+
+### 3.1b Tagesmittelbildung aus PEGELONLINE-Rohdaten (15-Minuten-Werte)
+
+PEGELONLINE liefert Rohwerte im 15-Minuten-Raster. Für die Bildung der
+Tagesmittel Q(t) des Abflussjahres 2026 aus beiden PEGELONLINE-Abrufen (3.1a)
+gilt verbindlich (Abschnitt 13, Rückfragen v0.3, Frage 6). Die Regel gilt für
+Kaub und Köln; W wird nur dokumentiert und nicht ausgewertet.
+
+- **Zusammenführung:** Vor der Tagesmittelbildung werden die Rohwerte beider
+  Abrufe nach der Vorrangregel der Überlappungsprüfung (3.1a) zu einer
+  Zeitreihe je Pegel zusammengeführt.
+- **Tagesgrenze:** Ein Tag umfasst die Rohwerte mit Zeitstempel im
+  halboffenen Intervall **[00:00, 24:00) MEZ** (UTC+1, ganzjährig, ohne
+  Sommerzeit), angelehnt an die DGJ-Konvention. Bei 15-Minuten-Raster sind
+  das die Zeitstempel 00:00 bis 23:45 MEZ mit **96 erwarteten Werten**. Ein
+  Wert mit Zeitstempel genau 00:00 MEZ gehört zum **beginnenden** Tag
+  (Abschnitt 13, Rückfrage v0.4). Zeitstempel in anderen Zeitzonen (z. B.
+  MESZ oder UTC aus der API) werden vor der Tageszuordnung nach MEZ (UTC+1)
+  umgerechnet.
+- **Tagesmittel:** arithmetisches Mittel aller Werte eines Tages.
+- **Gültigkeit eines Tages:** Ein Tag gilt als gültig, wenn mindestens 90 %
+  der erwarteten Werte vorliegen, also mindestens 87 von 96. Sonst ist der Tag
+  **fehlend**, und es gelten die Regeln für fehlende Tage (2.1: 7-Tage-Fenster
+  nur bei sieben vorhandenen Tageswerten; Abschnitt 4: Gültigkeitsregel,
+  Gültigkeit 2026, keine Imputation oder Interpolation).
+- **Prüfung der DGJ-Konvention:** Ob das DGJ tatsächlich MEZ als Tagesgrenze
+  verwendet, wird im Struktur-Check S2 geprüft. Bei Abweichung gilt die
+  DGJ-Konvention, und das wird als dokumentierte Abweichung berichtet
+  (SAP-Amendment-Log des Analyseskripts und Ergebnisbericht). Die
+  Gültigkeitsregel (mindestens 87 von 96 Werten) bleibt davon unberührt.
+
 ### 3.2 Datenpläne und vorab festgelegte Fallback-Regeln
 
 Die Wahl des Plans richtet sich **ausschließlich nach der Datenverfügbarkeit**,
 nicht nach Werten. Sie wird vor jeder Berechnung eines Kennwerts
 dokumentiert.
 
+**Frist F = 6 Wochen ab Einfrieren** (bestätigt durch Daniel Saure am
+19.10.2026, Abschnitt 13, Entscheidung 4).
+
 - **Plan A (primär):** Q-Tagesreihe Kaub über die gesamte verfügbare Messreihe
   (Rang 1, sonst Rang 2) und vollständige Q-Tageswerte für das Abflussjahr 2026
-  (Rang 3, ergänzt durch Rang 4). Primärkennwert: NM7Q.
+  (Rang 3, d. h. beide PEGELONLINE-Abrufe laut 3.1a, ergänzt durch Rang 4).
+  Primärkennwert: NM7Q.
 - **Plan B (Fallback 1, keine freie lange Tagesreihe):** Ist für Kaub weder
   über DGJ/BfG noch über GRDC eine Q-Tagesreihe frei oder auf Anfrage
-  innerhalb der Frist F (Frage 4) verfügbar, wird die **jährliche NQ-Reihe**
+  innerhalb der Frist F (6 Wochen ab Einfrieren) verfügbar, wird die
+  **jährliche NQ-Reihe**
   (niedrigster Tagesmittelabfluss je Abflussjahr) aus dem DGJ als historische
   Referenzreihe verwendet. Der Primärkennwert wechselt dann für E1, D1 und E2
   von NM7Q auf **NQ**. Alle Regeln aus Abschnitt 2 gelten mit NQ statt NM7Q.
@@ -282,7 +489,8 @@ dokumentiert.
   (Rijkswaterstaat Waterinfo)** zum Primärpegel für E1 und D1, mit identischen
   Regeln. E2 bleibt für Kaub auf der historischen Reihe ohne 2026 bestehen,
   weil es 2026 primär ohnehin nicht enthält. Der Pegelwechsel wird im
-  Ergebnisbericht ausdrücklich benannt.
+  Ergebnisbericht ausdrücklich benannt. Bestätigt durch Daniel Saure am
+  19.10.2026 (Abschnitt 13, Entscheidung 8).
 - **Plan D (keine der Varianten möglich):** Die Analyse wird nicht gerechnet.
   Es wird an Daniel eskaliert. Es gibt keinen improvisierten Ersatzkennwert.
 
@@ -290,8 +498,16 @@ dokumentiert.
 
 - **S1:** Gewählten Datenplan (A/B/C/D) mit Begründung dokumentieren. Zu jeder
   Quelle URL, Zugriffsdatum und Uhrzeit, Datenstand bzw. Versionsangabe,
-  Dateiname und SHA-256-Prüfsumme der Rohdatei festhalten.
-- **S2:** Jahresdefinition des DGJ verifizieren (Abschnitt 2.1).
+  Dateiname und SHA-256-Prüfsumme der Rohdatei festhalten. Für die
+  verblindete PEGELONLINE-Sicherung und den zweiten PEGELONLINE-Abruf (3.1a):
+  Ergebnis der Prüfsummenverifikation der gesamten Dateisammlung des
+  jeweiligen Abrufs gegen dessen `SHA256SUMS.txt` dokumentieren, bevor eine
+  Datei genutzt wird. Schlägt die Verifikation fehl, wird die Analyse
+  abgebrochen und an Daniel Saure eskaliert; es gibt keinen automatischen
+  Ausweichpfad (3.1a).
+- **S2:** Jahresdefinition des DGJ verifizieren (Abschnitt 2.1). Außerdem
+  prüfen, ob das DGJ MEZ als Tagesgrenze der Tagesmittel verwendet; bei
+  Abweichung gilt die DGJ-Konvention als dokumentierte Abweichung (3.1b).
 - **S3:** Beginn der Q-Tagesreihe Kaub sowie Pegelgeschichte laut Stammblatt
   dokumentieren: Pegelnullpunkt-Änderungen, Standortverlegungen, Wechsel der
   Abflussermittlung (z. B. Flügelmessung → ADCP, Einführung neuer
@@ -299,9 +515,15 @@ dokumentiert.
   S3c (Abschnitt 6).
 - **S4:** Vorliegende Angaben zur Messunsicherheit von Q bei Niedrigwasser
   dokumentieren (für δ in D1).
-- **S5:** Für 2026 dokumentieren: Herkunft (PEGELONLINE/Anfrage), Prüfstatus
+- **S5:** Für 2026 dokumentieren: Herkunft (PEGELONLINE-Sicherung vom
+  19.10.2026 und zweiter PEGELONLINE-Abruf Anfang November 2026, spätestens
+  14.11.2026, mit Anfragezeitraum ab 12.10.2026 laut 3.1a / Anfrage),
+  durchführende Stelle beider Abrufe, Prüfstatus
   („Rohdaten, ungeprüft“ bzw. „vorläufig“), abgedeckter Zeitraum, Anzahl
-  fehlender Tage, Zeitstempel des Abrufs. Außerdem, ob die Primärquelle für
+  fehlender Tage (einschließlich der nach 3.1b ungültigen Tage), Zeitstempel
+  beider Abrufe sowie das Ergebnis der
+  Überlappungsprüfung zwischen beiden Abrufen (3.1a). Außerdem, ob die
+  Primärquelle für
   2026 eine neue oder geänderte Abflusskurve verwendet und ob der Wasserstand
   2026 unterhalb des niedrigsten W liegt, für den die Abflusskurve durch
   Messungen gestützt ist. Letzteres ist eine Qualitätsangabe der Quelle und
@@ -327,7 +549,9 @@ HTTP-Status oder Fehlermeldung) zulässig. Andernfalls ist zu schreiben:
 - **Vorab festgelegter Nachtrag:** Sobald das DGJ geprüfte Werte für das
   Abflussjahr 2026 veröffentlicht, wird die Analyse **unverändert nach diesem
   SAP** wiederholt und als Nachtrag mit Gegenüberstellung vorläufig/geprüft
-  dokumentiert. Die Erstauswertung wird dabei nicht ersetzt.
+  dokumentiert. Die Erstauswertung wird dabei nicht ersetzt. Der Nachtrag wird
+  in der Redaktionspipeline als eigenes Update geführt (Abschnitt 13,
+  Entscheidung 10).
 
 - Zugriffsdatum: [wird vom analyst-Subagenten beim Datenzugriff eingetragen]
 - Datenstand laut Quelle: [wird beim Datenzugriff dokumentiert]
@@ -353,7 +577,9 @@ HTTP-Status oder Fehlermeldung) zulässig. Andernfalls ist zu schreiben:
   möglicherweise überschätzt“ gekennzeichnet. Eine Lücke kann den wahren
   Tiefstwert verdecken.
 - **Fehlende Werte:** keine Imputation, keine Interpolation in der
-  Primäranalyse.
+  Primäranalyse. Ein aus PEGELONLINE-Rohdaten gebildeter Tag, der die
+  Gültigkeitsregel für Tage in 3.1b (mindestens 87 von 96 Werten) nicht
+  erfüllt, gilt als fehlender Tag.
 - **Keine inhaltlich motivierten Jahresausschlüsse.** Bekannte Extremjahre
   bleiben in H. Ihr Einfluss wird über die Diagnostik in 5.2 sichtbar gemacht.
 - **Mindestumfang:** E1 erfordert n ≥ 30 gültige Jahre in H, E2 erfordert
@@ -491,9 +717,9 @@ anders genannt, gelten die Regeln aus Abschnitt 2 bis 5 unverändert.
 |---|---|---|
 | **S1a** | Pegel Lobith (Rijkswaterstaat Waterinfo) | E1, D1, E2 |
 | **S1b** | Pegel Köln (DGJ/GRDC) | E1, D1, E2 |
-| **S2a** | Kalenderjahr statt Abflussjahr (2026 = 01.01.–31.12.2026; Auswertung erst nach Vorliegen der Daten bis 31.12.2026, als vorab festgelegter Nachtrag) | E1, D1, E2 |
-| **S2b** | Niedrigwasserjahr 01.04.–31.03. (2026 = 01.04.2026–31.03.2027; Nachtrag nach 31.03.2027) | E1, D1, E2 |
-| **S3a** | Teilzeitraum ab Abflussjahr 1978 bis 2025 (erstes volles Jahr nach Inbetriebnahme der letzten Oberrhein-Staustufe Iffezheim 1977; zugleich nach Abschluss der 2. Juragewässerkorrektion; Jahreszahlen im Struktur-Check zu verifizieren, maßgeblich ist die Regel „erstes Abflussjahr nach Inbetriebnahme Iffezheim“) | E1, D1, E2 |
+| **S2a** | Kalenderjahr statt Abflussjahr (2026 = 01.01.–31.12.2026; Auswertung erst nach Vorliegen der Daten bis 31.12.2026, als vorab festgelegter Nachtrag; in der Redaktionspipeline als eigenes Update geführt, Abschnitt 13, Entscheidung 10) | E1, D1, E2 |
+| **S2b** | Niedrigwasserjahr 01.04.–31.03. (2026 = 01.04.2026–31.03.2027; Nachtrag nach 31.03.2027; in der Redaktionspipeline als eigenes Update geführt, Abschnitt 13, Entscheidung 10) | E1, D1, E2 |
+| **S3a** | Teilzeitraum ab Abflussjahr 1978 bis 2025 (erstes volles Jahr nach Inbetriebnahme der letzten Oberrhein-Staustufe Iffezheim 1977; zugleich nach Abschluss der 2. Juragewässerkorrektion; Jahreszahlen im Struktur-Check zu verifizieren, maßgeblich ist die Regel „erstes Abflussjahr nach Inbetriebnahme Iffezheim“; bestätigt durch Daniel Saure am 19.10.2026, Abschnitt 13, Entscheidung 6) | E1, D1, E2 |
 | **S3b** | die letzten 30 Abflussjahre (1996–2025) | E1, D1, E2 |
 | **S3c** | Bruchfenster: Jahre ab dem ersten Abflussjahr nach einem im Struktur-Check (S3) **dokumentierten** Bruch der Messung oder Abflussermittlung. Wird nur aktiviert, wenn ein solcher Bruch belegt ist. Bei mehreren Brüchen gilt der späteste, sofern danach n ≥ 30 bleibt, sonst der späteste mit n ≥ 30 | E1, D1, E2 |
 | **S4** | GEV-Verteilung für Minima (angepasst an −NM7Q mit L-Momenten nach Hosking): untere 2,5 %-Prognosegrenze (parametrischer Bootstrap) und Jährlichkeit von NM7Q₂₀₂₆ | E1 |
@@ -512,8 +738,8 @@ anders genannt, gelten die Regeln aus Abschnitt 2 bis 5 unverändert.
 | **S12** | Halbjahre getrennt: NM7Q im Winterhalbjahr (Nov–Apr) und im Sommerhalbjahr (Mai–Okt) des Abflussjahres. Begründung: Alpine Speicherbewirtschaftung verlagert Abfluss vom Sommer in den Winter, sodass die Halbjahre unterschiedlich beeinflusst sein können | E1, D1, E2 |
 
 Die Sensitivitätsanalysen werden **nicht kombiniert** (keine Kreuzprodukte wie
-„Lobith × Kalenderjahr × NQ“), es sei denn, Daniel legt das vor dem
-Einfrieren ausdrücklich fest.
+„Lobith × Kalenderjahr × NQ“). Bestätigt durch Daniel Saure am 19.10.2026
+(Abschnitt 13, Entscheidung 9).
 
 ## 7. Umgang mit Mehrfachtestung / Multiplizität
 
@@ -646,8 +872,11 @@ unabhängig vom Ergebnis immer genannt.
 - **Vorläufige Werte 2026** (3.4, 8.5).
 - **Pegel sind nicht austauschbar** (verschiedene Einzugsgebiete, 4).
 - **Datenlizenz:** GRDC-Rohdaten dürfen nach Kenntnisstand nicht frei
-  weitergegeben werden. Weil das Repository öffentlich ist, werden solche
-  Rohdaten ggf. nicht eingecheckt (Frage 7).
+  weitergegeben werden. Weil das Repository öffentlich ist, liegen
+  GRDC-Rohdaten (falls benötigt) nur lokal und werden per `.gitignore` vom
+  Repository ausgeschlossen. Eingecheckt werden nur ihre SHA-256-Prüfsummen,
+  veröffentlicht werden nur abgeleitete Jahreskennwerte (bestätigt durch
+  Daniel Saure am 19.10.2026, Abschnitt 13, Entscheidung 7).
 - **Ausgelöst durch ein Extremereignis** (8.4).
 - **Keine Ursachenanalyse** (Abschnitt 12).
 
@@ -726,45 +955,231 @@ unabhängig vom Ergebnis immer genannt.
 Wird für eine Veröffentlichung eine dieser Fragen benötigt, ist sie als neue
 Evidenzcheck-Idee in den Backlog aufzunehmen und nicht nebenbei zu rechnen.
 
-## 13. Offene Fragen vor dem Einfrieren
+## 13. Entscheidungen vor dem Einfrieren (beantwortet 19.10.2026)
 
-1. **Präregistrierungsstatus:** Der Auftrag enthielt Medienangaben zu
-   Wasserständen (−6 cm am 01.10.2026; Vorrekord 24–25 cm von 2018) sowie den
-   Hinweis auf „Rekord-Niedrigabflüsse“ (Copernicus). Der sap-autor wertet das
-   als zu prüfende Behauptung und nicht als Analyseergebnis (Abschnitt 0).
-   Teilst Du diese Einschätzung, oder soll der SAP als „exploratory
-   (retrospektiv)“ geführt werden?
-2. **Dringend, Datensicherung 2026:** PEGELONLINE hält nach Kenntnisstand nur
-   etwa 30 Tage Rohdaten vor. Werte um den 01.10.2026 könnten daher Anfang
-   November aus der Schnittstelle fallen, also möglicherweise vor dem
-   Einfrieren. Soll vor dem Einfrieren eine **verblindete Sicherung** erlaubt
-   sein? Gemeint ist: Download in `rohdaten/`, nur SHA-256-Prüfsumme und
-   Zeitstempel protokollieren, Dateien weder öffnen noch plotten noch
-   auswerten. Oder soll stattdessen sofort eine Datenanfrage an WSV/BfG
-   gestellt werden? Der sap-autor trifft diese Entscheidung nicht.
-3. **Jahresdefinition:** Ist das Abflussjahr 01.11.–31.10. (DGJ) als primäre
-   Jahresdefinition in Ordnung, mit Kalenderjahr und April–März als
-   Sensitivitäten und Nachträgen? Ist Dir eine abweichende aktuelle
-   DGJ-Konvention bekannt?
-4. **Frist F für Plan B/C:** Wie lange soll auf Datenanfragen (BfG, WSV,
-   GRDC) gewartet werden, bevor der Fallback ausgelöst wird? Vorschlag zur
-   Entscheidung: 6 Wochen ab Einfrieren. Das ist keine Festlegung des
-   sap-autors.
-5. **Messunsicherheit δ:** Ist δ = 5 % als Vorgabe für die Rekordkategorien
-   akzeptabel, falls BfG/WSV keine dokumentierte Unsicherheit für
-   Niedrigwasser liefern? Oder soll ein anderer Wert gelten?
-6. **Teilzeitraum S3a:** Ist „ab Abflussjahr 1978 (nach Iffezheim)“ als
-   Homogenitäts-Teilzeitraum fachlich sinnvoll, oder gibt es eine bessere,
-   vorab begründbare Grenze (z. B. eine bekannte Umstellung der
-   Abflussermittlung in Kaub)?
-7. **Datenlizenz und öffentliches Repo:** Sollen GRDC-Rohdaten (falls nötig)
-   nur lokal liegen, mit Eintrag in `.gitignore` und eingecheckten
-   Prüfsummen, und nur abgeleitete Jahreskennwerte veröffentlicht werden?
-8. **Plan C (Pegelwechsel auf Lobith):** Bist Du einverstanden, dass ohne
-   amtliche Q-Werte 2026 für Kaub auf Lobith als Primärpegel gewechselt wird,
-   statt eine eigene W-Q-Umrechnung vorzunehmen?
-9. **Kombinierte Sensitivitäten:** Bestätigst Du, dass keine Kreuzprodukte
-   der Sensitivitätsanalysen gerechnet werden (Abschnitt 6)?
-10. **Nachträge S2a/S2b und geprüfte DGJ-Werte:** Sollen diese Nachträge in
-    der Redaktionspipeline als eigene Updates geführt werden, oder nur im
-    Analyseordner dokumentiert?
+Die Antworten stammen von Daniel Saure (19.10.2026) und sind im Wortlaut aus
+dem Chat übernommen. Die Beantwortung einzelner Fragen ist **keine Freigabe**
+des SAP; das Einfrieren erfolgt gesondert (Kopfzeile).
+
+1. **Präregistrierungsstatus**
+   - *Frage:* Der Auftrag enthielt Medienangaben zu Wasserständen (−6 cm am
+     01.10.2026; Vorrekord 24–25 cm von 2018) sowie den Hinweis auf
+     „Rekord-Niedrigabflüsse“ (Copernicus). Der sap-autor wertet das als zu
+     prüfende Behauptung und nicht als Analyseergebnis (Abschnitt 0). Teilst
+     Du diese Einschätzung, oder soll der SAP als „exploratory
+     (retrospektiv)“ geführt werden?
+   - *Antwort:* „Teile die Einschätzung“
+   - *Konsequenz:* Status bleibt präregistriert; Abschnitt 0 als bestätigt
+     gekennzeichnet.
+2. **Datensicherung 2026**
+   - *Frage:* PEGELONLINE hält nach Kenntnisstand nur etwa 30 Tage Rohdaten
+     vor. Soll vor dem Einfrieren eine verblindete Sicherung erlaubt sein
+     (Download, nur SHA-256-Prüfsumme und Zeitstempel protokollieren, Dateien
+     weder öffnen noch plotten noch auswerten), oder soll stattdessen sofort
+     eine Datenanfrage an WSV/BfG gestellt werden?
+   - *Antwort:* „verblindete Sicherung“
+   - *Konsequenz:* Die Sicherung ist bereits durchgeführt (Abruf 2026-10-19,
+     08:16:33 UTC, durch die Top-Level-Session; Kaub, Köln, Emmerich, je Q
+     und W; Anfrage ab 2026-08-01; `rohdaten/pegelonline_blind/` mit
+     `SICHERUNGSPROTOKOLL.md` und `SHA256SUMS.txt`; Commits 3590de4 und
+     d4ed117; Dateien nicht geöffnet). Sie ist die 2026-Quelle für
+     PEGELONLINE; Prüfsummen werden vor der Nutzung verifiziert (3.1, 3.1a,
+     3.3 S1/S5). Emmerich ist notiert, seine Verwendung nicht festgelegt (in
+     v0.3 festgelegt: bleibt ungenutzt; siehe Rückfragen v0.2, Frage 3).
+     PEGELONLINE nennt für Kaub km 546,23 (2.1, 3.1a).
+3. **Jahresdefinition**
+   - *Frage:* Ist das Abflussjahr 01.11.–31.10. (DGJ) als primäre
+     Jahresdefinition in Ordnung, mit Kalenderjahr und April–März als
+     Sensitivitäten und Nachträgen? Ist Dir eine abweichende aktuelle
+     DGJ-Konvention bekannt?
+   - *Antwort:* „ja“
+   - *Konsequenz:* Abflussjahr 01.11.–31.10. bestätigt; eine abweichende
+     DGJ-Konvention ist nicht bekannt (2.1). Die Verifikation am Stammblatt
+     im Struktur-Check S2 bleibt bestehen.
+4. **Frist F für Plan B/C**
+   - *Frage:* Wie lange soll auf Datenanfragen (BfG, WSV, GRDC) gewartet
+     werden, bevor der Fallback ausgelöst wird? Vorschlag: 6 Wochen ab
+     Einfrieren.
+   - *Antwort:* „ok“
+   - *Konsequenz:* F = 6 Wochen ab Einfrieren (3.2).
+5. **Messunsicherheit δ**
+   - *Frage:* Ist δ = 5 % als Vorgabe für die Rekordkategorien akzeptabel,
+     falls BfG/WSV keine dokumentierte Unsicherheit für Niedrigwasser
+     liefern?
+   - *Antwort:* „5% ok“
+   - *Konsequenz:* δ = 5 % als Vorgabe, sofern die Primärquelle keine
+     Unsicherheit dokumentiert (2.3).
+6. **Teilzeitraum S3a**
+   - *Frage:* Ist „ab Abflussjahr 1978 (nach Iffezheim)“ als
+     Homogenitäts-Teilzeitraum fachlich sinnvoll, oder gibt es eine bessere,
+     vorab begründbare Grenze?
+   - *Antwort:* „ok“
+   - *Konsequenz:* S3a ab Abflussjahr 1978 bestätigt (6).
+7. **Datenlizenz und öffentliches Repo**
+   - *Frage:* Sollen GRDC-Rohdaten (falls nötig) nur lokal liegen, mit
+     Eintrag in `.gitignore` und eingecheckten Prüfsummen, und nur
+     abgeleitete Jahreskennwerte veröffentlicht werden?
+   - *Antwort:* „ja“
+   - *Konsequenz:* So festgelegt (3.1, 9).
+8. **Plan C (Pegelwechsel auf Lobith)**
+   - *Frage:* Bist Du einverstanden, dass ohne amtliche Q-Werte 2026 für Kaub
+     auf Lobith als Primärpegel gewechselt wird, statt eine eigene
+     W-Q-Umrechnung vorzunehmen?
+   - *Antwort:* „ja“
+   - *Konsequenz:* Plan C bestätigt (3.2).
+9. **Kombinierte Sensitivitäten**
+   - *Frage:* Bestätigst Du, dass keine Kreuzprodukte der
+     Sensitivitätsanalysen gerechnet werden (Abschnitt 6)?
+   - *Antwort:* „ja“
+   - *Konsequenz:* Keine kombinierten Sensitivitäten; Vorbehaltsklausel in
+     Abschnitt 6 entfernt.
+10. **Nachträge S2a/S2b und geprüfte DGJ-Werte**
+    - *Frage:* Sollen diese Nachträge in der Redaktionspipeline als eigene
+      Updates geführt werden, oder nur im Analyseordner dokumentiert?
+    - *Antwort:* „ersteres“
+    - *Konsequenz:* Die Nachträge werden in der Redaktionspipeline als eigene
+      Updates geführt (3.4, 6).
+
+### Rückfragen v0.2 (beantwortet 19.10.2026)
+
+Diese drei Rückfragen stellte der sap-autor nach Abschluss von v0.2 im Chat.
+Sie standen nicht im Dokumenttext von v0.2 und sind hier **sinngemäß**
+wiedergegeben. Daniel Saure hat sie am 19.10.2026 gemeinsam beantwortet. Seine
+Antwort lautet im Wortlaut:
+
+> „Ja: 1. zweiter PEGELONLINE-Abruf Anfang November für 19.–31.10.; 2. bei
+> Prüfsummenfehler abbrechen und an mich eskalieren; 3. Emmerich bleibt
+> ungenutzt.“
+
+Die Beantwortung dieser Rückfragen ist **keine Freigabe** des SAP; das
+Einfrieren erfolgt gesondert (Kopfzeile).
+
+1. **Abdeckung 19.10.–31.10.2026**
+   - *Frage (sinngemäß):* Die verblindete Sicherung endet am 19.10.2026, das
+     Abflussjahr 2026 erst am 31.10.2026, und PEGELONLINE hält nur etwa 30
+     Tage vor. Wie sollen die restlichen Tage gesichert werden: durch einen
+     zweiten PEGELONLINE-Abruf nach Ende des Abflussjahres oder über eine
+     Anfrage bei WSV/BfG (Rang 4)?
+   - *Antwort (Wortlaut, Teil 1):* „zweiter PEGELONLINE-Abruf Anfang November
+     für 19.–31.10.“
+   - *Konsequenz:* Zweiter Abruf Anfang November 2026, erst nach dem Ende des
+     Abflussjahres, für Kaub (Q; W nur zur Dokumentation) und Köln (S1b),
+     dokumentiert wie die erste Sicherung. Überlappende Zeitpunkte werden
+     auf Übereinstimmung geprüft; Abweichungen werden berichtet, die erste
+     Sicherung hat Vorrang. Rang 4 bleibt Fallback bei unvollständiger
+     Abdeckung (3.1, 3.1a, 3.2 Plan A, 3.3 S1/S5). (In v0.4 präzisiert:
+     Anfragezeitraum ab 12.10.2026, spätester Abrufzeitpunkt 14.11.2026,
+     Durchführung durch die Top-Level-Session; siehe Rückfragen v0.3,
+     Fragen 1 bis 4.)
+2. **Fehlschlag der Prüfsummenkontrolle**
+   - *Frage (sinngemäß):* Was geschieht, wenn die Prüfsummenkontrolle gegen
+     `SHA256SUMS.txt` vor dem Öffnen einer Datei fehlschlägt?
+   - *Antwort (Wortlaut, Teil 2):* „bei Prüfsummenfehler abbrechen und an
+     mich eskalieren“
+   - *Konsequenz:* Abbruch der Analyse und Eskalation an Daniel Saure; kein
+     automatischer Ausweichpfad (kein Wechsel auf Rang 4, kein erneuter
+     Abruf, kein Wechsel auf Plan B/C/D). Gilt für beide
+     PEGELONLINE-Abrufe (3.1a, 3.3 S1). (In v0.4 präzisiert: Geprüft wird
+     vor jeder Nutzung die gesamte Dateisammlung des jeweiligen Abrufs;
+     siehe Rückfragen v0.3, Frage 5.)
+3. **Verwendung der Emmerich-Sicherung**
+   - *Frage (sinngemäß):* Die Emmerich-Daten sind gesichert, ihre Verwendung
+     ist im SAP aber nicht festgelegt. Sollen sie genutzt werden (etwa als
+     Ersatz für Lobith oder als zusätzliche Sensitivität), oder bleiben sie
+     ungenutzt?
+   - *Antwort (Wortlaut, Teil 3):* „Emmerich bleibt ungenutzt“
+   - *Konsequenz:* Die Emmerich-Sicherung bleibt ungenutzt; sie ist weder
+     Ersatz für Lobith noch Sensitivitätsanalyse. Emmerich wird beim zweiten
+     Abruf nicht abgerufen (3.1a).
+
+### Rückfragen v0.3 (beantwortet 19.10.2026)
+
+Diese sechs Rückfragen stellte der sap-autor nach Abschluss von v0.3 im Chat,
+jeweils mit einem Vorschlag. Sie standen nicht im Dokumenttext von v0.3 und
+sind hier **sinngemäß** wiedergegeben. Daniel Saure hat sie am 19.10.2026
+gemeinsam beantwortet. Seine Antwort lautet im Wortlaut:
+
+> „Ja, alle sechs Vorschläge übernehmen und den Kasusfehler korrigieren.“
+
+Der Kasusfehler betraf die Konsequenz zu Rückfragen v0.2, Frage 2 („keinen
+erneuten Abruf, keinen Wechsel …“); er ist in v0.4 zu „kein erneuter Abruf,
+kein Wechsel …“ korrigiert. Die Beantwortung dieser Rückfragen ist **keine
+Freigabe** des SAP; das Einfrieren erfolgt gesondert (Kopfzeile).
+
+1. **Köln beim zweiten Abruf**
+   - *Frage (sinngemäß):* Wird Köln beim zweiten Abruf wie Kaub behandelt?
+     Vorschlag: Q wird ausgewertet, W nur zur Dokumentation.
+   - *Antwort:* Vorschlag übernommen (Wortlaut oben).
+   - *Konsequenz:* Köln: Q wird ausgewertet, W nur zur Dokumentation, wie bei
+     Kaub (3.1a).
+2. **Durchführung des zweiten Abrufs**
+   - *Frage (sinngemäß):* Wer führt den zweiten Abruf durch? Vorschlag: die
+     Top-Level-Session, wie beim ersten Abruf, mit Vermerk im Protokoll.
+   - *Antwort:* Vorschlag übernommen (Wortlaut oben).
+   - *Konsequenz:* Durchführung durch die Top-Level-Session; die
+     durchführende Stelle wird im `SICHERUNGSPROTOKOLL.md` des zweiten Abrufs
+     vermerkt (3.1a, 3.3 S5).
+3. **Überlappung der beiden Abrufe**
+   - *Frage (sinngemäß):* Ab welchem Datum fragt der zweite Abruf ab, damit
+     die Überlappungsprüfung tatsächlich Daten hat? Vorschlag: ab 12.10.2026
+     statt ab 19.10.2026, also etwa 7 Tage Überlappung; Vorrangregel (erste
+     Sicherung hat Vorrang) bleibt.
+   - *Antwort:* Vorschlag übernommen (Wortlaut oben).
+   - *Konsequenz:* Anfragezeitraum 12.10.2026 bis einschließlich 31.10.2026;
+     Überlappung von etwa 7 Tagen; Vorrangregel unverändert (3.1, 3.1a, 3.3
+     S5).
+4. **Spätester Abrufzeitpunkt**
+   - *Frage (sinngemäß):* Bis wann muss der zweite Abruf spätestens erfolgen?
+     Vorschlag: 14.11.2026, als Puffer zum nicht exakt bekannten
+     PEGELONLINE-Fenster; ohne Abruf bis dahin greift Rang 4 für die
+     fehlenden Tage.
+   - *Antwort:* Vorschlag übernommen (Wortlaut oben).
+   - *Konsequenz:* Spätester Abrufzeitpunkt 14.11.2026; erfolgt bis dahin
+     kein Abruf, greift Rang 4 (WSV/BfG-Anfrage) für die fehlenden Tage (3.1,
+     3.1a, 3.3 S5).
+5. **Umfang der Prüfsummenkontrolle**
+   - *Frage (sinngemäß):* Wird nur die jeweils zu öffnende Datei geprüft oder
+     die gesamte Dateisammlung eines Abrufs? Vorschlag: vor jeder Nutzung die
+     gesamte Dateisammlung des jeweiligen Abrufs gegen dessen
+     `SHA256SUMS.txt`; Fehlschlag führt wie bisher zu Abbruch und Eskalation
+     an Daniel Saure.
+   - *Antwort:* Vorschlag übernommen (Wortlaut oben).
+   - *Konsequenz:* Prüfung der gesamten Dateisammlung je Abruf vor jeder
+     Nutzung; Abbruch und Eskalation bei Fehlschlag unverändert (3.1a, 3.3
+     S1).
+6. **Tagesmittel aus PEGELONLINE-Rohdaten**
+   - *Frage (sinngemäß):* Wie werden aus den 15-Minuten-Rohwerten von
+     PEGELONLINE Tagesmittel gebildet? Vorschlag: arithmetisches Mittel aller
+     Werte von 00:00 bis 24:00 MEZ (UTC+1, ganzjährig ohne Sommerzeit),
+     angelehnt an die DGJ-Konvention; Tag gültig bei mindestens 90 % der
+     erwarteten Werte (mindestens 87 von 96), sonst fehlend; Prüfung der
+     DGJ-Tagesgrenze im Struktur-Check, bei Abweichung gilt die
+     DGJ-Konvention als dokumentierte Abweichung.
+   - *Antwort:* Vorschlag übernommen (Wortlaut oben).
+   - *Konsequenz:* Neuer Unterabschnitt 3.1b; Verweise in 2.1 (Q(t)), 3.3
+     (S2, S5) und 4 (fehlende Werte). (In v0.5 präzisiert: Tagesgrenze als
+     halboffenes Intervall [00:00, 24:00) MEZ; siehe Rückfrage v0.4.)
+
+### Rückfrage v0.4 (beantwortet 19.10.2026)
+
+Diese Rückfrage wurde nach Abschluss von v0.4 vom sap-autor-Subagenten in
+seinem Abschlussbericht gestellt und von der Top-Level-Session an Daniel
+Saure weitergegeben. Sie stand nicht im
+Dokumenttext von v0.4 und ist hier **sinngemäß** wiedergegeben. Die
+Beantwortung ist **keine Freigabe** des SAP; das Einfrieren erfolgt gesondert
+(Kopfzeile).
+
+1. **Zuordnung des Mitternachtswerts**
+   - *Frage (sinngemäß):* Die Tagesgrenze „00:00 bis 24:00 MEZ“ in 3.1b lässt
+     offen, zu welchem Tag ein Rohwert mit Zeitstempel genau 00:00 MEZ
+     gehört: zum beginnenden oder zum endenden Tag. Welche Zuordnung gilt?
+   - *Antwort (Daniel Saure, 19.10.2026, Wortlaut):* „Mitternacht: Wert 00:00
+     gehört zum beginnenden Tag (00:00–23:45 MEZ).“
+   - *Konsequenz:* Ein Tag umfasst die Rohwerte mit Zeitstempel im
+     halboffenen Intervall [00:00, 24:00) MEZ, also 00:00 bis 23:45 MEZ bei
+     15-Minuten-Raster mit 96 erwarteten Werten; der Wert mit Zeitstempel
+     00:00 MEZ gehört zum beginnenden Tag. Zeitstempel in anderen Zeitzonen
+     (z. B. MESZ oder UTC aus der API) werden vor der Tageszuordnung nach MEZ
+     (UTC+1) umgerechnet (3.1b). Gültigkeitsregel (mindestens 87 von 96
+     Werten) und Vorrang der DGJ-Konvention bei Abweichung (Struktur-Check
+     S2) bleiben unverändert.
