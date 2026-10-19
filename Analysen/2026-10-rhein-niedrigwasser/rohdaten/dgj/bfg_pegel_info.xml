@@ -1,0 +1,4357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pep-daten SYSTEM "https://www.dgj.de/data/dtd/pep-daten-pegel.dtd <https://www.dgj.de/data/dtd/pep-daten-pegel.dtd> ">
+<pep-daten>
+  <pegel-info>
+    <pegel>
+      <pgnr>9660009</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Aalbude</pgname>
+      <gewaesser>Peene</gewaesser>
+      <betreiber>WSA Ostsee</betreiber>
+      <lat>53,84792681</lat>
+      <lon>12,88804194</lon>
+      <url>http://dgj-daten.bafg.de/Ostsee/Aalbude/960009_W.pdf</url>
+      <pnp>-5,175</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Peene</fge>
+      <gkz>966</gkz>
+      <ezg>-</ezg>
+      <lage>oberhalb der Mündung, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit>-</w_vo_seit>
+      <w_vh_seit>01.11.1997</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit></q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>502010</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+    </pegel>
+    <pegel>
+      <pgnr>42800502</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Affoldern</pgname>
+      <gewaesser>Eder</gewaesser>
+      <betreiber>WSA Weser</betreiber>
+      <lat>51,16419984</lat>
+      <lon>9,0852539</lon>
+      <url>http://dgj-daten.bafg.de/Weser- und Emsgebiet/Affoldern/42800502_Q.pdf</url>
+      <pnp>193,177</pnp>
+      <pnp_bezug>DE_DHHN92_NH_HE</pnp_bezug>
+      <fge>Eder</fge>
+      <gkz>4285510</gkz>
+      <ezg>1452</ezg>
+      <lage>oberhalb der Mündung, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>0</w_vo>
+      <w_vo_seit>-</w_vo_seit>
+      <w_vh_seit>01.11.1939</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit>01.11.1940</q_vo_seit>
+      <q_vh_seit>01.11.1940</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>502010</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Aken</pgname>
+      <gewaesser>Elbe</gewaesser>
+      <betreiber>WSA Elbe</betreiber>
+      <lat>51,85786858</lat>
+      <lon>12,05885489</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Aken/502010_WQ.pdf</url>
+      <pnp>50,217</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Elbe</fge>
+      <gkz>55951</gkz>
+      <ezg>70093</ezg>
+      <lage>unterhalb der Grenze zur CR, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit>01.01.1901</w_vo_seit>
+      <w_vh_seit>01.11.1891</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit>1937</q_vo_seit>
+      <q_vh_seit>01.11.1891</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>41900104</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Allendorf</pgname>
+      <gewaesser>Werra</gewaesser>
+      <betreiber>WSA Weser</betreiber>
+      <lat>51,27678282</lat>
+      <lon>9,966494683</lon>
+      <url>http://dgj-daten.bafg.de/Weser- und Emsgebiet/Allendorf/41900104_WQ.pdf</url>
+      <pnp>143,477</pnp>
+      <pnp_bezug>DE_DHHN92_NH_HE</pnp_bezug>
+      <fge>Weser</fge>
+      <gkz>4193700</gkz>
+      <ezg>5166</ezg>
+      <lage>oberhalb der Mündung, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.01.1971</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit>01.01.1941</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>27100400</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Andernach</pgname>
+      <gewaesser>Rhein</gewaesser>
+      <betreiber>WSA Rhein</betreiber>
+      <lat>50,44338889</lat>
+      <lon>7,392027778</lon>
+      <url>http://dgj-daten.bafg.de/Rhein/Andernach/27100400_WQ.pdf</url>
+      <pnp>51,504</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Rhein</fge>
+      <gkz>2717000</gkz>
+      <ezg>139549</ezg>
+      <lage>unterhalb Rheinbrücke Konstanz, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit>1901</w_vo_seit>
+      <w_vh_seit>01.01.1970</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit>1937</q_vo_seit>
+      <q_vh_seit>01.11.1930</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>9660001</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Anklam</pgname>
+      <gewaesser>Peene</gewaesser>
+      <betreiber>WSA Ostsee</betreiber>
+      <lat>53,86275452</lat>
+      <lon>13,70427795</lon>
+      <url>http://dgj-daten.bafg.de/Ostsee/Anklam/960001_W.pdf</url>
+      <pnp>-5,015</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Peene</fge>
+      <gkz>966</gkz>
+      <ezg>-</ezg>
+      <lage>oberhalb der Mündung, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit>-</w_vo_seit>
+      <w_vh_seit>01.07.1996</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit></q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>502070</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Barby</pgname>
+      <gewaesser>Elbe</gewaesser>
+      <betreiber>WSA Elbe</betreiber>
+      <lat>51,98483386</lat>
+      <lon>11,88224729</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Barby/502070_WQ.pdf</url>
+      <pnp>46,125</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Elbe</fge>
+      <gkz>5719</gkz>
+      <ezg>94060</ezg>
+      <lage>unterhalb der Grenze zur CR, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit>1901</w_vo_seit>
+      <w_vh_seit>01.09.1890</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit>01.11.1889</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>9650030</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Barth</pgname>
+      <gewaesser>Ostsee</gewaesser>
+      <betreiber>WSA Ostsee</betreiber>
+      <lat>54,37122054</lat>
+      <lon>12,72322056</lon>
+      <url>http://dgj-daten.bafg.de/Ostsee/Barth/9650030_W.pdf</url>
+      <pnp>-4,98</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Warnow/Peene</fge>
+      <gkz>965</gkz>
+      <ezg>-</ezg>
+      <lage>oberhalb der Mündung, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit>-</w_vo_seit>
+      <w_vh_seit>01.07.1959</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit></q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>2310010</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Basel Rheinhalle</pgname>
+      <gewaesser>Rhein</gewaesser>
+      <betreiber>Bundesamt für Umwelt Schweiz</betreiber>
+      <lat>47,55944444</lat>
+      <lon>7,616666667</lon>
+      <url>http://dgj-daten.bafg.de/Rhein/Basel Rheinhalle/2310010_Q.pdf</url>
+      <pnp>239,682</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Rhein</fge>
+      <gkz>2319000</gkz>
+      <ezg>35897</ezg>
+      <lage>unterhalb Rheinbrücke Konstanz, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>0</w_vo>
+      <w_vo_seit>-</w_vo_seit>
+      <w_vh_seit>01.01.1974</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit>01.01.1869</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>2310010</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Berlin-Charlottenburg UP</pgname>
+      <gewaesser>Spree-Oder-Wasserstraße</gewaesser>
+      <betreiber>WSA Spree-Havel</betreiber>
+      <lat>52,53004088</lat>
+      <lon>13,28258802</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Berlin Charlottenburg UP/582750_W.pdf</url>
+      <pnp>27,99</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Elbe</fge>
+      <gkz>5829929</gkz>
+      <ezg>10061</ezg>
+      <lage>oberhalb der Mündung, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1936</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>586290</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Berlin-Koepenick</pgname>
+      <gewaesser>Spree-Oder-Wasserstraße</gewaesser>
+      <betreiber>WSA Spree-Havel</betreiber>
+      <lat>52,42969556</lat>
+      <lon>13,57399018</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Berlin Köpenick/586290_W.pdf</url>
+      <pnp>31,491</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Elbe</fge>
+      <gkz>5828959</gkz>
+      <ezg>2062</ezg>
+      <lage>oberhalb der Mündung in die Spree, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1899</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>582720</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Berlin-Muehlendamm OP</pgname>
+      <gewaesser>Spree-Oder-Wasserstraße</gewaesser>
+      <betreiber>WSA Spree-Havel</betreiber>
+      <lat>52,51445494</lat>
+      <lon>13,411445494</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Berlin Mühlendamm OP/582720_WQ.pdf</url>
+      <pnp>28,001</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Elbe</fge>
+      <gkz>5829393</gkz>
+      <ezg>9707</ezg>
+      <lage>oberhalb der Mündung, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1939</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit>01.11.1955</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>582730</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Berlin-Muehlendamm UP</pgname>
+      <gewaesser>Spree-Oder-Wasserstraße</gewaesser>
+      <betreiber>WSA Spree-Havel</betreiber>
+      <lat>52,51490108</lat>
+      <lon>13,408690108</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Berlin Mühlendamm UP/582730_W.pdf</url>
+      <pnp>28,001</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Elbe</fge>
+      <gkz>5829393</gkz>
+      <ezg>9707</ezg>
+      <lage>oberhalb der Mündung, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1939</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>580310</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Berlin-Spandau UP</pgname>
+      <gewaesser>Spree-Oder-Wasserstraße</gewaesser>
+      <betreiber>WSA Spree-Havel</betreiber>
+      <lat>52,5400681</lat>
+      <lon>13,20938899</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Berlin-Spandau UP/580310_W.pdf</url>
+      <pnp>27,963</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Elbe</fge>
+      <gkz>582999</gkz>
+      <ezg>3252</ezg>
+      <lage>oberhalb der Mündung, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.01.1900</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>570910</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Bernburg UP</pgname>
+      <gewaesser>Saale</gewaesser>
+      <betreiber>WSA Elbe</betreiber>
+      <lat>51,79679239</lat>
+      <lon>11,73542298</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Bernburg/570910_WQ.pdf</url>
+      <pnp>55,125</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Elbe</fge>
+      <gkz>5677</gkz>
+      <ezg>19660</ezg>
+      <lage>oberhalb der Mündung, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.01.1968</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit>01.11.1956</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>4990010</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>BHV Alter Leuchtturm</pgname>
+      <gewaesser>Weser</gewaesser>
+      <betreiber>WSA Weser-Jade-Nordsee</betreiber>
+      <lat>53,54496585</lat>
+      <lon>8,56818466</lon>
+      <url>http://dgj-daten.bafg.de/Weser- und Emsgebiet/Bremerhaven, Alter LT/4990010_W.pdf</url>
+      <pnp>-5,002</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Weser</fge>
+      <gkz>4993190</gkz>
+      <ezg>-</ezg>
+      <lage>-</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1965</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>25300200</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Bingen</pgname>
+      <gewaesser>Rhein</gewaesser>
+      <betreiber>WSA Rhein</betreiber>
+      <lat>49,97033333</lat>
+      <lon>7,899666667</lon>
+      <url>http://dgj-daten.bafg.de/Rhein/Bingen/25300200_W.pdf</url>
+      <pnp>76,185</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Rhein</fge>
+      <gkz>2539000</gkz>
+      <ezg>99277</ezg>
+      <lage>unterhalb Rheinbrücke Konstanz, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit>1901</w_vo_seit>
+      <w_vh_seit>01.11.1890</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>45300200</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Bodenwerder</pgname>
+      <gewaesser>Weser</gewaesser>
+      <betreiber>WSA Weser</betreiber>
+      <lat>51,97366009</lat>
+      <lon>9,51590966</lon>
+      <url>http://dgj-daten.bafg.de/Weser- und Emsgebiet/Bodenwerder/45300200_WQ.pdf</url>
+      <pnp>69,391</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Weser</fge>
+      <gkz>4539900</gkz>
+      <ezg>15924</ezg>
+      <lage>unterhalb von Werra und Fulda, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.04.1839</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit>1937</q_vo_seit>
+      <q_vh_seit>01.04.1839</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>5930033</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Boizenburg</pgname>
+      <gewaesser>Elbe</gewaesser>
+      <betreiber>WSA Elbe</betreiber>
+      <lat>53,37546855</lat>
+      <lon>10,71776737</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Boizenburg/5930033_W.pdf</url>
+      <pnp>3,774</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Elbe</fge>
+      <gkz>5937</gkz>
+      <ezg>134512</ezg>
+      <lage>unterhalb der Grenze zur CR, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1894</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>2710080</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Bonn</pgname>
+      <gewaesser>Rhein</gewaesser>
+      <betreiber>WSA Rhein</betreiber>
+      <lat>50,7363888888889</lat>
+      <lon>7,10805556</lon>
+      <url>http://dgj-daten.bafg.de/Rhein/Bonn/2710080_W.pdf</url>
+      <pnp>42,713</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Rhein</fge>
+      <gkz>2719700</gkz>
+      <ezg>140901</ezg>
+      <lage>unterhalb Rheinbrücke Konstanz, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit>1901</w_vo_seit>
+      <w_vh_seit>01.11.1900</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>01.11.1910</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>25700500</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Boppard</pgname>
+      <gewaesser>Rhein</gewaesser>
+      <betreiber>WSA Rhein</betreiber>
+      <lat>50,233</lat>
+      <lon>7,59305555555556</lon>
+      <url>http://dgj-daten.bafg.de/Rhein/Boppard/25700500_W.pdf</url>
+      <pnp>61,573</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Rhein</fge>
+      <gkz>2577000</gkz>
+      <ezg>103746</ezg>
+      <lage>unterhalb Rheinbrücke Konstanz, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit>1901</w_vo_seit>
+      <w_vh_seit>01.01.1900</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>5815901</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Borgsdorf</pgname>
+      <gewaesser>Havel-Oder-Wasserstraße</gewaesser>
+      <betreiber>WSA Oder-Havel</betreiber>
+      <lat>52,7005555555556</lat>
+      <lon>13,25122222</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Borgsdorf/581590_Q.pdf</url>
+      <pnp>28,94</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Elbe</fge>
+      <gkz>581911</gkz>
+      <ezg>3114</ezg>
+      <lage>oberhalb Spreemündung, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>0</w_vo>
+      <w_vo_seit>-</w_vo_seit>
+      <w_vh_seit>01.11.1994</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit>01.11.1974</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>9340020</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Borkum Fischerbalje</pgname>
+      <gewaesser>Nordsee</gewaesser>
+      <betreiber>WSA Ems-Nordsee</betreiber>
+      <lat>53,55745065</lat>
+      <lon>6,74789901</lon>
+      <url>http://dgj-daten.bafg.de/Nordsee/Borkum/9340020_W.pdf</url>
+      <pnp>-5,042</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Ems</fge>
+      <gkz>9341</gkz>
+      <ezg>-</ezg>
+      <lage>-</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1963</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>4970020</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Brake</pgname>
+      <gewaesser>Weser</gewaesser>
+      <betreiber>WSA Weser-Jade-Nordsee</betreiber>
+      <lat>53,3159787</lat>
+      <lon>8,48655445</lon>
+      <url>http://dgj-daten.bafg.de/Weser- und Emsgebiet/Brake/4970020_W.pdf</url>
+      <pnp>-5,011</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Weser</fge>
+      <gkz>4975100</gkz>
+      <ezg>-</ezg>
+      <lage>-</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>1.10.1949</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>580450</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Brandenburg UP</pgname>
+      <gewaesser>Untere Havel-Wasserstraße</gewaesser>
+      <betreiber>WSA Spree-Havel</betreiber>
+      <lat>52,42366267</lat>
+      <lon>12,56884303</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Brandenburg UP/580450_W.pdf</url>
+      <pnp>27,112</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Elbe</fge>
+      <gkz>5855</gkz>
+      <ezg>16525</ezg>
+      <lage>unterhalb Spandau, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.09.1811</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>580080</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Bredereiche OP</pgname>
+      <gewaesser>Obere Havel-Wasserstraße</gewaesser>
+      <betreiber>WSA Oder-Havel</betreiber>
+      <lat>53,13858333</lat>
+      <lon>13,24125</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Bredereiche OP/580080_Q.pdf</url>
+      <pnp>46,476</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Elbe</fge>
+      <gkz>58131391</gkz>
+      <ezg>1129</ezg>
+      <lage>oberhalb Abzweig alter Finowkanal, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>0</w_vo>
+      <w_vo_seit>-</w_vo_seit>
+      <w_vh_seit>01.08.1951</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit>01.11.1985</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>580090</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Bredereiche UP</pgname>
+      <gewaesser>Obere Havel-Wasserstraße</gewaesser>
+      <betreiber>WSA Oder-Havel</betreiber>
+      <lat>53,13516667</lat>
+      <lon>13,24330556</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Bredereiche UP/580090_W.pdf</url>
+      <pnp>46,476</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Elbe</fge>
+      <gkz>5813</gkz>
+      <ezg>1129</ezg>
+      <lage>oberhalb Abzweig alter Finowkanal, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.08.1951</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>9510095</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Büsum</pgname>
+      <gewaesser>Nordsee</gewaesser>
+      <betreiber>WSA Elbe-Nordsee</betreiber>
+      <lat>54,12172096</lat>
+      <lon>8,85915758</lon>
+      <url>http://dgj-daten.bafg.de/Nordsee/Büsum/9510095_W.pdf</url>
+      <pnp>-5,019</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Eider</fge>
+      <gkz>95</gkz>
+      <ezg>-</ezg>
+      <lage>-</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1935</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>5950080</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Buxtehude</pgname>
+      <gewaesser>Este</gewaesser>
+      <betreiber>WSA Elbe-Nordsee</betreiber>
+      <lat>53,4804495</lat>
+      <lon>9,70336823</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Buxtehude/5950080_W.pdf</url>
+      <pnp>-5,035</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Elbe</fge>
+      <gkz>59</gkz>
+      <ezg>-</ezg>
+      <lage>-</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1961</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>570940</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Calbe-Grizehne</pgname>
+      <gewaesser>Saale</gewaesser>
+      <betreiber>WSA Elbe</betreiber>
+      <lat>51,91641189</lat>
+      <lon>11,81221434</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Calbe Grizehne/570940_WQ.pdf</url>
+      <pnp>49,37</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Elbe</fge>
+      <gkz>56913</gkz>
+      <ezg>23719</ezg>
+      <lage>oberhalb der Mündung, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1891</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit>01.11.1931</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>48300105</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Celle</pgname>
+      <gewaesser>Aller</gewaesser>
+      <betreiber>WSA Weser</betreiber>
+      <lat>52,62267165</lat>
+      <lon>10,06203077</lon>
+      <url>http://dgj-daten.bafg.de/Weser- und Emsgebiet/Celle/48300105_WQ.pdf</url>
+      <pnp>31,82</pnp>
+      <pnp_bezug>DE_NIV60_NOH_NI/130</pnp_bezug>
+      <fge>Weser</fge>
+      <gkz>4837000</gkz>
+      <ezg>4374</ezg>
+      <lage>oberhalb der Mündung, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1971</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit>01.11.1890</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>26900400</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Cochem</pgname>
+      <gewaesser>Mosel</gewaesser>
+      <betreiber>WSA Mosel-Saar-Lahn</betreiber>
+      <lat>50,14335222</lat>
+      <lon>7,16826028</lon>
+      <url>http://dgj-daten.bafg.de/Rhein/Cochem/26900400_WQ.pdf</url>
+      <pnp>77,032</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Rhein</fge>
+      <gkz>2691000</gkz>
+      <ezg>27088</ezg>
+      <lage>oberhalb der Mündung, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit>1901</w_vo_seit>
+      <w_vh_seit>01.11.1900</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit>1937</q_vo_seit>
+      <q_vh_seit>01.11.1900</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>5990020</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Cuxhaven Steubenhöft</pgname>
+      <gewaesser>Elbe</gewaesser>
+      <betreiber>WSA Elbe-Nordsee</betreiber>
+      <lat>53,86735878</lat>
+      <lon>8,71821642</lon>
+      <url>http://dgj-daten.bafg.de/Nordsee/Cuxhaven/5990020_W.pdf</url>
+      <pnp>-5,033</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Elbe</fge>
+      <gkz>5997900</gkz>
+      <ezg>-</ezg>
+      <lage>-</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit>1901</w_vo_seit>
+      <w_vh_seit>01.01.1900</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>9570040</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Dagebüll</pgname>
+      <gewaesser>Nordsee</gewaesser>
+      <betreiber>WSA Elbe-Nordsee</betreiber>
+      <lat>54,73052348</lat>
+      <lon>8,687005594</lon>
+      <url>http://dgj-daten.bafg.de/Nordsee/Dagebüll/9570040_W.pdf</url>
+      <pnp>-5,005</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Eider</fge>
+      <gkz>95</gkz>
+      <ezg>-</ezg>
+      <lage>-</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit>1901</w_vo_seit>
+      <w_vh_seit>01.11.1935</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>3550040</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Dalum</pgname>
+      <gewaesser>Ems</gewaesser>
+      <betreiber>WSA Ems-Nordsee</betreiber>
+      <lat>52,59456538</lat>
+      <lon>7,2507509</lon>
+      <url>http://dgj-daten.bafg.de/Weser- und Emsgebiet/Dalum/3550040_WQ.pdf</url>
+      <pnp>12,392</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Ems</fge>
+      <gkz>3559000</gkz>
+      <ezg>4965</ezg>
+      <lage>Lauflänge ab Quelle, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1964</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit>01.11.1964</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>9660007</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Demmin</pgname>
+      <gewaesser>Peene</gewaesser>
+      <betreiber>WSA Ostsee</betreiber>
+      <lat>53,91635421</lat>
+      <lon>13,02656296</lon>
+      <url>http://dgj-daten.bafg.de/Ostsee/Demmin-Mayenkrebsbrücke/960007_W.pdf</url>
+      <pnp>-5,014</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Peene</fge>
+      <gkz>966</gkz>
+      <ezg>-</ezg>
+      <lage>oberhalb der Mündung, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit>-</w_vo_seit>
+      <w_vh_seit>01.07.1996</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit></q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>47900209</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Dörverden</pgname>
+      <gewaesser>Weser</gewaesser>
+      <betreiber>WSA Weser</betreiber>
+      <lat>52,85222748</lat>
+      <lon>9,21040801</lon>
+      <url>http://dgj-daten.bafg.de/Weser- und Emsgebiet/Dörrverden/47900209_WQ.pdf</url>
+      <pnp>7,991</pnp>
+      <pnp_bezug>DE_DHHN85_NOH_NI /140</pnp_bezug>
+      <fge>Weser</fge>
+      <gkz>4799100</gkz>
+      <ezg>22112</ezg>
+      <lage>unterhalb von Werra und Fulda, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1971</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit>01.11.1953</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>501060</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Dresden</pgname>
+      <gewaesser>Elbe</gewaesser>
+      <betreiber>WSA Elbe</betreiber>
+      <lat>51,05446257</lat>
+      <lon>13,73883941</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Dresden/501060_WQ.pdf</url>
+      <pnp>102,7</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Elbe</fge>
+      <gkz>53719</gkz>
+      <ezg>53096</ezg>
+      <lage>unterhalb der Grenze zur Cr, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1889</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit>1937</q_vo_seit>
+      <q_vh_seit>01.11.1889</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>2770010</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Duisburg Ruhrort</pgname>
+      <gewaesser>Rhein</gewaesser>
+      <betreiber>WSA Rhein</betreiber>
+      <lat>51,45527778</lat>
+      <lon>6,727777778</lon>
+      <url>http://dgj-daten.bafg.de/Rhein/Duisburg Ruhrort/2770010_W.pdf</url>
+      <pnp>16,106</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Rhein</fge>
+      <gkz>2771100</gkz>
+      <ezg>152895</ezg>
+      <lage>unterhalb Rheinbrücke Konstanz, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit>1901</w_vo_seit>
+      <w_vh_seit>01.01.1901</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit>01.11.1910</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>2750010</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Düsseldorf</pgname>
+      <gewaesser>Rhein</gewaesser>
+      <betreiber>WSA Rhein</betreiber>
+      <lat>51,22555556</lat>
+      <lon>6,769889702</lon>
+      <url>http://dgj-daten.bafg.de/Rhein/Düsseldorf/2750010_WQ.pdf</url>
+      <pnp>24,529</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Rhein</fge>
+      <gkz>2751300</gkz>
+      <ezg>147680</ezg>
+      <lage>unterhalb Rheinbrücke Konstanz, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit>1901</w_vo_seit>
+      <w_vh_seit>01.11.1872</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit>1937</q_vo_seit>
+      <q_vh_seit>01.11.1900</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>9610045</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>ECKERNFÖRDE</pgname>
+      <gewaesser>Ostsee</gewaesser>
+      <betreiber>WSA Ostsee</betreiber>
+      <lat>54,47470291</lat>
+      <lon>9,836006978</lon>
+      <url>http://dgj-daten.bafg.de/Ostsee/Eckernförde/9610045_W.pdf</url>
+      <pnp>-5,003</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Schlei/Trave</fge>
+      <gkz>96</gkz>
+      <ezg>-</ezg>
+      <lage>-</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>20.12.1988</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>9530010</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>EIDER-SPERRWERK AP</pgname>
+      <gewaesser>Nordsee</gewaesser>
+      <betreiber>WSA Elbe-Nordsee</betreiber>
+      <lat>54,26592363</lat>
+      <lon>8,84213011</lon>
+      <url>http://dgj-daten.bafg.de/Nordsee/Eider Sperrwerk AP/9530010_W.pdf</url>
+      <pnp>-5,02</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Eider</fge>
+      <gkz>95</gkz>
+      <ezg>-</ezg>
+      <lage>-</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1972</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>603000</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Eisenhüttenstadt</pgname>
+      <gewaesser>Oder</gewaesser>
+      <betreiber>WSA Oder-Havel</betreiber>
+      <lat>52,15361111</lat>
+      <lon>14,68972222</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Eisenhüttenstadt/603000_WQ.pdf</url>
+      <pnp>25,162</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Oder</fge>
+      <gkz>6731</gkz>
+      <ezg>52033</ezg>
+      <lage>oberhalb der Mündung, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1940</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit>01.11.1920</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>3970010</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>EMDEN NEUE SEESCHLEUSE</pgname>
+      <gewaesser>Ems</gewaesser>
+      <betreiber>WSA Ems-Nordsee</betreiber>
+      <lat>53,33679829</lat>
+      <lon>7,18634545</lon>
+      <url>http://dgj-daten.bafg.de/Weser- und Emsgebiet/Emden/3970010_W.pdf</url>
+      <pnp>-5,011</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Ems</fge>
+      <gkz>3972900</gkz>
+      <ezg>-</ezg>
+      <lage>-</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.10.1949</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>2790020</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Emmerich</pgname>
+      <gewaesser>Rhein</gewaesser>
+      <betreiber>WSA Rhein</betreiber>
+      <lat>51,82916667</lat>
+      <lon>6,24555556</lon>
+      <url>http://dgj-daten.bafg.de/Rhein/Emmerich/2790020_W.pdf</url>
+      <pnp>7,998</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Rhein</fge>
+      <gkz>2797000</gkz>
+      <ezg>159555</ezg>
+      <lage>unterhalb Rheinbrücke Konstanz, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit>1901</w_vo_seit>
+      <w_vh_seit>01.11.1900</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>01.11.1910</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>4950020</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Farge</pgname>
+      <gewaesser>Weser</gewaesser>
+      <betreiber>WSA Weser-Jade-Nordsee</betreiber>
+      <lat>53,20471027</lat>
+      <lon>8,51020611</lon>
+      <url>http://dgj-daten.bafg.de/Weser- und Emsgebiet/Farge/4950020_W.pdf</url>
+      <pnp>-5,023</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Weser</fge>
+      <gkz>4957000</gkz>
+      <ezg>-</ezg>
+      <lage>-</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1950</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>9610010</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Flensburg</pgname>
+      <gewaesser>Ostsee</gewaesser>
+      <betreiber>WSA Ostsee</betreiber>
+      <lat>54,79505676</lat>
+      <lon>9,43301731</lon>
+      <url>http://dgj-daten.bafg.de/Ostsee/Flensburg/9610010_W.pdf</url>
+      <pnp>-5</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Schlei/Trave</fge>
+      <gkz>96</gkz>
+      <ezg>-</ezg>
+      <lage>-</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit>1901</w_vo_seit>
+      <w_vh_seit>01.01.1988</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>24700404</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Frankfurt Osthafen</pgname>
+      <gewaesser>Main</gewaesser>
+      <betreiber>WSA Main</betreiber>
+      <lat>50,10576401</lat>
+      <lon>8,71498375</lon>
+      <url>http://dgj-daten.bafg.de/Rhein/Frankfurt Osthafen/24700404_WQ.pdf</url>
+      <pnp>90,626</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Rhein</fge>
+      <gkz>2</gkz>
+      <ezg>24764</ezg>
+      <lage>oberhalb der Mündung, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit>-</w_vo_seit>
+      <w_vh_seit>01.11.1969</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>01.11.1963</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>603030</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Frankfurt</pgname>
+      <gewaesser>Oder</gewaesser>
+      <betreiber>WSA Oder-Havel</betreiber>
+      <lat>52,3469444</lat>
+      <lon>14,5575</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Frankfurt Oder/603030_W.pdf</url>
+      <pnp>17,53</pnp>
+      <pnp_bezug>_DHHN12/200</pnp_bezug>
+      <fge>Oder</fge>
+      <gkz>6793</gkz>
+      <ezg>53580</ezg>
+      <lage>oberhalb der Mündung, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1934</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>603031</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Frankfurt 1</pgname>
+      <gewaesser>Oder</gewaesser>
+      <betreiber>WSA Oder-Havel</betreiber>
+      <lat>52,35805556</lat>
+      <lon>14,55361111</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Frankfurt Oder/603030_W.pdf</url>
+      <pnp>17,185</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Oder</fge>
+      <gkz>6793</gkz>
+      <ezg>53607</ezg>
+      <lage>oberhalb der Mündung, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>13.08.2003</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>26400550</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Fremersdorf</pgname>
+      <gewaesser>Saar</gewaesser>
+      <betreiber>WSA Mosel-Saar-Lahn</betreiber>
+      <lat>49,40892879</lat>
+      <lon>6,648415783</lon>
+      <url>http://dgj-daten.bafg.de/Rhein/Fremersdorf/26400550_WQ.pdf</url>
+      <pnp>165,491</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Rhein</fge>
+      <gkz>2640000</gkz>
+      <ezg>6983</ezg>
+      <lage>oberhalb der Mündung, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1987</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit>01.07.1952</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>580070</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Fuerstenberg UP</pgname>
+      <gewaesser>Obere Havel-Wasserstraße</gewaesser>
+      <betreiber>WSA Oder-Havel</betreiber>
+      <lat>53,18165608</lat>
+      <lon>13,1464666</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Fürstenberg UP/580070_W.pdf</url>
+      <pnp>50,206</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Elbe</fge>
+      <gkz>5813</gkz>
+      <ezg>680</ezg>
+      <lage>oberhalb Abzweig alter Finowkanal, Ost</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit>1901</w_vo_seit>
+      <w_vh_seit>01.11.1950</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>603510</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Gartz</pgname>
+      <gewaesser>Westoder</gewaesser>
+      <betreiber>WSA Oder-Havel</betreiber>
+      <lat>53,2066666666667</lat>
+      <lon>14,3961111111111</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Gartz/603510_W.pdf</url>
+      <pnp>-4,993</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Oder</fge>
+      <gkz>6967</gkz>
+      <ezg>113910</ezg>
+      <lage>oberhalb der Mündung, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1929</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>580760</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Garz UP</pgname>
+      <gewaesser>Untere Havel-Wasserstraße</gewaesser>
+      <betreiber>WSA Spree-Havel</betreiber>
+      <lat>52,74861154</lat>
+      <lon>12,21268893</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Garz UP/580760_W.pdf</url>
+      <pnp>22,164</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Elbe</fge>
+      <gkz>5879123</gkz>
+      <ezg>20178</ezg>
+      <lage>unterhalb der Spreemündung, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.06.1945</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>5970035</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Glückstadt</pgname>
+      <gewaesser>Elbe</gewaesser>
+      <betreiber>WSA Elbe-Nordsee</betreiber>
+      <lat>53,78454503</lat>
+      <lon>9,40907527</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Glückstadt/5970035_W.pdf</url>
+      <pnp>-5,034</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Elbe</fge>
+      <gkz>59</gkz>
+      <ezg>-</ezg>
+      <lage>-</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit>1901</w_vo_seit>
+      <w_vh_seit>01.11.1959</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>23500300</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Grauelsbaum</pgname>
+      <gewaesser>Rhein</gewaesser>
+      <betreiber>WSA Oberrhein</betreiber>
+      <lat>48,735479</lat>
+      <lon>7,96818003</lon>
+      <url>http://dgj-daten.bafg.de/Rhein/Grauelsbaum/23500300_W.pdf</url>
+      <pnp>121,626</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Rhein</fge>
+      <gkz>2355100</gkz>
+      <ezg>46094</ezg>
+      <lage>unterhalb Rheinbrücke Konstanz, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.2009</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>1.11.1985</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>23509300</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Grauelsbaum alt</pgname>
+      <gewaesser>Rhein</gewaesser>
+      <betreiber>WSA Oberrhein</betreiber>
+      <lat>48,735479</lat>
+      <lon>7,96818003</lon>
+      <url>http://dgj-daten.bafg.de/Rhein/Grauelsbaum alt/23509300_W.pdf</url>
+      <pnp>121,962</pnp>
+      <pnp_bezug>DE_ALT_NN_BW010_BW</pnp_bezug>
+      <fge>Rhein</fge>
+      <gkz>2355100</gkz>
+      <ezg>46166</ezg>
+      <lage>unterhalb Rheinbrücke Konstanz, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1970</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>42700202</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Grebenau</pgname>
+      <gewaesser>Fulda</gewaesser>
+      <betreiber>WSA Weser</betreiber>
+      <lat>51,1931271</lat>
+      <lon>9,49817213</lon>
+      <url>http://dgj-daten.bafg.de/Weser- und Emsgebiet/Grebenau/42700202_WQ.pdf</url>
+      <pnp>151,02</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Weser</fge>
+      <gkz>4279700</gkz>
+      <ezg>2975</ezg>
+      <lage>oberhalb der Mündung, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1950</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit>01.11.1950</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>9650072</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Greifswald-Eldena</pgname>
+      <gewaesser>Ostsee</gewaesser>
+      <betreiber>WSA Ostsee</betreiber>
+      <lat>54,09270309</lat>
+      <lon>13,44574656</lon>
+      <url>http://dgj-daten.bafg.de/Ostsee/Greifswald-Eldena/9650072_W.pdf</url>
+      <pnp>-4,969</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Warnow/Peene</fge>
+      <gkz>965</gkz>
+      <ezg>-</ezg>
+      <lage>oberhalb der Mündung, Mitte</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit>-</w_vo_seit>
+      <w_vh_seit>01.11.1963</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit></q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>582670</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Grosse Tränke Wehr UP</pgname>
+      <gewaesser>Müggelspree</gewaesser>
+      <betreiber>WSA Spree-Havel</betreiber>
+      <lat>52,36902745</lat>
+      <lon>13,99642233</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Große Tränke Wehr UP/582670_WQ.pdf</url>
+      <pnp>34,786</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Elbe</fge>
+      <gkz>58277791</gkz>
+      <ezg>6171</ezg>
+      <lage>oberhalb der Mündung in die Havel, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.06.1952</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit>01.12.1959</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>4910050</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Grosse Weserbrücke</pgname>
+      <gewaesser>Weser</gewaesser>
+      <betreiber>WSA Weser-Jade-Nordsee</betreiber>
+      <lat>53,07310747</lat>
+      <lon>8,80364769</lon>
+      <url>http://dgj-daten.bafg.de/Weser- und Emsgebiet/Bremen, Große Weserbrücke/4910050_W.pdf</url>
+      <pnp>-5,021</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Weser</fge>
+      <gkz>4919300</gkz>
+      <ezg>-</ezg>
+      <lage>-</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.10.1949</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>580710</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Grütz UP</pgname>
+      <gewaesser>Untere Havel-Wasserstraße</gewaesser>
+      <betreiber>WSA Spree-Havel</betreiber>
+      <lat>52,66655655</lat>
+      <lon>12,25462344</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Grütz UP/580710_W.pdf</url>
+      <pnp>23,812</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Elbe</fge>
+      <gkz>5879</gkz>
+      <ezg>20093</ezg>
+      <lage>unterhalb der Spreemündung, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>10.07.1945</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>23800620</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Gundelsheim UP</pgname>
+      <gewaesser>Neckar</gewaesser>
+      <betreiber>WSA Neckar</betreiber>
+      <lat>49,2813944444445</lat>
+      <lon>9,15084444</lon>
+      <url>http://dgj-daten.bafg.de/Rhein/Gundelsheim/23800620_W.pdf</url>
+      <pnp>136,6</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Rhein</fge>
+      <gkz>2389110</gkz>
+      <ezg>12332</ezg>
+      <lage>oberhalb der Mündung, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1970</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>42900100</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Guntershausen</pgname>
+      <gewaesser>Fulda</gewaesser>
+      <betreiber>WSA Weser</betreiber>
+      <lat>51,2267201</lat>
+      <lon>9,46933578</lon>
+      <url>http://dgj-daten.bafg.de/Weser- und Emsgebiet/Guntershausen/42900100_WQ.pdf</url>
+      <pnp>140,881</pnp>
+      <pnp_bezug>DE_DHHN92_NH_HE</pnp_bezug>
+      <fge>Weser</fge>
+      <gkz>4291000</gkz>
+      <ezg>6366</ezg>
+      <lage>oberhalb der Mündung, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1920</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit>01.11.1920</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>45700207</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Hameln Wehrbergen</pgname>
+      <gewaesser>Weser</gewaesser>
+      <betreiber>WSA Weser</betreiber>
+      <lat>52,12375182</lat>
+      <lon>9,30655845</lon>
+      <url>http://dgj-daten.bafg.de/Weser- und Emsgebiet/Hameln/45700207_W.pdf</url>
+      <pnp>57,85</pnp>
+      <pnp_bezug>DE_DHHN92_NH_NI</pnp_bezug>
+      <fge>Weser</fge>
+      <gkz>4575100</gkz>
+      <ezg>17094</ezg>
+      <lage>unterhalb von Werra und Fulda, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1973</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>01.11.1940</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>43100109</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Hann. Münden</pgname>
+      <gewaesser>Weser</gewaesser>
+      <betreiber>WSA Weser</betreiber>
+      <lat>51,42573172</lat>
+      <lon>9,64098889</lon>
+      <url>http://dgj-daten.bafg.de/Weser- und Emsgebiet/Hann. Münden/43100109_WQ.pdf</url>
+      <pnp>114,929</pnp>
+      <pnp_bezug>DE_DHHN92_NH_NI</pnp_bezug>
+      <fge>Weser</fge>
+      <gkz>4310000</gkz>
+      <ezg>12444</ezg>
+      <lage>unterhalb von Werra und Fulda, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.03.1830</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit>01.03.1830</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>580790</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Havelberg Stadt</pgname>
+      <gewaesser>Untere Havel-Wasserstraße</gewaesser>
+      <betreiber>WSA Spree-Havel</betreiber>
+      <lat>52,82330601</lat>
+      <lon>12,07641671</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Havelberg/580790_WQ.pdf</url>
+      <pnp>21,561</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Elbe</fge>
+      <gkz>589911</gkz>
+      <ezg>23812</ezg>
+      <lage>unterhalb der Spreemündung, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.01.1852</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit>01.11.1945</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>5980030</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Hechthausen</pgname>
+      <gewaesser>Oste</gewaesser>
+      <betreiber>WSA Elbe-Nordsee</betreiber>
+      <lat>53,64053315</lat>
+      <lon>9,25277974</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Hechthausen/5980030_W.pdf</url>
+      <pnp>-5,012</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Elbe</fge>
+      <gkz>5087190</gkz>
+      <ezg>-</ezg>
+      <lage>-</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1969</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>23800760</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Heidelberg UP</pgname>
+      <gewaesser>Neckar</gewaesser>
+      <betreiber>WSA Neckar</betreiber>
+      <lat>49,41468333</lat>
+      <lon>8,71773333333334</lon>
+      <url>http://dgj-daten.bafg.de/Rhein/Heidelberg/23800760_W.pdf</url>
+      <pnp>103,22</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Rhein</fge>
+      <gkz>2389930</gkz>
+      <ezg>13783</ezg>
+      <lage>oberhalb der Mündung, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1889</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>01.11.1999</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>9610070</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Heiligenhafen</pgname>
+      <gewaesser>Ostsee</gewaesser>
+      <betreiber>WSA Ostsee</betreiber>
+      <lat>54,37295929</lat>
+      <lon>11,00566461</lon>
+      <url>http://dgj-daten.bafg.de/Ostsee/Heiligenhafen/9610070_W.pdf</url>
+      <pnp>-4,998</pnp>
+      <pnp_bezug>DE_DHHN92_NH_SH</pnp_bezug>
+      <fge>Schlei/Trave</fge>
+      <gkz>96</gkz>
+      <ezg>-</ezg>
+      <lage>-</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1969</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>41700105</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Heldra</pgname>
+      <gewaesser>Werra</gewaesser>
+      <betreiber>WSA Weser</betreiber>
+      <lat>51,12500239</lat>
+      <lon>10,19699713</lon>
+      <url>http://dgj-daten.bafg.de/Weser- und Emsgebiet/Heldra/41700105_WQ.pdf</url>
+      <pnp>168,03</pnp>
+      <pnp_bezug>DE_DHHN92_NH_HE</pnp_bezug>
+      <fge>Weser</fge>
+      <gkz>4175000</gkz>
+      <ezg>4302</ezg>
+      <lage>oberhalb der Mündung, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.01.1954</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit>01.11.1950</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>9510070</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Helgoland Binnenhafen</pgname>
+      <gewaesser>Nordsee</gewaesser>
+      <betreiber>WSA Elbe-Nordsee</betreiber>
+      <lat>54,17889034</lat>
+      <lon>7,88993504</lon>
+      <url>http://dgj-daten.bafg.de/Nordsee/Helgoland/9510070_W.pdf</url>
+      <pnp>-5,015</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Elbe</fge>
+      <gkz>95</gkz>
+      <ezg>-</ezg>
+      <lage>-</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1935</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>44100206</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Helminghausen</pgname>
+      <gewaesser>Diemel</gewaesser>
+      <betreiber>WSA Weser</betreiber>
+      <lat>51,38152357</lat>
+      <lon>8,73087881</lon>
+      <url>http://dgj-daten.bafg.de/Weser- und Emsgebiet/Helminghausen/44100206_Q.pdf</url>
+      <pnp>337,004</pnp>
+      <pnp_bezug>DE_DHHN92_NH_NW</pnp_bezug>
+      <fge>Weser</fge>
+      <gkz>4417000</gkz>
+      <ezg>103</ezg>
+      <lage>oberhalb der Mündung, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>0</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1950</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit>01.11.1940</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>3770030</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Herbrum Hafendamm</pgname>
+      <gewaesser>Dortmund-Ems Kanal</gewaesser>
+      <betreiber>WSA Ems-Nordsee</betreiber>
+      <lat>53,04111348</lat>
+      <lon>7,3166562</lon>
+      <url>http://dgj-daten.bafg.de/Weser- und Emsgebiet/Herbrum/3770030_W.pdf</url>
+      <pnp>-5,043</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Ems</fge>
+      <gkz>3773000</gkz>
+      <ezg>-</ezg>
+      <lage>-</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.10.1949</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>48800108</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Herrenhausen</pgname>
+      <gewaesser>Leine</gewaesser>
+      <betreiber>WSA Weser</betreiber>
+      <lat>52,38810195</lat>
+      <lon>9,67607863</lon>
+      <url>http://dgj-daten.bafg.de/Weser- und Emsgebiet/Herrenhausen/48800108_WQ.pdf</url>
+      <pnp>43,809</pnp>
+      <pnp_bezug>DE_DHHN85_NOH_NI</pnp_bezug>
+      <fge>Weser</fge>
+      <gkz>4887730</gkz>
+      <ezg>5304</ezg>
+      <lage>oberhalb der Mündung, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.01.1941</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit>01.01.1941</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>603080</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Hohensaaten Finow</pgname>
+      <gewaesser>Oder</gewaesser>
+      <betreiber>WSA Oder-Havel</betreiber>
+      <lat>52,86473432</lat>
+      <lon>14,14305556</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Hohensaaten/603080_WQ.pdf</url>
+      <pnp>0,144</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Oder</fge>
+      <gkz>6935</gkz>
+      <ezg>109564</ezg>
+      <lage>oberhalb der Mündung, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1940</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit>1901</q_vo_seit>
+      <q_vh_seit>01.11.1920</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>5930040</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Hohnstorf</pgname>
+      <gewaesser>Elbe</gewaesser>
+      <betreiber>WSA Elbe</betreiber>
+      <lat>53,36626403</lat>
+      <lon>10,55883587</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Hohnstorf/5930040_W.pdf</url>
+      <pnp>-0,031</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Elbe</fge>
+      <gkz>5937</gkz>
+      <ezg>134594</ezg>
+      <lage>oberhalb der Mündung, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1959</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>9570050</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Hörnum</pgname>
+      <gewaesser>Nordsee</gewaesser>
+      <betreiber>WSA Elbe-Nordsee</betreiber>
+      <lat>54,75814176</lat>
+      <lon>8,29605823</lon>
+      <url>http://dgj-daten.bafg.de/Nordsee/Hörnum/9570050_W.pdf</url>
+      <pnp>-4,997</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Eider</fge>
+      <gkz>95</gkz>
+      <ezg>-</ezg>
+      <lage>-</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.06.1936</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>9530020</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Husum</pgname>
+      <gewaesser>Nordsee</gewaesser>
+      <betreiber>WSA Elbe-Nordsee</betreiber>
+      <lat>54,47227803</lat>
+      <lon>9,02480968</lon>
+      <url>http://dgj-daten.bafg.de/Nordsee/Husum/9530020_W.pdf</url>
+      <pnp>-5,004</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Eider</fge>
+      <gkz>95</gkz>
+      <ezg>-</ezg>
+      <lage>-</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1935</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>49100101</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Intschede</pgname>
+      <gewaesser>Weser</gewaesser>
+      <betreiber>WSA Weser</betreiber>
+      <lat>52,96411349</lat>
+      <lon>9,12576848</lon>
+      <url>http://dgj-daten.bafg.de/Weser- und Emsgebiet/Intschede/49100101_WQ.pdf</url>
+      <pnp>4,795</pnp>
+      <pnp_bezug>DE_DHHN85_NOH_NI</pnp_bezug>
+      <fge>Weser</fge>
+      <gkz>4911000</gkz>
+      <ezg>37720</ezg>
+      <lage>unterhalb von Werra und Fulda, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1856</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit>1937</q_vo_seit>
+      <q_vh_seit>01.01.1857</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>5970039</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Itzehoe</pgname>
+      <gewaesser>Stör</gewaesser>
+      <betreiber>WSA Elbe-Nordsee</betreiber>
+      <lat>53,92114617</lat>
+      <lon>9,50150211</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Itzehoe/5970039_W.pdf</url>
+      <pnp>-5,002</pnp>
+      <pnp_bezug>DHHN85</pnp_bezug>
+      <fge>Elbe</fge>
+      <gkz>59</gkz>
+      <ezg>-</ezg>
+      <lage>-</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit>1901</w_vo_seit>
+      <w_vh_seit>01.11.1959</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>5970042</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Itzehoe Hafen</pgname>
+      <gewaesser>Stör</gewaesser>
+      <betreiber>WSA Elbe-Nordsee</betreiber>
+      <lat>53,92445934</lat>
+      <lon>9,50060528</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Itzehoe/5970039_W.pdf</url>
+      <pnp>-5,008</pnp>
+      <pnp_bezug>DHHN2016_NH_SH</pnp_bezug>
+      <fge>Elbe</fge>
+      <gkz>59</gkz>
+      <ezg>-</ezg>
+      <lage>-</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.2015</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>25800600</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Kalkofen neu</pgname>
+      <gewaesser>Lahn</gewaesser>
+      <betreiber>WSA Mosel-Saar-Lahn</betreiber>
+      <lat>50,31785168</lat>
+      <lon>7,88984606</lon>
+      <url>http://dgj-daten.bafg.de/Rhein/Kalkofen/25800600_WQ.pdf</url>
+      <pnp>86,4</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Rhein</fge>
+      <gkz>2589000</gkz>
+      <ezg>5304</ezg>
+      <lage>ab hist. Landesgrenze von 1850, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1970</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit>01.11.1935</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>23300600</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Kappel</pgname>
+      <gewaesser>Rhein</gewaesser>
+      <betreiber>WSA Oberrhein</betreiber>
+      <lat>48,31110198</lat>
+      <lon>7,71286673</lon>
+      <url>http://dgj-daten.bafg.de/Rhein/Kappel/23300600_W.pdf</url>
+      <pnp>158,015</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Rhein</fge>
+      <gkz>2337900</gkz>
+      <ezg>37907</ezg>
+      <lage>unterhalb Rheinbrücke Konstanz, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1889</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>9610035</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Kappeln</pgname>
+      <gewaesser>Ostsee</gewaesser>
+      <betreiber>WSA Ostsee</betreiber>
+      <lat>54,66438388</lat>
+      <lon>9,93793817</lon>
+      <url>http://dgj-daten.bafg.de/Ostsee/Kappeln/9610035_W.pdf</url>
+      <pnp>-4,991</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Schlei/Trave</fge>
+      <gkz>96</gkz>
+      <ezg>-</ezg>
+      <lage>-</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1989</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>45100100</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Karlshafen</pgname>
+      <gewaesser>Weser</gewaesser>
+      <betreiber>WSA Weser</betreiber>
+      <lat>51,64797252</lat>
+      <lon>9,43868896</lon>
+      <url>http://dgj-daten.bafg.de/Weser- und Emsgebiet/Karlshafen/45100100_WQ.pdf</url>
+      <pnp>94,025</pnp>
+      <pnp_bezug>DE_DHHN92_NH_HE</pnp_bezug>
+      <fge>Weser</fge>
+      <gkz>4511000</gkz>
+      <ezg>14794</ezg>
+      <lage>unterhalb von Werra und Fulda, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.01.1880</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit>01.11.1940</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>9690084</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Karnin</pgname>
+      <gewaesser>Ostsee</gewaesser>
+      <betreiber>WSA Ostsee</betreiber>
+      <lat>53,84366484</lat>
+      <lon>13,85849424</lon>
+      <url>http://dgj-daten.bafg.de/Ostsee/Karnin/9690084_W.pdf</url>
+      <pnp>-4,975</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Warnow/Peene</fge>
+      <gkz>969</gkz>
+      <ezg>-</ezg>
+      <lage>oberhalb der Mündung, Mitte</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit>-</w_vo_seit>
+      <w_vh_seit>01.11.1955</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit></q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>25700100</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Kaub</pgname>
+      <gewaesser>Rhein</gewaesser>
+      <betreiber>WSA Rhein</betreiber>
+      <lat>50,0854444</lat>
+      <lon>7,76494444</lon>
+      <url>http://dgj-daten.bafg.de/Rhein/Kaub/25700100_WQ.pdf</url>
+      <pnp>67,669</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Rhein</fge>
+      <gkz>2573000</gkz>
+      <ezg>103729</ezg>
+      <lage>unterhalb Rheinbrücke Konstanz, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit>1901</w_vo_seit>
+      <w_vh_seit>01.01.1856</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit>1937</q_vo_seit>
+      <q_vh_seit>01.11.1930</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>23300900</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Kehl-Kronenhof</pgname>
+      <gewaesser>Rhein</gewaesser>
+      <betreiber>WSA Oberrhein</betreiber>
+      <lat>48,56332017</lat>
+      <lon>7,80769181</lon>
+      <url>http://dgj-daten.bafg.de/Rhein/Kehl Kronenhof/23300900_W.pdf</url>
+      <pnp>133,02</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Rhein</fge>
+      <gkz>233900</gkz>
+      <ezg>39656</ezg>
+      <lage>unterhalb Rheinbrücke Konstanz, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.04.1970</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>01.11.1981</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>580430</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Ketzin</pgname>
+      <gewaesser>Untere Havel-Wasserstraße</gewaesser>
+      <betreiber>WSA Spree-Havel</betreiber>
+      <lat>52,46314966</lat>
+      <lon>12,85678929</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Ketzin/580430_WQ.pdf</url>
+      <pnp>28,386</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Elbe</fge>
+      <gkz>585311</gkz>
+      <ezg>16024</ezg>
+      <lage>unterhalb der Spreemündung, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.01.1935</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit>01.01.1936</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>9610066</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Kiel-Holtenau</pgname>
+      <gewaesser>Ostsee</gewaesser>
+      <betreiber>WSA Ostsee</betreiber>
+      <lat>54,37208664</lat>
+      <lon>10,15705003</lon>
+      <url>http://dgj-daten.bafg.de/Ostsee/Kiel-Holtenau/9610066_W.pdf</url>
+      <pnp>-4,997</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Schlei/Trave</fge>
+      <gkz>96</gkz>
+      <ezg>-</ezg>
+      <lage>-</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.01.1972</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>603050</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Kienitz</pgname>
+      <gewaesser>Oder</gewaesser>
+      <betreiber>WSA Oder-Havel</betreiber>
+      <lat>52,68027778</lat>
+      <lon>14,435</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Kienitz/603050_W.pdf</url>
+      <pnp>5,171</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Oder</fge>
+      <gkz>6931</gkz>
+      <ezg>109093</ezg>
+      <lage>oberhalb der Mündung, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1934</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>603040</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Kietz</pgname>
+      <gewaesser>Oder</gewaesser>
+      <betreiber>WSA Oder-Havel</betreiber>
+      <lat>52,57759703</lat>
+      <lon>14,6302952</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Kietz/603040_W.pdf</url>
+      <pnp>8,663</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Oder</fge>
+      <gkz>6799</gkz>
+      <ezg>53752</ezg>
+      <lage>oberhalb der Mündung, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1939</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>587020</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Kleinmachnow OP</pgname>
+      <gewaesser>Teltowkanal</gewaesser>
+      <betreiber>WSA Spree-Havel</betreiber>
+      <lat>52,39569328</lat>
+      <lon>13,20999215</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Kleinmachnow OP/587020_WQ.pdf</url>
+      <pnp>30,252</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Elbe</fge>
+      <gkz>5838791</gkz>
+      <ezg>205</ezg>
+      <lage>ab der Einmündung in die Potsdamer Havel, Nord</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.01.1927</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit>01.01.1934</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>25900700</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Koblenz</pgname>
+      <gewaesser>Rhein</gewaesser>
+      <betreiber>WSA Rhein</betreiber>
+      <lat>50,35858333</lat>
+      <lon>7,60480556</lon>
+      <url>http://dgj-daten.bafg.de/Rhein/Koblenz/25900700_W.pdf</url>
+      <pnp>57,692</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Rhein</fge>
+      <gkz>2595000</gkz>
+      <ezg>109806</ezg>
+      <lage>unterhalb Rheinbrücke Konstanz, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit>1901</w_vo_seit>
+      <w_vh_seit>01.11.1955</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>2730010</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Köln</pgname>
+      <gewaesser>Rhein</gewaesser>
+      <betreiber>WSA Rhein</betreiber>
+      <lat>50,9369444444444</lat>
+      <lon>6,96333333333333</lon>
+      <url>http://dgj-daten.bafg.de/Rhein/Köln/2730010_WQ.pdf</url>
+      <pnp>35,038</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Rhein</fge>
+      <gkz>2737230</gkz>
+      <ezg>144232</ezg>
+      <lage>unterhalb Rheinbrücke Konstanz, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit>1901</w_vo_seit>
+      <w_vh_seit>01.11.1816</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit>1937</q_vo_seit>
+      <q_vh_seit>01.11.1816</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>9690093</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Koserow</pgname>
+      <gewaesser>Ostsee</gewaesser>
+      <betreiber>WSA Ostsee</betreiber>
+      <lat>54,0603783</lat>
+      <lon>14,00082292</lon>
+      <url>http://dgj-daten.bafg.de/Ostsee/Koserow/9690093_W.pdf</url>
+      <pnp>-4,967</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Warnow/Peene</fge>
+      <gkz>969</gkz>
+      <ezg>-</ezg>
+      <lage>oberhalb der Mündung, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit>-</w_vo_seit>
+      <w_vh_seit>01.11.1972</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit></q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>9610015</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Langballigau</pgname>
+      <gewaesser>Ostsee</gewaesser>
+      <betreiber>WSA Ostsee</betreiber>
+      <lat>54,82326725</lat>
+      <lon>9,654141667</lon>
+      <url>http://dgj-daten.bafg.de/Ostsee/Langballigau/9610015_W.pdf</url>
+      <pnp>-5,015</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Schlei/Trave</fge>
+      <gkz>96</gkz>
+      <ezg>-</ezg>
+      <lage>-</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1991</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>23800500</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Lauffen</pgname>
+      <gewaesser>Neckar</gewaesser>
+      <betreiber>WSA Neckar</betreiber>
+      <lat>49,0722222</lat>
+      <lon>9,15972222</lon>
+      <url>http://dgj-daten.bafg.de/Rhein/Lauffen/23800500_WQ.pdf</url>
+      <pnp>159,37</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Rhein</fge>
+      <gkz>2385190</gkz>
+      <ezg>7916</ezg>
+      <lage>oberhalb der Mündung, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1970</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit>01.11.1948</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>3910010</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Leerort</pgname>
+      <gewaesser>Ems</gewaesser>
+      <betreiber>WSA Ems-Nordsee</betreiber>
+      <lat>53,21535064</lat>
+      <lon>7,42618955</lon>
+      <url>http://dgj-daten.bafg.de/Weser- und Emsgebiet/Leerort/3910010_W.pdf</url>
+      <pnp>-5,044</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Ems</fge>
+      <gkz>3911000</gkz>
+      <ezg>-</ezg>
+      <lage>-</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1949</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>581590</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Lehnitz UP</pgname>
+      <gewaesser>Havel-Oder Wasserstraße</gewaesser>
+      <betreiber>WSA Oder-Havel</betreiber>
+      <lat>52,7674012</lat>
+      <lon>13,28030571</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Lehnitz UP/581590_W.pdf</url>
+      <pnp>28,948</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Elbe</fge>
+      <gkz>5817</gkz>
+      <ezg>2617</ezg>
+      <lage>oberhalb Spreemündung, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1964</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>41900206</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Letzter Heller</pgname>
+      <gewaesser>Werra</gewaesser>
+      <betreiber>WSA Weser</betreiber>
+      <lat>51,41549419</lat>
+      <lon>9,67803998</lon>
+      <url>http://dgj-daten.bafg.de/Weser- und Emsgebiet/Letzter Heller/41900206_WQ.pdf</url>
+      <pnp>117,383</pnp>
+      <pnp_bezug>DE_DHHN92_NH_NI</pnp_bezug>
+      <fge>Weser</fge>
+      <gkz>4199500</gkz>
+      <ezg>5487</ezg>
+      <lage>oberhalb der Mündung, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.01.1988</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit>01.11.1940</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>9460040</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Leuchtturm Alte Weser</pgname>
+      <gewaesser>Weser</gewaesser>
+      <betreiber>WSA Weser-Jade-Nordsee</betreiber>
+      <lat>53,86327931</lat>
+      <lon>8,12758426</lon>
+      <url>http://dgj-daten.bafg.de/Nordsee/LT Alte Weser/9460040_W.pdf</url>
+      <pnp>-4,977</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Weser</fge>
+      <gkz>9454</gkz>
+      <ezg>-</ezg>
+      <lage>-</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1964</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>25800200</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Leun neu</pgname>
+      <gewaesser>Lahn</gewaesser>
+      <betreiber>WSA Mosel-Saar-Lahn</betreiber>
+      <lat>50,54516041</lat>
+      <lon>8,35525781</lon>
+      <url>http://dgj-daten.bafg.de/Rhein/Leun/25800200_WQ.pdf</url>
+      <pnp>134,993</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Rhein</fge>
+      <gkz>2585000</gkz>
+      <ezg>3571</ezg>
+      <lage>ab hist. Landesgrenze von 1850, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit>1901</w_vo_seit>
+      <w_vh_seit>01.11.1969</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit>1937</q_vo_seit>
+      <q_vh_seit>01.11.1935</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>47500200</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Liebenau</pgname>
+      <gewaesser>Weser</gewaesser>
+      <betreiber>WSA Weser</betreiber>
+      <lat>52,59420602</lat>
+      <lon>9,11276992</lon>
+      <url>http://dgj-daten.bafg.de/Weser- und Emsgebiet/Liebenau/47500200_WQ.pdf</url>
+      <pnp>19,99</pnp>
+      <pnp_bezug>DE_DHHN85_NOH_NI</pnp_bezug>
+      <fge>Weser</fge>
+      <gkz>4759000</gkz>
+      <ezg>19910</ezg>
+      <lage>unterhalb von Werra und Fulda, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1977</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit>01.11.1953</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>581540</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Liebenwalde OP</pgname>
+      <gewaesser>Havel</gewaesser>
+      <betreiber>WSA Oder-Havel</betreiber>
+      <lat>52,85095532</lat>
+      <lon>13,39607439</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Liebenwalde OP/581540_Q.pdf</url>
+      <pnp>36,109</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Elbe</fge>
+      <gkz>5817</gkz>
+      <ezg>2321</ezg>
+      <lage>oberhalb Spreemündung, links</lage>
+      <ds>BfG</ds>
+      <w_vo>0</w_vo>
+      <w_vo_seit>-</w_vo_seit>
+      <w_vh_seit>01.11.1964</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit>01.08.1987</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>581550</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Liebenwalde UP</pgname>
+      <gewaesser>Havel</gewaesser>
+      <betreiber>WSA Oder-Havel</betreiber>
+      <lat>52,85030955</lat>
+      <lon>13,39605086</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Liebenwalde UP/581550_W.pdf</url>
+      <pnp>36,109</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Elbe</fge>
+      <gkz>5817</gkz>
+      <ezg>2321</ezg>
+      <lage>oberhalb Spreemündung, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1964</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>27100600</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Linz</pgname>
+      <gewaesser>Rhein</gewaesser>
+      <betreiber>WSA Rhein</betreiber>
+      <lat>50,5658333</lat>
+      <lon>7,27713888888889</lon>
+      <url>http://dgj-daten.bafg.de/Rhein/Linz/27100600_W.pdf</url>
+      <pnp>48,002</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Rhein</fge>
+      <gkz>2719000</gkz>
+      <ezg>140673</ezg>
+      <lage>unterhalb Rheinbrücke Konstanz, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1862</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>01.11.1990</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>9570070</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>List</pgname>
+      <gewaesser>Nordsee</gewaesser>
+      <betreiber>WSA Elbe-Nordsee</betreiber>
+      <lat>55,01657496</lat>
+      <lon>8,44086195</lon>
+      <url>http://dgj-daten.bafg.de/Nordsee/List/9570070_W.pdf</url>
+      <pnp>-4,994</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Eider</fge>
+      <gkz>95</gkz>
+      <ezg>-</ezg>
+      <lage>-</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.06.1936</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>9610020</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>LT Kalkgrund</pgname>
+      <gewaesser>Ostsee</gewaesser>
+      <betreiber>WSA Ostsee</betreiber>
+      <lat>54,82459896</lat>
+      <lon>9,88800748</lon>
+      <url>http://dgj-daten.bafg.de/Ostsee/LT-Kalkgrund/9610020_W.pdf</url>
+      <pnp>-4,985</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Schlei/Trave</fge>
+      <gkz>96</gkz>
+      <ezg>-</ezg>
+      <lage>-</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1991</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>9610050</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>LT Kiel</pgname>
+      <gewaesser>Ostsee</gewaesser>
+      <betreiber>WSA Ostsee</betreiber>
+      <lat>54,49958877</lat>
+      <lon>10,27326788</lon>
+      <url>http://dgj-daten.bafg.de/Ostsee/LT Kiel/9610050_W.pdf</url>
+      <pnp>-4,987</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Schlei/Trave</fge>
+      <gkz>96</gkz>
+      <ezg>-</ezg>
+      <lage>-</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1988</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>9620090</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Lübeck-Bauhof</pgname>
+      <gewaesser>Untertrave</gewaesser>
+      <betreiber>WSA Ostsee</betreiber>
+      <lat>53,89300774</lat>
+      <lon>10,70306542</lon>
+      <url>http://dgj-daten.bafg.de/Ostsee/Lübeck Bauhof/9620090_W.pdf</url>
+      <pnp>-5,021</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Schlei/Trave</fge>
+      <gkz>96</gkz>
+      <ezg>-</ezg>
+      <lage>-</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1990</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>502180</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Magdeburg-Strombrücke</pgname>
+      <gewaesser>Havel-Oder Wasserstraße</gewaesser>
+      <betreiber>WSA Elbe</betreiber>
+      <lat>52,12969845</lat>
+      <lon>11,64433494</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Magdeburg-Strombrücke/502180_WQ.pdf</url>
+      <pnp>39,895</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Elbe</fge>
+      <gkz>57391</gkz>
+      <ezg>94942</ezg>
+      <lage>unterhalb der Grenze zur Cr, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit>1901</w_vo_seit>
+      <w_vh_seit>01.01.1895</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit>01.11.1889</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>25100100</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Mainz</pgname>
+      <gewaesser>Rhein</gewaesser>
+      <betreiber>WSA Rhein</betreiber>
+      <lat>50,004</lat>
+      <lon>8,27530555555556</lon>
+      <url>http://dgj-daten.bafg.de/Rhein/Mainz/25100100_WQ.pdf</url>
+      <pnp>78,373</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Rhein</fge>
+      <gkz>2510010</gkz>
+      <ezg>98206</ezg>
+      <lage>unterhalb Rheinbrücke Konstanz, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit>1901</w_vo_seit>
+      <w_vh_seit>01.01.1851</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit>1937</q_vo_seit>
+      <q_vh_seit>01.11.1930</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>23700700</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Mannheim</pgname>
+      <gewaesser>Rhein</gewaesser>
+      <betreiber>WSA Oberrhein</betreiber>
+      <lat>49,4838889</lat>
+      <lon>8,455</lon>
+      <url>http://dgj-daten.bafg.de/Rhein/Mannheim/23700700_W.pdf</url>
+      <pnp>85,117</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Rhein</fge>
+      <gkz>2379900</gkz>
+      <ezg>54017</ezg>
+      <lage>unterhalb Rheinbrücke Konstanz, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit>1901</w_vo_seit>
+      <w_vh_seit>01.11.1889</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>9610075</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Marienleuchte</pgname>
+      <gewaesser>Ostsee</gewaesser>
+      <betreiber>WSA Ostsee</betreiber>
+      <lat>54,49663025</lat>
+      <lon>11,23887485</lon>
+      <url>http://dgj-daten.bafg.de/Ostsee/Marienleuchte/9610075_W.pdf</url>
+      <pnp>-4,998</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Schlei/Trave</fge>
+      <gkz>96</gkz>
+      <ezg>-</ezg>
+      <lage>-</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1972</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>48700103</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Marklendorf</pgname>
+      <gewaesser>Aller</gewaesser>
+      <betreiber>WSA Weser</betreiber>
+      <lat>52,68231944</lat>
+      <lon>9,70380666</lon>
+      <url>http://dgj-daten.bafg.de/Weser- und Emsgebiet/Marklendorf/48700103_WQ.pdf</url>
+      <pnp>23,01</pnp>
+      <pnp_bezug>DE_NIV60_NOH_NI130_NI/ 130</pnp_bezug>
+      <fge>Weser</fge>
+      <gkz>4875000</gkz>
+      <ezg>7209</ezg>
+      <lage>oberhalb der Mündung, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1937</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit>01.11.1940</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>23700200</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Maxau</pgname>
+      <gewaesser>Rhein</gewaesser>
+      <betreiber>WSA Oberrhein</betreiber>
+      <lat>49,0388889</lat>
+      <lon>8,30555555555556</lon>
+      <url>http://dgj-daten.bafg.de/Rhein/Maxau/23700200_WQ.pdf</url>
+      <pnp>97,721</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Rhein</fge>
+      <gkz>2373000</gkz>
+      <ezg>50196</ezg>
+      <lage>unterhalb Rheinbrücke Konstanz, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1889</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit>1937</q_vo_seit>
+      <q_vh_seit>01.01.1921</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>9420010</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Mellumplate</pgname>
+      <gewaesser>Nordsee</gewaesser>
+      <betreiber>WSA Weser-Jade-Nordsee</betreiber>
+      <lat>53,77172476</lat>
+      <lon>8,09251432</lon>
+      <url>http://dgj-daten.bafg.de/Nordsee/Mellumplate/9420010_W.pdf</url>
+      <pnp>-5,039</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Weser</fge>
+      <gkz>9439</gkz>
+      <ezg>-</ezg>
+      <lage>-</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.01.1963</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>5930010</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Neu Darchau</pgname>
+      <gewaesser>Elbe</gewaesser>
+      <betreiber>WSA Elbe</betreiber>
+      <lat>53,23225756</lat>
+      <lon>10,88881856</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Neu Darchau/5930010_WQ.pdf</url>
+      <pnp>5,658</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Elbe</fge>
+      <gkz>5931300</gkz>
+      <ezg>131950</ezg>
+      <lage>unterhalb der Grenze zur Cr, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1889</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit>1937</q_vo_seit>
+      <q_vh_seit>01.11.1889</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>23700100</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Neuburgweier</pgname>
+      <gewaesser>Rhein</gewaesser>
+      <betreiber>WSA Oberrhein</betreiber>
+      <lat>48,9763889</lat>
+      <lon>8,25527778</lon>
+      <url>http://dgj-daten.bafg.de/Rhein/Neuburgweiher/23700100_W.pdf</url>
+      <pnp>100,712</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Rhein</fge>
+      <gkz>2371000</gkz>
+      <ezg>49767</ezg>
+      <lage>unterhalb Rheinbrücke Konstanz, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1889</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>01.01.2005</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>586280</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Neue Muehle UP</pgname>
+      <gewaesser>Dahme</gewaesser>
+      <betreiber>WSA Spree-Havel</betreiber>
+      <lat>52,29747972</lat>
+      <lon>13,64968313</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Neue Mühle UP/586280_WQ.pdf</url>
+      <pnp>31,117</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Elbe</fge>
+      <gkz>582855</gkz>
+      <ezg>1362</ezg>
+      <lage>ab Mündung in die Spree, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.01.1902</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit>01.11.1955</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>23300200</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Neuenburg</pgname>
+      <gewaesser>Rhein</gewaesser>
+      <betreiber>WSA Oberrhein</betreiber>
+      <lat>47,82143191</lat>
+      <lon>7,55060142</lon>
+      <url>http://dgj-daten.bafg.de/Rhein/Neuenburg/23300200_W.pdf</url>
+      <pnp>206,112</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Rhein</fge>
+      <gkz>2333900</gkz>
+      <ezg>36724</ezg>
+      <lage>unterhalb Rheinbrücke Konstanz, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.01.1890</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>2170000</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Neuhausen, Flurlinger Brücke</pgname>
+      <gewaesser>Rhein</gewaesser>
+      <betreiber>Bundesamt für Umwelt Schweiz</betreiber>
+      <lat>47,68233356</lat>
+      <lon>8,625855</lon>
+      <url>http://dgj-daten.bafg.de/Rhein/Neuhausen/2170000_Q.pdf</url>
+      <pnp>379,66</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Rhein</fge>
+      <gkz>2179700</gkz>
+      <ezg>11887</ezg>
+      <lage>unterhalb Rheinbrücke Konstanz, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>0</w_vo>
+      <w_vo_seit>-</w_vo_seit>
+      <w_vh_seit>01.01.1964</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit>01.01.1904</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>9610080</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Neustadt</pgname>
+      <gewaesser>Ostsee</gewaesser>
+      <betreiber>WSA Ostsee</betreiber>
+      <lat>54,09652304</lat>
+      <lon>10,80498827</lon>
+      <url>http://dgj-daten.bafg.de/Ostsee/Neustadt/9610080_W.pdf</url>
+      <pnp>-5,017</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Schlei/Trave</fge>
+      <gkz>96</gkz>
+      <ezg>-</ezg>
+      <lage>-</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1970</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>23900600</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Nierstein-Oppenheim</pgname>
+      <gewaesser>Rhein</gewaesser>
+      <betreiber>WSA Oberrhein</betreiber>
+      <lat>49,865</lat>
+      <lon>8,35222222</lon>
+      <url>http://dgj-daten.bafg.de/Rhein/Nierstein/23900600_W.pdf</url>
+      <pnp>80,167</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Rhein</fge>
+      <gkz>2397370</gkz>
+      <ezg>70387</ezg>
+      <lage>unterhalb Rheinbrücke Konstanz, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.01.1890</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>9360010</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Norderney Riffgat</pgname>
+      <gewaesser>Nordsee</gewaesser>
+      <betreiber>WSA Ems-Nordsee</betreiber>
+      <lat>53,69650897</lat>
+      <lon>7,15776567</lon>
+      <url>http://dgj-daten.bafg.de/Nordsee/Norderney, Riffgat/9360010_W.pdf</url>
+      <pnp>-5,002</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Ems</fge>
+      <gkz>93</gkz>
+      <ezg>-</ezg>
+      <lage>-</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1963</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>4960030</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Oldenburg-Drielake</pgname>
+      <gewaesser>Hunte</gewaesser>
+      <betreiber>WSA Weser-Jade-Nordsee</betreiber>
+      <lat>53,14000387</lat>
+      <lon>8,23560072</lon>
+      <url>http://dgj-daten.bafg.de/Weser- und Emsgebiet/Oldenburg-Drielake/4960030_W.pdf</url>
+      <pnp>-5,026</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Weser</fge>
+      <gkz>4969100</gkz>
+      <ezg>-</ezg>
+      <lage>-</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1949</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>5990011</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Otterndorf MPM</pgname>
+      <gewaesser>Elbe</gewaesser>
+      <betreiber>WSA Elbe-Nordsee</betreiber>
+      <lat>53,83537918</lat>
+      <lon>8,87073492</lon>
+      <url>http://dgj-daten.bafg.de/Nordsee/Otterndorf/5990011_W.pdf</url>
+      <pnp>-5,024</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Elbe</fge>
+      <gkz>5995</gkz>
+      <ezg>-</ezg>
+      <lage>-</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.2014</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>3790010</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Papenburg</pgname>
+      <gewaesser>Ems</gewaesser>
+      <betreiber>WSA Ems-Nordsee</betreiber>
+      <lat>53,10820763</lat>
+      <lon>7,36559454</lon>
+      <url>http://dgj-daten.bafg.de/Weser- und Emsgebiet/Papenburg/3790010_W.pdf</url>
+      <pnp>-5,06</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Ems</fge>
+      <gkz>3791000</gkz>
+      <ezg>-</ezg>
+      <lage>-</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1949</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>9550021</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Pellworm-Anleger</pgname>
+      <gewaesser>Nordsee</gewaesser>
+      <betreiber>WSA Elbe-Nordsee</betreiber>
+      <lat>54,50093492</lat>
+      <lon>8,70204891</lon>
+      <url>http://dgj-daten.bafg.de/Nordsee/Pellworm Anleger/9550021_W.pdf</url>
+      <pnp>-5,027</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Eider</fge>
+      <gkz>95</gkz>
+      <ezg>-</ezg>
+      <lage>-</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1999</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>26100100</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Perl</pgname>
+      <gewaesser>Mosel</gewaesser>
+      <betreiber>WSA Mosel-Saar-Lahn</betreiber>
+      <lat>49,47253395</lat>
+      <lon>6,368870071</lon>
+      <url>http://dgj-daten.bafg.de/Rhein/Perl/26100100_WQ.pdf</url>
+      <pnp>138,491</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Rhein</fge>
+      <gkz>2617000</gkz>
+      <ezg>11522</ezg>
+      <lage>oberhalb der Mündung, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1969</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit>01.11.1974</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>23700500</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Philippsburg</pgname>
+      <gewaesser>Rhein</gewaesser>
+      <betreiber>WSA Oberrhein</betreiber>
+      <lat>49,2552778</lat>
+      <lon>8,42861111</lon>
+      <url>http://dgj-daten.bafg.de/Rhein/Philippsburg/23700500_W.pdf</url>
+      <pnp>90,561</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Rhein</fge>
+      <gkz>237730</gkz>
+      <ezg>52105</ezg>
+      <lage>unterhalb Rheinbrücke Konstanz, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.07.1981</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit>01.11.1995</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>23500700</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Plittersdorf</pgname>
+      <gewaesser>Rhein</gewaesser>
+      <betreiber>WSA Oberrhein</betreiber>
+      <lat>48,88596738</lat>
+      <lon>8,13592731</lon>
+      <url>http://dgj-daten.bafg.de/Rhein/Plittersdorf/23500700_W.pdf</url>
+      <pnp>106,71</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Rhein</fge>
+      <gkz>2357900</gkz>
+      <ezg>48276</ezg>
+      <lage>unterhalb Rheinbrücke Konstanz, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1989</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit>01.11.1923</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>23800100</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Plochingen</pgname>
+      <gewaesser>Neckar</gewaesser>
+      <betreiber>WSA Neckar</betreiber>
+      <lat>48,70742592</lat>
+      <lon>9,41916667</lon>
+      <url>http://dgj-daten.bafg.de/Rhein/Plochingen/23800100_WQ.pdf</url>
+      <pnp>245,86</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Rhein</fge>
+      <gkz>2383100</gkz>
+      <ezg>3995</ezg>
+      <lage>oberhalb der Mündung, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.01.1971</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit>1937</q_vo_seit>
+      <q_vh_seit>01.11.1918</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>47100100</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Porta</pgname>
+      <gewaesser>Weser</gewaesser>
+      <betreiber>WSA Weser</betreiber>
+      <lat>52,24868683</lat>
+      <lon>8,92212191</lon>
+      <url>http://dgj-daten.bafg.de/Weser- und Emsgebiet/Porta/47100100_WQ.pdf</url>
+      <pnp>37,039</pnp>
+      <pnp_bezug>DE_DHHN85_NOH_NW</pnp_bezug>
+      <fge>Weser</fge>
+      <gkz>4713000</gkz>
+      <ezg>19162</ezg>
+      <lage>unterhalb von Werra und Fulda, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit>1937</w_vo_seit>
+      <w_vh_seit>01.11.1936</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit>1937</q_vo_seit>
+      <q_vh_seit>01.11.1935</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>580412</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Potsdam</pgname>
+      <gewaesser>Potsdamer Havel</gewaesser>
+      <betreiber>WSA Spree-Havel</betreiber>
+      <lat>52,39988664</lat>
+      <lon>13,07207136</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Potsdam/580412_W.pdf</url>
+      <pnp>28,434</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Elbe</fge>
+      <gkz>58393</gkz>
+      <ezg>13680</ezg>
+      <lage>unterhalb von Werra und Fulda, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.10.1952</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>580650</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Rathenow UP</pgname>
+      <gewaesser>Untere Havel-Wasserstraße</gewaesser>
+      <betreiber>WSA Spree-Havel</betreiber>
+      <lat>52,6074447</lat>
+      <lon>12,6074447</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Rathenow UP/580650_WQ.pdf</url>
+      <pnp>24,514</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Elbe</fge>
+      <gkz>587739</gkz>
+      <ezg>19288</ezg>
+      <lage>unterhalb der Spreemündung, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit>1901</w_vo_seit>
+      <w_vh_seit>01.11.1899</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit>01.01.1951</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>2790010</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Rees</pgname>
+      <gewaesser>Rhein</gewaesser>
+      <betreiber>WSA Rhein</betreiber>
+      <lat>51,75694444</lat>
+      <lon>6,39527778</lon>
+      <url>http://dgj-daten.bafg.de/Rhein/Rees/2790010_WQ.pdf</url>
+      <pnp>8,743</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Rhein</fge>
+      <gkz>2795000</gkz>
+      <ezg>159683</ezg>
+      <lage>unterhalb Rheinbrücke Konstanz, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit>1901</w_vo_seit>
+      <w_vh_seit>01.01.1900</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit>01.11.1910</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>2190000</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Rekingen</pgname>
+      <gewaesser>Rhein</gewaesser>
+      <betreiber>Bundesamt für Umwelt Schweiz</betreiber>
+      <lat>47,5702777777778</lat>
+      <lon>8,32972222222222</lon>
+      <url>http://dgj-daten.bafg.de/Rhein/Rekingen/2190000_Q.pdf</url>
+      <pnp>319,68</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Rhein</fge>
+      <gkz>2197300</gkz>
+      <ezg>14718</ezg>
+      <lage>unterhalb Rheinbrücke Konstanz, links</lage>
+      <ds>BfG</ds>
+      <w_vo>0</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.01.1964</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit>01.01.1904</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>48900204</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Rethem</pgname>
+      <gewaesser>Aller</gewaesser>
+      <betreiber>WSA Weser</betreiber>
+      <lat>52,78909334</lat>
+      <lon>9,38284556</lon>
+      <url>http://dgj-daten.bafg.de/Weser- und Emsgebiet/Rethem/48900204_WQ.pdf</url>
+      <pnp>14,31</pnp>
+      <pnp_bezug>DE_NIV60_NOH_NI130_NI</pnp_bezug>
+      <fge>Weser</fge>
+      <gkz>4895900</gkz>
+      <ezg>14730</ezg>
+      <lage>oberhalb der Mündung, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1942</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit>01.11.1940</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>3390020</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Rheine US</pgname>
+      <gewaesser>Ems</gewaesser>
+      <betreiber>WSA Ems-Nordsee</betreiber>
+      <lat>52,28804605</lat>
+      <lon>7,43398585</lon>
+      <url>http://dgj-daten.bafg.de/Weser- und Emsgebiet/Rheine US/3390020_WQ.pdf</url>
+      <pnp>24,187</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Ems</fge>
+      <gkz>3391000</gkz>
+      <ezg>3748</ezg>
+      <lage>Lauflänge ab Quelle, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1971</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit>1937</q_vo_seit>
+      <q_vh_seit>01.01.1931</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>2310000</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Rheinfelden</pgname>
+      <gewaesser>Rhein</gewaesser>
+      <betreiber>Bundesamt für Umwelt Schweiz</betreiber>
+      <lat>47,5608333333333</lat>
+      <lon>7,79972222222222</lon>
+      <url>http://dgj-daten.bafg.de/Rhein/Rheinfelden/2310000_WQ.pdf</url>
+      <pnp>259,698</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Rhein</fge>
+      <gkz>2315500</gkz>
+      <ezg>34550</ezg>
+      <lage>unterhalb Rheinbrücke Konstanz, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.01.1964</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit>01.11.1930</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>23300130</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Rheinweiler</pgname>
+      <gewaesser>Rhein</gewaesser>
+      <betreiber>WSA Oberrhein</betreiber>
+      <lat>47,71105894</lat>
+      <lon>7,52927487</lon>
+      <url>http://dgj-daten.bafg.de/Rhein/Rheinweiler/23300130_W.pdf</url>
+      <pnp>217,291</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Rhein</fge>
+      <gkz>2333300</gkz>
+      <ezg>36649</ezg>
+      <lage>unterhalb Rheinbrücke Konstanz, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1962</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>01.11.1964</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>501110</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Riesa</pgname>
+      <gewaesser>Elbe</gewaesser>
+      <betreiber>WSA Elbe</betreiber>
+      <lat>51,31148417</lat>
+      <lon>13,29334295</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Riesa/501110_W.pdf</url>
+      <pnp>88,022</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Elbe</fge>
+      <gkz>5</gkz>
+      <ezg>54485</ezg>
+      <lage>unterhalb der Grenze zur Cr, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit>1901</w_vo_seit>
+      <w_vh_seit>01.01.1900</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>01.11.2004</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>23800690</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Rockenau SKA</pgname>
+      <gewaesser>Neckar</gewaesser>
+      <betreiber>WSA Neckar</betreiber>
+      <lat>49,43546111</lat>
+      <lon>9,00221389</lon>
+      <url>http://dgj-daten.bafg.de\Rhein\Rockenau SKA\23800690_WQ.pdf</url>
+      <pnp>119,71</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Rhein</fge>
+      <gkz>2389330</gkz>
+      <ezg>12710</ezg>
+      <lage>oberhalb der Mündung, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.01.1982</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit>01.11.1950</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>42700100</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Rotenburg</pgname>
+      <gewaesser>Fulda</gewaesser>
+      <betreiber>WSA Weser</betreiber>
+      <lat>51,00375862</lat>
+      <lon>9,72043679</lon>
+      <url>http://dgj-daten.bafg.de/Weser- und Emsgebiet/Rotenburg/42700100_WQ.pdf</url>
+      <pnp>179,523</pnp>
+      <pnp_bezug>DE_DHHN92_NH_HE</pnp_bezug>
+      <fge>Weser</fge>
+      <gkz>4275130</gkz>
+      <ezg>2523</ezg>
+      <lage>oberhalb der Mündung, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.01.1940</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit>01.11.1920</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>26400220</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Sankt Arnual</pgname>
+      <gewaesser>Saar</gewaesser>
+      <betreiber>WSA Mosel-Saar-Lahn</betreiber>
+      <lat>49,21486031</lat>
+      <lon>7,02265107</lon>
+      <url>http://dgj-daten.bafg.de/Rhein/St Arnual/26400220_WQ.pdf</url>
+      <pnp>183,227</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Rhein</fge>
+      <gkz>264000</gkz>
+      <ezg>3945</ezg>
+      <lage>oberhalb der Mündung, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.08.1993</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit>01.08.1993</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>25700300</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Sankt Goar</pgname>
+      <gewaesser>Rhein</gewaesser>
+      <betreiber>WSA Rhein</betreiber>
+      <lat>50,1526111</lat>
+      <lon>7,71269444</lon>
+      <url>http://dgj-daten.bafg.de/Rhein/St Goar/25700300_W.pdf</url>
+      <pnp>63,751</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Rhein</fge>
+      <gkz>2573000</gkz>
+      <ezg>103605</ezg>
+      <lage>unterhalb Rheinbrücke Konstanz, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit>1901</w_vo_seit>
+      <w_vh_seit>01.11.1900</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>9670065</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Sassnitz</pgname>
+      <gewaesser>Ostsee</gewaesser>
+      <betreiber>WSA Ostsee</betreiber>
+      <lat>54,50829302</lat>
+      <lon>13,63665136</lon>
+      <url>http://dgj-daten.bafg.de/Ostsee/Sassnitz/9670065_W.pdf</url>
+      <pnp>-4,966</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Warnow/Peene</fge>
+      <gkz>967</gkz>
+      <ezg>-</ezg>
+      <lage>-</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.08.1954</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>9510060</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Scharhörn</pgname>
+      <gewaesser>Elbe</gewaesser>
+      <betreiber>WSA Elbe-Nordsee</betreiber>
+      <lat>53,96985151</lat>
+      <lon>8,4680571</lon>
+      <url>http://dgj-daten.bafg.de/Nordsee/Scharhörn/9510060_W.pdf</url>
+      <pnp>-4,005</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Elbe</fge>
+      <gkz>95</gkz>
+      <ezg>-</ezg>
+      <lage>-</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1959</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>9610025</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Schleimünde SP</pgname>
+      <gewaesser>Ostsee</gewaesser>
+      <betreiber>WSA Ostsee</betreiber>
+      <lat>54,67273602</lat>
+      <lon>10,03668851</lon>
+      <url>http://dgj-daten.bafg.de/Ostsee/Schleimünde/9610025_W.pdf</url>
+      <pnp>-5,001</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Trave/Schlei</fge>
+      <gkz>96</gkz>
+      <ezg>-</ezg>
+      <lage>-</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>10.12.1984</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>9610040</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Schleswig</pgname>
+      <gewaesser>Ostsee</gewaesser>
+      <betreiber>WSA Ostsee</betreiber>
+      <lat>54,51143167</lat>
+      <lon>9,56905824</lon>
+      <url>http://dgj-daten.bafg.de/Ostsee/Schleswig/9610040_W.pdf</url>
+      <pnp>-5,018</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Trave/Schlei</fge>
+      <gkz>96</gkz>
+      <ezg>-</ezg>
+      <lage>-</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1989</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>42800309</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Schmittlotheim</pgname>
+      <gewaesser>Eder</gewaesser>
+      <betreiber>WSA Weser</betreiber>
+      <lat>51,15574821</lat>
+      <lon>8,89800449</lon>
+      <url>http://dgj-daten.bafg.de/Weser- und Emsgebiet/Schmittlotheim/42800309_Q.pdf</url>
+      <pnp>245,862</pnp>
+      <pnp_bezug>DE_DHHN92_NH_HE</pnp_bezug>
+      <fge>Weser</fge>
+      <gkz>4285130</gkz>
+      <ezg>1202</ezg>
+      <lage>oberhalb der Mündung, links</lage>
+      <ds>BfG</ds>
+      <w_vo>0</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1965</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit>01.11.1930</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>5910010</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Schnackenburg</pgname>
+      <gewaesser>Elbe</gewaesser>
+      <betreiber>WSA Elbe</betreiber>
+      <lat>53,03825011</lat>
+      <lon>11,56916207</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Schnackenburg/5910010_W.pdf</url>
+      <pnp>13,687</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Elbe</fge>
+      <gkz>5917</gkz>
+      <ezg>125482</ezg>
+      <lage>unterhalb der Grenze zur CR, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1958</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>501010</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Schöna</pgname>
+      <gewaesser>Elbe</gewaesser>
+      <betreiber>WSA Elbe</betreiber>
+      <lat>50,87576304</lat>
+      <lon>14,2352366</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Schöna/501010_W.pdf</url>
+      <pnp>116,2</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Elbe</fge>
+      <gkz>5371</gkz>
+      <ezg>51391</ezg>
+      <lage>unterhalb der Grenze zur CR, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1965</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>01.11.1955</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>587060</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Schönwalde UP</pgname>
+      <gewaesser>Havelkanal</gewaesser>
+      <betreiber>WSA Spree-Havel</betreiber>
+      <lat>52,60786224</lat>
+      <lon>13,08886433</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Schönwalde UP/587060_W.pdf</url>
+      <pnp>27,987</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Elbe</fge>
+      <gkz>5852111</gkz>
+      <ezg>1,88</ezg>
+      <lage>unterhalb des Abzweigs v. d. Havel, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.01.1953</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>01.11.1990</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>48800301</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Schwarmstedt</pgname>
+      <gewaesser>Leine</gewaesser>
+      <betreiber>WSA Weser</betreiber>
+      <lat>52,68304785</lat>
+      <lon>9,60269434</lon>
+      <url>http://dgj-daten.bafg.de/Weser- und Emsgebiet/Schwarmstedt/48800301_WQ.pdf</url>
+      <pnp>21</pnp>
+      <pnp_bezug>DE_NIV60_NOH_NI130_NI</pnp_bezug>
+      <fge>Weser</fge>
+      <gkz>4889710</gkz>
+      <ezg>6443</ezg>
+      <lage>oberhalb der Mündung, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.01.1949</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit>01.01.1949</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>603130</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Schwedt Brücke</pgname>
+      <gewaesser>Oder</gewaesser>
+      <betreiber>WSA Oder-Havel</betreiber>
+      <lat>53,03557628</lat>
+      <lon>14,31162425</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Schwedt/603130_W.pdf</url>
+      <pnp>-5,017</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Oder</fge>
+      <gkz>6937</gkz>
+      <ezg>112950</ezg>
+      <lage>oberhalb der Mündung, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit>1901</w_vo_seit>
+      <w_vh_seit>01.11.1970</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>596900</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Schwerin Werderbrücke</pgname>
+      <gewaesser>Stör-Wasserstraße</gewaesser>
+      <betreiber>WSA Elbe</betreiber>
+      <lat>53,64639243</lat>
+      <lon>11,42744609</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Schwerin Werderbr/596900_W.pdf</url>
+      <pnp>36,69</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Elbe</fge>
+      <gkz>5928</gkz>
+      <ezg>323</ezg>
+      <lage>oberhalb der Mündung, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1950</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>23700600</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Speyer</pgname>
+      <gewaesser>Rhein</gewaesser>
+      <betreiber>WSA Oberhein</betreiber>
+      <lat>49,3236111111111</lat>
+      <lon>8,44861111111111</lon>
+      <url>http://dgj-daten.bafg.de/Rhein/Speyer/23700600_WQ.pdf</url>
+      <pnp>88,467</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Rhein</fge>
+      <gkz>2379100</gkz>
+      <ezg>53131</ezg>
+      <lage>unterhalb Rheinbrücke Konstanz, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1948</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit>01.11.1950</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>5970013</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Stadersand</pgname>
+      <gewaesser>Elbe</gewaesser>
+      <betreiber>WSA Elbe-Nordsee</betreiber>
+      <lat>53,62972926</lat>
+      <lon>9,5266025</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Stadersand/5970013_W.pdf</url>
+      <pnp>-5,048</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Elbe</fge>
+      <gkz>5973100</gkz>
+      <ezg>-</ezg>
+      <lage>-</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.01.1950</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>9650043</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Stralsund</pgname>
+      <gewaesser>Ostsee</gewaesser>
+      <betreiber>WSA Ostsee</betreiber>
+      <lat>54,315351</lat>
+      <lon>13,098672</lon>
+      <url>http://dgj-daten.bafg.de/Ostsee/Stralsund/9650043_W.pdf</url>
+      <pnp>-4,975</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Warnow/Peene</fge>
+      <gkz>965</gkz>
+      <ezg>-</ezg>
+      <lage>-</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1961</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>603100</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Stützkow</pgname>
+      <gewaesser>Oder</gewaesser>
+      <betreiber>WSA Oder-Havel</betreiber>
+      <lat>52,98393604</lat>
+      <lon>14,19344224</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Stützkow/603100_W.pdf</url>
+      <pnp>-5,014</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Oder</fge>
+      <gkz>6937</gkz>
+      <ezg>112143</ezg>
+      <lage>oberhalb der Mündung, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1913</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>502350</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Tangermünde</pgname>
+      <gewaesser>Elbe</gewaesser>
+      <betreiber>WSA Elbe</betreiber>
+      <lat>52,54130629</lat>
+      <lon>11,978055941</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Tangermünde/502350_WQ.pdf</url>
+      <pnp>27,556</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Oder</fge>
+      <gkz>57799</gkz>
+      <ezg>97780</ezg>
+      <lage>unterhalb der Grenze zur CR, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit>1901</w_vo_seit>
+      <w_vh_seit>01.11.1891</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit>01.11.1889</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>501261</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Torgau</pgname>
+      <gewaesser>Elbe</gewaesser>
+      <betreiber>WSA Elbe</betreiber>
+      <lat>51,55368345</lat>
+      <lon>13,01014053</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Torgau/501261_WQ.pdf</url>
+      <pnp>75,158</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Elbe</fge>
+      <gkz>53739</gkz>
+      <ezg>55211</ezg>
+      <lage>unterhalb der Grenze zur CR, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit>1901</w_vo_seit>
+      <w_vh_seit>01.09.1890</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit>01.11.1889</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>9620085</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Travemünde</pgname>
+      <gewaesser>Trave</gewaesser>
+      <betreiber>WSA Ostsee</betreiber>
+      <lat>53,95802367</lat>
+      <lon>10,87218212</lon>
+      <url>http://dgj-daten.bafg.de/Ostsee/Travemünde/9620085_W.pdf</url>
+      <pnp>-5,025</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Schlei/Trave</fge>
+      <gkz>96</gkz>
+      <ezg>-</ezg>
+      <lage>-</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>29.10.1991</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>26500100</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Trier UP</pgname>
+      <gewaesser>Mosel</gewaesser>
+      <betreiber>WSA Mosel-Saar-Lahn</betreiber>
+      <lat>49,73218464</lat>
+      <lon>6,626636797</lon>
+      <url>http://dgj-daten.bafg.de/Rhein/Trier/26500100_WQ.pdf</url>
+      <pnp>121,013</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Rhein</fge>
+      <gkz>2653000</gkz>
+      <ezg>23857</ezg>
+      <lage>oberhalb der Mündung, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.2011</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit>01.11.2011</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>26509100</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Trier UP alt</pgname>
+      <gewaesser>Mosel</gewaesser>
+      <betreiber>WSA Mosel-Saar-Lahn</betreiber>
+      <lat>49,73216356</lat>
+      <lon>6,62671544</lon>
+      <url>http://dgj-daten.bafg.de/Rhein/Trier/26500100_WQ.pdf</url>
+      <pnp>121</pnp>
+      <pnp_bezug>DE_DHHN12_NOH_RP, 100</pnp_bezug>
+      <fge>Rhein</fge>
+      <gkz>2653000</gkz>
+      <ezg>23857</ezg>
+      <lage>195,3</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit>1901</w_vo_seit>
+      <w_vh_seit>01.11.1966</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit>1937</q_vo_seit>
+      <q_vh_seit>01.11.1930</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>570810</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Halle TrothaUP</pgname>
+      <gewaesser>Saale</gewaesser>
+      <betreiber>WSA Elbe</betreiber>
+      <lat>51,51425201</lat>
+      <lon>11,95455307</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Halle Trotha UP/570810_WQ.pdf</url>
+      <pnp>69,358</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Elbe</fge>
+      <gkz>56715</gkz>
+      <ezg>17988</ezg>
+      <lage>oberhalb der Mündung, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.01.1970</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit>01.11.1954</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>9690088</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Ueckermünde</pgname>
+      <gewaesser>Ostsee</gewaesser>
+      <betreiber>WSA Ostsee</betreiber>
+      <lat>53,75031035</lat>
+      <lon>14,06647756</lon>
+      <url>http://dgj-daten.bafg.de/Ostsee/Ueckermünde/9690088_W.pdf</url>
+      <pnp>-4,982</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Warnow/Peene</fge>
+      <gkz>969</gkz>
+      <ezg>-</ezg>
+      <lage>-</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1965</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>5970016</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Uetersen</pgname>
+      <gewaesser>Pinnau</gewaesser>
+      <betreiber>WSA Elbe-Nordsee</betreiber>
+      <lat>53,67819261</lat>
+      <lon>9,67708349</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Uetersen/5970016_W.pdf</url>
+      <pnp>-5,038</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Elbe</fge>
+      <gkz>59</gkz>
+      <ezg>-</ezg>
+      <lage>-</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1959</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>4950010</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Vegesack</pgname>
+      <gewaesser>Weser</gewaesser>
+      <betreiber>WSA Weser-Jade-Nordsee</betreiber>
+      <lat>53,16938537</lat>
+      <lon>8,61956874</lon>
+      <url>http://dgj-daten.bafg.de/Weser- und Emsgebiet/Vegesack/4950010_W.pdf</url>
+      <pnp>-5,011</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Weser</fge>
+      <gkz>4953000</gkz>
+      <ezg>-</ezg>
+      <lage>-</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1959</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>3730010</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Versen Wehrdurchstich</pgname>
+      <gewaesser>Ems</gewaesser>
+      <betreiber>WSA Ems-Nordsee</betreiber>
+      <lat>52,7329694444444</lat>
+      <lon>7,24186111111111</lon>
+      <url>http://dgj-daten.bafg.de/Weser- und Emsgebiet/Versen-WD/3730010_WQ.pdf</url>
+      <pnp>6,71</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Ems</fge>
+      <gkz>3731100</gkz>
+      <ezg>8411</ezg>
+      <lage>Lauflänge ab Quelle, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1988</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit>01.01.1941</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>45900208</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Vlotho</pgname>
+      <gewaesser>Weser</gewaesser>
+      <betreiber>WSA Weser</betreiber>
+      <lat>52,17631287</lat>
+      <lon>8,86213216</lon>
+      <url>http://dgj-daten.bafg.de/Weser- und Emsgebiet/Vlotho/45900208_WQ.pdf</url>
+      <pnp>41,652</pnp>
+      <pnp_bezug>DE_DHHN85_NOH_NW</pnp_bezug>
+      <fge>Weser</fge>
+      <gkz>4599000</gkz>
+      <ezg>17618</ezg>
+      <lage>unterhalb von Werra und Fulda, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.01.1900</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit>01.07.1820</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>43900105</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Wahmbeck</pgname>
+      <gewaesser>Weser</gewaesser>
+      <betreiber>WSA Weser</betreiber>
+      <lat>51,62561253</lat>
+      <lon>9,51971741</lon>
+      <url>http://dgj-daten.bafg.de/Weser- und Emsgebiet/Wahmbeck/43900105_WQ.pdf</url>
+      <pnp>97,992</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Weser</fge>
+      <gkz>4390000</gkz>
+      <ezg>12996</ezg>
+      <lage>unterhalb von Werra und Fulda, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1941</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit>01.11.1940</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>596030</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Waren</pgname>
+      <gewaesser>Müritz-Elde-Wasserstraße</gewaesser>
+      <betreiber>WSA Elbe</betreiber>
+      <lat>53,51437994</lat>
+      <lon>12,67419417</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Waren/596030_W.pdf</url>
+      <pnp>60,157</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Elbe</fge>
+      <gkz>5923</gkz>
+      <ezg>775</ezg>
+      <lage>unterhalb von Werra und Fulda, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.03.1945</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>9640015</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Warnemünde</pgname>
+      <gewaesser>Ostsee</gewaesser>
+      <betreiber>WSA Ostsee</betreiber>
+      <lat>54,16973095</lat>
+      <lon>12,10338826</lon>
+      <url>http://dgj-daten.bafg.de/Ostsee/Warnemünde/9640015_W.pdf</url>
+      <pnp>-4,979</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Warnow/Peene</fge>
+      <gkz>964</gkz>
+      <ezg>-</ezg>
+      <lage>-</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1953</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>585920</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Wernsdorf OP</pgname>
+      <gewaesser>Spree-Oder-Wasserstraße</gewaesser>
+      <betreiber>WSA Spree-Havel</betreiber>
+      <lat>52,37118051</lat>
+      <lon>13,71125014</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Wernsdorf OP/585920_Q.pdf</url>
+      <pnp>30,281</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Elbe</fge>
+      <gkz>5828851</gkz>
+      <ezg>70</ezg>
+      <lage>ab Mündung in den Seddinsee, Nord</lage>
+      <ds>BfG</ds>
+      <w_vo>0</w_vo>
+      <w_vo_seit>-</w_vo_seit>
+      <w_vh_seit>01.09.1951</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit>26.11.1912</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>2770040</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Wesel</pgname>
+      <gewaesser>Rhein</gewaesser>
+      <betreiber>WSA Rhein</betreiber>
+      <lat>51,6463889</lat>
+      <lon>6,60666667</lon>
+      <url>http://dgj-daten.bafg.de/Rhein/Wesel/2770040_W.pdf</url>
+      <pnp>11,206</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Rhein</fge>
+      <gkz>2779000</gkz>
+      <ezg>154528</ezg>
+      <lage>unterhalb Rheinbrücke Konstanz, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit>1901</w_vo_seit>
+      <w_vh_seit>01.11.1900</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit>1937</q_vo_seit>
+      <q_vh_seit>01.11.1910</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>9440020</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>WHV Alter Vorhafen</pgname>
+      <gewaesser>Jade</gewaesser>
+      <betreiber>WSA Weser-Jade-Nordsee</betreiber>
+      <lat>53,51450638</lat>
+      <lon>8,14513973</lon>
+      <url>http://dgj-daten.bafg.de/Nordsee/Wilhelmshaven AV/9440020_W.pdf</url>
+      <pnp>-5,045</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Weser</fge>
+      <gkz>9429</gkz>
+      <ezg>-</ezg>
+      <lage>-</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1935</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>9570010</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Wittdün</pgname>
+      <gewaesser>Nordsee</gewaesser>
+      <betreiber>WSA Elbe-Nordsee</betreiber>
+      <lat>54,63175628</lat>
+      <lon>8,38398179</lon>
+      <url>http://dgj-daten.bafg.de/Nordsee/Wittdün/9570010_W.pdf</url>
+      <pnp>-5,025</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Eider</fge>
+      <gkz>95</gkz>
+      <ezg>-</ezg>
+      <lage>-</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1935</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>9630080</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Wismar</pgname>
+      <gewaesser>Ostsee</gewaesser>
+      <betreiber>WSA Ostsee</betreiber>
+      <lat>53,89876161</lat>
+      <lon>11,45791718</lon>
+      <url>http://dgj-daten.bafg.de/Ostsee/Wismar/9630080_W.pdf</url>
+      <pnp>-5,006</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Warnow/Peene</fge>
+      <gkz>963</gkz>
+      <ezg>-</ezg>
+      <lage>-</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1957</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>501420</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Lutherstadt Wittenberg</pgname>
+      <gewaesser>Elbe</gewaesser>
+      <betreiber>WSA Elbe</betreiber>
+      <lat>51,85652996</lat>
+      <lon>12,64631027</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Wittenberg/501420_WQ.pdf</url>
+      <pnp>62,45</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Elbe</fge>
+      <gkz>53939</gkz>
+      <ezg>61879</ezg>
+      <lage>unterhalb der Grenze zur CR, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit>1901</w_vo_seit>
+      <w_vh_seit>01.11.1889</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit>01.11.1889</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>503050</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Wittenberge</pgname>
+      <gewaesser>Elbe</gewaesser>
+      <betreiber>WSA Elbe</betreiber>
+      <lat>52,98552808</lat>
+      <lon>11,75944325</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Wittenberge/503050_WQ.pdf</url>
+      <pnp>16,707</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Elbe</fge>
+      <gkz>5911</gkz>
+      <ezg>123532</ezg>
+      <lage>unterhalb der Grenze zur CR, rechts</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit>1901</w_vo_seit>
+      <w_vh_seit>01.01.1890</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit></q_vo_seit>
+      <q_vh_seit>01.11.1889</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>9650080</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Wolgast</pgname>
+      <gewaesser>Ostsee</gewaesser>
+      <betreiber>WSA Ostsee</betreiber>
+      <lat>54,04166667</lat>
+      <lon>13,77027778</lon>
+      <url>http://dgj-daten.bafg.de/Ostsee/Wolgast/9650080_W.pdf</url>
+      <pnp>-4,97</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Warnow/Peene</fge>
+      <gkz>965</gkz>
+      <ezg>-</ezg>
+      <lage>-</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1965</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>23900200</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Worms</pgname>
+      <gewaesser>Rhein</gewaesser>
+      <betreiber>WSA Oberrhein</betreiber>
+      <lat>49,6316667</lat>
+      <lon>8,3775</lon>
+      <url>http://dgj-daten.bafg.de/Rhein/Worms/23900200_WQ.pdf</url>
+      <pnp>84,112</pnp>
+      <pnp_bezug>DE_DHHN92_NH_RP</pnp_bezug>
+      <fge>Rhein</fge>
+      <gkz>2391000</gkz>
+      <ezg>68827</ezg>
+      <lage>unterhalb Rheinbrücke Konstanz, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1890</w_vh_seit>
+      <q_vo>1</q_vo>
+      <q_vo_seit>1937</q_vo_seit>
+      <q_vh_seit>01.11.1930</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>580170</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Zehdenick UP</pgname>
+      <gewaesser>Obere Havel Wasserstraße</gewaesser>
+      <betreiber>WSA Oder-Havel</betreiber>
+      <lat>52,98201506</lat>
+      <lon>13,33325902</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Zehdenick UP/580170_W.pdf</url>
+      <pnp>41,235</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Elbe</fge>
+      <gkz>5817</gkz>
+      <ezg>2076</ezg>
+      <lage>oberhalb Abzweig alter Finowkanal, links</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit></w_vo_seit>
+      <w_vh_seit>01.11.1952</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+    <pegel>
+      <pgnr>5930090</pgnr>
+      <hrsg-id>wsv</hrsg-id>
+      <pgname>Zollenspieker</pgname>
+      <gewaesser>Elbe</gewaesser>
+      <betreiber>WSA Elbe</betreiber>
+      <lat>53,39870869</lat>
+      <lon>10,18537436</lon>
+      <url>http://dgj-daten.bafg.de/Elbe/Zollenspieker/5930090_W.pdf</url>
+      <pnp>-5,036</pnp>
+      <pnp_bezug>DE_DHHN2016_NH</pnp_bezug>
+      <fge>Elbe</fge>
+      <gkz>5939990</gkz>
+      <ezg>-</ezg>
+      <lage>-</lage>
+      <ds>BfG</ds>
+      <w_vo>1</w_vo>
+      <w_vo_seit>1901</w_vo_seit>
+      <w_vh_seit>01.11.1952</w_vh_seit>
+      <q_vo>0</q_vo>
+      <q_vo_seit>-</q_vo_seit>
+      <q_vh_seit>-</q_vh_seit>
+    </pegel>
+  </pegel-info>
+</pep-daten>

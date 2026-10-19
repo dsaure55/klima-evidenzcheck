@@ -1,0 +1,278 @@
+Lauf gestartet: 2026-10-19 09:42:49 UTC 
+R-Version: R version 4.6.1 (2026-06-24 ucrt) 
+Basisverzeichnis: C:/Users/dsaur/klima-evidenzcheck/Analysen/2026-10-rhein-niedrigwasser 
+
+============================================================================
+SAP 3.3 S1: Quellen und Pruefsummenverifikation
+============================================================================
+
+kein Inhalt (HTTP 204), keine Datei                                  OK 
+                                  1                                 147 
+Dateien ohne Protokolleintrag: keine 
+  -> rohdaten/SHA256SUMS.txt (147 Dateien)
+  -> output/S1_quellen_abrufe_pruefsummen.csv
+
+PEGELONLINE (Rang 3, 2026): Pruefsummenverifikation der verblindeten Sicherung
+und des zweiten Abrufs -> PLATZHALTER. Erst nach dem zweiten Abruf (Top-Level-
+Session, spaetestens 14.11.2026). In diesem Lauf nicht beruehrt.
+
+============================================================================
+SAP 3.3 S2-S4: Struktur-Check aus DGJ-Stammblatt und DGJ-Richtlinie
+============================================================================
+S2 Jahresdefinition (Stammblatt Kaub):
+[1] "(*) Abflussjahr: 1.11. des Vorjahres bis 31.10."
+S2 Jahresdefinition (DGJ-Richtlinie):
+[1] "Abflussjahr: Zeitspanne von November bis Oktober des Folgejahres, das Abflussjahr wird"
+S2 Zeitbezug (DGJ-Richtlinie, Vorwort):
+[1] "Alle Messdaten sind auf MEZ zu beziehen."
+S2 Tageswerte (DGJ-Richtlinie 5.1):
+[1] "Tageswerte sind die Tagesmittelwerte der Wasserstände und/oder der Abflüsse. Im Tidege-"
+Befund S2: Abflussjahr 01.11.(j-1)-31.10.(j) bestaetigt; DGJ-Tageswerte sind
+Tagesmittel, Messdaten auf MEZ bezogen. Die Richtlinie praezisiert die Zuordnung
+des 00:00-Werts nicht; SAP 3.1b (halboffenes Intervall [00:00, 24:00) MEZ) steht
+nicht im Widerspruch. Keine Abweichung. Zusatzbefund: Abfluesse werden im DGJ auf
+drei gueltige Ziffern gerundet (Richtlinie, Anlage 'Genauigkeiten').
+      pgnr name ezg_km2 q_vorhanden_seit q_veroeffentlicht_seit
+1 25700100 Kaub  103729       01.11.1930                   1937
+2  2730010 Köln  144232       01.11.1816                   1937
+  w_vorhanden_seit
+1       01.01.1856
+2       01.11.1816
+Erstes vollstaendiges Abflussjahr der Q-Tagesreihe laut DGJ: Kaub 1931 | Koeln 1817 
+
+S3 Pegelgeschichte Kaub (Hinweise im Stammblatt, AJ 2008-2025):
+ [1] "PNP: +67,67 m DHHN2016 Gewässer: Rhein"                        
+ [2] "Extremwerte ab 1880"                                           
+ [3] "HQ1, HQ5: Jahresreihe 1901/2025"                               
+ [4] "HQ1, HQ5: Jahresreihe 1901/2024"                               
+ [5] "HQ1, HQ5: Jahresreihe 1901/2023"                               
+ [6] "HQ1, HQ5: Jahresreihe 1901/2022"                               
+ [7] "HQ1, HQ5: Jahresreihe 1901/2021"                               
+ [8] "PNP : NHN +"                                                   
+ [9] "HQ1, HQ5: Jahresreihe 1901/2020"                               
+[10] "PNP-Systemänderung am 1.11.2019 auf DHHN2016"                  
+[11] "HQ1, HQ5: Jahresreihe 1901/2019"                               
+[12] "HQ1, HQ5: Jahresreihe 1901/2018"                               
+[13] "2021 wurden rückwirkend ab 2013 neue AT eingeführt"            
+[14] "HQ1, HQ5: Jahresreihe 1901/2017"                               
+[15] "2021 wurden rückwirkend bis 2013 neue AT eingeführt"           
+[16] "HQ1, HQ5: Jahresreihe 1901/2016"                               
+[17] "2021 wurden rückwirkend bis 2013 neue Abflusstafeln eingeführt"
+[18] "HQ1, HQ5: Jahresreihe 1901/2015"                               
+[19] "Extremwerte ab 1880 eisfrei"                                   
+[20] "2021 wurden rückwirkend bis 2011 neue Abflusstafeln eingeführt"
+[21] "PNP : NN +"                                                    
+[22] "PNP :"                                                         
+[23] "HQ1, HQ5: Jahresreihe 1901/2013"                               
+[24] "HQ1, HQ5: Jahresreihe 1901/2012"                               
+[25] "2015 wurden rückwirkend bis 2011 neue Abflusstafeln eingeführt"
+[26] "HQ1, HQ5: Jahresreihe 1901/2011"                               
+[27] "HQ1, HQ5: Jahresreihe 1901/2010"                               
+[28] "HQ1, HQ5: Jahresreihe 1901/2009"                               
+[29] "HQ1, HQ5: Jahresreihe 1901/2008"                               
+Befund S3: Q vorhanden ab 01.11.1930. Im Stammblatt dokumentiert: rueckwirkende
+Abflusstafel-Einfuehrungen (2015 bis 2011; 2021 bis/ab 2013, eine Seite nennt 2011),
+PNP-Systemaenderung auf DHHN2016 am 01.11.2019 (nur W). Pegelgeschichte vor 2008
+(Messmethodik, Standort) ist im frei verfuegbaren Stammblatt NICHT dokumentiert.
+-> S3c: Entscheidung Daniel (R3). Aktuell: nicht aktiviert
+Iffezheim (S3a): Kraftwerk, Schleuse und Wehr 1977 in Betrieb (Schleuse 14.03.1977;
+Beleg: Wikipedia 'Staustufe Iffezheim', Sekundaerquelle, rohdaten/belege/). Erstes
+Abflussjahr nach Inbetriebnahme = AJ 1978 (01.11.1977-31.10.1978). SAP-Wert bestaetigt.
+Primaerquellen-Beleg (WSV/WSA) steht noch aus.
+Bodensee (SAP 8.1): 'keinen Damm und keine Schleuse am Abfluss, daher ist eine
+kuenstliche Regulierung des Wasserstands nicht moeglich' (Wikipedia 'Bodensee',
+dort zitiert: Sieber et al., WasserWirtschaft). Nicht reguliert = Kenntnisstand des
+SAP bestaetigt (Sekundaerbeleg). Zufluss Alpenrhein durch Speicherbewirtschaftung
+beeinflusst (SAP 8.1, nicht weiter geprueft).
+
+S4 Messunsicherheit Q bei Niedrigwasser:
+(keine Angabe in Stammblatt oder Richtlinie gefunden) 
+Befund S4: Keine dokumentierte Messunsicherheit -> delta = 5 % (Vorgabe SAP 2.3).
+
+============================================================================
+SAP 3.1 Rang 1: DGJ-Tageswerte Q (Jahrbuchseiten AJ 2008-2025)
+============================================================================
+Kaub : Nov/Dez-Doppelangaben verglichen: 1037 Tage, abweichend: 0 (verwendet: Seite des Abflussjahres)
+Koeln : Nov/Dez-Doppelangaben verglichen: 1037 Tage, abweichend: 0 (verwendet: Seite des Abflussjahres)
+ pegel seite_jahr n_werte monats_NQ_uebereinstimmung
+  Kaub       2025     426                      14/14
+  Kaub       2024     427                      14/14
+  Kaub       2023     426                      14/14
+  Kaub       2022     426                      14/14
+  Kaub       2021     426                      14/14
+  Kaub       2020     427                      14/14
+  Kaub       2019     426                      14/14
+  Kaub       2018     426                      14/14
+  Kaub       2017     426                      14/14
+  Kaub       2016     427                      14/14
+  Kaub       2015     426                      14/14
+  Kaub       2014     426                      14/14
+  Kaub       2013     426                      14/14
+  Kaub       2012     427                      14/14
+  Kaub       2011     426                      14/14
+  Kaub       2010     426                      14/14
+  Kaub       2009     426                      14/14
+  Kaub       2008     427                      14/14
+ Koeln       2025     426                      14/14
+ Koeln       2024     427                      14/14
+ Koeln       2023     426                      14/14
+ Koeln       2022     426                      14/14
+ Koeln       2021     426                      14/14
+ Koeln       2020     427                      14/14
+ Koeln       2019     426                      14/14
+ Koeln       2018     426                      14/14
+ Koeln       2017     426                      14/14
+ Koeln       2016     427                      14/14
+ Koeln       2015     426                      14/14
+ Koeln       2014     426                      14/14
+ Koeln       2013     426                      14/14
+ Koeln       2012     427                      14/14
+ Koeln       2011     426                      14/14
+ Koeln       2010     426                      14/14
+ Koeln       2009     426                      14/14
+ Koeln       2008     427                      14/14
+  -> output/DGJ_parser_validierung_monats_NQ.csv
+  -> output/DGJ_NovDez_doppelangaben_vergleich.csv
+  -> output/tageswerte_Q_Kaub_DGJ_AJ2008-2025.csv
+  -> output/tageswerte_Q_Koeln_DGJ_AJ2008-2025.csv
+
+============================================================================
+SAP 3.1 Rang 5: Rijkswaterstaat, Lobith (S1a) - Aufbereitung
+============================================================================
+Lobith bis 1988: Uhrzeiten der Einzelwerte: 08:00 
+Zeitstempel mit abweichenden Werten zwischen Reihen: bis 1988: 0 | GEM24H: 0 | 10-min 2024-12/2025: 174 
+Kontrolle GEM24H-Tagesdefinition (Dez. 2024), mittlere |rel. Abweichung| in %:
+Q_10min_punkt_etikett      mittel_0_bis_24h     mittel_m24_bis_0h 
+                 0.00                  3.10                  3.27 
+   mittel_m12_bis_12h 
+                 0.40 
+Befund: GEM24H ist NICHT das Kalendertagsmittel [00:00, 24:00) MEZ; der Wert entspricht
+dem 10-min-Wert zum Etikettzeitpunkt 00:00 und am ehesten einem um Mitternacht
+zentrierten 24-h-Mittel. -> Teil der Rueckfrage R2 (Tagesdefinition Lobith).
+  -> output/Lobith_GEM24H_tagesdefinition_kontrolle_2024-12.csv
+2025 (Jan-Okt), 10-min-Werte je Tag: min 144 max 144 | Tage < 130 Werte: 0 
+       
+        08:00-Einzelwert (RWS, Q/H-Kurve) Etmaalgemiddelde (RWS, other:F006)
+  FALSE                             32142                                  0
+  TRUE                                  0                               5233
+       
+        Etmaalgemiddelde (RWS, other:F216) Etmaalgemiddelde (RWS, other:F230)
+  FALSE                                  0                                  0
+  TRUE                                6820                               1096
+       
+        Tagesmittel aus 10-min-Werten (analog SAP 3.1b)
+  FALSE                                               0
+  TRUE                                              304
+  -> output/tageswerte_Q_Lobith_RWS_1901-AJ2025.csv
+
+============================================================================
+SAP 2.1 / 4: Jahreskennwerte je Abflussjahr
+============================================================================
+Kaub (DGJ): AJ 2008-2025 | gueltig: 18 von 18 
+Koeln (DGJ): AJ 2008-2025 | gueltig: 18 von 18 
+Lobith (RWS): AJ 1902-2025 | gueltig: 124 von 124 
+   Kaub ungueltige AJ: keine 
+   Koeln ungueltige AJ: keine 
+   Lobith ungueltige AJ: keine 
+  -> output/jahreskennwerte_Kaub_DGJ_AJ2008-2025.csv
+  -> output/jahreskennwerte_Koeln_DGJ_AJ2008-2025.csv
+  -> output/jahreskennwerte_Lobith_RWS_AJ1902-2025.csv
+
+============================================================================
+SAP 3.3 S6: Abgleich DGJ (Rang 1) vs. GRDC (Rang 2)
+============================================================================
+PLATZHALTER: GRDC-Daten liegen nicht vor (Formular/E-Mail noetig, siehe R1).
+Sobald GRDC-Tageswerte in rohdaten/grdc/ liegen (per .gitignore ausgeschlossen),
+werden NM7Q/NQ der ueberlappenden AJ 2008-2025 gegen die DGJ-Werte oben
+verglichen; Abweichungen > 1 % werden tabelliert (SAP 3.1 Vorrangregel).
+
+============================================================================
+SAP 3.3 S7 / 2.5: D0 Verifikation des Anlasses
+============================================================================
+D0 (b) Bisher niedrigster Wasserstand Kaub laut DGJ (Extremwerte ab 1880, Stand
+27.07.2026, bis AJ 2025): 25 cm am 22.10.2018 (Tagesmittel; im Binnenland sind die
+DGJ-Minima Tagesmittelwerte). Belegzeilen aus dem Stammblatt:
+[1] "NW cm 25 am 22.10.2018 28 25 25 am 22.10.2018 150 150 150 246 165 132"
+[2] "1 25 22.10.2018 911 *) 02.02.1893 9 91 91 123 61 31"                  
+[3] "8 544 5,26 22.10.2018 6150 59,4 750 19.01.1955 2 793 793 1200 572 487"
+[4] "NW cm 25 am 22.10.2018 28 25 25 am 22.10.2018 150 268 246 246 166 132"
+Befund D0 (b): Medienangabe 'Vorrekord 24-25 cm, Oktober 2018' -> mit DGJ-Wert
+25 cm (22.10.2018) vereinbar. (Nur Wasserstand; keine Inferenz, SAP 2.5/8.2.)
+D0 (a) [-6 cm am 01.10.2026] und (c) [Copernicus-Bulletin 09/2026]: PLATZHALTER (2026).
+
+============================================================================
+SAP 4: Vollstaendigkeit der historischen Referenzreihe H
+============================================================================
+          pegel    H_soll n_soll AJ_mit_Daten n_vorhanden n_gueltig
+ Kaub (primaer) 1931-2025     95    2008-2025          18        18
+    Koeln (S1b) 1817-2025    209    2008-2025          18        18
+   Lobith (S1a) 1902-2025    124    1902-2025         124       124
+ H_vollstaendig freigabe
+          FALSE    FALSE
+          FALSE    FALSE
+           TRUE    FALSE
+                                                          grund
+          AJ 1931-2007 fehlen (GRDC/BfG-Anfrage ausstehend, R1)
+          AJ 1817-2007 fehlen (GRDC/BfG-Anfrage ausstehend, R1)
+ Daten vollstaendig, aber Entscheidung zu R2 (a)/(b) ausstehend
+  -> output/referenzreihe_H_status.csv
+
+============================================================================
+SAP 5 / 6: Auswertung Kaub NICHT gerechnet
+============================================================================
+Grund: H unvollstaendig (AJ 1931-2007 fehlen (GRDC/BfG-Anfrage ausstehend, R1)).
+Nicht berechnet: E1-Prognoseintervall (ohne 2026), E2 (Hamed-Rao-MK, Sen), Diagnostik
+(Shapiro-Wilk, ACF/r1, Ljung-Box, Pettitt, Randjahre in H, Leave-one-out), S3a, S3b,
+S3c, S4, S6a, S6b, S9, S10a-d, S11a, S11b, S12. Eine Auswertung auf AJ 2008-2025 allein
+waere ein im SAP nicht vorgesehenes Analysefenster und wird nicht gerechnet.
+Deskriptiv dokumentiert (SAP 5.2 Randpruefung, nur AJ 2008-2025): Randjahre: 2008, 2010, 2018, 2021 
+
+============================================================================
+Funktionstest der Analysefunktionen mit SIMULIERTEN Daten (kein Ergebnis)
+============================================================================
+Funktionstest bestanden: alle H-basierten Funktionen liefen fehlerfrei auf simulierten Daten. 
+
+============================================================================
+Platzhalter: Teile mit Abflussjahr 2026
+============================================================================
+SAP 3.3 S5 (Herkunft/Abdeckung 2026, Ueberlappungspruefung), SAP 3.1b Tagesmittel,
+E1-Klassifikation, T2026, p_pred, Jaehrlichkeit, D1, S2a, S2b, S5, S7, S8, Grafiken 1/2/4:
+erst nach dem zweiten PEGELONLINE-Abruf und vollstaendigem H.
+
+============================================================================
+Session-Info (SAP 10)
+============================================================================
+R version 4.6.1 (2026-06-24 ucrt)
+Platform: x86_64-w64-mingw32/x64
+Running under: Windows 11 x64 (build 26200)
+
+Matrix products: default
+  LAPACK version 3.12.1
+
+locale:
+[1] LC_COLLATE=German_Germany.utf8  LC_CTYPE=German_Germany.utf8   
+[3] LC_MONETARY=German_Germany.utf8 LC_NUMERIC=C                   
+[5] LC_TIME=German_Germany.utf8    
+
+time zone: Europe/Berlin
+tzcode source: internal
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+[1] pdftools_3.9.1 digest_0.6.39  jsonlite_2.0.0 ggplot2_4.0.3  boot_1.3-32   
+[6] lmom_3.3       modifiedmk_1.6 trend_1.1.9    zoo_1.9-0     
+
+loaded via a namespace (and not attached):
+ [1] vctrs_0.7.3         cli_3.6.6           rlang_1.3.0        
+ [4] extraDistr_1.10.0.5 generics_0.1.4      S7_0.2.2           
+ [7] glue_1.8.1          askpass_1.2.1       qpdf_1.4.1         
+[10] scales_1.4.0        grid_4.6.1          tibble_3.3.1       
+[13] lifecycle_1.0.5     compiler_4.6.1      dplyr_1.2.1        
+[16] RColorBrewer_1.1-3  Rcpp_1.1.2          pkgconfig_2.0.3    
+[19] farver_2.1.2        lattice_0.22-9      R6_2.6.1           
+[22] tidyselect_1.2.1    pillar_1.11.1       magrittr_2.0.5     
+[25] tools_4.6.1         withr_3.0.3         gtable_0.3.6       
+
+Lauf beendet: 2026-10-19 09:45:14 UTC 
