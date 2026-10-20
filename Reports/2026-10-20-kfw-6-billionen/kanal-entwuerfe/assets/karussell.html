@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!-- **ENTWURF – nicht veröffentlicht. Freigabe durch Daniel Saure erforderlich vor Publikation.** -->
+<!-- Klima Kompass · Wissen · KfW-Studie 6 Billionen · Instagram-Karussell, 6 Folien à 1080×1350 -->
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>ENTWURF – Karussell KfW-Studie 6 Billionen (Klima Kompass · Wissen)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0E3B43;
+    --flaeche: #14505A;
+    --text: #F2F5F4;
+    --mint: #5FD3B3;
+    --koralle: #F26B5B;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #222; font-family: 'IBM Plex Sans', sans-serif; color: var(--text); }
+  .slide {
+    width: 1080px; height: 1350px; background: var(--bg);
+    padding: 96px 88px 80px; position: relative; overflow: hidden;
+    display: flex; flex-direction: column; margin: 0 auto 40px;
+  }
+  .reihe { font-family: 'IBM Plex Mono', monospace; font-size: 30px; color: var(--mint); letter-spacing: 1px; margin-bottom: 48px; }
+  .absender { font-family: 'Space Grotesk', sans-serif; font-weight: 500; font-size: 40px; margin-bottom: 28px; opacity: .95; }
+  h1 { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 88px; line-height: 1.05; margin-bottom: 40px; }
+  h2 { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 60px; line-height: 1.1; margin-bottom: 32px; }
+  p { font-size: 36px; line-height: 1.4; margin-bottom: 26px; }
+  .gross { font-family: 'IBM Plex Mono', monospace; font-weight: 600; color: var(--mint); font-size: 112px; line-height: 1; margin-bottom: 16px; }
+  .einheit { font-size: 34px; color: var(--text); opacity: .9; margin-bottom: 32px; }
+  .karte { background: var(--flaeche); border-radius: 24px; padding: 28px 40px; margin-bottom: 22px; }
+  .karte .label { font-family: 'Space Grotesk', sans-serif; font-size: 34px; font-weight: 700; margin-bottom: 6px; }
+  .karte .wert { font-family: 'IBM Plex Mono', monospace; font-size: 56px; font-weight: 600; color: var(--mint); }
+  .karte .wert small { font-size: 28px; color: var(--text); font-weight: 400; }
+  .karte .text { font-size: 30px; line-height: 1.35; margin-top: 8px; margin-bottom: 0; opacity: .92; }
+  .karte.irrtum { border-left: 12px solid var(--koralle); }
+  .karte.befund { border-left: 12px solid var(--mint); }
+  .karte .kopf { font-family: 'IBM Plex Mono', monospace; font-size: 26px; letter-spacing: 1px; margin-bottom: 12px; }
+  .karte p { font-size: 34px; margin-bottom: 0; }
+  .hinweis { font-size: 30px; line-height: 1.4; opacity: .9; }
+  ul { list-style: none; }
+  li { font-size: 34px; line-height: 1.36; margin-bottom: 26px; padding-left: 44px; position: relative; }
+  li::before { content: "–"; position: absolute; left: 0; color: var(--koralle); font-weight: 700; }
+  li b { font-weight: 600; }
+  .koralle { color: var(--koralle); }
+  .mint { color: var(--mint); }
+  .spacer { flex: 1; }
+  .cta { font-family: 'Space Grotesk', sans-serif; font-size: 46px; font-weight: 700; color: var(--bg); background: var(--mint); border-radius: 20px; padding: 26px 40px; display: inline-block; align-self: flex-start; }
+  .fuss {
+    position: absolute; left: 88px; right: 88px; bottom: 44px;
+    display: flex; justify-content: space-between; gap: 32px;
+    font-family: 'IBM Plex Mono', monospace; font-size: 22px; opacity: .75;
+    border-top: 1px solid rgba(242,245,244,.25); padding-top: 18px;
+  }
+  .fuss .quelle { text-align: right; }
+  .nummer { position: absolute; top: 96px; right: 88px; font-family: 'IBM Plex Mono', monospace; font-size: 26px; opacity: .6; }
+</style>
+</head>
+<body>
+
+<!-- Folie 1: Hook -->
+<section class="slide" id="folie-1">
+  <div class="reihe">KLIMA KOMPASS · WISSEN</div>
+  <div class="nummer">1/6</div>
+  <div class="absender">Studie von KfW Research</div>
+  <h1>6 Billionen Euro für Klima&shy;neutralität – ist das Geld einfach weg?</h1>
+  <h2 class="mint">Nicht einfach weg. Wirklich zusätzlich nötig: rund 65 Mrd. € pro Jahr.</h2>
+  <p>Was ist Investition, was sind echte Mehrkosten? Wir erklären die Zahlen der Studie.</p>
+  <div class="spacer"></div>
+  <div class="fuss"><span>Klima Kompass · Wissen</span><span class="quelle">Quelle: KfW Research, Fokus Nr. 561 (12.10.2026)</span></div>
+</section>
+
+<!-- Folie 2: Bruttozahl -->
+<section class="slide" id="folie-2">
+  <div class="reihe">WOHER DIE ZAHL KOMMT</div>
+  <div class="nummer">2/6</div>
+  <div class="gross">6 Bio. €</div>
+  <div class="einheit">Klimaschutzinvestitionen bis 2045, je nach Szenario 5,7 bis 6,4 Billionen (2025–2045)</div>
+  <div class="karte">
+    <div class="label">Pro Jahr</div>
+    <div class="wert">≈ 290 Mrd. € <small>in Preisen von 2024</small></div>
+  </div>
+  <div class="karte">
+    <div class="label">Gezählt wird der volle Preis</div>
+    <p class="text">einer klimafreundlichen Anlage, etwa einer Wärmepumpe oder eines E-Autos. Klimaanpassung ist nicht enthalten.</p>
+  </div>
+  <p class="hinweis">Gerechnet hat Prognos, auf Basis von vier bekannten Szenarien zur Klimaneutralität bis 2045.</p>
+  <div class="spacer"></div>
+  <div class="fuss"><span>Klima Kompass · Wissen</span><span class="quelle">Quelle: KfW Research, Fokus Nr. 561 (12.10.2026)</span></div>
+</section>
+
+<!-- Folie 3: Brutto vs. Mehrkosten -->
+<section class="slide" id="folie-3">
+  <div class="reihe">BRUTTO ODER MEHRKOSTEN?</div>
+  <div class="nummer">3/6</div>
+  <h2>Das Wärmepumpen-Beispiel</h2>
+  <p>Wer seine alte Heizung ersetzen muss, gibt ohnehin Geld aus. Zusätzlich ist nur der <span class="mint">Aufpreis gegenüber einer neuen Gasheizung</span>.</p>
+  <div class="karte">
+    <div class="label">Brutto: voller Preis</div>
+    <div class="wert">≈ 290 Mrd. € <small>pro Jahr</small></div>
+  </div>
+  <div class="karte befund">
+    <div class="label">Mehrkosten („Nettoinvestitionen“)</div>
+    <div class="wert">≈ 145 Mrd. € <small style="display:block; margin-top:12px;">pro Jahr, knapp die Hälfte</small></div>
+  </div>
+  <p class="hinweis">Der Rest sind Investitionen, die anstelle fossiler Technik getätigt werden.</p>
+  <div class="spacer"></div>
+  <div class="fuss"><span>Klima Kompass · Wissen</span><span class="quelle">Quelle: KfW Research, Fokus Nr. 561 (12.10.2026)</span></div>
+</section>
+
+<!-- Folie 4: Heute und zusätzlich -->
+<section class="slide" id="folie-4">
+  <div class="reihe">WIE VIEL HEUTE SCHON FLIESST</div>
+  <div class="nummer">4/6</div>
+  <div class="karte">
+    <div class="label">Brutto, 2018–2023</div>
+    <div class="wert">≈ 110 Mrd. € <small>pro Jahr</small></div>
+    <p class="text">Gemessen an 290 Mrd. müssten sich die Investitionen mehr als verdoppeln.</p>
+  </div>
+  <div class="karte befund">
+    <div class="label">Mehrkosten, 2018–2023 (Teil der 110 Mrd.)</div>
+    <div class="wert">≈ 80 Mrd. € <small>pro Jahr</small></div>
+    <p class="text">Nötig wären rund 145 Mrd. € pro Jahr.</p>
+  </div>
+  <div class="gross" style="margin-top:20px">+65 Mrd. €</div>
+  <div class="einheit">pro Jahr zusätzlich (im Mittel), rund 1,5 % des BIP 2024</div>
+  <p class="hinweis">Die Autorinnen und Autoren: eine „substanzielle, aber zugleich darstellbare Aufgabe“.</p>
+  <div class="spacer"></div>
+  <div class="fuss"><span>Klima Kompass · Wissen</span><span class="quelle">Quelle: KfW Research, Fokus Nr. 561 (12.10.2026)</span></div>
+</section>
+
+<!-- Folie 5: Was die Zahlen nicht sagen -->
+<section class="slide" id="folie-5">
+  <div class="reihe">WAS DIE ZAHLEN NICHT SAGEN</div>
+  <div class="nummer">5/6</div>
+  <ul>
+    <li><b>Keine eigene Analyse.</b> Alle Zahlen stammen aus der Studie.</li>
+    <li><b>Modellrechnungen.</b> Sie beruhen auf vier Szenarien, daher die Spanne von 5,7 bis 6,4 Billionen Euro.</li>
+    <li><b>Keine Gesamtbilanz.</b> Ob sich die Investitionen am Ende vollständig rechnen, beantwortet die Studie nicht mit einer einzelnen Zahl.</li>
+    <li><b class="koralle">Nicht alles drin.</b> Ausgaben für Klimaanpassung sind nicht enthalten.</li>
+  </ul>
+  <div class="spacer"></div>
+  <div class="fuss"><span>Klima Kompass · Wissen</span><span class="quelle">Quelle: KfW Research, Fokus Nr. 561 (12.10.2026)</span></div>
+</section>
+
+<!-- Folie 6: Fazit -->
+<section class="slide" id="folie-6">
+  <div class="reihe">FAZIT</div>
+  <div class="nummer">6/6</div>
+  <div class="karte irrtum">
+    <div class="kopf koralle">HÄUFIGER IRRTUM</div>
+    <p>„Klimaschutz kostet uns 6 Billionen Euro.“</p>
+  </div>
+  <div class="karte befund">
+    <div class="kopf mint">BEFUND</div>
+    <p>Die 6 Billionen sind Investitionen, keine verlorenen Kosten. Ein großer Teil ersetzt Ausgaben, die ohnehin anfallen würden.</p>
+  </div>
+  <p class="hinweis"><b>Unsere Lesart:</b> Wer die 6 Billionen pauschal als „Kosten“ bezeichnet, vermischt Bruttoinvestitionen und Mehrkosten. Die Studie selbst unterscheidet beides ausdrücklich.</p>
+  <div class="spacer"></div>
+  <div class="cta">Ganzer Artikel: Link in Bio</div>
+  <div style="height:90px"></div>
+  <div class="fuss"><span>Klima Kompass · Wissen</span><span class="quelle">Quelle: KfW Research, Fokus Nr. 561 (12.10.2026)</span></div>
+</section>
+
+</body>
+</html>
