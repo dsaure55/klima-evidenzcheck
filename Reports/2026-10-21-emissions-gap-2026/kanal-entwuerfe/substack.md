@@ -1,3 +1,5 @@
+**VERÖFFENTLICHT auf Substack (Link von Daniel Saure am 21.10.2026): https://klimaevidenzcheck.substack.com/p/zuruck-auf-15-grad-was-der-neue-un**
+
 **FREIGEGEBEN durch Daniel Saure am 21.10.2026 (im Chat: „Ich habe die aktuelle Fassung vollständig gelesen. Freigabe erteilt.“) – noch nicht veröffentlicht. Diese Kopfzeile nicht mit nach Substack übernehmen.**
 Klima Kompass · Einordnung
 
