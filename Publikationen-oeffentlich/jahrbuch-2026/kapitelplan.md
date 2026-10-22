@@ -52,7 +52,7 @@ Zuordnung der 15 inhaltlichen Artikel (Stand Substack-Archiv 22.10.2026, 16 Post
 |---|---|---|
 | 1 | **War dieser Sommer normal – und was hat er gekostet?** | (a) „War der Sommer 2026 ‚ganz normal‘?“ (Evidenzcheck, 11.9.); (b) „Der Hitzesommer 2026: Ausreißer oder Teil der Bandbreite?“ (Evidenzcheck, 29.8.); (c) „Hitzesommer ohne Klima? Was Medien weglassen …“ (Einordnung, 17.10.) |
 | 2 | **Reicht die Energie – Gas im Winter, Strom bei Dunkelflaute?** | (a) „Reichen 136 Terawattstunden?“ (Evidenzcheck, 14.9.); (b) „Gasspeicher bei 60 Prozent“ (Einordnung, 17.10.); (c) „Batteriespeicher und Dunkelflauten“ (Evidenzcheck, 31.8.) |
-| 3 | **Was kostet Klimapolitik – und wer zahlt?** | (a) „65 Euro rein, 59 Euro raus“ (Evidenzcheck, 18.9., korrigiert 17.10.); (b) „Bundestag friert CO₂-Preis 2027 ein“ (Einordnung, 17.10., aktualisiert 22.10.); (c) „KfW-Studie: 6 Billionen Euro …“ (Wissen, 20.10.) |
+| 3 | **Was kostet Klimapolitik – und wer zahlt?** | (a) „65 Euro rein, 59 Euro raus“ (Rechenkommentar, kein Evidenzcheck, 18.9., korrigiert 17.10.); (b) „Bundestag friert CO₂-Preis 2027 ein“ (Einordnung, 17.10., aktualisiert 22.10.); (c) „KfW-Studie: 6 Billionen Euro …“ (Wissen, 20.10.) |
 | 4 | **Schafft Deutschland sein Klimaziel?** | (a) „Erreicht Deutschland sein Klimaziel 2040?“ (Evidenzcheck, 27.8.). **Lücke:** nur ein Artikel; Optionen siehe Entscheidung E3 |
 | 5 | **Ist Deutschland „zu klein, um zu zählen“?** | (a) „Die Trittbrettfahrer-Rechnung“ (Evidenzcheck, 31.8.); (b) „COP31: Ist Deutschland ‚zu klein, um zu zählen‘?“ (Einordnung, 19.10.) |
 | 6 | **Wo steht die Welt beim 1,5-Grad-Ziel – und kann man CO₂ einfach wieder aus der Luft holen?** | (a) „Monate über 1,5 Grad – ist das Pariser Ziel damit schon gerissen?“ (Wissen, 16.10.); (b) „Kann man CO₂ einfach wieder aus der Luft holen?“ (Wissen, 18.10.); (c) „Zurück auf 1,5 Grad – was der neue UN-Bericht wirklich verlangt“ (Einordnung, 21.10.) |
@@ -135,7 +135,7 @@ Abgerufen wurde am 22.10.2026 nur das Substack-Archiv (Titel, Slug, Datum), nich
 | 2 | Gasspeicher-Winter-Ergebnis (Eurostat bis März 2027) | **offen bis Mai/Juni 2027** → im Buch „noch offen“ mit Verweis auf Register #1 |
 | 3 | Bundesrat-Abschluss CO₂-Preis 2027 | offen; Stand zum Redaktionsschluss belegen |
 | 4 | Prognose-Check Projektionsberichte (SAP v1.0 final, Amendment 1 noch ohne Textfreigabe, Analyse Phase B, Validierung und Nachkontrolle-Datei ausstehend) | **Risiko:** Ergebnis bis Mitte November unwahrscheinlich; Plan B: Kapitel 4 nennt nur den Stand ohne Ergebnis |
-| 5 | Ergebnis COP31 (Beginn 9.11.2026 laut Pipeline-Notiz; Dauer prüfen) | liegt voraussichtlich nach Redaktionsschluss; „noch offen“ |
+| 5 | Ergebnis COP31 (9.–20.11.2026, Antalya, laut UNFCCC-Zeitplan in unseren Artikeln) | liegt vor dem Redaktionsschluss, aber unsere Stücke treffen dazu keine Vorhersage; ein Ergebnisblock wäre ein neuer, separat zu prüfender Text (siehe `gliederung_kap01-06.md`) |
 
 ---
 

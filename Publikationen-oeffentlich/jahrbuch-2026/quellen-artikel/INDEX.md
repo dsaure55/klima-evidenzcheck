@@ -35,4 +35,4 @@ Nur 6 Posts enthalten Bilder: THG-Trend 2040 (1), Batteriespeicher (1), Trittbre
 
 - Satz-für-Satz-Abgleich der 22.10.-Änderungen im CO₂-Preis-Post gegen `korrektur_2026-10-22.md` (bei der Differenzprüfung Kapitel 3).
 - Batteriespeicher: Titelabweichung Repo/Substack im Kapitel mit dem Substack-Titel führen.
-- Hitzesommer 29.8.: Zahlenbasis 15.800 gegen 16.000 in Kapitel 1 klären (vermutlich anderer RKI-Stand, nicht geprüft).
+- Hitzesommer 29.8.: erledigt — das Einordnungsstück vom 17.10. erklärt es: 15.800 war der vorläufige Wert, 16.000 der RKI-Wert KW 37 (Stand 24.9.).
