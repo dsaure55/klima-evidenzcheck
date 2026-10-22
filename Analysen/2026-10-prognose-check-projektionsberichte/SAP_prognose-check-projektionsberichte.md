@@ -8,17 +8,16 @@ Treibhausgasemissionen (gesamt und je Sektor), Berichte 2015–2023.
 "Prognose-Check" (erster Check dieser Art). Umfang größer als ein
 Schnellcheck, ca. eine Woche Bearbeitung (Entscheidung Daniel Saure,
 22.10.2026).
-**Version:** 0.2 (**draft**, nicht eingefroren)
+**Version:** 1.0 (**final**, eingefroren am 22.10.2026)
 **Datum:** 22.10.2026
-**Autor:in:** Claude (sap-autor-Subagent), Entwurf zur Prüfung durch Daniel Saure
-**Freigabe:** _________________________ Datum: __________
-(bewusst leer; siehe nächster Absatz)
-**Freigabe/Einfrieren:** ausstehend. Dieser Entwurf enthält bewusst keinen
-Freigabevermerk. Ein Vermerk darf erst eingetragen werden, wenn der Mensch den
-vollständigen aktuellen Text gelesen und ausdrücklich mit dem Wortlaut
-"Volltext gelesen, einfrieren" bestätigt hat (CLAUDE.md, Verifikationspflicht;
-Abschnitt 12, Punkt 11). Die Beantwortung der Rückfragen am 22.10.2026 ist
-**keine** Freigabe.
+**Autor:in:** Claude (sap-autor-Subagent), geprüft durch Daniel Saure
+**Status: final, eingefroren am 22.10.2026, freigegeben durch Daniel Saure.**
+**Freigabe:** Daniel Saure, 22.10.2026 (im Chat: „Volltext gelesen, einfrieren“).
+Grundlage der Freigabe ist der Volltext v0.2, der Daniel am 22.10.2026 als
+Datei zugeschickt wurde. Einzige Änderung danach und vor dem Einfrieren: In
+Abschnitt 12.2 wurde Daniels Antwort „A–D wie empfohlen“ vermerkt; die dort
+festgelegten Regeln selbst blieben unverändert. Ab jetzt sind Änderungen nur
+als gekennzeichnetes Amendment bzw. als „Post-hoc“ zulässig.
 
 **Geplanter Ordner:** `Analysen/2026-10-prognose-check-projektionsberichte/`
 
@@ -35,6 +34,10 @@ Abschnitt 12, Punkt 11). Die Beantwortung der Rückfragen am 22.10.2026 ist
   Sensitivität S1; (c) Projektionsbericht 2013 ausdrücklich ausgeschlossen;
   (d) Format/Umfang festgelegt; (e) Abschnitt 12 in "Beantwortete Rückfragen"
   umgewandelt. Weiterhin keine Daten gesichtet.
+- **v1.0 final (22.10.2026):** Eingefroren nach Freigabe durch Daniel Saure
+  („Volltext gelesen, einfrieren“). Rückfragen 12.2 A–D wie empfohlen
+  beantwortet. Inhaltlich identisch mit v0.2. Bis zum Einfrieren keine Daten
+  gesichtet.
 
 **Hinweis zur Vorlage:** Das Master-Template liegt jetzt als
 `SAP-Vorlage/SAP-Template.md` im Repo und wurde für v0.2 gelesen. Der Entwurf
