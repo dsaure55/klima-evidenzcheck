@@ -9,14 +9,15 @@ bis Ende 2026.
 
 **Format:** Klima Kompass · Evidenzcheck, Unterformat „Prognose-Register“
 (prospektiv). Inhaltsstufe: Evidenzcheck (neue Inferenz).
-**Version:** 0.1
+**Version:** 0.2
 **Status: draft**
 **Datum:** 22.10.2026
 **Autor:in:** Claude (sap-autor-Subagent)
 **Freigabe/Einfrieren:** ausstehend. Das Einfrieren erfolgt ausschließlich
 durch Daniel Saure, nachdem er den vollständigen aktuellen Text gelesen und
-ausdrücklich bestätigt hat (CLAUDE.md, Verifikationspflicht). Ein getrenntes
-Einfrieren von V3 ist als Rückfrage 7 vorgesehen.
+ausdrücklich bestätigt hat (CLAUDE.md, Verifikationspflicht). V3 darf getrennt
+eingefroren werden (Rückfrage 7, beantwortet 22.10.2026). Offene Vorbedingung
+vor dem Einfrieren von V2: Dateiprüfung nach Rückfrage 3 (siehe 3.2).
 
 **Geplanter Ordner:** `Analysen/2026-10-prognose-register-2027/`
 **Vorlage:** `SAP-Vorlage/SAP-Template.md`. Die Struktur wurde übernommen, die
@@ -27,6 +28,15 @@ Ergänzungen, wie im Prognose-Check.
 **Versionshistorie:**
 - **v0.1 draft (22.10.2026):** Erstentwurf, präregistriert. Keine Daten
   gesichtet, kein Code ausgeführt.
+- **v0.2 draft (22.10.2026):** Rückfragen 1–16 von Daniel Saure am 22.10.2026
+  beantwortet („alle wie empfohlen“, mit zwei Präzisierungen: Rückfrage 14
+  Registereinträge #2–#5 plus Substack, Rückfrage 16 Python statt R). Antworten
+  in die betroffenen Abschnitte eingearbeitet (0, 0.1, 2.0–2.5, 3.2–3.4, 9, 10,
+  11, 12, 13). Rückfrage 3 teilweise offen (Dateiprüfung durch Daniel vor dem
+  Einfrieren). Neue Rückfragen 17–19 aus der Einarbeitung. Status weiter
+  draft. Keine Daten gesichtet, kein Code ausgeführt. Zusätzlich gelesen:
+  `Prognose-Register/01_gasspeicher-winter-2026-27.md` (Formatvorlage für die
+  Einträge #2–#5).
 
 ---
 
@@ -44,7 +54,11 @@ Ergänzungen, wie im Prognose-Check.
   übernehmen): SAP, Analysebericht, Validierungsbericht, Abweichungsprotokoll
   und Skript des validierten Checks `Analysen/2026-09-sommer-2026-normal/`,
   der SAP `Analysen/2026-08-hitzesommer-2026/` und der SAP v1.0 final
-  `Analysen/2026-10-prognose-check-projektionsberichte/`.
+  `Analysen/2026-10-prognose-check-projektionsberichte/`. Für v0.2 zusätzlich
+  der Registereintrag `Prognose-Register/01_gasspeicher-winter-2026-27.md`
+  (nur als Formatvorlage; er enthält Vorhersagewerte einer anderen, bereits
+  validierten und veröffentlichten Analyse, die mit V1–V4 nichts zu tun
+  haben).
 - **Transparenz über Vorwissen:** Aus dem validierten Sommer-2026-Check sind
   der Modellfit 1971–2025, die Sensitivität S2 (Fit 1971–2026) und der
   vorläufige DWD-Wert für den Sommer 2026 bekannt. Damit ist die
@@ -67,40 +81,66 @@ werden. Das gilt ausdrücklich auch für den Copernicus-„Climate Pulse“
 
 **Sperre 2 – Reihenfolge:** Die Berechnung (analyst-Subagent) beginnt erst,
 wenn
-(a) der SAP (bzw. der betreffende Teil, siehe Rückfrage 7) von Daniel Saure
-eingefroren ist, **und**
+(a) der SAP bzw. der betreffende Teil von Daniel Saure eingefroren ist. V3
+darf zusammen mit den allgemeinen Abschnitten getrennt eingefroren werden
+(Rückfrage 7, beantwortet; Abschnittsliste dort), **und**
 (b) der Prognose-Check `Analysen/2026-10-prognose-check-projektionsberichte/`
-abgeschlossen ist. Als „abgeschlossen“ gilt vorläufig: Der
+abgeschlossen ist. „Abgeschlossen“ heißt (Rückfrage 9, beantwortet): Der
 Validierungsbericht liegt als Datei vor, enthält keinen Befund „kritisch“, und
-Daniel Saure hat die Ergebnisse freigegeben. Diese Definition ist Rückfrage 9.
-(c) Die Daten bis Ende 2026 sind bei der jeweiligen Quelle veröffentlicht.
+Daniel Saure hat die Ergebnisse freigegeben. Eine Veröffentlichung auf
+Substack ist nicht erforderlich, **und**
+(c) die Daten bis Ende 2026 bei der jeweiligen Quelle veröffentlicht sind.
+
+**Vorab festgelegte Ausnahme von Sperre 2 (b), nur für V3** (Rückfrage 8,
+beantwortet: Option a): Ist der Prognose-Check am 12.01.2027 nicht
+abgeschlossen, wird V3 trotzdem gerechnet und registriert. Begründung: V3
+teilt weder Daten noch Methode mit dem Prognose-Check, und die V3-Frist ist
+durch die Veröffentlichung der 2027-Werte bei Copernicus erzwungen. Sperre 2
+(a) und (c) sowie Sperre 1 und 3 gelten für V3 unverändert. Für V1, V2 und V4
+gibt es keine Ausnahme.
 
 **Sperre 3 – Keine Rückkopplung aus dem Prognose-Check:** Ergebnisse des
 Prognose-Checks dürfen Methoden, Fenster oder Intervalle dieses SAP nicht
-verändern. Eine Änderung nach dem Einfrieren ist nur als gekennzeichnetes
-Amendment **vor** der Berechnung zulässig, mit Begründung und erneuter
-Freigabe durch Daniel Saure.
+verändern (Rückfrage 11, beantwortet: nicht nutzen). Eine Änderung nach dem
+Einfrieren ist nur als gekennzeichnetes Amendment **vor** der Berechnung
+zulässig, mit Begründung und erneuter Freigabe durch Daniel Saure.
 
 **Zeitkritisch – V3 (Copernicus):** Copernicus veröffentlicht ab Anfang Januar
 2027 die ersten Werte für 2027 (tägliche ERA5-Werte im Climate Pulse bereits ab
 den ersten Januartagen, den Monatswert Januar 2027 im Monatsbulletin Anfang
-Februar 2027). **Der Teil V3 muss deshalb vor Mitte Januar 2027
-eingefroren, berechnet und registriert sein.** Empfohlen wird ein früheres
-Einfrieren (siehe Fristentabelle und Rückfrage 7), weil 2027-Tageswerte
-schon ab dem 01.01.2027 öffentlich sichtbar werden.
+Februar 2027). **Der Teil V3 muss deshalb bis 15.12.2026 eingefroren und bis
+15.01.2027 berechnet und registriert sein** (Rückfrage 7, beantwortet). V1, V2
+und V4 werden bis 31.12.2026 eingefroren.
 
 | Schritt | V1 Sommer | V2 Hitzetage | V3 Monate > 1,5 °C | V4 THG |
 |---|---|---|---|---|
-| Einfrieren SAP (spätestens) | 31.12.2026 | 31.12.2026 | **15.12.2026 empfohlen, absolute Frist 31.12.2026** | 31.12.2026 |
-| Frühester Rechenbeginn | 01.01.2027, nach Sperre 2 | sobald Jahreswert 2026 beim DWD vorliegt, nach Sperre 2 | sobald der Monatswert Dezember 2026 bei C3S vorliegt, nach Sperre 2 | 01.01.2027, nach Sperre 2 |
-| Registrierung (Commit mit Ergebnistabelle) spätestens | 31.01.2027 | 31.01.2027 | **15.01.2027** | 31.01.2027 (in jedem Fall vor der UBA-Vorjahresschätzung 2026, März 2027) |
+| Einfrieren SAP (spätestens) | 31.12.2026 | 31.12.2026 (Vorbedingung: Dateiprüfung Rückfrage 3) | **15.12.2026** (getrenntes Einfrieren zulässig) | 31.12.2026 |
+| Frühester Rechenbeginn | 01.01.2027, nach Sperre 2 | sobald Jahreswert 2026 beim DWD vorliegt, nach Sperre 2 | sobald der Monatswert Dezember 2026 bei C3S vorliegt, nach Sperre 2 (a), (c); Ausnahme von (b) siehe oben | 01.01.2027, nach Sperre 2 |
+| Registrierung (Commit mit Ergebnistabelle und Registereintrag) spätestens | 31.01.2027 | 31.01.2027 | **15.01.2027** | 31.01.2027 (in jedem Fall vor der UBA-Vorjahresschätzung 2026, März 2027) |
+| Registereintrag | #2 | #3 | #4 | #5 |
 | Stichtag der Auswertung | 15.09.2027 | 31.01.2028 | 31.01.2028 | 31.03.2028 |
 
 **Registrierung:** Die berechneten Vorhersagen werden mit Datum, Datenstand,
 Zugriffsdatum und Prüfsummen der Rohdateien in einer Ergebnistabelle
-`output/register_2027.csv` abgelegt und sofort committet. Der Commit-Hash ist
-der Zeitstempel der Vorhersage. Nach der Registrierung wird an den
-Vorhersagen nichts mehr geändert.
+`output/register_2027.csv` abgelegt. Zusätzlich wird je Vorhersage ein
+Eintrag im Prognose-Register angelegt (Rückfrage 14, beantwortet):
+
+| Vorhersage | Registereintrag | Datei (Namensvorschlag, siehe Rückfrage 18) |
+|---|---|---|
+| V1 Sommermittel 2027 | **#2** | `Prognose-Register/02_sommermittel-2027.md` |
+| V2 Hitzetage 2027 | **#3** | `Prognose-Register/03_hitzetage-2027.md` |
+| V3 Monate > 1,5 °C 2027 | **#4** | `Prognose-Register/04_monate-ueber-1-5-grad-2027.md` |
+| V4 THG-Emissionen 2027 | **#5** | `Prognose-Register/05_thg-emissionen-2027.md` |
+
+Die Nummern #2–#5 sind durch diesen SAP reserviert. Sie folgen der Reihenfolge
+V1–V4, nicht der zeitlichen Reihenfolge der Registrierung (V3 wird zuerst
+registriert). Format und Felder der Einträge: Abschnitt 11. CSV, Registerdatei
+und Commit werden gemeinsam committet. Der Commit-Hash ist der Zeitstempel der
+Vorhersage. Weichen CSV und Registerdatei voneinander ab, gilt die CSV (sie
+ist die vom Skript erzeugte Quelle); die Abweichung wird als Fehler im
+Register vermerkt. Nach der Registrierung wird an den Vorhersagen nichts mehr
+geändert. Die öffentliche Registrierung auf Substack kommt hinzu (Abschnitt
+11); sie ersetzt den Commit-Zeitstempel nicht.
 
 **Fallback V3, falls der Dezemberwert 2026 nicht rechtzeitig vorliegt:**
 Liegt der C3S-Monatswert Dezember 2026 bis zum 12.01.2027 nicht vor, wird V3
@@ -132,7 +172,9 @@ Mehrwert:
    (siehe 7 und 8).
 
 Die vier Größen decken drei Ebenen ab: deutsches Klima (V1, V2), globales
-Klima (V3) und deutsche Emissionen (V4).
+Klima (V3) und deutsche Emissionen (V4). Sie werden als Einträge #2–#5 im
+bestehenden Prognose-Register geführt (Eintrag #1: Gasspeicher-Entnahme
+Winter 2026/27).
 
 ## 2. Fragestellung (Estimands)
 
@@ -140,7 +182,8 @@ Klima (V3) und deutsche Emissionen (V4).
 
 - Jede Vorhersage Vk besteht aus: **Punktvorhersage** (Median der
   prädiktiven Verteilung), **primärem 95-%-Prognoseintervall** [L95, U95]
-  und **sekundärem 80-%-Prognoseintervall** [L80, U80] (Rückfrage 12).
+  und **sekundärem 80-%-Prognoseintervall** [L80, U80] (Rückfrage 12,
+  beantwortet: beibehalten).
 - **Primäre Bewertungsregel (gilt für V1–V4):** „getroffen“, wenn der am
   Stichtag nach Abschnitt 3 festgestellte Beobachtungswert Y₂₀₂₇ die Bedingung
   L95 ≤ Y₂₀₂₇ ≤ U95 erfüllt. Die Grenzen zählen zum Intervall. Sonst „nicht
@@ -155,7 +198,7 @@ Klima (V3) und deutsche Emissionen (V4).
   zusätzlich der Ranked Probability Score (RPS); Vergleich mit einer naiven
   Referenzprognose (je Vorhersage festgelegt).
 
-### 2.1 V1 – Sommermitteltemperatur Deutschland 2027
+### 2.1 V1 – Sommermitteltemperatur Deutschland 2027 (Registereintrag #2)
 
 - **Zielgröße Y₂₀₂₇:** DWD-Gebietsmittel Deutschland der Lufttemperatur,
   Jahreszeit Sommer (Juni–August) 2027, in °C, Spalte „Deutschland“ der Datei
@@ -164,14 +207,15 @@ Klima (V3) und deutsche Emissionen (V4).
   OLS-Regression T = b₀ + b₁·Jahr + ε auf den Sommern des Trendfensters;
   klassisches 95-%-Prognoseintervall für 2027:
   ŷ₂₀₂₇ ± t(0,975; n−2) · √(σ̂²·(1 + h₂₀₂₇)), h = Hebelwert des Jahres 2027.
-- **Primäres Trendfenster: 1971–2026 (n = 56).** Begründung: Das validierte
-  Modell schätzt den Trend auf allen Sommern ab 1971 bis zum Vorjahr des
-  Zieljahres und bewertet das Zieljahr out-of-sample. Für das Zieljahr 2027
-  entspricht das dem Fenster 1971–2026. Diese Spezifikation wurde im
-  Sommer-2026-Check als Sensitivität S2 gerechnet und unabhängig validiert
-  (Validierungsbericht, Abschnitt 3.4). Ob das „Erweitern um 2026“ so gemeint
-  ist, ist Rückfrage 1. Es wird nichts anderes geändert: kein
-  Fensterbeginn, keine Transformation, keine Kovariaten.
+- **Primäres Trendfenster: 1971–2026 (n = 56)** (Rückfrage 1, beantwortet).
+  Begründung: Das validierte Modell schätzt den Trend auf allen Sommern ab
+  1971 bis zum Vorjahr des Zieljahres und bewertet das Zieljahr
+  out-of-sample. Für das Zieljahr 2027 entspricht das dem Fenster 1971–2026.
+  Diese Spezifikation wurde im Sommer-2026-Check als Sensitivität S2 gerechnet
+  und unabhängig validiert (Validierungsbericht, Abschnitt 3.4). Das
+  unveränderte Fenster 1971–2025 ist Sensitivität S1-a. Ein gleitendes Fenster
+  wird nicht gerechnet. Es wird nichts anderes geändert: kein Fensterbeginn,
+  keine Transformation, keine Kovariaten.
 - **Punktvorhersage:** ŷ₂₀₂₇ (bei symmetrischem t-Intervall identisch mit
   dem Median).
 - **80-%-Intervall:** dieselbe Formel mit t(0,90; n−2).
@@ -182,7 +226,7 @@ Klima (V3) und deutsche Emissionen (V4).
   1991–2020 (aktuelle WMO-Referenz), mit Intervall
   Mittel ± t(0,975; 29)·SD·√(1 + 1/30).
 
-### 2.2 V2 – Anzahl Hitzetage Deutschland 2027
+### 2.2 V2 – Anzahl Hitzetage Deutschland 2027 (Registereintrag #3)
 
 - **Kenntag:** Hitzetag („Heißer Tag“) = Tag mit Tageshöchsttemperatur
   Tmax ≥ 30,0 °C (DWD-Definition).
@@ -193,12 +237,15 @@ Klima (V3) und deutsche Emissionen (V4).
   Einzelstation und keine Summe über Stationen.
   Begründung: konsistent mit V1 (gleiche Raumbezugsgröße Deutschland),
   amtlich, lange homogene Reihe, keine Auswahl einzelner Stationen nötig.
-  Stationsbasis als Alternative: Rückfrage 3.
+  Entscheidung für das Gebietsmittel: Rückfrage 3, beantwortet.
+  **Offene Vorbedingung:** Ob die Datei existiert und ab welchem Jahr sie
+  beginnt, ist noch nicht geprüft (siehe 3.2 und Rückfrage 3).
 - **Primäres Modell:** OLS-Regression auf der **Quadratwurzel** der jährlichen
   Werte: √Y = c₀ + c₁·Jahr + ε, Trendfenster **1971–2026** (gleiches Fenster
-  wie V1). 95-%-Prognoseintervall auf der Wurzelskala wie in V1; die Grenzen
-  werden quadriert zurücktransformiert, die untere Grenze wird bei 0
-  abgeschnitten, falls die Wurzelskala-Grenze negativ ist.
+  wie V1; Rückfrage 4, beantwortet). 95-%-Prognoseintervall auf der
+  Wurzelskala wie in V1; die Grenzen werden quadriert zurücktransformiert, die
+  untere Grenze wird bei 0 abgeschnitten, falls die Wurzelskala-Grenze negativ
+  ist.
   Begründung: Zähldatenähnliche Größen sind rechtsschief, und ihre Streuung
   wächst mit dem Niveau. Die Wurzeltransformation stabilisiert die Varianz.
   Quantile bleiben unter monotoner Rücktransformation erhalten, das
@@ -211,7 +258,7 @@ Klima (V3) und deutsche Emissionen (V4).
 - **Naive Referenzprognose (sekundär):** Mittel 1991–2020 der Hitzetage, mit
   Intervall aus den empirischen 2,5-%- und 97,5-%-Quantilen der 30 Werte.
 
-### 2.3 V3 – Anzahl Monate 2027 mit globaler Temperatur über 1,5 °C über vorindustriell
+### 2.3 V3 – Anzahl Monate 2027 mit globaler Temperatur über 1,5 °C über vorindustriell (Registereintrag #4)
 
 - **Zielgröße Y₂₀₂₇:** Anzahl K ∈ {0, 1, …, 12} der Kalendermonate 2027, deren
   globale Mitteltemperatur der bodennahen Luft (ERA5, Copernicus Climate
@@ -228,8 +275,9 @@ Klima (V3) und deutsche Emissionen (V4).
   - Maßgeblich sind die von C3S veröffentlichten Monatswerte über
     vorindustriell, gerundet auf zwei Nachkommastellen (wie veröffentlicht).
 - **Schwellenregel (primär):** Ein Monat zählt, wenn der veröffentlichte
-  Wert **> 1,50 °C** ist (streng größer, Wortlaut „über 1,5 °C“). Variante
-  „≥ 1,50 °C“ wird als Sensitivität mitgezählt und berichtet (Rückfrage 5).
+  Wert **> 1,50 °C** ist (streng größer, Wortlaut „über 1,5 °C“; Rückfrage 5,
+  beantwortet). Variante „≥ 1,50 °C“ wird als Sensitivität S3-g mitgezählt und
+  berichtet.
 - **Primäres Modell:** lineare Regression mit AR(1)-Fehlern auf der
   monatlichen Anomaliereihe (gegenüber 1991–2020):
   a_t = α + β·t + u_t, u_t = φ·u_{t−1} + e_t, e_t ~ N(0, σ²),
@@ -258,7 +306,7 @@ Klima (V3) und deutsche Emissionen (V4).
 - **Naive Referenzprognose (sekundär):** Persistenz, d. h. K₂₀₂₇ = Anzahl der
   Monate 2026 über 1,50 °C (ohne Intervall, nur Fehlervergleich).
 
-### 2.4 V4 – Deutsche Treibhausgasemissionen 2027
+### 2.4 V4 – Deutsche Treibhausgasemissionen 2027 (Registereintrag #5)
 
 - **Zielgröße Y₂₀₂₇:** Treibhausgasemissionen Deutschlands 2027, gesamt
   **ohne LULUCF**, ohne internationalen Luft- und Seeverkehr, in Mt
@@ -270,7 +318,8 @@ Klima (V3) und deutsche Emissionen (V4).
   Jahre bis 2024), ergänzt um die UBA-Vorjahresschätzung für 2025 (März 2026)
   als letzten Wert. Der Emissionswert 2026 ist zum Rechenzeitpunkt nicht
   veröffentlicht. Der Prognosehorizont beträgt daher h = 2 Jahre (2025 → 2027).
-- **Primäres Modell: Random Walk mit Drift auf der logarithmierten Reihe.**
+- **Primäres Modell: Random Walk mit Drift auf der logarithmierten Reihe**
+  (Rückfrage 10, beantwortet).
   d_t = ln E_t − ln E_{t−1}; Drift μ̂ = Mittel der d_t, σ̂ = Standardabweichung
   der d_t über die **Differenzen 2006–2025** (Jahrespaare 2005/06 bis
   2024/25, m = 20).
@@ -283,7 +332,7 @@ Klima (V3) und deutsche Emissionen (V4).
   Annahmen über Maßnahmen und ist in der Prognoseliteratur der übliche
   einfache Vergleichsmaßstab. 20 Jahre: lang genug für eine stabile
   Driftschätzung und ohne die Sonderentwicklung der frühen 1990er Jahre
-  (Wiedervereinigung). Die Fensterwahl ist Rückfrage 10.
+  (Wiedervereinigung). Andere Fenster nur als Sensitivitäten S4-a bis S4-f.
 - **Rundung für die Bewertung:** Grenzen auf 0,1 Mt CO₂e gerundet.
   Verglichen wird mit dem Wert aus der genauesten amtlichen UBA-Tabelle der
   Vorjahresschätzung (nicht mit einer gerundeten Zahl aus der
@@ -311,9 +360,10 @@ Klima (V3) und deutsche Emissionen (V4).
 - **Kein Widerspruch:** Der Prognose-Check schließt eine Verallgemeinerung
   seiner Ergebnisse auf die Treffsicherheit künftiger Projektionen
   ausdrücklich aus (dort Abschnitt 9). Deshalb werden seine Fehlermaße hier
-  **nicht** zur Konstruktion von Intervallen verwendet (Sperre 3,
-  Rückfrage 11). Die UBA-Projektion für 2027 erscheint hier nur als
-  beschreibende Vergleichsprognose, nicht als Bewertung der Projektionen.
+  **nicht** zur Konstruktion von Intervallen verwendet (Sperre 3;
+  Rückfrage 11, beantwortet: nicht nutzen). Die UBA-Projektion für 2027
+  erscheint hier nur als beschreibende Vergleichsprognose, nicht als
+  Bewertung der Projektionen.
 - Begriffsgebrauch wie im Prognose-Check: Projektionen sind bedingte
   Szenarien. Die eigene V4-Vorhersage ist eine unbedingte statistische
   Fortschreibung. Beides wird im Bericht nicht gleichgesetzt.
@@ -325,6 +375,9 @@ Klima (V3) und deutsche Emissionen (V4).
 - **Hitzesommer 2026** (`Analysen/2026-08-hitzesommer-2026/`): betrifft
   hitzebedingte Sterbefälle (RKI). Andere Zielgröße, andere Daten. V2 zählt
   meteorologische Kenntage, keine Gesundheitsfolgen. Keine Überschneidung.
+- **Prognose-Register #1** (Gasspeicher-Entnahme Winter 2026/27): eigene
+  Grundlage (validierte Gasspeicher-Analyse), andere Zielgröße. Gemeinsam
+  ist nur das Registerformat. Keine Überschneidung in Daten oder Methode.
 
 **Ausdrücklich nicht Gegenstand:** Ursachenanalyse (Attribution), Bewertung
 von Klimapolitik, Zielerreichung nach KSG, physikalische Klimaprojektionen,
@@ -356,12 +409,12 @@ saisonale Wettervorhersagen.
   Werte revidiert, wird mit der neuen Datei gerechnet und die Revision im
   Register vermerkt.
 - **Bewertungsdaten (Stichtag):** dieselbe Datei in der Fassung, die am
-  **15.09.2027** abgerufen wird (Dateikopf „erstellt am“ muss ≥ 01.09.2027
-  sein, sonst Abruf an jedem folgenden Werktag wiederholen, bis eine solche
-  Fassung vorliegt). Spätere Revisionen ändern die Bewertung nicht, werden
-  aber im Auswertungsbericht genannt, wenn sie bis zur Veröffentlichung
-  bekannt werden. Die DWD-Pressemitteilung Ende August 2027 dient nur der
-  Plausibilisierung.
+  **15.09.2027** abgerufen wird (Rückfrage 2, beantwortet; Dateikopf „erstellt
+  am“ muss ≥ 01.09.2027 sein, sonst Abruf an jedem folgenden Werktag
+  wiederholen, bis eine solche Fassung vorliegt). Spätere Revisionen ändern
+  die Bewertung nicht, werden aber im Auswertungsbericht genannt, wenn sie bis
+  zur Veröffentlichung bekannt werden. Die DWD-Pressemitteilung Ende August
+  2027 dient nur der Plausibilisierung.
 - **Nicht auswertbar,** wenn der DWD bis 31.12.2027 keinen Sommerwert 2027 in
   dieser Datei bereitstellt.
 - **OWID:** betrachtet und verworfen. OWID bietet keine saisonalen
@@ -371,12 +424,20 @@ saisonale Wettervorhersagen.
 
 ### 3.2 V2 – DWD Hitzetage
 - **Primärquelle:** DWD Climate Data Center, `regional_averages_DE`, Kenntag
-  „Heiße Tage“ (Tmax ≥ 30 °C), jährliche Gebietsmittel, Spalte Deutschland.
-  Der genaue Pfad und Dateiname werden beim Datenzugriff verifiziert und
-  dokumentiert. **Vorbehalt:** Für diesen SAP wurde nicht geprüft, ob die
-  Reihe in dieser Form vorliegt und ab welchem Jahr. Ist sie nicht verfügbar
-  oder beginnt sie nach 1971: Stopp und Amendment vor der Rechnung
-  (Rückfrage 3).
+  „Heiße Tage“ (Tmax ≥ 30 °C), jährliche Gebietsmittel, Spalte Deutschland
+  (Rückfrage 3, beantwortet: Gebietsmittel).
+- **Offene Vorbedingung vor dem Einfrieren von V2 (nicht erledigt):** Daniel
+  Saure prüft, ob die Datei existiert und ab welchem Jahr sie beginnt. Geprüft
+  werden ausschließlich Dateiname und Kopfzeile, keine Werte. Das Ergebnis
+  (Pfad, Dateiname, erstes Jahr, Prüfdatum) wird vor dem Einfrieren in diesen
+  Abschnitt eingetragen:
+  - Pfad/Dateiname: [offen]
+  - Erstes Jahr der Reihe: [offen]
+  - Geprüft am / durch: [offen]
+  Fehlt die Datei oder beginnt sie nach 1971, wird V2 vor dem Einfrieren auf
+  eine Stationsliste umgestellt bzw. das Fenster angepasst. Das ist dann eine
+  neue Rückfrage und eine neue SAP-Version, keine Entscheidung des
+  analyst-Subagenten.
 - **Rechendaten:** Fassung mit vollständigem Jahreswert 2026, abgerufen im
   Rechenfenster.
 - **Bewertungsdaten (Stichtag):** Fassung, die am **31.01.2028** abgerufen wird
@@ -404,13 +465,13 @@ saisonale Wettervorhersagen.
   **31.01.2028** (nach dem Bulletin für Dezember 2027). Maßgeblich sind die
   Werte aller zwölf Monate 2027 in dieser Fassung, einschließlich
   zwischenzeitlicher Korrekturen (Übergang vorläufig ERA5T → endgültig ERA5).
-- **Definitionswechsel:** Ändert C3S zwischen Einfrieren und Stichtag den
-  Offset, die Referenzperiode oder den Reanalyse-Datensatz (z. B.
-  Nachfolger von ERA5), gilt primär die beim Einfrieren dokumentierte
-  Definition. Soweit möglich wird Y₂₀₂₇ mit ihr nachgerechnet. Die
-  C3S-Angabe nach neuer Definition wird zusätzlich berichtet. Ist eine
-  Nachrechnung nicht möglich: Bewertung nach der neuen C3S-Angabe, im
-  Bericht als Definitionswechsel gekennzeichnet (Rückfrage 6).
+- **Definitionswechsel** (Rückfrage 6, beantwortet): Ändert C3S zwischen
+  Einfrieren und Stichtag den Offset, die Referenzperiode oder den
+  Reanalyse-Datensatz (z. B. Nachfolger von ERA5), gilt primär die beim
+  Einfrieren dokumentierte Definition. Soweit möglich wird Y₂₀₂₇ mit ihr
+  nachgerechnet. Die C3S-Angabe nach neuer Definition wird zusätzlich
+  berichtet. Ist eine Nachrechnung nicht möglich: Bewertung nach der neuen
+  C3S-Angabe, im Bericht als Definitionswechsel gekennzeichnet.
 - **Nicht auswertbar,** wenn C3S bis 30.06.2028 keine Monatswerte für alle
   zwölf Monate 2027 bereitstellt.
 - **OWID (Sekundärquelle, gemäß CLAUDE.md):** Die OWID-Reihe zu monatlichen
@@ -435,9 +496,9 @@ saisonale Wettervorhersagen.
 - **Bewertungsdaten (Stichtag):** UBA-Vorjahresschätzung für 2027, Abruf am
   **31.03.2028**, Erstveröffentlichung. Spätere Revisionen ändern die
   Bewertung nicht. Erscheint sie verspätet, wird bis 30.06.2028 gewartet.
-  Danach Fallback: Bewertung gegen den ersten Inventarwert für 2027
-  (voraussichtlich Submission 2029), im Bericht als Fallback gekennzeichnet
-  (Rückfrage 13).
+  Danach Fallback (Rückfrage 13, beantwortet: Inventar-Fallback): Bewertung
+  gegen den ersten Inventarwert für 2027 (voraussichtlich Submission 2029),
+  im Bericht deutlich als Fallback gekennzeichnet.
 - **Integritäts-Check:** GWP-Basis von Inventar, Vorjahresschätzung 2025 und
   Vorjahresschätzung 2027 dokumentieren. Unterscheidet sie sich, wird das
   gekennzeichnet. Die Bewertung erfolgt trotzdem nach der primären Regel.
@@ -459,7 +520,7 @@ im `run_log.txt`. Für die Bewertung 2027/2028 eigene Unterordner
 | | Einheit | Rechendaten (Fit) | Zielbeobachtung |
 |---|---|---|---|
 | V1 | Sommer (JJA) eines Jahres, Deutschland | 1971–2026, n = 56 | Sommer 2027 |
-| V2 | Kalenderjahr, Deutschland | 1971–2026, n = 56 | Jahr 2027 |
+| V2 | Kalenderjahr, Deutschland | 1971–2026, n = 56 (Vorbehalt: Reihenbeginn noch nicht geprüft, 3.2) | Jahr 2027 |
 | V3 | Kalendermonat, global | 01/1991–12/2026, n = 432 (Fallback: bis 11/2026) | 12 Monate 2027 |
 | V4 | Kalenderjahr, Deutschland | Niveaus 2005–2025, 20 Differenzen; Startwert 2025 | Jahr 2027 |
 
@@ -551,7 +612,8 @@ Verletzung (α = 0,05) gilt stattdessen:
   EU-Emissionshandel für Gebäude und Verkehr) sind nicht enthalten. Das
   steht in jedem Ergebnistext (8.2).
 - Simulationen und Bootstraps mit festem Seed 20261022 und
-  B = 100 000 (V3) bzw. B = 10 000 (Bootstrap-Sensitivitäten).
+  B = 100 000 (V3) bzw. B = 10 000 (Bootstrap-Sensitivitäten). Generator und
+  Seed-Handhabung in Python: Abschnitt 10.
 
 ### 5.5 Signifikanzniveau
 Die Vorhersagen sind keine Hypothesentests. Es gibt keine p-Werte als
@@ -635,6 +697,9 @@ durchgeführt, Grund: …“ registriert, nicht weggelassen.
   einzelner Fehltreffer ist deshalb kein Beleg für eine schlechte Methode,
   und vier Treffer sind kein Beleg für eine gute. Aussagen zur Kalibrierung
   sind erst über mehrere Register-Jahrgänge möglich.
+- **Abgrenzung zu Registereintrag #1:** Die Gesamtbilanz „k von 4“ bezieht
+  sich nur auf die Einträge #2–#5. Eintrag #1 (Gasspeicher) wird getrennt
+  ausgewertet und nicht in diese Bilanz eingerechnet.
 - Jede Abweichung vom SAP wird als „Post-hoc“ gekennzeichnet.
 
 ## 8. Interpretationsrahmen / Confounder
@@ -703,8 +768,8 @@ und Fehltreffer werden mit gleichem Wortlaut berichtet.
 - V1 übernimmt ein Modell, dessen Residuen im Fenster 1971–2025
   nicht normalverteilt waren. Das t-Intervall kann deshalb zu eng oder zu
   weit sein (Gegenprüfung S1-d).
-- V2: Verfügbarkeit und Beginn der DWD-Gebietsmittelreihe sind für diesen
-  SAP nicht geprüft (3.2). Ein Flächenmittel ist nicht direkt mit
+- V2: Verfügbarkeit und Beginn der DWD-Gebietsmittelreihe sind noch nicht
+  geprüft (offene Vorbedingung, 3.2). Ein Flächenmittel ist nicht direkt mit
   Stationszählungen in Medienberichten vergleichbar.
 - V3: Das Modell enthält keine ENSO-Information. Gerade ENSO bestimmt die
   Monatswerte eines einzelnen Jahres stark. Das Intervall kann deshalb
@@ -712,45 +777,119 @@ und Fehltreffer werden mit gleichem Wortlaut berichtet.
   Aussagekraft berichtet und nicht nachträglich verengt.
 - V3 hängt von der C3S-Definition ab (Offset, Datensatzversion); ein
   Definitionswechsel ist vorab geregelt (3.3), bleibt aber eine Unschärfe.
+- V3 wird gegebenenfalls ohne abgeschlossenen Prognose-Check gerechnet
+  (vorab festgelegte Ausnahme, 0.1). Das ist eine bewusste Abweichung von der
+  allgemeinen Reihenfolgeregel, begründet durch die Copernicus-Frist.
 - V4: Die Rechenreihe mischt Inventarwerte und eine Vorjahresschätzung. Die
   Zielgröße ist eine Schätzung, kein Inventarwert. Neue Maßnahmen und
   Schocks ab 2027 sind nicht abgebildet. Der Horizont von 2 Jahren beruht
   darauf, dass 2026 zum Rechenzeitpunkt nicht veröffentlicht ist.
 - Fensterwahl (insbesondere V4) ist eine Setzung. Ihre Wirkung wird über die
   Sensitivitäten sichtbar, nicht beseitigt.
-- Software: Der Sommer-2026-Check wurde in Python umgesetzt (dort A1). Die
-  Übernahme in R kann kleinste numerische Unterschiede erzeugen
-  (Gegenprüfung nach 3.1).
+- Software: Die Umsetzung erfolgt in Python, wie der validierte
+  Sommer-2026-Check (Rückfrage 16, beantwortet). Für V1 entfällt damit das
+  Risiko einer Neuimplementierung. Für die neuen Modelle (V3 AR(1)-ML und
+  Simulation, V4, ARIMA-Sensitivitäten) können Python-Bibliotheken andere
+  Voreinstellungen haben als R-Pakete (z. B. Optimierer, Startwerte,
+  AICc-Definition bei der automatischen ARIMA-Ordnungswahl). Die verwendeten
+  Funktionen und Einstellungen werden deshalb im Skript-Header und im
+  `run_log.txt` dokumentiert.
 
 ## 10. Software
 
-- R (Version im Skript-Header), voraussichtliche Pakete: stats, lmtest,
-  sandwich, forecast, segmented, boot, MASS, readr, dplyr, ggplot2.
-- Skript: `prognose-register-2027.R` (Rechnung) und ein getrenntes Skript für
-  die spätere Auswertung, z. B. `prognose-register-2027_auswertung.R`.
+- **Python** (Version im Skript-Header) statt R, festgelegt durch Daniel
+  Saure am 22.10.2026 (Rückfrage 16). Grund: Das validierte Sommer-Modell ist
+  in Python implementiert
+  (`Analysen/2026-09-sommer-2026-normal/sommer_2026_normal.py`); eine
+  Neuimplementierung in R wäre eine zusätzliche Fehlerquelle. Weil die
+  Sprache hier vorab festgelegt ist, ist Python in diesem SAP **keine**
+  Post-hoc-Abweichung (anders als A1 im Sommer-Check).
+- **Voraussichtliche Pakete:** numpy, scipy, pandas, statsmodels,
+  matplotlib, sowie die im validierten Skript `sommer_2026_normal.py`
+  verwendeten Pakete (für S1-e und S1-f). Die endgültige Liste mit Versionen
+  steht im Skript-Header und in den Sitzungsinformationen unter `output/`.
+  Werden für eine Spezifikation Pakete benötigt, die hier nicht genannt
+  sind, wird das im `run_log.txt` dokumentiert; die Spezifikation selbst
+  (2.1–2.4, 6) ändert sich dadurch nicht.
+- **V1 und die zu V1 analogen Teile:** Die OLS-Schätzung und das
+  t-Prognoseintervall folgen dem Rechenweg des validierten Skripts
+  `sommer_2026_normal.py`. Übernommene Funktionen werden mit Herkunft
+  (Datei, Funktionsname, Commit-Hash) im Skript gekennzeichnet.
+- **Skripte:** `prognose_register_2027.py` (Rechnung) und ein getrenntes
+  Skript für die spätere Auswertung, `prognose_register_2027_auswertung.py`.
   Die Auswertung liest die registrierten Vorhersagen nur aus
-  `output/register_2027.csv` und rechnet sie nicht neu.
-- Fester Seed 20261022. Sitzungsinformationen in `output/`.
+  `output/register_2027.csv` und rechnet sie nicht neu. (Abweichung von der
+  Ordnerkonvention `<thema>.R` in CLAUDE.md, begründet durch die
+  Sprachfestlegung.)
+- **Zufallszahlen:** ein einziger numpy-Generator (PCG64) mit Seed 20261022
+  für die gesamte Rechnung; die Reihenfolge der Zufallsziehungen
+  (V3-Simulation, dann Bootstrap-Sensitivitäten in der Reihenfolge von
+  Abschnitt 6) wird im Skript festgelegt und dokumentiert.
+- Sitzungsinformationen (Python-Version, Paketversionen, Betriebssystem) in
+  `output/`.
 - Kein Netzzugriff aus dem Skript. Eingelesen werden nur unverändert
   abgelegte Rohdateien.
-- Kreuzprüfung V1: Ist R nicht verfügbar, ist eine Umsetzung in Python nur
-  als dokumentierte Post-hoc-Abweichung zulässig (wie A1 im Sommer-Check).
-  In beiden Fällen muss der Fit 1971–2026 bei unveränderten Daten das
-  validierte S2-Ergebnis reproduzieren (3.1).
+- **Prüfschritt „Reproduktion des validierten S2-Fits“ (bleibt
+  verpflichtend):** Bei unveränderten Daten muss der Fit 1971–2026 das
+  validierte S2-Ergebnis des Sommer-2026-Checks reproduzieren (Steigung laut
+  Validierungsbericht, Abschnitt 3.4; siehe 3.1). Gelingt das nicht: Stopp
+  und Rückfrage vor jeder weiteren Rechnung.
 
 ## 11. Reporting-Plan
 
 **Zeitpunkt 1 – Registrierung (Januar 2027, V3 bis 15.01.2027):**
-- Tabelle „Register 2027“: je Vorhersage Zielgröße, Quelle, Punktvorhersage,
-  95-%- und 80-%-Intervall, Bewertungsregel, Stichtag, Datenstand, Commit-Hash.
+- Tabelle „Register 2027“ (`output/register_2027.csv`): je Vorhersage
+  Zielgröße, Quelle, Punktvorhersage, 95-%- und 80-%-Intervall,
+  Bewertungsregel, Stichtag, Datenstand, Registereintrag-Nummer, Commit-Hash.
 - Tabelle aller Sensitivitäten (Abschnitt 6) mit Intervallen.
 - V3 zusätzlich: Wahrscheinlichkeitsverteilung P(K = k), Balkendiagramm.
 - Grafik je Vorhersage: Datenreihe bis 2026, Primärvorhersage 2027 mit 95-%-
   und 80-%-Intervall.
 - Diagnostik (5.2) im Anhang.
-- Veröffentlichung (Rückfrage 14): Substack-Beitrag „Klima Kompass ·
-  Evidenzcheck“ nach Validierung. Kanalfassungen nur über den
-  Klima-Kompass-Ablauf, keine LinkedIn-Fassung.
+
+**Prognose-Register-Einträge #2–#5** (Rückfrage 14 a, beantwortet): Die vier
+Vorhersagen werden als Einträge **#2 (V1), #3 (V2), #4 (V3) und #5 (V4)** im
+Ordner `Prognose-Register/` registriert, **eine Datei pro Vorhersage**, im
+gleichen Format wie Eintrag #1
+(`Prognose-Register/01_gasspeicher-winter-2026-27.md`). Dateinamen siehe 0.1
+(Vorschlag, Rückfrage 18). Jeder Eintrag enthält dieselben Felder wie #1, in
+dieser Reihenfolge:
+- Überschrift: „Prognose-Register · Eintrag #n – <Vorhersage> 2027“.
+- **Registriert:** Datum (maßgeblich ist der Zeitstempel des Git-Commits).
+- **Freigabe:** wird erst eingetragen, nachdem Daniel Saure den konkreten
+  Eintrag ausdrücklich freigegeben hat (Name, Datum, Wortlaut der Freigabe,
+  wie in #1). Der analyst- oder ein anderer Subagent trägt dieses Feld nie
+  vorab ein (CLAUDE.md, Verifikationspflicht). Ablauf siehe Rückfrage 17.
+- **Leserfrage:** allgemeinverständliche Frage. Sie erläutert, ersetzt aber
+  nicht die Zielgröße; bindend ist die Definition dieses SAP.
+- **Grundlage:** Verweis auf diesen SAP (Pfad
+  `Analysen/2026-10-prognose-register-2027/SAP_prognose-register-2027.md`,
+  eingefrorene Version und Datum) und auf den Validierungsbericht der
+  Rechnung.
+- **Neue Berechnung:** ja (anders als #1). Verweis auf Skript, CSV und
+  Commit.
+- **Zielgröße:** wörtlich wie im SAP (2.1, 2.2, 2.3 bzw. 2.4), mit Quelle und
+  Bewertungsfassung (Abschnitt 3).
+- **Vorhersagen:** Primärvorhersage mit 95-%-Intervall als Kernvorhersage;
+  80-%-Intervall als vereinfachte bzw. zusätzliche Lesart; bei V3 zusätzlich
+  P(K = k). Sensitivitäten nur als Verweis auf die CSV, nicht als
+  konkurrierende Vorhersage.
+- **Auswertung:** Stichtag und Abrufregel (Abschnitt 3), Bedingungen für
+  „nicht auswertbar“, Zusage der Veröffentlichung unabhängig vom Ausgang.
+- **Offenlegung:** Vorwissen (Abschnitt 0), Datenstand bei der Rechnung, bei
+  V3 gegebenenfalls Ausnahme von Sperre 2 (b), was nicht vorhergesagt wird.
+
+Die Werte in den Registerdateien werden aus `output/register_2027.csv`
+übernommen, nicht von Hand neu gerundet außer nach den Rundungsregeln dieses
+Abschnitts. Der validator prüft die Übereinstimmung.
+
+**Öffentliche Registrierung auf Substack** (Rückfrage 14 b, beantwortet: ja):
+Die registrierten Vorhersagen werden zusätzlich öffentlich auf Substack
+veröffentlicht (öffentlicher Zeitstempel, zusätzlich zum Commit-Hash), als
+„Klima Kompass · Evidenzcheck“ nach Validierung und Freigabe durch Daniel
+Saure. Veröffentlicht wird durch Daniel. Kanalfassungen nur über den
+Klima-Kompass-Ablauf, keine LinkedIn-Fassung. Ob V3 wegen der früheren
+Registrierung einen eigenen, früheren Beitrag erhält: Rückfrage 19.
 
 **Zeitpunkt 2 – Auswertungen (V1 ab 15.09.2027; V2, V3 ab 31.01.2028; V4 ab
 31.03.2028):**
@@ -759,10 +898,15 @@ und Fehltreffer werden mit gleichem Wortlaut berichtet.
   PIT-Wert, Prognosefehler, Vergleich mit naiver Referenz bzw.
   UBA-Vergleichsprognose (V4), Treffer im 80-%-Intervall, Treffer je
   Sensitivität.
-- Gesamtbilanz nach Auswertung von V4: „k von 4 getroffen“ mit der
-  Sprachregelung aus Abschnitt 7.
+- Das Ergebnis wird im jeweiligen Registereintrag (#2–#5) als Nachtrag
+  „Auswertung“ ergänzt; der registrierte Teil des Eintrags bleibt
+  unverändert.
+- Gesamtbilanz nach Auswertung von V4: „k von 4 getroffen“ (nur #2–#5) mit
+  der Sprachregelung aus Abschnitt 7.
 - Auswertungen werden vom validator gegen den SAP und das Register geprüft,
-  bevor sie veröffentlicht werden.
+  bevor sie veröffentlicht werden. Sie blockieren keine anderen
+  Evidenzchecks (Rückfrage 15, beantwortet; die Rechnung im Januar 2027
+  zählt dagegen als Analyse im Sinne von „eine Analyse zur Zeit“).
 
 **Rundung in der Kommunikation:** V1 auf 0,1 °C; V2 auf ganze Tage (Bewertung
 nach 2.2 mit Dateigenauigkeit); V3 ganze Monate, Wahrscheinlichkeiten in
@@ -773,111 +917,159 @@ Bei Grenznähe gilt 8.5.
 95-%-Intervalls“. Nicht „richtig/falsch vorhergesagt“, nicht „signifikant“.
 Kernaussagen erst nach Validierung.
 
-## 12. Offene Rückfragen (vor dem Einfrieren zu beantworten)
+## 12. Rückfragen
+
+Rückfragen 1–16 wurden am 22.10.2026 von Daniel Saure beantwortet („alle wie
+empfohlen“, mit Präzisierungen zu 14 und 16). Die Antworten sind in die
+genannten Abschnitte eingearbeitet. Rückfrage 3 ist teilweise offen. Die
+Beantwortung der Rückfragen ist keine Freigabe des SAP; das Einfrieren steht
+aus. Rückfragen 17–19 sind neu (v0.2) und offen.
 
 1. **V1 – Trendfenster.** Der Entwurf setzt das Fenster 1971–2026 als primär
    (validiertes Modell, Fit bis zum Vorjahr des Zieljahres; entspricht der
    validierten Sensitivität S2). Alternativen: (a) Fit unverändert
    1971–2025 mit Horizont 2 Jahre (jetzt S1-a); (b) gleitendes Fenster
-   1972–2026 mit gleicher Länge n = 55. **Empfehlung: 1971–2026 primär**,
+   1972–2026 mit gleicher Länge n = 55. Empfehlung: 1971–2026 primär,
    1971–2025 als S1-a beibehalten, kein gleitendes Fenster.
+   **Beantwortet 22.10.2026 (Daniel Saure):** wie empfohlen. 1971–2026
+   primär, 1971–2025 als S1-a, kein gleitendes Fenster. Eingearbeitet in 2.1.
 2. **V1 – Bewertungsfassung.** Bewertet wird gegen die DWD-CDC-Datei,
    abgerufen am 15.09.2027 (Dateikopf ab 01.09.2027). Alternative wäre der
    vorläufige Wert der DWD-Pressemitteilung Ende August 2027.
-   **Empfehlung: CDC-Datei am 15.09.2027**, Pressemitteilung nur zur
+   Empfehlung: CDC-Datei am 15.09.2027, Pressemitteilung nur zur
    Plausibilisierung.
+   **Beantwortet 22.10.2026 (Daniel Saure):** wie empfohlen, CDC-Datei am
+   15.09.2027. Eingearbeitet in 3.1.
 3. **V2 – Raumbezug und Verfügbarkeit.** Der Entwurf setzt das
    DWD-Gebietsmittel Deutschland der Anzahl Heißer Tage (Kalenderjahr)
    primär. Verfügbarkeit und Reihenbeginn sind nicht geprüft. Alternativen:
    eine festgelegte Einzelstation oder ein Mittel über eine feste Liste von
-   Stationen mit lückenloser Reihe. **Empfehlung: Gebietsmittel**. Daniel
+   Stationen mit lückenloser Reihe. Empfehlung: Gebietsmittel. Daniel
    prüft vor dem Einfrieren ohne Ansicht der Werte, ob die Datei existiert
    und ab welchem Jahr sie beginnt (nur Dateiname und Kopfzeile). Fehlt sie,
    wird V2 vor dem Einfrieren auf eine Stationsliste umgestellt (neue
    Rückfrage).
+   **Beantwortet 22.10.2026 (Daniel Saure), teilweise:** Gebietsmittel wie
+   empfohlen. **Weiter offen (Vorbedingung vor dem Einfrieren von V2, nicht
+   erledigt):** Prüfung durch Daniel, ob die Datei existiert und wann sie
+   beginnt (nur Dateiname und Kopfzeile). Eintragsfelder in 3.2.
 4. **V2 – Methode.** Primär OLS auf der Wurzelskala, Fenster 1971–2026;
    untransformierte OLS (S2-a) und Quasi-Poisson (S2-b) als Sensitivitäten.
-   **Empfehlung: so übernehmen.** Ein Wechsel ist nur jetzt möglich, nicht
-   nach der Rechnung.
+   Empfehlung: so übernehmen.
+   **Beantwortet 22.10.2026 (Daniel Saure):** wie empfohlen, OLS auf der
+   Wurzelskala. Eingearbeitet in 2.2.
 5. **V3 – Schwellenregel.** Primär „> 1,50 °C“ auf dem veröffentlichten
-   Wert mit zwei Nachkommastellen, „≥ 1,50 °C“ als S3-g. **Empfehlung:
-   so übernehmen** (folgt dem Wortlaut „über 1,5 °C“). Falls Daniel lieber
-   der Formulierung von C3S folgen möchte: bitte die maßgebliche
-   C3S-Formulierung nennen, dann wird die Regel daran angepasst.
+   Wert mit zwei Nachkommastellen, „≥ 1,50 °C“ als S3-g. Empfehlung:
+   so übernehmen.
+   **Beantwortet 22.10.2026 (Daniel Saure):** wie empfohlen, „> 1,50 °C“
+   primär. Eingearbeitet in 2.3.
 6. **V3 – Definitionswechsel bei C3S.** Wechselt C3S bis zum Stichtag
    Offset, Referenz oder Reanalyse-Version, gilt die beim Einfrieren
-   dokumentierte Definition, soweit nachrechenbar (3.3). **Empfehlung: so
-   übernehmen.**
-7. **Getrennte Einfrierung von V3.** V3 ist zeitkritisch: 2027-Tageswerte
-   sind ab Januar 2027 öffentlich, und die Rechnung braucht den
-   Dezemberwert 2026 (Anfang Januar 2027). **Empfehlung: Ja, V3 darf
-   getrennt eingefroren werden**, zusammen mit den allgemeinen Abschnitten
-   0, 1, 2.0, 2.3, 3.3, 3.5, 5–11, spätestens am 15.12.2026. Ideal ist
-   ohnehin, den ganzen SAP bis dahin einzufrieren. V1, V2 und V4 folgen
+   dokumentierte Definition, soweit nachrechenbar (3.3). Empfehlung: so
+   übernehmen.
+   **Beantwortet 22.10.2026 (Daniel Saure):** wie empfohlen, die beim
+   Einfrieren dokumentierte Definition gilt. Eingearbeitet in 3.3.
+7. **Getrennte Einfrierung von V3.** Empfehlung: Ja, V3 darf getrennt
+   eingefroren werden, zusammen mit den allgemeinen Abschnitten 0, 1, 2.0,
+   2.3, 3.3, 3.5, 5–11, spätestens am 15.12.2026. V1, V2 und V4 folgen
    spätestens am 31.12.2026. Eine Teilfreigabe gilt nur für die genannten
    Abschnitte.
-8. **Konflikt zwischen Sperre 2 und der V3-Frist.** Ist der Prognose-Check
-   bis zum 12.01.2027 nicht abgeschlossen, kann V3 nicht rechtzeitig
-   gerechnet werden. Optionen: (a) V3 wird trotzdem gerechnet (Ausnahme von
-   Sperre 2, weil V3 weder Daten noch Methode mit dem Prognose-Check teilt);
-   (b) V3 entfällt für 2027. **Empfehlung: (a)**, als vorab festgelegte
-   Ausnahme nur für V3. Das ist Daniels Entscheidung, nicht meine.
-9. **Definition „Prognose-Check abgeschlossen“.** Vorläufig: Der
-   Validierungsbericht liegt als Datei vor, enthält keinen Befund „kritisch“,
-   und Daniel hat die Ergebnisse freigegeben. Muss zusätzlich die
-   Veröffentlichung auf Substack erfolgt sein? **Empfehlung: nein**,
-   Freigabe der Ergebnisse reicht.
+   **Beantwortet 22.10.2026 (Daniel Saure):** wie empfohlen. V3 darf
+   getrennt eingefroren werden (mit den genannten allgemeinen Abschnitten),
+   bis 15.12.2026; der Rest bis 31.12.2026. Eingearbeitet in Kopf und 0.1.
+8. **Konflikt zwischen Sperre 2 und der V3-Frist.** Optionen: (a) V3 wird
+   trotzdem gerechnet (Ausnahme von Sperre 2); (b) V3 entfällt für 2027.
+   Empfehlung: (a), als vorab festgelegte Ausnahme nur für V3.
+   **Beantwortet 22.10.2026 (Daniel Saure):** Option (a), vorab festgelegte
+   Ausnahme von Sperre 2 nur für V3. Eingearbeitet in 0.1 (Ausnahme
+   betrifft nur Sperre 2 (b)) und 9.
+9. **Definition „Prognose-Check abgeschlossen“.** Muss zusätzlich die
+   Veröffentlichung auf Substack erfolgt sein? Empfehlung: nein, Freigabe
+   der Ergebnisse reicht.
+   **Beantwortet 22.10.2026 (Daniel Saure):** wie empfohlen, Freigabe der
+   Ergebnisse reicht, keine Substack-Veröffentlichung nötig. Eingearbeitet in
+   0.1 (Sperre 2 b).
 10. **V4 – Modell und Driftfenster.** Primär Random Walk mit Drift auf ln E,
     Differenzen 2006–2025 (m = 20), Startwert Vorjahresschätzung 2025.
-    Alternativen sind S4-a bis S4-f. **Empfehlung: so übernehmen.** Falls
-    Daniel ein anderes Fenster primär will (z. B. 2016–2025, um den Verlauf
-    seit der Pariser Vereinbarung abzubilden), muss das jetzt entschieden
-    werden. Die Wahl sollte nicht danach getroffen werden, welche
-    Entwicklung man in den Daten vermutet.
-11. **V4 – Nutzung des Prognose-Checks.** Der Entwurf nutzt dessen
-    Ergebnisse nicht, weil der Prognose-Check eine Übertragung auf künftige
-    Projektionen ausschließt (dort Abschnitt 9). Die UBA-MMS-Projektion für
-    2027 erscheint nur als Vergleichsprognose. Alternative: ein zusätzliches
-    Intervall „UBA-Projektion ± empirische Abweichungen aus dem
-    Prognose-Check“ als Sensitivität. **Empfehlung: nicht nutzen.** Das wäre
-    ein Widerspruch zum eingefrorenen Prognose-Check-SAP und beruht auf
-    sehr wenigen, abhängigen Werten.
-12. **80-%-Intervalle.** Sie werden sekundär mit registriert und bewertet,
-    nie in der Überschrift. Das schafft über mehrere Jahrgänge mehr
-    Information zur Kalibrierung. **Empfehlung: beibehalten.**
-13. **V4 – Fallback bei fehlender Vorjahresschätzung.** Erscheint die
-    UBA-Vorjahresschätzung 2027 nicht bis 30.06.2028, wird gegen den ersten
-    Inventarwert für 2027 bewertet und das gekennzeichnet. Alternative: V4
-    gilt dann als „nicht auswertbar“. **Empfehlung: Inventar-Fallback**, im
-    Bericht deutlich gekennzeichnet.
-14. **Veröffentlichung und Bezug zum Prognose-Register #1.** Laut
-    Git-Historie existiert ein „Prognose-Register #1“ (Gasspeicher-Entnahme
-    Winter 2026/27, Commit 93a0d3f). Ich habe die Datei nicht gefunden und
-    deshalb die Struktur nicht abgeglichen. Fragen: (a) Wo liegt sie, und
-    soll dieses Register dieselbe Struktur und Nummerierung („#2“) erhalten?
-    (b) Sollen die registrierten Vorhersagen im Januar 2027 öffentlich auf
-    Substack erscheinen (öffentlicher Zeitstempel)? **Empfehlung: (a)
-    Struktur abgleichen, bevor eingefroren wird; (b) ja, öffentlich
-    registrieren**, zusätzlich zum Commit-Hash.
-15. **„Eine Analyse zur Zeit“.** Die Rechnung im Januar 2027 und die vier
-    Auswertungen 2027/2028 sind Evidenzcheck-Schritte. Sollen die
-    Auswertungen (rein mechanisch: Wert ablesen, mit dem Intervall
-    vergleichen) andere Evidenzchecks blockieren? **Empfehlung: nein.** Die
-    Rechnung im Januar 2027 zählt als Analyse. Die Auswertungen gelten als
-    kurze Nachträge ohne neue Inferenz, aber mit Validierung.
-16. **Software.** R ist vorgesehen, wie im Template. Der Sommer-Check lief in
-    Python. **Empfehlung: R**, mit Reproduktion des validierten S2-Fits als
-    Kontrolle.
+    Empfehlung: so übernehmen.
+    **Beantwortet 22.10.2026 (Daniel Saure):** wie empfohlen, Random Walk mit
+    Drift, Differenzen 2006–2025. Eingearbeitet in 2.4.
+11. **V4 – Nutzung des Prognose-Checks.** Empfehlung: nicht nutzen.
+    **Beantwortet 22.10.2026 (Daniel Saure):** wie empfohlen,
+    Prognose-Check-Ergebnisse werden nicht genutzt. Eingearbeitet in 0.1
+    (Sperre 3) und 2.5.
+12. **80-%-Intervalle.** Empfehlung: beibehalten.
+    **Beantwortet 22.10.2026 (Daniel Saure):** wie empfohlen, beibehalten.
+    Eingearbeitet in 2.0.
+13. **V4 – Fallback bei fehlender Vorjahresschätzung.** Empfehlung:
+    Inventar-Fallback, im Bericht deutlich gekennzeichnet.
+    **Beantwortet 22.10.2026 (Daniel Saure):** wie empfohlen,
+    Inventar-Fallback. Eingearbeitet in 3.4.
+14. **Veröffentlichung und Bezug zum Prognose-Register #1.** (a) Wo liegt
+    Eintrag #1, und soll dieses Register dieselbe Struktur und Nummerierung
+    erhalten? (b) Sollen die registrierten Vorhersagen öffentlich auf
+    Substack erscheinen?
+    **Beantwortet 22.10.2026 (Daniel Saure):** (a) Eintrag #1 liegt unter
+    `Prognose-Register/01_gasspeicher-winter-2026-27.md` (gelesen für v0.2).
+    Die vier Vorhersagen werden als Einträge #2 bis #5 registriert, eine
+    Datei pro Vorhersage, im gleichen Format wie #1, jeweils mit Verweis auf
+    diesen SAP. (b) Ja, zusätzlich öffentlich auf Substack. Eingearbeitet in
+    0.1 (Registrierung, Fristentabelle) und 11 (Format der Einträge,
+    Substack).
+15. **„Eine Analyse zur Zeit“.** Empfehlung: Auswertungen blockieren keine
+    anderen Evidenzchecks; die Rechnung im Januar 2027 zählt als Analyse.
+    **Beantwortet 22.10.2026 (Daniel Saure):** wie empfohlen. Eingearbeitet
+    in 11.
+16. **Software.** Ursprüngliche Empfehlung: R, mit Reproduktion des
+    validierten S2-Fits als Kontrolle.
+    **Beantwortet 22.10.2026 (Daniel Saure), abweichend von der Empfehlung:**
+    Python statt R. Grund: Das validierte Sommer-Modell ist in Python
+    implementiert (`Analysen/2026-09-sommer-2026-normal/sommer_2026_normal.py`),
+    eine Neuimplementierung wäre eine zusätzliche Fehlerquelle. Die Kontrolle
+    „Reproduktion des validierten S2-Fits“ bleibt als Prüfschritt erhalten.
+    Eingearbeitet in 9, 10 und 13.
+
+**Neue Rückfragen aus v0.2 (offen):**
+
+17. **Reihenfolge Validierung – Registrierung – Freigabe des Eintrags.**
+    Laut CLAUDE.md muss der validator prüfen, bevor Ergebnisse in einen
+    Report übernommen werden, und Eintrag #1 trägt eine ausdrückliche
+    Freigabe durch Daniel. Bei V3 ist das Zeitfenster eng (Dezemberwert
+    Anfang Januar 2027, Registrierung bis 15.01.2027). Zu entscheiden:
+    (a) Commit der CSV sofort nach der Rechnung (Zeitstempel), Registerdatei
+    erst nach Validierung und Freigabe; oder (b) CSV und Registerdatei
+    gemeinsam erst nach Validierung und Freigabe, innerhalb der Frist. Und:
+    Was gilt, wenn der validator nach dem Zeitstempel-Commit einen
+    Rechenfehler findet (Korrektur als gekennzeichnete Neuregistrierung mit
+    neuem Commit, oder Vorhersage bleibt mit Fehlervermerk bestehen)? Ich
+    lege das nicht selbst fest. In 0.1 steht derzeit (b) sinngemäß
+    („CSV, Registerdatei und Commit werden gemeinsam committet“); das ist
+    vor dem Einfrieren zu bestätigen oder zu ändern.
+18. **Dateinamen der Einträge #2–#5.** Vorschlag nach dem Muster von #1:
+    `02_sommermittel-2027.md`, `03_hitzetage-2027.md`,
+    `04_monate-ueber-1-5-grad-2027.md`, `05_thg-emissionen-2027.md`. Bitte
+    bestätigen oder ändern. Außerdem: Ist sichergestellt, dass bis Januar
+    2027 kein anderer Registereintrag die Nummern #2–#5 belegt?
+19. **Substack-Zeitpunkt für V3.** V3 wird bis 15.01.2027 registriert, V1,
+    V2 und V4 bis 31.01.2027. Soll es (a) einen gemeinsamen Substack-Beitrag
+    nach der Registrierung aller vier geben, oder (b) für V3 einen eigenen,
+    früheren Beitrag? Der verbindliche Zeitstempel ist in beiden Fällen der
+    Commit.
 
 ## 13. Benötigte Rohdateien (Download durch Daniel)
 
-**Rechnung (Januar 2027, erst nach Sperre 2):**
+**Vor dem Einfrieren (nur Dateiname und Kopfzeile, keine Werte):**
+0. Prüfung DWD CDC Gebietsmittel Heiße Tage: Existenz, Pfad, erstes Jahr
+   (Rückfrage 3, offen; Eintrag in 3.2).
+
+**Rechnung (Januar 2027, erst nach Sperre 2; für V3 Ausnahme von Sperre 2 (b) nach 0.1):**
 1. DWD CDC `regional_averages_tm_summer.txt` (aktuelle Fassung mit Sommer 2026).
-2. DWD CDC Gebietsmittel Heiße Tage, jährlich (Datei nach Rückfrage 3), Fassung mit Jahreswert 2026.
+2. DWD CDC Gebietsmittel Heiße Tage, jährlich (Gebietsmittel nach Rückfrage 3;
+   Datei nach der noch offenen Prüfung in 3.2), Fassung mit Jahreswert 2026.
 3. C3S ERA5 monatliche globale Temperaturanomalien bis Dezember 2026, plus
    C3S-Methodikseite mit dem Offset 1991–2020 → 1850–1900. **Beim Download
    keine 2027-Werte öffnen.** Wenn die Datei 2027-Monate enthält, schneidet
-   das Skript sie beim Einlesen ab, bevor Werte angezeigt werden. Der
+   das Python-Skript sie beim Einlesen ab, bevor Werte angezeigt werden. Der
    Download erfolgt bis spätestens 12.01.2027, vor dem Erscheinen des
    Monatswerts Januar 2027.
 4. UBA-Treibhausgasinventar, neueste bis 31.12.2026 veröffentlichte
@@ -886,11 +1078,14 @@ Kernaussagen erst nach Validierung.
 6. UBA-Projektionsdaten, neueste bis 31.12.2026 veröffentlichte Fassung (nur Wert 2027, MMS).
 7. Kreuzprüfung: OWID monatliche globale Temperaturanomalien (V3); OWID- und
    GCP-Emissionen Deutschland (V4).
+8. Für den Prüfschritt S2-Reproduktion: keine neue Datei; verwendet werden
+   `Analysen/2026-09-sommer-2026-normal/rohdaten/regional_averages_tm_summer.txt`
+   und `sommer_2026_normal.py` (liegen im Repository).
 
 **Auswertung:**
-8. DWD Sommerdatei, Abruf 15.09.2027.
-9. DWD Heiße Tage, Abruf 31.01.2028.
-10. C3S Monatswerte 2027, Abruf 31.01.2028.
-11. UBA-Vorjahresschätzung 2027, Abruf 31.03.2028.
+9. DWD Sommerdatei, Abruf 15.09.2027.
+10. DWD Heiße Tage, Abruf 31.01.2028.
+11. C3S Monatswerte 2027, Abruf 31.01.2028.
+12. UBA-Vorjahresschätzung 2027, Abruf 31.03.2028.
 
 Alle Dateien unverändert ablegen, mit Quelle, Abrufdatum und SHA-256 im `run_log.txt`.
