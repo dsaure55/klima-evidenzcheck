@@ -1,6 +1,7 @@
 # Gliederung Kapitel 7–10 (zur Abstimmung, keine Volltexte)
 
-**Version:** 0.1 · **Status: Entwurf, nicht freigegeben** · **Datum:** 22.10.2026
+**Version:** 0.2 · **Status: Gliederung freigegeben (Daniel Saure, 22.10.2026: „Die Gliederungen passen so. Entscheidungen 1–4 wie empfohlen.“)** · **Datum:** 22.10.2026
+**Hinweis:** Die Freigabe gilt für die Gliederung, nicht für Buchtexte. Texte durchlaufen die Gates aus `kapitelplan.md` Abschnitt 5.
 **Bezug:** `kapitelplan.md` v0.2 (Teile 2 und 3). Belege stammen aus den gesicherten Substack-Fassungen (`quellen-artikel/`), den `korrektur_*.md`-Dateien, `CLAUDE.md` und den SAP-Dateien. Wo ein Beleg beim Schreiben noch gegen die Fundstelle geprüft werden muss, steht „prüfen“.
 
 ---
@@ -100,3 +101,12 @@
 2. Kapitel 9: Soll der Name der KI-Anwendung/des Modells genannt werden? Quellenlage vor Schreibbeginn klären.
 3. Kapitel 10: Ankündigung des Registers 2027 mit den vier Zielgrößen im Buch, obwohl der SAP noch Entwurf ist, oder nur das Prinzip und Eintrag #1?
 4. Kapitel 7: Sind die zehn Fragen und die Beispiele so richtig gewählt, oder soll eine Frage ersetzt werden (z. B. 9 oder 10)?
+
+---
+
+## Entscheidungen (Daniel Saure, 22.10.2026, „wie empfohlen“)
+
+1. **Kapitel 8:** Abschnitt „vor Veröffentlichung gefunden“ (Datenkonverter-Fehler, Trittbrettfahrer-Rechnung) wird aufgenommen. Abgebrochene Analysen (Rhein-Niedrigwasser) werden in **Kapitel 9** erwähnt, nicht in Kapitel 8.
+2. **Kapitel 9:** Das KI-Modell bzw. die Anwendung wird genannt, aber nur mit belegter Quelle (vor Schreibbeginn klären).
+3. **Kapitel 10:** Das Register 2027 wird mit den vier Zielgrößen als „geplant“ angekündigt (SAP noch nicht eingefroren, keine Zahlen).
+4. **Kapitel 7:** Die zehn Fragen und Beispiele bleiben wie gegliedert.
