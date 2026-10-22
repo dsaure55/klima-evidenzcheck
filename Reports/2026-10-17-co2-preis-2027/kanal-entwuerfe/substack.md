@@ -1,4 +1,4 @@
-**ENTWURF – geänderte Fassung vom 22.10.2026, nicht veröffentlicht. Die Freigabe vom 17.10.2026 galt der Vorfassung; neue Freigabe durch Daniel Saure erforderlich. Änderungen: Titel, Kurz gesagt (1. Satz), Anlass (Bundesrat), Fazit (1. Satz), Quelle [5]. Diese Kopfzeile nicht mit nach Substack übernehmen.**
+**FREIGEGEBEN durch Daniel Saure am 22.10.2026 (Antwort auf Rückfrage: „Neue Fassung freigeben – ich habe die geänderte Fassung vollständig gelesen und gebe sie frei“). Geänderte Fassung eines bereits veröffentlichten Artikels; Umsetzung auf Substack durch Daniel mit Korrekturvermerk (siehe ../korrektur_2026-10-22.md). Änderungen gegenüber der Fassung vom 17.10.: Titel, Kurz gesagt (1. Satz), Anlass (Bundesrat), Fazit (1. Satz), Quelle [5]. Diese Kopfzeile nicht mit nach Substack übernehmen.**
 Klima Kompass · Einordnung
 
 # Bundestag friert CO₂-Preis 2027 ein – was das an der Zapfsäule bedeutet
