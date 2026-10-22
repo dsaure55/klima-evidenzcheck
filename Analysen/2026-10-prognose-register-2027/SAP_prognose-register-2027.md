@@ -9,7 +9,7 @@ bis Ende 2026.
 
 **Format:** Klima Kompass · Evidenzcheck, Unterformat „Prognose-Register“
 (prospektiv). Inhaltsstufe: Evidenzcheck (neue Inferenz).
-**Version:** 0.2
+**Version:** 0.3
 **Status: draft**
 **Datum:** 22.10.2026
 **Autor:in:** Claude (sap-autor-Subagent)
@@ -17,7 +17,9 @@ bis Ende 2026.
 durch Daniel Saure, nachdem er den vollständigen aktuellen Text gelesen und
 ausdrücklich bestätigt hat (CLAUDE.md, Verifikationspflicht). V3 darf getrennt
 eingefroren werden (Rückfrage 7, beantwortet 22.10.2026). Offene Vorbedingung
-vor dem Einfrieren von V2: Dateiprüfung nach Rückfrage 3 (siehe 3.2).
+vor dem Einfrieren von V2: Dateiprüfung nach Rückfrage 3 (siehe 3.2). Offene
+Vorbedingungen vor dem Einfrieren aller Teile (auch V3): Rückfragen 20 und 21
+(siehe 12).
 
 **Geplanter Ordner:** `Analysen/2026-10-prognose-register-2027/`
 **Vorlage:** `SAP-Vorlage/SAP-Template.md`. Die Struktur wurde übernommen, die
@@ -37,6 +39,15 @@ Ergänzungen, wie im Prognose-Check.
   draft. Keine Daten gesichtet, kein Code ausgeführt. Zusätzlich gelesen:
   `Prognose-Register/01_gasspeicher-winter-2026-27.md` (Formatvorlage für die
   Einträge #2–#5).
+- **v0.3 draft (22.10.2026):** Rückfragen 17–19 von Daniel Saure am 22.10.2026
+  beantwortet („17 bis 19 wie von dir vorgeschlagen“): 17 Option (b) mit
+  Korrekturregel per gekennzeichneter Neuregistrierung, 18 Dateinamen und
+  Reservierung #2–#5, 19 Option (a) gemeinsamer Substack-Beitrag bis
+  31.01.2027. Eingearbeitet in Kopf, 0.1, 7, 10, 11, 12. Aus der Einarbeitung
+  ergeben sich zwei neue Rückfragen (20: welche Fassung bei einer
+  Neuregistrierung primär zählt, Widerspruch zu Abschnitt 7; 21: Verhältnis
+  zur Commit-Regel in CLAUDE.md). Rückfrage 3 unverändert teilweise offen.
+  Status weiter draft. Keine Daten gesichtet, kein Code ausgeführt.
 
 ---
 
@@ -58,7 +69,7 @@ Ergänzungen, wie im Prognose-Check.
   der Registereintrag `Prognose-Register/01_gasspeicher-winter-2026-27.md`
   (nur als Formatvorlage; er enthält Vorhersagewerte einer anderen, bereits
   validierten und veröffentlichten Analyse, die mit V1–V4 nichts zu tun
-  haben).
+  haben). Für v0.3 wurde nichts Zusätzliches gelesen.
 - **Transparenz über Vorwissen:** Aus dem validierten Sommer-2026-Check sind
   der Modellfit 1971–2025, die Sensitivität S2 (Fit 1971–2026) und der
   vorläufige DWD-Wert für den Sommer 2026 bekannt. Damit ist die
@@ -109,38 +120,86 @@ zulässig, mit Begründung und erneuter Freigabe durch Daniel Saure.
 2027 die ersten Werte für 2027 (tägliche ERA5-Werte im Climate Pulse bereits ab
 den ersten Januartagen, den Monatswert Januar 2027 im Monatsbulletin Anfang
 Februar 2027). **Der Teil V3 muss deshalb bis 15.12.2026 eingefroren und bis
-15.01.2027 berechnet und registriert sein** (Rückfrage 7, beantwortet). V1, V2
-und V4 werden bis 31.12.2026 eingefroren.
+15.01.2027 berechnet, validiert, von Daniel Saure freigegeben und registriert
+sein** (Rückfragen 7 und 17, beantwortet). Rechnung, Validierung, Freigabe und
+Registrierungs-Commit von V3 liegen also alle zwischen der Veröffentlichung
+des C3S-Monatswerts Dezember 2026 (Anfang Januar 2027) und dem 15.01.2027.
+V1, V2 und V4 werden bis 31.12.2026 eingefroren.
 
 | Schritt | V1 Sommer | V2 Hitzetage | V3 Monate > 1,5 °C | V4 THG |
 |---|---|---|---|---|
 | Einfrieren SAP (spätestens) | 31.12.2026 | 31.12.2026 (Vorbedingung: Dateiprüfung Rückfrage 3) | **15.12.2026** (getrenntes Einfrieren zulässig) | 31.12.2026 |
 | Frühester Rechenbeginn | 01.01.2027, nach Sperre 2 | sobald Jahreswert 2026 beim DWD vorliegt, nach Sperre 2 | sobald der Monatswert Dezember 2026 bei C3S vorliegt, nach Sperre 2 (a), (c); Ausnahme von (b) siehe oben | 01.01.2027, nach Sperre 2 |
-| Registrierung (Commit mit Ergebnistabelle und Registereintrag) spätestens | 31.01.2027 | 31.01.2027 | **15.01.2027** | 31.01.2027 (in jedem Fall vor der UBA-Vorjahresschätzung 2026, März 2027) |
+| Registrierung (gemeinsamer Commit von Ergebnis-CSV und Registerdatei, erst nach Validierung und Freigabe durch Daniel Saure) spätestens | 31.01.2027 | 31.01.2027 | **15.01.2027** | 31.01.2027 (in jedem Fall vor der UBA-Vorjahresschätzung 2026, März 2027) |
 | Registereintrag | #2 | #3 | #4 | #5 |
+| Gemeinsamer Substack-Beitrag (alle vier Vorhersagen) spätestens | 31.01.2027 | 31.01.2027 | 31.01.2027 | 31.01.2027 |
 | Stichtag der Auswertung | 15.09.2027 | 31.01.2028 | 31.01.2028 | 31.03.2028 |
 
 **Registrierung:** Die berechneten Vorhersagen werden mit Datum, Datenstand,
 Zugriffsdatum und Prüfsummen der Rohdateien in einer Ergebnistabelle
 `output/register_2027.csv` abgelegt. Zusätzlich wird je Vorhersage ein
-Eintrag im Prognose-Register angelegt (Rückfrage 14, beantwortet):
+Eintrag im Prognose-Register angelegt (Rückfragen 14 und 18, beantwortet):
 
-| Vorhersage | Registereintrag | Datei (Namensvorschlag, siehe Rückfrage 18) |
+| Vorhersage | Registereintrag | Datei (festgelegt, Rückfrage 18) |
 |---|---|---|
 | V1 Sommermittel 2027 | **#2** | `Prognose-Register/02_sommermittel-2027.md` |
 | V2 Hitzetage 2027 | **#3** | `Prognose-Register/03_hitzetage-2027.md` |
 | V3 Monate > 1,5 °C 2027 | **#4** | `Prognose-Register/04_monate-ueber-1-5-grad-2027.md` |
 | V4 THG-Emissionen 2027 | **#5** | `Prognose-Register/05_thg-emissionen-2027.md` |
 
-Die Nummern #2–#5 sind durch diesen SAP reserviert. Sie folgen der Reihenfolge
-V1–V4, nicht der zeitlichen Reihenfolge der Registrierung (V3 wird zuerst
-registriert). Format und Felder der Einträge: Abschnitt 11. CSV, Registerdatei
-und Commit werden gemeinsam committet. Der Commit-Hash ist der Zeitstempel der
-Vorhersage. Weichen CSV und Registerdatei voneinander ab, gilt die CSV (sie
-ist die vom Skript erzeugte Quelle); die Abweichung wird als Fehler im
-Register vermerkt. Nach der Registrierung wird an den Vorhersagen nichts mehr
-geändert. Die öffentliche Registrierung auf Substack kommt hinzu (Abschnitt
-11); sie ersetzt den Commit-Zeitstempel nicht.
+**Reservierung der Nummern (Rückfrage 18, beantwortet):** Die Nummern #2–#5
+sind für dieses Register reserviert. Ein anderer Registereintrag, der bis
+Januar 2027 entsteht, erhält #6 oder höher. Die Nummern #2–#5 folgen der
+Reihenfolge V1–V4, nicht der zeitlichen Reihenfolge der Registrierung (V3 wird
+zuerst registriert). Format und Felder der Einträge: Abschnitt 11.
+
+**Ablauf je Vorhersage (Rückfrage 17, beantwortet: Option b):**
+1. Rechnung nach dem eingefrorenen SAP (analyst-Subagent). Es entstehen die
+   Ergebnis-CSV und ein Entwurf der Registerdatei.
+2. Unabhängige Prüfung durch den validator-Subagenten gegen den SAP;
+   Validierungsbericht als Datei im Analyseordner.
+3. Daniel Saure liest den Registereintrag und gibt ihn ausdrücklich frei.
+   Erst danach wird das Feld „Freigabe“ im Eintrag ausgefüllt (Abschnitt 11).
+4. Ergebnis-CSV und Registerdatei werden **gemeinsam** committet, erst nach
+   Validierung und Freigabe und innerhalb der jeweiligen Frist (Tabelle
+   oben). Der Hash dieses Registrierungs-Commits ist der verbindliche
+   Zeitstempel der Vorhersage.
+Was zwischen Schritt 1 und Schritt 4 committet werden darf (Verhältnis zur
+Commit-Regel in CLAUDE.md), ist offen: Rückfrage 21.
+
+Weichen CSV und Registerdatei voneinander ab, gilt die CSV (sie ist die vom
+Skript erzeugte Quelle); die Abweichung wird als Fehler im Register vermerkt.
+Nach der Registrierung wird an den Vorhersagen nichts mehr geändert, mit
+einer einzigen Ausnahme: der Neuregistrierung nach der folgenden
+Korrekturregel.
+
+**Korrekturregel nach dem Registrierungs-Commit (Rückfrage 17, beantwortet):**
+- Findet der validator nach dem Registrierungs-Commit einen Rechenfehler,
+  wird dieser als **gekennzeichnete Neuregistrierung mit neuem Commit**
+  korrigiert.
+- Ein Rechenfehler ist eine Abweichung der Rechnung von der eingefrorenen
+  Spezifikation (2.1–2.4, 6) oder ein Fehler in den eingelesenen Daten. Eine
+  Neuregistrierung ändert nie Methode, Fenster, Intervallniveau,
+  Schwellenregel oder Bewertungsregel (Abschnitte 5.3 und 7).
+- **Der ursprüngliche Eintrag bleibt sichtbar und wird nicht
+  überschrieben:** `output/register_2027.csv` und der registrierte Teil der
+  Registerdatei bleiben unverändert. Die korrigierten Werte werden in einer
+  neuen Datei `output/register_2027_neuregistrierung_<n>.csv` abgelegt und in
+  der Registerdatei als Nachtrag „Neuregistrierung <n>“ ergänzt, mit Datum,
+  Grund (Beschreibung des Rechenfehlers) und Commit-Hash.
+- Die Neuregistrierung durchläuft dieselben Schritte 2–4 wie die
+  Erstregistrierung (Validierung, ausdrückliche Freigabe durch Daniel Saure,
+  Commit).
+- Bei der Auswertung wird **gegen beide Fassungen** bewertet. Beide
+  Ergebnisse werden berichtet, und die Korrektur wird mit Datum und Grund
+  offengelegt (Abschnitt 11). Welche Fassung in der Primärbewertung und in
+  der Gesamtbilanz „k von 4“ zählt und ob eine Neuregistrierung zeitlich
+  begrenzt ist, ist offen: Rückfrage 20.
+
+**Öffentliche Registrierung auf Substack (Rückfrage 19, beantwortet: Option
+a):** ein gemeinsamer Beitrag für alle vier Vorhersagen nach der Registrierung
+aller vier, spätestens am 31.01.2027 (Abschnitt 11). Er ersetzt den
+Commit-Zeitstempel nicht. Der verbindliche Zeitstempel ist der Commit.
 
 **Fallback V3, falls der Dezemberwert 2026 nicht rechtzeitig vorliegt:**
 Liegt der C3S-Monatswert Dezember 2026 bis zum 12.01.2027 nicht vor, wird V3
@@ -686,7 +745,11 @@ durchgeführt, Grund: …“ registriert, nicht weggelassen.
   erscheinen ausschließlich die vier Primärbewertungen nach 95-%-Intervall
   (z. B. „3 von 4 getroffen“). Sensitivitäten, 80-%-Intervalle und
   Referenzprognosen stehen in Tabellen daneben, unabhängig davon, ob sie
-  günstiger oder ungünstiger ausfallen.
+  günstiger oder ungünstiger ausfallen. Liegt für eine Vorhersage eine
+  Neuregistrierung nach der Korrekturregel in 0.1 vor, wird gegen beide
+  Fassungen bewertet. Welche der beiden Fassungen die eine Primärbewertung
+  liefert, ist noch nicht festgelegt (Rückfrage 20, offen; muss vor dem
+  Einfrieren entschieden sein).
 - **Keine nachträgliche Auswahl** von Fenster, Modell, Intervallniveau,
   Schwellenregel (V3) oder Datenfassung. Die Datenfassung für die Bewertung
   ist durch die Stichtage in Abschnitt 3 festgelegt.
@@ -697,9 +760,10 @@ durchgeführt, Grund: …“ registriert, nicht weggelassen.
   einzelner Fehltreffer ist deshalb kein Beleg für eine schlechte Methode,
   und vier Treffer sind kein Beleg für eine gute. Aussagen zur Kalibrierung
   sind erst über mehrere Register-Jahrgänge möglich.
-- **Abgrenzung zu Registereintrag #1:** Die Gesamtbilanz „k von 4“ bezieht
-  sich nur auf die Einträge #2–#5. Eintrag #1 (Gasspeicher) wird getrennt
-  ausgewertet und nicht in diese Bilanz eingerechnet.
+- **Abgrenzung zu Registereintrag #1 und späteren Einträgen:** Die
+  Gesamtbilanz „k von 4“ bezieht sich nur auf die Einträge #2–#5. Eintrag #1
+  (Gasspeicher) und Einträge ab #6 werden getrennt ausgewertet und nicht in
+  diese Bilanz eingerechnet.
 - Jede Abweichung vom SAP wird als „Post-hoc“ gekennzeichnet.
 
 ## 8. Interpretationsrahmen / Confounder
@@ -818,8 +882,10 @@ und Fehltreffer werden mit gleichem Wortlaut berichtet.
 - **Skripte:** `prognose_register_2027.py` (Rechnung) und ein getrenntes
   Skript für die spätere Auswertung, `prognose_register_2027_auswertung.py`.
   Die Auswertung liest die registrierten Vorhersagen nur aus
-  `output/register_2027.csv` und rechnet sie nicht neu. (Abweichung von der
-  Ordnerkonvention `<thema>.R` in CLAUDE.md, begründet durch die
+  `output/register_2027.csv` und, falls vorhanden, aus den
+  Neuregistrierungs-Dateien `output/register_2027_neuregistrierung_<n>.csv`
+  (0.1, Korrekturregel). Sie rechnet keine Vorhersage neu. (Abweichung von
+  der Ordnerkonvention `<thema>.R` in CLAUDE.md, begründet durch die
   Sprachfestlegung.)
 - **Zufallszahlen:** ein einziger numpy-Generator (PCG64) mit Seed 20261022
   für die gesamte Rechnung; die Reihenfolge der Zufallsziehungen
@@ -837,7 +903,9 @@ und Fehltreffer werden mit gleichem Wortlaut berichtet.
 
 ## 11. Reporting-Plan
 
-**Zeitpunkt 1 – Registrierung (Januar 2027, V3 bis 15.01.2027):**
+**Zeitpunkt 1 – Registrierung (Januar 2027, V3 bis 15.01.2027; Ablauf
+Rechnung – Validierung – Freigabe – gemeinsamer Commit nach 0.1, Rückfrage 17
+beantwortet):**
 - Tabelle „Register 2027“ (`output/register_2027.csv`): je Vorhersage
   Zielgröße, Quelle, Punktvorhersage, 95-%- und 80-%-Intervall,
   Bewertungsregel, Stichtag, Datenstand, Registereintrag-Nummer, Commit-Hash.
@@ -846,20 +914,29 @@ und Fehltreffer werden mit gleichem Wortlaut berichtet.
 - Grafik je Vorhersage: Datenreihe bis 2026, Primärvorhersage 2027 mit 95-%-
   und 80-%-Intervall.
 - Diagnostik (5.2) im Anhang.
+- Die Ergebnis-CSV und die zugehörige Registerdatei werden erst nach
+  Validierung und ausdrücklicher Freigabe durch Daniel Saure gemeinsam
+  committet, innerhalb der Frist aus 0.1.
 
-**Prognose-Register-Einträge #2–#5** (Rückfrage 14 a, beantwortet): Die vier
-Vorhersagen werden als Einträge **#2 (V1), #3 (V2), #4 (V3) und #5 (V4)** im
-Ordner `Prognose-Register/` registriert, **eine Datei pro Vorhersage**, im
-gleichen Format wie Eintrag #1
-(`Prognose-Register/01_gasspeicher-winter-2026-27.md`). Dateinamen siehe 0.1
-(Vorschlag, Rückfrage 18). Jeder Eintrag enthält dieselben Felder wie #1, in
-dieser Reihenfolge:
+**Prognose-Register-Einträge #2–#5** (Rückfragen 14 a und 18, beantwortet):
+Die vier Vorhersagen werden als Einträge **#2 (V1), #3 (V2), #4 (V3) und #5
+(V4)** im Ordner `Prognose-Register/` registriert, **eine Datei pro
+Vorhersage**, im gleichen Format wie Eintrag #1
+(`Prognose-Register/01_gasspeicher-winter-2026-27.md`). Die Dateinamen sind
+festgelegt: `02_sommermittel-2027.md`, `03_hitzetage-2027.md`,
+`04_monate-ueber-1-5-grad-2027.md`, `05_thg-emissionen-2027.md` (Tabelle in
+0.1). Die Nummern #2–#5 sind für dieses Register reserviert; ein anderer
+Registereintrag, der bis Januar 2027 entsteht, erhält #6 oder höher. Jeder
+Eintrag enthält dieselben Felder wie #1, in dieser Reihenfolge:
 - Überschrift: „Prognose-Register · Eintrag #n – <Vorhersage> 2027“.
-- **Registriert:** Datum (maßgeblich ist der Zeitstempel des Git-Commits).
+- **Registriert:** Datum (maßgeblich ist der Zeitstempel des
+  Registrierungs-Commits).
 - **Freigabe:** wird erst eingetragen, nachdem Daniel Saure den konkreten
   Eintrag ausdrücklich freigegeben hat (Name, Datum, Wortlaut der Freigabe,
   wie in #1). Der analyst- oder ein anderer Subagent trägt dieses Feld nie
-  vorab ein (CLAUDE.md, Verifikationspflicht). Ablauf siehe Rückfrage 17.
+  vorab ein (CLAUDE.md, Verifikationspflicht). Ablauf nach 0.1 (Rückfrage 17,
+  beantwortet): Das Feld wird nach der Validierung und vor dem gemeinsamen
+  Commit von CSV und Registerdatei ausgefüllt.
 - **Leserfrage:** allgemeinverständliche Frage. Sie erläutert, ersetzt aber
   nicht die Zielgröße; bindend ist die Definition dieses SAP.
 - **Grundlage:** Verweis auf diesen SAP (Pfad
@@ -878,18 +955,25 @@ dieser Reihenfolge:
   „nicht auswertbar“, Zusage der Veröffentlichung unabhängig vom Ausgang.
 - **Offenlegung:** Vorwissen (Abschnitt 0), Datenstand bei der Rechnung, bei
   V3 gegebenenfalls Ausnahme von Sperre 2 (b), was nicht vorhergesagt wird.
+- **Neuregistrierung** (nur im Korrekturfall nach 0.1): Nachtrag
+  „Neuregistrierung <n>“ mit Datum, Grund, korrigierten Werten (aus
+  `output/register_2027_neuregistrierung_<n>.csv`), Freigabe und Commit-Hash.
+  Der registrierte Teil des Eintrags bleibt unverändert und sichtbar.
 
 Die Werte in den Registerdateien werden aus `output/register_2027.csv`
-übernommen, nicht von Hand neu gerundet außer nach den Rundungsregeln dieses
-Abschnitts. Der validator prüft die Übereinstimmung.
+(bzw. im Korrekturfall aus der Neuregistrierungs-Datei) übernommen, nicht von
+Hand neu gerundet außer nach den Rundungsregeln dieses Abschnitts. Der
+validator prüft die Übereinstimmung.
 
-**Öffentliche Registrierung auf Substack** (Rückfrage 14 b, beantwortet: ja):
-Die registrierten Vorhersagen werden zusätzlich öffentlich auf Substack
-veröffentlicht (öffentlicher Zeitstempel, zusätzlich zum Commit-Hash), als
-„Klima Kompass · Evidenzcheck“ nach Validierung und Freigabe durch Daniel
-Saure. Veröffentlicht wird durch Daniel. Kanalfassungen nur über den
-Klima-Kompass-Ablauf, keine LinkedIn-Fassung. Ob V3 wegen der früheren
-Registrierung einen eigenen, früheren Beitrag erhält: Rückfrage 19.
+**Öffentliche Registrierung auf Substack** (Rückfrage 14 b, beantwortet: ja;
+Rückfrage 19, beantwortet: Option a): Die registrierten Vorhersagen werden in
+**einem gemeinsamen Substack-Beitrag** für alle vier Vorhersagen
+veröffentlicht, nach der Registrierung aller vier, **spätestens am
+31.01.2027**. V3 erhält keinen eigenen, früheren Beitrag. Der Beitrag
+erscheint als „Klima Kompass · Evidenzcheck“ nach Validierung und Freigabe
+durch Daniel Saure; veröffentlicht wird durch Daniel. Der verbindliche
+Zeitstempel ist der Commit, nicht das Substack-Datum. Kanalfassungen nur über
+den Klima-Kompass-Ablauf, keine LinkedIn-Fassung.
 
 **Zeitpunkt 2 – Auswertungen (V1 ab 15.09.2027; V2, V3 ab 31.01.2028; V4 ab
 31.03.2028):**
@@ -898,6 +982,10 @@ Registrierung einen eigenen, früheren Beitrag erhält: Rückfrage 19.
   PIT-Wert, Prognosefehler, Vergleich mit naiver Referenz bzw.
   UBA-Vergleichsprognose (V4), Treffer im 80-%-Intervall, Treffer je
   Sensitivität.
+- Liegt eine Neuregistrierung vor (0.1): Bewertung gegen die ursprüngliche
+  und die korrigierte Fassung, beide Ergebnisse werden berichtet, die
+  Korrektur wird mit Datum und Grund offengelegt. Welche Fassung in die
+  Primärbewertung und die Gesamtbilanz eingeht: Rückfrage 20 (offen).
 - Das Ergebnis wird im jeweiligen Registereintrag (#2–#5) als Nachtrag
   „Auswertung“ ergänzt; der registrierte Teil des Eintrags bleibt
   unverändert.
@@ -920,10 +1008,12 @@ Kernaussagen erst nach Validierung.
 ## 12. Rückfragen
 
 Rückfragen 1–16 wurden am 22.10.2026 von Daniel Saure beantwortet („alle wie
-empfohlen“, mit Präzisierungen zu 14 und 16). Die Antworten sind in die
-genannten Abschnitte eingearbeitet. Rückfrage 3 ist teilweise offen. Die
-Beantwortung der Rückfragen ist keine Freigabe des SAP; das Einfrieren steht
-aus. Rückfragen 17–19 sind neu (v0.2) und offen.
+empfohlen“, mit Präzisierungen zu 14 und 16). Rückfragen 17–19 wurden am
+22.10.2026 von Daniel Saure beantwortet („17 bis 19 wie von dir
+vorgeschlagen“). Die Antworten sind in die genannten Abschnitte
+eingearbeitet. Rückfrage 3 ist teilweise offen. Rückfragen 20 und 21 sind neu
+(v0.3) und offen. Die Beantwortung der Rückfragen ist keine Freigabe des SAP;
+das Einfrieren steht aus.
 
 1. **V1 – Trendfenster.** Der Entwurf setzt das Fenster 1971–2026 als primär
    (validiertes Modell, Fit bis zum Vorjahr des Zieljahres; entspricht der
@@ -1029,7 +1119,7 @@ aus. Rückfragen 17–19 sind neu (v0.2) und offen.
     „Reproduktion des validierten S2-Fits“ bleibt als Prüfschritt erhalten.
     Eingearbeitet in 9, 10 und 13.
 
-**Neue Rückfragen aus v0.2 (offen):**
+**Rückfragen aus v0.2 (beantwortet in v0.3):**
 
 17. **Reihenfolge Validierung – Registrierung – Freigabe des Eintrags.**
     Laut CLAUDE.md muss der validator prüfen, bevor Ergebnisse in einen
@@ -1041,20 +1131,75 @@ aus. Rückfragen 17–19 sind neu (v0.2) und offen.
     gemeinsam erst nach Validierung und Freigabe, innerhalb der Frist. Und:
     Was gilt, wenn der validator nach dem Zeitstempel-Commit einen
     Rechenfehler findet (Korrektur als gekennzeichnete Neuregistrierung mit
-    neuem Commit, oder Vorhersage bleibt mit Fehlervermerk bestehen)? Ich
-    lege das nicht selbst fest. In 0.1 steht derzeit (b) sinngemäß
-    („CSV, Registerdatei und Commit werden gemeinsam committet“); das ist
-    vor dem Einfrieren zu bestätigen oder zu ändern.
+    neuem Commit, oder Vorhersage bleibt mit Fehlervermerk bestehen)?
+    **Beantwortet 22.10.2026 (Daniel Saure):** wie vorgeschlagen, Option (b).
+    Ergebnis-CSV und Registerdatei werden gemeinsam committet, erst nach
+    Validierung und Daniels Freigabe, innerhalb der jeweiligen Frist (V3 bis
+    15.01.2027, also Rechnung, Validierung und Freigabe zwischen Anfang
+    Januar und 15.01.2027). Findet der validator nach dem
+    Registrierungs-Commit einen Rechenfehler, wird das als gekennzeichnete
+    Neuregistrierung mit neuem Commit korrigiert. Der ursprüngliche Eintrag
+    bleibt sichtbar und wird nicht überschrieben. Die Bewertung erfolgt dann
+    gegen beide Fassungen, beide werden berichtet, und die Korrektur wird mit
+    Datum und Grund offengelegt. Eingearbeitet in 0.1 (Ablauf,
+    Korrekturregel, Fristentabelle), 7, 10 und 11. Folgefragen: 20 und 21.
 18. **Dateinamen der Einträge #2–#5.** Vorschlag nach dem Muster von #1:
     `02_sommermittel-2027.md`, `03_hitzetage-2027.md`,
     `04_monate-ueber-1-5-grad-2027.md`, `05_thg-emissionen-2027.md`. Bitte
     bestätigen oder ändern. Außerdem: Ist sichergestellt, dass bis Januar
     2027 kein anderer Registereintrag die Nummern #2–#5 belegt?
+    **Beantwortet 22.10.2026 (Daniel Saure):** wie vorgeschlagen. Dateinamen
+    `02_sommermittel-2027.md`, `03_hitzetage-2027.md`,
+    `04_monate-ueber-1-5-grad-2027.md`, `05_thg-emissionen-2027.md` in
+    `Prognose-Register/`. Die Nummern #2–#5 sind für dieses Register
+    reserviert. Ein anderer Registereintrag, der bis Januar 2027 entsteht,
+    erhält #6 oder höher. Eingearbeitet in 0.1, 7 und 11.
 19. **Substack-Zeitpunkt für V3.** V3 wird bis 15.01.2027 registriert, V1,
     V2 und V4 bis 31.01.2027. Soll es (a) einen gemeinsamen Substack-Beitrag
     nach der Registrierung aller vier geben, oder (b) für V3 einen eigenen,
     früheren Beitrag? Der verbindliche Zeitstempel ist in beiden Fällen der
     Commit.
+    **Beantwortet 22.10.2026 (Daniel Saure):** wie vorgeschlagen, Option (a).
+    Ein gemeinsamer Substack-Beitrag nach der Registrierung aller vier
+    Vorhersagen, spätestens am 31.01.2027. Der verbindliche Zeitstempel ist
+    der Commit. Eingearbeitet in 0.1 (Fristentabelle) und 11.
+
+**Neue Rückfragen aus v0.3 (offen, vor dem Einfrieren aller Teile zu
+klären):**
+
+20. **Welche Fassung zählt nach einer Neuregistrierung primär?**
+    (Widerspruch aus der Einarbeitung von Rückfrage 17.) Abschnitt 7 legt
+    „genau eine Primärbewertung je Vorhersage“ fest; die Antwort auf
+    Rückfrage 17 sieht bei einer Neuregistrierung die Bewertung gegen beide
+    Fassungen vor, ohne festzulegen, welche in Überschrift, Teaser und
+    Gesamtbilanz „k von 4“ eingeht. Ohne Festlegung könnten zwei Analysten
+    zu unterschiedlichen Bilanzen kommen, und es bliebe eine nachträgliche
+    Wahl der günstigeren Fassung möglich. Zu entscheiden:
+    (a) Primär zählt immer die ursprünglich registrierte Fassung; die
+    korrigierte Fassung wird daneben berichtet.
+    (b) Primär zählt die korrigierte Fassung; die ursprüngliche wird daneben
+    berichtet.
+    (c) Primär zählt die korrigierte Fassung nur, wenn ihr Commit vor einem
+    festen Zeitpunkt liegt (z. B. vor der ersten öffentlich verfügbaren
+    Beobachtung des Zieljahres für die betreffende Größe), sonst die
+    ursprüngliche.
+    Zusätzlich: Ist eine Neuregistrierung zeitlich begrenzt (etwa bis zum
+    Substack-Beitrag oder bis zur ersten 2027-Beobachtung), oder bis zum
+    Stichtag der Auswertung zulässig? Ich lege das nicht selbst fest.
+21. **Verhältnis zur Commit-Regel in CLAUDE.md.** CLAUDE.md verlangt einen
+    Commit nach jedem abgeschlossenen Schritt („Analyse fertig“,
+    „Validierung fertig“) als Audit-Trail. Nach Rückfrage 17 (b) dürfen
+    Ergebnis-CSV und Registerdatei erst nach Validierung und Freigabe
+    gemeinsam committet werden. Offen ist, was zwischen Rechnung und
+    Registrierungs-Commit committet werden darf: (a) für diese Analyse
+    nichts, d. h. Skript, `run_log.txt`, Ergebnis-CSV, Registerdatei und
+    Validierungsbericht werden erst mit bzw. unmittelbar nach dem
+    Registrierungs-Commit committet; oder (b) Skript und `run_log.txt` ohne
+    Ergebniswerte dürfen vorher committet werden (dann wäre festzulegen,
+    dass `run_log.txt` bis zur Registrierung keine Vorhersagewerte
+    enthält); oder (c) eine andere Regel. Zugleich: Wird der
+    Validierungsbericht im selben Commit wie CSV und Registerdatei abgelegt
+    oder davor?
 
 ## 13. Benötigte Rohdateien (Download durch Daniel)
 
