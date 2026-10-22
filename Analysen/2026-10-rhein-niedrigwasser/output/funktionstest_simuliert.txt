@@ -1,0 +1,2 @@
+Funktionstest bestanden: alle H-basierten Funktionen liefen fehlerfrei auf simulierten Daten.
+Simulierte Daten (Seed 1), keine Klimadaten, keine Aussage ueber den Rhein.

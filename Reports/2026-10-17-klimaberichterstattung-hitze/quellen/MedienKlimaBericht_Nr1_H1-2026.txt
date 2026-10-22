@@ -1,0 +1,611 @@
+MedienKlimaBericht Nr. 1
+
+Erstes Halbjahr 2026 · Das Erste und ZDF
+
+Die Klimaberichterstattung
+der öffentlich-rechtlichen
+Sender
+
+Eine Datenauswertung des Gesamtprogramms von Das Erste und ZDF,
+durchgeführt von KLIMA° vor acht e. V. Analysierter Zeitraum: Januar bis Juni 2026.
+
+KLIMA° vor acht  klimavoracht.de
+MedienKlimaBericht · 1. Halbjahr 2026             Überblick
+
+In Kürze
+
+    ° Erstmals unter einem Prozent - so wenig Klima wie nie. Die Klimaberichterstat-
+       tung von Das Erste und ZDF ist im ersten Halbjahr 2026 unter 1 Prozent gesunken.
+       Der niedrigste Wert seit Beginn der kontinuierlichen Messungen Mitte 2021 - ausge-
+       rechnet im Halbjahr zweier historischer Hitzewellen.
+
+    ° Sechs Tage Schweigen: Die Ursache kommt viel zu spät. Das Erste und ZDF
+       benannten den Anteil des Klimawandels an den Hitzewellen im Mai und Juni stark ver-
+       zögert. Das Erste ordnete die Juni-Hitze erst am siebten Tag der DWD-Warnperiode
+       erstmals als klimawandelbedingt ein, das ZDF früher - aber nicht durchgängig.
+
+    ° Zwei Hitzewellen, kein Ausschlag in der Klimaberichtsmessung. Die historische
+       Hitze führte nicht zu mehr Klimaminuten im Programm. Getrieben wurde die Bericht-
+       erstattung nicht vom Extremwetter, in der Juni-Rekordwoche fiel die Wochensumme
+       des Ersten sogar auf einen Tiefpunkt.
+
+    ° Europa macht es besser: Klimabezug ab Tag eins. In der Hitzeberichterstattung
+       ordnete das europäische Ausland die Hitze früher und konsequenter als Klimafolge
+       ein. In Frankreich, Großbritannien und Spanien war der Klimabezug vom ersten Tag
+       an Standard.
+
+0,95 %                      0,82 %                6
+
+,,Klima"-Anteil Das Erste,  ,,Klima"-Anteil ZDF,  Tage ohne Einordnung während der
+1. Halbjahr 2026            1. Halbjahr 2026      Juni-Hitzewelle bei Das Erste
+
+Über KLIMA° vor acht
+
+Der gemeinnützige Verein KLIMA° vor acht setzt sich für eine bessere und der Relevanz der
+Klimakrise angemessene Berichterstattung der deutschen Medien ein. Vor allem die öffentlich-
+rechtlichen Sendeanstalten tragen dabei aufgrund ihres Programmauftrags eine besondere
+Verantwortung. Der Verein misst seit 2021 durchgehend die Berichterstattung von Das Erste
+und ZDF. Für den Europavergleich dieses Reports wurden zusätzlich weitere öffentlich-rechtliche
+Sender in Europa ausgewertet. Der vorliegende Report ist die erste Ausgabe des in Zukunft
+halbjährlich erscheinenden Datenüberblicks zur Klimaberichterstattung.
+KLIMA° vor acht hat seinen Sitz in Hamburg und finanziert sich ausschließlich durch Spenden.
+
+KLIMA° vor acht                                                                             2
+MedienKlimaBericht · 1. Halbjahr 2026                                    Inhaltsverzeichnis
+
+Inhaltsverzeichnis
+
+1. Warum dieser Report?                                                                4
+
+2. Übersicht: Das erste Halbjahr 2026                                                  4
+
+2.1. Übersicht . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+
+2.2. Verlauf Januar-Juni: Klimaberichterstattung wird durch politische Ereignisse be-
+
+        stimmt, nicht durch Hitzewellen . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+
+3. Im Fokus: Die Berichterstattung über die Hitzewellen im Mai und Juni                7
+
+3.1. Mai: Hitze ohne Ursachenbenennung im Ersten, erste Einordnungen im ZDF . . . . 7
+
+3.2. Mai: Europäisches Ausland . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+
+3.3. Juni: Sechs Tage Schweigen in der ,,Tagesschau" . . . . . . . . . . . . . . . . . . . . 9
+
+3.4. Juni: Europäisches Ausland . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+
+3.5. Stimmen aus der deutschen Spitzenpolitik fehlen . . . . . . . . . . . . . . . . . . . . 12
+
+4. Zusammenfassung                                                                     12
+
+Anhang                                                                                 15
+
+A. Methode: Wie wir die Daten erhoben haben                                            15
+
+B. Erfasste Sender                                                                     16
+
+KLIMA° vor acht                                                                        3
+MedienKlimaBericht · 1. Halbjahr 2026  2. Übersicht: Das erste Halbjahr 2026
+
+1. Warum dieser Report?
+
+Der Medienstaatsvertrag verpflichtet die Sender in § 26 einen umfassenden Überblick ,,in allen
+wesentlichen Lebensbereichen" (Abs 1) zu geben, in Abs. 2 auf eine wahrheitsgemäße und
+umfassende Information.1 Die Auswirkungen der Klimakrise betreffen jeden Lebensbereich und
+fallen damit unter den Programmauftrag der öffentlich-rechtlichen Sender.
+
+Obwohl im ersten Halbjahr 2026 mit zwei Hitzewellen und historischen Temperaturwerten die
+Klimakrise für die Bevölkerung so deutlich erfahrbar war wie selten zuvor, sinkt die Klimabericht-
+erstattung der Öffentlich-Rechtlichen auf den niedrigsten gemessenen Stand seit fünf Jahren.
+
+Doch wo die Benennung der Klimakrise bei Extremwetter und Einordnung fehlt, füllen Verharmlo-
+sung und gezielte Desinformation die Lücke. Den öffentlich-rechtlichen Sendern kommt dabei
+eine Schlüsselrolle zu: Sie sind beitragsfinanziert, haben einen gesetzlichen Informationsauftrag,
+erreichen mit ihren Hauptnachrichten mehr Menschen als jedes andere Medium - darunter
+gerade die älteren Zuschauer:innen mit dem höchsten Hitzerisiko - und setzen Maßstäbe für
+die gesamte Medienlandschaft. Dieser Report misst deshalb, wie viel und wie über das Klima
+berichtet wird. Damit schafft er die Grundlage für eine Debatte über Programmentscheidungen,
+die auf Daten statt auf Eindrücken beruht.
+
+2. Übersicht: Das erste Halbjahr 2026
+
+2.1. Übersicht
+
+Seit 2023 nimmt die Klimaberichterstattung der beiden großen Vollprogramme Jahr für Jahr ab.
+2023 lag der Anteil der ,,Klima"-Minuten am Gesamtprogramm im Ersten noch bei 2,2 Prozent,
+im ZDF bei knapp zwei Prozent (1,95 %). 2024 sank er auf 1,49 bzw. 1,43 Prozent, 2025 auf 1,29
+Prozent bei beiden Sendern. Im ersten Halbjahr 2026 - die Daten reichen bis einschließlich
+30.06. - liegt der Anteil nur noch bei 0,95 Prozent (Das Erste) bzw. 0,82 Prozent (ZDF), und damit
+erstmals unter der Ein-Prozent-Marke, weniger als halb so viel wie 2023. Im Sendealltag heißt
+das: durchschnittlich gut zwölf (Das Erste) bzw. rund elf Klima-Minuten (ZDF) pro Tag.
+
+Das Erste bewegt sich dabei durchgängig auf gleichem Niveau wie das ZDF oder leicht darüber
+- am Trend ändert das nichts: Ausgerechnet in dem Halbjahr, in dem die Klimakrise mit zwei
+historischen Hitzewellen so unmittelbar spürbar war wie nie, erreicht ihre Präsenz im Programm
+den niedrigsten Stand der Zeitreihe.
+
+1 Medienstaatsvertrag, § 26 Abs. 1 und 2: https://www.die-medienanstalten.de/fileadmin/user_upload/Rechtsgrun
+ dlagen/Gesetze_Staatsvertraege/Medienstaatsvertrag_MStV.pdf
+
+KLIMA° vor acht                        4
+MedienKlimaBericht · 1. Halbjahr 2026  2. Übersicht: Das erste Halbjahr 2026
+
+KLIMA° vor acht                        5
+MedienKlimaBericht · 1. Halbjahr 2026  2. Übersicht: Das erste Halbjahr 2026
+
+2.2. Verlauf Januar-Juni: Klimaberichterstattung wird durch politische Ereignisse
+      bestimmt, nicht durch Hitzewellen
+
+Der Wochenverlauf zeigt, was die Klimaberichterstattung 2026 bewegt hat - und was nicht. Alle
+großen Ausschläge des Halbjahres gehen auf Berichterstattung über den politischen Betrieb
+zurück: der Koalitionsstreit um das Heizungsgesetz (Ende Februar), der Kabinettsbeschluss zum
+Klimaschutzprogramm am 25.03. - mit 214 Klima-Minuten pro Woche im Ersten der Jahreshöchst-
+wert -, der 17. Petersberger Klimadialog im April und die Debatte um Klima-Investitionen aus
+dem Sondervermögen Ende Mai.
+
+Das Erste bewegt sich dabei durchgängig auf gleichem Niveau wie das ZDF oder leicht darüber
+- am Trend ändert das nichts: Ausgerechnet in dem Halbjahr, in dem die Klimakrise mit zwei
+historischen Hitzewellen so unmittelbar spürbar war wie nie, erreicht ihre Präsenz im Programm
+den niedrigsten Stand der Zeitreihe.
+
+Die beiden Hitzewellen hinterlassen dagegen keinen vergleichbaren Ausschlag: Selbst der Anstieg
+im Hitzefenster Ende Mai fällt mit der Sondervermögens-Debatte zusammen und ist damit
+ebenfalls durch politische Berichterstattung getrieben. Während der Juni-Hitzewelle sinkt die
+7-Tage-Summe des Ersten sogar auf 52 Klima-Minuten - und erreicht einen Tiefpunkt in der
+Rekordhitzewoche am 26.06., der genau auf den Tag fällt, an dem der erste deutsche Juni-Rekord
+gebrochen wurde. Erst ab Ausstrahlung des ,,ZDF spezial" vom 26.06. steigt die Berichterstattung
+von Das Erste und ZDF wieder an (Woche bis 30.06.: Das Erste 116, ZDF 113 Klima-Minuten).
+
+Tagelang wurde über die Hitze berichtet, ohne dass das Wort ,,Klima" fiel. Solche Sendeminuten
+zählen in dieser Analyse nicht als Klimaberichterstattung, da ihre Verknüpfung mit dem The-
+ma fehlt (vgl. Anhang A). Die Klimaberichterstattung folgte im ersten Halbjahr damit dem Takt
+
+KLIMA° vor acht                                                                    6
+MedienKlimaBericht · 1. Halbjahr 2026 3. Im Fokus: Die Berichterstattung über die Hitzewellen im Mai und Juni
+
+politischer Beschlüsse und Kontroversen. Die Kommunikationsforschung kennt dieses Muster:
+Der Kommunikationswissenschaftler Michael Brüggemann (Universität Hamburg) zeigt in seinen
+Analysen der Aufmerksamkeitsdynamiken, dass es politische Großereignisse sind - Klimagip-
+fel, IPCC-Berichte, politische Initiativen -, die die Klimaberichterstattung antreiben, während
+Extremwetterereignisse darin kaum eine Rolle spielen.2
+
+3. Im Fokus: Die Berichterstattung über die Hitzewellen im Mai und
+    Juni
+
+Das erste Halbjahr 2026 war geprägt von zwei schweren Hitzewellen in Europa: Nur wenige
+Wochen, nachdem im Mai Rekordtemperaturen in mehreren europäischen Ländern gemessen
+wurden, folgte im Juni eine erneute Hitzewelle. Die Attributionsforschung kann den Anteil der
+Erderhitzung an einzelnen Hitzewellen heute genau benennen: Laut einer Studie der Initiative
+World Weather Attribution (WWA) wäre die Juni-Hitzewelle ohne die Erderhitzung so gut wie
+unmöglich gewesen.3
+
+Hitzewellen sind der Moment, in dem die Klimakrise für Millionen Menschen unmittelbar erfahrbar
+wird und damit der Testfall, ob Berichterstattung ihre Einordnungsaufgabe erfüllt. Wer die Ursache
+nicht kennt, kann weder das Risiko einschätzen noch Konsequenzen abwägen - individuell beim
+Hitzeschutz, politisch bei Anpassung und Emissionsreduktion. Gesellschaftlich geht es dabei
+um Leben: Hitze ist die tödlichste Wetterfolge in Europa. Für die Hitzewelle Ende Juni 2025
+errechnete eine Schnellstudie von Imperial College London und der London School of Hygiene
+& Tropical Medicine rund 2.300 hitzebedingte Todesfälle in zwölf europäischen Städten - etwa
+1.500 davon wären ohne die menschengemachte Erwärmung nicht eingetreten, 88 Prozent der
+klimabedingten Opfer waren 65 Jahre oder älter.4
+
+3.1. Mai: Hitze ohne Ursachenbenennung im Ersten, erste Einordnungen im ZDF
+
+In der Berichterstattung zur Hitze im Mai spielte die Klimakrise im Ersten zunächst keine Rolle -
+sowohl in der 20-Uhr-,,Tagesschau" als auch über alle Ausgaben und Formate hinweg.
+
+Der 26.05. zeigt das exemplarisch: Das Erste berichtete den ganzen Tag über die Hitze - in den
+
+Nachrichtenblöcken des ,,Morgenmagazins" (05:33, 06:03 Uhr), im Mittagsprogramm (13:57 Uhr),
+
+  2 Michael Brüggemann (Universität Hamburg): Hörsaal-Vorträge ,,Klima- und Wissenschaftsjournalismus im Wandel.
+    Von falscher Ausgewogenheit zu interpretativem Journalismus" und ,,Aufmerksamkeitsdynamiken der Klimabe-
+    richterstattung", Deutschlandfunk Nova: https://www.deutschlandfunknova.de/beitrag/kommunikationswissensch
+    aften-michael-brueggemann-ueber-objektivitaet-als-problem
+
+  3 vgl. https://www.worldweatherattribution.org/fossil-fuel-emissions-have-rapidly-worsened-european-heatwav
+    es-in-just-a-few-decades/ (abgerufen 28.6.2026)
+
+  4 ,,Climate change tripled heat-related deaths in early summer European heatwave", Imperial College London
+    (Grantham Institute) / London School of Hygiene & Tropical Medicine, Juli 2025: https://www.imperial.ac.uk/g
+    rantham/publications/all-publications/climate-change-tripled-heat-related-deaths-in-early-summer-europea
+    n-heatwave.php
+
+KLIMA° vor acht                                                              7
+MedienKlimaBericht · 1. Halbjahr 2026 3. Im Fokus: Die Berichterstattung über die Hitzewellen im Mai und Juni
+
+im Vorabend (17:14 Uhr), in ,,Wetter vor acht" (19:50 Uhr), in der 20-Uhr-,,Tagesschau" (20:14 Uhr)
+und im ,,Tagesthemen"-Wetter (22:45 Uhr) -, ohne dass in einer einzigen dieser Sendungen das
+Wort ,,Klima" fiel oder ein Wort aus dem erweiterten Ursachen-Begriffsfeld (vgl. Anhang A).
+
+Der Temperaturrekord in Großbritannien wurde im Wetterbericht im ,,Morgenmagazin" rein
+meteorologisch erklärt: ,,Der Hochdruckeinfluss tut sein Übriges" (Das Erste, 26.05.2026, 06:34
+Uhr). Die einzigen ,,Klima"-Treffer des Tages stammen aus der nächtlichen Wiederholung der
+Dokumentation über Papst Leo XIV. (04:45-05:21 Uhr) - ohne Bezug zur aktuellen Hitze.
+
+Auch am 25. und 27.05. enthält keine einzige ,,Tagesschau"-Ausgabe zur Hitzewelle einen Kli-
+mabezug. Am 27.05. wurden 17 ,,Hitze"-Sendeminuten erfasst, davon keine einzige mit einem
+Klimabezug (und auch nicht mit einem weiteren Begriff des Ursachenfelds, vgl. Anhang A). Einen
+Klimabezug gab es im Ersten an diesem Tag nur außerhalb der Hitzeberichterstattung (,,Klimax"-
+Magazinbeitrag zur Landwirtschaft, 27.05., 17:30 Uhr) - und erst nach Ende der Welle ordnete
+Tim Staeger am 30.05. (u.a. 20:14 Uhr) die vorangegangene Hitze als klimawandelbedingt ein.
+
+Das ZDF stellte den Zusammenhang dagegen bereits während der Welle her: am 26.05. und 27.05.
+gegen 16:11 Uhr bzw. 16 Uhr in der Sendung ,,heute in Europa" und am 27.05. um 19:22 Uhr im
+Wetter, jeweils mit dem Hinweis, dass Hitzewellen durch die globale Erhitzung häufiger, länger
+und intensiver werden.
+
+3.2. Mai: Europäisches Ausland
+
+Der Blick nach Europa zeigt, dass es anders geht. In Frankreich war der Bezug zur Klimakrise vom
+ersten Tag an Standard, bis hinein in die Live-Schalten der Morgensendung: ,,Un phénomène
+accentué par le réchauffement climatique" - ,,Ein Phänomen, das durch die globale Erwärmung
+verstärkt wird" (France 2, 25.05.2026, 08:15 Uhr); dazu kamen IPCC-Autoren, der Agrarklimatologe
+Serge Zaka und die Berichterstattung über die Krisensitzung von Premierminister Lecornu samt
+Oppositionskritik an klimapolitischer Untätigkeit.
+
+In Spanien benannte der Sprecher der Agencia Estatal de Meteorología (AEMET), Rubén del
+Campo, am 25.05. den Zusammenhang im Radio ausdrücklich, die RTVE-Wetterredaktion unter-
+legte ihn mit Daten - etwa der Vervierfachung tropischer Nächte im Mittelmeerraum seit den
+1980er Jahren.
+
+In Großbritannien saß bei BBC-Radio 4 bereits am Morgen des Rekordtags (25.05., 08:48 Uhr)
+Liz Bentley von der Royal Meteorological Society im Studio, Met-Office-Meteorologen werteten
+den Temperatursprung live als klares Zeichen des Klimawandels. Der britische Wetterdienst
+veröffentlichte parallel sogar selbst eine Attributionsanalyse.5
+
+  5 Attributionshinweis des Met Office vom 25.05.2026: https://www.metoffice.gov.uk/about-us/news-and-media/med
+    ia-centre/weather-and-climate-news/2026/provisional-spring-daily-temperature-record-as-heatwave-continu
+    es
+
+KLIMA° vor acht  8
+MedienKlimaBericht · 1. Halbjahr 2026 3. Im Fokus: Die Berichterstattung über die Hitzewellen im Mai und Juni
+
+Im Norden ordnete DR P1 (Dänemark) die westeuropäischen Rekorde bereits im Morgenpro-
+gramm des 27.05. mit dem Klimaforscher Sebastian Mernild ein, das schwedische ,,P1 Morgon"
+stellte am 30.05. fest, dass der Klimawandel Hitzewellen häufiger und länger macht.
+
+Im Osten dagegen meldete Radio România (Rumänien) in den Morgenjournalen des 27.05.
+samt Paris-Korrespondentin beispiellose Rekorde ohne ein Wort zur Ursache, bei Polskie Radio 1
+(Polen) blieb es an diesem Morgen bei einer Hörer-Wettermeldung zur Tropennacht.
+
+Lese-Beispiel: Bei France 2 gibt es durchschnittlich 17,1 Klima-Minuten pro Tag, an Hitzewellen-Tagen
+dagegen 21,5 Klima-Minuten, die Berichterstattung hat sich also um den Faktor 1,3 erhöht. Bei Das Erste
+mit durchschnittlich 12 Klima-Minuten am Tag hat sich die Klimaberichterstattung durch die Hitzewelle nur
+um den Faktor 1,1 erhöht und ist damit fast gleichgeblieben (im Schnitt eine Sendeminute mehr).
+
+3.3. Juni: Sechs Tage Schweigen in der ,,Tagesschau"
+
+Vom Beginn der Warnungen des Deutschen Wetterdiensts (DWD) am 18.06. bis zum 23.06. war die
+Hitze im Ersten sehr präsent, die Klimakrise in dieser Berichterstattung aber praktisch abwesend:
+Am 17.06. fiel ein Wort, das ,,Klima" enthält nur im ,,Wissen vor acht"-Beitrag über Seegras. Die
+,,Tagesschau"-Ausgaben vom 20.06. meldeten 38,5 °C und Unwetterfolgen ohne Klimabezug.
+Sven Plöger nannte am 22.06. Hitze das tödlichste Extremwetter, ohne dabei die Ursache zu
+benennen. Auch die Auslandsberichte (Paris, Sevilla, Bordeaux, 22./23.06.) blieben mit einem
+reinen Hitzefokus.
+
+In der gesamten Woche beschränkt sich der Klimabezug in der Hitzeberichterstattung des
+Ersten auf drei Randstellen: eine beiläufige Freibad-Bemerkung übers Anpassen ,,an die globale
+
+KLIMA° vor acht                                       9
+MedienKlimaBericht · 1. Halbjahr 2026 3. Im Fokus: Die Berichterstattung über die Hitzewellen im Mai und Juni
+
+Erwärmung" (18.06., 17:23 Uhr), eine frühmorgendliche Wettermoderation (19.06., 04:41 Uhr) und
+einen Vorabend-Servicebeitrag samt Nachtwiederholung, wonach Städte ,,auf den Klimawandel
+mit seinen immer heißeren Sommern" reagieren (19.06., 17:18 Uhr; 20.06., 04:55 Uhr). Statt die
+Hitze einzuordnen, wurden Superlative genutzt, das zeigt die ,,Tagesschau" am 23.06.: ,,Neue
+Hitzerekorde [...], die wir so noch nie gesehen haben" (Das Erste, 23.06.2026, 20:02 Uhr).
+
+Erst am 24.06. - sechs Tage nach Beginn der Warnperiode des DWD - ordnete die 20-Uhr-
+,,Tagesschau" die Lage mit Tim Staeger, einem Meteorologen aus dem hauseigenen Wetter-
+Kompetenzzentrum, und dem Potsdam-Institut für Klimafolgenforschung erstmals explizit ein:
+,,Experten gehen aber davon aus, dass sie [die Hitzewellen] durch den Klimawandel extremer
+werden" (Das Erste, 24.06.2026, 20:09 Uhr). Konsequent weitergetrieben wurde das zunächst
+nicht. Erst ab dem 26.06., mit dem Temperaturrekord im Juni, wurde die Einordnung regelmäßig.
+Im Brennpunkt ,,Hitze in Deutschland" am Samstag, 27.06., wurde der Klimabezug jedoch nicht
+von Moderatorin Ellen Ehni hergestellt, sie überließ den interviewten Experten die Thematisierung,
+ohne darauf einzugehen.
+
+Im ,,Tagesschau"-Wetter davor beantwortete Claudia Kleinert die Frage, ob das nur ein Wetterphä-
+nomen sei: ,,Nein, das ist wirklich schon zurückzuführen auf Klimaveränderungen, Klimawandel"
+(Das Erste, 27.06.2026, 20:04 Uhr), am Folgetag hieß es im Mittagswetter, das seien ,,Höchstwerte,
+die ohne den Einfluss des Klimawandels nahezu unmöglich wären" (Das Erste, 28.06.2026, 12:01
+Uhr).
+
+Beim ZDF kam der Bezug deutlich früher: am 18.06. (Rom-Beitrag zu Südeuropas Hitzeschutz
+samt attestiertem deutschen Nachholbedarf bei der Klimaanpassung), am 19.06. am Vormit-
+tag (Allianz-Trade-Studie, Wetterexpertin zur Klimaanpassung), am 23.06. im ,,heute journal".
+Auffallend war das rund 45-minütige ,,ZDF spezial" am 26.06. um 19:30 Uhr, das die Hitze mit
+Özden Terli, der WWA-Attribution, UN-Generalsekretär Guterres und dem PIK eindeutig als Folge
+der menschengemachten Erderhitzung einordnete und Versäumnisse bei Hitzeaktionsplänen
+benannte. Am Tag eines neuen Allzeitrekords brachte das ZDF die Einordnung dann in einem
+Satz auf den Punkt: ,,Diese Hitzewelle wäre ohne die Erhitzung des Klimas so nicht möglich" (ZDF,
+27.06.2026, 19:21 Uhr). Konsistent war aber auch das ZDF nicht - am 21. und 22.06. blieb die
+Hitzeberichterstattung ohne expliziten Klimabezug.
+
+    ,,Diese Hitzewelle wäre ohne die Erhitzung des Klimas so nicht möglich."
+
+      Özden Terli - ZDF Wetter-Moderator und Meteorologe
+
+Ein inländisches Positivbeispiel ist der Deutschlandfunk, der wiederholt in seinen Beiträgen die
+Hitze als Klimafolge einordnete: Am 24.06. zur ClimaMeter-Analyse, wonach die Hitze ohne Klima-
+wandel 2-4 °C niedriger ausgefallen wäre. Außerdem wurden am 24.06. in einer Medienkolumne
+ausdrücklich Redaktionen kritisiert, welche die Hitzewellen mit Badebildern verharmlosen. Am
+26.06. war der WWA-Befund Kernbotschaft des Tages, und es gab Interviews mit Politiker:innen
+von den Grünen bis zur CDU-KlimaUnion.
+
+KLIMA° vor acht  10
+MedienKlimaBericht · 1. Halbjahr 2026 3. Im Fokus: Die Berichterstattung über die Hitzewellen im Mai und Juni
+
+Als Wortprogramm hat der DLF strukturell mehr Raum für Einordnung, und auch dort liefen einzel-
+ne Hitze-Nachrichteninserts ohne Klimabezug. Der Unterschied ist dennoch qualitativ - Ursache
+und Konsequenz mitzuliefern war dort erkennbar redaktionelle Linie, nicht das Engagement
+einzelner Wettermoderator:innen.
+
+3.4. Juni: Europäisches Ausland
+
+Im Vergleich mit der Berichterstattung europäischer Medien im Juni zeigt sich die verhaltene
+Reaktion von Das Erste und ZDF deutlich. Auf BBC Radio 4 (Großbritannien) war die Hitzeattri-
+bution Teil der Morgennachrichten, vorgetragen vom eigenen Klimaredakteur Justin Rowlatt:
+,,Climate change is making them hotter and more frequent" - ,,der Klimawandel macht sie heißer
+und häufiger" (BBC Radio 4, 22.06.2026, 08:08 Uhr), am 26.06. wurden die Copernicus-Analysen
+(Europa erwärmt sich doppelt so schnell wie der globale Schnitt)6 und die Erkenntnisse der WWA
+zur Rekordserie eingeordnet. Außerdem dokumentierte die BBC die COBRA-Krisensitzungen
+(Cabinet Office Briefing Rooms) und interviewte eine Kabinettsministerin zur Klimaresilienz.
+
+In Frankreich machte France 2 die Hitze am 24.06. zum durchgehenden Schwerpunkt, rahmte sie
+als durch die Erderwärmung entstehende neue Wetternorm und hatte die Gesundheitsministerin
+live im 20-Uhr-Journal, wo sie 100 Mio. Euro Soforthilfe für Klimaanlagen ankündigte. Auf RAI
+1 (Italien) saßen am selben Vormittag ein Forscher des ,,Istituto nazionale per l'assicurazione
+contro gli infortuni sul lavoro" (INAIL) und der Klimaforscher Antonello Pasini im Studio, und
+im spanischen Parlament verband Ministerpräsident Sánchez die Hitze ausdrücklich mit der
+,,emergencia climática".
+
+Im Norden - Blick auf die Morgenprogramme - eröffnete DR P1 die 6-Uhr-Nachrichten des 26.06.
+mit der Attribution: Die aktuellen Temperaturen ,,ville have været stort set umulige for 50 år siden"
+- ,,wären vor 50 Jahren praktisch unmöglich gewesen" (DR P1, 26.06.2026, 06:00 Uhr). Schon am
+22.06., bevor die Hitze Dänemark erreichte, hatte der Leiter des DMI-Klimaforschungszentrums,
+Adrian Lema, den Zusammenhang im Morgeninterview erklärt (nur der 24.06. blieb auch dort
+rein deskriptiv).
+
+Im Osten Europas, wie zum Beispiel in Polen, kam dagegen die Ursache schlicht nicht vor:
+,,Poprzedni rekord temperatury ma ju ponad 100 lat, 40,2 stopnia" - ,,Der bisherige Temperatur-
+rekord ist über 100 Jahre alt, 40,2 Grad" (Polskie Radio 1, 26.06.2026, 08:31 Uhr) - der drohende
+Fall eines Jahrhundertrekords, gemeldet ohne ein einziges Wort zum Klimawandel.
+
+Radio România (Rumänien) lieferte am 26.06. in den Morgenjournalen ein europäisches Re-
+kordpanorama (80 Jahre alter UK-Junirekord gebrochen, Brüsseler 50-Jahres-Rekord, erste rote
+Warnstufe der Niederlande, über 200 Hitzetote in Spanien) ebenfalls ohne Ursachennennung.
+
+  6 C3S/ECMWF und WMO: C3S-WMO European State of the Climate 2025, 2026, DOI: 10.24381/zy93-sb27, https:
+    //climate.copernicus.eu/esotc/2025 (abgerufen am 07.07.2026). Die Kennzahl geht bereits auf das European
+    Climate Risk Assessment (EUCRA), EEA Report No 1/2024, Europäische Umweltagentur, 11.03.2024, https://www.
+    eea.europa.eu/en/analysis/publications/european-climate-risk-assessment (abgerufen am 07.07.2026) zurück.
+
+KLIMA° vor acht  11
+MedienKlimaBericht · 1. Halbjahr 2026  4. Zusammenfassung
+
+Die Ausnahme im östlichen Sample: der litauische Radiosender LRT, der am 24.06. um 06:18 Uhr
+UN-Generalsekretär Guterres mit seiner Warnung vor der Klimakrise zitierte.
+
+3.5. Stimmen aus der deutschen Spitzenpolitik fehlen
+
+Während der spanische Ministerpräsident Sánchez im Parlament sprach, die französische Gesund-
+heitsministerin live Hilfen ankündigte und in London COBRA-Sitzungen tagten, dokumentiert
+unser Monitoring für Deutschland keine vergleichbare Präsenz der Regierungsspitze: Sichtbar
+wurde die Opposition (Grünen-Fraktionschefin Dröge mit einem ,,Abkühl-Sofortprogramm",
+28.06.), Bundespräsident Steinmeier mit einer Verteidigung der Klimawissenschaft (28.06.) und
+vereinzelt die CDU-KlimaUnion. Aussagen vom Bundeskanzler oder zuständigen Bundesminis-
+ter:innen zur Hitzewelle, gar konkrete politische Konsequenzen aus dieser Umweltkatastrophe,
+tauchen in den untersuchten Sendungen nicht auf.
+
+Der zuständige Umweltminister Carsten Schneider äußerte sich erst am 29.06., nach Abebben
+der Welle. Dass es auch anders geht, zeigte der Deutschlandfunk, dessen Moderatorin das
+Schweigen am 26.06. gegenüber der stellvertretenden KlimaUnion-Vorsitzenden offen ansprach:
+,,Vom Kanzler ist nichts zu hören, von der Gesundheitsministerin nicht, vom Umweltminister nicht"
+(Deutschlandfunk, 26.06.2026, 06:51 Uhr).
+
+Die deutsche Leerstelle ist doppelt: eine der Politik - und eine der Redaktionen.
+
+4. Zusammenfassung
+
+Das Klima spielte in der Berichterstattung der öffentlich-rechtlichen Sender im ersten Halbjahr
+keine nennenswerte Rolle, im Gegenteil: Der Anteil der ,,Klima"-Sendeminuten am Gesamt-
+programm liegt 2026 (Stand 30.06.) bei 0,95 % im Ersten und 0,82 % im ZDF - der niedrigste
+Wert unserer Zeitreihe (2023: 2,2 % bzw. 1,95 %), - ausgerechnet im Halbjahr zweier historischer
+Hitzewellen.
+
+Keine anderen Nachrichtenformate in Deutschland erreichen Abend für Abend mehr Menschen
+als die ,,Tagesschau" und ,,ZDF heute". Zusammen prägen die beiden Sendungen, wie das Land
+ein Ereignis versteht. Doch die Einordnung der Hitzewellen als klimawandelbedingt erfolgte im
+Ersten erst am siebten Tag und blieb personengebunden an einzelne Wetterredaktionen, statt
+Standard jeder Hitzemeldung zu sein. Eine positive Ausnahme bildete das 45-minütige ,,ZDF
+spezial".
+
+Beim Vergleich der beiden deutschen Sender ist zu beobachten, dass das ZDF früher und klarer
+den Klimabezug herstellte und die Ursache für die Hitze benannte. Das Erste reagierte spät und
+schien beeinflusst von der verstärkten Berichterstattung beim ZDF.
+
+KLIMA° vor acht                        12
+MedienKlimaBericht · 1. Halbjahr 2026  4. Zusammenfassung
+
+Die Berichterstattung der deutschen Sender endete meist dort, wo sie in Frankreich, Großbritan-
+nien und Spanien erst begann: bei der Konsequenz. Die Frage, welche politischen Entscheidungen
+aus dieser Katastrophe folgen - beim Hitzeschutz wie beim Emissionspfad -, wurde weder der
+Bundesregierung gestellt noch von ihr beantwortet. Wie ungewöhnlich dieses doppelte Schwei-
+gen ist, dokumentiert der langjährige ARD-Journalist Jürgen Döschner im ,,Brandmelder": Bei Flut,
+Finanzkrise oder Terroranschlag wäre undenkbar, dass die Regierungsspitze tagelang schweigt -
+und dass die Medien es hinnehmen. Er schreibt: ,,Aber so nachvollziehbar dieses Wegducken der
+politisch Verantwortlichen aus ihrer Logik heraus auch sein mag: Möglich wird es erst, weil Medien
+und Journalist:innen ihnen das durchgehen lassen, sie nicht stellen, nicht fragen, nicht drängen."7
+
+,,Aber so nachvollziehbar dieses Wegducken der politisch Verantwortlichen aus ihrer
+Logik heraus auch sein mag: Möglich wird es erst, weil Medien und Journalist:innen
+ihnen das durchgehen lassen, sie nicht stellen, nicht fragen, nicht drängen."
+
+Jürgen Döschner - früherer ARD-Journalist
+
+Wer die Ursachen verschweigt und die politisch Verantwortlichen nicht konfrontiert, lässt die
+Verwundbarsten - das ältere Stammpublikum des linearen Fernsehens ist zugleich die größte
+Hitze-Risikogruppe - ohne das Wissen zurück, das politische Urteilsbildung und Anpassung
+erst ermöglicht. Der Medienstaatsvertrag verpflichtet die Anstalten einen Überblick ,,in allen
+wesentlichen Lebensbereichen" zu geben8, die Ursache eines Jahrhundertereignisses gehört
+zweifellos dazu.
+
+Hinzu kommt: Während der Hitzewelle kursierte massiv Klimadesinformation, über welche ta-
+gesschau.de am 25.06. selbst berichtete.9 Wo die reichweitenstärksten Formate schweigen,
+überlassen sie die Deutung eines für Millionen körperlich spürbaren Ereignisses denen, die den
+menschengemachten Klimawandel leugnen oder verharmlosen.
+
+Der öffentlich-rechtliche Rundfunk richtet seine Bemühungen derzeit stark auf ein jüngeres Publi-
+kum aus. Doch die aktuelle Langzeitstudie ,,Down2Earth", veröffentlicht in der ARD-eigenen Fach-
+zeitschrift ,,Media Perspektiven", zeigt, warum diese Fokussierung zu kurz greift: Das öffentlich-
+rechtliche Fernsehen ist und bleibt die meistgenutzte Informationsquelle der Deutschen zu
+Klimawandel und Klimapolitik (64 Prozent informieren sich dort mindestens wöchentlich), und
+selbst in der wachsenden Gruppe der Skeptiker:innen und Leugnenden (laut Studie eher älter,
+männlich und politisch rechts) erreicht kein anderes Medium mehr Menschen mit Klimainforma-
+tionen (46 Prozent). Junge Menschen finden im Netz zahlreiche Informationsangebote; für das
+ältere Publikum des linearen Fernsehens existieren solche Alternativen kaum. Wer die Klimabe-
+richterstattung dort zurückfährt, gibt also genau jene auf, die sonst niemand mehr erreicht -
+und überlässt eine verunsicherte Mitte sich selbst: Nur 37 Prozent wissen überhaupt, dass die
+Mehrheit im Land den Klimaschutz unterstützt. Die Studienautor:innen folgern entsprechend
+
+  7 Jürgen Döschner: ,,Stiller Tod und lautes Schweigen", Brandmelder - Klima braucht Kontext (ein Projekt des
+    Netzwerk Klimajournalismus Deutschland e. V.), 29.06.2026: https://brandmelder.org/stiller-tod-und-lautes-s
+    chweigen/
+
+  8 Medienstaatsvertrag, § 26 Abs. 1 und 2: https://www.die-medienanstalten.de/fileadmin/user_upload/Rechtsgrun
+    dlagen/Gesetze_Staatsvertraege/Medienstaatsvertrag_MStV.pdf
+
+  9 https://www.tagesschau.de/faktenfinder/hitze-fakes-100.html
+
+KLIMA° vor acht                                                                      13
+MedienKlimaBericht · 1. Halbjahr 2026  4. Zusammenfassung
+
+,,die große Verantwortung des öffentlich-rechtlichen Rundfunks und des Klimajournalismus".10
+Klimakommunikation ist eine gesamtgesellschaftliche Aufgabe - kein Zielgruppenprojekt.
+
+Dass akkurate Klimakommunikation wirkt - und Schweigen teuer ist -, belegt inzwischen auch
+die Experimentalforschung: In einer aktuellen Studie der Universität Tübingen und des Leibniz-
+Instituts für Wissensmedien genügte eine einzige Falschbotschaft über den wissenschaftlichen
+Konsens über den menschengemachten Klimawandel, um dessen wahrgenommenen Wert um
+rund 15 Prozentpunkte zu senken. Die korrekte Botschaft über den wissenschaftlichen Konsens
+(Einigkeit von 97 Prozent) hob ihn nicht nur wieder an, sondern verbesserte nachweislich auch
+den anschließenden Wissenserwerb. Das Lehrmaterial dieses Experiments war, von den For-
+schenden wegen seiner didaktischen Qualität ausgewählt, eine KLIMA° vor acht-Sendung. 11
+Kurze, wissenschaftlich fundierte Klimaformate funktionieren also. Es braucht deshalb kein neues
+Rezept, sondern die Entscheidung, einem solchen Format endlich einen festen Sendeplatz zu
+geben.
+
+Zwei historische Hitzewellen verdienen mehr als sechs Tage Schweigen und ein einmaliges 45-
+Minuten-Spezial: eine verlässliche, tägliche Einordnung zur besten Sendezeit.
+
+10 Reif, Anne/Nele-Sophie Brebeck/Lars Guenther/Michael Brüggemann: Skepsis gegenüber Klimaschutz wächst.
+   Langzeitstudie zu Einstellungen und Mediennutzung über den Klimawandel und die Klimapolitik in Deutschland.
+   In: Media Perspektiven 16/2026 (Juni 2026)
+
+11 Göbel, Jan Pascal/Jürgen Buder/Malik Ogiermann/Matana Burkhardt/Alina Forstner/Helen Fischer/Markus Huff:
+   Understanding the gateway: Unpacking the mechanisms, boundaries, and outcomes of climate consensus
+   messaging. In: Journal of Environmental Psychology 110 (2026), 102913 (Open Access, CC BY): https://doi.org/10
+   .1016/j.jenvp.2026.102913
+
+KLIMA° vor acht                        14
+MedienKlimaBericht · 1. Halbjahr 2026  A. Methode: Wie wir die Daten erhoben haben
+
+Anhang
+
+A. Methode: Wie wir die Daten erhoben haben
+
+Für die vorliegende Analyse wurde das Programm von Das Erste und ZDF mitgeschnitten und Da-
+tensätze mithilfe computergestützter Methoden generiert und ausgewertet. Um eine detaillierte
+Analyse vornehmen zu können, wurden die Daten dabei in einminütige Segmente (Sendeminuten)
+zerlegt, welche die Analyseeinheit für diesen Report darstellen. Im zweiten Schritt wurde die Ton-
+spur aus den Videodaten extrahiert und mithilfe eines Speech-to-Text-Algorithmus automatisch
+transkribiert.12
+
+Um eine Minute als Klima-Minute zu zählen, haben wir nach der Zeichenfolge ,,Klima" gesucht, die
+auch in Wörtern wie ,,Klimakrise" oder ,,Weltklimarat" auftaucht. Die gängigsten falsch-positiven
+Treffer wie etwa ,,Wirtschaftsklima" oder ,,Klimaanlage" wurden rausgefiltert. Der Test hat eine
+Genauigkeit (Precision) von 94 % und eine Trefferquote (Recall) von 89 %.13 Um auszuschließen,
+dass Einordnungen ohne das Wort ,,Klima" übersehen werden, wurden die erfassten Sendemi-
+nuten der beiden Hitzeperioden zusätzlich auf ein erweitertes Ursachen-Begriffsfeld geprüft (u.
+a. ,,Erwärmung", ,,Erhitzung", ,,Treibhausgase", ,,CO2", ,,menschengemacht", ,,fossil"). Wörtliche
+Zitate stammen aus den Transkripten und sind mit Sender, Datum und Sendeminute belegt.
+Fremdsprachige Zitate werden im Original und in deutscher Übersetzung wiedergegeben. Al-
+le genannten Programmbeispiele sind exemplarisch ausgewählt - die Trefferlisten enthalten
+zahlreiche weitere Positiv- und Negativbelege.
+
+Für die beiden Hitzeperioden (25.-30.05. und 17.-28.06.2026) wurde zusätzlich ein eigener
+Ereignis-Korpus erhoben: Ein Skript durchsuchte die minütlichen Transkripte von zuletzt 24
+öffentlich-rechtlichen Fernseh- und Radiosendern aus 17 europäischen Ländern anhand einer
+festen, sprachspezifisch angepassten Begriffsliste. Diese umfasste Ursachenbegriffe (u. a. ,,Klima-
+wandel", ,,Klimakrise", ,,Erderwärmung", ,,Erderhitzung", ,,globale Erwärmung") sowie Hitzebegriffe
+(u. a. ,,Hitzewelle", ,,Hitzerekord", ,,Temperaturrekord", ,,Höchsttemperatur", ,,Tropennacht", ,,Hit-
+zewarnung"). Gezählt wurde jede Sendeminute mit mindestens einem Treffer. Fremdsprachige
+Transkripte wurden maschinell ins Deutsche übersetzt; alle im Report zitierten Passagen sind
+am Original geprüft. Sämtliche Zeitangaben beziehen sich - auch bei Sendern in anderen Zeit-
+zonen - auf die deutsche Lokalzeit (MESZ). Die oben genannten Kennwerte (Precision 94 %,
+Recall 89 %) gelten für die ,,Klima"-Zählung der Jahresreihe für deutschsprachige Medien; für die
+Hitzeperioden-Begriffsliste liegt keine eigene Validierung vor.
+
+ 12 Siehe dazu auch die Veröffentlichung: https://www.media-perspektiven.de/fileadmin/user_upload/media-perspek
+    tiven/pdf/2022/2212_Tschoetschel_Schumann_Roloff_Brueggemann_.pdf
+
+ 13 ebd.
+
+KLIMA° vor acht                        15
+MedienKlimaBericht · 1. Halbjahr 2026                                        B. Erfasste Sender
+
+B. Erfasste Sender                                      DÄNEMARK
+
+BELGIEN                                DÄNEMARK         DR TV1
+
+VRT Radio 1                            DR P1              TV
+
+  RADIO                                  RADIO          DEUTSCHLAND
+
+DEUTSCHLAND                            DEUTSCHLAND      DLF Kultur
+
+Das Erste                              Deutschlandfunk    RADIO
+
+  TV                                     RADIO          FRANKREICH
+
+DEUTSCHLAND                            FINNLAND         France 2
+
+ZDF                                    YLE Radio 1        TV
+
+  TV                                     RADIO          GROSSBRITANNIEN
+
+FRANKREICH                             GROSSBRITANNIEN  BBC Radio 4
+
+France Inter                           BBC One            RADIO
+
+  RADIO                                  TV             LITAUEN
+
+IRLAND                                 ITALIEN          LRT Radijas
+
+RTÉ Radio 1                            RAI 1              RADIO
+
+  RADIO                                  TV             POLEN
+
+NIEDERLANDE                            ÖSTERREICH       Polskie Radio 1
+
+NPO Radio 1                            ORF Ö1             RADIO
+
+  RADIO                                  RADIO          SCHWEDEN
+
+PORTUGAL                               RUMÄNIEN         SR P1
+
+RTP Antena 1                           Radio România      RADIO
+
+  RADIO                                  RADIO          SPANIEN
+
+SCHWEIZ                                SPANIEN          RNE Radio
+
+SRF 1                                  La 1 RTVE          RADIO
+
+  RADIO                                  TV
+
+KLIMA° vor acht                                         16
+

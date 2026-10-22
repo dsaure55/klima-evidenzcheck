@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!-- **ENTWURF – nicht veröffentlicht. Freigabe durch Daniel Saure erforderlich vor Publikation.** -->
+<!-- Klima Kompass · Wissen · CO₂-Entnahme · Instagram-Karussell, 6 Folien à 1080×1350 -->
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>ENTWURF – Karussell CO₂-Entnahme (Klima Kompass · Wissen)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0E3B43;
+    --flaeche: #14505A;
+    --text: #F2F5F4;
+    --mint: #5FD3B3;
+    --koralle: #F26B5B;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #222; font-family: 'IBM Plex Sans', sans-serif; color: var(--text); }
+  .slide {
+    width: 1080px; height: 1350px; background: var(--bg);
+    padding: 96px 88px 80px; position: relative; overflow: hidden;
+    display: flex; flex-direction: column; margin: 0 auto 40px;
+  }
+  .reihe { font-family: 'IBM Plex Mono', monospace; font-size: 30px; color: var(--mint); letter-spacing: 1px; margin-bottom: 48px; }
+  h1 { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 92px; line-height: 1.05; margin-bottom: 40px; }
+  h2 { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 64px; line-height: 1.1; margin-bottom: 36px; }
+  p { font-size: 38px; line-height: 1.4; margin-bottom: 28px; }
+  .gross { font-family: 'IBM Plex Mono', monospace; font-weight: 600; color: var(--mint); font-size: 120px; line-height: 1; margin-bottom: 16px; }
+  .einheit { font-size: 36px; color: var(--text); opacity: .85; margin-bottom: 36px; }
+  .karte { background: var(--flaeche); border-radius: 24px; padding: 32px 44px; margin-bottom: 24px; }
+  .karte .label { font-family: 'Space Grotesk', sans-serif; font-size: 36px; font-weight: 700; margin-bottom: 6px; }
+  .karte .wert { font-family: 'IBM Plex Mono', monospace; font-size: 60px; font-weight: 600; color: var(--mint); }
+  .karte .wert small { font-size: 30px; color: var(--text); font-weight: 400; }
+  .karte.irrtum { border-left: 12px solid var(--koralle); }
+  .karte.befund { border-left: 12px solid var(--mint); }
+  .karte .kopf { font-family: 'IBM Plex Mono', monospace; font-size: 26px; letter-spacing: 1px; margin-bottom: 12px; }
+  .karte p { font-size: 36px; margin-bottom: 0; }
+  .zeile { display: flex; justify-content: space-between; align-items: baseline; background: var(--flaeche); border-radius: 20px; padding: 24px 40px; margin-bottom: 18px; }
+  .zeile .jahr { font-family: 'Space Grotesk', sans-serif; font-size: 44px; font-weight: 700; }
+  .zeile .wert { font-family: 'IBM Plex Mono', monospace; font-size: 52px; font-weight: 600; color: var(--mint); }
+  .zeile .wert small { font-size: 28px; color: var(--text); font-weight: 400; }
+  .hinweis { font-size: 32px; line-height: 1.4; opacity: .9; }
+  ul { list-style: none; }
+  li { font-size: 34px; line-height: 1.36; margin-bottom: 26px; padding-left: 44px; position: relative; }
+  li::before { content: "–"; position: absolute; left: 0; color: var(--koralle); font-weight: 700; }
+  li b { font-weight: 600; }
+  .koralle { color: var(--koralle); }
+  .mint { color: var(--mint); }
+  .spacer { flex: 1; }
+  .cta { font-family: 'Space Grotesk', sans-serif; font-size: 48px; font-weight: 700; color: var(--bg); background: var(--mint); border-radius: 20px; padding: 28px 40px; display: inline-block; align-self: flex-start; }
+  .fuss {
+    position: absolute; left: 88px; right: 88px; bottom: 44px;
+    display: flex; justify-content: space-between; gap: 32px;
+    font-family: 'IBM Plex Mono', monospace; font-size: 22px; opacity: .75;
+    border-top: 1px solid rgba(242,245,244,.25); padding-top: 18px;
+  }
+  .fuss .quelle { text-align: right; }
+  .nummer { position: absolute; top: 96px; right: 88px; font-family: 'IBM Plex Mono', monospace; font-size: 26px; opacity: .6; }
+</style>
+</head>
+<body>
+
+<!-- Folie 1: Hook -->
+<section class="slide" id="folie-1">
+  <div class="reihe">KLIMA KOMPASS · WISSEN</div>
+  <div class="nummer">1/6</div>
+  <h1>Kann man CO₂ einfach wieder aus der Luft holen?</h1>
+  <h2 class="mint">Ja – aber fast nur über Wälder und Böden.</h2>
+  <p>Und es ersetzt nicht, dass wir weniger ausstoßen. Was ein internationaler Bericht zur CO₂-Entnahme zeigt.</p>
+  <div class="spacer"></div>
+  <div class="fuss"><span>Klima Kompass · Wissen</span><span class="quelle">Quelle: State of CDR, 3. Ausgabe 2026</span></div>
+</section>
+
+<!-- Folie 2: Heute -->
+<section class="slide" id="folie-2">
+  <div class="reihe">WIE VIEL HEUTE?</div>
+  <div class="nummer">2/6</div>
+  <div class="gross">2,2 Mrd. t</div>
+  <div class="einheit">CO₂ pro Jahr werden weltweit entnommen – etwa 5 % der Brutto-CO₂-Emissionen</div>
+  <div class="karte">
+    <div class="label">Etablierte Verfahren (vor allem Wälder, Böden)</div>
+    <div class="wert">99,9 % <small>der Entnahme</small></div>
+  </div>
+  <div class="karte">
+    <div class="label">Neuartige Verfahren (z. B. Pflanzenkohle, CO₂-Filter aus der Luft)</div>
+    <div class="wert">rund 2 Mio. t <small>pro Jahr</small></div>
+  </div>
+  <p class="hinweis">Die neuartigen Verfahren wachsen um rund 40 % pro Jahr. Laut Bericht reicht dieses Tempo nicht für die Pariser Klimaziele.</p>
+  <div class="spacer"></div>
+  <div class="fuss"><span>Klima Kompass · Wissen</span><span class="quelle">Quelle: State of CDR, 3. Ausgabe 2026</span></div>
+</section>
+
+<!-- Folie 3: Lücke -->
+<section class="slide" id="folie-3">
+  <div class="reihe">WIE VIEL BRÄUCHTE ES?</div>
+  <div class="nummer">3/6</div>
+  <h2>Die Lücke zwischen Zusagen und Paris-Szenarien wächst</h2>
+  <div class="zeile"><span class="jahr">2030</span><span class="wert">0,3 <small>Mrd. t CO₂/Jahr</small></span></div>
+  <div class="zeile"><span class="jahr">2035</span><span class="wert">1,2 <small>Mrd. t CO₂/Jahr</small></span></div>
+  <div class="zeile"><span class="jahr">2050</span><span class="wert">5,2 <small>Mrd. t CO₂/Jahr</small></span></div>
+  <p class="hinweis" style="margin-top:16px">2030 summieren sich die Zusagen der Staaten auf 2,5 Mrd. t pro Jahr. Der Median der ehrgeizigsten Paris-kompatiblen Szenarien liegt bei 2,9 Mrd. t.</p>
+  <div class="spacer"></div>
+  <div class="fuss"><span>Klima Kompass · Wissen</span><span class="quelle">Quelle: State of CDR, 3. Ausgabe 2026</span></div>
+</section>
+
+<!-- Folie 4: Irrtum vs. Befund -->
+<section class="slide" id="folie-4">
+  <div class="reihe">HÄUFIGER IRRTUM</div>
+  <div class="nummer">4/6</div>
+  <div class="karte irrtum">
+    <div class="kopf koralle">VERBREITETE ANNAHME</div>
+    <p>„Später holen wir das CO₂ einfach wieder raus.“</p>
+  </div>
+  <div class="karte befund">
+    <div class="kopf mint">WAS DER BERICHT ZEIGT</div>
+    <p>In kostengünstigen, Paris-kompatiblen Szenarien leisten Emissionsminderungen <span class="mint">mindestens 80 %</span> des Weges zu netto null CO₂.</p>
+  </div>
+  <p class="hinweis">Wer Emissionen später senkt, braucht mehr Entnahme. Zehn Jahre Verzögerung würden laut Bericht die Spitzentemperatur erhöhen und den Bedarf an Entnahme deutlich steigern.</p>
+  <div class="spacer"></div>
+  <div class="fuss"><span>Klima Kompass · Wissen</span><span class="quelle">Quelle: State of CDR, 3. Ausgabe 2026</span></div>
+</section>
+
+<!-- Folie 5: Was die Zahlen nicht sagen -->
+<section class="slide" id="folie-5">
+  <div class="reihe">WAS DIE ZAHLEN NICHT SAGEN</div>
+  <div class="nummer">5/6</div>
+  <ul>
+    <li><b>Keine eigene Analyse.</b> Alle Zahlen sind Schätzungen aus dem Bericht, teils mit großen Unsicherheiten.</li>
+    <li><b>Potenziale sind unsicher.</b> Die verlässlicheren unteren Schätzungen liegen für die meisten Verfahren bei etwa 1 Mrd. t pro Jahr.</li>
+    <li><b>Kosten sind offen.</b> Je nach Verfahren von unter 10 bis über 1.000 US-Dollar pro Tonne.</li>
+    <li><b class="koralle">Speicher sind nicht immer sicher.</b> Wälder können ihr CO₂ wieder verlieren, etwa durch Brände.</li>
+  </ul>
+  <div class="spacer"></div>
+  <div class="fuss"><span>Klima Kompass · Wissen</span><span class="quelle">Quelle: State of CDR, 3. Ausgabe 2026</span></div>
+</section>
+
+<!-- Folie 6: Fazit -->
+<section class="slide" id="folie-6">
+  <div class="reihe">FAZIT</div>
+  <div class="nummer">6/6</div>
+  <h2>Ergänzung, kein Ersatz.</h2>
+  <p>CO₂-Entnahme gleicht unter anderem Emissionen aus, die sich schwer vermeiden lassen.</p>
+  <p>Den <span class="mint">größten Teil des Weges</span> muss die Minderung leisten. Die Jahre 2026 bis 2030 nennt der Bericht entscheidend.</p>
+  <div class="spacer"></div>
+  <div class="cta">Ganzer Artikel: Link in Bio</div>
+  <div style="height:90px"></div>
+  <div class="fuss"><span>Klima Kompass · Wissen</span><span class="quelle">Quelle: State of CDR, 3. Ausgabe 2026</span></div>
+</section>
+
+</body>
+</html>
