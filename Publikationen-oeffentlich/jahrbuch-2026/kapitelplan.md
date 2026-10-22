@@ -4,9 +4,9 @@
 **Reihe:** Klima Kompass · Jahrbuch 2026 (kostenlos, Abo-Geschenk)
 **Erscheinen:** 1.12.2026
 **Stufe:** in eigener Sache (keine der drei Inhaltsstufen). Einzelne Teile folgen den Gates der Stufen Einordnung/Wissen, siehe Abschnitt 5.
-**Version:** 0.2 · **Status: Plan freigegeben (Entscheidungen E1–E7 wie empfohlen)** · **Datum:** 22.10.2026
+**Version:** 0.3 · **Status: Plan freigegeben (Entscheidungen E1–E7 wie empfohlen)** · **Datum:** 22.10.2026
 **Freigabe des Plans:** Daniel Saure, 22.10.2026 (Chat: „Plan ist ok, E1-E7 wie empfohlen.“). Die Freigabe gilt für den Plan, nicht für Buchtexte.
-**Versionshistorie:** v0.1 Entwurf (22.10.); v0.2 Freigabe, Artikelsicherung ergänzt (22.10.)
+**Versionshistorie:** v0.1 Entwurf (22.10.); v0.2 Freigabe, Artikelsicherung ergänzt (22.10.); v0.3 Kapitel 10 und E2 an SAP-Fristen angepasst, Gliederung Kap. 7–10 in `gliederung_kap07-10.md` (22.10.)
 
 *In diesem Dokument steht keine Buchtext-Formulierung, nur Struktur, Zuordnung, Zeitplan und Textliste. Das Repo ist öffentlich, dieses Dokument enthält deshalb nichts aus `Redaktion/`.*
 
@@ -71,7 +71,7 @@ Reihenfolge-Logik: erst das Erlebte (Sommer), dann Alltag (Energie, Geld), dann 
 
 | Kap. | Titel (Arbeitstitel) | Inhalt | Abhängigkeit |
 |---|---|---|---|
-| 10 | **Das Prognose-Register: Wir legen uns fest, bevor wir es wissen** | Prinzip (vorab festlegen, später „getroffen / nicht getroffen“ melden, unabhängig vom Ausgang). Eintrag #1 (Gasspeicher-Entnahme Winter 2026/27, registriert 22.10.2026, Auswertung frühestens Mai/Juni 2027). Register 2027 mit den vier geplanten Vorhersagen (Sommermitteltemperatur, Hitzetage, Monate über 1,5 °C, deutsche THG-Emissionen), **nur wenn der SAP bis zum Stichtag eingefroren und die Einträge per Commit registriert sind.** Sonst steht im Buch nur das Prinzip plus Eintrag #1, und die 2027er Vorhersagen werden als „folgen in Substack“ angekündigt. | SAP Prognose-Register 2027 (v0.1 draft, 16 Rückfragen offen), Entscheidung E2 |
+| 10 | **Das Prognose-Register: Wir legen uns fest, bevor wir es wissen** | Prinzip, Eintrag #1 (Gasspeicher-Entnahme Winter 2026/27, registriert 22.10.2026, Auswertung frühestens Mai/Juni 2027) und eine **Ankündigung ohne Zahlen** für das Register 2027 (vier geplante Zielgrößen). Die 2027er Vorhersagen können am 1.12. nicht im Buch stehen: Der SAP-Entwurf sperrt die Berechnung bis zum Einfrieren (spätestens 15.12./31.12.2026), bis zum Abschluss des Prognose-Checks und bis die Daten bis Ende 2026 vorliegen; Registrierung im Januar 2027. Details: `gliederung_kap07-10.md`. | SAP Prognose-Register 2027 (v0.2 draft), Entscheidung E2 |
 
 ### Rahmen (hinten)
 
@@ -165,7 +165,7 @@ Verfügbar sind rund fünf Wochen. Die Faktenchecks der letzten Wochen brauchten
 | **Do 22. – So 25.10.** | Kapitelplan prüfen, Entscheidungen E1–E7 treffen, Plan freigeben | Daniel |
 | **Mo 26. – So 1.11.** | Artikelsicherung: alle 16 Substack-Texte (lesend) sichern und gegen Repo abgleichen; Differenzliste; Grafikbestand klären. Parallel: Gliederung der neuen Kapitel 7–10 zur Abstimmung (ausgeschrieben, keine Volltexte) | Claude, Daniel bestätigt |
 | **Mo 2. – So 8.11.** | Entwürfe Kap. 1–3 (Haupttext + Rasterbausteine); Entwurf Kap. 7 | Claude |
-| **Mo 9. – So 15.11.** | Entwürfe Kap. 4–6 und Kap. 8, 9; **So 15.11. Stichtag für Datenstände und für neu aufzunehmende Artikel**; SAP-Status Prognose-Register entscheidet über Umfang Kap. 10 | Claude, Daniel |
+| **Mo 9. – So 15.11.** | Entwürfe Kap. 4–6 und Kap. 8, 9; **So 15.11. Stichtag für Datenstände und für neu aufzunehmende Artikel**; Kap. 10 bleibt Prinzip + #1 + Ankündigung (siehe E2) | Claude, Daniel |
 | **Mo 16. – Fr 20.11.** | Entwurf Kap. 10, Rahmen (R1–R6); Faktencheck-Runde 1 für alle Kapitel | Claude, `faktenpruefer` |
 | **Sa 21. – So 22.11.** | Daniel liest Kap. 1–6 | Daniel |
 | **Mo 23. – Fr 27.11.** | Auflagen einarbeiten, Nachprüfungen als Datei, Daniel liest Teil 2–3 und Rahmen; Layout/Export (Format laut E1) | Claude, Daniel |
@@ -210,7 +210,7 @@ Gewichtung nach Aufwand: S = bis 300 Wörter, M = bis 900, L = über 900.
 | Nr. | Frage | Empfehlung |
 |---|---|---|
 | E1 | Ausgabeformat: PDF, ePub oder beides? Auslieferung als Download-Link in einem Substack-Post? | PDF zuerst (kontrollierbares Layout, Grafiken), ePub nur wenn Zeit bleibt |
-| E2 | Kap. 10: 2027er Vorhersagen nur aufnehmen, wenn SAP bis 15.11. eingefroren und registriert ist? | Ja; sonst nur Prinzip + Eintrag #1 |
+| E2 | Kap. 10: 2027er Vorhersagen nur aufnehmen, wenn SAP bis 15.11. eingefroren und registriert ist? | Entschieden 22.10.: wie empfohlen. **Präzisierung 22.10.:** Die Bedingung kann nach den SAP-Fristen nicht eintreten; Kap. 10 enthält daher Prinzip, #1 und eine Ankündigung ohne Zahlen |
 | E3 | Kap. 4 hat nur einen Artikel. Auffüllen mit THG-Ländervergleich (falls bis 15.11. veröffentlicht), Klimaziel-2026-Einordnung, oder Kapitel 4 mit Kapitel 5 zu „Deutschland und das Klima“ zusammenlegen? | Zusammenlegen nur, wenn bis 8.11. kein weiterer Artikel erscheint; sonst auffüllen |
 | E4 | Gate-Vorschlag aus Abschnitt 5 (Differenzprüfung für Verdichtungen, volle Prüfung für neue Texte) so in Ordnung? | Ja |
 | E5 | Kap. 9: Dürfen die dokumentierten Vorfälle der KI-Arbeitsweise (CLAUDE.md, 29.8.2026) im Buch beschrieben werden, ggf. ohne Namen? | Ja, anonymisiert („ein SAP-Entwurf meldete Einarbeitung, die Datei war unverändert“); das stützt die Glaubwürdigkeit |
