@@ -8,7 +8,7 @@ Treibhausgasemissionen (gesamt und je Sektor), Berichte 2015–2023.
 "Prognose-Check" (erster Check dieser Art). Umfang größer als ein
 Schnellcheck, ca. eine Woche Bearbeitung (Entscheidung Daniel Saure,
 22.10.2026).
-**Version:** 1.0 (**final**, eingefroren am 22.10.2026)
+**Version:** 1.1 (**final**, eingefroren am 22.10.2026 als v1.0; ergänzt um Amendment 1 vom 22.10.2026, Amendment 1 freigegeben durch Daniel Saure am 22.10.2026)
 **Datum:** 22.10.2026
 **Autor:in:** Claude (sap-autor-Subagent), geprüft durch Daniel Saure
 **Status: final, eingefroren am 22.10.2026, freigegeben durch Daniel Saure.**
@@ -38,6 +38,9 @@ als gekennzeichnetes Amendment bzw. als „Post-hoc“ zulässig.
   („Volltext gelesen, einfrieren“). Rückfragen 12.2 A–D wie empfohlen
   beantwortet. Inhaltlich identisch mit v0.2. Bis zum Einfrieren keine Daten
   gesichtet.
+- **v1.1 (22.10.2026):** Amendment 1, Klarstellung J_b (Abschnitt 14).
+  Entscheidung: Daniel Saure, 22.10.2026. Textfreigabe des Amendments: Daniel
+  Saure, 22.10.2026 („Abschnitt 14 vollständig gelesen, Wortlaut frei“).
 
 **Hinweis zur Vorlage:** Das Master-Template liegt jetzt als
 `SAP-Vorlage/SAP-Template.md` im Repo und wurde für v0.2 gelesen. Der Entwurf
@@ -302,7 +305,7 @@ servern voraussichtlich eingeschränkt. Daher Download durch Daniel; Ablage
 5. **Bestimmung von J_b:** je Bericht aus dem Bericht selbst (Kapitel zur
    Datengrundlage bzw. letzter als historisch gekennzeichneter Wert). Ist J_b
    nicht eindeutig, Stopp und Rückfrage an Daniel vor der Auswertung. J_b ist
-   für die Primärskala zentral (Umskalierungsjahr).
+   für die Primärskala zentral (Umskalierungsjahr). (siehe Amendment 1, Abschnitt 14)
 6. **Verfügbarkeit von P(b,s,J_b,k):** je Bericht, Szenario und Sektor
    dokumentieren, ob ein historischer Wert für J_b ausgewiesen ist
    (Voraussetzung für P\*, Regel 2.1 Nr. 3). Diese Prüfung erfolgt, bevor
@@ -733,3 +736,73 @@ D. **S2 mit Basis aus Erstveröffentlichung:** In S2 stammen A(t) und A(J_b)
 
 Alle Rohdateien werden unverändert im Analyseordner abgelegt und mit Quelle und
 Zugriffsdatum im `run_log.txt` dokumentiert.
+
+## 14. Amendments
+
+### Amendment 1 (22.10.2026): Klarstellung J_b für die Berichte 2021 und 2023
+
+**Entscheidung: Daniel Saure, 22.10.2026. Freigegeben durch Daniel Saure, 22.10.2026, nach Lektüre des vollständigen Amendment-Textes (im Chat: „Ich habe Abschnitt 14 (Amendment 1) im SAP vollständig gelesen und gebe den Wortlaut frei.“).**
+
+**Anlass.** Beim Integritäts-Check nach Abschnitt 3.5 Punkt 5 (Bestimmung von
+J_b) war J_b für zwei Berichte nicht eindeutig (Dokumentation:
+`output/jb_bestimmung.csv`, Belege mit Fundstellen in `output/jb_belege.csv`,
+Zwischenbericht `output/zwischenbericht_daten_integritaet.md`, Abschnitt 2
+„3.5.5“ und Rückfrage R1):
+- **Bericht 2021:** Kandidaten 2018 oder 2020. Inventar-Basisjahr und
+  Ausgangsjahr der Modellierung ist laut Bericht 2018 (Inventar Stand
+  18.03.2020). Tab. 126 weist zusätzlich einen Wert für 2020 als historischen
+  Wert aus; laut Anmerkung im Bericht ist dieser der Vorjahresschätzung
+  entnommen und damit kein Inventarwert. Die Definition in 2.1
+  („historische Inventarwerte“) spricht für 2018, der Wortlaut von 3.5
+  Punkt 5 („letzter als historisch gekennzeichneter Wert“) für 2020.
+- **Bericht 2023:** Kandidaten 2019 oder 2020. Alle Ergebnistabellen nennen
+  2019 als „Basisjahr“ bzw. Ausgangsjahr der Modellierung; laut Bericht wurden
+  jedoch Inventardaten 1990–2020 (Submission 2022) verwendet. Ein Wert für
+  2020 ist in den Ergebnistabellen und im Datenanhang nicht ausgewiesen.
+
+Nach 3.5 Punkt 5 wurde die Arbeit gestoppt und die Frage an Daniel Saure
+gerichtet.
+
+**Entscheidung (wörtlich, Daniel Saure im Chat, 22.10.2026):**
+„J_b: Bericht 2021 = 2018, Bericht 2023 = 2019. Bitte als datierte
+Klarstellung (Amendment) im SAP festhalten, bevor die Auswertung weitergeht.“
+
+**Festgelegte Werte:**
+
+| Bericht | J_b |
+|---|---|
+| 2021 | 2018 |
+| 2023 | 2019 |
+
+Für die Berichte 2015, 2017 und 2019 war J_b eindeutig bestimmbar; sie sind
+nicht Gegenstand dieses Amendments.
+
+**Begründung:**
+- **Bericht 2021 = 2018:** Abschnitt 2.1 definiert J_b als letztes Jahr, für
+  das der Bericht historische **Inventarwerte** (keine Projektion) verwendet.
+  Der im Bericht für 2020 ausgewiesene Wert ist eine Vorjahresschätzung und
+  kein Inventarwert. Damit ist 2018 das letzte Jahr mit Inventarwert im
+  Sinne von 2.1. Die Definition in 2.1 geht der Kurzbeschreibung des
+  Vorgehens in 3.5 Punkt 5 vor.
+- **Bericht 2023 = 2019:** 2019 ist im Bericht durchgängig als Basisjahr bzw.
+  Ausgangsjahr der Modellierung bezeichnet und ist das einzige Jahr, für das
+  der Bericht einen historischen Wert in den Ergebnistabellen ausweist.
+
+**Zeitpunkt.** Die Entscheidung wurde getroffen, bevor irgendein Fehlermaß
+(Abschnitt 2.2), ein Estimand E1–E5, die Umskalierung P → P\* oder eine
+Sensitivität berechnet wurde. Ist-Werte wurden bis dahin nicht mit
+Projektionen in Beziehung gesetzt (laut Zwischenbericht zur Datenintegrität).
+
+**Geltung der übrigen Regeln.** Alle übrigen Regeln des SAP gelten
+unverändert, insbesondere 2.1 Nr. 3 (kein Ersatzwert; ohne ausgewiesenen
+historischen Wert für J_b Ausschluss aus der Primärpopulation, nur S1) und
+3.5 Punkt 6 (Prüfung der Verfügbarkeit von P(b,s,J_b,k) vor jeder
+Fehlermaß-Berechnung), angewendet auf die oben festgelegten J_b. Der Text von
+3.5 Punkt 5 bleibt unverändert; dort ist nur ein Verweis auf dieses Amendment
+angefügt.
+
+**Nicht durch dieses Amendment geregelt:** ob der in Bericht 2021 (Tab. 126)
+für 2020 ausgewiesene Wert, der laut Bericht eine Vorjahresschätzung ist, bei
+J_b = 2018 als projizierter Wert P(2021,s,2020,k) und damit als
+Auswertungspaar (h = 2, u. a. relevant für E1) gilt. Diese Frage ist offen und
+wird vor der Auswertung gesondert entschieden.
