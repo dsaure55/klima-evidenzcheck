@@ -148,7 +148,7 @@ wird vollständig als Sensitivität S1 berichtet.
    Bericht bzw. Sektor fällt dann aus der Primärpopulation heraus, wird
    dokumentiert und erscheint ausschließlich in der unbereinigten
    Sensitivität S1. Es wird kein Ersatzwert (z. B. aus einer früheren
-   Inventarsubmission) eingesetzt (siehe Rückfrage 12.2, Punkt A).
+   Inventarsubmission) eingesetzt (siehe Rückfrage 12.2, Punkt A; beantwortet: keine Ersatzregel).
 
 ### 2.2 Fehlermaße (vorab festgelegt)
 
@@ -692,7 +692,10 @@ Die Entscheidungen im Einzelnen, wie sie in v0.2 umgesetzt sind:
 11. **Einfrieren:** erst nach Lesen des vollständigen Textes, mit dem
     Wortlaut "Volltext gelesen, einfrieren" (Kopf). Bis dahin Status `draft`.
 
-### 12.2 Neue Rückfragen aus der Umsetzung von v0.2 (offen, vor dem Einfrieren zu klären)
+### 12.2 Rückfragen aus der Umsetzung von v0.2 (beantwortet 22.10.2026)
+
+**Antwort Daniel Saure, 22.10.2026: „A–D wie empfohlen“.** Damit gilt jeweils die im Entwurf bereits festgelegte Regel: A Ausschluss aus der Primärpopulation (keine Ersatzregel), B eigener Faktor je Sektor und für "gesamt", C Schwelle 0,90–1,10, D Basis in S2 aus derselben Erstveröffentlichung. Der übrige Text ist dadurch unverändert. Diese Antwort ist keine Freigabe des SAP.
+
 A. **Fehlender historischer Wert für J_b:** Der Entwurf legt fest, dass ein
    Bericht (bzw. Sektor) ohne ausgewiesenen historischen Wert für J_b aus der
    Primärpopulation herausfällt und nur in S1 erscheint (2.1 Nr. 3). Alternative
