@@ -1,6 +1,7 @@
 # Gliederung Kapitel 1–6 (zur Abstimmung, keine Volltexte)
 
-**Version:** 0.1 · **Status: Entwurf, nicht freigegeben** · **Datum:** 22.10.2026
+**Version:** 0.2 · **Status: Gliederung freigegeben (Daniel Saure, 22.10.2026: „Die Gliederungen Kapitel 1-6 passen. Offene Punkte 1-4 wie empfohlen.“)** · **Datum:** 22.10.2026
+**Hinweis:** Die Freigabe gilt für die Gliederung, nicht für Buchtexte.
 **Bezug:** `kapitelplan.md` v0.3 (Teil 1, Kapitelraster Abschnitt 2), `gliederung_kap07-10.md`. Grundlage sind die gesicherten Substack-Fassungen in `quellen-artikel/` (vollständig gelesen am 22.10.2026).
 **Regeln:** keine neuen Zahlen, keine neuen Rechnungen; jede Zahl mit Artikelverweis; Stand der Daten mit Datum. Wo ein Punkt vor dem Schreiben noch gegen die Primärquelle geprüft werden muss, steht „prüfen“.
 
@@ -198,3 +199,12 @@
 2. **Kapitel 5:** Ergebnisblock zur COP31 (neuer Text, mit Primärquelle und Faktenprüfung) aufnehmen oder bewusst weglassen?
 3. **Kapitel 6:** Soll der Abgleich des UNEP-Berichts mit dem Volltext vor dem Schreiben erfolgen (Aufwand: Exec Summary lesen), oder bleibt der Hinweis „stützt sich auf die Pressemitteilung“ im Buch?
 4. **Kapitel 3:** Soll „65 Euro rein“ im Buch ausdrücklich als Rechenkommentar gekennzeichnet werden (empfohlen)?
+
+---
+
+## Entscheidungen (Daniel Saure, 22.10.2026, „wie empfohlen“)
+
+1. **Kapitel 4:** Auffüllen mit einem weiteren veröffentlichten Artikel bis 8.11.; erscheint keiner, wird Kapitel 4 mit Kapitel 5 zu „Deutschland und das Klima“ zusammengelegt. Ob es zum THG-Trend 2040 einen Validierungsbericht außerhalb des Ordners gibt, ist noch zu klären (bis dahin nur Wiedergabe des Artikels).
+2. **Kapitel 5:** COP31-Ergebnisblock nur, wenn bis 15.11. eine belastbare Primärquelle vorliegt und der Text die Faktenprüfung besteht; sonst weggelassen.
+3. **Kapitel 6:** UNEP-Bericht wird vor dem Schreiben mit der Executive Summary/dem Vollbericht abgeglichen.
+4. **Kapitel 3:** „65 Euro rein, 59 Euro raus“ wird im Buch ausdrücklich als Rechenkommentar gekennzeichnet.
