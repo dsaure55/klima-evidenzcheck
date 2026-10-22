@@ -1,0 +1,224 @@
+tabelle_id,bericht,fassung,szenario,jahr,gwp,wert,eea_mt,diff_mt,status,datensatz,seite,tabelle
+PB2015o_T1-2,2015,"PB2015, Fassung April 2015 (nur MMS)",MMS,2005,IPCC SAR,994.5,NA,NA,kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet),NA,20,Tabelle 1-2
+PB2015o_T1-2,2015,"PB2015, Fassung April 2015 (nur MMS)",MMS,2010,IPCC SAR,946.4,NA,NA,kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet),NA,20,Tabelle 1-2
+PB2015o_T1-2,2015,"PB2015, Fassung April 2015 (nur MMS)",MMS,2012,IPCC SAR,939.1,933.033404844244,6.067,DIFFERENZ,EEA 2016 (GHG_proj.csv),20,Tabelle 1-2
+PB2015o_T1-2,2015,"PB2015, Fassung April 2015 (nur MMS)",MMS,2015,IPCC SAR,907.4,900.815152243012,6.585,DIFFERENZ,EEA 2016 (GHG_proj.csv),20,Tabelle 1-2
+PB2015o_T1-2,2015,"PB2015, Fassung April 2015 (nur MMS)",MMS,2020,IPCC SAR,840.5,833.2335130636391,7.266,DIFFERENZ,EEA 2016 (GHG_proj.csv),20,Tabelle 1-2
+PB2015o_T1-2,2015,"PB2015, Fassung April 2015 (nur MMS)",MMS,2025,IPCC SAR,790.2,782.569278570791,7.631,DIFFERENZ,EEA 2016 (GHG_proj.csv),20,Tabelle 1-2
+PB2015o_T1-2,2015,"PB2015, Fassung April 2015 (nur MMS)",MMS,2030,IPCC SAR,715.6,707.2844967330541,8.316,DIFFERENZ,EEA 2016 (GHG_proj.csv),20,Tabelle 1-2
+PB2015o_T1-2,2015,"PB2015, Fassung April 2015 (nur MMS)",MMS,2035,IPCC SAR,651.4,642.883408582947,8.517,DIFFERENZ,EEA 2016 (GHG_proj.csv),20,Tabelle 1-2
+PB2015o_A-5,2015,"PB2015, Fassung April 2015 (nur MMS)",MMS,2005,IPCC SAR,994.5,NA,NA,kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet),NA,216,Tabelle A-5
+PB2015o_A-5,2015,"PB2015, Fassung April 2015 (nur MMS)",MMS,2010,IPCC SAR,946.4,NA,NA,kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet),NA,216,Tabelle A-5
+PB2015o_A-5,2015,"PB2015, Fassung April 2015 (nur MMS)",MMS,2012,IPCC SAR,939.1,933.033404844244,6.067,DIFFERENZ,EEA 2016 (GHG_proj.csv),216,Tabelle A-5
+PB2015o_A-5,2015,"PB2015, Fassung April 2015 (nur MMS)",MMS,2015,IPCC SAR,907.4,900.815152243012,6.585,DIFFERENZ,EEA 2016 (GHG_proj.csv),216,Tabelle A-5
+PB2015o_A-5,2015,"PB2015, Fassung April 2015 (nur MMS)",MMS,2020,IPCC SAR,840.5,833.2335130636391,7.266,DIFFERENZ,EEA 2016 (GHG_proj.csv),216,Tabelle A-5
+PB2015o_A-5,2015,"PB2015, Fassung April 2015 (nur MMS)",MMS,2025,IPCC SAR,790.2,782.569278570791,7.631,DIFFERENZ,EEA 2016 (GHG_proj.csv),216,Tabelle A-5
+PB2015o_A-5,2015,"PB2015, Fassung April 2015 (nur MMS)",MMS,2030,IPCC SAR,715.6,707.2844967330541,8.316,DIFFERENZ,EEA 2016 (GHG_proj.csv),216,Tabelle A-5
+PB2015o_A-5,2015,"PB2015, Fassung April 2015 (nur MMS)",MMS,2035,IPCC SAR,651.4,642.883408582947,8.517,DIFFERENZ,EEA 2016 (GHG_proj.csv),216,Tabelle A-5
+PB2015o_A-7,2015,"PB2015, Fassung April 2015 (nur MMS)",MMS,1990,IPCC AR4 (Umrechnung Anhang A6),NA,NA,NA,kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet),NA,218,Tabelle A-7
+PB2015o_A-7,2015,"PB2015, Fassung April 2015 (nur MMS)",MMS,2005,IPCC AR4 (Umrechnung Anhang A6),989,NA,NA,kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet),NA,218,Tabelle A-7
+PB2015o_A-7,2015,"PB2015, Fassung April 2015 (nur MMS)",MMS,2012,IPCC AR4 (Umrechnung Anhang A6),933,933.033404844244,-0.033,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2016 (GHG_proj.csv),218,Tabelle A-7
+PB2015o_A-7,2015,"PB2015, Fassung April 2015 (nur MMS)",MMS,2015,IPCC AR4 (Umrechnung Anhang A6),900.8,900.815152243012,-0.015,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2016 (GHG_proj.csv),218,Tabelle A-7
+PB2015o_A-7,2015,"PB2015, Fassung April 2015 (nur MMS)",MMS,2020,IPCC AR4 (Umrechnung Anhang A6),833.2,833.2335130636391,-0.034,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2016 (GHG_proj.csv),218,Tabelle A-7
+PB2015o_A-7,2015,"PB2015, Fassung April 2015 (nur MMS)",MMS,2025,IPCC AR4 (Umrechnung Anhang A6),782.6,782.569278570791,0.031,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2016 (GHG_proj.csv),218,Tabelle A-7
+PB2015o_A-7,2015,"PB2015, Fassung April 2015 (nur MMS)",MMS,2030,IPCC AR4 (Umrechnung Anhang A6),707.3,707.2844967330541,0.016,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2016 (GHG_proj.csv),218,Tabelle A-7
+PB2015o_A-7,2015,"PB2015, Fassung April 2015 (nur MMS)",MMS,2035,IPCC AR4 (Umrechnung Anhang A6),642.9,642.883408582947,0.017,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2016 (GHG_proj.csv),218,Tabelle A-7
+PB2015s_T1-2,2015,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MMS,2005,IPCC SAR,994.5,NA,NA,kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet),NA,23,Tabelle 1-2
+PB2015s_T1-2,2015,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MMS,2010,IPCC SAR,946.4,NA,NA,kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet),NA,23,Tabelle 1-2
+PB2015s_T1-2,2015,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MMS,2012,IPCC SAR,939.1,933.033404844244,6.067,DIFFERENZ,EEA 2016 (GHG_proj.csv),23,Tabelle 1-2
+PB2015s_T1-2,2015,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MMS,2015,IPCC SAR,907.4,900.815152243012,6.585,DIFFERENZ,EEA 2016 (GHG_proj.csv),23,Tabelle 1-2
+PB2015s_T1-2,2015,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MMS,2020,IPCC SAR,840.5,833.2335130636391,7.266,DIFFERENZ,EEA 2016 (GHG_proj.csv),23,Tabelle 1-2
+PB2015s_T1-2,2015,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MMS,2025,IPCC SAR,790.2,782.569278570791,7.631,DIFFERENZ,EEA 2016 (GHG_proj.csv),23,Tabelle 1-2
+PB2015s_T1-2,2015,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MMS,2030,IPCC SAR,715.6,707.2844967330541,8.316,DIFFERENZ,EEA 2016 (GHG_proj.csv),23,Tabelle 1-2
+PB2015s_T1-2,2015,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MMS,2035,IPCC SAR,651.4,642.883408582947,8.517,DIFFERENZ,EEA 2016 (GHG_proj.csv),23,Tabelle 1-2
+PB2015s_T1-3,2015,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MWMS,2005,IPCC SAR,994.5,NA,NA,kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet),NA,24,Tabelle 1-3
+PB2015s_T1-3,2015,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MWMS,2010,IPCC SAR,946.4,NA,NA,kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet),NA,24,Tabelle 1-3
+PB2015s_T1-3,2015,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MWMS,2012,IPCC SAR,939.1,NA,NA,kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet),EEA 2016 (GHG_proj.csv),24,Tabelle 1-3
+PB2015s_T1-3,2015,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MWMS,2015,IPCC SAR,906.4,NA,NA,kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet),EEA 2016 (GHG_proj.csv),24,Tabelle 1-3
+PB2015s_T1-3,2015,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MWMS,2020,IPCC SAR,789.1,NA,NA,kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet),EEA 2016 (GHG_proj.csv),24,Tabelle 1-3
+PB2015s_T1-3,2015,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MWMS,2025,IPCC SAR,721,NA,NA,kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet),EEA 2016 (GHG_proj.csv),24,Tabelle 1-3
+PB2015s_T1-3,2015,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MWMS,2030,IPCC SAR,641.3,NA,NA,kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet),EEA 2016 (GHG_proj.csv),24,Tabelle 1-3
+PB2015s_T1-3,2015,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MWMS,2035,IPCC SAR,591.5,NA,NA,kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet),EEA 2016 (GHG_proj.csv),24,Tabelle 1-3
+PB2015s_A-5-9,2015,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MMS,2005,IPCC SAR,994.5,NA,NA,kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet),NA,298,Tabelle A-5-9
+PB2015s_A-5-9,2015,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MMS,2010,IPCC SAR,946.4,NA,NA,kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet),NA,298,Tabelle A-5-9
+PB2015s_A-5-9,2015,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MMS,2012,IPCC SAR,939.1,933.033404844244,6.067,DIFFERENZ,EEA 2016 (GHG_proj.csv),298,Tabelle A-5-9
+PB2015s_A-5-9,2015,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MMS,2015,IPCC SAR,907.4,900.815152243012,6.585,DIFFERENZ,EEA 2016 (GHG_proj.csv),298,Tabelle A-5-9
+PB2015s_A-5-9,2015,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MMS,2020,IPCC SAR,840.5,833.2335130636391,7.266,DIFFERENZ,EEA 2016 (GHG_proj.csv),298,Tabelle A-5-9
+PB2015s_A-5-9,2015,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MMS,2025,IPCC SAR,790.2,782.569278570791,7.631,DIFFERENZ,EEA 2016 (GHG_proj.csv),298,Tabelle A-5-9
+PB2015s_A-5-9,2015,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MMS,2030,IPCC SAR,715.6,707.2844967330541,8.316,DIFFERENZ,EEA 2016 (GHG_proj.csv),298,Tabelle A-5-9
+PB2015s_A-5-9,2015,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MMS,2035,IPCC SAR,651.4,642.883408582947,8.517,DIFFERENZ,EEA 2016 (GHG_proj.csv),298,Tabelle A-5-9
+PB2015s_A-5-10,2015,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MWMS,2005,IPCC SAR,994.5,NA,NA,kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet),NA,299,Tabelle A-5-10
+PB2015s_A-5-10,2015,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MWMS,2010,IPCC SAR,946.4,NA,NA,kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet),NA,299,Tabelle A-5-10
+PB2015s_A-5-10,2015,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MWMS,2012,IPCC SAR,939.1,NA,NA,kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet),EEA 2016 (GHG_proj.csv),299,Tabelle A-5-10
+PB2015s_A-5-10,2015,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MWMS,2015,IPCC SAR,906.4,NA,NA,kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet),EEA 2016 (GHG_proj.csv),299,Tabelle A-5-10
+PB2015s_A-5-10,2015,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MWMS,2020,IPCC SAR,789.1,NA,NA,kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet),EEA 2016 (GHG_proj.csv),299,Tabelle A-5-10
+PB2015s_A-5-10,2015,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MWMS,2025,IPCC SAR,721,NA,NA,kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet),EEA 2016 (GHG_proj.csv),299,Tabelle A-5-10
+PB2015s_A-5-10,2015,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MWMS,2030,IPCC SAR,641.3,NA,NA,kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet),EEA 2016 (GHG_proj.csv),299,Tabelle A-5-10
+PB2015s_A-5-10,2015,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MWMS,2035,IPCC SAR,591.5,NA,NA,kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet),EEA 2016 (GHG_proj.csv),299,Tabelle A-5-10
+PB2015s_A-5-12,2015,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MMS,1990,IPCC AR4 (Umrechnung Anhang A6),NA,NA,NA,kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet),NA,301,Tabelle A-5-12
+PB2015s_A-5-12,2015,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MMS,2005,IPCC AR4 (Umrechnung Anhang A6),989,NA,NA,kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet),NA,301,Tabelle A-5-12
+PB2015s_A-5-12,2015,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MMS,2012,IPCC AR4 (Umrechnung Anhang A6),933,933.033404844244,-0.033,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2016 (GHG_proj.csv),301,Tabelle A-5-12
+PB2015s_A-5-12,2015,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MMS,2015,IPCC AR4 (Umrechnung Anhang A6),900.8,900.815152243012,-0.015,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2016 (GHG_proj.csv),301,Tabelle A-5-12
+PB2015s_A-5-12,2015,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MMS,2020,IPCC AR4 (Umrechnung Anhang A6),833.2,833.2335130636391,-0.034,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2016 (GHG_proj.csv),301,Tabelle A-5-12
+PB2015s_A-5-12,2015,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MMS,2025,IPCC AR4 (Umrechnung Anhang A6),782.6,782.569278570791,0.031,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2016 (GHG_proj.csv),301,Tabelle A-5-12
+PB2015s_A-5-12,2015,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MMS,2030,IPCC AR4 (Umrechnung Anhang A6),707.3,707.2844967330541,0.016,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2016 (GHG_proj.csv),301,Tabelle A-5-12
+PB2015s_A-5-12,2015,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MMS,2035,IPCC AR4 (Umrechnung Anhang A6),642.9,642.883408582947,0.017,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2016 (GHG_proj.csv),301,Tabelle A-5-12
+PB2015s_A-5-14,2015,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MWMS,1990,IPCC AR4 (Umrechnung Anhang A6),NA,NA,NA,kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet),NA,303,Tabelle A-5-14
+PB2015s_A-5-14,2015,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MWMS,2005,IPCC AR4 (Umrechnung Anhang A6),989,NA,NA,kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet),NA,303,Tabelle A-5-14
+PB2015s_A-5-14,2015,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MWMS,2012,IPCC AR4 (Umrechnung Anhang A6),933,NA,NA,kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet),EEA 2016 (GHG_proj.csv),303,Tabelle A-5-14
+PB2015s_A-5-14,2015,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MWMS,2015,IPCC AR4 (Umrechnung Anhang A6),899.8,NA,NA,kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet),EEA 2016 (GHG_proj.csv),303,Tabelle A-5-14
+PB2015s_A-5-14,2015,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MWMS,2020,IPCC AR4 (Umrechnung Anhang A6),782.8,NA,NA,kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet),EEA 2016 (GHG_proj.csv),303,Tabelle A-5-14
+PB2015s_A-5-14,2015,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MWMS,2025,IPCC AR4 (Umrechnung Anhang A6),714.2,NA,NA,kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet),EEA 2016 (GHG_proj.csv),303,Tabelle A-5-14
+PB2015s_A-5-14,2015,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MWMS,2030,IPCC AR4 (Umrechnung Anhang A6),634.1,NA,NA,kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet),EEA 2016 (GHG_proj.csv),303,Tabelle A-5-14
+PB2015s_A-5-14,2015,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MWMS,2035,IPCC AR4 (Umrechnung Anhang A6),584.1,NA,NA,kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet),EEA 2016 (GHG_proj.csv),303,Tabelle A-5-14
+PB2017_T1-2,2017,PB2017,MMS,1990,IPCC AR4,1249.8,NA,NA,kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet),NA,29,Tabelle 1-2
+PB2017_T1-2,2017,PB2017,MMS,2005,IPCC AR4,991.8,NA,NA,kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet),NA,29,Tabelle 1-2
+PB2017_T1-2,2017,PB2017,MMS,2010,IPCC AR4,941,NA,NA,kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet),NA,29,Tabelle 1-2
+PB2017_T1-2,2017,PB2017,MMS,2014,IPCC AR4,901.8,901.7639388,0.036,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2017,29,Tabelle 1-2
+PB2017_T1-2,2017,PB2017,MMS,2020,IPCC AR4,816.4,816.3694508,0.031,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2017,29,Tabelle 1-2
+PB2017_T1-2,2017,PB2017,MMS,2025,IPCC AR4,793.1,793.0972280999999,0.003,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2017,29,Tabelle 1-2
+PB2017_T1-2,2017,PB2017,MMS,2030,IPCC AR4,734.5,734.5245039,-0.025,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2017,29,Tabelle 1-2
+PB2017_T1-2,2017,PB2017,MMS,2035,IPCC AR4,669.3,669.2761086,0.024,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2017,29,Tabelle 1-2
+PB2017_T1-3,2017,PB2017,MWMS,1990,IPCC AR4,1249.8,NA,NA,kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet),NA,31,Tabelle 1-3
+PB2017_T1-3,2017,PB2017,MWMS,2005,IPCC AR4,991.8,NA,NA,kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet),NA,31,Tabelle 1-3
+PB2017_T1-3,2017,PB2017,MWMS,2010,IPCC AR4,941,NA,NA,kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet),NA,31,Tabelle 1-3
+PB2017_T1-3,2017,PB2017,MWMS,2014,IPCC AR4,901.8,901.7639388,0.036,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2017,31,Tabelle 1-3
+PB2017_T1-3,2017,PB2017,MWMS,2020,IPCC AR4,805.6,805.6226575,-0.023,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2017,31,Tabelle 1-3
+PB2017_T1-3,2017,PB2017,MWMS,2025,IPCC AR4,760.2,760.2034678,-0.003,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2017,31,Tabelle 1-3
+PB2017_T1-3,2017,PB2017,MWMS,2030,IPCC AR4,682,682.0491291000001,-0.049,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2017,31,Tabelle 1-3
+PB2017_T1-3,2017,PB2017,MWMS,2035,IPCC AR4,592.3,592.2953232,0.005,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2017,31,Tabelle 1-3
+PB2017_A-5-3,2017,PB2017,MMS,1990,IPCC AR4,1249.8,NA,NA,kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet),NA,293,Tabelle A-5-3
+PB2017_A-5-3,2017,PB2017,MMS,2005,IPCC AR4,991.8,NA,NA,kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet),NA,293,Tabelle A-5-3
+PB2017_A-5-3,2017,PB2017,MMS,2010,IPCC AR4,941,NA,NA,kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet),NA,293,Tabelle A-5-3
+PB2017_A-5-3,2017,PB2017,MMS,2014,IPCC AR4,901.8,901.7639388,0.036,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2017,293,Tabelle A-5-3
+PB2017_A-5-3,2017,PB2017,MMS,2020,IPCC AR4,816.4,816.3694508,0.031,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2017,293,Tabelle A-5-3
+PB2017_A-5-3,2017,PB2017,MMS,2025,IPCC AR4,793.1,793.0972280999999,0.003,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2017,293,Tabelle A-5-3
+PB2017_A-5-3,2017,PB2017,MMS,2030,IPCC AR4,734.5,734.5245039,-0.025,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2017,293,Tabelle A-5-3
+PB2017_A-5-3,2017,PB2017,MMS,2035,IPCC AR4,669.3,669.2761086,0.024,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2017,293,Tabelle A-5-3
+PB2017_A-5-4,2017,PB2017,MWMS,1990,IPCC AR4,1249.8,NA,NA,kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet),NA,294,Tabelle A-5-4
+PB2017_A-5-4,2017,PB2017,MWMS,2005,IPCC AR4,991.8,NA,NA,kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet),NA,294,Tabelle A-5-4
+PB2017_A-5-4,2017,PB2017,MWMS,2010,IPCC AR4,941,NA,NA,kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet),NA,294,Tabelle A-5-4
+PB2017_A-5-4,2017,PB2017,MWMS,2014,IPCC AR4,901.8,901.7639388,0.036,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2017,294,Tabelle A-5-4
+PB2017_A-5-4,2017,PB2017,MWMS,2020,IPCC AR4,805.6,805.6226575,-0.023,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2017,294,Tabelle A-5-4
+PB2017_A-5-4,2017,PB2017,MWMS,2025,IPCC AR4,760.2,760.2034678,-0.003,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2017,294,Tabelle A-5-4
+PB2017_A-5-4,2017,PB2017,MWMS,2030,IPCC AR4,682,682.0491291000001,-0.049,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2017,294,Tabelle A-5-4
+PB2017_A-5-4,2017,PB2017,MWMS,2035,IPCC AR4,592.3,592.2953232,0.005,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2017,294,Tabelle A-5-4
+PB2019_TZ-2,2019,PB2019,MMS,1990,IPCC AR4,1251.6,NA,NA,kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet),NA,22,Tabelle Z-2
+PB2019_TZ-2,2019,PB2019,MMS,2005,IPCC AR4,993.1,NA,NA,kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet),NA,22,Tabelle Z-2
+PB2019_TZ-2,2019,PB2019,MMS,2010,IPCC AR4,942.8,NA,NA,kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet),NA,22,Tabelle Z-2
+PB2019_TZ-2,2019,PB2019,MMS,2016,IPCC AR4,909.4,909.404498655,-0.004,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2019,22,Tabelle Z-2
+PB2019_TZ-2,2019,PB2019,MMS,2020,IPCC AR4,835.6,835.607547338,-0.008,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2019,22,Tabelle Z-2
+PB2019_TZ-2,2019,PB2019,MMS,2025,IPCC AR4,800.4,800.438960545,-0.039,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2019,22,Tabelle Z-2
+PB2019_TZ-2,2019,PB2019,MMS,2030,IPCC AR4,730,730.031451753,-0.031,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2019,22,Tabelle Z-2
+PB2019_TZ-2,2019,PB2019,MMS,2035,IPCC AR4,697.6,697.552339333,0.048,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2019,22,Tabelle Z-2
+PB2019k_T4,2019,"PB2019 (Teilbericht KSP-Struktur, Climate Change 33/2019)",MMS,1990,IPCC AR4,1251.6,NA,NA,kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet),NA,17,Tabelle 4
+PB2019k_T4,2019,"PB2019 (Teilbericht KSP-Struktur, Climate Change 33/2019)",MMS,2005,IPCC AR4,993.1,NA,NA,kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet),NA,17,Tabelle 4
+PB2019k_T4,2019,"PB2019 (Teilbericht KSP-Struktur, Climate Change 33/2019)",MMS,2010,IPCC AR4,942.8,NA,NA,kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet),NA,17,Tabelle 4
+PB2019k_T4,2019,"PB2019 (Teilbericht KSP-Struktur, Climate Change 33/2019)",MMS,2016,IPCC AR4,909.4,909.404498655,-0.004,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2019,17,Tabelle 4
+PB2019k_T4,2019,"PB2019 (Teilbericht KSP-Struktur, Climate Change 33/2019)",MMS,2020,IPCC AR4,835.6,835.607547338,-0.008,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2019,17,Tabelle 4
+PB2019k_T4,2019,"PB2019 (Teilbericht KSP-Struktur, Climate Change 33/2019)",MMS,2025,IPCC AR4,800.4,800.438960545,-0.039,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2019,17,Tabelle 4
+PB2019k_T4,2019,"PB2019 (Teilbericht KSP-Struktur, Climate Change 33/2019)",MMS,2030,IPCC AR4,730,730.031451753,-0.031,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2019,17,Tabelle 4
+PB2019k_T4,2019,"PB2019 (Teilbericht KSP-Struktur, Climate Change 33/2019)",MMS,2035,IPCC AR4,697.6,697.552339333,0.048,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2019,17,Tabelle 4
+PB2021_T1,2021,PB2021,MMS,2018,IPCC AR4,858.3,858.3479815,-0.048,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2021,26,Tabelle 1
+PB2021_T1,2021,PB2021,MMS,2025,IPCC AR4,750.9,750.8814698,0.019,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2021,26,Tabelle 1
+PB2021_T1,2021,PB2021,MMS,2030,IPCC AR4,632.9,632.8943588000001,0.006,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2021,26,Tabelle 1
+PB2021_T1,2021,PB2021,MMS,2035,IPCC AR4,514,513.9894093,0.011,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2021,26,Tabelle 1
+PB2021_T1,2021,PB2021,MMS,2040,IPCC AR4,408.7,408.7171514,-0.017,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2021,26,Tabelle 1
+PB2021_T126,2021,PB2021,MMS,2018,IPCC AR4,858.3,858.3479815,-0.048,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2021,326,Tabelle 126
+PB2021_T126,2021,PB2021,MMS,2020,IPCC AR4,739.5,739.4834192,0.017,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2021,326,Tabelle 126
+PB2021_T126,2021,PB2021,MMS,2021,IPCC AR4,792.5,792.5409419,-0.041,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2021,326,Tabelle 126
+PB2021_T126,2021,PB2021,MMS,2022,IPCC AR4,794.6,794.5588625,0.041,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2021,326,Tabelle 126
+PB2021_T126,2021,PB2021,MMS,2023,IPCC AR4,783.6,783.6251314,-0.025,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2021,326,Tabelle 126
+PB2021_T126,2021,PB2021,MMS,2024,IPCC AR4,771.2,771.2237622,-0.024,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2021,326,Tabelle 126
+PB2021_T126,2021,PB2021,MMS,2025,IPCC AR4,750.9,750.8814698,0.019,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2021,326,Tabelle 126
+PB2021_T126,2021,PB2021,MMS,2026,IPCC AR4,737.7,737.74235409999994,-0.042,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2021,326,Tabelle 126
+PB2021_T126,2021,PB2021,MMS,2027,IPCC AR4,721.4,721.3716221999999,0.028,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2021,326,Tabelle 126
+PB2021_T126,2021,PB2021,MMS,2028,IPCC AR4,697.6,697.5590614,0.041,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2021,326,Tabelle 126
+PB2021_T126,2021,PB2021,MMS,2029,IPCC AR4,670,670.0417241,-0.042,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2021,326,Tabelle 126
+PB2021_T126,2021,PB2021,MMS,2030,IPCC AR4,632.9,632.8943588000001,0.006,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2021,326,Tabelle 126
+PB2021_T126,2021,PB2021,MMS,2035,IPCC AR4,514,513.9894093,0.011,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2021,326,Tabelle 126
+PB2021_T126,2021,PB2021,MMS,2040,IPCC AR4,408.7,408.7171514,-0.017,"übereinstimmend (Rundung <= 0,05 Mt)",EEA 2021,326,Tabelle 126
+PB2023_T1,2023,PB2023,MMS,2019,IPCC AR5,802,NA,NA,kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet),NA,24,Tabelle 1
+PB2023_T1,2023,PB2023,MMS,2025,IPCC AR5,704.4,704.413926045008,-0.014,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",24,Tabelle 1
+PB2023_T1,2023,PB2023,MMS,2030,IPCC AR5,467.3,467.285897715907,0.014,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",24,Tabelle 1
+PB2023_T1,2023,PB2023,MMS,2035,IPCC AR5,353.7,353.67171229620203,0.028,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",24,Tabelle 1
+PB2023_T1,2023,PB2023,MMS,2040,IPCC AR5,264.9,264.932951228477,-0.033,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",24,Tabelle 1
+PB2023_T1,2023,PB2023,MMS,2045,IPCC AR5,229,229.03943778295698,-0.039,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",24,Tabelle 1
+PB2023_T1,2023,PB2023,MMS,2050,IPCC AR5,208.8,208.77508634079,0.025,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",24,Tabelle 1
+PB2023_T1,2023,PB2023,MWMS,2019,IPCC AR5,802,NA,NA,kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet),NA,24,Tabelle 1
+PB2023_T1,2023,PB2023,MWMS,2025,IPCC AR5,691.8,691.822664041825,-0.023,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",24,Tabelle 1
+PB2023_T1,2023,PB2023,MWMS,2030,IPCC AR5,437.7,437.698796049291,0.001,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",24,Tabelle 1
+PB2023_T1,2023,PB2023,MWMS,2035,IPCC AR5,304.5,304.50908026517504,-0.009,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",24,Tabelle 1
+PB2023_T1,2023,PB2023,MWMS,2040,IPCC AR5,215.6,215.649195450047,-0.049,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",24,Tabelle 1
+PB2023_T1,2023,PB2023,MWMS,2045,IPCC AR5,178.9,178.931217125744,-0.031,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",24,Tabelle 1
+PB2023_T1,2023,PB2023,MWMS,2050,IPCC AR5,160.1,160.067263996937,0.033,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",24,Tabelle 1
+PB2023_T17,2023,PB2023,MMS,2019,IPCC AR5,802,NA,NA,kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet),NA,74,Tabelle 17
+PB2023_T17,2023,PB2023,MMS,2025,IPCC AR5,704.4,704.413926045008,-0.014,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",74,Tabelle 17
+PB2023_T17,2023,PB2023,MMS,2030,IPCC AR5,467.3,467.285897715907,0.014,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",74,Tabelle 17
+PB2023_T17,2023,PB2023,MMS,2035,IPCC AR5,353.7,353.67171229620203,0.028,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",74,Tabelle 17
+PB2023_T17,2023,PB2023,MMS,2040,IPCC AR5,264.9,264.932951228477,-0.033,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",74,Tabelle 17
+PB2023_T17,2023,PB2023,MMS,2045,IPCC AR5,229,229.03943778295698,-0.039,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",74,Tabelle 17
+PB2023_T17,2023,PB2023,MMS,2050,IPCC AR5,208.8,208.77508634079,0.025,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",74,Tabelle 17
+PB2023_T17,2023,PB2023,MWMS,2019,IPCC AR5,802,NA,NA,kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet),NA,74,Tabelle 17
+PB2023_T17,2023,PB2023,MWMS,2025,IPCC AR5,691.8,691.822664041825,-0.023,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",74,Tabelle 17
+PB2023_T17,2023,PB2023,MWMS,2030,IPCC AR5,437.7,437.698796049291,0.001,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",74,Tabelle 17
+PB2023_T17,2023,PB2023,MWMS,2035,IPCC AR5,304.5,304.50908026517504,-0.009,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",74,Tabelle 17
+PB2023_T17,2023,PB2023,MWMS,2040,IPCC AR5,215.6,215.649195450047,-0.049,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",74,Tabelle 17
+PB2023_T17,2023,PB2023,MWMS,2045,IPCC AR5,178.9,178.931217125744,-0.031,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",74,Tabelle 17
+PB2023_T17,2023,PB2023,MWMS,2050,IPCC AR5,160.1,160.067263996937,0.033,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",74,Tabelle 17
+PB2023x_Blatt1,2023,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MMS,2023,IPCC AR5,798.4290292869758,798.429029286976,-0,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",NA,"Blatt '1 THG-Emissionen', Excel-Zeile 6"
+PB2023x_Blatt1,2023,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MMS,2024,IPCC AR5,743.8612354704793,743.8612354704801,-0,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",NA,"Blatt '1 THG-Emissionen', Excel-Zeile 6"
+PB2023x_Blatt1,2023,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MMS,2025,IPCC AR5,704.4139260450077,704.413926045008,-0,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",NA,"Blatt '1 THG-Emissionen', Excel-Zeile 6"
+PB2023x_Blatt1,2023,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MMS,2026,IPCC AR5,647.3407639471702,647.34076394717,0,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",NA,"Blatt '1 THG-Emissionen', Excel-Zeile 6"
+PB2023x_Blatt1,2023,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MMS,2027,IPCC AR5,591.351757409665,591.3517574096651,-0,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",NA,"Blatt '1 THG-Emissionen', Excel-Zeile 6"
+PB2023x_Blatt1,2023,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MMS,2028,IPCC AR5,545.8692943819802,545.86929438198,0,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",NA,"Blatt '1 THG-Emissionen', Excel-Zeile 6"
+PB2023x_Blatt1,2023,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MMS,2029,IPCC AR5,499.82041112753416,499.820411127534,0,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",NA,"Blatt '1 THG-Emissionen', Excel-Zeile 6"
+PB2023x_Blatt1,2023,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MMS,2030,IPCC AR5,467.285897715907,467.285897715907,0,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",NA,"Blatt '1 THG-Emissionen', Excel-Zeile 6"
+PB2023x_Blatt1,2023,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MMS,2031,IPCC AR5,441.041456053303,441.04145605330297,0,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",NA,"Blatt '1 THG-Emissionen', Excel-Zeile 6"
+PB2023x_Blatt1,2023,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MMS,2032,IPCC AR5,419.526120870201,419.526120870201,0,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",NA,"Blatt '1 THG-Emissionen', Excel-Zeile 6"
+PB2023x_Blatt1,2023,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MMS,2033,IPCC AR5,397.113595737404,397.113595737404,0,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",NA,"Blatt '1 THG-Emissionen', Excel-Zeile 6"
+PB2023x_Blatt1,2023,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MMS,2034,IPCC AR5,375.719997897784,375.71999789778397,0,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",NA,"Blatt '1 THG-Emissionen', Excel-Zeile 6"
+PB2023x_Blatt1,2023,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MMS,2035,IPCC AR5,353.671712296202,353.67171229620203,-0,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",NA,"Blatt '1 THG-Emissionen', Excel-Zeile 6"
+PB2023x_Blatt1,2023,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MMS,2036,IPCC AR5,331.778498503066,331.77849850306603,-0,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",NA,"Blatt '1 THG-Emissionen', Excel-Zeile 6"
+PB2023x_Blatt1,2023,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MMS,2037,IPCC AR5,312.626899378766,312.62689937876604,-0,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",NA,"Blatt '1 THG-Emissionen', Excel-Zeile 6"
+PB2023x_Blatt1,2023,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MMS,2038,IPCC AR5,295.101536186309,295.10153618630903,-0,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",NA,"Blatt '1 THG-Emissionen', Excel-Zeile 6"
+PB2023x_Blatt1,2023,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MMS,2039,IPCC AR5,279.641763595857,279.641763595857,0,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",NA,"Blatt '1 THG-Emissionen', Excel-Zeile 6"
+PB2023x_Blatt1,2023,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MMS,2040,IPCC AR5,264.932951228477,264.932951228477,0,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",NA,"Blatt '1 THG-Emissionen', Excel-Zeile 6"
+PB2023x_Blatt1,2023,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MMS,2041,IPCC AR5,256.808180341323,256.808180341323,0,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",NA,"Blatt '1 THG-Emissionen', Excel-Zeile 6"
+PB2023x_Blatt1,2023,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MMS,2042,IPCC AR5,248.742467076952,248.74246707695198,0,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",NA,"Blatt '1 THG-Emissionen', Excel-Zeile 6"
+PB2023x_Blatt1,2023,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MMS,2043,IPCC AR5,241.567162841615,241.56716284161502,-0,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",NA,"Blatt '1 THG-Emissionen', Excel-Zeile 6"
+PB2023x_Blatt1,2023,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MMS,2044,IPCC AR5,235.10547784092,235.10547784092,0,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",NA,"Blatt '1 THG-Emissionen', Excel-Zeile 6"
+PB2023x_Blatt1,2023,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MMS,2045,IPCC AR5,229.039437782957,229.03943778295698,0,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",NA,"Blatt '1 THG-Emissionen', Excel-Zeile 6"
+PB2023x_Blatt1,2023,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MMS,2046,IPCC AR5,224.272949438918,224.272949438918,0,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",NA,"Blatt '1 THG-Emissionen', Excel-Zeile 6"
+PB2023x_Blatt1,2023,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MMS,2047,IPCC AR5,219.884990072848,219.884990072848,0,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",NA,"Blatt '1 THG-Emissionen', Excel-Zeile 6"
+PB2023x_Blatt1,2023,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MMS,2048,IPCC AR5,216.246954628997,216.24695462899697,0,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",NA,"Blatt '1 THG-Emissionen', Excel-Zeile 6"
+PB2023x_Blatt1,2023,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MMS,2049,IPCC AR5,212.793255163695,212.793255163695,0,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",NA,"Blatt '1 THG-Emissionen', Excel-Zeile 6"
+PB2023x_Blatt1,2023,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MMS,2050,IPCC AR5,208.77508634079,208.77508634079,0,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",NA,"Blatt '1 THG-Emissionen', Excel-Zeile 6"
+PB2023x_Blatt1,2023,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MWMS,2023,IPCC AR5,789.0465321735137,789.046532173514,-0,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",NA,"Blatt '1 THG-Emissionen', Excel-Zeile 9"
+PB2023x_Blatt1,2023,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MWMS,2024,IPCC AR5,732.5179524861752,732.517952486176,-0,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",NA,"Blatt '1 THG-Emissionen', Excel-Zeile 9"
+PB2023x_Blatt1,2023,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MWMS,2025,IPCC AR5,691.8226640418253,691.822664041825,0,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",NA,"Blatt '1 THG-Emissionen', Excel-Zeile 9"
+PB2023x_Blatt1,2023,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MWMS,2026,IPCC AR5,632.259499282361,632.259499282361,0,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",NA,"Blatt '1 THG-Emissionen', Excel-Zeile 9"
+PB2023x_Blatt1,2023,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MWMS,2027,IPCC AR5,574.4186414049371,574.418641404937,0,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",NA,"Blatt '1 THG-Emissionen', Excel-Zeile 9"
+PB2023x_Blatt1,2023,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MWMS,2028,IPCC AR5,528.0209621651188,528.020962165119,-0,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",NA,"Blatt '1 THG-Emissionen', Excel-Zeile 9"
+PB2023x_Blatt1,2023,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MWMS,2029,IPCC AR5,476.33761979996245,476.337619799963,-0,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",NA,"Blatt '1 THG-Emissionen', Excel-Zeile 9"
+PB2023x_Blatt1,2023,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MWMS,2030,IPCC AR5,437.698796049291,437.698796049291,0,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",NA,"Blatt '1 THG-Emissionen', Excel-Zeile 9"
+PB2023x_Blatt1,2023,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MWMS,2031,IPCC AR5,407.493618530623,407.493618530623,0,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",NA,"Blatt '1 THG-Emissionen', Excel-Zeile 9"
+PB2023x_Blatt1,2023,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MWMS,2032,IPCC AR5,380.257987502049,380.257987502049,0,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",NA,"Blatt '1 THG-Emissionen', Excel-Zeile 9"
+PB2023x_Blatt1,2023,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MWMS,2033,IPCC AR5,354.141572095419,354.141572095419,0,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",NA,"Blatt '1 THG-Emissionen', Excel-Zeile 9"
+PB2023x_Blatt1,2023,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MWMS,2034,IPCC AR5,329.339804880512,329.339804880512,0,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",NA,"Blatt '1 THG-Emissionen', Excel-Zeile 9"
+PB2023x_Blatt1,2023,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MWMS,2035,IPCC AR5,304.509080265175,304.50908026517504,-0,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",NA,"Blatt '1 THG-Emissionen', Excel-Zeile 9"
+PB2023x_Blatt1,2023,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MWMS,2036,IPCC AR5,282.010371649935,282.01037164993505,-0,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",NA,"Blatt '1 THG-Emissionen', Excel-Zeile 9"
+PB2023x_Blatt1,2023,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MWMS,2037,IPCC AR5,262.467964051792,262.46796405179197,0,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",NA,"Blatt '1 THG-Emissionen', Excel-Zeile 9"
+PB2023x_Blatt1,2023,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MWMS,2038,IPCC AR5,245.176851034758,245.176851034758,0,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",NA,"Blatt '1 THG-Emissionen', Excel-Zeile 9"
+PB2023x_Blatt1,2023,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MWMS,2039,IPCC AR5,229.626155414945,229.626155414945,0,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",NA,"Blatt '1 THG-Emissionen', Excel-Zeile 9"
+PB2023x_Blatt1,2023,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MWMS,2040,IPCC AR5,215.649195450047,215.649195450047,0,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",NA,"Blatt '1 THG-Emissionen', Excel-Zeile 9"
+PB2023x_Blatt1,2023,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MWMS,2041,IPCC AR5,207.055042126041,207.055042126041,0,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",NA,"Blatt '1 THG-Emissionen', Excel-Zeile 9"
+PB2023x_Blatt1,2023,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MWMS,2042,IPCC AR5,198.758595385563,198.758595385563,0,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",NA,"Blatt '1 THG-Emissionen', Excel-Zeile 9"
+PB2023x_Blatt1,2023,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MWMS,2043,IPCC AR5,191.269088261474,191.26908826147402,-0,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",NA,"Blatt '1 THG-Emissionen', Excel-Zeile 9"
+PB2023x_Blatt1,2023,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MWMS,2044,IPCC AR5,184.72360160927,184.72360160927,0,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",NA,"Blatt '1 THG-Emissionen', Excel-Zeile 9"
+PB2023x_Blatt1,2023,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MWMS,2045,IPCC AR5,178.931217125744,178.931217125744,0,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",NA,"Blatt '1 THG-Emissionen', Excel-Zeile 9"
+PB2023x_Blatt1,2023,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MWMS,2046,IPCC AR5,174.750462522334,174.750462522334,0,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",NA,"Blatt '1 THG-Emissionen', Excel-Zeile 9"
+PB2023x_Blatt1,2023,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MWMS,2047,IPCC AR5,170.587665012166,170.58766501216598,0,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",NA,"Blatt '1 THG-Emissionen', Excel-Zeile 9"
+PB2023x_Blatt1,2023,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MWMS,2048,IPCC AR5,166.976416503239,166.976416503239,0,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",NA,"Blatt '1 THG-Emissionen', Excel-Zeile 9"
+PB2023x_Blatt1,2023,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MWMS,2049,IPCC AR5,163.765556402293,163.76555640229302,-0,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",NA,"Blatt '1 THG-Emissionen', Excel-Zeile 9"
+PB2023x_Blatt1,2023,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MWMS,2050,IPCC AR5,160.067263996937,160.067263996937,0,"übereinstimmend (Rundung <= 0,05 Mt)","EEA 2023 (xlsx, Blatt Totals)",NA,"Blatt '1 THG-Emissionen', Excel-Zeile 9"

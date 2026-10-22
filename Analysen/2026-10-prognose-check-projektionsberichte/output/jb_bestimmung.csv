@@ -1,0 +1,6 @@
+bericht,jb_kandidaten,jb_eindeutig,begruendung
+2015,2012,TRUE,Letzter historischer Tabellenwert 2012 = letztes Inventarjahr der Submission 2014 = Ausgangsjahr der Modellierung.
+2017,2014,TRUE,Letzter historischer Tabellenwert 2014 = letztes Jahr der Resubmission Nov. 2016 = Ausgangsjahr der Modellierung.
+2019,2016,TRUE,Letzter historischer Tabellenwert 2016 = letztes Jahr der Submission 2018 = Ausgangsjahr der Modellierung.
+2021,2018 oder 2020,FALSE,"Inventar-Basisjahr 2018 (Submission 2020); Tab. 126 weist 2020 als historischen Wert aus, der aber eine Vorjahresschätzung (kein Inventarwert) ist. SAP 2.1 ('historische Inventarwerte') spricht für 2018, SAP 3.5.5 ('letzter als historisch gekennzeichneter Wert') für 2020."
+2023,2019 oder 2020,FALSE,Alle Tabellen nennen 2019 als 'Basisjahr' und Ausgangsjahr der Modellierung; verwendet wurden Inventardaten 1990–2020 (Submission 2022). Ein Wert für 2020 ist in den Ergebnistabellen und im Datenanhang nicht ausgewiesen.

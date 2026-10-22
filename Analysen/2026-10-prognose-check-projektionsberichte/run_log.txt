@@ -1,0 +1,226 @@
+RUN-LOG – Prognose-Check #1: Projektionsberichte der Bundesregierung 2015–2023
+==============================================================================
+SAP: SAP_prognose-check-projektionsberichte.md, Version 1.0 (final, eingefroren
+22.10.2026, freigegeben durch Daniel Saure). Der SAP selbst wurde NICHT editiert.
+
+------------------------------------------------------------------------------
+1. BESCHAFFUNG (PHASE A)
+------------------------------------------------------------------------------
+Datum/Zeit der Beschaffung: 22.10.2026, ca. 16:37–16:52 UTC (Zeitstempel je
+Datei in der Dateitabelle unten).
+Durchgeführt von: analyst-Subagent (Claude), lokal auf dem Rechner von Daniel
+Saure, per curl (Bash).
+
+ABWEICHUNG VOM WORTLAUT SAP 3.4 (nur Beschaffungsweg, nicht Quellen):
+SAP 3.4 sieht den Download durch Daniel vor. Die Beschaffung erfolgte auf
+ausdrücklichen Auftrag von Daniel Saure vom 22.10.2026 (übermittelt durch die
+Top-Level-Session) durch den analyst. Es wurden ausschließlich die in SAP
+3.1–3.3 genannten offiziellen Quellen genutzt (UBA, EEA Datahub/SDI,
+EEA Reportnet CDR und Reportnet 3, Our World in Data GitHub/Grapher). Keine
+Spiegel, keine Drittseiten. Dateien unverändert abgelegt; Archive nur in ein
+eigenes Unterverzeichnis "entpackt/" ausgepackt. Nichts aus den Dateien wurde
+ausgeführt (Makro-Dateien .xlsm nur abgelegt, nicht geöffnet).
+Was nicht geladen werden konnte: rohdaten/download_offen.md.
+Ablagehinweis EEA-Ordner: Die EEA-Datensätze wurden zunächst in Ordnern mit den
+EEA-Datensatznamen abgelegt (z. B. eea_t_ghg-emission-projections-2016_p_2016_
+v01_r00). Wegen der Windows-Pfadlängengrenze (260 Zeichen; R konnte die langen
+Metadaten-XML-Pfade nicht öffnen) wurden NUR die Ordner umbenannt in
+eea_projektionen/dsJJJJ (JJJJ = Jahrgang aus dem Datensatznamen):
+  ds2016..ds2022 = eea_t_ghg-emission-projections-JJJJ_p_JJJJ_v01_r00
+  ds2023..ds2025 = eea_t_ghg-emission-projections_p_JJJJ_v01_r00
+Dateinamen und Dateiinhalte sind unverändert (Prüfsummen unten). Die URLs in
+der Dateitabelle enthalten weiterhin die originalen Datensatznamen.
+
+
+------------------------------------------------------------------------------
+2. TEMPLATE-PFLICHTFELDER AUS SAP ABSCHNITT 3 (hier gespiegelt, nicht im SAP)
+------------------------------------------------------------------------------
+Quelle(n):
+  3.1 Projektionen (primär): Projektionsberichte 2015, 2017, 2019, 2021, 2023
+      - PB2015: Fassung April 2015 (nur MMS) aus EEA Reportnet CDR, Umschlag
+        "Projections report DE" (envvqlq8w, Datei 150422_Projektionsbericht_
+        2015_final.pdf, hochgeladen 12.06.2015); Fassung "ergänzt durch MWMS"
+        (Umschlag envv_vp1a, Datei 160928_PB2015_MWMS.final.pdf, hochgeladen
+        28.09.2016). Zusätzlich UBA-Fassung "Politikszenarien VII" (Climate
+        Change 01/2018), die laut UBA "inhaltlich im Wesentlichen dem
+        Projektionsbericht der Bundesregierung 2015" entspricht (nur
+        Dokumentation, nicht als Primärquelle vorgesehen).
+      - PB2017: UBA-Website (projektionsbericht_2017_uba_website.pdf) und
+        identischer Text im CDR-Umschlag envwqc4_g (170426_PB_2017_-_final.pdf,
+        hochgeladen 28.04.2017). Textebenen beider PDFs sind identisch
+        (diff ohne Unterschiede), Prüfsummen unterscheiden sich (PDF-Metadaten).
+      - PB2019: UBA-Website (projektionsbericht-2019_uba_website.pdf) und
+        CDR-Umschlag envxnw7wq (Projektionsbericht-der-Bundesregierung-2019.pdf,
+        hochgeladen 15.05.2019); Textebenen identisch. Dazu UBA-Teilbericht
+        "Zusammenfassung in der Struktur des Klimaschutzplans" (Climate Change
+        33/2019, KSP-Sektoren).
+      - PB2021: UBA-Website (projektionsbericht_2021_uba_website.pdf).
+      - PB2023: UBA Climate Change 39/2023 (39_2023_cc_projektionsbericht_12_23
+        .pdf) und amtlicher Datenanhang "Kernindikatoren des Projektionsberichtes
+        2023, Version 2.0 korrigiert" (xlsx).
+      - S6: UBA Treibhausgas-Projektionen 2024 (Kernindikatoren xlsx v2 vom
+        24.06.2024, "Ergebnisse kompakt") und 2025 (Projektionsbericht 2025 PDF,
+        Datentabelle xlsx Stand 27.05.2025, "Ergebnisse kompakt" 2. Auflage).
+        Hinweis: Der vollständige Bericht "Treibhausgas-Projektionen 2024"
+        wurde auf der UBA-Seite nur als Rahmendaten-/Instrumentenpapier und
+        Technischer Anhang gefunden; geladen sind Kernindikatoren und
+        "Ergebnisse kompakt". Für S6 erst nach Rückfragen relevant.
+      - Kreuzprüfung (SAP 3.1): EEA "National projections of anthropogenic
+        greenhouse gas emissions" – Datensätze 2016 (enthält Meldung 2015),
+        2017, 2018, 2019, 2020, 2021, 2022 (CSV) sowie 2023, 2024, 2025 (XLSX),
+        über EEA SDI Datashare. Dazu die deutschen MMR-Templates der Meldungen
+        2015, 2016 (MWMS-Ergänzung), 2017 (März und Mai), 2019 aus Reportnet CDR
+        und die Reportnet-3-Tabellen der Meldung 2021 (Dataflow 113).
+  3.2 Ist-Werte (primär): UBA-Treibhausgasinventar, Submission 2026 (siehe
+      Festlegung unten); S7: UBA-Vorjahresschätzung 2025 (Hintergrundpapier
+      "Emissionsdaten 2025 & Projektionsdaten 2026" und Begleitbericht Climate
+      Change 36/2026); KSG-Übersicht enthält 2025 als Vorjahresschätzung.
+  3.3 Sekundär: OWID co2-data (GitHub, Commit 382ee6c662b0ece26e111f263b44c029
+      afad7787 vom 02.06.2026) und OWID-Grapher "total-ghg-emissions-excluding-
+      lufc" (CSV + Metadaten, dateDownloaded 2026-10-22). GCP: NICHT geladen
+      (Lizenz-Klickformular, siehe download_offen.md).
+
+Zugriffsdatum: 22.10.2026 (alle Dateien).
+
+Datenstand laut Quelle:
+  - Referenzinventar (FESTLEGUNG nach SAP 3.2, gilt ab jetzt unverändert):
+      Bezeichnung: Treibhausgasinventar Deutschland, Submission 2026
+        (Inventarjahre 1990–2024).
+      Datenträger Gesamtemissionen: "Nationale Trendtabellen für die deutsche
+        Berichterstattung atmosphärischer Emissionen 1990–2024", Umweltbundesamt,
+        Dessau, 15.01.2026, Datei 2026_EM_Entwicklung_in_D_Trendtabelle_THG.xlsx
+        (UBA-Seite: "Treibhausgas-Emissionsentwicklung von 1990 bis 2024",
+        15.01.2026).
+      Datenträger KSG-Sektoren: "Emissionsübersichten KSG-Sektoren 1990–2025",
+        UBA, Veröffentlichung 15.03.2026 (Datei abgelegt als
+        Emissionsuebersichten_KSG-Sektoren_1990-2025.xlsx; Original-Dateiname
+        "Emissionsübersichten KSG-Sektoren 1990-2025.xlsx"). Jahre 1990–2024
+        = Inventar, 2025 = Vorjahresschätzung (nur S7).
+      Begleitdokument: Nationaler Inventarbericht 2026 (Climate Change 30/2026,
+        Datei 30_2026_CC.pdf, UBA-Upload-Pfad 2026-05).
+      Konsistenz Trendtabelle vs. KSG-Übersicht vs. NIR wird in
+        01_integritaet.R geprüft (output/referenzinventar_konsistenz.csv).
+  - Projektionsberichte: siehe 3.1 oben (Fassung/Datum je Datei).
+  - EEA-Projektionsdatensätze: Versionen v01_r00 je Jahrgang (Ordnernamen).
+  - OWID: total_ghg_excluding_lucf = Jones et al. (2025), "National
+    contributions to climate change 2025.1", lastUpdated 2025-12-04, Zeitreihe
+    bis 2024 (laut Grapher-Metadaten).
+
+Lizenz/Nutzungsbedingungen:
+  - EEA-Datensätze: CC BY 4.0, Copyright EEA (laut Metadaten-XML in den
+    Datensatzordnern).
+  - EEA Reportnet CDR/Reportnet 3: öffentliche Meldedokumente der Mitglied-
+    staaten; spezifische Lizenzangabe in den Dateien nicht geprüft.
+  - UBA PB2023-Datenanhang und Kernindikatoren 2024: Datenlizenz Deutschland –
+    Namensnennung – Version 2.0 (dl-de/by-2-0), laut Blatt "Kontext".
+  - Übrige UBA-Dateien (PDF-Berichte, Trendtabellen, KSG-Übersicht): keine
+    Lizenzangabe in den Dateien gefunden; es gelten die Nutzungsbedingungen der
+    UBA-Website (https://www.umweltbundesamt.de/datenschutz-haftung-urheberrecht),
+    vom analyst NICHT im Detail geprüft.
+  - OWID: CC BY 4.0 für OWID-eigene Daten; Daten Dritter (hier Jones et al.,
+    GCB) unter deren Lizenz (laut README_co2-data.md).
+
+------------------------------------------------------------------------------
+3. FESTLEGUNG INVENTARSUBMISSION (SAP 3.2)
+------------------------------------------------------------------------------
+Referenzinventar = Submission 2026 (1990–2024), Datenträger wie oben.
+Festgelegt am 22.10.2026 vom analyst beim Datenzugriff. Wird nicht mehr
+gewechselt, auch wenn während der Analyse eine neuere Fassung erscheint.
+Hinweis: Die UNFCCC-Fassung (NIR 2026, Mai 2026) ist jünger als die
+Trendtabellen vom 15.01.2026. Ob sich die Gesamtemissionen unterscheiden,
+prüft 01_integritaet.R für 2024 (Ergebnis siehe Zwischenbericht).
+
+------------------------------------------------------------------------------
+4. DATEITABELLE (maschinenlesbar, von 01_integritaet.R für die Prüfsummen-
+   kontrolle eingelesen; Pfade relativ zu rohdaten/)
+------------------------------------------------------------------------------
+DATEITABELLE_BEGINN
+datei	groesse_bytes	sha256	zugriff_utc	url
+eea_projektionen/ds2016/GHG_proj.csv	5037458	c9b8ffaf98754fa4a60a8be19e286576ebbd6f9960efc4477bdec67046d38e8d	2026-10-22T16:43:19Z	https://sdi.eea.europa.eu/datashare/s/sptXqwkQr5g7Bp5/download?path=/eea_t_ghg-emission-projections-2016_p_2016_v01_r00&files=GHG_proj.csv
+eea_projektionen/ds2016/GovReg_National_projections_of_anthropogenic_greenhouse_gas_emissions__metadata_709cf3f9-f6fa-4ba6-a579-2ce6f3653893.xml	47580	2cc488a2dfac3eacede94f062fccf5b7e5245042a701e160d92a107c78193366	2026-10-22T16:43:24Z	https://sdi.eea.europa.eu/datashare/s/sptXqwkQr5g7Bp5/download?path=/eea_t_ghg-emission-projections-2016_p_2016_v01_r00&files=GovReg_National_projections_of_anthropogenic_greenhouse_gas_emissions__metadata_709cf3f9-f6fa-4ba6-a579-2ce6f3653893.xml
+eea_projektionen/ds2016/README.md	930	c4c62bda1346c9af9080da27543214f67446ae8076a128684ca4f386cf435bc2	2026-10-22T16:42:46Z	https://sdi.eea.europa.eu/datashare/s/sptXqwkQr5g7Bp5/download?path=/eea_t_ghg-emission-projections-2016_p_2016_v01_r00&files=README.md
+eea_projektionen/ds2017/GHG_projections_2017_EEA.csv	4609604	9fdc19b5aa1145971a2f2af02cb0a47d82dc585cb23d1f4ac2af21dd6b87f410	2026-10-22T16:43:28Z	https://sdi.eea.europa.eu/datashare/s/sptXqwkQr5g7Bp5/download?path=/eea_t_ghg-emission-projections-2017_p_2017_v01_r00&files=GHG_projections_2017_EEA.csv
+eea_projektionen/ds2017/GovReg_National_projections_of_anthropogenic_greenhouse_gas_emissions__metadata_36793cdd-e380-49ba-b519-7eee9dd4e46d.xml	49085	5d7c8f50678a673c091efdbe25bcfcd28a6235ec2296fdfac4478265c559dbcc	2026-10-22T16:43:32Z	https://sdi.eea.europa.eu/datashare/s/sptXqwkQr5g7Bp5/download?path=/eea_t_ghg-emission-projections-2017_p_2017_v01_r00&files=GovReg_National_projections_of_anthropogenic_greenhouse_gas_emissions__metadata_36793cdd-e380-49ba-b519-7eee9dd4e46d.xml
+eea_projektionen/ds2017/README.md	930	f6a4a92b3f309217d33dc2e6210780b2919c6645165b93486d7115f1f1dca023	2026-10-22T16:42:48Z	https://sdi.eea.europa.eu/datashare/s/sptXqwkQr5g7Bp5/download?path=/eea_t_ghg-emission-projections-2017_p_2017_v01_r00&files=README.md
+eea_projektionen/ds2018/GHG_projections_2018_EEA.csv	6747837	6eeec9296ea3d7bee56c192e471695840c5689dddf66b6db22148c9606c3995f	2026-10-22T16:43:36Z	https://sdi.eea.europa.eu/datashare/s/sptXqwkQr5g7Bp5/download?path=/eea_t_ghg-emission-projections-2018_p_2018_v01_r00&files=GHG_projections_2018_EEA.csv
+eea_projektionen/ds2018/README.md	930	33a68145af934bae684e1022936b10650a74aec3aaa30f10611bdd97af2d8498	2026-10-22T16:42:51Z	https://sdi.eea.europa.eu/datashare/s/sptXqwkQr5g7Bp5/download?path=/eea_t_ghg-emission-projections-2018_p_2018_v01_r00&files=README.md
+eea_projektionen/ds2019/GHG_projections_2019_EEA.csv	8835698	77f9ea29332c755d071963155be5f68ddf9db6d87b491e76eab6db67682e7849	2026-10-22T16:43:39Z	https://sdi.eea.europa.eu/datashare/s/sptXqwkQr5g7Bp5/download?path=/eea_t_ghg-emission-projections-2019_p_2019_v01_r00&files=GHG_projections_2019_EEA.csv
+eea_projektionen/ds2019/GovReg_National_projections_of_anthropogenic_greenhouse_gas_emissions__metadata_c36239b1-48a1-4233-b0d2-32730bcc9660.xml	48171	6ca62bba77f62fa04fe2b05e49a18173d99f6a43ad3935f726331e582b96d34d	2026-10-22T16:43:41Z	https://sdi.eea.europa.eu/datashare/s/sptXqwkQr5g7Bp5/download?path=/eea_t_ghg-emission-projections-2019_p_2019_v01_r00&files=GovReg_National_projections_of_anthropogenic_greenhouse_gas_emissions__metadata_c36239b1-48a1-4233-b0d2-32730bcc9660.xml
+eea_projektionen/ds2019/README.md	930	00fbc5b68a33f53ae6b00b6b35e17333c9f9bc56287cfed3e64c7a0c24b03359	2026-10-22T16:42:52Z	https://sdi.eea.europa.eu/datashare/s/sptXqwkQr5g7Bp5/download?path=/eea_t_ghg-emission-projections-2019_p_2019_v01_r00&files=README.md
+eea_projektionen/ds2020/GHG_projections_2020_EUMMR_EEA.csv	7056483	ecbcd3c340b5566ad8eae12d3c9e8a478f33d6d5da3d95dfcb985cc6a7f17d2c	2026-10-22T16:43:44Z	https://sdi.eea.europa.eu/datashare/s/sptXqwkQr5g7Bp5/download?path=/eea_t_ghg-emission-projections-2020_p_2020_v01_r00&files=GHG_projections_2020_EUMMR_EEA.csv
+eea_projektionen/ds2020/README.md	930	b41f409f907e848ddc261efc5dd568ebd12cc0de085e8c24831ca9386ebf765c	2026-10-22T16:42:55Z	https://sdi.eea.europa.eu/datashare/s/sptXqwkQr5g7Bp5/download?path=/eea_t_ghg-emission-projections-2020_p_2020_v01_r00&files=README.md
+eea_projektionen/ds2021/GHG_projections_2021_EEA.csv	10985081	0517974b7d74ea14b8d19bb4e4ba3d56e36fd9533bbf60f610ed9af2c0a9e2df	2026-10-22T16:43:48Z	https://sdi.eea.europa.eu/datashare/s/sptXqwkQr5g7Bp5/download?path=/eea_t_ghg-emission-projections-2021_p_2021_v01_r00&files=GHG_projections_2021_EEA.csv
+eea_projektionen/ds2021/GovReg_National_projections_of_anthropogenic_greenhouse_gas_emissions__metadata_213d9a0f-ad40-487c-bc71-ded5fbb59572.xml	47129	34a338dc2e3ce1ced40cad13f24ee97e022e2e1daa0fd7d45d69eb4c045a225e	2026-10-22T16:43:50Z	https://sdi.eea.europa.eu/datashare/s/sptXqwkQr5g7Bp5/download?path=/eea_t_ghg-emission-projections-2021_p_2021_v01_r00&files=GovReg_National_projections_of_anthropogenic_greenhouse_gas_emissions__metadata_213d9a0f-ad40-487c-bc71-ded5fbb59572.xml
+eea_projektionen/ds2021/README.md	930	6bbcf6dfb622a717909d7a63604f642d7c6e9c9b8c478d614f34044986c59a37	2026-10-22T16:42:57Z	https://sdi.eea.europa.eu/datashare/s/sptXqwkQr5g7Bp5/download?path=/eea_t_ghg-emission-projections-2021_p_2021_v01_r00&files=README.md
+eea_projektionen/ds2022/GHG_projections_2022_EEA_csv.csv	7328195	3a93ebced86a8ad39f9b0e3fe210c5cdce5d1e7fbc66d239dd87831b11930df5	2026-10-22T16:43:53Z	https://sdi.eea.europa.eu/datashare/s/sptXqwkQr5g7Bp5/download?path=/eea_t_ghg-emission-projections-2022_p_2022_v01_r00&files=GHG_projections_2022_EEA_csv.csv
+eea_projektionen/ds2022/README.md	1043	f32e20e9406dacc5ac1c77763b7ead164f7052fbd1c1ddc45dcec7cca57f8595	2026-10-22T16:42:59Z	https://sdi.eea.europa.eu/datashare/s/sptXqwkQr5g7Bp5/download?path=/eea_t_ghg-emission-projections-2022_p_2022_v01_r00&files=README.md
+eea_projektionen/ds2023/GHG_projections_2023_EEA_incl_pivots.xlsx	14234936	5d63d1f27f49ebbdd5900e550383001229579816382571a65f967758c56c222e	2026-10-22T16:43:56Z	https://sdi.eea.europa.eu/datashare/s/sptXqwkQr5g7Bp5/download?path=/eea_t_ghg-emission-projections_p_2023_v01_r00&files=GHG_projections_2023_EEA_incl_pivots.xlsx
+eea_projektionen/ds2023/GovReg_National_projections_of_anthropogenic_greenhouse_gas_emissions__metadata_14ffb69b-9c55-49f3-8477-3460aca891c4.xml	43412	9d29a383e999ae00bc985d74c83ee3d528a29942985f89116b9c6d616dadde2f	2026-10-22T16:44:01Z	https://sdi.eea.europa.eu/datashare/s/sptXqwkQr5g7Bp5/download?path=/eea_t_ghg-emission-projections_p_2023_v01_r00&files=GovReg_National_projections_of_anthropogenic_greenhouse_gas_emissions__metadata_14ffb69b-9c55-49f3-8477-3460aca891c4.xml
+eea_projektionen/ds2023/README.md	847	a8b2e39653441c864a543f1bedf3647c3a2320237603c159d201873999207b3d	2026-10-22T16:43:58Z	https://sdi.eea.europa.eu/datashare/s/sptXqwkQr5g7Bp5/download?path=/eea_t_ghg-emission-projections_p_2023_v01_r00&files=README.md
+eea_projektionen/ds2024/GHG_projections_2024_EEA_incl_pivots.xlsx	11223447	5e0184b5950d5672171e0b7afef157ce7d14017c8b464a26b707d862c967ea28	2026-10-22T16:44:04Z	https://sdi.eea.europa.eu/datashare/s/sptXqwkQr5g7Bp5/download?path=/eea_t_ghg-emission-projections_p_2024_v01_r00&files=GHG_projections_2024_EEA_incl_pivots.xlsx
+eea_projektionen/ds2024/README.md	972	3ff9e1d7330d807cc854ea69be15698845541f4c75e69ba83fa31e4270ec2796	2026-10-22T16:44:05Z	https://sdi.eea.europa.eu/datashare/s/sptXqwkQr5g7Bp5/download?path=/eea_t_ghg-emission-projections_p_2024_v01_r00&files=README.md
+eea_projektionen/ds2025/GHG_projections_2025_EEA_incl_pivots.xlsx	18595579	8ddfcd287290422a4ccb7b78a0916b5d428ff4896764f5de162fde74354fcdca	2026-10-22T16:44:08Z	https://sdi.eea.europa.eu/datashare/s/sptXqwkQr5g7Bp5/download?path=/eea_t_ghg-emission-projections_p_2025_v01_r00&files=GHG_projections_2025_EEA_incl_pivots.xlsx
+eea_projektionen/ds2025/GovReg_National_projections_of_anthropogenic_greenhouse_gas_emissions__metadata_d6938865-05e5-4016-a15c-a09bb898421d.xml	47841	2b39ac67dd1f2be534471bddd9c28cd957149a1616156c863b12f6ba574f4281	2026-10-22T16:44:12Z	https://sdi.eea.europa.eu/datashare/s/sptXqwkQr5g7Bp5/download?path=/eea_t_ghg-emission-projections_p_2025_v01_r00&files=GovReg_National_projections_of_anthropogenic_greenhouse_gas_emissions__metadata_d6938865-05e5-4016-a15c-a09bb898421d.xml
+eea_projektionen/ds2025/README.md	972	aa45ec1ebe953ee511fc08427585e39d9983217b9a7db7131270163debca84c0	2026-10-22T16:44:10Z	https://sdi.eea.europa.eu/datashare/s/sptXqwkQr5g7Bp5/download?path=/eea_t_ghg-emission-projections_p_2025_v01_r00&files=README.md
+eea_reportnet3_df113_2021/DE-Table2.zip	8135	8c983e1a25164ef555d62f045881b43cfd04e6fa585b9b6240f3399d474b5abb	2026-10-22T16:51:18Z	https://api.reportnet.europa.eu/dataset/exportPublicFile/dataflow/113/dataProvider/58?fileName=DE-Table2.zip
+eea_reportnet3_df113_2021/DE-Table_1a1b5a5b.zip	406492	7babfad53d2b243ef2e08f44cbd5612ae6f9dd1f5d63913a4f73295506e4a655	2026-10-22T16:51:17Z	https://api.reportnet.europa.eu/dataset/exportPublicFile/dataflow/113/dataProvider/58?fileName=DE-Table%201a1b5a5b.zip
+eea_reportnet3_df113_2021/entpackt/DE-Table2/DE-Table2.xlsx	10220	80081a76aaf363cb084087daefdff810b58e35c4a18bfea58e59dd254362cb0e		(aus Archiv entpackt, siehe uebergeordnetes ZIP)
+eea_reportnet3_df113_2021/entpackt/DE-Table_1a1b5a5b/DE-Table 1a1b5a5b.xlsx	567708	a99e4cd4403823402cf2f3dfea6e6ea8eeb61cfe6e0348c9c6f5d7716f42a60b		(aus Archiv entpackt, siehe uebergeordnetes ZIP)
+eea_reportnet_cdr/2015_envvprkzq_projections/MMR_Template_IPArticle23_table1-final_Germany_AR4-GWPs.xlsm	261063	b83375f7ea63b631a581ed1931abae768dd38309cecb9091a21f0730b981c2c1	2026-10-22T16:47:12Z	https://cdr.eionet.europa.eu/de/eu/mmr/art04-13-14_lcds_pams_projections/envvprkzq/MMR_Template_IPArticle23_table1-final_Germany_AR4-GWPs.xlsm
+eea_reportnet_cdr/2015_envvprkzq_projections/Readme_projections.docx	10747	e956f6cf38ca639f05a441c08150405f7b2bc1a7fa749fa92c9afc6007665867	2026-10-22T16:47:12Z	https://cdr.eionet.europa.eu/de/eu/mmr/art04-13-14_lcds_pams_projections/envvprkzq/Readme_projections.docx
+eea_reportnet_cdr/2015_envvqlq8w_projektionsbericht/150422_Projektionsbericht_2015_final.pdf	3991497	7584a112acbb4977d42f3017872b845c11abb86763c18bfecc48b0cd3d0bcb6b	2026-10-22T16:47:11Z	https://cdr.eionet.europa.eu/de/eu/mmr/art04-13-14_lcds_pams_projections/envvqlq8w/150422_Projektionsbericht_2015_final.pdf
+eea_reportnet_cdr/2015_envvr0d1q_projections_xml/MMR_Template_IPArticle23_table1-final_Germany_AR4-GWP.xml	672409	17ec1f8c87a40d30ed89dcbb4f4858731cdab98d39bc813ee1b6568dd9fb02ce	2026-10-22T16:47:13Z	https://cdr.eionet.europa.eu/de/eu/mmr/art04-13-14_lcds_pams_projections/envvr0d1q/MMR_Template_IPArticle23_table1-final_Germany_AR4-GWP.xml
+eea_reportnet_cdr/2016_envv_vp1a_pb2015_mwms/160928_PB2015_MWMS.final.pdf	4641104	cc1c291bcba803a126739f593e219442081e70c5c754135d528db06f6879c576	2026-10-22T16:47:15Z	https://cdr.eionet.europa.eu/de/eu/mmr/art04-13-14_lcds_pams_projections/projections/envv_vp1a/160928_PB2015_MWMS.final.pdf
+eea_reportnet_cdr/2016_envv_vp1a_pb2015_mwms/MMR_Template_IPArticle23_table1-final_Germany_AR4-GWPs_inkl_MWMS.xlsm	285988	f4da1e387f28a9277d48fde79bd7cb9a5f07c31d224087dfeadbca0cfed2a3a0	2026-10-22T16:47:16Z	https://cdr.eionet.europa.eu/de/eu/mmr/art04-13-14_lcds_pams_projections/projections/envv_vp1a/MMR_Template_IPArticle23_table1-final_Germany_AR4-GWPs_inkl_MWMS.xlsm
+eea_reportnet_cdr/2017_envwqc4_g_march/170426_PB_2017_-_final.pdf	6500290	70b2034e0c325a5c5cbfb461f1a41c4f6b7a7ccd11f71e243de4dcc6f1122a44	2026-10-22T16:47:17Z	https://cdr.eionet.europa.eu/de/eu/mmr/art04-13-14_lcds_pams_projections/projections/envwqc4_g/170426_PB_2017_-_final.pdf
+eea_reportnet_cdr/2017_envwqc4_g_march/DE_MMR_Template_IRArticle23_table1_March2017.xlsm	430811	e62b64cb17b3e5d093556182e13042253cc7814ae4f377fa91dc77008885aff1	2026-10-22T16:47:18Z	https://cdr.eionet.europa.eu/de/eu/mmr/art04-13-14_lcds_pams_projections/projections/envwqc4_g/DE_MMR_Template_IRArticle23_table1_March2017.xlsm
+eea_reportnet_cdr/2017_envwqc4_g_march/MMR_IRArticle23T1_DE_2017.xml	5676979	6aacf13793194178f14be0c7fe790a45033984b91c8e868bb797eafef889fabc	2026-10-22T16:47:19Z	https://cdr.eionet.europa.eu/de/eu/mmr/art04-13-14_lcds_pams_projections/projections/envwqc4_g/MMR_IRArticle23T1_DE_2017.xml
+eea_reportnet_cdr/2017_envwqc4_g_march/Technical_notes_German_projection_data.pdf	135130	93e6cb1f6cc52daf2ca86f672a7c27a05c97f5ce0a5ed74c59b7ed2f3384b017	2026-10-22T16:47:20Z	https://cdr.eionet.europa.eu/de/eu/mmr/art04-13-14_lcds_pams_projections/projections/envwqc4_g/Technical_notes_German_projection_data.pdf
+eea_reportnet_cdr/2017_envwsvzzg_may/DE_MMR_Template_IRArticle23_table1_May2017.xlsm	457763	97671d62f6e983821fb55342054846cd17763c237f1d16dc88abfe84ffe984af	2026-10-22T16:47:21Z	https://cdr.eionet.europa.eu/de/eu/mmr/art04-13-14_lcds_pams_projections/projections/envwsvzzg/DE_MMR_Template_IRArticle23_table1_May2017.xlsm
+eea_reportnet_cdr/2017_envwsvzzg_may/MMR_IRArticle23T1_DE_2017.xml	5551621	33ee222350051f4e686676e54a6ab01993b1efad8d2f7f4f17c4d89745ec24d5	2026-10-22T16:47:23Z	https://cdr.eionet.europa.eu/de/eu/mmr/art04-13-14_lcds_pams_projections/projections/envwsvzzg/MMR_IRArticle23T1_DE_2017.xml
+eea_reportnet_cdr/2019_envxiqjbq/DE_MMR_Template_IRArticle23_table1_2019_fix_20190305.xlsx	277027	37b3b58d486e8ff8be9009cc08ec67e919e8739f8422f1384735b87e8e89f546	2026-10-22T16:47:23Z	https://cdr.eionet.europa.eu/de/eu/mmr/art04-13-14_lcds_pams_projections/projections/envxiqjbq/DE_MMR_Template_IRArticle23_table1_2019_fix_20190305.xlsx
+eea_reportnet_cdr/2019_envxiqjbq/DE_MMR_Template_IRArticle23_table1_2019_fix_20190305.xml	3341296	33ba400ffeba31ee8533ccf3ef714bc56a924a9961e8c2988e1f69cf83a8e669	2026-10-22T16:47:25Z	https://cdr.eionet.europa.eu/de/eu/mmr/art04-13-14_lcds_pams_projections/projections/envxiqjbq/DE_MMR_Template_IRArticle23_table1_2019_fix_20190305.xml
+eea_reportnet_cdr/2019_envxiqjbq/Technical_notes_German_projection_data_20190314.pdf	18733	ab5883e984405a3727172f20fd3f5f33e3700beb8b199ab844e80d419195c55f	2026-10-22T16:47:25Z	https://cdr.eionet.europa.eu/de/eu/mmr/art04-13-14_lcds_pams_projections/projections/envxiqjbq/Technical_notes_German_projection_data_20190314.pdf
+eea_reportnet_cdr/2019_envxnw7wq_projektionsbericht/Projektionsbericht-der-Bundesregierung-2019.pdf	4820241	f4b4c2201741189e13c1087cbf8aa566ab39d3ff38189d6c7100882d63e4f637	2026-10-22T16:47:27Z	https://cdr.eionet.europa.eu/de/eu/mmr/art04-13-14_lcds_pams_projections/projections/envxnw7wq/Projektionsbericht-der-Bundesregierung-2019.pdf
+owid/README_co2-data.md	11950	6c78052304913b07e0b38b60f4e8488427cc2fb62d341ce66c1bf7974d21c9ed	2026-10-22T16:45:27Z	https://raw.githubusercontent.com/owid/co2-data/master/README.md
+owid/owid-co2-codebook.csv	24149	33b4f5e00efd58c7b83863f736beba1af4df946b43642b0400c3ec38648e0e8e	2026-10-22T16:45:26Z	https://raw.githubusercontent.com/owid/co2-data/master/owid-co2-codebook.csv
+owid/owid-co2-data.csv	14377942	7f78e2b218ce4bb8c538bbec04fdc9a7982e8d40bff972e650df603899edd5f6	2026-10-22T16:45:26Z	https://raw.githubusercontent.com/owid/co2-data/master/owid-co2-data.csv
+owid/total-ghg-emissions-excluding-lufc.csv	1101898	5b5363af5c92188fb3cbf9c0bdb81a74fbdce07be2ccb236f90d3cedb2819ae5	2026-10-22T16:45:28Z	https://ourworldindata.org/grapher/total-ghg-emissions-excluding-lufc.csv?v=1&csvType=full&useColumnShortNames=false
+owid/total-ghg-emissions-excluding-lufc.metadata.json	1976	21c02b99b880b3e1e0242d602ca895895106e53cf45816334905c11eba8e298d	2026-10-22T16:45:29Z	https://ourworldindata.org/grapher/total-ghg-emissions-excluding-lufc.metadata.json?v=1&csvType=full&useColumnShortNames=false
+uba_inventar/2026_EM_Entwicklung_in_D_Trendtabelle_THG.xlsx	303891	779fb78d4c963c107b7dd904cb7832f678eed25ad43c0a6aae933ee58d1289a7	2026-10-22T16:45:00Z	https://www.umweltbundesamt.de/system/files/document/2026_EM_Entwicklung_in_D_Trendtabelle_THG.xlsx
+uba_inventar/30_2026_CC.pdf	50870104	707bbcd09287a88c944b7971d2025806f3956d5589537fdf9a45f65c57fba75a	2026-10-22T16:45:12Z	https://www.umweltbundesamt.de/system/files/medien/11850/publikationen/2026-05/30_2026_CC.pdf
+uba_inventar/Emissionsuebersichten_KSG-Sektoren_1990-2025.xlsx	776757	bbbb49cb8307ae0136e397e0a4ccb5e9e5d3ade1a72c96ed532c41aeb928853a	2026-10-22T16:45:00Z	https://www.umweltbundesamt.de/system/files/document/Emissions%C3%BCbersichten%20KSG-Sektoren%201990-2025.xlsx
+uba_projektionen/2018-01-11_climate-change_01-2018_politikszenarien-vii.pdf	6104559	925d39402af8b4c3701f2dc6ec7fab8ed13ffa5352455cfcfbdd00cd185fc7c9	2026-10-22T16:39:24Z	https://www.umweltbundesamt.de/system/files/medien/1410/publikationen/2018-01-11_climate-change_01-2018_politikszenarien-vii.pdf
+uba_projektionen/2019-09-06_climate-change_33-2019_pb19-ksp2050_teilbericht-psz-ix.pdf	478489	823ed32f8451561837dd591abf05bc5f3150ef81406a6a17c6ffbc1400cf7350	2026-10-22T16:37:51Z	https://www.umweltbundesamt.de/system/files/medien/1410/publikationen/2019-09-06_climate-change_33-2019_pb19-ksp2050_teilbericht-psz-ix.pdf
+uba_projektionen/39_2023_cc_projektionsbericht_12_23.pdf	11167873	491913a84f2f1eb8226abd91d3e503edf2e5798323158f91718c8716f5d886ff	2026-10-22T16:37:49Z	https://www.umweltbundesamt.de/system/files/medien/11850/publikationen/39_2023_cc_projektionsbericht_12_23.pdf
+uba_projektionen/deutscher_projektionsbericht2023_kernindikatoren_2.0_korrigiert_0.xlsx	786996	c2c5d65dbc77ebd6caeb520ff1bcd7ae47788a9db29c7494c0ef567516e52077	2026-10-22T16:37:50Z	https://www.umweltbundesamt.de/system/files/medien/372/dokumente/deutscher_projektionsbericht2023_kernindikatoren_2.0_korrigiert_0.xlsx
+uba_projektionen/projektionsbericht-2019_uba_website.pdf	4814345	d0ae175de0df68de67a0d95fdef47640a03f130d785190b5a8688ba9d6c2b693	2026-10-22T16:37:45Z	https://www.umweltbundesamt.de/system/files/medien/372/dokumente/projektionsbericht-2019_uba_website.pdf
+uba_projektionen/projektionsbericht_2017_uba_website.pdf	5720144	40416ab578cd193366798153c6fddd07b4b430fabff2d2903cc900a4b21bf345	2026-10-22T16:37:44Z	https://www.umweltbundesamt.de/system/files/medien/372/dokumente/projektionsbericht_2017_uba_website.pdf
+uba_projektionen/projektionsbericht_2021_uba_website.pdf	6138675	41b96a8284e901fcec902bac7d977ff1171cf5000afa04054a30b34bfb1b66a4	2026-10-22T16:37:47Z	https://www.umweltbundesamt.de/system/files/medien/372/dokumente/projektionsbericht_2021_uba_website.pdf
+uba_projektionsdaten_S6/ergebnisse_kompakt_2025_2_auflage.pdf	11897522	59ab1ec98076941b6a66da325b806a5b7a76cdf6d848664949150f6efc4e2a3b	2026-10-22T16:37:59Z	https://www.umweltbundesamt.de/system/files/medien/11850/publikationen/ergebnisse_kompakt_2025_2_auflage.pdf
+uba_projektionsdaten_S6/projektionen-2024_kernindikatoren_20240624_uba_v2.xlsx	847268	5e1833ea61019341db7fc513f1113ab9df05d6c9735f8cb5c520320ec00099f4	2026-10-22T16:37:52Z	https://www.umweltbundesamt.de/system/files/medien/372/dokumente/projektionen-2024_kernindikatoren_20240624_uba_v2.xlsx
+uba_projektionsdaten_S6/projektionen-2025-kernindikatoren-ap1.master_20250527.xlsx	273970	bff542e93eef99e9d4d960aa6c9f48d9f457822a91a7388e0ed3f7bfe99fa30d	2026-10-22T16:37:55Z	https://www.umweltbundesamt.de/system/files/medien/372/dokumente/projektionen-2025-kernindikatoren-ap1.master_20250527.xlsx
+uba_projektionsdaten_S6/projektionsbericht_2025.pdf	12462385	a41aeecf1c74275a731d22be8e9b83fcdc4478cefe2109848985759ad6d7b73b	2026-10-22T16:37:57Z	https://www.umweltbundesamt.de/system/files/medien/11850/publikationen/projektionsbericht_2025.pdf
+uba_projektionsdaten_S6/thg-projektionen_2024_ergebnisse_kompakt.pdf	17862163	a23ef1d98bd483847e6403de62eb80f67b175b247550577fc1a49c7009e6678e	2026-10-22T16:37:54Z	https://www.umweltbundesamt.de/system/files/medien/11850/publikationen/thg-projektionen_2024_ergebnisse_kompakt.pdf
+uba_vorjahresschaetzung_S7/36_2026_CC_v2.pdf	7751397	631ed2bb409945fe58b91e86943e67c47fe9f6c8bc3605e4c527123bea59e10c	2026-10-22T16:45:13Z	https://www.umweltbundesamt.de/system/files/medien/11850/publikationen/2026-06/36_2026_CC_v2.pdf
+uba_vorjahresschaetzung_S7/UBA_Emissionsdaten_2025_Projektionsdaten_2026_Hintergrundpapier_0.pdf	1243289	5d24439110c70606a614acdf64e0faa35c250e85e891755424c2545d48bf7adc	2026-10-22T16:45:01Z	https://www.umweltbundesamt.de/system/files/document/UBA%20Emissionsdaten%202025_Projektionsdaten%202026_Hintergrundpapier_0.pdf
+DATEITABELLE_ENDE
+
+------------------------------------------------------------------------------
+5. LAUFPROTOKOLL SKRIPTE (PHASE B)
+------------------------------------------------------------------------------
+Lauf 01_integritaet.R (SAP 3.5, Punkte 1–6), 22.10.2026, 19:23 Ortszeit:
+  Aufruf: Rscript 01_integritaet.R (R 4.6.1; Paketversionen in
+  output/sessionInfo_01_integritaet.txt), Arbeitsverzeichnis = Analyseordner.
+  Ergebnis: fehlerfrei durchgelaufen (Exit-Code 0). Konsolenausgabe:
+  output/01_integritaet_konsole.txt (ohne poppler-Warnungen "display font"/
+  "Invalid Font Weight", die beim Lesen der PDFs auftreten und keine Werte
+  betreffen).
+  Prüfsummen aller 68 Rohdateien beim Lauf: identisch mit Dateitabelle oben.
+  Inhaltlicher Stand: STOPP nach SAP 3.5.5 – J_b für die Berichte 2021 und 2023
+  nicht eindeutig; Rückfrage an Daniel (siehe
+  output/zwischenbericht_daten_integritaet.md). Keine Fehlermaße, keine
+  Estimands, keine Sensitivitäten berechnet.
+  Mehrere Vorläufe am selben Tag dienten der Fehlerbehebung im Skript
+  (Pfadlänge, Tabellenzerlegung); alle Ausgabedateien stammen aus dem letzten
+  Lauf.

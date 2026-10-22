@@ -1,0 +1,11 @@
+objekt,gwp,aussage,datei,pdf_seiten,status
+"PB2015 (April 2015), Haupttabellen",IPCC SAR,Berechnungen auf Basis Inventar Berichtsjahr 2014 mit GWP des 2. Sachstandsberichts; angenäherte AR4-Umrechnung in Anhang A6,eea_reportnet_cdr/2015_envvqlq8w_projektionsbericht/150422_Projektionsbericht_2015_final.pdf,28,Fundstelle gefunden
+"PB2015 (April 2015), Anhang A6/Tab. A-7",IPCC AR4 (angenäherte Umrechnung),Anhang A6: Umrechnung der Kernergebnisse auf AR4,eea_reportnet_cdr/2015_envvqlq8w_projektionsbericht/150422_Projektionsbericht_2015_final.pdf,"6, 217",Fundstelle gefunden
+"PB2015 (Sept. 2016), Haupttabellen",IPCC SAR,Bericht verwendet noch alte Treibhausgaspotentiale; Konversion in Anhang A6,eea_reportnet_cdr/2016_envv_vp1a_pb2015_mwms/160928_PB2015_MWMS.final.pdf,30,Fundstelle gefunden
+PB2017,IPCC AR4,Inventar Berichtsjahr 2016 mit GWP des 4. Sachstandsberichts,uba_projektionen/projektionsbericht_2017_uba_website.pdf,40,Fundstelle gefunden
+PB2019,IPCC AR4 (UNFCCC 2013 Richtlinien),"GWP gemäß aktuellen Inventar-Berichterstattungsrichtlinien (UNFCCC 2013); dass dies AR4-GWP sind, ist Ableitung des analyst (UNFCCC-Richtlinien 2013), nicht wörtlich im Bericht",uba_projektionen/projektionsbericht-2019_uba_website.pdf,30,Fundstelle gefunden
+PB2021,IPCC AR4,Aussage im PB2023 über PB2021 (PB2021 selbst: 'gemäß den aktuellen Inventar-Berichterstattungsrichtlinien'),uba_projektionen/39_2023_cc_projektionsbericht_12_23.pdf,63,Fundstelle gefunden
+PB2023,IPCC AR5,GWP des 5. Sachstandsberichts,uba_projektionen/39_2023_cc_projektionsbericht_12_23.pdf,63,Fundstelle gefunden
+Referenzinventar Submission 2026 (NIR 2026),IPCC AR5,Inventartabellen in CO2-Äq. nach IPCC AR5,uba_inventar/30_2026_CC.pdf,"20, 38, 773, 775",Fundstelle gefunden
+PB2021 (Selbstaussage),IPCC AR4 (UNFCCC 2013 Richtlinien),Selbstaussage PB2021,uba_projektionen/projektionsbericht_2021_uba_website.pdf,37,Fundstelle gefunden
+OWID total_ghg_excluding_lucf (Jones et al. 2025),IPCC AR6,laut OWID-Metadaten (descriptionProcessing),owid/total-ghg-emissions-excluding-lufc.metadata.json,NA,Fundstelle gefunden

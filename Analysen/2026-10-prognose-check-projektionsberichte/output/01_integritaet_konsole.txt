@@ -1,0 +1,407 @@
+Prognose-Check #1 – 01_integritaet.R
+Basisordner: C:/Users/dsaur/klima-evidenzcheck/Analysen/2026-10-prognose-check-projektionsberichte 
+Laufzeit: 2026-10-22 19:22:02 CEST 
+
+== SAP 3.4/10: Prüfsummen der Rohdateien gegen run_log.txt ==
+
+ok 
+68 
+
+== SAP 3.5.1: Extraktion PDF-Tabellen ==
+  PB2015o_T1-2     Tabelle 1-2    S.20       104 Werte, Zeilen: Energiewirtschaft | Industrie | GHD | Haushalte | Nationaler Verkehr | Flüchtige Emissionen aus Energiesektoren | Industrieprozesse | Produktverwendung | Landwirtschaft | Abfallwirtschaft | Gesamt | Internat. ziviler Luftverkehr und internat. Seeverkehr | Gesamt incl. nachrichtlich
+  PB2015o_A-5      Tabelle A-5    S.216       80 Werte, Zeilen: Energiewirtschaft | Industrie | Haushalte | Verkehr | GHD | Landwirtschaft | Übrige | Gesamt | Internat. ziviler Luftverkehr und internat. Seeverkehr | Gesamt incl.
+  PB2015o_A-7      Tabelle A-7    S.218+219  103 Werte, Zeilen: Energiewirtschaft | Industrie | GHD | Haushalte | Verkehr | Flüchtige Emissionen aus Energiesektoren | Industrieprozesse | Produktverwendung | Landwirtschaft | Abfallwirtschaft | Gesamt | Internat. ziviler Luftverkehr und inter- | Gesamt incl. nach- | richtlich
+  PB2015s_T1-2     Tabelle 1-2    S.23       104 Werte, Zeilen: Energiewirtschaft | Industrie | GHD | Haushalte | Nationaler Verkehr | Flüchtige Emissionen aus Energiesektoren | Industrieprozesse | Produktverwendung | Landwirtschaft | Abfallwirtschaft | Gesamt | Internat. ziviler Luftverkehr und internat. Seeverkehr | Gesamt incl. nachrichtlich
+  PB2015s_T1-3     Tabelle 1-3    S.24+25    105 Werte, Zeilen: Energiewirtschaft | Industrie | GHD | Haushalte | Nationaler Verkehr | Flüchtige Emissionen aus Energiesektoren | Industrieprozesse | Produktverwendung | Landwirtschaft | Abfallwirtschaft | Gesamt | Gesamt inkl. Paket vom 1. Juli 2015 | Internat. ziviler Luftverkehr und internat. Seeverkehr 4 Ohne internationalen | Gesamt incl. nachrichtlich
+  PB2015s_A-5-9    Tabelle A-5-9  S.298       64 Werte, Zeilen: Energiewirtschaft | Industrie | Haushalte | Verkehr | GHD | Landwirtschaft | Übrige | Gesamt
+  PB2015s_A-5-10   Tabelle A-5-10 S.299       65 Werte, Zeilen: Energiewirtschaft | Industrie | Haushalte | Verkehr | GHD | Landwirtschaft | Übrige | Gesamt | Gesamt incl. Paket vom 2. Juli 2015
+  PB2015s_A-5-12   Tabelle A-5-12 S.301+302  103 Werte, Zeilen: Energiewirtschaft | Industrie | GHD | Haushalte | Verkehr | Flüchtige Emissionen aus Energiesektoren | Industrieprozesse | Produktverwendung | Landwirtschaft | Abfallwirtschaft | Gesamt | Internat. ziviler Luftverkehr und internat. Seeverkehr | Gesamt incl. nach- | richtlich
+  PB2015s_A-5-14   Tabelle A-5-14 S.303+304  104 Werte, Zeilen: Energiewirtschaft | Industrie | GHD | Haushalte | Verkehr | Flüchtige Emissionen aus Energiesektoren | Industrieprozesse | Produktverwendung | Landwirtschaft | Abfallwirtschaft | Gesamt | Gesamt incl. Paket vom 2. Juli 2015 | Internat. ziviler Luftverkehr und internat. Seeverkehr | Gesamt incl. nach- | richtlich
+  PB2017_T1-2      Tabelle 1-2    S.28+29    104 Werte, Zeilen: Energiewirtschaft | Industrie | GHD | Haushalte | Verkehr | Diffuse Emissionen aus Brennstoffen | Industrieprozesse | Landwirtschaft | Abfallwirtschaft | Gesamt | LULUCF | Internationaler Luft- und Seeverkehr | Gesamt inklusive
+  PB2017_T1-3      Tabelle 1-3    S.30+31    104 Werte, Zeilen: Energiewirtschaft | Industrie | GHD | Haushalte | Verkehr | Diffuse Emissionen aus Brennstoffen | Industrieprozesse | Landwirtschaft | Abfallwirtschaft | Gesamt | LULUCF | Internationaler Luft- und Seeverkehr | Gesamt inklusive
+  PB2017_A-5-3     Tabelle A-5-3  S.293       64 Werte, Zeilen: Energiewirtschaft | Industrie | Gebäude | Verkehr | Landwirtschaft | Teilsumme | Sonstige | Gesamt
+  PB2017_A-5-4     Tabelle A-5-4  S.294       64 Werte, Zeilen: Energiewirtschaft | Industrie | Gebäude | Verkehr | Landwirtschaft | Teilsumme | Sonstige | Gesamt
+  PB2019_TZ-2      Tabelle Z-2    S.22+23    104 Werte, Zeilen: Energiewirtschaft | Industrie | GHD | Haushalte | Verkehr | Diffuse Emissionen aus Brennstoffen | Industrieprozesse | Landwirtschaft | Abfallwirtschaft | Gesamt | LULUCF | Internationaler Luft- und Seeverkehr | Gesamt inklusive nachricht-
+  PB2019k_T4       Tabelle 4      S.17        88 Werte, Zeilen: Energiewirtschaft | Industrie | Gebäude | Verkehr | Landwirtschaft | Teilsumme | Sonstige | Gesamt | LULUCF | Internationaler Luft- und Seeverkehr | Gesamt inkl. nachrichtlich
+  PB2021_T1        Tabelle 1      S.26        40 Werte, Zeilen: Energiewirtschaft | Industrie | Gebäude | Verkehr | Landwirtschaft | Abfallwirtschaft & Sonstige | Gesamt | Gesamt Sensitivität
+  PB2021_T126      Tabelle 126    S.325+326  111 Werte, Zeilen: Energiewirtschaft | Industrie | Gebäude | Verkehr | Landwirtschaft | Abfallwirtschaft und Sonstiges | Gesamt | Jahresemissionsmenge BundesKlimaschutz gesetz 2021 Nachrichtlich: | LULUC F | Internationaler Luft- und Seeverkehr
+  PB2023_T1        Tabelle 1      S.24        14 Werte, Zeilen: Gesamt
+  PB2023_T17       Tabelle 17     S.74       126 Werte, Zeilen: Energiewirtschaft | Industrie | Gebäude | Verkehr | Landwirtschaft | Abfallwirtschaft und Sonstiges | Gesamt | LULUCF | Internationaler Luft- und Seever­ kehr
+  Verworfene Zahlenzeilen ohne Beschriftung: 34 (siehe extraktion_verworfene_zeilen.csv)
+     tabelle_id seite   y                                              text
+   PB2015o_T1-2    20 141                                 Mio. t CO 2 -Äqu.
+    PB2015o_A-5   216 115                                 Mio. t CO 2 -Äqu.
+    PB2015o_A-7   218 394                                 Mio. t CO 2 -Äqu.
+    PB2015o_A-7   218 645                                                 7
+   PB2015s_T1-2    23 182                                 Mio. t CO 2 -Äqu.
+   PB2015s_T1-3    24 348                                 Mio. t CO 2 -Äqu.
+  PB2015s_A-5-9   298 250                                 Mio. t CO 2 -Äqu.
+  PB2015s_A-5-9   298 499           31,4 33,7 33,8 36,0 39,0 41,6 43,6 44,9
+  PB2015s_A-5-9   298 543 1.025,8 980,1 972,9 943,4 879,5 831,8 759,2 696,3
+ PB2015s_A-5-10   299 113                                 Mio. t CO 2 -Äqu.
+ PB2015s_A-5-10   299 410           31,4 33,7 33,8 36,0 39,0 41,6 43,6 44,9
+ PB2015s_A-5-10   299 454 1.025,8 980,1 972,9 942,4 828,1 762,6 684,9 636,3
+ PB2015s_A-5-12   301 382                                 Mio. t CO 2 -Äqu.
+ PB2015s_A-5-12   301 632                                                 7
+ PB2015s_A-5-12   302  95                                 Mio. t CO 2 -Äqu.
+ PB2015s_A-5-14   303 308                                 Mio. t CO 2 -Äqu.
+ PB2015s_A-5-14   303 559                                                 7
+ PB2015s_A-5-14   304  95                                 Mio. t CO 2 -Äqu.
+    PB2017_T1-2    28 619                                         Mt CO 2 e
+    PB2017_T1-3    30 587                                         Mt CO 2 e
+   PB2017_A-5-3   293 159                                                 2
+   PB2017_A-5-4   294 117                                         Mt CO 2 e
+    PB2019_TZ-2    22 439                                         Mt CO 2 e
+     PB2019k_T4    17 293                                         Mt CO 2 e
+    PB2021_T126   325 530                                   Mio. t CO 2 -Äq
+     PB2023_T17    74 122                                              2030
+     PB2023_T17    74 143                                  Mio. t CO 2 -Äq.
+     PB2023_T17    74 174                                             108,1
+     PB2023_T17    74 217                                             119,4
+     PB2023_T17    74 260                                              65,9
+     PB2023_T17    74 303                                              83,7
+     PB2023_T17    74 346                                              57,3
+     PB2023_T17    74 390                                               5,0
+     PB2023_T17    74 433                                             439,5
+== SAP 3.5.1: Datenanhang PB2023 (Kernindikatoren v2.0 korrigiert) ==
+  392 Werte (Jahre 2023–2050), Blöcke: Gesamt, Energiewirtschaft, Industrie, Gebäude, Verkehr, Landwirtschaft, Abfallwirtschaft und Sonstiges
+
+== SAP 3.5.1: Abgleich gegen EEA-Projektionsdatenbank ==
+     tabelle_id                                                       status  n
+    PB2015o_A-5                                                    DIFFERENZ  6
+    PB2015o_A-5 kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet)  2
+    PB2015o_A-7 kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet)  2
+    PB2015o_A-7                         übereinstimmend (Rundung <= 0,05 Mt)  6
+   PB2015o_T1-2                                                    DIFFERENZ  6
+   PB2015o_T1-2 kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet)  2
+ PB2015s_A-5-10 kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet)  8
+ PB2015s_A-5-12 kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet)  2
+ PB2015s_A-5-12                         übereinstimmend (Rundung <= 0,05 Mt)  6
+ PB2015s_A-5-14 kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet)  8
+  PB2015s_A-5-9                                                    DIFFERENZ  6
+  PB2015s_A-5-9 kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet)  2
+   PB2015s_T1-2                                                    DIFFERENZ  6
+   PB2015s_T1-2 kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet)  2
+   PB2015s_T1-3 kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet)  8
+   PB2017_A-5-3 kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet)  3
+   PB2017_A-5-3                         übereinstimmend (Rundung <= 0,05 Mt)  5
+   PB2017_A-5-4 kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet)  3
+   PB2017_A-5-4                         übereinstimmend (Rundung <= 0,05 Mt)  5
+    PB2017_T1-2 kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet)  3
+    PB2017_T1-2                         übereinstimmend (Rundung <= 0,05 Mt)  5
+    PB2017_T1-3 kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet)  3
+    PB2017_T1-3                         übereinstimmend (Rundung <= 0,05 Mt)  5
+    PB2019_TZ-2 kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet)  3
+    PB2019_TZ-2                         übereinstimmend (Rundung <= 0,05 Mt)  5
+     PB2019k_T4 kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet)  3
+     PB2019k_T4                         übereinstimmend (Rundung <= 0,05 Mt)  5
+      PB2021_T1                         übereinstimmend (Rundung <= 0,05 Mt)  5
+    PB2021_T126                         übereinstimmend (Rundung <= 0,05 Mt) 14
+      PB2023_T1 kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet)  2
+      PB2023_T1                         übereinstimmend (Rundung <= 0,05 Mt) 12
+     PB2023_T17 kein EEA-Meldewert (nur Gapfilling oder Jahr nicht gemeldet)  2
+     PB2023_T17                         übereinstimmend (Rundung <= 0,05 Mt) 12
+ PB2023x_Blatt1                         übereinstimmend (Rundung <= 0,05 Mt) 56
+     tabelle_id                             status  n
+    PB2015o_A-7                 kein EEA-Meldewert 26
+    PB2015o_A-7                    übereinstimmend 30
+   PB2015o_T1-2 abweichend (Abgrenzung/GWP prüfen) 19
+   PB2015o_T1-2                 kein EEA-Meldewert 26
+   PB2015o_T1-2                    übereinstimmend 11
+ PB2015s_A-5-12                 kein EEA-Meldewert 26
+ PB2015s_A-5-12                    übereinstimmend 30
+ PB2015s_A-5-14                 kein EEA-Meldewert 56
+   PB2015s_T1-2 abweichend (Abgrenzung/GWP prüfen) 19
+   PB2015s_T1-2                 kein EEA-Meldewert 26
+   PB2015s_T1-2                    übereinstimmend 11
+   PB2015s_T1-3                 kein EEA-Meldewert 56
+    PB2017_T1-2                 kein EEA-Meldewert 21
+    PB2017_T1-2                    übereinstimmend 35
+    PB2017_T1-3                 kein EEA-Meldewert 21
+    PB2017_T1-3                    übereinstimmend 35
+    PB2019_TZ-2                 kein EEA-Meldewert 21
+    PB2019_TZ-2                    übereinstimmend 35
+
+== SAP 3.5.1: Berichtsinterne Doppelangaben ==
+    tabelle_a      tabelle_b                    status  n
+  PB2015o_A-5  PB2015s_A-5-9                 DIFFERENZ 32
+  PB2015o_A-5  PB2015s_A-5-9 übereinstimmend (<= 0,05) 32
+  PB2015o_A-7 PB2015s_A-5-12 übereinstimmend (<= 0,05) 87
+ PB2015o_T1-2    PB2015o_A-5 übereinstimmend (<= 0,05)  8
+ PB2015o_T1-2   PB2015s_T1-2 übereinstimmend (<= 0,05) 88
+ PB2015s_T1-3 PB2015s_A-5-10 übereinstimmend (<= 0,05)  8
+  PB2017_T1-2   PB2017_A-5-3 übereinstimmend (<= 0,05) 16
+  PB2017_T1-3   PB2017_A-5-4 übereinstimmend (<= 0,05) 16
+  PB2019_TZ-2     PB2019k_T4 übereinstimmend (<= 0,05) 16
+    PB2021_T1    PB2021_T126 übereinstimmend (<= 0,05) 35
+   PB2023_T17      PB2023_T1 übereinstimmend (<= 0,05) 14
+   PB2023_T17 PB2023x_Blatt1 übereinstimmend (<= 0,05) 84
+Differenzen im Einzelnen:
+   tabelle_a     tabelle_b szenario               sek jahr wert_a wert_b diff
+ PB2015o_A-5 PB2015s_A-5-9      MMS Energiewirtschaft 2005  395.0  396.5 -1.5
+ PB2015o_A-5 PB2015s_A-5-9      MMS Energiewirtschaft 2010  366.9  368.1 -1.2
+ PB2015o_A-5 PB2015s_A-5-9      MMS Energiewirtschaft 2012  375.4  376.6 -1.2
+ PB2015o_A-5 PB2015s_A-5-9      MMS Energiewirtschaft 2015  349.0  350.1 -1.1
+ PB2015o_A-5 PB2015s_A-5-9      MMS Energiewirtschaft 2020  311.7  312.9 -1.2
+ PB2015o_A-5 PB2015s_A-5-9      MMS Energiewirtschaft 2025  296.5  297.7 -1.2
+ PB2015o_A-5 PB2015s_A-5-9      MMS Energiewirtschaft 2030  253.3  254.5 -1.2
+ PB2015o_A-5 PB2015s_A-5-9      MMS Energiewirtschaft 2035  211.5  212.8 -1.3
+ PB2015o_A-5 PB2015s_A-5-9      MMS           Verkehr 2005  161.8  157.5  4.3
+ PB2015o_A-5 PB2015s_A-5-9      MMS           Verkehr 2010  155.0  150.9  4.1
+ PB2015o_A-5 PB2015s_A-5-9      MMS           Verkehr 2012  155.5  151.3  4.2
+ PB2015o_A-5 PB2015s_A-5-9      MMS           Verkehr 2015  154.8  151.0  3.8
+ PB2015o_A-5 PB2015s_A-5-9      MMS           Verkehr 2020  148.2  144.3  3.9
+ PB2015o_A-5 PB2015s_A-5-9      MMS           Verkehr 2025  140.1  136.2  3.9
+ PB2015o_A-5 PB2015s_A-5-9      MMS           Verkehr 2030  132.7  128.8  3.9
+ PB2015o_A-5 PB2015s_A-5-9      MMS           Verkehr 2035  126.5  122.6  3.9
+ PB2015o_A-5 PB2015s_A-5-9      MMS               GHD 2005   47.8   45.7  2.1
+ PB2015o_A-5 PB2015s_A-5-9      MMS               GHD 2010   47.4   45.6  1.8
+ PB2015o_A-5 PB2015s_A-5-9      MMS               GHD 2012   45.6   43.9  1.7
+ PB2015o_A-5 PB2015s_A-5-9      MMS               GHD 2015   46.1   44.1  2.0
+ PB2015o_A-5 PB2015s_A-5-9      MMS               GHD 2020   42.1   40.2  1.9
+ PB2015o_A-5 PB2015s_A-5-9      MMS               GHD 2025   37.4   35.9  1.5
+ PB2015o_A-5 PB2015s_A-5-9      MMS               GHD 2030   33.0   31.8  1.2
+ PB2015o_A-5 PB2015s_A-5-9      MMS               GHD 2035   28.4   27.7  0.7
+ PB2015o_A-5 PB2015s_A-5-9      MMS    Landwirtschaft 2005   71.4   76.2 -4.8
+ PB2015o_A-5 PB2015s_A-5-9      MMS    Landwirtschaft 2010   68.4   73.1 -4.7
+ PB2015o_A-5 PB2015s_A-5-9      MMS    Landwirtschaft 2012   69.5   74.0 -4.5
+ PB2015o_A-5 PB2015s_A-5-9      MMS    Landwirtschaft 2015   70.1   74.8 -4.7
+ PB2015o_A-5 PB2015s_A-5-9      MMS    Landwirtschaft 2020   71.2   75.7 -4.5
+ PB2015o_A-5 PB2015s_A-5-9      MMS    Landwirtschaft 2025   71.7   75.9 -4.2
+ PB2015o_A-5 PB2015s_A-5-9      MMS    Landwirtschaft 2030   72.2   76.2 -4.0
+ PB2015o_A-5 PB2015s_A-5-9      MMS    Landwirtschaft 2035   72.7   76.2 -3.5
+
+Extraktionstabelle: 2052 Zeilen -> output/extraktionstabelle_projektionen.csv
+Hinweise aus der Extraktion:
+     tabelle_id szenario     sektor_bericht jahr  wert
+    PB2015o_A-7      MMS             Gesamt 1990    NA
+    PB2015o_A-7      MMS Gesamt incl. nach- 1990    NA
+    PB2015o_A-7      MMS Gesamt incl. nach- 2005    NA
+ PB2015s_A-5-12      MMS             Gesamt 1990    NA
+ PB2015s_A-5-12      MMS Gesamt incl. nach- 1990    NA
+ PB2015s_A-5-12      MMS Gesamt incl. nach- 2005    NA
+ PB2015s_A-5-14     MWMS             Gesamt 1990    NA
+ PB2015s_A-5-14     MWMS Gesamt incl. nach- 1990    NA
+ PB2015s_A-5-14     MWMS Gesamt incl. nach- 2005    NA
+    PB2021_T126      MMS            Gebäude 2018 116.6
+                                                 hinweis
+ Zahl in PDF-Textebene abgeschnitten -> nicht übernommen
+ Zahl in PDF-Textebene abgeschnitten -> nicht übernommen
+ Zahl in PDF-Textebene abgeschnitten -> nicht übernommen
+ Zahl in PDF-Textebene abgeschnitten -> nicht übernommen
+ Zahl in PDF-Textebene abgeschnitten -> nicht übernommen
+ Zahl in PDF-Textebene abgeschnitten -> nicht übernommen
+ Zahl in PDF-Textebene abgeschnitten -> nicht übernommen
+ Zahl in PDF-Textebene abgeschnitten -> nicht übernommen
+ Zahl in PDF-Textebene abgeschnitten -> nicht übernommen
+          Original mit Punkt als Dezimaltrenner gedruckt
+
+== SAP 3.5.2: Summenprüfung je Tabelle, Szenario, Jahr ==
+     tabelle_id
+    PB2015o_A-5
+    PB2015o_A-7
+    PB2015o_A-7
+   PB2015o_T1-2
+ PB2015s_A-5-10
+ PB2015s_A-5-12
+ PB2015s_A-5-12
+ PB2015s_A-5-14
+ PB2015s_A-5-14
+  PB2015s_A-5-9
+   PB2015s_T1-2
+   PB2015s_T1-3
+   PB2017_A-5-3
+   PB2017_A-5-4
+    PB2017_T1-2
+    PB2017_T1-3
+    PB2019_TZ-2
+     PB2019k_T4
+      PB2021_T1
+    PB2021_T126
+      PB2023_T1
+     PB2023_T17
+ PB2023x_Blatt1
+                                                           status  n
+                                               bestanden (<= 1 %)  8
+                                               bestanden (<= 1 %)  7
+    kein Gesamtwert in der Tabelle (bzw. Gesamtwert nicht lesbar)  1
+                                               bestanden (<= 1 %)  8
+                                               bestanden (<= 1 %)  8
+                                               bestanden (<= 1 %)  7
+    kein Gesamtwert in der Tabelle (bzw. Gesamtwert nicht lesbar)  1
+                                               bestanden (<= 1 %)  7
+    kein Gesamtwert in der Tabelle (bzw. Gesamtwert nicht lesbar)  1
+                                               bestanden (<= 1 %)  8
+                                               bestanden (<= 1 %)  8
+                                               bestanden (<= 1 %)  8
+                                               bestanden (<= 1 %)  8
+                                               bestanden (<= 1 %)  8
+                                               bestanden (<= 1 %)  8
+                                               bestanden (<= 1 %)  8
+                                               bestanden (<= 1 %)  8
+                                               bestanden (<= 1 %)  8
+                                               bestanden (<= 1 %)  5
+                                               bestanden (<= 1 %) 14
+ nur Gesamtwert, keine Sektoren in dieser Tabelle (nicht prüfbar) 14
+                                               bestanden (<= 1 %) 14
+                                               bestanden (<= 1 %) 56
+Max. |Abweichung| (prüfbare Zellen): 0.056 % 
+
+== SAP 3.5.3: GWP-Metrik je Bericht/Submission (Fundstelle automatisch gesucht) ==
+                                            objekt
+                PB2015 (April 2015), Haupttabellen
+           PB2015 (April 2015), Anhang A6/Tab. A-7
+                PB2015 (Sept. 2016), Haupttabellen
+                                            PB2017
+                                            PB2019
+                                            PB2021
+                                            PB2023
+       Referenzinventar Submission 2026 (NIR 2026)
+                            PB2021 (Selbstaussage)
+ OWID total_ghg_excluding_lucf (Jones et al. 2025)
+                                gwp       pdf_seiten              status
+                           IPCC SAR               28 Fundstelle gefunden
+  IPCC AR4 (angenäherte Umrechnung)           6, 217 Fundstelle gefunden
+                           IPCC SAR               30 Fundstelle gefunden
+                           IPCC AR4               40 Fundstelle gefunden
+ IPCC AR4 (UNFCCC 2013 Richtlinien)               30 Fundstelle gefunden
+                           IPCC AR4               63 Fundstelle gefunden
+                           IPCC AR5               63 Fundstelle gefunden
+                           IPCC AR5 20, 38, 773, 775 Fundstelle gefunden
+ IPCC AR4 (UNFCCC 2013 Richtlinien)               37 Fundstelle gefunden
+                           IPCC AR6             <NA> Fundstelle gefunden
+
+== SAP 3.2: Referenzinventar Submission 2026 einlesen ==
+Es gab 35 Warnungen (Anzeige mit warnings())
+  Trendtabelle (15.01.2026), Zeile 'Total Emissions (without LULUCF)': 35 Jahre, 2024 = 649769.5 kt
+Es gab 36 Warnungen (Anzeige mit warnings())
+  Trendtabelle vs. KSG-Übersicht (1990–2024): identisch (<= 0,5 kt) 35
+  NIR 2026 (PDF-Seite 117): National Total (ohne LULUCF) 2024 = 649.770 kt; Trendtabelle: 649769.5 kt
+Warnmeldung:
+In prettyNum(.Internal(format(x, trim, digits, nsmall, width, 3L,  :
+  'big.mark' und 'decimal.mark' sind beide '.', was verwirrend sein könnte
+
+== SAP 3.5.4: UBA-Gesamtemissionen 2015–2024 vs. OWID ==
+ jahr   uba_mt owid_mt diff_mt diff_prozent                        status
+ 2015 898.6057 845.295  -53.31        -5.93 > 5 % -> im Bericht erläutern
+ 2016 899.0301 841.167  -57.86        -6.44 > 5 % -> im Bericht erläutern
+ 2017 886.2798 827.495  -58.78        -6.63 > 5 % -> im Bericht erläutern
+ 2018 850.1350 800.664  -49.47        -5.82 > 5 % -> im Bericht erläutern
+ 2019 798.0005 748.862  -49.14        -6.16 > 5 % -> im Bericht erläutern
+ 2020 730.9724 685.843  -45.13        -6.17 > 5 % -> im Bericht erläutern
+ 2021 762.7727 717.596  -45.18        -5.92 > 5 % -> im Bericht erläutern
+ 2022 749.2664 706.251  -43.02        -5.74 > 5 % -> im Bericht erläutern
+ 2023 669.5784 629.899  -39.68        -5.93 > 5 % -> im Bericht erläutern
+ 2024 649.7695 608.397  -41.37        -6.37 > 5 % -> im Bericht erläutern
+Abgrenzung: UBA = nationale Gesamtemissionen ohne LULUCF, GWP AR5 (Submission 2026);
+OWID total_ghg_excluding_lucf = Jones et al. (2025), GWP AR6, eigene Abgrenzung.
+
+== SAP 3.5.5: J_b je Bericht ==
+ bericht
+    2015
+    2015
+    2017
+    2017
+    2019
+    2019
+    2021
+    2021
+    2021
+    2023
+    2023
+    2023
+                                                                     beleg
+                          Ausgangsjahr der Modellierung 2012 (Stromsektor)
+                       Inventar Berichtsjahr 2014 (enthält Jahre bis 2012)
+                                        Ausgangsjahr der Modellierung 2014
+       historische Jahre 1990, 2005, 2010, 2014 aus Resubmission Nov. 2016
+                                        Ausgangsjahr der Modellierung 2016
+              historische Jahre 1990, 2005, 2010, 2016 aus Submission 2018
+                                        Ausgangsjahr der Modellierung 2018
+                              Basisjahr 2018 aus Inventar Stand 18.03.2020
+ Tab. 126: Werte 2020 = UBA-Vorjahresschätzung (historisch, kein Inventar)
+                                        Ausgangsjahr der Modellierung 2019
+                                                Tabellen: 'Basisjahr 2019'
+                     Inventar Berichtsjahr 2022: Daten 1990–2020 verwendet
+                             pdf_seiten              status
+                                     81 Fundstelle gefunden
+                                     28 Fundstelle gefunden
+                                    168 Fundstelle gefunden
+ 226, 227, 228, 229, 230, 231, 234, 235 Fundstelle gefunden
+                                    141 Fundstelle gefunden
+                                    183 Fundstelle gefunden
+                                     71 Fundstelle gefunden
+                                     35 Fundstelle gefunden
+      111, 180, 225, 272, 299, 326, 328 Fundstelle gefunden
+                                    254 Fundstelle gefunden
+                                     24 Fundstelle gefunden
+                                     63 Fundstelle gefunden
+ bericht  jb_kandidaten jb_eindeutig
+    2015           2012         TRUE
+    2017           2014         TRUE
+    2019           2016         TRUE
+    2021 2018 oder 2020        FALSE
+    2023 2019 oder 2020        FALSE
+
+*** STOPP nach SAP 3.5.5: J_b nicht eindeutig für Bericht(e) 2021, 2023 -> Rückfrage an Daniel vor jeder Auswertung. ***
+
+== SAP 3.5.6: Verfügbarkeit P(b,s,J_b,k) (je J_b-Kandidat) ==
+ bericht   jb     tabelle_id szenario sektoren mit_P_Jb
+    2015 2012    PB2015o_A-5      MMS        8        8
+    2015 2012    PB2015o_A-7      MMS       11       11
+    2015 2012   PB2015o_T1-2      MMS       11       11
+    2015 2012 PB2015s_A-5-10     MWMS        8        8
+    2015 2012 PB2015s_A-5-12      MMS       11       11
+    2015 2012 PB2015s_A-5-14     MWMS       11       11
+    2015 2012  PB2015s_A-5-9      MMS        8        8
+    2015 2012   PB2015s_T1-2      MMS       11       11
+    2015 2012   PB2015s_T1-3     MWMS       11       11
+    2017 2014   PB2017_A-5-3      MMS        7        7
+    2017 2014   PB2017_A-5-4     MWMS        7        7
+    2017 2014    PB2017_T1-2      MMS       10       10
+    2017 2014    PB2017_T1-3     MWMS       10       10
+    2019 2016    PB2019_TZ-2      MMS       10       10
+    2019 2016     PB2019k_T4      MMS        7        7
+    2021 2018      PB2021_T1      MMS        7        7
+    2021 2018    PB2021_T126      MMS        7        7
+    2021 2020      PB2021_T1      MMS        7        0
+    2021 2020    PB2021_T126      MMS        7        7
+    2023 2019      PB2023_T1      MMS        1        1
+    2023 2019      PB2023_T1     MWMS        1        1
+    2023 2019     PB2023_T17      MMS        7        7
+    2023 2019     PB2023_T17     MWMS        7        7
+    2023 2019 PB2023x_Blatt1      MMS        7        0
+    2023 2019 PB2023x_Blatt1     MWMS        7        0
+    2023 2020      PB2023_T1      MMS        1        0
+    2023 2020      PB2023_T1     MWMS        1        0
+    2023 2020     PB2023_T17      MMS        7        0
+    2023 2020     PB2023_T17     MWMS        7        0
+    2023 2020 PB2023x_Blatt1      MMS        7        0
+    2023 2020 PB2023x_Blatt1     MWMS        7        0
+
+Szenarien je Bericht:
+ bericht szenarien
+    2015 MMS, MWMS
+    2017 MMS, MWMS
+    2019       MMS
+    2021       MMS
+    2023 MMS, MWMS
+                                                                              fassungen
+ PB2015, Fassung April 2015 (nur MMS) | PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'
+                                                                                 PB2017
+                     PB2019 | PB2019 (Teilbericht KSP-Struktur, Climate Change 33/2019)
+                                                                                 PB2021
+                           PB2023 | PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert)
+
+Explizit ausgewiesene projizierte Jahre 2015–2024 (Gesamt):
+ bericht szenario                   quelle_typ projizierte_jahre_2015_2024
+    2015      MMS                  PDF-Tabelle                  2015, 2020
+    2015     MWMS                  PDF-Tabelle                  2015, 2020
+    2017      MMS                  PDF-Tabelle                        2020
+    2017     MWMS                  PDF-Tabelle                        2020
+    2019      MMS                  PDF-Tabelle                        2020
+    2021      MMS                  PDF-Tabelle      2021, 2022, 2023, 2024
+    2023      MMS amtlicher Datenanhang (xlsx)                  2023, 2024
+    2023     MWMS amtlicher Datenanhang (xlsx)                  2023, 2024
+
+Fertig. Ausgaben in C:/Users/dsaur/klima-evidenzcheck/Analysen/2026-10-prognose-check-projektionsberichte/output 

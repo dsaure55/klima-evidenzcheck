@@ -1,0 +1,230 @@
+bericht,tabelle_id,fassung,szenario,sektorsystem,sektor_bericht,gwp,jb,P_Jb_wert,P_Jb_vorhanden,jb_eindeutig
+2015,PB2015o_A-5,"PB2015, Fassung April 2015 (nur MMS)",MMS,Sektorzuschnitt BMUB,Energiewirtschaft,IPCC SAR,2012,375.4,TRUE,TRUE
+2015,PB2015o_A-5,"PB2015, Fassung April 2015 (nur MMS)",MMS,Sektorzuschnitt BMUB,GHD,IPCC SAR,2012,45.6,TRUE,TRUE
+2015,PB2015o_A-5,"PB2015, Fassung April 2015 (nur MMS)",MMS,Sektorzuschnitt BMUB,Gesamt,IPCC SAR,2012,939.1,TRUE,TRUE
+2015,PB2015o_A-5,"PB2015, Fassung April 2015 (nur MMS)",MMS,Sektorzuschnitt BMUB,Haushalte,IPCC SAR,2012,94.5,TRUE,TRUE
+2015,PB2015o_A-5,"PB2015, Fassung April 2015 (nur MMS)",MMS,Sektorzuschnitt BMUB,Industrie,IPCC SAR,2012,185.1,TRUE,TRUE
+2015,PB2015o_A-5,"PB2015, Fassung April 2015 (nur MMS)",MMS,Sektorzuschnitt BMUB,Landwirtschaft,IPCC SAR,2012,69.5,TRUE,TRUE
+2015,PB2015o_A-5,"PB2015, Fassung April 2015 (nur MMS)",MMS,Sektorzuschnitt BMUB,Verkehr,IPCC SAR,2012,155.5,TRUE,TRUE
+2015,PB2015o_A-5,"PB2015, Fassung April 2015 (nur MMS)",MMS,Sektorzuschnitt BMUB,Übrige,IPCC SAR,2012,13.6,TRUE,TRUE
+2015,PB2015o_A-7,"PB2015, Fassung April 2015 (nur MMS)",MMS,Quellbereiche PB2015,Abfallwirtschaft,IPCC AR4 (Umrechnung Anhang A6),2012,14,TRUE,TRUE
+2015,PB2015o_A-7,"PB2015, Fassung April 2015 (nur MMS)",MMS,Quellbereiche PB2015,Energiewirtschaft,IPCC AR4 (Umrechnung Anhang A6),2012,365,TRUE,TRUE
+2015,PB2015o_A-7,"PB2015, Fassung April 2015 (nur MMS)",MMS,Quellbereiche PB2015,Flüchtige Emissionen aus Energiesektoren,IPCC AR4 (Umrechnung Anhang A6),2012,12.4,TRUE,TRUE
+2015,PB2015o_A-7,"PB2015, Fassung April 2015 (nur MMS)",MMS,Quellbereiche PB2015,GHD,IPCC AR4 (Umrechnung Anhang A6),2012,45.6,TRUE,TRUE
+2015,PB2015o_A-7,"PB2015, Fassung April 2015 (nur MMS)",MMS,Quellbereiche PB2015,Gesamt,IPCC AR4 (Umrechnung Anhang A6),2012,933,TRUE,TRUE
+2015,PB2015o_A-7,"PB2015, Fassung April 2015 (nur MMS)",MMS,Quellbereiche PB2015,Haushalte,IPCC AR4 (Umrechnung Anhang A6),2012,94.6,TRUE,TRUE
+2015,PB2015o_A-7,"PB2015, Fassung April 2015 (nur MMS)",MMS,Quellbereiche PB2015,Industrie,IPCC AR4 (Umrechnung Anhang A6),2012,115.1,TRUE,TRUE
+2015,PB2015o_A-7,"PB2015, Fassung April 2015 (nur MMS)",MMS,Quellbereiche PB2015,Industrieprozesse,IPCC AR4 (Umrechnung Anhang A6),2012,69.3,TRUE,TRUE
+2015,PB2015o_A-7,"PB2015, Fassung April 2015 (nur MMS)",MMS,Quellbereiche PB2015,Landwirtschaft,IPCC AR4 (Umrechnung Anhang A6),2012,59.9,TRUE,TRUE
+2015,PB2015o_A-7,"PB2015, Fassung April 2015 (nur MMS)",MMS,Quellbereiche PB2015,Produktverwendung,IPCC AR4 (Umrechnung Anhang A6),2012,1.7,TRUE,TRUE
+2015,PB2015o_A-7,"PB2015, Fassung April 2015 (nur MMS)",MMS,Quellbereiche PB2015,Verkehr,IPCC AR4 (Umrechnung Anhang A6),2012,155.5,TRUE,TRUE
+2015,PB2015o_T1-2,"PB2015, Fassung April 2015 (nur MMS)",MMS,Quellbereiche PB2015,Abfallwirtschaft,IPCC SAR,2012,13.6,TRUE,TRUE
+2015,PB2015o_T1-2,"PB2015, Fassung April 2015 (nur MMS)",MMS,Quellbereiche PB2015,Energiewirtschaft,IPCC SAR,2012,364.8,TRUE,TRUE
+2015,PB2015o_T1-2,"PB2015, Fassung April 2015 (nur MMS)",MMS,Quellbereiche PB2015,Flüchtige Emissionen aus Energiesektoren,IPCC SAR,2012,10.6,TRUE,TRUE
+2015,PB2015o_T1-2,"PB2015, Fassung April 2015 (nur MMS)",MMS,Quellbereiche PB2015,GHD,IPCC SAR,2012,45.6,TRUE,TRUE
+2015,PB2015o_T1-2,"PB2015, Fassung April 2015 (nur MMS)",MMS,Quellbereiche PB2015,Gesamt,IPCC SAR,2012,939.1,TRUE,TRUE
+2015,PB2015o_T1-2,"PB2015, Fassung April 2015 (nur MMS)",MMS,Quellbereiche PB2015,Haushalte,IPCC SAR,2012,94.5,TRUE,TRUE
+2015,PB2015o_T1-2,"PB2015, Fassung April 2015 (nur MMS)",MMS,Quellbereiche PB2015,Industrie,IPCC SAR,2012,115.1,TRUE,TRUE
+2015,PB2015o_T1-2,"PB2015, Fassung April 2015 (nur MMS)",MMS,Quellbereiche PB2015,Industrieprozesse,IPCC SAR,2012,68.3,TRUE,TRUE
+2015,PB2015o_T1-2,"PB2015, Fassung April 2015 (nur MMS)",MMS,Quellbereiche PB2015,Landwirtschaft,IPCC SAR,2012,69.5,TRUE,TRUE
+2015,PB2015o_T1-2,"PB2015, Fassung April 2015 (nur MMS)",MMS,Quellbereiche PB2015,Produktverwendung,IPCC SAR,2012,1.8,TRUE,TRUE
+2015,PB2015o_T1-2,"PB2015, Fassung April 2015 (nur MMS)",MMS,Quellbereiche PB2015,Verkehr,IPCC SAR,2012,155.5,TRUE,TRUE
+2015,PB2015s_A-5-10,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MWMS,Sektorzuschnitt BMUB,Energiewirtschaft,IPCC SAR,2012,376.6,TRUE,TRUE
+2015,PB2015s_A-5-10,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MWMS,Sektorzuschnitt BMUB,GHD,IPCC SAR,2012,43.9,TRUE,TRUE
+2015,PB2015s_A-5-10,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MWMS,Sektorzuschnitt BMUB,Gesamt,IPCC SAR,2012,939.1,TRUE,TRUE
+2015,PB2015s_A-5-10,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MWMS,Sektorzuschnitt BMUB,Haushalte,IPCC SAR,2012,94.5,TRUE,TRUE
+2015,PB2015s_A-5-10,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MWMS,Sektorzuschnitt BMUB,Industrie,IPCC SAR,2012,185.1,TRUE,TRUE
+2015,PB2015s_A-5-10,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MWMS,Sektorzuschnitt BMUB,Landwirtschaft,IPCC SAR,2012,74,TRUE,TRUE
+2015,PB2015s_A-5-10,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MWMS,Sektorzuschnitt BMUB,Verkehr,IPCC SAR,2012,151.3,TRUE,TRUE
+2015,PB2015s_A-5-10,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MWMS,Sektorzuschnitt BMUB,Übrige,IPCC SAR,2012,13.6,TRUE,TRUE
+2015,PB2015s_A-5-12,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MMS,Quellbereiche PB2015,Abfallwirtschaft,IPCC AR4 (Umrechnung Anhang A6),2012,14,TRUE,TRUE
+2015,PB2015s_A-5-12,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MMS,Quellbereiche PB2015,Energiewirtschaft,IPCC AR4 (Umrechnung Anhang A6),2012,365,TRUE,TRUE
+2015,PB2015s_A-5-12,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MMS,Quellbereiche PB2015,Flüchtige Emissionen aus Energiesektoren,IPCC AR4 (Umrechnung Anhang A6),2012,12.4,TRUE,TRUE
+2015,PB2015s_A-5-12,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MMS,Quellbereiche PB2015,GHD,IPCC AR4 (Umrechnung Anhang A6),2012,45.6,TRUE,TRUE
+2015,PB2015s_A-5-12,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MMS,Quellbereiche PB2015,Gesamt,IPCC AR4 (Umrechnung Anhang A6),2012,933,TRUE,TRUE
+2015,PB2015s_A-5-12,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MMS,Quellbereiche PB2015,Haushalte,IPCC AR4 (Umrechnung Anhang A6),2012,94.6,TRUE,TRUE
+2015,PB2015s_A-5-12,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MMS,Quellbereiche PB2015,Industrie,IPCC AR4 (Umrechnung Anhang A6),2012,115.1,TRUE,TRUE
+2015,PB2015s_A-5-12,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MMS,Quellbereiche PB2015,Industrieprozesse,IPCC AR4 (Umrechnung Anhang A6),2012,69.3,TRUE,TRUE
+2015,PB2015s_A-5-12,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MMS,Quellbereiche PB2015,Landwirtschaft,IPCC AR4 (Umrechnung Anhang A6),2012,59.9,TRUE,TRUE
+2015,PB2015s_A-5-12,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MMS,Quellbereiche PB2015,Produktverwendung,IPCC AR4 (Umrechnung Anhang A6),2012,1.7,TRUE,TRUE
+2015,PB2015s_A-5-12,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MMS,Quellbereiche PB2015,Verkehr,IPCC AR4 (Umrechnung Anhang A6),2012,155.5,TRUE,TRUE
+2015,PB2015s_A-5-14,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MWMS,Quellbereiche PB2015,Abfallwirtschaft,IPCC AR4 (Umrechnung Anhang A6),2012,14,TRUE,TRUE
+2015,PB2015s_A-5-14,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MWMS,Quellbereiche PB2015,Energiewirtschaft,IPCC AR4 (Umrechnung Anhang A6),2012,365,TRUE,TRUE
+2015,PB2015s_A-5-14,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MWMS,Quellbereiche PB2015,Flüchtige Emissionen aus Energiesektoren,IPCC AR4 (Umrechnung Anhang A6),2012,12.4,TRUE,TRUE
+2015,PB2015s_A-5-14,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MWMS,Quellbereiche PB2015,GHD,IPCC AR4 (Umrechnung Anhang A6),2012,45.6,TRUE,TRUE
+2015,PB2015s_A-5-14,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MWMS,Quellbereiche PB2015,Gesamt,IPCC AR4 (Umrechnung Anhang A6),2012,933,TRUE,TRUE
+2015,PB2015s_A-5-14,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MWMS,Quellbereiche PB2015,Haushalte,IPCC AR4 (Umrechnung Anhang A6),2012,94.6,TRUE,TRUE
+2015,PB2015s_A-5-14,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MWMS,Quellbereiche PB2015,Industrie,IPCC AR4 (Umrechnung Anhang A6),2012,115.1,TRUE,TRUE
+2015,PB2015s_A-5-14,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MWMS,Quellbereiche PB2015,Industrieprozesse,IPCC AR4 (Umrechnung Anhang A6),2012,69.3,TRUE,TRUE
+2015,PB2015s_A-5-14,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MWMS,Quellbereiche PB2015,Landwirtschaft,IPCC AR4 (Umrechnung Anhang A6),2012,59.9,TRUE,TRUE
+2015,PB2015s_A-5-14,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MWMS,Quellbereiche PB2015,Produktverwendung,IPCC AR4 (Umrechnung Anhang A6),2012,1.7,TRUE,TRUE
+2015,PB2015s_A-5-14,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MWMS,Quellbereiche PB2015,Verkehr,IPCC AR4 (Umrechnung Anhang A6),2012,155.5,TRUE,TRUE
+2015,PB2015s_A-5-9,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MMS,Sektorzuschnitt BMUB,Energiewirtschaft,IPCC SAR,2012,376.6,TRUE,TRUE
+2015,PB2015s_A-5-9,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MMS,Sektorzuschnitt BMUB,GHD,IPCC SAR,2012,43.9,TRUE,TRUE
+2015,PB2015s_A-5-9,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MMS,Sektorzuschnitt BMUB,Gesamt,IPCC SAR,2012,939.1,TRUE,TRUE
+2015,PB2015s_A-5-9,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MMS,Sektorzuschnitt BMUB,Haushalte,IPCC SAR,2012,94.5,TRUE,TRUE
+2015,PB2015s_A-5-9,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MMS,Sektorzuschnitt BMUB,Industrie,IPCC SAR,2012,185.1,TRUE,TRUE
+2015,PB2015s_A-5-9,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MMS,Sektorzuschnitt BMUB,Landwirtschaft,IPCC SAR,2012,74,TRUE,TRUE
+2015,PB2015s_A-5-9,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MMS,Sektorzuschnitt BMUB,Verkehr,IPCC SAR,2012,151.3,TRUE,TRUE
+2015,PB2015s_A-5-9,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MMS,Sektorzuschnitt BMUB,Übrige,IPCC SAR,2012,13.6,TRUE,TRUE
+2015,PB2015s_T1-2,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MMS,Quellbereiche PB2015,Abfallwirtschaft,IPCC SAR,2012,13.6,TRUE,TRUE
+2015,PB2015s_T1-2,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MMS,Quellbereiche PB2015,Energiewirtschaft,IPCC SAR,2012,364.8,TRUE,TRUE
+2015,PB2015s_T1-2,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MMS,Quellbereiche PB2015,Flüchtige Emissionen aus Energiesektoren,IPCC SAR,2012,10.6,TRUE,TRUE
+2015,PB2015s_T1-2,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MMS,Quellbereiche PB2015,GHD,IPCC SAR,2012,45.6,TRUE,TRUE
+2015,PB2015s_T1-2,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MMS,Quellbereiche PB2015,Gesamt,IPCC SAR,2012,939.1,TRUE,TRUE
+2015,PB2015s_T1-2,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MMS,Quellbereiche PB2015,Haushalte,IPCC SAR,2012,94.5,TRUE,TRUE
+2015,PB2015s_T1-2,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MMS,Quellbereiche PB2015,Industrie,IPCC SAR,2012,115.1,TRUE,TRUE
+2015,PB2015s_T1-2,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MMS,Quellbereiche PB2015,Industrieprozesse,IPCC SAR,2012,68.3,TRUE,TRUE
+2015,PB2015s_T1-2,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MMS,Quellbereiche PB2015,Landwirtschaft,IPCC SAR,2012,69.5,TRUE,TRUE
+2015,PB2015s_T1-2,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MMS,Quellbereiche PB2015,Produktverwendung,IPCC SAR,2012,1.8,TRUE,TRUE
+2015,PB2015s_T1-2,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MMS,Quellbereiche PB2015,Verkehr,IPCC SAR,2012,155.5,TRUE,TRUE
+2015,PB2015s_T1-3,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MWMS,Quellbereiche PB2015,Abfallwirtschaft,IPCC SAR,2012,13.6,TRUE,TRUE
+2015,PB2015s_T1-3,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MWMS,Quellbereiche PB2015,Energiewirtschaft,IPCC SAR,2012,364.8,TRUE,TRUE
+2015,PB2015s_T1-3,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MWMS,Quellbereiche PB2015,Flüchtige Emissionen aus Energiesektoren,IPCC SAR,2012,10.6,TRUE,TRUE
+2015,PB2015s_T1-3,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MWMS,Quellbereiche PB2015,GHD,IPCC SAR,2012,45.6,TRUE,TRUE
+2015,PB2015s_T1-3,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MWMS,Quellbereiche PB2015,Gesamt,IPCC SAR,2012,939.1,TRUE,TRUE
+2015,PB2015s_T1-3,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MWMS,Quellbereiche PB2015,Haushalte,IPCC SAR,2012,94.5,TRUE,TRUE
+2015,PB2015s_T1-3,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MWMS,Quellbereiche PB2015,Industrie,IPCC SAR,2012,115.1,TRUE,TRUE
+2015,PB2015s_T1-3,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MWMS,Quellbereiche PB2015,Industrieprozesse,IPCC SAR,2012,68.3,TRUE,TRUE
+2015,PB2015s_T1-3,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MWMS,Quellbereiche PB2015,Landwirtschaft,IPCC SAR,2012,69.5,TRUE,TRUE
+2015,PB2015s_T1-3,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MWMS,Quellbereiche PB2015,Produktverwendung,IPCC SAR,2012,1.8,TRUE,TRUE
+2015,PB2015s_T1-3,"PB2015, Fassung Sept. 2016 'ergänzt durch MWMS'",MWMS,Quellbereiche PB2015,Verkehr,IPCC SAR,2012,155.5,TRUE,TRUE
+2017,PB2017_A-5-3,PB2017,MMS,KSP-2050-Sektoren,Energiewirtschaft,IPCC AR4,2014,358,TRUE,TRUE
+2017,PB2017_A-5-3,PB2017,MMS,KSP-2050-Sektoren,Gebäude,IPCC AR4,2014,118.9,TRUE,TRUE
+2017,PB2017_A-5-3,PB2017,MMS,KSP-2050-Sektoren,Gesamt,IPCC AR4,2014,901.8,TRUE,TRUE
+2017,PB2017_A-5-3,PB2017,MMS,KSP-2050-Sektoren,Industrie,IPCC AR4,2014,180.7,TRUE,TRUE
+2017,PB2017_A-5-3,PB2017,MMS,KSP-2050-Sektoren,Landwirtschaft,IPCC AR4,2014,72.6,TRUE,TRUE
+2017,PB2017_A-5-3,PB2017,MMS,KSP-2050-Sektoren,Sonstige,IPCC AR4,2014,11.6,TRUE,TRUE
+2017,PB2017_A-5-3,PB2017,MMS,KSP-2050-Sektoren,Verkehr,IPCC AR4,2014,159.9,TRUE,TRUE
+2017,PB2017_A-5-4,PB2017,MWMS,KSP-2050-Sektoren,Energiewirtschaft,IPCC AR4,2014,358,TRUE,TRUE
+2017,PB2017_A-5-4,PB2017,MWMS,KSP-2050-Sektoren,Gebäude,IPCC AR4,2014,118.9,TRUE,TRUE
+2017,PB2017_A-5-4,PB2017,MWMS,KSP-2050-Sektoren,Gesamt,IPCC AR4,2014,901.8,TRUE,TRUE
+2017,PB2017_A-5-4,PB2017,MWMS,KSP-2050-Sektoren,Industrie,IPCC AR4,2014,180.7,TRUE,TRUE
+2017,PB2017_A-5-4,PB2017,MWMS,KSP-2050-Sektoren,Landwirtschaft,IPCC AR4,2014,72.6,TRUE,TRUE
+2017,PB2017_A-5-4,PB2017,MWMS,KSP-2050-Sektoren,Sonstige,IPCC AR4,2014,11.6,TRUE,TRUE
+2017,PB2017_A-5-4,PB2017,MWMS,KSP-2050-Sektoren,Verkehr,IPCC AR4,2014,159.9,TRUE,TRUE
+2017,PB2017_T1-2,PB2017,MMS,Quellbereiche PB2017,Abfallwirtschaft,IPCC AR4,2014,11.6,TRUE,TRUE
+2017,PB2017_T1-2,PB2017,MMS,Quellbereiche PB2017,Diffuse Emissionen aus Brennstoffen,IPCC AR4,2014,10.5,TRUE,TRUE
+2017,PB2017_T1-2,PB2017,MMS,Quellbereiche PB2017,Energiewirtschaft,IPCC AR4,2014,346.3,TRUE,TRUE
+2017,PB2017_T1-2,PB2017,MMS,Quellbereiche PB2017,GHD,IPCC AR4,2014,39.5,TRUE,TRUE
+2017,PB2017_T1-2,PB2017,MMS,Quellbereiche PB2017,Gesamt,IPCC AR4,2014,901.8,TRUE,TRUE
+2017,PB2017_T1-2,PB2017,MMS,Quellbereiche PB2017,Haushalte,IPCC AR4,2014,85.2,TRUE,TRUE
+2017,PB2017_T1-2,PB2017,MMS,Quellbereiche PB2017,Industrie,IPCC AR4,2014,119.7,TRUE,TRUE
+2017,PB2017_T1-2,PB2017,MMS,Quellbereiche PB2017,Industrieprozesse,IPCC AR4,2014,61,TRUE,TRUE
+2017,PB2017_T1-2,PB2017,MMS,Quellbereiche PB2017,Landwirtschaft,IPCC AR4,2014,66.9,TRUE,TRUE
+2017,PB2017_T1-2,PB2017,MMS,Quellbereiche PB2017,Verkehr,IPCC AR4,2014,161.1,TRUE,TRUE
+2017,PB2017_T1-3,PB2017,MWMS,Quellbereiche PB2017,Abfallwirtschaft,IPCC AR4,2014,11.6,TRUE,TRUE
+2017,PB2017_T1-3,PB2017,MWMS,Quellbereiche PB2017,Diffuse Emissionen aus Brennstoffen,IPCC AR4,2014,10.5,TRUE,TRUE
+2017,PB2017_T1-3,PB2017,MWMS,Quellbereiche PB2017,Energiewirtschaft,IPCC AR4,2014,346.3,TRUE,TRUE
+2017,PB2017_T1-3,PB2017,MWMS,Quellbereiche PB2017,GHD,IPCC AR4,2014,39.5,TRUE,TRUE
+2017,PB2017_T1-3,PB2017,MWMS,Quellbereiche PB2017,Gesamt,IPCC AR4,2014,901.8,TRUE,TRUE
+2017,PB2017_T1-3,PB2017,MWMS,Quellbereiche PB2017,Haushalte,IPCC AR4,2014,85.2,TRUE,TRUE
+2017,PB2017_T1-3,PB2017,MWMS,Quellbereiche PB2017,Industrie,IPCC AR4,2014,119.7,TRUE,TRUE
+2017,PB2017_T1-3,PB2017,MWMS,Quellbereiche PB2017,Industrieprozesse,IPCC AR4,2014,61,TRUE,TRUE
+2017,PB2017_T1-3,PB2017,MWMS,Quellbereiche PB2017,Landwirtschaft,IPCC AR4,2014,66.9,TRUE,TRUE
+2017,PB2017_T1-3,PB2017,MWMS,Quellbereiche PB2017,Verkehr,IPCC AR4,2014,161.1,TRUE,TRUE
+2019,PB2019_TZ-2,PB2019,MMS,Quellbereiche PB2019,Abfallwirtschaft,IPCC AR4,2016,10.5,TRUE,TRUE
+2019,PB2019_TZ-2,PB2019,MMS,Quellbereiche PB2019,Diffuse Emissionen aus Brennstoffen,IPCC AR4,2016,10,TRUE,TRUE
+2019,PB2019_TZ-2,PB2019,MMS,Quellbereiche PB2019,Energiewirtschaft,IPCC AR4,2016,332.2,TRUE,TRUE
+2019,PB2019_TZ-2,PB2019,MMS,Quellbereiche PB2019,GHD,IPCC AR4,2016,45.1,TRUE,TRUE
+2019,PB2019_TZ-2,PB2019,MMS,Quellbereiche PB2019,Gesamt,IPCC AR4,2016,909.4,TRUE,TRUE
+2019,PB2019_TZ-2,PB2019,MMS,Quellbereiche PB2019,Haushalte,IPCC AR4,2016,91.5,TRUE,TRUE
+2019,PB2019_TZ-2,PB2019,MMS,Quellbereiche PB2019,Industrie,IPCC AR4,2016,126.4,TRUE,TRUE
+2019,PB2019_TZ-2,PB2019,MMS,Quellbereiche PB2019,Industrieprozesse,IPCC AR4,2016,61.8,TRUE,TRUE
+2019,PB2019_TZ-2,PB2019,MMS,Quellbereiche PB2019,Landwirtschaft,IPCC AR4,2016,65.2,TRUE,TRUE
+2019,PB2019_TZ-2,PB2019,MMS,Quellbereiche PB2019,Verkehr,IPCC AR4,2016,166.8,TRUE,TRUE
+2019,PB2019k_T4,"PB2019 (Teilbericht KSP-Struktur, Climate Change 33/2019)",MMS,KSP-2050-Sektoren,Energiewirtschaft,IPCC AR4,2016,343.4,TRUE,TRUE
+2019,PB2019k_T4,"PB2019 (Teilbericht KSP-Struktur, Climate Change 33/2019)",MMS,KSP-2050-Sektoren,Gebäude,IPCC AR4,2016,130,TRUE,TRUE
+2019,PB2019k_T4,"PB2019 (Teilbericht KSP-Struktur, Climate Change 33/2019)",MMS,KSP-2050-Sektoren,Gesamt,IPCC AR4,2016,909.4,TRUE,TRUE
+2019,PB2019k_T4,"PB2019 (Teilbericht KSP-Struktur, Climate Change 33/2019)",MMS,KSP-2050-Sektoren,Industrie,IPCC AR4,2016,188.2,TRUE,TRUE
+2019,PB2019k_T4,"PB2019 (Teilbericht KSP-Struktur, Climate Change 33/2019)",MMS,KSP-2050-Sektoren,Landwirtschaft,IPCC AR4,2016,71.8,TRUE,TRUE
+2019,PB2019k_T4,"PB2019 (Teilbericht KSP-Struktur, Climate Change 33/2019)",MMS,KSP-2050-Sektoren,Sonstige,IPCC AR4,2016,10.5,TRUE,TRUE
+2019,PB2019k_T4,"PB2019 (Teilbericht KSP-Struktur, Climate Change 33/2019)",MMS,KSP-2050-Sektoren,Verkehr,IPCC AR4,2016,165.6,TRUE,TRUE
+2021,PB2021_T1,PB2021,MMS,KSG-Sektoren,Abfallwirtschaft und Sonstiges,IPCC AR4,2018,9.7,TRUE,FALSE
+2021,PB2021_T1,PB2021,MMS,KSG-Sektoren,Energiewirtschaft,IPCC AR4,2018,305.1,TRUE,FALSE
+2021,PB2021_T1,PB2021,MMS,KSG-Sektoren,Gebäude,IPCC AR4,2018,116.6,TRUE,FALSE
+2021,PB2021_T1,PB2021,MMS,KSG-Sektoren,Gesamt,IPCC AR4,2018,858.3,TRUE,FALSE
+2021,PB2021_T1,PB2021,MMS,KSG-Sektoren,Industrie,IPCC AR4,2018,194.9,TRUE,FALSE
+2021,PB2021_T1,PB2021,MMS,KSG-Sektoren,Landwirtschaft,IPCC AR4,2018,69.8,TRUE,FALSE
+2021,PB2021_T1,PB2021,MMS,KSG-Sektoren,Verkehr,IPCC AR4,2018,162.3,TRUE,FALSE
+2021,PB2021_T126,PB2021,MMS,KSG-Sektoren,Abfallwirtschaft und Sonstiges,IPCC AR4,2018,9.7,TRUE,FALSE
+2021,PB2021_T126,PB2021,MMS,KSG-Sektoren,Energiewirtschaft,IPCC AR4,2018,305.1,TRUE,FALSE
+2021,PB2021_T126,PB2021,MMS,KSG-Sektoren,Gebäude,IPCC AR4,2018,116.6,TRUE,FALSE
+2021,PB2021_T126,PB2021,MMS,KSG-Sektoren,Gesamt,IPCC AR4,2018,858.3,TRUE,FALSE
+2021,PB2021_T126,PB2021,MMS,KSG-Sektoren,Industrie,IPCC AR4,2018,194.9,TRUE,FALSE
+2021,PB2021_T126,PB2021,MMS,KSG-Sektoren,Landwirtschaft,IPCC AR4,2018,69.8,TRUE,FALSE
+2021,PB2021_T126,PB2021,MMS,KSG-Sektoren,Verkehr,IPCC AR4,2018,162.3,TRUE,FALSE
+2021,PB2021_T1,PB2021,MMS,KSG-Sektoren,Abfallwirtschaft und Sonstiges,IPCC AR4,2020,NA,FALSE,FALSE
+2021,PB2021_T1,PB2021,MMS,KSG-Sektoren,Energiewirtschaft,IPCC AR4,2020,NA,FALSE,FALSE
+2021,PB2021_T1,PB2021,MMS,KSG-Sektoren,Gebäude,IPCC AR4,2020,NA,FALSE,FALSE
+2021,PB2021_T1,PB2021,MMS,KSG-Sektoren,Gesamt,IPCC AR4,2020,NA,FALSE,FALSE
+2021,PB2021_T1,PB2021,MMS,KSG-Sektoren,Industrie,IPCC AR4,2020,NA,FALSE,FALSE
+2021,PB2021_T1,PB2021,MMS,KSG-Sektoren,Landwirtschaft,IPCC AR4,2020,NA,FALSE,FALSE
+2021,PB2021_T1,PB2021,MMS,KSG-Sektoren,Verkehr,IPCC AR4,2020,NA,FALSE,FALSE
+2021,PB2021_T126,PB2021,MMS,KSG-Sektoren,Abfallwirtschaft und Sonstiges,IPCC AR4,2020,8.9,TRUE,FALSE
+2021,PB2021_T126,PB2021,MMS,KSG-Sektoren,Energiewirtschaft,IPCC AR4,2020,220.5,TRUE,FALSE
+2021,PB2021_T126,PB2021,MMS,KSG-Sektoren,Gebäude,IPCC AR4,2020,120,TRUE,FALSE
+2021,PB2021_T126,PB2021,MMS,KSG-Sektoren,Gesamt,IPCC AR4,2020,739.5,TRUE,FALSE
+2021,PB2021_T126,PB2021,MMS,KSG-Sektoren,Industrie,IPCC AR4,2020,178.1,TRUE,FALSE
+2021,PB2021_T126,PB2021,MMS,KSG-Sektoren,Landwirtschaft,IPCC AR4,2020,66.4,TRUE,FALSE
+2021,PB2021_T126,PB2021,MMS,KSG-Sektoren,Verkehr,IPCC AR4,2020,145.6,TRUE,FALSE
+2023,PB2023_T1,PB2023,MMS,KSG-Sektoren,Gesamt,IPCC AR5,2019,802,TRUE,FALSE
+2023,PB2023_T1,PB2023,MWMS,KSG-Sektoren,Gesamt,IPCC AR5,2019,802,TRUE,FALSE
+2023,PB2023_T17,PB2023,MMS,KSG-Sektoren,Abfallwirtschaft und Sonstiges,IPCC AR5,2019,10.1,TRUE,FALSE
+2023,PB2023_T17,PB2023,MMS,KSG-Sektoren,Energiewirtschaft,IPCC AR5,2019,259.5,TRUE,FALSE
+2023,PB2023_T17,PB2023,MMS,KSG-Sektoren,Gebäude,IPCC AR5,2019,121.4,TRUE,FALSE
+2023,PB2023_T17,PB2023,MMS,KSG-Sektoren,Gesamt,IPCC AR5,2019,802,TRUE,FALSE
+2023,PB2023_T17,PB2023,MMS,KSG-Sektoren,Industrie,IPCC AR5,2019,182.7,TRUE,FALSE
+2023,PB2023_T17,PB2023,MMS,KSG-Sektoren,Landwirtschaft,IPCC AR5,2019,64.4,TRUE,FALSE
+2023,PB2023_T17,PB2023,MMS,KSG-Sektoren,Verkehr,IPCC AR5,2019,163.8,TRUE,FALSE
+2023,PB2023_T17,PB2023,MWMS,KSG-Sektoren,Abfallwirtschaft und Sonstiges,IPCC AR5,2019,10.1,TRUE,FALSE
+2023,PB2023_T17,PB2023,MWMS,KSG-Sektoren,Energiewirtschaft,IPCC AR5,2019,259.5,TRUE,FALSE
+2023,PB2023_T17,PB2023,MWMS,KSG-Sektoren,Gebäude,IPCC AR5,2019,121.4,TRUE,FALSE
+2023,PB2023_T17,PB2023,MWMS,KSG-Sektoren,Gesamt,IPCC AR5,2019,802,TRUE,FALSE
+2023,PB2023_T17,PB2023,MWMS,KSG-Sektoren,Industrie,IPCC AR5,2019,182.7,TRUE,FALSE
+2023,PB2023_T17,PB2023,MWMS,KSG-Sektoren,Landwirtschaft,IPCC AR5,2019,64.4,TRUE,FALSE
+2023,PB2023_T17,PB2023,MWMS,KSG-Sektoren,Verkehr,IPCC AR5,2019,163.8,TRUE,FALSE
+2023,PB2023x_Blatt1,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MMS,KSG-Sektoren,Abfallwirtschaft und Sonstiges,IPCC AR5,2019,NA,FALSE,FALSE
+2023,PB2023x_Blatt1,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MMS,KSG-Sektoren,Energiewirtschaft,IPCC AR5,2019,NA,FALSE,FALSE
+2023,PB2023x_Blatt1,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MMS,KSG-Sektoren,Gebäude,IPCC AR5,2019,NA,FALSE,FALSE
+2023,PB2023x_Blatt1,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MMS,KSG-Sektoren,Gesamt,IPCC AR5,2019,NA,FALSE,FALSE
+2023,PB2023x_Blatt1,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MMS,KSG-Sektoren,Industrie,IPCC AR5,2019,NA,FALSE,FALSE
+2023,PB2023x_Blatt1,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MMS,KSG-Sektoren,Landwirtschaft,IPCC AR5,2019,NA,FALSE,FALSE
+2023,PB2023x_Blatt1,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MMS,KSG-Sektoren,Verkehr,IPCC AR5,2019,NA,FALSE,FALSE
+2023,PB2023x_Blatt1,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MWMS,KSG-Sektoren,Abfallwirtschaft und Sonstiges,IPCC AR5,2019,NA,FALSE,FALSE
+2023,PB2023x_Blatt1,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MWMS,KSG-Sektoren,Energiewirtschaft,IPCC AR5,2019,NA,FALSE,FALSE
+2023,PB2023x_Blatt1,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MWMS,KSG-Sektoren,Gebäude,IPCC AR5,2019,NA,FALSE,FALSE
+2023,PB2023x_Blatt1,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MWMS,KSG-Sektoren,Gesamt,IPCC AR5,2019,NA,FALSE,FALSE
+2023,PB2023x_Blatt1,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MWMS,KSG-Sektoren,Industrie,IPCC AR5,2019,NA,FALSE,FALSE
+2023,PB2023x_Blatt1,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MWMS,KSG-Sektoren,Landwirtschaft,IPCC AR5,2019,NA,FALSE,FALSE
+2023,PB2023x_Blatt1,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MWMS,KSG-Sektoren,Verkehr,IPCC AR5,2019,NA,FALSE,FALSE
+2023,PB2023_T1,PB2023,MMS,KSG-Sektoren,Gesamt,IPCC AR5,2020,NA,FALSE,FALSE
+2023,PB2023_T1,PB2023,MWMS,KSG-Sektoren,Gesamt,IPCC AR5,2020,NA,FALSE,FALSE
+2023,PB2023_T17,PB2023,MMS,KSG-Sektoren,Abfallwirtschaft und Sonstiges,IPCC AR5,2020,NA,FALSE,FALSE
+2023,PB2023_T17,PB2023,MMS,KSG-Sektoren,Energiewirtschaft,IPCC AR5,2020,NA,FALSE,FALSE
+2023,PB2023_T17,PB2023,MMS,KSG-Sektoren,Gebäude,IPCC AR5,2020,NA,FALSE,FALSE
+2023,PB2023_T17,PB2023,MMS,KSG-Sektoren,Gesamt,IPCC AR5,2020,NA,FALSE,FALSE
+2023,PB2023_T17,PB2023,MMS,KSG-Sektoren,Industrie,IPCC AR5,2020,NA,FALSE,FALSE
+2023,PB2023_T17,PB2023,MMS,KSG-Sektoren,Landwirtschaft,IPCC AR5,2020,NA,FALSE,FALSE
+2023,PB2023_T17,PB2023,MMS,KSG-Sektoren,Verkehr,IPCC AR5,2020,NA,FALSE,FALSE
+2023,PB2023_T17,PB2023,MWMS,KSG-Sektoren,Abfallwirtschaft und Sonstiges,IPCC AR5,2020,NA,FALSE,FALSE
+2023,PB2023_T17,PB2023,MWMS,KSG-Sektoren,Energiewirtschaft,IPCC AR5,2020,NA,FALSE,FALSE
+2023,PB2023_T17,PB2023,MWMS,KSG-Sektoren,Gebäude,IPCC AR5,2020,NA,FALSE,FALSE
+2023,PB2023_T17,PB2023,MWMS,KSG-Sektoren,Gesamt,IPCC AR5,2020,NA,FALSE,FALSE
+2023,PB2023_T17,PB2023,MWMS,KSG-Sektoren,Industrie,IPCC AR5,2020,NA,FALSE,FALSE
+2023,PB2023_T17,PB2023,MWMS,KSG-Sektoren,Landwirtschaft,IPCC AR5,2020,NA,FALSE,FALSE
+2023,PB2023_T17,PB2023,MWMS,KSG-Sektoren,Verkehr,IPCC AR5,2020,NA,FALSE,FALSE
+2023,PB2023x_Blatt1,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MMS,KSG-Sektoren,Abfallwirtschaft und Sonstiges,IPCC AR5,2020,NA,FALSE,FALSE
+2023,PB2023x_Blatt1,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MMS,KSG-Sektoren,Energiewirtschaft,IPCC AR5,2020,NA,FALSE,FALSE
+2023,PB2023x_Blatt1,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MMS,KSG-Sektoren,Gebäude,IPCC AR5,2020,NA,FALSE,FALSE
+2023,PB2023x_Blatt1,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MMS,KSG-Sektoren,Gesamt,IPCC AR5,2020,NA,FALSE,FALSE
+2023,PB2023x_Blatt1,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MMS,KSG-Sektoren,Industrie,IPCC AR5,2020,NA,FALSE,FALSE
+2023,PB2023x_Blatt1,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MMS,KSG-Sektoren,Landwirtschaft,IPCC AR5,2020,NA,FALSE,FALSE
+2023,PB2023x_Blatt1,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MMS,KSG-Sektoren,Verkehr,IPCC AR5,2020,NA,FALSE,FALSE
+2023,PB2023x_Blatt1,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MWMS,KSG-Sektoren,Abfallwirtschaft und Sonstiges,IPCC AR5,2020,NA,FALSE,FALSE
+2023,PB2023x_Blatt1,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MWMS,KSG-Sektoren,Energiewirtschaft,IPCC AR5,2020,NA,FALSE,FALSE
+2023,PB2023x_Blatt1,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MWMS,KSG-Sektoren,Gebäude,IPCC AR5,2020,NA,FALSE,FALSE
+2023,PB2023x_Blatt1,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MWMS,KSG-Sektoren,Gesamt,IPCC AR5,2020,NA,FALSE,FALSE
+2023,PB2023x_Blatt1,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MWMS,KSG-Sektoren,Industrie,IPCC AR5,2020,NA,FALSE,FALSE
+2023,PB2023x_Blatt1,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MWMS,KSG-Sektoren,Landwirtschaft,IPCC AR5,2020,NA,FALSE,FALSE
+2023,PB2023x_Blatt1,PB2023 Datenanhang (Kernindikatoren 2.0 korrigiert),MWMS,KSG-Sektoren,Verkehr,IPCC AR5,2020,NA,FALSE,FALSE
