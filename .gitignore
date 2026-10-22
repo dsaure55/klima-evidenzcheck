@@ -4,3 +4,12 @@ Redaktion/
 # GRDC-Rohdaten (Lizenz: keine Weitergabe; SAP Rhein-Niedrigwasser Abschnitt 9 / Entscheidung 7).
 # Nur Pruefsummen und abgeleitete Jahreskennwerte werden eingecheckt.
 Analysen/2026-10-rhein-niedrigwasser/rohdaten/grdc/
+
+# Privat bzw. Arbeitsdateien
+Struktur/
+Publikationen/
+Claude outputs/
+.RData
+.Rhistory
+_svg_preview_tmp.html
+checkpoints/
