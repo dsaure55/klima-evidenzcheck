@@ -1,15 +1,15 @@
-**FREIGEGEBEN durch Daniel Saure am 17.10.2026 (im Chat: „Ich habe die aktuelle Fassung gelesen. Freigabe erteilt.“) – noch nicht veröffentlicht. Diese Kopfzeile nicht mit nach Substack übernehmen.**
+**FREIGEGEBEN durch Daniel Saure am 22.10.2026 (Antwort auf Rückfrage: „Neue Fassung freigeben – ich habe die geänderte Fassung vollständig gelesen und gebe sie frei“). Geänderte Fassung eines bereits veröffentlichten Artikels; Umsetzung auf Substack durch Daniel mit Korrekturvermerk (siehe ../korrektur_2026-10-22.md). Änderungen gegenüber der Fassung vom 17.10.: Titel, Kurz gesagt (1. Satz), Anlass (Bundesrat), Fazit (1. Satz), Quelle [5]. Diese Kopfzeile nicht mit nach Substack übernehmen.**
 Klima Kompass · Einordnung
 
-# CO₂-Preis 2027 eingefroren – was das an der Zapfsäule bedeutet
+# Bundestag friert CO₂-Preis 2027 ein – was das an der Zapfsäule bedeutet
 
 *Diese Einordnung nutzt bereits veröffentlichte Zahlen aus den genannten Quellen; es wurde keine neue Analyse durchgeführt.*
 
-**Kurz gesagt:** Der CO₂-Preis auf Sprit, Heizöl und Gas bleibt 2027 im selben Rahmen wie 2026: 55 bis 65 Euro pro Tonne. Das hat der Bundestag am 15. Oktober beschlossen. In Cent ausgedrückt macht der CO₂-Preis damit weiterhin etwa 16 bis 19 Cent pro Liter Benzin und 17 bis 21 Cent pro Liter Diesel aus, jeweils mit Mehrwertsteuer und gegenüber 2020. Der Rahmen für den CO₂-Anteil am Spritpreis bleibt also derselbe wie 2026. Die offene Frage verschiebt sich auf 2028.
+**Kurz gesagt:** Der CO₂-Preis auf Sprit, Heizöl und Gas soll 2027 im selben Rahmen bleiben wie 2026: 55 bis 65 Euro pro Tonne. Das hat der Bundestag am 15. Oktober beschlossen. In Cent ausgedrückt macht der CO₂-Preis damit weiterhin etwa 16 bis 19 Cent pro Liter Benzin und 17 bis 21 Cent pro Liter Diesel aus, jeweils mit Mehrwertsteuer und gegenüber 2020. Der Rahmen für den CO₂-Anteil am Spritpreis bleibt also derselbe wie 2026. Die offene Frage verschiebt sich auf 2028.
 
 ## Anlass
 
-Am 15. Oktober 2026 hat der Bundestag eine Änderung des Brennstoffemissionshandelsgesetzes beschlossen. In der namentlichen Abstimmung gab es 303 Ja-Stimmen, 210 Nein-Stimmen und 52 Enthaltungen [1]. Damit bleibt der CO₂-Preis für Benzin, Diesel, Heizöl und Erdgas 2027 in einem Korridor von 55 bis 65 Euro pro Tonne, wie schon 2026.
+Am 15. Oktober 2026 hat der Bundestag eine Änderung des Brennstoffemissionshandelsgesetzes beschlossen. In der namentlichen Abstimmung gab es 303 Ja-Stimmen, 210 Nein-Stimmen und 52 Enthaltungen [1]. Damit soll der CO₂-Preis für Benzin, Diesel, Heizöl und Erdgas 2027 in einem Korridor von 55 bis 65 Euro pro Tonne bleiben, wie schon 2026. Abschließend muss sich noch der Bundesrat mit dem Gesetz befassen. Zum Entwurf hatte er am 25. September keine Einwendungen erhoben [5].
 
 Der Grund: Der europäische Emissionshandel für Gebäude und Verkehr, der sogenannte ETS 2, startet erst 2028. Ohne die Gesetzesänderung hätte sich der deutsche CO₂-Preis 2027 aus dem schwankenden Durchschnitt der Versteigerungen im bestehenden europäischen Emissionshandel ergeben [1].
 
@@ -41,7 +41,7 @@ Weil der Korridor 2027 derselbe ist wie 2026, gelten diese Spannen auch für das
 
 ## Fazit
 
-2027 bleibt der Rahmen für den CO₂-Anteil an Sprit- und Heizkosten derselbe wie 2026: rund 16 bis 19 Cent pro Liter Benzin, 17 bis 21 Cent pro Liter Diesel. Spannend wird es 2028, wenn der europäische Markt den Preis bestimmt. Wie hoch er dann ausfällt, ist offen.
+Tritt das Gesetz wie beschlossen in Kraft, bleibt 2027 der Rahmen für den CO₂-Anteil an Sprit- und Heizkosten derselbe wie 2026: rund 16 bis 19 Cent pro Liter Benzin, 17 bis 21 Cent pro Liter Diesel. Spannend wird es 2028, wenn der europäische Markt den Preis bestimmt. Wie hoch er dann ausfällt, ist offen.
 
 **Weiterlesen:** Wie sich der CO₂-Preis zum Tankrabatt von Mai und Juni 2026 verhielt, haben wir in [„65 Euro rein, 59 Euro raus“](https://klimaevidenzcheck.substack.com/p/65-euro-rein-59-euro-raus) durchgerechnet. Der Beitrag wurde am 17.10.2026 korrigiert.
 
@@ -56,6 +56,8 @@ Weil der Korridor 2027 derselbe ist wie 2026, gelten diese Spannen auch für das
 [3] KfW Research: Die CO2-Preisentwicklung für Wärme und Verkehr ist unsicher – mittelfristig könnten die Preise deutlich steigen, 23.10.2025. https://www.kfw.de/PDF/Download-Center/Konzernthemen/Research/PDF-Auf-einen-Blick/2025_10_23_Treibhausgasbepreisung.pdf
 
 [4] Umweltbundesamt: Pressemitteilung 35/2025, Erstmals Versteigerungen im nationalen Emissionshandel, 02.10.2025. https://www.umweltbundesamt.de/presse/pressemitteilungen/erstmals-versteigerungen-im-nationalen
+
+[5] Bundesrat: Beschluss der 1068. Sitzung vom 25.09.2026 zum Entwurf eines Dritten Gesetzes zur Änderung des Brennstoffemissionshandelsgesetzes, Drucksache 462/26 (Beschluss). https://dserver.bundestag.de/brd/2026/0462-26B.pdf
 
 ---
 Klima Kompass auch auf [Instagram](https://www.instagram.com/klima_kompass/) · [Facebook](https://www.facebook.com/profile.php?id=61595673411252) · [WhatsApp-Kanal](https://whatsapp.com/channel/0029Vb7dScK5kg74YY4ksf1j) · [Über / Impressum](https://klimaevidenzcheck.substack.com/about)
