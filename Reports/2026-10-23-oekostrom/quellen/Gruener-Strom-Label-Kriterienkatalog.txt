@@ -1,0 +1,781 @@
+                                                                         Seite 1 von 14
+
+Grüner Strom-Label
+Kriterienkatalog 2021
+
+Version 1.1 (Stand: 16.09.2026)
+
+Inhaltsverzeichnis
+
+1 ZWECK DER ZERTIFIZIERUNG .................................................................................................................5
+  1.1 Ziel des Grüner Strom-Labels ...............................................................................................................5
+  1.2 Förderinstrument des Grüner Strom-Labels ........................................................................................5
+
+2 ANFORDERUNGEN AN DAS STROMPRODUKT ....................................................................................5
+  2.1 Label-Vereinbarung ...............................................................................................................................5
+  2.2 Förderbeträge ........................................................................................................................................5
+      2.2.1 Vertriebsaktionen ...........................................................................................................................6
+  2.3 Strombeschaffung..................................................................................................................................6
+  2.4 Optional zertifizierbare Strombeschaffungsqualität .............................................................................6
+
+3 ANFORDERUNGEN AN DIE FÖRDERMITTELVERWENDUNG .............................................................7
+  3.1 Anforderungen an die Fördermittelprojekte..........................................................................................7
+  3.2 Fördermöglichkeiten ..............................................................................................................................7
+  3.3 Förderbereiche.......................................................................................................................................7
+  3.4 Anlagen zur regenerativen Energiebereitstellung ................................................................................7
+      3.4.1 Stromerzeugungsanlagen mit Förderung nach EEG/Kraft-Wärme-Kopplungsgesetz (KWKG) 7
+      3.4.2 Neue Stromerzeugungsanlagen ohne Förderung nach EEG/KWKG .........................................8
+      3.4.3 Bestehende Stromerzeugungsanlagen nach Ende der EEG-Vergütung ...................................8
+      3.4.4 Thermische Energieerzeugung (Wärme/Kälte) ............................................................................8
+      3.4.5 Erzeugung Grünen Wasserstoffs ..................................................................................................9
+  3.5 Energieinfrastruktur-Aus- und Umbau für ein 100 Prozent erneuerbares Energiesystem ................9
+  3.6 Mobilitätswende .....................................................................................................................................9
+  3.7 Errichtung und Umbau energiesparender stromverbrauchender Einrichtungen (Energieeffizienz-
+            Projekte) ...............................................................................................................................................10
+  3.8 Sonstige Energiewende-Projekte........................................................................................................10
+      3.8.1 Energiewende-Projekte in Deutschland......................................................................................10
+      3.8.2 Energiewende-Projekte in der Entwicklungszusammenarbeit ..................................................10
+  3.9 Natur- und Artenschutzprojekte ..........................................................................................................10
+  3.10 Projekte außerhalb der genannten Förderbereiche ...........................................................................10
+
+Grüner Strom Label e.V.         Vorstand:  Marcus Bollmann (BUND)        Sparda-Bank West eG
+Kaiserstraße 113 | 53113 Bonn              Niklas Hausemann (EUROSOLAR)  IBAN: DE30 3706 0590 0000 608980
+Tel.: +49 (0) 228 / 522 611-90             Jürgen Reincke (NABU)         BIC: GENODED1SPK
+info@gruenerstromlabel.de                                                ST.-Nummer: 205/5774/0572
+www.gruenerstromlabel.de        Geschäftsführer: Daniel Craffonara       USt-IdNr.: DE209386855
+                                                        Christian Knops
+                                                                          Seite 2 von 14
+
+Grüner Strom-Label Kriterienkatalog 2021 Version 1.1 (Stand: 16.09.2026)
+
+  3.11 Verwendungsmöglichkeiten der Fördergelder ...................................................................................11
+  3.12 Feststellung der Zuschusshöhe ..........................................................................................................11
+  3.13 Verbuchung der Zuschüsse ................................................................................................................11
+4 ANFORDERUNGEN AN DEN ENERGIEANBIETER ..............................................................................11
+  4.1 Beteiligungen und Unternehmensverflechtungen ..............................................................................11
+
+      4.1.1 Beteiligung an Atomkraftwerken .................................................................................................11
+      4.1.2 Beteiligung an Kohlekraftwerken.................................................................................................11
+      4.1.3 Ausnahmeregelungen..................................................................................................................12
+      4.1.4 Geltungsbereich ...........................................................................................................................12
+  4.2 Buchführung .........................................................................................................................................12
+  4.3 Produktkommunikation ........................................................................................................................12
+  4.4 Nachweis der Fördermittelverwendung ..............................................................................................13
+  4.5 Frist zur Verwendung der Fördermittel ...............................................................................................13
+5 ERTEILUNG UND ENTZUG DES LABELS..............................................................................................13
+  5.1 Erteilung und Entzug ...........................................................................................................................13
+  5.2 Auszahlung nicht verwendeter Fördergelder .....................................................................................13
+6 VERWENDUNG DES LABELS UND WEITERGABE AN KUND*INNEN ..............................................14
+  6.1 Vorgaben zur Nutzung des Labels .....................................................................................................14
+  6.2 Weitergabe des Labels........................................................................................................................14
+7 GÜLTIGKEIT UND ÜBERGANGSREGELUNG .......................................................................................14
+
+Grüner Strom Label e.V.         Vorstand:  Marcus Bollmann (BUND)         Sparda-Bank West eG
+Kaiserstraße 113 | 53113 Bonn              Niklas Hausemann (EUROSOLAR)   IBAN: DE30 3706 0590 0000 608980
+Tel.: +49 (0) 228 / 522 611-90             Jürgen Reincke (NABU)          BIC: GENODED1SPK
+info@gruenerstromlabel.de                                                 ST.-Nummer: 205/5774/0572
+www.gruenerstromlabel.de        Geschäftsführer: Daniel Craffonara        USt-IdNr.: DE209386855
+                                                        Christian Knops
+                                                                          Seite 3 von 14
+
+Grüner Strom-Label Kriterienkatalog 2021 Version 1.1 (Stand: 16.09.2026)
+
+Begriffs- und Abkürzungsverzeichnis
+
+Energiewende-Fonds                         Vom Grüner Strom Label e.V. verwalteter Fonds, in den Label-
+                                           nehmer nicht verausgabte Gelder aus Investitionsverpflichtungen
+Einzelfall (-prüfung, -entscheidung)       überführen müssen. Der Energiewende-Fonds unterliegt den An-
+                                           forderungen dieses Kriterienkatalogs und wird von einer unab-
+Energiewende-Projekt                       hängigen Zertifizierungsstelle geprüft.
+Förderung / Förderbetrag / Förder-         Vorhaben innerhalb der Grüner Strom-Zertifizierung, die nicht
+gelder etc. (im Kontext der GSL-In-        oder nicht vollständig Kriterien dieses Kriterienkatalogs zugeord-
+vestitionsverpflichtung)                   net werden können. Ihre Bewertung orientiert sich an den
+Grüner Strom-Zuschuss                      Grundsätzen des Kriterienkatalogs und des Label-Handbuchs un-
+EEG                                        ter Berücksichtigung der individuellen Besonderheiten. (Beispiele
+Kfz                                        können sein: Besondere Arten der Strombeschaffung oder inno-
+kWh                                        vative Energiewende-Projekte.)
+KWK                                        Investitionsvorhaben, das die Anforderungen des Grüner Strom-
+KWKG                                       Labels erfüllt.
+KWKK                                       Investitionsverpflichtung, basierend auf einem festgelegten Be-
+Label-Handbuch                             trag pro abgesetzte Kilowattstunde, die in Energiewende-Pro-
+                                           jekte, wie den Ausbau Erneuerbarer Energien, fließt und die An-
+Labelnehmer                                forderungen des Grüner Strom-Labels erfüllt.
+                                           Diese Bezeichnung wird zukünftig durch ‚Energiewende-Zu-
+Labelvereinbarung                          schuss‘ ersetzt.
+                                           Erneuerbare-Energien-Gesetz
+MIV                                        Kraftfahrzeug
+ÖPNV                                       Kilowattstunde
+Ökostrom                                   Kraft-Wärme-Kopplung
+                                           Kraft-Wärme-Kopplungsgesetz
+Grüner Strom-zertifizierter                Kraft-Wärme-Kälte-Kopplung
+Ökostrom                                   Anwendungsleitfaden zum Grüner Strom-Kriterienkatalog. Er kon-
+PEM                                        kretisiert die Zertifizierungsanforderungen und beschreibt die rele-
+PV                                         vanten Verfahren, Nachweise und Rahmenbedingungen für deren
+Procedere der Zertifizierung               Anwendung und Prüfung. Abrufbar unter: www.gruenerstrom.info.
+                                           Labelnehmer sind Organisationen, die eine Zertifizierungspartner-
+                                           schaft mit dem Systeminhaber Grüner Strom Label e.V. (GSL
+                                           e.V.) abgeschlossen haben und das Grüner‑Strom‑Label für ihre
+                                           Stromprodukte verwenden.
+                                           Rechtsverbindlicher Vertrag zwischen Energieanbieter und Sys-
+                                           teminhaber Grüner Strom Label e.V. zur Nutzung eines Labels
+                                           (Grüner Strom- oder Grünes Gas-Label).
+                                           Motorisierter Individualverkehr
+                                           Öffentlicher Personennahverkehr
+                                           Stromlieferung, der bilanziell Herkunftsnachweise aus erneuerba-
+                                           ren Energien in Höhe der gelieferten Strommenge zugeordnet
+                                           und entwertet wurden.
+                                           Ökostrom, der zusätzlich die Anforderungen des Grüner Strom-
+                                           Labels erfüllt.
+                                           Proton Exchange Membrane oder Polymer Electrolyte Membrane
+                                           Photovoltaik
+                                           Verfahrensbeschreibung zur Durchführung der Zertifizierung nach
+                                           dem Grüner Strom-Label. Sie beschreibt die Rollen, Abläufe und
+                                           Prüfverfahren im Zertifizierungsprozess. Abrufbar unter:
+                                           www.gruenerstrom.info.
+
+Grüner Strom Label e.V.         Vorstand:  Marcus Bollmann (BUND)         Sparda-Bank West eG
+Kaiserstraße 113 | 53113 Bonn              Niklas Hausemann (EUROSOLAR)   IBAN: DE30 3706 0590 0000 608980
+Tel.: +49 (0) 228 / 522 611-90             Jürgen Reincke (NABU)          BIC: GENODED1SPK
+info@gruenerstromlabel.de                                                 ST.-Nummer: 205/5774/0572
+www.gruenerstromlabel.de        Geschäftsführer: Daniel Craffonara        USt-IdNr.: DE209386855
+                                                        Christian Knops
+                                                                          Seite 4 von 14
+
+Grüner Strom-Label Kriterienkatalog 2021 Version 1.1 (Stand: 16.09.2026)
+
+Systeminhaber                              Der GSL e.V. ist Systeminhaber des Zertifizierungssystems für
+Grüner Strom Label e.V. (GSL e.V.)         das Grüner Strom-Label (Zertifikat) und trägt die Gesamtverant-
+                                           wortung für dessen gesetzeskonforme Ausgestaltung. Er stellt si-
+Unabhängige Zertifizierungsstelle          cher, dass das Zertifizierungssystem den geltenden gesetzlichen
+                                           Rahmenbedingungen entspricht, insbesondere den Anforderun-
+                                           gen an Transparenz, Objektivität und Nichtdiskriminierung.
+                                           Die unabhängige Zertifizierungsstelle ist vollständig vom Grüner
+                                           Strom Label e.V. und den Labelnehmern unabhängig und führt
+                                           die Zertifizierung nach einem objektiven, unparteiischen Prüfver-
+                                           fahren eigenständig durch.
+
+Grüner Strom Label e.V.         Vorstand:  Marcus Bollmann (BUND)         Sparda-Bank West eG
+Kaiserstraße 113 | 53113 Bonn              Niklas Hausemann (EUROSOLAR)   IBAN: DE30 3706 0590 0000 608980
+Tel.: +49 (0) 228 / 522 611-90             Jürgen Reincke (NABU)          BIC: GENODED1SPK
+info@gruenerstromlabel.de                                                 ST.-Nummer: 205/5774/0572
+www.gruenerstromlabel.de        Geschäftsführer: Daniel Craffonara        USt-IdNr.: DE209386855
+                                                        Christian Knops
+                                                                          Seite 5 von 14
+
+Grüner Strom-Label Kriterienkatalog 2021 Version 1.1 (Stand: 16.09.2026)
+
+1  ZWECK DER ZERTIFIZIERUNG
+
+1.1 Ziel des Grüner Strom-Labels
+
+Zertifiziert werden Stromprodukte, bei denen die Kund*innen vollständig mit Strom aus erneuerbaren Ener-
+gien beliefert werden und bei denen darüber hinaus ein fester Förderbetrag je Kilowattstunde in den Aus-
+bau erneuerbarer Energien investiert wird.1
+
+1.2 Förderinstrument des Grüner Strom-Labels
+
+Das wichtigste Förderinstrument des Labels ist die Unterstützung von Energiewendeprojekten durch Inves-
+titionszuschüsse. Aus den Fördermitteln werden dazu der Bau von Anlagen zur Bereitstellung von erneuer-
+barer Energie, der erforderliche Infrastrukturumbau für eine Umstellung auf ein vollständig erneuerbares
+Energiesystem sowie die Förderung von Energieeinsparung bezuschusst.
+
+Die Fördermittel sollen zur Unterstützung von Energiewendeprojekten eingesetzt werden. Dabei werden
+bei den geförderten Maßnahmen anderweitig erzielbare Einnahmen berücksichtigt (zum Beispiel gesetzli-
+che Einspeisevergütung gemäß dem Erneuerbare-Energien-Gesetz (EEG), Eigenverbrauch, Direktver-
+marktung).
+
+2  ANFORDERUNGEN AN DAS STROMPRODUKT
+
+2.1 Label-Vereinbarung
+
+Voraussetzung für die Erteilung des Labels ist der Abschluss einer Label-Vereinbarung zwischen dem
+Energieanbieter (Labelnehmer) und dem Verein Grüner Strom Label e.V. (Systeminhaber). Nach Erteilung
+des Labels wird jährlich bzw. zweijährlich durch eine unabhängige Zertifizierungsstelle geprüft, ob die im
+Folgenden genannten Verpflichtungen erfüllt wurden.2
+
+2.2 Förderbeträge
+
+Zertifiziert werden Stromprodukte, bei denen vom Energieanbieter ein festgelegter Förderbetrag je Kilo-
+wattstunde (kWh) für den Bau von Anlagen zur Bereitstellung von erneuerbarer Energie, den Infrastruktu-
+rumbau für eine Umstellung auf ein vollständig erneuerbares Energiesystem sowie die Förderung von
+Energieeinsparung entsprechend den in Kapitel 3 beschriebenen Kriterien verwendet wird. Der Förderbe-
+trag des an die Kund*innen gelieferten Grüner Strom-zertifizierten Ökostroms muss, nach Abzug des Ver-
+waltungsaufwands sowie sonstiger Mehrkosten,
+
+- mindestens 0,5 Cent/kWh (netto) betragen.
+- Bei Endkunden mit einem jährlichen Verbrauch zwischen 10.000 kWh und 100.000 kWh muss der För-
+
+     derbetrag mindestens 0,4 Cent/kWh (netto) betragen.
+- Bei Endkunden mit einem jährlichen Verbrauch zwischen 100.000 kWh und 3.000.000 kWh muss der
+
+     Förderbetrag mindestens 0,2 Cent/kWh (netto) betragen.
+- Bei Endkunden mit einem jährlichen Verbrauch von über 3.000.000 kWh muss der Förderbetrag min-
+
+     destens 0,1 Cent/kWh (netto) betragen.
+
+1 Dieser Kriterienkatalog ersetzt den zuletzt gültigen Kriterienkatalog von 2015 aufgrund der zwischenzeitlichen Entwicklungen des
+Ökostrommarktes
+2 Zur Durchführung der Prüfungen siehe das „Procedere der Zertifizierung“, abrufbar unter www.gruenerstrom.info.
+
+Grüner Strom Label e.V.         Vorstand:  Marcus Bollmann (BUND)         Sparda-Bank West eG
+Kaiserstraße 113 | 53113 Bonn              Niklas Hausemann (EUROSOLAR)   IBAN: DE30 3706 0590 0000 608980
+Tel.: +49 (0) 228 / 522 611-90             Jürgen Reincke (NABU)          BIC: GENODED1SPK
+info@gruenerstromlabel.de                                                 ST.-Nummer: 205/5774/0572
+www.gruenerstromlabel.de        Geschäftsführer: Daniel Craffonara        USt-IdNr.: DE209386855
+                                                        Christian Knops
+                                                                          Seite 6 von 14
+
+Grüner Strom-Label Kriterienkatalog 2021 Version 1.1 (Stand: 16.09.2026)
+
+Die Einhaltung dieser Mindestförderbeträge wird nach Ziffer 4.2 bestätigt und durch die unabhängige Zerti-
+fizierungsstelle abschließend geprüft. Optional können auf Antrag des Labelnehmers individuell höhere
+Förderbeträge festgelegt und geprüft werden.
+
+Bei Bündelkunden kann zur Bemessung des Mindestförderbetrags der jährliche Gesamtverbrauch aller
+Einzelverbrauchsstellen in Summe herangezogen werden.
+Die oben genannten Förderbeträge beziehen sich auf den Anteil des Grüner Strom-zertifizierten
+Ökostroms.
+
+2.2.1 Vertriebsaktionen
+
+Nach vorheriger Freigabe durch den Systeminhaber können Labelnehmer für Kund*innen mit einem jährli-
+chen Verbrauch von bis zu 100.000 kWh zeitlich begrenzte Vertriebsaktionen durchführen. Dabei darf der
+in Abhängigkeit vom jährlichen Verbrauch geltende Mindestförderbetrag der darüber gewonnenen Neu-
+kund*innen für die Erstvertragslaufzeit um 50 Prozent reduziert werden. Nach Ablauf der Erstvertragslauf-
+zeit muss der Mindestförderbetrag auf das in Ziffer 2.2. festgelegte Normalmaß angehoben werden.
+
+2.3 Strombeschaffung
+
+Die Ausweisung von Grüner Strom-zertifiziertem Ökostrom muss als Stromlieferung aus erneuerbaren
+Energien gemäß Energiewirtschaftsgesetz erfolgen. Dafür müssen Herkunftsnachweise für Strom aus er-
+neuerbaren Energien aus dem Herkunftsnachweisregister des Umweltbundesamtes verwendet und ent-
+wertet werden. Zusätzlich zu den gesetzlichen Regelungen gelten beim Grüner Strom-Label folgende Ein-
+schränkungen:
+
+     - Es sind nur Herkunftsnachweise zulässig, in deren Anlagendaten die Kennzeichnung "Keine Förde-
+          rung“ eingetragen ist.3
+
+     - Ein Nachweis der Ökostromeigenschaft allein durch Herkunftsnachweise wird nicht anerkannt. Es
+          muss eine Kopplung des Herkunftsnachweises mit der zugrunde liegenden Strommenge vorliegen.
+          Dies muss entweder im Herkunftsnachweis selbst oder über andere geeignete Nachweise belegt
+          werden.
+
+     - Strom aus Biomasse und Klärschlämmen wird nur dann anerkannt, wenn die im Grünes Gas-Label
+          dafür definierten Kriterien erfüllt sind.4
+
+     - Strom aus Deponiegas und Mischfeuerungsanlagen wird nicht anerkannt.
+
+2.4 Optional zertifizierbare Strombeschaffungsqualität
+
+Ergänzend zur Stromlieferung aus erneuerbaren Energien können auf Antrag des Labelnehmers folgende
+optional damit verbundene Eigenschaften ausgewiesen und durch eine unabhängige Zertifizierungsstelle
+geprüft werden:
+Die Belieferung der Kund*innen im zertifizierten Produkt erfolgt zu einem definierten Prozentsatz
+
+3 Dieses Kriterium wurde 2021 neu eingeführt. Die in Verbindung mit dem HKN-Eintrag angenommene Analogie zum Doppelver-
+marktungsverbot auch für Anlagen im Ausland zeigte sich ohne tiefergehende Prüfungen weder als valide noch mit vertretbarem
+Aufwand prüfbar. Nach zwei 2021 und 2022 erstellten Studien ist der Ausschluss von HKN aus geförderten Anlagen auch als Unter-
+stützung des Baus zusätzlicher EE-Stromerzeugungsanlagen nicht zweckmäßig. Der Vorstand des Grüner Strom Label e. V. hat
+daher am 12.12.2022 die sofortige Aussetzung des Kriteriums beschlossen. Mit der nächsten Überarbeitung dieses Kriterienkata-
+logs entfällt das Kriterium ersatzlos.
+4 Die Kriterien des Grünes Gas-Labels sind abrufbar unter www.gruenesgas.info. Strom aus Biomasse oder Klärschlämmen muss
+vorab beim Systeminhaber zur unverbindlichen Vorprüfung im Rahmen einer Einzelfallprüfung eingereicht werden. Die abschlie-
+ßende Beurteilung erfolgt durch die unabhängige Zertifizierungsstelle. Die mit der Einzelfallprüfung ggf. einhergehenden Kosten sind
+vom Labelnehmer zu tragen.
+
+Grüner Strom Label e.V.         Vorstand:  Marcus Bollmann (BUND)         Sparda-Bank West eG
+Kaiserstraße 113 | 53113 Bonn              Niklas Hausemann (EUROSOLAR)   IBAN: DE30 3706 0590 0000 608980
+Tel.: +49 (0) 228 / 522 611-90             Jürgen Reincke (NABU)          BIC: GENODED1SPK
+info@gruenerstromlabel.de                                                 ST.-Nummer: 205/5774/0572
+www.gruenerstromlabel.de        Geschäftsführer: Daniel Craffonara        USt-IdNr.: DE209386855
+                                                        Christian Knops
+                                                                                       Seite 7 von 14
+
+Grüner Strom-Label Kriterienkatalog 2021 Version 1.1 (Stand: 16.09.2026)
+
+   - aus deutschen Kraftwerken,
+   - aus regionalen Kraftwerken,
+   - aus eigenen Anlagen des Labelnehmers oder aus Anlagen, an denen der Labelnehmer selbst oder
+
+        eine Tochtergesellschaft direkt beteiligt ist, oder
+   - durch Direktvermarktung aus EEG-fähigen Anlagen.
+
+3       ANFORDERUNGEN AN DIE FÖRDERMITTELVERWENDUNG
+
+3.1 Anforderungen an die Fördermittelprojekte
+Details zur Ausgestaltung der Fördervoraussetzungen sind im Label-Handbuch enthalten.
+
+3.2 Fördermöglichkeiten
+
+Die Förderung von Projekten muss vorab mit dem Grüner Strom Label e.V. abgestimmt werden, soweit
+nichts anderes vereinbart wurde oder nach den Vorgaben im Label-Handbuch eine Vorab-Betrachtung
+nicht verzichtbar ist.
+
+3.3 Förderbereiche
+
+Die Förderbeträge gemäß Ziffer 2.2 können verwendet werden für
+
+     - Anlagen zur regenerativen Energiebereitstellung,
+     - Energieinfrastruktur-Aus- und -Umbau für ein 100 Prozent erneuerbares Energiesystem,
+     - Mobilitätswende,
+     - Energiesparender Bau und Umbau Energie verbrauchender Einrichtungen (Energieeffizienz-Pro-
+
+          jekte),
+     - Sonstige Förderprojekte im Bereich Energiewende,
+     - Energiewendeprojekte in der Entwicklungszusammenarbeit,
+     - Natur- und Artenschutzprojekte.
+
+Details zur Ausgestaltung der Fördervoraussetzungen sind im Label-Handbuch enthalten.
+
+3.4 Anlagen zur regenerativen Energiebereitstellung
+
+Unter den im Label-Handbuch erläuterten Voraussetzungen sind die in den Folgekapiteln aufgeführten An-
+lagen grundsätzlich förderfähig.
+
+3.4.1   Stromerzeugungsanlagen mit Förderung nach EEG/Kraft-Wärme-Kopplungsgesetz (KWKG)
+
+     -  Photovoltaik (gebäudegebunden und Freifläche),
+     -  Windkraft (onshore, offshore, Kleinanlagen),
+     -  Wasserkraft (Reaktivierung, Modernisierung),
+     -  Biomasseanlagen (Biogas, feste Biomasse, Pflanzenöl),
+     -  Tiefengeothermie,
+     -  Klärgasanlagen.
+
+Die Zuschusshöhe wird als pauschaler anteiliger Zuschuss auf Basis der Investitionskosten oder über stan-
+dardisierte Wirtschaftlichkeitsberechnungen ermittelt, die neben den Kapital- und Betriebskosten alle erziel-
+baren Einnahmen berücksichtigen.
+
+Grüner Strom Label e.V.         Vorstand:  Marcus Bollmann (BUND)         Sparda-Bank West eG
+Kaiserstraße 113 | 53113 Bonn              Niklas Hausemann (EUROSOLAR)   IBAN: DE30 3706 0590 0000 608980
+Tel.: +49 (0) 228 / 522 611-90             Jürgen Reincke (NABU)          BIC: GENODED1SPK
+info@gruenerstromlabel.de                                                 ST.-Nummer: 205/5774/0572
+www.gruenerstromlabel.de        Geschäftsführer: Daniel Craffonara        USt-IdNr.: DE209386855
+                                                        Christian Knops
+                                                                          Seite 8 von 14
+
+Grüner Strom-Label Kriterienkatalog 2021 Version 1.1 (Stand: 16.09.2026)
+
+3.4.2 Neue Stromerzeugungsanlagen ohne Förderung nach EEG/KWKG
+
+Strom aus Erzeugungsanlagen, deren Strom außerhalb der EEG-Vergütung vertrieben wird, muss grund-
+sätzlich in die Strombeschaffung für das vom Labelnehmer vertriebene Grüner Strom-zertifizierte Strom-
+produkt aufgenommen werden. Dies gilt auch für die im Abschnitt 3.4.3 aufgeführten Anlagen.
+
+Förderfähig sind Anlagen zur Stromerzeugung aus
+
+     - Windkraft,
+     - Biomasse,
+     - Photovoltaik.
+
+3.4.3 Bestehende Stromerzeugungsanlagen nach Ende der EEG-Vergütung
+
+Nicht für alle Anlagen, die nach 20 Jahren keine Vergütung nach dem EEG mehr erhalten, ist ein
+Repowering möglich. Der wirtschaftliche Weiterbetrieb dieser Anlagen kann durch Zuschüsse aus Grüner
+Strom-Fördermitteln abgesichert werden.
+Förderentscheidungen für diese Anlagentypen werden auf Basis der im Label-Handbuch definierten Rah-
+menbedingungen im Rahmen einer Einzelfallprüfung getroffen:
+
+     - Windkraft,
+     - Biomasse,
+     - Photovoltaik,
+     - Wasserkraft.
+
+Für die Förderung werden drei förderfähige Betriebsarten unterschieden:
+
+     a. Einfacher Weiterbetrieb,
+     b. Weiterbetrieb der Anlage mit neuem, anspruchsvollem Betriebskonzept,
+     c. Sonstige systemdienliche/fluktuationsausgleichende Betriebsarten, zum Beispiel zur
+
+          Sektorenkopplung.
+
+Abhängig von der Betriebsart sind entsprechend der Vorgaben im Label-Handbuch verschiedene Förder-
+möglichkeiten mit pauschalen oder wirtschaftlichkeitsbasierten Zuschüssen möglich.
+
+3.4.4 Thermische Energieerzeugung (Wärme/Kälte)
+
+Die Zuschusshöhe für Anlagen der regenerativen Wärme- oder Kälteversorgung wird als pauschaler antei-
+liger Zuschuss auf Basis der Investitionskosten ermittelt. Unter den im Label-Handbuch erläuterten Voraus-
+setzungen sind folgende Anlagentypen zur Wärmeerzeugung grundsätzlich zuschussfähig:
+
+     - Abwärme,
+     - Solarthermie,
+     - Wärmepumpen,
+     - Erneuerbare Kraft-Wärme-Kopplungs-Anlagen (KWK-Anlagen),
+     - Biomasse-Kessel,
+     - Geothermie.
+
+Grüner Strom Label e.V.         Vorstand:  Marcus Bollmann (BUND)         Sparda-Bank West eG
+Kaiserstraße 113 | 53113 Bonn              Niklas Hausemann (EUROSOLAR)   IBAN: DE30 3706 0590 0000 608980
+Tel.: +49 (0) 228 / 522 611-90             Jürgen Reincke (NABU)          BIC: GENODED1SPK
+info@gruenerstromlabel.de                                                 ST.-Nummer: 205/5774/0572
+www.gruenerstromlabel.de        Geschäftsführer: Daniel Craffonara        USt-IdNr.: DE209386855
+                                                        Christian Knops
+                                                                          Seite 9 von 14
+
+Grüner Strom-Label Kriterienkatalog 2021 Version 1.1 (Stand: 16.09.2026)
+
+Unter den im Label-Handbuch erläuterten Voraussetzungen sind folgende Anlagentypen zur Kälteerzeu-
+gung grundsätzlich zuschussfähig:
+
+     - Erneuerbare Kraft-Wärme-Kälte-Kopplungs-Anlagen (KWKK-Anlagen),
+     - Anlagen zur passiven Kühlung,
+     - Ad- und Absorptionskälteanlagen unter Verwendung regenerativer Wärmequellen oder Abwärme.
+
+3.4.5 Erzeugung Grünen Wasserstoffs
+
+Die Zuschusshöhe für Anlagen zur Wasserstofferzeugung wird als pauschaler anteiliger Zuschuss auf Ba-
+sis der Investitionskosten ermittelt. Grundsätzlich mindestens förderfähig sind folgende Anlagentypen,
+wenn diese ausschließlich mit Überschussstrom aus lokalen erneuerbaren Stromerzeugungsanlagen be-
+trieben werden:
+
+     - Alkalische Elektrolyse,
+     - PEM-Elektrolyse,
+     - Hochtemperatur-Elektrolyse.
+
+3.5 Energieinfrastruktur-Aus- und Umbau für ein 100 Prozent erneuerbares Energiesystem
+
+Unter den im Label-Handbuch erläuterten Voraussetzungen sind diese Maßnahmen zum Aus- und Umbau
+von Energieinfrastruktur grundsätzlich förderfähig:
+
+     - Energiespeicher (Strom-, Wärme-, Elektrochemische-, Chemische Speicherung),
+     - Wärmenetze,
+     - Einrichtungen zum systemdienlichen/fluktuationsausgleichenden Betrieb von Anlagen zur Energie-
+
+          bereitstellung/zum Energieverbrauch,
+     - Umbauten im Stromverteilnetz zur besseren Einbindung von erneuerbaren Energien.
+
+3.6 Mobilitätswende
+
+Im Bereich Öffentlicher Personennahverkehr (ÖPNV) und Lastverkehr wird vorrangig die Umstellung auf
+elektrische Antriebe, im Einzelfall auch die Umstellung auf wasserstoffbasierte Antriebe gefördert.
+Wasserstofftankstellen können nach Einzelfallentscheidung für die ausschließliche Betankung von Lang-
+strecken-Güterverkehr gefördert werden.
+Voraussetzung für eine Förderung ist immer die Verwendung von Grüner Strom-zertifizierten Ökostrompro-
+dukten bzw. Grünem Wasserstoff.
+Förderprojekte zur Mobilitätswende können nach Einzelfallentscheidung mit einem pauschalen anteiligen
+Zuschuss auf Basis der Investitions- und Umsetzungskosten gefördert werden. Dazu gehören zum Beispiel
+
+     - Aufbau privates/öffentliches Elektro-Fahrzeug-Sharing (Voraussetzung Grüner Strom-Stromquali-
+          tät),
+
+     - Transaktionskosten der Umstellung von Kfz-Lieferverkehr auf (Elektro-/Lasten-)Fahrräder,
+     - Mehrkosten Anschaffung Elektro-ÖPNV-Fahrzeuge gegenüber Verbrennungsmotor-Fahrzeuge,
+     - Bereitstellung multi-modaler/intermodaler Mobilitätsoptionen,
+     - Elektro-Ladestationen.
+
+Grüner Strom Label e.V.         Vorstand:  Marcus Bollmann (BUND)         Sparda-Bank West eG
+Kaiserstraße 113 | 53113 Bonn              Niklas Hausemann (EUROSOLAR)   IBAN: DE30 3706 0590 0000 608980
+Tel.: +49 (0) 228 / 522 611-90             Jürgen Reincke (NABU)          BIC: GENODED1SPK
+info@gruenerstromlabel.de                                                 ST.-Nummer: 205/5774/0572
+www.gruenerstromlabel.de        Geschäftsführer: Daniel Craffonara        USt-IdNr.: DE209386855
+                                                        Christian Knops
+                                                                          Seite 10 von 14
+
+Grüner Strom-Label Kriterienkatalog 2021 Version 1.1 (Stand: 16.09.2026)
+
+3.7 Errichtung und Umbau energiesparender stromverbrauchender Einrichtungen (Energieeffizi-
+          enz-Projekte)
+
+Die Zuschusshöhe für Energieeffizienz-Projekte wird als pauschaler anteiliger Zuschuss auf Basis der In-
+vestitionskosten ermittelt.
+Unter den im Label-Handbuch erläuterten Voraussetzungen können Projekte des Labelnehmers sowie ein-
+zelner gewerblicher oder Großkunden nach individueller Beantragung, Projekte von Privatkund*innen im
+Rahmen eines Kundenförderprogramms gefördert werden.
+Zu den förderbaren hocheffizienten Anlagenneu- oder -umbauten gehören zum Beispiel
+
+     - Prozesswärmebereitstellung (Industrieöfen, Wäschereien, Kochgeräte u.a.m.),
+     - Querschnittstechnologien (Klimaanlage, Kühlung, Pumpen u.a.m.),
+     - Beleuchtungsanlagen.
+
+3.8 Sonstige Energiewende-Projekte
+
+3.8.1   Energiewende-Projekte in Deutschland
+
+     -  Kundenförderprogramme,
+     -  Unterstützung von Bürgerenergieprojekten und -gesellschaften,
+     -  Informations- und Bildungsveranstaltungen im Bereich Energiewende und Energieeffizienz,
+     -  Infomaterial für energiepädagogische Begleitmaßnahmen,
+     -  Material für Bildungsarbeit zur Energiewende,
+     -  Infoschilder für Anlagen nach den Ziffern 3.4 bis 3.6 und 3.10,
+     -  Zuschüsse für Kleinstprojekte.
+
+3.8.2 Energiewende-Projekte in der Entwicklungszusammenarbeit
+
+Fördermittel müssen vorrangig in Deutschland eingesetzt werden. Es können einzelne Projekte in Schwel-
+len- und Entwicklungsländern gefördert werden.
+Die Projekte müssen folgende Basismerkmale aufweisen:
+
+     - Grundversorgung der Bevölkerung mit Energie aus erneuerbaren Quellen,
+     - Multiplikatorwirkung.
+
+3.9 Natur- und Artenschutzprojekte
+
+Projekte im Bereich Natur- und Artenschutz, die nicht im direkten Zusammenhang mit einer Energiewende-
+maßnahme nach Ziff. 3.4 bis 3.8 stehen, sind nach den Voraussetzungen des Label-Handbuchs nach Ein-
+zelfallprüfung förderfähig, zum Beispiel das Anlegen von Streuobstwiesen oder Blühflächen.
+Voraussetzung ist, dass die Maßnahme naturschutzfachlich konzeptioniert und umgesetzt wird unter Be-
+gleitung einer qualifizierten Fachperson oder einer anerkannten Naturschutzorganisation.
+
+Nur Förderbetragsanteile, die über den in Ziffer 2.2 aufgeführten Mindestförderbeträgen liegen, können zur
+Förderung von Natur- und Artenschutzprojekten eingesetzt werden.
+
+3.10 Projekte außerhalb der genannten Förderbereiche
+
+Über die Förderung von Projekten, die nicht unter den Ziffern 3.4 bis 3.9 aufgeführt sind, aber der Grund-
+motivation des Grüner Strom Label e.V. entsprechen, wird im Einzelfall entschieden.
+
+Grüner Strom Label e.V.         Vorstand:  Marcus Bollmann (BUND)         Sparda-Bank West eG
+Kaiserstraße 113 | 53113 Bonn              Niklas Hausemann (EUROSOLAR)   IBAN: DE30 3706 0590 0000 608980
+Tel.: +49 (0) 228 / 522 611-90             Jürgen Reincke (NABU)          BIC: GENODED1SPK
+info@gruenerstromlabel.de                                                 ST.-Nummer: 205/5774/0572
+www.gruenerstromlabel.de        Geschäftsführer: Daniel Craffonara        USt-IdNr.: DE209386855
+                                                        Christian Knops
+                                                                          Seite 11 von 14
+
+Grüner Strom-Label Kriterienkatalog 2021 Version 1.1 (Stand: 16.09.2026)
+
+3.11 Verwendungsmöglichkeiten der Fördergelder
+
+Die Förderung erfolgt in der Regel als Grüner Strom-Zuschuss. Dieser kann als Investitionsbeitrag für ei-
+gene Projekte oder für Projekte Dritter bereitgestellt werden.
+Eine Übertragung von Fördermitteln an den Energiewende-Fonds des Grüner Strom Label e.V. ist eben-
+falls nach vorheriger Vereinbarung gebührenpflichtig möglich. Der Grüner Strom Label e.V. verwendet
+diese Mittel zweckgebunden zur Förderung von Energiewendeprojekten nach den Vorgaben dieses Kriteri-
+enkatalogs.
+Andere Förderkonzepte sind nur im Einzelfall möglich.
+Grüner Strom-Zuschüsse sollen vorrangig in Neuanlagen fließen, die vom Anbieter selbst oder von ge-
+meinnützigen Organisationen, öffentlichen und karitativen Einrichtungen sowie Bürgerbetreibergesellschaf-
+ten und Genossenschaften errichtet und betrieben werden.
+Dritte, die Zuschüsse erhalten, müssen selbst Grüner Strom-zertifizierten Strom beziehen.
+
+3.12 Feststellung der Zuschusshöhe
+
+Die Ermittlung der Zuschusshöhe erfolgt durch standardisierte Wirtschaftlichkeitsberechnungen oder als
+pauschaler Zuschuss, der in der Regel auf den nachweisbaren Investitionskosten basiert.
+Bei Wirtschaftlichkeitsberechnungen werden alle Einnahmequellen (EEG, KWKG, Vor-Ort-Vermarktung,
+Direktvermarktung etc.) berücksichtigt. Die Wirtschaftlichkeitsberechnungen müssen die im Label-Hand-
+buch angegebenen maximal zulässigen Projektverzinsungen berücksichtigen.
+Art und Höhe der Zuschussermittlung können den sich ändernden Rahmenbedingungen aus Energie-
+recht/Energiewirtschaft und staatlichen Förderangeboten bei Bedarf vom Grüner Strom Label e.V. ange-
+passt werden.
+Von Dritten erhaltene Fördermittel sind stets anzugeben.
+
+3.13 Verbuchung der Zuschüsse
+
+Genehmigte Zuschüsse werden im Jahr des Projektabschlusses vollständig als Fördermittelausgaben ge-
+bucht. Nach vorheriger Vereinbarung können Zuschüsse auch über mehrere Jahre verteilt als Fördermittel-
+ausgaben verbucht werden.
+Genehmigte Zuschüsse, die über die zertifizierten Investitionsverpflichtungen hinausgehen, werden als In-
+vestitionsüberschüsse mit den eingenommenen Fördermitteln der Folgejahre verrechnet.
+
+4  ANFORDERUNGEN AN DEN ENERGIEANBIETER
+
+4.1 Beteiligungen und Unternehmensverflechtungen
+
+4.1.1 Beteiligung an Atomkraftwerken
+
+Das Grüner Strom-Label wird keinem Unternehmen erteilt, das an einem Atomkraftwerk direkt beteiligt ist,
+d.h. ein Atomkraftwerk selbst betreibt oder an einer Betreibergesellschaft mit Stammkapital/Grundkapital
+beteiligt ist.
+
+4.1.2 Beteiligung an Kohlekraftwerken
+
+Das Grüner Strom-Label wird keinem Unternehmen erteilt, das zum Stichtag 1.1.2027 noch direkt an ei-
+nem Kohlekraftwerk beteiligt ist, d.h. ein Kohlekraftwerk selbst betreibt oder an einer Betreibergesellschaft
+mit Stammkapital/Grundkapital beteiligt ist.
+
+Grüner Strom Label e.V.         Vorstand:  Marcus Bollmann (BUND)         Sparda-Bank West eG
+Kaiserstraße 113 | 53113 Bonn              Niklas Hausemann (EUROSOLAR)   IBAN: DE30 3706 0590 0000 608980
+Tel.: +49 (0) 228 / 522 611-90             Jürgen Reincke (NABU)          BIC: GENODED1SPK
+info@gruenerstromlabel.de                                                 ST.-Nummer: 205/5774/0572
+www.gruenerstromlabel.de        Geschäftsführer: Daniel Craffonara        USt-IdNr.: DE209386855
+                                                        Christian Knops
+                                                                          Seite 12 von 14
+
+Grüner Strom-Label Kriterienkatalog 2021 Version 1.1 (Stand: 16.09.2026)
+
+4.1.3 Ausnahmeregelungen
+
+Für Labelnehmer, die an einem Kohlekraftwerk eine Minderheits-Beteiligung ohne bestimmenden Einfluss
+halten und bereits vor Inkrafttreten dieses Kriterienkatalogs (1.1.2021) Produkte mit dem Grüner Strom -
+bzw. Grünes Gas-Label haben zertifizieren lassen, ist nach Einzelfallprüfung bis zum 31.12.2025 eine Aus-
+nahme von der in Ziffer 4.1.2 genannten Verpflichtung möglich. Begründung und Bedingungen der Ausnah-
+meregelung sind auf der Website des Grüner Strom Label e.V. abrufbar.5
+Alle nach positiver Einzelfallprüfung gewährten Ausnahmeregelungen werden öffentlich bekannt gegeben.
+
+4.1.4 Geltungsbereich
+
+Die in Ziffern 4.1.1 und 4.1.2 genannten Anforderungen an den Energieanbieter gelten gleichermaßen
+auch für direkte Muttergesellschaften, die mit mehr als 50 Prozent am Labelnehmer beteiligt sind, sowie
+direkte Tochtergesellschaften, an denen der Labelnehmer mit mehr als 50 Prozent beteiligt ist. Eine Aus-
+nahmeregelung gemäß Ziffer 4.1.3 ist für Mutter- und Tochtergesellschaften nicht möglich.
+
+4.2 Buchführung
+
+Labelnehmer sind verpflichtet, für die mit den Angeboten von Grüner Strom-Ökostrom verbundenen Aktivi-
+täten eine von ihren übrigen Aktivitäten getrennte Buchführung einzurichten. Sie müssen insbesondere
+
+     a) die für den Nachweis der Erfüllung ihrer Verpflichtungen erforderlichen Daten detailliert erfassen,
+          übersichtlich dokumentieren und von ihren Wirtschaftsprüfer*innen6 bestätigen oder alternativ vom
+          Systeminhaber im Rahmen einer begleitenden Datenerhebung beim Labelnehmer verifizieren las-
+          sen7,
+
+     b) diese Anforderungen auch an die Betreiber*innen mit von ihnen bereitgestellten Mitteln geförderter
+          Erneuerbare-Energien-Anlagen und an sonstige Fördermittelempfänger*innen stellen,
+
+     c) dem Grüner Strom Label e.V. die erforderlichen Daten und Nachweise liefern sowie auf Anforde-
+          rung Zugang zu Unterlagen sowie den im Rahmen der Zertifizierung geförderten Erzeugungsanla-
+          gen und sonstigen Maßnahmen gewähren.
+
+Die unter a) genannte Anforderung gilt nicht für dritte Energielieferanten, denen die Versorgung von End-
+kund*innen mit Grüner Strom-Label zertifiziertem Strom im Rahmen einer Kooperations- oder Vertriebs-
+partnerschaft ermöglicht wurde.
+
+Für Labelnehmer mit einer Gesamtabsatzmenge für alle zertifizierten Produkte von unter 5 GWh in Summe
+pro Jahr kann die unter a) genannte Anforderung maximal für die ersten fünf Jahre der Zertifizierung entfal-
+len. Absatzmenge und Investitionsverpflichtung werden in diesem Fall über einen Verifizierungsbogen be-
+stätigt.
+
+4.3 Produktkommunikation
+
+Labelnehmer müssen das zertifizierte Produkt gegenüber ihren Kund*innen nach den in Ziffer 6 beschrie-
+benen Maßgaben kommunizieren. Sie müssen es aktiv bewerben und in diesem Zuge das Logo des Grü-
+ner Strom-Labels gemäß Ziffer 6.1 abbilden.
+
+5 Abrufbar unter: www.gruenerstrom.info.
+6 Alternativ zu Wirtschaftsprüfer*innen kann der Labelnehmer beim Labelgeber auch eine andere geeignete zugelassene Überwa-
+
+chungsstelle (ZÜS) beantragen. Bei positiver Prüfung und Freigabe durch den Labelgeber kann eine ZÜS die Testierung der Kern-
+
+daten übernehmen.
+7 Zur Durchführung der Prüfungen siehe das „Procedere der Zertifizierung“, abrufbar unter www.gruenerstrom.info.
+
+Grüner Strom Label e.V.         Vorstand:  Marcus Bollmann (BUND)         Sparda-Bank West eG
+Kaiserstraße 113 | 53113 Bonn              Niklas Hausemann (EUROSOLAR)   IBAN: DE30 3706 0590 0000 608980
+Tel.: +49 (0) 228 / 522 611-90             Jürgen Reincke (NABU)          BIC: GENODED1SPK
+info@gruenerstromlabel.de                                                 ST.-Nummer: 205/5774/0572
+www.gruenerstromlabel.de        Geschäftsführer: Daniel Craffonara        USt-IdNr.: DE209386855
+                                                        Christian Knops
+                                                                           Seite 13 von 14
+
+Grüner Strom-Label Kriterienkatalog 2021 Version 1.1 (Stand: 16.09.2026)
+
+Im Rahmen der Produktkommunikation muss der Förderbetrag je kWh (netto) angegeben werden. Vertreibt
+der Labelnehmer Produkte mit unterschiedlich hohen Förderbeträgen oder haben die Produkte nach jährli-
+chen Absatzmengen gestaffelt unterschiedliche Förderbeträge, sind diese Förderbeträge in der Produkt-
+kommunikation kenntlich zu machen.
+Labelnehmer sind außerdem dazu verpflichtet, zu den geförderten Erneuerbare-Energien-Anlagen fol-
+gende Daten zu veröffentlichen:
+
+     - Standorte,
+     - Zeitpunkte der Inbetriebnahme,
+     - Leistungsdaten.
+
+Zu sonstigen geförderten Maßnahmen sind gleichwertige Informationen zu veröffentlichen.
+
+4.4 Nachweis der Fördermittelverwendung
+
+Die Erfüllung der Verpflichtungen zur Verwendung der Fördermittel wird in jeder Zertifizierung überprüft.
+Die von Wirtschaftsprüfer*innen testierten oder alternativ vom Systeminhaber unverbindlich vorgeprüften
+Nachweise dazu müssen bis spätestens 30.6. des entsprechenden Kalenderjahres geführt werden. Vorläu-
+fige Angaben sind dem Systeminhaber jeweils bis zum 31.1. mitzuteilen.
+
+4.5 Frist zur Verwendung der Fördermittel
+
+Die in einem Kalenderjahr durch den festgelegten Förderbetrag je kWh sich ergebende finanzielle Ver-
+pflichtung zur Förderung neuer Anlagen oder sonstiger Energiewendemaßnahmen ist bis zum Ende des
+zweiten darauffolgenden Jahres zu erfüllen. Mittel, die bis zu diesem Zeitpunkt nicht gemäß diesem Kriteri-
+enkatalog verwendet wurden, sind dem Grüner Strom Label e.V. zu überweisen, der diese Mittel zweckge-
+bunden zur Förderung von Energiewendeprojekten nach den Vorgaben dieses Kriterienkatalogs zeitnah zu
+verwenden hat.
+
+5  ERTEILUNG UND ENTZUG DES LABELS
+
+5.1 Erteilung und Entzug
+
+Das Label wird grundsätzlich für zwei Jahre erteilt. Es wird bei schwerwiegenden Verstößen gegen die La-
+bel-Vereinbarung beziehungsweise die in diesem Kriterienkatalog enthaltenen Punkte fristlos entzogen.
+Ein schwerwiegender Verstoß liegt unter anderem vor,
+
+     (1) allgemein bei Missbrauch, insbesondere bei Manipulation von Daten,
+     (2) wenn die Verpflichtungen aus Ziff. 4.1 bis 4.1.4 nicht erfüllt werden,
+     (3) wenn die Verpflichtung aus Ziff. 4.5 in drei aufeinander folgenden Jahren nicht erfüllt wird.
+
+Der Entzug wird öffentlich bekannt gemacht.
+
+5.2 Auszahlung nicht verwendeter Fördergelder
+
+Bei Kündigung der Labelvereinbarung zwischen Systeminhaber und Labelnehmer oder Entzug des Labels
+gemäß Ziff. 5.1 sind nach Ziff. 2.2 festgelegte, nicht verwendete Förderbeträge zum Zeitpunkt des Wirk-
+samwerdens der Kündigung an den Grüner Strom Label e.V. auszuzahlen, der sie gemäß Ziff. 4.5 zu ver-
+wenden hat.
+
+Grüner Strom Label e.V.         Vorstand:    Marcus Bollmann (BUND)        Sparda-Bank West eG
+Kaiserstraße 113 | 53113 Bonn                Niklas Hausemann (EUROSOLAR)  IBAN: DE30 3706 0590 0000 608980
+Tel.: +49 (0) 228 / 522 611-90               Jürgen Reincke (NABU)         BIC: GENODED1SPK
+info@gruenerstromlabel.de                                                  ST.-Nummer: 205/5774/0572
+www.gruenerstromlabel.de        Geschäftsführer: Daniel Craffonara         USt-IdNr.: DE209386855
+                                                        Christian Knops
+                                                                          Seite 14 von 14
+
+Grüner Strom-Label Kriterienkatalog 2021 Version 1.1 (Stand: 16.09.2026)
+
+6  VERWENDUNG DES LABELS UND WEITERGABE AN KUND*INNEN
+
+6.1 Vorgaben zur Nutzung des Labels
+
+Labelnehmer dürfen das Grüner Strom-Label in ihrer Produktkommunikation nur im eindeutigen Zusam-
+menhang mit dem zertifizierten Produkt nennen und abbilden. Das bedeutet im Einzelnen:
+
+     - Direkte Verlinkung des Labels auf die Internetseite des Systeminhabers mit den dort abgebildeten
+          Vergabekriterien. Nennung und Abbildung des Labels dürfen sich ausschließlich auf den zertifizier-
+          ten Tarif beziehen.
+
+     - Nennung und Abbildung des Labels dürfen sich nicht auf das Gesamtunternehmen beziehen.
+     - Das Label darf nicht in einer Weise eingesetzt werden, die über das hinausgeht, was das Label in-
+
+          haltlich belegt.
+     - Es dürfen keine Klimaneutralitäts-Aussagen (z.B. klimafreundlich oder CO₂-neutral) in Bezug auf
+
+          das Label kommuniziert oder damit verknüpft werden.
+     - Im Zusammenhang mit der Abbildung des Labels dürfen auch die Namen der hinter dem Grüner
+
+          Strom Label e.V. stehenden Trägerverbände genannt werden. Ein Anrecht auf Nutzung der Logos
+          der Trägerverbände besteht nicht.
+
+Ergänzend hierzu gelten die jeweils aktuellen vom Grüner Strom Label e.V. bereitgestellten Nutzungsbe-
+dingungen für das Logo.8
+
+6.2 Weitergabe des Labels
+
+Labelnehmer sind autorisiert, mit schriftlicher Genehmigung des Systeminhabers, den Kund*innen ihres
+zertifizierten Stromproduktes für die Laufzeit ihres aktuell gültigen Grüner Strom-Zertifikats bzw. für die
+Laufzeit des Stromliefervertrags das Grüner Strom-Label zur Nutzung weiterzugeben. Ergänzend hierzu
+gelten die jeweils aktuellen vom Grüner Strom Label e.V. bereitgestellten Nutzungsbedingungen für das
+Logo.8
+
+7  GÜLTIGKEIT UND ÜBERGANGSREGELUNG
+
+7.1 Dieser Kriterienkatalog hat so lange Gültigkeit, bis er durch eine Neufassung ersetzt wird.
+
+7.2 Alle Querbezüge zu übergeordneten gesetzlichen Regelungen und Richtlinien (zum Beispiel EEG,
+          KWKG) beziehen sich auf deren jeweils gültige Fassung zum Zeitpunkt der Herausgabe des vorlie-
+          genden Kriterienkatalogs (1.1.2021).
+
+7.3 Bei Änderungen gesetzlicher Regelungen und Richtlinien, die für den vorliegenden Kriterienkatalog
+          relevant sind, hat der Systeminhaber das Recht, den Kriterienkatalog in den betreffenden Ziffern
+          anzupassen.
+
+7.4 Für Labelnehmer, die vor dem 1.1.2021 eine Labelvereinbarung auf Basis früherer Kriterienkata-
+          loge abgeschlossen haben, gilt eine Übergangsfrist zur Einhaltung dieses Kriterienkatalogs bis zum
+          31.12.2021.
+
+8 Abrufbar unter: www.gruenerstrom.info.
+
+Grüner Strom Label e.V.         Vorstand:  Marcus Bollmann (BUND)         Sparda-Bank West eG
+Kaiserstraße 113 | 53113 Bonn              Niklas Hausemann (EUROSOLAR)   IBAN: DE30 3706 0590 0000 608980
+Tel.: +49 (0) 228 / 522 611-90             Jürgen Reincke (NABU)          BIC: GENODED1SPK
+info@gruenerstromlabel.de                                                 ST.-Nummer: 205/5774/0572
+www.gruenerstromlabel.de        Geschäftsführer: Daniel Craffonara        USt-IdNr.: DE209386855
+                                                        Christian Knops
+
