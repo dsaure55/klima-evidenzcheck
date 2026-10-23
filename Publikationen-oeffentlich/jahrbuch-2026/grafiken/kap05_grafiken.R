@@ -37,8 +37,8 @@ lines(d1$rank, d1$cum_share * 100, col = grau, lwd = 3)
 segments(11, cum11, 208, cum11, col = orange, lwd = 2, lty = 2)
 segments(12, 0, 12, d1$cum_share[12] * 100, col = blau, lwd = 2, lty = 3)
 points(12, d1$cum_share[12] * 100, pch = 21, bg = blau, col = "white", cex = 1.9, lwd = 1.5)
-text(16, d1$cum_share[12] * 100 - 9, "Deutschland: Rang 12, Anteil 1,3 %", adj = 0, col = blau, cex = 0.9, font = 2)
-text(208, cum11 + 9, "Die 11 größten Länder: 68,3 %. Deutschland und alle kleineren zusammen: 31,7 %", adj = 1, col = orange, cex = 0.85, font = 2)
+text(16, d1$cum_share[12] * 100 - 22, "Deutschland: Rang 12, Anteil 1,3 %", adj = 0, col = blau, cex = 0.9, font = 2)
+text(208, cum11 - 8, "Bis Rang 11: 68,3 %. Mit Deutschland: 69,6 %. Deutschland und alle kleineren: 31,7 %", adj = 1, col = orange, cex = 0.85, font = 2)
 titel("Länder so klein wie Deutschland oder kleiner: fast ein Drittel",
       "Treibhausgasemissionen 2024: 208 Länder nach Anteil sortiert, kumuliert")
 quelle("Quelle: EDGAR (EU JRC), alle Treibhausgase in CO2-Äquivalenten, 2024; Auswertung: Klima Kompass, Evidenzcheck „Die Trittbrettfahrer-Rechnung“ vom 31.08.2026. Produktionsbasiert (Emissionen dort gezählt, wo sie entstehen). Gedankenexperiment, keine Schuldfrage.")
@@ -49,7 +49,7 @@ dev.off()
 labs <- c("Heute, Treibhausgase 2024 (Hauptvariante)",
           "Heute, nur CO2 2024",
           "Heute, konsumbasiert, nur CO2 2023",
-          "Heute, nur Länder mit überdurchschnittlichem Pro-Kopf-Ausstoß",
+          "Heute, 58 Länder mit überdurchschnittlichem Pro-Kopf-Ausstoß",
           "Historisch seit 1850, fossiles CO2 + Zement (Hauptvariante)",
           "Historisch seit 1850, mit Landnutzung")
 werte <- c(31.7, 30.1, 40.5, 14.2, 53.1, 54.0)
@@ -64,8 +64,8 @@ axis(2, at = y, labels = labs, tick = FALSE, cex.axis = 0.85, las = 1)
 rect(0, y - 0.32, werte, y + 0.32, col = farben, border = NA)
 text(werte + 1, y, paste0(format(werte, decimal.mark = ",", nsmall = 1), " %"), adj = 0, cex = 0.95, col = ink, font = 2)
 mtext("Prozent der weltweiten Emissionen", side = 1, line = 2.8, cex = 0.9, col = ink)
-titel("Je nach Maßstab zwischen 14 und 54 Prozent",
-      "Summe der Emissionsanteile aller Länder mit höchstens deutschem Anteil, sechs Varianten")
-quelle("Quelle: Klima Kompass, Evidenzcheck „Die Trittbrettfahrer-Rechnung“ vom 31.08.2026. Die Varianten sind nicht direkt vergleichbar (verschiedene Gase, Jahre, Zeiträume, Bezugsgruppen). Konsumbasiert: nach OWID. Historisch mit Landnutzung: Mittel dreier Modelle, höhere Unsicherheit.")
+titel("Der Anteil hängt vom Maßstab ab",
+      "Summe der Emissionsanteile aller Länder mit höchstens deutschem Anteil, nach Variante")
+quelle("Quelle: Klima Kompass, Evidenzcheck „Die Trittbrettfahrer-Rechnung“ vom 31.08.2026. Blau und Orange: Hauptvarianten. Die Varianten sind nicht direkt vergleichbar (verschiedene Gase, Jahre, Zeiträume, Bezugsgruppen). Konsumbasiert: nach OWID. Historisch mit Landnutzung: Mittel dreier Modelle, höhere Unsicherheit.")
 dev.off()
 cat("Grafiken geschrieben nach", out, "\n")

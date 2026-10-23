@@ -1,4 +1,4 @@
-**ENTWURF v0.1 (23.10.2026) – nicht geprüft, nicht freigegeben. Diese Kopfzeile, die Herkunftstabelle am Ende und die Hinweise unter den Grafiken nicht ins Buch übernehmen.**
+**ENTWURF v0.2 (23.10.2026) – Auflagen A1–A9 aus `pruefung/faktencheck_kap05.md` eingearbeitet, Nachprüfung ausstehend, nicht freigegeben. Diese Kopfzeile, die Herkunftstabelle am Ende und die Hinweise unter den Grafiken nicht ins Buch übernehmen.**
 
 # Kapitel 5 – Ist Deutschland „zu klein, um zu zählen“?
 
@@ -42,25 +42,25 @@ Dazu kommen Varianten, die wir vorab festgelegt haben [1]:
 
 ## Warum anderswo andere Zahlen stehen
 
-Oft liest man „rund zwei Prozent“. Die Helmholtz-Klima-Initiative prüft diese Behauptung auf Basis von Daten, die laut der Seite aus dem Jahr 2017 stammen (Stand April 2021) [2][3]. Die WirtschaftsWoche nennt für 2024 einen CO₂-Anteil von 1,46 Prozent, für alle Treibhausgase dagegen 1,27 Prozent [4]. In unserer Rechnung liegt der deutsche Anteil bei reinem CO₂ bei 1,5 Prozent, mit allen Treibhausgasen bei 1,3. Die Unterschiede kommen von verschiedenen Jahren und Gasen [1][2][3][4].
+Die Helmholtz-Klima-Initiative nennt „rund zwei Prozent“ und prüft diese Behauptung. Ihre CO₂-Angaben beziehen sich laut der Seite auf 2017 (Stand April 2021) [2][3]. Die WirtschaftsWoche nennt für 2024 einen CO₂-Anteil von 1,46 Prozent, für alle Treibhausgase dagegen 1,27 Prozent [4]. In unserer Rechnung liegt der deutsche Anteil bei reinem CO₂ bei 1,5 Prozent, mit allen Treibhausgasen bei 1,3 [1][2].
 
 ## Was die Zahlen nicht sagen
 
 - **Keine Schuldfrage.** Die Rechnung ist ein Gedankenexperiment. Sie sagt nichts darüber, welches Land wie viel Verantwortung trägt oder was fair wäre. Sie bewertet auch nicht, ob ein hoher oder niedriger Anteil an Klimapolitik, Wirtschaftsstruktur, Bevölkerungszahl oder am Zufall der Ländergrenzen liegt [1].
-- **Produktion, nicht Konsum.** Die Hauptzahlen zählen Emissionen dort, wo sie entstehen. Für Länder mit hohen Importen emissionsintensiver Güter kann die konsumbasierte Zahl spürbar höher liegen, wie die Variante oben zeigt [1].
-- **Nichts zur COP31.** Vom 9. bis 20. November 2026 findet im türkischen Antalya die UN-Klimakonferenz COP31 statt [6]. Was dort verhandelt wird und welche Zusagen die Staaten machen, beantwortet diese Rechnung nicht [2].
+- **Produktion, nicht Konsum.** Die Hauptzahlen zählen Emissionen dort, wo sie entstehen. Für Länder mit hohen Importen emissionsintensiver Güter kann die konsumbasierte Zahl spürbar höher liegen (siehe die konsumbasierte Variante oben, die allerdings nicht direkt vergleichbar ist) [1].
+- **Nichts zur COP31.** Anlass unseres Stücks war die UN-Klimakonferenz COP31 (9. bis 20. November 2026 in Antalya, laut UNFCCC-Zeitplan) [6]. Was dort verhandelt wurde und welche Zusagen die Staaten gemacht haben, beantwortet diese Rechnung nicht [2].
 
 ## Was heißt das für dich?
 
 - Ein Anteil in Prozent lässt sich erst einordnen, wenn klar ist, worauf er sich bezieht: auf welches Jahr, auf welche Gase und darauf, ob Emissionen dort gezählt werden, wo sie entstehen, oder dort, wo die Güter verbraucht werden.
-- Wer Prozentzahlen aus verschiedenen Quellen vergleicht, sollte prüfen, ob sie auf derselben Basis stehen. Hinter „zwei Prozent“, „1,5 Prozent“ und „1,3 Prozent“ stecken keine Widersprüche, sondern verschiedene Maßstäbe.
-- „Zu klein, um zu zählen“ funktioniert als Argument nur, solange es nicht alle sagen. Ob ein einzelner Anteil zählt, hängt auch davon ab, wie viele andere in derselben Lage sind. Ob daraus eine Pflicht zum Handeln folgt, beantwortet die Rechnung nicht.
+- Wer Prozentzahlen aus verschiedenen Quellen vergleicht, sollte prüfen, ob sie auf derselben Basis stehen. Die Zahlen „zwei Prozent“, „1,5 Prozent“ und „1,3 Prozent“ beziehen sich auf verschiedene Quellen, Gase und Jahre. Vergleichbar sind nur Zahlen mit derselben Basis.
+- Unser Gedankenexperiment legt nahe: „Zu klein, um zu zählen“ funktioniert nur, solange es nicht alle sagen. Ob ein einzelner Anteil zählt, ist auch eine Frage danach, wie viele andere in derselben Lage sind. Was daraus für das Handeln folgt, beantwortet die Rechnung nicht.
 
 ## Lagen wir richtig?
 
 - **Zahlen:** Seit der Veröffentlichung am 31. August haben wir keine Änderungen an den Kernzahlen vorgenommen. Neuere EDGAR- oder GCP-Daten nennen wir nur mit Quelle und Datum und rechnen sie nicht neu.
-- **Vor der Veröffentlichung gefunden:** Die unabhängige Validierung fand in der ersten Prüfrunde einen kritischen Fehler in einem Datenkonverter. Er führte zu einem falschen Zwischenwert für die historische Kernzahl. Nach der Korrektur wurden alle Kernzahlen unabhängig neu berechnet und bestätigt. Das ist keine nachträgliche Korrektur, zeigt aber, was die Prüfung leistet (mehr dazu in Kapitel 8) [1].
-- **COP31:** Unsere Stücke machen keine Vorhersage zur Konferenz. Was dort beschlossen wird, ist deshalb keine Frage von „richtig oder falsch“ für uns. Einen Ergebnisblock nehmen wir nur auf, wenn bis zum 15. November eine belastbare Primärquelle vorliegt und der Text die Faktenprüfung besteht.
+- **Vor der Veröffentlichung gefunden:** Die unabhängige Validierung fand in der ersten Prüfrunde einen kritischen Fehler in einem Datenkonverter. Er verfälschte die historische Kernzahl sowie die konsumbasierte und die Landnutzungsvariante. Der falsche Wert wurde nie veröffentlicht. Nach der Korrektur wurden die betroffenen Werte unabhängig nachgerechnet und bestätigt, die übrigen waren bereits geprüft. Das ist keine nachträgliche Korrektur (mehr dazu in Kapitel 8) [1].
+- **COP31:** Unsere Stücke machen keine Vorhersage zur Konferenz. Was dort beschlossen wurde, beantwortet diese Rechnung nicht und ist hier nicht ausgewertet.
 
 ## Woher wir das wissen
 
@@ -72,7 +72,7 @@ Die Analyse ist deskriptiv: keine p-Werte, keine Konfidenzintervalle. Sie deckt 
 [2] Klima Kompass · Einordnung: „COP31: Ist Deutschland ‚zu klein, um zu zählen‘?“, 19.10.2026. https://klimaevidenzcheck.substack.com/p/cop31-ist-deutschland-zu-klein-um
 [3] Helmholtz-Klima-Initiative / klimafakten: Behauptung „Deutschland verursacht nur rund zwei Prozent des weltweiten CO2-Ausstoßes. Was wir tun, ist deshalb praktisch irrelevant.“ (laut Seite Daten 2017, Stand April 2021). https://www.helmholtz-klima.de/klimafakten/behauptung-deutschland-verursacht-nur-rund-zwei-prozent-des-weltweiten-co2-ausstosses-was-wir-tun
 [4] WirtschaftsWoche: CO2-Ausstoß Deutschlands, der EU & weltweit im Ländervergleich 2026, 24.02.2026. https://www.wiwo.de/politik/ausland/co2-ausstoss-deutschlands-der-eu-weltweit-im-laendervergleich-2026/29263872.html
-[5] EDGAR – Emissions Database for Global Atmospheric Research (EU JRC); Global Carbon Project, Global Carbon Budget; Weltbank, World Development Indicators; Our World in Data (Zugriff 31.08.2026, wie in [1]).
+[5] Rohdaten der Analyse [1], Zugriff jeweils am 31.08.2026: EDGAR – Emissions Database for Global Atmospheric Research (EU JRC), GHG booklet 2025 (https://edgar.jrc.ec.europa.eu/booklet/EDGAR_2025_GHG_booklet_2025.xlsx); Global Carbon Project, Global Carbon Budget; Weltbank, World Development Indicators; Our World in Data. Editionen und Links im Aufbereitungsprotokoll `Analysen/2026-08-trittbrettfahrer-rechnung/rohdaten/DATENAUFBEREITUNG_LOG.txt`.
 [6] UNFCCC: COP 31 Overview Schedule, Antalya, 9.–20.11.2026. https://unfccc.int/sites/default/files/resource/COP_31_Overview_Schedule.pdf
 
 ---
