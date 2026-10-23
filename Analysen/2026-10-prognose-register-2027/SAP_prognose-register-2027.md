@@ -9,11 +9,20 @@ bis Ende 2026.
 
 **Format:** Klima Kompass · Evidenzcheck, Unterformat „Prognose-Register“
 (prospektiv). Inhaltsstufe: Evidenzcheck (neue Inferenz).
-**Version:** 0.7
-**Status: draft**
+**Version:** 1.0-teil (Text v0.7, Teilfreigabe nach Rückfrage 7)
+**Status: teilweise final** – eingefroren sind V3 und die allgemeinen
+Abschnitte 0, 1, 2.0, 2.3, 3.3, 3.5 und 5–11. V1, V2 und V4 (Abschnitte 2.1,
+2.2, 2.4, 3.1, 3.2, 3.4) sind weiter **draft**.
 **Datum:** 23.10.2026
 **Autor:in:** Claude (sap-autor-Subagent)
-**Freigabe/Einfrieren:** ausstehend. Das Einfrieren erfolgt ausschließlich
+**Teilfreigabe:** Freigegeben durch Daniel Saure am 23.10.2026 für V3 und die
+allgemeinen Abschnitte 0, 1, 2.0, 2.3, 3.3, 3.5 und 5–11 (Wortlaut v0.7).
+Grundlage: Auf die Frage „Hast du den vollständigen Text von SAP v0.7 selbst
+gelesen, und was soll jetzt eingefroren werden?“ wählte Daniel Saure im Chat
+„Gelesen: V3 + Allgemeines“. Die Teilfreigabe gilt nur für die genannten
+Abschnitte (Rückfrage 7). Die eingefrorenen Abschnitte dürfen nur noch per
+gekennzeichnetem Amendment geändert werden.
+**Freigabe/Einfrieren V1, V2, V4:** ausstehend. Das Einfrieren erfolgt ausschließlich
 durch Daniel Saure, nachdem er den vollständigen aktuellen Text gelesen und
 ausdrücklich bestätigt hat (CLAUDE.md, Verifikationspflicht). V3 darf getrennt
 eingefroren werden (Rückfrage 7, beantwortet 22.10.2026). Offene
@@ -91,6 +100,16 @@ Ergänzungen, wie im Prognose-Check.
   bis v0.7 …“) und in der Einleitung von Abschnitt 12 (Satz zu den drei
   Kleinfragen). Sonst keine Änderungen. Status weiter draft. Keine Daten
   gesichtet, kein Code ausgeführt.
+- **v1.0-teil (23.10.2026):** Teilfreigabe nach Rückfrage 7 durch Daniel
+  Saure („Gelesen: V3 + Allgemeines“, nach Lesen des Volltexts v0.7).
+  Eingefroren: V3 und die allgemeinen Abschnitte 0, 1, 2.0, 2.3, 3.3, 3.5 und
+  5–11 im Wortlaut v0.7. Nur Kopf und Versionshistorie geändert, der übrige
+  Text ist unverändert v0.7. V1, V2 und V4 bleiben draft (Frist 31.12.2026;
+  V2 zusätzlich nach der Dateiprüfung aus Rückfrage 3 und 22). Bekannte
+  Textreste ohne Einfluss auf V3, beim Einfrieren der übrigen Teile
+  nachzuziehen: Rückfrage 15 nennt noch die am 23.10.2026 gestrichene Regel
+  „Eine Analyse zur Zeit“; Abschnitt 11, Feld „Neuregistrierung“, ohne
+  Querverweis auf die Nummernregel in 0.1 (kein Widerspruch).
 
 ---
 
