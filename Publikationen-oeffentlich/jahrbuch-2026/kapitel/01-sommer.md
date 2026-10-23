@@ -1,4 +1,4 @@
-**ENTWURF v0.8 (23.10.2026) – Auflagen N26–N30 aus Nachtrag 5 eingearbeitet (Grafikbeschriftungen, Erklärung der Linie, Bildunterschrift, WWA-Zeitraum). Prüfung der Änderungen (Nachtrag 6) optional; Daniels Volltextlektüre und Freigabe stehen aus. Diese Kopfzeile und die Herkunftstabelle am Ende nicht ins Buch übernehmen (A14: vor Satz/Export entfernen).**
+**FREIGEGEBEN durch Daniel Saure am 23.10.2026 für Fassung v0.8 (Commit 9ad213d; Wortlaut: „ok ist freigegeben, danke“, nachdem Daniel angekündigt hatte: „Ich lese Kapitel 1 v0.8 jetzt vollständig und melde mich mit Freigabe oder Änderungen“). Faktencheck: `pruefung/faktencheck_kap01.md` (Nachträge 1–5, zuletzt ok mit Auflagen, N26–N30 danach eingearbeitet, eine abschließende Gegenprüfung durch den Faktenprüfer fand nicht statt). Vor Satz/Export: diese Kopfzeile, die Herkunftstabelle am Ende und die Hinweise zu Grafiken entfernen bzw. durch finale Fassung ersetzen (A14). Datenstände zum Stichtag 15.11. erneut abgleichen.**
 
 
 # Kapitel 1 – War dieser Sommer normal, und was sagen die Zahlen?
