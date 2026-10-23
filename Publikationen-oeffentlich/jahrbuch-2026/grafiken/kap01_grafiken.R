@@ -27,7 +27,7 @@ d1 <- read.csv(file.path(repo, "Analysen/2026-09-sommer-2026-normal/rohdaten/dwd
 png(file.path(out, "kap01_grafik1_sommertemperatur.png"), width = 2000, height = 1100, res = 200)
 theme_start()
 plot(d1$jahr, d1$tm_sommer_de, type = "n", xlab = "", ylab = "Mitteltemperatur Juni bis August (°C)",
-     ylim = c(12.9, 20.5), xlim = c(1880, 2078), xaxt = "n", yaxt = "n")
+     ylim = c(12.9, 20.5), xlim = c(1880, 2062), xaxt = "n", yaxt = "n")
 raster(seq(14, 20, 2))
 axis(1, at = seq(1880, 2020, 20), tick = FALSE, line = -0.5)
 axis(2, at = seq(14, 20, 2), tick = FALSE)
@@ -66,18 +66,18 @@ raster(seq(0, 18000, 3000))
 axis(1, at = seq(1995, 2025, 5), tick = FALSE, line = -0.5)
 axis(2, at = seq(0, 18000, 3000), labels = format(seq(0, 18000, 3000), big.mark = ".", trim = TRUE), tick = FALSE)
 abline(h = 8700, col = orange, lwd = 2, lty = 2)
-text(1991.4, 9350, "Obergrenze eines „normalen“ Jahres: rund 8.700", adj = 0, col = orange, cex = 0.85, font = 2)
+text(1991.4, 9350, "Obergrenze des Prognoseintervalls für ein normales Jahr: rund 8.700", adj = 0, col = orange, cex = 0.85, font = 2)
 segments(d2$jahr, d2$pi_unten, d2$jahr, d2$pi_oben, col = grau, lwd = 1.3)
 points(d2$jahr[d2$jahr < 2025], d2$punktschaetzer[d2$jahr < 2025], pch = 16, cex = 0.8, col = ink)
 points(2025, d2$punktschaetzer[d2$jahr == 2025], pch = 21, bg = "white", col = ink, cex = 0.9, lwd = 1.5)
 text(2026.6, -1250, "2025 vorläufig (KW 15–38)", adj = 1, cex = 0.75, col = muted)
 segments(2026, 14400, 2026, 17600, col = blau, lwd = 2)
 points(2026, 16000, pch = 21, bg = blau, col = "white", cex = 1.7, lwd = 1.5)
-text(2025.2, 17900, "2026: 16.000\n(Spanne 14.400–17.600)", adj = 1, col = blau, cex = 0.85, font = 2)
+text(2025.2, 17900, "2026: 16.000 (vorläufig, KW 15–37)\n(Spanne 14.400–17.600)", adj = 1, col = blau, cex = 0.85, font = 2)
 legend("topleft", bty = "n", inset = c(0.0, 0.0), cex = 0.8, text.col = muted,
        legend = c("Schätzwert pro Jahr (RKI)", "95-%-Unsicherheitsintervall"),
        pch = c(16, NA), lty = c(NA, 1), col = c(ink, grau), lwd = c(NA, 1.3))
-titel("2026 liegt weit über der Bandbreite der Jahre davor",
+titel("2026 liegt deutlich über der Bandbreite der Jahre davor",
       "Geschätzte Todesfälle durch Hitze in Deutschland, 1992–2026 (2026: kumuliert Kalenderwoche 15 bis 37)")
 quelle("Quelle: Robert Koch-Institut (Epid. Bull. 19/2025 Anhang; 2025: Wochenbericht KW 38/2025, vorläufig; 2026: Wochenbericht KW 37, Stand 24.09.2026). Referenzbereich: Klima Kompass, Evidenzcheck vom 29.08.2026. Schätzungen, keine Zählung.")
 dev.off()
@@ -102,8 +102,8 @@ text(x[1], erste[1] + 0.17, paste0(le[1], " %"), col = ink, cex = 0.85)
 text(x[1], zdf[1] - 0.17, paste0(lz[1], " %"), col = ink, cex = 0.85)
 text(x[4] + 0.12, erste[4] + 0.06, paste0("Das Erste ", le[4], " %"), adj = 0, col = blau, cex = 0.9, font = 2)
 text(x[4] + 0.12, zdf[4] - 0.08, paste0("ZDF ", lz[4], " %"), adj = 0, col = orange, cex = 0.9, font = 2)
-titel("Der Klima-Anteil im Programm sinkt",
+titel("Der Klima-Anteil im Programm ist seit 2023 gesunken",
       "Sendeminuten mit dem Wort „Klima“ bei Das Erste und ZDF, 2023 bis 1. Halbjahr 2026")
-quelle("Quelle: KLIMA° vor acht e. V., MedienKlimaBericht Nr. 1 (Juli 2026). Zeichenfolgen-Zählung nach eigenen Angaben des Vereins (Präzision 94 %, Erfassung 89 %), also keine Qualitätsmessung.")
+quelle("Quelle: KLIMA° vor acht e. V., MedienKlimaBericht Nr. 1 (Juli 2026). 2025 liegen beide Sender bei 1,29 %. Zeichenfolgen-Zählung nach eigenen Angaben des Vereins (Präzision 94 %, Erfassung 89 %), also keine Qualitätsmessung.")
 dev.off()
 cat("Grafiken geschrieben nach", out, "\n")

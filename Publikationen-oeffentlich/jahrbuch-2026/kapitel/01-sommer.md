@@ -1,4 +1,4 @@
-**ENTWURF v0.7 (23.10.2026) – Auflagen N19–N25 und Empfehlungen E12–E16 aus Nachtrag 4 eingearbeitet, drei Grafiken eingebunden, Satz zu 1994/2003 ergänzt. Prüfung (Nachtrag 5: Grafiken und Text) ausstehend; nicht freigegeben. Diese Kopfzeile und die Herkunftstabelle am Ende nicht ins Buch übernehmen (A14: vor Satz/Export entfernen).**
+**ENTWURF v0.8 (23.10.2026) – Auflagen N26–N30 aus Nachtrag 5 eingearbeitet (Grafikbeschriftungen, Erklärung der Linie, Bildunterschrift, WWA-Zeitraum). Prüfung der Änderungen (Nachtrag 6) optional; Daniels Volltextlektüre und Freigabe stehen aus. Diese Kopfzeile und die Herkunftstabelle am Ende nicht ins Buch übernehmen (A14: vor Satz/Export entfernen).**
 
 
 # Kapitel 1 – War dieser Sommer normal, und was sagen die Zahlen?
@@ -41,9 +41,9 @@ Das Robert Koch-Institut (RKI) schätzt die hitzebedingten Sterbefälle jedes So
 
 ![Geschätzte Todesfälle durch Hitze pro Jahr 1992–2026 mit Unsicherheitsintervall und Obergrenze eines normalen Jahres](../grafiken/kap01_grafik2_todesfaelle_hitze.png)
 
-*Grafik 2: Geschätzte Todesfälle durch Hitze pro Jahr. Quelle: RKI (Epidemiologisches Bulletin 19/2025 Anhang; 2025: Wochenbericht KW 38/2025, vorläufig; 2026: Wochenbericht KW 37, Stand 24. September 2026, kumuliert für KW 15 bis 37) [4][6]. Die Obergrenze von rund 8.700 stammt aus [3]. Dargestellt sind vorhandene Zahlen, keine neue Rechnung.*
+*Grafik 2: Geschätzte Todesfälle durch Hitze pro Jahr. Quelle: RKI (Epidemiologisches Bulletin 19/2025 Anhang; 2025: Wochenbericht KW 38/2025, vorläufig; 2026: Wochenbericht KW 37, Stand 24. September 2026, kumuliert für KW 15 bis 37) [4][6]. Die Obergrenze von rund 8.700 stammt aus [3]. 1992 bis 2024 sind Saisonschätzungen, 2025 und 2026 sind vorläufig (unvollständige Saison). Die gestrichelte Linie zeigt die Obergrenze des 95-Prozent-Prognoseintervalls für ein normales Jahr, keinen Höchstwert. Dargestellt sind vorhandene Zahlen, keine neue Rechnung.*
 
-In der Grafik fällt auf: Auch 1994 und 2003 lagen mit je rund 10.200 über der Linie. Das passt dazu, dass die Jahreswerte rechtsschief verteilt sind. 2026 liegt aber deutlich darüber, selbst das untere Ende der Spanne (14.400) liegt höher als diese beiden Jahre.
+In der Grafik fällt auf: Auch 1994 und 2003 lagen mit je rund 10.200 über der Linie. Das sind zugleich die höchsten Jahreswerte der Reihe 1992–2025. 2026 liegt deutlich darüber: Schon das untere Ende der Spanne (14.400) liegt höher als die Schätzwerte dieser beiden Jahre und als deren obere Intervallgrenzen (11.400 und 11.600).
 
 Das Modell geht für die Jahre 1992 bis 2025 von einem Mittelwert von rund 2.955 hitzebedingten Sterbefällen pro Jahr aus. Ein normales Jahr läge demnach bei bis zu etwa 8.700. So weit reicht das 95-Prozent-Prognoseintervall nach oben. Der damals vorläufige Wert für 2026 lag mit 15.800 etwa 4,5 Standardabweichungen über dem Referenzbereich. Auch in den acht vorab festgelegten Sensitivitätsanalysen blieb die Richtung gleich (oberhalb der Bandbreite) [3].
 
@@ -60,7 +60,7 @@ Vier Punkte sind dabei wichtig:
 
 Unsere Analyse beantwortet nur, ob 2026 außerhalb der bisherigen Schwankungsbreite liegt, nicht, warum [3].
 
-Wie viel der Klimawandel zu einer einzelnen Hitzewelle beiträgt, untersucht die Attributionsforschung. Zur Juni-Hitzewelle 2026 hat die Initiative World Weather Attribution (WWA) am 26. Juni 2026 eine Analyse veröffentlicht [9]. Sie untersucht die Hitzewelle vom 18. bis 29. Juni in Westeuropa (Frankreich, Deutschland, Italien, Spanien, Südengland). Für Deutschland allein nennt die Seite keine eigenen Zahlen.
+Wie viel der Klimawandel zu einer einzelnen Hitzewelle beiträgt, untersucht die Attributionsforschung. Zur Juni-Hitzewelle 2026 hat die Initiative World Weather Attribution (WWA) am 26. Juni 2026 eine Analyse veröffentlicht [9]. Sie untersucht die Hitzewelle vom 18. bis 29. Juni (Seite vom 26. Juni) in Frankreich, Deutschland, Italien, Spanien und Südengland. Für Deutschland allein nennt die Seite keine eigenen Zahlen.
 
 Die Initiative vergleicht die Hitzewelle mit dem Klima früherer Jahre. Im Klima von 1976 wären solche Temperaturen im Juni „praktisch unmöglich“ gewesen („virtually impossible“). Im Klima von 2003 wären die Tageshöchstwerte etwa zehnmal und die Nachttemperaturen mehr als hundertmal seltener gewesen als heute [9]. Der MedienKlimaBericht schreibt dazu gröber: Ohne die Erderhitzung wäre die Juni-Hitzewelle so gut wie unmöglich gewesen [8]. Das steht so nicht auf der Seite der Initiative.
 

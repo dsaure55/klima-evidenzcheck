@@ -596,7 +596,7 @@ Alle acht sind in v0.6 umgesetzt (Textstellen):
 6. **N24 (gering), Platzhalter [GRAFIK 1] und [GRAFIK 2]:** (a) GRAFIK 1: Quelle „DWD, Climate Data Center, Stand 2. September 2026“ statt „[1]“; Werte 2025 und 2026 als vorläufig kennzeichnen; Einstufungsbänder als „Konvention dieses Checks“ beschriften (Validator AV4). (b) GRAFIK 2: Quelle „RKI (EB 19/2025 Anhang, Wochenbericht KW 38/2025, Wochenbericht KW 37/2026) [4][6], Obergrenze aus [3]“ statt „[3] und [4]“; 2025 als vorläufig kennzeichnen; festlegen, ob für 2026 der KW-37-Wert (16.000 [14.400; 17.600], wie im Text) gezeigt wird; Einheit „geschätzte Sterbefälle pro Jahr (kumuliert KW 15 bis KW 38 bzw. 37)“ und Datenstand angeben.
 7. **N25 (gering), Z. 61:** „die geschätzten 16.000 Todesfälle durch Hitze“ passt zur sensiblen Sprache, schreibt aber das Wort „geschätzten“ dem Interview zu. Vorschlag: „Als Belege nennt er unter anderem die 16.000 Todesfälle durch Hitze (eine RKI-Schätzung) und den MedienKlimaBericht ...“ oder wörtlich nach [5]: „... die „16.000 Hitzetoten“ dieses Sommers ...“ (Zitat nach [5], als Zitat zulässig).
 
-**Empfehlungen (nicht zwingend):**
+**Empfehlungen (nicht zzwingend):**
 
 - **E12:** Titel „... und welche Folgen hatte er?“: „Folgen“ legt Kausalität nahe (und deckt die Mediendebatte nicht). Alternativen: „War dieser Sommer normal, und was zeigen die Zahlen zu Todesfällen und Berichterstattung?“ oder „... und was sagen die Zahlen?“. Kapitelplan, Gliederung (beide) und Überblick R2 an den endgültigen Titel angleichen (dort noch „was hat er gekostet?“).
 - **E13:** In „Woher wir das wissen“ die WWA-Quelle und den Zugriff vom 23.10.2026 nennen („Attribution: WWA, Seite am 23.10.2026 ausgewertet [9]“).
@@ -634,4 +634,132 @@ Alle acht Auflagen aus Nachtrag 3 sind erfüllt. Die neuen Teile sind überwiege
 - **MedienKlimaBericht-PDF online:** nur lokale Textkopie.
 - **Commit-Diff v0.5/v0.6:** kein Git-Zugriff; Vergleich gegen den in Nachtrag 3 geprüften Text und die jeweils aktuelle Datei. Änderungen in v0.5, die in v0.6 wieder überschrieben wurden, sind nicht erfasst.
 - **Grafiken selbst:** nur Platzhalterbeschreibungen; Grafikdateien und Werte werden nach Erstellung gegen die Quellen zu prüfen sein.
+- **Wortzahl und Umfang:** nicht gezählt.
+
+---
+
+## Nachtrag 5 (Prüfung nach v0.7, Grafiken)
+
+**Geprüft:** `Publikationen-oeffentlich/jahrbuch-2026/kapitel/01-sommer.md`, v0.7 (Kopfzeile „ENTWURF v0.7 (23.10.2026)“) und die drei Grafiken `grafiken/kap01_grafik1_sommertemperatur.png`, `kap01_grafik2_todesfaelle_hitze.png`, `kap01_grafik3_klima_minuten.png` samt Skript `grafiken/kap01_grafiken.R`. Weder Kapitel noch Grafikdateien verändert. Zeilenangaben „Z.“ beziehen sich auf v0.7.
+**Prüfdatum:** 23.10.2026
+**Prüfer:** Subagent `faktenpruefer` (unabhängig, nicht Autor). **Dieser Nachtrag enthält keinen Freigabevermerk.**
+**Herangezogen:** die PNG-Dateien (als Bilder gelesen), das R-Skript (vollständig), `Analysen/2026-09-sommer-2026-normal/rohdaten/dwd_sommer_deutschland.csv` (Zeilen 120–147) und `output/ergebnisse.json` (Integritätsblock), `Analysen/2026-08-hitzesommer-2026/rki_hitzebedingte_sterbefaelle_rohdaten.csv` (vollständig), MedienKlimaBericht-Textkopie (Nachtrag 4), `gliederung_kap01-06.md`, `gliederung_kap07-10.md` (Kap. 8), `kapitelplan.md` (Titelzeile). Nicht ausgeführt: das R-Skript (R nicht verfügbar); die Bilder wurden mit den Skript-Daten abgeglichen.
+
+### N5.1 Status der Auflagen N19–N25 und Empfehlungen E12–E16
+
+| Punkt | Status | Textstelle in v0.7 | Prüfhinweis |
+|---|---|---|---|
+| **N19** Gültigkeitsbereich WWA, Deutschland | **erfüllt** | Z. 63: „Sie untersucht die Hitzewelle vom 18. bis 29. Juni in Westeuropa (Frankreich, Deutschland, Italien, Spanien, Südengland). Für Deutschland allein nennt die Seite keine eigenen Zahlen.“ | Deckt sich mit der Seite (Länderliste, 18.–29. Juni, keine eigene Auswertung für Deutschland). Feinhinweis in N30. |
+| **N20** „Klima von 1976/2003“, „als heute“ | **erfüllt** | Z. 65: „Die Initiative vergleicht die Hitzewelle mit dem Klima früherer Jahre. Im Klima von 1976 wären solche Temperaturen im Juni „praktisch unmöglich“ gewesen („virtually impossible“). Im Klima von 2003 wären die Tageshöchstwerte etwa zehnmal und die Nachttemperaturen mehr als hundertmal seltener gewesen als heute [9].“ | Entspricht dem Seitenwortlaut („about 10 times less likely than today“, „more than a hundred times less likely in 2003“). „Tageshöchstwerte“ ist eine leichte Präzisierung von „daytime heat“ (die Seite spricht an anderer Stelle von Tageshöchstwerten); vertretbar. |
+| **N21** „Schnellstudie“ | **erfüllt** | Z. 63 „eine Analyse veröffentlicht [9]“; Z. 122 [9]: „(Analyse zur Juni-Hitzewelle 2026; Seite am 23.10.2026 ausgewertet; Studienbericht: Imperial College London, DOI 10.25560/130926)“ | „Analyse“ ist neutral; DOI stimmt mit der Repository-Seite (10.25560/130926). |
+| **N22** Bericht ist gröber | **erfüllt** | Z. 65: „Der MedienKlimaBericht schreibt dazu gröber: Ohne die Erderhitzung wäre die Juni-Hitzewelle so gut wie unmöglich gewesen [8]. Das steht so nicht auf der Seite der Initiative.“ | Bericht Z. 179–181 richtig wiedergegeben; Hinweis auf die Seite zutreffend (Seitenabfrage 23.10.). Der Zusatz beschränkt sich auf „die Seite“; ob der Volltext der Studie eine solche Aussage enthält, ist nicht geprüft (siehe N5.8). |
+| **N23** Todesfälle in der WWA-Quelle | **erfüllt** | Z. 67: „Für Deutschland nennt sie keine Todesfallzahlen, für Frankreich mindestens 40 gemeldete Todesfälle in dieser Hitzewelle [9]. Mit unseren Zahlen zu den Sterbefällen (April bis September) lässt sich das nicht verrechnen.“ | Seite: Frankreich „already reporting at least 40 fatalities“; keine deutschen Zahlen. Die letzte Aussage ist beschreibend (kein Rechenschritt). |
+| **N24** Quellen der Grafiken | **erfüllt (Texte); Grafik 2 siehe N5.3** | Z. 34: „Quelle: DWD, Climate Data Center, Stand 2. September 2026 (Werte 2025 und 2026 vorläufig).“ Z. 44: „Quelle: RKI (Epidemiologisches Bulletin 19/2025 Anhang; 2025: Wochenbericht KW 38/2025, vorläufig; 2026: Wochenbericht KW 37, Stand 24. September 2026, kumuliert für KW 15 bis 37) [4][6]. Die Obergrenze von rund 8.700 stammt aus [3].“ | Quellen jetzt richtig zugeordnet (DWD statt [1]; RKI-Bulletin/Wochenberichte statt [3]). 2025 ist als vorläufig gekennzeichnet; 2026 wird als „kumuliert für KW 15 bis 37“ beschrieben; ein ausdrückliches „vorläufig“ für 2026 steht in Z. 44 nicht (Z. 52 sagt es im Fließtext). |
+| **N25** Zitat „16.000 Hitzetoten“ | **erfüllt** | Z. 71: „Als Belege nennt er unter anderem die „16.000 Hitzetoten“ dieses Sommers (eine Schätzung des RKI) und den MedienKlimaBericht ... [5][7].“ | Zitat entspricht [5] (dort „16.000 Hitzetoten“ als Zitat); der Zusatz in Klammern ist erkennbar von uns. Zitate in Anführungszeichen sind laut stilregeln zulässig. Das Interview selbst bleibt nicht prüfbar (403). |
+| **E12** Titel | **erfüllt** | Z. 4: „War dieser Sommer normal, und was sagen die Zahlen?“ | Die Kausalität („Folgen“) ist weg. `gliederung_kap01-06.md` (Z. 27) und `kapitelplan.md` (Z. 53) tragen denselben Titel. |
+| **E13** Attribution in „Woher wir das wissen“ | **erfüllt** | Z. 110: „Attribution: World Weather Attribution, Seite am 23.10.2026 ausgewertet [9].“ | |
+| **E14** Alterung | **erfüllt** | Z. 57: „Wie viel das ausmacht, haben wir nicht untersucht, und mit diesen Daten lässt es sich nicht trennen.“ | Deckt sich mit run_log (Limitation 4, „mit diesen Daten nicht trennbar“). |
+| **E15** Gliederung Kap. 8 | **erfüllt** | `gliederung_kap07-10.md` Z. 46: „... wird die 9.400 im Analyseplan genannt und ließ sich in drei geprüften RKI-Ausgaben ... nicht bestätigen“ | Angeglichen an Kapitel 1; widerspruchsfrei. |
+| **E16** Herkunftstabelle | **erfüllt** | Z. 133 „Todesfälle durch Hitze“, Z. 139 „Stilpass (v0.4, seither fortgeschrieben bis v0.7)“ | Prüfhilfe, nicht Buchtext (A14). |
+
+### N5.2 Grafik 1: `kap01_grafik1_sommertemperatur.png`
+
+| Nr. | Element | Quelle / Befund | Ergebnis | Hinweis |
+|---|---|---|---|---|
+| 1 | Titel „Der Sommer 2026 war der zweitwärmste seit 1881“; Untertitel „Sommermittel Deutschland, 1881–2026, mit den Normalwerten 1961–1990 und 1991–2020“ | [1], `ergebnisse.json` (Rang 2 seit 1881) | bestätigt | |
+| 2 | Datenreihe 1881–2026 | Skript liest `dwd_sommer_deutschland.csv` (Zeilen 1881–2026, 146 Werte; Prüfsummen laut Analysebericht identisch mit DWD-Datei) | bestätigt | Keine Handeingabe der Reihe; im Bild sind Verlauf und 2003-Spitze (19,67), Anstieg seit ca. 1990 und 2018/2019 (19,31/19,25) erkennbar. |
+| 3 | 2026 hervorgehoben, Beschriftung „2026: 19,6 °C“ | CSV 2026 = 19,55 (Zeile 147); DWD-Pressemitteilung 19,6 | bestätigt | Punkt wird bei 19,55 gezeichnet, Beschriftung runden auf 19,6 wie im Kapitel. |
+| 4 | 2003 hervorgehoben (offener Kreis, Beschriftung „2003“) | CSV 2003 = 19,67 | bestätigt | Das Bild zeigt 2003 als einzigen Sommer über 2026; passt zu „zweitwärmster“. |
+| 5 | Blauer Strich „Normal 1961–1990 = 16,3 °C“ (Segment 1961–1990) | `ergebnisse.json`: Mittel 16,267; [1]: 16,3 | bestätigt | Gezeichnet bei 16,3 (gerundet; Abweichung 0,03 K, im Bild nicht sichtbar). |
+| 6 | Oranger Strich „Normal 1991–2020 = 17,6 °C“ (Segment 1991–2020) | `ergebnisse.json`: Mittel 17,553; [1]: 17,6 | bestätigt | Gezeichnet bei 17,6 (gerundet; Abweichung 0,05 K). |
+| 7 | Raute „Trendwert 2026 (Trend 1971–2025): 18,5 °C“ | [1], Analysebericht (ŷ 18,472) | bestätigt | Im Bild bei 18,5 gezeichnet (gerundet); die Raute liegt nahe der Datenreihe 2023–2025. |
+| 8 | Quellenzeile „Quelle: Deutscher Wetterdienst, Climate Data Center, Gebietsmittel Deutschland (Stand 02.09.2026; Werte 2025 und 2026 vorläufig). Auswertung: Klima Kompass, Evidenzcheck vom 11.09.2026.“ | DWD-Datei „erstellt am 20260902“; [1] | bestätigt | Einheit, Datenstand und Quelle vorhanden (stilregeln „Grafiken“). |
+| 9 | Neue Rechnung in der Grafik? | Skript Z. 23–53 | bestätigt (keine) | Nur Einlesen und Zeichnen; Normalwerte und Trendwert sind feste Zahlen aus [1]. |
+| 10 | Lesbarkeit | Bild | bestätigt, mit Hinweis | Die Beschriftung „Trendwert 2026 (Trend 1971–2025): 18,5 °C (Raute)“ schneidet die Gitterlinie bei 18; rechts von 2026 bleibt viel leere Fläche (x-Achse bis 2078, nur Platz für Beschriftungen) und die Achse endet bei 2020. Rein gestalterisch; Empfehlung E17. |
+| 11 | Bildunterschrift im Kapitel (Z. 34) | Grafik, [1] | bestätigt | „Dargestellt sind die Ergebnisse aus [1], keine neue Rechnung.“ stimmt (Daten DWD, Kennwerte aus [1]). |
+
+### N5.3 Grafik 2: `kap01_grafik2_todesfaelle_hitze.png`
+
+| Nr. | Element | Quelle / Befund | Ergebnis | Hinweis |
+|---|---|---|---|---|
+| 12 | Titel „2026 liegt weit über der Bandbreite der Jahre davor“ | CSV: höchste Jahreswerte 1994/2003 je 10.200, höchste obere Intervallgrenze 11.600 (2003); 2026 16.000 [14.400; 17.600] | bestätigt, mit Hinweis | Die Aussage stimmt (auch die Untergrenze 14.400 liegt über jedem Jahresintervall 1992–2025). „weit“ ist stärker als die Kapitelformulierung „deutlich außerhalb“; E17. Zu beachten: 2026 ist ein unvollständiger Zeitraum (KW 15–37), die Vorjahre sind Saisonschätzungen; das macht den Vergleich konservativ. |
+| 13 | Datenpunkte und Intervalle 1992–2024 (schwarze Punkte, graue Linien) | CSV (Zeilen 1992–2024, EB-19-2025 Anhang) | bestätigt | Skript liest die CSV unverändert. Stichproben im Bild: 1994 ≈ 10.200 [8.900; 11.400], 2003 ≈ 10.200 [8.900; 11.600], 2006 ≈ 7.700, 2015 ≈ 7.000, 2018 ≈ 8.500 [7.100; 10.100], 2019 ≈ 6.800, 2022 ≈ 4.500. Negative Intervall-Untergrenzen (z. B. 1993, 1996) reichen unter die 0-Linie, so wie in den RKI-Daten. |
+| 14 | 2025 (offener Kreis, Beschriftung „2025 vorläufig (KW 15–38)“) | CSV 2025: 2.500 [1.200; 3.700], „KW38/2025, vom RKI als noch unvollständig gekennzeichnet“ | bestätigt, mit Hinweis | Der Wert stimmt. Die Beschriftung steht unten rechts unter der Achse, getrennt vom Punkt; der offene Kreis ist nicht in der Legende erklärt. Siehe N28. |
+| 15 | 2026: blauer Punkt 16.000, Spanne 14.400–17.600 | RKI-Seite live (KW 37, Stand 24.09.2026) | bestätigt | Im Skript fest eingetragen, nicht aus der CSV (dort 15.800 [14.500; 17.000], KW 33). Der Untertitel nennt „2026: kumuliert Kalenderwoche 15 bis 37“. Die Beschriftung am Punkt nennt „vorläufig“ nicht. Siehe N28. |
+| 16 | Gestrichelte Linie „Obergrenze eines „normalen“ Jahres: rund 8.700“ | [3] („maximal rund 8.700“), run_log (PI-Obergrenze 8.671) | **Abweichung (mittel)** | Die Linie ist die Obergrenze des 95-%-Prognoseintervalls des Referenzmodells, nicht ein Höchstwert. Das Etikett sagt „Obergrenze eines normalen Jahres“, ohne dass das Wort „Prognoseintervall“ vorkommt, und zwei Jahre (1994, 2003; zusätzlich die Intervallspitzen von 2018 und 2015) liegen im Bild sichtbar darüber. Ein Betrachter kann „Obergrenze“ als Maximum lesen und die beiden Jahre als „nicht normal“ oder die Linie als falsch. Das Kapitel verweist auf diesen Punkt (Z. 46), erklärt die Linie aber erst danach (Z. 48). Siehe N26. Wert 8.700 (gegenüber 8.671) ist die Rundung aus [3]. |
+| 17 | Legende: „Schätzwert pro Jahr (RKI)“, „95-%-Unsicherheitsintervall“ | RKI (95-%-Prädiktionsintervall, run_log Schritt 3) | bestätigt | „Unsicherheitsintervall“ passt zum Sprachgebrauch im Kapitel. |
+| 18 | Quellenzeile im Bild | Skript Z. 82 | bestätigt | „Robert Koch-Institut (Epid. Bull. 19/2025 Anhang; 2025: Wochenbericht KW 38/2025, vorläufig; 2026: Wochenbericht KW 37, Stand 24.09.2026). Referenzbereich: Klima Kompass, Evidenzcheck vom 29.08.2026. Schätzungen, keine Zählung.“ Stimmt mit den Quellen überein. |
+| 19 | Mischung von Jahreswerten und kumulierten Teilzeiträumen | CSV, RKI | bestätigt, mit Hinweis | 1992–2024: Jahres-/Saisonschätzungen aus EB 19/2025; 2025: kumuliert bis KW 38 (laut RKI unvollständig); 2026: kumuliert bis KW 37 (Saison nicht abgeschlossen). Die Grafik kennzeichnet 2025 im Bild und 2026 im Untertitel; die Bildunterschrift im Kapitel nennt beides. Irreführend ist es nicht (der Vergleich unterschätzt 2026 eher). Ausreichender wäre ein ausdrückliches „vorläufig“ am 2026-Punkt und ein Satz in der Bildunterschrift, dass 1992–2024 Saisonschätzungen sind (N28). |
+| 20 | Sprachliche Sensibilität | Bild | bestätigt | „Geschätzte Todesfälle durch Hitze“ in Achse, Titel, Untertitel; kein „Hitzetote“; „Schätzungen, keine Zählung“ in der Quellenzeile. |
+| 21 | Lesbarkeit | Bild | bestätigt, mit Hinweis | Das Etikett der Linie wird von den Intervallstrichen von 1994 und 2003 durchkreuzt (im Bild sichtbar: Linien laufen durch „Obergrenze“ und „Jahres:“). Legende oben links berührt die 18.000-Gitterlinie. Gestalterisch; E17. |
+| 22 | Neue Rechnung in der Grafik? | Skript Z. 55–83 | bestätigt (keine) | Feste Zahlen: 8.700, 16.000, 14.400, 17.600. |
+| 23 | Bildunterschrift im Kapitel (Z. 44) | Grafik, Quellen | bestätigt, mit Hinweis | Inhalt richtig; es fehlt der Hinweis, dass 2026 vorläufig ist und 1992–2024 Saisonschätzungen sind (N28). |
+| 24 | Neuer Satz Z. 46: „In der Grafik fällt auf: Auch 1994 und 2003 lagen mit je rund 10.200 über der Linie.“ | CSV: 1994 10.200 [8.900; 11.400], 2003 10.200 [8.900; 11.600] | bestätigt | Beide Werte stimmen; beide liegen über 8.700. Die Linie wird an dieser Stelle noch nicht erklärt (Z. 48 danach). |
+| 25 | „Das passt dazu, dass die Jahreswerte rechtsschief verteilt sind.“ | Validierungsbericht Prio 1 (Extremjahre 1994 und 2003 treiben die Rechtsschiefe), [3] | Abweichung (gering) | Zusammenhang ist plausibel und im Validierungsbericht belegt, aber in [3] nicht ausgesprochen; es ist eine kleine Deutung. Besser deskriptiv: „Das sind zugleich die beiden höchsten Jahreswerte der Reihe.“ (stimmt: 10.200 ist das Maximum 1992–2025). Siehe N27. |
+| 26 | „2026 liegt aber deutlich darüber, selbst das untere Ende der Spanne (14.400) liegt höher als diese beiden Jahre.“ | CSV (Intervallenden 11.400 und 11.600) | bestätigt, mit Hinweis | Stimmt sowohl gegenüber den Schätzwerten (10.200) als auch gegenüber deren oberen Intervallgrenzen (11.400, 11.600). Es ist eine beschreibende Ablesung aus der Grafik, keine neue Berechnung. Anders als der in Faktencheck 17.10. (Nr. 16) beanstandete Vergleich (RKI-Untergrenze gegen die Obergrenze des Metaanalyse-Intervalls) werden hier gleichartige RKI-Jahreswerte verglichen; trotzdem ist „höher als diese beiden Jahre“ knapp: Vorschlag „höher als die Schätzwerte dieser beiden Jahre (und als deren obere Intervallgrenzen von 11.400 und 11.600)“ (N27). Hinweis: 2026 ist kumuliert bis KW 37; das Argument bleibt dadurch eher vorsichtig. |
+| 27 | Widerspruchsprüfung Z. 46 / Z. 48 / Z. 50 | Text | Abweichung (mittel) | Z. 48: „Ein normales Jahr läge demnach bei bis zu etwa 8.700. So weit reicht das 95-Prozent-Prognoseintervall nach oben.“ Z. 46: 1994 und 2003 lagen mit 10.200 darüber. Beide Aussagen sind gemeinsam stimmig, sobald klar ist, dass 8.700 die Obergrenze eines Intervalls ist, kein Maximum; der Text sagt das erst in Z. 48 und die Grafik (Label „Obergrenze eines normalen Jahres“) gar nicht. Ein Leser sieht zuerst die Linie als „Obergrenze eines normalen Jahres“ und dann zwei Jahre darüber. Siehe N26. Z. 50 („schon die Obergrenze liegt weit unter dem Wert von 2026“) bleibt richtig. |
+
+### N5.4 Grafik 3: `kap01_grafik3_klima_minuten.png`
+
+| Nr. | Element | Quelle / Befund | Ergebnis | Hinweis |
+|---|---|---|---|---|
+| 28 | Acht Werte (Das Erste: 2,2 / 1,49 / 1,29 / 0,95; ZDF: 1,95 / 1,43 / 1,29 / 0,82) | MedienKlimaBericht Kap. 2.1 und 4 (Textkopie Z. 115–121, 415–416), [5] | bestätigt | Skript Z. 87–90 mit denselben acht Zahlen. Beschriftete Punkte im Bild: 2,2 % und 1,95 % (2023), „Das Erste 0,95 %“ und „ZDF 0,82 %“ (1. Halbjahr 2026). Die Werte 2024 und 2025 werden nicht beschriftet (stehen in der Tabelle); 2025 fallen beide Punkte zusammen (1,29), im Bild ist nur ein Punkt sichtbar. |
+| 29 | Titel „Der Klima-Anteil im Programm sinkt“ | Bericht Z. 115 („Seit 2023 nimmt die Klimaberichterstattung ... Jahr für Jahr ab“), Z. 415–416 | bestätigt, mit Hinweis | Die Aussage ist durch den Bericht selbst und alle vier Datenpunkte beider Sender gedeckt (jeder Wert niedriger als der vorige). Das Präsens „sinkt“ klingt aber nach laufender Entwicklung/Vorhersage; belegt ist ein Rückgang von 2023 bis zum 1. Halbjahr 2026 (letzter Punkt ein Halbjahr). Vorschlag: „Der Klima-Anteil im Programm ist seit 2023 gesunken“ oder „... laut KLIMA° vor acht“. Siehe N29. |
+| 30 | Untertitel, Achse, Linien | Bild | bestätigt | „Sendeminuten mit dem Wort „Klima““ ist verkürzt gegenüber „Zeichenfolge ‚Klima‘“ (z. B. „Klimakrise“); die Quellenzeile sagt „Zeichenfolgen-Zählung“. Die Verbindungslinie zwischen Jahreswert 2025 und Halbjahreswert 2026 suggeriert eine gleichartige Zeitreihe; Halbjahr ist auf der Achse beschriftet („1. Halbjahr 2026“). Nullpunkt der y-Achse vorhanden (gut). |
+| 31 | Quellenzeile „Quelle: KLIMA° vor acht e. V., MedienKlimaBericht Nr. 1 (Juli 2026). Zeichenfolgen-Zählung nach eigenen Angaben des Vereins (Präzision 94 %, Erfassung 89 %), also keine Qualitätsmessung.“ | Bericht Anhang A | bestätigt | Precision 94 %, Recall 89 % (hier „Erfassung“); Kennzeichnung der Quelle als Verein mit eigenen Angaben ist vorhanden. |
+| 32 | Bildunterschrift im Kapitel (Z. 86) | Grafik, [5], [8] | bestätigt | „Zahlen wie in [5]“ stimmt; Zeichenfolge/Qualitätshinweis vorhanden. |
+| 33 | Neue Rechnung in der Grafik? | Skript Z. 85–108 | bestätigt (keine) | |
+
+### N5.5 Gesamttext v0.7: neue Stellen und Widersprüche
+
+| Nr. | Stelle | Befund | Ergebnis |
+|---|---|---|---|
+| 34 | Z. 42–48 Reihenfolge | Grafik 2 (Z. 42–44), dann Beobachtung zu 1994/2003 (Z. 46), dann die Erklärung der 8.700 (Z. 48) und der Rechtsschiefe (Z. 50). Der Leser bekommt die Beobachtung vor der Definition der Linie. | Abweichung (gering), siehe N26 |
+| 35 | Z. 6 und Z. 52 mit 16.000 und 15.800 | Text nennt beide Werte und erklärt „damals vorläufig“ bzw. „mit denen wir gerechnet hatten“; die Grafik zeigt den KW-37-Wert 16.000. | bestätigt |
+| 36 | Z. 63–67 WWA-Absatz (drei Absätze) | Alle Zahlen und Aussagen gegen die Seite geprüft (siehe N5.1); keine neue Berechnung. Feinheiten: Der Seitentext datiert 26. Juni und nennt den Zeitraum bis 29. Juni; „Westeuropa“ (Seitentext für das Erwärmungsmuster) und die Länderliste (mit Italien) sind nicht deckungsgleich. | bestätigt, mit Hinweis, siehe N30 |
+| 37 | Z. 71 | „16.000 Hitzetoten“ steht in Anführungszeichen als Zitat nach [5] (Interview nicht prüfbar); „Hitzetote“ sonst nicht im Buchtext. | bestätigt |
+| 38 | Neue Inferenz/Überhöhung | Keine neue Berechnung. Kleine Deutung in Z. 46 („Das passt dazu ...“, N27). Titel „weit über“ in Grafik 2 und „sinkt“ in Grafik 3 sind etwas stärker als die Textformulierungen (E17, N29). | siehe N27, N29 |
+| 39 | Kopfzeile Z. 1, Herkunftstabelle (Z. 126–139), Bild-Links | Prüfhilfen; Bilder sind relativ verlinkt (`../grafiken/...`). | offen bis Export (A14) |
+
+### N5.6 Neue Befunde mit Änderungsvorschlag
+
+**Neue Auflagen (keine kritisch; 5):**
+
+1. **N26 (mittel), Grafik 2 (Beschriftung der Linie) und Z. 42–48 (Reihenfolge, Erklärung):**
+   - Grafik: Etikett „Obergrenze eines „normalen“ Jahres: rund 8.700“ ändern in „Obergrenze des 95-%-Prognoseintervalls (Referenzmodell): rund 8.700“ (oder „obere Grenze des Referenzbereichs“). Das Wort „normal“ nur im Text verwenden, mit der Erklärung. Entsprechend den Alt-Text in Z. 42 („... Obergrenze eines normalen Jahres“) anpassen.
+   - Text: Erst die Linie erklären, dann die Beobachtung zu 1994/2003. Vorschlag für Z. 46 (nach Verschieben hinter Z. 48 oder vorangestellter Erklärung): „Die Linie ist die obere Grenze des 95-Prozent-Prognoseintervalls, kein Höchstwert. Auch 1994 und 2003 lagen mit je rund 10.200 darüber; das sind zugleich die höchsten Jahreswerte der Reihe. 2026 liegt deutlich darüber: Selbst das untere Ende der Spanne (14.400) ist höher als die Schätzwerte dieser beiden Jahre.“
+   - Begründung: Faktencheck Nr. 27 (8.700 ist kein Höchstwert), Widerspruch zwischen „Obergrenze eines normalen Jahres“ und zwei Jahren darüber.
+2. **N27 (gering), Z. 46:** „Das passt dazu, dass die Jahreswerte rechtsschief verteilt sind.“ durch eine beschreibende Aussage ersetzen („... das sind zugleich die höchsten Jahreswerte der Reihe“, CSV: Maximum 10.200) oder streichen; „höher als diese beiden Jahre“ präzisieren („höher als die Schätzwerte dieser beiden Jahre und als deren obere Intervallgrenzen von 11.400 und 11.600“). Begründung: Der Zusammenhang mit der Rechtsschiefe ist eine Deutung, die [3] nicht enthält (der Validierungsbericht belegt ihn), und „höher als diese beiden Jahre“ lässt offen, ob Schätzwert oder Intervall gemeint ist.
+3. **N28 (gering), Grafik 2 und Z. 44:** 2026 im Bild ausdrücklich als vorläufig kennzeichnen (z. B. Beschriftung „2026: 16.000 (vorläufig, KW 15–37; Spanne 14.400–17.600)“); „2025 vorläufig (KW 15–38)“ neben den Punkt setzen oder den offenen Kreis in der Legende erklären („offen: vorläufig, unvollständige Saison“); Bildunterschrift Z. 44 ergänzen: „1992 bis 2024 sind Saisonschätzungen, 2025 und 2026 sind vorläufig (unvollständige Saison).“ Begründung: Jahreswerte und kumulierte Teilzeiträume stehen in einer Reihe (Faktencheck Nr. 19); die Kennzeichnung soll am Punkt stehen, nicht nur im Untertitel.
+4. **N29 (gering), Grafik 3, Titel:** „Der Klima-Anteil im Programm sinkt“ ändern in „Der Klima-Anteil im Programm ist seit 2023 gesunken“ (oder „... laut KLIMA° vor acht“). Zusätzlich 2024 und 2025 im Bild beschriften oder den Hinweis „2025: beide Sender 1,29 %“ ergänzen, damit der zusammenfallende Punkt nicht als fehlender Wert gelesen wird. Begründung: belegt ist ein Rückgang über vier Zeitpunkte (Bericht: „Jahr für Jahr“), nicht ein andauernder Trend; das Präsens klingt nach Prognose.
+5. **N30 (gering), Z. 63:** Den Zeitraum und die Region genauer fassen: „Sie untersucht die Hitzewelle vom 18. bis 29. Juni (Seite vom 26. Juni) in Frankreich, Deutschland, Italien, Spanien und Südengland ...“; „Westeuropa“ vermeiden oder erklären (die Seite nennt Westeuropa für den Erwärmungstrend im Juni, die Länderliste enthält Italien). Begründung: Die Seite ist auf den 26. Juni datiert und nennt einen Zeitraum bis 29. Juni; ein Leser kann das als Widerspruch lesen, und „Westeuropa (… Italien …)“ ist ungenau.
+
+**Empfehlungen (nicht zwingend):**
+
+- **E17:** Gestaltung: Grafik 2 Titel „weit über“ passend zum Text als „deutlich über“ formulieren; Etikettenposition in Grafik 2 so wählen, dass die Intervallstriche von 1994 und 2003 den Text nicht kreuzen; Grafik 1: Beschriftung „Trendwert 2026 ...“ von der Gitterlinie lösen und die leere rechte Fläche (x-Achse bis 2078) kürzen.
+- **E18:** In Grafik 1 optional kennzeichnen, dass die Normalwerte als gerundete Mittel gezeichnet sind (16,3 und 17,6; exakt 16,267 und 17,553): kein Handlungsbedarf, nur Transparenz.
+- **E19:** Beim Export die Grafiken mit Alt-Text und Bildunterschrift prüfen (Zahlenwerte gegen Quellen: erledigt in diesem Nachtrag), und das R-Skript im Repo mit Datum und Datenstand versionieren (öffentliches Repo; Aufruf `Rscript kap01_grafiken.R` im Repo-Wurzelverzeichnis).
+
+### N5.7 Gesamturteil Nachtrag 5: **ok mit Auflagen**
+
+Alle sieben Auflagen aus Nachtrag 4 (N19–N25) und alle fünf Empfehlungen (E12–E16) sind erfüllt. Die drei Grafiken geben die Quellenzahlen richtig wieder: Grafik 1 (DWD-Reihe, 19,55 als 19,6 beschriftet, 2003 19,67, Normalwerte 16,3 und 17,6, Trendwert 18,5) und Grafik 3 (acht Zahlen) ohne Abweichung, Grafik 2 (CSV-Werte 1992–2025, 2026 = 16.000 [14.400; 17.600], Linie 8.700) in den Zahlen richtig. In keiner Grafik wird neu gerechnet. Offen bleibt vor allem die Benennung der Linie in Grafik 2 („Obergrenze eines normalen Jahres“) und die Reihenfolge der Erklärung im Text (N26, mittel), dazu die Kennzeichnung von 2026 als vorläufig (N28), die Deutung in Z. 46 (N27), der Titel „sinkt“ (N29) und der Zeitraum/Region der WWA-Analyse (N30). Es gibt **5 neue Auflagen (N26–N30)**, davon 1 mittel (N26), die übrigen gering. Keine ist kritisch, keine Zahl in Text oder Grafik ist falsch. Zusätzlich 3 Empfehlungen (E17–E19).
+
+### N5.8 Was für die Freigabe noch zu erledigen ist
+
+1. N26–N30 einarbeiten (Grafik 2 und 3 neu rendern, Skript `kap01_grafiken.R` anpassen, Text Z. 42–48, 63) und Nachkontrolle als „Nachtrag 6“ festhalten (Dokumentationspflicht).
+2. Grafikdateien nach der Änderung erneut gegen die Quellen prüfen (Werte, Beschriftung, Überlappungen); Skript einmal ausführen und das PNG mit dem Stand vergleichen.
+3. A14: Kopfzeile (Z. 1) und Herkunftstabelle (ab „## Herkunftstabelle“) vor Satz/Export entfernen; Wortzahl (Gliederung: 1.200–1.600) vom Redaktionsteam prüfen.
+4. Kapitel 8: Fall „Vergleichszahl 2018“ muss im Buch stehen (Verweis in Z. 59); eigene Faktenprüfung; Entscheidung zum Hinweis im Substack-Artikel [3] steht aus.
+5. Treibhauspost #125 (Z. 71, Zitat „16.000 Hitzetoten“): Prüfung am Originaltext durch Daniel Saure als Datei dokumentieren.
+6. Stichtag 15.11.: DWD-Datei (erstellt 20260902), RKI-Seite, WWA-Seite, SAP-Stand Prognose-Register erneut abgleichen (Grafikwerte 2025/2026 vorläufig).
+7. Freigabevermerk erst nach Volltextlektüre durch Daniel Saure (kapitelplan.md Abschnitt 5, CLAUDE.md Verifikationspflicht). Diese Datei enthält keinen.
+
+### N5.9 Was nicht geprüft werden konnte
+
+- **R-Skript nicht ausgeführt** (R nicht verfügbar): Ich habe die PNG-Dateien visuell mit den Daten des Skripts und der Quell-CSV verglichen; dass das Skript exakt diese PNG-Dateien erzeugt, ist nicht nachgewiesen. Die Prüfung aller 34 Punkte in Grafik 2 erfolgte stichprobenartig im Bild (1994, 2003, 2006, 2015, 2018, 2019, 2022, 2025); die Daten selbst stammen unverändert aus der CSV.
+- **WWA-Studienbericht (Volltext):** nur Seite und Repository-Metadaten (siehe Nachtrag 4); ob der Bericht eine Aussage „ohne Klimawandel“ trifft, ist nicht prüfbar.
+- **Treibhauspost #125:** 403; „16.000 Hitzetoten“ nur über [5].
+- **MedienKlimaBericht-PDF online:** nur lokale Textkopie.
+- **RKI-Rohreihe:** CSV-Werte 1992–2025 nicht gegen den RKI-Anhang (EB 19/2025) neu abgeglichen (ältere Prüfung: Validierungsbericht Prio 5 bestätigt 2018 = 8.500 im Anhang); 2025 laut CSV und RKI-Hinweis unvollständig.
+- **Commit-Diff v0.6/v0.7:** kein Git-Zugriff; geprüft wurde der Dateitext v0.7.
 - **Wortzahl und Umfang:** nicht gezählt.
