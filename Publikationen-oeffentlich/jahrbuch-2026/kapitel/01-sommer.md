@@ -1,18 +1,19 @@
-**ENTWURF v0.4 (23.10.2026) – N9 und N10 eingearbeitet, dazu Stilpass nach `stilregeln.md` (natürlichere Sprache, Aussagen unverändert). Nachprüfung (Nachtrag 3, nur Aussagen/Zahlen/Einschränkungen unverändert?) ausstehend, nicht freigegeben. Diese Kopfzeile und die Herkunftstabelle am Ende nicht ins Buch übernehmen (A14: vor Satz/Export entfernen).**
+**ENTWURF v0.5 (23.10.2026) – Auflagen N11–N18 aus Nachtrag 3 eingearbeitet (Wortlaut an die Quellen angepasst, Stil bleibt). Eine kurze Kontrollprüfung (Nachtrag 4) ist optional; Daniels Volltextlektüre und Freigabe stehen aus. Diese Kopfzeile und die Herkunftstabelle am Ende nicht ins Buch übernehmen (A14: vor Satz/Export entfernen).**
+
 
 # Kapitel 1 – War dieser Sommer normal, und was hat er gekostet?
 
-**Kurz gesagt:** „Normal“ hängt davon ab, womit man vergleicht. Mit 19,6 °C war der Sommer 2026 der zweitwärmste seit 1881. Verglichen mit 1961–1990 war er extrem außergewöhnlich, verglichen mit dem Erwärmungstrend seit 1971 ungewöhnlich warm. Dazu kommen die Hitzetote: Das RKI schätzt für das Sommerhalbjahr 16.000 Sterbefälle (Spanne 14.400 bis 17.600). Das liegt deutlich außerhalb der Bandbreite seit 1992. Warum das so ist, sagen diese Zahlen nicht.
+**Kurz gesagt:** „Normal“ hängt davon ab, womit man vergleicht. Mit 19,6 °C war der Sommer 2026 der zweitwärmste seit 1881. Verglichen mit 1961–1990 war er extrem außergewöhnlich, verglichen mit dem Erwärmungstrend seit 1971 ungewöhnlich warm. Dazu kommen die hitzebedingten Sterbefälle: Das RKI schätzt für das Sommerhalbjahr 16.000 Sterbefälle (Spanne 14.400 bis 17.600). Das liegt deutlich außerhalb der Bandbreite seit 1992. Warum das so ist, sagen diese Zahlen nicht.
 
 ## Die Behauptung
 
 In der politischen Debatte wurde der Sommer 2026 in den Wochen vor dem 11. September manchmal als „ganz normal“ bezeichnet, teils mit dem Hinweis, früher sei es auch schon heiß gewesen. Tobias Fuchs, Leiter des Geschäftsbereichs Klima und Umwelt beim Deutschen Wetterdienst (DWD), sagte im Interview mit klimareporter° (8. September 2026): Vor 30 oder 40 Jahren wäre ein solcher Sommer „extrem ungewöhnlich“ gewesen. In 30 Jahren könnten wir ihn eher als normal betrachten [1][2].
 
-Beide Aussagen drehen sich im Kern darum, was „normal“ heißt. Das lässt sich nur klären, wenn man sagt, womit man vergleicht. Genau das haben wir getan: Wir haben vorab festgelegt, womit wir vergleichen, und dann nachgerechnet.
+Beide Aussagen drehen sich im Kern darum, was „normal“ heißt. Das lässt sich nur prüfen, wenn man sagt, womit man vergleicht. Genau das haben wir getan: Wir haben vorab festgelegt, womit wir vergleichen, und dann nachgerechnet.
 
 ## Temperatur: drei Maßstäbe, drei Antworten
 
-Der Sommer (Juni bis August) lag in Deutschland im Mittel bei 19,6 °C. Das ist der zweitwärmste Sommer seit Beginn der DWD-Reihe 1881 [1]. Für jeden Maßstab haben wir gerechnet, wie weit 2026 vom jeweiligen Normalwert entfernt lag. Gemessen haben wir das in Standardabweichungen, also in der typischen Schwankung von Sommer zu Sommer. Wie wir einstufen, haben wir vor der Auswertung festgelegt: bis eine Standardabweichung „im Normalbereich“, bis zwei „ungewöhnlich warm“, bis drei „außergewöhnlich warm“, darüber „extrem außergewöhnlich“ [1].
+Der Sommer (Juni bis August) lag in Deutschland im Mittel bei 19,6 °C. Das ist der zweitwärmste Sommer seit Beginn der DWD-Reihe 1881 [1]. Für jeden Maßstab haben wir gerechnet, wie weit 2026 vom jeweiligen Normalwert entfernt lag. Gemessen haben wir das in Standardabweichungen, also in der typischen Schwankung von Sommer zu Sommer. Die Einstufung ist eine Konvention, die wir vor der Auswertung festgelegt haben: bis eine Standardabweichung „im Normalbereich“, bis zwei „ungewöhnlich warm“, bis drei „außergewöhnlich warm“, darüber „extrem außergewöhnlich“ [1].
 
 | Maßstab | Normalwert | Abstand 2026 | Einstufung |
 |---|---|---|---|
@@ -32,17 +33,17 @@ Was Fuchs über „in 30 Jahren“ sagt, widerspricht dem Messtrend damit nicht,
 
 Das Robert Koch-Institut (RKI) schätzt die hitzebedingten Sterbefälle jedes Sommers mit einem statistischen Modell. Wir haben diese Jahresschätzungen seit 1992 wie einzelne Studien behandelt und in einer Metaanalyse zusammengeführt. Daraus ist ein Referenzmodell für ein „normales“ Jahr entstanden [3].
 
-Im Schnitt der Jahre 1992 bis 2025 rechnet das Modell mit rund 2.955 hitzebedingten Sterbefällen pro Jahr. Ein normales Jahr läge demnach bei bis zu etwa 8.700. So weit reicht das 95-Prozent-Prognoseintervall nach oben. Der damals vorläufige Wert für 2026 lag mit 15.800 etwa 4,5 Standardabweichungen über dem Referenzbereich. Auch in den acht vorab festgelegten Sensitivitätsanalysen blieb die Richtung gleich (oberhalb der Bandbreite) [3].
+Das Modell geht für die Jahre 1992 bis 2025 von einem Mittelwert von rund 2.955 hitzebedingten Sterbefällen pro Jahr aus. Ein normales Jahr läge demnach bei bis zu etwa 8.700. So weit reicht das 95-Prozent-Prognoseintervall nach oben. Der damals vorläufige Wert für 2026 lag mit 15.800 etwa 4,5 Standardabweichungen über dem Referenzbereich. Auch in den acht vorab festgelegten Sensitivitätsanalysen blieb die Richtung gleich (oberhalb der Bandbreite) [3].
 
-Das Modell hat eine Schwäche: Die Jahreswerte sind rechtsschief verteilt, also mit einigen wenigen sehr hohen Werten, und passen deshalb nicht perfekt zum Modell. Die Untergrenze des Intervalls ist rechnerisch negativ, was bei Sterbefallzahlen unmöglich ist. An der Kernaussage ändert das nichts, denn schon die Obergrenze liegt weit unter dem Wert von 2026 [3].
+Das Modell passt nicht perfekt: Die Jahreswerte sind rechtsschief verteilt, es gibt also einige wenige sehr hohe Werte. Die Untergrenze des Intervalls ist rechnerisch negativ, was bei Sterbefallzahlen unmöglich ist. An der Kernaussage ändert das nichts, denn schon die Obergrenze liegt weit unter dem Wert von 2026 [3].
 
-Im letzten Wochenbericht der Saison (Kalenderwoche 37, Stand 24. September 2026) schätzt das RKI 16.000 Sterbefälle, mit einem Unsicherheitsintervall von 14.400 bis 17.600 [4]. Die Zahl gilt kumuliert für die Kalenderwochen 15 bis 37, also etwa für April bis Mitte September und nicht nur für Juni bis August. Das ist etwas mehr als die 15.800, mit denen wir gerechnet hatten. Das ist ein beschreibender Abgleich, keine neue Rechnung [5]. Die Schätzung aus KW 37 ist zwar die letzte der Saison, aber noch nicht die endgültige Jahresschätzung (siehe unten, „Noch offen“).
+Im letzten Wochenbericht der Saison (Kalenderwoche 37, Stand 24. September 2026) schätzt das RKI 16.000 Sterbefälle, mit einem Unsicherheitsintervall von 14.400 bis 17.600 [4]. Die Zahl gilt kumuliert für die Kalenderwochen 15 bis 37, also etwa für April bis Mitte September und nicht nur für Juni bis August [4]. Das ist etwas mehr als die 15.800, mit denen wir gerechnet hatten. Das ist ein beschreibender Abgleich, keine neue Rechnung [5]. Die Schätzung aus KW 37 ist zwar die letzte der Saison, aber noch nicht die endgültige Jahresschätzung (siehe unten, „Noch offen“).
 
 Vier Punkte sind dabei wichtig:
 
 - **Schätzung, nicht Zählung.** Die Zahl stammt nicht von Totenscheinen. Sie ist eine Modellschätzung der zusätzlichen Sterbefälle in Hitzephasen [4][5].
 - **Nicht altersbereinigt.** Die Bevölkerung wird älter, und ältere Menschen reagieren empfindlicher auf Hitze. Ein Teil der Fallzahlen steigt deshalb auch unabhängig vom Klima [3].
-- **Methodik im Wandel.** Seit 2020 modelliert das RKI die Sterblichkeit wegen der Corona-Pandemie mit einer flexibleren Kurve. Ob ein Teil des Abstands darauf beruht, können wir nicht ausschließen [5][6].
+- **Methodik im Wandel.** Seit 2020 modelliert das RKI die Sterblichkeit wegen der Corona-Pandemie mit einer flexibleren Kurve. Wir können nicht ausschließen, dass ein Teil des Abstands darauf beruht [5][6].
 - **Eine Vergleichszahl blieb ungeklärt.** In unserem Analyseplan stand für 2018 die Vergleichszahl 9.400. Wir konnten sie in keiner der drei geprüften RKI-Ausgaben (2022, 2023, 2025) bestätigen, die aktuelle RKI-Ausgabe nennt rund 8.500. Woher die 9.400 stammen, ist ungeklärt. In unserem Artikel vom 29. August hatten wir das als Verwechslung in einer Sekundärquelle beschrieben. Diese Erklärung ist nicht belegt (mehr dazu in Kapitel 8; Prüfprotokoll: `Analysen/2026-08-hitzesommer-2026/run_log.txt`).
 
 Unsere Analyse beantwortet nur, ob 2026 außerhalb der bisherigen Schwankungsbreite liegt, nicht, warum [3]. Wie stark der Klimawandel eine einzelne Hitzewelle verstärkt, untersucht die Attributionsforschung. Eine Studie dazu, auf die der MedienKlimaBericht verweist, haben wir nicht geprüft [5].
@@ -51,9 +52,9 @@ Unsere Analyse beantwortet nur, ob 2026 außerhalb der bisherigen Schwankungsbre
 
 Am 17. Oktober 2026 hat der Klima-Newsletter Treibhauspost ein Interview mit dem Journalisten Jürgen Döschner veröffentlicht. Döschner war früher Energieexperte der ARD. Seine These: Viele Medien berichten über Hitze und Dürre, lassen aber den Zusammenhang mit dem Klimawandel weg. Als Belege nennt er unter anderem die 16.000 Hitzetoten und den MedienKlimaBericht des Vereins KLIMA° vor acht [5][7]. Das Interview ist eine Meinungsquelle, keine Primärquelle.
 
-Der Bericht wertet das Programm von Das Erste und ZDF für Januar bis Juni 2026 aus [8]. Gezählt wird so: Als „Klima-Minute“ gilt jede Sendeminute, in der die Zeichenfolge „Klima“ vorkommt, etwa in „Klimakrise“. Nach eigenen Angaben sind 94 Prozent der gezählten Minuten tatsächlich Klima-Minuten, und das Verfahren findet 89 Prozent aller Klima-Minuten.
+Der Bericht wertet das Programm von Das Erste und ZDF für Januar bis Juni 2026 aus [8]. Gezählt wird so: Als „Klima-Minute“ gilt jede Sendeminute, in der die Zeichenfolge „Klima“ vorkommt, etwa in „Klimakrise“. Nach eigenen Angaben sind 94 Prozent der gezählten Minuten tatsächlich Klima-Minuten, und das Verfahren findet 89 Prozent aller Klima-Minuten [8].
 
-Der Verein setzt sich für mehr Klimaberichterstattung ein. In dem Bericht fordert er einen festen Sendeplatz für ein Format wie die Sendung „KLIMA° vor acht“. Die Zahlen kommen also von einer Seite mit klarem Anliegen, die Methode ist aber beschrieben [5][8]. Auch Interview und Bericht sind nicht unabhängig voneinander: Der Bericht zitiert einen früheren Beitrag Döschners im „Brandmelder“ (29.06.2026), und das Interview nennt den Bericht als Beleg [5][8].
+Der Verein setzt sich für mehr Klimaberichterstattung ein. In dem Bericht fordert er einen festen Sendeplatz für ein Format wie die Sendung „KLIMA° vor acht“ [8]. Die Zahlen kommen also von einer Seite mit klarem Anliegen, die Methode ist aber beschrieben [5][8]. Auch Interview und Bericht sind nicht unabhängig voneinander: Der Bericht zitiert einen früheren Beitrag Döschners im „Brandmelder“ (29.06.2026), und das Interview nennt den Bericht als Beleg [5][8].
 
 | Anteil „Klima“-Minuten | Das Erste | ZDF |
 |---|---|---|
@@ -68,7 +69,7 @@ Was die Zahlen nicht zeigen: eine Absicht der Redaktionen. Ein Stichwort ist kei
 
 ## Was heißt das für dich?
 
-- Ob ein Sommer „ganz normal“ war, lässt sich erst sagen, wenn klar ist, womit man vergleicht. Derselbe Sommer war je nach Maßstab „extrem außergewöhnlich“ oder „ungewöhnlich warm“. Beide Einstufungen folgen aus derselben Messung, sie unterscheiden sich nur im Maßstab.
+- Ob ein Sommer „ganz normal“ war, lässt sich erst prüfen, wenn klar ist, womit man vergleicht. Derselbe Sommer war je nach Maßstab „extrem außergewöhnlich“ oder „ungewöhnlich warm“. Beide Einstufungen folgen aus derselben Messung, sie unterscheiden sich im Maßstab.
 - Zahlen zur Hitzesterblichkeit sind Modellschätzungen mit einer Spanne. Sie sind vorläufig und können sich noch ändern. In allen acht Sensitivitätsanalysen blieb die Richtung gleich (oberhalb der Bandbreite) [3]. Die einzelne Zahl ist dagegen weniger sicher, denn sie hat eine Spanne.
 - Dass „Klima“ im Programm von Das Erste und ZDF 2026 in weniger Sendeminuten vorkam als in den Vorjahren, zeigt die Studie eines Vereins mit klarem Anliegen, und nur für diese zwei Sender. Warum, zeigt sie nicht.
 
@@ -81,7 +82,7 @@ Was die Zahlen nicht zeigen: eine Absicht der Redaktionen. Ein Stichwort ist kei
 
 ## Woher wir das wissen
 
-Temperaturen: DWD, Climate Data Center, Gebietsmittel Deutschland, Sommer 1881–2026, Stand 2. September 2026. Die Werte für 2025 und 2026 sind vorläufig. Genutzt haben wir die Normalperioden 1961–1990 und 1991–2020, eine lineare Regression 1971–2025 mit 95-Prozent-Prognoseintervall und für die Fortschreibung ein Konfidenzintervall nach Fieller. Dazu kamen Sensitivitätsanalysen (andere Zeiträume, Bruchpunktmodell, Zeitreihenmodell, Perzentil-Definition, Bootstrap). Den Analyseplan haben wir vor Sichtung der Daten festgelegt, Abweichungen protokolliert und die Kernzahlen unabhängig validieren lassen. Die Validierungsberichte beider Analysen nannten Auflagen. Wie diese umgesetzt und nachkontrolliert wurden, ist dort dokumentiert.
+Temperaturen: DWD, Climate Data Center, Gebietsmittel Deutschland, Sommer 1881–2026, Stand 2. September 2026. Die Werte für 2025 und 2026 sind vorläufig. Genutzt haben wir die Normalperioden 1961–1990 und 1991–2020, eine lineare Regression 1971–2025 mit 95-Prozent-Prognoseintervall und für die Fortschreibung ein Konfidenzintervall nach Fieller. Dazu kamen Sensitivitätsanalysen (andere Zeiträume, Bruchpunktmodell, Zeitreihenmodell, Perzentil-Definition, Bootstrap). Den Analyseplan haben wir vor Sichtung der Daten festgelegt, Abweichungen protokolliert und die Kernzahlen unabhängig validieren lassen. Die Validierungsberichte beider Analysen nannten Auflagen. Was daraufhin geändert wurde und welche Punkte offen blieben, steht dort.
 Sterbefälle: RKI-Wochenberichte zur hitzebedingten Mortalität, Jahresreihe 1992–2025; Random-Effects-Metaanalyse, 2026 aus der Modellbildung ausgeschlossen; Analyseplan Version 1.1, zwei Auflagen-Runden [3].
 Medien: MedienKlimaBericht Nr. 1, Erstes Halbjahr 2026, KLIMA° vor acht e. V. [8].
 Analysepläne, Code, Tabellen und Validierungsberichte der beiden Evidenzchecks: `Analysen/2026-09-sommer-2026-normal/` und `Analysen/2026-08-hitzesommer-2026/` im Repository github.com/dsaure55/klima-evidenzcheck.

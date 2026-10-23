@@ -41,7 +41,7 @@
 **Was heißt das für dich? (Inhalt):** Aussagen wie „ganz normal“ erst prüfbar, wenn der Maßstab genannt ist. Zwei richtige Zahlen können verschiedene Geschichten erzählen. Schätzungen zur Hitzesterblichkeit sind Modellwerte mit Spanne und ändern sich noch.
 
 **Lagen wir richtig? (Inhalt):**
-- Im Evidenzcheck vom 29.8. stand, der vorläufige Wert werde sich „vermutlich eher nach oben als nach unten“ verändern: Er stieg von 15.800 auf 16.000. Das ist ein belegter Treffer, aber keine Vorhersage mit Intervall.
+- Im Evidenzcheck vom 29.8. stand, der vorläufige Wert werde sich „vermutlich eher nach oben als nach unten“ verändern: Er stieg von 15.800 auf 16.000. Die Erwartung hat sich bestätigt, ein registrierter Treffer ist es nicht (keine Vorhersage mit Intervall).
 - Die Kernaussage (außerhalb der Bandbreite) hat sich mit dem neuen Wert nicht verändert; Methodenanteil ungeklärt.
 - Offen: endgültige RKI-Jahresschätzung; DWD-Endwert des Sommers (vorläufig; prüfen, ob bis Redaktionsschluss revidiert).
 - Verweis: Sommermittel 2027 gehört zu den geplanten Vorhersagen des Registers (Kapitel 10).
