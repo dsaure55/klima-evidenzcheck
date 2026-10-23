@@ -1,4 +1,4 @@
-**ENTWURF v0.2 (23.10.2026) – Auflagen A1–A13 und Empfehlungen aus `pruefung/faktencheck_kap02.md` eingearbeitet, Nachprüfung ausstehend, nicht freigegeben. Diese Kopfzeile, die Herkunftstabelle am Ende und die Hinweise unter den Grafiken nicht ins Buch übernehmen.**
+**FREIGEGEBEN durch Daniel Saure am 23.10.2026 für Fassung v0.2 (Commit cc8c75e; Wortlaut: „passt so danke“, nachdem Daniel angekündigt hatte: „Ich lese Kapitel 2 v0.2 jetzt vollständig und melde mich mit Freigabe oder Änderungen“). Faktencheck: `pruefung/faktencheck_kap02.md` (ok mit Auflagen, A1–A13 danach eingearbeitet; eine Gegenprüfung der Änderungen durch den Faktenprüfer fand nicht statt). Vor Satz/Export: diese Kopfzeile, die Herkunftstabelle am Ende entfernen. Datenstände (Gasspeicherfüllstand, BNetzA-Seite) zum Stichtag 15.11. erneut abgleichen. DWD-Abgleich der Wintertemperaturen mit den Originaldateien ist nicht als erledigt dokumentiert.**
 
 # Kapitel 2 – Reicht die Energie: Gas im Winter, Strom bei Dunkelflaute?
 
