@@ -29,3 +29,45 @@
 
 - Expertenrat-Wert fuer UBA 2025: 648,9 Mt, klimadashboard: 648,83 Mt; 2024: 649,8 vs. 649,74 Mt. Differenz unter 0,1 Mt, Ursache nicht untersucht.
 - Die Klassifikation haengt stark von Fenster und Methode ab (Overshoot A: 266 bis 584 Mt, B: 25 bis 151 Mt primaer). Das wurde ungekuerzt berichtet (SAP 7).
+
+---
+
+# Nachtrag Fassung 2 (nach Validierung), 23.10.2026
+
+Grundlage: `Validierungsbericht_expertenrat-budgetabgleich.md`. Fassung 1 (Commit 78250e3) bleibt im Git-Verlauf; nichts wurde still ueberschrieben. Die Tabelle oben (RF-1 bis RF-11) ist der Stand von Fassung 1; Aenderungen dazu stehen hier.
+
+## Fehler in Fassung 1 und Korrektur (K1)
+
+- **Fehler:** In `arima_summe()` wurde `convolve(ar_poly, c(1, -1), type = "open")` verwendet. R's `convolve()` kehrt das zweite Argument um (korrekt waere `convolve(x, rev(y), type = "open")`), dadurch wurde der Differenzierungsterm mit falschem Vorzeichen gelesen, die psi-Gewichte alternierten (+1, -1, ...) statt konstant 1 zu sein, und die Varianz der 5-Jahres-Summe war bei Random-Walk-Modellen um den Faktor ca. 4 zu klein. Die Kontrolle "Diagonale gegen forecast()" war blind dafuer.
+- **Korrektur:** eigene Polynommultiplikation `polymul()` mit Unit-Test; neue Kontrollen (Random-Walk-Formel sigma^2 * h(h+1)(2h+1)/6 = 55 sigma^2 bei h = 5, die Skript-Abbruch ausloest, und Monte-Carlo mit 10000 Pfaden, Abbruch bei mehr als 5 % Abweichung). Ergebnisse: sd der Summe analytisch = Formel (A 203,6; B 251,9; C 295,5), Monte-Carlo 0,8 % darueber.
+- **Auswirkung (Overshoot-Intervalle, ARIMA, primaer):** A 173,1-359,5 -> **-132,7 bis 665,4**; B 35,3-265,9 -> **-343,1 bis 644,3**; C 390,0-660,5 -> **-53,9 bis 1104,4**. Punktwerte und Klassifikation unveraendert. Anhang (625): A -284,1 bis 510,4, B -506,4 bis 450,3, C -218,8 bis 983,3.
+- Die Fassung-1-Aussagen "ARIMA-Intervall A schliesst Korridor und Null aus" und "B nur knapp ueber Null" waren falsch.
+
+## Aenderungen zu den Rueckfragen aus Fassung 1
+
+| Nr. | Aenderung in Fassung 2 |
+|---|---|
+| RF-1 | `SAP_Bestaetigung_Daniel_Saure_2026-10-23.md` liegt vor und ist im Bericht referenziert. Einschraenkung: Chat-Zitat nach 300 Zeichen abgeschnitten; keine ausdrueckliche Antwort zu den Offenen Punkten 6a/6b; Textwidersprueche im SAP bestehen weiter. Der SAP wurde nicht veraendert. |
+| RF-2 | Wortlaut korrigiert (Validierung W2): Agora nennt 625 Mt als gesetzliche Hoechstmenge 2026; Anlage 2 KSG (BGBl. 2024 I Nr. 235, abgerufen 23.10.2026, `rohdaten/ksg/`) nennt 604 Mt fuer 2026. Moeglicherweise ist 625 die nach Par. 4 Abs. 2 KSG angepasste Jahresmenge (Plausibilitaet: ERK-Anpassung 2030: 459,2 vs. 438 = +21,2; 604 + 21,2 = 625,2); in den Expertenrat-Dokumenten kommt 625 nicht vor, Agora ist die einzige Quelle, nicht belegt. Die 625-Variante ist auf Entscheidung Daniel Saure (23.10.2026) im Anhang A (POST-HOC, nicht SAP-erforderlich, ohne Aussagewert). Die Fassung-1-Aussage, SAP 6.3 schreibe die Parallelrechnung vor, ist zurueckgenommen: Die Bedingung (ungeklaerte Diskrepanz) ist nach der Klaerung nicht ausgeloest. |
+| RF-3 | Spalten umbenannt in "Parameterintervall" (analytisch, Bootstrap) und "Prognoseintervall" (ARIMA). Zusaetzlich POST-HOC-Prognoseintervall fuer OLS unter der Annahme unabhaengiger Fehler (Var = Parametervarianz + 5 sigma^2): A 17,1-1151,3 (Annahme verletzt, zu optimistisch), B -234,4-284,4, C -459,6-737,1. Begruendung: Estimand 2 betrifft die tatsaechliche Summe. Nicht im SAP, nicht Teil der Hauptergebnisse. |
+| RF-4 | Blocklaenge 2, Seed 20260827, B = 2000 bleiben primaer (Amendment-Praezedenz). POST-HOC: Blocklaenge 4 (A: 426-781 statt 429-737) und B = 10000 mit weiteren Seeds; Monte-Carlo-Fehler der Grenzen einige Mt; Bootstrap-Grenzen in ganzen Mt. Der Seed-Strom der Hauptlaeufe wurde nicht veraendert (Hauptergebnisse identisch zu Fassung 1). |
+| RF-5 | Zusaetzlich Rundungsspanne der H1-Rate (Rueckgang 7 +/- 0,5 Mt): -1,95 % bis -2,24 %, Klassifikation unveraendert (POST-HOC). |
+| RF-6 | Unveraendert; im Bericht um den Hinweis ergaenzt, dass die Operationalisierung zugunsten des breiten Korridors verzerrt ist und fuer A-Zeilen bedeutungslos ist. |
+| RF-7 | Unveraendert. |
+| RF-9 | Das Klammerlabel "(pessimistischer)" bei Fenster C wurde entfernt; C wird nicht klassifiziert (SAP 2). |
+| RF-11 | UBA- und AGEB-Seiten durchsucht (`rohdaten/suchprotokoll/uba_agueb/`), keine Halbjahres-Gesamt-THG-Reihe; Grenze: keine Tiefensuche in PDF-Anhaengen. |
+
+## Weitere Aenderungen (POST-HOC bzw. technisch)
+
+- **POST-HOC (G3):** Standardfehler der 5-Jahres-Summe je Kovarianzschaetzer: Fenster A OLS 63,2; Newey-West mit Prewhitening (Voreinstellung) 268,3; ohne Prewhitening 134,9 Mt. Fenster B: OLS 100,7; NW 55,7 bzw. 31,5 (nicht verwendet).
+- **Erratum-Hinweis zum SAP (SAP nicht geaendert, datiert 23.10.2026):** SAP Abschnitte 1, 3 (Zeile 3), 4a.1, 4a.2 und 6.3 nehmen "625 Mt" als 2025-Emissionswert an. Das trifft nach Agora nicht zu. Ob ein formales Erratum/Amendment im SAP-Ordner gefuehrt wird, entscheidet der Mensch.
+- **Technisch:** `rohdaten/SHA256SUMS.txt` wird vom Skript nicht mehr ueberschrieben, sondern verglichen (bei Fassung 2 einmalig neu angelegt, da neue Rohdateien: `rohdaten/ksg/`, `rohdaten/suchprotokoll/uba_agueb/`; alle Hashes der Fassung-1-Dateien unveraendert). Diagnostik-/Tabellendateien der 625-Variante umbenannt in `anhang_625_*`; alte `diagnostik_sens625_*.png` entfernt. Grafiken neu erzeugt und visuell geprueft.
+- Haeufigkeitszaehlung und Hauptgrafik enthalten nur noch die Primaervariante (Fenster A/B: 4 pessimistischer, 2 optimistischer).
+
+## Offene Punkte (Fassung 2)
+
+1. Fokussierte Nachpruefung durch den validator als eigene Datei (CLAUDE.md, Dokumentationspflicht).
+2. Mensch: Soll ein formales SAP-Erratum zur 625-Annahme gefuehrt werden? Bleibt Anhang A im Bericht oder entfaellt er ganz (Validator bevorzugt Streichen)?
+3. Mensch: Ausdrueckliche Antwort zu den SAP-Punkten 6a/6b steht aus (siehe `SAP_Bestaetigung_Daniel_Saure_2026-10-23.md`).
+4. Herkunft der 625 (angepasste Jahresmenge?) ist nicht durch ein UBA-Dokument belegt; Quelle waere die UBA-Berechnung der Emissionsdaten 2025 (UBA 2026g, Tabelle 3).
+5. RF-3: Ob das POST-HOC-Prognoseintervall fuer OLS (bzw. eine GLS/AR(1)-Variante fuer Fenster A) ein SAP-Amendment braucht, entscheidet der Mensch.

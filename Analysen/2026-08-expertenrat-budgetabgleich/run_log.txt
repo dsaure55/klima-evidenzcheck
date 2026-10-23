@@ -1,7 +1,8 @@
-=== Expertenrat-Budgetabgleich 2030 - Lauf 2026-10-23 17:22:21 ===
+=== Expertenrat-Budgetabgleich 2030 - Lauf 2026-10-23 18:13:03 ===
 R: R version 4.6.1 (2026-06-24 ucrt) 
 
 --- SAP 3: SHA-256-Pruefsummen der Rohdaten ---
+Pruefsummenvergleich gegen festgeschriebene SHA256SUMS.txt: ALLE 24 Dateien unveraendert (OK).
                                                                         datei
                                             agora/halbjahresbilanz_seite.html
                                               agora/pm_deutschland-droht.html
@@ -13,6 +14,7 @@ R: R version 4.6.1 (2026-06-24 ucrt)
                                        klimadashboard/kd_api_emissions_DE.csv
                                             klimadashboard/kd_emissionen.html
                                                klimadashboard/kd_openapi.json
+                                                        ksg/ksg_anlage_2.html
                 suchprotokoll/agora/agora_listing_aktuelle-meldungen_404.html
                     suchprotokoll/agora/agora_listing_pressemitteilungen.html
                                    suchprotokoll/agora/sitemap_index_locs.txt
@@ -21,6 +23,11 @@ R: R version 4.6.1 (2026-06-24 ucrt)
                            suchprotokoll/expertenrat/publikationen_liste.html
                                          suchprotokoll/faz/faz_klima_404.html
                                     suchprotokoll/faz/faz_suche_ergebnis.html
+                                        suchprotokoll/uba_agueb/s_0e4c72.html
+                                        suchprotokoll/uba_agueb/s_18639e.html
+                                        suchprotokoll/uba_agueb/s_1eff8a.html
+                                        suchprotokoll/uba_agueb/s_811182.html
+                                          suchprotokoll/uba_agueb/suchlog.txt
                                                            sha256
  215bdbfc8a6873f864ae5bc73330bad8e04f5f93051d7917267458e40880cf77
  be913b82ed98577be714e0a1e4e489f6fba655ab62c4bb41cab1da7243dc0839
@@ -32,6 +39,7 @@ R: R version 4.6.1 (2026-06-24 ucrt)
  c8eb11713fd0696aac1f90b95cfe217598e3c5680e6f3b3ef1bd091f32eed286
  1dbd88f648d72f8c9bf38be768972a2091af791b1304776062c9d4f4d3bcb873
  35d53f1d300c53b0b402dcc7a6cfb7d496ea4dd0f12c8fd3652d78e4276220b0
+ 39a5e4f44bda9538d1368235f5deb9d99155639bb605e5cff224082abb50e2d2
  dc71052b8b1ab99aa30d4ae046b104e8addcd365005a9814b8501395028c9f8f
  a69708da6cde0e9aaa70e607621267cbac044030ce523d1f83fbebd9e351a9d9
  bfa2e7e43ccef3c246dc23a31ccd08a7018b71b602271a5b7ce6e03d699e6cfd
@@ -40,6 +48,11 @@ R: R version 4.6.1 (2026-06-24 ucrt)
  2a0add6dcdab1016e6129a7d7740a6316d31a79f2c61a9c7ff36d6c177993a3c
  b500d06679f04138f44a684bacd74bafb3a245861a133aeb727a12295028b179
  b0333ebe632bf4ec958952f3df852adecd0e39931fa6b04c6b421d69b9c23924
+ 40dfb5f029c4f80c94fbb07a4198e8d7c7131d37ee44f3ef2b1e0448d959ae61
+ 36115bf1544220d1bcbff2c8dde0b0004df3c028b1da631197f1ebb45e2d2f18
+ 8d658eda10be05c429bef4954b8ea4281a1d4cc3cf9fb27c4774f4b91cf4cfdd
+ 78178be62d9fe31df314bae211cfda792cab445a551a1ae7358cf71e1be58dbb
+ d3ea611fbca5e971800e04afa8710b171251fc86daf4387b291b76b1592d67fe
 
 --- SAP 4a/Q1: Identitaetsnachweis der UBA-Basiszeitreihe 1990-2025 ---
 Anzahl Jahre abgeglichen: 36
@@ -62,11 +75,13 @@ Implizierter 2025-Wert bei Agora: 635 + 13 = 648 Mt
 
 --- SAP 4a.1: Diskrepanz '625 Mt' vs. '648,83 Mt' ---
 648,83 Mt = UBA-Gesamtemissionen 2025 (klimadashboard.de, UBA-Stand 14.03.2026); Expertenrat nennt fuer UBA 2025: 648.9 Mt (Differenz 0.07 Mt = Rundung/Nachkomma).
-625 Mt = gesetzliche Emissionshoechstgrenze (KSG) fuer das JAHR 2026 lt. Agora (625 Mt) - KEIN Emissionswert fuer 2025.
-BEFUND: Die Diskrepanz beruht auf unterschiedlichen GROESSEN (Ist 2025 vs. Zielwert 2026), nicht auf unterschiedlichen UBA-Erhebungsstaenden
+625 Mt = von Agora als gesetzliche Hoechstgrenze fuer das JAHR 2026 genannter Wert - KEIN Emissionswert fuer 2025.
+Anlage 2 KSG (BGBl. 2024 I Nr. 235) nennt fuer 2026: 604 Mt (nicht 625). 625 kann die nach Par. 4 Abs. 2 KSG angepasste Jahresmenge sein
+  (ERK: angepasste Menge 2030 = 459,2 vs. Anlage 2 = 438, Differenz 21,2; 604 + 21,2 = 625,2 - passt rechnerisch, ist aber NICHT direkt belegt).
+BEFUND: Die Diskrepanz beruht auf unterschiedlichen GROESSEN (Ist 2025 vs. Jahresmenge 2026), nicht auf unterschiedlichen UBA-Erhebungsstaenden
         und nicht auf unterschiedlichen Systemgrenzen. Es existiert kein alternativer 2025-Emissionswert (siehe RF-2).
-Entscheidungsregel 4a.2: Estimand 1 -> 648,83 (zwingend). Estimand 2 -> 648,83 primaer;
-  FORMALE Sensitivitaets-Variante mit 2025 = 625 wird gerechnet (SAP 6.3 will beide Werte nebeneinander), aber als nicht belastbar gekennzeichnet.
+Entscheidungsregel 4a.2: Estimand 1 -> 648,83 (zwingend). Estimand 2 -> 648,83 primaer.
+  Die Bedingung SAP 6.3 (ungeklaerte Diskrepanz) ist NICHT ausgeloest. Die Rechnung mit 2025 = 625 steht nur im ANHANG (POST-HOC, nicht SAP-erforderlich, ohne Aussagewert).
 
 --- SAP 4a.3: Systemgrenzen-Check ---
                    Quelle
@@ -141,6 +156,11 @@ ROBUSTHEIT Toleranzschwelle 0,05 vs 0,1 pp (Primaer-Rate): Einordnung stimmt ueb
 ROBUSTHEIT Toleranzschwelle (POST-HOC-Rate -2 %): Einordnung stimmt ueberein (robust)
 Hinweis: deskriptiv, n = 1 Beobachtung, kein Signifikanztest, kein p-Wert (SAP 2).
 
+--- POST-HOC (G4): Rundungsspanne H1-Rate (Rueckgang 7 +/- 0,5 Mt; 327 als exakt behandelt) ---
+Rate -1.949 % -> d_A = 0.406, d_B = 1.692 pp -> naeher an Fenster A (pessimistischeres Szenario)
+Rate -2.242 % -> d_A = 0.700, d_B = 1.399 pp -> naeher an Fenster A (pessimistischeres Szenario)
+Beobachtete mittlere Jahresraten (nicht SAP-Definition, nur Fussnote): 1990-2025 -1.86 %, 2015-2025 -3.20 %
+
 
 ############ ESTIMAND 2 ############
 Budget_Gesamt_2021_2030 (Expertenrat, Primaerquelle): 6199 Mt; Korridor Expertenrat: 60-100 Mt; Bundesregierung: Overshoot -4.5 Mt
@@ -149,76 +169,123 @@ Budget_Gesamt_2021_2030 (Expertenrat, Primaerquelle): 6199 Mt; Korridor Experten
 Kumuliert_Ist_2021_2025 = 3480.1 Mt
 
 === Variante primaer, Fenster A (1990-2025, n=36) ===
-Durbin-Watson: DW = 0.648, p = 0.0000 (H1: positive Autokorrelation)
+Durbin-Watson: DW = 0.648, p = 3.793e-07 (H1: positive Autokorrelation)
 Shapiro-Wilk (Residuen): p = 0.6872
 Autokorrelation signifikant (alpha = 0,05): JA -> Kovarianzmatrix: Newey-West (HAC), SAP 5.3
+Residuum 2025 = -55.4 Mt; ACF Lag 1 = 0.62, Lag 2 = 0.35 (95%-Schranke ca. +/- 0.33)
 Steigung: -14.549 Mt/Jahr | klassisch p = 2.902e-24 | Newey-West p = 5.895e-09
 OLS-Punktschaetzungen 2026-2030 (Mt):  2026: 689.7 | 2027: 675.2 | 2028: 660.6 | 2029: 646.1 | 2030: 631.5 
-ARIMA(0,1,0) mit Drift: Summe 2026-2030 = 2985.2 Mt (95%-Intervall 2892.0 - 3078.4); Kontrolle Diagonale vs. forecast(): 2.13e-14
+Niveausprung 2025 (beobachtet 648.83) -> 2026 (Fortschreibung 689.7): +40.9 Mt
+ARIMA(0,1,0) mit Drift: Summe 2026-2030 = 2985.2 Mt (95%-PROGNOSEintervall 2586.2 - 3384.3; sd der Summe = 203.6)
+  Kontrolle 1 (Diagonale vs. forecast): max. Abw. 2.13e-14 | Kontrolle 2 (Random-Walk-Formel sigma^2*55): rel. Abw. 1.8e-16 (erwartet sd 203.6) | Kontrolle 3 (Monte-Carlo, 10000 Pfade): sd_MC = 205.3, Verhaeltnis zu analytisch = 1.008
 
 === Variante primaer, Fenster B (2015-2025, n=11) ===
 Durbin-Watson: DW = 1.937, p = 0.3079 (H1: positive Autokorrelation)
 Shapiro-Wilk (Residuen): p = 0.4498
 Autokorrelation signifikant (alpha = 0,05): nein -> Kovarianzmatrix: klassisch OLS (DW nicht signifikant)
+Residuum 2025 = 14.6 Mt; ACF Lag 1 = -0.03, Lag 2 = -0.69 (95%-Schranke ca. +/- 0.59)
 Steigung: -28.479 Mt/Jahr | klassisch p = 6.841e-07 | Newey-West p = 2.959e-09
 OLS-Punktschaetzungen 2026-2030 (Mt):  2026: 605.7 | 2027: 577.3 | 2028: 548.8 | 2029: 520.3 | 2030: 491.8 
-ARIMA(0,1,0) mit Drift: Summe 2026-2030 = 2869.6 Mt (95%-Intervall 2754.3 - 2984.9); Kontrolle Diagonale vs. forecast(): 2.84e-14
+Niveausprung 2025 (beobachtet 648.83) -> 2026 (Fortschreibung 605.7): -43.1 Mt
+ARIMA(0,1,0) mit Drift: Summe 2026-2030 = 2869.6 Mt (95%-PROGNOSEintervall 2375.9 - 3363.3; sd der Summe = 251.9)
+  Kontrolle 1 (Diagonale vs. forecast): max. Abw. 2.84e-14 | Kontrolle 2 (Random-Walk-Formel sigma^2*55): rel. Abw. 0.0e+00 (erwartet sd 251.9) | Kontrolle 3 (Monte-Carlo, 10000 Pfade): sd_MC = 253.9, Verhaeltnis zu analytisch = 1.008
 
 === Variante primaer, Fenster C (2020-2025, n=6) ===
 Durbin-Watson: DW = 1.933, p = 0.2145 (H1: positive Autokorrelation)
 Shapiro-Wilk (Residuen): p = 0.5017
 Autokorrelation signifikant (alpha = 0,05): nein -> Kovarianzmatrix: OLS (Fenster C: rein deskriptiv, keine HAC/Inferenz; RF-9)
+Residuum 2025 = 6.2 Mt; ACF Lag 1 = -0.10, Lag 2 = -0.65 (95%-Schranke ca. +/- 0.80)
 Steigung: -23.691 Mt/Jahr (rein deskriptiv)
 OLS-Punktschaetzungen 2026-2030 (Mt):  2026: 618.9 | 2027: 595.2 | 2028: 571.5 | 2029: 547.8 | 2030: 524.2 
-ARIMA(0,1,0): Summe 2026-2030 = 3244.2 Mt (95%-Intervall 3108.9 - 3379.4); Kontrolle Diagonale vs. forecast(): 2.84e-14
+Niveausprung 2025 (beobachtet 648.83) -> 2026 (Fortschreibung 618.9): -29.9 Mt
+ARIMA(0,1,0): Summe 2026-2030 = 3244.2 Mt (95%-PROGNOSEintervall 2665.0 - 3823.3; sd der Summe = 295.5)
+  Kontrolle 1 (Diagonale vs. forecast): max. Abw. 2.84e-14 | Kontrolle 2 (Random-Walk-Formel sigma^2*55): rel. Abw. 1.7e-16 (erwartet sd 295.5) | Kontrolle 3 (Monte-Carlo, 10000 Pfade): sd_MC = 297.9, Verhaeltnis zu analytisch = 1.008
 
-================ Variante: Sensitivitaet formal: 2025 = 625 (KSG-Grenze 2026, kein Emissionswert; RF-2) ================
+================ Variante: ANHANG (POST-HOC, ohne Aussagewert): 2025 = 625 im Datensatz ================
 Kumuliert_Ist_2021_2025 = 3456.2 Mt
 
-=== Variante sens625, Fenster A (1990-2025, n=36) ===
-Durbin-Watson: DW = 0.598, p = 0.0000 (H1: positive Autokorrelation)
+=== Variante anhang625, Fenster A (1990-2025, n=36) ===
+Durbin-Watson: DW = 0.598, p = 1.016e-07 (H1: positive Autokorrelation)
 Shapiro-Wilk (Residuen): p = 0.6974
 Autokorrelation signifikant (alpha = 0,05): JA -> Kovarianzmatrix: Newey-West (HAC), SAP 5.3
+Residuum 2025 = -76.7 Mt; ACF Lag 1 = 0.62, Lag 2 = 0.37 (95%-Schranke ca. +/- 0.33)
 Steigung: -14.657 Mt/Jahr | klassisch p = 7.824e-24 | Newey-West p = 0.0001109
 OLS-Punktschaetzungen 2026-2030 (Mt):  2026: 687.1 | 2027: 672.4 | 2028: 657.8 | 2029: 643.1 | 2030: 628.4 
-ARIMA(0,1,0) mit Drift: Summe 2026-2030 = 2855.9 Mt (95%-Intervall 2763.1 - 2948.7); Kontrolle Diagonale vs. forecast(): 2.84e-14
+Niveausprung 2025 (beobachtet 625.00) -> 2026 (Fortschreibung 687.1): +62.1 Mt
+ARIMA(0,1,0) mit Drift: Summe 2026-2030 = 2855.9 Mt (95%-PROGNOSEintervall 2458.6 - 3253.2; sd der Summe = 202.7)
+  Kontrolle 1 (Diagonale vs. forecast): max. Abw. 2.84e-14 | Kontrolle 2 (Random-Walk-Formel sigma^2*55): rel. Abw. 1.8e-16 (erwartet sd 202.7) | Kontrolle 3 (Monte-Carlo, 10000 Pfade): sd_MC = 204.4, Verhaeltnis zu analytisch = 1.008
 
-=== Variante sens625, Fenster B (2015-2025, n=11) ===
+=== Variante anhang625, Fenster B (2015-2025, n=11) ===
 Durbin-Watson: DW = 1.915, p = 0.2944 (H1: positive Autokorrelation)
 Shapiro-Wilk (Residuen): p = 0.9551
 Autokorrelation signifikant (alpha = 0,05): nein -> Kovarianzmatrix: klassisch OLS (DW nicht signifikant)
+Residuum 2025 = -1.6 Mt; ACF Lag 1 = -0.01, Lag 2 = -0.66 (95%-Schranke ca. +/- 0.59)
 Steigung: -29.562 Mt/Jahr | klassisch p = 3.867e-07 | Newey-West p = 5.57e-10
 OLS-Punktschaetzungen 2026-2030 (Mt):  2026: 597.1 | 2027: 567.5 | 2028: 538.0 | 2029: 508.4 | 2030: 478.8 
-ARIMA(0,1,0) mit Drift: Summe 2026-2030 = 2714.7 Mt (95%-Intervall 2602.9 - 2826.4); Kontrolle Diagonale vs. forecast(): 2.84e-14
+Niveausprung 2025 (beobachtet 625.00) -> 2026 (Fortschreibung 597.1): -27.9 Mt
+ARIMA(0,1,0) mit Drift: Summe 2026-2030 = 2714.7 Mt (95%-PROGNOSEintervall 2236.3 - 3193.0; sd der Summe = 244.1)
+  Kontrolle 1 (Diagonale vs. forecast): max. Abw. 2.84e-14 | Kontrolle 2 (Random-Walk-Formel sigma^2*55): rel. Abw. 0.0e+00 (erwartet sd 244.1) | Kontrolle 3 (Monte-Carlo, 10000 Pfade): sd_MC = 246.0, Verhaeltnis zu analytisch = 1.008
 
-=== Variante sens625, Fenster C (2020-2025, n=6) ===
+=== Variante anhang625, Fenster C (2020-2025, n=6) ===
 Durbin-Watson: DW = 1.841, p = 0.1759 (H1: positive Autokorrelation)
 Shapiro-Wilk (Residuen): p = 0.7239
 Autokorrelation signifikant (alpha = 0,05): nein -> Kovarianzmatrix: OLS (Fenster C: rein deskriptiv, keine HAC/Inferenz; RF-9)
+Residuum 2025 = -5.1 Mt; ACF Lag 1 = -0.09, Lag 2 = -0.53 (95%-Schranke ca. +/- 0.80)
 Steigung: -27.095 Mt/Jahr (rein deskriptiv)
 OLS-Punktschaetzungen 2026-2030 (Mt):  2026: 603.0 | 2027: 575.9 | 2028: 548.8 | 2029: 521.7 | 2030: 494.6 
-ARIMA(0,1,0): Summe 2026-2030 = 3125.0 Mt (95%-Intervall 2984.6 - 3265.4); Kontrolle Diagonale vs. forecast(): 2.13e-14
+Niveausprung 2025 (beobachtet 625.00) -> 2026 (Fortschreibung 603.0): -22.0 Mt
+ARIMA(0,1,0): Summe 2026-2030 = 3125.0 Mt (95%-PROGNOSEintervall 2523.9 - 3726.1; sd der Summe = 306.7)
+  Kontrolle 1 (Diagonale vs. forecast): max. Abw. 2.13e-14 | Kontrolle 2 (Random-Walk-Formel sigma^2*55): rel. Abw. 1.5e-16 (erwartet sd 306.7) | Kontrolle 3 (Monte-Carlo, 10000 Pfade): sd_MC = 309.2, Verhaeltnis zu analytisch = 1.008
 
 
---- SAP 5.2 Diagnostik-Zusammenfassung (alle Variante x Fenster) ---
- Variante Fenster  n Steigung    DW   DW_p DW_signifikant ShapiroWilk_p
-  primaer       A 36   -14.55 0.648 0.0000           TRUE        0.6872
-  primaer       B 11   -28.48 1.937 0.3079          FALSE        0.4498
-  primaer       C  6   -23.69 1.933 0.2145          FALSE        0.5017
-  sens625       A 36   -14.66 0.598 0.0000           TRUE        0.6974
-  sens625       B 11   -29.56 1.915 0.2944          FALSE        0.9551
-  sens625       C  6   -27.10 1.841 0.1759          FALSE        0.7239
- HAC_verwendet Steigung_p_klassisch Steigung_p_NeweyWest
-          TRUE             2.90e-24             5.90e-09
-         FALSE             6.84e-07             2.96e-09
-         FALSE                   NA                   NA
-          TRUE             7.82e-24             1.11e-04
-         FALSE             3.87e-07             5.57e-10
-         FALSE                   NA                   NA
+--- SAP 5.2 Diagnostik-Zusammenfassung HAUPTTEIL (primaer) ---
+ Variante Fenster  n Steigung    DW     DW_p DW_signifikant ShapiroWilk_p
+  primaer       A 36   -14.55 0.648 3.79e-07           TRUE        0.6872
+  primaer       B 11   -28.48 1.937 3.08e-01          FALSE        0.4498
+  primaer       C  6   -23.69 1.933 2.14e-01          FALSE        0.5017
+ HAC_verwendet Steigung_p_klassisch Steigung_p_NeweyWest Residuum_2025 ACF_lag1
+          TRUE             2.90e-24             5.90e-09         -55.4     0.62
+         FALSE             6.84e-07             2.96e-09          14.6    -0.03
+         FALSE                   NA                   NA           6.2    -0.10
+ ACF_lag2 ACF_schranke
+     0.35         0.33
+    -0.69         0.59
+    -0.65         0.80
 
---- SAP 11 Estimand 2: Ergebnistabelle (Mt CO2-Aeq., eine Nachkommastelle) ---
+--- Diagnostik ANHANG (625-Variante, POST-HOC) ---
+  Variante Fenster  n Steigung    DW     DW_p DW_signifikant ShapiroWilk_p
+ anhang625       A 36   -14.66 0.598 1.02e-07           TRUE        0.6974
+ anhang625       B 11   -29.56 1.915 2.94e-01          FALSE        0.9551
+ anhang625       C  6   -27.10 1.841 1.76e-01          FALSE        0.7239
+ HAC_verwendet Steigung_p_klassisch Steigung_p_NeweyWest Residuum_2025 ACF_lag1
+          TRUE             7.82e-24             1.11e-04         -76.7     0.62
+         FALSE             3.87e-07             5.57e-10          -1.6    -0.01
+         FALSE                   NA                   NA          -5.1    -0.09
+ ACF_lag2 ACF_schranke
+     0.37         0.33
+    -0.66         0.59
+    -0.53         0.80
 
-[Variante: Primaer: 2025 = 648,83 (UBA)]
+--- ARIMA-Kontrollen (K1): sd der Summe analytisch vs. Random-Walk-Formel vs. Monte-Carlo ---
+  Variante Fenster                 Modell sigma2 sd_Summe_analytisch
+   primaer       A ARIMA(0,1,0) mit Drift  753.7               203.6
+   primaer       B ARIMA(0,1,0) mit Drift 1153.6               251.9
+   primaer       C           ARIMA(0,1,0) 1587.7               295.5
+ anhang625       A ARIMA(0,1,0) mit Drift  747.0               202.7
+ anhang625       B ARIMA(0,1,0) mit Drift 1083.0               244.1
+ anhang625       C           ARIMA(0,1,0) 1709.9               306.7
+ sd_Summe_RW_Formel sd_Summe_MonteCarlo Verhaeltnis_MC_analytisch psi_gewichte
+              203.6               205.3                     1.008    1;1;1;1;1
+              251.9               253.9                     1.008    1;1;1;1;1
+              295.5               297.9                     1.008    1;1;1;1;1
+              202.7               204.4                     1.008    1;1;1;1;1
+              244.1               246.0                     1.008    1;1;1;1;1
+              306.7               309.2                     1.008    1;1;1;1;1
+
+--- SAP 11 Estimand 2: Ergebnistabelle HAUPTTEIL (Mt CO2-Aeq., eine Nachkommastelle) ---
+Intervalltypen: analytisch/Bootstrap = Parameterintervall (Erwartungswert der Summe); ARIMA = Prognoseintervall (tatsaechliche Summe).
+
+[Variante: Primaer 2025 = 648,83 (UBA)]
  Fenster                                     Methode Kum_Gesamt_2021_2030
        A analytisch-parametrisch (HAC falls DW sig.)               6783.2
        A   Moving-Block-Bootstrap (B=2000, Residuen)               6783.2
@@ -229,38 +296,50 @@ ARIMA(0,1,0): Summe 2026-2030 = 3125.0 Mt (95%-Intervall 2984.6 - 3265.4); Kontr
        C analytisch-parametrisch (HAC falls DW sig.)               6337.7
        C   Moving-Block-Bootstrap (B=2000, Residuen)               6337.7
        C                     ARIMA (auto.arima, h=5)               6724.2
- KI_unten KI_oben Overshoot_eigen Overshoot_KI_unten Overshoot_KI_oben
-   6237.9  7328.5           584.2               38.9            1129.5
-   6628.0  6936.3           584.2              429.0             737.3
-   6372.1  6558.5           266.3              173.1             359.5
-   5996.3  6451.8            25.0             -202.7             252.8
-   6040.1  6400.4            25.0             -158.9             201.4
-   6234.3  6464.9           150.6               35.3             265.9
-   5768.7  6906.8           138.7             -430.3             707.8
-   6083.4  6701.3           138.7             -115.6             502.3
-   6589.0  6859.5           525.2              390.0             660.5
-                                                                     Klassifikation
+ Intervall_unten Intervall_oben Overshoot_eigen Overshoot_Intervall_unten
+          6237.9         7328.5           584.2                      38.9
+          6628.0         6936.3           584.2                     429.0
+          6066.3         6864.4           266.3                    -132.7
+          5996.3         6451.8            25.0                    -202.7
+          6040.1         6400.4            25.0                    -158.9
+          5855.9         6843.3           150.6                    -343.1
+          5768.7         6906.8           138.7                    -430.3
+          6083.4         6701.3           138.7                    -115.6
+          6145.1         7303.4           525.2                     -53.9
+ Overshoot_Intervall_oben
+                   1129.5
+                    737.3
+                    665.4
+                    252.8
+                    201.4
+                    644.3
+                    707.8
+                    502.3
+                   1104.4
+                                                       Klassifikation_nur_Punktwert
       eigene Projektion pessimistischer als Expertenrat (groessere Ueberschreitung)
       eigene Projektion pessimistischer als Expertenrat (groessere Ueberschreitung)
       eigene Projektion pessimistischer als Expertenrat (groessere Ueberschreitung)
  eigene Projektion optimistischer als Expertenrat (geringere/keine Ueberschreitung)
  eigene Projektion optimistischer als Expertenrat (geringere/keine Ueberschreitung)
       eigene Projektion pessimistischer als Expertenrat (groessere Ueberschreitung)
-      eigene Projektion pessimistischer als Expertenrat (groessere Ueberschreitung)
-      eigene Projektion pessimistischer als Expertenrat (groessere Ueberschreitung)
-      eigene Projektion pessimistischer als Expertenrat (groessere Ueberschreitung)
-                           Naeher_an
-     numerisch naeher an Expertenrat
-     numerisch naeher an Expertenrat
-     numerisch naeher an Expertenrat
- numerisch naeher an Bundesregierung
- numerisch naeher an Bundesregierung
-     numerisch naeher an Expertenrat
-     numerisch naeher an Expertenrat
-     numerisch naeher an Expertenrat
-     numerisch naeher an Expertenrat
+                                                 (deskriptiv, keine Klassifikation)
+                                                 (deskriptiv, keine Klassifikation)
+                                                 (deskriptiv, keine Klassifikation)
+ Intervall_deckt_Korridor                           Naeher_an
+                     TRUE     numerisch naeher an Expertenrat
+                    FALSE     numerisch naeher an Expertenrat
+                     TRUE     numerisch naeher an Expertenrat
+                     TRUE numerisch naeher an Bundesregierung
+                     TRUE numerisch naeher an Bundesregierung
+                     TRUE     numerisch naeher an Expertenrat
+                     TRUE                        (deskriptiv)
+                     TRUE                        (deskriptiv)
+                     TRUE                        (deskriptiv)
 
-[Variante: Sensitivitaet formal: 2025 = 625 (KSG-Grenze 2026, kein Emissionswert; RF-2)]
+--- ANHANG (POST-HOC, ohne Aussagewert, nicht SAP-erforderlich): 2025 = 625 im Datensatz ---
+
+[ANHANG 625]
  Fenster                                     Methode Kum_Gesamt_2021_2030
        A analytisch-parametrisch (HAC falls DW sig.)               6745.1
        A   Moving-Block-Bootstrap (B=2000, Residuen)               6745.1
@@ -271,45 +350,111 @@ ARIMA(0,1,0): Summe 2026-2030 = 3125.0 Mt (95%-Intervall 2984.6 - 3265.4); Kontr
        C analytisch-parametrisch (HAC falls DW sig.)               6200.4
        C   Moving-Block-Bootstrap (B=2000, Residuen)               6200.4
        C                     ARIMA (auto.arima, h=5)               6581.2
- KI_unten KI_oben Overshoot_eigen Overshoot_KI_unten Overshoot_KI_oben
-   5795.4  7694.7           546.1             -403.6            1495.7
-   6585.5  6901.6           546.1              386.5             702.6
-   6219.3  6404.9           113.1               20.3             205.9
-   5924.9  6367.2           -53.0             -274.1             168.2
-   5972.5  6320.8           -53.0             -226.5             121.8
-   6059.2  6282.6           -28.1             -139.8              83.6
-   5633.5  6767.4             1.4             -565.5             568.4
-   5996.9  6552.6             1.4             -202.1             353.6
-   6440.9  6721.6           382.2              241.9             522.6
-                                                                     Klassifikation
+ Intervall_unten Intervall_oben Overshoot_eigen Overshoot_Intervall_unten
+          5795.4         7694.7           546.1                    -403.6
+          6585.5         6901.6           546.1                     386.5
+          5914.9         6709.4           113.1                    -284.1
+          5924.9         6367.2           -53.0                    -274.1
+          5972.5         6320.8           -53.0                    -226.5
+          5692.6         6649.3           -28.1                    -506.4
+          5633.5         6767.4             1.4                    -565.5
+          5996.9         6552.6             1.4                    -202.1
+          5980.2         7182.3           382.2                    -218.8
+ Overshoot_Intervall_oben
+                   1495.7
+                    702.6
+                    510.4
+                    168.2
+                    121.8
+                    450.3
+                    568.4
+                    353.6
+                    983.3
+                                                       Klassifikation_nur_Punktwert
       eigene Projektion pessimistischer als Expertenrat (groessere Ueberschreitung)
       eigene Projektion pessimistischer als Expertenrat (groessere Ueberschreitung)
       eigene Projektion pessimistischer als Expertenrat (groessere Ueberschreitung)
  eigene Projektion optimistischer als Expertenrat (geringere/keine Ueberschreitung)
  eigene Projektion optimistischer als Expertenrat (geringere/keine Ueberschreitung)
  eigene Projektion optimistischer als Expertenrat (geringere/keine Ueberschreitung)
- eigene Projektion optimistischer als Expertenrat (geringere/keine Ueberschreitung)
- eigene Projektion optimistischer als Expertenrat (geringere/keine Ueberschreitung)
-      eigene Projektion pessimistischer als Expertenrat (groessere Ueberschreitung)
-                           Naeher_an
-     numerisch naeher an Expertenrat
-     numerisch naeher an Expertenrat
-     numerisch naeher an Expertenrat
- numerisch naeher an Bundesregierung
- numerisch naeher an Bundesregierung
- numerisch naeher an Bundesregierung
- numerisch naeher an Bundesregierung
- numerisch naeher an Bundesregierung
-     numerisch naeher an Expertenrat
+                                                 (deskriptiv, keine Klassifikation)
+                                                 (deskriptiv, keine Klassifikation)
+                                                 (deskriptiv, keine Klassifikation)
+ Intervall_deckt_Korridor                           Naeher_an
+                     TRUE     numerisch naeher an Expertenrat
+                    FALSE     numerisch naeher an Expertenrat
+                     TRUE     numerisch naeher an Expertenrat
+                     TRUE numerisch naeher an Bundesregierung
+                     TRUE numerisch naeher an Bundesregierung
+                     TRUE numerisch naeher an Bundesregierung
+                     TRUE                        (deskriptiv)
+                     TRUE                        (deskriptiv)
+                     TRUE                        (deskriptiv)
 
---- Haeufigkeit der Klassifikationen (Fenster A und B, alle Methoden, beide Varianten; C nur deskriptiv) ---
-         Klasse
-Variante  eigene Projektion optimistischer als Expertenrat (geringere/keine Ueberschreitung)
-  primaer                                                                                  2
-  sens625                                                                                  3
-         Klasse
-Variante  eigene Projektion pessimistischer als Expertenrat (groessere Ueberschreitung)
-  primaer                                                                             4
-  sens625                                                                             3
+--- Hauptteil: Haeufigkeit der punktbasierten Klassifikationen (Fenster A und B, alle Methoden) ---
+Klasse
+eigene Projektion optimistischer als Expertenrat (geringere/keine Ueberschreitung) 
+                                                                                 2 
+     eigene Projektion pessimistischer als Expertenrat (groessere Ueberschreitung) 
+                                                                                 4 
+Spanne der Overshoot-Punktwerte Fenster A/B: 25.0 bis 584.2 Mt
+Intervalle (Fenster A/B), die den Korridor 60-100 Mt ueberdecken: 5 von 6; Intervalle, die zugleich 0 ueberdecken: 4
+Alle 9 Intervalle inkl. C ueberdecken den Korridor: 8 von 9
+ Fenster                                     Methode Intervall_deckt_Korridor
+       A analytisch-parametrisch (HAC falls DW sig.)                     TRUE
+       A   Moving-Block-Bootstrap (B=2000, Residuen)                    FALSE
+       A                     ARIMA (auto.arima, h=5)                     TRUE
+       B analytisch-parametrisch (HAC falls DW sig.)                     TRUE
+       B   Moving-Block-Bootstrap (B=2000, Residuen)                     TRUE
+       B                     ARIMA (auto.arima, h=5)                     TRUE
+       C analytisch-parametrisch (HAC falls DW sig.)                     TRUE
+       C   Moving-Block-Bootstrap (B=2000, Residuen)                     TRUE
+       C                     ARIMA (auto.arima, h=5)                     TRUE
+ Intervall_deckt_Null
+                FALSE
+                FALSE
+                 TRUE
+                 TRUE
+                 TRUE
+                 TRUE
+                 TRUE
+                 TRUE
+                 TRUE
+
+--- POST-HOC (W5): Prognoseintervall der tatsaechlichen Summe fuer OLS (unabhaengige Fehler: Var = Parametervarianz + 5 sigma^2), Overshoot ---
+ Fenster Kum_Gesamt Overshoot Overshoot_unten Overshoot_oben
+       A     6783.2     584.2            17.1         1151.3
+       B     6224.0      25.0          -234.4          284.4
+       C     6337.7     138.7          -459.6          737.1
+                                                                              Anmerkung
+ Annahme unabhaengiger Fehler hier verletzt (DW signifikant): Intervall zu optimistisch
+                   unabhaengige Fehler plausibel, aber DW-Teststaerke bei n = 11 gering
+                                                                 n = 6, rein deskriptiv
+
+--- POST-HOC (G2): Bootstrap-Sensitivitaet (Overshoot-Parameterintervall), Blocklaenge / B / Seed ---
+ Fenster Blocklaenge     B     Seed Overshoot_unten Overshoot_oben
+       A           2  2000 20260827           429.0          737.3
+       A           2 10000       11           433.4          736.0
+       A           2 10000       12           431.4          741.3
+       A           4  2000 20260827           426.0          781.3
+       A           4 10000       11           427.4          775.9
+       B           2  2000 20260827          -152.6          199.0
+       B           2 10000       11          -158.1          200.5
+       B           2 10000       12          -155.8          198.0
+       B           4  2000 20260827          -110.1          146.8
+       B           4 10000       11          -117.7          157.0
+       C           2  2000 20260827          -116.0          502.3
+       C           2 10000       11          -115.6          489.5
+       C           2 10000       12          -115.6          502.3
+       C           4  2000 20260827            -5.7          412.2
+       C           4 10000       11            -5.7          412.2
+
+--- POST-HOC (G3): Standardfehler der 5-Jahres-Summe je Kovarianzschaetzer (Mt) ---
+ Fenster SE_Summe_OLS SE_Summe_NW_prewhite_TRUE_Default
+       A         63.2                             268.3
+       B        100.7                              55.7
+ SE_Summe_NW_prewhite_FALSE
+                      134.9
+                       31.5
 
 === ENDE: Skript vollstaendig durchgelaufen ===

@@ -1,12 +1,20 @@
 # Analysebericht: Expertenrat-Budgetabgleich 2021-2030 und H1-2026
 
-**SAP:** `SAP_Expertenrat-Budgetabgleich-2030.md`, Version 1.1 (Header: final, eingefroren 29.08.2026, Commit d9215cb)
-**Skript:** `expertenrat-budgetabgleich.R` (R 4.6.1), Lauf vom 23.10.2026, fehlerfrei durchgelaufen (Exit-Code 0)
-**Log:** `run_log.txt`, `output/sessionInfo.txt`
-**Status dieses Berichts:** Analyst-Ausgabe, NICHT validiert, keine Freigabe, keine Veroeffentlichung.
-**Abweichungen vom SAP / Rueckfragen:** siehe `Abweichungsprotokoll_expertenrat-budgetabgleich.md` (RF-1 bis RF-11). Post-hoc-Anteile sind im Text mit "POST-HOC" gekennzeichnet.
+**Fassung 2 (nach Validierung), 23.10.2026.** Fassung 1 liegt im Git-Verlauf (Commit 78250e3) und ist durch diese Fassung ersetzt; sie enthielt einen Rechenfehler in den ARIMA-Intervallen (Abschnitt "Aenderungen nach Validierung").
+**SAP:** `SAP_Expertenrat-Budgetabgleich-2030.md`, Version 1.1 (Header: final, eingefroren 29.08.2026, Commit d9215cb). Die Bestaetigung durch Daniel Saure, dass v1.1 als eingefroren gilt, ist in `SAP_Bestaetigung_Daniel_Saure_2026-10-23.md` dokumentiert. Einschraenkung laut dieser Datei: Die im Chat zitierte Nachricht ist nach 300 Zeichen abgeschnitten, und eine ausdrueckliche Antwort zu den offenen Punkten 6a/6b liegt nicht vor; die Textwidersprueche im SAP (Abschnitt 0 "draft", Offene Punkte 6) bleiben bestehen. Der SAP wurde nicht veraendert.
+**Skript:** `expertenrat-budgetabgleich.R` (R 4.6.1), fehlerfrei durchgelaufen (Exit-Code 0), Log `run_log.txt`, `output/sessionInfo.txt`.
+**Status:** Analyst-Ausgabe, NICHT validiert, keine Freigabe, keine Veroeffentlichung.
+**Abweichungen / Rueckfragen / Post-hoc:** `Abweichungsprotokoll_expertenrat-budgetabgleich.md`.
 
-Rundung wie im SAP (11): eine Nachkommastelle fuer Mt und Prozentpunkte. Bei Estimand 1 steht zusaetzlich die ungerundete Distanz in Klammern, weil die Toleranzschwelle (0,05 pp) feiner als eine Nachkommastelle ist.
+Rundung wie im SAP (11): eine Nachkommastelle fuer Mt und Prozentpunkte; Ausnahmen sind gekennzeichnet (Estimand 1: drei Stellen in Klammern wegen der Toleranz 0,05 pp; Bootstrap-Grenzen in ganzen Mt wegen Monte-Carlo-Fehler).
+
+---
+
+## Kernaussage (vorangestellt)
+
+1. **Estimand 1:** Die Halbjahresrate H1 2026 gegenueber H1 2025 (-2,1 %, vorlaeufige Agora-Schaetzung) liegt naeher an der mittleren Rate des Langfrist-Trends (Fenster A, -1,5 %) als an der des 10-Jahres-Trends (Fenster B, -3,6 %). Das ist robust gegenueber beiden Toleranzschwellen und der Rundung. Deskriptiv, n = 1, kein Test.
+2. **Estimand 2:** Die eigene Trendfortschreibung ergibt einen Overshoot gegenueber dem Budget 6199 Mt, der je nach Fenster und Methode zwischen **+25 und +584 Mt** (Punktwerte Fenster A und B) liegt. Der Expertenrat-Korridor 60-100 Mt wird von keinem Punktwert getroffen. **Aber:** 8 von 9 Intervallen (alle Fenster) bzw. 5 von 6 (Fenster A und B) ueberdecken den Korridor; nur das Bootstrap-Parameterintervall von Fenster A (429-737 Mt) schliesst ihn aus. 4 der 6 Intervalle von Fenster A/B ueberdecken zugleich die Null (Budget eingehalten) und den Korridor. **Die Analyse erlaubt keine belastbare Aussage, ob der Expertenrat-Korridor getroffen wird.** Die Spanne haengt von Fenster und Methode ab; es gibt keine ausgezeichnete Hauptkombination.
+3. **Modellartefakt-Hinweis Fenster A:** Die Fortschreibung beginnt 2026 bei 689,7 Mt, 40,9 Mt ueber dem beobachteten 2025-Wert (648,83 Mt). Das Residuum 2025 betraegt -55,4 Mt (siehe Linearitaet unten). Ein grosser Teil des A-Overshoots (+584 Mt) geht auf diesen Niveausprung zurueck; die A-Zeilen sind nicht als Trendaussage ueber das Tempo lesbar.
 
 ---
 
@@ -21,159 +29,202 @@ Der Datenabgleich wurde vor jeder Modellierung durchgefuehrt und bestanden (kein
 | 1 | UBA via klimadashboard.de (CC BY 4.0) | 23.10.2026 (SAP verweist auf Erstzugriff 27.08.2026) | UBA-Emissionsdaten 2025 vom 14.03.2026 (API-Feld `update` = 2026-03-14) | Gesamt-THG in CO2-Aeq., KSG-Sektoren, produktionsbasiert, ohne LULUCF | `rohdaten/klimadashboard/` |
 | 2 | Agora Energiewende, Halbjahresbilanz 2026 (Pressemitteilung 28.08.2026) | 23.10.2026 | erste Schaetzung auf vorlaeufigen Daten | nicht ausdruecklich benannt; aus KSG-Bezug und Konsistenz (635 + 13 = 648 Mt) als Gesamt-THG ohne LULUCF abgeleitet | `rohdaten/agora/` |
 | 3 | FAZ-Artikel | Abruf versucht 23.10.2026, nicht abrufbar | - | - | `rohdaten/suchprotokoll/faz/` |
-| 4 | Expertenrat fuer Klimafragen, Pruefbericht Emissionsdaten 2025 / Projektionsdaten 2026 | 23.10.2026 | veroeffentlicht 18.05.2026 | Summe der Jahresemissionsgesamtmengen aller Sektoren ohne LULUCF (Anlage 2 KSG) | `rohdaten/expertenrat/` |
-| 5 | Bundesregierung / UBA Projektionsdaten 2026 (Puffer 4,5 Mt) | nur sekundaer ueber Quelle 4 | vorgelegt 14.03.2026; Datentabelle UBA laut Literaturverzeichnis des Pruefberichts Stand 07.05.2026 | Mit-Massnahmen-Szenario, ohne LULUCF | in `rohdaten/expertenrat/bericht.txt` |
+| 4 | Expertenrat fuer Klimafragen, Pruefbericht Emissionsdaten 2025 / Projektionsdaten 2026 | 23.10.2026 | veroeffentlicht 18.05.2026 | Summe der Jahresemissionsgesamtmengen ohne LULUCF (Anlage 2 KSG) | `rohdaten/expertenrat/` |
+| 5 | Bundesregierung / UBA Projektionsdaten 2026 (Puffer 4,5 Mt) | nur sekundaer ueber Quelle 4 | vorgelegt 14.03.2026; UBA-Datentabelle laut Literaturverzeichnis des Pruefberichts Stand 07.05.2026 | Mit-Massnahmen-Szenario, ohne LULUCF | in `rohdaten/expertenrat/bericht.txt` |
+| - | KSG Anlage 2 (gesetze-im-internet.de, BGBl. 2024 I Nr. 235) | 23.10.2026 | - | Jahresemissionsgesamtmengen 2020-2030 | `rohdaten/ksg/` |
 
-Pruefsummen (SHA-256) aller Rohdateien: `rohdaten/SHA256SUMS.txt` (auch im Log).
+Pruefsummen (SHA-256): `rohdaten/SHA256SUMS.txt`. Die Datei ist ab Fassung 2 festgeschrieben und wird vom Skript nur noch verglichen (Lauf: alle 24 Dateien unveraendert). Fuer die in Fassung 2 neu hinzugekommenen Dateien (KSG-Seite, UBA-/AGEB-Suchprotokoll) wurde die Datei einmalig neu angelegt; die Hashes aller bereits in Fassung 1 vorhandenen Dateien sind unveraendert (verglichen).
 
-### Suchversuch Quelle 4 (Suchhinweis SAP 3)
+### Suchversuch Quelle 4 (SAP 3, Suchhinweis)
 
-Der Pruefbericht wurde aktiv auf expertenrat-klima.de gefunden (Publikationsliste, Detailseite, PDF mit 23,1 MB und Pressemitteilung). Der Fallback (nur 60/100 Mt ohne Budgetgroesse) war NICHT noetig. Aus der Primaerquelle:
+Der Pruefbericht wurde aktiv auf expertenrat-klima.de gefunden. Der Fallback (nur 60/100 Mt) war nicht noetig. Aus der Primaerquelle:
 
-- Gesamtbudget 2021-2030 (Summe der Jahresemissionsgesamtmengen, ohne LULUCF, Anlage 2 KSG): **6199 Mt CO2-Aeq.**
-- Summe der THG-Emissionen 2021-2030 laut Projektionsdaten 2026 in Verbindung mit den Emissionsdaten 2025: 6194 Mt, also Puffer **4,5 Mt (0,07 %)**.
+- Gesamtbudget 2021-2030 (ohne LULUCF, Anlage 2 KSG): **6199 Mt CO2-Aeq.**
+- Summe THG 2021-2030 laut Projektionsdaten 2026 in Verbindung mit den Emissionsdaten 2025: 6194 Mt, Puffer **4,5 Mt (0,07 %)** (der Bericht fuehrt 6194,5 und -4,5).
 - Einschaetzung des Expertenrats: Ein "50/50-Emissionspfad" laege etwa **60 bis 100 Mt (1,0-1,6 %)** ueber dem zulaessigen Emissionsbudget bis 2030.
-- UBA-Gesamtemissionen 2025 laut Expertenrat: 648,9 Mt (ohne LULUCF), Rueckgang 0,1 % ggue. 2024.
+- UBA-Gesamtemissionen 2025 laut Expertenrat: 648,9 Mt (ohne LULUCF).
 
 ### Identitaet der UBA-Basiszeitreihe 1990-2025
 
-Die 36 Werte im archivierten Skript `Analysen/2026-08-emissionen/DE-Emissionen-Trendprojektion-2040.R` (Zeilen 15-20) wurden verglichen mit (a) der Tabelle auf klimadashboard.de/emissionen (Spalte "total") und (b) der unabhaengig aus der Open-Data-API berechneten Summe aller THG-Zeilen der UBA-Kategorien:
+Die 36 Werte im archivierten Skript `Analysen/2026-08-emissionen/DE-Emissionen-Trendprojektion-2040.R` (Zeilen 15-20) stimmen mit der Tabelle auf klimadashboard.de/emissionen exakt ueberein (Abweichung 0,0000 Mt) und mit der aus der Open-Data-API summierten Reihe bis auf Rundung (max. 0,0047 Mt). Detail: `output/datenabgleich_basiszeitreihe.csv`. Reproduktion der publizierten 2040-Projektionen: 486,0 und 207,0 Mt (publiziert 486 und 207). Differenz zu den Expertenrat-Angaben (2025: 648,83 vs. 648,9; 2024: 649,74 vs. 649,8) unter 0,1 Mt, Ursache nicht untersucht.
 
-- Max. Abweichung HTML-Tabelle zum alten Skript: 0,0000 Mt (alle 36 Jahre exakt identisch).
-- Max. Abweichung API-Summe zum alten Skript: 0,0047 Mt (API liefert drei Nachkommastellen; Rundungsdifferenz).
-- Ergebnis: Reihe identisch. Detail: `output/datenabgleich_basiszeitreihe.csv`.
-- Reproduktion der publizierten 2040-Projektionen mit den Modellen A/B: 486,0 Mt bzw. 207,0 Mt (publiziert: 486 bzw. 207).
-
-Kleine Differenz zur Expertenrat-Angabe: 2025 = 648,83 (klimadashboard) vs. 648,9 (Expertenrat, Angabe des UBA); 2024 = 649,74 vs. 649,8 (ERK Tabelle 3). Ursache nicht im Detail geprueft (Rundung/Nachberechnung moeglich), Betrag unter 0,1 Mt.
-
-### Diskrepanz "625 Mt" vs. "648,83 Mt" (SAP 4a.1)
+### Diskrepanz "625 Mt" vs. "648,83 Mt" (SAP 4a.1; Wortlaut nach Validierung W2 korrigiert)
 
 - 648,83 Mt ist der UBA-Wert der Gesamtemissionen 2025 (Expertenrat: 648,9 Mt).
-- 625 Mt ist laut Agora (Pressemitteilung und Halbjahresbilanz) die **gesetzlich festgelegte Emissionshoechstgrenze fuer das Jahr 2026** nach Klimaschutzgesetz, kein Emissionswert fuer 2025. Agora nennt zusaetzlich eine Hochrechnung 2026 von 635 Mt, also 13 Mt weniger als 2025 (implizit 648 Mt fuer 2025).
-- Die Diskrepanz beruht damit auf zwei unterschiedlichen Groessen (Ist 2025 vs. Zielwert 2026), nicht auf einem anderen Erhebungsstand und nicht auf anderen Systemgrenzen. Die Annahme im SAP-Hintergrund (625 als 2025-Basiswert) trifft nach der Primaerquelle nicht zu (RF-2).
-- Anwendung der Entscheidungsregel: Estimand 1 mit 648,83 (zwingend). Estimand 2 primaer mit 648,83. Weil der SAP die parallele Rechnung mit dem Alternativwert vorschreibt und keine Sensitivitaet ausgelassen werden soll, wurde Estimand 2 FORMAL zusaetzlich mit 2025 = 625 gerechnet. Diese Variante ist inhaltlich nicht belastbar (Zielwert statt Emissionswert) und steht nur zur Vollstaendigkeit der vorab festgelegten Tabellenstruktur da.
+- Der SAP-Hintergrund nahm 625 Mt faelschlich als 2025-Emissionswert an. Agora nennt 625 Mt (Pressemitteilung und Halbjahresbilanz, Fussnote 2 dort: "Angepasst nach KSG Par. 4 (2)") als gesetzliche Hoechstmenge fuer 2026 und eine Hochrechnung 2026 von 635 Mt, also 13 Mt weniger als 2025.
+- Anlage 2 KSG (BGBl. 2024 I Nr. 235, am 23.10.2026 abgerufen) nennt fuer 2026 jedoch **604 Mt** (2025: 643 Mt). Die 625 sind daher nicht der Anlage-2-Wert. **Moeglicherweise** handelt es sich um die nach Par. 4 Abs. 2 KSG angepasste Jahresmenge: Der Expertenrat nennt fuer 2030 eine vom UBA angepasste Menge von 459,2 Mt gegenueber 438 Mt in Anlage 2 (Differenz 21,2 Mt); 604 + 21,2 = 625,2. Das ist eine Plausibilitaetsrechnung. **Nicht belegt:** In den Expertenrat-Dokumenten kommt die Zahl 625 nicht vor, Agora ist die einzige Quelle.
+- Die Diskrepanz beruht damit auf zwei unterschiedlichen Groessen (Ist 2025 vs. Jahresmenge 2026), nicht auf einem anderen Erhebungsstand oder anderen Systemgrenzen. Ein alternativer 2025-Emissionswert existiert nicht. Die Bedingung in SAP 6.3 (ungeklaerte Diskrepanz) ist damit nicht ausgeloest; die Parallelrechnung mit 625 ist nicht SAP-erforderlich.
+- Anwendung der Entscheidungsregel: Estimand 1 und 2 verwenden 648,83. Die Rechnung mit 625 im Datensatz steht ausschliesslich im **Anhang A** (Entscheidung Daniel Saure, 23.10.2026).
 
 ### Systemgrenzen-Check (SAP 4a.3)
 
-Alle Quellen beziehen sich auf Gesamt-THG ohne LULUCF, territorial. Fuer Agora ist das nur indirekt belegt (Limitation). Es wurde keine Abweichung gefunden, die einen direkten Zahlenvergleich verzerrt. Tabelle: `output/systemgrenzen_check.csv`.
+Alle Quellen beziehen sich auf Gesamt-THG ohne LULUCF, territorial; fuer Agora nur indirekt belegt (Limitation). Keine verzerrende Abweichung gefunden. `output/systemgrenzen_check.csv`.
 
-### Weitere Datenabgleich-Befunde
+### Weitere Befunde
 
-- Historische H1/H2-Reihe (SAP 2, 6.4): Eine oeffentliche Agora-/UBA-Reihe mit mindestens 5 vollstaendigen Halbjahrespaaren wurde nicht gefunden (Agora-Sitemap mit 1129 URLs und Pressemitteilungsliste durchsucht; nur die Halbjahresbilanz 2026 enthaelt eine H1-Gesamt-THG-Schaetzung). Die saisonal gewichtete Sensitivitaet entfaellt daher ersatzlos, wie im SAP vorgesehen. Keine Verdopplung der H1-Zahl.
-- Agora weist selbst darauf hin, dass der tatsaechliche Rueckgang geringer ausfallen koenne als ausgewiesen (Unsicherheit beim Heizoel-Absatz/Lagermodell). Die H1-Zahl ist vorlaeufig und eine zusaetzliche, nicht quantifizierte Unsicherheitsquelle (SAP 8a).
+- **H1/H2-Reihe (SAP 2, 6.4):** Keine oeffentliche Reihe mit mindestens 5 vollstaendigen H1/H2-Paaren gefunden. Durchsucht wurden die Agora-Sitemap (1129 URLs) und Pressemitteilungsliste sowie (in Fassung 2 ergaenzt) UBA- und AGEB-Seiten (`rohdaten/suchprotokoll/uba_agueb/`: keine Treffer fuer Halbjahres-Gesamt-THG; UBA berichtet jaehrlich; Grenze: keine Tiefensuche in PDF-Anhaengen). Die saisonale Sensitivitaet entfaellt ersatzlos, keine Verdopplung.
+- Agora schreibt, der Rueckgang sei "groesstenteils auf die gestiegenen fossilen Energiepreise infolge der Blockade der Strasse von Hormus zurueckzufuehren" und koenne wegen statistischer Unschaerfen beim Heizoelabsatz geringer ausfallen (Zitat der Quelle, keine Ursachenaussage dieser Analyse). Die H1-Rate ist damit ein kurzfristiges, vorlaeufiges Signal und nicht gleichartig mit einer langjaehrigen mittleren Rate.
 
 ---
 
 ## 1. Estimand 1: H1 2026 gegenueber den Trendmodellen A und B
 
-Modelle A (1990-2025) und B (2015-2025) wurden nicht neu spezifiziert, sondern mit den Daten der publizierten Analyse reproduziert. Dies ist ausschliesslich eine Betrachtung der Jahres-ueber-Jahres-Rate; sie sagt nichts ueber das Budget 2021-2030 aus (SAP 8b).
+Modelle A (1990-2025) und B (2015-2025) wurden nicht neu spezifiziert, sondern mit den Daten der publizierten Analyse reproduziert. Betrachtet wird nur die Jahres-ueber-Jahres-Rate; sie sagt nichts ueber das Budget 2021-2030 aus (SAP 8b). Das SAP-Label "pessimistischeres Szenario" fuer Fenster A ist ein Etikett fuer den Abstand, keine Trendbestaetigung.
 
 | Groesse | Wert |
 |---|---|
 | H1 2026 (Agora, vorlaeufig) | 327 Mt |
-| H1 2025 (abgeleitet: 327 + 7) | 334 Mt (aus gerundeten Agora-Angaben, RF-5) |
-| Rate_H1 (primaer, aus Absolutwerten) | -2,1 % (-2,096 %) |
-| fit_A(1990) / fit_A(2025) | 1213,5 / 704,3 Mt |
-| CAGR_A | -1,5 % (-1,543 %) |
-| fit_B(2015) / fit_B(2025) | 919,0 / 634,2 Mt |
-| CAGR_B | -3,6 % (-3,641 %) |
+| H1 2025 (abgeleitet: 327 + 7) | 334 Mt (aus gerundeten Agora-Angaben) |
+| Rate_H1 (primaer) | -2,1 % (-2,096 %) |
+| CAGR_A (aus gefitteten Werten 1213,5 -> 704,3 Mt) | -1,5 % (-1,543 %) |
+| CAGR_B (aus gefitteten Werten 919,0 -> 634,2 Mt) | -3,6 % (-3,641 %) |
 
 | Rate-Variante | Toleranz | d_A | d_B | Einordnung |
 |---|---|---|---|---|
-| primaer (-2,1 %) | 0,05 pp | 0,6 pp (0,553) | 1,5 pp (1,545) | naeher an Fenster A (pessimistischeres Szenario) |
-| primaer (-2,1 %) | 0,1 pp | 0,6 pp (0,553) | 1,5 pp (1,545) | naeher an Fenster A (pessimistischeres Szenario) |
-| POST-HOC: von Agora genannte Rate (-2,0 %) | 0,05 pp | 0,5 pp (0,457) | 1,6 pp (1,641) | naeher an Fenster A |
-| POST-HOC: -2,0 % | 0,1 pp | 0,5 pp (0,457) | 1,6 pp (1,641) | naeher an Fenster A |
+| primaer (-2,1 %) | 0,05 pp | 0,6 pp (0,553) | 1,5 pp (1,545) | naeher an Fenster A |
+| primaer (-2,1 %) | 0,1 pp | 0,6 pp (0,553) | 1,5 pp (1,545) | naeher an Fenster A |
+| POST-HOC: Agora-Rate -2,0 % | 0,05 / 0,1 pp | 0,5 pp (0,457) | 1,6 pp (1,641) | naeher an Fenster A |
+| POST-HOC: Rundungsspanne Rueckgang 7 +/- 0,5 Mt: -1,95 % | 0,05 pp | 0,4 pp (0,406) | 1,7 pp (1,692) | naeher an Fenster A |
+| POST-HOC: Rundungsspanne: -2,24 % | 0,05 pp | 0,7 pp (0,700) | 1,4 pp (1,399) | naeher an Fenster A |
 
-**Robustheitsaussage (SAP 2, 6.6):** Die Klassifikation stimmt bei der primaeren Schwelle (0,05 pp) und der Sensitivitaetsschwelle (0,1 pp) ueberein (robust). Das gilt auch fuer die post-hoc geprueften gerundeten Rate (-2,0 %). Die Distanzdifferenz (ca. 1,0 bis 1,2 pp) liegt weit ueber beiden Toleranzschwellen.
-
-Hinweis: n = 1 Beobachtung, rein deskriptiv, kein p-Wert. Die Modellkurve A liegt 2025 bei 704,3 Mt, die beobachtete Reihe bei 648,8 Mt. Grafik: `output/estimand1_h1_vs_cagr.png`.
+**Robustheitsaussage (SAP 2, 6.6):** Die Klassifikation stimmt bei 0,05 und 0,1 pp ueberein (robust) und aendert sich auch innerhalb der Rundungsspanne der H1-Rate nicht (Abstand der Distanzen mindestens 0,7 pp).
+**Fussnote:** Die CAGR beruhen auf gefitteten Werten (Modell A liegt 2025 bei 704,3 Mt, beobachtet 648,8 Mt). Beobachtete mittlere Jahresraten waeren -1,86 % (1990-2025) und -3,20 % (2015-2025); das ist nicht die SAP-Definition und aendert die Einordnung nicht.
+Kein Signifikanztest, kein p-Wert. Grafik: `output/estimand1_h1_vs_cagr.png`.
 
 ---
 
 ## 2. Estimand 2: Eigene Trendfortschreibung 2021-2030 gegenueber dem Expertenrat-Korridor
 
-Ein getrennter Teil (SAP 8b): kumulatives Budgetkonzept 2021-2030, Budget 6199 Mt. `Overshoot_eigen = Kumuliert_Ist_2021_2025 + Summe der Projektion 2026-2030 - 6199`. Die Klassifikation bezieht sich auf den Punktwert der jeweiligen Zeile. Alle Kombinationen sind aufgefuehrt, keine wurde ausgewaehlt (SAP 7). Fenster C ist rein deskriptiv.
-
-Kumuliert_Ist_2021_2025: 3480,1 Mt (primaer) bzw. 3456,2 Mt (formale Variante mit 2025 = 625).
+Kumulatives Budgetkonzept 2021-2030, Budget 6199 Mt (getrennt von Estimand 1, SAP 8b). `Overshoot = Kum_Ist_2021_2025 (3480,1 Mt) + Summe Fortschreibung 2026-2030 - 6199`. Alle Kombinationen sind aufgefuehrt; nichts wurde ausgewaehlt (SAP 7). Fenster C ist rein deskriptiv und wird nicht klassifiziert.
 
 ### 2.1 Diagnostik (SAP 5.2, 5.3), unguenstige Ergebnisse eingeschlossen
 
-| Variante | Fenster | n | Durbin-Watson (p) | Shapiro-Wilk (p) | Kovarianz fuer analytische Summe |
-|---|---|---|---|---|---|
-| primaer | A | 36 | 0,648 (<0,0001), Autokorrelation signifikant | 0,687 | Newey-West (HAC) |
-| primaer | B | 11 | 1,937 (0,308) | 0,450 | klassisch OLS |
-| primaer | C | 6 | 1,933 (0,215) | 0,502 | OLS (deskriptiv) |
-| 625-Variante | A | 36 | 0,598 (<0,0001), signifikant | 0,697 | Newey-West |
-| 625-Variante | B | 11 | 1,915 (0,294) | 0,955 | klassisch OLS |
-| 625-Variante | C | 6 | 1,841 (0,176) | 0,724 | OLS (deskriptiv) |
-
-Steigung (primaer): Fenster A -14,5 Mt/Jahr (Newey-West p = 5,9e-09; klassisch p = 2,9e-24), Fenster B -28,5 Mt/Jahr (klassisch p = 6,8e-07; Newey-West p = 3,0e-09). Bei Fenster B hat der DW-Test mit n = 11 geringe Teststaerke; ein nicht signifikanter DW-Test belegt keine Unabhaengigkeit der Residuen. Residuen-vs-Fitted- und ACF-Plots: `output/diagnostik_<variante>_<fenster>.png`.
-
-### 2.2 Ergebnistabelle primaer (2025 = 648,83 Mt), Mt CO2-Aeq.
-
-Intervalle sind 95 %-Intervalle fuer die Gesamtsumme 2021-2030 bzw. den Overshoot. Wichtig fuer die Lesart: Die Intervalle der Methoden "analytisch" und "Bootstrap" beschreiben nur die Parameterunsicherheit des Trends (SAP-Vorgabe, siehe RF-3); das ARIMA-Intervall beschreibt die Prognoseunsicherheit. Sie sind daher nicht gleichartig.
-
-| Fenster | Methode | Kum. Gesamt | 95 %-Intervall | Overshoot | Overshoot 95 % | Klassifikation |
+| Fenster | n | Durbin-Watson (p) | Shapiro-Wilk p | ACF Lag 1 / Lag 2 (Schranke) | Residuum 2025 | Kovarianz fuer analytische Summe |
 |---|---|---|---|---|---|---|
-| A | analytisch (HAC) | 6783,2 | 6237,9 - 7328,5 | 584,2 | 38,9 - 1129,5 | pessimistischer als Expertenrat |
-| A | Bootstrap | 6783,2 | 6628,0 - 6936,3 | 584,2 | 429,0 - 737,3 | pessimistischer |
-| A | ARIMA(0,1,0) mit Drift | 6465,3 | 6372,1 - 6558,5 | 266,3 | 173,1 - 359,5 | pessimistischer |
-| B | analytisch (OLS) | 6224,0 | 5996,3 - 6451,8 | 25,0 | -202,7 - 252,8 | optimistischer als Expertenrat |
-| B | Bootstrap | 6224,0 | 6040,1 - 6400,4 | 25,0 | -158,9 - 201,4 | optimistischer |
-| B | ARIMA(0,1,0) mit Drift | 6349,6 | 6234,3 - 6464,9 | 150,6 | 35,3 - 265,9 | pessimistischer |
-| C (deskriptiv) | analytisch | 6337,7 | 5768,7 - 6906,8 | 138,7 | -430,3 - 707,8 | (pessimistischer) |
-| C (deskriptiv) | Bootstrap | 6337,7 | 6083,4 - 6701,3 | 138,7 | -115,6 - 502,3 | (pessimistischer) |
-| C (deskriptiv) | ARIMA(0,1,0) | 6724,2 | 6589,0 - 6859,5 | 525,2 | 390,0 - 660,5 | (pessimistischer) |
+| A | 36 | 0,648 (3,8e-07), signifikant | 0,687 | 0,62 / 0,35 (+/- 0,33) | -55,4 Mt | Newey-West (HAC) |
+| B | 11 | 1,937 (0,308) | 0,450 | -0,03 / -0,69 (+/- 0,59) | +14,6 Mt | klassisch OLS |
+| C | 6 | 1,933 (0,215) | 0,502 | -0,10 / -0,65 (+/- 0,80) | +6,2 Mt | OLS (deskriptiv) |
 
-Klassifikationsschwellen (SAP 2): Overshoot im Korridor 60-100 Mt = kompatibel; darunter = optimistischer; darueber = pessimistischer. Im primaeren Lauf liegt **kein** Punktwert innerhalb des Korridors 60-100 Mt. Bei Fenster A und B zusammen (6 Zeilen) fallen 4 Zeilen in "pessimistischer", 2 Zeilen in "optimistischer".
+Steigung: A -14,5 Mt/Jahr (Newey-West p = 5,9e-09; klassisch 2,9e-24), B -28,5 Mt/Jahr (klassisch p = 6,8e-07; Newey-West p = 3,0e-09; letzterer bei n = 11 nicht belastbar, da von Prewhitening und Bandbreite abhaengig; fuer B wird HAC nach SAP nicht angewendet).
 
-Punktschaetzungen 2026-2030 (OLS, primaer): Fenster A 689,7 / 675,2 / 660,6 / 646,1 / 631,5 Mt; Fenster B 605,7 / 577,3 / 548,8 / 520,3 / 491,8 Mt; Fenster C 618,9 / 595,2 / 571,5 / 547,8 / 524,2 Mt. Der Expertenrat nennt fuer das Projektionsdaten-Szenario 2030 einen Wert von 468,4 Mt; dieser Wert ist kein Modellinput.
+**Interpretation der Linearitaet und Autokorrelation (Limitation, keine neuen Modelle):**
+- **Fenster A:** Der Residuen-vs-Fitted-Plot zeigt ein deutliches umgekehrtes U (positive Residuen in der Mitte des Fitted-Bereichs, deutlich negative an beiden Enden, 2025: -55,4 Mt). Das ist eine systematische Abweichung von der Linearitaet, die die Extrapolation direkt betrifft. Zusammen mit der signifikanten Autokorrelation (ACF Lag 1 = 0,62, Lag 2 = 0,35, beide oberhalb der Schranke) bedeutet das: Die A-Fortschreibung ist als Trendaussage nur eingeschraenkt interpretierbar; die Intervalle (insbesondere die Parameterintervalle) unterschaetzen die Modellunsicherheit.
+- **Fenster B:** Kein klares Muster im Residuenplot. Der ACF liegt bei Lag 2 (-0,69) knapp ausserhalb der Schranke (-0,59); bei n = 11 und etwa neun gepruefter Lags nicht belastbar, aber zu nennen. Der DW-Test hat bei n = 11 geringe Teststaerke; "nicht signifikant" belegt keine Unabhaengigkeit der Residuen.
+- **Fenster C:** n = 6; Residuenplot und ACF erlauben keine Beurteilung. Rein deskriptiv.
 
-### 2.3 Ergebnistabelle formale Variante (2025 = 625, RF-2, inhaltlich nicht belastbar)
+Plots: `output/diagnostik_primaer_A.png`, `_B.png`, `_C.png`.
 
-| Fenster | Methode | Kum. Gesamt | 95 %-Intervall | Overshoot | Overshoot 95 % | Klassifikation |
-|---|---|---|---|---|---|---|
-| A | analytisch (HAC) | 6745,1 | 5795,4 - 7694,7 | 546,1 | -403,6 - 1495,7 | pessimistischer |
-| A | Bootstrap | 6745,1 | 6585,5 - 6901,6 | 546,1 | 386,5 - 702,6 | pessimistischer |
-| A | ARIMA(0,1,0) mit Drift | 6312,1 | 6219,3 - 6404,9 | 113,1 | 20,3 - 205,9 | pessimistischer |
-| B | analytisch (OLS) | 6146,0 | 5924,9 - 6367,2 | -53,0 | -274,1 - 168,2 | optimistischer |
-| B | Bootstrap | 6146,0 | 5972,5 - 6320,8 | -53,0 | -226,5 - 121,8 | optimistischer |
-| B | ARIMA(0,1,0) mit Drift | 6170,9 | 6059,2 - 6282,6 | -28,1 | -139,8 - 83,6 | optimistischer |
-| C (deskriptiv) | analytisch | 6200,4 | 5633,5 - 6767,4 | 1,4 | -565,5 - 568,4 | (optimistischer) |
-| C (deskriptiv) | Bootstrap | 6200,4 | 5996,9 - 6552,6 | 1,4 | -202,1 - 353,6 | (optimistischer) |
-| C (deskriptiv) | ARIMA(0,1,0) | 6581,2 | 6440,9 - 6721,6 | 382,2 | 241,9 - 522,6 | (pessimistischer) |
+### 2.2 Ergebnistabelle (2025 = 648,83 Mt), Mt CO2-Aeq.
 
-Die Ergebnisse der beiden Basiswert-Varianten stimmen bei Fenster A in allen drei Methoden ueberein ("pessimistischer"). Bei Fenster B kippt die ARIMA-Zeile von "pessimistischer" (primaer) nach "optimistischer" (625-Variante). Das ist eine reine Sensitivitaets-Beobachtung zu einer Eingabe, die kein Emissionswert ist.
+**Spaltenlesart (W5):** "Parameterintervall" (analytisch, Bootstrap) beschreibt nur die Unsicherheit der geschaetzten Trendparameter, also den Erwartungswert der Summe; die tatsaechliche Summe enthielte zusaetzlich die Streuung der kuenftigen Jahreswerte. "Prognoseintervall" (ARIMA) beschreibt die Unsicherheit der tatsaechlichen Summe. Die beiden Typen sind nicht gleichartig und nicht direkt vergleichbar. Die Klassifikation bezieht sich nur auf den Punktwert.
 
-### 2.4 Einordnung als dritte, methodisch transparente Stimme (SAP 8c)
+| Fenster | Methode | Intervalltyp | Kum. Gesamt | 95 %-Intervall (Gesamt) | Overshoot | 95 %-Intervall (Overshoot) | Klassifikation (nur Punktwert) | Intervall deckt Korridor 60-100 |
+|---|---|---|---|---|---|---|---|---|
+| A | analytisch (HAC) | Parameter | 6783,2 | 6237,9 - 7328,5 | 584,2 | 38,9 - 1129,5 | pessimistischer | ja |
+| A | Bootstrap | Parameter | 6783,2 | 6628 - 6936 | 584,2 | 429 - 737 | pessimistischer | nein |
+| A | ARIMA(0,1,0) mit Drift | Prognose | 6465,3 | 6066,3 - 6864,4 | 266,3 | -132,7 - 665,4 | pessimistischer | ja |
+| B | analytisch (OLS) | Parameter | 6224,0 | 5996,3 - 6451,8 | 25,0 | -202,7 - 252,8 | optimistischer | ja |
+| B | Bootstrap | Parameter | 6224,0 | 6040 - 6400 | 25,0 | -159 - 201 | optimistischer | ja |
+| B | ARIMA(0,1,0) mit Drift | Prognose | 6349,6 | 5855,9 - 6843,3 | 150,6 | -343,1 - 644,3 | pessimistischer | ja |
+| C (deskriptiv) | analytisch | Parameter | 6337,7 | 5768,7 - 6906,8 | 138,7 | -430,3 - 707,8 | - | ja |
+| C (deskriptiv) | Bootstrap | Parameter | 6337,7 | 6083 - 6701 | 138,7 | -116 - 502 | - | ja |
+| C (deskriptiv) | ARIMA(0,1,0) | Prognose | 6724,2 | 6145,1 - 7303,4 | 525,2 | -53,9 - 1104,4 | - | ja |
 
-Dies ist keine Entscheidung darueber, welche der beiden offiziellen Stellen "recht hat", und keine Bewertung ihrer Methodik. Es wird nur gezaehlt, welchem Wert die eigene Fortschreibung numerisch naeher liegt: dem Expertenrat-Korridor (Distanz 0, wenn im Korridor, sonst Abstand zum naechsten Rand) oder der Bundesregierungs-Angabe (Overshoot -4,5 Mt, Puffer). Die Operationalisierung ist eine Ergaenzung (RF-6, POST-HOC).
+Schwellen (SAP 2): Overshoot im Korridor 60-100 Mt = kompatibel, darunter optimistischer, darueber pessimistischer als der Expertenrat. Kein Punktwert liegt im Korridor. Fenster A/B: 4 Zeilen "pessimistischer", 2 "optimistischer". **Intervallueberdeckung:** 8 von 9 Intervallen ueberdecken den Korridor (nur A-Bootstrap nicht); 4 der 6 Intervalle von A/B ueberdecken Korridor und Null gleichzeitig. Wer aus der Klassifikation "optimistischer/pessimistischer" liest, liest mehr hinein, als die Daten tragen.
+Bootstrap-Grenzen sind wegen des Monte-Carlo-Fehlers (siehe 2.4) in ganzen Mt angegeben.
 
-Primaerlauf, Fenster A und B:
+Punktschaetzungen 2026-2030 (OLS): Fenster A 689,7 / 675,2 / 660,6 / 646,1 / 631,5 Mt; B 605,7 / 577,3 / 548,8 / 520,3 / 491,8 Mt; C 618,9 / 595,2 / 571,5 / 547,8 / 524,2 Mt. Niveausprung 2025 -> 2026: A +40,9 Mt, B -43,1 Mt, C -29,9 Mt (Modell gegen beobachteten Wert 648,83 Mt). Die Einordnung von A als Modellartefakt (Niveausprung, Linearitaetsverletzung) steht in der Kernaussage.
 
-- naeher am Expertenrat-Korridor: A analytisch (Overshoot 584,2), A Bootstrap (584,2), A ARIMA (266,3), B ARIMA (150,6; Abstand zum Korridorrand 50,6 gegenueber 155,1 zur Bundesregierungs-Angabe);
-- naeher an der Bundesregierungs-Angabe: B analytisch (25,0; Abstand 29,5 gegenueber 35,0 zum Korridor) und B Bootstrap (25,0).
+Grafiken: `output/estimand2_overshoot.png` (Hauptteil), `output/estimand2_trend_bis_2030.png`.
 
-Bei den Fenster-A-Zeilen liegt der eigene Wert weit ausserhalb beider Angaben; "naeher" ist dort nur eine relative Aussage (Abstand zum Korridor 484 bzw. 166 Mt). Die Methodenwahl bestimmt das Bild; es gibt keine ausgezeichnete Hauptkombination.
+### 2.3 ARIMA-Kontrollen (nach Fehlerbehebung K1)
 
-Grafiken: `output/estimand2_overshoot.png` (Overshoot je Fenster/Methode mit Korridor und Bundesregierungs-Linie), `output/estimand2_trend_bis_2030.png`.
+In allen drei Fenstern waehlt `auto.arima` ein Random-Walk-Modell (0,1,0), in A und B mit Drift. Dann sind die Prognosefehler stark positiv korreliert (psi-Gewichte alle 1); die Varianz der 5-Jahres-Summe ist sigma^2 * h(h+1)(2h+1)/6 = 55 sigma^2 (Summe ueber min(i,j) fuer h = 5). Kontrollen im Skript (`output/arima_kontrollen.csv`):
+
+| Fenster | sigma^2 | sd Summe (Kovarianzmatrix) | sd Summe (Formel 55 sigma^2) | sd Summe (Monte-Carlo, 10000 Pfade) |
+|---|---|---|---|---|
+| A | 753,7 | 203,6 | 203,6 | 205,3 |
+| B | 1153,6 | 251,9 | 251,9 | 253,9 |
+| C | 1587,7 | 295,5 | 295,5 | 297,9 |
+
+Der Monte-Carlo-Wert liegt 0,8 % ueber dem analytischen (Monte-Carlo-Fehler); beide Gegenproben bestehen. Die Normalapproximation beruecksichtigt die Unsicherheit des Drift-Parameters nicht (wie im SAP).
+
+### 2.4 Hinweise zu Intervallbreiten (POST-HOC, G2/G3)
+
+- **Bootstrap (Blocklaenge 2, Seed 20260827, B = 2000):** Monte-Carlo-Fehler der Perzentilgrenzen betraegt einige Mt (Wiederholung mit anderen Seeds, B = 10000: Fenster A 431-433 / 736-741, Fenster B -158 bis -156 / 198-201). Blocklaenge 4 (POST-HOC): Fenster A 426-781 (B = 2000) bzw. 427-776 (B = 10000) statt 429-737; Fenster B -110 bis 147 bzw. -118 bis 157; Fenster C -6 bis 412. Laengere Bloecke erweitern also die Obergrenze in A und verengen die Intervalle in B/C (wenige Startpunkte); der Block-Bootstrap ist bei B/C wenig aussagekraeftig. `output/posthoc_bootstrap_sensitivitaet.csv`.
+- **HAC in Fenster A:** Der Standardfehler der 5-Jahres-Summe betraegt bei OLS 63,2 Mt, bei Newey-West mit der sandwich-Voreinstellung (Prewhitening an) 268,3 Mt, ohne Prewhitening 134,9 Mt. Die Breite des analytischen A-Intervalls (Faktor ca. 4 gegenueber OLS) haengt also stark von den Voreinstellungen ab; die SAP-Vorgabe `sandwich::NeweyWest` ist eingehalten. `output/posthoc_hac_vergleich.csv`.
+- **POST-HOC Prognoseintervall der Summe fuer OLS (unabhaengige Fehler, Parametervarianz + 5 sigma^2)**, Overshoot: A 17,1 - 1151,3 (Annahme unabhaengiger Fehler verletzt, DW signifikant: zu optimistisch), B -234,4 - 284,4, C -459,6 - 737,1 (n = 6, deskriptiv). Nicht im SAP, nur zur Einordnung der Intervallart; `output/posthoc_prognoseintervall_ols.csv`.
+
+### 2.5 Einordnung als dritte, methodisch transparente Stimme (SAP 8c)
+
+Keine Entscheidung darueber, welche der beiden offiziellen Stellen "recht hat". Gezaehlt wird nur, welchem Wert der eigene Punktwert numerisch naeher liegt: Expertenrat-Korridor (Distanz 0 im Korridor, sonst Randabstand) oder Bundesregierungs-Angabe (Overshoot -4,5 Mt). Operationalisierung ergaenzt (POST-HOC, RF-6); sie ist strukturell zugunsten des breiten Korridors verzerrt.
+
+- Naeher am Expertenrat-Korridor: A analytisch, A Bootstrap, A ARIMA, B ARIMA (Abstand 50,6 gegenueber 155,1 zur Bundesregierungs-Angabe).
+- Naeher an der Bundesregierungs-Angabe: B analytisch und B Bootstrap (Overshoot 25,0; Abstand 29,5 gegenueber 35,0 zum Korridor).
+- Bei den A-Zeilen liegt der eigene Wert weit von beiden Angaben entfernt (Abstand zum Korridor 484 bzw. 166 Mt); "naeher" ist dort bedeutungslos und wegen des Niveausprungs ohnehin nicht trendinterpretierbar.
 
 ---
 
-## 3. Limitationen (SAP 9, ergaenzt um Befunde dieses Laufs)
+## 3. Limitationen
 
-- H1-2026 ist eine vorlaeufige Agora-Schaetzung; H1 2025 wurde aus gerundeten Angaben abgeleitet (334 Mt).
-- Die lineare OLS-Fortschreibung ist ein statistisches Konstrukt, nicht die Compliance-Methodik des Expertenrats (sektorale Ziele, LULUCF-Sonderregeln, Uebertragsmechanismen).
-- Die Intervalle von analytischer Methode und Bootstrap erfassen nur die Parameterunsicherheit (RF-3); der Block-Bootstrap mit Blocklaenge 2 bei n = 36 beruecksichtigt die starke Autokorrelation in Fenster A nur grob. Die analytische HAC-Variante in Fenster A ergibt deutlich breitere Intervalle als der Bootstrap.
-- Fenster B (n = 11) und C (n = 6) haben breite Intervalle; Fenster C ist rein deskriptiv.
-- Systemgrenze von Agora nur indirekt belegt; Quellen 3 (FAZ) und 5 (Primaerabruf beim UBA) nicht direkt eingesehen (RF-7).
-- Die Variante mit 2025 = 625 verwendet einen Zielwert statt eines Emissionswerts und ist nicht belastbar.
+- H1 2026 ist eine vorlaeufige Agora-Schaetzung; H1 2025 wurde aus gerundeten Angaben abgeleitet.
+- Die lineare OLS-Fortschreibung ist ein statistisches Konstrukt, nicht die Compliance-Methodik des Expertenrats (sektorale Ziele, LULUCF-Sonderregeln, Uebertragsmechanismen). Die 60-100 Mt des Expertenrats beziehen sich auf einen "50/50-Emissionspfad".
+- **Linearitaet:** Fenster A verletzt sie deutlich (Residuenkruemmung, Residuum 2025 = -55,4 Mt, Niveausprung +40,9 Mt); die A-Zeilen sind Modellartefakte-anfaellig.
+- **Autokorrelation:** Fenster A signifikant (DW 0,65); bei B und C geringe Teststaerke (n = 11 bzw. 6); ACF Lag 2 in B auffaellig, nicht belastbar.
+- **Intervallarten** sind nicht gleichartig (Parameter vs. Prognose). Die Parameterintervalle sind keine Intervalle fuer die tatsaechliche Summe.
+- Der Block-Bootstrap haengt von Blocklaenge (2, im Amendment vorgegeben) und Seed ab; die HAC-Breite in A haengt von den sandwich-Voreinstellungen ab (Prewhitening).
+- Fenster B (n = 11) und C (n = 6): breite Intervalle; C rein deskriptiv.
+- Systemgrenze von Agora nur indirekt belegt; Quelle 3 (FAZ) nicht abrufbar; Quelle 5 nur sekundaer ueber Quelle 4.
+- Die 625 ist als Agora-Wert nicht durch Primaerdokumente belegt (Anlage 2 KSG: 604 Mt).
 - Keine Kausalaussage, keine politische Bewertung.
 
-## 4. Dateien
+---
+
+## Aenderungen nach Validierung (Fassung 1 -> Fassung 2)
+
+Grundlage: `Validierungsbericht_expertenrat-budgetabgleich.md` (Commit-Stand 78250e3). Je Befund:
+
+| Befund | Status | Aenderung |
+|---|---|---|
+| **K1** ARIMA-Kovarianz | erledigt | Fehler: `convolve(ar_poly, c(1,-1), type="open")` kehrt das zweite Argument um (alternierende psi-Gewichte). Ersetzt durch eigene Polynommultiplikation `polymul()` mit Unit-Test. Neue Kontrollen: Random-Walk-Formel (sigma^2 * h(h+1)(2h+1)/6) und Monte-Carlo-Simulation (10000 Pfade); die alte Diagonalenkontrolle war blind. Alle ARIMA-Zeilen, Tabellen, Grafik und Text neu. **Alte (falsche) ARIMA-Intervalle:** Overshoot A 173,1-359,5; B 35,3-265,9; C 390,0-660,5. **Neu:** A -132,7 bis 665,4; B -343,1 bis 644,3; C -53,9 bis 1104,4 (Punktwerte unveraendert). Die Klassifikation nach Punktwert aendert sich nicht; jede Aussage aus Fassung 1, die auf der Breite der ARIMA-Intervalle beruhte, war falsch. |
+| **W1** SAP-Bestaetigung | erledigt (mit Einschraenkung) | Verweis auf `SAP_Bestaetigung_Daniel_Saure_2026-10-23.md` im Kopf; Einschraenkung zu 6a/6b benannt. SAP nicht geaendert. |
+| **W2** 625-Variante | erledigt | Aus Hauptbericht, Hauptgrafik und Haeufigkeitszaehlung entfernt, in Anhang A verschoben. Wortlaut korrigiert (Agora-Wert fuer 2026, Anlage 2 KSG = 604 Mt, moegliche Anpassung nach Par. 4 Abs. 2 KSG nur plausibel, nicht belegt). Aussage "SAP schreibt Parallelrechnung vor" zurueckgenommen (SAP 6.3 nicht ausgeloest). Erratum-Hinweis im Abweichungsprotokoll; SAP nicht veraendert. |
+| **W3** Interpretation | erledigt | Kernaussage mit Spanne +25 bis +584 Mt und Intervallueberdeckung vorangestellt; Niveausprung +40,9 Mt und Residuum 2025 genannt; Spalte "Klassifikation (nur Punktwert)"; kein verbales "naeher" fuer A-Zeilen. |
+| **W4** Diagnostik | erledigt | Linearitaets- und ACF-Interpretation je Fenster (2.1) und als Limitation. Keine neuen Modelle. |
+| **W5** Intervallarten | erledigt | Spalten "Parameterintervall" / "Prognoseintervall"; POST-HOC-Prognoseintervall fuer OLS (unabhaengige Fehler) separat (2.4), mit Gueltigkeitsvermerk fuer A. SAP-Methoden unveraendert. |
+| **G1** Grafiken | erledigt | Alle visuell geprueft. Estimand 1: Untertitel umbrochen, Balkenwerte sichtbar. Estimand 2: Hauptgrafik nur primaer, Legende fuer Korridor, Budget und Bundesregierung, Hinweis zur Skala (-4,5 liegt praktisch auf der Nulllinie; das bleibt eine Skalengrenze), Intervalltypen farbig, C als "deskriptiv" im Label; 625 in eigene Anhangsgrafik. Trendgrafik: Legende fuer beobachtete Reihe, Annotation Niveausprung. |
+| **G2** Bootstrap | erledigt | Monte-Carlo-Fehler genannt, Bootstrap-Grenzen in ganzen Mt, POST-HOC-Sensitivitaet Blocklaenge 4 und B = 10000. Seed/Blocklaenge im Abweichungsprotokoll. Primaer bleibt Blocklaenge 2 / Seed 20260827 / B = 2000 (Hauptergebnisse identisch zu Fassung 1). |
+| **G3** HAC | erledigt | Abhaengigkeit von Prewhitening mit Zahlen genannt (2.4); NW-p bei B als nicht belastbar kommentiert. |
+| **G4** Estimand 1 | erledigt | Rundungsspanne der H1-Rate (-1,95 % bis -2,24 %) und beobachtete Mittelraten als Fussnote; Agora-Zuordnung zum Preiseffekt als Quellenzitat. |
+| **G5** UBA-Suchprotokoll | teilweise | UBA- und AGEB-Seiten durchsucht und protokolliert (keine Halbjahres-Gesamt-THG-Reihe); keine Tiefensuche in PDF-Anhaengen. |
+| **G6** Darstellung/Dateien | erledigt | Klammer-Klassifikation bei C entfernt; SHA256SUMS festgeschrieben und vom Skript nur verglichen (Format `sha256sum -c`-kompatibel). Einmaliges Neuanlegen wegen neuer Rohdateien dokumentiert. |
+| Nachpruefung | offen | Fokussierte Nachpruefung durch den validator als eigene Datei steht aus (CLAUDE.md). |
+
+---
+
+## Anhang A: Formalrechnung mit 2025 = 625 im Datensatz (POST-HOC, ohne Aussagewert, nicht SAP-erforderlich)
+
+625 Mt ist kein Emissionswert fuer 2025 (siehe Abschnitt 0). Die Rechnung ersetzt den beobachteten 2025-Wert im Datensatz (und damit im Regressionsfit) durch diesen Wert und beantwortet keine sinnvolle Frage. Sie steht nur zur Dokumentation der in Fassung 1 gerechneten Zeilen. Kum_Ist_2021_2025 = 3456,2 Mt. Diagnostik: DW A 0,598 (1,0e-07), B 1,915 (0,294), C 1,841 (0,176); Shapiro-Wilk 0,697 / 0,955 / 0,724; Residuum 2025 in A: -76,7 Mt; Niveausprung A +62,1 Mt.
+
+| Fenster | Methode | Overshoot | 95 %-Intervall (Overshoot) | Punkt-Klassifikation |
+|---|---|---|---|---|
+| A | analytisch (HAC) | 546,1 | -403,6 - 1495,7 | pessimistischer |
+| A | Bootstrap | 546,1 | 386,5 - 702,6 | pessimistischer |
+| A | ARIMA(0,1,0) mit Drift | 113,1 | -284,1 - 510,4 | pessimistischer |
+| B | analytisch (OLS) | -53,0 | -274,1 - 168,2 | optimistischer |
+| B | Bootstrap | -53,0 | -226,5 - 121,8 | optimistischer |
+| B | ARIMA(0,1,0) mit Drift | -28,1 | -506,4 - 450,3 | optimistischer |
+| C (deskriptiv) | analytisch | 1,4 | -565,5 - 568,4 | - |
+| C (deskriptiv) | Bootstrap | 1,4 | -202,1 - 353,6 | - |
+| C (deskriptiv) | ARIMA(0,1,0) | 382,2 | -218,8 - 983,3 | - |
+
+Dateien: `output/anhang_625_tabelle.csv`, `output/anhang_625_overshoot.png`, `output/anhang_625_diagnostik_*.png`. Diese Zeilen gehen in keine Haeufigkeitszaehlung ein. Veroeffentlichungen duerfen die Aussage "FAZ/Agora nennen 625 Mt als 2025-Wert" nicht uebernehmen.
+
+---
+
+## Dateien
 
 - Skript: `expertenrat-budgetabgleich.R`; Log: `run_log.txt`
-- Tabellen: `output/estimand1_tabelle.csv`, `output/estimand2_tabelle.csv`, `output/diagnostik_tabelle.csv`, `output/datenabgleich_basiszeitreihe.csv`, `output/systemgrenzen_check.csv`
-- Grafiken: `output/estimand1_h1_vs_cagr.png`, `output/estimand2_overshoot.png`, `output/estimand2_trend_bis_2030.png`, `output/diagnostik_*.png`
+- Tabellen: `output/estimand1_tabelle.csv`, `output/estimand2_tabelle.csv`, `output/diagnostik_tabelle.csv`, `output/arima_kontrollen.csv`, `output/posthoc_*.csv`, `output/datenabgleich_basiszeitreihe.csv`, `output/systemgrenzen_check.csv`, Anhang: `output/anhang_625_*`
+- Grafiken: `output/estimand1_h1_vs_cagr.png`, `output/estimand2_overshoot.png`, `output/estimand2_trend_bis_2030.png`, `output/diagnostik_primaer_*.png`
 - Rohdaten und Pruefsummen: `rohdaten/`, `rohdaten/SHA256SUMS.txt`

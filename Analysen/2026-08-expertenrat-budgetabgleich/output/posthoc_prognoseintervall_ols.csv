@@ -1,0 +1,4 @@
+"Fenster","Kum_Gesamt","Overshoot","Overshoot_unten","Overshoot_oben","Anmerkung"
+"A",6783.19437580438,584.194375804376,17.0807335869974,1151.30801802176,"Annahme unabhaengiger Fehler hier verletzt (DW signifikant): Intervall zu optimistisch"
+"B",6224.03090909096,25.0309090909559,-234.355155056629,284.416973238541,"unabhaengige Fehler plausibel, aber DW-Teststaerke bei n = 11 gering"
+"C",6337.74857142857,138.74857142857,-459.578251780126,737.075394637267,"n = 6, rein deskriptiv"

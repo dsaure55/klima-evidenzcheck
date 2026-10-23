@@ -1,0 +1,8 @@
+Suchversuch UBA / AGEB nach oeffentlicher Reihe mit >= 5 vollstaendigen H1/H2-Paaren (Gesamt-THG), 23.10.2026
+s_1eff8a.html  https://www.umweltbundesamt.de/themen/klima-energie/treibhausgas-emissionen  HTTP 200
+s_18639e.html  https://www.umweltbundesamt.de/daten/klima/treibhausgas-emissionen-in-deutschland  HTTP 200
+s_811182.html  https://ag-energiebilanzen.de/daten-und-fakten/auswertungstabellen/  HTTP 200
+s_0e4c72.html  https://ag-energiebilanzen.de/presse/pressedienst/  HTTP 200
+Befund: Textsuche nach "Halbjahr"/"Quartal" in den bereinigten Seitentexten: keine Treffer. UBA berichtet Gesamt-THG jaehrlich (Emissionsdaten um den 15. Maerz);
+AGEB-Auswertungstabellen betreffen Energie-/Verbrauchsbilanzen, keine Halbjahres-Gesamt-THG-Reihe. Keine verwertbare H1/H2-Reihe gefunden.
+Grenze: Seitenlisten durchsucht, keine Tiefensuche in PDF-Anhaengen.

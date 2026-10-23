@@ -21,11 +21,22 @@
 #       2025-Gesamtemissionen. Laut Primaerquelle (Agora, 28.08.2026) ist 625 Mt die
 #       gesetzliche Emissionshoechstgrenze (KSG) fuer das JAHR 2026. Es gibt damit
 #       keinen alternativen 2025-Emissionswert; die SAP-Entscheidungsregel 4a.2
-#       ("alternativer 2025-Wert") greift inhaltlich ins Leere. Um keine im SAP
-#       vorgeschriebene Sensitivitaet auszulassen (Regel 2), wird Estimand 2
-#       FORMAL trotzdem mit 2025 = 625 Mt als Sensitivitaets-Variante gerechnet
-#       und als "inhaltlich nicht belastbar (Zahl ist kein 2025-Emissionswert)"
-#       gekennzeichnet. Bitte entscheiden, ob diese Variante im Bericht bleibt.
+#       ("alternativer 2025-Wert") greift inhaltlich ins Leere. [Fassung 2 nach
+#       Validierung W2: Wortlaut korrigiert. Agora nennt 625 als gesetzliche
+#       Hoechstgrenze 2026; Anlage 2 KSG (BGBl. 2024 I Nr. 235) nennt fuer 2026
+#       aber 604 Mt. 625 ist moeglicherweise die nach Par. 4 Abs. 2 KSG angepasste
+#       Jahresmenge (nicht direkt belegt, siehe Abweichungsprotokoll).]
+#       Die 625-Variante (2025 = 625 im Datensatz) ist auf Entscheidung von Daniel
+#       Saure (23.10.2026) NUR NOCH im ANHANG (output/anhang_625_*), POST-HOC,
+#       nicht SAP-erforderlich, ohne Aussagewert; nicht in Hauptgrafik/-zaehlung.
+# AENDERUNGEN NACH VALIDIERUNG (Fassung 2, 23.10.2026), Details im
+#   Abweichungsprotokoll und Analysebericht "Aenderungen nach Validierung":
+#   K1 ARIMA-Kovarianz (Polynommultiplikation) korrigiert + Kontrollen (Random-
+#   Walk-Formel, Monte-Carlo); W1 Verweis SAP_Bestaetigung; W2 625 -> Anhang;
+#   W3/W4 Berichtstexte; W5 Spaltennamen Parameter-/Prognoseintervall + POST-HOC-
+#   Prognoseintervall; G1 Grafiken; G2 POST-HOC Blocklaenge 4 / B = 10000;
+#   G3 HAC-Prewhitening-Vergleich; G4 Rundungsspanne H1; G5 UBA-Suchprotokoll;
+#   G6 Fenster-C-Label entfernt, SHA256SUMS nur vergleichen.
 # RF-3  SAP 5.4 Verfahren 1 (Varianz aus Kovarianz der Koeffizienten) und
 #       Verfahren 2 (residualbasierter MBB) liefern Intervalle fuer die
 #       ERWARTUNGSWERT-Summe (nur Parameterunsicherheit), NICHT fuer die
@@ -133,6 +144,7 @@ lies_text <- function(pfad) {
 }
 html_zu_text <- function(pfad) {
   x <- paste(readLines(pfad, warn = FALSE, encoding = "UTF-8"), collapse = "\n")
+  x <- iconv(x, "UTF-8", "UTF-8", sub = "?")
   x <- gsub("(?s)<script.*?</script>", " ", x, perl = TRUE)
   x <- gsub("(?s)<style.*?</style>", " ", x, perl = TRUE)
   x <- gsub("<[^>]+>", " ", x, perl = TRUE)
@@ -161,7 +173,19 @@ pruefsummen <- data.frame(
   sha256 = vapply(roh_dateien, function(p) digest(p, algo = "sha256", file = TRUE), character(1)),
   datei  = sub(paste0(ROH, "/"), "", roh_dateien, fixed = TRUE),
   stringsAsFactors = FALSE)
-writeLines(paste(pruefsummen$sha256, pruefsummen$datei), file.path(ROH, "SHA256SUMS.txt"))
+sha_pfad <- file.path(ROH, "SHA256SUMS.txt")
+if (!file.exists(sha_pfad)) {
+  # nur beim allerersten Anlegen schreiben (Format kompatibel mit sha256sum -c: zwei Leerzeichen, LF)
+  con <- file(sha_pfad, "wb"); writeBin(charToRaw(paste0(paste(pruefsummen$sha256, pruefsummen$datei, sep = "  "), "\n", collapse = "")), con); close(con)
+  cat("SHA256SUMS.txt neu angelegt (Datei existierte nicht).\n")
+} else {
+  ref <- readLines(sha_pfad, warn = FALSE); ref <- sub("\r$", "", ref)
+  ref_df <- data.frame(sha256 = sub("^([0-9a-f]{64}) +.*$", "\\1", ref), datei = sub("^[0-9a-f]{64} +", "", ref), stringsAsFactors = FALSE)
+  m <- merge(pruefsummen, ref_df, by = "datei", all = TRUE, suffixes = c("_jetzt", "_ref"))
+  abw <- m[is.na(m$sha256_jetzt) | is.na(m$sha256_ref) | m$sha256_jetzt != m$sha256_ref, ]
+  if (nrow(abw) == 0) cat("Pruefsummenvergleich gegen festgeschriebene SHA256SUMS.txt: ALLE", nrow(m), "Dateien unveraendert (OK).\n")
+  else { cat("WARNUNG: Rohdaten weichen von SHA256SUMS.txt ab:\n"); print(abw[, c("datei", "sha256_jetzt", "sha256_ref")], row.names = FALSE) }
+}
 print(pruefsummen[, c("datei", "sha256")], row.names = FALSE)
 
 # ---- SAP 4: Basiszeitreihe aus dem archivierten Skript (36 Werte) ------------
@@ -250,11 +274,15 @@ cat(sprintf("Implizierter 2025-Wert bei Agora: %g + %g = %g Mt\n", agora_2026_ho
 # ---- SAP 4a Punkt 1: Diskrepanz 625 vs 648,83 -------------------------------
 cat("\n--- SAP 4a.1: Diskrepanz '625 Mt' vs. '648,83 Mt' ---\n")
 cat(sprintf("648,83 Mt = UBA-Gesamtemissionen 2025 (klimadashboard.de, UBA-Stand 14.03.2026); Expertenrat nennt fuer UBA 2025: %.1f Mt (Differenz %.2f Mt = Rundung/Nachkomma).\n", erk_2025, erk_2025 - 648.83))
-cat(sprintf("625 Mt = gesetzliche Emissionshoechstgrenze (KSG) fuer das JAHR 2026 lt. Agora (%g Mt) - KEIN Emissionswert fuer 2025.\n", ksg_2026))
-cat("BEFUND: Die Diskrepanz beruht auf unterschiedlichen GROESSEN (Ist 2025 vs. Zielwert 2026), nicht auf unterschiedlichen UBA-Erhebungsstaenden\n")
+cat(sprintf("%g Mt = von Agora als gesetzliche Hoechstgrenze fuer das JAHR 2026 genannter Wert - KEIN Emissionswert fuer 2025.\n", ksg_2026))
+ksg_html <- html_zu_text(file.path(ROH, "ksg", "ksg_anlage_2.html"))
+ksg_2026_anlage2 <- as.numeric(hole(ksg_html, "813 786 756 720 682 643 ([0-9]+) 565 523 482 438", 1, "KSG Anlage 2"))
+cat(sprintf("Anlage 2 KSG (BGBl. 2024 I Nr. 235) nennt fuer 2026: %g Mt (nicht %g). %g kann die nach Par. 4 Abs. 2 KSG angepasste Jahresmenge sein\n", ksg_2026_anlage2, ksg_2026, ksg_2026))
+cat("  (ERK: angepasste Menge 2030 = 459,2 vs. Anlage 2 = 438, Differenz 21,2; 604 + 21,2 = 625,2 - passt rechnerisch, ist aber NICHT direkt belegt).\n")
+cat("BEFUND: Die Diskrepanz beruht auf unterschiedlichen GROESSEN (Ist 2025 vs. Jahresmenge 2026), nicht auf unterschiedlichen UBA-Erhebungsstaenden\n")
 cat("        und nicht auf unterschiedlichen Systemgrenzen. Es existiert kein alternativer 2025-Emissionswert (siehe RF-2).\n")
-cat("Entscheidungsregel 4a.2: Estimand 1 -> 648,83 (zwingend). Estimand 2 -> 648,83 primaer;\n")
-cat("  FORMALE Sensitivitaets-Variante mit 2025 = 625 wird gerechnet (SAP 6.3 will beide Werte nebeneinander), aber als nicht belastbar gekennzeichnet.\n")
+cat("Entscheidungsregel 4a.2: Estimand 1 -> 648,83 (zwingend). Estimand 2 -> 648,83 primaer.\n")
+cat("  Die Bedingung SAP 6.3 (ungeklaerte Diskrepanz) ist NICHT ausgeloest. Die Rechnung mit 2025 = 625 steht nur im ANHANG (POST-HOC, nicht SAP-erforderlich, ohne Aussagewert).\n")
 ALT_2025 <- ksg_2026
 
 # ---- SAP 4a Punkt 3: Systemgrenzen-Check -------------------------------------
@@ -339,19 +367,30 @@ cat(sprintf("ROBUSTHEIT Toleranzschwelle (POST-HOC-Rate -2 %%): %s\n", if (robus
 cat("Hinweis: deskriptiv, n = 1 Beobachtung, kein Signifikanztest, kein p-Wert (SAP 2).\n")
 write.csv(e1, file.path(OUT, "estimand1_tabelle.csv"), row.names = FALSE)
 
+# ---- POST-HOC (Validierung G4): Rundungsspanne der H1-Rate und beobachtete Mittelraten -----
+cat("\n--- POST-HOC (G4): Rundungsspanne H1-Rate (Rueckgang 7 +/- 0,5 Mt; 327 als exakt behandelt) ---\n")
+rate_spanne <- 100 * c(-6.5 / (h1_2026 + 6.5), -7.5 / (h1_2026 + 7.5))
+for (r in rate_spanne) {
+  k <- klassifiziere_e1(r, 0.05)
+  cat(sprintf("Rate %.3f %% -> d_A = %.3f, d_B = %.3f pp -> %s\n", r, k$dA, k$dB, k$klasse))
+}
+obs_A <- 100 * ((648.83 / 1252.94)^(1 / 35) - 1); obs_B <- 100 * ((648.83 / df$emissionen[df$jahr == 2015])^(1 / 10) - 1)
+cat(sprintf("Beobachtete mittlere Jahresraten (nicht SAP-Definition, nur Fussnote): 1990-2025 %.2f %%, 2015-2025 %.2f %%\n", obs_A, obs_B))
+
 # Grafik Estimand 1 (getrennt von Estimand 2, SAP 8b/11)
 g1 <- data.frame(Groesse = c("H1 2026 ggue. H1 2025\n(Agora, vorlaeufig)", "Fenster A: CAGR\n(Trend 1990-2025)", "Fenster B: CAGR\n(Trend 2015-2025)"),
                  Wert = c(rate_primaer, 100 * CAGR_A, 100 * CAGR_B))
 g1$Groesse <- factor(g1$Groesse, levels = g1$Groesse)
 p1 <- ggplot(g1, aes(Groesse, Wert, fill = Groesse)) +
   geom_col(width = 0.55, show.legend = FALSE) +
-  geom_text(aes(label = sprintf("%.1f %%", Wert)), vjust = 1.4, color = "white", size = 4) +
+  geom_text(aes(y = Wert / 2, label = sprintf("%.1f %%", Wert)), color = "white", size = 5, fontface = "bold") +
   scale_fill_manual(values = c("#e34948", "#2a78d6", "#1baf7a")) +
-  labs(title = "Estimand 1: Jaehrliche Veraenderungsrate - H1 2026 und Trendmodelle",
-       subtitle = "H1: Agora Energiewende (vorlaeufig). CAGR: gefittete OLS-Werte der publizierten 2040-Analyse (UBA/klimadashboard.de)",
-       x = NULL, y = "Veraenderung pro Jahr bzw. ggue. Vorjahreszeitraum (%)") +
-  theme_minimal(base_size = 11)
-ggsave(file.path(OUT, "estimand1_h1_vs_cagr.png"), p1, width = 7.5, height = 4.5, dpi = 200)
+  labs(title = "Estimand 1: Jaehrliche Veraenderungsrate",
+       subtitle = paste0("H1 2026 ggue. H1 2025 (Agora, vorlaeufig) und mittlere Jahresrate (CAGR)\n",
+                         "der gefitteten OLS-Modelle A und B (UBA via klimadashboard.de)"),
+       x = NULL, y = "Veraenderung (% pro Jahr bzw. ggue. Vorjahreszeitraum)") +
+  theme_minimal(base_size = 11) + theme(axis.title.y = element_text(margin = margin(r = 10)), plot.margin = margin(10, 15, 10, 10))
+ggsave(file.path(OUT, "estimand1_h1_vs_cagr.png"), p1, width = 8, height = 5, dpi = 200)
 
 #===============================================================================
 # SAP 5.1.2 / 5.2 / 5.3 / 5.4: Estimand 2 - kumulative Trendfortschreibung 2021-2030
@@ -382,19 +421,27 @@ mbb_summen <- function(modell, sub, R = R_BOOT, block_len = BLOCK_LEN) {
 }
 
 # ARIMA: Punktprognose, Summe und Varianz der Summe aus der Kovarianzstruktur der Prognosefehler
-arima_summe <- function(sub, h = 5, level = 0.95) {
-  ts_obj <- ts(sub$emissionen, start = min(sub$jahr), frequency = 1)
-  fit <- forecast::auto.arima(ts_obj)
-  fc <- forecast::forecast(fit, h = h, level = 95)
-  punkt <- as.numeric(fc$mean)
+# FASSUNG 2 (Validierung K1): Polynommultiplikation korrekt. Der Fehler der Fassung 1 war
+# convolve(x, c(1,-1), type = "open"): R's convolve() kehrt das zweite Argument um
+# (richtig waere convolve(x, rev(y), type = "open")); dadurch alternierende psi-Gewichte
+# und eine um den Faktor ca. 4 zu kleine Varianz der Summe bei Random-Walk-Modellen.
+polymul <- function(a, b) {                      # Koeffizienten aufsteigend in B
+  out <- numeric(length(a) + length(b) - 1)
+  for (i in seq_along(a)) for (j in seq_along(b)) out[i + j - 1] <- out[i + j - 1] + a[i] * b[j]
+  out
+}
+# Unit-Test der Hilfsfunktion: (1 - B) * (1 - B) = 1 - 2B + B^2 ; (1) * (1,-1) = (1,-1)
+stopifnot(identical(polymul(1, c(1, -1)), c(1, -1)), identical(polymul(c(1, -1), c(1, -1)), c(1, -2, 1)))
+
+arima_sigma <- function(fit, h = 5) {
   arma <- fit$arma                      # (p, q, P, Q, period, d, D)
   p <- arma[1]; q <- arma[2]; d <- arma[6]
+  if (arma[3] != 0 || arma[4] != 0 || arma[7] != 0) stop("saisonale ARIMA-Terme nicht vorgesehen")
   phi <- if (p > 0) fit$model$phi[seq_len(p)] else numeric(0)
   theta <- if (q > 0) fit$model$theta[seq_len(q)] else numeric(0)
-  # AR-Polynom (1 - sum phi B^i) * (1 - B)^d
-  ar_poly <- c(1, -phi)
-  if (d > 0) for (k in seq_len(d)) ar_poly <- convolve(ar_poly, c(1, -1), type = "open")
-  ar_full <- -ar_poly[-1]
+  ar_poly <- c(1, -phi)                 # (1 - sum phi_i B^i)
+  if (d > 0) for (k in seq_len(d)) ar_poly <- polymul(ar_poly, c(1, -1))   # * (1 - B)^d
+  ar_full <- -ar_poly[-1]               # Darstellung x_t = sum ar_full_i x_{t-i} + ...
   psi <- c(1, if (h > 1) ARMAtoMA(ar = ar_full, ma = theta, lag.max = h - 1) else numeric(0))
   s2 <- fit$sigma2
   Sigma <- matrix(0, h, h)
@@ -402,12 +449,36 @@ arima_summe <- function(sub, h = 5, level = 0.95) {
     m <- min(i, j); lag <- abs(i - j)
     Sigma[i, j] <- s2 * sum(psi[1:m] * psi[(1:m) + lag])
   }
-  se_ref <- (as.numeric(fc$upper[, 1]) - punkt) / qnorm(0.975)
-  kontrolle <- max(abs(sqrt(diag(Sigma)) - se_ref))
+  list(Sigma = Sigma, psi = psi, s2 = s2, p = p, q = q, d = d)
+}
+
+arima_summe <- function(sub, h = 5, level = 0.95, n_mc = 10000) {
+  ts_obj <- ts(sub$emissionen, start = min(sub$jahr), frequency = 1)
+  fit <- forecast::auto.arima(ts_obj)
+  fc <- forecast::forecast(fit, h = h, level = 95)
+  punkt <- as.numeric(fc$mean)
+  A <- arima_sigma(fit, h)
+  Sigma <- A$Sigma
   sd_summe <- sqrt(sum(Sigma))
-  list(modell = paste0("ARIMA(", paste(arma[c(1, 6, 2)], collapse = ","), ")", if (!is.null(fit$coef["drift"]) && "drift" %in% names(fit$coef)) " mit Drift" else ""),
+  # Kontrolle 1: Diagonale gegen forecast() (Fassung 1 pruefte NUR dies und war blind fuer K1)
+  se_ref <- (as.numeric(fc$upper[, 1]) - punkt) / qnorm(0.975)
+  kontrolle_diag <- max(abs(sqrt(diag(Sigma)) - se_ref))
+  # Kontrolle 2 (nicht blind fuer Nebendiagonalen): Random-Walk (0,1,0): Var(Summe) = sigma^2 * sum_ij min(i,j)
+  #   = sigma^2 * h(h+1)(2h+1)/6 (= 55 sigma^2 bei h = 5)
+  rw_erwartet <- NA_real_; rw_abw <- NA_real_
+  if (A$p == 0 && A$q == 0 && A$d == 1) {
+    rw_erwartet <- A$s2 * h * (h + 1) * (2 * h + 1) / 6
+    rw_abw <- abs(sum(Sigma) - rw_erwartet) / rw_erwartet
+    if (rw_abw > 1e-10) stop("ARIMA-Kontrolle fehlgeschlagen: Summenvarianz entspricht nicht sigma^2*h(h+1)(2h+1)/6")
+  }
+  # Kontrolle 3: Monte-Carlo-Simulation zukuenftiger Pfade aus dem angepassten Modell (Parameter fest)
+  sim_sum <- replicate(n_mc, sum(simulate(fit, nsim = h, future = TRUE)))
+  mc_sd <- sd(sim_sum); mc_verh <- mc_sd / sd_summe
+  if (abs(mc_verh - 1) > 0.05) stop(sprintf("ARIMA-Kontrolle fehlgeschlagen: MC-sd/analytisch = %.3f", mc_verh))
+  list(modell = paste0("ARIMA(", paste(fit$arma[c(1, 6, 2)], collapse = ","), ")", if ("drift" %in% names(fit$coef)) " mit Drift" else ""),
        summe = sum(punkt), lo = sum(punkt) - qnorm(0.975) * sd_summe, hi = sum(punkt) + qnorm(0.975) * sd_summe,
-       sd = sd_summe, kontrolle_diag = kontrolle)
+       sd = sd_summe, s2 = A$s2, kontrolle_diag = kontrolle_diag, rw_erwartet = rw_erwartet, rw_abw = rw_abw,
+       mc_sd = mc_sd, mc_verhaeltnis = mc_verh, psi = A$psi)
 }
 
 klassifiziere_e2 <- function(ov) {
@@ -422,9 +493,16 @@ naeher_an <- function(ov) {
     text = if (d_erk < d_br) "numerisch naeher an Expertenrat" else if (d_br < d_erk) "numerisch naeher an Bundesregierung" else "gleich weit")
 }
 
-diag_rows <- list(); e2_rows <- list(); koef_rows <- list()
+diag_rows <- list(); e2_rows <- list(); ph_rows <- list(); boot_rows <- list(); hac_rows <- list(); ar_kontroll <- list()
 VARIANTEN <- list(primaer = list(label = "Primaer: 2025 = 648,83 (UBA)", wert2025 = 648.83),
-                  sens625 = list(label = "Sensitivitaet formal: 2025 = 625 (KSG-Grenze 2026, kein Emissionswert; RF-2)", wert2025 = ALT_2025))
+                  anhang625 = list(label = "ANHANG (POST-HOC, ohne Aussagewert): 2025 = 625 im Datensatz", wert2025 = ALT_2025))
+
+# Hilfsfunktion: Code mit eigenem Seed ausfuehren, globalen RNG-Zustand danach wiederherstellen
+# (haelt die Bootstrap-Ergebnisse der Hauptlaeufe identisch zu Fassung 1, obwohl ARIMA-Kontrollen Zufallszahlen brauchen)
+mit_eigenem_seed <- function(seed, expr) {
+  if (exists(".Random.seed", envir = .GlobalEnv)) { bak <- get(".Random.seed", envir = .GlobalEnv); on.exit(assign(".Random.seed", bak, envir = .GlobalEnv)) }
+  set.seed(seed); force(expr)
+}
 
 for (vn in names(VARIANTEN)) {
   V <- VARIANTEN[[vn]]
@@ -443,7 +521,7 @@ for (vn in names(VARIANTEN)) {
     sw <- tryCatch(shapiro.test(residuals(modell)), error = function(e) NULL)
     dw_p <- if (!is.null(dw)) dw$p.value else NA; dw_stat <- if (!is.null(dw)) unname(dw$statistic) else NA
     sw_p <- if (!is.null(sw)) sw$p.value else NA
-    cat(sprintf("Durbin-Watson: DW = %.3f, p = %.4f (H1: positive Autokorrelation)\n", dw_stat, dw_p))
+    cat(sprintf("Durbin-Watson: DW = %.3f, p = %.4g (H1: positive Autokorrelation)\n", dw_stat, dw_p))
     cat(sprintf("Shapiro-Wilk (Residuen): p = %.4f\n", sw_p))
     inferenz <- fn %in% c("A", "B")
     dw_sig <- !is.na(dw_p) && dw_p < 0.05
@@ -451,12 +529,16 @@ for (vn in names(VARIANTEN)) {
     cat(sprintf("Autokorrelation signifikant (alpha = 0,05): %s -> Kovarianzmatrix: %s\n", if (dw_sig) "JA" else "nein",
                 if (!inferenz) "OLS (Fenster C: rein deskriptiv, keine HAC/Inferenz; RF-9)" else if (hac_noetig) "Newey-West (HAC), SAP 5.3" else "klassisch OLS (DW nicht signifikant)"))
     # Residuen-Plots (Linearitaet, ACF)
-    png(file.path(OUT, sprintf("diagnostik_%s_%s.png", vn, fn)), width = 1400, height = 560, res = 130)
+    dname <- if (vn == "primaer") sprintf("diagnostik_primaer_%s.png", fn) else sprintf("anhang_625_diagnostik_%s.png", fn)
+    png(file.path(OUT, dname), width = 1400, height = 560, res = 130)
     op <- par(mfrow = c(1, 2))
     plot(fitted(modell), residuals(modell), xlab = "Gefittete Werte (Mt)", ylab = "Residuen (Mt)",
          main = sprintf("Residuen vs. Fitted - %s, Fenster %s", vn, fn), pch = 19); abline(h = 0, lty = 2)
     acf(residuals(modell), main = sprintf("ACF Residuen - %s, Fenster %s", vn, fn), lag.max = max(2, min(10, n - 2)))
     par(op); dev.off()
+    res_2025 <- unname(residuals(modell)[sub$jahr == 2025])
+    acf_w <- acf(residuals(modell), plot = FALSE, lag.max = max(2, min(10, n - 2)))$acf[, 1, 1]
+    cat(sprintf("Residuum 2025 = %.1f Mt; ACF Lag 1 = %.2f, Lag 2 = %.2f (95%%-Schranke ca. +/- %.2f)\n", res_2025, acf_w[2], acf_w[3], qnorm(0.975) / sqrt(n)))
 
     # Steigungstest (alpha = 0,05 zweiseitig; SAP 5.5): klassisch und HAC (wie bestehende Analyse)
     if (inferenz) {
@@ -466,13 +548,15 @@ for (vn in names(VARIANTEN)) {
     } else { ct_ols <- ct_hac <- rep(NA_real_, 4); cat(sprintf("Steigung: %.3f Mt/Jahr (rein deskriptiv)\n", coef(modell)["jahr"])) }
     diag_rows[[length(diag_rows) + 1]] <- data.frame(Variante = vn, Fenster = fn, n = n, Steigung = unname(coef(modell)["jahr"]),
       DW = dw_stat, DW_p = dw_p, DW_signifikant = dw_sig, ShapiroWilk_p = sw_p, HAC_verwendet = hac_noetig,
-      Steigung_p_klassisch = unname(ct_ols[4]), Steigung_p_NeweyWest = unname(ct_hac[4]))
+      Steigung_p_klassisch = unname(ct_ols[4]), Steigung_p_NeweyWest = unname(ct_hac[4]),
+      Residuum_2025 = res_2025, ACF_lag1 = acf_w[2], ACF_lag2 = acf_w[3], ACF_schranke = qnorm(0.975) / sqrt(n))
 
     # Punktschaetzungen 2026-2030 (OLS)
     jahre_df <- data.frame(jahr = PROJ_JAHRE)
     pts <- as.numeric(predict(modell, jahre_df))
     names(pts) <- PROJ_JAHRE
     cat("OLS-Punktschaetzungen 2026-2030 (Mt): ", paste(sprintf("%d: %.1f", PROJ_JAHRE, pts), collapse = " | "), "\n")
+    cat(sprintf("Niveausprung 2025 (beobachtet %.2f) -> 2026 (Fortschreibung %.1f): %+.1f Mt\n", V$wert2025, pts[1], pts[1] - V$wert2025))
     summe_ols <- sum(pts)
     # SAP 5.4.1 analytisch-parametrisch: Var(Summe) = 1' X0 V X0' 1
     X0 <- cbind(1, PROJ_JAHRE); xs <- colSums(X0)
@@ -480,87 +564,167 @@ for (vn in names(VARIANTEN)) {
     var_s <- as.numeric(t(xs) %*% Vc %*% xs)
     tq <- qt(0.975, df = n - 2)
     a_lo <- summe_ols - tq * sqrt(var_s); a_hi <- summe_ols + tq * sqrt(var_s)
-    # SAP 5.4.2 Moving-Block-Bootstrap
+    # SAP 5.4.2 Moving-Block-Bootstrap (globaler Seed-Strom wie Fassung 1)
     bs <- mbb_summen(modell, sub)
     b_lo <- unname(quantile(bs, 0.025)); b_hi <- unname(quantile(bs, 0.975))
-    # SAP 5.4.3 ARIMA
-    ar <- tryCatch(arima_summe(sub), error = function(e) { cat("ARIMA-Fehler:", conditionMessage(e), "\n"); NULL })
-    if (!is.null(ar)) cat(sprintf("%s: Summe 2026-2030 = %.1f Mt (95%%-Intervall %.1f - %.1f); Kontrolle Diagonale vs. forecast(): %.2e\n",
-                                  ar$modell, ar$summe, ar$lo, ar$hi, ar$kontrolle_diag))
+    # SAP 5.4.3 ARIMA (Kontrollen mit eigenem Seed, Fassung 2)
+    ar <- mit_eigenem_seed(20261023, tryCatch(arima_summe(sub), error = function(e) { cat("ARIMA-FEHLER:", conditionMessage(e), "\n"); NULL }))
+    if (!is.null(ar)) {
+      cat(sprintf("%s: Summe 2026-2030 = %.1f Mt (95%%-PROGNOSEintervall %.1f - %.1f; sd der Summe = %.1f)\n", ar$modell, ar$summe, ar$lo, ar$hi, ar$sd))
+      cat(sprintf("  Kontrolle 1 (Diagonale vs. forecast): max. Abw. %.2e | Kontrolle 2 (Random-Walk-Formel sigma^2*55): %s | Kontrolle 3 (Monte-Carlo, %d Pfade): sd_MC = %.1f, Verhaeltnis zu analytisch = %.3f\n",
+                  ar$kontrolle_diag, if (is.na(ar$rw_abw)) "nicht anwendbar (kein Random Walk)" else sprintf("rel. Abw. %.1e (erwartet sd %.1f)", ar$rw_abw, sqrt(ar$rw_erwartet)), 10000L, ar$mc_sd, ar$mc_verhaeltnis))
+      ar_kontroll[[length(ar_kontroll) + 1]] <- data.frame(Variante = vn, Fenster = fn, Modell = ar$modell, sigma2 = ar$s2, sd_Summe_analytisch = ar$sd,
+        sd_Summe_RW_Formel = if (is.na(ar$rw_erwartet)) NA else sqrt(ar$rw_erwartet), sd_Summe_MonteCarlo = ar$mc_sd, Verhaeltnis_MC_analytisch = ar$mc_verhaeltnis,
+        psi_gewichte = paste(round(ar$psi, 3), collapse = ";"))
+    }
 
-    zeile <- function(methode, s, lo, hi, modelltext) {
+    zeile <- function(methode, typ, s, lo, hi, modelltext) {
       ges <- ist + s; ov <- ges - budget
       nn <- naeher_an(ov)
-      data.frame(Variante = vn, Fenster = fn, Methode = methode, Modell = modelltext,
+      data.frame(Variante = vn, Fenster = fn, Methode = methode, Intervalltyp = typ, Modell = modelltext,
                  Kum_Ist_2021_2025 = ist, Kum_Proj_2026_2030 = s, Kum_Gesamt_2021_2030 = ges,
-                 KI_unten = ges + lo, KI_oben = ges + hi,
-                 Overshoot_eigen = ov, Overshoot_KI_unten = ov + lo, Overshoot_KI_oben = ov + hi,
-                 Klassifikation = klassifiziere_e2(ov) , Deskriptiv_nur = !inferenz,
+                 Intervall_unten = ges + lo, Intervall_oben = ges + hi,
+                 Overshoot_eigen = ov, Overshoot_Intervall_unten = ov + lo, Overshoot_Intervall_oben = ov + hi,
+                 Klassifikation_nur_Punktwert = if (inferenz) klassifiziere_e2(ov) else "(deskriptiv, keine Klassifikation)", Deskriptiv_nur = !inferenz,
                  Dist_Expertenrat = as.numeric(nn["d_erk"]), Dist_Bundesregierung = as.numeric(nn["d_breg"]),
-                 Naeher_an = nn["text"], stringsAsFactors = FALSE, row.names = NULL)
+                 Naeher_an = if (inferenz) nn["text"] else "(deskriptiv)", Intervall_deckt_Korridor = (ov + lo <= KORR["hi"]) & (ov + hi >= KORR["lo"]),
+                 Intervall_deckt_Null = (ov + lo <= 0) & (ov + hi >= 0), stringsAsFactors = FALSE, row.names = NULL)
     }
-    e2_rows[[length(e2_rows) + 1]] <- zeile("analytisch-parametrisch (HAC falls DW sig.)", summe_ols, a_lo - summe_ols, a_hi - summe_ols, "OLS")
-    e2_rows[[length(e2_rows) + 1]] <- zeile("Moving-Block-Bootstrap (B=2000, Residuen)", summe_ols, b_lo - summe_ols, b_hi - summe_ols, "OLS")
-    if (!is.null(ar)) e2_rows[[length(e2_rows) + 1]] <- zeile("ARIMA (auto.arima, h=5)", ar$summe, ar$lo - ar$summe, ar$hi - ar$summe, ar$modell)
+    TP <- "Parameterintervall (Erwartungswert der Summe)"; TF <- "Prognoseintervall (tatsaechliche Summe)"
+    e2_rows[[length(e2_rows) + 1]] <- zeile("analytisch-parametrisch (HAC falls DW sig.)", TP, summe_ols, a_lo - summe_ols, a_hi - summe_ols, "OLS")
+    e2_rows[[length(e2_rows) + 1]] <- zeile("Moving-Block-Bootstrap (B=2000, Residuen)", TP, summe_ols, b_lo - summe_ols, b_hi - summe_ols, "OLS")
+    if (!is.null(ar)) e2_rows[[length(e2_rows) + 1]] <- zeile("ARIMA (auto.arima, h=5)", TF, ar$summe, ar$lo - ar$summe, ar$hi - ar$summe, ar$modell)
+
+    if (vn == "primaer") {
+      # ---- POST-HOC (Validierung W5): Prognoseintervall der tatsaechlichen Summe fuer OLS, unabhaengige Fehler ----
+      s2_ols <- summary(modell)$sigma^2
+      var_p <- var_s + length(PROJ_JAHRE) * s2_ols
+      ph_rows[[length(ph_rows) + 1]] <- data.frame(Fenster = fn, Kum_Gesamt = ist + summe_ols, Overshoot = ist + summe_ols - budget,
+        Overshoot_unten = ist + summe_ols - budget - tq * sqrt(var_p), Overshoot_oben = ist + summe_ols - budget + tq * sqrt(var_p),
+        Anmerkung = if (fn == "A") "Annahme unabhaengiger Fehler hier verletzt (DW signifikant): Intervall zu optimistisch" else if (fn == "C") "n = 6, rein deskriptiv" else "unabhaengige Fehler plausibel, aber DW-Teststaerke bei n = 11 gering")
+      # ---- POST-HOC (Validierung G2): Bootstrap-Sensitivitaet Blocklaenge / B (Seed fest, globaler RNG unberuehrt) ----
+      for (cfg in list(list(bl = 2, R = 2000, seed = 20260827), list(bl = 2, R = 10000, seed = 11), list(bl = 2, R = 10000, seed = 12),
+                       list(bl = 4, R = 2000, seed = 20260827), list(bl = 4, R = 10000, seed = 11))) {
+        bsx <- mit_eigenem_seed(cfg$seed, mbb_summen(modell, sub, R = cfg$R, block_len = cfg$bl))
+        qx <- unname(quantile(bsx, c(0.025, 0.975)))
+        boot_rows[[length(boot_rows) + 1]] <- data.frame(Fenster = fn, Blocklaenge = cfg$bl, B = cfg$R, Seed = cfg$seed,
+          Overshoot_unten = ist + qx[1] - budget, Overshoot_oben = ist + qx[2] - budget)
+      }
+      # ---- POST-HOC (Validierung G3): Abhaengigkeit der HAC-Breite von den sandwich-Voreinstellungen ----
+      if (inferenz) {
+        se_f <- function(V) sqrt(as.numeric(t(xs) %*% V %*% xs))
+        hac_rows[[length(hac_rows) + 1]] <- data.frame(Fenster = fn, SE_Summe_OLS = se_f(vcov(modell)),
+          SE_Summe_NW_prewhite_TRUE_Default = se_f(NeweyWest(modell)), SE_Summe_NW_prewhite_FALSE = se_f(NeweyWest(modell, prewhite = FALSE)))
+      }
+    }
   }
 }
 
 diag_tab <- do.call(rbind, diag_rows)
-e2 <- do.call(rbind, e2_rows)
-rownames(e2) <- NULL
-# Hinweis: KI-Spalten sind Intervalle fuer Kum_Gesamt (Ist + Intervall der Projektionssumme)
+e2_all <- do.call(rbind, e2_rows)
+rownames(e2_all) <- NULL
+e2 <- e2_all[e2_all$Variante == "primaer", ]; rownames(e2) <- NULL
+e2_625 <- e2_all[e2_all$Variante == "anhang625", ]; rownames(e2_625) <- NULL
+ph_tab <- do.call(rbind, ph_rows); boot_tab <- do.call(rbind, boot_rows); hac_tab <- do.call(rbind, hac_rows); ark_tab <- do.call(rbind, ar_kontroll)
 
-cat("\n\n--- SAP 5.2 Diagnostik-Zusammenfassung (alle Variante x Fenster) ---\n")
-print(transform(diag_tab, Steigung = round(Steigung, 2), DW = round(DW, 3), DW_p = round(DW_p, 4), ShapiroWilk_p = round(ShapiroWilk_p, 4),
-                Steigung_p_klassisch = signif(Steigung_p_klassisch, 3), Steigung_p_NeweyWest = signif(Steigung_p_NeweyWest, 3)), row.names = FALSE)
+cat("\n\n--- SAP 5.2 Diagnostik-Zusammenfassung HAUPTTEIL (primaer) ---\n")
+rd <- function(d) transform(d, Steigung = round(Steigung, 2), DW = round(DW, 3), DW_p = signif(DW_p, 3), ShapiroWilk_p = round(ShapiroWilk_p, 4),
+                            Steigung_p_klassisch = signif(Steigung_p_klassisch, 3), Steigung_p_NeweyWest = signif(Steigung_p_NeweyWest, 3),
+                            Residuum_2025 = round(Residuum_2025, 1), ACF_lag1 = round(ACF_lag1, 2), ACF_lag2 = round(ACF_lag2, 2), ACF_schranke = round(ACF_schranke, 2))
+print(rd(diag_tab[diag_tab$Variante == "primaer", ]), row.names = FALSE)
+cat("\n--- Diagnostik ANHANG (625-Variante, POST-HOC) ---\n")
+print(rd(diag_tab[diag_tab$Variante == "anhang625", ]), row.names = FALSE)
 
-cat("\n--- SAP 11 Estimand 2: Ergebnistabelle (Mt CO2-Aeq., eine Nachkommastelle) ---\n")
-e2_print <- e2
-num_cols <- c("Kum_Ist_2021_2025", "Kum_Proj_2026_2030", "Kum_Gesamt_2021_2030", "KI_unten", "KI_oben", "Overshoot_eigen",
-              "Overshoot_KI_unten", "Overshoot_KI_oben", "Dist_Expertenrat", "Dist_Bundesregierung")
-e2_print[num_cols] <- lapply(e2_print[num_cols], round, 1)
-for (vn in names(VARIANTEN)) {
-  cat(sprintf("\n[Variante: %s]\n", VARIANTEN[[vn]]$label))
-  print(e2_print[e2_print$Variante == vn, c("Fenster", "Methode", "Kum_Gesamt_2021_2030", "KI_unten", "KI_oben", "Overshoot_eigen",
-                                             "Overshoot_KI_unten", "Overshoot_KI_oben", "Klassifikation", "Naeher_an")], row.names = FALSE)
+cat("\n--- ARIMA-Kontrollen (K1): sd der Summe analytisch vs. Random-Walk-Formel vs. Monte-Carlo ---\n")
+print(transform(ark_tab, sigma2 = round(sigma2, 1), sd_Summe_analytisch = round(sd_Summe_analytisch, 1), sd_Summe_RW_Formel = round(sd_Summe_RW_Formel, 1),
+                sd_Summe_MonteCarlo = round(sd_Summe_MonteCarlo, 1), Verhaeltnis_MC_analytisch = round(Verhaeltnis_MC_analytisch, 3)), row.names = FALSE)
+
+num_cols <- c("Kum_Ist_2021_2025", "Kum_Proj_2026_2030", "Kum_Gesamt_2021_2030", "Intervall_unten", "Intervall_oben", "Overshoot_eigen",
+              "Overshoot_Intervall_unten", "Overshoot_Intervall_oben", "Dist_Expertenrat", "Dist_Bundesregierung")
+drucke_e2 <- function(d, titel) {
+  cat(sprintf("\n[%s]\n", titel))
+  d[num_cols] <- lapply(d[num_cols], round, 1)
+  print(d[, c("Fenster", "Methode", "Kum_Gesamt_2021_2030", "Intervall_unten", "Intervall_oben", "Overshoot_eigen",
+              "Overshoot_Intervall_unten", "Overshoot_Intervall_oben", "Klassifikation_nur_Punktwert", "Intervall_deckt_Korridor", "Naeher_an")], row.names = FALSE)
 }
+cat("\n--- SAP 11 Estimand 2: Ergebnistabelle HAUPTTEIL (Mt CO2-Aeq., eine Nachkommastelle) ---\n")
+cat("Intervalltypen: analytisch/Bootstrap = Parameterintervall (Erwartungswert der Summe); ARIMA = Prognoseintervall (tatsaechliche Summe).\n")
+drucke_e2(e2, "Variante: Primaer 2025 = 648,83 (UBA)")
+cat("\n--- ANHANG (POST-HOC, ohne Aussagewert, nicht SAP-erforderlich): 2025 = 625 im Datensatz ---\n")
+drucke_e2(e2_625, "ANHANG 625")
 write.csv(e2, file.path(OUT, "estimand2_tabelle.csv"), row.names = FALSE)
-write.csv(diag_tab, file.path(OUT, "diagnostik_tabelle.csv"), row.names = FALSE)
+write.csv(e2_625, file.path(OUT, "anhang_625_tabelle.csv"), row.names = FALSE)
+write.csv(diag_tab[diag_tab$Variante == "primaer", ], file.path(OUT, "diagnostik_tabelle.csv"), row.names = FALSE)
+write.csv(diag_tab[diag_tab$Variante == "anhang625", ], file.path(OUT, "anhang_625_diagnostik_tabelle.csv"), row.names = FALSE)
+write.csv(ark_tab, file.path(OUT, "arima_kontrollen.csv"), row.names = FALSE)
 
-# Zusammenfassung Klassifikation (SAP 7: nichts auswaehlen, alles nebeneinander)
-cat("\n--- Haeufigkeit der Klassifikationen (Fenster A und B, alle Methoden, beide Varianten; C nur deskriptiv) ---\n")
-print(table(Variante = e2$Variante[e2$Fenster %in% c("A", "B")], Klasse = e2$Klassifikation[e2$Fenster %in% c("A", "B")]))
+# Zusammenfassung Klassifikation und Intervallueberdeckung (nur Hauptteil; SAP 7: nichts auswaehlen)
+cat("\n--- Hauptteil: Haeufigkeit der punktbasierten Klassifikationen (Fenster A und B, alle Methoden) ---\n")
+eAB <- e2[e2$Fenster %in% c("A", "B"), ]
+print(table(Klasse = eAB$Klassifikation_nur_Punktwert))
+cat(sprintf("Spanne der Overshoot-Punktwerte Fenster A/B: %.1f bis %.1f Mt\n", min(eAB$Overshoot_eigen), max(eAB$Overshoot_eigen)))
+cat(sprintf("Intervalle (Fenster A/B), die den Korridor 60-100 Mt ueberdecken: %d von %d; Intervalle, die zugleich 0 ueberdecken: %d\n",
+            sum(eAB$Intervall_deckt_Korridor), nrow(eAB), sum(eAB$Intervall_deckt_Korridor & eAB$Intervall_deckt_Null)))
+cat(sprintf("Alle 9 Intervalle inkl. C ueberdecken den Korridor: %d von 9\n", sum(e2$Intervall_deckt_Korridor)))
+print(e2[, c("Fenster", "Methode", "Intervall_deckt_Korridor", "Intervall_deckt_Null")], row.names = FALSE)
 
-# Grafik Estimand 2 (getrennt von Estimand 1)
-e2$Zeile <- paste0("Fenster ", e2$Fenster, " | ", sub(" \\(.*", "", e2$Methode))
-e2$Zeile <- factor(e2$Zeile, levels = rev(unique(e2$Zeile)))
-e2$VarLabel <- ifelse(e2$Variante == "primaer", "Primaer: 2025 = 648,83 Mt (UBA)", "Formale Sensitivitaet: 2025 = 625 (kein Emissionswert)")
-p2 <- ggplot(e2, aes(y = Zeile)) +
-  annotate("rect", xmin = KORR["lo"], xmax = KORR["hi"], ymin = -Inf, ymax = Inf, fill = "#e34948", alpha = 0.15) +
-  geom_vline(xintercept = OVERSHOOT_BREG, linetype = "dashed", color = "#2a78d6") +
-  geom_vline(xintercept = 0, color = "grey50") +
-  geom_errorbar(aes(xmin = Overshoot_KI_unten, xmax = Overshoot_KI_oben, color = Deskriptiv_nur), orientation = "y", width = 0.25) +
-  geom_point(aes(x = Overshoot_eigen, color = Deskriptiv_nur), size = 2) +
-  scale_color_manual(values = c(`FALSE` = "#1baf7a", `TRUE` = "grey45"), labels = c("Fenster A/B", "Fenster C (deskriptiv)"), name = NULL) +
-  facet_wrap(~VarLabel, ncol = 1, scales = "free_y") +
-  labs(title = "Estimand 2: Eigene Trendfortschreibung - Overshoot 2021-2030 vs. Budget 6199 Mt",
-       subtitle = "Rot: Expertenrat-Korridor 60-100 Mt | blau gestrichelt: Bundesregierung (Puffer 4,5 Mt = -4,5)\nIntervalle: 95 % (analytisch/Bootstrap: Parameterunsicherheit, ARIMA: Prognoseunsicherheit)",
-       x = "Overshoot ggue. Gesamtbudget 2021-2030 (Mt CO2-Aeq.; negativ = unter Budget)", y = NULL) +
-  theme_minimal(base_size = 9) + theme(legend.position = "bottom")
-ggsave(file.path(OUT, "estimand2_overshoot.png"), p2, width = 9, height = 9, dpi = 200)
+cat("\n--- POST-HOC (W5): Prognoseintervall der tatsaechlichen Summe fuer OLS (unabhaengige Fehler: Var = Parametervarianz + 5 sigma^2), Overshoot ---\n")
+print(transform(ph_tab, Kum_Gesamt = round(Kum_Gesamt, 1), Overshoot = round(Overshoot, 1), Overshoot_unten = round(Overshoot_unten, 1), Overshoot_oben = round(Overshoot_oben, 1)), row.names = FALSE)
+write.csv(ph_tab, file.path(OUT, "posthoc_prognoseintervall_ols.csv"), row.names = FALSE)
+cat("\n--- POST-HOC (G2): Bootstrap-Sensitivitaet (Overshoot-Parameterintervall), Blocklaenge / B / Seed ---\n")
+print(transform(boot_tab, Overshoot_unten = round(Overshoot_unten, 1), Overshoot_oben = round(Overshoot_oben, 1)), row.names = FALSE)
+write.csv(boot_tab, file.path(OUT, "posthoc_bootstrap_sensitivitaet.csv"), row.names = FALSE)
+cat("\n--- POST-HOC (G3): Standardfehler der 5-Jahres-Summe je Kovarianzschaetzer (Mt) ---\n")
+print(transform(hac_tab, SE_Summe_OLS = round(SE_Summe_OLS, 1), SE_Summe_NW_prewhite_TRUE_Default = round(SE_Summe_NW_prewhite_TRUE_Default, 1),
+                SE_Summe_NW_prewhite_FALSE = round(SE_Summe_NW_prewhite_FALSE, 1)), row.names = FALSE)
+write.csv(hac_tab, file.path(OUT, "posthoc_hac_vergleich.csv"), row.names = FALSE)
+
+# Grafik Estimand 2 (getrennt von Estimand 1): Hauptteil und Anhang
+make_p2 <- function(d, titel, untertitel) {
+  d$Zeile <- paste0("Fenster ", d$Fenster, if_else_c(d$Fenster == "C", " (deskriptiv)", ""), " | ", sub(" \\(.*", "", d$Methode))
+  d$Zeile <- factor(d$Zeile, levels = rev(unique(d$Zeile)))
+  d$Typ <- ifelse(grepl("^Prognose", d$Intervalltyp), "Prognoseintervall (ARIMA)", "Parameterintervall (analytisch, Bootstrap)")
+  ref_rect <- data.frame(xmin = KORR["lo"], xmax = KORR["hi"], lab = "Expertenrat-Korridor 60-100 Mt")
+  ref_lin <- data.frame(x = c(0, OVERSHOOT_BREG), lab = c("Budget 6199 Mt (Overshoot 0)", "Bundesregierung: Puffer 4,5 Mt (-4,5)"))
+  ggplot(d, aes(y = Zeile)) +
+    geom_rect(data = ref_rect, aes(xmin = xmin, xmax = xmax, ymin = -Inf, ymax = Inf, fill = lab), alpha = 0.25, inherit.aes = FALSE) +
+    geom_vline(data = ref_lin, aes(xintercept = x, linetype = lab), color = "black", linewidth = 0.5) +
+    geom_errorbar(aes(xmin = Overshoot_Intervall_unten, xmax = Overshoot_Intervall_oben, color = Typ), orientation = "y", width = 0.3, linewidth = 0.7) +
+    geom_point(aes(x = Overshoot_eigen, color = Typ), size = 2.4) +
+    scale_fill_manual(values = c("Expertenrat-Korridor 60-100 Mt" = "#e34948"), name = NULL) +
+    scale_linetype_manual(values = c("Budget 6199 Mt (Overshoot 0)" = "solid", "Bundesregierung: Puffer 4,5 Mt (-4,5)" = "dashed"), name = NULL) +
+    scale_color_manual(values = c("Parameterintervall (analytisch, Bootstrap)" = "#1baf7a", "Prognoseintervall (ARIMA)" = "#2a78d6"), name = NULL) +
+    labs(title = titel, subtitle = untertitel,
+         x = "Overshoot ggue. Gesamtbudget 2021-2030 (Mt CO2-Aeq.; negativ = unter Budget)", y = NULL) +
+    theme_minimal(base_size = 9) + theme(legend.position = "bottom", legend.box = "vertical", plot.title.position = "plot")
+}
+if_else_c <- function(cond, a, b) ifelse(cond, a, b)
+p2 <- make_p2(e2, "Estimand 2: Eigene Trendfortschreibung - Overshoot 2021-2030 (2025 = 648,83 Mt)",
+              paste0("Punkt = Punktwert, Balken = 95 %-Intervall. Parameterintervalle erfassen nur die Unsicherheit der Trendparameter,\n",
+                     "das Prognoseintervall (ARIMA) die Streuung der Jahreswerte. Auf dieser Skala liegt -4,5 praktisch auf der Nulllinie.\n",
+                     "Fenster A beginnt 2026 bei 689,7 Mt, 41 Mt ueber dem beobachteten 2025-Wert (Modellartefakt-Hinweis)."))
+ggsave(file.path(OUT, "estimand2_overshoot.png"), p2, width = 9.5, height = 6.5, dpi = 200)
+p2a <- make_p2(e2_625, "ANHANG (POST-HOC, ohne Aussagewert): 2025 = 625 im Datensatz",
+               "625 ist kein Emissionswert fuer 2025 (siehe Bericht). Nur zur Vollstaendigkeit; nicht SAP-erforderlich.")
+ggsave(file.path(OUT, "anhang_625_overshoot.png"), p2a, width = 9.5, height = 6.5, dpi = 200)
 
 # Trendgrafik (Zeitreihe + Fortschreibung) fuer Estimand 2
 proj_plot <- do.call(rbind, lapply(names(FENSTER), function(fn) {
   m <- fit_fenster(FENSTER[[fn]][1], FENSTER[[fn]][2])
-  data.frame(jahr = 2025:2030, emissionen = c(648.83, as.numeric(predict(m, data.frame(jahr = PROJ_JAHRE)))), Fenster = paste("Fenster", fn))
+  data.frame(jahr = 2025:2030, emissionen = c(648.83, as.numeric(predict(m, data.frame(jahr = PROJ_JAHRE)))), Reihe = paste("Fortschreibung Fenster", fn))
 }))
+obs <- subset(df, jahr >= 2010); obs$Reihe <- "Beobachtet (UBA)"
+sprung_A <- proj_plot$emissionen[proj_plot$Reihe == "Fortschreibung Fenster A" & proj_plot$jahr == 2026] - 648.83
 p3 <- ggplot() +
-  geom_line(data = subset(df, jahr >= 2010), aes(jahr, emissionen), color = "#2a78d6", linewidth = 1) +
-  geom_line(data = proj_plot, aes(jahr, emissionen, color = Fenster, linetype = Fenster), linewidth = 0.8) +
+  geom_line(data = obs, aes(jahr, emissionen, color = Reihe, linetype = Reihe), linewidth = 1) +
+  geom_line(data = proj_plot, aes(jahr, emissionen, color = Reihe, linetype = Reihe), linewidth = 0.8) +
+  annotate("text", x = 2013, y = 560, hjust = 0, size = 3, label = sprintf("Fenster A: 2026 = %.1f Mt, %+.1f Mt gegenueber beobachtetem 2025-Wert", 648.83 + sprung_A, sprung_A)) +
+  scale_color_manual(values = c("Beobachtet (UBA)" = "#2a78d6", "Fortschreibung Fenster A" = "#e34948", "Fortschreibung Fenster B" = "#1baf7a", "Fortschreibung Fenster C" = "grey40"), name = NULL) +
+  scale_linetype_manual(values = c("Beobachtet (UBA)" = "solid", "Fortschreibung Fenster A" = "dashed", "Fortschreibung Fenster B" = "dashed", "Fortschreibung Fenster C" = "dotted"), name = NULL) +
   labs(title = "Estimand 2: Historische Emissionen und OLS-Fortschreibung bis 2030",
-       subtitle = "Quelle: UBA via klimadashboard.de | eigene Berechnung (Gesamt-THG ohne LULUCF)", x = NULL, y = "Mt CO2-Aequivalent", color = NULL, linetype = NULL) +
+       subtitle = "Quelle: UBA via klimadashboard.de | eigene Berechnung (Gesamt-THG ohne LULUCF)", x = NULL, y = "Mt CO2-Aequivalent") +
   theme_minimal(base_size = 11) + theme(legend.position = "bottom")
-ggsave(file.path(OUT, "estimand2_trend_bis_2030.png"), p3, width = 7.5, height = 4.5, dpi = 200)
+ggsave(file.path(OUT, "estimand2_trend_bis_2030.png"), p3, width = 8, height = 5, dpi = 200)
 
 # sessionInfo (Auftrag)
 writeLines(capture.output(sessionInfo()), file.path(OUT, "sessionInfo.txt"))
