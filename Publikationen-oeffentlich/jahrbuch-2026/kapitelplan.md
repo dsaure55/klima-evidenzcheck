@@ -232,3 +232,9 @@ Publikationen-oeffentlich/jahrbuch-2026/
 ```
 
 Hinweis: `.gitignore` schließt nur `Publikationen/` aus, `Publikationen-oeffentlich/` ist nicht ignoriert und wird mit dem öffentlichen Repo veröffentlicht. Entwürfe mit unfreigegebenem Text werden damit sichtbar, sobald sie gepusht werden. Empfehlung: Entwürfe lokal halten und erst nach Freigabe pushen, oder bis dahin `kapitel/` und `pruefung/` per `.gitignore` ausnehmen (Entscheidung Daniel; das widerspricht teilweise dem Audit-Trail-Gedanken der Commits).
+
+---
+
+## 10. Nachtrag 23.10.2026: Ländervergleich ausgeschlossen
+
+**Entscheidung Daniel Saure, 23.10.2026:** Der THG-/CO₂-Ländervergleich Saarland/Bayern/Berlin kommt **auf keinen Fall** ins Jahrbuch („wir lassen auf jeden Fall diesen Ländervergleich … weg“). Er scheidet damit auch als Auffüller für Kapitel 4 (Entscheidung E3) aus. Verbleibende Optionen für Kapitel 4: Einordnung zum Klimaziel 2026, ein anderer bis 8.11. veröffentlichter Artikel, oder Zusammenlegung mit Kapitel 5 zu „Deutschland und das Klima“.
