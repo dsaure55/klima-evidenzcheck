@@ -1,7 +1,7 @@
-**ENTWURF v0.6 (23.10.2026) – Änderungswünsche Daniel Saure (sensible Sprache bei Todesfällen, 9.400-Zahl geklärt soweit möglich, WWA-Studie eingearbeitet, drei Grafik-Platzhalter) eingearbeitet; Nachprüfung (Nachtrag 4) ausstehend; nicht freigegeben. Diese Kopfzeile, die [GRAFIK]-Platzhalter und die Herkunftstabelle nicht ins Buch übernehmen (A14: vor Satz/Export entfernen bzw. durch Grafiken ersetzen).**
+**ENTWURF v0.7 (23.10.2026) – Auflagen N19–N25 und Empfehlungen E12–E16 aus Nachtrag 4 eingearbeitet, drei Grafiken eingebunden, Satz zu 1994/2003 ergänzt. Prüfung (Nachtrag 5: Grafiken und Text) ausstehend; nicht freigegeben. Diese Kopfzeile und die Herkunftstabelle am Ende nicht ins Buch übernehmen (A14: vor Satz/Export entfernen).**
 
 
-# Kapitel 1 – War dieser Sommer normal, und welche Folgen hatte er?
+# Kapitel 1 – War dieser Sommer normal, und was sagen die Zahlen?
 
 **Kurz gesagt:** „Normal“ hängt davon ab, womit man vergleicht. Mit 19,6 °C war der Sommer 2026 der zweitwärmste seit 1881. Verglichen mit 1961–1990 war er extrem außergewöhnlich, verglichen mit dem Erwärmungstrend seit 1971 ungewöhnlich warm. Dazu kommen die hitzebedingten Sterbefälle: Das RKI schätzt für das Sommerhalbjahr 16.000 Sterbefälle (Spanne 14.400 bis 17.600). Das liegt deutlich außerhalb der Bandbreite seit 1992. Warum das so ist, sagen diese Zahlen nicht.
 
@@ -29,7 +29,9 @@ Setzt man den Messtrend seit 1971 (knapp 0,5 Grad pro Jahrzehnt) geradlinig fort
 
 Was Fuchs über „in 30 Jahren“ sagt, widerspricht dem Messtrend damit nicht, wenn man „normal“ als „typischer Sommer“ versteht: Das Jahr 2056 liegt im Intervall von 2038 bis 2075. Versteht man darunter „nicht mehr ungewöhnlich“, ist es früher so weit, nämlich um 2033. Mit anderen Trendzeiträumen und Modellen liegt das Jahr des typischen Sommers zwischen 2045 und 2058. Die obere Intervallgrenze reicht je nach Zeitraum bis 2112 [1].
 
-[GRAFIK 1 – Sommertemperatur in Deutschland 1881–2026 mit den drei Maßstäben (Normalwerte 1961–1990 und 1991–2020, Trend 1971–2025). Darstellung der Ergebnisse aus [1], keine neue Rechnung.]
+![Sommermittel Deutschland 1881–2026 mit den Normalwerten 1961–1990 und 1991–2020](../grafiken/kap01_grafik1_sommertemperatur.png)
+
+*Grafik 1: Sommermittel Deutschland 1881–2026. Quelle: DWD, Climate Data Center, Stand 2. September 2026 (Werte 2025 und 2026 vorläufig). Dargestellt sind die Ergebnisse aus [1], keine neue Rechnung.*
 
 ## Todesfälle durch Hitze: außerhalb der Bandbreite
 
@@ -37,7 +39,11 @@ Hinter diesen Zahlen stehen Menschen und ihre Angehörigen. Wir schreiben deshal
 
 Das Robert Koch-Institut (RKI) schätzt die hitzebedingten Sterbefälle jedes Sommers mit einem statistischen Modell. Wir haben diese Jahresschätzungen seit 1992 wie einzelne Studien behandelt und in einer Metaanalyse zusammengeführt. Daraus ist ein Referenzmodell für ein „normales“ Jahr entstanden [3].
 
-[GRAFIK 2 – Geschätzte hitzebedingte Todesfälle pro Jahr 1992–2025 (RKI-Schätzwerte mit Unsicherheitsintervall) und 2026, dazu die Obergrenze des Referenzbereichs von rund 8.700. Darstellung der Daten aus [3] und [4], keine neue Rechnung.]
+![Geschätzte Todesfälle durch Hitze pro Jahr 1992–2026 mit Unsicherheitsintervall und Obergrenze eines normalen Jahres](../grafiken/kap01_grafik2_todesfaelle_hitze.png)
+
+*Grafik 2: Geschätzte Todesfälle durch Hitze pro Jahr. Quelle: RKI (Epidemiologisches Bulletin 19/2025 Anhang; 2025: Wochenbericht KW 38/2025, vorläufig; 2026: Wochenbericht KW 37, Stand 24. September 2026, kumuliert für KW 15 bis 37) [4][6]. Die Obergrenze von rund 8.700 stammt aus [3]. Dargestellt sind vorhandene Zahlen, keine neue Rechnung.*
+
+In der Grafik fällt auf: Auch 1994 und 2003 lagen mit je rund 10.200 über der Linie. Das passt dazu, dass die Jahreswerte rechtsschief verteilt sind. 2026 liegt aber deutlich darüber, selbst das untere Ende der Spanne (14.400) liegt höher als diese beiden Jahre.
 
 Das Modell geht für die Jahre 1992 bis 2025 von einem Mittelwert von rund 2.955 hitzebedingten Sterbefällen pro Jahr aus. Ein normales Jahr läge demnach bei bis zu etwa 8.700. So weit reicht das 95-Prozent-Prognoseintervall nach oben. Der damals vorläufige Wert für 2026 lag mit 15.800 etwa 4,5 Standardabweichungen über dem Referenzbereich. Auch in den acht vorab festgelegten Sensitivitätsanalysen blieb die Richtung gleich (oberhalb der Bandbreite) [3].
 
@@ -48,17 +54,21 @@ Im letzten Wochenbericht der Saison (Kalenderwoche 37, Stand 24. September 2026)
 Vier Punkte sind dabei wichtig:
 
 - **Schätzung, nicht Zählung.** Die Zahl stammt nicht von Totenscheinen. Sie ist eine Modellschätzung der zusätzlichen Sterbefälle in Hitzephasen [4][5].
-- **Nicht altersbereinigt.** Die Bevölkerung wird älter, und ältere Menschen reagieren empfindlicher auf Hitze. Ein Teil der Fallzahlen steigt deshalb auch unabhängig vom Klima [3]. Wie viel das ausmacht, haben wir nicht untersucht.
+- **Nicht altersbereinigt.** Die Bevölkerung wird älter, und ältere Menschen reagieren empfindlicher auf Hitze. Ein Teil der Fallzahlen steigt deshalb auch unabhängig vom Klima [3]. Wie viel das ausmacht, haben wir nicht untersucht, und mit diesen Daten lässt es sich nicht trennen.
 - **Methodik im Wandel.** Seit 2020 modelliert das RKI die Sterblichkeit wegen der Corona-Pandemie mit einer flexibleren Kurve. Wir können nicht ausschließen, dass ein Teil des Abstands darauf beruht [5][6].
 - **Eine Vergleichszahl, mit der wir nicht gerechnet haben.** In unserem Analyseplan stand für 2018 als Kontext die Zahl 9.400. Gerechnet haben wir mit dem RKI-Wert von rund 8.500 (Epidemiologisches Bulletin 19/2025). In keiner der drei geprüften RKI-Ausgaben (2022, 2023, 2025) konnten wir die 9.400 für 2018 bestätigen. Möglicherweise stammt sie aus dem Bulletin 42/2022: Dort ist 9.400 die obere Grenze des Unsicherheitsintervalls für 2019. Das haben wir nicht abschließend geklärt. In unserem Artikel vom 29. August hatten wir die Abweichung als Verwechslung in einer Sekundärquelle beschrieben. Diese Erklärung ist nicht belegt (mehr dazu in Kapitel 8; Prüfprotokoll: `Analysen/2026-08-hitzesommer-2026/run_log.txt`).
 
 Unsere Analyse beantwortet nur, ob 2026 außerhalb der bisherigen Schwankungsbreite liegt, nicht, warum [3].
 
-Wie viel der Klimawandel zu einer einzelnen Hitzewelle beiträgt, untersucht die Attributionsforschung. Zur Juni-Hitzewelle 2026 hat die Initiative World Weather Attribution (WWA) am 26. Juni 2026 eine Schnellstudie veröffentlicht [9]. Sie vergleicht die Hitzewelle mit früheren Junis. Im Juni 1976 wären solche Temperaturen „praktisch unmöglich“ gewesen („virtually impossible“). Gegenüber 2003 wäre die Tageshitze etwa zehnmal und die Nachthitze mehr als hundertmal seltener gewesen. Der MedienKlimaBericht fasst das so zusammen: Ohne die Erderhitzung wäre die Juni-Hitzewelle so gut wie unmöglich gewesen [8]. Wir haben die Zusammenfassung auf der Seite der Initiative ausgewertet, nicht den vollständigen Studientext. Einen Peer-Review-Status nennt die Seite nicht. Eine Schätzung der Todesfälle dieses Sommers enthält sie nicht.
+Wie viel der Klimawandel zu einer einzelnen Hitzewelle beiträgt, untersucht die Attributionsforschung. Zur Juni-Hitzewelle 2026 hat die Initiative World Weather Attribution (WWA) am 26. Juni 2026 eine Analyse veröffentlicht [9]. Sie untersucht die Hitzewelle vom 18. bis 29. Juni in Westeuropa (Frankreich, Deutschland, Italien, Spanien, Südengland). Für Deutschland allein nennt die Seite keine eigenen Zahlen.
+
+Die Initiative vergleicht die Hitzewelle mit dem Klima früherer Jahre. Im Klima von 1976 wären solche Temperaturen im Juni „praktisch unmöglich“ gewesen („virtually impossible“). Im Klima von 2003 wären die Tageshöchstwerte etwa zehnmal und die Nachttemperaturen mehr als hundertmal seltener gewesen als heute [9]. Der MedienKlimaBericht schreibt dazu gröber: Ohne die Erderhitzung wäre die Juni-Hitzewelle so gut wie unmöglich gewesen [8]. Das steht so nicht auf der Seite der Initiative.
+
+Wir haben die Zusammenfassung auf dieser Seite ausgewertet, nicht den vollständigen Studientext. Einen Peer-Review-Status nennt die Seite nicht. Für Deutschland nennt sie keine Todesfallzahlen, für Frankreich mindestens 40 gemeldete Todesfälle in dieser Hitzewelle [9]. Mit unseren Zahlen zu den Sterbefällen (April bis September) lässt sich das nicht verrechnen.
 
 ## Die Mediendebatte
 
-Am 17. Oktober 2026 hat der Klima-Newsletter Treibhauspost ein Interview mit dem Journalisten Jürgen Döschner veröffentlicht. Döschner war früher Energieexperte der ARD. Seine These: Viele Medien berichten über Hitze und Dürre, lassen aber den Zusammenhang mit dem Klimawandel weg. Als Belege nennt er unter anderem die geschätzten 16.000 Todesfälle durch Hitze und den MedienKlimaBericht des Vereins KLIMA° vor acht [5][7]. Das Interview ist eine Meinungsquelle, keine Primärquelle.
+Am 17. Oktober 2026 hat der Klima-Newsletter Treibhauspost ein Interview mit dem Journalisten Jürgen Döschner veröffentlicht. Döschner war früher Energieexperte der ARD. Seine These: Viele Medien berichten über Hitze und Dürre, lassen aber den Zusammenhang mit dem Klimawandel weg. Als Belege nennt er unter anderem die „16.000 Hitzetoten“ dieses Sommers (eine Schätzung des RKI) und den MedienKlimaBericht des Vereins KLIMA° vor acht [5][7]. Das Interview ist eine Meinungsquelle, keine Primärquelle.
 
 Der Bericht wertet das Programm von Das Erste und ZDF für Januar bis Juni 2026 aus [8]. Gezählt wird so: Als „Klima-Minute“ gilt jede Sendeminute, in der die Zeichenfolge „Klima“ vorkommt, etwa in „Klimakrise“. Nach eigenen Angaben sind 94 Prozent der gezählten Minuten tatsächlich Klima-Minuten, und das Verfahren findet 89 Prozent aller Klima-Minuten [8].
 
@@ -71,7 +81,9 @@ Der Verein setzt sich für mehr Klimaberichterstattung ein. In dem Bericht forde
 | 2025 | 1,29 % | 1,29 % |
 | 1. Halbjahr 2026 | 0,95 % | 0,82 % |
 
-[GRAFIK 3 – Anteil „Klima“-Minuten bei Das Erste und ZDF 2023 bis 1. Halbjahr 2026. Darstellung der Zahlen aus [5] und [8], keine neue Rechnung.]
+![Anteil der Sendeminuten mit „Klima“ bei Das Erste und ZDF 2023 bis 1. Halbjahr 2026](../grafiken/kap01_grafik3_klima_minuten.png)
+
+*Grafik 3: Anteil der Sendeminuten mit dem Wort „Klima“. Quelle: MedienKlimaBericht Nr. 1 [8], Zahlen wie in [5]. Die Zählung nach Zeichenfolge ist keine Qualitätsmessung.*
 
 Laut dem Bericht hat Das Erste die Juni-Hitzewelle erst am siebten Tag der Warnperiode des DWD ausdrücklich als klimawandelbedingt eingeordnet. Vorher gab es nur einzelne Randerwähnungen. In Frankreich, Großbritannien und Spanien sei der Klimabezug dagegen vom ersten Tag an üblich gewesen. Der Bericht belegt das mit ausgewählten Beispielen aus dem Programm [5][8].
 
@@ -95,6 +107,7 @@ Was die Zahlen nicht zeigen: eine Absicht der Redaktionen. Ein Stichwort ist kei
 Temperaturen: DWD, Climate Data Center, Gebietsmittel Deutschland, Sommer 1881–2026, Stand 2. September 2026. Die Werte für 2025 und 2026 sind vorläufig. Genutzt haben wir die Normalperioden 1961–1990 und 1991–2020, eine lineare Regression 1971–2025 mit 95-Prozent-Prognoseintervall und für die Fortschreibung ein Konfidenzintervall nach Fieller. Dazu kamen Sensitivitätsanalysen (andere Zeiträume, Bruchpunktmodell, Zeitreihenmodell, Perzentil-Definition, Bootstrap). Den Analyseplan haben wir vor Sichtung der Daten festgelegt, Abweichungen protokolliert und die Kernzahlen unabhängig validieren lassen. Die Validierungsberichte beider Analysen nannten Auflagen. Was daraufhin geändert wurde und welche Punkte offen blieben, steht dort.
 Sterbefälle: RKI-Wochenberichte zur hitzebedingten Mortalität, Jahresreihe 1992–2025; Random-Effects-Metaanalyse, 2026 aus der Modellbildung ausgeschlossen; Analyseplan Version 1.1, zwei Auflagen-Runden [3].
 Medien: MedienKlimaBericht Nr. 1, Erstes Halbjahr 2026, KLIMA° vor acht e. V. [8].
+Attribution: World Weather Attribution, Seite am 23.10.2026 ausgewertet [9].
 Analysepläne, Code, Tabellen und Validierungsberichte der beiden Evidenzchecks: `Analysen/2026-09-sommer-2026-normal/` und `Analysen/2026-08-hitzesommer-2026/` im Repository github.com/dsaure55/klima-evidenzcheck.
 
 **Quellen**
@@ -106,7 +119,7 @@ Analysepläne, Code, Tabellen und Validierungsberichte der beiden Evidenzchecks:
 [6] Robert Koch-Institut: Hitzebedingte Mortalität in Deutschland 2023 und 2024. Epidemiologisches Bulletin 19/2025, 07.05.2025. https://doi.org/10.25646/13135
 [7] Treibhauspost #125: „Warum ignoriert die ARD die Klimakrise?“, Interview mit Jürgen Döschner, 17.10.2026. https://steady.page/de/treibhauspost/posts/6c3c7fc9-cbaf-4e84-8c07-d679bcac8adf
 [8] KLIMA° vor acht e. V.: MedienKlimaBericht Nr. 1, Erstes Halbjahr 2026, Das Erste und ZDF (Juli 2026). https://klimavoracht.de/wp-content/uploads/2026/07/KlimaMedienBericht_1_Halbjahr_2026.pdf
-[9] World Weather Attribution: Fossil fuel emissions have rapidly worsened European heatwaves in just a few decades, 26.06.2026 (Schnellstudie zur Juni-Hitzewelle 2026; Seite am 23.10.2026 ausgewertet). https://www.worldweatherattribution.org/fossil-fuel-emissions-have-rapidly-worsened-european-heatwaves-in-just-a-few-decades/
+[9] World Weather Attribution: Fossil fuel emissions have rapidly worsened European heatwaves in just a few decades, 26.06.2026 (Analyse zur Juni-Hitzewelle 2026; Seite am 23.10.2026 ausgewertet; Studienbericht: Imperial College London, DOI 10.25560/130926). https://www.worldweatherattribution.org/fossil-fuel-emissions-have-rapidly-worsened-european-heatwaves-in-just-a-few-decades/
 
 ---
 
@@ -117,10 +130,10 @@ Analysepläne, Code, Tabellen und Validierungsberichte der beiden Evidenzchecks:
 | Kurz gesagt | [1], [3], [4], [5] | Schlusssatz „Warum das so ist, sagen diese Zahlen nicht“ (abgeleitet aus den Grenzen in [3], [5]) |
 | Die Behauptung | [1] Einleitung, [2] | Zuordnung der Aussagen zu Tobias Fuchs; Wortzitate nur „extrem ungewöhnlich“, „ganz normal“ |
 | Temperatur | [1] | Tabelle (Zahlen aus [1]); Satz zu 2003 anders als im ersten Prüfvorschlag; Absatz „in 30 Jahren“ aus [1] |
-| Hitzetote | [3], [4], [5] | Mittelwert/Obergrenze und Rechtsschiefe aus [3]; KW 15–37 aus [4]; 9.400-Punkt aus run_log (Schritt 5c), Verweis auf Kapitel 8 |
+| Todesfälle durch Hitze | [3], [4], [5] | Mittelwert/Obergrenze und Rechtsschiefe aus [3]; KW 15–37 aus [4]; 9.400-Punkt aus run_log (Schritt 5c), Verweis auf Kapitel 8 |
 | Mediendebatte | [5], [8] (Zahlen aus [5]) | Tabelle (Zahlen aus [5]); Sendeplatz-Forderung aus [8]; Brandmelder-Zitat aus [8] |
 | Was heißt das für dich? | alle | **neu** (3 Punkte; Richtung in allen acht Sensitivitätsanalysen aus [3]) |
 | Lagen wir richtig? | [3] („vermutlich eher nach oben“), [4], [1] | **neu**, 4 Punkte |
 | Woher wir das wissen | [1], [3], [8] | Satz zu Auflagen in den Validierungsberichten (Dokumentation, kein Vollzugsnachweis) |
 | Attribution (WWA) | [9], [8] | Neuer Absatz zur Juni-Hitzewelle: 1976 „virtually impossible“, 2003 Tageshitze etwa 10-mal, Nachthitze mehr als 100-mal seltener; Seite am 23.10.2026 ausgewertet, nicht der Volltext; kein Peer-Review-Status auf der Seite |
-| Stilpass v0.4 | – | Formulierungen geglättet, Absätze geteilt, Fachwörter erklärt; Aussagen, Zahlen, Einschränkungen unverändert (zu prüfen) |
+| Stilpass (v0.4, seither fortgeschrieben bis v0.7) | – | Formulierungen geglättet, Absätze geteilt, Fachwörter erklärt; Aussagen, Zahlen, Einschränkungen unverändert (zu prüfen) |

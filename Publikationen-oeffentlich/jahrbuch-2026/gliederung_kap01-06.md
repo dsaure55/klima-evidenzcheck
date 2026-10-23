@@ -24,7 +24,7 @@
 
 ---
 
-## Kapitel 1 – War dieser Sommer normal, und was hat er gekostet?
+## Kapitel 1 – War dieser Sommer normal, und was sagen die Zahlen?
 
 **Zugeordnet:** (a) „War der Sommer 2026 ‚ganz normal‘?“ (Evidenzcheck, 11.9.); (b) „Der Hitzesommer 2026: Ausreißer oder Teil der Bandbreite?“ (Evidenzcheck, 29.8.); (c) „Hitzesommer ohne Klima? Was Medien weglassen …“ (Einordnung, 17.10.).
 **Umfang:** 1.200–1.600 Wörter.

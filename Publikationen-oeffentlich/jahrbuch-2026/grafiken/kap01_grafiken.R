@@ -68,7 +68,9 @@ axis(2, at = seq(0, 18000, 3000), labels = format(seq(0, 18000, 3000), big.mark 
 abline(h = 8700, col = orange, lwd = 2, lty = 2)
 text(1991.4, 9350, "Obergrenze eines „normalen“ Jahres: rund 8.700", adj = 0, col = orange, cex = 0.85, font = 2)
 segments(d2$jahr, d2$pi_unten, d2$jahr, d2$pi_oben, col = grau, lwd = 1.3)
-points(d2$jahr, d2$punktschaetzer, pch = 16, cex = 0.8, col = ink)
+points(d2$jahr[d2$jahr < 2025], d2$punktschaetzer[d2$jahr < 2025], pch = 16, cex = 0.8, col = ink)
+points(2025, d2$punktschaetzer[d2$jahr == 2025], pch = 21, bg = "white", col = ink, cex = 0.9, lwd = 1.5)
+text(2026.6, -1250, "2025 vorläufig (KW 15–38)", adj = 1, cex = 0.75, col = muted)
 segments(2026, 14400, 2026, 17600, col = blau, lwd = 2)
 points(2026, 16000, pch = 21, bg = blau, col = "white", cex = 1.7, lwd = 1.5)
 text(2025.2, 17900, "2026: 16.000\n(Spanne 14.400–17.600)", adj = 1, col = blau, cex = 0.85, font = 2)
@@ -76,8 +78,8 @@ legend("topleft", bty = "n", inset = c(0.0, 0.0), cex = 0.8, text.col = muted,
        legend = c("Schätzwert pro Jahr (RKI)", "95-%-Unsicherheitsintervall"),
        pch = c(16, NA), lty = c(NA, 1), col = c(ink, grau), lwd = c(NA, 1.3))
 titel("2026 liegt weit über der Bandbreite der Jahre davor",
-      "Geschätzte Todesfälle durch Hitze in Deutschland, 1992–2026")
-quelle("Quelle: Robert Koch-Institut (Epid. Bull. 19/2025; Wochenbericht KW 37/2026, Stand 24.09.2026, kumuliert KW 15–37). Referenzbereich: Klima Kompass, Evidenzcheck vom 29.08.2026. Schätzungen, keine Zählung.")
+      "Geschätzte Todesfälle durch Hitze in Deutschland, 1992–2026 (2026: kumuliert Kalenderwoche 15 bis 37)")
+quelle("Quelle: Robert Koch-Institut (Epid. Bull. 19/2025 Anhang; 2025: Wochenbericht KW 38/2025, vorläufig; 2026: Wochenbericht KW 37, Stand 24.09.2026). Referenzbereich: Klima Kompass, Evidenzcheck vom 29.08.2026. Schätzungen, keine Zählung.")
 dev.off()
 
 ## ---------------------------------------------------------------- Grafik 3
