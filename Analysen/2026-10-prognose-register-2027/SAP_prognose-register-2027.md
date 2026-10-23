@@ -9,7 +9,7 @@ bis Ende 2026.
 
 **Format:** Klima Kompass · Evidenzcheck, Unterformat „Prognose-Register“
 (prospektiv). Inhaltsstufe: Evidenzcheck (neue Inferenz).
-**Version:** 0.5
+**Version:** 0.6
 **Status: draft**
 **Datum:** 23.10.2026
 **Autor:in:** Claude (sap-autor-Subagent)
@@ -74,6 +74,13 @@ Ergänzungen, wie im Prognose-Check.
   9, 10, 11, 12, 13. Keine neuen Rückfragen. Rückfrage 3 unverändert
   teilweise offen; Rückfrage 22 insoweit offen, als die Dateiprüfung
   aussteht. Status weiter draft. Keine Daten gesichtet, kein Code ausgeführt.
+- **v0.6 draft (23.10.2026):** Zwei Kleinfragen (Seed, Zählung der
+  Neuregistrierungen) von Daniel Saure am 23.10.2026 entschieden („Beide
+  Kleinfragen wie von dir vorgeschlagen“): derselbe Seed 20261022 für jeden
+  Teil (Abschnitt 10); die Nummer `<n>` der Neuregistrierungen wird je
+  Teil-Datei gezählt, beginnend bei 1 (0.1, Korrekturregel). Vermerk zu
+  Rückfrage 23 in Abschnitt 12 angepasst. Sonst keine Änderungen. Status
+  weiter draft. Keine Daten gesichtet, kein Code ausgeführt.
 
 ---
 
@@ -282,6 +289,12 @@ Korrekturregel.
   `output/register_2027_V1_V2_V4_neuregistrierung_<n>.csv` abgelegt (Rückfrage
   23) und in der Registerdatei als Nachtrag „Neuregistrierung <n>“ ergänzt,
   mit Datum, Grund (Beschreibung des Rechenfehlers) und Commit-Hash.
+- **Zählung von `<n>` (entschieden durch Daniel Saure am 23.10.2026):** Die
+  Nummer `<n>` wird **je Teil-Datei** gezählt, beginnend bei 1. Die erste
+  Neuregistrierung des Teils V3 ist also
+  `output/register_2027_V3_neuregistrierung_1.csv`, und unabhängig davon ist
+  die erste Neuregistrierung des Teils V1, V2 und V4
+  `output/register_2027_V1_V2_V4_neuregistrierung_1.csv`.
 - Die Neuregistrierung durchläuft dieselben Schritte 2–4 wie die
   Erstregistrierung (Validierung, ausdrückliche Freigabe durch Daniel Saure,
   Commit).
@@ -1101,7 +1114,8 @@ und Fehltreffer werden mit gleichem Wortlaut berichtet.
   und Prüfschritte in 0.1).
 - **Zufallszahlen (Rückfrage 23, beantwortet: Regel gilt je Teil):** ein
   Generator je Rechenlauf, also je Teil ein eigener numpy-Generator (PCG64),
-  jeweils mit dem festgelegten Seed 20261022. Reihenfolge der
+  initialisiert mit demselben Seed: derselbe Seed 20261022 für jeden Teil
+  (entschieden durch Daniel Saure am 23.10.2026). Reihenfolge der
   Zufallsziehungen im Teil V3: zuerst die V3-Primärsimulation, dann die
   Simulationen der Sensitivitäten S3 in der Reihenfolge von Abschnitt 6. Im
   Teil V1, V2 und V4: die Bootstrap-Sensitivitäten in der Reihenfolge von
@@ -1559,9 +1573,18 @@ Rückfragen ist keine Freigabe des SAP; das Einfrieren steht aus.
     Zufallszahlenregel in Abschnitt 10 gilt je Teil: ein Generator je
     Rechenlauf, mit festgelegtem Seed je Teil. Damit ist der Widerspruch
     aufgelöst. Eingearbeitet in Kopf, 0.1 (Registrierung, Ablauf,
-    Korrekturregel), 10 und 11. Bei der Einarbeitung ergänzt (bitte beim
-    Lesen des Volltexts mitprüfen): Der festgelegte Seed ist für beide Teile
-    20261022 (wie in 2.3 und 5.4); alle übrigen Ausgabedateien eines Laufs
+    Korrekturregel), 10 und 11. **Seed, bestätigt durch Daniel Saure am
+    23.10.2026** („Beide Kleinfragen wie von dir vorgeschlagen“): Der
+    festgelegte Seed ist für beide Teile 20261022 (wie in 2.3 und 5.4),
+    also derselbe Seed 20261022 für jeden Teil. Begründung: getrennte Läufe
+    auf getrennten Daten, ein zweiter Wert bringt nichts. Eingearbeitet in
+    10 (v0.6). **Zählung der Neuregistrierungen, entschieden durch Daniel
+    Saure am 23.10.2026:** Die Nummer `<n>` wird je Teil-Datei gezählt,
+    beginnend bei 1 (also `output/register_2027_V3_neuregistrierung_1.csv`
+    und unabhängig davon
+    `output/register_2027_V1_V2_V4_neuregistrierung_1.csv`). Eingearbeitet in
+    0.1, Korrekturregel (v0.6). Bei der Einarbeitung ergänzt (bitte beim
+    Lesen des Volltexts mitprüfen): alle übrigen Ausgabedateien eines Laufs
     tragen den Teil im Dateinamen, damit kein späterer Lauf eine bereits
     committete Datei überschreibt; jeder Lauf ergänzt `run_log.txt` um einen
     eigenen, mit dem Teil gekennzeichneten Abschnitt; ein Lauf liest nur die
