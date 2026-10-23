@@ -35,7 +35,7 @@
 ## Kapitel 8 – Korrekturen 2026
 
 **Leserfrage:** Wo lagen wir falsch, und wie sind wir damit umgegangen?
-**Umfang:** ca. 900–1.300 Wörter. **Aufbau:** Einleitung (Korrekturgrundsatz), Tabelle, drei Einzelfälle, Umgang, Lehren.
+**Umfang:** ca. 900–1.300 Wörter. **Aufbau:** Einleitung (Korrekturgrundsatz), Tabelle, vier Einzelfälle, Umgang, Lehren.
 
 1. **Einleitung (ca. 100 Wörter):** Grundsatz: Fehler werden sichtbar korrigiert; wo möglich im Artikel selbst, mit Datum und Grund. Stand der Liste: Redaktionsschluss, geprüft gegen alle 16 Posts.
 2. **Übersichtstabelle (alle bekannten Fälle):** Artikel, Datum der Korrektur, Art (Zahl, Link, Stand), Schwere, wie gekennzeichnet (Hinweis im Artikel / stille Änderung).

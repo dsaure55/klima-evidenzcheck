@@ -309,3 +309,98 @@ Eine weitere fokussierte Nachprüfung der Auflagen N1–N8 ist als eigene Datei 
 - **Validierungsbericht Hitzesommer / Sommer:** nun vollständig gelesen, aber ob nach dem 11.9. (Sommer) weitere Nachträge zu AV9 existieren, ist mir nicht bekannt.
 - **SAP Prognose-Register 2027:** nicht geöffnet.
 - **Wortzahl und Umfang** nicht gezählt.
+
+---
+
+## Nachtrag 2 (Nachprüfung nach v0.3)
+
+**Geprüft:** `Publikationen-oeffentlich/jahrbuch-2026/kapitel/01-sommer.md`, v0.3 (Kopfzeile „ENTWURF v0.3 (23.10.2026)“). Datei nicht verändert. Zeilenangaben „Z.“ beziehen sich auf v0.3.
+**Prüfdatum:** 23.10.2026
+**Prüfer:** Subagent `faktenpruefer` (unabhängig, nicht Autor). **Dieser Nachtrag enthält keinen Freigabevermerk.**
+**Zusätzlich herangezogen:** `gliederung_kap07-10.md` (Kapitel 8, Einzelfall 4), MedienKlimaBericht-Textkopie Z. 486–499, Kapitel 8 Beschreibung gegen run_log/Validierungsbericht (aus Nachtrag 1), Validierungsberichte beider Analysen (in Nachtrag 1 gelesen). Kein neuer Netzzugriff.
+
+### N2.1 Status der Nachtrag-1-Auflagen und Empfehlungen
+
+| Punkt | Status | Textstelle in v0.3 | Prüfhinweis |
+|---|---|---|---|
+| **N1** Richtungsformulierung (S7) | **teilweise** | Z. 28: „Auch in den acht vorab festgelegten Sensitivitätsanalysen blieb die Richtung gleich: Der Wert lag über dem jeweiligen Referenzbereich [3].“ Z. 60: „Die Richtung blieb in allen acht Sensitivitätsanalysen gleich (oberhalb der Bandbreite) [3].“ | Z. 60 folgt jetzt dem Wortlaut von [3] („alle robust in derselben Richtung“) und ist **erfüllt**. Z. 28 ist besser (Richtung statt „außerhalb des jeweiligen Prognoseintervalls“), aber der Nachsatz „Der Wert lag über dem jeweiligen Referenzbereich“ ist **dasselbe S7-Problem in schwächerer Form**: Für S7 (Leave-one-out) wird laut run_log kein 2026-Referenzbereich konstruiert („S7 liefert per Definition keine eigene 2026-Klassifikationsvariante“), und S8a ist mit der Primäranalyse identisch. Der Nachsatz sagt aus, dass für jede der acht Analysen ein eigener Referenzbereich existiert und überschritten wurde; [3] sagt das nicht. Siehe N9. |
+| **N2** „Vier Punkte“ | **erfüllt** | Z. 32: „Vier Punkte gehören dazu:“ | Vier Aufzählungspunkte folgen (Z. 33–36). |
+| **N3** „drei geprüften RKI-Ausgaben“ | **erfüllt** | Z. 36: „... in keiner der drei geprüften RKI-Ausgaben (2022, 2023, 2025) bestätigen; die aktuelle RKI-Ausgabe nennt rund 8.500.“ | Entspricht run_log Schritt 5c und Validierungsbericht Prio 5 (EB 42/2022, EB 26/2023, EB 19/2025; 8.500 in EB 19/2025). „Aktuelle RKI-Ausgabe“ = jüngste der drei geprüften (Bulletin 19/2025); vertretbar. |
+| **N4** Hinweis auf [3] und Verweis Kapitel 8 | **erfüllt** | Z. 36: „In unserem Artikel vom 29. August hatten wir die Abweichung als Verwechslung in einer Sekundärquelle beschrieben; diese Erklärung ist nicht belegt (siehe Kapitel 8; Prüfprotokoll: `Analysen/2026-08-hitzesommer-2026/run_log.txt`).“ | [3] sagt wörtlich: „... eine Verwechslung in einer Sekundärquelle aufgedeckt (korrekter Wert: rund 8.500, nicht 9.400)“ – die Wiedergabe stimmt. „Nicht belegt“ ist durch run_log gedeckt (Herkunft „ausdrücklich unbestätigt“). Widerspruchsfreiheit mit Gliederung Kap. 8: siehe N2.3. |
+| **N7** Sendeplatz-Forderung | **teilweise** | Z. 44: „... fordert in dem Bericht einen festen Sendeplatz für ein solches Format, wie es ihre eigene Sendung „KLIMA° vor acht“ darstellt; die Zahlen stammen also von einer Seite mit klarem Anliegen ...“ [5][8] | Inhalt gegen Bericht Z. 495–499: „... eine KLIMA° vor acht-Sendung. Kurze, wissenschaftlich fundierte Klimaformate funktionieren also. Es braucht deshalb kein neues Rezept, sondern die Entscheidung, einem solchen Format endlich einen festen Sendeplatz zu geben.“ Die Forderung ist gedeckt („fordert“ ≈ „Entscheidung ..., einem solchen Format endlich einen festen Sendeplatz zu geben“; Schlussabsatz: „verlässliche, tägliche Einordnung zur besten Sendezeit“). „Ein solches Format“ meint im Bericht kurze, fundierte Klimaformate; die Sendung „KLIMA° vor acht“ ist das genannte Beispiel. **Reste:** (a) „ihre eigene Sendung“: Der Verein ist maskulin, der Satz hat „der Verein“ als Subjekt, richtig wäre „seine eigene Sendung“. (b) „eigene“ ist durch Bericht und [5] nicht belegt; klimavoracht.de (23.10.) belegt, dass der Verein Folgen produziert. Quelle fehlt im Text. Siehe N10. |
+| **N8** Auflagen-Satz | **erfüllt** | Z. 72: „... Kernzahlen unabhängig validiert; die Validierungsberichte beider Analysen nannten Auflagen; Umsetzung und Nachkontrollen sind dort dokumentiert.“ | Stimmt für beide Berichte: Hitzesommer: Auflagen 1–4 (+ optional 5, 6), Nachtrag „Fokussierte Nachprüfung (29.08.2026)“, Gesamturteil „final“. Sommer: AV1–AV11, Nachträge 1–3 mit Statustabellen, dort auch der Stand von AV9 (zuletzt offen). Der Satz behauptet nur Dokumentation, nicht Vollzug; das ist belegt. Keine Zitation [1][3] mehr, passend. |
+| **E7** „Das Jahr 2056 …“ | **erfüllt** | Z. 24: „Das Jahr 2056 liegt im Intervall von 2038 bis 2075.“ | Inhalt unverändert gegenüber [1]. |
+| **N5** Herkunftstabelle | **teilweise** | Z. 89–100 | Die veralteten Verweise („beides stimmt“, „Größenordnung stabil“) sind entfernt; Zeilen „Die Behauptung“, „Temperatur“, „Hitzetote“ und „Was heißt das für dich?“ sind angepasst. **Lücken:** Zeile „Hitzetote“ nennt weder die neue Formulierung zu Mittelwert/Obergrenze/Rechtsschiefe noch die Kalenderübersetzung KW 15–37 („etwa April bis Mitte September“); Zeile „Mediendebatte“ fehlt die neu formulierte Aussage zur Nicht-Unabhängigkeit (E2/N6) und zur Sendeplatz-Forderung (N7, mit externer Quelle klimavoracht.de); Zeile „Woher wir das wissen“ steht mit „–“, obwohl der Auflagen-Satz (Z. 72) neu formuliert ist; „Kurz gesagt“ erwähnt nicht „im Sommerhalbjahr“. Als Prüfhilfe unvollständig, nicht Teil des Buchtexts. |
+| **N6** Brandmelder-Satz | **erfüllt** | Z. 44: „Der Bericht zitiert einen früheren Beitrag Döschners im „Brandmelder“ (29.06.2026), das Interview nennt den Bericht als Beleg [5][8].“ | Bericht Fn. 7: „Jürgen Döschner: „Stiller Tod und lautes Schweigen“, Brandmelder – Klima braucht Kontext ..., 29.06.2026“; Zitat im Bericht Kap. 4. „Früher“ relativ zum Interview vom 17.10. korrekt. Interview nennt den Bericht laut [5] als Beleg (Interview selbst nicht prüfbar, 403). |
+
+### N2.2 Prüfung der neu formulierten Sätze (als neuer Entwurf)
+
+| Nr. | Satz in v0.3 | Quelle | Ergebnis | Hinweis |
+|---|---|---|---|---|
+| 1 | Z. 28: „Auch in den acht vorab festgelegten Sensitivitätsanalysen blieb die Richtung gleich: Der Wert lag über dem jeweiligen Referenzbereich [3].“ | [3], run_log | Abweichung (gering) | Erster Teil gedeckt („alle robust in derselben Richtung“, [3]). Zweiter Teil: siehe N9. |
+| 2 | Z. 60: „Die Richtung blieb in allen acht Sensitivitätsanalysen gleich (oberhalb der Bandbreite) [3].“ | [3] | bestätigt | Wortlaut-nah; „oberhalb der Bandbreite“ ist die Richtung der Primäraussage. |
+| 3 | Z. 24: „Das Jahr 2056 liegt im Intervall von 2038 bis 2075.“ | [1] („also um 2056“) | bestätigt | |
+| 4 | Z. 32: „Vier Punkte gehören dazu:“ | – | bestätigt | |
+| 5 | Z. 36: 9.400-Punkt komplett | [3], run_log 5c, Validierungsbericht Prio 5 | bestätigt | Alle Elemente einzeln: „in unserem Analyseplan genannte Vergleichszahl 9.400 für 2018“ (SAP 8.1, run_log); „drei geprüften RKI-Ausgaben (2022, 2023, 2025)“; „aktuelle RKI-Ausgabe nennt rund 8.500“; „ungeklärt“; Rückverweis auf [3]-Behauptung; Pfad zu run_log existiert im öffentlichen Repo (Nachtrag 1, GitHub-Liste). Der Satz erklärt nicht, dass die Vermutung „obere PI-Grenze 2019“ existiert; das ist als offen belassen korrekt („ungeklärt“). |
+| 6 | Z. 44: „... fordert in dem Bericht einen festen Sendeplatz für ein solches Format, wie es ihre eigene Sendung „KLIMA° vor acht“ darstellt“ | Bericht Z. 495–499, klimavoracht.de | Abweichung (gering) | Siehe N7/N10 (Pronomen, Beleg für „eigene“). Inhaltlich keine Überhöhung: Es wird nur eine Forderung des Berichts und ein Eigeninteresse beschrieben, keine Absicht unterstellt. |
+| 7 | Z. 44: „Der Bericht zitiert einen früheren Beitrag Döschners im „Brandmelder“ (29.06.2026), das Interview nennt den Bericht als Beleg [5][8].“ | Bericht Fn. 7, [5] | bestätigt | Siehe N6. „Interview und Bericht sind zudem nicht unabhängig voneinander“ ist eine Wertung, durch die zwei Querverweise gedeckt. |
+| 8 | Z. 72: Auflagen-Satz | Validierungsberichte beider Analysen | bestätigt | Siehe N8. |
+| 9 | Z. 79, 83, 84 Quellen [2], [6], [7] | siehe Nachtrag 1 (A5) | bestätigt | unverändert gegenüber v0.2. [7]-Link weiter 403 (nicht erneut versucht), [6] DOI nicht erneut aufgerufen. |
+
+### N2.3 Kapitel 1 und Gliederung Kapitel 8: Widerspruchsfreiheit
+
+Die Gliederung `gliederung_kap07-10.md`, Kapitel 8, vierter Einzelfall („Der Hitzesommer 2026“ (29.08.2026), Vergleichszahl 2018, aufgenommen auf Entscheidung Daniel Saure, 23.10.2026) beschreibt:
+- „Der Artikel beschreibt die Abweichung zwischen 9.400 und rund 8.500 für 2018 als Verwechslung in einer Sekundärquelle.“ **Stimmt** gegen [3].
+- „Nach dem Prüfprotokoll (`run_log`, Schritt 5c) stammt die 9.400 aus unserem eigenen Analyseplan und ließ sich in drei geprüften RKI-Ausgaben nicht bestätigen; die Erklärung im Artikel ist nicht belegt.“ **Stimmt** gegen run_log (SAP 8.1 nennt die Zahl; Herkunft des SAP-Werts selbst „unbestätigt“). Kleiner Hinweis: „stammt aus unserem Analyseplan“ ist genauer als „wurde dort genannt“ nicht belegt; Kapitel 1 formuliert vorsichtiger („im Analyseplan genannte“). Ich empfehle, in Kapitel 8 dieselbe Formulierung wie in Kapitel 1 zu nutzen.
+- „Kernaussage des Artikels unberührt.“ **Stimmt**: Die 2018-Zahl geht nicht in die Primäranalyse ein; ein Einfluss auf 2.955 oder 8.671 wäre nur über die RKI-Reihe möglich, und diese nutzt 8.500 (EB-19-2025 Anhang) laut Validierungsbericht Prio 5.
+- „Ob und wie der Artikel auf Substack ... geändert wird, ist noch nicht entschieden.“ Kapitel 1 sagt „hatten wir ... beschrieben; ... nicht belegt“. Das ist wahr, solange der Substack-Artikel [3] unverändert bleibt; ein Leser, der [3] öffnet, findet dort weiterhin die ungeklärte Erklärung. Für das Buch ausreichend, sofern Kapitel 8 den Fall tatsächlich enthält.
+
+**Befunde zur Widerspruchsfreiheit:**
+- Kapitel 1 verweist auf Kapitel 8; Kapitel 8 existiert bisher nur als Gliederung. Der Verweis ist **nur tragfähig, wenn der Fall im Kapitel 8 des Buchs steht** (Freigabeliste unten).
+- `gliederung_kap07-10.md` Kapitel 8 spricht im Aufbau noch von „drei Einzelfällen“ (Zeile 38), listet jetzt vier. Redaktionell anpassen.
+- `gliederung_kap01-06.md`, Kapitel 1, Aufbau Punkt 3 nennt weiterhin „2018-Vergleichszahl in einer Sekundärquelle verwechselt (8.500 statt 9.400)“. Das ist durch v0.3 und die Entscheidung überholt (die Gliederung ist nicht Buchtext, aber widerspricht dem Kapitel). Anpassen, damit spätere Prüfer nicht gegen die alte Lesart prüfen.
+
+### N2.4 Neue Befunde mit Änderungsvorschlag
+
+**Neue Auflagen (beide gering, keine kritisch):**
+
+1. **N9, Z. 28:** „Auch in den acht vorab festgelegten Sensitivitätsanalysen blieb die Richtung gleich: Der Wert lag über dem jeweiligen Referenzbereich [3].“ Den Nachsatz streichen oder ersetzen. Vorschlag: „Auch in den acht vorab festgelegten Sensitivitätsanalysen blieb die Richtung gleich [3].“ (Alternativ: „..., der Wert lag über dem Referenzbereich der Primäranalyse“, falls die Aussage nicht auf S7 und S8 erweitert werden soll; die kürzere Fassung ist näher an [3].) Begründung: S7 hat keine eigene 2026-Einordnung; „jeweiliger Referenzbereich“ ist dasselbe Problem wie „jeweiliges Prognoseintervall“ in Nachtrag 1, N1.
+2. **N10, Z. 44:** „… für ein solches Format, wie es ihre eigene Sendung „KLIMA° vor acht“ darstellt“. (a) Pronomen: „seine eigene Sendung“ (Subjekt „der Verein“). (b) Beleg: Dass es die „eigene“ Sendung ist, steht weder im Bericht noch in [5]; belegt über klimavoracht.de (abgerufen 23.10.2026: „Der Verein KLIMA° vor acht hat drei neue Folgen produziert“). Entweder die Quelle in „Woher wir das wissen“ aufnehmen („KLIMA° vor acht e. V., klimavoracht.de, abgerufen am 23.10.2026“) oder neutral formulieren: „... einen festen Sendeplatz für ein solches Format, wie es die im Bericht genannte Sendung „KLIMA° vor acht“ darstellt“.
+
+**Empfehlungen (nicht zwingend):**
+
+- **E8 (Herkunftstabelle):** Nach N5 noch ergänzen: Zeile „Hitzetote“ um die Neuformulierungen (Mittelwert/Obergrenze/Rechtsschiefe; Kalenderübersetzung KW 15–37), Zeile „Mediendebatte“ um die Sätze zu Nicht-Unabhängigkeit und Sendeplatz (externe Quelle klimavoracht.de), Zeile „Woher wir das wissen“ um den Auflagen-Satz. Oder, besser, die Tabelle mit der Kopfzeile bei Export entfernen (A14).
+- **E9 (Kapitel 8, Gliederung):** Formulierung „stammt aus unserem eigenen Analyseplan“ an Kapitel 1 angleichen („im Analyseplan genannte Vergleichszahl“); „drei Einzelfälle“ auf „vier“ korrigieren; `gliederung_kap01-06.md` Kapitel 1 (Aufbau Punkt 3, 2018-Zahl) anpassen.
+
+### N2.5 Prüfung auf neue Inferenz, Überhöhung und neue Fehler
+
+- **Neue Berechnung:** keine.
+- **Neue Inferenz/Überhöhung:** keine zusätzliche. Die Wertung „nicht unabhängig voneinander“ und das benannte Eigeninteresse des Vereins sind durch Bericht Fn. 7/Kap. 4 und [5] bzw. klimavoracht.de gedeckt und bleiben beschreibend; sie unterstellen keine Absicht. Der Satz über die Sendeplatz-Forderung nutzt „fordert“ für eine im Bericht als Entscheidungsaufforderung formulierte Passage (vertretbar).
+- **Neue Fehler:** keine falsche Zahl. Formulierungsmängel: Nachsatz Z. 28 (N9), Pronomen und fehlender Beleg Z. 44 (N10).
+- **Kernaussagen, Datenstände, Zitate, Tabellen:** gegenüber Nachtrag 1 unverändert und weiter gedeckt. Tabellenwerte (Temperatur, Medien) unverändert in v0.3 (Z. 16–20, 46–51).
+- **Zwischenstand der Kopfzeile:** Z. 1 nennt „Nachprüfung (Nachtrag 2) ausstehend“; Z. 2 beschreibt Abweichungen von der Prüfvorlage (A9, E3, E2). Beides gehört nicht ins Buch (A14).
+
+### N2.6 Gesamturteil Nachtrag 2: **ok mit Auflagen**
+
+Von den sechs Nachtrag-1-Auflagen sind N2, N3, N4 und N8 erfüllt, N1 und N7 teilweise (je ein Rest, jetzt als N9 und N10 geführt). Empfehlungen E7 und N6 erfüllt, N5 teilweise. Es gibt **2 neue Auflagen (N9, N10)**, beide gering (Formulierung bzw. Beleg einer Nebenaussage), und 2 Empfehlungen (E8, E9). Kein Befund ist kritisch, keine Zahl ist falsch, keine neue Inferenz.
+
+### N2.7 Was für die Freigabe noch zu erledigen ist
+
+1. N9 und N10 einarbeiten (Z. 28; Z. 44) und die Nachprüfung als „Nachtrag 3“ (oder eigene Datei) festhalten (Dokumentationspflicht CLAUDE.md).
+2. **A14:** Kopfzeile (Z. 1–2) und Herkunftstabelle (ab „## Herkunftstabelle“) vor Satz/Export entfernen; Wortzahl gegen die Vorgabe (1.200–1.600) vom Redaktionsteam prüfen.
+3. **Kapitel 8:** Der Fall „Hitzesommer 2026, Vergleichszahl 2018“ muss im Buchkapitel 8 stehen, sonst läuft der Verweis in Z. 36 ins Leere. Sein Text braucht eine eigene Faktenprüfung (Gate Kap. 8: Abgleich gegen Korrekturdatei/Substack und Vollständigkeitsprüfung). Entscheidung von Daniel Saure steht aus, ob der Substack-Artikel [3] mit Hinweis geändert wird (Gliederung: „noch nicht entschieden“).
+4. **Treibhauspost #125 ([7], Z. 42–44):** Prüfung am Originaltext durch Daniel Saure liegt nur als Chat-Aussage vor; für das Gate des Buchs wäre eine dateibasierte Notiz sinnvoll.
+5. **Datenstände zum Stichtag 15.11.:** DWD-Datei (`erstellt am` weiter 20260902?) und RKI-Seite erneut öffnen; „Wie es weitergeht“ (Z. 68) gegen den dann gültigen SAP-Stand des Prognose-Registers abgleichen (SAP selbst von mir nicht geöffnet).
+6. Gliederungsdateien (`gliederung_kap01-06.md`, `gliederung_kap07-10.md`) an den Stand von v0.3 und die Entscheidung zu Kapitel 8 angleichen (E9).
+7. Gesamtbuch: Freigabevermerk erst nach Volltextlektüre durch Daniel Saure (kapitelplan.md Abschnitt 5, CLAUDE.md Verifikationspflicht). Diese Datei enthält keinen.
+
+### N2.8 Was nicht geprüft werden konnte
+
+- **Commit-Diff und Commit-Hash der v0.3:** nicht eingesehen (kein Git-Zugriff); geprüft wurde der Dateitext.
+- **Treibhauspost #125:** weiter 403 (nicht erneut versucht); ob das Interview den Bericht nennt, nur über [5] belegt.
+- **Online-PDF des MedienKlimaBericht:** weiter nur die lokale Textkopie; Abgleich Textkopie gegen PDF nicht möglich.
+- **klimavoracht.de:** am 23.10. nur die Startseite-Aussage zur Produktion von Folgen gelesen; Sendeplätze/Sender der Sendung nicht geprüft.
+- **DOI [6] und klimareporter-Überschrift:** nicht erneut aufgerufen.
+- **SAP Prognose-Register 2027:** nicht geöffnet.
+- **Kapitel 8 des Buchs:** existiert nicht als Text; nur die Gliederung wurde gegen Kapitel 1 abgeglichen.
+- **Wortzahl und Umfang:** nicht gezählt.
