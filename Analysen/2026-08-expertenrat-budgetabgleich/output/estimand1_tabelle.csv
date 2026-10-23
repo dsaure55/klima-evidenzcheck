@@ -1,0 +1,5 @@
+"Rate_Variante","Post_hoc","Toleranz_pp","Rate_H1_pct","CAGR_A_pct","CAGR_B_pct","d_A_pp","d_B_pp","Diff_dB_minus_dA_pp","Einordnung"
+"Primaer: aus Absolutwerten (327 / 334)","nein",0.05,-2.09580838323353,-1.54255032858306,-3.64105250241332,0.553258054650474,1.54524411917979,0.991986064529315,"naeher an Fenster A (pessimistischeres Szenario)"
+"Primaer: aus Absolutwerten (327 / 334)","nein",0.1,-2.09580838323353,-1.54255032858306,-3.64105250241332,0.553258054650474,1.54524411917979,0.991986064529315,"naeher an Fenster A (pessimistischeres Szenario)"
+"POST-HOC: von Agora genannte Rate (-2 %)","ja",0.05,-2,-1.54255032858306,-3.64105250241332,0.457449671416941,1.64105250241332,1.18360283099638,"naeher an Fenster A (pessimistischeres Szenario)"
+"POST-HOC: von Agora genannte Rate (-2 %)","ja",0.1,-2,-1.54255032858306,-3.64105250241332,0.457449671416941,1.64105250241332,1.18360283099638,"naeher an Fenster A (pessimistischeres Szenario)"
