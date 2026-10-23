@@ -259,3 +259,88 @@ SAP 2 verlangt die Pruefung einer "historischen Agora- oder UBA-Zeitreihe" mit m
 - **ERK-PDF:** gelesen habe ich die extrahierte Textdatei `bericht.txt`, nicht das PDF visuell (Werte wie 6194,5 und -4,5 in der Extraktion eindeutig, aber nicht gegen das PDF-Layout geprueft).
 - **Herleitung 604 zu 625** (604 + 106,7/5): nur Plausibilitaetsrechnung, nicht durch ein UBA-Dokument belegt.
 - **Korrigierte ARIMA-Intervalle:** meine Werte beruhen auf der Normalapproximation des SAP ohne Unsicherheit des Drift-Parameters (wie im Skript); verbindliche Zahlen liefert das korrigierte Skript des Analysten.
+
+---
+
+## Nachtrag 1 (Nachpruefung der Fassung 2)
+
+**Gepruefter Stand:** Commit 41e88e9 (Fassung 2, Analyst), Pruefdatum 23.10.2026. Geprueft: `expertenrat-budgetabgleich.R` (Fassung 2), `run_log.txt`, `Analysebericht_expertenrat-budgetabgleich.md` (Fassung 2), `Abweichungsprotokoll_expertenrat-budgetabgleich.md` (Nachtrag), `SAP_Bestaetigung_Daniel_Saure_2026-10-23.md`, alle `output/*.csv` und `output/*.png`, `rohdaten/ksg/`, `rohdaten/suchprotokoll/uba_agueb/`. Der SAP ist gegenueber 78250e3 unveraendert (git diff leer). Der Bericht oben (Pruefung der Fassung 1) bleibt unveraendert.
+
+**Vorgehen:** (a) Skript in einer Kopie im Scratchpad neu ausgefuehrt: alle 11 CSV und `SHA256SUMS.txt` byte-identisch zum Repository, Pruefsummenvergleich "alle 24 Dateien unveraendert". (b) Unabhaengig davon eigene Rechnung fuer K1 (Formel, eigene Monte-Carlo-Simulation ohne `simulate()` und ohne Funktionen des Analysten, Horizontvergleich gegen `forecast()`) sowie Einzelabgleich der Berichtszahlen mit den CSV.
+
+### N1.1 K1 (ARIMA-Kovarianz): erledigt, Kontrollen belastbar
+
+| Groesse | Fassung 2 | Eigene Rechnung |
+|---|---|---|
+| sd der Summe A / B / C | 203,6 / 251,9 / 295,5 | 203,59 / 251,87 / 295,48 (Formel sigma^2 * 55) |
+| Eigene Monte-Carlo (100000 Pfade, manueller Random Walk mit Drift) | - | sd 203,4 / 251,7 / 295,9 |
+| sd je Horizont h = 1..5 (A) | - | 27,45 / 38,82 / 47,55 / 54,90 / 61,39 = sqrt(h) * sigma, identisch zu `forecast()` |
+| Overshoot-Intervall ARIMA A | -132,7 bis 665,4 | -132,7 bis 665,4 |
+| Overshoot-Intervall ARIMA B | -343,1 bis 644,3 | -343,1 bis 644,3 |
+| Overshoot-Intervall ARIMA C | -53,9 bis 1104,4 | -53,9 bis 1104,4 |
+| Anhang 625: A / B / C | -284,1..510,4 / -506,4..450,3 / -218,8..983,3 | -284,1..510,4 / -506,4..450,2 / -218,8..983,3 |
+
+- Die neue Funktion `polymul()` (Skript Z. 428-434) ist korrekt, ein Unit-Test mit `stopifnot` ist enthalten. Alle psi-Gewichte sind 1 (`arima_kontrollen.csv`, Spalte psi_gewichte).
+- Die neuen Kontrollen sind nicht mehr blind fuer den Fall: Kontrolle 2 (Z. 466-471, Random-Walk-Formel, Toleranz 1e-10, Abbruch) prueft die Wirkung der Nebendiagonalen auf die Summenvarianz direkt. Kontrolle 3 (Z. 474-477, `simulate(fit, ...)`, 10000 Pfade, Abbruch ab 5 % Abweichung) ist unabhaengig von der psi-Konstruktion und waere beim alten Fehler (Faktor ca. 4) sofort angesprungen. Kontrolle 1 (Diagonale) bleibt als Zusatz.
+- Andere Stellen derselben Funktion: `arima_sigma()` wird nur aus `arima_summe()` aufgerufen; Horizonte h = 1..5 (Diagonale) und Summe stimmen mit `forecast()` bzw. meiner Rechnung ueberein. Weitere `convolve`-Aufrufe gibt es im Skript nicht. Die Punktwerte (Summe der Prognosen) waren und sind richtig.
+- Die Fassung-1-Aussagen "ARIMA-Intervall A schliesst Korridor und Null aus" und "B nur knapp ueber Null" sind im Bericht (Abschnitt "Aenderungen nach Validierung") und im Protokoll (Nachtrag, K1) ausdruecklich als falsch benannt. Das ist korrekt und ausreichend.
+
+### N1.2 Status der Befunde aus Fassung 1
+
+| Befund | Status | Textstelle / Bewertung |
+|---|---|---|
+| K1 ARIMA-Kovarianz | **erledigt** | Skript Z. 428-480; Bericht 2.2, 2.3; Protokoll Nachtrag "Fehler in Fassung 1". Zahlen reproduziert (N1.1). |
+| W1 SAP-Bestaetigung | **teilweise** | `SAP_Bestaetigung_Daniel_Saure_2026-10-23.md` existiert und ist im Berichtskopf referenziert, mit ehrlicher Einschraenkung. Aber: Der zitierte Satz ist nach 300 Zeichen abgeschnitten ("... Volltext 29.08."), die Datei stammt nicht vom Menschen selbst, und zu Offene Punkte 6a/6b liegt weiter keine Antwort vor. Ich hatte eine selbst geschriebene Bestaetigung inklusive 6a/6b verlangt. Der Analyst fuehrt die Luecke korrekt als offen (Protokoll, Offene Punkte 3), sie ist aber nicht geschlossen. |
+| W2 625 / Anhang A | **erledigt** | Bericht Abschnitt 0 (Diskrepanz), Anhang A, Protokoll RF-2. Wortlaut korrekt: Agora-Wert fuer 2026; Anlage 2 KSG = 604 (von mir erneut verifiziert, `rohdaten/ksg/ksg_anlage_2.html`); Aussage "SAP 6.3 schreibe es vor" zurueckgenommen. Die Plausibilitaetsrechnung 604 + 21,2 = 625,2 ist als "Moeglicherweise" und "Nicht belegt" gekennzeichnet (Abschnitt 0 und Limitationen); 459,2 / 438 / 21,2 habe ich im ERK-Text verifiziert (Kap. 6.2: angepasster Wert 2030 = 459,2). Anhang A ist im Titel als POST-HOC, ohne Aussagewert, nicht SAP-erforderlich markiert und aus Hauptgrafik und Haeufigkeitszaehlung entfernt. Anhangszahlen stimmen mit meiner Rechnung. |
+| W3 Interpretation | **erledigt** | Bericht "Kernaussage", Punkte 2 und 3: Spanne +25 bis +584 Mt; "8 von 9 Intervallen ueberdecken den Korridor, 5 von 6 bei A/B, 4 von 6 zugleich die Null"; Modellartefakt A (+40,9 Mt, Residuum -55,4). Nachgezaehlt: stimmt. Zusatzbeleg: Verankert man die A-Steigung am beobachteten 2025-Wert, liegt die Summe 2026-2030 bei 3026 statt 3303 Mt; der Niveausprung erklaert rund 277 Mt (knapp die Haelfte) des A-Overshoots von 584 Mt. "Ein grosser Teil" ist gedeckt. |
+| W4 Linearitaet/ACF | **erledigt** | Bericht 2.1 (Tabelle mit ACF Lag 1/2, Schranke, Residuum 2025; Interpretation je Fenster) und Limitationen. Zahlen stimmen mit `diagnostik_tabelle.csv`. Aussagen zu B (Lag 2 knapp ausserhalb, nicht belastbar) und C (n = 6) angemessen. |
+| W5 Intervallarten | **erledigt, mit Mangel** | Spalten "Parameterintervall"/"Prognoseintervall", Spalte Intervalltyp, Lesart-Absatz in 2.2, Grafiklegende. Das POST-HOC-Prognoseintervall (2.4, `posthoc_prognoseintervall_ols.csv`) ist gekennzeichnet; Mangel in der Beschreibung: N2.1. |
+| G1 Grafiken | **teilweise** | Estimand-1-Grafik: Untertitel umbrochen, Werte sichtbar (-2.1 / -1.5 / -3.6 %). Estimand-2-Hauptgrafik: nur Primaer, Legenden fuer Korridor, Budget, Bundesregierung, Intervalltypen farblich getrennt, ARIMA-Balken neu. Trendgrafik: Legende fuer beobachtete Reihe, Annotation. Verbleibend: N2.3. |
+| G2 Bootstrap | **erledigt** | Monte-Carlo-Fehler genannt, Grenzen in ganzen Mt, POST-HOC Blocklaenge 4 und B = 10000 (`posthoc_bootstrap_sensitivitaet.csv`, Zahlen in 2.4 stimmen mit der CSV). Hauptergebnisse identisch zu Fassung 1 (A 429-737). Hinweis N2.2. |
+| G3 HAC | **erledigt** | Bericht 2.4 und 2.1; `posthoc_hac_vergleich.csv` (63,2 / 268,3 / 134,9) stimmt mit meinen Werten. |
+| G4 Estimand 1 | **erledigt** | Rundungsspanne (-1,95 % / -2,24 %: d_A 0,406 / 0,700, d_B 1,692 / 1,399), beobachtete Mittelraten (-1,86 / -3,20 %), Agora-Zitat zum Preiseffekt (Abschnitt 0). Nachgerechnet; "Abstand der Distanzen mindestens 0,7 pp" korrekt. |
+| G5 UBA-Suche | **teilweise** (vom Analysten so benannt) | `rohdaten/suchprotokoll/uba_agueb/suchlog.txt`: vier Seiten abgerufen, Textsuche ohne Treffer, Grenze "keine Tiefensuche in PDF-Anhaengen" benannt. Als offen begrenzter Nachweis vertretbar. |
+| G6 Darstellung/Dateien | **erledigt** | Klammerklassifikation fuer C entfernt; `SHA256SUMS.txt` wird verglichen statt ueberschrieben (mein Lauf: alle 24 unveraendert). Ob das Dateiformat mit `sha256sum -c` laeuft, habe ich nicht getestet. |
+
+### N1.3 Neue Befunde (alle gering)
+
+**N2.1 (gering) - Beschreibung des POST-HOC-Prognoseintervalls fuer Fenster A ist unzutreffend.** Bericht 2.4 und Protokoll RF-3 nennen "unabhaengige Fehler, Parametervarianz + 5 sigma^2" und fuer A das Intervall 17,1 - 1151,3 mit dem Vermerk "zu optimistisch". Das Intervall ist aber mit der HAC-Parametervarianz (SE 268) gerechnet (Nachrechnung: 584,2 +/- 2,03 * sqrt(268,3^2 + 5 * 34,3^2) = 17 bis 1151). Mit klassischer OLS-Parametervarianz waere es [382; 786] (meine Rechnung in Fassung 1, W5). Der Vermerk "zu optimistisch" passt zu der OLS-Variante, nicht zu dem gezeigten, sehr breiten Intervall. Auflage: Beschreibung korrigieren (welche Parametervarianz) oder beide Varianten nennen; der Hinweis "unabhaengige Fehler verletzt" bleibt richtig.
+
+**N2.2 (gering) - Seed-Beschriftung in `posthoc_bootstrap_sensitivitaet.csv`.** Die Zeilen B und C mit "Seed 20260827, B = 2000" (B: -152,6 / 199,0) weichen von den Hauptergebnissen (B: -159 / 201) ab, weil die Hauptlaeufe den Zufallsstrom der Reihe nach verbrauchen, die Sensitivitaet jedoch pro Zeile neu mit demselben Seed startet. Fuer Fenster A stimmen beide ueberein. Kein Fehler, aber irrefuehrend. Auflage: einen Satz in 2.4 oder als Spaltenhinweis ergaenzen.
+
+**N2.3 (gering) - Grafikrestmaengel.** `estimand2_overshoot.png`: Bundesregierungslinie (-4,5) praktisch auf der Nulllinie (benannt, aber nicht geloest; ein Marker oder Inset waere besser), rechter Achsenwert "1200" am Rand abgeschnitten. `estimand2_trend_bis_2030.png`: Textannotation zum Niveausprung steht frei im leeren Bereich, nicht am Sprung, und ohne Pfeil. `estimand1_h1_vs_cagr.png`: Dezimalpunkt statt -komma im Rest des deutschsprachigen Berichts. `anhang_625_overshoot.png`: in Ordnung, Titel kennzeichnet "POST-HOC, ohne Aussagewert".
+
+**N2.4 (gering) - Kontrollgrenzen.** Kontrolle 2 deckt nur ARIMA(0,1,0) ab, Kontrolle 3 hat 5 % Toleranz; das Verhaeltnis MC/analytisch ist in allen sechs Anpassungen identisch (1,00816), weil derselbe Seed verwendet wird. Fuer die jetzt gewaehlten Modelle ausreichend; bei anderer Modellwahl in einem spaeteren Lauf waere eine zweite, unabhaengige Pruefung (z. B. psi-Gewichte gegen `ARMAtoMA` mit bekannten Referenzwerten) sinnvoll. Im Skript als Kommentar vermerken.
+
+**Keine weiteren Auffaelligkeiten** in Bericht und Protokoll: Alle Zahlen im Bericht (Tabellen 2.2, 2.3, Anhang A, Kernaussage, Estimand 1) stimmen mit den CSV-Dateien und meiner Nachrechnung ueberein. Die Kernaussage ist nicht ueberinterpretiert (Spanne, Intervallueberdeckung, "keine belastbare Aussage", Modellartefakt, Etikett "nur Punktwert"). Die Aussage "Hauptergebnisse identisch zu Fassung 1" stimmt (A/B-Bootstrap, analytisch, Punktwerte). Ursachenaussagen bleiben vermieden; die Agora-Zuordnung zum Preiseffekt ist als Zitat gekennzeichnet. Im Abweichungsprotokoll steht die RF-Tabelle weiterhin im Stand der Fassung 1 (z. B. RF-2 "SAP schreibt Parallelrechnung vor"); der Nachtrag korrigiert das ausdruecklich und der Kopf der Nachtragsseite sagt, dass die Tabelle Fassung 1 ist. Als Audit-Trail akzeptabel; ein Verweis in der RF-2-Zeile "siehe Nachtrag" waere leserfreundlicher.
+
+### N1.4 Fachliche Empfehlungen zu den offenen Punkten des Analysten
+
+**(a) SAP-Erratum zur 625-Annahme: ja, als eigene, datierte Datei.** Der eingefrorene SAP bleibt textlich unveraendert; daneben eine kurze Datei `SAP_Erratum_2026-10-23.md` (Autor: Mensch, nicht Subagent), die benennt: (1) 625 ist kein 2025-Emissionswert (Agora: Jahresmenge 2026; Anlage 2 KSG: 604; Herkunft der 625 nicht belegt); (2) SAP 4a.2 und 6.3 greifen nicht, die 625-Rechnung ist nicht SAP-erforderlich; (3) die im SAP offenen Parameter Blocklaenge 2, Seed 20260827, Standardvorgaben von `sandwich::NeweyWest`; (4) die Textwidersprueche (Abschnitt 0 "draft", Offene Punkte Nr. 6) und die ausdrueckliche Antwort zu 6a/6b. Damit wird auch W1 geschlossen. Kein Eingriff in den SAP-Text, damit der Audit-Trail unberuehrt bleibt.
+
+**(b) Anhang A: behalten ist vertretbar, fuer jede Veroeffentlichung streichen.** Da der Mensch die Verschiebung in den Anhang entschieden hat und Anhang A im Titel, Text und Grafik deutlich als post-hoc und ohne Aussagewert gekennzeichnet ist, ist er fuer den Audit-Trail akzeptabel (die in Fassung 1 gerechneten Zeilen bleiben nachvollziehbar). Mein Rat bleibt, ihn nicht in Blog, Substack oder Kanaltexte zu uebernehmen: Er beantwortet keine sinnvolle Frage, kippt einzelne Klassifikationen und lieferte sonst Material fuer eine Fehllesung ("Ergebnis haengt am 2025-Wert").
+
+**(c) POST-HOC-Prognoseintervall / GLS: kein Amendment noetig, solange es bei der jetzigen Rolle bleibt.** Das OLS-Prognoseintervall (iid) ist rein deskriptiv, steht nicht in der Kernaussage, aendert keine Klassifikation und ist als POST-HOC gekennzeichnet; das genuegt. Ein Amendment waere noetig, sobald ein Prognoseintervall oder eine GLS/AR(1)-Variante (a) in die Klassifikation oder die Kernaussage eingeht, (b) als Hauptspalte in Tabelle 2.2 erscheint oder (c) nach Sichtung der Ergebnisse als "bessere" Methode gewaehlt wird. Von einer GLS-Variante fuer Fenster A rate ich ab: Sie fuegte Modellwahlfreiheitsgrade (Fehlerordnung) hinzu, und der SAP enthaelt mit dem ARIMA-Prognoseintervall (nun korrekt) bereits ein Prognoseintervall der Summe. Fuer A sollte das iid-Intervall nach N2.1 entweder entfallen oder klar als "nicht gueltig" markiert bleiben.
+
+---
+
+### N1.5 Gesamteinschaetzung der Fassung 2
+
+**FREIGABEFAEHIG MIT AUFLAGEN.** Der kritische Befund K1 ist behoben und unabhaengig verifiziert; keine kritischen Befunde mehr. Alle Zahlen im Analysebericht stimmen mit meiner Nachrechnung ueberein. Die Aussagen sind nicht ueberinterpretiert. Fehlerhafte Aussagen der Fassung 1 sind als falsch benannt.
+
+**Neue Befunde: 0 kritisch, 0 wesentlich, 4 gering (N2.1-N2.4).** Offen aus Fassung 1: W1 (teilweise), G1 (teilweise), G5 (teilweise).
+
+**Auflagen vor Freigabe (kurz):**
+1. W1: Mensch bestaetigt selbst schriftlich die Antwort zu Offene Punkte 6a/6b und die Geltung von v1.1, am besten im SAP-Erratum (N1.4a). Ohne diese Zeile bleibt die Freigabe an dieser Stelle unvollstaendig (Verifikationspflicht).
+2. N2.1: Beschreibung des POST-HOC-Prognoseintervalls fuer A korrigieren.
+3. N2.2, N2.3, N2.4: Hinweise und Grafikkorrekturen (kein erneuter Rechenlauf der Ergebnisse noetig ausser fuer Grafiken).
+4. Der Analysebericht traegt im Kopf noch "NICHT validiert" und in der Befundtabelle "Nachpruefung offen"; das ist erst nach Abschluss durch den Analysten bzw. die Top-Level-Session auf "validiert, Nachpruefung siehe Nachtrag 1" zu setzen.
+5. Gate fuer "Evidenzcheck" (CLAUDE.md): Der Validierungsbericht enthaelt jetzt kein "kritisch" mehr; die Freigabe selbst bleibt beim Menschen.
+
+### N1.6 Was ich in der Nachpruefung nicht pruefen konnte
+
+- Ob Daniel Saure die SAP-Bestaetigung selbst gelesen und die vollstaendige Aussage getroffen hat (die Datei zitiert nur einen abgeschnittenen Satz).
+- FAZ-Artikel und UBA-Datacube weiterhin nicht (siehe Abschnitt 7 oben); Herkunft der 625 weiterhin nicht belegt (UBA 2026g, Tabelle 3 nicht eingesehen).
+- Die UBA-/AGEB-Suche habe ich nicht erneut live durchgefuehrt, nur das Protokoll gelesen; PDF-Anhaenge wurden auch vom Analysten nicht durchsucht.
+- Sensitivitaetszeilen (Blocklaenge 4, B = 10000) habe ich nicht unabhaengig reproduziert, nur auf Konsistenz zwischen CSV und Bericht geprueft; der Neulauf des Skripts reproduziert sie byte-identisch.
+- Das `sha256sum -c`-Format der Pruefsummendatei habe ich nicht eigens getestet.
