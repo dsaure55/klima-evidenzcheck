@@ -37,14 +37,14 @@ raster(seq(0, 200, 50))
 barplot(d1$netto_entnahme_twh, col = farben, border = NA, add = TRUE, yaxt = "n", space = 0.35)
 axis(2, at = seq(0, 200, 50), tick = FALSE)
 abline(h = 122, col = ink, lwd = 1.6, lty = 2)
-abline(h = 136, col = orange, lwd = 2)
+abline(h = 136, col = orange, lwd = 2.4, lty = 3)
 text(bp[1] - 0.6, 199, "Gestrichelt: Median der zehn Winter, 122 TWh", adj = 0, col = ink, cex = 0.85)
 text(bp[1] - 0.6, 209, "Orange: 136 TWh, Speicherstand Mitte September 2026 (laut Medienberichten)", adj = 0, col = orange, cex = 0.85, font = 2)
 text(bp, d1$netto_entnahme_twh + 6, labels = format(d1$netto_entnahme_twh, decimal.mark = ",", nsmall = 1, trim = TRUE),
      cex = 0.8, col = ink)
 titel("Die Winter-Entnahme schwankt stark",
       "Netto-Entnahme aus den deutschen Gasspeichern pro Winterhalbjahr (Oktober bis März), 2016/17 bis 2025/26")
-quelle("Quelle: Eurostat (nrg_cb_gasm), Auswertung: Klima Kompass, Evidenzcheck vom 14.09.2026. Blau: Winter 2025/26 (133,7 TWh). Die 136 TWh sind ein Speicherstand, keine Entnahme.")
+quelle("Quelle: Eurostat (nrg_cb_gasm, Datenstand 08.09.2026), Auswertung: Klima Kompass, Evidenzcheck vom 14.09.2026. Blau: Winter 2025/26 (133,7 TWh). Die 136 TWh sind ein Speicherstand, keine Entnahme.")
 dev.off()
 
 ## ---------------------------------------------------------------- Grafik 2
@@ -55,20 +55,20 @@ png(file.path(out, "kap02_grafik2_dunkelflaute_batterie.png"), width = 2000, hei
 theme_start(mar = c(8.5, 7.2, 4.6, 2))
 x <- d2$Episode
 plot(NA, xlim = c(0, 52), ylim = c(0, 16000), xaxt = "n", yaxt = "n", xlab = "",
-     ylab = "Fehlende Energie in der Episode (GWh)")
+     ylab = "Energiedefizit je Episode (GWh)")
 raster(seq(0, 15000, 5000))
 axis(2, at = seq(0, 15000, 5000), labels = format(seq(0, 15000, 5000), big.mark = ".", trim = TRUE), tick = FALSE)
 jahre <- as.integer(substr(d2$Start, 1, 4))
 erste <- tapply(x, jahre, min)
 axis(1, at = erste, labels = names(erste), tick = FALSE, line = -0.5, cex.axis = 0.8)
-mtext("Jahr der Dunkelflaute (Beginn der Episode)", side = 1, line = 2.6, cex = 0.9, col = ink)
+mtext("Episoden nach Beginn sortiert (Jahre ohne Episode erscheinen nicht)", side = 1, line = 2.6, cex = 0.9, col = ink)
 rect(x - 0.38, 0, x + 0.38, d2$Energiedefizit_GWh, col = grau, border = NA)
 abline(h = 4301, col = ink, lwd = 1.6, lty = 2)
 text(51.5, 15500, "Gestrichelt: Median der Episoden, 4.301 GWh", adj = 1, col = ink, cex = 0.85)
 abline(h = 31.5, col = blau, lwd = 3)
-text(51.5, 14400, "Blau: installierte Batteriekapazität (bereinigt), 31,5 GWh", adj = 1, col = blau, cex = 0.9, font = 2)
-titel("Gegen die Dunkelflauten wirkt die heutige Batteriekapazität klein",
-      "50 Dunkelflaute-Episoden 2015–2026: fehlende Energie je Episode und installierte Batteriekapazität")
+text(51.5, 14400, "Blau: Batteriekapazität (bereinigt), 31,5 GWh", adj = 1, col = blau, cex = 0.9, font = 2)
+titel("Jede Dunkelflaute hatte ein Defizit von mindestens rund 3.000 GWh",
+      "50 Dunkelflaute-Episoden, Auswertung Januar 2015 bis Juli 2026. Energiedefizit = Verbrauch minus Wind und Solar")
 quelle("Quelle: SMARD (Bundesnetzagentur), Marktstammdatenregister (Stand 31.08.2026, nachträglich bereinigt); Auswertung: Klima Kompass, Evidenzcheck vom 31.08.2026. Kapazität nicht eins zu eins nutzbar, Importe nicht berücksichtigt.")
 dev.off()
 cat("Grafiken geschrieben nach", out, "\n")

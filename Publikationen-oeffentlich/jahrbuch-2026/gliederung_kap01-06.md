@@ -20,7 +20,7 @@
 1. **„65 Euro rein, 59 Euro raus“ ist kein Evidenzcheck**, sondern laut eigenem Text ein „Rechenkommentar, keine präregistrierte Analyse“ (Eingangswerte aus veröffentlichten Quellen). In `kapitelplan.md` stand es unter „Evidenzcheck“. Im Buch wird es als Rechenkommentar geführt; das gilt auch für Kapitel 7, Frage 9.
 2. **COP31 endet am 20.11.2026** (9.–20.11., Antalya, laut UNFCCC-Zeitplan in den Artikeln) und damit vor dem Redaktionsschluss. In `kapitelplan.md`, Abhängigkeiten Kapitel 5, stand „liegt nach Redaktionsschluss“. Das ist falsch. Unsere Stücke machen aber keine Vorhersage zur COP31, deshalb ist das für „Lagen wir richtig?“ ohne Belang; ein Ergebnisblock wäre ein eigener, neu zu prüfender Text (siehe Kapitel 5).
 3. **15.800 gegen 16.000 Hitzetote** ist im Einordnungsstück vom 17.10. schon erklärt: 15.800 war der vorläufige Wert vom 29.8., 16.000 der RKI-Wert KW 37 (Stand 24.9.). Der offene Punkt in `quellen-artikel/INDEX.md` ist damit erledigt.
-4. **Batteriespeicher:** Der Artikel kündigt eine Nachlade-Simulation an („wird nachgeliefert“). Im Repo liegt kein Ergebnis dazu (`run_log.txt`: „noch ausstehend“). Das gehört in „Lagen wir richtig?“ von Kapitel 2 als offener Punkt. Außerdem trägt der Artikel eine nachträglich festgelegte Datenbereinigung (Post-hoc, Schwelle 100 MWh) und eine nicht sicher belegte Eingangszahl („2 %“, Fußnote im Artikel); beides ist im Buch ebenso offen zu nennen.
+4. **Batteriespeicher:** Der Artikel kündigt eine Nachlade-Simulation an („wird nachgeliefert“). Im Repo liegt kein Ergebnis dazu (`run_log.txt`: „noch ausstehend“). Das gehört in „Lagen wir richtig?“ von Kapitel 2 als offener Punkt. Außerdem trägt der Artikel eine nachträglich festgelegte Datenbereinigung (Post-hoc, Schwelle 100 MWh) und eine nicht sicher belegte Eingangszahl („300 GWh bis 2050 = 1 %“, Fußnote 1 im Artikel); beides ist im Buch ebenso offen zu nennen.
 
 ---
 
@@ -70,7 +70,7 @@
 **Lagen wir richtig? (Inhalt):**
 - Gas: Keine Aussage ist bisher überprüfbar. Die Entnahme des Winters 2026/27 steht im Prognose-Register als Eintrag #1; Auswertung frühestens Mai/Juni 2027. Zum Redaktionsschluss: „noch offen“, ohne Zwischenstand zur Entnahme.
 - Gas: Die Einordnung vom 17.10. nutzt Stand 16.10.; ein aktueller Füllstand wird nur eingefügt, wenn die Bundesnetzagentur-Quelle am Stichtag geprüft ist.
-- Strom: Nachlade-Simulation angekündigt, im Repo kein Ergebnis → offen; nachträgliche Bereinigung bleibt ein Confirmation-Bias-Risiko (so im Artikel selbst formuliert); die „2 %“-Zahl aus der Debatte ist laut Artikel nicht zweifelsfrei belegt.
+- Strom: Nachlade-Simulation angekündigt, im Repo kein Ergebnis → offen; nachträgliche Bereinigung bleibt ein Confirmation-Bias-Risiko (so im Artikel selbst formuliert); die Zahl zur Studie mit 300 GWh bis 2050 ist laut Artikel (Fußnote 1) nicht zweifelsfrei quellenbelegt, nicht die „2 %“.
 
 **Woher wir das wissen (Inhalt):** Eurostat nrg_cb_gasm, DWD, Bundesnetzagentur (Lagebewertung 16.10.), SMARD, Marktstammdatenregister (Stichtag 31.8.), IWR/BVES als gekennzeichnete Sekundärquellen. SAP und Validierung im Repo.
 
