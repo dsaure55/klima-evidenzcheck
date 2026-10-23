@@ -34,3 +34,16 @@
 4. Freigabe durch Daniel nach Volltextlektüre.
 
 Für neue Kapitel gilt der Stil von Anfang an, der Ablauf bleibt gleich.
+
+## Grafiken (Daniel Saure, 23.10.2026: „grundsätzlich mehr mit Grafiken arbeiten“)
+
+- Jedes Kapitel bekommt mindestens zwei Grafiken, wo die Daten es hergeben. Im Entwurf stehen sie als `[GRAFIK n – …]`-Platzhalter mit Datenquelle.
+- Grafiken zeigen nur vorhandene, geprüfte Ergebnisse oder Quellenzahlen. Keine neue Rechnung, keine neuen Zahlen. Daten kommen aus `Analysen/*/output/`, den Roh-Daten im Repo oder der zitierten Quelle.
+- Jede Grafik hat Titel, Einheit, Datenstand und Quelle. Unsicherheitsintervalle werden gezeigt, wo sie in den Quellen stehen.
+- Gestaltung nach dem Skill `dataviz`. Die Grafiken laufen durch die Faktenprüfung wie der Text (Werte gegen Quelle).
+
+## Sensible Sprache bei Todesfällen (Daniel Saure, 23.10.2026)
+
+- „Todesfälle durch Hitze“ oder „hitzebedingte Sterbefälle“ statt „Hitzetote“, außer in Zitaten und Quellentiteln.
+- Keine Wertungen wie „zu viele“ oder „gekostet“; die Zahl wird genannt und eingeordnet.
+- Ein kurzer Satz erinnert daran, dass hinter den Zahlen Menschen stehen.
