@@ -1,12 +1,12 @@
 # Stilregeln Jahrbuch 2026
 
-**Version:** 0.1 · **Status: Vorschlag, noch nicht bestätigt** · **Datum:** 23.10.2026
+**Version:** 0.2 · **Status: Erzählform bestätigt („wir“, Daniel Saure, 23.10.2026), Regeln im Übrigen Vorschlag** · **Datum:** 23.10.2026
 **Anlass:** Daniel Saure, 23.10.2026: Die Sprache soll natürlicher sein und „wie von mir“ klingen: wissenschaftlich, aber leicht erklärt.
 
 ## Stimme
 
 - Klingt, als würde Daniel jemandem am Tisch erklären, was die Zahlen zeigen: genau, aber ohne Amtsdeutsch.
-- Erzählform: **„wir“**, wie in den veröffentlichten Klima-Kompass-Artikeln. Ob das Buch stattdessen in der Ich-Form klingen soll, ist noch offen (Rückfrage an Daniel).
+- Erzählform: **„wir“**, wie in den veröffentlichten Klima-Kompass-Artikeln (von Daniel Saure am 23.10.2026 bestätigt, keine Ich-Form).
 - Leser: im Baustein „Was heißt das für dich?“ per „du“, sonst ohne direkte Anrede („wer tankt …“, „man“ sparsam).
 
 ## Regeln
