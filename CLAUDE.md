@@ -106,7 +106,7 @@ Daniel Saure), es werden keine LinkedIn-Entwuerfe mehr erstellt. „Evidenzcheck
 | Wissen | Erklaerstueck auf Basis serioeser Quellen | Faktencheck-Datei (Subagent `faktenpruefer`) |
 
 **Regeln**
-- „Eine Analyse zur Zeit“ gilt weiter und nur fuer die Stufe Evidenzcheck. Einordnung/Wissen laufen parallel, starten aber nie eine Analyse.
+- Einordnung/Wissen starten nie eine Analyse. Die frühere Regel „Eine Analyse zur Zeit“ ist seit 23.10.2026 gestrichen (Entscheidung Daniel Saure); mehrere Evidenzchecks dürfen parallel laufen. Sonstige Sperren aus einzelnen SAPs (z. B. Reihenfolge-Sperren im SAP Prognose-Register 2027) bleiben bestehen, weil sie dort vorab festgelegt wurden.
 - Braucht eine Einordnung eine neue Berechnung, wird sie zur Evidenzcheck-Idee im Backlog – nicht nebenbei rechnen.
 - Ablauf: `themenradar` (Skill) → Daniel waehlt → Blog (`blog-artikel`) → Gate → Freigabe Daniel → Substack-Veroeffentlichung durch Daniel → `kommunikation` erzeugt Kanalposts (Skill `distribution`) → Posten nur nach ausdruecklichem OK pro Post.
 - Nichts wird automatisch veroeffentlicht. Geplante Aufgaben schreiben nur in `Redaktion/`.

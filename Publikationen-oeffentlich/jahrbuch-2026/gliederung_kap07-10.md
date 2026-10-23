@@ -61,7 +61,7 @@
 
 1. **Das Prinzip (ca. 200 Wörter):** Erst festlegen, dann rechnen. Der Statistische Analyseplan (SAP) nennt Frage, Daten, Methode, Sensitivitäten und Grenzen, bevor jemand die Daten ansieht. Vergleich: Studienprotokoll in der klinischen Forschung.
 2. **Der Ablauf in fünf Schritten (ca. 350 Wörter, mit Schaubild):** SAP-Entwurf → Mensch prüft und friert ein (Version, Datum, Freigabevermerk) → Analyse exakt nach SAP in R, Abweichungen als „Post-hoc“ gekennzeichnet → unabhängige Validierung → Mensch gibt frei. Ein Beispiel entlang eines Artikels: „War der Sommer 2026 ‚ganz normal‘?“ (Maßstäbe und Einstufung vorab festgelegt).
-3. **Die drei Stufen (ca. 250 Wörter):** Evidenzcheck (neue Analyse; Gate: Validierungsbericht ohne „kritisch“), Einordnung (aktuelles Thema plus bereits veröffentlichte Ergebnisse, keine neue Inferenz), Wissen (Erklärstück aus seriösen Quellen); die beiden letzten mit Faktencheck als Gate. Warum es nur eine Analyse zur Zeit gibt.
+3. **Die drei Stufen (ca. 250 Wörter):** Evidenzcheck (neue Analyse; Gate: Validierungsbericht ohne „kritisch“), Einordnung (aktuelles Thema plus bereits veröffentlichte Ergebnisse, keine neue Inferenz), Wissen (Erklärstück aus seriösen Quellen); die beiden letzten mit Faktencheck als Gate.
 4. **Wo KI mitarbeitet und wo nicht (ca. 400 Wörter):**
    - Tabelle: Aufgabe – macht KI – macht Mensch. KI: SAP-Entwurf, R-Code, Prüfberichte (getrennte Rollen: Autor, Analyst, Validator, Faktenprüfer), Entwürfe für Texte und Kanäle. Mensch: Einfrieren des Plans, Freigabe, Veröffentlichung, Entscheidung, Posten.
    - Warum getrennte Rollen: Wer rechnet, prüft nicht dasselbe.

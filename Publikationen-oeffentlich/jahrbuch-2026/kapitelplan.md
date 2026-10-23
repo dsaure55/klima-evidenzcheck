@@ -14,7 +14,7 @@
 
 ## 1. Leitidee und Regeln für das Buch
 
-- Das Buch ist ein **Rückblick und eine Ordnungshilfe**, keine neue Analyse. Es darf keine neue Inferenz und keine neuen Berechnungen enthalten. Braucht ein Kapitel eine neue Rechnung, wird sie zur Evidenzcheck-Idee im Backlog (Regel „Eine Analyse zur Zeit“ gilt weiter).
+- Das Buch ist ein **Rückblick und eine Ordnungshilfe**, keine neue Analyse. Es darf keine neue Inferenz und keine neuen Berechnungen enthalten. Braucht ein Kapitel eine neue Rechnung, wird sie zur Evidenzcheck-Idee im Backlog.
 - Zahlen im Buch stammen aus dem **veröffentlichten, validierten Stand** (Substack-Fassung inkl. Korrekturen) oder aus der genannten Primärquelle. Wo Artikel nachträglich korrigiert wurden, gilt die korrigierte Fassung.
 - Jede Kapitelaussage trägt den Verweis auf den Ursprungsartikel (Titel, Datum, Link).
 - Ton und Struktur wie auf Substack: „Kurz gesagt“ zuerst, Quellen offen, Unsicherheit benannt.
