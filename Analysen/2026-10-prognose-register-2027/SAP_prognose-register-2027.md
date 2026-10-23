@@ -9,7 +9,7 @@ bis Ende 2026.
 
 **Format:** Klima Kompass · Evidenzcheck, Unterformat „Prognose-Register“
 (prospektiv). Inhaltsstufe: Evidenzcheck (neue Inferenz).
-**Version:** 0.6
+**Version:** 0.7
 **Status: draft**
 **Datum:** 23.10.2026
 **Autor:in:** Claude (sap-autor-Subagent)
@@ -81,6 +81,16 @@ Ergänzungen, wie im Prognose-Check.
   Teil-Datei gezählt, beginnend bei 1 (0.1, Korrekturregel). Vermerk zu
   Rückfrage 23 in Abschnitt 12 angepasst. Sonst keine Änderungen. Status
   weiter draft. Keine Daten gesichtet, kein Code ausgeführt.
+- **v0.7 draft (23.10.2026):** Kleinfrage „Nummer im Nachtrag“ von Daniel
+  Saure am 23.10.2026 entschieden („Ja, Nachtrag trägt dieselbe Nummer wie
+  die Datei“): Der Nachtrag „Neuregistrierung <n>“ in einer Registerdatei
+  trägt dieselbe Nummer wie die zugehörige Teil-Datei
+  `…_neuregistrierung_<n>.csv`; Lücken in der Nummerierung innerhalb eines
+  Registereintrags sind gewollt (0.1, Korrekturregel). Vermerk zu Rückfrage
+  23 in Abschnitt 12 ergänzt. Wortlaut nachgezogen in Abschnitt 0 („Für v0.3
+  bis v0.7 …“) und in der Einleitung von Abschnitt 12 (Satz zu den drei
+  Kleinfragen). Sonst keine Änderungen. Status weiter draft. Keine Daten
+  gesichtet, kein Code ausgeführt.
 
 ---
 
@@ -102,7 +112,7 @@ Ergänzungen, wie im Prognose-Check.
   der Registereintrag `Prognose-Register/01_gasspeicher-winter-2026-27.md`
   (nur als Formatvorlage; er enthält Vorhersagewerte einer anderen, bereits
   validierten und veröffentlichten Analyse, die mit V1–V4 nichts zu tun
-  haben). Für v0.3 bis v0.5 wurde nichts Zusätzliches gelesen.
+  haben). Für v0.3 bis v0.7 wurde nichts Zusätzliches gelesen.
 - **Transparenz über Vorwissen:** Aus dem validierten Sommer-2026-Check sind
   der Modellfit 1971–2025, die Sensitivität S2 (Fit 1971–2026) und der
   vorläufige DWD-Wert für den Sommer 2026 bekannt. Damit ist die
@@ -295,6 +305,18 @@ Korrekturregel.
   `output/register_2027_V3_neuregistrierung_1.csv`, und unabhängig davon ist
   die erste Neuregistrierung des Teils V1, V2 und V4
   `output/register_2027_V1_V2_V4_neuregistrierung_1.csv`.
+- **Nummer im Nachtrag (entschieden durch Daniel Saure am 23.10.2026):** Der
+  Nachtrag „Neuregistrierung <n>“ in einer Registerdatei trägt **dieselbe
+  Nummer wie die zugehörige Teil-Datei**
+  `output/register_2027_V3_neuregistrierung_<n>.csv` bzw.
+  `output/register_2027_V1_V2_V4_neuregistrierung_<n>.csv`. Innerhalb eines
+  Registereintrags können deshalb Lücken in der Nummerierung entstehen.
+  Beispiel: Die erste Korrektur betrifft nur V1
+  (`output/register_2027_V1_V2_V4_neuregistrierung_1.csv`, Nachtrag
+  „Neuregistrierung 1“ in Eintrag #2), die zweite nur V2
+  (`output/register_2027_V1_V2_V4_neuregistrierung_2.csv`); im Eintrag #3
+  steht dann „Neuregistrierung 2“, ohne einen Nachtrag „Neuregistrierung 1“.
+  Das ist gewollt, weil Datei und Nachtrag so eindeutig zusammengehören.
 - Die Neuregistrierung durchläuft dieselben Schritte 2–4 wie die
   Erstregistrierung (Validierung, ausdrückliche Freigabe durch Daniel Saure,
   Commit).
@@ -1267,6 +1289,9 @@ empfohlen“, mit Präzisierungen zu 14 und 16). Rückfragen 17–19 wurden am
 vorgeschlagen“). Rückfragen 20–21 wurden am 22.10.2026 von Daniel Saure
 beantwortet („20 und 21 wie von dir vorgeschlagen“). Rückfragen 22–23 wurden
 am 23.10.2026 von Daniel Saure beantwortet (22 wie empfohlen, 23 Option a).
+In v0.6 und v0.7 wurden drei Kleinfragen (Seed, Zählung der
+Neuregistrierungen, Nummer im Nachtrag) am 23.10.2026 von Daniel Saure
+entschieden, siehe Vermerk zu Rückfrage 23.
 Die Antworten sind in die genannten Abschnitte eingearbeitet. Rückfrage 3 ist
 teilweise offen. Rückfrage 22 ist insoweit offen, als die Dateiprüfung
 aussteht (Vorbedingung vor dem Einfrieren von V2). Es gibt keine neuen
@@ -1583,7 +1608,16 @@ Rückfragen ist keine Freigabe des SAP; das Einfrieren steht aus.
     beginnend bei 1 (also `output/register_2027_V3_neuregistrierung_1.csv`
     und unabhängig davon
     `output/register_2027_V1_V2_V4_neuregistrierung_1.csv`). Eingearbeitet in
-    0.1, Korrekturregel (v0.6). Bei der Einarbeitung ergänzt (bitte beim
+    0.1, Korrekturregel (v0.6). **Nummer im Nachtrag, entschieden durch
+    Daniel Saure am 23.10.2026** („Ja, Nachtrag trägt dieselbe Nummer wie
+    die Datei“): Der Nachtrag „Neuregistrierung <n>“ in einer Registerdatei
+    trägt dieselbe Nummer wie die zugehörige Teil-Datei
+    `…_neuregistrierung_<n>.csv`. Innerhalb eines Registereintrags können
+    deshalb Lücken in der Nummerierung entstehen (Beispiel: erste Korrektur
+    nur V1, `…V1_V2_V4_neuregistrierung_1.csv`; zweite nur V2, `…_2.csv`; im
+    Eintrag #3 steht dann „Neuregistrierung 2“). Das ist gewollt, weil Datei
+    und Nachtrag so eindeutig zusammengehören. Eingearbeitet in 0.1,
+    Korrekturregel (v0.7). Bei der Einarbeitung ergänzt (bitte beim
     Lesen des Volltexts mitprüfen): alle übrigen Ausgabedateien eines Laufs
     tragen den Teil im Dateinamen, damit kein späterer Lauf eine bereits
     committete Datei überschreibt; jeder Lauf ergänzt `run_log.txt` um einen
