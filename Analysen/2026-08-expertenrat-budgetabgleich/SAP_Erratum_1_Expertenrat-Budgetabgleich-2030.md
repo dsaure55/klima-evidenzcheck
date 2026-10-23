@@ -1,6 +1,6 @@
 # Erratum 1 zum SAP „Expertenrat-Budgetabgleich 2030“ (v1.1)
 
-**Status: ENTWURF, nicht freigegeben.** Freigabe/Datierung durch Daniel Saure ausstehend. Ein Freigabevermerk wird erst eingetragen, nachdem Daniel Saure den vollständigen aktuellen Text gelesen und ausdrücklich bestätigt hat (CLAUDE.md, Verifikationspflicht).
+**Status: FREIGEGEBEN durch Daniel Saure am 23.10.2026** (siehe Abschnitt 7). Entwurf und Freigabe: Commit-Stand 0234224.
 **Entwurf vom:** 23.10.2026 (Claude, Top-Level-Session)
 **Bezug:** `SAP_Expertenrat-Budgetabgleich-2030.md`, Version 1.1 (eingefroren 29.08.2026, Commit `d9215cb`). **Der SAP-Text wird durch dieses Erratum nicht verändert.**
 **Anlass:** Validierungsbericht (`Validierungsbericht_expertenrat-budgetabgleich.md`), Befunde W1, W2, W5 und Rückfragen RF-1 bis RF-7 im Abweichungsprotokoll; Empfehlung des Validators (Nachtrag 1), die Punkte in einer eigenen, datierten Datei festzuhalten.
@@ -75,7 +75,7 @@ Die Antworten zu 6a und 6b liegen seit 23.10.2026 vor (Chat). Sie ersetzen nicht
 
 ## 7. Freigabe
 
-**Freigegeben durch:** [ausstehend]
-**Datum:** [ausstehend]
-**Wortlaut der Freigabe:** [ausstehend]
+**Freigegeben durch:** Daniel Saure
+**Datum:** 23.10.2026
+**Wortlaut der Freigabe:** „Erratum freigegeben“ (Chat, 23.10.2026), nachdem Daniel Saure zuvor geschrieben hatte: „Ich lese das Erratum jetzt vollständig und melde mich mit Freigabe oder Änderungen.“ Die Antworten zu 6a und 6b hatte er im selben Zug gegeben (Abschnitt 5).
 Erst nach vollständiger Lektüre dieser Datei durch Daniel Saure auszufüllen (die Antworten zu 6a und 6b liegen vor, siehe Abschnitt 5).
