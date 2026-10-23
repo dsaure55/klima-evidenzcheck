@@ -238,3 +238,12 @@ Hinweis: `.gitignore` schließt nur `Publikationen/` aus, `Publikationen-oeffent
 ## 10. Nachtrag 23.10.2026: Ländervergleich ausgeschlossen
 
 **Entscheidung Daniel Saure, 23.10.2026:** Der THG-/CO₂-Ländervergleich Saarland/Bayern/Berlin kommt **auf keinen Fall** ins Jahrbuch („wir lassen auf jeden Fall diesen Ländervergleich … weg“). Er scheidet damit auch als Auffüller für Kapitel 4 (Entscheidung E3) aus. Verbleibende Optionen für Kapitel 4: Einordnung zum Klimaziel 2026, ein anderer bis 8.11. veröffentlichter Artikel, oder Zusammenlegung mit Kapitel 5 zu „Deutschland und das Klima“.
+
+## 11. Nachtrag 23.10.2026: Kapitel 4 neu aufgestellt
+
+**Entscheidung Daniel Saure, 23.10.2026 („Ja, so“):** Kern von Kapitel 4 („Schafft Deutschland sein Klimaziel?“) werden zwei Evidenzchecks, **Deadline für validierte Ergebnisse: 13.11.2026**:
+- **A1 Prognose-Check Projektionsberichte** (SAP v1.1 final; läuft in einer eigenen Session).
+- **A2 Expertenrat-Budgetabgleich 2030** (SAP v1.1 final; Analyse am 23.10. dem analyst übergeben).
+
+Dazu der bereits veröffentlichte THG-Trend 2040 und optional A3 (Klimaziel 2026 als Einordnung). E3 (Auffüllen oder Zusammenlegen) ist damit erledigt; eine Zusammenlegung mit Kapitel 5 ist nicht mehr vorgesehen. Plan B bei verfehlter Deadline: Kapitel 4 mit dem, was validiert und freigegeben vorliegt; fehlende Analysen werden als „folgt“ angekündigt. Kein Ergebnis ohne Validierungsbericht ohne „kritisch“ und Freigabe.
+**Ergänzung R1:** Das Vorwort wird um den Abschnitt „Wer wir sind“ erweitert (siehe `gliederung_rahmen.md`).
