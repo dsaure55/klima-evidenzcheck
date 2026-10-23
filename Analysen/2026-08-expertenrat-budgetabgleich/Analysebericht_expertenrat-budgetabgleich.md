@@ -1,9 +1,9 @@
 # Analysebericht: Expertenrat-Budgetabgleich 2021-2030 und H1-2026
 
-**Fassung 2 (nach Validierung), 23.10.2026.** Fassung 1 liegt im Git-Verlauf (Commit 78250e3) und ist durch diese Fassung ersetzt; sie enthielt einen Rechenfehler in den ARIMA-Intervallen (Abschnitt "Aenderungen nach Validierung").
+**Fassung 3 (nach Nachpruefung 1 der Validierung), 23.10.2026.** Fassung 1 (Commit 78250e3) enthielt einen Rechenfehler in den ARIMA-Intervallen (behoben in Fassung 2); Fassung 3 behebt vier geringe Befunde der Nachpruefung (N2.1-N2.4: Beschreibung des POST-HOC-Prognoseintervalls, Seed-Beschriftung, Grafikreste, Zusatzkontrollen). Kernzahlen sind gegenueber Fassung 2 unveraendert (Abschnitt "Aenderungen nach Validierung", Fassung 3).
 **SAP:** `SAP_Expertenrat-Budgetabgleich-2030.md`, Version 1.1 (Header: final, eingefroren 29.08.2026, Commit d9215cb). Die Bestaetigung durch Daniel Saure, dass v1.1 als eingefroren gilt, ist in `SAP_Bestaetigung_Daniel_Saure_2026-10-23.md` dokumentiert. Einschraenkung laut dieser Datei: Die im Chat zitierte Nachricht ist nach 300 Zeichen abgeschnitten, und eine ausdrueckliche Antwort zu den offenen Punkten 6a/6b liegt nicht vor; die Textwidersprueche im SAP (Abschnitt 0 "draft", Offene Punkte 6) bleiben bestehen. Der SAP wurde nicht veraendert.
 **Skript:** `expertenrat-budgetabgleich.R` (R 4.6.1), fehlerfrei durchgelaufen (Exit-Code 0), Log `run_log.txt`, `output/sessionInfo.txt`.
-**Status:** Analyst-Ausgabe, NICHT validiert, keine Freigabe, keine Veroeffentlichung.
+**Status:** Analyst-Ausgabe; Nachpruefung 1 der Validierung liegt vor (Fassung 2), Fassung 3 ist noch nicht erneut geprueft; keine Freigabe, keine Veroeffentlichung.
 **Abweichungen / Rueckfragen / Post-hoc:** `Abweichungsprotokoll_expertenrat-budgetabgleich.md`.
 
 Rundung wie im SAP (11): eine Nachkommastelle fuer Mt und Prozentpunkte; Ausnahmen sind gekennzeichnet (Estimand 1: drei Stellen in Klammern wegen der Toleranz 0,05 pp; Bootstrap-Grenzen in ganzen Mt wegen Monte-Carlo-Fehler).
@@ -149,11 +149,24 @@ In allen drei Fenstern waehlt `auto.arima` ein Random-Walk-Modell (0,1,0), in A 
 
 Der Monte-Carlo-Wert liegt 0,8 % ueber dem analytischen (Monte-Carlo-Fehler); beide Gegenproben bestehen. Die Normalapproximation beruecksichtigt die Unsicherheit des Drift-Parameters nicht (wie im SAP).
 
+**Hinweis zum identischen Verhaeltnis (1,008):** In den sechs Anpassungen ist das Verhaeltnis Monte-Carlo/analytisch identisch, weil dieselben Zufallszahlen (Seed 20261023) verwendet werden und nur mit unterschiedlichem sigma skaliert werden. Die Hauptkontrolle ist deshalb nicht sechs unabhaengige Pruefungen. Ergaenzend (Fassung 3, `output/arima_kontrollen_zusatz.csv`) wurden simulierte Reihen mit bekannten anderen Modellen mit je eigenem Seed und 20000 Monte-Carlo-Pfaden getestet; zusaetzlich wurden die psi-Gewichte gegen geschlossene Formeln geprueft (ARIMA(1,1,0): psi_k = (1 - phi^(k+1))/(1 - phi); ARIMA(0,1,1): psi_k = 1 + theta fuer k >= 1):
+
+| Modell (simuliert) | sd Summe analytisch | sd Summe Monte-Carlo | Verhaeltnis | max. Abw. psi zur Formel |
+|---|---|---|---|---|
+| ARIMA(1,1,0), phi = 0,6 | 121,72 | 121,14 | 0,995 | 4e-16 |
+| ARIMA(1,1,0), phi = -0,5 | 60,36 | 59,67 | 0,988 | 2e-16 |
+| ARIMA(0,1,1), theta = 0,5 | 92,50 | 92,57 | 1,001 | 0 |
+| ARIMA(0,1,1), theta = -0,4 | 40,85 | 40,97 | 1,003 | 0 |
+| ARIMA(0,1,0) | 61,20 | 60,83 | 0,994 | (RW-Formel) |
+
+Alle Abweichungen liegen innerhalb von 1,2 % (Monte-Carlo-Fehler; Toleranz im Skript 3 %), die Diagonale stimmt mit `forecast()` bis auf 1e-14 ueberein. Die Kovarianzkonstruktion ist damit auch fuer AR- und MA-Terme verifiziert, nicht nur fuer den Random Walk; im Hauptlauf kommen allerdings nur (0,1,0)-Modelle vor.
+
 ### 2.4 Hinweise zu Intervallbreiten (POST-HOC, G2/G3)
 
 - **Bootstrap (Blocklaenge 2, Seed 20260827, B = 2000):** Monte-Carlo-Fehler der Perzentilgrenzen betraegt einige Mt (Wiederholung mit anderen Seeds, B = 10000: Fenster A 431-433 / 736-741, Fenster B -158 bis -156 / 198-201). Blocklaenge 4 (POST-HOC): Fenster A 426-781 (B = 2000) bzw. 427-776 (B = 10000) statt 429-737; Fenster B -110 bis 147 bzw. -118 bis 157; Fenster C -6 bis 412. Laengere Bloecke erweitern also die Obergrenze in A und verengen die Intervalle in B/C (wenige Startpunkte); der Block-Bootstrap ist bei B/C wenig aussagekraeftig. `output/posthoc_bootstrap_sensitivitaet.csv`.
+  **Zur Seed-Beschriftung (Fassung 3, N2.2):** Der Hauptlauf setzt den Seed 20260827 nur einmal und verbraucht den Zufallsstrom der Reihe nach (primaer Fenster A, dann B, dann C, danach der Anhang). Jede Zeile der Sensitivitaetstabelle startet dagegen ihren Strom neu (Spalte `Seed_Neustart`). Nur fuer Fenster A (erster Zug im Strom) stimmt die Zeile "Blocklaenge 2, B = 2000, Seed 20260827" mit dem Hauptlauf ueberein (429 - 737). Fuer B weicht sie ab (Sensitivitaetszeile -153 bis 199 gegenueber Hauptlauf -159 bis 201); bei C stimmen beide innerhalb der Rundung ueberein (-116 bis 502), aber nur zufaellig. Die Abweichung ist reiner Monte-Carlo-Fehler, kein Rechenfehler.
 - **HAC in Fenster A:** Der Standardfehler der 5-Jahres-Summe betraegt bei OLS 63,2 Mt, bei Newey-West mit der sandwich-Voreinstellung (Prewhitening an) 268,3 Mt, ohne Prewhitening 134,9 Mt. Die Breite des analytischen A-Intervalls (Faktor ca. 4 gegenueber OLS) haengt also stark von den Voreinstellungen ab; die SAP-Vorgabe `sandwich::NeweyWest` ist eingehalten. `output/posthoc_hac_vergleich.csv`.
-- **POST-HOC Prognoseintervall der Summe fuer OLS (unabhaengige Fehler, Parametervarianz + 5 sigma^2)**, Overshoot: A 17,1 - 1151,3 (Annahme unabhaengiger Fehler verletzt, DW signifikant: zu optimistisch), B -234,4 - 284,4, C -459,6 - 737,1 (n = 6, deskriptiv). Nicht im SAP, nur zur Einordnung der Intervallart; `output/posthoc_prognoseintervall_ols.csv`.
+- **POST-HOC, deskriptiv: Prognoseintervall der Summe fuer OLS (Fassung 3 praezisiert, N2.1).** Berechnet wird: Varianz = Parametervarianz der 5-Jahres-Summe + 5 x sigma^2 (OLS-Restvarianz; Annahme **unabhaengiger** kuenftiger Restfehler), t-Quantil mit n-2 Freiheitsgraden. Die Parametervarianz ist dieselbe wie im analytischen Parameterintervall von 2.2: in Fenster A Newey-West (HAC), in B und C klassisch OLS. Overshoot-Intervalle: **Fenster B -234,4 bis 284,4 und Fenster C -459,6 bis 737,1** (beide Varianten identisch; C n = 6). **Fenster A:** 17,1 bis 1151,3 mit HAC-Parametervarianz (SE der Summe 268,3 Mt) plus iid-Restvarianz; diese Mischung ist inkonsistent, denn die iid-Annahme ist in A verletzt (DW signifikant). Mit klassischer OLS-Parametervarianz (SE 63,2 Mt) ergibt sich 382,3 bis 786,1; dieses Intervall ist bei der vorhandenen Autokorrelation zu optimistisch. Keine der beiden A-Varianten ist ein verlaesslicher Prognosebereich; sie zeigen nur, dass das Ergebnis von der Varianzannahme abhaengt. Nicht im SAP, nicht in Kernaussage oder Klassifikation; `output/posthoc_prognoseintervall_ols.csv` (beide Varianten, Spalte `Parametervarianz_Quelle`).
 
 ### 2.5 Einordnung als dritte, methodisch transparente Stimme (SAP 8c)
 
@@ -198,7 +211,17 @@ Grundlage: `Validierungsbericht_expertenrat-budgetabgleich.md` (Commit-Stand 782
 | **G4** Estimand 1 | erledigt | Rundungsspanne der H1-Rate (-1,95 % bis -2,24 %) und beobachtete Mittelraten als Fussnote; Agora-Zuordnung zum Preiseffekt als Quellenzitat. |
 | **G5** UBA-Suchprotokoll | teilweise | UBA- und AGEB-Seiten durchsucht und protokolliert (keine Halbjahres-Gesamt-THG-Reihe); keine Tiefensuche in PDF-Anhaengen. |
 | **G6** Darstellung/Dateien | erledigt | Klammer-Klassifikation bei C entfernt; SHA256SUMS festgeschrieben und vom Skript nur verglichen (Format `sha256sum -c`-kompatibel). Einmaliges Neuanlegen wegen neuer Rohdateien dokumentiert. |
-| Nachpruefung | offen | Fokussierte Nachpruefung durch den validator als eigene Datei steht aus (CLAUDE.md). |
+| Nachpruefung | Nachpruefung 1 liegt vor (Nachtrag 1 im Validierungsbericht); Fassung 3 behebt N2.1-N2.4 | Eine fokussierte Pruefung der Fassung 3 durch den validator steht aus (CLAUDE.md). |
+
+### Fassung 3 (Behebung der Befunde N2.1-N2.4 aus Nachtrag 1)
+
+| Befund | Status | Aenderung |
+|---|---|---|
+| **N2.1** Beschreibung POST-HOC-Prognoseintervall | erledigt | Beschreibung an die tatsaechliche Rechnung angepasst (Parametervarianz aus dem analytischen Verfahren, in A HAC, plus 5 sigma^2 OLS-Restvarianz, Annahme unabhaengiger Restfehler). Rechnung selbst unveraendert. Zusaetzlich beide Varianten fuer A ausgewiesen (HAC: 17,1-1151,3; OLS-Parametervarianz: 382,3-786,1; neue Spalten in der CSV). Als POST-HOC und deskriptiv gekennzeichnet; Mischung in A als inkonsistent benannt. |
+| **N2.2** Seed-Beschriftung | erledigt | Spalte umbenannt in `Seed_Neustart`, neue Spalte `Hinweis`; Erlaeuterung in 2.4 (Hauptlauf verbraucht einen Strom der Reihe nach, nur Fenster A stimmt ueberein). Keine Zahl geaendert. |
+| **N2.3** Grafiken | erledigt | `estimand2_overshoot.png`: Bundesregierung (-4,5) als Marker mit Beschriftung ueber der obersten Zeile (Skala unveraendert), rechter Rand mit Abstand, die x-Skala ist nicht mehr abgeschnitten. `estimand2_trend_bis_2030.png`: Annotation mit Pfeil am Niveausprung. `estimand1_h1_vs_cagr.png`: Dezimalkomma in Balkenwerten und Achse. `anhang_625_overshoot.png` entsprechend. Alle Grafiken mit dem Read-Tool visuell geprueft. Dass -4,5 auf der Skala von rund 1500 Mt neben der Nulllinie liegt, bleibt eine Skalengrenze und ist ausdruecklich beschriftet. |
+| **N2.4** Kontrollgrenzen | erledigt | Zusatzkontrollen fuer simulierte ARIMA(1,1,0)- und (0,1,1)-Reihen (je zwei Parametrisierungen) plus (0,1,0): Monte-Carlo mit eigenen Seeds und 20000 Pfaden, geschlossene psi-Formeln, Diagonale gegen `forecast()` (2.3). Hinweis zum identischen Verhaeltnis 1,008 (gleicher Seed) aufgenommen. Die Zusatzkontrollen laufen mit gesichertem und wiederhergestelltem Zufallsstrom, daher bleiben die Hauptergebnisse identisch. |
+| Zahlen | unveraendert | Keine Kernzahl hat sich geaendert (Punktwerte, Overshoot-Intervalle, Diagnostik, ARIMA-Intervalle gleich); neu sind nur die zusaetzlichen Spalten/Dateien (`Parametervarianz_Quelle`, `_OLSparam`, `Seed_Neustart`, `Hinweis`, `arima_kontrollen_zusatz.csv`). Pruefsummenvergleich der Rohdaten: alle 24 Dateien unveraendert. |
 
 ---
 
@@ -219,6 +242,8 @@ Grundlage: `Validierungsbericht_expertenrat-budgetabgleich.md` (Commit-Stand 782
 | C (deskriptiv) | ARIMA(0,1,0) | 382,2 | -218,8 - 983,3 | - |
 
 Dateien: `output/anhang_625_tabelle.csv`, `output/anhang_625_overshoot.png`, `output/anhang_625_diagnostik_*.png`. Diese Zeilen gehen in keine Haeufigkeitszaehlung ein. Veroeffentlichungen duerfen die Aussage "FAZ/Agora nennen 625 Mt als 2025-Wert" nicht uebernehmen.
+
+**Verwendungsvermerk (Daniel Saure, 23.10.2026):** Anhang A bleibt als Audit-Trail im Repo, geht aber NICHT in Blog, Kapitel oder Kanaltexte.
 
 ---
 

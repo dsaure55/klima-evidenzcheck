@@ -71,3 +71,19 @@ Grundlage: `Validierungsbericht_expertenrat-budgetabgleich.md`. Fassung 1 (Commi
 3. Mensch: Ausdrueckliche Antwort zu den SAP-Punkten 6a/6b steht aus (siehe `SAP_Bestaetigung_Daniel_Saure_2026-10-23.md`).
 4. Herkunft der 625 (angepasste Jahresmenge?) ist nicht durch ein UBA-Dokument belegt; Quelle waere die UBA-Berechnung der Emissionsdaten 2025 (UBA 2026g, Tabelle 3).
 5. RF-3: Ob das POST-HOC-Prognoseintervall fuer OLS (bzw. eine GLS/AR(1)-Variante fuer Fenster A) ein SAP-Amendment braucht, entscheidet der Mensch.
+
+---
+
+# Nachtrag Fassung 3 (Behebung N2.1-N2.4), 23.10.2026
+
+Grundlage: Nachtrag 1 des Validierungsberichts. Keine Kernzahl hat sich geaendert (Punktwerte, Overshoot-Intervalle, ARIMA-Intervalle, Diagnostik, Bootstrap-Hauptlaeufe identisch zu Fassung 2; Rohdaten-Pruefsummen alle unveraendert).
+
+| Befund | Aenderung |
+|---|---|
+| N2.1 | Die Beschreibung des POST-HOC-Prognoseintervalls (RF-3 / Nachtrag Fassung 2 und Bericht 2.4) war unvollstaendig: "unabhaengige Fehler, Parametervarianz + 5 sigma^2" verschwieg, dass die Parametervarianz in Fenster A die Newey-West-Varianz (SE 268,3 Mt) ist. Die Rechnung selbst widersprach der Beschreibung nicht und blieb unveraendert; die Beschreibung wurde korrigiert (HAC-Parametervarianz in A, OLS in B/C, plus 5 sigma^2 OLS-Restvarianz, unabhaengige Restfehler angenommen). Zusaetzlich wird fuer A die Variante mit klassischer OLS-Parametervarianz ausgewiesen (382,3-786,1; neue CSV-Spalten `_OLSparam`, `Parametervarianz_Quelle`). Der Vermerk "zu optimistisch" gilt nur fuer die OLS-Variante; die HAC-Mischung in A ist inkonsistent (iid-Annahme verletzt). Beide Intervalle sind POST-HOC, deskriptiv und gehen nicht in Klassifikation oder Kernaussage ein. |
+| N2.2 | `posthoc_bootstrap_sensitivitaet.csv`: Spalte `Seed` in `Seed_Neustart` umbenannt, Spalte `Hinweis` ergaenzt. Der Hauptlauf setzt den Seed einmal und verbraucht den Strom der Reihe nach (primaer A, B, C, Anhang); die Sensitivitaetszeilen starten den Strom neu. Nur Fenster A stimmt mit dem Hauptlauf ueberein; Abweichungen bei B (-153/199 vs. -159/201) sind Monte-Carlo-Fehler. |
+| N2.3 | Grafiken ueberarbeitet und visuell geprueft: Bundesregierungs-Marker mit Beschriftung ueber der obersten Zeile (Skala nicht veraendert), Randabstand rechts, Annotation mit Pfeil am Niveausprung, Dezimalkomma in der Estimand-1-Grafik; Anhangsgrafik entsprechend. |
+| N2.4 | Zusatzkontrollen fuer ARIMA(1,1,0), (0,1,1) und (0,1,0) an simulierten Reihen (eigene Seeds, 20000 MC-Pfade, geschlossene psi-Formeln); alle bestanden (MC-Abweichung <= 1,2 %, psi und Diagonale exakt). Hinweis zum identischen MC/analytisch-Verhaeltnis (gleicher Seed) im Bericht. Technisch: Der Zufallsstrom wird um die Zusatzkontrollen gesichert und wiederhergestellt; ein erster Entwurf ohne Sicherung hatte die Bootstrap-Hauptergebnisse veraendert (A 432 statt 429) und wurde vor dem Endlauf korrigiert, Endlauf identisch zu Fassung 2. |
+| Anhang A | Verwendungsvermerk im Analysebericht: bleibt als Audit-Trail im Repo, geht nicht in Blog, Kapitel oder Kanaltexte (Entscheidung Daniel Saure). |
+
+Offen: Fokussierte Pruefung der Fassung 3 durch den validator als eigene Datei; Entscheidungen zu SAP-Erratum und Antwort 6a/6b liegen beim Menschen (siehe Nachtrag Fassung 2).

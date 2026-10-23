@@ -383,7 +383,8 @@ g1 <- data.frame(Groesse = c("H1 2026 ggue. H1 2025\n(Agora, vorlaeufig)", "Fens
 g1$Groesse <- factor(g1$Groesse, levels = g1$Groesse)
 p1 <- ggplot(g1, aes(Groesse, Wert, fill = Groesse)) +
   geom_col(width = 0.55, show.legend = FALSE) +
-  geom_text(aes(y = Wert / 2, label = sprintf("%.1f %%", Wert)), color = "white", size = 5, fontface = "bold") +
+  geom_text(aes(y = Wert / 2, label = gsub("\\.", ",", sprintf("%.1f %%", Wert))), color = "white", size = 5, fontface = "bold") +
+  scale_y_continuous(labels = function(v) gsub("\\.", ",", format(v))) +
   scale_fill_manual(values = c("#e34948", "#2a78d6", "#1baf7a")) +
   labs(title = "Estimand 1: Jaehrliche Veraenderungsrate",
        subtitle = paste0("H1 2026 ggue. H1 2025 (Agora, vorlaeufig) und mittlere Jahresrate (CAGR)\n",
@@ -504,6 +505,47 @@ mit_eigenem_seed <- function(seed, expr) {
   set.seed(seed); force(expr)
 }
 
+# ---- Fassung 3 (N2.4): Zusaetzliche, unabhaengige Kontrollen der ARIMA-Kovarianz fuer ANDERE Modelle ----
+# Hintergrund: Kontrolle 2 (Random-Walk-Formel) deckt nur ARIMA(0,1,0) ab; Kontrolle 3 (Monte-Carlo) hat 5 % Toleranz und im Hauptlauf
+# denselben Seed (20261023) in allen Anpassungen, daher ist das Verhaeltnis MC/analytisch dort in allen Zeilen identisch (1,008):
+# dieselben Zufallszahlen werden nur mit unterschiedlichem sigma skaliert. Hier: simulierte Reihen mit bekannten Modellen,
+# andere Seeds, geschlossene psi-Formeln als Referenz (unabhaengig von ARMAtoMA/polymul) und MC mit 20000 Pfaden.
+teste_arima_kovarianz <- function(order, phi = NULL, theta = NULL, seed, n = 60, h = 5, n_mc = 20000) {
+  set.seed(seed)
+  y <- cumsum(arima.sim(n = n, model = list(ar = phi, ma = theta), sd = 10))   # d = 1 durch Aufsummieren
+  fit <- forecast::Arima(ts(y), order = order, include.drift = FALSE)
+  A <- arima_sigma(fit, h)
+  sd_a <- sqrt(sum(A$Sigma))
+  fc <- forecast::forecast(fit, h = h, level = 95)
+  diag_abw <- max(abs(sqrt(diag(A$Sigma)) - (as.numeric(fc$upper[, 1]) - as.numeric(fc$mean)) / qnorm(0.975)))
+  # geschlossene psi-Formeln: (1,1,0): psi_k = (1 - phi^(k+1)) / (1 - phi); (0,1,1): psi_0 = 1, psi_k = 1 + theta (k >= 1)
+  psi_ref <- if (order[1] == 1 && order[3] == 0) { ph <- unname(coef(fit)["ar1"]); (1 - ph^(1:h)) / (1 - ph) }
+             else if (order[1] == 0 && order[3] == 1) { th <- unname(coef(fit)["ma1"]); c(1, rep(1 + th, h - 1)) }
+             else NA
+  psi_abw <- if (all(is.na(psi_ref))) NA_real_ else max(abs(A$psi - psi_ref))
+  set.seed(seed + 1000)
+  mc <- replicate(n_mc, sum(simulate(fit, nsim = h, future = TRUE)))
+  data.frame(Modell = paste0("ARIMA(", paste(order, collapse = ","), ")"), Seed = seed, sd_Summe_analytisch = sd_a, sd_Summe_MonteCarlo = sd(mc),
+             Verhaeltnis_MC_analytisch = sd(mc) / sd_a, max_Abw_Diagonale = diag_abw, max_Abw_psi_geschlossen = psi_abw)
+}
+seed_bak_z <- get(".Random.seed", envir = .GlobalEnv)   # Zufallsstrom des Hauptlaufs sichern (Hauptergebnisse bleiben identisch)
+zusatz <- do.call(rbind, list(
+  teste_arima_kovarianz(c(1, 1, 0), phi = 0.6, seed = 101),
+  teste_arima_kovarianz(c(1, 1, 0), phi = -0.5, seed = 102),
+  teste_arima_kovarianz(c(0, 1, 1), theta = 0.5, seed = 103),
+  teste_arima_kovarianz(c(0, 1, 1), theta = -0.4, seed = 104),
+  teste_arima_kovarianz(c(0, 1, 0), seed = 105)))
+assign(".Random.seed", seed_bak_z, envir = .GlobalEnv)
+cat("\n--- Zusatzkontrollen ARIMA-Kovarianz (N2.4): simulierte Reihen, andere Seeds, 20000 MC-Pfade, geschlossene psi-Formeln ---\n")
+print(transform(zusatz, sd_Summe_analytisch = round(sd_Summe_analytisch, 2), sd_Summe_MonteCarlo = round(sd_Summe_MonteCarlo, 2),
+                Verhaeltnis_MC_analytisch = round(Verhaeltnis_MC_analytisch, 3), max_Abw_Diagonale = signif(max_Abw_Diagonale, 2),
+                max_Abw_psi_geschlossen = signif(max_Abw_psi_geschlossen, 2)), row.names = FALSE)
+if (any(abs(zusatz$Verhaeltnis_MC_analytisch - 1) > 0.03) || any(zusatz$max_Abw_Diagonale > 1e-8) || any(zusatz$max_Abw_psi_geschlossen > 1e-8, na.rm = TRUE)) {
+  stop_analyse("Zusatzkontrolle der ARIMA-Kovarianz fehlgeschlagen (siehe Log).")
+}
+cat("Zusatzkontrollen bestanden (MC-Abweichung <= 3 %, Diagonale und psi-Gewichte exakt).\n")
+write.csv(zusatz, file.path(OUT, "arima_kontrollen_zusatz.csv"), row.names = FALSE)
+
 for (vn in names(VARIANTEN)) {
   V <- VARIANTEN[[vn]]
   dv <- df; dv$emissionen[dv$jahr == 2025] <- V$wert2025
@@ -596,19 +638,29 @@ for (vn in names(VARIANTEN)) {
     if (!is.null(ar)) e2_rows[[length(e2_rows) + 1]] <- zeile("ARIMA (auto.arima, h=5)", TF, ar$summe, ar$lo - ar$summe, ar$hi - ar$summe, ar$modell)
 
     if (vn == "primaer") {
-      # ---- POST-HOC (Validierung W5): Prognoseintervall der tatsaechlichen Summe fuer OLS, unabhaengige Fehler ----
+      # ---- POST-HOC (Validierung W5, praezisiert in Fassung 3 / N2.1): Prognoseintervall der tatsaechlichen Summe, OLS ----
+      # Berechnung exakt: Var = Parametervarianz der Summe + 5 * sigma^2_OLS (Restvarianz, Annahme UNABHAENGIGER kuenftiger Fehler),
+      # t-Quantil df = n-2. Parametervarianz = DIESELBE wie im analytischen Parameterintervall (Fenster A: Newey-West/HAC, B und C: klassisch OLS).
+      # Fuer Fenster A ist die Mischung HAC-Parametervarianz + iid-Restvarianz inkonsistent (DW signifikant); deshalb wird zusaetzlich die
+      # Variante mit klassischer OLS-Parametervarianz ausgewiesen (beide deskriptiv, nicht fuer Klassifikation/Kernaussage).
       s2_ols <- summary(modell)$sigma^2
       var_p <- var_s + length(PROJ_JAHRE) * s2_ols
+      var_p_ols <- as.numeric(t(xs) %*% vcov(modell) %*% xs) + length(PROJ_JAHRE) * s2_ols
       ph_rows[[length(ph_rows) + 1]] <- data.frame(Fenster = fn, Kum_Gesamt = ist + summe_ols, Overshoot = ist + summe_ols - budget,
+        Parametervarianz_Quelle = if (hac_noetig) "Newey-West (HAC)" else "klassisch OLS",
         Overshoot_unten = ist + summe_ols - budget - tq * sqrt(var_p), Overshoot_oben = ist + summe_ols - budget + tq * sqrt(var_p),
-        Anmerkung = if (fn == "A") "Annahme unabhaengiger Fehler hier verletzt (DW signifikant): Intervall zu optimistisch" else if (fn == "C") "n = 6, rein deskriptiv" else "unabhaengige Fehler plausibel, aber DW-Teststaerke bei n = 11 gering")
+        Overshoot_unten_OLSparam = ist + summe_ols - budget - tq * sqrt(var_p_ols), Overshoot_oben_OLSparam = ist + summe_ols - budget + tq * sqrt(var_p_ols),
+        Anmerkung = if (fn == "A") "Restfehler-Annahme (unabhaengig) hier verletzt (DW signifikant); Spalten _unten/_oben mit HAC-Parametervarianz + iid-Restvarianz (inkonsistent gemischt), _OLSparam mit klassischer OLS-Parametervarianz (zu optimistisch bei Autokorrelation)" else if (fn == "C") "n = 6, rein deskriptiv; beide Varianten identisch" else "unabhaengige Fehler plausibel, aber DW-Teststaerke bei n = 11 gering; beide Varianten identisch")
       # ---- POST-HOC (Validierung G2): Bootstrap-Sensitivitaet Blocklaenge / B (Seed fest, globaler RNG unberuehrt) ----
       for (cfg in list(list(bl = 2, R = 2000, seed = 20260827), list(bl = 2, R = 10000, seed = 11), list(bl = 2, R = 10000, seed = 12),
                        list(bl = 4, R = 2000, seed = 20260827), list(bl = 4, R = 10000, seed = 11))) {
         bsx <- mit_eigenem_seed(cfg$seed, mbb_summen(modell, sub, R = cfg$R, block_len = cfg$bl))
         qx <- unname(quantile(bsx, c(0.025, 0.975)))
-        boot_rows[[length(boot_rows) + 1]] <- data.frame(Fenster = fn, Blocklaenge = cfg$bl, B = cfg$R, Seed = cfg$seed,
-          Overshoot_unten = ist + qx[1] - budget, Overshoot_oben = ist + qx[2] - budget)
+        boot_rows[[length(boot_rows) + 1]] <- data.frame(Fenster = fn, Blocklaenge = cfg$bl, B = cfg$R, Seed_Neustart = cfg$seed,
+          Overshoot_unten = ist + qx[1] - budget, Overshoot_oben = ist + qx[2] - budget,
+          Hinweis = if (cfg$bl == 2 && cfg$R == 2000 && cfg$seed == 20260827)
+            "Zeile startet den Zufallsstrom NEU mit Seed 20260827. Der Hauptlauf setzt den Seed nur einmal am Beginn von Estimand 2 und verbraucht den Strom der Reihe nach (primaer A, B, C, dann Anhang). Fenster A = erster Zug = identisch zum Hauptlauf; B und C weichen davon ab (Monte-Carlo-Fehler)."
+          else "Strom mit eigenem Seed neu gestartet (Sensitivitaet)")
       }
       # ---- POST-HOC (Validierung G3): Abhaengigkeit der HAC-Breite von den sandwich-Voreinstellungen ----
       if (inferenz) {
@@ -668,11 +720,12 @@ cat(sprintf("Intervalle (Fenster A/B), die den Korridor 60-100 Mt ueberdecken: %
 cat(sprintf("Alle 9 Intervalle inkl. C ueberdecken den Korridor: %d von 9\n", sum(e2$Intervall_deckt_Korridor)))
 print(e2[, c("Fenster", "Methode", "Intervall_deckt_Korridor", "Intervall_deckt_Null")], row.names = FALSE)
 
-cat("\n--- POST-HOC (W5): Prognoseintervall der tatsaechlichen Summe fuer OLS (unabhaengige Fehler: Var = Parametervarianz + 5 sigma^2), Overshoot ---\n")
-print(transform(ph_tab, Kum_Gesamt = round(Kum_Gesamt, 1), Overshoot = round(Overshoot, 1), Overshoot_unten = round(Overshoot_unten, 1), Overshoot_oben = round(Overshoot_oben, 1)), row.names = FALSE)
+cat("\n--- POST-HOC (W5): Prognoseintervall der tatsaechlichen Summe fuer OLS (Var = Parametervarianz [A: HAC, B/C: OLS] + 5 sigma^2_OLS, Annahme unabhaengiger Restfehler; deskriptiv), Overshoot ---\n")
+print(transform(ph_tab[, setdiff(names(ph_tab), "Anmerkung")], Kum_Gesamt = round(Kum_Gesamt, 1), Overshoot = round(Overshoot, 1), Overshoot_unten = round(Overshoot_unten, 1), Overshoot_oben = round(Overshoot_oben, 1), Overshoot_unten_OLSparam = round(Overshoot_unten_OLSparam, 1), Overshoot_oben_OLSparam = round(Overshoot_oben_OLSparam, 1)), row.names = FALSE)
 write.csv(ph_tab, file.path(OUT, "posthoc_prognoseintervall_ols.csv"), row.names = FALSE)
 cat("\n--- POST-HOC (G2): Bootstrap-Sensitivitaet (Overshoot-Parameterintervall), Blocklaenge / B / Seed ---\n")
-print(transform(boot_tab, Overshoot_unten = round(Overshoot_unten, 1), Overshoot_oben = round(Overshoot_oben, 1)), row.names = FALSE)
+print(transform(boot_tab[, setdiff(names(boot_tab), "Hinweis")], Overshoot_unten = round(Overshoot_unten, 1), Overshoot_oben = round(Overshoot_oben, 1)), row.names = FALSE)
+cat("Hinweis Seed: Spalte Seed_Neustart = Strom je Zeile neu gestartet. Der Hauptlauf verbraucht EINEN Strom der Reihe nach; nur Fenster A (erster Zug) stimmt mit der Zeile Blocklaenge 2 / B 2000 ueberein, B und C weichen davon ab (Spalte Hinweis in der CSV).\n")
 write.csv(boot_tab, file.path(OUT, "posthoc_bootstrap_sensitivitaet.csv"), row.names = FALSE)
 cat("\n--- POST-HOC (G3): Standardfehler der 5-Jahres-Summe je Kovarianzschaetzer (Mt) ---\n")
 print(transform(hac_tab, SE_Summe_OLS = round(SE_Summe_OLS, 1), SE_Summe_NW_prewhite_TRUE_Default = round(SE_Summe_NW_prewhite_TRUE_Default, 1),
@@ -694,9 +747,16 @@ make_p2 <- function(d, titel, untertitel) {
     scale_fill_manual(values = c("Expertenrat-Korridor 60-100 Mt" = "#e34948"), name = NULL) +
     scale_linetype_manual(values = c("Budget 6199 Mt (Overshoot 0)" = "solid", "Bundesregierung: Puffer 4,5 Mt (-4,5)" = "dashed"), name = NULL) +
     scale_color_manual(values = c("Parameterintervall (analytisch, Bootstrap)" = "#1baf7a", "Prognoseintervall (ARIMA)" = "#2a78d6"), name = NULL) +
+    # Fassung 3 (N2.3): Bundesregierung (-4,5) als Marker mit Beschriftung ueber der obersten Zeile (Skala bleibt unverfaelscht)
+    scale_y_discrete(expand = expansion(add = c(0.6, 1.6))) +
+    scale_x_continuous(expand = expansion(mult = c(0.03, 0.08))) +
+    annotate("point", x = OVERSHOOT_BREG, y = nlevels(d$Zeile) + 1.1, shape = 25, fill = "#2a78d6", color = "#2a78d6", size = 3) +
+    annotate("text", x = 30, y = nlevels(d$Zeile) + 1.1, hjust = 0, size = 2.9,
+             label = "Bundesregierung: Puffer 4,5 Mt (Overshoot -4,5);\nauf dieser Skala praktisch auf der Nulllinie") +
     labs(title = titel, subtitle = untertitel,
          x = "Overshoot ggue. Gesamtbudget 2021-2030 (Mt CO2-Aeq.; negativ = unter Budget)", y = NULL) +
-    theme_minimal(base_size = 9) + theme(legend.position = "bottom", legend.box = "vertical", plot.title.position = "plot")
+    theme_minimal(base_size = 9) + theme(legend.position = "bottom", legend.box = "vertical", plot.title.position = "plot",
+                                         plot.margin = margin(8, 20, 8, 8))
 }
 if_else_c <- function(cond, a, b) ifelse(cond, a, b)
 p2 <- make_p2(e2, "Estimand 2: Eigene Trendfortschreibung - Overshoot 2021-2030 (2025 = 648,83 Mt)",
@@ -718,7 +778,9 @@ sprung_A <- proj_plot$emissionen[proj_plot$Reihe == "Fortschreibung Fenster A" &
 p3 <- ggplot() +
   geom_line(data = obs, aes(jahr, emissionen, color = Reihe, linetype = Reihe), linewidth = 1) +
   geom_line(data = proj_plot, aes(jahr, emissionen, color = Reihe, linetype = Reihe), linewidth = 0.8) +
-  annotate("text", x = 2013, y = 560, hjust = 0, size = 3, label = sprintf("Fenster A: 2026 = %.1f Mt, %+.1f Mt gegenueber beobachtetem 2025-Wert", 648.83 + sprung_A, sprung_A)) +
+  annotate("segment", x = 2028.6, y = 722, xend = 2026.1, yend = 692, arrow = arrow(length = unit(0.18, "cm")), color = "#e34948") +
+  annotate("text", x = 2030, y = 765, hjust = 1, size = 3,
+           label = gsub("\\.", ",", sprintf("Fenster A: 2026 = %.1f Mt\n(%+.1f Mt gegenueber\nbeobachtetem 2025-Wert)", 648.83 + sprung_A, sprung_A))) +
   scale_color_manual(values = c("Beobachtet (UBA)" = "#2a78d6", "Fortschreibung Fenster A" = "#e34948", "Fortschreibung Fenster B" = "#1baf7a", "Fortschreibung Fenster C" = "grey40"), name = NULL) +
   scale_linetype_manual(values = c("Beobachtet (UBA)" = "solid", "Fortschreibung Fenster A" = "dashed", "Fortschreibung Fenster B" = "dashed", "Fortschreibung Fenster C" = "dotted"), name = NULL) +
   labs(title = "Estimand 2: Historische Emissionen und OLS-Fortschreibung bis 2030",

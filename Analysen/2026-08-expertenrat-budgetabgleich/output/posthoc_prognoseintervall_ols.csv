@@ -1,4 +1,4 @@
-"Fenster","Kum_Gesamt","Overshoot","Overshoot_unten","Overshoot_oben","Anmerkung"
-"A",6783.19437580438,584.194375804376,17.0807335869974,1151.30801802176,"Annahme unabhaengiger Fehler hier verletzt (DW signifikant): Intervall zu optimistisch"
-"B",6224.03090909096,25.0309090909559,-234.355155056629,284.416973238541,"unabhaengige Fehler plausibel, aber DW-Teststaerke bei n = 11 gering"
-"C",6337.74857142857,138.74857142857,-459.578251780126,737.075394637267,"n = 6, rein deskriptiv"
+"Fenster","Kum_Gesamt","Overshoot","Parametervarianz_Quelle","Overshoot_unten","Overshoot_oben","Overshoot_unten_OLSparam","Overshoot_oben_OLSparam","Anmerkung"
+"A",6783.19437580438,584.194375804376,"Newey-West (HAC)",17.0807335869974,1151.30801802176,382.299001685409,786.089749923344,"Restfehler-Annahme (unabhaengig) hier verletzt (DW signifikant); Spalten _unten/_oben mit HAC-Parametervarianz + iid-Restvarianz (inkonsistent gemischt), _OLSparam mit klassischer OLS-Parametervarianz (zu optimistisch bei Autokorrelation)"
+"B",6224.03090909096,25.0309090909559,"klassisch OLS",-234.355155056629,284.416973238541,-234.355155056629,284.416973238541,"unabhaengige Fehler plausibel, aber DW-Teststaerke bei n = 11 gering; beide Varianten identisch"
+"C",6337.74857142857,138.74857142857,"klassisch OLS",-459.578251780126,737.075394637267,-459.578251780126,737.075394637267,"n = 6, rein deskriptiv; beide Varianten identisch"

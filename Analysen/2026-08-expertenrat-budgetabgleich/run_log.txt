@@ -1,4 +1,4 @@
-=== Expertenrat-Budgetabgleich 2030 - Lauf 2026-10-23 18:13:03 ===
+=== Expertenrat-Budgetabgleich 2030 - Lauf 2026-10-23 19:25:44 ===
 R: R version 4.6.1 (2026-06-24 ucrt) 
 
 --- SAP 3: SHA-256-Pruefsummen der Rohdaten ---
@@ -164,6 +164,21 @@ Beobachtete mittlere Jahresraten (nicht SAP-Definition, nur Fussnote): 1990-2025
 
 ############ ESTIMAND 2 ############
 Budget_Gesamt_2021_2030 (Expertenrat, Primaerquelle): 6199 Mt; Korridor Expertenrat: 60-100 Mt; Bundesregierung: Overshoot -4.5 Mt
+
+--- Zusatzkontrollen ARIMA-Kovarianz (N2.4): simulierte Reihen, andere Seeds, 20000 MC-Pfade, geschlossene psi-Formeln ---
+       Modell Seed sd_Summe_analytisch sd_Summe_MonteCarlo
+ ARIMA(1,1,0)  101              121.72              121.14
+ ARIMA(1,1,0)  102               60.36               59.67
+ ARIMA(0,1,1)  103               92.50               92.57
+ ARIMA(0,1,1)  104               40.85               40.97
+ ARIMA(0,1,0)  105               61.20               60.83
+ Verhaeltnis_MC_analytisch max_Abw_Diagonale max_Abw_psi_geschlossen
+                     0.995           7.1e-15                 4.4e-16
+                     0.988           3.6e-15                 2.2e-16
+                     1.001           3.6e-15                 0.0e+00
+                     1.003           1.8e-15                 0.0e+00
+                     0.994           0.0e+00                      NA
+Zusatzkontrollen bestanden (MC-Abweichung <= 3 %, Diagonale und psi-Gewichte exakt).
 
 ================ Variante: Primaer: 2025 = 648,83 (UBA) ================
 Kumuliert_Ist_2021_2025 = 3480.1 Mt
@@ -421,33 +436,34 @@ Alle 9 Intervalle inkl. C ueberdecken den Korridor: 8 von 9
                  TRUE
                  TRUE
 
---- POST-HOC (W5): Prognoseintervall der tatsaechlichen Summe fuer OLS (unabhaengige Fehler: Var = Parametervarianz + 5 sigma^2), Overshoot ---
- Fenster Kum_Gesamt Overshoot Overshoot_unten Overshoot_oben
-       A     6783.2     584.2            17.1         1151.3
-       B     6224.0      25.0          -234.4          284.4
-       C     6337.7     138.7          -459.6          737.1
-                                                                              Anmerkung
- Annahme unabhaengiger Fehler hier verletzt (DW signifikant): Intervall zu optimistisch
-                   unabhaengige Fehler plausibel, aber DW-Teststaerke bei n = 11 gering
-                                                                 n = 6, rein deskriptiv
+--- POST-HOC (W5): Prognoseintervall der tatsaechlichen Summe fuer OLS (Var = Parametervarianz [A: HAC, B/C: OLS] + 5 sigma^2_OLS, Annahme unabhaengiger Restfehler; deskriptiv), Overshoot ---
+ Fenster Kum_Gesamt Overshoot Parametervarianz_Quelle Overshoot_unten
+       A     6783.2     584.2        Newey-West (HAC)            17.1
+       B     6224.0      25.0           klassisch OLS          -234.4
+       C     6337.7     138.7           klassisch OLS          -459.6
+ Overshoot_oben Overshoot_unten_OLSparam Overshoot_oben_OLSparam
+         1151.3                    382.3                   786.1
+          284.4                   -234.4                   284.4
+          737.1                   -459.6                   737.1
 
 --- POST-HOC (G2): Bootstrap-Sensitivitaet (Overshoot-Parameterintervall), Blocklaenge / B / Seed ---
- Fenster Blocklaenge     B     Seed Overshoot_unten Overshoot_oben
-       A           2  2000 20260827           429.0          737.3
-       A           2 10000       11           433.4          736.0
-       A           2 10000       12           431.4          741.3
-       A           4  2000 20260827           426.0          781.3
-       A           4 10000       11           427.4          775.9
-       B           2  2000 20260827          -152.6          199.0
-       B           2 10000       11          -158.1          200.5
-       B           2 10000       12          -155.8          198.0
-       B           4  2000 20260827          -110.1          146.8
-       B           4 10000       11          -117.7          157.0
-       C           2  2000 20260827          -116.0          502.3
-       C           2 10000       11          -115.6          489.5
-       C           2 10000       12          -115.6          502.3
-       C           4  2000 20260827            -5.7          412.2
-       C           4 10000       11            -5.7          412.2
+ Fenster Blocklaenge     B Seed_Neustart Overshoot_unten Overshoot_oben
+       A           2  2000      20260827           429.0          737.3
+       A           2 10000            11           433.4          736.0
+       A           2 10000            12           431.4          741.3
+       A           4  2000      20260827           426.0          781.3
+       A           4 10000            11           427.4          775.9
+       B           2  2000      20260827          -152.6          199.0
+       B           2 10000            11          -158.1          200.5
+       B           2 10000            12          -155.8          198.0
+       B           4  2000      20260827          -110.1          146.8
+       B           4 10000            11          -117.7          157.0
+       C           2  2000      20260827          -116.0          502.3
+       C           2 10000            11          -115.6          489.5
+       C           2 10000            12          -115.6          502.3
+       C           4  2000      20260827            -5.7          412.2
+       C           4 10000            11            -5.7          412.2
+Hinweis Seed: Spalte Seed_Neustart = Strom je Zeile neu gestartet. Der Hauptlauf verbraucht EINEN Strom der Reihe nach; nur Fenster A (erster Zug) stimmt mit der Zeile Blocklaenge 2 / B 2000 ueberein, B und C weichen davon ab (Spalte Hinweis in der CSV).
 
 --- POST-HOC (G3): Standardfehler der 5-Jahres-Summe je Kovarianzschaetzer (Mt) ---
  Fenster SE_Summe_OLS SE_Summe_NW_prewhite_TRUE_Default
