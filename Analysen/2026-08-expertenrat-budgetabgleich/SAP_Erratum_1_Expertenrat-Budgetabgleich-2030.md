@@ -63,10 +63,10 @@
 
 | Punkt | Frage laut SAP | Vorschlag des sap-autors | Empfehlung für diesen Entwurf | Entscheidung Daniel Saure |
 |---|---|---|---|---|
-| 6a | „Prüfbericht-Fund nicht garantiert“ als eigener Blocker oder als reine Limitation (SAP 9)? | Limitation | **Limitation**: Der Prüfbericht wurde tatsächlich gefunden, ein Blocker ist damit gegenstandslos | **[ausstehend]** |
-| 6b | Datenquellen-Zeile 5 „Bundesregierung, Projektionsdaten 2026“ (4,5-Mt-Puffer) als Arbeitsvorschlag bestätigen oder verwerfen | probeweise eingefügt | **bestätigen** (Quelle 5 ist im SAP und im Lauf nur als Kontext verwendet und fließt in keine Modellschätzung ein; Beleg nur über den Expertenrat-Bericht, siehe Abschnitt 4) | **[ausstehend]** |
+| 6a | „Prüfbericht-Fund nicht garantiert“ als eigener Blocker oder als reine Limitation (SAP 9)? | Limitation | **Limitation**: Der Prüfbericht wurde tatsächlich gefunden, ein Blocker ist damit gegenstandslos | **Limitation reicht** (Daniel Saure, 23.10.2026, Chat: „6a: Limitation reicht.“) |
+| 6b | Datenquellen-Zeile 5 „Bundesregierung, Projektionsdaten 2026“ (4,5-Mt-Puffer) als Arbeitsvorschlag bestätigen oder verwerfen | probeweise eingefügt | **bestätigen** (Quelle 5 ist im SAP und im Lauf nur als Kontext verwendet und fließt in keine Modellschätzung ein; Beleg nur über den Expertenrat-Bericht, siehe Abschnitt 4) | **bestätigt** (Daniel Saure, 23.10.2026, Chat: „6b: Datenquellen-Zeile 5 (Bundesregierung, Projektionsdaten 2026) wird bestätigt.“) |
 
-Ohne diese beiden Antworten bleibt W1 im Validierungsbericht „teilweise“ erledigt.
+Die Antworten zu 6a und 6b liegen seit 23.10.2026 vor (Chat). Sie ersetzen nicht die Freigabe dieses Erratums und nicht die Lektüre des Volltextes. Daniel Saure hat angekündigt, das Erratum jetzt vollständig zu lesen; die Freigabe steht aus.
 
 ## 6. Was dieses Erratum nicht ändert
 
@@ -78,4 +78,4 @@ Ohne diese beiden Antworten bleibt W1 im Validierungsbericht „teilweise“ erl
 **Freigegeben durch:** [ausstehend]
 **Datum:** [ausstehend]
 **Wortlaut der Freigabe:** [ausstehend]
-Erst nach vollständiger Lektüre dieser Datei durch Daniel Saure auszufüllen. Dazu gehört seine ausdrückliche Antwort zu 6a und 6b.
+Erst nach vollständiger Lektüre dieser Datei durch Daniel Saure auszufüllen (die Antworten zu 6a und 6b liegen vor, siehe Abschnitt 5).
