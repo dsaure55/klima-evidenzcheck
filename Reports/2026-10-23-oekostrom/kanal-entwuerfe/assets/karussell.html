@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!-- **ENTWURF – nicht veröffentlicht. Freigabe durch Daniel Saure erforderlich vor Publikation.** -->
+<!-- Klima Kompass · Wissen · Ökostrom · Instagram-Karussell, 6 Folien à 1080×1350 -->
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>ENTWURF – Karussell Ökostrom (Klima Kompass · Wissen)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0E3B43;
+    --flaeche: #14505A;
+    --text: #F2F5F4;
+    --mint: #5FD3B3;
+    --koralle: #F26B5B;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #222; font-family: 'IBM Plex Sans', sans-serif; color: var(--text); }
+  .slide {
+    width: 1080px; height: 1350px; background: var(--bg);
+    padding: 96px 88px 80px; position: relative; overflow: hidden;
+    display: flex; flex-direction: column; margin: 0 auto 40px;
+  }
+  .reihe { font-family: 'IBM Plex Mono', monospace; font-size: 30px; color: var(--mint); letter-spacing: 1px; margin-bottom: 48px; }
+  h1 { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 88px; line-height: 1.05; margin-bottom: 40px; }
+  h2 { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 58px; line-height: 1.1; margin-bottom: 30px; }
+  p { font-size: 34px; line-height: 1.4; margin-bottom: 24px; }
+  .gross { font-family: 'IBM Plex Mono', monospace; font-weight: 600; color: var(--mint); font-size: 104px; line-height: 1; margin-bottom: 14px; }
+  .einheit { font-size: 32px; line-height: 1.35; color: var(--text); opacity: .92; margin-bottom: 28px; }
+  .karte { background: var(--flaeche); border-radius: 24px; padding: 26px 38px; margin-bottom: 22px; }
+  .karte .label { font-family: 'Space Grotesk', sans-serif; font-size: 34px; font-weight: 700; margin-bottom: 6px; }
+  .karte .wert { font-family: 'IBM Plex Mono', monospace; font-size: 52px; font-weight: 600; color: var(--mint); margin-top: 8px; }
+  .karte .wert small { display: block; font-family: 'IBM Plex Sans', sans-serif; font-size: 26px; line-height: 1.35; color: var(--text); font-weight: 400; margin-top: 8px; opacity: .92; }
+  .karte .text { font-size: 29px; line-height: 1.35; margin-top: 6px; margin-bottom: 0; opacity: .92; }
+  .karte.irrtum { border-left: 12px solid var(--koralle); }
+  .karte.befund { border-left: 12px solid var(--mint); }
+  .karte .kopf { font-family: 'IBM Plex Mono', monospace; font-size: 26px; letter-spacing: 1px; margin-bottom: 12px; }
+  .karte p { font-size: 32px; margin-bottom: 0; }
+  .hinweis { font-size: 30px; line-height: 1.4; opacity: .92; }
+  ul { list-style: none; }
+  li { font-size: 33px; line-height: 1.36; margin-bottom: 26px; padding-left: 44px; position: relative; }
+  li::before { content: "–"; position: absolute; left: 0; color: var(--koralle); font-weight: 700; }
+  li b { font-weight: 600; }
+  .koralle { color: var(--koralle); }
+  .mint { color: var(--mint); }
+  .spacer { flex: 1; }
+  .cta { font-family: 'Space Grotesk', sans-serif; font-size: 46px; font-weight: 700; color: var(--bg); background: var(--mint); border-radius: 20px; padding: 26px 40px; display: inline-block; align-self: flex-start; }
+  .fuss {
+    position: absolute; left: 88px; right: 88px; bottom: 44px;
+    display: flex; justify-content: space-between; gap: 32px;
+    font-family: 'IBM Plex Mono', monospace; font-size: 22px; opacity: .75;
+    border-top: 1px solid rgba(242,245,244,.25); padding-top: 18px;
+  }
+  .fuss .quelle { text-align: right; }
+  .nummer { position: absolute; top: 96px; right: 88px; font-family: 'IBM Plex Mono', monospace; font-size: 26px; opacity: .6; }
+</style>
+</head>
+<body>
+
+<!-- Folie 1: Hook -->
+<section class="slide" id="folie-1">
+  <div class="reihe">KLIMA KOMPASS · WISSEN</div>
+  <div class="nummer">1/6</div>
+  <h1>Ökostrom: die einfachste Klima&shy;schutz&shy;maßnahme?</h1>
+  <h2 class="mint">Für viele eine der einfachsten. Wie viel sie bringt, hängt am Tarif.</h2>
+  <p>Was der Wechsel bringt – und was nicht.</p>
+  <div class="spacer"></div>
+  <div class="fuss"><span>Klima Kompass · Wissen</span><span class="quelle">Quelle: UBA; Grüner Strom-Label; ok-power</span></div>
+</section>
+
+<!-- Folie 2: Steckdose und Herkunftsnachweis -->
+<section class="slide" id="folie-2">
+  <div class="reihe">WIE ÖKOSTROM NACHGEWIESEN WIRD</div>
+  <div class="nummer">2/6</div>
+  <h2>Aus der Steckdose kommt bei allen derselbe Strom.</h2>
+  <p>Alle Kraftwerke speisen in dasselbe Netz ein. Was sich mit Ökostrom ändert, ist die <span class="mint">Abrechnung</span>.</p>
+  <div class="karte">
+    <div class="label">Herkunftsnachweis</div>
+    <p class="text">Ein elektronisches Zertifikat, so etwas wie eine Geburtsurkunde für Ökostrom. Darin stehen zum Beispiel Energiequelle und Zeitraum. Das Register führt das Umweltbundesamt.</p>
+  </div>
+  <div class="gross" style="margin-top:16px">seit 2013</div>
+  <div class="einheit">darf ein Anbieter Strom nur als erneuerbar ausweisen, wenn er passende Nachweise im Register entwertet hat. So soll kein Ökostrom doppelt verkauft werden.</div>
+  <div class="spacer"></div>
+  <div class="fuss"><span>Klima Kompass · Wissen</span><span class="quelle">Quelle: UBA</span></div>
+</section>
+
+<!-- Folie 3: Der Haken -->
+<section class="slide" id="folie-3">
+  <div class="reihe">WO DER HAKEN LIEGT</div>
+  <div class="nummer">3/6</div>
+  <h2>Herkunftsnachweise lassen sich international handeln.</h2>
+  <p>Ein Anbieter kann Strom aus dem allgemeinen Netz liefern und dazu Nachweise kaufen. Zum Beispiel aus einem Wasserkraftwerk im Ausland, das es schon lange gibt.</p>
+  <div class="karte">
+    <div class="label">Dann steht auf dem Tarif</div>
+    <div class="wert">„100 % Ökostrom“</div>
+    <p class="text">Das ist kein Betrug. Es ist so geregelt.</p>
+  </div>
+  <div class="karte befund">
+    <div class="kopf mint">ABER</div>
+    <p>Ein neues Windrad oder eine neue Solaranlage entsteht dadurch nicht automatisch.</p>
+  </div>
+  <div class="spacer"></div>
+  <div class="fuss"><span>Klima Kompass · Wissen</span><span class="quelle">Quelle: UBA</span></div>
+</section>
+
+<!-- Folie 4: Siegel als Beispiele -->
+<section class="slide" id="folie-4">
+  <div class="reihe">TARIFE MIT ZUSATZNUTZEN ERKENNEN</div>
+  <div class="nummer">4/6</div>
+  <h2>Zwei Siegel als Beispiele</h2>
+  <p>Sie verlangen mehr als nur Herkunftsnachweise.</p>
+  <div class="karte">
+    <div class="label">Grüner Strom-Label</div>
+    <p class="text">Fester Betrag pro Kilowattstunde für Energiewende-Projekte, etwa neue Anlagen.</p>
+    <div class="wert">mind. 0,5 ct/kWh <small>netto, in der Regel, bei einem Jahresverbrauch unter 10.000 kWh</small></div>
+  </div>
+  <div class="karte">
+    <div class="label">ok-power</div>
+    <p class="text">Nachweis eines Beitrags zur Energiewende auf einem von mehreren Wegen. Ein möglicher Weg:</p>
+    <div class="wert">mind. 33 % <small>des gelieferten Ökostroms aus neuen Anlagen ohne öffentliche Förderung</small></div>
+  </div>
+  <p class="hinweis">Beide verlangen zudem 100 % Strom aus erneuerbaren Energien.</p>
+  <div class="spacer"></div>
+  <div class="fuss"><span>Klima Kompass · Wissen</span><span class="quelle">Quelle: Grüner Strom-Label; ok-power</span></div>
+</section>
+
+<!-- Folie 5: Was die Daten nicht sagen -->
+<section class="slide" id="folie-5">
+  <div class="reihe">WAS WIR NICHT SAGEN</div>
+  <div class="nummer">5/6</div>
+  <ul>
+    <li><b>Keine Preise, keine Anbieter.</b> Die nennen wir bewusst nicht.</li>
+    <li><b>Siegel nur als Beispiele.</b> Grüner Strom-Label und ok-power sind zwei bekannte Siegel.</li>
+    <li><b>Keine eigene Analyse.</b> Die Fakten stammen aus den Quellen. Die Einschätzungen zum Nutzen sind unsere Einordnung.</li>
+    <li><b class="koralle">Kein Ersatz.</b> Ein guter Ökostromtarif ersetzt nicht, insgesamt weniger Energie zu verbrauchen.</li>
+  </ul>
+  <div class="spacer"></div>
+  <div class="fuss"><span>Klima Kompass · Wissen</span><span class="quelle">Quelle: UBA; Grüner Strom-Label; ok-power</span></div>
+</section>
+
+<!-- Folie 6: Fazit -->
+<section class="slide" id="folie-6">
+  <div class="reihe">FAZIT</div>
+  <div class="nummer">6/6</div>
+  <div class="karte irrtum">
+    <div class="kopf koralle">HÄUFIGER IRRTUM</div>
+    <p>„Ökostrom ist sowieso Etikettenschwindel.“</p>
+  </div>
+  <div class="karte befund">
+    <div class="kopf mint">BEFUND</div>
+    <p>Das stimmt so pauschal nicht. Ein Tarif, der nur Nachweise kauft, sorgt aber nicht automatisch für zusätzlichen Ökostrom. Mehr bewirken können Tarife, die zusätzlich Geld in den Ausbau stecken oder Strom aus neuen Anlagen beziehen.</p>
+  </div>
+  <p class="hinweis"><b>Was heißt das für dich?</b> Achte auf Siegel wie Grüner Strom-Label oder ok-power. Und lies die Stromkennzeichnung auf deiner Rechnung.</p>
+  <div class="spacer"></div>
+  <div class="cta">Ganzer Artikel: Link in Bio</div>
+  <div style="height:90px"></div>
+  <div class="fuss"><span>Klima Kompass · Wissen</span><span class="quelle">Quelle: UBA; § 42 EnWG</span></div>
+</section>
+
+</body>
+</html>
