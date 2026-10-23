@@ -1,4 +1,4 @@
-**ENTWURF v0.2 (23.10.2026) – Auflagen A1–A10 und Empfehlungen aus `pruefung/faktencheck_kap03.md` eingearbeitet, Nachprüfung ausstehend, nicht freigegeben. Diese Kopfzeile, die Herkunftstabelle am Ende und die Hinweise unter den Grafiken nicht ins Buch übernehmen.
+**FREIGEGEBEN durch Daniel Saure am 23.10.2026 für Fassung v0.2 (Commit 9d81f7d; Wortlaut: „habe gelesen und freigegeben“). Faktencheck: `pruefung/faktencheck_kap03.md` (ok mit Auflagen, A1–A10 danach eingearbeitet; keine Gegenprüfung der Änderungen durch den Faktenprüfer). Offen vor dem Druck: IWH-Tabelle, KfW-Papier 2025 und Bundesrats-Beschluss 462/26 am Original prüfen; Bundesrats-Stand zum Redaktionsschluss (15.11.) mit Beleg eintragen oder „noch offen“; dateibasierte Nachprüfung der am 22.10. korrigierten Fassung des CO₂-Preis-Artikels nachholen. Vor Satz/Export: diese Kopfzeile, die Herkunftstabelle und die Hinweise unter den Grafiken entfernen.**
 
 # Kapitel 3 – Was kostet Klimapolitik, und wer zahlt?
 
