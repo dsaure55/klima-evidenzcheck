@@ -47,7 +47,7 @@ Grundlage: `Validierungsbericht_expertenrat-budgetabgleich.md`. Fassung 1 (Commi
 
 | Nr. | Aenderung in Fassung 2 |
 |---|---|
-| RF-1 | `SAP_Bestaetigung_Daniel_Saure_2026-10-23.md` liegt vor und ist im Bericht referenziert. Einschraenkung: Chat-Zitat nach 300 Zeichen abgeschnitten; keine ausdrueckliche Antwort zu den Offenen Punkten 6a/6b; Textwidersprueche im SAP bestehen weiter. Der SAP wurde nicht veraendert. |
+| RF-1 | `SAP_Bestaetigung_Daniel_Saure_2026-10-23.md` liegt vor und ist im Bericht referenziert. [Stand Fassung 2; in Fassung 4 ueberholt:] Einschraenkung damals: Chat-Zitat nach 300 Zeichen abgeschnitten; keine ausdrueckliche Antwort zu 6a/6b. **Fassung 4:** Die Antworten zu den Offenen Punkten 6a ("Limitation reicht") und 6b (Datenquellen-Zeile 5 bestaetigt) liegen vor (Daniel Saure, 23.10.2026); das SAP-Erratum 1 (`SAP_Erratum_1_Expertenrat-Budgetabgleich-2030.md`) wurde freigegeben (Commit d20e448). Dokumentiert in `SAP_Bestaetigung_Daniel_Saure_2026-10-23.md` (Abschnitt "Ergaenzung") und im Erratum. Der SAP, die Bestaetigungsdatei und das Erratum wurden nicht von mir geaendert. |
 | RF-2 | Wortlaut korrigiert (Validierung W2): Agora nennt 625 Mt als gesetzliche Hoechstmenge 2026; Anlage 2 KSG (BGBl. 2024 I Nr. 235, abgerufen 23.10.2026, `rohdaten/ksg/`) nennt 604 Mt fuer 2026. Moeglicherweise ist 625 die nach Par. 4 Abs. 2 KSG angepasste Jahresmenge (Plausibilitaet: ERK-Anpassung 2030: 459,2 vs. 438 = +21,2; 604 + 21,2 = 625,2); in den Expertenrat-Dokumenten kommt 625 nicht vor, Agora ist die einzige Quelle, nicht belegt. Die 625-Variante ist auf Entscheidung Daniel Saure (23.10.2026) im Anhang A (POST-HOC, nicht SAP-erforderlich, ohne Aussagewert). Die Fassung-1-Aussage, SAP 6.3 schreibe die Parallelrechnung vor, ist zurueckgenommen: Die Bedingung (ungeklaerte Diskrepanz) ist nach der Klaerung nicht ausgeloest. |
 | RF-3 | Spalten umbenannt in "Parameterintervall" (analytisch, Bootstrap) und "Prognoseintervall" (ARIMA). Zusaetzlich POST-HOC-Prognoseintervall fuer OLS unter der Annahme unabhaengiger Fehler (Var = Parametervarianz + 5 sigma^2): A 17,1-1151,3 (Annahme verletzt, zu optimistisch), B -234,4-284,4, C -459,6-737,1. Begruendung: Estimand 2 betrifft die tatsaechliche Summe. Nicht im SAP, nicht Teil der Hauptergebnisse. |
 | RF-4 | Blocklaenge 2, Seed 20260827, B = 2000 bleiben primaer (Amendment-Praezedenz). POST-HOC: Blocklaenge 4 (A: 426-781 statt 429-737) und B = 10000 mit weiteren Seeds; Monte-Carlo-Fehler der Grenzen einige Mt; Bootstrap-Grenzen in ganzen Mt. Der Seed-Strom der Hauptlaeufe wurde nicht veraendert (Hauptergebnisse identisch zu Fassung 1). |
@@ -67,8 +67,8 @@ Grundlage: `Validierungsbericht_expertenrat-budgetabgleich.md`. Fassung 1 (Commi
 ## Offene Punkte (Fassung 2)
 
 1. Fokussierte Nachpruefung durch den validator als eigene Datei (CLAUDE.md, Dokumentationspflicht).
-2. Mensch: Soll ein formales SAP-Erratum zur 625-Annahme gefuehrt werden? Bleibt Anhang A im Bericht oder entfaellt er ganz (Validator bevorzugt Streichen)?
-3. Mensch: Ausdrueckliche Antwort zu den SAP-Punkten 6a/6b steht aus (siehe `SAP_Bestaetigung_Daniel_Saure_2026-10-23.md`).
+2. [Erledigt, Fassung 4] Mensch: Soll ein formales SAP-Erratum zur 625-Annahme gefuehrt werden? -> Erratum 1 wurde gefuehrt und am 23.10.2026 freigegeben (`SAP_Erratum_1_Expertenrat-Budgetabgleich-2030.md`, Commit d20e448). Zu Anhang A: bleibt als Audit-Trail, nicht in Blog/Kapitel/Kanaltexte (Verwendungsvermerk im Bericht).
+3. [Erledigt, Fassung 4] Antwort zu den SAP-Punkten 6a/6b: liegt vor (Daniel Saure, 23.10.2026; 6a: Limitation reicht, 6b: Datenquellen-Zeile 5 bestaetigt), dokumentiert im Erratum und in `SAP_Bestaetigung_Daniel_Saure_2026-10-23.md`.
 4. Herkunft der 625 (angepasste Jahresmenge?) ist nicht durch ein UBA-Dokument belegt; Quelle waere die UBA-Berechnung der Emissionsdaten 2025 (UBA 2026g, Tabelle 3).
 5. RF-3: Ob das POST-HOC-Prognoseintervall fuer OLS (bzw. eine GLS/AR(1)-Variante fuer Fenster A) ein SAP-Amendment braucht, entscheidet der Mensch.
 
@@ -86,4 +86,18 @@ Grundlage: Nachtrag 1 des Validierungsberichts. Keine Kernzahl hat sich geaender
 | N2.4 | Zusatzkontrollen fuer ARIMA(1,1,0), (0,1,1) und (0,1,0) an simulierten Reihen (eigene Seeds, 20000 MC-Pfade, geschlossene psi-Formeln); alle bestanden (MC-Abweichung <= 1,2 %, psi und Diagonale exakt). Hinweis zum identischen MC/analytisch-Verhaeltnis (gleicher Seed) im Bericht. Technisch: Der Zufallsstrom wird um die Zusatzkontrollen gesichert und wiederhergestellt; ein erster Entwurf ohne Sicherung hatte die Bootstrap-Hauptergebnisse veraendert (A 432 statt 429) und wurde vor dem Endlauf korrigiert, Endlauf identisch zu Fassung 2. |
 | Anhang A | Verwendungsvermerk im Analysebericht: bleibt als Audit-Trail im Repo, geht nicht in Blog, Kapitel oder Kanaltexte (Entscheidung Daniel Saure). |
 
-Offen: Fokussierte Pruefung der Fassung 3 durch den validator als eigene Datei; Entscheidungen zu SAP-Erratum und Antwort 6a/6b liegen beim Menschen (siehe Nachtrag Fassung 2).
+Offen: Fokussierte Pruefung der Fassung 3 durch den validator als eigene Datei (inzwischen als Nachtrag 2 erfolgt); [Fassung 4: Entscheidungen zu SAP-Erratum und zu 6a/6b liegen vor, siehe Nachtrag Fassung 4].
+
+---
+
+# Nachtrag Fassung 4 (Behebung N3.1-N3.3), 24.10.2026
+
+Grundlage: Nachtrag 2 des Validierungsberichts. Keine Kernzahl hat sich geaendert; Skript erneut gelaufen (Exit 0), Pruefsummenvergleich der Rohdaten: alle 24 Dateien unveraendert.
+
+| Befund | Aenderung |
+|---|---|
+| N3.1 | Bericht (Kopf, Tabelle W1), RF-1-Nachtrag, Offene Punkte 2 und 3 und die Schlusszeile von Nachtrag Fassung 3 angeglichen: Die Antworten zu den Offenen Punkten 6a ("Limitation reicht") und 6b (Datenquellen-Zeile 5 bestaetigt) liegen vor (Daniel Saure, 23.10.2026); das SAP-Erratum 1 (`SAP_Erratum_1_Expertenrat-Budgetabgleich-2030.md`) wurde freigegeben (Commit d20e448). Dokumentiert in `SAP_Bestaetigung_Daniel_Saure_2026-10-23.md` (Abschnitt "Ergaenzung") und im Erratum. Nicht geaendert: SAP, Validierungsbericht, Erratum, Bestaetigungsdatei. |
+| N3.2 | Erklaerung zu Fenster C im Bericht korrigiert: Diskretisierungswirkung bei n = 6 (wenige moegliche Ziehungen, auch mit anderen Seeds dieselbe Untergrenze -115,6), kein Zufall. Der Hinweis in der CSV (`posthoc_bootstrap_sensitivitaet.csv`) wurde nicht geaendert; er nennt B und C als abweichend, was fuer C nur im Rahmen von Rundung zutrifft. |
+| N3.3 | Achsenmarken der Hauptgrafik `estimand2_overshoot.png` (und Anhangsgrafik) alle 200 Mt, inkl. -400 und -200; visuell geprueft. |
+
+Offen: Fokussierte Pruefung der Fassung 4 durch den validator (nur Dokumentations- und Grafikkorrekturen). Freigabe der Analyse beim Menschen.

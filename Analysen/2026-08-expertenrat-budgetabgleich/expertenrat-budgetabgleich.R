@@ -749,7 +749,8 @@ make_p2 <- function(d, titel, untertitel) {
     scale_color_manual(values = c("Parameterintervall (analytisch, Bootstrap)" = "#1baf7a", "Prognoseintervall (ARIMA)" = "#2a78d6"), name = NULL) +
     # Fassung 3 (N2.3): Bundesregierung (-4,5) als Marker mit Beschriftung ueber der obersten Zeile (Skala bleibt unverfaelscht)
     scale_y_discrete(expand = expansion(add = c(0.6, 1.6))) +
-    scale_x_continuous(expand = expansion(mult = c(0.03, 0.08))) +
+    scale_x_continuous(expand = expansion(mult = c(0.03, 0.08)),
+                       breaks = function(l) seq(ceiling(l[1] / 200) * 200, floor(l[2] / 200) * 200, by = 200)) +   # Fassung 4 (N3.3): Marken alle 200 Mt, inkl. -400 und -200
     annotate("point", x = OVERSHOOT_BREG, y = nlevels(d$Zeile) + 1.1, shape = 25, fill = "#2a78d6", color = "#2a78d6", size = 3) +
     annotate("text", x = 30, y = nlevels(d$Zeile) + 1.1, hjust = 0, size = 2.9,
              label = "Bundesregierung: Puffer 4,5 Mt (Overshoot -4,5);\nauf dieser Skala praktisch auf der Nulllinie") +
