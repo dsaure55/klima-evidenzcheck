@@ -8,11 +8,11 @@
 - Facebook: https://www.facebook.com/profile.php?id=61595673411252
 - WhatsApp-Kanal: https://whatsapp.com/channel/0029Vb7dScK5kg74YY4ksf1j
 - Repository mit Analysen, Code und Daten: https://github.com/dsaure55/klima-evidenzcheck
-- Über uns / Impressum: https://klimaevidenzcheck.substack.com/about
+- Über / Impressum: https://klimaevidenzcheck.substack.com/about
 
 ## Über Klima Kompass
 
-Klima Kompass prüft Aussagen zu Klima und Energie an öffentlichen Daten, zum Beispiel vom Umweltbundesamt, vom Deutschen Wetterdienst oder von Copernicus. Jede Zahl hat eine Quelle.
+Klima Kompass prüft Aussagen zu Klima und Energie an öffentlichen Daten, zum Beispiel vom Umweltbundesamt, vom Deutschen Wetterdienst oder von Copernicus. Jede Zahl nennt ihre Quelle.
 
 Drei Formate:
 

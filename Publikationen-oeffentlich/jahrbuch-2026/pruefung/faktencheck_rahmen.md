@@ -1,13 +1,13 @@
 # Faktencheck Rahmentexte (Jahrbuch 2026): Einleitung, Überblick, Nachwort, Glossar, Kanäle und Impressum
 
-**Geprüfte Dateien** (Entwürfe v0.1, 24.10.2026, nicht verändert):
+**Geprüfte Dateien** (Entwürfe v0.1, 24.10.2026, nicht verändert; Stand nach den Änderungen vom 24.10.: Einleitung mit gelieferter Angabe FAKT 1, Kanäle/Impressum mit Über-Text und Impressum aus Daniels Chat):
 - `Publikationen-oeffentlich/jahrbuch-2026/kapitel/00-einleitung.md`
 - `…/00b-ueberblick.md`
 - `…/11-nachwort.md`
 - `…/12-glossar.md`
 - `…/13-kanaele-impressum.md`
 
-Zeilenangaben „Z.“ beziehen sich auf diese Fassungen. Kopfzeilen und Platzhalter sind nicht Buchtext (Platzhalter siehe Abschn. 3, nicht bewertet).
+Zeilenangaben „Z.“ beziehen sich auf diese Fassungen. Kopfzeilen und eckige Klammern mit Platzhaltern oder Hinweisen sind nicht Buchtext (Platzhalter siehe Abschn. 3, nicht bewertet).
 **Prüfdatum:** 24.10.2026
 **Prüfer:** Subagent `faktenpruefer` (unabhängig, nicht Autor der Entwürfe)
 **Dieses Dokument enthält keinen Freigabevermerk.** Gate laut `kapitelplan.md` Abschn. 5/7: Einleitung und Nachwort volle Prüfung; Überblick und Glossar Differenzprüfung gegen die Kapitel; Kanäle Abgleich mit CLAUDE.md und Substack-Seite. Regel: keine neue Berechnung, keine neue Inferenz; im Zweifel „Abweichung“. Kapitel 9 hat eine eigene Datei (`faktencheck_kap09.md`).
@@ -17,10 +17,11 @@ Zeilenangaben „Z.“ beziehen sich auf diese Fassungen. Kopfzeilen und Platzha
 | Quelle | Zugriff | Ergebnis |
 |---|---|---|
 | Kapitel 1, 2, 3, 5, 6 (freigegebene Fassungen, Kopfzeilen und Kurz-gesagt-Absätze) | gelesen (Kap. 1, 2, 3, 5 vollständig, Kap. 6 Kopf und Kurz gesagt) | Abgleich Überblick, Glossar, Einleitung |
-| Kapitel 4, 7, 8, 9, 10 (Entwürfe v0.1, nicht geprüft) | gelesen (vollständig) | Abgleich nur gegen den Entwurfsstand; Aussagen des Überblicks über diese Kapitel sind so lange vorläufig |
-| `CLAUDE.md` (Workflow, Stufen, Kanäle, Impressum, Name) | als Projektanweisung vorliegend, gelesen | Kanal-URLs, Stufen, Gates |
+| Kapitel 4, 7, 8, 9, 10 (Entwürfe v0.1, nicht geprüft) | gelesen (vollständig); Kap. 9 nach der Änderung vom 24.10. neu gelesen | Abgleich nur gegen den Entwurfsstand; Aussagen des Überblicks über diese Kapitel sind so lange vorläufig |
+| `00-einleitung.md`, `13-kanaele-impressum.md` | nach den Änderungen vom 24.10. neu gelesen | Abschn. 2.1, 2.5, 2.6 |
+| `CLAUDE.md` (Workflow, Stufen, Kanäle, Impressum, Name) | als Projektanweisung vorliegend, gelesen | Kanal-URLs, Stufen, Gates, Namensregel |
 | `quellen-artikel/INDEX.md`, Archiv-API (WebFetch 24.10.2026) | gelesen | 17 Posts; frühester 27.08.2026 („Erreicht Deutschland sein Klimaziel 2040?“); `_archiv.json` nicht gelesen (Datei zu groß), API stattdessen |
-| About-Seite `https://klimaevidenzcheck.substack.com/about` (WebFetch 24.10.2026) | gelesen | Links auf Newsletter, Instagram, Facebook, WhatsApp, GitHub; Impressum mit Verantwortlichem; keine KI-Angabe |
+| About-Seite `https://klimaevidenzcheck.substack.com/about` (WebFetch 24.10.2026, zwei Abrufe) | gelesen, nur als Zusammenfassung des Abrufwerkzeugs (kein wörtlicher Text erhältlich) | Links auf Newsletter, Instagram, Facebook, WhatsApp, GitHub; „Jede Zahl hat eine Quelle“; drei Formate; Faktencheck-Satz; Code/Analysepläne öffentlich; Impressum mit § 5 DDG, § 18 Abs. 2 MStV, Anschrift Hattersheim am Main, E-Mail-Kontakt, Geltung für Instagram/Facebook/WhatsApp, Datenschutz mit Substack-Link; keine KI-Angabe |
 | Beitrag „Was ist Klima Kompass – und wo findet ihr uns?“ (WebFetch 24.10.2026) | gelesen | Beschreibt Evidenzcheck, Einordnung, Wissen; Repository-Link; Impressum-Link; erwähnt keine KI |
 | `kapitelplan.md`, `gliederung_rahmen.md`, `faktencheck_kap01/02/03/05/06.md` (Köpfe), `faktencheck_kap09.md` | gelesen | Gates, Prüfstand |
 | `.gitignore`, `.git/config`, `ABBRUCH.md` Rhein, `SAP Prognose-Register 2027` (Kopf), `Prognose-Register/01_gasspeicher-winter-2026-27.md` | gelesen | Rohdaten-Ausschluss; Remote-URL; Register-Eintrag #1 registriert 22.10.2026; vier Zielgrößen 2027 |
@@ -38,15 +39,15 @@ Legende: bestätigt / Abweichung / nicht prüfbar / kritisch. Im Zweifel „Abwe
 | 2 | „Zu jeder dieser Fragen gab es in diesem Jahr Zahlen, die stimmten, Zahlen, die verkürzt waren, und Zahlen, bei denen ein Vergleich fehlte.“ (Z. 4) | Kap. 1 (Vergleichsmaßstab), Kap. 2 (Müller vergleicht mit einem Winter; 136 TWh stimmen), Kap. 3 (6 Billionen brutto), Kap. 4 (Zeitfenster) | bestätigt (mit Hinweis) | Pauschal („zu jeder“). In den Kapiteln nachvollziehbar, aber nicht für jede Frage alle drei Sorten. E6. |
 | 3 | „Klima Kompass ist ein Projekt, das Aussagen zu Klima und Energie an öffentlichen Daten prüft und erklärt.“ (Z. 8) | Beitrag vom 16.10.2026 („Wir prüfen Aussagen zu Klima und Energie an öffentlichen Daten“) | bestätigt | |
 | 4 | „Unseren ersten Artikel haben wir am 27. August 2026 veröffentlicht.“ (Z. 8) | Archiv-API 24.10.2026; INDEX.md (27.8. THG-Trend 2040) | bestätigt | Frühester von 17 Posts; Veröffentlichungsdatum stimmt. |
-| 5 | „Unser Prinzip ist einfach: Jede Zahl hat eine Quelle, und wir legen vorab fest, wie wir rechnen.“ (Z. 10) | Kap. 2 Z. 45 (Zahl „300 GWh bis 2050“ „nicht belegt“); Kap. 3 Z. 22, 40 (Rechenkommentar ohne vorab festgelegten Plan); Kap. 4 Z. 70 (THG-Trend 2040 ohne Validierungsbericht als Datei) | Abweichung | Zwei Absolutaussagen. Das Vorab-Festlegen gilt für Evidenzchecks (CLAUDE.md), nicht für Einordnung, Wissen und den Rechenkommentar. „Jede Zahl hat eine Quelle“ widerspricht der Kennzeichnung „nicht belegt“ in Kap. 2. A1. |
-| 6 | „Dabei hilft uns künstliche Intelligenz. Sie schreibt Analysepläne, Programmcode und Entwürfe.“ (Z. 10) | CLAUDE.md; `.claude/agents/`; SAP-Autorenzeilen; Kap. 9 | bestätigt | Der Beitrag vom 16.10. und die About-Seite erwähnen KI nicht; das Buch ist die erste öffentliche Nennung außerhalb des Repositorys (Entscheidung Daniel Saure, vgl. Kap. 9 A10). |
-| 7 | „Freigeben und veröffentlichen tun Menschen.“ (Z. 10) | CLAUDE.md; Impressum (Verantwortlicher: Daniel Saure) | Abweichung (gering) | Regel stimmt; Plural „Menschen“ nach Quellenlage unbelegt (eine Person; Teamangaben nur nach Bestätigung, [FAKT 1]). Vorfall vom 29.08. (Kap. 9). A2. |
+| 5 | „Unser Prinzip ist einfach: Jede Zahl hat eine Quelle, und wir legen vorab fest, wie wir rechnen.“ (Z. 10) | Kap. 2 Z. 45 (Zahl „300 GWh bis 2050“ „nicht belegt“); Kap. 3 Z. 22, 40 (Rechenkommentar ohne vorab festgelegten Plan); Kap. 4 Z. 70 (THG-Trend 2040 ohne Validierungsbericht als Datei) | Abweichung | Zwei Absolutaussagen. Das Vorab-Festlegen gilt für Evidenzchecks (CLAUDE.md), nicht für Einordnung, Wissen und den Rechenkommentar. „Jede Zahl hat eine Quelle“ widerspricht der Kennzeichnung „nicht belegt“ in Kap. 2. Der Satz steht wörtlich auch auf der About-Seite und in Kap. 13 (Nr. 79). A1. |
+| 6 | „Dabei hilft uns künstliche Intelligenz. Sie schreibt Analysepläne, Programmcode und Entwürfe.“ (Z. 10) | CLAUDE.md; `.claude/agents/`; SAP-Autorenzeilen; Kap. 9 | bestätigt | Der Beitrag vom 16.10. und die About-Seite erwähnen KI nicht; das Buch ist die erste öffentliche Nennung außerhalb des Repositorys (Kap. 9: „Claude von Anthropic“ als Angabe entschieden). |
+| 7 | „Freigeben und veröffentlichen tun Menschen.“ (Z. 10) | CLAUDE.md; Impressum (Verantwortlicher: Daniel Saure); Einleitung Z. 8 („ein Mathematiker“) | Abweichung (gering) | Regel stimmt; Plural „Menschen“ nach Quellenlage unbelegt: Die Einleitung selbst spricht jetzt von einer Person („ein Mathematiker“). Vorfall vom 29.08. (Kap. 9). A2. |
 | 8 | Tabelle: **Evidenzcheck** „eingefrorener Analyseplan, unabhängige Validierung ohne Befund ‚kritisch‘, Freigabe“ (Z. 18) | CLAUDE.md Stufen | bestätigt | |
 | 9 | Tabelle: **Einordnung** „ergänzt um bereits veröffentlichte eigene Ergebnisse oder Zahlen aus der Quelle, ohne neue Rechnung“; Prüfung „Faktencheck, Freigabe“ (Z. 19) | CLAUDE.md Stufen | bestätigt | |
 | 10 | Tabelle: **Wissen** „Erklärstück auf Basis seriöser Quellen“; „Faktencheck, Freigabe“ (Z. 20) | CLAUDE.md Stufen | bestätigt | |
 | 11 | Tabelle: **Prognose-Register** „Registrierung mit Zeitstempel im Repository, Auswertung unabhängig vom Ausgang“ (Z. 21) | Registerdatei #1 (22.10.2026, „maßgeblich ist der Zeitstempel des Git-Commits“); SAP Register 2027 („Format: Evidenzcheck, Unterformat ‚Prognose-Register‘“; Registrierung mit Validierungsbericht im selben Commit) | Abweichung (gering) | Das Register ist laut SAP ein Unterformat des Evidenzchecks mit dessen Gate; die Tabelle nennt nur Registrierung und Auswertung, nicht Plan-Einfrieren und Validierung, und führt es als vierte „Form“. CLAUDE.md kennt es nicht als Stufe. Die Überschrift sagt „drei Formen und ein Register“, die Tabelle hat vier Zeilen. A6. |
 | 12 | „Eine Analyse beantwortet eine Frage. Eine Einordnung hilft, wenn ein Thema gerade in den Nachrichten ist. Ein Wissensstück erklärt, was man dafür wissen muss.“ (Z. 23) | `gliederung_rahmen.md` (gleicher Wortlaut); CLAUDE.md Stufen | bestätigt | Beschreibung der Stufen, Wertung ohne Zahl. |
-| 13 | „Offene Daten und offener Code. Analysepläne, Programme, Rohdaten und Prüfberichte liegen im öffentlichen Repository (https://github.com/dsaure55/klima-evidenzcheck).“ (Z. 27) | `.git/config` (origin); About-Seite; GitHub-Ordnerlisten | Abweichung | URL stimmt. Nicht für jede Analyse: GRDC-Rohdaten per `.gitignore` ausgeschlossen, Rhein-Rohdaten „nicht eingecheckt“ (`ABBRUCH.md`), Rohdaten der Batterie-/Dunkelflauten-Analyse derzeit unversioniert (git status); zu „65 Euro“ gibt es kein Skript (Kap. 3 Z. 40), zum THG-Trend 2040 keinen Validierungsbericht als Datei (Kap. 4 Z. 70). A3. |
+| 13 | „Offene Daten und offener Code. Analysepläne, Programme, Rohdaten und Prüfberichte liegen im öffentlichen Repository (https://github.com/dsaure55/klima-evidenzcheck).“ (Z. 27) | `.git/config` (origin); About-Seite („Code und Analysepläne sind öffentlich“); GitHub-Ordnerlisten | Abweichung | URL stimmt. Nicht für jede Analyse: GRDC-Rohdaten per `.gitignore` ausgeschlossen, Rhein-Rohdaten „nicht eingecheckt“ (`ABBRUCH.md`), Rohdaten der Batterie-/Dunkelflauten-Analyse derzeit unversioniert (git status); zu „65 Euro“ gibt es kein Skript (Kap. 3 Z. 40), zum THG-Trend 2040 keinen Validierungsbericht als Datei (Kap. 4 Z. 70). Die About-Seite und Kap. 13 sagen enger „Code und Analysepläne“. A3. |
 | 14 | „Sichtbare Korrekturen. Wo wir falsch lagen, steht es mit Datum und Begründung in Kapitel 8. Auch abgebrochene Analysen bleiben sichtbar.“ (Z. 28) | Kap. 8 (Entwurf); `ABBRUCH.md`; Kap. 9 | Abweichung (gering) | Kap. 8: Bei Fall 4 fehlt ein Korrekturdatum („bisher nichts geändert“), bei Fall 5 und 6 steht „Ursache … noch nicht aufgearbeitet“ und „Aufnahme offen“. „Mit Datum und Begründung“ trifft derzeit auf drei von sechs Fällen nur teilweise zu. Der abgebrochene Rhein-Fall steht in Kap. 9 und im Repository, nicht in Kap. 8. A4. |
 | 15 | „Quellen und Stand im Text. Jede Zahl hat eine Quelle und einen Datenstand. Wo etwas eine Schätzung mit Spanne ist, steht die Spanne dabei.“ (Z. 29) | Kap. 2 Z. 45 und Kopfzeile Kap. 2 (DWD-Abgleich nicht als erledigt dokumentiert); Kap. 3 (Nachtrag „belegt ist das nicht“) | Abweichung | Wie Nr. 5. „Spanne dabei“: Stichprobe in Kap. 1–6 ohne Gegenbefund, aber nicht für das ganze Buch prüfbar. A1. |
 | 16 | „Das Prognose-Register. Wir messen uns an unseren eigenen Vorhersagen (Kapitel 10).“ (Z. 30) | Kap. 10; Registerdatei #1 | bestätigt | Bisher ein Eintrag registriert; Auswertung frühestens Mai/Juni 2027. |
@@ -86,7 +87,7 @@ Maßstab: Der Kopf sagt, jede Zeile sei der Kurz-gesagt-Absatz „gekürzt“; d
 | Nr. | Behauptung | Quelle | Ergebnis | Hinweis |
 |---|---|---|---|---|
 | 40 | „Das Klima-Jahr 2026 hat uns eine Menge Zahlen geliefert. Einige davon haben wir geprüft, einige erklärt, und bei einigen haben wir uns selbst korrigiert.“ (Z. 4) | Kap. 1–8 | bestätigt (mit Hinweis) | Sachlich (Evidenzchecks, Wissen/Einordnung, Korrekturen). „Klima-Jahr“: Zeitraum 27.08.–21.10.2026 (A7). |
-| 41 | „Wenn du bis hierher gelesen hast, kennst du unsere Arbeitsweise und weißt, wo du uns widersprechen kannst.“ (Z. 4) | Kap. 8 („Wie du uns einen Fehler meldest“), Kap. 9 | nicht prüfbar | Wertung. Der Meldeweg (Kommentare, Kontakt über „Über / Impressum“) ist nicht geprüft; die About-Seite zeigte beim Abruf nur das Impressum mit Anschrift. E5. |
+| 41 | „Wenn du bis hierher gelesen hast, kennst du unsere Arbeitsweise und weißt, wo du uns widersprechen kannst.“ (Z. 4) | Kap. 8 („Wie du uns einen Fehler meldest“), Kap. 9; Impressum (E-Mail-Kontakt, Kap. 13) | bestätigt (mit Hinweis) | Wertung. Ein Kontaktweg ist durch das Impressum (E-Mail laut About-Seite) belegt. Ob Kommentare unter den Artikeln freigeschaltet sind (Kap. 8), ist nicht geprüft. E5. |
 | 42 | „Der erste Eintrag, die Gasspeicher-Entnahme im Winter 2026/27, ist registriert.“ (Z. 8) | Registerdatei #1 („Registriert: 22.10.2026“) | bestätigt | |
 | 43 | „Die Auswertung folgt, sobald die Daten vorliegen, voraussichtlich im Frühsommer 2027.“ (Z. 8) | Registerdatei („Mai/Juni 2027“, Eurostat bis März 2027) | bestätigt | „Frühsommer“ = Mai/Juni. |
 | 44 | „Für 2027 planen wir vier weitere Vorhersagen (Kapitel 10). Termine können sich verschieben.“ (Z. 8) | SAP Prognose-Register 2027 (vier Vorhersagen V1–V4; Teilfreigabe V3); Registerdatei (Einträge #2–#5 reserviert, laut SAP-Verlauf) | bestätigt | Als „geplant“ gekennzeichnet; der SAP ist erst teilweise eingefroren. |
@@ -117,7 +118,7 @@ Maßstab: Der Kopf sagt, jede Zeile sei der Kurz-gesagt-Absatz „gekürzt“; d
 | 64 | **Validierung:** „Unabhängige Prüfung von Code und Ergebnissen gegen den Analyseplan.“ (Kap. 9) | Kap. 9 Z. 19 | bestätigt | |
 | 65 | Kopf: „Nur Begriffe, die in den Kapiteln erklärt werden; Erklärungen sind den Kapiteltexten entnommen.“ (Z. 2) | Vergleich Nr. 50–64 | bestätigt (mit Hinweis) | Gilt für alle Einträge außer den in Nr. 51–53, 55, 63 genannten Abweichungen. 15 Einträge (Einordnung/Evidenzcheck/Wissen als einer gezählt); `kapitelplan.md` nannte 20–30. E2. |
 
-### 2.5 Kanäle und Impressum (`13-kanaele-impressum.md`)
+### 2.5 Kanäle und Impressum (`13-kanaele-impressum.md`, Linkliste Z. 6–11)
 
 | Nr. | Behauptung | Quelle | Ergebnis | Hinweis |
 |---|---|---|---|---|
@@ -127,25 +128,40 @@ Maßstab: Der Kopf sagt, jede Zeile sei der Kurz-gesagt-Absatz „gekürzt“; d
 | 69 | WhatsApp-Kanal: `https://whatsapp.com/channel/0029Vb7dScK5kg74YY4ksf1j` | CLAUDE.md; About-Seite | bestätigt | Abruf des Kanals selbst nicht geprüft. |
 | 70 | Repository: `https://github.com/dsaure55/klima-evidenzcheck` – „Repository mit Analysen, Code und Daten“ | `.git/config`; About-Seite; GitHub abrufbar | bestätigt (mit Hinweis) | URL stimmt. „Daten“ nicht für jede Analyse (Nr. 13). A3. |
 | 71 | „Über uns / Impressum: `https://klimaevidenzcheck.substack.com/about`“ | CLAUDE.md („Über / Impressum“, URL gleich); About-Seite | Abweichung (gering) | URL stimmt. Die Bezeichnung weicht ab: CLAUDE.md, Einleitung und Kopf nennen „Über / Impressum“. A22. |
-| 72 | Kopf: „URLs aus `CLAUDE.md` (feste Kanal-URLs)“; „Impressum nach § 18 Abs. 2 MStV“ | CLAUDE.md; About-Seite („Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV“) | bestätigt | Der Name Daniel Saures erscheint nach CLAUDE.md öffentlich nur im Impressum; der Textteil ist Platzhalter. |
+| 72 | Kopf: „URLs aus `CLAUDE.md` (feste Kanal-URLs)“; „Impressum … § 18 Abs. 2 MStV“ | CLAUDE.md; About-Seite | bestätigt | Der Name Daniel Saures erscheint nach CLAUDE.md öffentlich nur im Impressum; das ist eingehalten (Nr. 78). |
 | 73 | Zeile „Substack (die ausführlichen Texte)“ | CLAUDE.md (Substack = Artikelkanal) | bestätigt | Beschreibend. |
 | 74 | Kein LinkedIn-Eintrag | CLAUDE.md („LinkedIn seit 16.10.2026 eingestellt“) | bestätigt | |
 
+### 2.6 Neu seit Auftragsbeginn: Einleitung „Wer wir sind“ und Kap. 13 „Über Klima Kompass“, „Impressum“
+
+| Nr. | Behauptung | Quelle | Ergebnis | Hinweis |
+|---|---|---|---|---|
+| 75 | „Hinter Klima Kompass steht ein Mathematiker, den der Klimawandel besorgt und der dazu einen Beitrag leisten will.“ (Einleitung Z. 8) | Selbstangabe Daniel Saure (Chat 24.10., laut Anmerkung im Text); Impressum nennt „Dr. Daniel Saure“, kein Fach | nicht prüfbar | Beruf/Fach und Beweggrund stehen in keiner gelesenen Quelle im Repository oder auf den Substack-Seiten. Als Selbstauskunft übernommen; Aufnahme laut Kopfzeile nur nach ausdrücklicher Bestätigung (liegt für FAKT 1 vor, Wortlaut im Chat nicht einsehbar). |
+| 76 | „Ihm fiel auf: In der öffentlichen Diskussion fehlt es oft an Daten und Analysen. Das wollen wir ändern.“ (Z. 8) | – | Abweichung | Wertung mit Häufigkeitswort („oft“) ohne Beleg; als persönliche Motivation lesbar, aber als Tatsachenbehauptung nicht belegt. Wechsel von „ihm“ zu „wir“ (Person gegen Team) unklar. A23. |
+| 77 | „Wer verantwortlich ist, steht im Impressum.“ (Z. 8) | Kap. 13 Impressum (Verantwortlich nach § 18 Abs. 2 MStV: Dr. Daniel Saure); About-Seite | bestätigt | Name steht im Fließtext der Einleitung nicht (Projektregel eingehalten, Anmerkung im Text fragt es offen). |
+| 78 | Kap. 13 „Über Klima Kompass“: „prüft Aussagen zu Klima und Energie an öffentlichen Daten, zum Beispiel vom Umweltbundesamt, vom Deutschen Wetterdienst oder von Copernicus.“ (Z. 15) | About-Seite (gleiche Quellen genannt); Kap. 1, 4, 6 (UBA, DWD, Copernicus) | bestätigt | |
+| 79 | „Jede Zahl hat eine Quelle.“ (Z. 15) | About-Seite (gleicher Satz); Kap. 2 Z. 45 | Abweichung | Wie Nr. 5: Absolutaussage, in Kap. 2 gibt es eine als „nicht belegt“ gekennzeichnete Zahl. A1. |
+| 80 | Drei Formate: Evidenzcheck („legen wir in einem Analyseplan fest, wie wir rechnen. Danach prüft eine unabhängige Validierung Code und Ergebnisse“), Einordnung („ohne neue Berechnung“), Wissen (Z. 17–21) | CLAUDE.md Stufen; About-Seite; Beitrag 16.10. | bestätigt | Inhaltlich deckungsgleich mit der About-Seite. |
+| 81 | „Einordnungen und Wissensstücke durchlaufen vor der Veröffentlichung einen Faktencheck. Code und Analysepläne sind öffentlich: https://github.com/dsaure55/klima-evidenzcheck“ (Z. 23) | CLAUDE.md Gates; About-Seite (Faktencheck-Satz, GitHub-Link) | bestätigt | Enger und damit richtiger als Einleitung Z. 27 (Nr. 13). Für frühe Beiträge (vor der Stufenregel vom 16.10.) gilt der Faktencheck nicht durchgängig; der Satz beschreibt die heutige Regel. |
+| 82 | Impressum: „Angaben gemäß § 5 DDG“; Name, Anschrift Hattersheim am Main; „Kontakt: dsaure55@gmail.com“; „Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV: Dr. Daniel Saure, Anschrift wie oben.“ (Z. 27–36) | About-Seite 24.10.2026 (Impressum mit § 5 DDG, § 18 Abs. 2 MStV, Anschrift in Hattersheim am Main, E-Mail-Kontakt) | bestätigt (mit Hinweis) | Inhaltlich übereinstimmend. Ein wörtlicher Zeichenabgleich (Straße, PLZ, E-Mail-Adresse) war nicht möglich, weil das Abrufwerkzeug den Seitentext nur zusammenfasst und Daten nicht wiedergibt. Kopfzeile verlangt den Abgleich gegen die Live-Seite vor Satz: weiterhin offen. Rechtliche Eignung eines gedruckten/verteilten Impressums (§ 5 DDG im Buch) nicht Gegenstand der Prüfung. A24. |
+| 83 | „Dieses Impressum gilt auch für die Auftritte von Klima Kompass auf Instagram, Facebook und WhatsApp.“ (Z. 38) | About-Seite (Geltung für Instagram, Facebook, WhatsApp) | bestätigt | |
+| 84 | Datenschutz: „Der Newsletter wird über die Plattform Substack betrieben. … Datenschutzerklärung von Substack: https://substack.com/privacy“ (Z. 42) | About-Seite (Substack-Datenschutz-Link) | bestätigt (mit Hinweis) | Inhalt stimmt; die exakte Link-URL wurde nicht wörtlich verglichen und nicht geöffnet. A24. |
+
 ## 3. Platzhalter (markiert, nicht bewertet)
 
-- `00-einleitung.md`: **[FAKT 1]** (Z. 8, Wer steht hinter Klima Kompass), **[FAKT 2]** (Z. 8, Seit wann), **[FAKT 3]** (Z. 55, Rückmeldungen/Kontaktweg), **[FAKT 4]** (Z. 57, Dank); **[Datum, voraussichtlich 15.11.2026]** (Z. 44, Redaktionsschluss).
+- `00-einleitung.md`: **[FAKT 1 geliefert … Offen: Soll „Dr. Daniel Saure“ hier im Fließtext stehen? …]** (Z. 8, Hinweisklammer im Text; vor Satz entfernen); **[FAKT 2 offen]** (Z. 8); **[FAKT 3 … Daniel Saure, 24.10.2026: „Ja“]** (Z. 55; die Aufforderung zur Rückmeldung steht noch nicht im Fließtext); **[FAKT 4: Dank an wen? Oder streichen.]** (Z. 57); **[Datum, voraussichtlich 15.11.2026]** (Z. 44, Redaktionsschluss).
 - `00b-ueberblick.md`: **[Expertenrat-Abgleich und Prognose-Check: Stand beim Satz ergänzen.]** (Z. 11, Kap. 4); „Seitenverweise folgen beim Satz“ (Kopf).
 - `11-nachwort.md`: **[Ausblick auf Analysen, die nicht ins Buch kamen …]** (Z. 10).
-- `13-kanaele-impressum.md`: **[Wortlaut von der Substack-Seite „Über / Impressum“ einfügen, Daniel Saure bestätigt.]** (Z. 15). Der Impressumstext wird erst nach Einfügen prüfbar (Abgleich Wort für Wort mit der Substack-Seite, Gate T40).
-- Aussagen über Hintergrund, Team, Unabhängigkeit, Finanzierung: derzeit nicht im Text; nur nach ausdrücklicher Bestätigung durch Daniel Saure aufnehmen und dann erneut prüfen.
+- `13-kanaele-impressum.md`: kein Platzhalter mehr im Text; der Impressum-Wortlaut ist eingefügt, die Kopfzeile verlangt den Abgleich gegen die Live-Seite vor Satz (Nr. 82).
+- Aussagen über Finanzierung, Unabhängigkeit und Interessen: nicht im Text (laut Anmerkung nicht geliefert).
 
 ## 4. Auflagen (vor Freigabe zu erfüllen)
 
-**A1. Einleitung Z. 10, Z. 29: „Jede Zahl hat eine Quelle“ / „vorab festlegen“.** (Nr. 5, 15) Absolutformulierungen. Änderungsvorschlag: „Jede Zahl nennt ihre Quelle; wo wir keine fanden, sagen wir das (Beispiel: Kapitel 2). Bei Evidenzchecks legen wir vorab fest, wie wir rechnen.“ Z. 29 entsprechend („Quelle und Datenstand, soweit sie bekannt sind“).
+**A1. Einleitung Z. 10, Z. 29 und Kap. 13 Z. 15: „Jede Zahl hat eine Quelle“ / „vorab festlegen“.** (Nr. 5, 15, 79) Absolutformulierungen. Änderungsvorschlag: „Jede Zahl nennt ihre Quelle; wo wir keine fanden, sagen wir das (Beispiel: Kapitel 2). Bei Evidenzchecks legen wir vorab fest, wie wir rechnen.“ Z. 29 entsprechend („Quelle und Datenstand, soweit sie bekannt sind“). Der Satz steht auch auf der Live-Seite; Anpassung dort Entscheidung Daniel Saure, im Buch aber nicht zu übernehmen.
 
-**A2. Einleitung Z. 10: „Freigeben und veröffentlichen tun Menschen.“** (Nr. 7) „Menschen“ nur, wenn mehr als eine Person beteiligt ist (Quellenlage: eine verantwortliche Person); ggf. „Ein Mensch gibt frei und veröffentlicht“. Abstimmen mit [FAKT 1] und Kap. 9 A2.
+**A2. Einleitung Z. 10: „Freigeben und veröffentlichen tun Menschen.“** (Nr. 7) Mit Z. 8 („ein Mathematiker“) vereinheitlichen: „Ein Mensch gibt frei und veröffentlicht.“ Abstimmen mit Kap. 9 A2.
 
-**A3. Einleitung Z. 27 und Kanäle Z. 10: Repository-Inhalt.** (Nr. 13, 70) „Analysepläne, Programme, Rohdaten und Prüfberichte“ einschränken (nicht jede Analyse hat alles; Lizenz- und technische Gründe) und mit Kap. 9 A14 gleich formulieren.
+**A3. Einleitung Z. 27 und Kanäle Z. 10: Repository-Inhalt.** (Nr. 13, 70) „Analysepläne, Programme, Rohdaten und Prüfberichte“ einschränken (nicht jede Analyse hat alles; Lizenz- und technische Gründe), wie auf der About-Seite und in Kap. 13 Z. 23 („Code und Analysepläne“), und mit Kap. 9 A14 gleich formulieren.
 
 **A4. Einleitung Z. 28: „mit Datum und Begründung in Kapitel 8“.** (Nr. 14) Erst formulieren, wenn Kap. 8 die offenen Fälle (4, 5, 6) entschieden hat; sonst „mit Datum, soweit geändert, und Begründung, soweit geklärt“. Abgebrochene Analysen: Verweis auf Kap. 9 statt Kap. 8.
 
@@ -183,7 +199,11 @@ Maßstab: Der Kopf sagt, jede Zeile sei der Kurz-gesagt-Absatz „gekürzt“; d
 
 **A21. Glossar Szenario/Prognose/Projektion.** (Nr. 63) Projektion erklären („Rechnung, die beschreibt, was unter bestimmten Annahmen passiert“, Kap. 10) oder aus der Überschrift streichen.
 
-**A22. Kanäle Z. 11: Bezeichnung.** (Nr. 71) „Über / Impressum“ verwenden (wie CLAUDE.md und Einleitung). Impressumstext erst prüfen, wenn er eingefügt ist (Wort für Wort gegen die Substack-Seite).
+**A22. Kanäle Z. 11: Bezeichnung.** (Nr. 71) „Über / Impressum“ verwenden (wie CLAUDE.md und Einleitung).
+
+**A23. Einleitung Z. 8: „Wer wir sind“.** (Nr. 75, 76) „Mathematiker“, „besorgt“ und „fehlt es oft an Daten und Analysen“ sind Selbstaussagen bzw. Wertungen ohne Beleg im Repository; Daniel Saure bestätigt die Formulierung ausdrücklich am gesetzten Text oder streicht „oft“/formuliert als persönliche Sicht („Ihm fiel auf, dass …“ mit Beispiel aus den Kapiteln). „Ihm … wir“ vereinheitlichen. Die Anmerkungsklammer (FAKT 1) vor Satz entfernen.
+
+**A24. Kap. 13 Impressum und Datenschutz.** (Nr. 82, 84) Vor Satz Wort für Wort gegen die Live-Seite abgleichen (Anschrift, E-Mail, § 5 DDG, § 18 Abs. 2 MStV, Substack-Link) und die Prüfung als Nachtrag in dieser Datei festhalten; der heute mögliche Abgleich war nur inhaltlich.
 
 ## 5. Empfehlungen (nicht bindend)
 
@@ -191,29 +211,31 @@ Maßstab: Der Kopf sagt, jede Zeile sei der Kurz-gesagt-Absatz „gekürzt“; d
 - **E2.** Glossar: Begriffe ergänzen, die im Buch ohne Erklärung bleiben könnten (Standardabweichung, NDC, Overshoot, Metaanalyse); `kapitelplan.md` nannte 20–30 Einträge, vorhanden sind 15.
 - **E3.** Einleitung Z. 47: „Wir gehen damit so um“ konkretisieren („vorsichtig, ohne Dramatisierung“, wie Kap. 1).
 - **E4.** Nachwort Z. 14: „dort“ klären (Substack-Artikel oder Kapitel).
-- **E5.** Meldeweg (Einleitung [FAKT 3], Kap. 8, Nachwort): Vor Satz prüfen, ob Kommentare auf Substack freigeschaltet sind und welcher Kontaktweg im Impressum steht.
+- **E5.** Meldeweg (Einleitung [FAKT 3], Kap. 8, Nachwort): Das Impressum nennt eine E-Mail-Adresse; vor Satz prüfen, ob Kommentare auf Substack freigeschaltet sind, und Kap. 8 darauf abstimmen.
 - **E6.** Einleitung Z. 4: Der Satz „Zu jeder dieser Fragen …“ kann mit je einem Kapitelbeispiel belegt werden; derzeit pauschal.
 - **E7.** Herkunftsangaben in den Kopfzeilen vor Satz entfernen (wie vermerkt). Kap. 8 und Überblick: Bezugsgröße „16 Artikel“ (Archiv zeigt 17) abstimmen.
+- **E8.** Kap. 13 enthält die persönliche Anschrift und E-Mail-Adresse einer Privatperson in einem verteilten Dokument. Das entspricht der Live-Seite; Daniel Saure bestätigt die Übernahme in ein PDF ausdrücklich (keine Rechtsprüfung).
 
 ## 6. Nicht geprüft / Vorbehalte
 
-- **Kapitel 4, 7, 8, 9, 10:** nur als Vergleichsbasis gelesen; ohne Faktencheck. Alle Überblicks-, Nachwort- und Glossar-Aussagen über diese Kapitel gelten nur für den Entwurfsstand und müssen nach deren Prüfung neu abgeglichen werden.
+- **Kapitel 4, 7, 8, 9, 10:** nur als Vergleichsbasis gelesen; ohne Faktencheck (Kap. 9: eigene Datei). Alle Überblicks-, Nachwort- und Glossar-Aussagen über diese Kapitel gelten nur für den Entwurfsstand und müssen nach deren Prüfung neu abgeglichen werden.
 - **Kapitel 1–3, 5, 6:** Textstellen zu den Rahmenaussagen gelesen; die Faktenchecks dieser Kapitel wurden nicht neu durchgeführt.
 - **Instagram-, Facebook- und WhatsApp-Seiten selbst:** nicht abgerufen; URLs nur gegen CLAUDE.md und About-Seite verglichen.
-- **Impressum-Text:** Platzhalter; nicht prüfbar.
-- **Substack-Kommentarfunktion und Kontaktweg:** nicht geprüft.
+- **Impressum-Wortlaut:** nur inhaltlich gegen die Zusammenfassung des Abrufwerkzeugs geprüft, nicht wörtlich (Nr. 82, 84). Chat-Aussagen Daniel Saures zu FAKT 1 und zum Impressum nicht einsehbar.
+- **Substack-Kommentarfunktion:** nicht geprüft.
 - **Satzverweise („siehe letzte Seite“, Seitenzahlen):** erst nach Layout prüfbar.
 - **Stil, Wortzahl, Leseniveau, Rechtschreibung:** nicht Teil dieser Prüfung.
 
 ## 7. Was für die Freigabe noch zu erledigen ist
 
-1. A1–A22 umsetzen; danach fokussierte Nachprüfung als Nachtrag in dieser Datei (Dokumentationspflicht CLAUDE.md).
-2. [FAKT 1–4], [Datum], Impressumstext und den Nachwort-Ausblick von Daniel Saure liefern lassen; die dann ergänzten Texte erneut prüfen.
-3. Überblick und Glossar nach Fertigstellung und Prüfung von Kap. 4, 7, 8, 9, 10 erneut gegen die Kapitel abgleichen (Differenzprüfung).
-4. Freigabe durch Daniel Saure nach vollständiger Lektüre des aktuellen Textes (kein Freigabevermerk in dieser Datei).
+1. A1–A24 umsetzen; danach fokussierte Nachprüfung als Nachtrag in dieser Datei (Dokumentationspflicht CLAUDE.md).
+2. FAKT 2 und 4, [Datum] und den Nachwort-Ausblick von Daniel Saure liefern lassen; die dann ergänzten Texte erneut prüfen.
+3. Impressum und Datenschutz gegen die Live-Seite Wort für Wort abgleichen (A24).
+4. Überblick und Glossar nach Fertigstellung und Prüfung von Kap. 4, 7, 8, 9, 10 erneut gegen die Kapitel abgleichen (Differenzprüfung).
+5. Freigabe durch Daniel Saure nach vollständiger Lektüre des aktuellen Textes (kein Freigabevermerk in dieser Datei).
 
 ## Gesamturteil
 
-**ok mit Auflagen** (22 Auflagen, 7 Empfehlungen; Platzhalter offen). Kein Punkt ist „kritisch“. Bestätigt sind die Kanal-URLs (alle vier plus GitHub, gegen CLAUDE.md und die About-Seite), das Datum des ersten Artikels (27.08.2026, Archiv), die Beschreibung der Stufen, der Buchaufbau, das Raster, die Angaben zum Prognose-Register (Eintrag #1 registriert 22.10.2026, Auswertung Mai/Juni 2027, vier geplante Vorhersagen) und die Mehrzahl der Glossar-Definitionen. Wesentliche Mängel: Der Überblick gibt einige Kurz-gesagt-Absätze nicht nur gekürzt, sondern mit weggelassenen Einschränkungen wieder (Zeile 2: Batteriespeicher ohne „in unserer Rechnung“, Bereinigung, Nachladung, Importe; Zeile 5: ohne Jahr, Gasbezug und Gedankenexperiment-Satz; Zeile 3 und 4 ohne „nach unserer Rechnung“ bzw. „keine Prognose“; Zeile 8: „mit Datum und Ursache“ trifft auf die offenen Fälle 5 und 6 nicht zu, „sechs Artikel“ passt zu Kap. 8 nur einschließlich der Fälle mit „Aufnahme offen“) (A8–A16); die Einleitung enthält zwei Absolutformulierungen („Jede Zahl hat eine Quelle“, „Rohdaten und Prüfberichte“ im Repository), die Kap. 2, 3, 4 und der Repository-Stand widerlegen (A1, A3); Glossar-Einträge Brutto/netto, Dunkelflaute und Szenario/Projektion weichen von den Kapiteltexten ab (A19–A21). Keine neue Berechnung in den Rahmentexten.
+**ok mit Auflagen** (24 Auflagen, 8 Empfehlungen; Platzhalter offen). Kein Punkt ist „kritisch“. Bestätigt sind die Kanal-URLs (alle vier plus GitHub, gegen CLAUDE.md und die About-Seite), das Datum des ersten Artikels (27.08.2026, Archiv), die Beschreibung der Stufen, der Buchaufbau, das Raster, die Angaben zum Prognose-Register (Eintrag #1 registriert 22.10.2026, Auswertung Mai/Juni 2027, vier geplante Vorhersagen), die Mehrzahl der Glossar-Definitionen und der Inhalt des neuen Über-Textes und Impressums in Kap. 13 (inhaltlich gegen die Live-Seite, nicht wörtlich). Wesentliche Mängel: Der Überblick gibt einige Kurz-gesagt-Absätze nicht nur gekürzt, sondern mit weggelassenen Einschränkungen wieder (Zeile 2: Batteriespeicher ohne „in unserer Rechnung“, Bereinigung, Nachladung, Importe; Zeile 5: ohne Jahr, Gasbezug und Gedankenexperiment-Satz; Zeile 3 und 4 ohne „nach unserer Rechnung“ bzw. „keine Prognose“; Zeile 8: „mit Datum und Ursache“ trifft auf die offenen Fälle 5 und 6 nicht zu, „sechs Artikel“ passt zu Kap. 8 nur einschließlich der Fälle mit „Aufnahme offen“) (A8–A16); die Einleitung und Kap. 13 enthalten Absolutformulierungen („Jede Zahl hat eine Quelle“, „Rohdaten und Prüfberichte“ im Repository), die Kap. 2, 3, 4 und der Repository-Stand widerlegen (A1, A3); die neue Angabe zu FAKT 1 ist Selbstauskunft mit unbelegter Wertung (A23); Glossar-Einträge Brutto/netto, Dunkelflaute und Szenario/Projektion weichen von den Kapiteltexten ab (A19–A21). Keine neue Berechnung in den Rahmentexten.
 
 *Dieses Dokument enthält keinen Freigabevermerk und ersetzt keine Freigabe durch Daniel Saure.*

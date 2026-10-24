@@ -1,13 +1,13 @@
 # Einleitung – Wer wir sind, was wir machen und wie du dieses Buch liest
 **ENTWURF v0.1 (24.10.2026) – nicht geprüft, nicht freigegeben. Enthält Platzhalter `[FAKT n]`: Daniel Saure liefert diese Angaben (siehe `gliederung_rahmen.md`); ohne sie wird nichts ergänzt. Aussagen über Hintergrund, Team und Unabhängigkeit nur nach ausdrücklicher Bestätigung. Vor Satz/Export: diese Kopfzeile entfernen.**
 
-Dieses Buch ist das Klima-Jahr 2026 in Zahlen: War der Sommer normal? Reicht das Gas für den Winter? Was kostet Klimapolitik? Schafft Deutschland sein Klimaziel? Zu jeder dieser Fragen gab es in diesem Jahr Zahlen, die stimmten, Zahlen, die verkürzt waren, und Zahlen, bei denen ein Vergleich fehlte. Wir haben nachgesehen, was die Daten tatsächlich zeigen, und schreiben hier auf, was herauskam.
+Dieses Buch sammelt unsere Antworten aus dem Herbst 2026 (27. August bis 21. Oktober): War der Sommer normal? Reicht das Gas für den Winter? Was kostet Klimapolitik? Schafft Deutschland sein Klimaziel? Zu jeder dieser Fragen gab es in diesem Jahr Zahlen, die stimmten, Zahlen, die verkürzt waren, und Zahlen, bei denen ein Vergleich fehlte. Wir haben nachgesehen, was die Daten tatsächlich zeigen, und schreiben hier auf, was herauskam.
 
 ## Wer wir sind
 
-Klima Kompass ist ein Projekt, das Aussagen zu Klima und Energie an öffentlichen Daten prüft und erklärt. Hinter Klima Kompass steht ein Mathematiker, den der Klimawandel besorgt und der dazu einen Beitrag leisten will. Ihm fiel auf: In der öffentlichen Diskussion fehlt es oft an Daten und Analysen. Das wollen wir ändern. Wer verantwortlich ist, steht im Impressum. [FAKT 1 geliefert von Daniel Saure am 24.10.2026. Offen: Soll „Dr. Daniel Saure“ hier im Fließtext stehen? Die Projektregel lässt den Namen sonst nur im Impressum zu, deshalb steht er hier nicht. Angaben zu Finanzierung, Unabhängigkeit und Interessen wurden nicht geliefert und stehen nicht im Text.] Unseren ersten Artikel haben wir am 27. August 2026 veröffentlicht. [FAKT 2 offen: Nur nötig, falls es Klima Kompass schon vor dem ersten Artikel gab.]
+Klima Kompass ist ein Projekt, das Aussagen zu Klima und Energie an öffentlichen Daten prüft und erklärt. Hinter Klima Kompass steht ein Mathematiker, den der Klimawandel besorgt und der dazu einen Beitrag leisten will. Aus seiner Sicht fehlt es in der öffentlichen Diskussion oft an Daten und Analysen. Dazu wollen wir beitragen. Wer verantwortlich ist, steht im Impressum. Unseren ersten Artikel haben wir am 27. August 2026 veröffentlicht. [FAKT 2 offen: Nur nötig, falls es Klima Kompass schon vor dem ersten Artikel gab.]
 
-Unser Prinzip ist einfach: Jede Zahl hat eine Quelle, und wir legen vorab fest, wie wir rechnen. Dabei hilft uns künstliche Intelligenz. Sie schreibt Analysepläne, Programmcode und Entwürfe. Freigeben und veröffentlichen tun Menschen. Wie das genau abläuft, steht in Kapitel 9.
+Unser Prinzip ist einfach: Jede Zahl nennt ihre Quelle, und bei Evidenzchecks legen wir vorab fest, wie wir rechnen. Dabei hilft uns künstliche Intelligenz. Sie schreibt Analysepläne, Programmcode und Entwürfe. Ein Mensch gibt frei und veröffentlicht. Wie das genau abläuft, steht in Kapitel 9.
 
 ## Was wir machen
 
@@ -18,15 +18,15 @@ Wir arbeiten in drei Formen und führen ein Register:
 | **Evidenzcheck** | eine neue Analyse mit vorab festgelegtem Plan | eingefrorener Analyseplan, unabhängige Validierung ohne Befund „kritisch“, Freigabe |
 | **Einordnung** | ein aktuelles Thema, ergänzt um bereits veröffentlichte eigene Ergebnisse oder Zahlen aus der Quelle, ohne neue Rechnung | Faktencheck, Freigabe |
 | **Wissen** | ein Erklärstück auf Basis seriöser Quellen | Faktencheck, Freigabe |
-| **Prognose-Register** | wir legen uns vorab auf Erwartungen fest und melden später „getroffen“ oder „nicht getroffen“ | Registrierung mit Zeitstempel im Repository, Auswertung unabhängig vom Ausgang |
+| **Prognose-Register** (eine Form des Evidenzchecks, die vorausschaut) | wir legen uns vorab auf Erwartungen fest und melden später „getroffen“ oder „nicht getroffen“ | eingefrorener Plan, Validierung, Registrierung mit Zeitstempel im Repository, Auswertung unabhängig vom Ausgang |
 
 Dass es alle drei Formen gibt, hat einen Grund. Eine Analyse beantwortet eine Frage. Eine Einordnung hilft, wenn ein Thema gerade in den Nachrichten ist. Ein Wissensstück erklärt, was man dafür wissen muss.
 
 ## Woran du uns messen kannst
 
-- **Offene Daten und offener Code.** Analysepläne, Programme, Rohdaten und Prüfberichte liegen im öffentlichen Repository (https://github.com/dsaure55/klima-evidenzcheck).
-- **Sichtbare Korrekturen.** Wo wir falsch lagen, steht es mit Datum und Begründung in Kapitel 8. Auch abgebrochene Analysen bleiben sichtbar.
-- **Quellen und Stand im Text.** Jede Zahl hat eine Quelle und einen Datenstand. Wo etwas eine Schätzung mit Spanne ist, steht die Spanne dabei.
+- **Offene Daten und offener Code.** Analysepläne, Programme, Prüfberichte und, soweit möglich, Rohdaten liegen im öffentlichen Repository (https://github.com/dsaure55/klima-evidenzcheck).
+- **Sichtbare Korrekturen.** Wo wir falsch lagen, steht es in Kapitel 8, mit Datum und, soweit geklärt, Begründung. Abgebrochene Analysen bleiben sichtbar (Kapitel 9).
+- **Quellen und Stand im Text.** Jede Zahl nennt Quelle und, soweit bekannt, Datenstand. Wo etwas eine Schätzung mit Spanne ist, steht die Spanne dabei.
 - **Das Prognose-Register.** Wir messen uns an unseren eigenen Vorhersagen (Kapitel 10).
 
 ## So liest du dieses Buch
@@ -42,7 +42,7 @@ Jedes Kapitel folgt demselben Raster: **Kurz gesagt** (die Antwort in einem Absa
 Ein paar Hinweise:
 
 - **Stand der Daten:** Redaktionsschluss ist der [Datum, voraussichtlich 15.11.2026]. Was danach passiert ist, steht nicht im Buch.
-- **Grafiken** zeigen vorhandene Zahlen aus unseren Analysen oder den genannten Quellen. Sie enthalten keine neuen Rechnungen.
+- **Grafiken** zeigen vorhandene Zahlen aus unseren Analysen oder den genannten Quellen. Sie enthalten keine neuen Analysen. Wo Werte aus einem erneuten Rechenlauf stammen, steht es im Kapitel.
 - **Kapitel 4** enthält die Evidenzchecks dieses Herbstes, soweit sie bis zum Redaktionsschluss geprüft und freigegeben sind. Was noch aussteht, steht dort ausdrücklich.
 - **Was das Buch nicht ist:** Es ist kein Lehrbuch der Statistik und gibt keine Empfehlung zu Geld, Gesundheit oder Politik. Hinter den Zahlen zu hitzebedingten Sterbefällen stehen Menschen. Wir gehen damit so um.
 

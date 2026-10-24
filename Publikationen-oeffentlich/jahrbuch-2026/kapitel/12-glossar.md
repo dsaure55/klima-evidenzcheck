@@ -3,15 +3,15 @@
 
 **95-Prozent-Intervall (Prognoseintervall):** Der Bereich, in dem ein Wert nach dem verwendeten Modell mit 95 Prozent Wahrscheinlichkeit liegt. (Kapitel 4, 10)
 
-**Amendment:** Eine gekennzeichnete Änderung an einem eingefrorenen Analyseplan, mit Begründung und erneuter Freigabe. (Kapitel 9)
+**Amendment / Erratum:** Eine gekennzeichnete Änderung an einem eingefrorenen Analyseplan, mit Begründung und erneuter Freigabe. (Kapitel 9)
 
-**ARIMA:** Ein Zeitreihenmodell, das berücksichtigt, dass aufeinanderfolgende Jahre nicht unabhängig voneinander sind. Bei uns eine Kontrollrechnung. (Kapitel 4)
+**ARIMA:** Ein Zeitreihenmodell, bei dem die Unsicherheit mit jedem Jahr weiter in die Zukunft wächst. Bei uns meist eine Kontrollrechnung, im Expertenrat-Abgleich eines von drei Verfahren. (Kapitel 4)
 
-**Brutto / netto:** Brutto ist die volle Summe, etwa der ganze Preis einer Wärmepumpe. Netto (bei Investitionen) ist nur der Aufpreis gegenüber der Alternative. (Kapitel 3, 7)
+**Brutto / netto:** Bei Investitionen: Brutto ist die volle Summe, etwa der ganze Preis einer Wärmepumpe; netto ist nur der Aufpreis gegenüber der Alternative. Bei Preisen und Abgaben: brutto = mit Mehrwertsteuer, netto = ohne. (Kapitel 3, 7)
 
 **Cherry-Picking:** Aus mehreren möglichen Rechnungen nachträglich die auswählen, die das gewünschte Ergebnis liefert. (Kapitel 9)
 
-**Dunkelflaute:** Mehrtägige Phase mit gleichzeitig wenig Wind- und Solarstrom. (Kapitel 2)
+**Dunkelflaute:** Mehrtägige Phase mit gleichzeitig wenig Wind- und Solarstrom. In unserer Auswertung: [Definition aus dem Analyseplan der Batteriespeicher-Analyse wörtlich übernehmen und gegen Kapitel 2 abgleichen]. (Kapitel 2)
 
 **Einordnung / Evidenzcheck / Wissen:** Unsere drei Formen von Beiträgen (siehe Einleitung und Kapitel 9).
 
@@ -27,6 +27,6 @@
 
 **Sensitivitätsanalyse:** Prüfung, wie sich das Ergebnis ändert, wenn man andere vernünftige Annahmen trifft. (Kapitel 9)
 
-**Szenario / Prognose / Projektion:** Ein Szenario sagt, was bei bestimmten Annahmen geschähe. Eine Prognose sagt, was erwartet wird. (Kapitel 7, 10)
+**Szenario / Prognose / Projektion:** Ein Szenario sagt, was bei bestimmten Annahmen geschähe. Eine Prognose sagt, was erwartet wird. Eine Projektion ist eine Rechnung, die beschreibt, was unter bestimmten Annahmen passiert. (Kapitel 7, 10)
 
 **Validierung:** Unabhängige Prüfung von Code und Ergebnissen gegen den Analyseplan. (Kapitel 9)

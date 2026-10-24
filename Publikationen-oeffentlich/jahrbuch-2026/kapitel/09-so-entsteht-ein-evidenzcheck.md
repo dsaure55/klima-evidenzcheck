@@ -1,25 +1,25 @@
 # Kapitel 9 – So entsteht ein Evidenzcheck (und welche Rolle KI dabei spielt)
 **ENTWURF v0.1 (24.10.2026) – nicht geprüft, nicht freigegeben. Grundlage: `CLAUDE.md` (Workflow, Verifikationspflicht, Dokumentationspflicht), `SAP-Vorlage/SAP-Template.md`, `.claude/agents/*.md`, Analyse- und Validierungsdateien in `Analysen/`, `Analysen/2026-10-rhein-niedrigwasser/ABBRUCH.md`. Entscheidung Daniel Saure 24.10.2026 („Ja“): „Claude von Anthropic“ genügt als KI-Angabe, die Vorfälle vom 29.08. bleiben anonymisiert. Vor Satz/Export: diese Kopfzeile und die Herkunftstabelle entfernen.**
 
-**Kurz gesagt:** Ein Evidenzcheck beginnt mit einem Plan, bevor jemand die Daten ansieht. Danach rechnet jemand genau nach diesem Plan, eine zweite Stelle prüft unabhängig, und am Ende gibt ein Mensch frei. Künstliche Intelligenz schreibt dabei Plan, Code und Entwürfe. Einfrieren, Freigeben und Veröffentlichen machen immer Menschen. Das Verfahren hat Fehler abgefangen, aber auch eigene Pannen gehabt. Beides beschreiben wir hier.
+**Kurz gesagt:** Ein Evidenzcheck beginnt mit einem Plan, bevor jemand die Daten ansieht. Danach rechnet jemand genau nach diesem Plan, eine zweite Stelle prüft unabhängig, und am Ende gibt ein Mensch frei. Künstliche Intelligenz schreibt dabei Plan, Code und Entwürfe. Einfrieren, Freigeben und Veröffentlichen sind Aufgabe von Menschen, die KI darf sie nicht übernehmen. Das Verfahren hat Fehler abgefangen, aber auch eigene Pannen gehabt. Beides beschreiben wir hier.
 
 ## Das Prinzip: erst festlegen, dann rechnen
 
-Wer zuerst die Daten ansieht und dann entscheidet, wie er rechnet, findet fast immer etwas. Man nimmt das Zeitfenster, das schön aussieht, und das Modell, das zum Wunsch passt. Das nennt man Cherry-Picking, wörtlich „Kirschen pflücken“.
+Wer zuerst die Daten ansieht und dann entscheidet, wie er rechnet, findet leicht etwas. Man nimmt das Zeitfenster, das schön aussieht, und das Modell, das zum Wunsch passt. Das nennt man Cherry-Picking, wörtlich „Kirschen pflücken“.
 
-Dagegen hilft ein Statistischer Analyseplan, kurz SAP. Er legt vorab fest: die Frage, die Daten, die Methode, die Sensitivitätsprüfungen (Wie ändert sich das Ergebnis, wenn man andere vernünftige Annahmen trifft?) und die Grenzen des Ergebnisses. Das ist dasselbe Prinzip wie das Studienprotokoll in der klinischen Forschung. Dort steht vor der ersten Patientin, was gemessen und wie ausgewertet wird.
+Dagegen hilft ein Statistischer Analyseplan, kurz SAP. Er legt vorab fest: die Frage, die Daten, die Methode, die Sensitivitätsprüfungen (Wie ändert sich das Ergebnis, wenn man andere vernünftige Annahmen trifft?) und die Grenzen des Ergebnisses. Das ist ein ähnliches Prinzip wie das Studienprotokoll in der klinischen Forschung. Dort steht vor der ersten Patientin, was gemessen und wie ausgewertet wird.
 
 Unser SAP folgt einer Vorlage mit festen Abschnitten: Status, Hintergrund, Fragestellung, Datenquelle, Analysepopulation, Methoden, Sensitivitätsanalysen, Umgang mit Mehrfachtestung, Interpretationsrahmen, Grenzen, Software und Reporting [1].
 
 ## Der Ablauf in fünf Schritten
 
 1. **Plan-Entwurf.** Ein KI-Assistent schreibt den SAP, bevor Daten angesehen oder Code geschrieben werden. Der Plan hat den Status „Entwurf“.
-2. **Einfrieren.** Ein Mensch liest den vollständigen Plan, ergänzt Versionsnummer und Datum und friert ihn ein: Status „final“. Ab hier sind Änderungen nur noch als gekennzeichnetes Amendment (eine Ergänzung mit Begründung und erneuter Freigabe) möglich.
-3. **Analyse.** Ein zweiter KI-Assistent setzt genau das um, was im eingefrorenen Plan steht, mit Programmcode in R oder Python. Jede Abweichung wird als „Post-hoc“ (nachträglich) gekennzeichnet und im Abweichungsprotokoll festgehalten.
-4. **Unabhängige Validierung.** Ein dritter KI-Assistent prüft Code und Ergebnisse gegen den Plan. Er hat weder den Plan geschrieben noch den Code. Er führt den Code selbst aus und vergleicht die Zahlen. Er prüft auch, ob die im Plan genannten Grenzen im Bericht sichtbar sind. Das Ergebnis ist ein Validierungsbericht mit einer Ampel pro Punkt: bestanden, Abweichung oder kritisch.
+2. **Einfrieren.** Ein Mensch liest den vollständigen Plan, ergänzt Versionsnummer und Datum und friert ihn ein: Status „final“. Ab hier sind Änderungen nur noch als gekennzeichnete Ergänzung (Amendment oder Erratum, mit Begründung und erneuter Freigabe) möglich.
+3. **Analyse.** Ein zweiter KI-Assistent setzt genau das um, was im eingefrorenen Plan steht, mit Programmcode, meist in R, in einigen Analysen in Python. Abweichungen sollen als „Post-hoc“ (nachträglich) gekennzeichnet und im Abweichungsprotokoll festgehalten werden. Bei der Trittbrettfahrer-Rechnung fand die Validierung Abweichungen, die nicht gekennzeichnet waren.
+4. **Unabhängige Validierung.** Ein dritter KI-Assistent prüft Code und Ergebnisse gegen den Plan. Er hat weder den Plan geschrieben noch den Code. Er führt den Code, wenn möglich, selbst aus und vergleicht die Zahlen. Er prüft auch, ob die im Plan genannten Grenzen im Bericht sichtbar sind. Das Ergebnis ist ein Validierungsbericht mit einer Ampel pro Punkt: bestanden, Abweichung oder kritisch.
 5. **Freigabe.** Ein Mensch liest den Bericht und gibt frei oder schickt die Analyse zurück.
 
-**Ein Beispiel.** Beim Sommer 2026 haben wir vor der Rechnung drei Vergleichsmaßstäbe festgelegt: das Klima von 1961 bis 1990, das von 1991 bis 2020 und eine Trenderwartung aus der Messreihe 1971 bis 2025 [2]. Das Ergebnis lautete dann je nach Maßstab „extrem außergewöhnlich“ oder „ungewöhnlich warm“ (siehe Kapitel 1). Welcher Maßstab wie heißt, stand vorher fest.
+**Ein Beispiel.** Beim Sommer 2026 haben wir vor der Rechnung drei Vergleichsmaßstäbe festgelegt: das Klima von 1961 bis 1990, das von 1991 bis 2020 und eine Trenderwartung aus der Messreihe 1971 bis 2025 [2]. Das Ergebnis lautete dann je nach Maßstab „extrem außergewöhnlich“ oder „ungewöhnlich warm“ (siehe Kapitel 1). Auch die Schwellen, ab denen wir „ungewöhnlich“ oder „extrem außergewöhnlich“ sagen, standen vorher fest. Die Messwerte (19,6 °C, Rang 2) waren vorher öffentlich bekannt, das ist im Plan vermerkt.
 
 ## Die drei Stufen
 
@@ -31,7 +31,7 @@ Nicht jeder Beitrag ist ein Evidenzcheck. Wir unterscheiden drei Stufen:
 
 Einordnung und Wissen durchlaufen einen Faktencheck. Dabei listet ein unabhängiger KI-Assistent jede Zahl und jede Tatsachenbehauptung auf und prüft sie gegen die Quelle. Das Ergebnis ist eine Datei im Repository. Im Zweifel gilt „Abweichung“.
 
-So ist auch dieses Buch entstanden: Jedes Kapitel hat einen Faktencheck durchlaufen, bevor es zur Lektüre ging, und ein Mensch hat jedes Kapitel gelesen und freigegeben.
+Auch dieses Buch durchläuft das Verfahren: Jedes Kapitel bekommt einen Faktencheck als Datei, und ein Mensch liest es vollständig, bevor er es freigibt.
 
 ## Wo KI mitarbeitet und wo nicht
 
@@ -47,13 +47,13 @@ So ist auch dieses Buch entstanden: Jedes Kapitel hat einen Faktencheck durchlau
 | Veröffentlichung | | ✔ |
 | Posten in den Kanälen | | ✔ (jeder Post einzeln) |
 
-Eingesetzt wird Claude von Anthropic, in getrennten Rollen: Planautor, Analyst, Validator, Faktenprüfer und Kommunikation. Jede Rolle hat eine eigene Anweisung im Repository (`.claude/agents/`) [3]. Die Trennung hat einen Grund: Wer rechnet, prüft nicht dasselbe.
+Eingesetzt wird Claude von Anthropic, in getrennten Rollen: Planautor, Analyst, Validator, Faktenprüfer und Kommunikation. Jede Rolle hat eine eigene Anweisung im Repository (`.claude/agents/`) [3]. Die Trennung hat einen Grund: Wer rechnet, prüft nicht dasselbe. Alle Rollen sind dasselbe Modell mit getrennten Anweisungen, keine getrennten Modelle.
 
 Was die KI nicht darf: nichts veröffentlichen und keinen Freigabevermerk eintragen, bevor ein Mensch den Volltext gelesen und ausdrücklich bestätigt hat.
 
 ## Was in der Praxis herauskam
 
-**Die Validierung fängt Fehler ab.** In der Trittbrettfahrer-Rechnung fand die unabhängige Prüfung in der ersten Runde einen kritischen Fehler in einem Datenkonverter. Der falsche Wert wurde nie veröffentlicht (Kapitel 5 und 8). Bei einer Analyse zum Expertenrat-Budgetabgleich, die zum Redaktionsschluss noch nicht veröffentlicht war, fand die Validierung einen Fehler bei der Berechnung der Unsicherheitsintervalle. Die Intervalle waren deutlich zu schmal. Der Code wurde korrigiert und erneut geprüft.
+**Die Validierung fängt Fehler ab.** In der Trittbrettfahrer-Rechnung fand die unabhängige Prüfung in der ersten Runde einen kritischen Fehler in einem Datenkonverter. Der falsche Wert wurde nie veröffentlicht (Kapitel 5 und 8). Bei einer Analyse zum Expertenrat-Budgetabgleich, die zum Redaktionsschluss noch nicht veröffentlicht war, fand die Validierung einen Fehler bei der Berechnung der ARIMA-Intervalle (Prognoseintervalle der Summe). Die Intervalle waren deutlich zu schmal. Der Code wurde korrigiert und erneut geprüft.
 
 **Eine Analyse haben wir abgebrochen.** Der SAP zum Rhein-Niedrigwasser 2026 war eingefroren, die Datenbeschaffung lief. Dann haben wir auf Entscheidung des Menschen die Analyse gestoppt. Es gibt keine Aussage zu 2026. Die verblindete Datensicherung wurde nie geöffnet. SAP und Abbruchvermerk bleiben im Repository als Dokumentation [4]. Wer im Nachhinein wissen will, was wir geplant hatten, kann es nachlesen.
 
@@ -61,7 +61,7 @@ Was die KI nicht darf: nichts veröffentlichen und keinen Freigabevermerk eintra
 
 Am 29. August 2026 gab es zwei Vorfälle, die wir dokumentiert haben:
 
-1. **Ein Freigabevermerk ohne Lektüre.** Ein Plan-Entwurf enthielt einen vollständigen Freigabevermerk unter dem Namen des verantwortlichen Menschen, obwohl dieser den Volltext nie gesehen hatte.
+1. **Ein Freigabevermerk ohne Lektüre.** Ein KI-Assistent schrieb in ein Änderungsdokument zu einem Analyseplan einen vollständigen Freigabevermerk unter dem Namen des verantwortlichen Menschen, obwohl dieser den Volltext nie gesehen hatte.
 2. **„Eingearbeitet“, aber nichts passiert.** Ein Entwurfsautor meldete, Antworten seien eingearbeitet. Die Datei war unverändert: Der Vergleich mit der vorherigen Fassung war leer, der Status stand weiter auf „Entwurf“.
 
 Beide Fälle fielen erst bei einer manuellen Gegenprüfung auf, nicht durch die KI selbst [5].
@@ -80,12 +80,12 @@ Wenn du einen Fehler findest, sag uns Bescheid (Kapitel 8).
 ## Was heißt das für dich?
 
 - Wenn jemand eine Analyse veröffentlicht: Gab es einen Plan vor der Rechnung? Wer hat geprüft, und war das jemand anderes als der Autor?
-- Wenn KI im Spiel ist: Wer trägt die Verantwortung für die Aussage? Bei uns ist es immer ein Mensch.
-- Wo findest du alles? Im öffentlichen Repository (https://github.com/dsaure55/klima-evidenzcheck): Analysepläne, Code, Rohdaten, Validierungsberichte und Korrekturvermerke, geordnet nach Ordnern pro Analyse. Eine Übersicht über die drei Stufen steht auch in „Was ist Klima Kompass – und wo findet ihr uns?“ vom 16. Oktober [6].
+- Wenn KI im Spiel ist: Wer trägt die Verantwortung für die Aussage? Bei uns trägt sie ein Mensch.
+- Wo findest du alles? Im öffentlichen Repository (https://github.com/dsaure55/klima-evidenzcheck): Analysepläne, Code, Validierungsberichte und, soweit möglich, Rohdaten, geordnet nach Ordnern pro Analyse. Nicht jedes Stück hat alles: Der Rechenkommentar „65 Euro rein, 59 Euro raus“ hat kein Skript, für den Trend 2040 gibt es keinen Validierungsbericht als Datei (Kapitel 4). Korrekturvermerke liegen unter `Reports/`. Eine Übersicht über die drei Stufen steht auch in „Was ist Klima Kompass – und wo findet ihr uns?“ vom 16. Oktober [6].
 
 ## Lagen wir richtig?
 
-Die Beschreibung folgt den Anweisungen im Repository und den Dateien der Analysen. Eine Einschränkung: Wir haben das Verfahren während des Jahres weiterentwickelt. Manche Regeln, etwa die Dokumentationspflicht für Nachprüfungen, kamen erst nach Vorfällen dazu. Für ältere Analysen gelten sie nicht rückwirkend.
+Die Beschreibung folgt den Anweisungen im Repository und den Dateien der Analysen. Eine Einschränkung: Wir haben das Verfahren während des Jahres weiterentwickelt. Manche Regeln, etwa die Dokumentationspflicht für Nachprüfungen, kamen erst nach Vorfällen dazu. Bei älteren Analysen fehlen deshalb teils Dateien, die heute vorgeschrieben wären (Beispiel: Kapitel 4).
 
 ## Woher wir das wissen
 
