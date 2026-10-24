@@ -399,3 +399,40 @@ Der Abschnitt "Nachtrag 2" lag beim Fortsetzen bereits vollstaendig vor; die Rep
 - **N3.4 (neu, gering): Restsaetze im freigegebenen Erratum.** Abschnitt 5, letzter Absatz, sagt noch "die Freigabe steht aus", und der letzte Satz von Abschnitt 7 ("Erst nach vollstaendiger Lektuere ... auszufuellen") ist ein Entwurfsrest; die Statuszeile nennt als Stand noch Commit 0234224. Das ist inhaltlich unschaedlich, aber ein sichtbarer Widerspruch in einem freigegebenen Dokument. Ich aendere das Erratum nicht; Empfehlung: Der Mensch entscheidet, ob eine datierte Berichtigungszeile angehaengt wird, statt den freigegebenen Text still zu bearbeiten.
 
 **Gesamteinschaetzung Fassung 3 (unveraendert): FREIGABEFAEHIG MIT AUFLAGEN.** Neue Befunde in Nachtrag 2 insgesamt: **0 kritisch, 0 wesentlich, 4 gering** (N3.1 bis N3.4). Offene Auflagen sind reine Dokumentationsangleichung (N3.1, N3.4), zwei redaktionelle Korrekturen (N3.2, N3.3) und die Aktualisierung des Berichtsstatus ("Nachpruefung 2 liegt vor"). Die Freigabe der Analyse bleibt beim Menschen.
+
+---
+
+## Nachtrag 3 (Nachpruefung der Fassung 4)
+
+**Datum:** 24.10.2026. **Gepruefter Stand:** Commit d117922 (Fassung 4). Umfang: nur die Restpunkte N3.1 bis N3.3 aus Nachtrag 2 sowie die Frage, ob sich gegenueber Fassung 3 (Commit b7db1f7 bzw. d117922~1) eine Kernzahl, ein Intervall oder eine Aussage geaendert hat. Der SAP, das Erratum, die Bestaetigungsdatei, Bericht, Protokoll und Skript wurden von mir nicht veraendert; ich habe nur diesen Abschnitt angehaengt.
+
+**Reproduktion und Diff:**
+- `git diff d117922~1 d117922` ueber den Analyseordner: geaendert sind Analysebericht, Abweichungsprotokoll, Skript (nur `scale_x_continuous(breaks = ...)` in `make_p2`, 3 Zeilen), `run_log.txt` (1 Zeile) und die zwei PNG `estimand2_overshoot.png` und `anhang_625_overshoot.png`. **Keine CSV-Datei im Diff**, keine Tabellenzahl geaendert.
+- Skript in einer frischen Kopie (ohne vorhandenes `output/`) ausgefuehrt: Exit 0, Pruefsummenvergleich "alle 24 Dateien unveraendert". Alle neu erzeugten CSV und alle 10 PNG sind **byte-identisch** zu `output/` im Repository. Die Zahlen im Bericht (Overshoot-Punktwerte, Parameter-/Prognoseintervalle, Bootstrap-Zeilen der Fenster A/B/C, Sensitivitaetstabelle) habe ich stichprobenartig gegen `estimand2_tabelle.csv` und `posthoc_bootstrap_sensitivitaet.csv` abgeglichen (z. B. A 584,2 / 38,9-1129,5 / 429-737 / -132,7-665,4; B 25,0 / -158,9-201,4; C -115,6-502,3): stimmen.
+- Kernzahlen, Intervalle und Klassifikationen sind gegenueber Fassung 3 **unveraendert**. Die Textaenderungen im Bericht betreffen nur Kopf/Status, Tabelle W1, den Absatz zur Seed-Beschriftung (2.4) und das neue Kapitel "Fassung 4".
+
+### Befunde
+
+| Punkt | Ampel | Pruefung |
+|---|---|---|
+| **N3.1** Statusangleichung nach freigegebenem Erratum | **bestanden** | Bericht-Kopf, Tabelle W1, Protokoll (RF-1-Nachtrag, Offene Punkte 2 und 3, Schlusszeile Nachtrag Fassung 3) nennen jetzt 6a ("Limitation reicht"), 6b (Datenquellen-Zeile 5 bestaetigt) und das freigegebene Erratum 1 (Commit d20e448); die Bestaetigungsdatei enthaelt den Abschnitt "Ergaenzung 23.10.2026", der den alten Satz als ueberholt kennzeichnet; das Erratum traegt die datierte Berichtigung vom 24.10.2026 (Commit b7db1f7, N3.4 aus Nachtrag 2). Die Zitate aus dem Chat kann ich nicht pruefen (unveraendert, siehe N3.4 in Nachtrag 2). Reste siehe N4.2. |
+| **N3.2** Fenster-C-Erklaerung | **Abweichung (gering)** | Inhaltlich ist die neue Erklaerung richtig (Obergrenze identisch 502,3; Untergrenze -116,0 gegen -115,6; bei n = 6 Diskretisierungswirkung; die C-Zeilen mit Seeds 11 und 12 liefern ebenfalls -115,6; laut CSV stimmt das). **Aber die Bearbeitung hat den Absatz beschaedigt (neu, N4.1):** In `Analysebericht_expertenrat-budgetabgleich.md`, Abschnitt 2.4, fehlen jetzt die Ueberschrift "Zur Seed-Beschriftung (Fassung 3, N2.2)" und die beiden einleitenden Saetze (Hauptlauf setzt Seed einmal, verbraucht den Strom der Reihe nach; nur Fenster A stimmt mit Hauptlauf ueberein, 429 - 737). Der Absatz beginnt jetzt mit "Fuer B weicht sie ab ..." (Pronomen ohne Bezug, Einrueckung weg, steht ausserhalb des Aufzaehlungspunkts). Die in Tabelle "N2.2" des Berichts und im Protokoll behauptete Erlaeuterung "in 2.4" ist damit nur noch verstuemmelt vorhanden. |
+| **N3.3** Achsenmarken | **bestanden** | `estimand2_overshoot.png` (selbst gelesen): Marken -400, -200, 0, 200, ..., 1200; die linken Grenzen (-343, -430) sind ablesbar, Bundesregierungs-Marker und rechter Rand unveraendert. `anhang_625_overshoot.png`: Marken -600 bis 1600 alle 200. Skriptaenderung ist rein kosmetisch (`breaks`), Neulauf liefert byte-identische PNG. |
+| **Kernzahlen / Aussagen unveraendert** | **bestanden** | Siehe Diff und byte-identischer Neulauf oben. Keine Aussage inhaltlich geaendert. |
+
+### Neue Befunde
+
+| Nr. | Schweregrad | Befund und Auflage |
+|---|---|---|
+| N4.1 | gering | Beschaedigter Absatz in Bericht 2.4 (siehe N3.2): Ueberschrift und Einleitung der Seed-Beschriftung fehlen, Fliesstext beginnt mitten im Gedanken. Auflage: den urspruenglichen Einleitungssatz und die Ueberschrift "Zur Seed-Beschriftung" wiederherstellen (Einrueckung unter den Bootstrap-Punkt), den neuen C-Satz daran anschliessen; ausserdem die Tabelle "Fassung 4" des Berichts (N3.2 "erledigt") erst nach der Reparatur so stehen lassen. Reine Dokumentation, keine Zahl betroffen. |
+| N4.2 | gering | Restwidersprueche: (a) `output/posthoc_bootstrap_sensitivitaet.csv`, Spalte `Hinweis`, sagt weiter "B und C weichen davon ab (Monte-Carlo-Fehler)". Das Protokoll (Fassung 4, N3.2) benennt dies offen als nicht geaendert; fuer C stimmt es nur im Rahmen der Rundung. Vertretbar, aber der Bericht (C praktisch gleich) und die CSV (C weicht ab) widersprechen sich weiter. Auflage: bei der naechsten Skriptaenderung den Hinweistext auf "B weicht ab; C kaum (n = 6)" setzen, oder im Bericht einen Verweis auf diese Abweichung ergaenzen. (b) Bericht-Kopf Fassung 4 nennt noch "Fassung 4 ist noch nicht erneut geprueft"; nach diesem Nachtrag auf "Nachpruefung 3 liegt vor" setzen. (c) Die Bestaetigungsdatei laesst den ueberholten Satz zur Nachvollziehbarkeit stehen (gekennzeichnet); akzeptabel. |
+
+### Gesamturteil Fassung 4
+
+**FREIGABEFAEHIG MIT AUFLAGEN (unveraendert).** Keine kritischen, keine wesentlichen Befunde. N3.1 und N3.3 bestanden; N3.2 inhaltlich korrigiert, aber der Absatz im Bericht ist bei der Bearbeitung verstuemmelt worden (N4.1, gering). Kernzahlen, Intervalle und Aussagen sind gegenueber Fassung 3 unveraendert und reproduziert. Offen: N4.1 (Textreparatur, reine Dokumentation) und N4.2 (Restwidersprueche und Statuszeile). Die Freigabe der Analyse liegt beim Menschen.
+
+### Nicht geprueft (Nachtrag 3)
+
+- Nur die Restpunkte N3.1-N3.3 und der Fassungsvergleich; keine erneute Pruefung der Methodik, Diagnostik oder SAP-Konformitaet (unveraendert aus Nachtrag 1 und 2).
+- Die Chat-Antworten 6a/6b und das Lesen des Erratum-Volltextes durch Daniel Saure; die Sensitivitaets-Bootstrapzeilen nicht unabhaengig, nur byte-identischer Neulauf.
+- Grafiken `diagnostik_*`, `estimand1_*`, `estimand2_trend_*` nicht erneut angesehen (byte-identisch zu Fassung 3, deren Sichtpruefung in Nachtrag 2 dokumentiert ist).
