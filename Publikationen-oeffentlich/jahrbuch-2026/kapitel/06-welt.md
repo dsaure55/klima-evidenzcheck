@@ -1,6 +1,6 @@
-**ENTWURF v0.2 (24.10.2026) – Auflagen A1–A13 aus `pruefung/faktencheck_kap06.md` eingearbeitet (Quellen neu nummeriert [1]–[17]), Nachprüfung ausstehend, nicht freigegeben. Offen für Daniel: Korrektur des Stücks „Zurück auf 1,5 Grad“ (2,8 Grad unverändert) auf Substack und in Kapitel 8. Diese Kopfzeile, die Herkunftstabelle und die Hinweise unter den Grafiken nicht ins Buch übernehmen.**
-
 # Kapitel 6 – Wo steht die Welt beim 1,5-Grad-Ziel, und kann man CO₂ einfach wieder aus der Luft holen?
+**FREIGEGEBEN durch Daniel Saure am 24.10.2026 für Fassung v0.2 (Wortlaut: „Freigabe.“, nachdem Daniel Saure das Kapitel selbst gelesen hatte). Faktencheck: `pruefung/faktencheck_kap06.md` (ok mit Auflagen, A1–A13 danach eingearbeitet; keine Gegenprüfung der Änderungen durch den Faktenprüfer). Offen vor dem Druck: UNEP-Bericht nur über Executive Summary und Pressemitteilung geprüft (Hauptbericht nicht); Korrektur des Stücks „Zurück auf 1,5 Grad“ (2,8 Grad unverändert) auf Substack und Aufnahme in Kapitel 8 noch nicht entschieden. Vor Satz/Export: diese Kopfzeile, die Herkunftstabelle und die Hinweise unter den Grafiken entfernen.**
+
 
 **Kurz gesagt:** Ein einzelner Monat über 1,5 Grad bedeutet nicht, dass das Pariser Ziel gerissen ist. Maßgeblich ist die Erwärmung über Jahrzehnte (beim Weltklimarat IPCC das 20-Jahres-Mittel). Trotzdem geht das UN-Umweltprogramm UNEP inzwischen davon aus, dass die Welt die 1,5 Grad überschreitet, und rechnet einen Weg zurück: Dafür müssten die Emissionen bis 2030 um 18 Prozent sinken (gegenüber 2025). Die Klimazusagen der Staaten bringen 5 bis 8 Prozent. CO₂ aus der Luft zu holen, ist keine Abkürzung: Heute geschieht das fast nur über Wälder und Böden, und es ergänzt die Minderung, ersetzt sie aber nicht.
 
