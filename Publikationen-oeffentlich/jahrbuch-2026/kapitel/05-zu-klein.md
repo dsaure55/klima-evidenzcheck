@@ -1,4 +1,4 @@
-**ENTWURF v0.2 (23.10.2026) – Auflagen A1–A9 aus `pruefung/faktencheck_kap05.md` eingearbeitet, Nachprüfung ausstehend, nicht freigegeben. Diese Kopfzeile, die Herkunftstabelle am Ende und die Hinweise unter den Grafiken nicht ins Buch übernehmen.**
+**FREIGEGEBEN durch Daniel Saure am 24.10.2026 für Fassung v0.2 (Commit 347044a; Wortlaut: „freigabe“, nachdem Daniel Saure „Kapitel 5 v02 gelesen“ geschrieben hatte und ich zurückgefragt hatte, ob das eine Freigabe sei). Faktencheck: `pruefung/faktencheck_kap05.md` (ok mit Auflagen, A1–A9 danach eingearbeitet; keine Gegenprüfung der Änderungen durch den Faktenprüfer). Offen vor dem Druck: Primärdaten (EDGAR, Global Carbon Project, Weltbank, OWID) nicht direkt geprüft, neuere Ausgaben nicht geprüft; Verweis auf Kapitel 8 (Konverter-Fehler) mit dem fertigen Kapitel abgleichen. Vor Satz/Export: diese Kopfzeile, die Herkunftstabelle und die Hinweise unter den Grafiken entfernen.**
 
 # Kapitel 5 – Ist Deutschland „zu klein, um zu zählen“?
 
