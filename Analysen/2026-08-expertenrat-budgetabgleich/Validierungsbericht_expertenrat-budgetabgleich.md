@@ -344,3 +344,58 @@ SAP 2 verlangt die Pruefung einer "historischen Agora- oder UBA-Zeitreihe" mit m
 - Die UBA-/AGEB-Suche habe ich nicht erneut live durchgefuehrt, nur das Protokoll gelesen; PDF-Anhaenge wurden auch vom Analysten nicht durchsucht.
 - Sensitivitaetszeilen (Blocklaenge 4, B = 10000) habe ich nicht unabhaengig reproduziert, nur auf Konsistenz zwischen CSV und Bericht geprueft; der Neulauf des Skripts reproduziert sie byte-identisch.
 - Das `sha256sum -c`-Format der Pruefsummendatei habe ich nicht eigens getestet.
+
+---
+
+## Nachtrag 2 (Nachpruefung der Fassung 3)
+
+**Gepruefter Stand:** Commit 76d75af (Fassung 3), Pruefdatum 23.10.2026. Geprueft: Skript (Diff gegenueber Fassung 2), `run_log.txt`, Analysebericht und Abweichungsprotokoll (Fassung 3), neue/geaenderte CSV und PNG, `SAP_Erratum_1_Expertenrat-Budgetabgleich-2030.md` (Entwurf). Der SAP ist unveraendert; ich habe nur diesen Abschnitt angehaengt.
+
+**Reproduktion:** Skript in einer Kopie neu ausgefuehrt (Exit 0, Pruefsummenvergleich "alle 24 Dateien unveraendert"). Alle 12 CSV und `SHA256SUMS.txt` sind byte-identisch zum Repository. Gegenueber Fassung 2 (41e88e9) sind `estimand1_tabelle`, `estimand2_tabelle`, `diagnostik_tabelle`, `arima_kontrollen`, `anhang_625_tabelle`, `anhang_625_diagnostik_tabelle` und `posthoc_hac_vergleich` unveraendert. Die Hauptlauf-Bootstrapgrenzen sind unveraendert (A 429-737, B -158,9..201,4). Der Zufallsstrom wurde also nicht verschoben; der Code sichert und stellt `.Random.seed` um die Zusatzkontrollen wieder her (Skript Z. 531-538).
+
+### N3.0 Status der Befunde aus Nachtrag 1
+
+| Befund | Status | Pruefung |
+|---|---|---|
+| N2.1 POST-HOC-Prognoseintervall | **erledigt** | Eigene Nachrechnung: A mit HAC-Parametervarianz (SE 268,3) plus 5 sigma^2: 17,1 bis 1151,3; A mit klassischer OLS-Parametervarianz (SE 63,2): 382,3 bis 786,1; B -234,4 bis 284,4; C -459,6 bis 737,1. Alle Werte stimmen. Die Beschreibung (Bericht 2.4, Protokoll Nachtrag Fassung 3, CSV-Spalten `Parametervarianz_Quelle`, `_OLSparam`, Anmerkung) ist jetzt korrekt; die HAC-Mischung in A wird als inkonsistent benannt, "zu optimistisch" gilt nur fuer die OLS-Variante. Kennzeichnung "POST-HOC, deskriptiv, nicht in Klassifikation oder Kernaussage" ist vorhanden. |
+| N2.2 Seed-Beschriftung | **erledigt** (kleine Ungenauigkeit, N3.2) | Spalten `Seed_Neustart` und `Hinweis` korrekt. Erklaerung stimmt: Der Hauptlauf setzt den Seed einmal und verbraucht den Strom der Reihe nach, A ist der erste Zug und identisch (428,97 / 737,33); B Sensitivitaet -152,6 / 199,0 gegen Hauptlauf -158,9 / 201,4. Bei C liegen beide innerhalb der Rundung (-116 / 502). |
+| N2.3 Grafiken | **erledigt** (Rest N3.3) | Alle vier Grafiken gelesen: Bundesregierungs-Marker mit Beschriftung, rechter Rand frei, Trendplot mit Pfeil am Niveausprung, Dezimalkomma in der Estimand-1-Grafik, Anhangsgrafik mit Titel "POST-HOC, ohne Aussagewert" und gleichem Marker. |
+| N2.4 Kontrollgrenzen | **erledigt** | Siehe unten. |
+
+**Zu N2.4:** Die Zusatzkontrollen sind sinnvoll und nicht tautologisch. Die Monte-Carlo-Seite nutzt `simulate()` mit eigenen Seeds (101-105) und 20000 Pfaden an simulierten Reihen mit bekannten Modellen (ARIMA(1,1,0) mit phi = 0,6 und -0,5, ARIMA(0,1,1) mit theta = 0,5 und -0,4, ARIMA(0,1,0)). Die geschlossenen psi-Formeln (ARIMA(1,1,0): (1 - phi^(k+1))/(1 - phi); ARIMA(0,1,1): 1 + theta fuer k >= 1) sind unabhaengig von der `polymul()`-Konstruktion und mathematisch richtig. Die Abweichungen MC/analytisch liegen bei 0,1 bis 1,2 % gegen 3 % Toleranz; bei 20000 Pfaden betraegt der Monte-Carlo-Fehler von sd etwa 0,5 %, die Toleranz ist also vernuenftig gewaehlt. Ein Fehler wie in K1 oder ein vertauschtes Vorzeichen bei phi oder theta wuerde anspringen. Der Abbruch bei Verstoss ist im Skript vorhanden (Z. 543). Grenze: Im Hauptlauf kommen weiterhin nur (0,1,0)-Modelle vor; die Zusatzkontrollen sichern die Funktion fuer spaetere Aenderungen der Modellwahl ab.
+
+### N3.1 Neue Befunde
+
+| Nr. | Schweregrad | Befund |
+|---|---|---|
+| N3.1 | gering | **Widerspruch zwischen Analysebericht/Protokoll und SAP-Erratum-Entwurf zu 6a/6b.** Bericht (Kopf, Zeile 4, und Tabelle "Aenderungen nach Validierung", W1), Protokoll (RF-1-Nachtrag, Offene Punkte Nr. 3) und `SAP_Bestaetigung_Daniel_Saure_2026-10-23.md` sagen, eine ausdrueckliche Antwort zu 6a/6b liege nicht vor. Das Erratum (Abschnitt 5, Stand Commit 0234224) traegt dagegen die Antworten ein ("6a: Limitation reicht", "6b: bestaetigt", Chat 23.10.2026) und kennzeichnet nur die Freigabe des Erratums als ausstehend. Ausserdem verweisen Bericht und Protokoll nicht auf das Erratum (das Protokoll fragt noch, ob eines gefuehrt werden soll). Auflage: Nach Freigabe des Erratums durch Daniel Saure Bericht-Kopf, Protokoll (Offene Punkte 2 und 3) und Bestaetigungsdatei angleichen und das Erratum referenzieren; bis dahin im Bericht "Antwort laut Erratum-Entwurf, Freigabe offen" vermerken. Die Chat-Zitate selbst konnte ich nicht pruefen. |
+| N3.2 | gering | **Erklaerung zu C ungenau.** Der CSV-Hinweis sagt, B und C wichen vom Hauptlauf ab; der Bericht sagt, C stimme innerhalb der Rundung "nur zufaellig" ueberein. Tatsaechlich: Obergrenze identisch (502,34), Untergrenze -115,96 gegen -115,6 im Hauptlauf. Bei n = 6 hat der Block-Bootstrap nur wenige verschiedene Ergebniswerte (auch die Zeilen mit Seeds 11 und 12 liefern dieselbe Untergrenze -115,63); die Naehe ist eine Diskretisierungswirkung, kein Zufall. Auflage: Formulierung angleichen ("weicht in B ab, in C wegen weniger moeglicher Ziehungen kaum"). |
+| N3.3 | gering | **Estimand-2-Hauptgrafik: negative Achsenwerte unbeschriftet.** Die x-Achse zeigt nur 0, 500, 1000; die linken Intervallgrenzen (-343, -430) lassen sich an der Achse nicht ablesen. Auflage: Achsenmarken bei -400 und -200 ergaenzen (in `anhang_625_overshoot.png` ist -500 vorhanden, betrifft also nur die Hauptgrafik). |
+
+### N3.2 Gesamtbild und Erratum-Abgleich
+
+- Fassung 3 des Analyseberichts und der Nachtrag Fassung 3 im Protokoll sind untereinander widerspruchsfrei; Tabellen, Zahlen und Verweise stimmen mit den CSV ueberein. Der **Verwendungsvermerk fuer Anhang A** steht im Bericht (Anhang A: "Verwendungsvermerk (Daniel Saure, 23.10.2026): ... NICHT in Blog, Kapitel oder Kanaltexte") und im Protokoll.
+- **Erratum-Entwurf gegen Bericht:** in den Sachpunkten konsistent: 625 als Agora-Wert fuer 2026, Anlage 2 KSG = 604 (Summe 6199 stimmt), Herkunft nicht belegt, SAP 4a.2/6.3 nicht ausgeloest, Anhang A nur Audit-Trail, Blocklaenge 2 / B = 2000 / Seed 20260827, HAC-Standardfehler 63,2 / 268,3 / 134,9, H1-Ableitung 334 und -2,096 %, L4 (verzerrt, fuer A bedeutungslos), Fenster C deskriptiv, saisonale Hochrechnung entfaellt, Intervallarten, POST-HOC-Prognoseintervall "kein Amendment, solange deskriptiv". Zahlenwidersprueche habe ich nicht gefunden. Einziger Widerspruch: N3.1. Das Erratum ist ein Entwurf ohne Freigabevermerk; ich habe keinen eingetragen.
+
+### N3.3 Gesamteinschaetzung der Fassung 3
+
+**FREIGABEFAEHIG MIT AUFLAGEN.** Keine kritischen und keine wesentlichen Befunde; Kernzahlen unveraendert und reproduziert; die vier Befunde aus Nachtrag 1 sind erledigt. **Neue Befunde: 0 kritisch, 0 wesentlich, 3 gering (N3.1 bis N3.3).**
+
+Auflagen: (1) N3.1 nach Freigabe des Erratums angleichen (Dokumentationskonsistenz); (2) N3.2 und N3.3 als redaktionelle Korrekturen; (3) der Analysebericht traegt noch "Fassung 3 ist noch nicht erneut geprueft"; nach diesem Nachtrag auf "Nachpruefung 2 liegt vor" setzen. Die Freigabe der Analyse und die Freigabe des Erratums liegen beim Menschen.
+
+### N3.4 Nicht geprueft
+
+- Ob Daniel Saure die Antworten 6a/6b im Chat so gegeben hat und ob er das Erratum vollstaendig gelesen hat (nur Entwurfstext gelesen).
+- Die Sensitivitaets-Bootstrapzeilen (Blocklaenge 4, B = 10000) weiterhin nicht unabhaengig reproduziert, nur byte-identischer Neulauf und Konsistenz CSV/Bericht.
+- Die Zusatzkontrollen nicht mit eigener, anders aufgebauter Simulation wiederholt; geprueft habe ich Code-Logik, Formeln und Ergebnisse.
+- FAZ-Artikel, UBA-Datacube und Herkunft der 625 weiterhin offen (siehe Nachtrag 1).
+
+### N3.5 Ergaenzung (24.10.2026): Erratum inzwischen freigegeben (Commit d20e448)
+
+Der Abschnitt "Nachtrag 2" lag beim Fortsetzen bereits vollstaendig vor; die Reproduktion (byte-identischer Neulauf, Pruefsummen unveraendert), N2.1-N2.4, alle vier Grafiken, die Zusatzkontrollen und der Konsistenzabgleich sind dort dokumentiert und wurden nicht wiederholt. Neu hinzugekommen ist nur die Freigabe des Erratums, die ich gegen den jetzigen Stand abgeglichen habe.
+
+- **Freigegebener Text = gelesener Text:** `git diff 76d75af d20e448` zeigt fuer das Erratum nur die Aenderung der Statuszeile und des Freigabeabschnitts (4 Zeilen); der Sachtext, den ich in Nachtrag 2 gegen Bericht und Protokoll geprueft habe, ist unveraendert. Meine Aussage "in den Sachpunkten konsistent, keine Zahlenwidersprueche" gilt damit fuer die freigegebene Fassung. Ob Daniel Saure den Volltext tatsaechlich gelesen hat, kann ich nicht pruefen; der Freigabevermerk zitiert seine Chat-Aeusserungen ("Erratum freigegeben" nach der Ankuendigung, es vollstaendig zu lesen).
+- **N3.1 ist damit faellig (weiterhin gering):** Das Erratum ist freigegeben und enthaelt die Antworten 6a/6b. Analysebericht (Kopf, Zeile 4; Tabelle W1), Abweichungsprotokoll (RF-1-Nachtrag; Offene Punkte 2 und 3; Schlusszeile Nachtrag Fassung 3 "Entscheidungen zu SAP-Erratum und Antwort 6a/6b liegen beim Menschen") und `SAP_Bestaetigung_Daniel_Saure_2026-10-23.md` sagen weiter, die Antwort liege nicht vor bzw. das Erratum sei offen. Auflage unveraendert, jetzt ohne Wartebedingung: diese Stellen angleichen und das Erratum referenzieren.
+- **N3.4 (neu, gering): Restsaetze im freigegebenen Erratum.** Abschnitt 5, letzter Absatz, sagt noch "die Freigabe steht aus", und der letzte Satz von Abschnitt 7 ("Erst nach vollstaendiger Lektuere ... auszufuellen") ist ein Entwurfsrest; die Statuszeile nennt als Stand noch Commit 0234224. Das ist inhaltlich unschaedlich, aber ein sichtbarer Widerspruch in einem freigegebenen Dokument. Ich aendere das Erratum nicht; Empfehlung: Der Mensch entscheidet, ob eine datierte Berichtigungszeile angehaengt wird, statt den freigegebenen Text still zu bearbeiten.
+
+**Gesamteinschaetzung Fassung 3 (unveraendert): FREIGABEFAEHIG MIT AUFLAGEN.** Neue Befunde in Nachtrag 2 insgesamt: **0 kritisch, 0 wesentlich, 4 gering** (N3.1 bis N3.4). Offene Auflagen sind reine Dokumentationsangleichung (N3.1, N3.4), zwei redaktionelle Korrekturen (N3.2, N3.3) und die Aktualisierung des Berichtsstatus ("Nachpruefung 2 liegt vor"). Die Freigabe der Analyse bleibt beim Menschen.

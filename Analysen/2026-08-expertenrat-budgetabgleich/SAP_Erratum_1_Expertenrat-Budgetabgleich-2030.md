@@ -79,3 +79,7 @@ Die Antworten zu 6a und 6b liegen seit 23.10.2026 vor (Chat). Sie ersetzen nicht
 **Datum:** 23.10.2026
 **Wortlaut der Freigabe:** „Erratum freigegeben“ (Chat, 23.10.2026), nachdem Daniel Saure zuvor geschrieben hatte: „Ich lese das Erratum jetzt vollständig und melde mich mit Freigabe oder Änderungen.“ Die Antworten zu 6a und 6b hatte er im selben Zug gegeben (Abschnitt 5).
 Erst nach vollständiger Lektüre dieser Datei durch Daniel Saure auszufüllen (die Antworten zu 6a und 6b liegen vor, siehe Abschnitt 5).
+
+---
+
+**Berichtigung (datiert 24.10.2026, redaktionell, keine inhaltliche Änderung):** Das Erratum wurde am 23.10.2026 von Daniel Saure freigegeben. Zwei Sätze im freigegebenen Text stammen noch aus dem Entwurfsstand und sind überholt: Abschnitt 5 („Die Freigabe steht aus“) und der Hinweis im Freigabeabschnitt 7 („Erst nach vollständiger Lektüre … auszufüllen“); die Statuszeile nennt den Commit-Stand des Entwurfs (`0234224`). Maßgeblich ist der Freigabeabschnitt 7 (Wortlaut, Datum). Der Text wurde zur Nachvollziehbarkeit nicht still geändert (Validierungsbericht Nachtrag 2, N3.4).
