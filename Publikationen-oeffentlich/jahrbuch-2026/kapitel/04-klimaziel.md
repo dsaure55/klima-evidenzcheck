@@ -50,7 +50,7 @@ Wir haben gefragt: Was sagt eine eigene, einfache Trendfortschreibung dazu? Daf�
 
 ## Ein Maßstab für Prognosen: der Prognose-Check
 
-Ob solche Fortschreibungen taugen, lässt sich am besten an der Vergangenheit prüfen. Unser Prognose-Check vergleicht deshalb die Projektionen der Bundesregierung aus früheren Jahren (Projektionsberichte 2015 bis 2023) mit den Emissionen, die später tatsächlich gemessen wurden, gesamt und je Sektor. Der Analyseplan ist seit dem 22. Oktober 2026 eingefroren [5]. Ein validiertes Ergebnis lag zum Redaktionsschluss dieses Buchs nicht vor. Deshalb steht hier keines. [Falls bis zum Satz validiert und freigegeben: Ergebnis hier ergänzen, sonst diesen Absatz so lassen.] Mehr dazu in Kapitel 10.
+Ob solche Fortschreibungen taugen, lässt sich am besten an der Vergangenheit prüfen. Unser Prognose-Check vergleicht deshalb die Projektionen der Bundesregierung aus früheren Jahren (Projektionsberichte 2015 bis 2023) mit den Emissionen, die später tatsächlich gemessen wurden, gesamt und je Sektor. Der Analyseplan ist seit dem 22. Oktober 2026 eingefroren [5]. Ein validiertes Ergebnis lag zum Redaktionsschluss dieses Buchs nicht vor. Deshalb steht hier keines. [PLATZHALTER (Daniel Saure, 24.10.2026: „Machen wir später“): Prognose-Check wird später bearbeitet; hier Ergebnis ergänzen, falls vor dem Satz validiert und freigegeben, sonst Absatz so lassen.] Mehr dazu in Kapitel 10.
 
 ## Was heißt das für dich?
 

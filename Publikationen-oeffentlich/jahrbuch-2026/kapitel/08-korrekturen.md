@@ -1,5 +1,5 @@
 # Kapitel 8 – Korrekturen 2026: Wo wir falsch lagen
-**ENTWURF v0.1 (24.10.2026) – nicht geprüft, nicht freigegeben. Grundlage: die drei Korrekturvermerke in `Reports/`, Kapitel 1, 3, 5, 6 und die Prüfprotokolle. Offen für Daniel Saure: (a) Fall 5 („Zurück auf 1,5 Grad“) und Fall 6 (Bereichsangaben im Artikel vom 27.08., beim Schreiben von Kapitel 4 entdeckt) ins Buch und Hinweis auf Substack ja/nein; (b) ob der Hitzesommer-Artikel vom 29.08. auf Substack mit Hinweis geändert wird (Stand dieser Fassung: nicht geändert, vor Satz am Live-Artikel prüfen); (c) Stand der Kanalposts zum CO₂-Preis (Instagram-Bildunterschrift, Facebook-Text). Vor Satz: Liste gegen alle bis dahin veröffentlichten Artikel neu abgleichen. Vor Satz/Export: diese Kopfzeile entfernen.**
+**ENTWURF v0.1 (24.10.2026) – nicht geprüft, nicht freigegeben. Grundlage: die drei Korrekturvermerke in `Reports/`, Kapitel 1, 3, 5, 6 und die Prüfprotokolle. Entscheidung Daniel Saure 24.10.2026 („Ja“): Fall 5 und Fall 6 kommen ins Buch. Offen: ob und wann Hinweise auf Substack gesetzt werden (setzt Daniel selbst; Ursache und Lehre bei Fall 5 und 6 noch zu klären); (b) ob der Hitzesommer-Artikel vom 29.08. auf Substack mit Hinweis geändert wird (Stand dieser Fassung: nicht geändert, vor Satz am Live-Artikel prüfen); (c) Stand der Kanalposts zum CO₂-Preis (Instagram-Bildunterschrift, Facebook-Text). Vor Satz: Liste gegen alle bis dahin veröffentlichten Artikel neu abgleichen. Vor Satz/Export: diese Kopfzeile entfernen.**
 
 **Kurz gesagt:** Wir haben in diesem Jahr in sechs unserer 16 veröffentlichten Artikel Fehler oder Unbelegtes gefunden: bei zwei Artikeln falsche Zahlen, bei einem einen falschen Verweis, bei einem einen fehlenden Gesetzgebungsstand, bei einem eine unbelegte Erklärung und bei einem eine ungenaue Wiedergabe einer Quelle. Keine Korrektur hat die Kernaussage eines Artikels umgeworfen. Das ist kein Grund, sich zu freuen: Bei den meisten wäre ein anderer Ablauf möglich gewesen, der den Fehler früher gefunden hätte.
 
@@ -17,8 +17,8 @@ Die Liste unten hat den Stand vom Redaktionsschluss dieses Buchs. Wir haben sie 
 | „Monate über 1,5 Grad“ (16.10.) | Link auf den falschen eigenen Artikel | Verweis | am 16.10. korrigiert, kein Hinweis im Artikel |
 | „CO₂-Preis 2027“ (17.10.) | Gesetzgebungsstand: Bundesrat fehlte, Formulierung klang nach geltendem Recht | Stand | neuer Titel, Hinweis „Aktualisiert am 22.10.2026“ |
 | „Der Hitzesommer 2026“ (29.08.) | Erklärung für eine abweichende Vergleichszahl 2018 nicht belegt | Erklärung | bisher nicht geändert [Stand vor Satz prüfen] |
-| „Zurück auf 1,5 Grad“ (21.10.) | Temperaturwerte als „alle schlechter als im Vorjahr“ wiedergegeben | Quellenwiedergabe | offen [Entscheidung Daniel Saure] |
-| „Erreicht Deutschland sein Klimaziel 2040?“ (27.08.) | Zwei Bereichsangaben (Prognoseintervalle) stimmen nicht mit der Rechnung überein | Zahl | offen [Entscheidung Daniel Saure] |
+| „Zurück auf 1,5 Grad“ (21.10.) | Temperaturwerte als „alle schlechter als im Vorjahr“ wiedergegeben | Quellenwiedergabe | bisher nicht geändert [Hinweis auf Substack: Daniel Saure] |
+| „Erreicht Deutschland sein Klimaziel 2040?“ (27.08.) | Zwei Bereichsangaben (Prognoseintervalle) stimmen nicht mit der Rechnung überein | Zahl | bisher nicht geändert [Hinweis auf Substack: Daniel Saure] |
 
 ## Die Fälle im Einzelnen
 
@@ -70,7 +70,7 @@ Die Liste unten hat den Stand vom Redaktionsschluss dieses Buchs. Wir haben sie 
 
 **Lehre.** Wir erklären keine Abweichung, die wir nicht belegen können. „Wir konnten es nicht bestätigen“ ist eine zulässige Aussage.
 
-### 5. „Zurück auf 1,5 Grad“ (21. Oktober 2026) [Aufnahme offen]
+### 5. „Zurück auf 1,5 Grad“ (21. Oktober 2026)
 
 **Fehler.** Unser Stück zum UNEP-Bericht gab die drei Temperaturwerte (2,8, 2,6 und 2,1 Grad bis zum Ende des Jahrhunderts) so wieder, als seien alle drei schlechter als im Vorjahr. Laut Zusammenfassung des Berichts stimmt das nur für 2,6 und 2,1 Grad. Der Wert bei aktueller Politik, 2,8 Grad, ist gegenüber dem Vorjahr unverändert. Außerdem fehlte, dass die Werte mit einer Wahrscheinlichkeit von 66 Prozent gelten.
 
@@ -80,7 +80,7 @@ Die Liste unten hat den Stand vom Redaktionsschluss dieses Buchs. Wir haben sie 
 
 **Lehre.** [Erst nach Klärung der Ursache formulieren.] Vorläufig: Zahlen aus einem Bericht gleichen wir mit dessen Zusammenfassung ab, bevor wir sie veröffentlichen.
 
-### 6. „Erreicht Deutschland sein Klimaziel 2040?“ (27. August 2026) [Aufnahme offen]
+### 6. „Erreicht Deutschland sein Klimaziel 2040?“ (27. August 2026)
 
 **Fehler.** Im Artikel standen für die beiden Fortschreibungen die Bereiche „407–598 Mt“ (Langfrist-Trend) und „16–328 Mt“ (10-Jahres-Trend). Beim Nachrechnen für Kapitel 4 am 24. Oktober haben wir festgestellt: Das Hauptverfahren der Analyse (das OLS-Prognoseintervall) ergibt 407 bis 566 und 86 bis 328 Millionen Tonnen. Die in den Artikel übernommenen Randwerte 598 und 16 stammen aus der Kontrollrechnung mit ARIMA (Intervalle 182 bis 598 und 16 bis 532). Die Bereiche im Artikel mischen also je eine Grenze aus beiden Verfahren.
 

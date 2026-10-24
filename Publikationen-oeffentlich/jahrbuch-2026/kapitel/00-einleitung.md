@@ -5,7 +5,7 @@ Dieses Buch ist das Klima-Jahr 2026 in Zahlen: War der Sommer normal? Reicht das
 
 ## Wer wir sind
 
-Klima Kompass ist ein Projekt, das Aussagen zu Klima und Energie an öffentlichen Daten prüft und erklärt. [FAKT 1: Wer steht hinter Klima Kompass, was soll öffentlich stehen (Hintergrund, Arbeitsweise, Unabhängigkeit, Finanzierung, Interessen)? Hinweis aus der Projektregel: Der Name erscheint öffentlich nur im Impressum.] Unseren ersten Artikel haben wir am 27. August 2026 veröffentlicht. [FAKT 2: Seit wann gibt es Klima Kompass, falls früher als der erste Artikel; Abonnentenzahlen nur, wenn gewünscht.]
+Klima Kompass ist ein Projekt, das Aussagen zu Klima und Energie an öffentlichen Daten prüft und erklärt. Hinter Klima Kompass steht ein Mathematiker, den der Klimawandel besorgt und der dazu einen Beitrag leisten will. Ihm fiel auf: In der öffentlichen Diskussion fehlt es oft an Daten und Analysen. Das wollen wir ändern. Wer verantwortlich ist, steht im Impressum. [FAKT 1 geliefert von Daniel Saure am 24.10.2026. Offen: Soll „Dr. Daniel Saure“ hier im Fließtext stehen? Die Projektregel lässt den Namen sonst nur im Impressum zu, deshalb steht er hier nicht. Angaben zu Finanzierung, Unabhängigkeit und Interessen wurden nicht geliefert und stehen nicht im Text.] Unseren ersten Artikel haben wir am 27. August 2026 veröffentlicht. [FAKT 2 offen: Nur nötig, falls es Klima Kompass schon vor dem ersten Artikel gab.]
 
 Unser Prinzip ist einfach: Jede Zahl hat eine Quelle, und wir legen vorab fest, wie wir rechnen. Dabei hilft uns künstliche Intelligenz. Sie schreibt Analysepläne, Programmcode und Entwürfe. Freigeben und veröffentlichen tun Menschen. Wie das genau abläuft, steht in Kapitel 9.
 
@@ -52,6 +52,6 @@ Für alle, die Klimazahlen verstehen und prüfen wollen, ohne Vorkenntnisse in S
 
 ## Wo es weitergeht
 
-Klima Kompass gibt es auf Substack, Instagram, Facebook und als WhatsApp-Kanal. Die Seite „Über / Impressum“ auf Substack ist der Knotenpunkt, dort stehen alle Links (siehe letzte Seite). [FAKT 3: Soll das Buch zu Rückmeldungen auffordern (Fehler melden, Fragen schicken)? Kontaktweg laut Impressum. Entwurf in Kapitel 8: Kommentarfunktion und Impressum-Seite.]
+Klima Kompass gibt es auf Substack, Instagram, Facebook und als WhatsApp-Kanal. Die Seite „Über / Impressum“ auf Substack ist der Knotenpunkt, dort stehen alle Links (siehe letzte Seite). [FAKT 3: Soll das Buch zu Rückmeldungen auffordern (Fehler melden, Fragen schicken)? Kontaktweg laut Impressum. Entwurf in Kapitel 8: Kommentarfunktion und Impressum-Seite. Daniel Saure, 24.10.2026: „Ja“ (Aufforderung zur Rückmeldung aufnehmen).]
 
 [FAKT 4: Dank an wen? Oder streichen.]
