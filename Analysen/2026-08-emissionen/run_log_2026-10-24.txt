@@ -1,0 +1,46 @@
+Nachlauf des Skripts DE-Emissionen-Trendprojektion-2040.R am 24.10.2026 (zur Pruefung der in Artikel vom 27.08.2026 genannten Bereichsangaben; Skript und SAP unveraendert, keine neue Analyse).
+Aufruf: Rscript DE-Emissionen-Trendprojektion-2040.R (Arbeitsverzeichnis: Analysenordner)
+R version 4.6.1 (2026-06-24 ucrt) 
+--- Konsolenausgabe ---
+Lade nötiges Paket: zoo
+
+Attache Paket: 'zoo'
+
+Die folgenden Objekte sind maskiert von 'package:base':
+
+    as.Date, as.Date.numeric
+
+2040-Zielwert (gesetzlich, -88% ggue. 1990): 150.4 Mt CO2-Aeq.
+
+=== Fenster A (1990-2025, n=36) ===
+Durbin-Watson p-Wert (Autokorrelation): 0.000
+Shapiro-Wilk p-Wert (Normalitaet Residuen): 0.687
+Steigung (Newey-West-korrigiert):
+     Estimate    Std. Error       t value      Pr(>|t|) 
+-1.454937e+01  1.889090e+00 -7.701790e+00  5.895059e-09 
+OLS-Projektion 2040: 486.0 Mt  (95%-PI: 406.6 - 565.5)
+
+=== Fenster B (2015-2025, n=11) ===
+Durbin-Watson p-Wert (Autokorrelation): 0.308
+Shapiro-Wilk p-Wert (Normalitaet Residuen): 0.450
+Steigung (Newey-West-korrigiert):
+     Estimate    Std. Error       t value      Pr(>|t|) 
+-2.847918e+01  1.254364e+00 -2.270409e+01  2.959229e-09 
+OLS-Projektion 2040: 207.0 Mt  (95%-PI: 86.3 - 327.8)
+
+=== Fenster C (2020-2025, n=6) ===
+Durbin-Watson p-Wert (Autokorrelation): 0.214
+Shapiro-Wilk p-Wert (Normalitaet Residuen): 0.502
+Hinweis: n zu klein fuer valide Inferenz (rein deskriptiv, SAP 7).
+OLS-Projektion 2040: 287.2 Mt  (95%-PI: -69.9 - 644.4)
+
+--- Sensitivitaetsanalyse: ARIMA statt OLS-PI ---
+
+ARIMA (0,1,0) Projektion 2040: 389.9 Mt  (95%-PI: 181.5 - 598.3)
+
+ARIMA (0,1,0) Projektion 2040: 274.2 Mt  (95%-PI: 16.4 - 532.1)
+               Fenster Punktschaetzung PI_unten PI_oben Ziel_2040_im_PI
+1   A: 1990-2025 (OLS)           486.0    406.6   565.5           FALSE
+2 A: 1990-2025 (ARIMA)           389.9    181.5   598.3           FALSE
+3   B: 2015-2025 (OLS)           207.0     86.3   327.8            TRUE
+4 B: 2015-2025 (ARIMA)           274.2     16.4   532.1            TRUE

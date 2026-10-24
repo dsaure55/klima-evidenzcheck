@@ -5,7 +5,7 @@ Das Klima-Jahr 2026 hat uns eine Menge Zahlen geliefert. Einige davon haben wir 
 
 ## Was 2027 ansteht
 
-- **Das Prognose-Register.** Der erste Eintrag, die Gasspeicher-Entnahme im Winter 2026/27, ist registriert. Die Auswertung folgt, sobald die Daten vorliegen, voraussichtlich im Frühsommer 2027. Für 2027 planen wir vier weitere Vorhersagen (Kapitel 10). Termine können sich verschieben.
+- **Das Prognose-Register.** Der erste Eintrag, die Gasspeicher-Entnahme im Winter 2026/27, ist registriert. Die Auswertung folgt, sobald die Daten vorliegen, voraussichtlich im Mai oder Juni 2027. Für 2027 planen wir vier weitere Vorhersagen (Kapitel 10). Termine können sich verschieben.
 - **Offene Analysen.** Der Prognose-Check zu den Projektionsberichten der Bundesregierung und der Abgleich mit dem Expertenrat sind der Stand dieses Herbstes. Wo sie zum Redaktionsschluss noch nicht abgeschlossen sind, veröffentlichen wir sie auf Substack, sobald sie geprüft und freigegeben sind.
 - [Ausblick auf Analysen, die nicht ins Buch kamen (zum Beispiel Wärmepumpen-Absatz, Hitze in Großstädten, altersbereinigte Hitzesterblichkeit, Global Carbon Budget): nur aufnehmen, wenn Daniel Saure sie plant.]
 
