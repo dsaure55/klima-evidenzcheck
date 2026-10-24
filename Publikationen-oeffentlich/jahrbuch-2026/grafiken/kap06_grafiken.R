@@ -48,9 +48,9 @@ text(1.57, 2, "1,43 (±0,13)", adj = 0, col = ink, cex = 0.95, font = 2)
 # langfristig
 segments(1.34, 1, 1.41, 1, col = blau, lwd = 10, lend = 1)
 text(1.33, 1, "1,34 bis 1,41", adj = 1, col = ink, cex = 0.95, font = 2)
-titel("Ein Monat über 1,5 Grad ist nicht dasselbe wie das Pariser Ziel",
+titel("Ein Monat über 1,5 Grad heißt nicht, dass das Ziel verfehlt ist",
       "Globale Erwärmung gegenüber 1850–1900: Monat, Kalenderjahre und langfristiger Wert")
-quelle("Quellen: Copernicus Climate Change Service (12.10.2026), WMO (Jahre 2024 und 2025, jeweils ±0,13 Grad; langfristige Erwärmung für 2024: 1,34–1,41 Grad). Für das Pariser Ziel zählt die Erwärmung über Jahrzehnte (IPCC: 20-Jahres-Mittel). Zusammenstellung: Klima Kompass.")
+quelle("Quellen: Copernicus Climate Change Service (12.10.2026), WMO (Jahre 2024 und 2025, jeweils ±0,13 Grad; langfristige Erwärmung für 2024: 1,34–1,41 Grad). Monats-, Jahres- und Langfristwerte stammen aus verschiedenen Datensätzen und Methoden und sind nicht direkt vergleichbar. Für das Pariser Ziel zählt das 20-Jahres-Mittel (IPCC). Zusammenstellung: Klima Kompass.")
 dev.off()
 
 ## ---------------------------------------------------------------- Grafik 2
@@ -73,8 +73,8 @@ text(1:3 + 0.16, ndc_hi + 3.5, paste0("−", ndc_lo, " bis −", ndc_hi, " %"), 
 legend("topleft", bty = "n", cex = 0.95, text.col = ink, fill = c(blau, orange), border = NA,
        legend = c("Nötig für den Weg zurück auf 1,5 Grad (UNEP-Szenario „kleinstmögliches Überschießen“)",
                   "Bei voller Umsetzung der Klimazusagen (NDCs), Spanne"))
-titel("Die Zusagen der Staaten liegen weit unter dem, was nötig wäre",
-      "Emissionsminderung bis 2030, 2035 und 2040 gegenüber 2025: UNEP-Szenario gegen Klimazusagen")
+titel("Die neuen Klimazusagen liegen weit unter dem UNEP-Weg zurück",
+      "Emissionsminderung bis 2030, 2035 und 2040 gegenüber 2025: UNEP-Szenario gegen neue Klimazusagen (NDCs)")
 quelle("Quelle: UNEP, Emissions Gap Report 2026: The Point of Return, Executive Summary und Pressemitteilung (21.10.2026). Szenario- und Zusagenwerte, keine Messungen. Ein UNEP-Szenario ist keine Vorhersage. Weitere Spannen im Text (z. B. 2030: 15–36 %).")
 dev.off()
 
