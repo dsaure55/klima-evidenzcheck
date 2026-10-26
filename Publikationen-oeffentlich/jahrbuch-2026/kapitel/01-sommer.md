@@ -1,4 +1,4 @@
-**FREIGEGEBEN durch Daniel Saure am 23.10.2026 für Fassung v0.8 (Commit 9ad213d; Wortlaut: „ok ist freigegeben, danke“, nachdem Daniel angekündigt hatte: „Ich lese Kapitel 1 v0.8 jetzt vollständig und melde mich mit Freigabe oder Änderungen“). Faktencheck: `pruefung/faktencheck_kap01.md` (Nachträge 1–5, zuletzt ok mit Auflagen, N26–N30 danach eingearbeitet, eine abschließende Gegenprüfung durch den Faktenprüfer fand nicht statt). Vor Satz/Export: diese Kopfzeile, die Herkunftstabelle am Ende und die Hinweise zu Grafiken entfernen bzw. durch finale Fassung ersetzen (A14). Datenstände zum Stichtag 15.11. erneut abgleichen.**
+**NACH FREIGABE GEÄNDERT (26.10.2026: Beschriftungen der Grafiken 1 und 2 überarbeitet, Alt-Text der Grafik 2; keine Zahl verändert). FREIGEGEBEN durch Daniel Saure am 23.10.2026 für Fassung v0.8 (Commit 9ad213d; Wortlaut: „ok ist freigegeben, danke“, nachdem Daniel angekündigt hatte: „Ich lese Kapitel 1 v0.8 jetzt vollständig und melde mich mit Freigabe oder Änderungen“). Faktencheck: `pruefung/faktencheck_kap01.md` (Nachträge 1–5, zuletzt ok mit Auflagen, N26–N30 danach eingearbeitet, eine abschließende Gegenprüfung durch den Faktenprüfer fand nicht statt). Vor Satz/Export: diese Kopfzeile, die Herkunftstabelle am Ende und die Hinweise zu Grafiken entfernen bzw. durch finale Fassung ersetzen (A14). Datenstände zum Stichtag 15.11. erneut abgleichen.**
 
 
 # Kapitel 1 – War dieser Sommer normal, und was sagen die Zahlen?
@@ -39,7 +39,7 @@ Hinter diesen Zahlen stehen Menschen und ihre Angehörigen. Wir schreiben deshal
 
 Das Robert Koch-Institut (RKI) schätzt die hitzebedingten Sterbefälle jedes Sommers mit einem statistischen Modell. Wir haben diese Jahresschätzungen seit 1992 wie einzelne Studien behandelt und in einer Metaanalyse zusammengeführt. Daraus ist ein Referenzmodell für ein „normales“ Jahr entstanden [3].
 
-![Geschätzte Todesfälle durch Hitze pro Jahr 1992–2026 mit Unsicherheitsintervall und Obergrenze eines normalen Jahres](../grafiken/kap01_grafik2_todesfaelle_hitze.png)
+![Geschätzte Todesfälle durch Hitze pro Jahr 1992–2026 mit Unsicherheitsintervall und Obergrenze des 95-%-Prognoseintervalls für ein normales Jahr](../grafiken/kap01_grafik2_todesfaelle_hitze.png)
 
 *Grafik 2: Geschätzte Todesfälle durch Hitze pro Jahr. Quelle: RKI (Epidemiologisches Bulletin 19/2025 Anhang; 2025: Wochenbericht KW 38/2025, vorläufig; 2026: Wochenbericht KW 37, Stand 24. September 2026, kumuliert für KW 15 bis 37) [4][6]. Die Obergrenze von rund 8.700 stammt aus [3]. 1992 bis 2024 sind Saisonschätzungen, 2025 und 2026 sind vorläufig (unvollständige Saison). Die gestrichelte Linie zeigt die Obergrenze des 95-Prozent-Prognoseintervalls für ein normales Jahr, keinen Höchstwert. Dargestellt sind vorhandene Zahlen, keine neue Rechnung.*
 

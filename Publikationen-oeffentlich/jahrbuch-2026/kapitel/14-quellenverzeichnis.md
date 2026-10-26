@@ -1,5 +1,5 @@
 # Quellenverzeichnis
-**ENTWURF v0.2 (24.10.2026) – automatisch aus den „Quellen“-Abschnitten der Kapitel zusammengestellt. Nummerierung je Kapitel. Einheitliche Formatierung und Stichprobe der Links folgen. Vor Satz/Export: diese Kopfzeile entfernen.**
+**ENTWURF v0.3 (26.10.2026) – automatisch aus den „Quellen“-Abschnitten der Kapitel zusammengestellt. Vor Satz/Export: diese Kopfzeile entfernen.**
 
 ## Kapitel 1 – War dieser Sommer normal, und was sagen die Zahlen?
 
@@ -11,7 +11,7 @@
 [1] Klima Kompass: „Erreicht Deutschland sein Klimaziel 2040? Die Antwort hängt vom Blickwinkel ab“, 27.08.2026. https://klimaevidenzcheck.substack.com/p/erreicht-deutschland-sein-klimaziel
 [2] Umweltbundesamt (UBA): Emissionsdaten 2025 (Stand 14.03.2026), bereitgestellt über klimadashboard.de (CC BY 4.0). https://klimadashboard.de/emissionen
 [3] Expertenrat für Klimafragen: Prüfbericht zu den Emissionsdaten 2025 und den Projektionsdaten 2026, veröffentlicht 18.05.2026 (Gesamtbudget 2021–2030: 6.199 Mt; Puffer 4,5 Mt; 50/50-Pfad 60–100 Mt über Budget). https://expertenrat-klima.de
-[4] Klima Kompass: Analysebericht Expertenrat-Budgetabgleich 2021–2030, Fassung 4, 24.10.2026 (vorläufig), und SAP v1.1 (eingefroren 29.08.2026, Erratum 1 freigegeben 23.10.2026), `Analysen/2026-08-expertenrat-budgetabgleich/`. Halbjahreswert: Agora Energiewende, Halbjahresbilanz 2026 (Pressemitteilung 28.08.2026).
+[4] Klima Kompass: Analysebericht Expertenrat-Budgetabgleich 2021–2030, Fassung 5, 26.10.2026 (vorläufig; Nachprüfung der Fassung 5 durch den Validator ausstehend), und SAP v1.1 (eingefroren 29.08.2026, Erratum 1 freigegeben 23.10.2026), `Analysen/2026-08-expertenrat-budgetabgleich/`. Halbjahreswert: Agora Energiewende, Halbjahresbilanz 2026 (Pressemitteilung 28.08.2026).
 [5] Klima Kompass: SAP „Prognose-Check #1“, v1.1, eingefroren 22.10.2026, `Analysen/2026-10-prognose-check-projektionsberichte/`.
 
 ## Kapitel 5 – Ist Deutschland „zu klein, um zu zählen“?
