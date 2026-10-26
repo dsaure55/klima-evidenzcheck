@@ -87,7 +87,7 @@ Ein zweites Beispiel aus eigener Praxis: Den CO₂-Preis haben wir in Cent pro L
 
 **Warum das zählt:** Die Zahl kann stimmen, und der Schluss daraus trotzdem nicht.
 
-**Beispiel:** „Deutschland verursacht nur 1,3 Prozent der weltweiten Emissionen, also kommt es auf uns nicht an.“ Die Zahl stimmt. Ob der Schluss daraus folgt, ist eine andere Frage: Alle Länder mit höchstens diesem Anteil kommen zusammen auf fast ein Drittel (31,7 Prozent). Wer mit dem kleinen Anteil argumentiert, argumentiert für alle diese Länder zugleich [5]. Was daraus für das Handeln folgt, beantwortet die Rechnung nicht (Kapitel 5).
+**Beispiel:** Ein verbreitetes Argument lautet sinngemäß: Deutschland verursache nur 1,3 Prozent der weltweiten Emissionen, also komme es auf uns nicht an. Die Zahl stimmt. Ob der Schluss daraus folgt, ist eine andere Frage: Alle Länder mit höchstens diesem Anteil kommen zusammen auf fast ein Drittel (31,7 Prozent). Dieselbe Begründung stünde allen diesen Ländern offen [5]. Das ist ein Gedankenexperiment, und die Grenze bei Deutschland haben wir gesetzt; was daraus für das Handeln folgt, beantwortet die Rechnung nicht (Kapitel 5).
 
 Ein zweites Beispiel: „6 Billionen Euro, ist das Geld einfach weg?“ Die Zahl ist eine Investitionssumme, keine Kostenzahl im Sinne verlorenen Geldes (Frage 5). Ob sich die Investitionen vollständig rechnen, beantwortet die Studie nicht mit einer einzelnen Zahl [6].
 

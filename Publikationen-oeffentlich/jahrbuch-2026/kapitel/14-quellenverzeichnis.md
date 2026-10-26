@@ -1,5 +1,5 @@
 # Quellenverzeichnis
-**ENTWURF v0.1 (24.10.2026) – automatisch aus den „Quellen“-Abschnitten der Kapitel zusammengestellt (Stand der Entwürfe). Nummerierung je Kapitel. Einheitliche Formatierung und Stichprobe der Links folgen. Vor Satz/Export: diese Kopfzeile entfernen.**
+**ENTWURF v0.2 (24.10.2026) – automatisch aus den „Quellen“-Abschnitten der Kapitel zusammengestellt. Nummerierung je Kapitel. Einheitliche Formatierung und Stichprobe der Links folgen. Vor Satz/Export: diese Kopfzeile entfernen.**
 
 ## Kapitel 1 – War dieser Sommer normal, und was sagen die Zahlen?
 
@@ -31,7 +31,6 @@
 [10] Klima Kompass: „Erreicht Deutschland sein Klimaziel 2040? Die Antwort hängt vom Blickwinkel ab“, 27.08.2026. https://klimaevidenzcheck.substack.com/p/erreicht-deutschland-sein-klimaziel
 [11] Bundesnetzagentur, zitiert nach [8].
 [12] Klima Kompass: „Bundestag friert CO₂-Preis 2027 ein – was das an der Zapfsäule bedeutet“, 17.10.2026, aktualisiert am 22.10.2026. https://klimaevidenzcheck.substack.com/p/co-preis-2027-eingefroren-was-das
-[13] Klima Kompass: „Batteriespeicher und Dunkelflauten: Was eine Auswertung historischer Daten zeigt“, 31.08.2026. https://klimaevidenzcheck.substack.com/p/batteriespeicher-und-dunkelflauten
 
 ## Kapitel 8 – Korrekturen 2026: Wo wir falsch lagen
 [1] Klima Kompass: „Die Trittbrettfahrer-Rechnung: Was, wenn ‚zu klein, um zu zählen‘ für alle gelten würde?“, 31.08.2026. https://klimaevidenzcheck.substack.com/p/die-trittbrettfahrer-rechnung-was
@@ -40,8 +39,8 @@
 [4] Klima Kompass: „Bundestag friert CO₂-Preis 2027 ein – was das an der Zapfsäule bedeutet“, 17.10.2026, aktualisiert am 22.10.2026. https://klimaevidenzcheck.substack.com/p/co-preis-2027-eingefroren-was-das
 [5] Klima Kompass: „Der Hitzesommer 2026: Ausreißer oder Teil der Bandbreite?“, 29.08.2026. https://klimaevidenzcheck.substack.com/p/der-hitzesommer-2026-ausreier-oder
 [6] Klima Kompass: „Zurück auf 1,5 Grad – was der neue UN-Bericht wirklich verlangt“, 21.10.2026. https://klimaevidenzcheck.substack.com/p/zuruck-auf-15-grad-was-der-neue-un
-[8] Klima Kompass: „Erreicht Deutschland sein Klimaziel 2040? Die Antwort hängt vom Blickwinkel ab“, 27.08.2026. https://klimaevidenzcheck.substack.com/p/erreicht-deutschland-sein-klimaziel
-[7] Repository: Korrekturvermerke und Faktenchecks unter `Reports/` (https://github.com/dsaure55/klima-evidenzcheck).
+[7] Klima Kompass: „Erreicht Deutschland sein Klimaziel 2040? Die Antwort hängt vom Blickwinkel ab“, 27.08.2026. https://klimaevidenzcheck.substack.com/p/erreicht-deutschland-sein-klimaziel
+[8] Repository: Korrekturvermerke und Faktenchecks unter `Reports/` (https://github.com/dsaure55/klima-evidenzcheck).
 
 ## Kapitel 9 – So entsteht ein Evidenzcheck (und welche Rolle KI dabei spielt)
 [1] Klima Kompass: SAP-Vorlage `SAP-Vorlage/SAP-Template.md`, Repository https://github.com/dsaure55/klima-evidenzcheck

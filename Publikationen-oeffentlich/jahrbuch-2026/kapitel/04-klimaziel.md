@@ -51,7 +51,7 @@ Wir haben gefragt: Was sagt eine eigene, einfache Trendfortschreibung dazu? Daf�
 
 ## Ein Maßstab für Prognosen: der Prognose-Check
 
-Ob solche Fortschreibungen taugen, lässt sich am besten an der Vergangenheit prüfen. Unser Prognose-Check vergleicht deshalb die Projektionen der Bundesregierung aus früheren Jahren (Projektionsberichte 2015 bis 2023) mit den Emissionen, die später tatsächlich inventarisiert (gemeldet) wurden, gesamt und je Sektor. Der Analyseplan ist seit dem 22. Oktober 2026 eingefroren [5]. Ein validiertes Ergebnis lag zum Redaktionsschluss dieses Buchs nicht vor. Deshalb steht hier keines. [PLATZHALTER (Daniel Saure, 24.10.2026: „Machen wir später“): Prognose-Check wird später bearbeitet; hier Ergebnis ergänzen, falls vor dem Satz validiert und freigegeben, sonst Absatz so lassen.] Mehr dazu in Kapitel 10.
+Ein verwandter Evidenzcheck schaut zurück: Der Prognose-Check vergleicht die Projektionen der Bundesregierung aus früheren Jahren (Projektionsberichte 2015 bis 2023) mit den Emissionen, die später tatsächlich inventarisiert (gemeldet) wurden, gesamt und je Sektor. Der Analyseplan ist seit dem 22. Oktober 2026 eingefroren [5]. Ein validiertes Ergebnis lag zum Redaktionsschluss dieses Buchs nicht vor. Deshalb steht hier keines. [PLATZHALTER (Daniel Saure, 24.10.2026: „Machen wir später“): Prognose-Check wird später bearbeitet; hier Ergebnis ergänzen, falls vor dem Satz validiert und freigegeben, sonst Absatz so lassen.] Mehr dazu in Kapitel 10.
 
 ## Was heißt das für dich?
 
@@ -75,7 +75,7 @@ Datenquelle ist das Umweltbundesamt, bereitgestellt über klimadashboard.de (CC 
 [1] Klima Kompass: „Erreicht Deutschland sein Klimaziel 2040? Die Antwort hängt vom Blickwinkel ab“, 27.08.2026. https://klimaevidenzcheck.substack.com/p/erreicht-deutschland-sein-klimaziel
 [2] Umweltbundesamt (UBA): Emissionsdaten 2025 (Stand 14.03.2026), bereitgestellt über klimadashboard.de (CC BY 4.0). https://klimadashboard.de/emissionen
 [3] Expertenrat für Klimafragen: Prüfbericht zu den Emissionsdaten 2025 und den Projektionsdaten 2026, veröffentlicht 18.05.2026 (Gesamtbudget 2021–2030: 6.199 Mt; Puffer 4,5 Mt; 50/50-Pfad 60–100 Mt über Budget). https://expertenrat-klima.de
-[4] Klima Kompass: Analysebericht Expertenrat-Budgetabgleich 2021–2030, Fassung 4, 24.10.2026 (vorläufig), und SAP v1.1 (eingefroren 29.08.2026, Erratum 1 freigegeben 23.10.2026), `Analysen/2026-08-expertenrat-budgetabgleich/`. Halbjahreswert: Agora Energiewende, Halbjahresbilanz 2026 (Pressemitteilung 28.08.2026).
+[4] Klima Kompass: Analysebericht Expertenrat-Budgetabgleich 2021–2030, Fassung 5, 26.10.2026 (vorläufig; Nachprüfung der Fassung 5 durch den Validator ausstehend), und SAP v1.1 (eingefroren 29.08.2026, Erratum 1 freigegeben 23.10.2026), `Analysen/2026-08-expertenrat-budgetabgleich/`. Halbjahreswert: Agora Energiewende, Halbjahresbilanz 2026 (Pressemitteilung 28.08.2026).
 [5] Klima Kompass: SAP „Prognose-Check #1“, v1.1, eingefroren 22.10.2026, `Analysen/2026-10-prognose-check-projektionsberichte/`.
 
 ## Herkunftstabelle (nicht ins Buch)

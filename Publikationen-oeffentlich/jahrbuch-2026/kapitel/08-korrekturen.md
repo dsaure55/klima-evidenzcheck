@@ -1,13 +1,13 @@
 # Kapitel 8 – Korrekturen 2026: Wo wir falsch lagen
 **ENTWURF v0.1 (24.10.2026) – nicht geprüft, nicht freigegeben. Grundlage: die drei Korrekturvermerke in `Reports/`, Kapitel 1, 3, 5, 6 und die Prüfprotokolle. Entscheidung Daniel Saure 24.10.2026 („Ja“): Fall 5 und Fall 6 kommen ins Buch. Offen: ob und wann Hinweise auf Substack gesetzt werden (setzt Daniel selbst; Ursache und Lehre bei Fall 5 und 6 noch zu klären); (b) ob der Hitzesommer-Artikel vom 29.08. auf Substack mit Hinweis geändert wird (Stand dieser Fassung: nicht geändert, vor Satz am Live-Artikel prüfen); (c) Stand der Kanalposts zum CO₂-Preis (Instagram-Bildunterschrift, Facebook-Text). Vor Satz: Liste gegen alle bis dahin veröffentlichten Artikel neu abgleichen. Vor Satz/Export: diese Kopfzeile entfernen.**
 
-**Kurz gesagt:** Wir haben in diesem Jahr in sieben unserer bis Redaktionsschluss veröffentlichten Artikel Fehler oder Unbelegtes gefunden: bei zwei Artikeln falsche Zahlen, bei einem einen falschen Verweis, bei einem einen fehlenden Gesetzgebungsstand, bei einem eine unbelegte Erklärung, bei einem eine ungenaue Wiedergabe einer Quelle und bei einem eine Angabe zur Arbeitsweise, die so nicht stimmte. Keine Korrektur hat die Kernaussage eines Artikels umgeworfen. Das ist kein Grund, sich zu freuen: Bei den meisten wäre ein anderer Ablauf möglich gewesen, der den Fehler früher gefunden hätte.
+**Kurz gesagt:** Wir haben in diesem Jahr in sechs unserer bis Redaktionsschluss veröffentlichten Artikel sieben Fälle von Fehlern oder Unbelegtem gefunden: bei zwei Artikeln falsche Zahlen, bei einem einen falschen Verweis, bei einem einen fehlenden Gesetzgebungsstand, bei einem eine unbelegte Erklärung, bei einem eine ungenaue Wiedergabe einer Quelle und bei einem eine Angabe zur Arbeitsweise, die so nicht stimmte. Keine Korrektur hat die Kernaussage eines Artikels umgeworfen. Das ist kein Grund, sich zu freuen: Bei den meisten wäre ein anderer Ablauf möglich gewesen, der den Fehler früher gefunden hätte.
 
 ## Unser Grundsatz
 
 Fehler wollen wir sichtbar korrigieren. Wo es geht, im Artikel selbst, mit Datum und Grund. Wir sagen dazu, was falsch war, wie es dazu kam und was wir geändert haben. Die Dateien dazu liegen im öffentlichen Repository, mit Vorher- und Nachher-Fassung, wo wir sie haben.
 
-Die Liste unten hat den Stand vom Redaktionsschluss dieses Buchs [Anzahl der Artikel zum Redaktionsschluss eintragen, derzeit mindestens 17]. Wir haben die veröffentlichten Fassungen mit den Entwürfen im Repository auf Wortlaut verglichen (Textkern, keine inhaltliche Prüfung; für drei Evidenzchecks gab es keinen Entwurf). Zwei der Fälle haben wir erst beim Schreiben dieses Buchs bemerkt: Fall 5 und Fall 6. Änderungen, die nirgends dokumentiert sind, können wir damit nicht ausschließen.
+Die Liste unten hat den Stand vom Redaktionsschluss dieses Buchs [Anzahl der Artikel zum Redaktionsschluss eintragen, derzeit mindestens 17]. Wir haben die veröffentlichten Fassungen mit den Entwürfen im Repository auf Wortlaut verglichen (Textkern, keine inhaltliche Prüfung; für drei Evidenzchecks gab es keinen Entwurf). Drei der Fälle haben wir erst beim Schreiben dieses Buchs bemerkt: Fall 5, 6 und 7. Änderungen, die nirgends dokumentiert sind, können wir damit nicht ausschließen.
 
 ## Übersicht
 
@@ -95,9 +95,9 @@ Die Liste unten hat den Stand vom Redaktionsschluss dieses Buchs [Anzahl der Art
 
 ### 7. Derselbe Artikel (27. August 2026), Angabe zur Arbeitsweise [Aufnahme: Entscheidung Daniel Saure offen]
 
-**Fehler.** Der Artikel schreibt, der Analyseplan sei „vor der Modellierung festgelegt“ worden, um nachträgliches Auswählen auszuschließen. Der Analyseplan selbst trägt die Kennzeichnung „retrospektiv erstellt“: Er wurde nach einer ersten Sichtung der Daten verfasst, bei der drei Zeitfenster informell verglichen wurden. Die Analyse gilt deshalb als exploratorisch, nicht als vorab festgelegt. Außerdem betrifft die Newey-West-Korrektur im Plan nur den Test der Steigung. Das Prognoseintervall für 2040 ist im Hauptverfahren ein klassisches OLS-Intervall, das bei zusammenhängenden Jahreswerten tendenziell zu eng ausfällt.
+**Fehler.** Der Artikel schreibt, der Analyseplan sei „vor der Modellierung festgelegt“ worden, um nachträgliches Auswählen auszuschließen. Der Analyseplan selbst trägt die Kennzeichnung „retrospektiv erstellt“: Er wurde nach einer ersten Sichtung der Daten verfasst, bei der drei Zeitfenster informell verglichen wurden. Die Analyse gilt deshalb als exploratorisch, nicht als präregistriert-konfirmatorisch. Außerdem betrifft die Newey-West-Korrektur im Plan nur den Test der Steigung. Das Prognoseintervall für 2040 ist im Hauptverfahren ein klassisches OLS-Intervall, das bei zusammenhängenden Jahreswerten tendenziell zu eng ausfällt.
 
-**Was blieb.** Die Kernaussage des Artikels: Das Zeitfenster entscheidet über die Schlagzeile. Sie passt zu einer explorativen Analyse sogar gut. Die Zahlen sind davon nicht betroffen.
+**Was blieb.** Die Kernaussage des Artikels: Das Zeitfenster entscheidet über die Schlagzeile. Die Zahlen sind davon nicht betroffen.
 
 **Ursache.** [Noch nicht aufgearbeitet, nicht vermuten.]
 

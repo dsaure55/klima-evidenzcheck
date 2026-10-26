@@ -1,5 +1,5 @@
 # Überblick – Das Jahr in zehn Fragen
-**ENTWURF v0.2 (24.10.2026) – nicht geprüft, nicht freigegeben. Jede Zeile fasst den Kurz-gesagt-Absatz des jeweiligen Kapitels zusammen, ohne dessen Einschränkungen wegzulassen. Bei Änderungen an einem Kapitel muss die Zeile hier mitgeändert werden (Differenzprüfung). Seitenverweise folgen beim Satz. Vor Satz/Export: diese Kopfzeile entfernen.**
+**ENTWURF v0.2 (24.10.2026) – nicht geprüft, nicht freigegeben. Jede Zeile fasst den Kurz-gesagt-Absatz des jeweiligen Kapitels zusammen, und lässt Einschränkungen nur dort weg, wo im Kapitel nachzulesen. Bei Änderungen an einem Kapitel muss die Zeile hier mitgeändert werden (Differenzprüfung). Seitenverweise folgen beim Satz. Vor Satz/Export: diese Kopfzeile entfernen.**
 
 ## Teil 1 – Was stimmt
 
@@ -10,7 +10,7 @@
 | 3 | Was kostet Klimapolitik, und wer zahlt? | Nach unserer Rechnung hob der Tankrabatt 91 bis 95 Prozent des CO₂-Preises auf Benzin auf. Die „6 Billionen Euro“ für die Klimaneutralität sind Bruttoinvestitionen; zusätzlich nötig sind laut KfW rund 65 Milliarden Euro pro Jahr. |
 | 4 | Schafft Deutschland sein Klimaziel? | Das hängt vom Zeitfenster ab: Schreibt man den Trend seit 1990 fort, wird das Ziel für 2040 deutlich verfehlt; schreibt man die letzten zehn Jahre fort, liegt es noch im Unsicherheitsbereich. Beides ist keine Prognose. [Expertenrat-Abgleich und Prognose-Check: Stand beim Satz ergänzen.] |
 | 5 | Ist Deutschland „zu klein, um zu zählen“? | Deutschland verursachte 2024 rund 1,3 Prozent der weltweiten Treibhausgasemissionen, aber alle Länder mit höchstens diesem Anteil zusammen fast ein Drittel. Das ist ein Gedankenexperiment, keine Schuldfrage. |
-| 6 | Wo steht die Welt beim 1,5-Grad-Ziel, und kann man CO₂ einfach aus der Luft holen? | Ein Monat über 1,5 Grad bedeutet nicht, dass das Ziel gerissen ist. Für den Weg zurück auf 1,5 Grad wären bis 2030 laut UNEP minus 18 Prozent nötig (gegenüber 2025), die neuen Klimazusagen bringen 5 bis 8 Prozent. CO₂-Entnahme ergänzt die Minderung, ersetzt sie aber nicht. |
+| 6 | Wo steht die Welt beim 1,5-Grad-Ziel, und kann man CO₂ einfach aus der Luft holen? | Ein Monat über 1,5 Grad bedeutet nicht, dass das Ziel gerissen ist. Für den Weg zurück auf 1,5 Grad wären bis 2030 laut UNEP minus 18 Prozent nötig (gegenüber 2025), die neuen Klimazusagen bringen bei voller Umsetzung 5 bis 8 Prozent. CO₂-Entnahme ergänzt die Minderung, ersetzt sie aber nicht. |
 
 ## Teil 2 – Was nicht
 

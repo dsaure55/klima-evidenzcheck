@@ -11,7 +11,7 @@
 
 **Cherry-Picking:** Aus mehreren möglichen Rechnungen nachträglich die auswählen, die das gewünschte Ergebnis liefert. (Kapitel 9)
 
-**Dunkelflaute:** Mehrtägige Phase mit gleichzeitig wenig Wind- und Solarstrom. In unserer Auswertung: [Definition aus dem Analyseplan der Batteriespeicher-Analyse wörtlich übernehmen und gegen Kapitel 2 abgleichen]. (Kapitel 2)
+**Dunkelflaute:** Mehrtägige Phase mit gleichzeitig wenig Wind- und Solarstrom. In unserer Auswertung: mindestens drei Kalendertage in Folge, an denen Wind und Sonne im Verhältnis zum Verbrauch unter dem 10. Perzentil der gesamten Historie seit 2015 liegen (Definition des Analyseplans; gegen Kapitel 2 abgleichen). (Kapitel 2)
 
 **Einordnung / Evidenzcheck / Wissen:** Unsere drei Formen von Beiträgen (siehe Einleitung und Kapitel 9).
 
