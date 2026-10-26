@@ -101,3 +101,12 @@ Grundlage: Nachtrag 2 des Validierungsberichts. Keine Kernzahl hat sich geaender
 | N3.3 | Achsenmarken der Hauptgrafik `estimand2_overshoot.png` (und Anhangsgrafik) alle 200 Mt, inkl. -400 und -200; visuell geprueft. |
 
 Offen: Fokussierte Pruefung der Fassung 4 durch den validator (nur Dokumentations- und Grafikkorrekturen). Freigabe der Analyse beim Menschen.
+
+# Nachtrag Fassung 5 (nur Dokumentation, N4.1/N4.2), 26.10.2026
+
+Grundlage: Nachtrag 3 des Validierungsberichts (freigabefaehig mit Auflagen, 0 kritisch, 2 gering). Keine Zahl, Grafik oder Aussage geaendert; Skript und Ergebnisdateien nicht angefasst.
+
+| Befund | Aenderung |
+|---|---|
+| N4.1 | Bericht 2.4: Ueberschrift "Zur Seed-Beschriftung" und die beiden Einleitungssaetze (Wortlaut Fassung 3) wiederhergestellt, Einrueckung unter dem Aufzaehlungspunkt, Fenster-C-Satz schliesst daran an. |
+| N4.2 | **Bekannter, bewusst nicht behobener Widerspruch:** Die Spalte `Hinweis` in `output/posthoc_bootstrap_sensitivitaet.csv` sagt weiter "B und C weichen davon ab (Monte-Carlo-Fehler)"; der Bericht (2.4) erklaert C als Diskretisierungswirkung (nahezu gleiche Zeilen). Der Text ist im Skript fest verdrahtet (`Hinweis = ...`); eine Korrektur braeuchte eine Skriptaenderung und wurde nicht vorgenommen. Massgeblich ist der Bericht. Im Bericht (2.4) ebenfalls als bekannt vermerkt. |
