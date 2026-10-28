@@ -1,5 +1,5 @@
 # Kapitel 9 – So prüfen wir (und welche Rolle KI dabei spielt)
-**KURZFASSUNG-ENTWURF v0.1 (28.10.2026), gekürzt aus Kapitel 9 der Langfassung; nicht geprüft, nicht freigegeben, erneute Freigabe durch Daniel Saure und Faktencheck nötig. Hinweis: Der Faktencheck des Originalkapitels ist offen, und die Kapitelverweise (hier 2, 6 und 7) sind mit den fertigen Kapiteln abzugleichen. Vor Satz/Export entfernen.**
+**KURZFASSUNG-ENTWURF v0.1 (28.10.2026), gekürzt aus Kapitel 9 der Langfassung; nicht geprüft, nicht freigegeben, erneute Freigabe durch Daniel Saure und Faktencheck nötig. Faktencheck: pruefung/faktencheck_kurz_kap09.md (ok mit Auflagen, mittlere Auflagen eingearbeitet am 28.10.2026, Gegenprüfung der Einarbeitung steht aus). Hinweis: Der Faktencheck des Originalkapitels ist offen, und die Kapitelverweise (hier 2, 6 und 7) sind mit den fertigen Kapiteln abzugleichen. Vor Satz/Export entfernen.**
 
 **Kurz gesagt:** Ein Evidenzcheck beginnt mit einem Plan, bevor jemand die Daten ansieht. Danach rechnet jemand genau nach diesem Plan, eine zweite Stelle prüft unabhängig, und am Ende gibt ein Mensch frei. Künstliche Intelligenz schreibt dabei Plan, Code und Entwürfe. Einfrieren, Freigeben und Veröffentlichen sind Aufgabe von Menschen, die KI darf sie nicht übernehmen. Das Verfahren hat Fehler abgefangen, aber auch eigene Pannen gehabt. Beides beschreiben wir hier.
 
@@ -12,7 +12,7 @@ Dagegen hilft ein Statistischer Analyseplan, kurz SAP. Er legt vorab fest: die F
 ## Der Ablauf in fünf Schritten
 
 1. **Plan-Entwurf.** Ein KI-Assistent schreibt den SAP, bevor Daten angesehen oder Code geschrieben werden. Status „Entwurf“.
-2. **Einfrieren.** Ein Mensch liest den vollständigen Plan und friert ihn ein: Status „final“. Ab hier sind Änderungen nur noch als gekennzeichnete Ergänzung (mit Begründung und erneuter Freigabe) möglich.
+2. **Einfrieren.** Ein Mensch liest den vollständigen Plan und friert ihn ein: Status „final“. Ab hier sind Änderungen nur noch als gekennzeichnete Ergänzung (Amendment oder Erratum, mit Begründung und erneuter Freigabe) möglich.
 3. **Analyse.** Ein zweiter KI-Assistent setzt genau das um, was im eingefrorenen Plan steht, mit Programmcode. Abweichungen sollen als „Post-hoc“ (nachträglich) gekennzeichnet werden. Bei der Trittbrettfahrer-Rechnung fand die Validierung Abweichungen, die nicht gekennzeichnet waren.
 4. **Unabhängige Validierung.** Ein dritter KI-Assistent prüft Code und Ergebnisse gegen den Plan. Er hat weder den Plan geschrieben noch den Code. Er führt den Code, wenn möglich, selbst aus und vergleicht die Zahlen. Das Ergebnis ist ein Validierungsbericht mit einer Ampel pro Punkt: bestanden, Abweichung oder kritisch.
 5. **Freigabe.** Ein Mensch liest den Bericht und gibt frei oder schickt die Analyse zurück.
@@ -58,7 +58,7 @@ Wenn du einen Fehler findest, sag uns Bescheid (Kapitel 7).
 
 - Wenn jemand eine Analyse veröffentlicht: Gab es einen Plan vor der Rechnung? Wer hat geprüft, und war das jemand anderes als der Autor?
 - Wenn KI im Spiel ist: Wer trägt die Verantwortung für die Aussage? Bei uns trägt sie ein Mensch.
-- Alles liegt im öffentlichen Repository (https://github.com/dsaure55/klima-evidenzcheck): Analysepläne, Code, Validierungsberichte und, soweit möglich, Rohdaten. Nicht jedes Stück hat alles: Der Rechenkommentar „65 Euro rein, 59 Euro raus“ hat kein Skript, für den Trend 2040 gibt es keinen Validierungsbericht als Datei (Kapitel 6).
+- Wo findest du alles? Im öffentlichen Repository (https://github.com/dsaure55/klima-evidenzcheck): Analysepläne, Code, Validierungsberichte und, soweit möglich, Rohdaten, geordnet nach Ordnern pro Analyse. Nicht jedes Stück hat alles: Der Rechenkommentar „65 Euro rein, 59 Euro raus“ hat kein Skript, für den Trend 2040 gibt es keinen Validierungsbericht als Datei (Kapitel 6).
 
 ## Lagen wir richtig?
 

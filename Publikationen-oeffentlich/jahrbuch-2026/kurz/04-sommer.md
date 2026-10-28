@@ -1,4 +1,4 @@
-**KURZFASSUNG-ENTWURF v0.1 (28.10.2026), gekürzt aus Kapitel 1 der Langfassung; nicht geprüft, nicht freigegeben, erneute Freigabe durch Daniel Saure und Faktencheck nötig. Hinweis: Die Datenstände müssen zum Stichtag 15.11. erneut abgeglichen werden, die Beschriftungen der Grafiken 1 und 2 wurden nach der Freigabe überarbeitet (26.10.2026), und eine abschließende Gegenprüfung der letzten Faktencheck-Auflagen (N26–N30) fand nicht statt. Vor Satz/Export entfernen.**
+**KURZFASSUNG-ENTWURF v0.1 (28.10.2026), gekürzt aus Kapitel 1 der Langfassung; nicht geprüft, nicht freigegeben, erneute Freigabe durch Daniel Saure und Faktencheck nötig. Hinweis: Die Datenstände müssen zum Stichtag 15.11. erneut abgeglichen werden, die Beschriftungen der Grafiken 1 und 2 wurden nach der Freigabe überarbeitet (26.10.2026), und eine abschließende Gegenprüfung der letzten Faktencheck-Auflagen (N26–N30) fand nicht statt. Außerdem offen: Das Treibhauspost-Interview #125 (Quelle [7], war nicht abrufbar) muss Daniel Saure am Original prüfen und als Datei festhalten; der Fall „Vergleichszahl 2018“ muss in Kapitel 7 stehen und eigens geprüft werden (Entscheidung zum Hinweis im Substack-Artikel [3] steht aus); die Grafikdateien müssen nach der Änderung erneut gegen die Quellen geprüft und das R-Skript einmal ausgeführt werden; RKI-Zahl 2026 und DWD-Wert sind vorläufig. Faktencheck: pruefung/faktencheck_kurz_kap04.md (ok mit Auflagen, mittlere Auflagen eingearbeitet am 28.10.2026, Gegenprüfung der Einarbeitung steht aus). Vor Satz/Export entfernen.**
 
 # Kapitel 4 – War dieser Sommer normal, und was sagen die Zahlen?
 
@@ -40,18 +40,18 @@ Das Robert Koch-Institut (RKI) schätzt die hitzebedingten Sterbefälle jedes So
 
 *Grafik 2: Geschätzte Todesfälle durch Hitze pro Jahr. Quelle: RKI (Epidemiologisches Bulletin 19/2025 Anhang; 2025: Wochenbericht KW 38/2025, vorläufig; 2026: Wochenbericht KW 37, Stand 24. September 2026, kumuliert für KW 15 bis 37) [4][6]. Die Obergrenze von rund 8.700 stammt aus [3]. 1992 bis 2024 sind Saisonschätzungen, 2025 und 2026 sind vorläufig (unvollständige Saison). Die gestrichelte Linie zeigt die Obergrenze des 95-Prozent-Prognoseintervalls für ein normales Jahr, keinen Höchstwert. Dargestellt sind vorhandene Zahlen, keine neue Rechnung.*
 
-Das Modell geht für die Jahre 1992 bis 2025 von einem Mittelwert von rund 2.955 hitzebedingten Sterbefällen pro Jahr aus. Ein normales Jahr läge demnach bei bis zu etwa 8.700. So weit reicht das 95-Prozent-Prognoseintervall nach oben. Auch 1994 und 2003 lagen mit je rund 10.200 über der Linie. Das sind die höchsten Jahreswerte der Reihe 1992–2025. 2026 liegt deutlich darüber: Schon das untere Ende der Spanne (14.400) liegt höher als die Schätzwerte dieser beiden Jahre und als deren obere Intervallgrenzen (11.400 und 11.600). Der damals vorläufige Wert für 2026 lag mit 15.800 etwa 4,5 Standardabweichungen über dem Referenzbereich. Auch in den acht vorab festgelegten Sensitivitätsanalysen blieb die Richtung gleich (oberhalb der Bandbreite) [3].
+Das Modell geht für die Jahre 1992 bis 2025 von einem Mittelwert von rund 2.955 hitzebedingten Sterbefällen pro Jahr aus. Ein normales Jahr läge demnach bei bis zu etwa 8.700. So weit reicht das 95-Prozent-Prognoseintervall nach oben. 1994 und 2003 lagen mit je rund 10.200 über der Linie. Das sind die höchsten Jahreswerte der Reihe 1992–2025. 2026 liegt deutlich darüber: Schon das untere Ende der Spanne (14.400) liegt höher als die Schätzwerte dieser beiden Jahre und als deren obere Intervallgrenzen (11.400 und 11.600). Der damals vorläufige Wert für 2026 lag mit 15.800 etwa 4,5 Standardabweichungen über dem Referenzbereich. Auch in den acht vorab festgelegten Sensitivitätsanalysen blieb die Richtung gleich (oberhalb der Bandbreite) [3].
 
-Das Modell passt nicht perfekt: Die Untergrenze des Intervalls ist rechnerisch negativ, was bei Sterbefallzahlen unmöglich ist. An der Kernaussage ändert das nichts, denn schon die Obergrenze liegt weit unter dem Wert von 2026 [3].
+Das Modell passt nicht perfekt: Die Jahreswerte sind rechtsschief verteilt, es gibt also einige wenige sehr hohe Werte. Die Untergrenze des Intervalls ist rechnerisch negativ, was bei Sterbefallzahlen unmöglich ist. An der Kernaussage ändert das nichts, denn schon die Obergrenze liegt weit unter dem Wert von 2026 [3].
 
 Im letzten Wochenbericht der Saison (Kalenderwoche 37, Stand 24. September 2026) schätzt das RKI 16.000 Sterbefälle, mit einem Unsicherheitsintervall von 14.400 bis 17.600 [4]. Die Zahl gilt kumuliert für die Kalenderwochen 15 bis 37, also etwa für April bis Mitte September und nicht nur für Juni bis August [4]. Das ist etwas mehr als die 15.800, mit denen wir gerechnet hatten. Das ist ein beschreibender Abgleich, keine neue Rechnung [5]. Die Schätzung aus KW 37 ist noch nicht die endgültige Jahresschätzung.
 
 Vier Punkte sind dabei wichtig:
 
 - **Schätzung, nicht Zählung.** Die Zahl stammt nicht von Totenscheinen. Sie ist eine Modellschätzung der zusätzlichen Sterbefälle in Hitzephasen [4][5].
-- **Nicht altersbereinigt.** Die Bevölkerung wird älter, und ältere Menschen reagieren empfindlicher auf Hitze. Ein Teil der Fallzahlen steigt deshalb auch unabhängig vom Klima [3]. Wie viel das ausmacht, haben wir nicht untersucht.
+- **Nicht altersbereinigt.** Die Bevölkerung wird älter, und ältere Menschen reagieren empfindlicher auf Hitze. Ein Teil der Fallzahlen steigt deshalb auch unabhängig vom Klima [3]. Wie viel das ausmacht, haben wir nicht untersucht, und mit diesen Daten lässt es sich nicht trennen.
 - **Methodik im Wandel.** Seit 2020 modelliert das RKI die Sterblichkeit wegen der Corona-Pandemie mit einer flexibleren Kurve. Wir können nicht ausschließen, dass ein Teil des Abstands darauf beruht [5][6].
-- **Eine Vergleichszahl, mit der wir nicht gerechnet haben.** In unserem Analyseplan stand für 2018 als Kontext die Zahl 9.400. Gerechnet haben wir mit dem RKI-Wert von rund 8.500. In keiner der drei geprüften RKI-Ausgaben (2022, 2023, 2025) konnten wir die 9.400 bestätigen. Unsere frühere Erklärung dazu ist nicht belegt (mehr in Kapitel 7).
+- **Eine Vergleichszahl, mit der wir nicht gerechnet haben.** In unserem Analyseplan stand für 2018 als Kontext die Zahl 9.400. Gerechnet haben wir mit dem RKI-Wert von rund 8.500 (Epidemiologisches Bulletin 19/2025). In keiner der drei geprüften RKI-Ausgaben (2022, 2023, 2025) konnten wir die 9.400 für 2018 bestätigen. Möglicherweise stammt sie aus dem Bulletin 42/2022: Dort ist 9.400 die obere Grenze des Unsicherheitsintervalls für 2019. Das haben wir nicht abschließend geklärt. In unserem Artikel vom 29. August hatten wir die Abweichung als Verwechslung in einer Sekundärquelle beschrieben. Diese Erklärung ist nicht belegt (mehr dazu in Kapitel 7).
 
 Unsere Analyse beantwortet nur, ob 2026 außerhalb der bisherigen Schwankungsbreite liegt, nicht, warum [3].
 
@@ -59,7 +59,8 @@ Unsere Analyse beantwortet nur, ob 2026 außerhalb der bisherigen Schwankungsbre
 
 Am 17. Oktober 2026 hat der Klima-Newsletter Treibhauspost ein Interview mit dem Journalisten Jürgen Döschner veröffentlicht. Seine These: Viele Medien berichten über Hitze und Dürre, lassen aber den Zusammenhang mit dem Klimawandel weg. Als Beleg nennt er unter anderem die „16.000 Hitzetoten“ (eine Schätzung des RKI) und den MedienKlimaBericht des Vereins KLIMA° vor acht [5][7]. Das Interview ist eine Meinungsquelle, keine Primärquelle.
 
-Der Bericht wertet das Programm von Das Erste und ZDF für Januar bis Juni 2026 aus. Als „Klima-Minute“ gilt jede Sendeminute, in der die Zeichenfolge „Klima“ vorkommt. Die Zählung ist keine Qualitätsmessung [8]. Der Verein setzt sich für mehr Klimaberichterstattung ein. Die Zahlen kommen also von einer Seite mit klarem Anliegen, die Methode ist aber beschrieben [5][8]. Interview und Bericht sind außerdem nicht unabhängig voneinander: Das Interview nennt den Bericht als Beleg [5][8].
+Der Bericht wertet das Programm von Das Erste und ZDF für Januar bis Juni 2026 aus [8]. Als „Klima-Minute“ gilt jede Sendeminute, in der die Zeichenfolge „Klima“ vorkommt. Die Zählung ist keine Qualitätsmessung. Ein Stichwort ist kein Qualitätsmaß. Der Verein setzt sich für mehr Klimaberichterstattung ein. Die Zahlen kommen also von einer Seite mit klarem Anliegen, die Methode ist aber beschrieben [5][8]. Interview und Bericht sind außerdem nicht unabhängig voneinander: Der Bericht zitiert einen früheren Beitrag Döschners im „Brandmelder“ (29.06.2026), und das Interview nennt den Bericht als Beleg [5][8].
+
 | Anteil „Klima“-Minuten | Das Erste | ZDF |
 |---|---|---|
 | 2023 | 2,2 % | 1,95 % |
@@ -67,12 +68,15 @@ Der Bericht wertet das Programm von Das Erste und ZDF für Januar bis Juni 2026 
 | 2025 | 1,29 % | 1,29 % |
 | 1. Halbjahr 2026 | 0,95 % | 0,82 % |
 
+Laut dem Bericht hat Das Erste die Juni-Hitzewelle erst am siebten Tag der Warnperiode des DWD ausdrücklich als klimawandelbedingt eingeordnet. Vorher gab es nur einzelne Randerwähnungen. In Frankreich, Großbritannien und Spanien sei der Klimabezug dagegen vom ersten Tag an üblich gewesen. Der Bericht belegt das mit ausgewählten Beispielen aus dem Programm [5][8].
+
 Was die Zahlen nicht zeigen: eine Absicht der Redaktionen. Die Reihe betrifft nur Das Erste und ZDF, nicht Zeitungen, Privatsender oder Onlinemedien. Der Auslandsvergleich des Berichts beruht auf Beispielen aus den beiden Hitzephasen [5].
 
 ## Was heißt das für dich?
 
 - Ob ein Sommer „ganz normal“ war, lässt sich erst prüfen, wenn klar ist, womit man vergleicht. Derselbe Sommer war je nach Maßstab „extrem außergewöhnlich“ oder „ungewöhnlich warm“. Beide Einstufungen folgen aus derselben Messung, sie unterscheiden sich im Maßstab.
-- Zahlen zur Hitzesterblichkeit sind Modellschätzungen mit einer Spanne. Sie sind vorläufig und können sich noch ändern. In allen acht Sensitivitätsanalysen blieb die Richtung gleich (oberhalb der Bandbreite) [3].- Dass „Klima“ im Programm von Das Erste und ZDF 2026 in weniger Sendeminuten vorkam als in den Vorjahren, zeigt die Studie eines Vereins mit klarem Anliegen, und nur für diese zwei Sender. Warum, zeigt sie nicht.
+- Zahlen zur Hitzesterblichkeit sind Modellschätzungen mit einer Spanne. Sie sind vorläufig und können sich noch ändern. In allen acht Sensitivitätsanalysen blieb die Richtung gleich (oberhalb der Bandbreite) [3].
+- Dass „Klima“ im Programm von Das Erste und ZDF 2026 in weniger Sendeminuten vorkam als in den Vorjahren, zeigt die Studie eines Vereins mit klarem Anliegen, und nur für diese zwei Sender. Warum, zeigt sie nicht.
 
 ## Lagen wir richtig?
 

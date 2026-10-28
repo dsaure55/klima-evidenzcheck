@@ -1,5 +1,5 @@
 # Kapitel 8 – Zehn Fragen an jede Klimazahl
-**KURZFASSUNG-ENTWURF v0.1 (28.10.2026), gekürzt aus Kapitel 7 der Langfassung; nicht geprüft, nicht freigegeben, erneute Freigabe durch Daniel Saure und Faktencheck nötig. Hinweis: Der Faktencheck des Originalkapitels ist offen, und die Kapitelverweise (hier 2, 7 und 9) sind mit den fertigen Kapiteln abzugleichen. Vor Satz/Export entfernen.**
+**KURZFASSUNG-ENTWURF v0.1 (28.10.2026), gekürzt aus Kapitel 7 der Langfassung; nicht geprüft, nicht freigegeben, erneute Freigabe durch Daniel Saure und Faktencheck nötig. Faktencheck: pruefung/faktencheck_kurz_kap08.md (ok mit Auflagen, mittlere Auflagen eingearbeitet am 28.10.2026, Gegenprüfung der Einarbeitung steht aus). Hinweis: Der Faktencheck des Originalkapitels ist offen, und die Kapitelverweise (hier 2, 7 und 9) sind mit den fertigen Kapiteln abzugleichen. Vor Satz/Export entfernen.**
 
 **Kurz gesagt:** Viele Klimazahlen aus Schlagzeilen lassen sich mit zehn Fragen prüfen. Du brauchst dafür keine Statistik. Die Fragen zeigen, ob eine Zahl sagt, was sie zu sagen scheint. Die Beispiele stammen aus unseren eigenen Artikeln, auch dort, wo wir selbst danebenlagen. Nicht jede Zahl muss alle zehn Fragen bestehen. Wichtig ist, dass die Antworten sichtbar sind. Wo sie fehlen, ist das schon ein Befund.
 
@@ -39,11 +39,11 @@ Daten werden nachgemeldet, Gesetze durchlaufen mehrere Stationen, Berichte werde
 
 ### 9. Lässt sich die Zahl nachprüfen?
 Eine Zahl, deren Rechenweg niemand sehen kann, muss man glauben. Gibt es einen Link auf Daten, Rechenweg oder Code? Ein „laut einer Studie“ ohne Titel zählt nicht.
-*Beispiel:* Bei „65 Euro rein, 59 Euro raus“ hatten wir angekündigt, Rechenweg und Skript im GitHub-Repository zu veröffentlichen. Das war nicht geschehen. Bei der Korrektur haben wir den Satz ersetzt [7]. Das Gegenbeispiel sind unsere Evidenzchecks (Kapitel 9).
+*Beispiel:* Bei „65 Euro rein, 59 Euro raus“ hatten wir angekündigt, Rechenweg und Skript im GitHub-Repository zu veröffentlichen. Das war nicht geschehen. Bei der Korrektur haben wir den Satz ersetzt [7]. Das Gegenbeispiel sind unsere Evidenzchecks: Der Analyseplan wird vor der Rechnung festgelegt, der Code liegt im Repository, und eine unabhängige Prüfung schreibt in der Regel einen Bericht dazu (Kapitel 9). Ausnahmen und Lücken nennen wir, etwa in Kapitel 6.
 
 ### 10. Folgt daraus, was behauptet wird?
 Die Zahl kann stimmen, und der Schluss daraus trotzdem nicht. Trenne in Gedanken die Zahl und die Folgerung.
-*Beispiel:* „Deutschland verursacht nur 1,3 Prozent der weltweiten Emissionen, also kommt es auf uns nicht an.“ Die Zahl stimmt. Dieselbe Begründung stünde aber allen Ländern mit höchstens diesem Anteil offen, und die kommen zusammen auf fast ein Drittel (31,7 Prozent) [5]. Was daraus für das Handeln folgt, beantwortet die Rechnung nicht (Kapitel 2).
+*Beispiel:* „Deutschland verursacht nur 1,3 Prozent der weltweiten Emissionen, also kommt es auf uns nicht an.“ Die Zahl stimmt. Alle Länder mit höchstens diesem Anteil kommen zusammen auf fast ein Drittel (31,7 Prozent). Dieselbe Begründung stünde allen diesen Ländern offen [5]. Das ist ein Gedankenexperiment, und die Grenze bei Deutschland haben wir gesetzt. Was daraus für das Handeln folgt, beantwortet die Rechnung nicht (Kapitel 2).
 
 ## Was heißt das für dich?
 
@@ -51,7 +51,7 @@ Du musst nicht alle zehn Fragen bei jeder Zahl stellen. Oft reichen zwei oder dr
 
 ## Lagen wir richtig?
 
-Die zehn Fragen sind keine Zauberformel, und wir haben sie nicht immer selbst befolgt. Zu Frage 9 gehören ein nicht eingelöstes Skript-Versprechen und ein Link, den wir nicht geöffnet hatten (auch deshalb: Öffne bei jeder Quelle den Link), zu Frage 5 Kennzeichnungen wie „brutto“, zu Frage 8 ein fehlender Gesetzgebungsstand. Was genau falsch war, steht in Kapitel 7. Bei den Beispielen in diesem Kapitel haben wir die Zahlen aus den veröffentlichten Artikeln übernommen und nicht neu berechnet.
+Die zehn Fragen sind keine Zauberformel, und wir haben sie nicht immer selbst befolgt. Zu Frage 9 gehört ein nicht eingelöstes Skript-Versprechen, zu Frage 8 ein fehlender Gesetzgebungsstand. Was genau falsch war, steht in Kapitel 7. Bei den Beispielen in diesem Kapitel haben wir die Zahlen aus den veröffentlichten Artikeln übernommen und nicht neu berechnet.
 
 ## Woher wir das wissen
 

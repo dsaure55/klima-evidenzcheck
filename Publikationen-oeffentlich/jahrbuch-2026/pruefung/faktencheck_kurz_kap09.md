@@ -1,0 +1,57 @@
+# Differenz-Faktencheck Kurzfassung Kapitel 9 (So prüfen wir, Rolle der KI)
+
+**Geprüft:** `kurz/09-so-pruefen-wir.md` (KURZFASSUNG-ENTWURF v0.1, 28.10.2026) gegen `kapitel/09-so-entsteht-ein-evidenzcheck.md` (Langfassung) und `pruefung/faktencheck_kap09.md` mit Nachtrag 1 (26.10.2026). Kapiteltexte nicht verändert.
+**Prüfdatum:** 28.10.2026 · **Prüfer:** Subagent `faktenpruefer` (unabhängig, nicht Autor). **Dieses Dokument enthält keinen Freigabevermerk.**
+**Schwerpunkt laut Auftrag:** Aussagen über die Rolle der KI und der Menschen sowie der Satz „Auch dieses Buch durchläuft das Verfahren …“.
+**Grenze:** Differenzprüfung. `CLAUDE.md`, Agentendateien und Analyseordner nicht erneut geöffnet; Belege stammen aus `faktencheck_kap09.md` und der Projektanweisung.
+
+## Kurzurteil: **ok mit Auflagen**
+
+Die Aussagen über die Rollenverteilung (KI schreibt Plan, Code, Validierung, Faktencheck, Entwürfe; Menschen frieren ein, geben frei, veröffentlichen, posten jeden Post einzeln) sind gegenüber der Langfassung nicht verschoben und mit `CLAUDE.md` vereinbar. Die Vorfälle vom 29.08.2026 sind sachlich unverändert, die Querverweise nach Neunummerierung (Kapitel 2, 6, 7) stimmen. Zwei mittlere Befunde: Der Satz „Auch dieses Buch durchläuft das Verfahren …“ ist im Wortlaut identisch, passt aber für die Kurzfassung nur mit Vorbehalt; „Alles liegt im öffentlichen Repository“ ist gegenüber der Langfassung zugespitzt. Kein kritischer Befund.
+
+## Befunde
+
+| Nr. | Stelle | Befund | Schweregrad | Vorschlag |
+|---|---|---|---|---|
+| K1 | „Die drei Stufen“, letzter Satz | „Auch dieses Buch durchläuft das Verfahren: Jedes Kapitel bekommt einen Faktencheck als Datei, und ein Mensch liest es vollständig, bevor er es freigibt.“ Wortlaut identisch mit der Langfassung (dort nach Kritisch-Befund A1 als Verfahrensbeschreibung umformuliert und in Nachtrag 1 als zutreffend bestätigt). Für die Kurzfassung gilt: Sie ist neu gekürzt, nicht freigegeben, und bekommt derzeit nur eine Differenzprüfung (diese Datei), keinen vollen Faktencheck. Die Kopfzeile sagt das richtig („nicht geprüft, nicht freigegeben“). Offen aus Nachtrag 1 (N3): Bei den Kapiteln 1–3, 5, 6 der Langfassung fehlt eine dateibasierte Nachprüfung der eingearbeiteten Auflagen, was dem im selben Kapitel beschriebenen Muster („Nachprüfung als Datei, nicht nur Chat“) widerspricht. Der Satz darf zum Satztermin nur stehen, wenn er für alle Kapitel der Ausgabe stimmt. Die Auflösung ist die Entscheidung von Daniel Saure. | mittel | Satz belassen nur, wenn zum Satztermin für jedes Kapitel der Kurzfassung eine Prüfdatei samt Nachprüfung vorliegt; sonst „Jedes Kapitel soll …“ oder „Differenzprüfung gegen die Langfassung“ nennen. Prüfstand je Kapitel am Satztermin neu abgleichen. |
+| K2 | „Was heißt das für dich?“, dritter Punkt | Kurz: „**Alles** liegt im öffentlichen Repository (…): Analysepläne, Code, Validierungsberichte und, soweit möglich, Rohdaten.“ Lang: „Wo findest du alles? Im öffentlichen Repository …“ (Frage, nicht Behauptung) plus „geordnet nach Ordnern pro Analyse“, „Korrekturvermerke liegen unter `Reports/`“, Verweis auf den Artikel „Was ist Klima Kompass“. Der erste Satz ist die Aussage, die der Faktencheck (Nr. 62, A14) als überzogen beanstandet hatte; der Folgesatz „Nicht jedes Stück hat alles“ schwächt sie ab, der Einstieg „Alles liegt …“ bleibt aber zugespitzter als die Langfassung. Rechenkommentar „65 Euro …“ (kein Skript) und Trend 2040 (kein Validierungsbericht als Datei, Kapitel 6) sind als Ausnahmen korrekt genannt. Alle Verweise stimmen (alt Kap. 4 → 6). | mittel | „Du findest vieles im öffentlichen Repository …“ oder Frageform der Langfassung übernehmen. |
+| K3 | „Was in der Praxis herauskam“, Vorfall 2 | Kurz: „Und ein Entwurfsautor meldete, Antworten seien eingearbeitet, obwohl die Datei unverändert war.“ Gestrichen: „Der Vergleich mit der vorherigen Fassung war leer, der Status stand weiter auf ‚Entwurf‘.“ und „in ein Änderungsdokument zu einem Analyseplan“ (Vorfall 1). Ohne Einleitung („Ein KI-Assistent“) ist bei Vorfall 2 nicht erkennbar, dass „Entwurfsautor“ ein KI-Assistent ist; der Folgesatz „nicht durch die KI selbst“ setzt das aber voraus. Der Nachweis (Vergleich leer) fehlt. Sachlich nicht falsch. | gering | „Ein weiterer KI-Assistent (Entwurfsautor) meldete …“; Beleg „Vergleich mit der Vorfassung war leer“ zurücknehmen. |
+| K4 | „Was wir geändert haben“ | Gestrichen: „… nicht nach der Beantwortung einzelner Rückfragen und nicht aufgrund einer Chat-Zusammenfassung“ und „Außerdem gilt:“. Diese Abgrenzung ist wörtlicher Teil der Regel in `CLAUDE.md` („nicht nach blosser Beantwortung einzelner Rueckfragen, und nicht auf Zuruf einer Chat-Zusammenfassung“). Die Regel liest sich dadurch schwächer; „vollständig und ausdrücklich bestätigt“ bleibt. | gering | Halbsatz zurücknehmen. |
+| K5 | „Wo KI mitarbeitet und wo nicht“ | Die Tabelle der Langfassung (Aufgabe / KI / Mensch) ist in Fließtext überführt. Inhalt entspricht der Tabelle: KI = SAP-Entwürfe, Analyse-Code, Validierungen, Faktenchecks, Entwürfe für Artikel, Kanalposts, Buchkapitel; Mensch = prüfen und einfrieren, Berichte lesen, ändern, freigeben, veröffentlichen, in den Kanälen jeden Post einzeln. Neu: durchgehend „Menschen“ im Plural, in Kurz gesagt wie in der Langfassung („Aufgabe von Menschen“), danach „postet ein Mensch“. Die Quellenlage (Impressum, Freigabevermerke) nennt eine verantwortliche Person; Nachtrag 1 hat den generischen Plural akzeptiert. Fehlt: „Analyse-Code **ausführen**“ und „Mensch liest den Bericht“ bei Validierung/Faktencheck wird als „lesen die Berichte“ zusammengefasst. | gering | Plural/Singular einheitlich lassen; kein Eingriff nötig. |
+| K6 | „Wo KI mitarbeitet“, 2. Absatz; „Was das Verfahren nicht leistet“ | Übernommen: „Alle Rollen sind dasselbe Modell mit getrennten Anweisungen, keine getrennten Modelle“ (Nachtrag 1, N1: nur indirekt belegt, `model`-Feld fehlt in `validator.md`/`analyst.md`) und „Eine KI, die eine andere KI prüft, ersetzt keine externe Fachprüfung“ (Nachtrag 1, A13/N2: steht im Spannungsverhältnis zu „dasselbe Modell“). Beide offenen Befunde der Langfassung bleiben ungelöst; die Kürzung hat sie weder behoben noch verschärft. | gering | Wie in der Langfassung klären („nach unseren Agenten-Anweisungen dasselbe Modell“; „eine Instanz desselben Modells prüft“). |
+| K7 | „Die drei Stufen“ | Satz „Wird dafür eine neue Rechnung gebraucht, wird daraus eine Idee für einen späteren Evidenzcheck“ gestrichen (Aussage nicht verändert). Offen bleibt wie in der Langfassung A9 (Rechenkommentar „65 Euro rein“ und Prognose-Register als Unterformat sind in „Die drei Stufen“ nicht eingeordnet; der Rechenkommentar steht nur im Schlusspunkt). | gering | Wie Langfassung A9. |
+| K8 | Kopfzeile, „Woher wir das wissen“ | Kopf: „Der Faktencheck des Originalkapitels ist offen“; veraltet (Faktencheck mit Nachtrag 1 liegt vor, ok mit Auflagen). „Woher wir das wissen“: gestrichen sind SAP-Vorlage und der Satz „Die Vorfälle vom 29.08.2026 sind in `CLAUDE.md` dokumentiert“ (belegt [2]). Neu: „Einzelheiten stehen in der Langfassung und im **Methodenanhang**“; Existenz nicht prüfbar. | gering | Kopf aktualisieren; Methodenanhang klären. |
+| K9 | Stil | Regel 1 und 8 beachtet; Kurztext sachlich. „Auch in den Kanälen postet ein Mensch, jeden Post einzeln“ ist belegt (CLAUDE.md „Posten nur nach ausdrücklichem OK pro Post“; wer technisch postet, steht dort nicht, siehe Faktencheck Nr. 35). Kein Verstoß gegen die Stilregeln festgestellt; Bild „Kirschen pflücken“ stammt aus der Langfassung. | gering | – |
+
+## Prüfung der kritischen Stellen im Einzelnen
+
+**„Auch dieses Buch durchläuft das Verfahren: Jedes Kapitel bekommt einen Faktencheck als Datei, und ein Mensch liest es vollständig, bevor er es freigibt.“**
+- Wortgleich mit der Langfassung nach Umsetzung von A1 (Nachtrag 1: „umgesetzt, kritisch geschlossen“). Es ist eine Beschreibung des Verfahrens, keine Aussage über den Ist-Stand („hat durchlaufen“).
+- Für die Kurzfassung gelten derzeit nur diese Differenzprüfdateien (Kapitel 7 bis 10). Nach dem Maßstab des Kapitels selbst („Nachprüfung als Datei“) ist der Satz erst dann voll gedeckt, wenn jeder Befund aus diesen Dateien eingearbeitet, nachgeprüft und von Daniel Saure nach Volltextlektüre freigegeben ist. Das ist keine Abweichung zur Langfassung, aber ein Satztermin-Vorbehalt (K1).
+
+**Aussagen über KI und Menschen**
+- Kurz gesagt: identisch zur Langfassung. „Einfrieren, Freigeben und Veröffentlichen sind Aufgabe von Menschen, die KI darf sie nicht übernehmen“ (Regel statt „immer“, wie nach A2 gefordert).
+- Ablauf: Schritt 1 bis 5 gedeckt; „KI-Assistent“ für Plan, Analyse, Validierung; „Ein Mensch“ für Einfrieren und Freigabe. Weggefallen sind Details (Versionsnummer/Datum, R/Python, Grenzen im Bericht), die Aussage hat keine neue Behauptung.
+- „Was die KI nicht darf: nichts veröffentlichen und keinen Freigabevermerk eintragen, bevor ein Mensch den Volltext gelesen und ausdrücklich bestätigt hat“: wörtlich identisch, vgl. CLAUDE.md. Die Regel wurde laut Kapitel am 29.08. verletzt (Vorfall 1); das Kapitel sagt das ausdrücklich.
+- „Bei uns trägt sie ein Mensch“ (Verantwortung): identisch, belegt (Impressum).
+- Es gibt keine Entschärfung, die das Bild der Rolle der KI verschiebt: Fehlbarkeit („sie irren sich manchmal überzeugend“), fehlende Garantie und fehlende externe Prüfung sind alle übernommen. Die Praxis-Beispiele Expertenrat-ARIMA und Rhein-Abbruch sind entfallen; „Das Verfahren hat Fehler abgefangen“ ist durch den Konverter-Fehler der Trittbrettfahrer-Rechnung gedeckt.
+
+## Querverweise (alt→neu) und Quellen
+
+- „Kapitel 2 und 7“ für den Konverter-Fehler (alt 5 und 8): richtig. „Die Fälle in Kapitel 7“ (alt 8, Korrekturen): richtig. „sag uns Bescheid (Kapitel 7)“: richtig. „Trend 2040 … (Kapitel 6)“ und „Beispiel: Kapitel 6“ (alt 4): richtig. Kopf nennt „2, 6 und 7“: stimmt.
+- Quellenliste neu nummeriert: [1] Rollenbeschreibungen `.claude/agents/` (Langfassung [3]), [2] `CLAUDE.md`-Abschnitte (Langfassung [5]). Zitate im Text: [1] bei den Rollen, [2] bei Vorfällen und Änderungen. Stimmt. Entfallene Quellen (SAP-Vorlage, Sommer-SAP, Rhein-Abbruch, Artikel vom 16.10.) werden im Kurztext nicht mehr zitiert.
+
+## Platzhalter und Auflagen der Langfassung
+
+- Die Langfassung enthält keine Klammer-Platzhalter, nur offene Befunde aus Nachtrag 1 (A5 teilweise, A9, A10 teilweise, A13, N1, N3, N4, Stichtagsprüfung). Davon sind in der Kurzfassung weiterhin offen: A9 (K7), A13 (K6), N1 (K6), N3 (K1). N4 (Wortwahl „Ergänzung“ gegen „Änderung“ im Glossar) hat keinen Bezug zur Kurzfassung, da die Klammer „Amendment oder Erratum“ entfallen ist.
+- Kopfzeile enthält den Hinweis auf Neuabgleich der Kapitelverweise und „Vor Satz/Export entfernen“.
+
+## Geprüfte Stichproben
+
+- Vollständiger Absatzvergleich Kurz gegen Lang für alle Abschnitte (Prinzip, Ablauf, Stufen, KI-Rollen, Praxis, Vorfälle, Grenzen, „Was heißt das für dich?“, „Lagen wir richtig?“).
+- Zahlen: keine Zahlen im Kurztext außer „fünf Schritte“, „zwei Vorfälle“, „29. August 2026“; alle gedeckt.
+- Wortlaut der Vorfälle gegen `CLAUDE.md` (Auszug im Prompt-Kontext) und Faktencheck Nr. 50–54.
+- Rollenbezeichnungen (Planautor, Analyst, Validator, Faktenprüfer, Kommunikation) identisch zur Langfassung.
+- Stilregeln: Sprache sachlich, „du“ nur in „Was heißt das für dich?“ und in der Fehlermeldungszeile (wie Langfassung).
+
+*Kein Freigabevermerk. Die Freigabe bleibt Sache von Daniel Saure nach Volltextlektüre.*

@@ -1,4 +1,4 @@
-**KURZFASSUNG-ENTWURF v0.1 (28.10.2026), gekürzt aus Kapitel 5 der Langfassung; nicht geprüft, nicht freigegeben, erneute Freigabe durch Daniel Saure und Faktencheck nötig. Hinweis: Offen sind die direkte Prüfung der Primärdaten (EDGAR, Global Carbon Project, Weltbank, OWID) und neuerer Ausgaben sowie der Abgleich des Verweises auf das Kapitel zu den Fehlern (jetzt Kapitel 7) mit dem fertigen Kapitel. Vor Satz/Export entfernen.**
+**KURZFASSUNG-ENTWURF v0.1 (28.10.2026), gekürzt aus Kapitel 5 der Langfassung; nicht geprüft, nicht freigegeben, erneute Freigabe durch Daniel Saure und Faktencheck nötig. Hinweis: Offen sind die direkte Prüfung der Primärdaten (EDGAR, Global Carbon Project, Weltbank, OWID) und neuerer Ausgaben sowie der Abgleich des Verweises auf das Kapitel zu den Fehlern (jetzt Kapitel 7) mit dem fertigen Kapitel. Faktencheck: pruefung/faktencheck_kurz_kap02.md (ok mit Auflagen, mittlere Auflagen eingearbeitet am 28.10.2026, Gegenprüfung der Einarbeitung steht aus). Vor Satz/Export entfernen.**
 
 # Kapitel 2 – Ist Deutschland „zu klein, um zu zählen“?
 
@@ -32,7 +32,8 @@ Verschiebt man die Grenze um wenige Ränge, ändert sich die Summe deutlich. Das
 *Grafik 2: Summe der Emissionsanteile aller Länder, deren Anteil höchstens so groß ist wie der deutsche, in verschiedenen Varianten. Die Varianten sind nicht direkt vergleichbar (verschiedene Gase, Jahre, Zeiträume). Quelle: Klima Kompass, Evidenzcheck vom 31.08.2026 [1]. Dargestellt sind vorhandene Zahlen, keine neue Rechnung.*
 
 - **Nur CO₂ statt aller Treibhausgase (2024):** Deutschlands Anteil liegt bei 1,5 Prozent, alle Länder bis dahin kommen auf 30,1 Prozent (statt 31,7).
-- **Konsumbasiert statt produktionsbasiert (CO₂, 2023):** Dann zählen Emissionen dort, wo die Güter verbraucht werden, nicht dort, wo sie entstehen. Deutschlands Anteil liegt dann bei 2,1 Prozent, alle Länder bis dahin kommen auf 40,5 Prozent.- **Historisch mit Landnutzung:** Rechnet man Emissionen aus Landnutzungsänderungen dazu (Mittel dreier Modelle), liegt Deutschlands Anteil bei 3,5 Prozent und die Summe bei 54,0 Prozent (statt 53,1). Diese Teilkomponente ist modellunsicherer.
+- **Konsumbasiert statt produktionsbasiert (CO₂, 2023):** Dann zählen Emissionen dort, wo die Güter verbraucht werden, nicht dort, wo sie entstehen. Deutschlands Anteil liegt dann bei 2,1 Prozent, alle Länder bis dahin kommen auf 40,5 Prozent. Diese Werte sind nicht direkt vergleichbar mit den 31,7 Prozent, weil Gase und Jahr abweichen.
+- **Historisch mit Landnutzung:** Rechnet man Emissionen aus Landnutzungsänderungen dazu (Mittel dreier Modelle), liegt Deutschlands Anteil bei 3,5 Prozent und die Summe bei 54,0 Prozent (statt 53,1). Diese Teilkomponente ist modellunsicherer.
 - **Pro Kopf:** Deutschland hat mit 8,07 Tonnen CO₂-Äquivalent pro Person (2024) einen höheren Pro-Kopf-Ausstoß als der weltweite Durchschnitt (6,36 Tonnen). Rechnet man nur mit den 58 Ländern über dem Durchschnitt, steht Deutschland dort auf Rang 8, und die Länder dieser Gruppe mit einem Anteil bis zum deutschen kommen auf 14,2 Prozent der weltweiten Emissionen.
 
 ## Warum anderswo andere Zahlen stehen

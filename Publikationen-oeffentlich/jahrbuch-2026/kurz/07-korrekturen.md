@@ -1,5 +1,5 @@
 # Kapitel 7 – Korrekturen 2026: Wo wir falsch lagen
-**KURZFASSUNG-ENTWURF v0.1 (28.10.2026), gekürzt aus Kapitel 8 der Langfassung; nicht geprüft, nicht freigegeben, erneute Freigabe durch Daniel Saure und Faktencheck nötig. Hinweis: Offen sind die Anzahl der Artikel zum Redaktionsschluss, ob und wann Hinweise auf Substack gesetzt werden (Fall 4 bis 7, setzt Daniel selbst), Ursache und Lehre bei Fall 5 bis 7 sowie der Stand der Kanalposts zum CO₂-Preis; vor Satz Liste gegen alle bis dahin veröffentlichten Artikel neu abgleichen. Vor Satz/Export entfernen.**
+**KURZFASSUNG-ENTWURF v0.1 (28.10.2026), gekürzt aus Kapitel 8 der Langfassung; nicht geprüft, nicht freigegeben, erneute Freigabe durch Daniel Saure und Faktencheck nötig. Faktencheck: pruefung/faktencheck_kurz_kap07.md (ok mit Auflagen, mittlere Auflagen eingearbeitet am 28.10.2026, Gegenprüfung der Einarbeitung steht aus). Hinweis: Offen sind die Anzahl der Artikel zum Redaktionsschluss, ob und wann Hinweise auf Substack gesetzt werden (Fall 4 bis 7, setzt Daniel selbst), Ursache und Lehre bei Fall 5 bis 7 sowie der Stand der Kanalposts zum CO₂-Preis; vor Satz Liste gegen alle bis dahin veröffentlichten Artikel neu abgleichen. Vor Satz/Export entfernen.**
 
 **Kurz gesagt:** Wir haben in diesem Jahr in sechs unserer bis Redaktionsschluss veröffentlichten Artikel sieben Fälle von Fehlern oder Unbelegtem gefunden: bei zwei Artikeln falsche Zahlen, bei einem einen falschen Verweis, bei einem einen fehlenden Gesetzgebungsstand, bei einem eine unbelegte Erklärung, bei einem eine ungenaue Wiedergabe einer Quelle und bei einem eine Angabe zur Arbeitsweise, die so nicht stimmte. Keine Korrektur hat die Kernaussage eines Artikels umgeworfen. Das ist kein Grund, sich zu freuen: Bei den meisten wäre ein anderer Ablauf möglich gewesen, der den Fehler früher gefunden hätte.
 
@@ -13,7 +13,7 @@ Die Liste hat den Stand vom Redaktionsschluss dieses Buchs [Anzahl der Artikel z
 
 ### 1. „65 Euro rein, 59 Euro raus“ (18.09., korrigiert am 17. Oktober 2026)
 
-**Fehler.** Im Stück zum Tankrabatt haben wir mit einer Absatzmenge von 42 Milliarden Litern Benzin und Diesel pro Jahr gerechnet. Richtig sind rund 62 Milliarden Liter. Dadurch war der geschätzte Mehrverbrauch zu niedrig und die Kosten je zusätzlicher Tonne CO₂ zu hoch angegeben. Die im Artikel diskutierte Abweichung zwischen 1,2 und 1,6 Milliarden Euro gab es nicht. Dazu kamen kleinere Fehler: Die Untergrenze für ein Mehrwertsteuermodell lag bei 21 statt 23 Cent, eine Kennzeichnung als Bruttowert fehlte, und „Sechseinhalbfache“ war gerundet; richtig ist rund das 6,4-Fache. Das versprochene Skript im Repository gab es nicht. Der Satz ist ersetzt.
+**Fehler.** Im Stück zum Tankrabatt haben wir mit einer Absatzmenge von 42 Milliarden Litern Benzin und Diesel pro Jahr gerechnet. Richtig sind rund 62 Milliarden Liter. Dadurch war der geschätzte Mehrverbrauch zu niedrig und die Kosten je zusätzlicher Tonne CO₂ zu hoch angegeben. Die im Artikel diskutierte Abweichung zwischen 1,2 und 1,6 Milliarden Euro gab es nicht. Dazu kamen unter anderem kleinere Fehler: Die Untergrenze für ein Mehrwertsteuermodell lag bei 21 statt 23 Cent. Eine Kennzeichnung als Bruttowert fehlte. Die Bezugsbasis beim Deutschlandticket war nicht klar. Und „Sechseinhalbfache“ war gerundet; richtig ist rund das 6,4-Fache. Das versprochene Skript im Repository gab es nicht. Der Satz ist ersetzt.
 
 **Was stimmt.** Die Kernaussage hielt: Der Tankrabatt hob 91 bis 95 Prozent des CO₂-Preises auf Benzin auf.
 
@@ -28,6 +28,7 @@ Die Liste hat den Stand vom Redaktionsschluss dieses Buchs [Anzahl der Artikel z
 **Fehler.** Unter den Quellen stand ein Link auf unseren eigenen Evidenzcheck zum Sommer 2026. Er führte aber zum Stück vom 29. August über die hitzebedingten Sterbefälle.
 
 **Was stimmt.** Der Link zeigt jetzt auf den richtigen Artikel („War der Sommer 2026 ‚ganz normal‘?“).
+
 **Ursache.** Der Link wurde ohne Abgleich des Ziels übernommen. Der Faktencheck prüfte nicht, wohin er führt.
 
 **Gekennzeichnet:** Die Änderung erfolgte ohne Hinweis im Artikel und ohne neue E-Mail an die Abonnentinnen und Abonnenten. Das hätten wir kennzeichnen sollen, deshalb steht es hier.
@@ -48,7 +49,7 @@ Die Liste hat den Stand vom Redaktionsschluss dieses Buchs [Anzahl der Artikel z
 
 ### 4. „Der Hitzesommer 2026“ (29.08.), Vergleichszahl für 2018
 
-**Fehler.** Vor der Veröffentlichung kursierte für 2018 eine Vergleichszahl von 9.400 hitzebedingten Sterbefällen. Gerechnet haben wir mit dem RKI-Wert von rund 8.500 (Epidemiologisches Bulletin 19/2025). Im Artikel haben wir den Unterschied als Verwechslung in einer Sekundärquelle erklärt. Diese Erklärung ist nicht belegt. Das Laufprotokoll vom 29. August hielt bereits fest, dass sich die 9.400 für 2018 in keiner der drei RKI-Ausgaben (2022, 2023, 2025) bestätigen ließ. [Reihenfolge am selben Tag vor Satz klären.] Möglicherweise stammt sie aus dem Bulletin 42/2022: Dort ist 9.400 die obere Grenze des Unsicherheitsintervalls für 2019. Das ist eine Vermutung, abschließend geklärt haben wir es nicht.
+**Fehler.** Vor der Veröffentlichung kursierte für 2018 eine Vergleichszahl von 9.400 hitzebedingten Sterbefällen. Der Analyseplan nennt sie. Gerechnet haben wir mit dem RKI-Wert von rund 8.500 (Epidemiologisches Bulletin 19/2025). Im Artikel haben wir den Unterschied als Verwechslung in einer Sekundärquelle erklärt. Diese Erklärung ist nicht belegt. Das Laufprotokoll vom 29. August (Schritt 5c) hielt bereits fest, dass sich die 9.400 für 2018 in keiner der drei RKI-Ausgaben (2022, 2023, 2025) bestätigen ließ. Der Artikel erschien am selben Tag und sprach trotzdem von einer aufgedeckten Verwechslung. [Reihenfolge am selben Tag vor Satz klären.] Möglicherweise stammt sie aus dem Bulletin 42/2022: Dort ist 9.400 die obere Grenze des Unsicherheitsintervalls für 2019. Das ist eine Vermutung, abschließend geklärt haben wir es nicht.
 
 **Was stimmt.** Die Aussage des Artikels, dass der Sommer 2026 außerhalb der bisherigen Bandbreite lag, hängt nicht an dieser Zahl. Falsch ist nur die Erklärung im Abschnitt „Was das nicht bedeutet“.
 

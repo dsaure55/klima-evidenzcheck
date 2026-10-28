@@ -9,6 +9,10 @@ Klima Kompass prüft und erklärt Aussagen zu Klima und Energie an öffentlichen
 
 Unser Prinzip: Jede Zahl nennt ihre Quelle, und bei Evidenzchecks legen wir vorab fest, wie wir rechnen. Dabei hilft uns künstliche Intelligenz. Sie schreibt Analysepläne, Programmcode und Entwürfe. Ein Mensch gibt frei und veröffentlicht (Kapitel 9).
 
+## Was wir machen
+
+Wir arbeiten in drei Stufen und führen ein Register. Ein **Evidenzcheck** ist eine neue Analyse mit vorab festgelegtem Plan, unabhängiger Validierung und Freigabe. Eine **Einordnung** ergänzt ein aktuelles Thema um bereits veröffentlichte eigene Ergebnisse oder Zahlen aus der Quelle, ohne neue Rechnung; sie geht durch einen Faktencheck. Ein **Wissen**-Stück erklärt auf Basis seriöser Quellen, was man für ein Thema wissen muss, ebenfalls mit Faktencheck. Das **Prognose-Register** ist eine Form des Evidenzchecks, die vorausschaut: Wir legen uns vorab fest und melden später „getroffen“ oder „nicht getroffen“.
+
 ## Woran du uns messen kannst
 
 - **Offene Daten und offener Code.** Analysepläne, Programme, Prüfberichte und, soweit möglich, Rohdaten liegen im öffentlichen Repository (https://github.com/dsaure55/klima-evidenzcheck).

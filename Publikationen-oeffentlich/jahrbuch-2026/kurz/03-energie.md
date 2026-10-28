@@ -1,4 +1,4 @@
-**KURZFASSUNG-ENTWURF v0.1 (28.10.2026), gekürzt aus Kapitel 2 der Langfassung; nicht geprüft, nicht freigegeben, erneute Freigabe durch Daniel Saure und Faktencheck nötig. Hinweis: Die Datenstände (Gasspeicherfüllstand, BNetzA-Seite) müssen zum Stichtag 15.11. erneut abgeglichen werden, der DWD-Abgleich der Wintertemperaturen ist nicht als erledigt dokumentiert, und eine Gegenprüfung der Faktencheck-Auflagen durch den Faktenprüfer fand nicht statt. Vor Satz/Export entfernen.**
+**KURZFASSUNG-ENTWURF v0.1 (28.10.2026), gekürzt aus Kapitel 2 der Langfassung; nicht geprüft, nicht freigegeben, erneute Freigabe durch Daniel Saure und Faktencheck nötig. Hinweis: Die Datenstände (Gasspeicherfüllstand, BNetzA-Seite) müssen zum Stichtag 15.11. erneut abgeglichen werden, der DWD-Abgleich der Wintertemperaturen ist nicht als erledigt dokumentiert, und eine Gegenprüfung der Faktencheck-Auflagen durch den Faktenprüfer fand nicht statt. Faktencheck: pruefung/faktencheck_kurz_kap03.md (ok mit Auflagen, mittlere Auflagen eingearbeitet am 28.10.2026, Gegenprüfung der Einarbeitung steht aus). Vor Satz/Export entfernen.**
 
 # Kapitel 3 – Reicht die Energie: Gas im Winter, Strom bei Dunkelflaute?
 
@@ -22,7 +22,7 @@ Der Vergleichswinter war nicht mild. Mit 4,41 °C lag das Winterhalbjahr 2025/26
 
 Die Temperatur macht viel aus. Pro Grad kälter wurden im Schnitt etwa 49 Terawattstunden mehr entnommen (95-Prozent-Konfidenzintervall: 17 bis 81). Rechnerisch wird die Marke von 136 Terawattstunden ab einem Winterhalbjahr unter 4,5 °C erreicht. Kälter waren 60 Prozent der letzten dreißig Winter [1].
 
-Für einen durchschnittlich kalten Winter (4,21 °C, die Norm der letzten dreißig Winter) erwarten wir rund 150 Terawattstunden Entnahme. Das Prognoseintervall reicht aber von 69 bis 230 Terawattstunden und schließt die 136 ein. Ein belastbares „reicht nicht“ ist das nicht. Ein belastbares „reicht“ allerdings auch nicht [1].
+Für einen durchschnittlich kalten Winter (4,21 °C, die Norm der letzten dreißig Winter; sie ist kälter als der Schnitt des letzten Jahrzehnts) erwarten wir rund 150 Terawattstunden Entnahme. Das Prognoseintervall reicht aber von 69 bis 230 Terawattstunden und schließt die 136 ein. Ein belastbares „reicht nicht“ ist das nicht. Ein belastbares „reicht“ allerdings auch nicht [1].
 
 Die Speicher sind außerdem nur ein Teil der Versorgung. In den letzten zehn Wintern deckten sie im Median nur 19 Prozent des deutschen Gasverbrauchs. Der größere Teil wird laufend geliefert [1].
 
@@ -30,7 +30,7 @@ Die Speicher sind außerdem nur ein Teil der Versorgung. In den letzten zehn Win
 
 Am 16. Oktober waren die deutschen Gasspeicher laut Bundesnetzagentur zu 60,5 Prozent gefüllt. Das sind 149,62 TWh, und nach Angaben der Behörde deutlich weniger als in den Vorjahren [2][4]. Die Werte sind um einen Datenfehler auf der Plattform AGSI bereinigt und können sich durch Nachmeldungen noch ändern [2][4][5]. Die Füllstandsziele zum 1. November gelten je Speicher (meist 80 Prozent, bei sechs Speichern 45 Prozent). Den Gesamtfüllstand kann man deshalb nicht direkt mit der 80-Prozent-Marke vergleichen [2][5]. Die Bundesnetzagentur sieht kein akutes Problem: Das Erreichen der Füllstandsziele sei „nicht zwingend“, die Versorgungssicherheit gewährleistet. Sie rechnet allerdings mit einem vergleichsweise niedrigen Füllstand am Ende des Winters [2][4].
 
-Mit knapp 150 TWh liegt der Speicherinhalt über dem Median der Winterentnahmen und in der Größenordnung der erwarteten Entnahme eines durchschnittlich kalten Winters. Das ist ein Vergleich mit schon veröffentlichten Werten, keine neue Rechnung und keine Prognose. Der Speicherinhalt ist ein Bestand an einem Stichtag, die Entnahme eine Menge über den ganzen Winter [2].
+Mit knapp 150 TWh liegt der Speicherinhalt über dem Median der Winterentnahmen und in der Größenordnung der erwarteten Entnahme eines durchschnittlich kalten Winters. Das ist ein Vergleich mit schon veröffentlichten Werten, keine neue Rechnung und keine Prognose. Der Speicherinhalt ist ein Bestand an einem Stichtag, die Entnahme eine Menge über den ganzen Winter. Ob am Winterende Gas im Speicher bleiben soll und wie schnell sich Gas bei niedrigem Füllstand entnehmen lässt, steckt in diesem Vergleich nicht drin [2].
 
 Wie kalt der Winter wird, können wir nicht sagen. Für einen sehr kalten Winter (2,69 °C, das 10. Perzentil der letzten dreißig Jahre) geben wir bewusst keine Erwartung an, weil solche Temperaturen außerhalb des Datenbereichs der letzten zehn Winter liegen [1]. Zu Importen und Preisen haben wir nichts untersucht [1][2].
 
