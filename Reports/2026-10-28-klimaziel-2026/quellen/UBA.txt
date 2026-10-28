@@ -1,0 +1,341 @@
+Für Mensch und Umwelt
+
+Stand: 14. März 2026
+
+Emissionsdaten 2025 & Projektionsdaten 2026
+
+Pressehintergrundinformation
+
+1 Überblick
+
+Abbildung 1: Treibhausgasemissionen nach Quellbereichen (2021–2045)
+
+Quelle: Umweltbundesamt, eigene Darstellung; Emissionsdaten: Umweltbundesamt THG-                           Umweltbundesamt
+Inventar; Projektionen: Öko-Institut, Fraunhofer-ISI, Prognos, M-Five, IREES, Thünen-Institut  Fachgebiete V 1.2, V 1.6, V 1.5
+Hinweis: Für 2021-2025 wurden die Emissionsdaten und ab 2026 die rechnerisch angepassten
+Jahresemissionsgesamtmengen nach Anlage 2a in Verbindung mit § 4 Absatz 2 KSG verwendet.                       Wörlitzer Platz 1
+                                                                                                         06844 Dessau-Roßlau
+Im Jahr 2025 sanken die Treibhausgasemissionen gegenüber dem Vorjahr                             www.umweltbundesamt.de
+nur marginal um rund 0,9 Mio. t CO2-Äquivalente (-0,1 Prozent) auf rund
+648,9 Mio. t CO2-Äq. Die Minderungen im Industriesektor (-5,7 Mio. t CO2-
+Äq.) wurden durch die Anstiege im Gebäudesektor (+3,4 Mio. t CO2-Äq.)
+und im Verkehrssektor (+2.1 Mio. t CO2-Äq.) fast ausgeglichen. Die
+Sektoren Energiewirtschaft und Landwirtschaft stagnieren nahezu auf dem
+Vorjahresniveau.
+
+Die aktuellen Projektionsdaten 2026, die die klimapolitischen Beschlüsse
+mit Stand November 2025 abbilden, weisen einen Emissionsrückgang bis
+2030 um 62,6 Prozent aus. Das Ziel 2030 (65 Prozent Minderung
+gegenüber 1990) bleibt erreichbar. Die absehbare ESR-Zielverfehlung
+beträgt 255 Mio. t CO2-Äq. Die kumulierten sektorübergreifenden
+Jahresemissionsgesamtmengen zwischen 2021-2030 können rechnerisch
+knapp mit 3,8 Mio. t CO2-Äq. eingehalten werden. Aus Sicht des
+Umweltbundesamtes ist diese knappe Zielerreichung jedoch nicht
+richtungssicher: Bereits leichte Veränderungen bei Parametern zur
+zukünftigen Entwicklung, z.B. ein höheres Wirtschaftswachstum, geringere
+Förderbudgets, Abschwächung von Gesetzen oder niedrigere
+Energiepreise, würden dazu führen, dass diese Überschussmenge weiter
+
+                                                          1
+schrumpft. Um die Ziele für 2040 und 2045 zu erreichen, sind zusätzliche
+Maßnahmen nötig.
+2 Zentrale Ergebnisse
+
+Mit rund 648,9 Mio. t CO2-Äq. lagen die Treibhausgasemissionen 2025 rund
+12,5 Mio. t CO2-Äq. unterhalb der rechnerisch angepassten Jahresemissionsgesamtmenge
+von 661,6 Mio. t CO2-Äq. Damit erhöht sich ab 2026 unter Anwendung des § 4 Absatz 2 KSG die
+rechnerisch angepasste Jahresemissionsgesamtmenge in den Folgejahren bis 2030 um jeweils
+2,6 Mio. t CO2-Äq..
+Die Projektionsdaten weisen bis 2030 einen Rückgang der Treibhausgasemissionen um
+62,6 Prozent aus. Sie zeigen, dass das Klimaschutzziel von mindestens 65 Prozent Minderung
+gegenüber 1990 bis zum Jahr 2030 grundsätzlich in greifbarer Nähe ist. Die Projektionsdaten
+2026 weisen eine Lücke in Höhe von 30 Mio. t CO2-Äq. (Projektionsdaten 2025: 25 Mio. t CO2-
+Äq). Diese etwas vergrößerte Lücke resultiert nicht aus klimapolitischen Beschlüssen, sondern
+vornehmlich aus dem den Abgleich mit der aktuellen Situation. Durch den verzögerten Ausbau
+der Windenergie auf See, tragen mehr fossile Kraftwerke zur Stromerzeugung bei. Hinzu
+kommen geringere Aktivitäten im Heizungsmarkt und die realistische Kopplung der
+Anschlussrate an Wärmenetze mit verfügbaren Förderbudgets, was beides zu mehr und länger
+im Betrieb befindlichen fossilen Heizungen führt. Die 2030-Zielerreichung ist kein Selbstläufer.
+Zentrales Fundament für das Erreichen bleibt die Energiewende mit dem Ausbau der
+erneuerbaren Energien, der dafür erforderlichen Infrastruktur sowie dem Hochlauf der
+Wasserstoffwirtschaft, insbesondere für die Industriewende.
+Die kumulierten sektorübergreifenden Jahresemissionsgesamtmengen zwischen 2021-
+2030 können rechnerisch nur noch knapp mit 3,8 Mio. t CO2-Äq. eingehalten werden. Aus
+Sicht des Umweltbundesamtes ist diese Zielerreichung unter Berücksichtigung der
+Sensitivitäten und Modellunsicherheiten jedoch nicht richtungssicher. Im Vergleich zu den
+Projektionsdaten 2025 (UBA, 2025a) ist die Übererfüllung deutlich gesunken und der Puffer der
+vorherigen Projektionen in Höhe von rund 81 Mio. t CO2-Äq. nahezu verbraucht.
+Die absehbare ESR-Zielverfehlung beträgt 255 Mio. t CO2-Äq. Die Lücke zu den im Rahmen
+der EU-Klimaschutzverordnung (Effort Sharing Regulation, ESR) festgelegten Zielen hat sich für
+den Zeitraum 2021 bis 2030 gegenüber der Vorjahresprojektion um geschätzte 29 Mio. t CO2-Äq.
+erhöht.
+Im Jahr 2040 wird mit den bislang umgesetzten Maßnahmen eine Emissionsminderung
+von ca. 80 Prozent erreicht. Die Projektionsdaten 2026 bestätigen das Bild zum Verlauf nach
+2030 aus den vergangenen Jahren: Um das Ziel einer THG-Minderung bis 2040 um 88 Prozent
+gegenüber 1990 zu erreichen, sind substanzielle zusätzliche Fortschritte nötig. Das gilt auch für
+das Ziel der Netto-Treibhausneutralität im Jahr 2045. 2045 verbleiben mit den bislang
+umgesetzten Maßnahmen Brutto-Emissionen, also ohne LULUCF und technische Senken, in
+Höhe von 212,5 Mio. t CO2-Äq. Das entspricht einer Minderung gegenüber 1990 um rund 83
+Prozent.
+
+                                                             3
+3 Sektorale Ergebnisse
+
+3.1 Energiewirtschaft
+
+Abbildung 2: Entwicklung der Treibhausgasemissionen im Sektor Energiewirtschaft
+
+Quelle: Umweltbundesamt, Eigene Darstellung; Emissionsdaten: Umweltbundesamt auf Basis historischer Daten
+Umweltbundesamt THG-Inventar; Projektionen: Öko-Institut, Fraunhofer-ISI, Prognos, M-Five, IREES, Thünen-Institut
+Hinweis: Die historischen Emissionsdaten basieren auf den Emissionsdaten 2025. Für die rechnerisch angepassten
+Jahresemissionsmengen wurden zwischen den im KSG nach Anlage 2a genannten JEM zwischen 2022 und 2030 interpoliert
+und die historische Rekalkulation zwischen 2021 und 2024 angerechnet.
+
+Im Jahr 2025 stagnierten die Treibhausgas-Emissionen mit einer Reduzierung gegenüber
+dem Vorjahr um 0,6 Mio. t CO2-Äq. (-0,3 Prozent) von 189,7 auf 189,1 Mio. t CO2-Äq. Der
+Sektor Energiewirtschaft bleibt weiterhin hinsichtlich der Höhe der Emissionen mit einem
+Anteil von rund 29 Prozent der dominierende Sektor. Die kaum gesunkenen Emissionen im Jahr
+2025 in der Energiewirtschaft gehen auf verschiedene Ursachen zurück, deren Effekte sich in
+Summe nahezu aufheben: Obwohl der Bruttostromverbrauch sank, sind die Energieeinsätze für
+die Strom- und Wärmeerzeugung im Vergleich zum Vorjahr leicht gestiegen. Gleichzeitig fiel der
+Stromimportsaldo niedriger aus. Beide Effekte wirken emissionserhöhend im Vergleich zum
+Vorjahr.
+Zudem führten die kalten Wintermonate zu einer höheren Wärmenachfrage. Infolgedessen
+wurden für die Strom- und Wärmeerzeugung mehr Erdgas und Steinkohlen eingesetzt, während
+der Einsatz von Braunkohlen und Mineralölen in der Energiewirtschaft rückläufig war. Dadurch
+steht den insgesamt leicht gestiegenen Energieeinsätzen ein veränderter, etwas
+emissionsärmerer Energieträgermix gegenüber.
+Emissionsdämpfend wirkte zudem die gestiegene Stromerzeugung aus erneuerbaren Energien.
+Insbesondere konnten Photovoltaikanlagen 2025 aufgrund eines sonnenreichen Jahres ca. 21
+Prozent mehr Strom erzeugen, als im Vorjahr. Dementgegen steht eine gesunkene
+Stromerzeugung aus Wind- und Wasserkraft, bedingt durch ein windarmes und trockenes Jahr,
+sodass die Bruttostromerzeugung aus erneuerbaren Energien 2025 insgesamt nur um 2,1
+Terrawattstunden (TWh) bzw. 0,7 Prozent zunahm.
+
+                                                             4
+Die Projektionen 2026 zeigen deutlich, dass der überproportionale Beitrag der
+Energiewirtschaft zur sektorübergreifenden Zielerreichung kein Selbstläufer darstellt.
+Der Ausbau der erneuerbaren Energien mit der dafür erforderlichen Infrastruktur als
+Kernelement der Transformation muss fortwährend gewährleistet bleiben. Der Hochlauf der
+Wasserstoffwirtschaft sollte schnell vorangebracht werden, insbesondere für die
+Transformation der Industrie.
+Die Projektionsdaten 2026 zeigen, dass der Sektor Energiewirtschaft bis 2030 weiterhin einen
+überproportionalen Beitrag zur Treibhausgasminderung leistet, allerdings im Vergleich zu dem
+vergangenen Jahr in geringerem Maße. Die Treibhausgasemissionen liegen im Jahr 2030 mit
+94 Mio. t CO2-Aq. knapp 1 Mio. t CO2-Aq. über den Projektionen 2025.
+Die Übererfüllung der sektoralen kumulierten Jahresemissionsmengen zwischen 2021 und 2030
+beträgt rund 193 Mio. t CO2-Aq. und ist damit im Vergleich zu den Projektionen des vergangenen
+Jahres deutlich gesunken (-67 Mio. t CO2-Aq. ggü. Projektionen 2025). Dementsprechend kann
+der Sektor weniger zum Ausgleich von Mehremissionen anderer Sektoren sowie zur
+sektorübergreifenden Zielerreichung beitragen. Maßgeblich lässt sich dies auf den verstärkten
+Einsatz von Kohlekraftwerken im Zusammenspiel mit einem geringeren Emissionshandelspreis
+und verzögerten Ausbau der Windenergie auf See begründen.
+
+3.2 Industrie
+
+Abbildung 3: Entwicklung der Treibhausgasemissionen im Sektor Industrie
+
+Quelle: Umweltbundesamt, Eigene Darstellung; Emissionsdaten: Umweltbundesamt auf Basis historischer Daten
+Umweltbundesamt THG-Inventar; Projektionen: Öko-Institut, Fraunhofer-ISI, Prognos, M-Five, IREES, Thünen-Institut
+Hinweis: Von 2021-2025 wurden die Emissionsdaten 2025 und ab 2026 die rechnerisch angepassten
+Jahresemissionsmengen nach Anlage 2a in Verbindung mit § 4 Absatz 2 KSG verwendet.
+
+Im Vergleich zum Vorjahr sind die Emissionen im Jahr 2025 im Industriesektor insgesamt
+um ca. 5,6 Mio. t CO2 Äq. (-3,8 Prozent) von 149,8 auf 144,1 Mio. t CO2-Äq. gesunken. Die
+Emissionen lagen damit 20 Mio. t CO2-Äq. unterhalb der rechnerisch angepassten
+Jahresemissionsmenge der vergangenen Jahre von 164 Mio. t CO2-Äq. Im Industriesektor
+dominiert mit einem Anteil von zwei Dritteln über alle Branchen der Einsatz von fossilen
+Brennstoffen in Industriefeuerungen die Treibhausgasemissionen. Die Energieeinsätze in
+
+                                                             5
+industriellen Feuerungen nahmen in 2025 insgesamt um etwa 3,5 Prozent ab. Besonders
+deutlich zeigt sich dieser Rückgang bei den Steinkohlen, welche nach Erdgas der zweitwichtigste
+Energieträger für Industriefeuerungen sind: Im Vergleich zum Vorjahr wurden fast sieben
+Prozent weniger Steinkohlen eingesetzt (-33.300 Terrajoule (TJ)) - und auch der Einsatz von
+Erdgas ging um 2 Prozent bzw. um rund 16.600 TJ zurück.
+
+Die gesunkenen Energieeinsätze gehen auf rückläufige Produktionszahlen v.a. energieintensiver
+Industriezweige zurück, die sich auch in den prozessbedingten Emissionen widerspiegeln.
+Insbesondere die Primärstahlproduktion nahm im Vergleich zum Vorjahr um über zehn Prozent
+ab. Dies erfolgt in einem Umfeld anhaltender konjunktureller Schwäche, insbesondere
+hinsichtlich der weltweiten Absatzmärkte. Der Industriesektor konnte von dem 2025 insgesamt
+um 0,2 Prozent gestiegenen Bruttoinlandsprodukt nicht profitieren. Dieses ist auf ein Wachstum
+in bestimmten Dienstleistungsbranchen (Bereich Handel, Verkehr, Gastgewerbe und Bereich
+Öffentliche Dienstleister, Erziehung, Gesundheit) zurückzuführen.
+
+Der Industriesektor übererfüllt in den Projektionsdaten 2026 die sektoralen
+kumulierten Jahresemissionsmengen zwischen 2021 und 2030 um 74,6 Mio. t CO2-Äq.. Im
+Vergleich zu den Projektionen des Vorjahres erhöht sich damit die Übererfüllung leicht,
+während 2030 die Emissionen in Höhe von 116,5 Mio. t CO2-Aq. auf einem ähnlichen Niveau
+liegen. Ab 2035 verlangsamt sich der Brennstoffwechsel und damit auch die projizierte jährliche
+THG-Emissionsminderung durch sinkende Fördervolumina, sodass 2040 ein erneuter Anstieg
+der Emissionen stattfindet.
+
+Hintergrund sind Veränderungen, die sich nach den Annahmen der Projektion unterschiedlich
+auf die Treibhausgasemissionen in der Industrie auswirken. Zum einen wird unterstellt, dass die
+aktuell schwache Konjunktur anhält und die Gesamtproduktionsmenge stets unter dem Niveau
+der PD25 (im Mittel um sechs Prozent geringer) liegt. Zum anderen, dass die Elektrifizierung
+und Umstellung auf Wasserstoff vorerst nur in geringerem Maße erfolgt – durch niedrigere
+effektive Förderbudgets in Verbindung mit der CO2-Bepreisung, wodurch fossile konventionelle
+Industrieprozesse günstiger ausfallen könnten – vorausgesetzt die Öl- und Gaspreise werden z.B.
+durch äußere Faktoren wie Kriege nicht nach oben getrieben. Um die langfristige
+Transformation sicherzustellen, braucht es zusätzliche und langfristige Instrumente.
+
+3.3 Gebäude
+
+Im Sektor Gebäude stiegen die Emissionen 2025 um rund 3,4 Mio. t CO2-Äq.
+(+3,4 Prozent) auf 103,4 Mio. t CO2-Äq. Die an Überschreitungen in den Vorjahren angepasste
+Jahresemissionsmenge für 2025 von 90,1 Mio. t CO2-Äq. wird damit wieder deutlich
+überschritten. Haupttreiber für die Emissionsentwicklung im Gebäudesektor waren die im
+Vergleich zum Vorjahr kalten Wintermonate, welche zu einer gestiegenen Nachfrage nach
+Raumwärme führten. Diese wurde durch einen höheren Einsatz von Erdgas (+ 90.700 TJ bzw.
++ 8 Prozent) erzeugt, während die Verbrennung von leichtem Heizöl leicht abnahm. Insgesamt
+stiegen die Energieeinsätze für stationäre Feuerungen im Gebäudesektor im Jahr 2025 um
+4,1 Prozent bzw. um knapp 65.000 TJ. Emissionssenkend wirkte im Gebäudesektor der
+zunehmende Anteil erneuerbarer Energien am Endenergieverbrauch für Wärme und Kälte.
+Insbesondre stieg der Anteil erneuerbarer Energien am Endenergieverbrauch für Wärme der
+Haushalte von 22,8 Prozent auf 24,2 Prozent Dies umfasste vor allem die stärkere Nutzung von
+fester Biomasse, aber auch die Energiegewinnung mittels Wärmepumpen.
+
+Der Sektor Gebäude verfehlt die kumulierten Jahresemissionsmengen zwischen 2021
+und 2030 um 110,1 Mio. t CO2-Äq. Damit liegt die Verfehlung in gleicher Höhe wie in den
+letztjährigen Projektionsdaten. Im Jahr 2030 werden im Vergleich zu den Projektionsdaten 2025
+3,2 Mio. t CO2-Aq. Mehremissionen projiziert. Diese begründen sich vornehmlich in kleineren
+
+                                                             6
+methodischen Verbesserungen und der Abbildung aktueller Daten, welche im Ergebnis zu
+15 TWh mehr fossilen Brennstoffen im Jahr 2030 führen. So verbleiben auf Grund aktuell
+geringerer Aktivität im Heizungsmarkt bestehende fossilversorgte Kessel im Modell länger in
+Betrieb. Außerdem wurde die Ausbaugeschwindigkeit von Wärmenetzen im Modell an die Höhe
+der verfügbaren Fördergelder gekoppelt, woraus sich ein niedrigerer Wert ergibt. Es sei darauf
+hingewiesen, dass entsprechend der rechtlichen Implementierung mit Start der Modellierungen
+das Gebäudeenergiegesetzes (GEG) mit der 65-Prozent-Regel berücksichtigt wurde. Aktuell
+debattierte Vorschläge zur Anpassung des Gesetzes sind nicht Teil der Modellierung. Insgesamt
+bestätigt sich das Bild, dass dringender Handlungsbedarf im Sektor besteht: Die eingeleitete
+Entwicklung hin zu einer effizienten und resilienten Wärmetransformation zu verstärken und zu
+beschleunigen. Es braucht Planungssicherheit für Investitionen in dauerhaft günstige und
+treibhausgasneutrale Heiztechniken.
+Abbildung 4: Entwicklung der Treibhausgasemissionen im Sektor Gebäude
+
+Quelle: Umweltbundesamt, Eigene Darstellung; Emissionsdaten: Umweltbundesamt auf Basis historischer Daten
+Umweltbundesamt THG-Inventar; Projektionen: Öko-Institut, Fraunhofer-ISI, Prognos, M-Five, IREES, Thünen-Institut
+Hinweis: Von 2021-2025 wurden die Emissionsdaten 2025 und ab 2026 die rechnerisch angepassten
+Jahresemissionsmengen nach Anlage 2a in Verbindung mit § 4 Absatz 2 KSG verwendet.
+
+3.4 Verkehr
+
+Mit einem Anstieg von 144,2 auf 146,3 Mio. t CO2-Äq. bzw. rund 1,5 Prozent verabschieden
+sich die Treibhausgas-Emissionen des Sektors Verkehr im Jahr 2025 von ihrem zuletzt
+ohnehin nur leicht rückläufigen Trend. Die aufgrund der Überschreitungen in den Vorjahren
+angepasste Jahresemissionsmenge von 117 Mio. t CO2-Äq. wird damit deutlich überschritten.
+Der größte Beitrag des Verkehrssektors entfällt dabei erwartungsgemäß auf den mengenmäßig
+dominierenden Straßenverkehr, dessen anteilige Treibhausgas-Emissionen gegenüber 2024 um
+rund 2,1 Mio. t CO2-Äquivalente (+1,5 Prozent) stiegen.
+Trotz eines stetig wachsenden Bestands von batterieelektrischen Fahrzeugen (BEV) ist im Jahr
+2025 der Absatz fossiler Kraftstoffe verglichen mit dem Vorjahr gestiegen. Der Zuwachs des
+BEV-Bestands um rund 384.000 Fahrzeuge hat dabei gegenüber 2024 rund 0,8 Mio. t CO2-Äq.
+eingespart. Der Inlands-Flugverkehr liegt mit einem neuerlichen Plus von diesmal aber nur rund
+0,6 Prozent nach wie vor deutlich unter dem vorpandemischen Niveau - und trägt, wie auch die
+
+                                                             7
+Verkehrsträger Schiene und Schifffahrt, nur in sehr geringem Umfang zur Entwicklung des
+Gesamtsektors bei.
+In den Projektionsdaten 2026 verfehlt der Sektor Verkehr die kumulierten
+Jahresemissionsmengen zwischen 2021 und 2030 erneut, konkret um insgesamt
+186,9 Mio. t CO2-Äq. Die Zielverfehlung ist damit um rund 18 Mio. t CO2-Aq. gestiegen. Im Jahr
+2030 werden ähnlich wie in den Projektionen 2025 Treibhausgasemissionen in Höhe von
+115 Mio. t CO2-Aq. projiziert. Ab 2030 zeigen die neuen Projektionen einen Verlauf mit jährlich
+höheren Treibhausgasemissionen als in den Projektionsdaten 2025. Ursächlich hierfür ist vor
+allem der verlangsamte Hochlauf der Elektromobilität. Der Bestand batterieelektrischer Pkw ist
+für 2030 mit sieben Mio. Fahrzeugen um rund 1,7 Mio. niedriger als in den Projektionsdaten
+2025. Das liegt zum einen an einer Aktualisierung der Daten zum Bestand von
+batterieelektrischen Fahrzeugen und deren in den Daten erkennbarer kürzerer Verweildauer im
+deutschen Bestand. Zum anderen an den höher angenommenen Ladestrompreisen und
+niedrigeren Kraftstoffpreisen, welche den Umstieg im Personen- und Straßengüterverkehr
+unattraktiver machen. Die aktualisierte Bevölkerungsprognose mit einer geringeren
+Gesamtbevölkerung und reduzierter Produktion in der Industrie führen entgegengesetzt zu
+insgesamt weniger zurückgelegten Wegen und wirken daher emissionsmindernd.
+Abbildung 5: Entwicklung der Treibhausgasemissionen im Sektor Verkehr
+
+Quelle: Umweltbundesamt, eigene Darstellung; Emissionsdaten: Umweltbundesamt auf Basis historischer Daten
+Umweltbundesamt THG-Inventar; Projektionen: Öko-Institut, Fraunhofer-ISI, Prognos, M-Five, IREES, Thünen-Institut
+Hinweis: Von 2021-2025 Emissionsdaten 2025 und ab 2026 die rechnerisch angepassten Jahresemissionsmengen nach
+Anlage 2 in Verbindung mit § 4 Absatz 2a KSG verwendet.
+
+3.5 Landwirtschaft
+
+Im Jahr 2025 sind die Treibhausgas-Emissionen des Sektors Landwirtschaft von
+60,8 Mio. t CO2-Äq. gegenüber dem Vorjahr annähernd gleichgeblieben. Die an die
+Unterschreitungen in den Vorjahren angepasste Jahresemissionsmenge von 66 Mio. t CO2-Äq.
+wird trotzdem um 5,2 Mio. t CO2-Äq. (7,9 Prozent) unterschritten. Mehr synthetische Düngung
+sowie das Ende des bisherigen langjährigen Rückgangs bei den Schweine- und Rinderbeständen
+
+                                                             8
+führten zu höheren Emissionen. Gleichzeitig bewirkte die trockene Witterung eine Verringerung
+der Lachgasemissionen aus den Böden. Dieser Effekt glich den Anstieg der Emissionen
+weitgehend aus. Das sektorale Minderungsziel einer Emissionsmenge von 66 Mio. t CO2-Äq. für
+das Jahr 2025 wurde damit erreicht. Allerdings ist dies teilweise auch auf methodische
+Änderungen seit Zielfestlegung zurück zu führen. Die Emissionen aus dem Einsatz fossiler
+Brennstoffe in stationären und mobilen Feuerungen bleiben im Vergleich zum Vorjahr
+unverändert.
+
+Der Sektor Landwirtschaft übererfüllt in den Projektionsdaten 2026 die kumulierten
+Jahresemissionsmengen zwischen 2021 und 2030 um 16,4 Mio. t CO2-Äq. Im Jahr 2030
+werden in dem Sektor noch 58,2 Mio. t CO₂-Äq. verursacht, ähnlich zum Niveau der
+Projektionsdaten 2025. Im Vergleich zu den Projektionsdaten 2025 werden bis 2030
+durchgehend leicht erhöhte Emissionen projiziert, welche ab 2035 im Vergleich deutlich
+ansteigen. Es zeigt sich, dass die bestehenden Instrumente nach 2030 nur geringfügig
+emissionsmindernd wirken.
+
+3.6 Abfall und Sonstiges
+
+Abfallwirtschaft und Sonstiges, der mit Emissionen von rund 5,1 Mio. t CO2-Äq. kleinste
+Sektor, weist eine Reduktion von 2,9 Prozent auf. Diese ist mit ca. 0,15 Mio. t CO2-Äq. jedoch
+von begrenzter Relevanz für die Gesamtemissionen. Der rückläufige Trend wird durch die stabil
+zurückgehenden Emissionen der Abfalldeponierung bestimmt (-7,6 Prozent).
+
+In den Projektionsdaten 2026 übererfüllt der Sektor Abfallwirtschaft und Sonstiges die
+kumulierten Jahresemissionsmengen zwischen 2021 und 2030 um 17 Mio. t CO2-Äq. Im
+Jahr 2030 verursacht der Sektor noch Emissionen von rund 4,1 Mio. t CO₂-Äq, ähnlich dem
+Niveau der Projektionsdaten 2025. Die projizierte Emissionsentwicklung und damit die
+Zielüberfüllung liegen in einem ähnlichen Bereich wie in den Projektionsdaten 2025.
+
+3.7 LULUCF
+
+Die Emissionen aus dem LULUCF-Sektor gehen nicht in die Gesamtemissionen ein.
+
+Im Jahr 2025 war der LULUCF-Sektor mit Nettoemissionen in Höhe von rund
+26,9 Mio. t CO2-Äq. eine bedeutende, wenn auch reduzierte Nettoquelle für
+Treibhausgase. Die Kategorien Wald und Holzprodukte wirkten 2025 als Nettosenken.
+Ackerland, Grünland, Feuchtgebiete und Siedlungen waren mehr oder weniger starke
+Nettoquellen. Bezogen auf die Kohlenstoffspeicher sind in der Nettobetrachtung die organischen
+Böden Hauptquelle, die Mineralböden Hauptsenke des Sektors. Die natürlichen Störereignisse
+ab 2018 hatten einen erheblichen Einfluss auf den Wald und somit das Emissionsgeschehen des
+LULUCF-Sektors. Diese Auswirkungen bestehen weiter fort, auch wenn eine Erholung begonnen
+hat und der Wald inzwischen mit -19,3 Mio. t CO2-Äq. wieder als Senke wirkt.
+
+Die Projektionsdaten 2026 zeigen wie im Vorjahr, dass die bisherigen Instrumente und
+Maßnahmen im LULUCF-Sektor nicht ausreichen, um die sektoralen Zielvorgaben
+einzuhalten. Durch methodische Verbesserungen und die Berücksichtigung neuer fachlicher
+Erkenntnisse zu einer gesteigerten Senkenleistung des Waldbodens (siehe Ergebnisse Kompakt)
+reduziert sich die ermittelte Zielverfehlung. Konkret beträgt die Zielverfehlung 2030 knapp
+50 Mio. t CO2-Äq., im Jahr 2040 64 Mio. t CO₂-Äq. und im Jahr 2045 66 Mio. t CO₂-Äq. Demnach
+besteht nach wie vor dringender Handlungsbedarf in allen Bereichen des LULUCF-Sektors wie
+der nachhaltigen Waldbewirtschaftung, der Wiedervernässung von Moorböden, dem Erhalt von
+Humusvorräten und dem Erhalt und Ausbau des Holzproduktspeichers.
+
+                                                             9
+Impressum                          Autorenschaft, Institution
+
+ Herausgeber                       Fachgebiet V1.2 „Strategien und Szenarien zu Klimaschutz und Energie“,
+ Umweltbundesamt                   Fachgebiet V1.6 „Emissions- und Klimaschutzberichterstattung“,
+ Wörlitzer Platz 1                 Fachgebiet V1.5 „Energiedaten“,
+ 06844 Dessau-Roßlau               Umweltbundesamt
+ Tel: +49 340-2103-0
+ buergerservice@uba.de
+ Internet: www.umweltbundesamt.de
+
+ Stand: März/2026
+
+                                   10
+
