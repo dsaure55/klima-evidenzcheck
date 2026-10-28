@@ -5,7 +5,7 @@ Dieses Buch sammelt unsere Antworten aus dem Herbst 2026 (27. August bis 21. Okt
 
 ## Wer wir sind
 
-Klima Kompass ist ein Projekt, das Aussagen zu Klima und Energie an öffentlichen Daten prüft und erklärt. Hinter Klima Kompass steht ein Mathematiker, den der Klimawandel besorgt und der dazu einen Beitrag leisten will. Aus seiner Sicht fehlt es in der öffentlichen Diskussion oft an Daten und Analysen. Dazu wollen wir beitragen. Wer verantwortlich ist, steht im Impressum. Unseren ersten Artikel haben wir am 27. August 2026 veröffentlicht. [FAKT 2 offen: Nur nötig, falls es Klima Kompass schon vor dem ersten Artikel gab.]
+Klima Kompass ist ein Projekt, das Aussagen zu Klima und Energie an öffentlichen Daten prüft und erklärt. Hinter Klima Kompass steht der Mathematiker Dr. Daniel Saure, den der Klimawandel besorgt und der dazu einen Beitrag leisten will. Aus seiner Sicht fehlt es in der öffentlichen Diskussion oft an Daten und Analysen. Dazu wollen wir beitragen. Wer verantwortlich ist, steht im Impressum. Unseren ersten Artikel haben wir am 27. August 2026 veröffentlicht. [FAKT 2 offen: Nur nötig, falls es Klima Kompass schon vor dem ersten Artikel gab.]
 
 Unser Prinzip ist einfach: Jede Zahl nennt ihre Quelle, und bei Evidenzchecks legen wir vorab fest, wie wir rechnen. Dabei hilft uns künstliche Intelligenz. Sie schreibt Analysepläne, Programmcode und Entwürfe. Ein Mensch gibt frei und veröffentlicht. Wie das genau abläuft, steht in Kapitel 9.
 
