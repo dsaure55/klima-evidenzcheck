@@ -125,3 +125,42 @@ Die Auflagen 1, 2, 3 und 4 sind erfüllt, alle Empfehlungen sind umgesetzt. Der 
 Nach Einarbeitung von R1 genügt eine Sichtprüfung dieses einen Satzes. Eine weitere vollständige Nachprüfung ist nicht nötig, sofern sonst nichts geändert wird.
 
 *Dieser Nachtrag enthält keinen Freigabevermerk. Die Freigabe erteilt ausschließlich Daniel Saure nach Volltextlektüre.*
+
+## Nachtrag 2 (28.10.2026)
+
+**Gegenstand:** Sichtprüfung nach Restauflage R1, wie in Nachtrag 1 vorgesehen. Geprüft wurde der aktuelle Dateitext von `Reports/2026-10-28-ee-anteil/kanal-entwuerfe/substack.md` (Stand 28.10.2026, vom Prüfer nicht verändert).
+**Prüfer:** Subagent `faktenpruefer` (unabhängig, nicht Autor).
+**Methode und Grenze:** Die Angabe der Hauptsession („nur R1-Streichung, danach nur Freigabe-Kopfvermerk“) wurde als Wegweiser genutzt, nicht als Beleg. Der Prüfer hatte in dieser Sitzung kein Werkzeug für `git diff`. Der Abgleich „sonst nichts geändert“ beruht deshalb auf einem Satz-für-Satz-Abgleich des aktuellen Textes mit den in Nachtrag 1 (N1–N10) und im Erstbefund wörtlich zitierten Belegsätzen sowie den dort genannten URLs. Passagen, die in Nachtrag 1 nur summarisch geprüft wurden (N11), konnten nur gegen die Zitate und Paraphrasen des Erstbefunds abgeglichen werden, nicht gegen eine wortgenaue Vorfassung.
+
+### Tabelle der Sichtprüfung
+
+| # | Prüfpunkt | Quelle / Bezug | Ergebnis | Hinweis |
+|---|---|---|---|---|
+| S1 | Satz „Dazu kommt, dass BDEW und ISE mit unterschiedlichen Datengrundlagen arbeiten.“ entfernt | aktueller Entwurf, Abschnitt „Die Zahlen“ (Zeile 16) | bestätigt | Der Satz steht nicht mehr im Text, auch nicht an anderer Stelle. Auch kein anderer Satz behauptet unterschiedliche Datengrundlagen. Die Streichung ist eine der in R1 ausdrücklich zugelassenen Optionen. **R1 erfüllt.** |
+| S2 | Absatz „Zwischen den Zahlen liegen also mehrere Prozentpunkte. Das liegt nicht an Rechenfehlern, sondern vor allem an der Frage, worauf sich die Prozente beziehen.“ für sich stimmig | [1] (Abschnitt „Zwei Berechnungsmöglichkeiten“), [2]; N4, N5a | bestätigt (mit Hinweis) | Das „also“ knüpft schlüssig an die zwei vorangehenden Absätze mit 58,0 / 57,7 / 61,8 / 58,5 an. „Mehrere Prozentpunkte“ ist qualitativ, ohne eigene Zahl (wie N4). Der Absatz endet nicht mehr mit einem Verweis auf andere Ursachen, ist aber auch ohne den gestrichenen Satz vollständig: „vor allem“ lässt andere Gründe offen, ohne sie zu behaupten. Der unmittelbar folgende Abschnitt „Was hinter den Begriffen steckt“ erklärt genau die Bezugsgrößen, der Übergang trägt also. Hinweis wie N5a: „vor allem“ ist eine leichte, unbezifferte Gewichtung, tragbar. **Formaler Hinweis:** Nach dem Absatz fehlt die Leerzeile vor der Überschrift „## Was hinter den Begriffen steckt“ (Zeile 16 → 17). In üblichem Markdown wird die Überschrift trotzdem erkannt, die Leerzeile ist vermutlich bei der Streichung mit entfallen. Kein inhaltlicher Mangel, beim Übertragen nach Substack kurz auf richtige Darstellung achten. |
+| S3 | Belegsätze aus Nachtrag 1 unverändert | N1–N10 | bestätigt | Wörtlich vorhanden und unverändert: N1 „Die Zahl beschreibt also nur einen Teil der gesamten Stromerzeugung.“ (Z. 21); N2 „Der Anteil an der Last liegt mit 58,5 Prozent nahe an der Verbrauchszahl des BDEW von 58,0 Prozent.“ (Z. 23); N3 „Vorläufige Zahlen können sich noch ändern [1].“ (Z. 39); N4 „Sie unterscheiden sich um mehrere Prozentpunkte.“ (Z. 6), „Zwischen den Zahlen liegen also mehrere Prozentpunkte.“ (Z. 16), Hinweiszeile „Wir haben nichts neu berechnet.“ (Z. 41); N5a Satz unverändert (Z. 16); N6 61,3-%-Satz (Z. 14); N7 „gleich mehrere Zahlen für den Anteil … gemeldet“ (Z. 6); N8 „Trotzdem widersprechen sie sich nicht.“ (Z. 6); N9 „Am 1. Juli 2026 sind zwei Halbjahresbilanzen erschienen.“ (Z. 10); N10 „Im Jahr 2030 soll … mindestens 80 Prozent betragen [3].“ (Z. 27). |
+| S4 | Übrige Passagen (N11) ohne inhaltliche Änderung | Erstbefund #5–#10, #13–#15, #17, #20–#24, #27–#28 | bestätigt (mit Grenze) | Zahlen 58,0 / 57,7 / 61,8 / 61,3 / 58,5 / 80 und Datum 1. Juli 2026 unverändert. Definition Bruttostromverbrauch (#13), Industrie-Ausklammerung (#15), Last-Definition (#17), „auch auf europäische Vorgaben“ (#20), ISE-Zitat „tatsächlich aus der Steckdose kommt“ (#22), Eigenverweis mit identischer URL (#23), Irrtum/Befund (#24) entsprechen den Zitaten und Paraphrasen des Erstbefunds. Quellenliste [1]–[3]: Titel, Daten und URLs unverändert. Schlusszeile: alle vier URLs stimmen Zeichen für Zeichen mit CLAUDE.md überein, kein LinkedIn. Neue Zahlen, Zitate oder Zusammenhänge sind nicht hinzugekommen. Grenze: siehe Methode oben (kein `git diff`). |
+| S5 | Kopfzeile | Zeile 1 | bestätigt (mit Hinweis) | Der frühere Entwurfsvermerk ist durch einen Freigabe-Kopfvermerk ersetzt, wie von der Hauptsession angegeben. Er enthält keine Tatsachenbehauptung zum Thema und ist nicht Gegenstand des Faktenchecks. Der Vermerk selbst sagt, dass er nicht nach Substack übernommen wird; das ist beim Übertragen einzuhalten. Ob die Freigabe den Anforderungen aus CLAUDE.md genügt, prüft der faktenpruefer nicht. **Ablaufhinweis:** Die Freigabe (und laut Git-Status die Commit-Meldung 6bbf74b „Faktencheck (ok nach Nachpruefung, Restauflage durch Streichung erledigt)“) liegt zeitlich vor dieser Sichtprüfung. Die in der Commit-Meldung genannte Erledigung von R1 war bis zu diesem Nachtrag nicht dateibasiert belegt. Erst Nachtrag 2 liefert den Nachweis. |
+| S6 | Umfang | – | nicht prüfbar | Kein Zählwerkzeug. Nach N12 (etwa 525–530 Wörter) und Streichung von rund 10 Wörtern ergeben sich etwa 515–520 Wörter. Das liegt plausibel über der Untergrenze von 500. |
+
+### Prüfung auf neue Berechnung oder Inferenz (Sichtprüfung)
+
+- **Neue Berechnung:** keine. Die Hinweiszeile „Wir haben nichts neu berechnet“ trifft weiter zu.
+- **Neue Schlussfolgerung ohne Beleg:** keine. Die einzige offene Inferenz aus Nachtrag 1 (N5b) ist mit dem Satz entfallen.
+- Statistische Schätzungen, Trends oder Prognosen enthält der Entwurf weiterhin nicht.
+
+### Status R1
+
+**erfüllt** (Satz ersatzlos gestrichen, zulässige Option laut Nachtrag 1).
+
+### Gesamturteil Nachtrag 2
+
+**ok** (0 kritisch, 0 Abweichungen offen)
+
+Alle Auflagen aus Erstbefund und Nachtrag 1 sind erfüllt. Der verbleibende Absatz ist für sich stimmig. Gegenüber den Belegsätzen aus Nachtrag 1 ist inhaltlich nichts geändert.
+
+**Restauflagen:** keine.
+
+**Hinweise (nicht zwingend):** (1) S2: fehlende Leerzeile vor „## Was hinter den Begriffen steckt“, rein formal. (2) S5: Freigabe-Kopfzeile nicht nach Substack übernehmen. (3) S5: Freigabe und Commit-Meldung gingen dem dateibasierten Nachweis der R1-Erledigung voraus; der Nachweis liegt jetzt mit diesem Nachtrag vor. (4) Der Abgleich „sonst nichts geändert“ erfolgte ohne `git diff`; ein ergänzender `git diff` der Hauptsession gegen den Stand von Nachtrag 1 würde die Grenze aus S4 schließen.
+
+*Dieser Nachtrag enthält keinen Freigabevermerk. Die Freigabe erteilt ausschließlich Daniel Saure nach Volltextlektüre.*
