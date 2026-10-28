@@ -436,3 +436,40 @@ Der Abschnitt "Nachtrag 2" lag beim Fortsetzen bereits vollstaendig vor; die Rep
 - Nur die Restpunkte N3.1-N3.3 und der Fassungsvergleich; keine erneute Pruefung der Methodik, Diagnostik oder SAP-Konformitaet (unveraendert aus Nachtrag 1 und 2).
 - Die Chat-Antworten 6a/6b und das Lesen des Erratum-Volltextes durch Daniel Saure; die Sensitivitaets-Bootstrapzeilen nicht unabhaengig, nur byte-identischer Neulauf.
 - Grafiken `diagnostik_*`, `estimand1_*`, `estimand2_trend_*` nicht erneut angesehen (byte-identisch zu Fassung 3, deren Sichtpruefung in Nachtrag 2 dokumentiert ist).
+
+## Nachtrag 4 (Nachpruefung der Fassung 5)
+
+**Datum:** 28.10.2026. **Gepruefter Stand:** Commit 5bae415 (Fassung 5), verglichen mit Commit 4e7974e (Stand Nachtrag 3). Umfang: nur die Restpunkte N4.1 und N4.2 aus Nachtrag 3, der Fassungsvergleich und die Frage nach neuen Widerspruechen zwischen Bericht, Abweichungsprotokoll, SAP/Erratum und Bestaetigungsdatei. SAP, Erratum, Bestaetigungsdatei, Bericht, Protokoll und Skript wurden von mir nicht veraendert; ich habe nur diesen Abschnitt angehaengt.
+
+**Diff und Reproduktion:**
+- `git diff 4e7974e 5bae415 -- .` (Analyseordner): geaendert sind nur `Analysebericht_expertenrat-budgetabgleich.md` (3 Zeilen: Kopf, Statuszeile, Absatz 2.4) und `Abweichungsprotokoll_expertenrat-budgetabgleich.md` (9 Zeilen angehaengt, Abschnitt "Nachtrag Fassung 5"). Commit 5bae415 selbst enthaelt nur diese beiden Dateien. **Skript, `run_log.txt`, alle Dateien in `output/` (CSV und PNG), Rohdaten, SAP, Erratum und Bestaetigungsdatei sind nicht im Diff**, also byte-identisch zum in Nachtrag 3 reproduzierten Stand. Arbeitsverzeichnis des Ordners ist sauber (keine uncommitteten Aenderungen). Ein erneuter Skriptlauf war deshalb nicht noetig; die Reproduktion aus Nachtrag 3 (byte-identischer Neulauf) gilt fort.
+- In den geaenderten Zeilen kommt keine neue oder geaenderte Zahl vor; alle Zahlen in Absatz 2.4 (429 - 737; -153 bis 199 gegen -159 bis 201; 502,3; -116,0 gegen -115,6) stehen wortgleich schon in Fassung 3/4. Abgleich mit `output/posthoc_bootstrap_sensitivitaet.csv` (C, Blocklaenge 2, B = 2000, Seed 20260827: -115,96 / 502,34; Seeds 11 und 12: Untergrenze -115,63) und `output/estimand2_tabelle.csv` (C primaer: -115,63 / 502,34): stimmt.
+- **Kernzahlen, Intervalle, Klassifikationen und Aussagen sind gegenueber Fassung 4 unveraendert.**
+
+### Befunde
+
+| Punkt | Ampel | Pruefung |
+|---|---|---|
+| **N4.1** Absatz 2.4 wiederhergestellt | **bestanden** | Ueberschrift "**Zur Seed-Beschriftung (Fassung 3, N2.2):**" und die einleitenden Saetze (Seed einmal gesetzt, Strom der Reihe nach verbraucht; Neustart je Sensitivitaetszeile, Spalte `Seed_Neustart`; nur Fenster A stimmt ueberein, 429 - 737) sind **wortgleich mit Fassung 3 (Commit 76d75af, Zeile 167)**, einschliesslich der Einrueckung (zwei Leerzeichen, innerhalb des Bootstrap-Aufzaehlungspunkts). Der C-Satz aus Fassung 4 (Diskretisierungswirkung) schliesst unmittelbar und wortgleich an; das Pronomen "sie" hat wieder seinen Bezug. Zahlen stimmen mit der CSV (siehe oben). Die Tabelle "Fassung 4" (N3.2 "erledigt") ist damit jetzt zutreffend. |
+| **N4.2 (a)** CSV-Hinweis-Widerspruch | **bestanden** | Gewaehlt wurde die zweite der in Nachtrag 3 zugelassenen Optionen (Verweis im Bericht statt Skriptaenderung). Der Bericht (2.4, "Bekannter Widerspruch (Fassung 5, N4.2)") und das Protokoll (Nachtrag Fassung 5) benennen die Datei, die Spalte, den Wortlaut, die Ursache (fest verdrahtet in `Hinweis = ...`, Skript Zeile 661, von mir gesehen) und welche Quelle massgeblich ist (Bericht). Nachvollziehbar. Die Formulierung "fuer C trifft das nur im Rahmen der Rundung zu" ist knapp, aber richtig (Untergrenze weicht um 0,3 Mt ab, Obergrenze identisch). Die Empfehlung, den CSV-Text bei der naechsten ohnehin faelligen Skriptaenderung anzupassen, bleibt bestehen (kein Freigabehindernis). |
+| **N4.2 (b)** Statuszeile im Bericht-Kopf | **Abweichung (gering)** | Die geforderte Angabe "Nachpruefung 3 liegt vor" steht jetzt da (mit Datum und Ergebnis, korrekt wiedergegeben). Zwei Reste: (1) Die Statuszeile sagt nicht mehr, dass Fassung 5 selbst noch ungeprueft war bzw. auf diesen Nachtrag 4 wartet (Fassung 4 hatte "noch nicht erneut geprueft"; der Commit-Text 5bae415 sagt "Nachpruefung durch validator ausstehend", der Bericht nicht). (2) Die Kopfzeile beginnt weiterhin mit "**Fassung 4 (nach Nachpruefung 2 der Validierung), 24.10.2026.**", und die Fassung 5 ist am Ende desselben Absatzes angehaengt; ein Leser sieht zwei Fassungsangaben. Zudem hat Fassung 5 im Abschnitt "Aenderungen nach Validierung" keine eigene Tabelle (nur im Protokoll), anders als Fassung 3 und 4. Auflage: Kopf auf "Fassung 5, 26.10.2026" setzen und Statuszeile um "Nachpruefung 4 (28.10.2026) liegt vor" ergaenzen; optional kurze Tabelle "Fassung 5" im Bericht. Reine Dokumentation, keine Zahl betroffen. |
+| **N4.2 (c)** Bestaetigungsdatei | **bestanden (unveraendert akzeptabel)** | Datei nicht im Diff, unveraendert; der ueberholte Satz bleibt gekennzeichnet stehen. Wie in Nachtrag 3 akzeptabel. |
+| **Kernzahlen / Aussagen unveraendert** | **bestanden** | Siehe Diff oben; nur Textzeilen ohne neue Zahlen. |
+| **Neue Widersprueche** | **bestanden** | Bericht (Kopf, 2.4) und Protokoll (Nachtrag Fassung 5) sagen dasselbe (N4.1-Reparatur, N4.2 als bekannt vermerkt, keine Zahl/Grafik/Aussage geaendert, Skript und Ergebnisdateien nicht angefasst); das stimmt mit dem Diff ueberein. Zu SAP, Erratum und Bestaetigungsdatei keine neuen Widersprueche (alle drei unveraendert; Verweise im Bericht-Kopf unveraendert gegenueber Fassung 4, dort in Nachtrag 3 geprueft). Der einzige verbliebene Inhaltswiderspruch (CSV-Spalte `Hinweis` gegen Bericht) ist jetzt offen dokumentiert. Die Schlusszeile im Protokoll-Nachtrag Fassung 4 ("Offen: Fokussierte Pruefung der Fassung 4") ist historisch und durch Nachtrag 3 erledigt; kein Widerspruch, aber ohne Erledigt-Vermerk. |
+
+### Neue Befunde
+
+| Nr. | Schweregrad | Befund und Auflage |
+|---|---|---|
+| N5.1 | gering | Bericht-Kopf: Fassungsangabe ("Fassung 4 ... 24.10.2026") und Statuszeile spiegeln Fassung 5 und diesen Nachtrag 4 nicht sauber wider (siehe N4.2 (b)). Auflage: Kopf auf Fassung 5 setzen, Statuszeile um Nachpruefung 4 ergaenzen. Kein Freigabehindernis; kann vor oder zusammen mit der Freigabe erledigt werden. |
+| N5.2 | Hinweis | CSV-Spalte `Hinweis` (C "weicht ab") bleibt technisch falsch formuliert; dokumentiert und akzeptiert. Bei der naechsten Skriptaenderung mitkorrigieren. |
+
+### Gesamturteil Fassung 5
+
+**FREIGABEFAEHIG MIT AUFLAGEN.** Keine kritischen, keine wesentlichen Befunde. N4.1 bestanden (Absatz 2.4 wortgleich mit Fassung 3 wiederhergestellt, C-Satz korrekt angeschlossen), N4.2 (a) und (c) bestanden, N4.2 (b) nur teilweise (N5.1, gering, rein redaktionell). Skript, Ergebnisdateien, Kernzahlen, Intervalle, Klassifikationen und Aussagen sind gegenueber Fassung 4 unveraendert. Aus Validierungssicht steht einer Lektuere und Entscheidung durch den Menschen nichts mehr entgegen; die Freigabe der Analyse liegt bei Daniel Saure.
+
+### Nicht geprueft (Nachtrag 4)
+
+- Kein erneuter Skriptlauf (Skript und `output/` nachweislich nicht im Diff; Reproduktion aus Nachtrag 3 gilt).
+- Keine erneute Pruefung von Methodik, Diagnostik, SAP-Konformitaet oder Grafiken (unveraendert aus Nachtrag 1-3).
+- Die Chat-Antworten 6a/6b und das Lesen des Erratum-Volltextes durch Daniel Saure (unveraendert nicht pruefbar, siehe Nachtrag 2 und 3).
