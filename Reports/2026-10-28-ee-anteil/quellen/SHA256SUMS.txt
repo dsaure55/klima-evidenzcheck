@@ -1,0 +1,2 @@
+# SHA-256 lokal vs. online, 2026-10-28T12:35Z, Top-Level-Session; ISE.txt = pdftotext -layout aus dieser PDF
+e3d38cc291c1697fe9fe48abf782478ee5b00fcd82640fbe85c0262de8ee20f0  ISE_Halbjahresauswertung_2026.pdf (online: e3d38cc291c1697fe9fe48abf782478ee5b00fcd82640fbe85c0262de8ee20f0)
