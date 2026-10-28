@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<!-- **ENTWURF – nicht veröffentlicht. Freigabe durch Daniel Saure erforderlich vor Publikation.** -->
+<!-- Klima Kompass · Einordnung · Klimaziel 2026 (Agora-Hochrechnung) · Instagram-Karussell, 6 Folien à 1080×1350 -->
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>ENTWURF – Karussell Klimaziel 2026 (Klima Kompass · Einordnung)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0E3B43;
+    --flaeche: #14505A;
+    --text: #F2F5F4;
+    --mint: #5FD3B3;
+    --koralle: #F26B5B;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #222; font-family: 'IBM Plex Sans', sans-serif; color: var(--text); }
+  .slide {
+    width: 1080px; height: 1350px; background: var(--bg);
+    padding: 96px 88px 80px; position: relative; overflow: hidden;
+    display: flex; flex-direction: column; margin: 0 auto 40px;
+  }
+  .reihe { font-family: 'IBM Plex Mono', monospace; font-size: 30px; color: var(--mint); letter-spacing: 1px; margin-bottom: 48px; }
+  h1 { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 96px; line-height: 1.05; margin-bottom: 40px; }
+  h2 { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 58px; line-height: 1.1; margin-bottom: 30px; }
+  p { font-size: 34px; line-height: 1.4; margin-bottom: 24px; }
+  .gross { font-family: 'IBM Plex Mono', monospace; font-weight: 600; color: var(--mint); font-size: 104px; line-height: 1; margin-bottom: 14px; }
+  .einheit { font-size: 32px; line-height: 1.35; color: var(--text); opacity: .92; margin-bottom: 28px; }
+  .karte { background: var(--flaeche); border-radius: 24px; padding: 26px 38px; margin-bottom: 22px; }
+  .karte .label { font-family: 'Space Grotesk', sans-serif; font-size: 34px; font-weight: 700; margin-bottom: 6px; }
+  .karte .text { font-size: 29px; line-height: 1.35; margin-top: 6px; margin-bottom: 0; opacity: .92; }
+  .karte.irrtum { border-left: 12px solid var(--koralle); }
+  .karte.befund { border-left: 12px solid var(--mint); }
+  .karte .kopf { font-family: 'IBM Plex Mono', monospace; font-size: 26px; letter-spacing: 1px; margin-bottom: 12px; }
+  .karte p { font-size: 32px; margin-bottom: 0; }
+  .zeile { display: flex; align-items: center; gap: 32px; background: var(--flaeche); border-radius: 24px; padding: 24px 36px; margin-bottom: 20px; }
+  .zeile .wert { font-family: 'IBM Plex Mono', monospace; font-size: 62px; font-weight: 600; color: var(--mint); min-width: 280px; }
+  .zeile .bezug { font-size: 30px; line-height: 1.3; }
+  .zeile .bezug b { font-weight: 600; display: block; }
+  .zeile .bezug small { font-family: 'IBM Plex Mono', monospace; font-size: 23px; opacity: .8; }
+  .hinweis { font-size: 30px; line-height: 1.4; opacity: .92; }
+  ul { list-style: none; }
+  li { font-size: 33px; line-height: 1.36; margin-bottom: 26px; padding-left: 44px; position: relative; }
+  li::before { content: "–"; position: absolute; left: 0; color: var(--koralle); font-weight: 700; }
+  li b { font-weight: 600; }
+  .koralle { color: var(--koralle); }
+  .mint { color: var(--mint); }
+  .spacer { flex: 1; }
+  .cta { font-family: 'Space Grotesk', sans-serif; font-size: 46px; font-weight: 700; color: var(--bg); background: var(--mint); border-radius: 20px; padding: 26px 40px; display: inline-block; align-self: flex-start; }
+  .fuss {
+    position: absolute; left: 88px; right: 88px; bottom: 44px;
+    display: flex; justify-content: space-between; gap: 32px;
+    font-family: 'IBM Plex Mono', monospace; font-size: 22px; opacity: .75;
+    border-top: 1px solid rgba(242,245,244,.25); padding-top: 18px;
+  }
+  .fuss .quelle { text-align: right; }
+  .nummer { position: absolute; top: 96px; right: 88px; font-family: 'IBM Plex Mono', monospace; font-size: 26px; opacity: .6; }
+</style>
+</head>
+<body>
+
+<!-- Folie 1: Hook -->
+<section class="slide" id="folie-1">
+  <div class="reihe">KLIMA KOMPASS · EINORDNUNG</div>
+  <div class="nummer">1/6</div>
+  <h1>Verfehlt Deutschland 2026 erstmals sein Klima&shy;ziel?</h1>
+  <h2 class="mint">Hochrechnung laut Agora: rund 635 Millionen Tonnen. Erlaubt laut Agora: 625.</h2>
+  <p>Die Zahl ist vorläufig. Ein Warnsignal, aber noch kein Befund.</p>
+  <div class="spacer"></div>
+  <div class="fuss"><span>Klima Kompass · Einordnung</span><span class="quelle">Quelle: Agora Energiewende (PM 28.08.2026)</span></div>
+</section>
+
+<!-- Folie 2: Die Zahlen -->
+<section class="slide" id="folie-2">
+  <div class="reihe">DIE ZAHLEN · MIO. T CO₂-ÄQUIVALENT</div>
+  <div class="nummer">2/6</div>
+  <h2>Was die Hochrechnung sagt</h2>
+  <div class="zeile">
+    <div class="wert">327</div>
+    <div class="bezug"><b>bis Ende Juni 2026</b><small>laut Agora · rund 2 % weniger als 1. Halbjahr 2025</small></div>
+  </div>
+  <div class="zeile">
+    <div class="wert">635</div>
+    <div class="bezug"><b>ganzes Jahr, wenn das Tempo bleibt</b><small>laut Agora · Hochrechnung, vorläufig</small></div>
+  </div>
+  <div class="zeile">
+    <div class="wert">625</div>
+    <div class="bezug"><b>erlaubt für 2026</b><small>laut Agora</small></div>
+  </div>
+  <div class="zeile">
+    <div class="wert">604</div>
+    <div class="bezug"><b>erlaubt für 2026 laut Gesetzestabelle</b><small>KSG Anlage 2</small></div>
+  </div>
+  <p class="hinweis" style="margin-top:12px">Agora verweist für die 625 ebenfalls auf das Gesetz, erklärt den Unterschied zu 604 aber nicht. Eine Unsicherheitsspanne nennt die Hochrechnung nicht.</p>
+  <div class="spacer"></div>
+  <div class="fuss"><span>Klima Kompass · Einordnung</span><span class="quelle">Quelle: Agora Energiewende; KSG Anlage 2</span></div>
+</section>
+
+<!-- Folie 3: Was eine Überschreitung auslöst -->
+<section class="slide" id="folie-3">
+  <div class="reihe">WAS EINE ÜBERSCHREITUNG AUSLÖST</div>
+  <div class="nummer">3/6</div>
+  <div class="karte">
+    <div class="label">Ein Jahr über der Grenze</div>
+    <p class="text">Die Differenz wird gleichmäßig auf die Folgejahre bis 2030 angerechnet. Die erlaubten Mengen dort <span class="mint">sinken dann</span>.</p>
+  </div>
+  <div class="karte">
+    <div class="label">Pflicht zum Nachsteuern</div>
+    <p class="text">Sie hängt an der Summe 2021 bis 2030. Die Bundesregierung muss Maßnahmen beschließen, wenn die Projektionen <span class="mint">zwei Jahre in Folge</span> zeigen, dass diese Summe überschritten wird.</p>
+  </div>
+  <div class="karte">
+    <div class="label">Wer das feststellt</div>
+    <p class="text">Der Expertenrat für Klimafragen.</p>
+  </div>
+  <p class="hinweis">Projektionen sind Vorausberechnungen des Umweltbundesamts: wie sich die Emissionen mit den beschlossenen Maßnahmen entwickeln würden (Stand November 2025).</p>
+  <div class="spacer"></div>
+  <div class="fuss"><span>Klima Kompass · Einordnung</span><span class="quelle">Quelle: KSG §§ 4, 8, 12; UBA</span></div>
+</section>
+
+<!-- Folie 4: Die Summe bis 2030 -->
+<section class="slide" id="folie-4">
+  <div class="reihe">DIE SUMME 2021 BIS 2030</div>
+  <div class="nummer">4/6</div>
+  <h2>Hier wird es knapp</h2>
+  <div class="gross">3,8 Mio. t</div>
+  <div class="einheit">Puffer bei der Summe bis 2030, laut Projektionen des Umweltbundesamts vom März 2026. Das Amt hält das für <span class="koralle">„nicht richtungssicher“</span>.</div>
+  <div class="karte irrtum">
+    <div class="kopf koralle">FRÜHER</div>
+    <p>Rund 81 Mio. t Puffer. Laut Umweltbundesamt ist er nahezu verbraucht.</p>
+  </div>
+  <div class="spacer"></div>
+  <div class="fuss"><span>Klima Kompass · Einordnung</span><span class="quelle">Quelle: Umweltbundesamt (Stand 14.03.2026)</span></div>
+</section>
+
+<!-- Folie 5: Was die Zahlen nicht sagen -->
+<section class="slide" id="folie-5">
+  <div class="reihe">WAS DIE ZAHLEN NICHT SAGEN</div>
+  <div class="nummer">5/6</div>
+  <ul>
+    <li><b>Noch keine Bilanz.</b> Die Daten sind vorläufig. Die amtliche Bilanz für 2026 kommt bis zum 15. März 2027.</li>
+    <li><b>Nicht 2030.</b> Die Hochrechnung betrifft ein einziges Jahr. Für das Ziel 2030 wären laut Agora jährlich rund 40 Mio. t Einsparung nötig.</li>
+    <li><b>Keine Bewertung der Ursachen.</b> Wichtigster Grund laut Agora: die Energiepreiskrise. Ein Rückgang durch eine Preiskrise ist etwas anderes als einer durch dauerhafte Umstellungen.</li>
+    <li><b class="koralle">Keine eigene Rechnung.</b> Wir rechnen nichts hoch. Alle Zahlen stammen aus den Quellen.</li>
+  </ul>
+  <div class="spacer"></div>
+  <div class="fuss"><span>Klima Kompass · Einordnung</span><span class="quelle">Quelle: Agora Energiewende; KSG § 5</span></div>
+</section>
+
+<!-- Folie 6: Fazit -->
+<section class="slide" id="folie-6">
+  <div class="reihe">FAZIT</div>
+  <div class="nummer">6/6</div>
+  <div class="karte">
+    <div class="kopf">DIE MELDUNG (AGORA)</div>
+    <p>„Deutschland droht 2026 erstmals sein Klimaziel zu verfehlen“</p>
+  </div>
+  <div class="karte befund">
+    <div class="kopf mint">EINORDNUNG</div>
+    <p>Ein Warnsignal, aber noch kein Befund. Ob Deutschland 2026 über der Grenze liegt, zeigt erst die Bilanz im März 2027. Rechtlich entscheidend für das Nachsteuern ist die Summe bis 2030. Dort bleibt laut Umweltbundesamt nur ein kleiner Puffer.</p>
+  </div>
+  <p class="hinweis"><b>Was heißt das für dich?</b> Bei solchen Meldungen fragen: Hochrechnung oder amtliche Bilanz? Ein Jahr oder die Summe bis 2030?</p>
+  <div class="spacer"></div>
+  <div class="cta">Ganzer Artikel: Link in Bio</div>
+  <div style="height:90px"></div>
+  <div class="fuss"><span>Klima Kompass · Einordnung</span><span class="quelle">Quelle: Agora Energiewende; UBA; KSG</span></div>
+</section>
+
+</body>
+</html>
