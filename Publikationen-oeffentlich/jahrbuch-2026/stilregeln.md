@@ -1,6 +1,6 @@
 # Stilregeln Jahrbuch 2026
 
-**Version:** 0.2 · **Status: Erzählform bestätigt („wir“, Daniel Saure, 23.10.2026), Regeln im Übrigen Vorschlag** · **Datum:** 23.10.2026
+**Version:** 0.3 (Ergänzung 28.10.2026: seriös, menschlich, nicht nach KI) · **Status: Erzählform bestätigt („wir“, Daniel Saure, 23.10.2026), Regeln im Übrigen Vorschlag** · **Datum:** 23.10.2026
 **Anlass:** Daniel Saure, 23.10.2026: Die Sprache soll natürlicher sein und „wie von mir“ klingen: wissenschaftlich, aber leicht erklärt.
 
 ## Stimme
@@ -47,3 +47,22 @@ Für neue Kapitel gilt der Stil von Anfang an, der Ablauf bleibt gleich.
 - „Todesfälle durch Hitze“ oder „hitzebedingte Sterbefälle“ statt „Hitzetote“, außer in Zitaten und Quellentiteln.
 - Keine Wertungen wie „zu viele“ oder „gekostet“; die Zahl wird genannt und eingeordnet.
 - Ein kurzer Satz erinnert daran, dass hinter den Zahlen Menschen stehen.
+
+## Ergänzung v0.3 (Daniel Saure, 28.10.2026: „seriös und menschlicher, nicht nach KI“)
+
+Der Text soll klingen wie ein erfahrener Mensch, der etwas sorgfältig erklärt: ruhig, genau, ohne Pose. Gilt für die Kurzfassung; Raster-Überschriften („Kurz gesagt“, „Was heißt das für dich?“, „Lagen wir richtig?“, „Woher wir das wissen“), Tabellen, Zahlen, Quellenverweise [n], Platzhalter in eckigen Klammern und die Kopfzeilen bleiben unberührt.
+
+Typische Merkmale von KI-Text, die wir vermeiden:
+
+1. **Gegensatzformeln.** „Das ist kein X, sondern Y“, „nicht nur …, sondern auch“, „X, aber Y“ als Dauermuster. Eine solche Formel pro Kapitel ist genug; sonst direkt sagen, was gilt.
+2. **Dreierreihen aus Reflex** („klar, belastbar und nachvollziehbar“). Nur aufzählen, was wirklich drei Dinge sind.
+3. **Gedankenstriche und Doppelpunkte als Stilmittel.** Gedankenstriche sparsam, Doppelpunkte nur vor echten Aufzählungen oder Definitionen.
+4. **Fette Schlagwort-Köpfe in Aufzählungen** („**Keine Prognose.** …“). Wo es sich um zusammenhängende Gedanken handelt, in Fließtext mit normalen Sätzen umwandeln. Echte Listen (Fragen, Schritte, Quellen) bleiben Listen.
+5. **Floskel- und Modewörter:** „entscheidend“, „zentral“, „maßgeblich“, „im Kern“, „letztlich“, „tatsächlich“ als Füllwort, „beleuchten“, „Landschaft“, „spannend“, „nuanciert“, „es ist wichtig zu beachten“, „Fazit“, „klar“ als Verstärker. Streichen oder durch ein konkretes Wort ersetzen.
+6. **Rhetorische Fragen als Übergang** und Ankündigungssätze („Schauen wir genauer hin“, „Doch was bedeutet das?“).
+7. **Gleichförmiger Satzbau.** Satzlänge und Satzanfang variieren; nicht jeder Absatz beginnt mit dem Thema und endet mit einem Merksatz.
+8. **Abstraktes statt Konkretes.** Wo das Kapitel eine Zahl, ein Datum oder ein Beispiel hat, das benutzen statt einer allgemeinen Aussage.
+9. **Übertriebene Beteuerungen** („ehrlich“, „wirklich“, „absolut“, „komplett“). Weglassen; Sicherheit zeigt sich durch Belege, nicht durch Adverbien.
+10. **Pose und Pathos.** Keine Werbesprache, keine Selbstlob-Sätze, kein Appell, kein „Wir sind stolz“.
+
+Grenzen wie oben: Keine Aussage, keine Zahl, kein Vorbehalt („etwa“, „laut“, „vorläufig“, „nach unserer Rechnung“, „Spanne“) darf sich ändern, nichts darf dazukommen. Nach dem Stilpass folgt die Differenzprüfung durch den `faktenpruefer` als Datei.
