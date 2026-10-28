@@ -16,13 +16,13 @@ Wir arbeiten in drei Stufen und führen ein Register. Ein **Evidenzcheck** ist e
 ## Woran du uns messen kannst
 
 - **Offene Daten und offener Code.** Analysepläne, Programme, Prüfberichte und, soweit möglich, Rohdaten liegen im öffentlichen Repository (https://github.com/dsaure55/klima-evidenzcheck).
-- **Sichtbare Korrekturen.** Wo wir falsch lagen, steht es in Kapitel 7, mit Datum und, soweit geklärt, Begründung.
+- **Sichtbare Korrekturen.** Wo wir falsch lagen, steht es in Kapitel 10, mit Datum und, soweit geklärt, Begründung.
 - **Quellen und Stand im Text.** Jede Zahl nennt Quelle und, soweit bekannt, Datenstand. Wo etwas eine Schätzung mit Spanne ist, steht die Spanne dabei.
-- **Das Prognose-Register.** Wir messen uns an unseren eigenen Vorhersagen (Kapitel 10).
+- **Das Prognose-Register.** Wir messen uns an unseren eigenen Vorhersagen (Kapitel 8).
 
 ## So liest du dieses Buch
 
-Das Buch hat drei Teile: **Was stimmt** (Kapitel 1 bis 6, sechs Fragen dieses Jahres), **Was nicht** (Kapitel 7 bis 9: wo wir falsch lagen, wie du Zahlen selbst prüfst, wie ein Evidenzcheck entsteht) und **Was kommt** (Kapitel 10, das Prognose-Register). Einen Überblick mit Kurzantworten findest du vorab.
+Das Buch hat zwei Teile: **Was stimmt** (Kapitel 1 bis 8) beginnt mit den zehn Fragen, mit denen du jede Klimazahl prüfen kannst (Kapitel 1), und beantwortet dann sechs Fragen dieses Jahres (Kapitel 2 bis 7); am Ende steht das Prognose-Register, mit dem wir uns an unseren eigenen Vorhersagen messen lassen (Kapitel 8). **Was nicht** (Kapitel 9 und 10) zeigt, wie ein Evidenzcheck entsteht, und nennt die Fälle, in denen wir falsch lagen. Einen Überblick mit Kurzantworten findest du vorab.
 
 Jedes Kapitel folgt demselben Raster: **Kurz gesagt**, der Haupttext, **Was heißt das für dich?**, **Lagen wir richtig?** und **Woher wir das wissen**. Die ausführlichen Methodenbeschreibungen stehen in der Langfassung und im Methodenanhang.
 

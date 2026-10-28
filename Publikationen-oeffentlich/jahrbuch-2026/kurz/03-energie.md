@@ -1,6 +1,6 @@
 **KURZFASSUNG-ENTWURF v0.1 (28.10.2026), gekürzt aus Kapitel 2 der Langfassung; nicht geprüft, nicht freigegeben, erneute Freigabe durch Daniel Saure und Faktencheck nötig. Hinweis: Die Datenstände (Gasspeicherfüllstand, BNetzA-Seite) müssen zum Stichtag 15.11. erneut abgeglichen werden, der DWD-Abgleich der Wintertemperaturen ist nicht als erledigt dokumentiert, und eine Gegenprüfung der Faktencheck-Auflagen durch den Faktenprüfer fand nicht statt. Faktencheck: pruefung/faktencheck_kurz_kap03.md (ok mit Auflagen, mittlere Auflagen eingearbeitet am 28.10.2026, Gegenprüfung der Einarbeitung steht aus). Vor Satz/Export entfernen.**
 
-# Kapitel 3 – Reicht die Energie: Gas im Winter, Strom bei Dunkelflaute?
+# Kapitel 4 – Reicht die Energie: Gas im Winter, Strom bei Dunkelflaute?
 
 **Kurz gesagt:** Ein Füllstand in Prozent sagt wenig darüber, ob das Gas für den Winter reicht. Wichtig sind neben der Menge die Temperatur und die laufenden Lieferungen. Am 16. Oktober 2026 lagen rund 150 TWh in den deutschen Speichern. Das ist ungefähr so viel, wie man für einen durchschnittlich kalten Winter an Entnahme erwartet (mit großer Spanne, siehe unten). Ein kalter Winter bleibt das Risiko. Beim Strom hätten die heute installierten Batteriespeicher in unserer Rechnung die Dunkelflauten seit 2015 nur zu rund 0,5 bis 1 Prozent abdecken können (mit nachträglich bereinigten Kapazitätsdaten, ohne Nachladung und ohne Importe).
 
@@ -56,7 +56,7 @@ Was die Rechnung nicht zeigt: Importe sind im Energiedefizit nicht berücksichti
 
 ## Lagen wir richtig?
 
-- **Gas, Winter 2026/27:** Das lässt sich noch nicht sagen. Wir haben unsere Erwartung am 22. Oktober 2026 im Prognose-Register festgelegt (Eintrag #1) [7]. Maßgeblich ist, ob die tatsächliche Entnahme bei der tatsächlichen Wintertemperatur im zugehörigen 95-Prozent-Prognoseintervall liegt. Liegt die Temperatur außerhalb von 3,75 bis 6,18 °C, bewerten wir nicht. Die Auswertung kommt, sobald Eurostat die Werte bis März 2027 veröffentlicht, voraussichtlich im Mai oder Juni 2027. Bei der Registrierung war der Winter schon drei Wochen alt, der Füllstand von 60,5 Prozent war bekannt (siehe Kapitel 10).
+- **Gas, Winter 2026/27:** Das lässt sich noch nicht sagen. Wir haben unsere Erwartung am 22. Oktober 2026 im Prognose-Register festgelegt (Eintrag #1) [7]. Maßgeblich ist, ob die tatsächliche Entnahme bei der tatsächlichen Wintertemperatur im zugehörigen 95-Prozent-Prognoseintervall liegt. Liegt die Temperatur außerhalb von 3,75 bis 6,18 °C, bewerten wir nicht. Die Auswertung kommt, sobald Eurostat die Werte bis März 2027 veröffentlicht, voraussichtlich im Mai oder Juni 2027. Bei der Registrierung war der Winter schon drei Wochen alt, der Füllstand von 60,5 Prozent war bekannt (siehe Kapitel 8).
 - **Gas, Stand Oktober:** Das ist keine Rückschau, sondern ein Hinweis zum Stand. Der Stand dieses Kapitels ist der 16. Oktober.
 - **Strom, offen:** Die Nachlade-Simulation fehlt noch, und die Datenbereinigung bleibt ein Risiko für eine Verzerrung.
 

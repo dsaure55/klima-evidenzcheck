@@ -1,4 +1,4 @@
-# Kapitel 7 – Korrekturen 2026: Wo wir falsch lagen
+# Kapitel 10 – Korrekturen 2026: Wo wir falsch lagen
 **KURZFASSUNG-ENTWURF v0.1 (28.10.2026), gekürzt aus Kapitel 8 der Langfassung; nicht geprüft, nicht freigegeben, erneute Freigabe durch Daniel Saure und Faktencheck nötig. Faktencheck: pruefung/faktencheck_kurz_kap07.md (ok mit Auflagen, mittlere Auflagen eingearbeitet am 28.10.2026, Gegenprüfung der Einarbeitung steht aus). Hinweis: Offen sind die Anzahl der Artikel zum Redaktionsschluss, ob und wann Hinweise auf Substack gesetzt werden (Fall 4 bis 7, setzt Daniel selbst), Ursache und Lehre bei Fall 5 bis 7 sowie der Stand der Kanalposts zum CO₂-Preis; vor Satz Liste gegen alle bis dahin veröffentlichten Artikel neu abgleichen. Vor Satz/Export entfernen.**
 
 **Kurz gesagt:** Wir haben in diesem Jahr in sechs unserer bis Redaktionsschluss veröffentlichten Artikel sieben Fälle von Fehlern oder Unbelegtem gefunden: bei zwei Artikeln falsche Zahlen, bei einem einen falschen Verweis, bei einem einen fehlenden Gesetzgebungsstand, bei einem eine unbelegte Erklärung, bei einem eine ungenaue Wiedergabe einer Quelle und bei einem eine Angabe zur Arbeitsweise, die so nicht stimmte. Keine Korrektur hat die Kernaussage eines Artikels umgeworfen. Das ist kein Grund, sich zu freuen: Bei den meisten wäre ein anderer Ablauf möglich gewesen, der den Fehler früher gefunden hätte.
@@ -53,7 +53,7 @@ Die Liste hat den Stand vom Redaktionsschluss dieses Buchs [Anzahl der Artikel z
 
 **Was stimmt.** Die Aussage des Artikels, dass der Sommer 2026 außerhalb der bisherigen Bandbreite lag, hängt nicht an dieser Zahl. Falsch ist nur die Erklärung im Abschnitt „Was das nicht bedeutet“.
 
-**Gekennzeichnet:** Bisher nichts am Artikel. [Entscheidung offen, ob ein Hinweis gesetzt wird.] Hier im Buch ist die Sache offengelegt, ebenso in Kapitel 4.
+**Gekennzeichnet:** Bisher nichts am Artikel. [Entscheidung offen, ob ein Hinweis gesetzt wird.] Hier im Buch ist die Sache offengelegt, ebenso in Kapitel 5.
 
 **Lehre.** Wir erklären keine Abweichung, die wir nicht belegen können. „Wir konnten es nicht bestätigen“ ist eine zulässige Aussage.
 
@@ -61,21 +61,21 @@ Die Liste hat den Stand vom Redaktionsschluss dieses Buchs [Anzahl der Artikel z
 
 **Fehler.** Unser Stück zum UNEP-Bericht gab die drei Temperaturwerte (2,8, 2,6 und 2,1 Grad bis zum Ende des Jahrhunderts) so wieder, als seien alle drei schlechter als im Vorjahr. Laut Zusammenfassung des Berichts stimmt das nur für 2,6 und 2,1 Grad. Der Wert bei aktueller Politik, 2,8 Grad, ist gegenüber dem Vorjahr unverändert. Außerdem fehlte, dass die Werte mit einer Wahrscheinlichkeit von 66 Prozent gelten.
 
-**Ursache.** Die Pressemitteilung formuliert, diese Ergebnisse seien schlechter als die Projektionen des Vorjahres („These outcomes are worse than last year’s projections“), und unser Stück hat das für alle drei Werte übernommen. [Wortlaut der Pressemitteilung vor Satz abrufen und belegen.] Beim Abgleich mit der Executive Summary für Kapitel 5 fiel die Abweichung auf.
+**Ursache.** Die Pressemitteilung formuliert, diese Ergebnisse seien schlechter als die Projektionen des Vorjahres („These outcomes are worse than last year’s projections“), und unser Stück hat das für alle drei Werte übernommen. [Wortlaut der Pressemitteilung vor Satz abrufen und belegen.] Beim Abgleich mit der Executive Summary für Kapitel 6 fiel die Abweichung auf.
 
-**Gekennzeichnet:** Kapitel 5 gibt die richtige Fassung wieder. Am Artikel auf Substack ist bisher nichts geändert. [Entscheidung offen.]
+**Gekennzeichnet:** Kapitel 6 gibt die richtige Fassung wieder. Am Artikel auf Substack ist bisher nichts geändert. [Entscheidung offen.]
 
 **Lehre.** [Erst nach Klärung der Ursache formulieren.] Vorläufig: Zahlen aus einem Bericht gleichen wir mit dessen Zusammenfassung ab, bevor wir sie veröffentlichen.
 
 ### 6. „Erreicht Deutschland sein Klimaziel 2040?“ (27. August 2026)
 
-**Fehler.** Im Artikel standen für die beiden Fortschreibungen die Bereiche „407–598 Mt“ (Langfrist-Trend) und „16–328 Mt“ (10-Jahres-Trend). Beim Nachrechnen für Kapitel 6 am 24. Oktober haben wir festgestellt: Das Hauptverfahren der Analyse (das OLS-Prognoseintervall) ergibt 407 bis 566 und 86 bis 328 Millionen Tonnen. Die Randwerte 598 und 16 stimmen mit den Grenzen der Kontrollrechnung mit ARIMA überein (Intervalle 182 bis 598 und 16 bis 532). Die Bereiche im Artikel mischen also je eine Grenze aus beiden Verfahren.
+**Fehler.** Im Artikel standen für die beiden Fortschreibungen die Bereiche „407–598 Mt“ (Langfrist-Trend) und „16–328 Mt“ (10-Jahres-Trend). Beim Nachrechnen für Kapitel 7 am 24. Oktober haben wir festgestellt: Das Hauptverfahren der Analyse (das OLS-Prognoseintervall) ergibt 407 bis 566 und 86 bis 328 Millionen Tonnen. Die Randwerte 598 und 16 stimmen mit den Grenzen der Kontrollrechnung mit ARIMA überein (Intervalle 182 bis 598 und 16 bis 532). Die Bereiche im Artikel mischen also je eine Grenze aus beiden Verfahren.
 
 **Was stimmt.** Die Projektionen selbst (486 und 207 Millionen Tonnen) und die Aussagen sind unberührt. Beim Langfrist-Trend liegt das Ziel von 150 außerhalb aller Intervalle, beim 10-Jahres-Trend innerhalb aller.
 
 **Ursache.** Das haben wir noch nicht aufgearbeitet. [Ursache vor Satz klären, nicht vermuten.]
 
-**Gekennzeichnet:** Kapitel 6 nennt die Intervalle aus der Rechnung. Am Artikel auf Substack ist bisher nichts geändert. [Entscheidung offen.]
+**Gekennzeichnet:** Kapitel 7 nennt die Intervalle aus der Rechnung. Am Artikel auf Substack ist bisher nichts geändert. [Entscheidung offen.]
 
 **Lehre.** [Erst nach Klärung der Ursache formulieren.] Vorläufig: Zahlen im Text gleichen wir vor der Veröffentlichung noch einmal mit der Ergebnistabelle des Rechenlaufs ab.
 
@@ -87,7 +87,7 @@ Die Liste hat den Stand vom Redaktionsschluss dieses Buchs [Anzahl der Artikel z
 
 **Ursache.** [Noch nicht aufgearbeitet, nicht vermuten.]
 
-**Gekennzeichnet:** Kapitel 6 beschreibt die Analyse als explorativ und nennt die Einschränkungen zum Intervall. Am Artikel auf Substack ist bisher nichts geändert. [Entscheidung offen.]
+**Gekennzeichnet:** Kapitel 7 beschreibt die Analyse als explorativ und nennt die Einschränkungen zum Intervall. Am Artikel auf Substack ist bisher nichts geändert. [Entscheidung offen.]
 
 **Lehre.** [Erst nach Klärung der Ursache formulieren.] Vorläufig: Beschreiben wir unser Vorgehen im Artikel, gleichen wir es vorher mit dem Analyseplan und seinem Status ab.
 

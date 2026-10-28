@@ -1,6 +1,6 @@
 **KURZFASSUNG-ENTWURF v0.1 (28.10.2026), gekürzt aus Kapitel 3 der Langfassung; nicht geprüft, nicht freigegeben, erneute Freigabe durch Daniel Saure und Faktencheck nötig. Hinweis: Offen sind noch die Prüfung von IWH-Tabelle, KfW-Papier 2025 und Bundesrats-Beschluss 462/26 am Original, der Bundesrats-Stand zum Redaktionsschluss (15.11.) und die dateibasierte Nachprüfung des CO₂-Preis-Artikels; die Langfassung wurde nach der Freigabe noch geändert (Stand 26.10.2026). Faktencheck: pruefung/faktencheck_kurz_kap01.md (ok mit Auflagen, mittlere Auflagen eingearbeitet am 28.10.2026, Gegenprüfung der Einarbeitung steht aus). Vor Satz/Export entfernen.**
 
-# Kapitel 1 – Was kostet Klimapolitik, und wer zahlt?
+# Kapitel 2 – Was kostet Klimapolitik, und wer zahlt?
 
 **Kurz gesagt:** Der Tankrabatt vom Mai und Juni 2026 hat nach unserer Rechnung 91 bis 95 Prozent des CO₂-Preises auf Benzin wieder aufgehoben. Der CO₂-Preis soll 2027 im selben Rahmen bleiben wie 2026, zwischen 55 und 65 Euro pro Tonne. An der Zapfsäule sind das etwa 16 bis 19 Cent pro Liter Benzin (mit Mehrwertsteuer, gegenüber der Zeit vor dem CO₂-Preis). Die „6 Billionen Euro“ für die Klimaneutralität sind Bruttoinvestitionen. Zusätzlich nötig sind laut KfW rund 65 Milliarden Euro pro Jahr, etwa 1,5 Prozent des Bruttoinlandsprodukts 2024.
 
@@ -15,11 +15,11 @@ Wer tankt oder mit Öl heizt, rechnet in Cent pro Liter. Das Leibniz-Institut f�
 | Heizöl | 17,5 bis 20,6 Cent pro Liter |
 | Erdgas | 1,3 bis 1,6 Cent pro Kilowattstunde |
 
-Die Förderbank KfW nennt für 55 Euro pro Tonne Nettowerte: rund 13 Cent pro Liter Benzin und 15 Cent pro Liter Diesel oder Heizöl [4]. Brutto und netto lassen sich nicht direkt vergleichen (mehr dazu in Kapitel 8). Unsere eigene Rechnung im Tankrabatt-Stück kommt für Benzin bei 65 Euro auf 17,6 bis 18,3 Cent. Das ist ein anderer Rechenweg (Emissionsfaktor mal Preis mal Mehrwertsteuer). Die Werte weichen leicht von der IWH-Tabelle ab [1].
+Die Förderbank KfW nennt für 55 Euro pro Tonne Nettowerte: rund 13 Cent pro Liter Benzin und 15 Cent pro Liter Diesel oder Heizöl [4]. Brutto und netto lassen sich nicht direkt vergleichen (mehr dazu in Kapitel 1). Unsere eigene Rechnung im Tankrabatt-Stück kommt für Benzin bei 65 Euro auf 17,6 bis 18,3 Cent. Das ist ein anderer Rechenweg (Emissionsfaktor mal Preis mal Mehrwertsteuer). Die Werte weichen leicht von der IWH-Tabelle ab [1].
 
 ## Der Tankrabatt: ein Rechenkommentar
 
-Das Stück „65 Euro rein, 59 Euro raus“ vom 18. September ist **kein Evidenzcheck**. Es ist ein Rechenkommentar ohne vorab festgelegten Analyseplan, mit Umrechnungen und einer Modellrechnung zum Mehrverbrauch auf Basis einer Elastizität aus der Literatur. Es wurde am 17. Oktober korrigiert (siehe unten und Kapitel 7) [1].
+Das Stück „65 Euro rein, 59 Euro raus“ vom 18. September ist **kein Evidenzcheck**. Es ist ein Rechenkommentar ohne vorab festgelegten Analyseplan, mit Umrechnungen und einer Modellrechnung zum Mehrverbrauch auf Basis einer Elastizität aus der Literatur. Es wurde am 17. Oktober korrigiert (siehe unten und Kapitel 10) [1].
 
 Seit 2026 wird der nationale CO₂-Preis versteigert, in einem Korridor von 55 bis 65 Euro pro Tonne. Bei der ersten Auktion am 1. Juli sprang der Preis sofort an die Obergrenze. Der Preis für 2026 steht damit bei 65 Euro je Tonne. Ein Liter Benzin setzt bei der Verbrennung zwischen 2,28 und 2,37 Kilogramm CO₂ frei. Die Spanne gibt es, weil der Emissionshandel nur den fossilen Anteil bepreist und nicht die Biokraftstoff-Beimischung. Bei 65 Euro pro Tonne sind das 17,6 bis 18,3 Cent je Liter Benzin (mit Mehrwertsteuer), bei Diesel rund 20 Cent [1].
 
@@ -65,7 +65,7 @@ Die 6 Billionen sind Investitionen, keine verlorenen Kosten. Ein großer Teil er
 
 ## Lagen wir richtig?
 
-- **„65 Euro rein, 59 Euro raus“:** Die Kernaussage hat gehalten: Der Tankrabatt hat 91 bis 95 Prozent des CO₂-Preises auf Benzin aufgehoben. Falsch war die Absatzbasis (42 statt rund 62 Milliarden Liter). Daraus wurden Mehrverbrauch und Kosten je Tonne falsch angegeben. Außerdem lag die Untergrenze für die damals diskutierte Senkung der Mehrwertsteuer auf Sprit bei 21 statt 23 Cent. Wir haben das am 17. Oktober korrigiert, mit Hinweis im Artikel. Die Grafiken zeigen dort noch den alten Stand. Das angekündigte Skript haben wir nicht veröffentlicht. Ausführlich in Kapitel 7.
+- **„65 Euro rein, 59 Euro raus“:** Die Kernaussage hat gehalten: Der Tankrabatt hat 91 bis 95 Prozent des CO₂-Preises auf Benzin aufgehoben. Falsch war die Absatzbasis (42 statt rund 62 Milliarden Liter). Daraus wurden Mehrverbrauch und Kosten je Tonne falsch angegeben. Außerdem lag die Untergrenze für die damals diskutierte Senkung der Mehrwertsteuer auf Sprit bei 21 statt 23 Cent. Wir haben das am 17. Oktober korrigiert, mit Hinweis im Artikel. Die Grafiken zeigen dort noch den alten Stand. Das angekündigte Skript haben wir nicht veröffentlicht. Ausführlich in Kapitel 10.
 - **Nachtrag im Artikel:** Nach Erscheinen wurde am 25. September 2026 eine erneute Senkung der Energiesteuer für Oktober bis Dezember beschlossen, veranschlagt mit rund 2,5 Milliarden Euro. Unsere Vermutung im Artikel, eine befristete Entlastung könne weitere Entlastungen begünstigen, ist nicht belegt. Tatsache ist: Nach der ersten Entlastung kam eine zweite.
 - **CO₂-Preis 2027:** Unsere erste Fassung vom 17. Oktober klang, als sei die Änderung schon in Kraft. Das war sie nicht. Wir haben den Artikel am 22. Oktober korrigiert. Abschließend muss sich noch der Bundesrat damit befassen (Stand 22. Oktober 2026) [Stand zum Redaktionsschluss aktualisieren].
 - **KfW-Studie:** Hier haben wir keine eigene Analyse gemacht, sondern die Zahlen der Studie wiedergegeben. Ob die Modellrechnung die Zukunft trifft, können wir nicht beurteilen. Wir haben die Wiedergabe gegen die Studie geprüft.

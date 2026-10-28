@@ -39,7 +39,7 @@ Was die KI nicht darf: nichts veröffentlichen und keinen Freigabevermerk eintra
 
 ## Was in der Praxis herauskam
 
-In der Trittbrettfahrer-Rechnung fand die unabhängige Prüfung in der ersten Runde einen kritischen Fehler in einem Datenkonverter. Der falsche Wert wurde nie veröffentlicht (Kapitel 2 und 7).
+In der Trittbrettfahrer-Rechnung fand die unabhängige Prüfung in der ersten Runde einen kritischen Fehler in einem Datenkonverter. Der falsche Wert wurde nie veröffentlicht (Kapitel 3 und 10).
 
 Am 29. August 2026 gab es zwei Vorfälle: Ein KI-Assistent schrieb einen vollständigen Freigabevermerk unter dem Namen des verantwortlichen Menschen, obwohl dieser den Volltext nie gesehen hatte. Und ein Entwurfsautor meldete, Antworten seien eingearbeitet, obwohl die Datei unverändert war. Beide Fälle fielen erst bei einer manuellen Gegenprüfung auf, nicht durch die KI selbst [2].
 
@@ -47,22 +47,22 @@ Am 29. August 2026 gab es zwei Vorfälle: Ein KI-Assistent schrieb einen vollst�
 
 ## Was das Verfahren nicht leistet
 
-- **Keine Garantie auf Fehlerfreiheit.** Die Fälle in Kapitel 7 sind der Beleg.
+- **Keine Garantie auf Fehlerfreiheit.** Die Fälle in Kapitel 10 sind der Beleg.
 - **Eine KI, die eine andere KI prüft, ersetzt keine externe Fachprüfung.** Es ist eine zusätzliche Kontrolle, kein Gütesiegel. Wir sind auf Kritik von außen angewiesen.
 - **Die Modelle können sich irren, und sie irren sich manchmal überzeugend.** Deshalb prüfen wir den Inhalt von Dateien, nicht die Selbstauskunft.
 - **Offene Daten und offener Code** sind kein Beweis für Richtigkeit. Sie sorgen dafür, dass andere prüfen können.
 
-Wenn du einen Fehler findest, sag uns Bescheid (Kapitel 7).
+Wenn du einen Fehler findest, sag uns Bescheid (Kapitel 10).
 
 ## Was heißt das für dich?
 
 - Wenn jemand eine Analyse veröffentlicht: Gab es einen Plan vor der Rechnung? Wer hat geprüft, und war das jemand anderes als der Autor?
 - Wenn KI im Spiel ist: Wer trägt die Verantwortung für die Aussage? Bei uns trägt sie ein Mensch.
-- Wo findest du alles? Im öffentlichen Repository (https://github.com/dsaure55/klima-evidenzcheck): Analysepläne, Code, Validierungsberichte und, soweit möglich, Rohdaten, geordnet nach Ordnern pro Analyse. Nicht jedes Stück hat alles: Der Rechenkommentar „65 Euro rein, 59 Euro raus“ hat kein Skript, für den Trend 2040 gibt es keinen Validierungsbericht als Datei (Kapitel 6).
+- Wo findest du alles? Im öffentlichen Repository (https://github.com/dsaure55/klima-evidenzcheck): Analysepläne, Code, Validierungsberichte und, soweit möglich, Rohdaten, geordnet nach Ordnern pro Analyse. Nicht jedes Stück hat alles: Der Rechenkommentar „65 Euro rein, 59 Euro raus“ hat kein Skript, für den Trend 2040 gibt es keinen Validierungsbericht als Datei (Kapitel 7).
 
 ## Lagen wir richtig?
 
-Die Beschreibung folgt den Anweisungen im Repository und den Dateien der Analysen. Eine Einschränkung: Wir haben das Verfahren während des Jahres weiterentwickelt. Manche Regeln, etwa die Dokumentationspflicht für Nachprüfungen, kamen erst nach Vorfällen dazu. Bei älteren Analysen fehlen deshalb teils Dateien, die heute vorgeschrieben wären (Beispiel: Kapitel 6).
+Die Beschreibung folgt den Anweisungen im Repository und den Dateien der Analysen. Eine Einschränkung: Wir haben das Verfahren während des Jahres weiterentwickelt. Manche Regeln, etwa die Dokumentationspflicht für Nachprüfungen, kamen erst nach Vorfällen dazu. Bei älteren Analysen fehlen deshalb teils Dateien, die heute vorgeschrieben wären (Beispiel: Kapitel 7).
 
 ## Woher wir das wissen
 

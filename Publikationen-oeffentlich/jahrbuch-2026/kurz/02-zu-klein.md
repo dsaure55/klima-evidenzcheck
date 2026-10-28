@@ -1,6 +1,6 @@
-**KURZFASSUNG-ENTWURF v0.1 (28.10.2026), gekürzt aus Kapitel 5 der Langfassung; nicht geprüft, nicht freigegeben, erneute Freigabe durch Daniel Saure und Faktencheck nötig. Hinweis: Offen sind die direkte Prüfung der Primärdaten (EDGAR, Global Carbon Project, Weltbank, OWID) und neuerer Ausgaben sowie der Abgleich des Verweises auf das Kapitel zu den Fehlern (jetzt Kapitel 7) mit dem fertigen Kapitel. Faktencheck: pruefung/faktencheck_kurz_kap02.md (ok mit Auflagen, mittlere Auflagen eingearbeitet am 28.10.2026, Gegenprüfung der Einarbeitung steht aus). Vor Satz/Export entfernen.**
+**KURZFASSUNG-ENTWURF v0.1 (28.10.2026), gekürzt aus Kapitel 5 der Langfassung; nicht geprüft, nicht freigegeben, erneute Freigabe durch Daniel Saure und Faktencheck nötig. Hinweis: Offen sind die direkte Prüfung der Primärdaten (EDGAR, Global Carbon Project, Weltbank, OWID) und neuerer Ausgaben sowie der Abgleich des Verweises auf das Kapitel zu den Fehlern (jetzt Kapitel 10) mit dem fertigen Kapitel. Faktencheck: pruefung/faktencheck_kurz_kap02.md (ok mit Auflagen, mittlere Auflagen eingearbeitet am 28.10.2026, Gegenprüfung der Einarbeitung steht aus). Vor Satz/Export entfernen.**
 
-# Kapitel 2 – Ist Deutschland „zu klein, um zu zählen“?
+# Kapitel 3 – Ist Deutschland „zu klein, um zu zählen“?
 
 **Kurz gesagt:** Deutschland verursachte 2024 rund 1,3 Prozent der weltweiten Treibhausgasemissionen (Rang 12 von 208). Das klingt wenig. Aber alle Länder, deren Anteil so klein oder kleiner ist, kommen zusammen auf fast ein Drittel der weltweiten Emissionen (31,7 Prozent). Würden sie alle sagen „wir sind zu klein, um zu zählen“, fiele dieses Drittel gemeinsam darunter. Das ist ein Gedankenexperiment und keine Schuldfrage.
 
@@ -55,7 +55,7 @@ Die Helmholtz-Klima-Initiative nennt „rund zwei Prozent“. Ihre CO₂-Angaben
 ## Lagen wir richtig?
 
 - **Zahlen:** Seit der Veröffentlichung am 31. August haben wir keine Änderungen an den Kernzahlen vorgenommen. Neuere EDGAR- oder GCP-Daten nennen wir nur mit Quelle und Datum und rechnen sie nicht neu.
-- **Vor der Veröffentlichung gefunden:** Die unabhängige Validierung fand in der ersten Prüfrunde einen kritischen Fehler in einem Datenkonverter. Er verfälschte die historische Kernzahl sowie die konsumbasierte und die Landnutzungsvariante. Der falsche Wert wurde nie veröffentlicht. Nach der Korrektur wurden die betroffenen Werte unabhängig nachgerechnet und bestätigt, die übrigen waren bereits geprüft. Das ist keine nachträgliche Korrektur (mehr dazu in Kapitel 7) [1].
+- **Vor der Veröffentlichung gefunden:** Die unabhängige Validierung fand in der ersten Prüfrunde einen kritischen Fehler in einem Datenkonverter. Er verfälschte die historische Kernzahl sowie die konsumbasierte und die Landnutzungsvariante. Der falsche Wert wurde nie veröffentlicht. Nach der Korrektur wurden die betroffenen Werte unabhängig nachgerechnet und bestätigt, die übrigen waren bereits geprüft. Das ist keine nachträgliche Korrektur (mehr dazu in Kapitel 10) [1].
 - **COP31:** Unsere Stücke machen keine Vorhersage zur Konferenz.
 
 ## Woher wir das wissen

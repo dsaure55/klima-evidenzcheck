@@ -1,4 +1,4 @@
-# Kapitel 5 – Wo steht die Welt beim 1,5-Grad-Ziel, und kann man CO₂ einfach wieder aus der Luft holen?
+# Kapitel 6 – Wo steht die Welt beim 1,5-Grad-Ziel, und kann man CO₂ einfach wieder aus der Luft holen?
 **KURZFASSUNG-ENTWURF v0.1 (28.10.2026), gekürzt aus Kapitel 6 der Langfassung; nicht geprüft, nicht freigegeben, erneute Freigabe durch Daniel Saure und Faktencheck nötig. Hinweis: Die Änderung „neue Klimazusagen“ vom 26.10.2026 wurde nicht erneut gelesen, der UNEP-Bericht wurde nur über Executive Summary und Pressemitteilung geprüft, und die Korrektur des Stücks „Zurück auf 1,5 Grad“ auf Substack (Kapitel 7, Fall 5) steht noch aus. Faktencheck: pruefung/faktencheck_kurz_kap05.md (ok mit Auflagen, mittlere Auflagen eingearbeitet am 28.10.2026, Gegenprüfung der Einarbeitung steht aus). Vor Satz/Export entfernen.**
 
 

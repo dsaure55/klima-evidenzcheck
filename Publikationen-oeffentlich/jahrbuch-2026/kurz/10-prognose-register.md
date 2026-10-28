@@ -1,4 +1,4 @@
-# Kapitel 10 – Das Prognose-Register: Wir legen uns fest, bevor wir es wissen
+# Kapitel 8 – Das Prognose-Register: Wir legen uns fest, bevor wir es wissen
 **KURZFASSUNG-ENTWURF v0.1 (28.10.2026), gekürzt aus Kapitel 10 der Langfassung; nicht geprüft, nicht freigegeben, erneute Freigabe durch Daniel Saure und Faktencheck nötig. Hinweis: Alle Angaben zu 2027 sind „geplant“ (SAP „Prognose-Register 2027“ Stand 23.10.2026 nur teilweise eingefroren) und vor Satz gegen den dann gültigen SAP-Stand und die Termine abzugleichen, ebenso der Stand des Prognose-Checks (am 15.11.2026 neu prüfen); Fristen nicht verschärfen, keine Vorhersagewerte für 2027 im Buch. Vor Satz/Export entfernen.**
 
 **Kurz gesagt:** Vorhersagen lassen sich hinterher zurechtbiegen. Deshalb legen wir uns vorher fest: mit Zahl, Spanne, Bewertungsregel und Zeitpunkt der Auswertung, versehen mit einem Zeitstempel im öffentlichen Repository. Später sagen wir offen, ob wir getroffen haben oder nicht, egal wie es ausgeht. Eine Vorhersage ist registriert: wie viel Gas im Winter 2026/27 aus den deutschen Speichern entnommen wird. Für 2027 planen wir vier weitere. Zahlen dazu nennen wir hier nicht, weil wir sie erst nach dem Jahreswechsel berechnen dürfen.
@@ -59,7 +59,7 @@ Ein verwandter Evidenzcheck schaut zurück: Wie treffsicher waren die Projektion
 
 ## Wie du mitprüfen kannst
 
-Die Registereinträge liegen im öffentlichen Repository im Ordner `Prognose-Register/`, jeder als eigene Datei. Der Zeitstempel ist der Git-Commit; die Versionsgeschichte kann jeder einsehen. Analysepläne, Programme und Ergebnisse liegen unter `Analysen/`. Die Rohdaten für das Register 2027 kommen mit dem Registrierungs-Commit dazu. Findest du einen Fehler oder eine Lücke, sag uns Bescheid (Kapitel 7).
+Die Registereinträge liegen im öffentlichen Repository im Ordner `Prognose-Register/`, jeder als eigene Datei. Der Zeitstempel ist der Git-Commit; die Versionsgeschichte kann jeder einsehen. Analysepläne, Programme und Ergebnisse liegen unter `Analysen/`. Die Rohdaten für das Register 2027 kommen mit dem Registrierungs-Commit dazu. Findest du einen Fehler oder eine Lücke, sag uns Bescheid (Kapitel 10).
 
 ## Was heißt das für dich?
 
