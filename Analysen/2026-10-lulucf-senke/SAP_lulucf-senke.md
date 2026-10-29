@@ -7,7 +7,7 @@ Vergangenheit unverändert fortgeschrieben würde?
 
 **Format:** Klima Kompass · Evidenzcheck (neue SAP-Analyse; Gate: Validierungsbericht
 ohne „kritisch").
-**Version:** 0.2
+**Version:** 0.3
 **Datum:** 29.10.2026
 **Autor:in:** Claude (sap-autor-Subagent). Entwurf, noch nicht von einem Menschen als Volltext geprüft.
 **Status: draft.** Nicht eingefroren. Der Analyst-Subagent darf erst nach Einfrieren
@@ -20,88 +20,104 @@ ohne „kritisch").
 - **v0.1 draft (29.10.2026):** Erstentwurf, verfasst vor Datenzugriff und vor Code.
   Zu diesem Zeitpunkt war nur der Einzelwert 26,9 Mt (2025) aus einer
   Pressemitteilung als Vorwissen bekannt.
-- **v0.2 draft (29.10.2026):** Einarbeitung des Klärungsstands vom 29.10.2026 (Antworten
-  von Daniel Saure zu K1 und K5; Belege aus der Quellenrecherche zu K2–K4, K6–K8, K12;
-  siehe Abschnitt 12) und des **erweiterten, offengelegten Vorwissens** (Abschnitt 0).
-  Änderungen im Text: (a) Abschnitt 0 neu gefasst (erweiterte Offenlegung); (b) Y = 2024
-  festgelegt, Primärreihe **mit Holzprodukten (HWP)**, Datenquellen UBA-Tabelle (PDF)
-  und UBA Data Cube (Abschnitt 3); (c) Fenster D (ab 2022) als rein deskriptiv
-  definiert, Bruchjahr-Kandidat B\* ∈ {2017, 2018} eingeführt, Sensitivität S6
-  entsprechend umgebaut (Abschnitt 4.2, 6); (d) S4 und S5 als bedingt
-  durchführbar formuliert; (e) neuer Abschnitt 5.7 mit Methodenparametern als
-  **Vorschlag, von Daniel zu bestätigen**; (f) Abschnitt 12 aktualisiert
-  (beantwortet/belegt vs. offen); die Anhänge „Klärungsstand" und „Ergänzung
-  29.10.2026" der Datei v0.1 sind in die Abschnitte 0 und 12 integriert.
-  **Unverändert gegenüber v0.1 sind:** die drei Kernfenster A, B, C, das
-  Primärfenster B, das Modell (OLS auf Jahreswerten), die Intervallformel, die
-  Entscheidungsregeln 5.6 und die Kernzahlen (Abschnitt 7). Die unter (c)–(e)
-  genannten Änderungen wurden **nach** Kenntnis des erweiterten Vorwissens
-  vorgenommen (siehe Abschnitt 0, Punkt „Wirkung auf den SAP").
+- **v0.2 draft (29.10.2026):** Einarbeitung des Klärungsstands (Antworten von Daniel Saure
+  zu K1 und K5; Belege zu K2–K4, K6–K8, K12) und des erweiterten, offengelegten Vorwissens
+  (Aggregatwerte der UBA-Seite, Sekundärquellen zum Bruchjahr). Y = 2024 festgelegt,
+  Primärreihe mit HWP, Datenquellen UBA-Tabelle und Data Cube, Fenster D deskriptiv, S6 auf
+  einen Bruchjahr-Kandidaten B\* umgebaut, Abschnitt 5.7 (Methodenparameter) und 8.5.
+- **v0.3 draft (29.10.2026):** Konsolidierung nach den drei Nachträgen vom 29.10.2026
+  (Download der UBA-Tabelle, Lektüre ausgewählter Stellen des Inventarberichts 2026,
+  Gesetzesstellen und Lizenzen). Die Nachträge sind in den Haupttext eingearbeitet und
+  gelöscht; den Stand führen nur noch diese Versionshistorie und Abschnitt 12.
+  Änderungen: (a) **K10 geklärt:** GWP-Basis IPCC AR5 (Abschnitt 3.5); (b) **K6:**
+  Inventar wird laut Bericht jährlich vollständig neu berechnet, mit der Submission 2026
+  grundlegende Methodenänderungen für den gesamten Zeitraum, die Jahre 2023 und 2024 sind
+  Modellfortschreibungen (Abschnitte 3.2, 4.3, 9); ein belegtes Bruchjahr gibt es nicht;
+  **Vorschlag:** S6 rechnet vorab beide Kandidaten B\* = 2017 und B\* = 2018, ohne
+  Beleg-Voraussetzung (Abschnitte 4.2, 6); (c) **K4:** Anlage 1 Nr. 7 KSG nennt
+  Holzprodukte ausdrücklich, Primärreihe mit HWP (Abschnitt 3.1); (d) **K13:** Lizenzhinweise
+  (Abschnitt 3); (e) **K7:** UBA-Tabelle (PDF) heruntergeladen, nicht geöffnet; Inventarbericht
+  2026 heruntergeladen und nur per Stichwortsuche gelesen (Abschnitte 0, 3.4, 8.5, 13);
+  (f) **K9:** S4 bedingt; **Vorschlag**, dass dies als Einfrier-Voraussetzung genügt;
+  (g) Abschnitt 12 neu gegliedert. **Unverändert gegenüber v0.2 sind:** Messwert M(T) als
+  4-Jahres-Mittel, Primärfenster B (2010–2024), Fenster A und C als gleichrangige
+  Sensitivität, Y = 2024, Primärreihe mit HWP, Modell, Intervallformel, Entscheidungsregeln
+  5.6, Kernzahlen, keine Extrapolation auf 2040/2045. Die Änderungen (b) und (f) wurden nach
+  Kenntnis der unter Abschnitt 0 offengelegten Informationen vorgenommen.
 
 **Hinweis zur Vorlage:** Gerüst ist `SAP-Vorlage/SAP-Template.md`. Alle Abschnitte 0–11
-der Vorlage sind vorhanden und in derselben Nummerierung belegt (zusätzlich 5.6
-„Entscheidungsregeln" und 5.7 „Methodenparameter"). Die Abschnitte 12–17 sind
-projektspezifische Ergänzungen (Klärung vor Einfrieren, Rohdateien, Validierungsbogen,
-Zeitplan, Abweichungsprotokoll, Amendments). Formatvorbilder: SAP Prognose-Check
-Projektionsberichte (Struktur, Sensitivitäten, Multiplizität) und SAP
-DE-Emissionen-Trendprojektion-2040 (OLS-Trend, 95-%-Prognoseintervall, drei Fenster,
-ARIMA-Kontrolle, Durbin-Watson).
+der Vorlage sind vorhanden und in derselben Nummerierung belegt (zusätzlich 4.3
+„Aussagegrenzen der Datenbasis", 5.6 „Entscheidungsregeln" und 5.7 „Methodenparameter").
+Die Abschnitte 12–17 sind projektspezifische Ergänzungen (Klärung vor Einfrieren,
+Rohdateien, Validierungsbogen, Zeitplan, Abweichungsprotokoll, Amendments).
+Formatvorbilder: SAP Prognose-Check Projektionsberichte (Struktur, Sensitivitäten,
+Multiplizität) und SAP DE-Emissionen-Trendprojektion-2040 (OLS-Trend,
+95-%-Prognoseintervall, drei Fenster, ARIMA-Kontrolle, Durbin-Watson).
 
 ---
 
 ## 0. Status dieser Analyse
 
-[x] Präregistriert, **prospektiv mit offengelegtem Vorwissen** (SAP vor Datenzugriff auf die Zeitreihe und vor Code verfasst; Einfrieren steht noch aus)
+[x] Präregistriert, **prospektiv mit offengelegtem Vorwissen** (SAP vor Auswertung der Zeitreihe und vor Code verfasst; Einfrieren steht noch aus)
 [ ] Exploratorisch
 
 **Entscheidung zum Status:** Daniel Saure hat am 29.10.2026 (Chat, „Ja, prospektiv", und
-erneut nach Offenlegung des erweiterten Vorwissens unten) entschieden, die Analyse als
+erneut nach Offenlegung des erweiterten Vorwissens) entschieden, die Analyse als
 „prospektiv mit offengelegtem Vorwissen" zu führen (Klärung K1, beantwortet). Nach der
 strengen Regel des SAP-Autors („mitgelieferte Zahlen zu Ergebnissen machen die
 Präregistrierung ungültig") wäre „exploratory (retrospektiv)" die Alternative gewesen; sie
 wurde ausdrücklich nicht gewählt. Diese Spannung bleibt im Dokument sichtbar.
 
-- **Kein Datenzugriff auf die Zeitreihe.** Für diesen SAP wurde die Zeitreihe E(y)
-  (Jahreswerte 1990 bis 2024) nicht eingesehen, es wurde nichts heruntergeladen, kein
-  Code geschrieben oder ausgeführt. Es wurden keine Analyseergebnisse und keine Grafiken
-  mitgeliefert.
-- **Offengelegtes Vorwissen (vollständig):**
+- **Zeitreihe nicht eingesehen.** Die UBA-Tabelle (PDF) mit der Zeitreihe wurde am 29.10.2026
+  mit Zustimmung von Daniel Saure heruntergeladen, aber **nicht geöffnet und nicht
+  gelesen** (geprüft wurde nur, dass die Datei mit `%PDF` beginnt). Die Jahreswerte
+  1990 bis 2024 wurden nicht eingesehen. Es wurde kein Code geschrieben oder ausgeführt. Es
+  wurden keine Analyseergebnisse und keine Grafiken mitgeliefert. Der Data Cube ist nicht
+  abgerufen.
+- **Offengelegtes Vorwissen (vollständig; Angaben aus den Nachträgen der Top-Level-Session,
+  vom sap-autor nicht selbst geprüft):**
   1. *Pressemitteilung Thünen/UBA vom 14.03.2026* (Suchergebnis, nicht geprüft; die
-     Pressemitteilung selbst ließ sich bei der Recherche nicht abrufen, zu viele
-     Weiterleitungen): Der Sektor Landnutzung war **2025 mit rund 26,9 Mt CO2-Äq. eine
-     Quelle**. Laut UBA-Seite ist das eine als „unsicher" eingestufte Schätzung, kein
-     Inventarwert (Klärung K3).
+     Pressemitteilung selbst ließ sich bei der Recherche nicht abrufen): Der Sektor
+     Landnutzung war **2025 mit rund 26,9 Mt CO2-Äq. eine Quelle**. Laut UBA-Seite ist das
+     eine als „unsicher" eingestufte Schätzung, kein Inventarwert (K3).
   2. *Aggregatwerte der UBA-Seite „Emissionen der Landnutzung, -änderung und
      Forstwirtschaft"* (Stand „zuletzt aktualisiert am 02.07.2026"). Diese Seite hat nicht
-     der sap-autor, sondern der **Orchestrator (Claude, Top-Level-Session)** bei der
-     Quellenrecherche am 29.10.2026 mit einem Zusammenfassungswerkzeug abgerufen
-     (nicht wörtlich geprüft) und dabei folgende Werte gesehen: Gesamtsektor rund
-     **+36 Mt (1990)** und rund **+58 Mt (2024)** (laut Seite 59 Prozent über 1990);
-     Kategorienwerte 2024: **Wald 2,1 Mt** (Quelle), **Ackerland 17,5**,
+     der sap-autor, sondern der **Orchestrator (Claude, Top-Level-Session)** am 29.10.2026
+     mit einem Zusammenfassungswerkzeug abgerufen (nicht wörtlich geprüft) und dabei
+     gesehen: Gesamtsektor rund **+36 Mt (1990)** und rund **+58 Mt (2024)** (laut Seite 59
+     Prozent über 1990); Kategorienwerte 2024: **Wald 2,1 Mt** (Quelle), **Ackerland 17,5**,
      **Grünland 24,2**, **Moore 52,2**, **Feuchtgebiete 9,0** (Mt; Abgrenzung der
-     Kategorien, insbesondere Moore gegenüber Feuchtgebieten, ungeprüft).
-     **Die Jahreswerte 1991 bis 2023 wurden nicht gesehen.**
-  3. *Sekundärquellen zum Zeitpunkt des Übergangs* (Öko-Institut, Spektrum, DUH,
-     WKO; Suchergebnisse vom 29.10.2026, nicht geprüft): Sie nennen 2017/2018 als Jahr, ab
-     dem die lebende Waldbiomasse zur Quelle wurde (Bundeswaldinventur 2022 deckt 2012
-     bis 2022). Das ist Vorwissen über die Form der Reihe (siehe 4.2, Bruchjahr-Kandidat).
+     Kategorien ungeprüft). **Die Jahreswerte 1991 bis 2023 wurden nicht gesehen.**
+  3. *Sekundärquellen zum Bruchjahr* (Öko-Institut, Spektrum, DUH, WKO; Suchergebnisse vom
+     29.10.2026, nicht geprüft): Sie nennen 2017/2018 als Jahr, ab dem die lebende
+     Waldbiomasse zur Quelle wurde (Bundeswaldinventur 2022 deckt 2012 bis 2022).
+  4. *Inventarbericht 2026* (UBA Climate Change 30/2026): Die Datei wurde mit Zustimmung von
+     Daniel Saure (Chat, 29.10.2026, „Ja, Bericht laden", mit der Auflage, nur Stellen zur
+     GWP-Basis und zur Revision der Waldreihe zu lesen) heruntergeladen
+     (`rohdaten/30_2026_CC_Inventarbericht-2026.pdf`, 50.870.104 Bytes, nicht in Git) und
+     **nur per Textsuche nach Stichwörtern** (GWP, Neuberechnung, Bundeswaldinventur)
+     gelesen. **Es wurden keine Zeitreihenwerte gelesen.** Kenntnis daraus: Methodik
+     (GWP-Basis AR5; jährliche vollständige Neuberechnung; Modellfortschreibung nach der
+     letzten Bundeswaldinventur, Details in 3.2, 3.5, 4.3). Dieses Wissen betrifft die Form
+     der Datenbasis, nicht deren Werte. Seitenangaben sind PDF-Seitenindex, nicht gedruckte
+     Seitenzahlen.
 - **Wirkung auf den SAP (ehrlich):** Das Vorwissen unter Punkt 2 erlaubt dem Auftraggeber
   eine Erwartung über den Ausgang von E1 und E2. Dieser SAP trifft selbst keine Aussage über
   erwartete Ergebnisse. Die Kernfestlegungen (Fenster A, B, C und Primärfenster B, Modell,
   Intervallformel, Entscheidungsregeln 5.6, Kernzahlen) wurden in v0.1 **vor** Kenntnis
-  der Punkte 2 und 3 getroffen und in v0.2 nicht verändert. Die Entscheidungsregeln sind
+  der Punkte 2 bis 4 getroffen und seither nicht verändert. Die Entscheidungsregeln sind
   symmetrisch (Erreichen, Verfehlen, unentschieden) und nicht auf eine Richtung
-  zugeschnitten. **Nach** Kenntnis wurden in v0.2 festgelegt: Y = 2024, Primärreihe mit HWP,
-  Bruchjahr-Kandidat B\* und die Struktur von S6, die Fensterdefinition D sowie die
-  Vorschläge in 5.7. Der Validator prüft das (Validierungsbogen V1, V6).
-  Bestätigung des Primärfensters B (K5) durch Daniel am 29.10.2026; die Wahl
-  stammt aus v0.1. Der Zeitpunkt dieser Bestätigung relativ zur erweiterten Offenlegung
-  ist nicht dokumentiert.
+  zugeschnitten. **Nach** Kenntnis wurden festgelegt: Y = 2024, Primärreihe mit HWP, die
+  Struktur von S6 (beide Kandidaten 2017 und 2018), die Fensterdefinition D, die
+  Formulierung von S4 und die Vorschläge in 5.7. Der Validator prüft das (V1, V6).
+  Die Bestätigung des Primärfensters B (K5) durch Daniel am 29.10.2026 betrifft eine Wahl aus
+  v0.1; der Zeitpunkt der Bestätigung relativ zur erweiterten Offenlegung ist nicht
+  dokumentiert.
 - **Ergebnisoffenheit:** Die Analyse kann ein Verfehlen, ein Erreichen oder keine
   eindeutige Aussage zeigen. Jeder Ausgang wird veröffentlicht, unabhängig vom Vorwissen.
 - **Inhaltsstufe:** Evidenzcheck (neue Analyse). Parallele Evidenzchecks sind seit
   23.10.2026 zulässig. Sperren aus dem SAP Prognose-Register 2027 (Sperren 1 bis 3)
-  berühren diese Analyse laut Prüfung vom 29.10.2026 nicht (Klärung K12, beantwortet).
+  berühren diese Analyse laut Prüfung vom 29.10.2026 nicht (K12, beantwortet).
 
 ## 1. Hintergrund / Rationale
 
@@ -110,7 +126,7 @@ ist der einzige Sektor, der nach dem Klimaschutzgesetz (KSG) von einer Quelle zu
 **Netto-Senke** werden soll. § 3a KSG legt dafür Zielwerte fest. Laut Abruf von
 gesetze-im-internet.de am 29.10.2026 (Zusammenfassungswerkzeug, nicht wörtlich geprüft;
 Fassung: Ausfertigung 12.12.2019, zuletzt geändert durch Art. 1 G v. 15.7.2024, BGBl. 2024 I
-Nr. 235; **Volltext vor Einfrieren zu lesen, Klärung K2**) gilt nach § 3a Abs. 1:
+Nr. 235; **Volltext vor Einfrieren von Daniel zu lesen, K2**) gilt nach § 3a Abs. 1:
 
 > Der **Mittelwert der jährlichen Emissionsbilanzen aus dem Zieljahr und den drei
 > vorhergehenden Kalenderjahren** soll **bis 2030 mindestens −25 Mt CO2-Äq.**, **bis
@@ -135,9 +151,10 @@ relevant:
 **keine Prognose**. Sie beantwortet nur: „Was käme heraus, wenn die lineare
 Entwicklung des Fensters unverändert weiterliefe?" Sie enthält keine Annahmen über
 Maßnahmen, Waldzustand, Holzernte, Witterung oder Störungen. Die Zeitreihe ist
-inventarbasiert und wird rückwirkend revidiert (u. a. durch neue Stichprobeninventuren
-wie die Bundeswaldinventur und Methodenwechsel im Inventar). Ein Teil des
-„Trends" kann deshalb Messmethodik statt Landnutzung abbilden (Abschnitt 6, 8, 9).
+inventarbasiert und wird laut Inventarbericht jedes Jahr vollständig neu berechnet
+(Abschnitt 3.2); die jüngsten Berichtsjahre sind Modellfortschreibungen (Abschnitt 4.3).
+Ein Teil des „Trends" kann deshalb Messmethodik und Modell statt Landnutzung abbilden
+(Abschnitte 6, 8, 9).
 
 **Vorzeichen- und Wortkonvention (verbindlich):** E(y) = jährliche Netto-Emissionsbilanz
 des Sektors in Mt CO2-Äq. **Positiv = Quelle, negativ = Senke.** „Verbesserung" bedeutet
@@ -153,14 +170,15 @@ Zielwert liegt.
   Meldung); Referenz-Submission s\* = Submission 2026 (Abschnitt 3.2).
 - E(y) = Netto-Emissionsbilanz des Sektors LULUCF im Jahr y in Mt CO2-Äq.,
   Reihe der **Primärgröße: Sektor LULUCF einschließlich Holzprodukten (HWP)**
-  (Abschnitt 3.1, Klärung K4).
+  (Abschnitt 3.1, K4).
 - **Y = 2024** = letztes Berichtsjahr mit Inventarwert in der Referenz-Submission 2026
-  (laut UBA-Seite, Stand 02.07.2026; Klärung K3). Weicht die Datei beim Zugriff davon ab:
+  (laut UBA-Seite, Stand 02.07.2026; K3). Weicht die Datei beim Zugriff davon ab:
   Stopp und Rückfrage.
 - **M(T) = [E(T) + E(T−1) + E(T−2) + E(T−3)] / 4** = gesetzlicher Messwert
   (4-Jahres-Mittel) für das Zieljahr T. M(T) ist nur definiert, wenn alle vier
   Jahreswerte vorliegen; die erste auswertbare Stelle ist M(1993). **Der jüngste
-  gesetzliche Messwert ist M(2024)** = Mittel der Jahre 2021 bis 2024 (Inventarwerte).
+  gesetzliche Messwert ist M(2024)** = Mittel der Jahre 2021 bis 2024 (Inventarwerte der
+  Submission 2026; 2023 und 2024 sind laut Inventarbericht Modellfortschreibungen, 4.3).
   Ein Messwert M(2025) (Jahre 2022 bis 2025) existiert nur mit dem Schätzwert für 2025
   und ist ausschließlich Sensitivität S7.
 - Z30 = −25, Z40 = −35, Z45 = −40 (Mt CO2-Äq.), vorbehaltlich Volltext-Prüfung (K2).
@@ -242,64 +260,89 @@ ungerundeten Werten).
 
 ## 3. Datenquelle
 
-**Template-Pflichtfelder (beim Datenzugriff ausgefüllt, im `run_log.txt` gespiegelt):**
+**Template-Pflichtfelder (im `run_log.txt` gespiegelt):**
 - Quelle(n): siehe 3.1–3.3
-- Zugriffsdatum: [TT.MM.JJJJ – beim Datenzugriff eintragen]
+- Zugriffsdatum: 29.10.2026 (Download UBA-Tabelle und Inventarbericht 2026; der Data Cube
+  ist nicht abgerufen). Das Zugriffsdatum auf die Zeitreihenwerte (Öffnen der Tabelle) wird
+  vom Analysten im Run-Log nachgetragen.
 - Datenstand laut Quelle: Submission 2026 (Inventarjahre 1990–2024), UBA-Seite und
-  UBA-Tabelle mit Stand 02.07.2026; Inventarbericht 2026 (UBA Climate Change 30/2026) –
-  Dateiname, Größe und Veröffentlichungsdatum beim Zugriff eintragen
-- Lizenz/Nutzungsbedingungen: [je Quelle beim Datenzugriff eintragen; Lizenz der UBA-Daten
-  und des Data Cube ist nicht geprüft (K13); klimadashboard.de laut Auftrag CC BY 4.0]
+  UBA-Tabelle mit Stand 02.07.2026 (laut Dateiname); Inventarbericht 2026 (UBA Climate
+  Change 30/2026, Mai 2026, 1.058 Seiten). Prüfsummen und Größen: `rohdaten/PROVENIENZ.txt`.
+- Lizenz/Nutzungsbedingungen (K13, **teilweise geklärt**, Hinweis ohne Einfrier-Wirkung):
+  Nach einem Suchergebnis zur UBA-Datenschutzseite (nicht geprüft) stehen selbst erstellte
+  UBA-Inhalte (Texte, Grafiken) unter **CC BY-NC-ND 4.0**, sofern nicht anders
+  gekennzeichnet; viele UBA-Datensätze stehen unter **Datenlizenz Deutschland –
+  Namensnennung 2.0 (DL-DE-BY-2.0)**. Für die PDF-Tabelle und den Data Cube ist die Lizenz
+  **nicht bestätigt**. Zahlen (Fakten) und eigene Auswertungen mit Quellenangabe sind
+  voraussichtlich unkritisch; **vor der Veröffentlichung von UBA-Grafiken oder -Tabellen im
+  Wortlaut ist die Lizenz zu klären** (Hinweis für die Veröffentlichung, nicht für die
+  Analyse). klimadashboard.de laut Auftrag CC BY 4.0; Thünen und OWID bei Nutzung prüfen.
 
 ### 3.1 Primärquelle
 
 **UBA – Nationale Treibhausgasinventare / Nationaler Inventarbericht (NIR), Submission
 2026:** Sektor LULUCF, jährliche Netto-Emissionsbilanz in Mt CO2-Äq., 1990 bis 2024, soweit
 vorhanden nach Kategorien (Wald, Acker, Grünland, Feuchtgebiete, Siedlungen,
-Holzprodukte (HWP)). Konkrete Bezugsdateien (Klärung K7, geklärt):
-1. **UBA-Tabelle (PDF):**
+Holzprodukte (HWP)). Bezugsdateien (K7, erledigt):
+1. **UBA-Tabelle (PDF)**, heruntergeladen am 29.10.2026 von Daniel Saure:
+   `rohdaten/2_Tab_Emi-Senken-LULUCF_2026-07-02.pdf`, 107.755 Bytes, SHA-256
+   `f8cf4f38…4b4b` (vollständiger Wert in `rohdaten/PROVENIENZ.txt`); **nicht geöffnet**.
+   Quelle:
    `https://www.umweltbundesamt.de/system/files/medien/384/bilder/dateien/2_Tab_Emi-Senken-LULUCF_2026-07-02.pdf`
-2. **UBA Data Cube (interaktiv):**
-   `https://datacube.uba.de/vis?lc=de&df%5bid%5d=DF_CLIMATE_EMISSIONS_GHG_TRENDS_KSG`
-   (ein CSV-Download ist auf der UBA-Seite nicht genannt; Entnahme aus dem Data Cube nur
-   nach Zustimmung, siehe 3.4).
-3. **Inventarbericht 2026** (UBA Climate Change 30/2026) für die Belege zu GWP-Basis (K10),
-   Strukturbruch/Neuberechnungen (K6) und Abgrenzung.
+2. **Inventarbericht 2026** (UBA Climate Change 30/2026),
+   `rohdaten/30_2026_CC_Inventarbericht-2026.pdf`, 50.870.104 Bytes, SHA-256
+   `707bbcd0…ba75a`, nicht in Git; nur Methodik- und Neuberechnungsstellen per Stichwortsuche
+   gelesen (Abschnitt 0). Quelle:
+   `https://www.umweltbundesamt.de/system/files/medien/11850/publikationen/2026-05/30_2026_CC.pdf`
+3. **UBA Data Cube** (interaktiv, **nicht abgerufen**):
+   `https://datacube.uba.de/vis?lc=de&df%5bid%5d=DF_CLIMATE_EMISSIONS_GHG_TRENDS_KSG`;
+   ein CSV-Download ist nicht genannt. Kontrolle nur nach ausdrücklicher Zustimmung von Daniel
+   (3.4).
 
 Die Pressemitteilung Thünen/UBA vom 14.03.2026 ist **keine** Datenquelle der Analyse.
 klimadashboard.de (CC BY 4.0) und Thünen-Institut-Daten dienen, falls verfügbar und mit
 Zustimmung beschafft, nur der Übertragungskontrolle. Bei Abweichung > 0,1 Mt gilt die
 UBA-/NIR-Fassung; die Abweichung wird dokumentiert.
 
-**Definition der Primärreihe E(y) (Klärung K4, weitgehend belegt):**
-Die **Primärreihe schließt Holzprodukte (HWP) ein.** Grundlage (Abruf vom 29.10.2026,
-Zusammenfassungswerkzeug, nicht wörtlich geprüft): Die UBA-Seite führt HWP unter den
-Kohlenstoffpools des Sektors; Anlage 1 Nr. 7 KSG nennt „Holzprodukte" ausdrücklich als Teil
-des Sektors; § 5 Abs. 2 Nr. 3 KSG erwähnt sie nicht. **Rest-Klärung vor Einfrieren:**
-Anlage 1 KSG im Volltext (und gegebenenfalls eine Verordnung zu § 3a KSG) prüfen. Ergibt
-die Prüfung das Gegenteil, wird die Primärreihe vor Einfrieren geändert; nach Datensicht
-nicht mehr.
-Sensitivität „ohne HWP" (S5) nur, wenn HWP als eigene Jahreswerte in den beschafften
-Dateien ausgewiesen ist; sonst „nicht durchgeführt, Grund: …".
+**Definition der Primärreihe E(y) (K4, beantwortet):**
+Die **Primärreihe schließt Holzprodukte (HWP) ein.** Grundlage (Abrufe vom 29.10.2026,
+Zusammenfassungswerkzeug, nicht wörtlich geprüft): **Anlage 1 Nr. 7 KSG** („Landnutzung,
+Landnutzungsänderung und Forstwirtschaft", CRT-Kategorie 4; Fundstelle BGBl. I 2019, 2519)
+umfasst laut abgerufener Seite „Wald, Acker, Grünland, Feuchtgebiete, Siedlungen;
+Holzprodukte; Änderungen zwischen Landnutzungskategorien", Holzprodukte gehören damit
+ausdrücklich zum Sektor. Die UBA-Seite führt HWP unter den Kohlenstoffpools des Sektors.
+**§ 5 Abs. 2 Nr. 3 KSG** erwähnt Holzprodukte nicht und nennt nur „auch Quellen und Senken
+von Treibhausgasen". **Rest-Hinweis (ohne Einfrier-Wirkung):** Im abgerufenen Auszug zu § 5
+steht keine Rechtsverordnung nach § 3a Abs. 3; ob eine erlassen wurde, ist nicht geprüft.
+Sensitivität „ohne HWP" (S5) nur, wenn HWP als eigene Jahreswerte in den Dateien
+ausgewiesen ist; sonst „nicht durchgeführt, Grund: …".
 
 ### 3.2 Version der Zeitreihe und Umgang mit Revisionen
 
 - **Referenz-Submission s\*:** Submission **2026** (veröffentlicht, UBA-Seite Stand
-  02.07.2026; Klärung K8, geklärt), Inventarjahre 1990 bis **Y = 2024**. Wird bis zum
-  Zugriff eine neuere vollständige Fassung veröffentlicht, wird das vor dem Zugriff an
-  Daniel gemeldet; es wird nicht stillschweigend gewechselt.
-- Die Version wird beim Datenzugriff mit Bezeichnung, Veröffentlichungsdatum und
-  Dateiname im `run_log.txt` festgehalten und **danach nicht mehr gewechselt**, auch wenn
-  während der Analyse eine neuere Fassung erscheint. Eine spätere Revision führt höchstens zu
-  einem gekennzeichneten Amendment/Nachtrag, nicht zu einer Änderung der Primärauswertung.
-- **Revisionen früherer Submissions (bekanntes Problem):** Alle Primärergebnisse stützen
-  sich ausschließlich auf die Referenz-Submission. **Ob** deren gesamte Reihe 1990–2024
-  mit derselben Methodik (insbesondere mit den Daten der Bundeswaldinventur 2022) rückwirkend
-  neu berechnet wurde, ist **nicht geklärt**; Beleg am Inventarbericht (K6). Frühere
-  Submissions (**2025, 2024, 2023**) werden nur in Sensitivität S4 und in der
-  Revisionstabelle verwendet, **nur wenn ohne großen Aufwand beschaffbar** (K9); sonst
-  dokumentiert als „nicht durchgeführt". Reihen verschiedener Submissions werden nie zu
-  einer Reihe zusammengesetzt (kein „Splicing").
+  02.07.2026; K8), Inventarjahre 1990 bis **Y = 2024**. Wird bis zur Auswertung eine neuere
+  vollständige Fassung veröffentlicht, wird das vor der Auswertung an Daniel gemeldet; es
+  wird nicht stillschweigend gewechselt.
+- Die Version wird mit Bezeichnung, Veröffentlichungsdatum und Dateiname im `run_log.txt`
+  festgehalten und **danach nicht mehr gewechselt**, auch wenn während der Analyse eine
+  neuere Fassung erscheint. Eine spätere Revision führt höchstens zu einem gekennzeichneten
+  Amendment/Nachtrag, nicht zu einer Änderung der Primärauswertung.
+- **Revisionen (bekanntes Problem; K6, Beleg am Inventarbericht 2026):**
+  (a) Das LULUCF-Inventar wird laut Bericht **jedes Jahr vollständig neu berechnet**, was
+  „zum Teil zu erheblichen Unterschieden in den Ergebnissen … zwischen einzelnen Jahren"
+  führt (PDF-S. 643). Mit der Submission 2026 gab es **grundlegende Methodenänderungen**, die
+  eine vollständige Neuberechnung des gesamten Berichtszeitraums nötig machten (PDF-S. 645).
+  Die Reihe ändert sich also mit jeder Submission, nicht nur an einem einzelnen Bruchjahr.
+  Alle Primärergebnisse gelten ausschließlich für die Submission 2026; S4 (frühere
+  Submissions) hat dadurch mehr Gewicht als zunächst angenommen.
+  (b) Die Bundeswaldinventur 2022 (Erhebung 2021/22) ist Grundlage der Waldberechnung; für die
+  Jahre danach wird die Waldentwicklung mit einem Matrixmodell fortgeschrieben (4.3).
+  (c) Ein **belegtes einzelnes Bruchjahr gibt es nicht**; 2017/2018 bleibt ein Kandidat aus
+  Sekundärquellen (4.2, S6).
+- Frühere Submissions (**2025, 2024, 2023**) werden nur in S4 und in der Revisionstabelle
+  verwendet, **nur wenn ohne großen Aufwand beschaffbar**; sonst dokumentiert als „nicht
+  durchgeführt" (K9, Vorschlag zur Einfrier-Voraussetzung in Abschnitt 12.3). Reihen
+  verschiedener Submissions werden nie zu einer Reihe zusammengesetzt (kein „Splicing").
 
 ### 3.3 Sekundärquelle (nur Plausibilisierung, siehe CLAUDE.md)
 
@@ -312,43 +355,46 @@ nur bei dokumentiertem Zugriffsproblem auf die Primärquelle und nur nach Amendm
 
 ### 3.4 Beschaffung
 
-Der Netzzugang der Cloud-Session zu Behördenservern ist voraussichtlich eingeschränkt.
-**Das Herunterladen der PDF-Tabelle und jede Datenentnahme aus dem Data Cube braucht vorab die
-ausdrückliche Zustimmung von Daniel Saure**; dabei werden Dateiname, Quelle und Größe
-genannt (Klärung K7, offener Rest). Ablage **unverändert** unter `rohdaten/` im
-Analyseordner, Zugriffsdatum und Quelle im `run_log.txt`. Liste in Abschnitt 13.
-**Für diesen SAP wurde nichts heruntergeladen.**
+Der Netzzugang der Cloud-Session zu Behördenservern ist eingeschränkt; Downloads erfolgen
+nur mit **ausdrücklicher Zustimmung von Daniel Saure** unter Nennung von Dateiname, Quelle
+und Größe. Erfolgt am 29.10.2026: UBA-Tabelle (Chat „Ja, PDF laden") und Inventarbericht
+2026 (Chat „Ja, Bericht laden", Auflage: nur Stellen zur GWP-Basis und zur Revision der
+Waldreihe lesen). Weitere Beschaffung (Data Cube, frühere Submissions, klimadashboard.de,
+Thünen, OWID/GCP, Schätzwert 2025) jeweils erneut nur nach Zustimmung. Ablage
+**unverändert** unter `rohdaten/`, Quelle, Datum und SHA-256 in `rohdaten/PROVENIENZ.txt`
+und im `run_log.txt`. Liste in Abschnitt 13.
 
 ### 3.5 Datenqualität und Integritäts-Checks (vor jeder Auswertung)
 
-1. **Vollständigkeit:** Jahreswerte für jedes Jahr 1990–2024 ohne Lücke; fehlende Werte →
+1. **Integrität der Rohdateien:** SHA-256 und Größe der beiden Dateien gegen
+   `rohdaten/PROVENIENZ.txt` prüfen, bevor die Tabelle gelesen wird.
+2. **Vollständigkeit:** Jahreswerte für jedes Jahr 1990–2024 ohne Lücke; fehlende Werte →
    Stopp und Rückfrage (kein Auffüllen, keine Interpolation).
-2. **Vorzeichen, Einheit, Gase, GWP:** Einheit Mt CO2-Äq.; Vorzeichen Quelle positiv /
+3. **Vorzeichen, Einheit, Gase, GWP:** Einheit Mt CO2-Äq.; Vorzeichen Quelle positiv /
    Senke negativ (Konvention der Quelle gegen die Konvention dieses SAP abgleichen, ggf.
-   Umkehr dokumentieren); enthaltene Gase (CO2, CH4, N2O) festhalten. Die
-   **GWP-Basis (AR4/AR5)** ist auf der UBA-Seite nicht genannt und aus Suchergebnissen
-   nicht belegt; sie wird dem Inventarbericht 2026 entnommen (K10) und hier eingetragen:
-   GWP-Basis = [____]. Es wird nichts angenommen.
-3. **Extraktion aus der PDF-Tabelle:** Ist die Tabelle nicht maschinenlesbar, werden die
+   Umkehr dokumentieren); enthaltene Gase (CO2, CH4, N2O) festhalten.
+   **GWP-Basis (K10, geklärt): IPCC Assessment Report 5 (AR5), GWP über 100 Jahre**
+   (Inventarbericht 2026, PDF-S. 51: „Es werden die Treibhausgaspotentiale … des IPCC
+   Assessment Report 5 (IPCC AR5) verwendet"; CH4 = 28, N2O = 265). Der Analyst prüft beim
+   Öffnen der Tabelle, ob sie dieselbe Basis ausweist, und dokumentiert Abweichungen.
+4. **Extraktion aus der PDF-Tabelle:** Ist die Tabelle nicht maschinenlesbar, werden die
    Werte in eine Extraktionstabelle übertragen (Fundstelle: Seite, Zeile/Spalte), mit
    **doppelter unabhängiger Übertragung**; jede Differenz wird vor der Auswertung aufgelöst.
-   Zusätzlich Abgleich der Jahreswerte gegen den UBA Data Cube (stichprobenartig alle
-   Jahre der Fenster C und der Randjahre 1990, 2010, 2024; bei Zugriff nach Zustimmung).
-4. **Summenprüfung:** Summe der Kategorien (inkl. HWP, falls separat ausgewiesen) = Sektor-
+   Abgleich gegen den Data Cube nur nach Zustimmung (stichprobenartig alle Jahre des
+   Fensters C und die Randjahre 1990, 2010, 2024).
+5. **Summenprüfung:** Summe der Kategorien (inkl. HWP, falls separat ausgewiesen) = Sektor-
    gesamt, absolute Toleranz 0,5 Mt (Rundung; relative Toleranz ist bei Werten nahe
    null ungeeignet). Abweichungen werden dokumentiert, nicht korrigiert.
-5. **Übertragungskontrolle:** UBA-/NIR-Reihe gegen klimadashboard.de/Thünen-Reihe (falls
+6. **Übertragungskontrolle:** UBA-/NIR-Reihe gegen klimadashboard.de/Thünen-Reihe (falls
    beschafft), Toleranz 0,1 Mt je Jahr; Differenzen vor Auswertung auflösen und dokumentieren.
-6. **Abgrenzungs-Check:** Es wird festgehalten, welche Zeile der Quelle als „Sektor LULUCF
-   inkl. HWP" verwendet wird (Fundstelle: Datei, Seite/Blatt, Zeile) und ob HWP separat
+7. **Abgrenzungs-Check:** Es wird festgehalten, welche Zeile der Quelle als „Sektor LULUCF
+   inkl. HWP" verwendet wird (Fundstelle: Datei, Seite, Zeile) und ob HWP separat
    ausgewiesen ist.
-7. **Vorläufige Werte:** Als vorläufig gekennzeichnete Jahreswerte werden markiert; sie
-   bleiben in der Primäranalyse enthalten und werden in S3 ausgeschlossen.
-8. **Plausibilisierung gegen OWID/GCP:** nur grafisch, Vorzeichen und Größenordnung.
-9. **Erhebungsbruch-Dokumentation:** Es wird dokumentiert, ob und ab welchem Jahr neue
-   Datengrundlagen (Bundeswaldinventur 2022, Methodenwechsel) in die Referenz-Submission
-   eingegangen sind und ob die Reihe rückwirkend konsistent ist (K6). Der Check ändert die
-   Primärauswertung nicht.
+8. **Modellfortschreibung kennzeichnen:** Die Jahre 2023 und 2024 werden in Tabellen und
+   Grafiken als Modellfortschreibung gekennzeichnet (4.3); sie bleiben in der
+   Primäranalyse enthalten und werden in S3 ausgeschlossen. Sonstige als vorläufig
+   gekennzeichnete Werte werden ebenfalls markiert.
+9. **Plausibilisierung gegen OWID/GCP:** nur grafisch, Vorzeichen und Größenordnung.
 
 Bei Unstimmigkeiten, die sich nach diesen Regeln nicht auflösen lassen: Analyse
 stoppen, Rückfrage an Daniel.
@@ -371,31 +417,26 @@ Alle Fenster enden bei Y = 2024.
 | **B** | **2010 bis 2024** | **15** | **PRIMÄR** (bestätigt von Daniel Saure, 29.10.2026, K5) | Mittellanges Fenster: genügend Freiheitsgrade (n−2 = 13) bei gleichzeitigem Bezug auf die jüngere Phase der Reihe. Rundes Startjahr, in v0.1 gewählt. |
 | A | 1990 bis 2024 | 35 | Sensitivität (Langfristtrend), gleichrangig berichtet | Gesamte verfügbare Reihe; größtmögliche Datenbasis, aber anfällig für Bruch/Strukturwandel in der Reihe. |
 | C | 2018 bis 2024 | 7 | Sensitivität (Kurzfrist), gleichrangig berichtet | Nur die jüngste Phase; n−2 = 5 Freiheitsgrade, breite Intervalle, geringe Belastbarkeit. |
-| D | 2022 bis 2024 | 3 | **Nur deskriptiv** (Teil von S6c) | Zeitraum ab dem Referenzjahr der Bundeswaldinventur 2022. n < 5: nur Jahreswerte und Mittelwert, keine Regression mit Intervall, keine Kategorie. |
+| D | 2022 bis 2024 | 3 | **Nur deskriptiv** (S6d) | Zeitraum ab dem Referenzjahr der Bundeswaldinventur 2022. n < 5: nur Jahreswerte und Mittelwert, keine Regression mit Intervall, keine Kategorie. |
 
-**Bruchjahr-Kandidat B\* (Klärung K6, Beleg am Inventarbericht vor Einfrieren):**
-Sekundärquellen (Öko-Institut, Spektrum, DUH, WKO; Suche vom 29.10.2026, nicht geprüft) nennen
-**2017/2018** als Jahr, ab dem die lebende Waldbiomasse zur Quelle wurde. Daher gilt
-vorab: **B\* ∈ {2017, 2018}**. Das genaue Jahr (und ob die Reihe der Submission 2026
-rückwirkend konsistent neu berechnet wurde oder einen Niveausprung enthält) wird vor dem
-Einfrieren aus dem Inventarbericht belegt und hier eingetragen: B\* = [____]; Reihe
-rückwirkend konsistent: [ja / nein / nicht belegbar]. Wie die Zeitreihe in den Submissions
-rückwirkend revidiert wurde, ist **nicht geklärt**. Der Kandidat B\* ist ein Kandidat für einen
-Verlaufsbruch (inhaltlich) und/oder einen Methodenbruch; welcher von beiden vorliegt, wird
-nicht vorab entschieden, beide Lesarten werden in S6 abgedeckt.
+**Bruchjahr-Kandidaten (K6, Vorschlag, von Daniel zu bestätigen):**
+Ein belegtes einzelnes Bruchjahr gibt es nicht (3.2). Sekundärquellen (Öko-Institut,
+Spektrum, DUH, WKO; Suche vom 29.10.2026, nicht geprüft) nennen 2017/2018 als Jahr, ab dem
+die lebende Waldbiomasse zur Quelle wurde. Deshalb werden **beide Kandidaten
+B\* = 2017 und B\* = 2018 vorab festgelegt und in S6 gerechnet**; ein Beleg für ein Bruchjahr
+ist **keine Voraussetzung** für das Einfrieren. Damit entfällt die frühere Einfrier-Hürde K6.
+Der Vorschlag lautet im Einzelnen (Details in Abschnitt 6):
+- **Fenster ab B\*:** 2017–2024 (n = 8, mit Intervall und Kategorie) und 2018–2024 (identisch
+  mit Fenster C, nicht doppelt gerechnet).
+- **Niveausprung-Modell:** für beide Kandidaten, nur **deskriptiv** (Schätzwert des Sprungs
+  mit Standardfehler), ohne Prognose und ohne Kategorie.
 
 **Konsistenz der Fenster (geprüft):**
-- Fenster C (ab 2018) liegt vollständig im Zeitraum ab dem Kandidaten B\*
-  (bei B\* = 2018 beginnt es genau bei B\*, bei B\* = 2017 danach). Die Primärfenster
-  A und B enthalten den Kandidaten und schließen damit einen etwaigen Bruch ein; dafür
-  gibt es S6.
-- Ist B\* = 2018, ist das „Fenster ab B\*" (S6b) identisch mit Fenster C und wird nicht
-  doppelt gerechnet. Ist B\* = 2017, ist S6b ein zusätzliches Fenster 2017–2024 (n = 8).
-- Fenster D (2022–2024) liegt in C und in S6b; es ist rein deskriptiv und ersetzt
-  keines der Kernfenster. Es gibt dafür keine Entscheidungskategorie. Damit entsteht
-  kein Widerspruch zu C oder B\*.
-- Wird B\* anders als 2017/2018 belegt, wird der SAP vor dem Einfrieren angepasst, nicht
-  nach Datensicht.
+- Fenster C (ab 2018) liegt vollständig im Zeitraum ab beiden Kandidaten. Die Fenster A und B
+  enthalten beide Kandidaten und schließen einen etwaigen Bruch ein; dafür gibt es S6.
+- Fenster D (2022–2024) liegt in C und im Fenster ab 2017; es ist rein deskriptiv und ersetzt
+  keines der Kernfenster. Damit entsteht kein Widerspruch zu C oder den Kandidaten.
+- Die Fenster nutzen überlappende Daten (A ⊃ B ⊃ C ⊃ D); sie sind nicht unabhängig.
 
 **Mindestzellgröße (Vorschlag, K11):** Ein 95-%-Prognoseintervall wird für n ≥ 5 berechnet.
 Bei n < 10 wird es als „Orientierung, geringe Belastbarkeit" gekennzeichnet. Bei n < 5 wird nur
@@ -405,6 +446,22 @@ Mittelwert/Steigung ohne Intervall berichtet.
 Ergebnisse der Fenster A und C stehen im Bericht in derselben Tabelle und
 Überschriftsebene (Abschnitt 7). Das Primärfenster darf nach Datenzugriff nicht
 gewechselt werden.
+
+### 4.3 Aussagegrenzen der Datenbasis (ausdrückliche Einschränkung)
+
+1. **Modellfortschreibung der jüngsten Jahre.** Die Bundeswaldinventur 2022 (Erhebung
+   2021/22) ist Grundlage der Waldberechnung. **Für die Jahre nach der letzten Inventur wird
+   die Waldentwicklung laut Inventarbericht mit einem Matrixmodell (Rock et al., 2025)
+   fortgeschrieben** (PDF-S. 675). Die jüngsten Berichtsjahre **2023 und 2024** sind damit
+   Modellfortschreibungen und keine Messungen. Der jüngste gesetzliche Messwert M(2024)
+   (Jahre 2021 bis 2024) enthält zwei solche Jahre; die Primärfenster A, B und C enthalten sie
+   ebenfalls. Der Bericht sagt das ausdrücklich. S3b (Fenster bis 2022) zeigt die Trendrechnung
+   ohne beide Jahre.
+2. **Jährliche Neuberechnung.** Die Reihe der Submission 2026 ist nur eine von mehreren
+   möglichen Fassungen (3.2). Aussagen gelten für diese Fassung.
+3. **Keine Messreihe im engeren Sinn.** Die Jahreswerte sind inventarbasierte Rechenwerte.
+   Der Bericht spricht nicht von „gemessenen" Emissionen, sondern von „inventarisierten
+   Werten".
 
 ## 5. Statistische Methoden
 
@@ -440,6 +497,8 @@ Je Fenster A, B, C (bei n ≥ 5), auf den OLS-Residuen:
 - **Ausreißer/Hebelpunkte:** Cook-Distanz (Markierung bei > 4/n) und Hebelwerte. Es wird
   **kein Wert ausgeschlossen**; markierte Jahre werden berichtet.
 - **Strukturbruch im Fenster:** Residuenverlauf über die Zeit; zusätzlich S6.
+- **Modelljahre:** Lage der Jahre 2023 und 2024 in den Residuen (Hebelwirkung am
+  Fensterende) wird berichtet.
 
 Die Ergebnisse der Diagnostik ändern die Primäranalyse nicht. Sie bestimmen nur die
 Kennzeichnung im Bericht (z. B. „Intervall vermutlich zu eng") und stützen die
@@ -462,7 +521,7 @@ berichtet:
 - **Primär:** Klassisches OLS-95-%-Prognoseintervall für das Mittel der vier künftigen
   Jahreswerte (2.2). Bekannte Limitation: bei autokorrelierten Residuen tendenziell zu eng;
   es enthält ausdrücklich nur die Streuung innerhalb des linearen Modells, nicht die
-  Unsicherheit der Modellform oder künftiger Brüche.
+  Unsicherheit der Modellform, der Inventarmethodik oder künftiger Brüche.
 - **Sensitivität S1 (ARIMA-Kontrolle):** Regression mit ARIMA-Fehlern. Linearer
   Trendregressor Jahr; Fehlerprozess ARIMA(p,0,q) mit p, q ≤ 2, Auswahl nach AICc
   (forecast::auto.arima, exhaustive Suche statt stepwise, d = 0 und D = 0 fest, ohne
@@ -547,13 +606,14 @@ genannt, gelten S1–S7 für alle drei Fenster (soweit n es zulässt).
 | S1 | **ARIMA-Kontrolle:** Regression mit ARIMA(p,0,q)-Fehlern (5.4), simuliertes 95-%-Intervall des 4-Jahres-Mittels 2027–2030 | E2 (Fenster A, B) |
 | S2 | **Newey-West/Durbin-Watson:** HAC-Konfidenzintervall für β̂ (5.3), DW-Statistik und p-Wert je Fenster; r_obs und Q mit HAC-Intervall | E2, E3 |
 | S3a | **Ohne letztes Jahr:** Fenster enden 2023 (Startjahre unverändert; C = 2018–2023, n = 6); M(2023) zusätzlich als Messwert | E1, E2, E3 |
-| S3b | **Ohne die letzten zwei Jahre:** Fenster enden 2022 (C = 2018–2022, n = 5); M(2022) zusätzlich als Messwert (Begründung: die jüngsten Werte sind vorläufig bzw. noch von Revisionen bedroht) | E1, E2, E3 |
-| S4 | **Frühere Submissions (Vintage), nur wenn ohne großen Aufwand beschaffbar (K9), sonst als „nicht durchgeführt, Grund: …" dokumentiert:** dieselbe Spezifikation für die Submissions 2025, 2024, 2023 (jeweils mit deren letztem Berichtsjahr als Fensterende, Startjahre gleich); Revisionstabelle: E\_s\*(y) − E\_s(y) und M\_s\*(T) − M\_s(T) für alle gemeinsamen Jahre. Es wird keine Teilmenge nach Ergebnis ausgewählt: Wird nur ein Teil beschafft, wird berichtet, welche Submissions fehlen und warum | E1, E2 |
-| S5 | **Ohne Holzprodukte (HWP):** Primärreihe abzüglich HWP, nur wenn HWP als eigene Jahreswerte vorliegt (K7); sonst „nicht durchgeführt, Grund: …" | E1, E2, E3 |
-| S6a | **Niveausprung (Methodenbruch):** Modell E(y) = α + β·y + γ·1(y ≥ B\*) + ε in den Fenstern A und B (gemeinsame Steigung); Prognose 2027–2030 mit γ̂ im Niveau. Nur, wenn K6 einen Niveausprung/eine nicht rückwirkend konsistente Reihe belegt; sonst „nicht durchgeführt, Grund: …" | E2 |
-| S6b | **Fenster ab Bruchjahr-Kandidat B\* (Verlaufsbruch):** B\* bis 2024; bei B\* = 2018 identisch mit Fenster C (nicht doppelt gerechnet), bei B\* = 2017: 2017–2024 (n = 8) mit Intervall und Kategorie | E2 |
-| S6c | **Fenster D deskriptiv:** 2022–2024, nur Jahreswerte und Mittel (4.2), ohne Intervall, ohne Kategorie | beschreibend |
-| S7 | **Schätzwert für 2025** (als „unsicher" eingestufte Schätzung laut UBA-Seite, 26,9 Mt laut UBA-Seite; nur falls als dokumentierte Veröffentlichung mit Abgrenzung der Primärreihe vorliegt): Reihe um diesen Wert verlängert (Fensterende 2025), M(2025) = Mittel 2022–2025, r_req mit Divisor 5. Der Schätzwert ist kein Inventarwert und nur Sensitivität | E1, E2, E3 |
+| S3b | **Ohne die letzten zwei Jahre:** Fenster enden 2022 (C = 2018–2022, n = 5); M(2022) zusätzlich als Messwert. Begründung: 2023 und 2024 sind laut Inventarbericht Modellfortschreibungen (4.3), 2022 ist das letzte Jahr der Inventurerhebung 2021/22 | E1, E2, E3 |
+| S4 | **Frühere Submissions (Vintage), nur wenn ohne großen Aufwand beschaffbar, sonst als „nicht durchgeführt, Grund: …" dokumentiert (K9, Vorschlag: genügt als Einfrier-Voraussetzung):** dieselbe Spezifikation für die Submissions 2025, 2024, 2023 (jeweils mit deren letztem Berichtsjahr als Fensterende, Startjahre gleich); Revisionstabelle: E\_s\*(y) − E\_s(y) und M\_s\*(T) − M\_s(T) für alle gemeinsamen Jahre. Es wird keine Teilmenge nach Ergebnis ausgewählt: Wird nur ein Teil beschafft, wird berichtet, welche Submissions fehlen und warum | E1, E2 |
+| S5 | **Ohne Holzprodukte (HWP):** Primärreihe abzüglich HWP, nur wenn HWP als eigene Jahreswerte vorliegt; sonst „nicht durchgeführt, Grund: …" | E1, E2, E3 |
+| S6a | **Fenster ab B\* = 2017** (2017–2024, n = 8): OLS und Prognoseintervall wie 2.2, Kategorie nach 5.6, Kennzeichnung „n < 10, geringe Belastbarkeit" (**Vorschlag, K6**) | E2 |
+| S6b | **Fenster ab B\* = 2018:** identisch mit Fenster C; keine eigene Rechnung, Verweis (**Vorschlag, K6**) | E2 |
+| S6c | **Niveausprung-Modell, nur deskriptiv:** E(y) = α + β·y + γ·1(y ≥ B\*) + ε in den Fenstern A und B, getrennt für B\* = 2017 und B\* = 2018 (gemeinsame Steigung); berichtet werden γ̂ mit Standardfehler und Konfidenzintervall, **keine Prognose, keine Kategorie** (**Vorschlag, K6**) | beschreibend |
+| S6d | **Fenster D deskriptiv:** 2022–2024, nur Jahreswerte und Mittel (4.2), ohne Intervall, ohne Kategorie | beschreibend |
+| S7 | **Schätzwert für 2025** (laut UBA-Seite „unsichere" Schätzung, 26,9 Mt laut UBA-Seite; nur falls als dokumentierte Veröffentlichung mit Abgrenzung der Primärreihe vorliegt): Reihe um diesen Wert verlängert (Fensterende 2025), M(2025) = Mittel 2022–2025, r_req mit Divisor 5. Der Schätzwert ist kein Inventarwert und nur Sensitivität | E1, E2, E3 |
 
 **Kombinationen von Sensitivitäten werden nicht gebildet.** Wird eine Sensitivität
 mangels Daten undurchführbar, wird sie als „nicht durchgeführt, Grund: …" berichtet,
@@ -576,14 +636,14 @@ aus Fenstern × Sensitivitäten × Zielwerten.
    (c) r_req und r_obs(A/B/C) (E3);
    (d) D45 (E4).
 3. Sensitivitäten S1–S7 sind sekundär, werden vollständig in Tabellen berichtet und können
-   die Kernzahlen nicht ersetzen. Die Zahl 26,9 Mt (Schätzung 2025) darf nur im
+   die Kernzahlen nicht ersetzen. **Beide** Bruchjahr-Kandidaten (S6) werden berichtet, auch
+   wenn einer davon „besser" erscheint. Die Zahl 26,9 Mt (Schätzung 2025) darf nur im
    Zusammenhang mit S7 und mit dem Hinweis „unsichere Schätzung, kein Inventarwert"
    genannt werden.
 4. Keine nachträgliche Auswahl von Fenstern, Startjahren, Submissions, Reihen (mit/ohne
-   HWP), Zielwerten oder Sensitivitäten, die eine bestimmte Aussage am besten stützt.
-   Fenstergrenzen werden nach Datenzugriff nicht verschoben (weder „eigentlich besser
-   2012" noch „ohne Jahr x"). Das Bruchjahr B\* ist vor Einfrieren festzulegen und wird
-   nachher nicht geändert.
+   HWP), Zielwerten, Bruchjahren oder Sensitivitäten, die eine bestimmte Aussage am besten
+   stützt. Fenstergrenzen werden nach Datenzugriff nicht verschoben (weder „eigentlich
+   besser 2012" noch „ohne Jahr x").
 5. Steigungstests werden über die drei Fenster zusätzlich Holm-adjustiert berichtet (5.5).
 6. Jede Abweichung vom SAP wird als „Post-hoc" gekennzeichnet (Abschnitt 16).
 
@@ -620,14 +680,15 @@ Trend der Jahre 2010–2024 unverändert weiterlaufen, läge der gesetzliche Mes
 bei …" Nicht: „Deutschland wird das Ziel verfehlen/erreichen." Das Intervall umfasst nur
 die Streuung im Modell, nicht künftige Maßnahmen, Störungen oder Methodenwechsel.
 
-### 8.2 Zeitreihenbruch und Revisionen
+### 8.2 Zeitreihenbruch, Revisionen und Modellfortschreibung
 
-Bundeswaldinventur 2022 und Methodenwechsel im Inventar können Niveau und Verlauf der
-Reihe verändern. Ein Teil der beobachteten Veränderung kann Messmethodik sein. Zusätzlich
-gibt es einen inhaltlichen Bruchjahr-Kandidaten (2017/2018, Sekundärquellen, ungeprüft).
-Bruch und Revision werden über S4 (frühere Submissions), S6a (Niveausprung) und S6b (Fenster
-ab B\*) sichtbar gemacht, nicht „herausgerechnet". Der Bericht erläutert, dass ein im Trend
-sichtbarer Verlauf teilweise ein Methodeneffekt sein kann.
+Die Reihe ändert sich laut Inventarbericht mit jeder Submission (jährliche vollständige
+Neuberechnung, grundlegende Methodenänderungen 2026), und die Jahre 2023/2024 sind
+Modellfortschreibungen (4.3). Ein Teil der beobachteten Veränderung kann Messmethodik oder
+Modell sein. Zusätzlich gibt es zwei Bruchjahr-Kandidaten (2017, 2018; Sekundärquellen,
+ungeprüft). Revision, Bruch und Modelljahre werden über S3 (ohne letzte Jahre), S4 (frühere
+Submissions) und S6 (beide Kandidaten) sichtbar gemacht, nicht „herausgerechnet". Der Bericht
+erläutert, dass ein im Trend sichtbarer Verlauf teilweise ein Methodeneffekt sein kann.
 
 ### 8.3 Sektorgrenze und Zielgröße
 
@@ -646,42 +707,52 @@ nicht automatisch „gut" im Sinne von dauerhaft: Biologische Senken sind nicht
 dauerhaft garantiert (Störungen, Umkehrbarkeit). Das wird im Bericht erwähnt, ohne
 Bewertung.
 
-### 8.5 Vorwissen
+### 8.5 Vorwissen und Quellenzugriff
 
 Das offengelegte Vorwissen (Abschnitt 0) wird im Bericht erwähnt (Satz zum Vorgehen:
-SAP vor Zeitreihenansicht, mit offengelegtem Vorwissen über Aggregatwerte). Es darf nicht
-dazu führen, dass eine Kategorie oder ein Fenster nach Datensicht anders behandelt wird als
-im SAP festgelegt.
+SAP vor Auswertung der Zeitreihe, mit offengelegtem Vorwissen über Aggregatwerte und
+Methodik). Insbesondere wird offengelegt: (a) die UBA-Tabelle wurde vor der Auswertung
+heruntergeladen, aber nicht geöffnet; (b) der Inventarbericht 2026 wurde heruntergeladen und
+nur per Stichwortsuche zu GWP, Neuberechnung und Bundeswaldinventur gelesen, ohne
+Zeitreihenwerte; (c) die Aggregatwerte der UBA-Seite wurden vom Orchestrator gesehen; die
+Jahre 1991–2023 nicht. Das Vorwissen darf nicht dazu führen, dass eine Kategorie, ein
+Fenster oder ein Bruchjahr nach Datensicht anders behandelt wird als im SAP festgelegt.
 
 ## 9. Limitationen
 
 - Lineares Trendmodell auf Jahreswerten; keine Kausal- oder Maßnahmenwirkung. Starker
   Einfluss einzelner Jahre auf Steigung und Intervall, besonders bei kurzen Fenstern.
 - Extrapolation über 3–6 Jahre ab 2024 (2027–2030) ist unsicher; das Intervall bildet nur
-  Modellstreuung ab, keine Modell- oder Strukturunsicherheit.
-- Fenster C (n = 7), S3b-Fenster (n = 5) und Fenster D (n = 3, nur deskriptiv) sind sehr
-  kurz; Intervalle sind breit und wenig belastbar. Die Fenster nutzen überlappende Daten und
-  sind daher nicht unabhängig.
-- Die Zeitreihe ist inventarbasiert und wird rückwirkend revidiert; das Ergebnis gilt für
-  die dokumentierte Referenz-Submission 2026. Eine spätere Revision kann Kategorie und
-  Abstand verändern (S4 zeigt das nur für bereits erfolgte Revisionen und nur, wenn die
-  früheren Submissions beschaffbar sind).
-- Zeitreihenbruch/Inventurwechsel (Bundeswaldinventur 2022, Methodenwechsel; Kandidat
-  2017/2018): Wirkung auf den Trend unbekannt; Primärfenster B und Fenster A enthalten den
-  Kandidaten; Abdeckung nur über S6a/S6b.
+  Modellstreuung ab, keine Modell-, Methoden- oder Strukturunsicherheit.
+- **Die Jahre 2023 und 2024 sind laut Inventarbericht Modellfortschreibungen** (Matrixmodell
+  nach der letzten Bundeswaldinventur, PDF-S. 675) und gehen in den jüngsten Messwert M(2024),
+  die Primärfenster und die Trendschätzung ein. Die Trendfortschreibung schreibt damit zum
+  Teil ein Modellergebnis fort. Gegenprobe: S3b.
+- **Die Reihe ändert sich mit jeder Submission** (jährliche vollständige Neuberechnung;
+  grundlegende Methodenänderungen mit der Submission 2026 für den gesamten Zeitraum). Das
+  Ergebnis gilt für die dokumentierte Submission 2026; eine spätere Revision kann Kategorie
+  und Abstand verändern. S4 zeigt das nur, wenn frühere Submissions beschaffbar sind.
+- Fenster C (n = 7), das Fenster ab 2017 (n = 8), S3b-Fenster (n = 5) und Fenster D (n = 3,
+  nur deskriptiv) sind sehr kurz; Intervalle sind breit und wenig belastbar. Die Fenster
+  nutzen überlappende Daten und sind daher nicht unabhängig.
+- Ein belegtes Bruchjahr liegt nicht vor; 2017/2018 sind Kandidaten aus ungeprüften
+  Sekundärquellen. Primärfenster B und Fenster A enthalten beide Kandidaten; Abdeckung nur
+  über S6.
 - Autokorrelation: der klassische OLS-Intervallansatz unterschätzt dann die Unsicherheit;
   ARIMA bei n ≥ 10 möglich, kleine Stichproben erlauben keine verlässliche
   Ordnungsauswahl.
-- Abgrenzung der gesetzlichen Größe (HWP) ist weitgehend, aber noch nicht im Volltext
-  belegt (K4). Gesetzestext und Fassung nur per Zusammenfassungswerkzeug gelesen (K2).
-- GWP-Basis noch nicht belegt (K10); Lizenz der UBA-Daten ungeprüft (K13).
-- Datenquelle PDF-Tabelle: Übertragungsfehler möglich (Gegenmaßnahme 3.5 Nr. 3).
+- Gesetzestext und Fassung nur per Zusammenfassungswerkzeug gelesen (K2); die Frage einer
+  Verordnung nach § 3a Abs. 3 KSG ist nicht geprüft.
+- Datenquelle PDF-Tabelle: Übertragungsfehler möglich (Gegenmaßnahme 3.5 Nr. 4). Lizenz der
+  Tabelle und des Data Cube nicht bestätigt (K13); relevant für die Veröffentlichung von
+  Tabellen/Grafiken im Wortlaut (CC BY-NC-ND 4.0 für UBA-eigene Texte/Grafiken laut
+  Suchergebnis).
 - Vorjahresschätzung 2025 ist kein Inventarwert (S7).
 - OWID/GCP-Definition ist verschieden; kein Gleichsetzen.
 - Keine Aussage über Zielerreichung 2040/2045 (keine Extrapolation).
 - Das Vorwissen des Auftraggebers (Abschnitt 0) kann unbewusst Erwartungen prägen; die
-  Kernfestlegungen stammen aus v0.1 vor der erweiterten Kenntnis, die Änderungen in v0.2 sind
-  offengelegt.
+  Kernfestlegungen stammen aus v0.1 vor der erweiterten Kenntnis, die späteren Änderungen
+  sind offengelegt.
 
 ## 10. Software
 
@@ -699,85 +770,89 @@ Extraktionstabelle; kein Netzzugriff aus dem Skript. Zufallskomponente nur in S1
 - **Format:** Evidenzcheck („Klima Kompass · Evidenzcheck #n"). Gate:
   Validierungsbericht ohne „kritisch". Kernaussagen erst nach Validierung. Kanalfassungen
   nur über den Klima-Kompass-Ablauf (Substack, Instagram, Facebook, WhatsApp; keine
-  LinkedIn-Fassung).
+  LinkedIn-Fassung). Lizenzhinweis zu UBA-Material vor Veröffentlichung beachten (Abschnitt 3).
 - **Grafik 1 (Zeitreihe mit Fenstern und Ziel):** Jahreswerte E(y) 1990–2024 als
-  Punkte/Linie; die drei Trendgeraden (A, B, C) jeweils über ihr Fenster und bis 2030
-  verlängert (gestrichelt), Fenster B als primär gekennzeichnet; Nulllinie; Bruchjahr-
-  Kandidat B\* als dünne senkrechte Markierung (sobald eingetragen); Zielwert Z30 als
-  Markierung mit Hinweis, dass der Zielwert für das 4-Jahres-Mittel gilt.
+  Punkte/Linie (2023 und 2024 als Modellfortschreibung gekennzeichnet); die drei
+  Trendgeraden (A, B, C) jeweils über ihr Fenster und bis 2030 verlängert (gestrichelt),
+  Fenster B als primär gekennzeichnet; Nulllinie; die beiden Bruchjahr-Kandidaten 2017 und
+  2018 als dünne senkrechte Markierungen; Zielwert Z30 als Markierung mit Hinweis, dass der
+  Zielwert für das 4-Jahres-Mittel gilt.
 - **Grafik 2 (4-Jahres-Mittel mit Intervall):** M(T) 1993–2024 als Linie; Z30, Z40, Z45 als
   Markierungen bei 2030, 2040, 2045; M̂(2030) mit 95-%-Prognoseintervall für alle drei
   Fenster nebeneinander (Fenster B zuerst). Keine Trendverlängerung auf 2040/2045.
 - **Anhang-Grafiken:** Diagnostik (Residuen, ACF, Q-Q), Revisions-Vergleich der
-  Submissions (S4, falls durchgeführt), Vergleich mit OWID/GCP (nur Größenordnung), ggf.
-  S6a/S6b.
+  Submissions (S4, falls durchgeführt), Vergleich mit OWID/GCP (nur Größenordnung), S6.
 - **Tabelle 1:** Datenübersicht (Submission, Y, Primärreihe inkl. HWP, n, Quelle,
-  Zugriffsdatum, GWP-Basis, Kontrollen).
+  Zugriffsdatum, GWP-Basis AR5, Kontrollen).
 - **Tabelle 2:** Kernergebnisse E1/E4: E(2021) … E(2024), M(2024), D30, D40, D45.
 - **Tabelle 3:** je Fenster A/B/C: n, β̂ (95-%-KI klassisch und HAC), M̂(2030), L, U,
   Kategorie, Abstand M̂ − Z30, DW, ARIMA-Ordnung und -Intervall (S1), Holm-adjustierte
   p-Werte.
 - **Tabelle 4:** E3: r_req, r_obs(A/B/C), r_obs5, r_obs10, Q (oder „nicht definiert,
   Grund").
-- **Tabelle 5:** Sensitivitäten S1–S7, vollständig, mit Kategorie je Fenster; Revisions-
-  tabelle (S4).
+- **Tabelle 5:** Sensitivitäten S1–S7 (inkl. S6a–d), vollständig, mit Kategorie je Fenster
+  (wo definiert); Revisionstabelle (S4).
 - **Rundung:** Mt CO2-Äq. eine Nachkommastelle; Steigungen zwei Nachkommastellen (Mt pro
   Jahr); p-Werte drei Nachkommastellen; Verhältnis Q zwei Nachkommastellen (Vorschlag, K11).
 - **Wortwahl:** „Würde der Trend der Jahre … unverändert weiterlaufen …", „der
   gesetzliche Messwert (4-Jahres-Mittel 2021 bis 2024) lag zuletzt bei …", „Abstand zum
-  Ziel". Nicht: „Prognose", „Deutschland verfehlt", „signifikant verfehlt". Jede Zahl mit
-  Angabe von Submission und Fenster.
+  Ziel", „inventarisierte Werte". Nicht: „Prognose", „Deutschland verfehlt", „signifikant
+  verfehlt". Jede Zahl mit Angabe von Submission und Fenster. Ausdrücklicher Hinweis, dass
+  2023 und 2024 Modellfortschreibungen sind.
 
-## 12. Klärung vor Einfrieren (Stand v0.2, 29.10.2026)
+## 12. Klärung vor Einfrieren (Stand v0.3, 29.10.2026)
 
-Der SAP darf erst eingefroren werden, wenn alle offenen Punkte beantwortet und im Dokument
-eingetragen sind. Angaben, die aus Abrufen per Zusammenfassungswerkzeug stammen, sind nicht
-wörtlich geprüft.
+Angaben, die aus Abrufen per Zusammenfassungswerkzeug oder aus Nachträgen der Top-Level-Session
+stammen, sind vom sap-autor nicht selbst geprüft.
 
 ### 12.1 Beantwortet / belegt
 
 | Nr. | Punkt | Stand, Quelle, Datum |
 |---|---|---|
-| K1 | Status trotz Vorwissen | **Beantwortet** (Daniel Saure, 29.10.2026, Chat „Ja, prospektiv", zweimal; zuletzt nach Offenlegung des erweiterten Vorwissens): prospektiv mit offengelegtem Vorwissen (Thünen-Pressemitteilung 26,9 Mt für 2025 plus Aggregatwerte der UBA-Seite). Offenlegung in Abschnitt 0. |
-| K3 | Jüngster gesetzlicher Messwert | **Geklärt** (UBA-Seite, Stand 02.07.2026; Inventarbericht 2026 deckt 1990–2024, UBA Climate Change 30/2026; Abruf 29.10.2026): letztes Berichtsjahr mit Inventarwert 2024; 2025 ist unsichere Schätzung. Jüngster Messwert M(2024) = 2021–2024; M(2025) nur mit Schätzwert (S7). Offen bleibt nur, ob der 2025-Wert HWP enthält (siehe K4). |
+| K1 | Status trotz Vorwissen | **Beantwortet** (Daniel Saure, 29.10.2026, Chat „Ja, prospektiv", zweimal; zuletzt nach Offenlegung des erweiterten Vorwissens): prospektiv mit offengelegtem Vorwissen. Offenlegung in Abschnitt 0. |
+| K3 | Jüngster gesetzlicher Messwert | **Geklärt** (UBA-Seite, Stand 02.07.2026; Inventarbericht 2026 deckt 1990–2024; Abruf 29.10.2026): letztes Berichtsjahr mit Inventarwert 2024; 2025 ist unsichere Schätzung. Jüngster Messwert M(2024) = 2021–2024; M(2025) nur mit Schätzwert (S7). |
+| K4 | Abgrenzung HWP | **Beantwortet:** Anlage 1 Nr. 7 KSG nennt Holzprodukte ausdrücklich (Abruf gesetze-im-internet.de, 29.10.2026, Zusammenfassungswerkzeug); UBA-Seite führt HWP unter den Pools; § 5 Abs. 2 Nr. 3 erwähnt sie nicht. Primärreihe **mit HWP**. Rest-Hinweis in 12.2. |
 | K5 | Primärfenster | **Beantwortet** (Daniel Saure, 29.10.2026, Chat „Ja, Fenster B"): B = 2010–2024 primär; A und C gleichrangig als Sensitivität. |
-| K8 | Referenz-Submission | **Geklärt** (UBA-Seite, Stand 02.07.2026): Submission 2026 veröffentlicht. Zugriffsdatum und Dateiname folgen beim Zugriff. |
-| K12 | Sperren aus anderen SAPs | **Geklärt** (Prüfung des Orchestrators, 29.10.2026, vom sap-autor nicht selbst geprüft): Im SAP Prognose-Register 2027 (Sperren 1 bis 3) gibt es keine Sperre, die diese Analyse berührt; dort ist V4 THG „ohne LULUCF" definiert; Sperre 3 betrifft nur die Rückkopplung aus dem Prognose-Check. |
+| K7 | Datenverfügbarkeit, Beschaffung | **Erledigt:** UBA-Tabelle (PDF) am 29.10.2026 mit Zustimmung von Daniel („Ja, PDF laden") heruntergeladen, 107.755 Bytes, SHA-256 `f8cf4f38…4b4b`, nicht geöffnet. Inventarbericht 2026 am 29.10.2026 mit Zustimmung („Ja, Bericht laden", Auflage: nur GWP- und Waldrevisions-Stellen) heruntergeladen, 50.870.104 Bytes, SHA-256 `707bbcd0…ba75a`, nicht in Git, nur per Stichwortsuche gelesen. Data Cube ungenutzt (Kontrolle nur nach Zustimmung). Ob HWP und Kategorien als Jahreswerte enthalten sind (S5), zeigt sich erst beim Öffnen der Tabelle. |
+| K8 | Referenz-Submission | **Geklärt** (UBA-Seite, Stand 02.07.2026): Submission 2026 veröffentlicht. |
+| K10 | GWP-Basis | **Geklärt** (Inventarbericht 2026, PDF-S. 51, Stichwortsuche 29.10.2026): IPCC AR5, GWP 100 (CH4 = 28, N2O = 265). In 3.5 eingetragen. |
+| K12 | Sperren aus anderen SAPs | **Geklärt** (Prüfung des Orchestrators, 29.10.2026): Im SAP Prognose-Register 2027 (Sperren 1 bis 3) gibt es keine Sperre, die diese Analyse berührt; dort ist V4 THG „ohne LULUCF" definiert; Sperre 3 betrifft nur die Rückkopplung aus dem Prognose-Check. |
 
-### 12.2 Teilweise belegt, Rest offen
+### 12.2 Hinweise ohne Einfrier-Wirkung
 
-| Nr. | Punkt | Stand, Rest-Klärung |
+| Nr. | Hinweis |
+|---|---|
+| K4 (Rest) | Ob eine Rechtsverordnung nach § 3a Abs. 3 KSG existiert, ist nicht geprüft; im abgerufenen Auszug zu § 5 steht keine. Empfehlung: Beim Lesen des Gesetzes (K2) Anlage 1 und § 3a Abs. 3 mitlesen. |
+| K6 (Information) | Befunde aus dem Inventarbericht 2026 (Stichwortsuche, 29.10.2026; PDF-Seitenindex): (a) jährliche vollständige Neuberechnung (S. 643), grundlegende Methodenänderungen für den gesamten Zeitraum mit der Submission 2026 (S. 645); (b) Modellfortschreibung (Matrixmodell, Rock et al., 2025) nach der letzten Bundeswaldinventur (S. 675), 2023 und 2024 sind Modellfortschreibungen; (c) kein belegtes einzelnes Bruchjahr. Eingearbeitet in 3.2, 4.3, 9. |
+| K13 (Lizenzen) | **Teilweise geklärt:** UBA-eigene Texte/Grafiken laut Suchergebnis CC BY-NC-ND 4.0, viele UBA-Datensätze DL-DE-BY-2.0; für PDF-Tabelle und Data Cube nicht bestätigt. Zahlen und eigene Auswertungen mit Quellenangabe voraussichtlich unkritisch. **Hinweis für die Veröffentlichung:** Lizenz vor Abdruck von UBA-Grafiken/-Tabellen im Wortlaut klären. Keine Voraussetzung für das Einfrieren. |
+
+### 12.3 Offen für Daniel vor dem Einfrieren
+
+| Nr. | Punkt | Was ist zu tun |
 |---|---|---|
-| K2 | Gesetzestext | **Teilweise belegt:** § 3a Abs. 1 KSG (Fassung: Ausfertigung 12.12.2019, zuletzt geändert durch Art. 1 G v. 15.7.2024, BGBl. 2024 I Nr. 235) laut Abruf von gesetze-im-internet.de am 29.10.2026 (Zusammenfassungswerkzeug): Zielwerte −25/−35/−40 Mt, Mittel aus Zieljahr und drei Vorjahren. **Offen:** Volltext selbst lesen (Daniel). |
-| K4 | Abgrenzung HWP | **Weitgehend belegt:** UBA-Seite führt HWP unter den Pools des Sektors; Anlage 1 Nr. 7 KSG nennt „Holzprodukte"; § 5 Abs. 2 Nr. 3 KSG erwähnt sie nicht. Primärreihe daher **mit HWP**. **Offen:** Anlage 1 KSG im Volltext (und ggf. Verordnung zu § 3a KSG) prüfen. |
-| K6 | Strukturbruch | **Teilweise:** Bruchjahr-Kandidat B\* ∈ {2017, 2018} aus Sekundärquellen (Öko-Institut, Spektrum, DUH, WKO; Suche 29.10.2026, nicht geprüft); BWI 2022 deckt 2012–2022. Wie die Zeitreihe in den Submissions rückwirkend revidiert wurde, ist **nicht geklärt**. **Offen:** B\* und Konsistenz der Reihe am Inventarbericht 2026 belegen (nur Textkapitel zu Neuberechnungen/Methodik, nicht die Zeitreihenwerte) und in 4.2 eintragen. |
-| K7 | Datenverfügbarkeit | **Geklärt:** Quellen sind die UBA-Tabelle (PDF) und der UBA Data Cube (Links in 3.1); kein CSV-Download genannt. **Offen:** Zustimmung von Daniel Saure zur Beschaffung (Dateiname, Quelle, Größe nennen; PDF-Download bzw. Data-Cube-Entnahme). Ob HWP und Kategorien als Jahreswerte enthalten sind (S5), zeigt sich erst beim Zugriff. |
+| K2 | Gesetzestext | Wortlaut von § 3a KSG stimmt laut Abruf (29.10.2026, Zusammenfassungswerkzeug; Fassung: Ausfertigung 12.12.2019, zuletzt geändert durch Art. 1 G v. 15.7.2024, BGBl. 2024 I Nr. 235). **Daniel liest den Volltext von § 3a selbst** und bestätigt Zielwerte −25/−35/−40 Mt und „Zieljahr plus drei Vorjahre". |
+| K11 | Methodenparameter | **Beantwortet: Daniel Saure hat die Parameter bestätigt (29.10.2026, Chat: „K11 bestätigt“).** Standardwerte in 5.7, früher **Vorschlag** (Mindestgrößen, ARIMA-Grenzen, Newey-West-Bandbreite, Seed 20261029, Holm, Rundung). |
+| K6 | **Beantwortet: Daniel Saure stimmt dem Vorschlag zu (29.10.2026, Chat: „1. ja“).** | Bruchjahr: S6 rechnet vorab beide Kandidaten B\* = 2017 und B\* = 2018 (Fenster ab B\*; Niveausprung nur deskriptiv). Ein Beleg für ein Bruchjahr ist dann keine Voraussetzung mehr. |
+| K9 | **Beantwortet: Daniel Saure stimmt dem Vorschlag zu (29.10.2026, Chat: „1. ja“).** | S4 (frühere Submissions 2023–2025) nur durchführen, wenn ohne großen Aufwand beschaffbar, sonst dokumentiert „nicht durchgeführt". Daniel akzeptiert, dass dies als Einfrier-Voraussetzung genügt (Beschaffbarkeit wird vor dem Einfrieren nicht geprüft). |
+| – | Volltext des SAP | Daniel liest den vollständigen aktuellen Dokumenttext (v0.3), bevor `draft` → `final` gesetzt wird. |
 
-### 12.3 Offen
+Alle übrigen Punkte sind beantwortet (12.1) oder Hinweise ohne Einfrier-Wirkung (12.2).
+Statuswechsel `draft` → `final`, Versionsnummer und Datum erfolgen durch den Menschen (nach
+vollständiger Lektüre des aktuellen Dokumenttexts).
 
-| Nr. | Punkt | Was fehlt |
-|---|---|---|
-| K9 | Frühere Submissions 2023–2025 (S4) | Beschaffbarkeit nicht geprüft. S4 ist formuliert als „nur wenn ohne großen Aufwand beschaffbar, sonst als nicht durchgeführt dokumentiert". Keine Voraussetzung für das Einfrieren, wenn Daniel diese Formulierung akzeptiert. |
-| K10 | GWP-Basis | Auf der UBA-Seite nicht genannt, aus Suchergebnissen nicht belegt. Im Inventarbericht 2026 (Kapitel zu GWP) nachlesen und in 3.5 eintragen. Nichts wird angenommen. |
-| K11 | Methodenparameter | Standardwerte sind in 5.7 als **Vorschlag, von Daniel zu bestätigen** eingetragen (Mindestgrößen, ARIMA-Grenzen, Newey-West-Bandbreite, Seed 20261029, Holm, Rundung). Bestätigung oder Änderung durch Daniel steht aus. |
-| K13 | Lizenzen | Lizenz der UBA-Daten und des Data Cube nicht geprüft; klimadashboard.de (CC BY 4.0 laut Auftrag), Thünen, OWID ebenfalls einzutragen. |
+## 13. Rohdateien
 
-**Offene Punkte für das Einfrieren:** K2 (Rest), K4 (Rest), K6, K7 (Rest: Zustimmung zur
-Beschaffung), K9, K10, K11, K13.
+Vorhanden (heruntergeladen 29.10.2026 mit Zustimmung von Daniel; Quelle, Größe und SHA-256 in
+`rohdaten/PROVENIENZ.txt`):
+1. `rohdaten/2_Tab_Emi-Senken-LULUCF_2026-07-02.pdf` (107.755 Bytes): Sektor LULUCF
+   1990–2024, ggf. Kategorien inkl. HWP; nicht geöffnet.
+2. `rohdaten/30_2026_CC_Inventarbericht-2026.pdf` (50.870.104 Bytes; nicht in Git): nur
+   Methodik-/Neuberechnungs-/GWP-Stellen per Stichwortsuche gelesen.
 
-Erst danach: Statuswechsel `draft` → `final`, Versionsnummer und Datum durch den Menschen
-(nach vollständiger Lektüre des aktuellen Dokumenttexts).
-
-## 13. Benötigte Rohdateien (Download nur nach ausdrücklicher Zustimmung von Daniel; nichts bisher heruntergeladen)
-
-1. UBA-Tabelle (PDF) `2_Tab_Emi-Senken-LULUCF_2026-07-02.pdf` (Link in 3.1): Sektor LULUCF
-   1990–2024, ggf. Kategorien inkl. HWP. Größe beim Zugriff eintragen.
-2. UBA Data Cube (Link in 3.1): Entnahme nur nach Zustimmung, als Kontrolle der
-   PDF-Werte.
-3. Inventarbericht 2026 (UBA Climate Change 30/2026), nur die Kapitel zu LULUCF-Methodik,
-   Neuberechnungen und GWP (für K6, K10).
-4. Gesetzestext: § 3a KSG, § 5 Abs. 2 Nr. 3 KSG und Anlage 1 KSG (Volltext, amtliche
-   Fassung) (für K2, K4).
+Noch nicht beschafft (jeweils nur nach ausdrücklicher Zustimmung von Daniel):
+3. UBA Data Cube (Kontrolle der PDF-Werte).
+4. Gesetzestexte im Volltext: § 3a KSG, § 5 Abs. 2 Nr. 3 KSG, Anlage 1 KSG (amtliche
+   Fassung) (für K2).
 5. Für S4 (nur wenn ohne großen Aufwand beschaffbar): Submissions 2025, 2024, 2023
    (LULUCF-Zeitreihe).
 6. Für S7 (nur falls als Veröffentlichung vorhanden): dokumentierte Schätzung 2025
@@ -795,23 +870,23 @@ Fundstelle.
 
 | Nr. | Prüfpunkt | Ergebnis |
 |---|---|---|
-| V1 | SAP-Status `final`, Versionsnummer, Datum, Freigabe durch den Menschen dokumentiert; alle Klärungspunkte in Abschnitt 12 beantwortet; Offenlegung des Vorwissens (Abschnitt 0) vollständig und unverändert; Änderungen v0.1 → v0.2 in der Versionshistorie nachvollziehbar | |
-| V2 | Referenz-Submission 2026, Zugriffsdatum, Dateiname im Run-Log; Version nicht gewechselt | |
-| V3 | Primärreihe (LULUCF inkl. HWP, K4) verwendet; Zeile/Seite der Quelle dokumentiert; Vorzeichen korrekt; GWP-Basis eingetragen | |
+| V1 | SAP-Status `final`, Versionsnummer, Datum, Freigabe durch den Menschen dokumentiert; alle Punkte in Abschnitt 12.3 beantwortet; Offenlegung des Vorwissens (Abschnitt 0, 8.5) vollständig und unverändert; Änderungen v0.1 → v0.3 in der Versionshistorie nachvollziehbar | |
+| V2 | Referenz-Submission 2026, Zugriffsdatum, Dateiname, SHA-256 im Run-Log gegen `PROVENIENZ.txt`; Version nicht gewechselt | |
+| V3 | Primärreihe (LULUCF inkl. HWP, K4) verwendet; Zeile/Seite der Quelle dokumentiert; Vorzeichen korrekt; GWP-Basis AR5 bestätigt oder Abweichung dokumentiert | |
 | V4 | Integritätschecks 3.5 vollständig ausgeführt und dokumentiert (inkl. doppelter Übertragung aus der PDF) | |
 | V5 | M(T) korrekt (vier Jahre, Zieljahr und drei Vorjahre); M(2024), D30, D40, D45 nachgerechnet | |
-| V6 | Drei Fenster A, B, C genau wie in 4.2; n stimmt (35/15/7); Fenster D nur deskriptiv; B\* wie eingetragen; keine Verschiebung der Grenzen | |
+| V6 | Drei Fenster A, B, C genau wie in 4.2; n stimmt (35/15/7); Fenster D nur deskriptiv; beide Kandidaten 2017 und 2018 gerechnet (S6a–d); keine Verschiebung der Grenzen | |
 | V7 | OLS auf Jahreswerten; M̂(2030) = α̂ + β̂·2028,5; Prognoseintervall nach Formel (1/4-Term, t mit n−2 Freiheitsgraden) unabhängig nachgerechnet | |
 | V8 | Kategorien nach 5.6 korrekt zugeordnet; keine Auswahl eines Fensters | |
 | V9 | E3: r_req (Divisor 6), r_obs(A/B/C), r_obs5, r_obs10 und Q nach Definition; Fälle „kein Quotient" korrekt behandelt | |
 | V10 | Diagnostik 5.2 vollständig (DW, ACF, Q-Q, Shapiro, Breusch-Pagan, Cook) und berichtet; kein Ausschluss von Jahren | |
-| V11 | Sensitivitäten S1–S7 (inkl. S6a–c) vollständig oder mit Grund „nicht durchgeführt"; ARIMA-Spezifikation und Seed wie 5.4/5.7 | |
+| V11 | Sensitivitäten S1–S7 (inkl. S6a–d) vollständig oder mit Grund „nicht durchgeführt"; ARIMA-Spezifikation und Seed wie 5.4/5.7; S6c ohne Prognose/Kategorie | |
 | V12 | Newey-West-Bandbreite wie 5.3; Holm-adjustierte p-Werte | |
 | V13 | Keine Trendfortschreibung auf 2040/2045; E4 ohne CO2-Entnahme-Annahmen | |
-| V14 | Alle Kernzahlen und alle drei Fenster im Bericht gleichrangig; Wortwahl nach 11 und 8 (Trendfortschreibung, nicht Prognose; keine Ursachenzuschreibung); 26,9 Mt nur mit S7-Hinweis | |
+| V14 | Alle Kernzahlen und alle drei Fenster im Bericht gleichrangig; Wortwahl nach 11 und 8 (Trendfortschreibung, nicht Prognose; keine Ursachenzuschreibung); 26,9 Mt nur mit S7-Hinweis; Hinweis auf Modellfortschreibung 2023/2024 vorhanden | |
 | V15 | Abweichungsprotokoll (Abschnitt 16) geführt; Abweichungen als „Post-hoc" gekennzeichnet | |
 | V16 | Sekundärquelle (OWID/GCP) nur zur Plausibilisierung, Definitionsunterschied benannt | |
-| V17 | Grafiken 1–2 und Tabellen 1–5 vorhanden, Rundung wie 11 | |
+| V17 | Grafiken 1–2 und Tabellen 1–5 vorhanden, Rundung wie 11; Lizenzhinweis bei UBA-Material beachtet | |
 
 ## 15. Zeitplan
 
@@ -819,8 +894,9 @@ Fundstelle.
 |---|---|
 | Entwurf SAP v0.1 | 29.10.2026 |
 | SAP v0.2 (Klärungsstand eingearbeitet) | 29.10.2026 |
+| SAP v0.3 (Nachträge konsolidiert) | 29.10.2026 |
 | Klärung der offenen Punkte (Abschnitt 12.3), Lektüre des Volltexts und Einfrieren durch Daniel Saure | bis 03.11.2026 |
-| Datenbeschaffung (nach Zustimmung durch Daniel) und Analyst (R-Umsetzung, 1–2 Arbeitstage) | ab Einfrieren, voraussichtlich 04.–05.11.2026 |
+| Analyst (Öffnen der Tabelle, R-Umsetzung, 1–2 Arbeitstage) | ab Einfrieren, voraussichtlich 04.–05.11.2026 |
 | Validierung (validator) | bis 12.11.2026 |
 | Freigabe und Berichtsentwurf | nach Validierung ohne „kritisch" |
 
@@ -839,23 +915,3 @@ Auswirkung festgehalten und im Bericht als „Post-hoc" gekennzeichnet.
 
 Bisher keine. Änderungen nach dem Einfrieren nur als datiertes Amendment mit Anlass,
 Entscheidung und Zeitpunkt (vor Berechnung der betroffenen Größen).
-
-### Nachtrag 29.10.2026 (nach Version 0.2)
-
-- **K7 (Beschaffung) erledigt:** Daniel Saure hat dem Herunterladen der UBA-Tabelle zugestimmt (Chat, 29.10.2026: „Ja, PDF laden“). Die Datei liegt unter `Analysen/2026-10-lulucf-senke/rohdaten/2_Tab_Emi-Senken-LULUCF_2026-07-02.pdf` (107.755 Bytes, SHA-256 `f8cf4f38…4b4b`, siehe `rohdaten/PROVENIENZ.txt`). Sie wurde **nicht geöffnet und nicht gelesen**; geprüft wurde nur, dass sie mit `%PDF` beginnt. Der Data Cube ist nicht abgerufen.
-- **K6/K10 (Stand 29.10.2026, abends):** Der Inventarbericht 2026 (UBA Climate Change 30/2026, Mai 2026, 1.058 Seiten, Berichtsjahre 1990 bis 2024) liegt als PDF unter https://www.umweltbundesamt.de/system/files/medien/11850/publikationen/2026-05/30_2026_CC.pdf . Das Werkzeug zum Lesen konnte die Datei nicht verarbeiten (Größe über 10 MB). GWP-Basis (K10) und Revision der Waldreihe nach der Bundeswaldinventur (K6) bleiben deshalb offen, bis der Bericht gelesen ist. Dafür braucht es das Herunterladen der Datei (Größe über 10 MB, genaue Größe unbekannt) mit Zustimmung von Daniel Saure.
-
-### Nachtrag 29.10.2026, abends: Inventarbericht 2026 gelesen (K10, K6)
-
-Daniel Saure hat dem Herunterladen zugestimmt (Chat: „Ja, Bericht laden“, mit der Auflage, nur Stellen zur GWP-Basis und zur Revision der Waldreihe zu lesen). Datei: `rohdaten/30_2026_CC_Inventarbericht-2026.pdf` (50.870.104 Bytes, SHA-256 `707bbcd0…ba75a`, nicht in Git, siehe `rohdaten/PROVENIENZ.txt`). Gelesen wurde per Textsuche nach den Stichwörtern GWP, Neuberechnung und Bundeswaldinventur; es wurden keine Zeitreihenwerte gelesen. Seitenzahlen sind PDF-Seitenindex, nicht gedruckte Seitenzahlen.
-
-- **K10 geklärt:** Der Inventarbericht 2026 verwendet die Treibhausgaspotentiale des **IPCC AR5** (PDF-S. 51: „Es werden die Treibhausgaspotentiale … des IPCC Assessment Report 5 (IPCC AR5) verwendet“; CH4 = 28, N2O = 265, GWP 100). In Abschnitt 3.5 einzutragen: GWP-Basis AR5.
-- **K6 teilweise geklärt:** (a) Das LULUCF-Inventar wird laut Bericht jedes Jahr **vollständig neu berechnet**, was „zum Teil zu erheblichen Unterschieden in den Ergebnissen … zwischen einzelnen Jahren“ führt (PDF-S. 643); auch mit der Submission 2026 gab es grundlegende Methodenänderungen, die eine vollständige Neuberechnung des gesamten Berichtszeitraums nötig machten (PDF-S. 645). Die Reihe verändert sich also mit jeder Submission, nicht nur an einem einzelnen Bruchjahr; die Sensitivität S4 (frühere Submissions) gewinnt dadurch Gewicht. (b) Die Bundeswaldinventur 2022 (Erhebung 2021 bis 2022) ist Grundlage der Waldberechnung; **für die Jahre nach der letzten Inventur wird die Waldentwicklung mit einem Matrix-Modell (Rock et al., 2025) fortgeschrieben** (PDF-S. 675). Die jüngsten Berichtsjahre (2023, 2024) sind damit Modellfortschreibungen und keine Messungen. Das ist eine Einschränkung für die Aussage und gehört in Abschnitt 4 und 9. (c) Ein belegtes einzelnes Bruchjahr (2017 oder 2018) fand sich in den gelesenen Stellen nicht; B\* bleibt Kandidat aus Sekundärquellen.
-- **K4 Hinweis:** Zur HWP-Abgrenzung wurde nichts gesucht; offen wie bisher.
-- Offen weiterhin: K2 (Rest), K4 (Rest), K6 (B\*), K9, K11, K13. In Version 0.3 sind K10 und K6 (a), (b) in den Haupttext einzuarbeiten.
-
-### Nachtrag 29.10.2026, spät: Gesetzesstellen und Lizenzen (K2, K4, K13)
-
-Abrufe von gesetze-im-internet.de per Zusammenfassungswerkzeug (nicht wörtlich geprüft, Seiten ohne Fassungsstand):
-- **K4 (Holzprodukte) weitgehend geklärt:** Anlage 1 Nr. 7 KSG („Landnutzung, Landnutzungsänderung und Forstwirtschaft“) umfasst laut Seite „Wald, Acker, Grünland, Feuchtgebiete, Siedlungen; Holzprodukte; Änderungen zwischen Landnutzungskategorien“ (CRT-Kategorie 4; Fundstelle BGBl. I 2019, 2519). Holzprodukte gehören damit ausdrücklich zum Sektor. § 5 Abs. 2 Nr. 3 KSG erwähnt sie nicht und nennt nur „auch Quellen und Senken von Treibhausgasen“. Im abgerufenen Auszug zu § 5 steht keine Rechtsverordnung nach § 3a Abs. 3; ob eine erlassen wurde, ist nicht geprüft. Primärreihe mit HWP bleibt begründet.
-- **K13 (Lizenzen) teilweise:** Nach einem Suchergebnis zur UBA-Datenschutzseite stehen selbst erstellte UBA-Inhalte (Texte, Grafiken) unter CC BY-NC-ND 4.0, sofern nicht anders gekennzeichnet; viele UBA-Datensätze stehen unter Datenlizenz Deutschland – Namensnennung 2.0. Für die PDF-Tabelle und den Data Cube ist die Lizenz nicht bestätigt. Für Zahlen (Fakten) und eigene Auswertungen mit Quellenangabe ist das voraussichtlich unkritisch, vor Veröffentlichung von UBA-Grafiken oder -Tabellen im Wortlaut klären.
