@@ -1,5 +1,7 @@
 # Analysebericht LULUCF-Senke (Analyst, Lauf vom 29.10.2026)
 
+**Freigabe der Ergebnisse:** Freigegeben durch Daniel Saure am 29.10.2026 (siehe `Freigabe_Ergebnisse_Daniel_Saure_2026-10-29.md`; Aussagegrenzen und offene Punkte K2-Rest, K4-Rest, K13 gelten weiter).
+
 Grundlage: SAP v1.0 (final) plus Amendment 1 (final). Skript `lulucf-senke.R`, Konsolenlauf `run_log.txt`, Tabellen und Grafiken in `output/`. Dieser Bericht ist eine reine Ergebnisdarstellung, noch ohne Validierung. Er enthaelt keine Bewertung fuer eine Story. Das Skript lief fehlerfrei durch (Exit-Code 0).
 
 Alle Zahlen: Mt CO2-Aequivalent, positiv = Quelle, negativ = Senke. "Trendfortschreibung" ist keine Prognose: sie beschreibt nur, was herauskaeme, wenn die lineare Entwicklung des Fensters unveraendert weiterliefe. Alle Aussagen gelten fuer die Reihe der Quelle 1 (UBA Trendtabellen THG, Dateikopf: Dessau, 15.01.2026, 1990-2024), inventarisierte Werte.
