@@ -6,11 +6,11 @@ des installierten Bestands laut Marktstammdatenregister, brutto und netto,
 mit drei vorab festgelegten Fenstern (12, 24 und 60 Monate).
 
 **Format:** Klima Kompass · Evidenzcheck (neue SAP-Analyse; Gate: Validierungsbericht ohne "kritisch").
-**Version:** 0.3 (**draft**)
+**Version:** 1.0 (eingefroren; Inhalt entspricht v0.3, ergänzt um den Freigabevermerk)
 **Datum:** 29.10.2026
 **Autor:in:** Claude (sap-autor-Subagent)
-**Status: draft. Nicht eingefroren. Nicht freigegeben.**
-**Freigabe:** _(leer; wird ausschließlich von Daniel Saure nach Lektüre des Volltextes eingetragen)_
+**Status: final (eingefroren am 29.10.2026).** Der analyst-Subagent darf jetzt gestartet werden. Änderungen nur noch per Amendment.
+**Freigabe:** Freigegeben durch Daniel Saure am 29.10.2026 (Volltext der Version 0.3 gelesen; Wortlaut der Bestätigung im Chat: „ja habe ich“, auf die Rückfrage, ob der vollständige Text gelesen wurde; zuvor „freigabe erteilt“).
 **Einstufung der Präregistrierung:** prospektiv, mit offengelegtem Vorwissen (Entscheidung Daniel Saure, 29.10.2026, Chat: „Ja, prospektiv“; Abschnitt 0). Diese Entscheidung ist keine Freigabe des SAP.
 
 **Geplanter Ordner:** `Analysen/2026-10-ausbaupfad-wind-solar/`
@@ -934,4 +934,4 @@ werden im Abweichungsprotokoll vermerkt, nicht stillschweigend aufgefangen.
 | K10 | Zwischenziel 2026 als Fortschreibung (E1b) statt Ist-Vergleich | **beantwortet** (29.10.2026): E1b nur als Fortschreibung bestätigt |
 | K11 | **Neu:** Behandlung der Dateien `GeloeschteUndDeaktivierteEinheiten_*` (3.5 Nr. 12), Stopp-Schwelle 0,5 % von C(τ,T), Sensitivität S9 | **Anweisung von Daniel Saure umgesetzt** (Analyst muss die Dateien berücksichtigen); die konkrete Regel einschließlich der Schwelle 0,5 % ist ein **Vorschlag des SAP-Autors, von Daniel Saure beim Lesen des Volltextes zu bestätigen**, weil die Dokumentation nur Felder, aber keine Leistung und keine Stilllegungsdaten für diese Einheiten nennt (3.6). **Nachtrag 29.10.2026:** Daniel Saure hat Regel, Schwelle 0,5 % und S9 im Chat bestätigt („Vorschläge so lassen“); das ersetzt nicht das Lesen des Volltextes. |
 
-**Freigabe:** _(leer; wird nur von Daniel Saure nach Lektüre des Volltextes eingetragen)_
+**Freigabe:** Freigegeben durch Daniel Saure am 29.10.2026 (siehe Kopf).
