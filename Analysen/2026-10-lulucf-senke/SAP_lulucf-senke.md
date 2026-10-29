@@ -7,12 +7,12 @@ Vergangenheit unverändert fortgeschrieben würde?
 
 **Format:** Klima Kompass · Evidenzcheck (neue SAP-Analyse; Gate: Validierungsbericht
 ohne „kritisch").
-**Version:** 0.3
+**Version:** 1.0 (eingefroren; Inhalt entspricht v0.3, ergänzt um den Eintrag der Antworten und den Freigabevermerk)
 **Datum:** 29.10.2026
-**Autor:in:** Claude (sap-autor-Subagent). Entwurf, noch nicht von einem Menschen als Volltext geprüft.
-**Status: draft.** Nicht eingefroren. Der Analyst-Subagent darf erst nach Einfrieren
-(Status `final`) gestartet werden.
-**Freigabe:** _________________________ Datum: __________ (leer; steht aus)
+**Autor:in:** Claude (sap-autor-Subagent). Volltext der Version 0.3 von Daniel Saure gelesen, eingefroren am 29.10.2026.
+**Status: final (eingefroren am 29.10.2026).** Der Analyst-Subagent darf jetzt gestartet werden;
+Änderungen nur als gekennzeichnete Ergänzung (Amendment oder Erratum) mit Begründung und erneuter Freigabe.
+**Freigabe:** Freigegeben durch Daniel Saure am 29.10.2026 (Volltext der Version 0.3 gelesen; Wortlaut der Bestätigung im Chat: „0.3 gelesen, einfrieren“).
 
 **Geplanter Ordner:** `Analysen/2026-10-lulucf-senke/`
 
@@ -44,6 +44,15 @@ ohne „kritisch").
   Sensitivität, Y = 2024, Primärreihe mit HWP, Modell, Intervallformel, Entscheidungsregeln
   5.6, Kernzahlen, keine Extrapolation auf 2040/2045. Die Änderungen (b) und (f) wurden nach
   Kenntnis der unter Abschnitt 0 offengelegten Informationen vorgenommen.
+
+- **v1.0 final (29.10.2026):** Eingefroren durch Daniel Saure nach Lektüre des Volltexts
+  der Version 0.3 (Bestätigung im Chat: „0.3 gelesen, einfrieren“). Antworten zu K11, K6
+  und K9 (Vorschläge angenommen) eingetragen. Inhaltlich keine Änderung gegenüber v0.3.
+  Offen beim Einfrieren und bewusst in Kauf genommen: K2, Rest (eigene Prüfung des
+  Volltexts von § 3a KSG durch Daniel Saure wurde nicht ausdrücklich bestätigt; der
+  Wortlaut beruht auf dem Abruf vom 29.10.2026); K4, Rest (Verordnung nach § 3a Abs. 3
+  nicht geprüft); K13 (Lizenzen als Hinweis). Änderungen ab jetzt nur als gekennzeichnete
+  Ergänzung.
 
 **Hinweis zur Vorlage:** Gerüst ist `SAP-Vorlage/SAP-Template.md`. Alle Abschnitte 0–11
 der Vorlage sind vorhanden und in derselben Nummerierung belegt (zusätzlich 4.3
@@ -830,7 +839,7 @@ stammen, sind vom sap-autor nicht selbst geprüft.
 
 | Nr. | Punkt | Was ist zu tun |
 |---|---|---|
-| K2 | Gesetzestext | Wortlaut von § 3a KSG stimmt laut Abruf (29.10.2026, Zusammenfassungswerkzeug; Fassung: Ausfertigung 12.12.2019, zuletzt geändert durch Art. 1 G v. 15.7.2024, BGBl. 2024 I Nr. 235). **Daniel liest den Volltext von § 3a selbst** und bestätigt Zielwerte −25/−35/−40 Mt und „Zieljahr plus drei Vorjahre". |
+| K2 | Gesetzestext | **Stand beim Einfrieren (29.10.2026): Rest bewusst offen, siehe Versionshistorie v1.0.**  Wortlaut von § 3a KSG stimmt laut Abruf (29.10.2026, Zusammenfassungswerkzeug; Fassung: Ausfertigung 12.12.2019, zuletzt geändert durch Art. 1 G v. 15.7.2024, BGBl. 2024 I Nr. 235). **Daniel liest den Volltext von § 3a selbst** und bestätigt Zielwerte −25/−35/−40 Mt und „Zieljahr plus drei Vorjahre". |
 | K11 | Methodenparameter | **Beantwortet: Daniel Saure hat die Parameter bestätigt (29.10.2026, Chat: „K11 bestätigt“).** Standardwerte in 5.7, früher **Vorschlag** (Mindestgrößen, ARIMA-Grenzen, Newey-West-Bandbreite, Seed 20261029, Holm, Rundung). |
 | K6 | **Beantwortet: Daniel Saure stimmt dem Vorschlag zu (29.10.2026, Chat: „1. ja“).** | Bruchjahr: S6 rechnet vorab beide Kandidaten B\* = 2017 und B\* = 2018 (Fenster ab B\*; Niveausprung nur deskriptiv). Ein Beleg für ein Bruchjahr ist dann keine Voraussetzung mehr. |
 | K9 | **Beantwortet: Daniel Saure stimmt dem Vorschlag zu (29.10.2026, Chat: „1. ja“).** | S4 (frühere Submissions 2023–2025) nur durchführen, wenn ohne großen Aufwand beschaffbar, sonst dokumentiert „nicht durchgeführt". Daniel akzeptiert, dass dies als Einfrier-Voraussetzung genügt (Beschaffbarkeit wird vor dem Einfrieren nicht geprüft). |
