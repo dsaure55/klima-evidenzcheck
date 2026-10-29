@@ -6,3 +6,11 @@ Groesse:      107755 Bytes (Server-Angabe auf der Seite: 105,23 kB)
 SHA-256:      f8cf4f382e4e7557de4307d2055d7f6c6ad4b46b9b83c1ef64b0542cc6af4b4b
 Status:       NICHT GEOEFFNET und nicht gelesen (nur Dateityp-Pruefung: beginnt mit %PDF). Wird erst nach Einfrieren des SAP (Status final) vom analyst geoeffnet.
 Lizenz:       ungeklaert (SAP K13)
+
+Datei:        30_2026_CC_Inventarbericht-2026.pdf
+Quelle:       https://www.umweltbundesamt.de/system/files/medien/11850/publikationen/2026-05/30_2026_CC.pdf (UBA Climate Change 30/2026, Mai 2026, Nationaler Inventarbericht 1990-2024, 1058 Seiten)
+Heruntergeladen: 29.10.2026, per curl, nach ausdruecklicher Zustimmung von Daniel Saure (Chat: "Ja, Bericht laden"; Auflage: nur Stellen zu GWP-Basis und Revision der Waldreihe lesen, keine Zeitreihen-Daten)
+Groesse:      50870104 Bytes
+SHA-256:      707bbcd09287a88c944b7971d2025806f3956d5589537fdf9a45f65c57fba75a
+Gelesen:      Textextraktion (pdftotext) nur nach Stichwoertern GWP, Neuberechnung, Bundeswaldinventur; keine Zeitreihenwerte gelesen. Fundstellen unten im SAP-Anhang.
+Hinweis:      NICHT in Git (51 MB), siehe .gitignore im Analyseordner.
