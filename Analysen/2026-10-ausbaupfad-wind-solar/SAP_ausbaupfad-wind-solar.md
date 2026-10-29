@@ -673,3 +673,11 @@ werden im Abweichungsprotokoll vermerkt, nicht stillschweigend aufgefangen.
 - **K1 beantwortet** (Daniel Saure, 29.10.2026, Chat: „Ja, prospektiv“): Die Analyse läuft als prospektiv mit offengelegtem Vorwissen (Wind an Land rund 68 GW laut Suchergebnis zum DIW-Monitor, ungeprüft). Das Vorwissen steht in Abschnitt 0.
 - **K2 teilweise belegt:** Die Zielwerte (§ 4 EEG, Wind an Land 69/84/99/115/157/160 GW für 2024/2026/2028/2030/2035/2040; Solar 88/128/172/215/309/400 GW) stimmen in zwei Abrufen vom 29.10.2026 überein (gesetze-im-internet.de, nichtamtliches Inhaltsverzeichnis ohne Fassungsstand; lxgesetze.de mit „zuletzt geändert 18.12.2025“). Ob § 4 durch die Änderung vom 18.12.2025 verändert wurde, ist nicht geklärt. Vor dem Einfrieren den amtlichen Volltext mit Fassungsstand prüfen.
 - Offen: K3 bis K10.
+
+### Ergänzung 29.10.2026 (nach Datenquellen-Recherche; K3, K4, K5)
+
+Es wurden keine Daten gesichtet; nur Metadaten und Gesetzestext.
+
+- **K3 (Offshore):** § 1 Abs. 2 WindSeeG nennt laut Abruf von gesetze-im-internet.de mindestens 30 GW bis 2030, 40 GW bis 2035 und 70 GW bis 2045 (Seite ohne Fassungsstand; nach lxgesetze zuletzt geändert 29.03.2026, Suchergebnis). Damit gibt es einen Primärbeleg für das Ziel; Aufnahme als Sekundärendpunkt weiter Entscheidung vor Einfrieren. Das Marktstammdatenregister führt Windenergie auf See als eigenen Einheitentyp.
+- **K4 (MaStR-Download):** Download-Seite: https://www.marktstammdatenregister.de/MaStR/Datendownload . Lizenz: Datenlizenz Deutschland – Namensnennung – Version 2.0 (laut Bundesnetzagentur-Seite für .xml/.csv und Webservice). **Dateigröße offiziell nicht genannt;** Spiegel älterer Stände auf Zenodo liegen bei rund 735 bis 880 MB (Suchergebnis, nicht der offizielle Export). Die Bundesnetzagentur-Seite nennt weder Nachmeldungen noch Stilllegungsfelder; die Feldnamen müssen an der Felddokumentation des Exports geprüft werden. Zustimmung von Daniel Saure zum Download steht aus (Dateiname und Größe werden vorab am Download-Link festgestellt, ohne die Datei zu öffnen).
+- **K5 (Zweitquelle):** Noch nicht recherchiert (Energy-Charts, Bundesnetzagentur Zubauzahlen), Lizenz offen.

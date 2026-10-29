@@ -716,3 +716,15 @@ Entscheidung und Zeitpunkt (vor Berechnung der betroffenen Größen).
 - **K4 Hinweis (nicht abschließend):** § 5 Abs. 2 Nr. 3 KSG erwähnt Holzprodukte nicht; Anlage 1 Nr. 7 nennt „Holzprodukte“ ausdrücklich als Teil des Sektors. Das spricht dafür, dass Holzprodukte zur gesetzlichen Größe gehören. Vor dem Einfrieren Anlage 1 im Volltext und die Verordnung nach § 3a Abs. 3 Nr. 3 prüfen.
 - **K5 beantwortet** (Daniel Saure, 29.10.2026, Chat: „Ja, Fenster B“): Hauptfenster ist 2010 bis letztes Berichtsjahr; Fenster A (ab 1990) und C (ab 2018) bleiben gleichrangig berichtete Sensitivität.
 - Offen: K3, K6 bis K13 (K2 und K4 nur teilweise belegt).
+
+### Ergänzung 29.10.2026 (nach Datenquellen-Recherche; wichtig für K1, K3, K4, K7, K10)
+
+**Offenlegung (erweitert das Vorwissen aus Abschnitt 0):** Bei der Quellenrecherche hat der Orchestrator (Claude, Top-Level-Session) die UBA-Seite „Emissionen der Landnutzung, -änderung und Forstwirtschaft“ (Stand „zuletzt aktualisiert am 02.07.2026“) per Zusammenfassungswerkzeug abgerufen und dabei **Aggregatwerte gesehen**: Gesamtsektor rund +36 Mt (1990) und +58 Mt (2024, laut Seite 59 Prozent über 1990); 2025 als „unsicher“ eingestufte Schätzung 26,9 Mt; Kategorienwerte 2024 (Wald 2,1 Mt Quelle, Ackerland 17,5, Grünland 24,2, Moore 52,2, Feuchtgebiete 9,0). Die Jahreswerte 1991 bis 2023 wurden nicht gesehen. Dieses Vorwissen erlaubt eine Erwartung (Ziel 2030 deutlich verfehlt), die Entscheidungsregeln und Fenster in diesem SAP wurden davon nicht beeinflusst, aber es ist Vorwissen über das Ergebnis. **K1 muss darauf erneut bestätigt werden** (Daniel Saure: „prospektiv mit diesem erweiterten Vorwissen“ oder „exploratorisch“).
+
+**Belege aus dem Abruf (nicht wörtlich geprüft):**
+- **K3:** Letztes Berichtsjahr mit Inventarwert ist laut UBA-Seite **2024**; 2025 ist eine unsichere Schätzung. Der jüngste gesetzliche Messwert (4-Jahres-Mittel) wäre damit 2021 bis 2024; 2022 bis 2025 nur mit Schätzwert (Sensitivität S7).
+- **K4:** Die UBA-Seite führt **Holzprodukte (HWP)** unter den Kohlenstoffpools des Sektors; zusammen mit Anlage 1 Nr. 7 KSG spricht das dafür, dass die Primärreihe HWP einschließt. Vor Einfrieren Anlage 1 im Volltext prüfen.
+- **K7:** Tabelle als PDF: https://www.umweltbundesamt.de/system/files/medien/384/bilder/dateien/2_Tab_Emi-Senken-LULUCF_2026-07-02.pdf ; UBA Data Cube (interaktiv): https://datacube.uba.de/vis?lc=de&df%5bid%5d=DF_CLIMATE_EMISSIONS_GHG_TRENDS_KSG . Ein CSV-Download ist auf der Seite nicht genannt. Herunterladen der PDF-Tabelle bzw. Datenentnahme aus dem Data Cube braucht die Zustimmung von Daniel Saure (Download-Regel).
+- **K8:** Submission 2026 mit Stand der Seite 02.07.2026 veröffentlicht.
+- **K10:** GWP-Basis (AR4/AR5) auf der Seite nicht genannt. Offen.
+- Pressemitteilung Thünen (14.03.2026) ließ sich nicht abrufen (zu viele Weiterleitungen); die 26,9 Mt für 2025 bleiben deshalb nur über die UBA-Seite belegt.
