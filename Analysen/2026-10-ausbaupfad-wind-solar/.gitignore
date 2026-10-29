@@ -1,2 +1,5 @@
 Gesamtdatenexport_*.zip
 entpackt/
+rohdaten/*.xml
+rohdaten/doku/
+rohdaten/*.zip

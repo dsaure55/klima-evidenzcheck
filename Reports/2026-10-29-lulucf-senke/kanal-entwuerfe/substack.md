@@ -1,5 +1,7 @@
 **ENTWURF – nicht veröffentlicht. Freigabe durch Daniel Saure erforderlich vor Publikation.**
 
+**Freigabe:** Freigegeben durch Daniel Saure am 29.10.2026 (Chat: „substack entwurf ist freigegeben“). Hinweis: Der Faktencheck (`faktencheck.md`) war zu diesem Zeitpunkt noch nicht abgeschlossen. Textänderungen daraus brauchen eine erneute Bestätigung durch Daniel Saure, bevor veröffentlicht wird.
+
 Klima Kompass · Evidenzcheck
 
 # Wie weit ist Deutschlands Landnutzung von der gesetzlichen Senke entfernt?
