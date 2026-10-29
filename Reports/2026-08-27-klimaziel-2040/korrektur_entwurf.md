@@ -1,4 +1,4 @@
-**ENTWURF – nicht veröffentlicht. Freigabe durch Daniel Saure erforderlich vor Publikation.**
+**FREIGEGEBEN durch Daniel Saure am 29.10.2026 (im Chat: „Gelesen, frei“ auf die Frage, ob er Hinweis und Textänderungen in der vollständig gezeigten Fassung freigibt) – auf Substack noch nicht umgesetzt. [Datum] im Hinweis beim Setzen durch das Tagesdatum ersetzen.**
 
 # Korrekturvermerk – „Erreicht Deutschland sein Klimaziel 2040? Die Antwort hängt vom Blickwinkel ab“ (27.08.2026)
 
