@@ -1,0 +1,29 @@
+"feld","code","bedeutung","katalogkategorie_im_export","erwartete_kategorie","n_wind","n_solar","n_geloescht_deaktiviert"
+"EinheitBetriebsstatus","31","In Planung","Betriebsstatus","Betriebsstatus",8841,66137,42879
+"EinheitBetriebsstatus","35","In Betrieb","Betriebsstatus","Betriebsstatus",32246,6447697,210230
+"EinheitBetriebsstatus","37","Vorübergehend stillgelegt","Betriebsstatus","Betriebsstatus",87,8090,491
+"EinheitBetriebsstatus","38","Endgültig stillgelegt","Betriebsstatus","Betriebsstatus",3166,91157,4367
+"EinheitSystemstatus","472","Aktiviert","Systemstatus","Systemstatus",44340,6613081,0
+"EinheitSystemstatus","473","Deaktiviert","Systemstatus","Systemstatus",0,0,87140
+"EinheitSystemstatus","572","Gelöscht","Systemstatus","Systemstatus",0,0,170827
+"WindAnLandOderAufSee","888","Windenergie an Land","Wind an Land oder auf See","Wind an Land oder auf See",42431,0,
+"WindAnLandOderAufSee","889","Windenergie auf See","Wind an Land oder auf See","Wind an Land oder auf See",1909,0,
+"Seelage","639","Ostsee","Seelage","Seelage",329,0,
+"Seelage","640","Nordsee","Seelage","Seelage",1580,0,
+"Einheittyp (G)","1","Solareinheit","Einheitentypen.xml","Einheitentypen",0,0,176646
+"Einheittyp (G)","10","Gasverbrauchseinheit","Einheitentypen.xml","Einheitentypen",0,0,714
+"Einheittyp (G)","11","Gaserzeugungseinheit","Einheitentypen.xml","Einheitentypen",0,0,263
+"Einheittyp (G)","12","Gasspeichereinheit","Einheitentypen.xml","Einheitentypen",0,0,14
+"Einheittyp (G)","2","Windeinheit","Einheitentypen.xml","Einheitentypen",0,0,1724
+"Einheittyp (G)","3","Biomasse","Einheitentypen.xml","Einheitentypen",0,0,1175
+"Einheittyp (G)","4","Wasser","Einheitentypen.xml","Einheitentypen",0,0,418
+"Einheittyp (G)","5","Geothermie","Einheitentypen.xml","Einheitentypen",0,0,1363
+"Einheittyp (G)","6","Verbrennung","Einheitentypen.xml","Einheitentypen",0,0,5324
+"Einheittyp (G)","8","Stromspeichereinheit","Einheitentypen.xml","Einheitentypen",0,0,61156
+"Einheittyp (G)","9","Stromverbrauchseinheit","Einheitentypen.xml","Einheitentypen",0,0,9170
+"EinheitLoeschgrund (G)","3234","Duplikat/Doppelte Registrierung","Löschgründe Einheit","Löschgründe Einheit",0,0,95479
+"EinheitLoeschgrund (G)","3235","Versehentliche Registrierung /Testregistrierung","Löschgründe Einheit","Löschgründe Einheit",0,0,49485
+"EinheitLoeschgrund (G)","3236","Anlagenzusammenfassung/-aufteilung","Löschgründe Einheit","Löschgründe Einheit",0,0,2988
+"EinheitLoeschgrund (G)","3237","Einheit wird nicht in Betrieb genommen","Löschgründe Einheit","Löschgründe Einheit",0,0,9436
+"EinheitLoeschgrund (G)","3238","Mit falschem Einheitentyp registriert","Löschgründe Einheit","Löschgründe Einheit",0,0,6521
+"EinheitLoeschgrund (G)","3239","Keine Registrierungspflicht","Löschgründe Einheit","Löschgründe Einheit",0,0,1432

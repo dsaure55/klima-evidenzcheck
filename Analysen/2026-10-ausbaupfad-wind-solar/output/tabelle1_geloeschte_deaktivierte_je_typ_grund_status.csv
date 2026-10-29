@@ -1,0 +1,53 @@
+"typ","loeschgrund","betriebsstatus","systemstatus","Freq"
+"Solareinheit","(kein Loeschgrund)","Endgültig stillgelegt","Deaktiviert",492
+"Windeinheit","(kein Loeschgrund)","Endgültig stillgelegt","Deaktiviert",5
+"Solareinheit","(kein Loeschgrund)","In Betrieb","Deaktiviert",62447
+"Windeinheit","(kein Loeschgrund)","In Betrieb","Deaktiviert",128
+"Solareinheit","(kein Loeschgrund)","In Planung","Deaktiviert",320
+"Windeinheit","(kein Loeschgrund)","In Planung","Deaktiviert",251
+"Solareinheit","(kein Loeschgrund)","Vorübergehend stillgelegt","Deaktiviert",58
+"Solareinheit","(kein Loeschgrund)","Endgültig stillgelegt","Gelöscht",161
+"Windeinheit","(kein Loeschgrund)","Endgültig stillgelegt","Gelöscht",1
+"Solareinheit","Anlagenzusammenfassung/-aufteilung","Endgültig stillgelegt","Gelöscht",78
+"Solareinheit","Duplikat/Doppelte Registrierung","Endgültig stillgelegt","Gelöscht",1341
+"Windeinheit","Duplikat/Doppelte Registrierung","Endgültig stillgelegt","Gelöscht",14
+"Solareinheit","Einheit wird nicht in Betrieb genommen","Endgültig stillgelegt","Gelöscht",230
+"Solareinheit","Keine Registrierungspflicht","Endgültig stillgelegt","Gelöscht",21
+"Solareinheit","Mit falschem Einheitentyp registriert","Endgültig stillgelegt","Gelöscht",34
+"Windeinheit","Mit falschem Einheitentyp registriert","Endgültig stillgelegt","Gelöscht",2
+"Solareinheit","Versehentliche Registrierung /Testregistrierung","Endgültig stillgelegt","Gelöscht",864
+"Windeinheit","Versehentliche Registrierung /Testregistrierung","Endgültig stillgelegt","Gelöscht",4
+"Solareinheit","(kein Loeschgrund)","In Betrieb","Gelöscht",2250
+"Windeinheit","(kein Loeschgrund)","In Betrieb","Gelöscht",11
+"Solareinheit","Anlagenzusammenfassung/-aufteilung","In Betrieb","Gelöscht",1721
+"Windeinheit","Anlagenzusammenfassung/-aufteilung","In Betrieb","Gelöscht",2
+"Solareinheit","Duplikat/Doppelte Registrierung","In Betrieb","Gelöscht",49938
+"Windeinheit","Duplikat/Doppelte Registrierung","In Betrieb","Gelöscht",696
+"Solareinheit","Einheit wird nicht in Betrieb genommen","In Betrieb","Gelöscht",737
+"Windeinheit","Einheit wird nicht in Betrieb genommen","In Betrieb","Gelöscht",10
+"Solareinheit","Keine Registrierungspflicht","In Betrieb","Gelöscht",310
+"Windeinheit","Keine Registrierungspflicht","In Betrieb","Gelöscht",2
+"Solareinheit","Mit falschem Einheitentyp registriert","In Betrieb","Gelöscht",945
+"Windeinheit","Mit falschem Einheitentyp registriert","In Betrieb","Gelöscht",3
+"Solareinheit","Versehentliche Registrierung /Testregistrierung","In Betrieb","Gelöscht",24497
+"Windeinheit","Versehentliche Registrierung /Testregistrierung","In Betrieb","Gelöscht",269
+"Solareinheit","(kein Loeschgrund)","In Planung","Gelöscht",856
+"Windeinheit","(kein Loeschgrund)","In Planung","Gelöscht",10
+"Solareinheit","Anlagenzusammenfassung/-aufteilung","In Planung","Gelöscht",262
+"Solareinheit","Duplikat/Doppelte Registrierung","In Planung","Gelöscht",13310
+"Windeinheit","Duplikat/Doppelte Registrierung","In Planung","Gelöscht",171
+"Solareinheit","Einheit wird nicht in Betrieb genommen","In Planung","Gelöscht",7390
+"Windeinheit","Einheit wird nicht in Betrieb genommen","In Planung","Gelöscht",32
+"Solareinheit","Keine Registrierungspflicht","In Planung","Gelöscht",84
+"Solareinheit","Mit falschem Einheitentyp registriert","In Planung","Gelöscht",310
+"Windeinheit","Mit falschem Einheitentyp registriert","In Planung","Gelöscht",4
+"Solareinheit","Versehentliche Registrierung /Testregistrierung","In Planung","Gelöscht",7695
+"Windeinheit","Versehentliche Registrierung /Testregistrierung","In Planung","Gelöscht",106
+"Solareinheit","(kein Loeschgrund)","Vorübergehend stillgelegt","Gelöscht",11
+"Solareinheit","Anlagenzusammenfassung/-aufteilung","Vorübergehend stillgelegt","Gelöscht",5
+"Solareinheit","Duplikat/Doppelte Registrierung","Vorübergehend stillgelegt","Gelöscht",122
+"Windeinheit","Duplikat/Doppelte Registrierung","Vorübergehend stillgelegt","Gelöscht",3
+"Solareinheit","Einheit wird nicht in Betrieb genommen","Vorübergehend stillgelegt","Gelöscht",21
+"Solareinheit","Keine Registrierungspflicht","Vorübergehend stillgelegt","Gelöscht",8
+"Solareinheit","Mit falschem Einheitentyp registriert","Vorübergehend stillgelegt","Gelöscht",9
+"Solareinheit","Versehentliche Registrierung /Testregistrierung","Vorübergehend stillgelegt","Gelöscht",119

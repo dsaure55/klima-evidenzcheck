@@ -1,0 +1,42 @@
+"schritt","technologie","anzahl","brutto_GW"
+"1 Rohdatensaetze in den Einheitendateien","Wind (alle Lagen)",44340,142.2976
+"2 davon Dubletten (gleiche MaStR-Nummer), entfernt","Wind (alle Lagen)",0,0
+"1 Rohdatensaetze in den Einheitendateien","Solar",6613081,142.1499
+"2 davon Dubletten (gleiche MaStR-Nummer), entfernt","Solar",0,0
+"3 nach Duplikat-Bereinigung (Population)","Wind an Land",42431,129.2889
+"4 harte Ausschluesse (Brutto fehlt/<=0 oder ueber harter Schwelle)","Wind an Land",0,0
+"5 ohne Inbetriebnahmedatum (nicht im Bestand)","Wind an Land",8750,54.0043
+"6 Inbetriebnahmedatum nach Exportdatum (ausgeschlossen)","Wind an Land",0,0
+"7 Betriebsstatus 'in Planung' mit Datum (nicht im Bestand)","Wind an Land",0,0
+"8 Einheiten im Datensatz fuer Bestand/Zubau (Einschluss)","Wind an Land",33681,75.2846
+"8a davon mit gueltigem Datum endgueltiger Stilllegung (S)","Wind an Land",3166,3.7512
+"8b davon 'endgueltig stillgelegt' ohne Stilllegungsdatum (im Bestand belassen)","Wind an Land",0,0
+"8c davon Stilllegungsdatum vor Inbetriebnahme (als nicht stillgelegt behandelt)","Wind an Land",0,0
+"8d davon Stilllegungsdatum, aber Status nicht endgueltig (als nicht stillgelegt behandelt)","Wind an Land",0,0
+"9 weiche Markierung: Brutto ueber weicher Schwelle (bleibt im Datensatz)","Wind an Land",0,0
+"9 weiche Markierung: Nettonennleistung > Bruttoleistung (bleibt im Datensatz)","Wind an Land",0,0
+"3 nach Duplikat-Bereinigung (Population)","Solar",6613081,142.1499
+"4 harte Ausschluesse (Brutto fehlt/<=0 oder ueber harter Schwelle)","Solar",0,0
+"5 ohne Inbetriebnahmedatum (nicht im Bestand)","Solar",66137,9.5737
+"6 Inbetriebnahmedatum nach Exportdatum (ausgeschlossen)","Solar",0,0
+"7 Betriebsstatus 'in Planung' mit Datum (nicht im Bestand)","Solar",0,0
+"8 Einheiten im Datensatz fuer Bestand/Zubau (Einschluss)","Solar",6546944,132.5762
+"8a davon mit gueltigem Datum endgueltiger Stilllegung (S)","Solar",91155,0.4371
+"8b davon 'endgueltig stillgelegt' ohne Stilllegungsdatum (im Bestand belassen)","Solar",1,0
+"8c davon Stilllegungsdatum vor Inbetriebnahme (als nicht stillgelegt behandelt)","Solar",1,0
+"8d davon Stilllegungsdatum, aber Status nicht endgueltig (als nicht stillgelegt behandelt)","Solar",2,0
+"9 weiche Markierung: Brutto ueber weicher Schwelle (bleibt im Datensatz)","Solar",0,0
+"9 weiche Markierung: Nettonennleistung > Bruttoleistung (bleibt im Datensatz)","Solar",0,0
+"3 nach Duplikat-Bereinigung (Population)","Wind auf See",1909,13.0087
+"4 harte Ausschluesse (Brutto fehlt/<=0 oder ueber harter Schwelle)","Wind auf See",0,0
+"5 ohne Inbetriebnahmedatum (nicht im Bestand)","Wind auf See",91,1.365
+"6 Inbetriebnahmedatum nach Exportdatum (ausgeschlossen)","Wind auf See",0,0
+"7 Betriebsstatus 'in Planung' mit Datum (nicht im Bestand)","Wind auf See",0,0
+"8 Einheiten im Datensatz fuer Bestand/Zubau (Einschluss)","Wind auf See",1818,11.6437
+"8a davon mit gueltigem Datum endgueltiger Stilllegung (S)","Wind auf See",0,0
+"8b davon 'endgueltig stillgelegt' ohne Stilllegungsdatum (im Bestand belassen)","Wind auf See",0,0
+"8c davon Stilllegungsdatum vor Inbetriebnahme (als nicht stillgelegt behandelt)","Wind auf See",0,0
+"8d davon Stilllegungsdatum, aber Status nicht endgueltig (als nicht stillgelegt behandelt)","Wind auf See",0,0
+"9 weiche Markierung: Brutto ueber weicher Schwelle (bleibt im Datensatz)","Wind auf See",0,0
+"9 weiche Markierung: Nettonennleistung > Bruttoleistung (bleibt im Datensatz)","Wind auf See",0,0
+"5/Nr.5 Windeinheit ohne Lage (ausgeschlossen)","Wind (Lage fehlt)",0,0

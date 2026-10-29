@@ -1,0 +1,3 @@
+S3: nicht durchgefuehrt, Grund: Zweitquelle nicht beschafft (kein Netzzugriff im Analyselauf; im Ordner rohdaten/ liegt keine Zweitquellen-Reihe; SAP 3.2 erlaubt Entfall ohne Amendment).
+S8: deskriptiv durchgefuehrt (Tabelle saisonalitaet_monatszubau_60m_*.csv und Grafik diagnostik_saisonalitaet.png nach 5.2 Nr.4); als Modellvariante dient S4 (voll_S4_flussmodell.csv).
+S9: nicht durchgefuehrt, Grund: keine Ueberlappung (0 Nummern aus GeloeschteUndDeaktivierteEinheiten_* kommen in EinheitenWind/EinheitenSolar_* vor; SAP 6, S9).

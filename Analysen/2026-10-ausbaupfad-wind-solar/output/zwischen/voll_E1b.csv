@@ -1,0 +1,7 @@
+"technologie","fenster","x2026","ziel2026_GW","wert_31122026_GW","L","U","einordnung","hilfsgroesse_ziel_interpoliert_T_GW","C_T_GW","abstand_C_T_zu_interpoliert_GW","abstand_prozent"
+"Wind an Land",12,5,84,72.4211461273846,71.9835665758935,72.8587256788758,"Das Ziel liegt oberhalb des 95-%-Prognoseintervalls der Fortschreibung.",80.875,70.368956027,-10.506043973,-12.9904716822257
+"Wind an Land",24,5,84,72.0656637494,71.6051697025846,72.5261577962154,"Das Ziel liegt oberhalb des 95-%-Prognoseintervalls der Fortschreibung.",80.875,70.368956027,-10.506043973,-12.9904716822257
+"Wind an Land",60,5,84,70.1494093247789,68.7405334794941,71.5582851700638,"Das Ziel liegt oberhalb des 95-%-Prognoseintervalls der Fortschreibung.",80.875,70.368956027,-10.506043973,-12.9904716822257
+"Solar",12,5,128,134.953715256404,134.15964793401,135.747782578797,"Das Ziel liegt unterhalb des 95-%-Prognoseintervalls der Fortschreibung.",119.666666666667,128.089592525007,8.42292585834063,7.03865670613423
+"Solar",24,5,128,134.961470510293,134.192338502955,135.730602517632,"Das Ziel liegt unterhalb des 95-%-Prognoseintervalls der Fortschreibung.",119.666666666667,128.089592525007,8.42292585834063,7.03865670613423
+"Solar",60,5,128,130.533322159029,124.422399803624,136.644244514435,"Das Ziel liegt im 95-%-Prognoseintervall der Fortschreibung.",119.666666666667,128.089592525007,8.42292585834063,7.03865670613423

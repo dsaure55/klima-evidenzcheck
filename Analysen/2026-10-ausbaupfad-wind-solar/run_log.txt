@@ -1,0 +1,424 @@
+21:16:39  Ausbaupfad Wind/Solar - Lauf gestartet
+21:16:39  SAP v1.0, Status final (eingefroren 29.10.2026), Freigabe Daniel Saure 29.10.2026
+21:16:39  Skript: C:/Users/dsaur/klima-evidenzcheck/Analysen/2026-10-ausbaupfad-wind-solar/ausbaupfad-wind-solar.R
+21:16:39  Cache-Ordner (schlanke Extrakte, nicht in Git): C:/Users/dsaur/AppData/Local/Temp/claude/C--Users-dsaur-klima-evidenzcheck/038b169d-9c7d-406e-9a67-c060d7a5b6a6/scratchpad/cache_final
+21:16:39  
+-- sessionInfo() --
+21:16:39  R version 4.6.1 (2026-06-24 ucrt)
+21:16:39  Platform: x86_64-w64-mingw32/x64
+21:16:39  Running under: Windows 11 x64 (build 26200)
+21:16:39  
+21:16:39  Matrix products: default
+21:16:39    LAPACK version 3.12.1
+21:16:39  
+21:16:39  locale:
+21:16:39  [1] LC_COLLATE=C                    LC_CTYPE=German_Germany.utf8   
+21:16:39  [3] LC_MONETARY=German_Germany.utf8 LC_NUMERIC=C                   
+21:16:39  [5] LC_TIME=German_Germany.utf8    
+21:16:39  
+21:16:39  time zone: Europe/Berlin
+21:16:39  tzcode source: internal
+21:16:39  
+21:16:39  attached base packages:
+21:16:39  [1] stats     graphics  grDevices utils     datasets  methods   base     
+21:16:39  
+21:16:39  loaded via a namespace (and not attached):
+21:16:39  [1] compiler_4.6.1
+21:16:39  Paket xml2 1.6.0
+21:16:39  Paket lmtest 0.9.40
+21:16:39  Paket sandwich 3.1.3
+21:16:39  Paket ggplot2 4.0.3
+21:16:39  Paket digest 0.6.39
+21:16:39  Nicht installiert (SAP 10 'voraussichtlich'): data.table, lubridate -> Base R/xml2 statt dessen (Wahl dokumentiert, keine Abweichung der Methodik).
+21:16:39  Exportdatum 2026-10-29; T = 2026-07; T_S1 = 2026-09
+21:16:39  
+==== SAP 3.1 Eingabedateien und Pruefsummen ====
+21:16:39  Zeile in PRUEFSUMMEN ohne SHA-256 (ignoriert): fertig 2026-10-29 10:37:56 UTC
+21:16:39  PRUEFSUMMEN_xml_2026-10-29.txt: 80 Eintraege, 79 verschiedene Dateien
+21:16:39  Datei mit mehrfachem Eintrag: Einheitentypen.xml; identische Summen: TRUE
+21:16:39  XML-Dateien im Ordner rohdaten/: 84; davon nicht in Pruefsummenliste: Bilanzierungsgebiete.xml, Lokationstypen.xml, Marktfunktionen.xml, Marktrollen.xml, Netze.xml
+21:16:39  In Pruefsummenliste, aber nicht im Ordner: 
+21:16:39  Berechne SHA-256 (Streaming durch digest) fuer 79 Dateien, 24.1 GB ...
+21:18:46  Pruefsummen: 79 von 79 Dateien stimmen ueberein; Abweichungen/fehlend: 0
+21:18:46  Eingabedateien (Name, Groesse in Byte):
+21:18:46     EinheitenAenderungNetzbetreiberzuordnungen_1.xml      139104936  SHA-256 ja
+21:18:46     EinheitenAenderungNetzbetreiberzuordnungen_2.xml      139469032  SHA-256 ja
+21:18:46     EinheitenAenderungNetzbetreiberzuordnungen_3.xml       48429082  SHA-256 ja
+21:18:46     EinheitenGasverbraucher.xml                             2662744  SHA-256 ja
+21:18:46     EinheitenSolar_1.xml                                  380238338  SHA-256 ja
+21:18:46     EinheitenSolar_10.xml                                 375338846  SHA-256 ja
+21:18:46     EinheitenSolar_11.xml                                 374837424  SHA-256 ja
+21:18:46     EinheitenSolar_12.xml                                 375392532  SHA-256 ja
+21:18:46     EinheitenSolar_13.xml                                 375571360  SHA-256 ja
+21:18:46     EinheitenSolar_14.xml                                 375348628  SHA-256 ja
+21:18:46     EinheitenSolar_15.xml                                 374953318  SHA-256 ja
+21:18:46     EinheitenSolar_16.xml                                 374782066  SHA-256 ja
+21:18:46     EinheitenSolar_17.xml                                 373892198  SHA-256 ja
+21:18:46     EinheitenSolar_18.xml                                 375144182  SHA-256 ja
+21:18:46     EinheitenSolar_19.xml                                 375403716  SHA-256 ja
+21:18:46     EinheitenSolar_2.xml                                  379072104  SHA-256 ja
+21:18:46     EinheitenSolar_20.xml                                 374325524  SHA-256 ja
+21:18:46     EinheitenSolar_21.xml                                 374997324  SHA-256 ja
+21:18:46     EinheitenSolar_22.xml                                 372965316  SHA-256 ja
+21:18:46     EinheitenSolar_23.xml                                 372796348  SHA-256 ja
+21:18:46     EinheitenSolar_24.xml                                 370546564  SHA-256 ja
+21:18:46     EinheitenSolar_25.xml                                 369699054  SHA-256 ja
+21:18:46     EinheitenSolar_26.xml                                 368387866  SHA-256 ja
+21:18:46     EinheitenSolar_27.xml                                 364326514  SHA-256 ja
+21:18:46     EinheitenSolar_28.xml                                 359278396  SHA-256 ja
+21:18:46     EinheitenSolar_29.xml                                 356807212  SHA-256 ja
+21:18:46     EinheitenSolar_3.xml                                  377944868  SHA-256 ja
+21:18:46     EinheitenSolar_30.xml                                 356030268  SHA-256 ja
+21:18:46     EinheitenSolar_31.xml                                 355025772  SHA-256 ja
+21:18:46     EinheitenSolar_32.xml                                 355796714  SHA-256 ja
+21:18:46     EinheitenSolar_33.xml                                 355353084  SHA-256 ja
+21:18:46     EinheitenSolar_34.xml                                 355612042  SHA-256 ja
+21:18:46     EinheitenSolar_35.xml                                 356151130  SHA-256 ja
+21:18:46     EinheitenSolar_36.xml                                 357164246  SHA-256 ja
+21:18:46     EinheitenSolar_37.xml                                 358517296  SHA-256 ja
+21:18:46     EinheitenSolar_38.xml                                 352903532  SHA-256 ja
+21:18:46     EinheitenSolar_39.xml                                 344193946  SHA-256 ja
+21:18:46     EinheitenSolar_4.xml                                  376637840  SHA-256 ja
+21:18:46     EinheitenSolar_40.xml                                 335666004  SHA-256 ja
+21:18:46     EinheitenSolar_41.xml                                 331129302  SHA-256 ja
+21:18:46     EinheitenSolar_42.xml                                 328191906  SHA-256 ja
+21:18:46     EinheitenSolar_43.xml                                 327791166  SHA-256 ja
+21:18:46     EinheitenSolar_44.xml                                 330744284  SHA-256 ja
+21:18:46     EinheitenSolar_45.xml                                 329430556  SHA-256 ja
+21:18:46     EinheitenSolar_46.xml                                 330584762  SHA-256 ja
+21:18:46     EinheitenSolar_47.xml                                 334700842  SHA-256 ja
+21:18:46     EinheitenSolar_48.xml                                 340907086  SHA-256 ja
+21:18:46     EinheitenSolar_49.xml                                 341072112  SHA-256 ja
+21:18:46     EinheitenSolar_5.xml                                  376085826  SHA-256 ja
+21:18:46     EinheitenSolar_50.xml                                 337831138  SHA-256 ja
+21:18:46     EinheitenSolar_51.xml                                 328206936  SHA-256 ja
+21:18:46     EinheitenSolar_52.xml                                 325813672  SHA-256 ja
+21:18:46     EinheitenSolar_53.xml                                 328286698  SHA-256 ja
+21:18:46     EinheitenSolar_54.xml                                 327218054  SHA-256 ja
+21:18:46     EinheitenSolar_55.xml                                 327431662  SHA-256 ja
+21:18:46     EinheitenSolar_56.xml                                 327899652  SHA-256 ja
+21:18:46     EinheitenSolar_57.xml                                 333267832  SHA-256 ja
+21:18:46     EinheitenSolar_58.xml                                 338706162  SHA-256 ja
+21:18:46     EinheitenSolar_59.xml                                 337899196  SHA-256 ja
+21:18:46     EinheitenSolar_6.xml                                  376125780  SHA-256 ja
+21:18:46     EinheitenSolar_60.xml                                 327611764  SHA-256 ja
+21:18:46     EinheitenSolar_61.xml                                 325682514  SHA-256 ja
+21:18:46     EinheitenSolar_62.xml                                 326756632  SHA-256 ja
+21:18:46     EinheitenSolar_63.xml                                 331908470  SHA-256 ja
+21:18:46     EinheitenSolar_64.xml                                 331506566  SHA-256 ja
+21:18:46     EinheitenSolar_65.xml                                 334500444  SHA-256 ja
+21:18:46     EinheitenSolar_66.xml                                 339104642  SHA-256 ja
+21:18:46     EinheitenSolar_67.xml                                  44752470  SHA-256 ja
+21:18:46     EinheitenSolar_7.xml                                  376020226  SHA-256 ja
+21:18:46     EinheitenSolar_8.xml                                  375702320  SHA-256 ja
+21:18:46     EinheitenSolar_9.xml                                  374972968  SHA-256 ja
+21:18:46     EinheitenWind.xml                                     208121802  SHA-256 ja
+21:18:46     Einheitentypen.xml                                         1892  SHA-256 ja
+21:18:46     Katalogkategorien.xml                                     19842  SHA-256 ja
+21:18:46     Katalogwerte.xml                                         414388  SHA-256 ja
+21:18:46     GeloeschteUndDeaktivierteEinheiten_1.xml               77785732  SHA-256 ja
+21:18:46     GeloeschteUndDeaktivierteEinheiten_2.xml               78322614  SHA-256 ja
+21:18:46     GeloeschteUndDeaktivierteEinheiten_3.xml               44713066  SHA-256 ja
+21:18:46     Ertuechtigungen.xml                                     1045048  SHA-256 ja
+21:18:46  Summe Groesse (verschiedene Dateien der Pruefsummenliste): 24.12 GB
+21:18:46  
+==== SAP 3.5 Nr.9 Kataloge ====
+21:18:47  Katalogwerte: 1738 Zeilen; Katalogkategorien: 123; Einheitentypen: 13
+21:18:47  Ids in Katalogwerte eindeutig: TRUE
+21:18:47  Hinweis Doku vs. Export: Die Dokumentation nennt die Katalogkategorien 'Anlagenbetriebsstatus' und 'AnlagenSystemStatus'; im Export heissen sie 'Betriebsstatus' (Id 4) und 'Systemstatus' (Id 19); die Lage heisst 'Wind an Land oder auf See' (Id 87). Das ist ein Befund der Aufloesung nach 3.5 Nr.9, kein Stopp.
+21:18:47  Einheitentyp-Id Windeinheit = 2; Solareinheit = 1
+21:18:47  
+==== SAP 3.6 Einlesen der Einheitendateien (Streaming) ====
+21:18:47  Einzulesende Dateien: 1 Wind, 67 Solar, 3 Geloeschte/Deaktivierte (71 Jobs)
+21:18:47  Davon bereits als schlanker Extrakt im Cache (frueherer Lauf): 0
+21:34:21  Einlesen abgeschlossen in 15.6 mins
+21:34:22  Typ wind: 1 Datei(en), 44340 Datensaetze; Nummern nicht im Muster: 0
+21:34:22     Datumstext ohne gueltiges Datum (Inbetriebnahme/Stilllegung): 0/0; Brutto fehlt: 0; Brutto nicht numerisch: 0; Netto fehlt: 0; Lokationsnummern nicht im Muster: 0
+21:34:22  Typ solar: 67 Datei(en), 6613081 Datensaetze; Nummern nicht im Muster: 0
+21:34:22     Datumstext ohne gueltiges Datum (Inbetriebnahme/Stilllegung): 0/0; Brutto fehlt: 0; Brutto nicht numerisch: 0; Netto fehlt: 0; Lokationsnummern nicht im Muster: 1
+21:34:22  Typ G: 3 Datei(en), 257967 Datensaetze; Nummern nicht im Muster: 10161
+21:34:25  Zeilen im Speicher: Wind 44340; Solar 6613081; Geloeschte/Deaktivierte 257967
+21:34:25  
+==== SAP 3.5 Nr.9 Aufloesung der Statuswerte und Lage-Codes ====
+21:34:28     EinheitBetriebsstatus      31     In Planung                                       [Betriebsstatus] Wind 8841 | Solar 66137 | G 42879
+21:34:28     EinheitBetriebsstatus      35     In Betrieb                                       [Betriebsstatus] Wind 32246 | Solar 6447697 | G 210230
+21:34:28     EinheitBetriebsstatus      37     Vorübergehend stillgelegt                       [Betriebsstatus] Wind 87 | Solar 8090 | G 491
+21:34:28     EinheitBetriebsstatus      38     Endgültig stillgelegt                           [Betriebsstatus] Wind 3166 | Solar 91157 | G 4367
+21:34:28     EinheitSystemstatus        472    Aktiviert                                        [Systemstatus] Wind 44340 | Solar 6613081 | G 0
+21:34:28     EinheitSystemstatus        473    Deaktiviert                                      [Systemstatus] Wind 0 | Solar 0 | G 87140
+21:34:28     EinheitSystemstatus        572    Gelöscht                                        [Systemstatus] Wind 0 | Solar 0 | G 170827
+21:34:28     WindAnLandOderAufSee       888    Windenergie an Land                              [Wind an Land oder auf See] Wind 42431 | Solar 0 | G NA
+21:34:28     WindAnLandOderAufSee       889    Windenergie auf See                              [Wind an Land oder auf See] Wind 1909 | Solar 0 | G NA
+21:34:28     Seelage                    639    Ostsee                                           [Seelage] Wind 329 | Solar 0 | G NA
+21:34:28     Seelage                    640    Nordsee                                          [Seelage] Wind 1580 | Solar 0 | G NA
+21:34:28     Einheittyp (G)             1      Solareinheit                                     [Einheitentypen.xml] Wind 0 | Solar 0 | G 176646
+21:34:28     Einheittyp (G)             10     Gasverbrauchseinheit                             [Einheitentypen.xml] Wind 0 | Solar 0 | G 714
+21:34:28     Einheittyp (G)             11     Gaserzeugungseinheit                             [Einheitentypen.xml] Wind 0 | Solar 0 | G 263
+21:34:28     Einheittyp (G)             12     Gasspeichereinheit                               [Einheitentypen.xml] Wind 0 | Solar 0 | G 14
+21:34:28     Einheittyp (G)             2      Windeinheit                                      [Einheitentypen.xml] Wind 0 | Solar 0 | G 1724
+21:34:28     Einheittyp (G)             3      Biomasse                                         [Einheitentypen.xml] Wind 0 | Solar 0 | G 1175
+21:34:28     Einheittyp (G)             4      Wasser                                           [Einheitentypen.xml] Wind 0 | Solar 0 | G 418
+21:34:28     Einheittyp (G)             5      Geothermie                                       [Einheitentypen.xml] Wind 0 | Solar 0 | G 1363
+21:34:28     Einheittyp (G)             6      Verbrennung                                      [Einheitentypen.xml] Wind 0 | Solar 0 | G 5324
+21:34:28     Einheittyp (G)             8      Stromspeichereinheit                             [Einheitentypen.xml] Wind 0 | Solar 0 | G 61156
+21:34:28     Einheittyp (G)             9      Stromverbrauchseinheit                           [Einheitentypen.xml] Wind 0 | Solar 0 | G 9170
+21:34:28     EinheitLoeschgrund (G)     3234   Duplikat/Doppelte Registrierung                  [Löschgründe Einheit] Wind 0 | Solar 0 | G 95479
+21:34:28     EinheitLoeschgrund (G)     3235   Versehentliche Registrierung /Testregistrierung  [Löschgründe Einheit] Wind 0 | Solar 0 | G 49485
+21:34:28     EinheitLoeschgrund (G)     3236   Anlagenzusammenfassung/-aufteilung               [Löschgründe Einheit] Wind 0 | Solar 0 | G 2988
+21:34:28     EinheitLoeschgrund (G)     3237   Einheit wird nicht in Betrieb genommen           [Löschgründe Einheit] Wind 0 | Solar 0 | G 9436
+21:34:28     EinheitLoeschgrund (G)     3238   Mit falschem Einheitentyp registriert            [Löschgründe Einheit] Wind 0 | Solar 0 | G 6521
+21:34:28     EinheitLoeschgrund (G)     3239   Keine Registrierungspflicht                      [Löschgründe Einheit] Wind 0 | Solar 0 | G 1432
+21:34:28  Betriebsstatus-Aufloesung (Einheitendateien): 31 = In Planung -> planung; 35 = In Betrieb -> betrieb; 37 = Vorübergehend stillgelegt -> vorueb; 38 = Endgültig stillgelegt -> endgueltig
+21:34:37  Systemstatus-Werte in den Einheitendateien: 472 = Aktiviert
+21:34:37  Lage-Codes: an Land = 888; auf See = 889
+21:34:37  
+==== SAP 3.5 Nr.3 Duplikat-Bereinigung ====
+21:34:42  Datensaetze gesamt (Wind+Solar): 6657421; Nummern mehrfach vorkommend (ueberzaehlige Datensaetze): 0
+21:34:43  Nach Duplikat-Bereinigung: 6657421 Einheiten
+21:35:01  Identische (Lokation, Inbetriebnahmedatum, Bruttoleistung, Technologie) bei verschiedenen Nummern: 36883 Einheiten in 15671 Gruppen (Wind 9040, Solar 27843); nicht entfernt.
+21:35:03  
+==== SAP 3.5 Nr.2, 4, 5, 6 / 3.4 Einschluss- und Ausschlussregeln ====
+21:35:03  Populationen nach Duplikat-Bereinigung: See 1909; Solar 6613081; Wind 42431
+21:35:08     T1 | 1 Rohdatensaetze in den Einheitendateien                                               | Wind (alle Lagen)  | n =     44340 |   142.2976 GW
+21:35:08     T1 | 2 davon Dubletten (gleiche MaStR-Nummer), entfernt                                     | Wind (alle Lagen)  | n =         0 |     0.0000 GW
+21:35:08     T1 | 1 Rohdatensaetze in den Einheitendateien                                               | Solar              | n =   6613081 |   142.1499 GW
+21:35:08     T1 | 2 davon Dubletten (gleiche MaStR-Nummer), entfernt                                     | Solar              | n =         0 |     0.0000 GW
+21:35:08     T1 | 3 nach Duplikat-Bereinigung (Population)                                               | Wind an Land       | n =     42431 |   129.2889 GW
+21:35:08     T1 | 4 harte Ausschluesse (Brutto fehlt/<=0 oder ueber harter Schwelle)                     | Wind an Land       | n =         0 |     0.0000 GW
+21:35:08     T1 | 5 ohne Inbetriebnahmedatum (nicht im Bestand)                                          | Wind an Land       | n =      8750 |    54.0043 GW
+21:35:08     T1 | 6 Inbetriebnahmedatum nach Exportdatum (ausgeschlossen)                                | Wind an Land       | n =         0 |     0.0000 GW
+21:35:08     T1 | 7 Betriebsstatus 'in Planung' mit Datum (nicht im Bestand)                             | Wind an Land       | n =         0 |     0.0000 GW
+21:35:08     T1 | 8 Einheiten im Datensatz fuer Bestand/Zubau (Einschluss)                               | Wind an Land       | n =     33681 |    75.2846 GW
+21:35:08     T1 | 8a davon mit gueltigem Datum endgueltiger Stilllegung (S)                              | Wind an Land       | n =      3166 |     3.7512 GW
+21:35:08     T1 | 8b davon 'endgueltig stillgelegt' ohne Stilllegungsdatum (im Bestand belassen)         | Wind an Land       | n =         0 |     0.0000 GW
+21:35:08     T1 | 8c davon Stilllegungsdatum vor Inbetriebnahme (als nicht stillgelegt behandelt)        | Wind an Land       | n =         0 |     0.0000 GW
+21:35:08     T1 | 8d davon Stilllegungsdatum, aber Status nicht endgueltig (als nicht stillgelegt behandelt) | Wind an Land       | n =         0 |     0.0000 GW
+21:35:08     T1 | 9 weiche Markierung: Brutto ueber weicher Schwelle (bleibt im Datensatz)               | Wind an Land       | n =         0 |     0.0000 GW
+21:35:08     T1 | 9 weiche Markierung: Nettonennleistung > Bruttoleistung (bleibt im Datensatz)          | Wind an Land       | n =         0 |     0.0000 GW
+21:35:08     T1 | 3 nach Duplikat-Bereinigung (Population)                                               | Solar              | n =   6613081 |   142.1499 GW
+21:35:08     T1 | 4 harte Ausschluesse (Brutto fehlt/<=0 oder ueber harter Schwelle)                     | Solar              | n =         0 |     0.0000 GW
+21:35:08     T1 | 5 ohne Inbetriebnahmedatum (nicht im Bestand)                                          | Solar              | n =     66137 |     9.5737 GW
+21:35:08     T1 | 6 Inbetriebnahmedatum nach Exportdatum (ausgeschlossen)                                | Solar              | n =         0 |     0.0000 GW
+21:35:08     T1 | 7 Betriebsstatus 'in Planung' mit Datum (nicht im Bestand)                             | Solar              | n =         0 |     0.0000 GW
+21:35:08     T1 | 8 Einheiten im Datensatz fuer Bestand/Zubau (Einschluss)                               | Solar              | n =   6546944 |   132.5762 GW
+21:35:08     T1 | 8a davon mit gueltigem Datum endgueltiger Stilllegung (S)                              | Solar              | n =     91155 |     0.4371 GW
+21:35:08     T1 | 8b davon 'endgueltig stillgelegt' ohne Stilllegungsdatum (im Bestand belassen)         | Solar              | n =         1 |     0.0000 GW
+21:35:08     T1 | 8c davon Stilllegungsdatum vor Inbetriebnahme (als nicht stillgelegt behandelt)        | Solar              | n =         1 |     0.0000 GW
+21:35:08     T1 | 8d davon Stilllegungsdatum, aber Status nicht endgueltig (als nicht stillgelegt behandelt) | Solar              | n =         2 |     0.0000 GW
+21:35:08     T1 | 9 weiche Markierung: Brutto ueber weicher Schwelle (bleibt im Datensatz)               | Solar              | n =         0 |     0.0000 GW
+21:35:08     T1 | 9 weiche Markierung: Nettonennleistung > Bruttoleistung (bleibt im Datensatz)          | Solar              | n =         0 |     0.0000 GW
+21:35:08     T1 | 3 nach Duplikat-Bereinigung (Population)                                               | Wind auf See       | n =      1909 |    13.0087 GW
+21:35:08     T1 | 4 harte Ausschluesse (Brutto fehlt/<=0 oder ueber harter Schwelle)                     | Wind auf See       | n =         0 |     0.0000 GW
+21:35:08     T1 | 5 ohne Inbetriebnahmedatum (nicht im Bestand)                                          | Wind auf See       | n =        91 |     1.3650 GW
+21:35:08     T1 | 6 Inbetriebnahmedatum nach Exportdatum (ausgeschlossen)                                | Wind auf See       | n =         0 |     0.0000 GW
+21:35:08     T1 | 7 Betriebsstatus 'in Planung' mit Datum (nicht im Bestand)                             | Wind auf See       | n =         0 |     0.0000 GW
+21:35:08     T1 | 8 Einheiten im Datensatz fuer Bestand/Zubau (Einschluss)                               | Wind auf See       | n =      1818 |    11.6437 GW
+21:35:08     T1 | 8a davon mit gueltigem Datum endgueltiger Stilllegung (S)                              | Wind auf See       | n =         0 |     0.0000 GW
+21:35:08     T1 | 8b davon 'endgueltig stillgelegt' ohne Stilllegungsdatum (im Bestand belassen)         | Wind auf See       | n =         0 |     0.0000 GW
+21:35:08     T1 | 8c davon Stilllegungsdatum vor Inbetriebnahme (als nicht stillgelegt behandelt)        | Wind auf See       | n =         0 |     0.0000 GW
+21:35:08     T1 | 8d davon Stilllegungsdatum, aber Status nicht endgueltig (als nicht stillgelegt behandelt) | Wind auf See       | n =         0 |     0.0000 GW
+21:35:08     T1 | 9 weiche Markierung: Brutto ueber weicher Schwelle (bleibt im Datensatz)               | Wind auf See       | n =         0 |     0.0000 GW
+21:35:08     T1 | 9 weiche Markierung: Nettonennleistung > Bruttoleistung (bleibt im Datensatz)          | Wind auf See       | n =         0 |     0.0000 GW
+21:35:08     T1 | 5/Nr.5 Windeinheit ohne Lage (ausgeschlossen)                                          | Wind (Lage fehlt)  | n =         0 |     0.0000 GW
+21:35:08  Nur Wind: Windeinheiten ohne Angabe der Lage: 0; Lage 'auf See' (E5-Population): 1909
+21:35:08     Liste liste_harte_ausschluesse: 0 Zeilen
+21:35:08     Liste liste_wind_ohne_lage: 0 Zeilen
+21:35:08     Liste liste_inbetriebnahme_nach_exportdatum: 0 Zeilen
+21:35:08     Liste liste_weiche_markierung_leistung: 0 Zeilen
+21:35:08     Liste liste_weiche_markierung_netto_groesser_brutto: 0 Zeilen
+21:35:08     Liste liste_endgueltig_ohne_stilllegungsdatum: 1 Zeilen
+21:35:08     Liste liste_stilllegung_vor_inbetriebnahme: 1 Zeilen
+21:35:08     Liste liste_stilllegungsdatum_status_nicht_endgueltig: 2 Zeilen
+21:35:09     Liste liste_ohne_inbetriebnahmedatum: 74978 Zeilen
+21:35:10     Liste liste_in_planung_mit_datum: 0 Zeilen
+21:35:10  Harte Ausschluesse nach Grund: < table of extent 0 x 0 >
+21:36:11  Inbetriebnahmejahr der eingeschlossenen Einheiten: Minimum 1900, Maximum 2026; vor 1980: 703; vor 1990: 914
+21:36:11     Wind an Land: Inbetriebnahmejahr <= 1990: 46 Einheiten, 0.0068 GW; davon Jahr 1900: 0 Einheiten, 0.0000 GW; Jahr < 1900 oder > 2026: 0
+21:37:11     Solar: Inbetriebnahmejahr <= 1990: 955 Einheiten, 0.0071 GW; davon Jahr 1900: 26 Einheiten, 0.0003 GW; Jahr < 1900 oder > 2026: 0
+21:37:11     Wind auf See: Inbetriebnahmejahr <= 1990: 0 Einheiten, 0.0000 GW; davon Jahr 1900: 0 Einheiten, 0.0000 GW; Jahr < 1900 oder > 2026: 0
+21:37:11  
+==== SAP 3.4 Bestand, Zubau, Stilllegung (monatlich) ====
+21:37:12  Rechenprobe Wind an Land: max |C(m)-C(m-1) - (Z-S)| = 0.00000000891 kW; max |C_Reihe - C_direkt| (Jan 2019-2026-09) = 0.00000000745 kW  -> erfuellt (Toleranz 1e-3 kW)
+21:37:26  Rechenprobe Solar: max |C(m)-C(m-1) - (Z-S)| = 0.0000000142 kW; max |C_Reihe - C_direkt| (Jan 2019-2026-09) = 0.00000738 kW  -> erfuellt (Toleranz 1e-3 kW)
+21:37:26  Rechenprobe Wind auf See: max |C(m)-C(m-1) - (Z-S)| = 0 kW; max |C_Reihe - C_direkt| (Jan 2019-2026-09) = 0 kW  -> erfuellt (Toleranz 1e-3 kW)
+21:37:29  S7: weich markierte Einheiten (Ausschluss in Variante b): Wind an Land 0; Solar 0; Wind auf See 0
+21:37:30  Einheiten im Einschluss mit Nettonennleistung <= 0 (S6, Leistung zaehlt als 0): Wind an Land 0; Solar 1; Wind auf See 0
+21:37:30     C(Wind an Land): Dez 2024 = 63.514 GW; 2026-07 (T) = 70.369 GW; 2026-09 (T_S1) = 71.271 GW
+21:37:30     C(Solar): Dez 2024 = 100.808 GW; 2026-07 (T) = 128.090 GW; 2026-09 (T_S1) = 131.053 GW
+21:37:30     C(Wind auf See): Dez 2024 = 9.215 GW; 2026-07 (T) = 10.942 GW; 2026-09 (T_S1) = 11.599 GW
+21:37:30  Monatsreihen (ab 2015-01) gespeichert: output/zwischen/monatsreihen_bestand_zubau_stilllegung.csv (426 Zeilen)
+21:37:30  
+==== SAP 3.3 Groessenordnungs-Sperre; SAP 3.5 Nr.2 Schwelle 1 % ====
+21:37:30  Groessenordnungs-Sperre Wind an Land: C(Dez 2024) = 63.514 GW; Y(2024) = 69 GW; Verhaeltnis 0.920 (zulaessig 0,5 bis 2)
+21:37:30  1-%-Schwelle Wind an Land: 'endgueltig stillgelegt' ohne Stilllegungsdatum: 0 Einheiten, 0.0000 GW = 0.000 % von C(T)=70.369 GW
+21:37:30  Groessenordnungs-Sperre Solar: C(Dez 2024) = 100.808 GW; Y(2024) = 88 GW; Verhaeltnis 1.146 (zulaessig 0,5 bis 2)
+21:37:30  1-%-Schwelle Solar: 'endgueltig stillgelegt' ohne Stilllegungsdatum: 1 Einheiten, 0.0000 GW = 0.000 % von C(T)=128.090 GW
+21:37:30  
+==== SAP 3.5 Nr.12 Geloeschte und deaktivierte Einheiten (G) ====
+21:37:30  G: 257967 Datensaetze aus 3 Dateien; eindeutige Nummern: 247807; Nummern nicht im Muster: 10161
+21:37:30  G-Datensaetze Typ Windeinheit: 1724; Typ Solareinheit: 176646
+21:37:30     G | Solareinheit | (kein Loeschgrund)                               | Endgültig stillgelegt     | Deaktiviert  |      492
+21:37:30     G | Windeinheit  | (kein Loeschgrund)                               | Endgültig stillgelegt     | Deaktiviert  |        5
+21:37:30     G | Solareinheit | (kein Loeschgrund)                               | In Betrieb                 | Deaktiviert  |    62447
+21:37:30     G | Windeinheit  | (kein Loeschgrund)                               | In Betrieb                 | Deaktiviert  |      128
+21:37:30     G | Solareinheit | (kein Loeschgrund)                               | In Planung                 | Deaktiviert  |      320
+21:37:30     G | Windeinheit  | (kein Loeschgrund)                               | In Planung                 | Deaktiviert  |      251
+21:37:30     G | Solareinheit | (kein Loeschgrund)                               | Vorübergehend stillgelegt | Deaktiviert  |       58
+21:37:30     G | Solareinheit | (kein Loeschgrund)                               | Endgültig stillgelegt     | Gelöscht    |      161
+21:37:30     G | Windeinheit  | (kein Loeschgrund)                               | Endgültig stillgelegt     | Gelöscht    |        1
+21:37:30     G | Solareinheit | Anlagenzusammenfassung/-aufteilung               | Endgültig stillgelegt     | Gelöscht    |       78
+21:37:30     G | Solareinheit | Duplikat/Doppelte Registrierung                  | Endgültig stillgelegt     | Gelöscht    |     1341
+21:37:30     G | Windeinheit  | Duplikat/Doppelte Registrierung                  | Endgültig stillgelegt     | Gelöscht    |       14
+21:37:30     G | Solareinheit | Einheit wird nicht in Betrieb genommen           | Endgültig stillgelegt     | Gelöscht    |      230
+21:37:30     G | Solareinheit | Keine Registrierungspflicht                      | Endgültig stillgelegt     | Gelöscht    |       21
+21:37:30     G | Solareinheit | Mit falschem Einheitentyp registriert            | Endgültig stillgelegt     | Gelöscht    |       34
+21:37:30     G | Windeinheit  | Mit falschem Einheitentyp registriert            | Endgültig stillgelegt     | Gelöscht    |        2
+21:37:30     G | Solareinheit | Versehentliche Registrierung /Testregistrierung  | Endgültig stillgelegt     | Gelöscht    |      864
+21:37:30     G | Windeinheit  | Versehentliche Registrierung /Testregistrierung  | Endgültig stillgelegt     | Gelöscht    |        4
+21:37:30     G | Solareinheit | (kein Loeschgrund)                               | In Betrieb                 | Gelöscht    |     2250
+21:37:30     G | Windeinheit  | (kein Loeschgrund)                               | In Betrieb                 | Gelöscht    |       11
+21:37:30     G | Solareinheit | Anlagenzusammenfassung/-aufteilung               | In Betrieb                 | Gelöscht    |     1721
+21:37:30     G | Windeinheit  | Anlagenzusammenfassung/-aufteilung               | In Betrieb                 | Gelöscht    |        2
+21:37:30     G | Solareinheit | Duplikat/Doppelte Registrierung                  | In Betrieb                 | Gelöscht    |    49938
+21:37:30     G | Windeinheit  | Duplikat/Doppelte Registrierung                  | In Betrieb                 | Gelöscht    |      696
+21:37:30     G | Solareinheit | Einheit wird nicht in Betrieb genommen           | In Betrieb                 | Gelöscht    |      737
+21:37:30     G | Windeinheit  | Einheit wird nicht in Betrieb genommen           | In Betrieb                 | Gelöscht    |       10
+21:37:30     G | Solareinheit | Keine Registrierungspflicht                      | In Betrieb                 | Gelöscht    |      310
+21:37:30     G | Windeinheit  | Keine Registrierungspflicht                      | In Betrieb                 | Gelöscht    |        2
+21:37:30     G | Solareinheit | Mit falschem Einheitentyp registriert            | In Betrieb                 | Gelöscht    |      945
+21:37:30     G | Windeinheit  | Mit falschem Einheitentyp registriert            | In Betrieb                 | Gelöscht    |        3
+21:37:30     G | Solareinheit | Versehentliche Registrierung /Testregistrierung  | In Betrieb                 | Gelöscht    |    24497
+21:37:30     G | Windeinheit  | Versehentliche Registrierung /Testregistrierung  | In Betrieb                 | Gelöscht    |      269
+21:37:30     G | Solareinheit | (kein Loeschgrund)                               | In Planung                 | Gelöscht    |      856
+21:37:30     G | Windeinheit  | (kein Loeschgrund)                               | In Planung                 | Gelöscht    |       10
+21:37:30     G | Solareinheit | Anlagenzusammenfassung/-aufteilung               | In Planung                 | Gelöscht    |      262
+21:37:30     G | Solareinheit | Duplikat/Doppelte Registrierung                  | In Planung                 | Gelöscht    |    13310
+21:37:30     G | Windeinheit  | Duplikat/Doppelte Registrierung                  | In Planung                 | Gelöscht    |      171
+21:37:30     G | Solareinheit | Einheit wird nicht in Betrieb genommen           | In Planung                 | Gelöscht    |     7390
+21:37:30     G | Windeinheit  | Einheit wird nicht in Betrieb genommen           | In Planung                 | Gelöscht    |       32
+21:37:30     G | Solareinheit | Keine Registrierungspflicht                      | In Planung                 | Gelöscht    |       84
+21:37:30     G | Solareinheit | Mit falschem Einheitentyp registriert            | In Planung                 | Gelöscht    |      310
+21:37:30     G | Windeinheit  | Mit falschem Einheitentyp registriert            | In Planung                 | Gelöscht    |        4
+21:37:30     G | Solareinheit | Versehentliche Registrierung /Testregistrierung  | In Planung                 | Gelöscht    |     7695
+21:37:30     G | Windeinheit  | Versehentliche Registrierung /Testregistrierung  | In Planung                 | Gelöscht    |      106
+21:37:31     G | Solareinheit | (kein Loeschgrund)                               | Vorübergehend stillgelegt | Gelöscht    |       11
+21:37:31     G | Solareinheit | Anlagenzusammenfassung/-aufteilung               | Vorübergehend stillgelegt | Gelöscht    |        5
+21:37:31     G | Solareinheit | Duplikat/Doppelte Registrierung                  | Vorübergehend stillgelegt | Gelöscht    |      122
+21:37:31     G | Windeinheit  | Duplikat/Doppelte Registrierung                  | Vorübergehend stillgelegt | Gelöscht    |        3
+21:37:31     G | Solareinheit | Einheit wird nicht in Betrieb genommen           | Vorübergehend stillgelegt | Gelöscht    |       21
+21:37:31     G | Solareinheit | Keine Registrierungspflicht                      | Vorübergehend stillgelegt | Gelöscht    |        8
+21:37:31     G | Solareinheit | Mit falschem Einheitentyp registriert            | Vorübergehend stillgelegt | Gelöscht    |        9
+21:37:31     G | Solareinheit | Versehentliche Registrierung /Testregistrierung  | Vorübergehend stillgelegt | Gelöscht    |      119
+21:37:32  Ueberlappung: eindeutige G-Nummern: 247807; davon auch in Einheitendateien (Wind/Solar): 0
+21:37:32     Ueberlappung Wind: 0 Einheiten, 0.0000 GW Brutto; davon im Bestandsdatensatz 0 (0.0000 GW); G-Typ passt zur Datei: 0
+21:37:32     Ueberlappung Solar: 0 Einheiten, 0.0000 GW Brutto; davon im Bestandsdatensatz 0 (0.0000 GW); G-Typ passt zur Datei: 0
+21:37:33  G-Nummern (Typ Wind/Solar, eindeutig) ohne Datensatz in den Einheitendateien: Wind 1724; Solar 176646
+21:37:33     G ohne Datensatz | Solareinheit | Endgültig stillgelegt | 3221
+21:37:33     G ohne Datensatz | Windeinheit | Endgültig stillgelegt | 26
+21:37:33     G ohne Datensatz | Solareinheit | In Betrieb | 142845
+21:37:33     G ohne Datensatz | Windeinheit | In Betrieb | 1121
+21:37:33     G ohne Datensatz | Solareinheit | In Planung | 30227
+21:37:33     G ohne Datensatz | Windeinheit | In Planung | 574
+21:37:33     G ohne Datensatz | Solareinheit | Vorübergehend stillgelegt | 353
+21:37:33     G ohne Datensatz | Windeinheit | Vorübergehend stillgelegt | 3
+21:37:33  Nr.12 c: G-Einheiten ohne Ueberlappung mit Betriebsstatus 'Endgueltig stillgelegt' (Hinweis auf nicht erfassten Stilllegungsanteil; kein Stopp): Wind 26; Solar 3221
+21:37:33  0,5-%-Schwelle Wind an Land: Bruttoleistung Ueberlappung 0.0000 GW = 0.000 % von C(T) = 70.369 GW
+21:37:33  0,5-%-Schwelle Solar: Bruttoleistung Ueberlappung 0.0000 GW = 0.000 % von C(T) = 128.090 GW
+21:37:33  
+==== Ergebnis der Vorpruefungen (Stopp-Regeln) ====
+21:37:33  Keine Stopp-Regel ausgeloest: Groessenordnung, 1-%-Schwelle, 0,5-%-Schwelle, Statusaufloesung und Rechenprobe bestanden.
+21:37:33  
+==== SAP 2.1 / 2.3 / 5.1 Kernfunktionen ====
+21:37:34  x(2026) = 5; x(2030) = 53 (T = 2026-07); fuer T_S1: x(2026) = 3; x(2030) = 51; Suchhorizont x_max(T) = 413
+21:37:34  Kontrolle PI Wind F24: manuell [88.497321, 89.346248, 90.195174] vs predict() [88.497321, 89.346248, 90.195174]
+21:37:34  
+==== SAP 2.3 E1: Abstand zum Zwischenziel 2024 ====
+21:37:34  E1 Wind an Land: C(Dez 2024) = 63.514 GW; Ziel 69.0 GW; Delta = -5.486 GW (-7.95 %): Bestand unter dem Zwischenziel
+21:37:34  E1 Solar: C(Dez 2024) = 100.808 GW; Ziel 88.0 GW; Delta = 12.808 GW (14.55 %): Bestand auf oder ueber dem Zwischenziel
+21:37:34  
+==== SAP 5.1 Primaeranalyse: OLS-Fortschreibung, Fenster 12/24/60, Ende T ====
+21:37:34  Primaer Wind  F12 | n=13 | b=0.3913 GW/Monat = 4.70 GW/a [KI 4.40; 4.99] | Punkt 01/2036, frueh 06/2035, spaet 09/2036 | 31.12.2030: 91.2 [89.7; 92.7] vs Ziel 115 | R=10.11 GW/a, s_W/R=0.46 | Q_W=15.73 %
+21:37:34  Primaer Wind  F24 | n=25 | b=0.3600 GW/Monat = 4.32 GW/a [KI 4.18; 4.46] | Punkt 12/2036, frueh 07/2036, spaet 04/2037 | 31.12.2030: 89.3 [88.5; 90.2] vs Ziel 115 | R=10.11 GW/a, s_W/R=0.43 | Q_W=15.34 %
+21:37:34  Primaer Wind  F60 | n=61 | b=0.2500 GW/Monat = 3.00 GW/a [KI 2.88; 3.12] | Punkt 12/2041, frueh 02/2041, spaet 10/2042 | 31.12.2030: 82.1 [80.6; 83.7] vs Ziel 115 | R=10.11 GW/a, s_W/R=0.30 | Q_W=16.77 %
+21:37:34  Primaer Solar F12 | n=13 | b=1.4344 GW/Monat = 17.21 GW/a [KI 16.68; 17.75] | Punkt 08/2031, frueh 06/2031, spaet 10/2031 | 31.12.2030: 203.8 [201.1; 206.5] vs Ziel 215 | R=19.68 GW/a, s_W/R=0.87 | Q_W=0.93 %
+21:37:34  Primaer Solar F24 | n=25 | b=1.4346 GW/Monat = 17.22 GW/a [KI 16.99; 17.44] | Punkt 08/2031, frueh 07/2031, spaet 09/2031 | 31.12.2030: 203.8 [202.4; 205.2] vs Ziel 215 | R=19.68 GW/a, s_W/R=0.87 | Q_W=0.79 %
+21:37:34  Primaer Solar F60 | n=61 | b=1.2322 GW/Monat = 14.79 GW/a [KI 14.27; 15.30] | Punkt 09/2032, frueh 03/2032, spaet 03/2033 | 31.12.2030: 189.7 [182.8; 196.6] vs Ziel 215 | R=19.68 GW/a, s_W/R=0.75 | Q_W=0.53 %
+21:37:34  E5 See F12 | b=0.1634 GW/Monat = 1.96 GW/a | Punkt 05/2036, frueh 11/2034, spaet 04/2038 | 31.12.2030: 19.5 [18.0; 21.1] | R=4.31, s_W/R=0.45 | Q_W=0
+21:37:34  E5 See F24 | b=0.0664 GW/Monat = 0.80 GW/a | Punkt 03/2051, frueh 06/2045, spaet nicht bis 2060 erreicht | 31.12.2030: 13.9 [12.4; 15.3] | R=4.31, s_W/R=0.18 | Q_W=0
+21:37:34  E5 See F60 | b=0.0423 GW/Monat = 0.51 GW/a | Punkt nicht bis 2060 erreicht, frueh nicht bis 2060 erreicht, spaet nicht bis 2060 erreicht | 31.12.2030: 12.3 [11.6; 12.9] | R=4.31, s_W/R=0.12 | Q_W=0
+21:37:34  
+==== SAP 2.3 E1b: Fortschreibung bis 31.12.2026 ====
+21:37:34  E1b Wind an Land F12: Wert 31.12.2026 = 72.4 [72.0; 72.9] vs Ziel 84: Das Ziel liegt oberhalb des 95-%-Prognoseintervalls der Fortschreibung. | Hilfsgroesse (interpoliertes Ziel 2026-07) 80.9 GW, C(T)=70.4 GW, Abstand -10.5 GW (-13.0 %)
+21:37:34  E1b Wind an Land F24: Wert 31.12.2026 = 72.1 [71.6; 72.5] vs Ziel 84: Das Ziel liegt oberhalb des 95-%-Prognoseintervalls der Fortschreibung. | Hilfsgroesse (interpoliertes Ziel 2026-07) 80.9 GW, C(T)=70.4 GW, Abstand -10.5 GW (-13.0 %)
+21:37:34  E1b Wind an Land F60: Wert 31.12.2026 = 70.1 [68.7; 71.6] vs Ziel 84: Das Ziel liegt oberhalb des 95-%-Prognoseintervalls der Fortschreibung. | Hilfsgroesse (interpoliertes Ziel 2026-07) 80.9 GW, C(T)=70.4 GW, Abstand -10.5 GW (-13.0 %)
+21:37:34  E1b Solar F12: Wert 31.12.2026 = 135.0 [134.2; 135.7] vs Ziel 128: Das Ziel liegt unterhalb des 95-%-Prognoseintervalls der Fortschreibung. | Hilfsgroesse (interpoliertes Ziel 2026-07) 119.7 GW, C(T)=128.1 GW, Abstand 8.4 GW (7.0 %)
+21:37:34  E1b Solar F24: Wert 31.12.2026 = 135.0 [134.2; 135.7] vs Ziel 128: Das Ziel liegt unterhalb des 95-%-Prognoseintervalls der Fortschreibung. | Hilfsgroesse (interpoliertes Ziel 2026-07) 119.7 GW, C(T)=128.1 GW, Abstand 8.4 GW (7.0 %)
+21:37:34  E1b Solar F60: Wert 31.12.2026 = 130.5 [124.4; 136.6] vs Ziel 128: Das Ziel liegt im 95-%-Prognoseintervall der Fortschreibung. | Hilfsgroesse (interpoliertes Ziel 2026-07) 119.7 GW, C(T)=128.1 GW, Abstand 8.4 GW (7.0 %)
+21:37:34  
+==== SAP 5.2 Diagnostik ====
+21:37:34  Diagnostik Wind an Land       F12 | DW=1.120 (p=0.0332, zweiseitig) | ACF lag1=0.414 | Shapiro-Wilk W=0.8757 (p=0.0624) | Cook>4/n: 0 (max 0.300) | max Hebel 0.275
+21:37:34  Diagnostik Wind an Land       F24 | DW=0.468 (p=0.0000, zweiseitig) | ACF lag1=0.654 | Shapiro-Wilk W=0.9583 (p=0.3818) | Cook>4/n: 1 (max 0.509) | max Hebel 0.151
+21:37:34  Diagnostik Wind an Land       F60 | DW=0.038 (p=0.0000, zweiseitig) | ACF lag1=0.910 | Shapiro-Wilk W=0.9154 (p=0.0004) | Cook>4/n: 8 (max 0.172) | max Hebel 0.064
+21:37:34  Diagnostik Solar              F12 | DW=1.699 (p=0.3575, zweiseitig) | ACF lag1=0.022 | Shapiro-Wilk W=0.8556 (p=0.0337) | Cook>4/n: 2 (max 0.406) | max Hebel 0.275
+21:37:34  Diagnostik Solar              F24 | DW=1.090 (p=0.0072, zweiseitig) | ACF lag1=0.435 | Shapiro-Wilk W=0.9323 (p=0.0981) | Cook>4/n: 1 (max 0.212) | max Hebel 0.151
+21:37:34  Diagnostik Solar              F60 | DW=0.024 (p=0.0000, zweiseitig) | ACF lag1=0.918 | Shapiro-Wilk W=0.9534 (p=0.0210) | Cook>4/n: 4 (max 0.242) | max Hebel 0.064
+21:37:34  Diagnostik Wind auf See (E5)  F12 | DW=0.807 (p=0.0034, zweiseitig) | ACF lag1=0.436 | Shapiro-Wilk W=0.9294 (p=0.3343) | Cook>4/n: 1 (max 0.884) | max Hebel 0.275
+21:37:34  Diagnostik Wind auf See (E5)  F24 | DW=0.132 (p=0.0000, zweiseitig) | ACF lag1=0.853 | Shapiro-Wilk W=0.9765 (p=0.8088) | Cook>4/n: 2 (max 0.319) | max Hebel 0.151
+21:37:34  Diagnostik Wind auf See (E5)  F60 | DW=0.106 (p=0.0000, zweiseitig) | ACF lag1=0.842 | Shapiro-Wilk W=0.9241 (p=0.0010) | Cook>4/n: 5 (max 0.386) | max Hebel 0.064
+21:37:34  Hinweis (SAP 5.2): Bei n = 13 und n = 25 ist die Aussagekraft von Durbin-Watson begrenzt; bei n = 13 hat Shapiro-Wilk sehr geringe Trennschaerfe.
+21:37:35  Diagnostik-Grafiken gespeichert: output/grafiken/diagnostik_*.png
+21:37:36  
+==== SAP 5.3 / S5: Newey-West und Block-Bootstrap ====
+21:37:36  S5 Wind  F12 | NW-Lag 2 | SE(b) klassisch 0.01117, NW 0.01004 GW/Monat | s_W-KI klassisch [4.40; 4.99], NW [4.43; 4.96] GW/a | Bootstrap (Block 3, B=10000): Zeitpunkt [06/2035; 10/2036], Wert 2030 [89.7; 92.7], Anteil nicht erreicht 0.000
+21:37:36  S5 Wind  F24 | NW-Lag 2 | SE(b) klassisch 0.00550, NW 0.00712 GW/Monat | s_W-KI klassisch [4.18; 4.46], NW [4.14; 4.50] GW/a | Bootstrap (Block 3, B=10000): Zeitpunkt [07/2036; 05/2037], Wert 2030 [88.3; 90.3], Anteil nicht erreicht 0.000
+21:37:36  S5 Wind  F60 | NW-Lag 3 | SE(b) klassisch 0.00492, NW 0.01121 GW/Monat | s_W-KI klassisch [2.88; 3.12], NW [2.73; 3.27] GW/a | Bootstrap (Block 4, B=10000): Zeitpunkt [10/2040; 04/2043], Wert 2030 [80.3; 84.1], Anteil nicht erreicht 0.000
+21:37:36  S5 Solar F12 | NW-Lag 2 | SE(b) klassisch 0.02026, NW 0.01411 GW/Monat | s_W-KI klassisch [16.68; 17.75], NW [16.84; 17.59] GW/a | Bootstrap (Block 3, B=10000): Zeitpunkt [07/2031; 10/2031], Wert 2030 [201.6; 206.0], Anteil nicht erreicht 0.000
+21:37:36  S5 Solar F24 | NW-Lag 2 | SE(b) klassisch 0.00918, NW 0.00932 GW/Monat | s_W-KI klassisch [16.99; 17.44], NW [16.98; 17.45] GW/a | Bootstrap (Block 3, B=10000): Zeitpunkt [07/2031; 09/2031], Wert 2030 [202.3; 205.4], Anteil nicht erreicht 0.000
+21:37:36  S5 Solar F60 | NW-Lag 3 | SE(b) klassisch 0.02136, NW 0.04644 GW/Monat | s_W-KI klassisch [14.27; 15.30], NW [13.67; 15.90] GW/a | Bootstrap (Block 4, B=10000): Zeitpunkt [03/2032; 04/2033], Wert 2030 [181.6; 197.9], Anteil nicht erreicht 0.000
+21:37:36  NW-Lag-Pruefung nach SAP: n=13 -> 2; n=25 -> 2; n=61 -> 3 (SAP: 2, 2, 3); Blocklaenge ceiling(n^(1/3)): 3, 3, 4 (SAP: 3, 3, 4)
+21:37:36  
+==== SAP 6 Sensitivitaeten ====
+21:37:36  S1 mit allen Monaten (Ende T_S1)              Wind  F12 | C(T)=71.27 | b=0.3837 GW/Monat | Punkt 04/2036, frueh 09/2035, spaet 11/2036 | 31.12.2030 90.8 [89.4; 92.1] | R=10.29 | s_W/R=0.45 | Q_W=15.07 %
+21:37:36  S1 mit allen Monaten (Ende T_S1)              Wind  F24 | C(T)=71.27 | b=0.3716 GW/Monat | Punkt 08/2036, frueh 04/2036, spaet 11/2036 | 31.12.2030 90.1 [89.4; 90.7] | R=10.29 | s_W/R=0.43 | Q_W=14.92 %
+21:37:36  S1 mit allen Monaten (Ende T_S1)              Wind  F60 | C(T)=71.27 | b=0.2596 GW/Monat | Punkt 04/2041, frueh 07/2040, spaet 02/2042 | 31.12.2030 82.9 [81.3; 84.6] | R=10.29 | s_W/R=0.30 | Q_W=16.58 %
+21:37:36  S1 mit allen Monaten (Ende T_S1)              Solar F12 | C(T)=131.05 | b=1.4579 GW/Monat | Punkt 07/2031, frueh 05/2031, spaet 09/2031 | 31.12.2030 205.2 [202.5; 208.0] | R=19.75 | s_W/R=0.89 | Q_W=1.00 %
+21:37:36  S1 mit allen Monaten (Ende T_S1)              Solar F24 | C(T)=131.05 | b=1.4411 GW/Monat | Punkt 08/2031, frueh 07/2031, spaet 09/2031 | 31.12.2030 204.3 [202.8; 205.7] | R=19.75 | s_W/R=0.88 | Q_W=0.78 %
+21:37:36  S1 mit allen Monaten (Ende T_S1)              Solar F60 | C(T)=131.05 | b=1.2691 GW/Monat | Punkt 06/2032, frueh 01/2032, spaet 11/2032 | 31.12.2030 192.6 [186.4; 198.8] | R=19.75 | s_W/R=0.77 | Q_W=0.55 %
+21:37:36  S2 Brutto-Zubau (Stilllegungen ignoriert)     Wind  F12 | C(T)=71.24 | b=0.4638 GW/Monat | Punkt 06/2034, frueh 01/2034, spaet 11/2034 | 31.12.2030 95.9 [94.6; 97.2] | R=9.91 | s_W/R=0.56 | Q_W=15.73 %
+21:37:36  S2 Brutto-Zubau (Stilllegungen ignoriert)     Wind  F24 | C(T)=71.87 | b=0.4216 GW/Monat | Punkt 02/2035, frueh 11/2034, spaet 06/2035 | 31.12.2030 94.0 [93.1; 95.0] | R=9.76 | s_W/R=0.52 | Q_W=15.34 %
+21:37:36  S2 Brutto-Zubau (Stilllegungen ignoriert)     Wind  F60 | C(T)=73.43 | b=0.3021 GW/Monat | Punkt 07/2038, frueh 11/2037, spaet 03/2039 | 31.12.2030 87.7 [85.9; 89.6] | R=9.41 | s_W/R=0.39 | Q_W=16.77 %
+21:37:36  S2 Brutto-Zubau (Stilllegungen ignoriert)     Solar F12 | C(T)=128.26 | b=1.4484 GW/Monat | Punkt 08/2031, frueh 06/2031, spaet 10/2031 | 31.12.2030 204.7 [202.0; 207.4] | R=19.64 | s_W/R=0.88 | Q_W=0.93 %
+21:37:36  S2 Brutto-Zubau (Stilllegungen ignoriert)     Solar F24 | C(T)=128.36 | b=1.4449 GW/Monat | Punkt 08/2031, frueh 07/2031, spaet 09/2031 | 31.12.2030 204.6 [203.2; 206.0] | R=19.62 | s_W/R=0.88 | Q_W=0.79 %
+21:37:36  S2 Brutto-Zubau (Stilllegungen ignoriert)     Solar F60 | C(T)=128.47 | b=1.2379 GW/Monat | Punkt 08/2032, frueh 03/2032, spaet 03/2033 | 31.12.2030 190.3 [183.3; 197.2] | R=19.59 | s_W/R=0.76 | Q_W=0.53 %
+21:37:36  S6 Nettonennleistung                          Wind  F12 | C(T)=70.37 | b=0.3913 GW/Monat | Punkt 01/2036, frueh 06/2035, spaet 09/2036 | 31.12.2030 91.2 [89.7; 92.7] | R=10.11 | s_W/R=0.46 | Q_W=15.73 %
+21:37:36  S6 Nettonennleistung                          Wind  F24 | C(T)=70.37 | b=0.3600 GW/Monat | Punkt 12/2036, frueh 07/2036, spaet 04/2037 | 31.12.2030 89.3 [88.5; 90.2] | R=10.11 | s_W/R=0.43 | Q_W=15.34 %
+21:37:36  S6 Nettonennleistung                          Wind  F60 | C(T)=70.37 | b=0.2500 GW/Monat | Punkt 12/2041, frueh 02/2041, spaet 10/2042 | 31.12.2030 82.1 [80.6; 83.7] | R=10.11 | s_W/R=0.30 | Q_W=16.77 %
+21:37:36  S6 Nettonennleistung                          Solar F12 | C(T)=113.53 | b=1.2376 GW/Monat | Punkt 06/2033, frueh 03/2033, spaet 09/2033 | 31.12.2030 178.9 [176.6; 181.2] | R=22.97 | s_W/R=0.65 | Q_W=0.94 %
+21:37:36  S6 Nettonennleistung                          Solar F24 | C(T)=113.53 | b=1.2371 GW/Monat | Punkt 06/2033, frueh 04/2033, spaet 07/2033 | 31.12.2030 178.9 [177.6; 180.1] | R=22.97 | s_W/R=0.65 | Q_W=0.79 %
+21:37:36  S6 Nettonennleistung                          Solar F60 | C(T)=113.53 | b=1.0691 GW/Monat | Punkt 09/2034, frueh 03/2034, spaet 04/2035 | 31.12.2030 167.1 [161.3; 173.0] | R=22.97 | s_W/R=0.56 | Q_W=0.53 %
+21:37:36  S7b weiche Faelle ausgeschlossen              Wind  F12 | C(T)=70.37 | b=0.3913 GW/Monat | Punkt 01/2036, frueh 06/2035, spaet 09/2036 | 31.12.2030 91.2 [89.7; 92.7] | R=10.11 | s_W/R=0.46 | Q_W=15.73 %
+21:37:36  S7b weiche Faelle ausgeschlossen              Wind  F24 | C(T)=70.37 | b=0.3600 GW/Monat | Punkt 12/2036, frueh 07/2036, spaet 04/2037 | 31.12.2030 89.3 [88.5; 90.2] | R=10.11 | s_W/R=0.43 | Q_W=15.34 %
+21:37:36  S7b weiche Faelle ausgeschlossen              Wind  F60 | C(T)=70.37 | b=0.2500 GW/Monat | Punkt 12/2041, frueh 02/2041, spaet 10/2042 | 31.12.2030 82.1 [80.6; 83.7] | R=10.11 | s_W/R=0.30 | Q_W=16.77 %
+21:37:36  S7b weiche Faelle ausgeschlossen              Solar F12 | C(T)=128.09 | b=1.4344 GW/Monat | Punkt 08/2031, frueh 06/2031, spaet 10/2031 | 31.12.2030 203.8 [201.1; 206.5] | R=19.68 | s_W/R=0.87 | Q_W=0.93 %
+21:37:36  S7b weiche Faelle ausgeschlossen              Solar F24 | C(T)=128.09 | b=1.4346 GW/Monat | Punkt 08/2031, frueh 07/2031, spaet 09/2031 | 31.12.2030 203.8 [202.4; 205.2] | R=19.68 | s_W/R=0.87 | Q_W=0.79 %
+21:37:36  S7b weiche Faelle ausgeschlossen              Solar F60 | C(T)=128.09 | b=1.2322 GW/Monat | Punkt 09/2032, frueh 03/2032, spaet 03/2033 | 31.12.2030 189.7 [182.8; 196.6] | R=19.68 | s_W/R=0.75 | Q_W=0.53 %
+21:37:36  E1 unter S6/S7 Wind an Land: primaer 63.514 GW, S6 (Netto) 63.514 GW, S7b 63.514 GW; Ziel 69
+21:37:36  E1 unter S6/S7 Solar: primaer 100.808 GW, S6 (Netto) 90.050 GW, S7b 100.808 GW; Ziel 88
+21:37:36  S4 Wind an Land F12 | C(T)=70.37 | a_bar=4.66 GW/a | Punkt 02/2036 | Wert 31.12.2030 91.0
+21:37:36  S4 Wind an Land F24 | C(T)=70.37 | a_bar=4.15 GW/a | Punkt 04/2037 | Wert 31.12.2030 88.7
+21:37:36  S4 Wind an Land F60 | C(T)=70.37 | a_bar=3.04 GW/a | Punkt 04/2041 | Wert 31.12.2030 83.8
+21:37:36  S4 Solar        F12 | C(T)=128.09 | a_bar=17.86 GW/a | Punkt 06/2031 | Wert 31.12.2030 207.0
+21:37:36  S4 Solar        F24 | C(T)=128.09 | a_bar=17.32 GW/a | Punkt 08/2031 | Wert 31.12.2030 204.6
+21:37:36  S4 Solar        F60 | C(T)=128.09 | a_bar=14.02 GW/a | Punkt 10/2032 | Wert 31.12.2030 190.0
+21:37:36  S3: nicht durchgefuehrt, Grund: Zweitquelle nicht beschafft (kein Netzzugriff im Analyselauf; im Ordner rohdaten/ liegt keine Zweitquellen-Reihe; SAP 3.2 erlaubt Entfall ohne Amendment).
+21:37:36  S8: deskriptiv durchgefuehrt (Tabelle saisonalitaet_monatszubau_60m_*.csv und Grafik diagnostik_saisonalitaet.png nach 5.2 Nr.4); als Modellvariante dient S4 (voll_S4_flussmodell.csv).
+21:37:36  S9: nicht durchgefuehrt, Grund: keine Ueberlappung (0 Nummern aus GeloeschteUndDeaktivierteEinheiten_* kommen in EinheitenWind/EinheitenSolar_* vor; SAP 6, S9).
+21:37:36  Optional (SAP 3.5 Nr.7): Repowering-Abschaetzung nicht durchgefuehrt (Standortfelder wurden nicht fuer eine eindeutige Zuordnung ausgewertet; rein deskriptiv und optional laut SAP).
+21:37:36  Zweitquellen-Plausibilisierung (SAP 3.2): nicht durchgefuehrt, Grund: Zweitquelle nicht beschafft/kein Netzzugriff; blockiert laut SAP nichts.
+21:37:36  
+==== SAP 11 Tabellen und Grafiken ====
+21:37:37  Tabellen geschrieben (output/*.csv, Vollpraezisions-Dateien in output/zwischen/voll_*.csv)
+21:37:38  Grafiken gespeichert: output/grafiken/grafik1_wind_an_land.png, grafik2_solar.png, grafik3_wind_auf_see_E5.png
+21:37:38  
+==== Ende ====
+21:37:38  Lauf beendet ohne Stopp. 2026-10-29 21:37:38

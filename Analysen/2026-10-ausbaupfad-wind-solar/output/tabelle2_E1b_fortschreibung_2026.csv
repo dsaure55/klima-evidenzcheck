@@ -1,0 +1,7 @@
+"technologie","fenster","x2026","ziel2026_GW","wert_31122026_GW","L","U","einordnung","hilfsgroesse_ziel_interpoliert_T_GW","C_T_GW","abstand_C_T_zu_interpoliert_GW","abstand_prozent"
+"Wind an Land",12,5,84,72.4,72,72.9,"Das Ziel liegt oberhalb des 95-%-Prognoseintervalls der Fortschreibung.",80.9,70.4,-10.5,-13
+"Wind an Land",24,5,84,72.1,71.6,72.5,"Das Ziel liegt oberhalb des 95-%-Prognoseintervalls der Fortschreibung.",80.9,70.4,-10.5,-13
+"Wind an Land",60,5,84,70.1,68.7,71.6,"Das Ziel liegt oberhalb des 95-%-Prognoseintervalls der Fortschreibung.",80.9,70.4,-10.5,-13
+"Solar",12,5,128,135,134.2,135.7,"Das Ziel liegt unterhalb des 95-%-Prognoseintervalls der Fortschreibung.",119.7,128.1,8.4,7
+"Solar",24,5,128,135,134.2,135.7,"Das Ziel liegt unterhalb des 95-%-Prognoseintervalls der Fortschreibung.",119.7,128.1,8.4,7
+"Solar",60,5,128,130.5,124.4,136.6,"Das Ziel liegt im 95-%-Prognoseintervall der Fortschreibung.",119.7,128.1,8.4,7
