@@ -728,3 +728,5 @@ Entscheidung und Zeitpunkt (vor Berechnung der betroffenen Größen).
 - **K8:** Submission 2026 mit Stand der Seite 02.07.2026 veröffentlicht.
 - **K10:** GWP-Basis (AR4/AR5) auf der Seite nicht genannt. Offen.
 - Pressemitteilung Thünen (14.03.2026) ließ sich nicht abrufen (zu viele Weiterleitungen); die 26,9 Mt für 2025 bleiben deshalb nur über die UBA-Seite belegt.
+
+- **K1 erneut beantwortet** (Daniel Saure, 29.10.2026, Chat: „Ja, prospektiv“, nach Offenlegung des erweiterten Vorwissens oben): Die Analyse bleibt „prospektiv mit offengelegtem Vorwissen (Pressemitteilung und Aggregatwerte der UBA-Seite)“.
