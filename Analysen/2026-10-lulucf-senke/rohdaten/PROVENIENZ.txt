@@ -14,3 +14,18 @@ Groesse:      50870104 Bytes
 SHA-256:      707bbcd09287a88c944b7971d2025806f3956d5589537fdf9a45f65c57fba75a
 Gelesen:      Textextraktion (pdftotext) nur nach Stichwoertern GWP, Neuberechnung, Bundeswaldinventur; keine Zeitreihenwerte gelesen. Fundstellen unten im SAP-Anhang.
 Hinweis:      NICHT in Git (51 MB), siehe .gitignore im Analyseordner.
+
+Datei:        2026_EM_Entwicklung_in_D_Trendtabelle_THG.xlsx
+Quelle:       https://www.umweltbundesamt.de/system/files/document/2026_EM_Entwicklung_in_D_Trendtabelle_THG.xlsx ("Nationale THG-Trendtabellen 1990-2024", UBA, veroeffentlicht 15.01.2026, Last-Modified 15.01.2026)
+Heruntergeladen: 29.10.2026, per curl, nach ausdruecklicher Zustimmung von Daniel Saure (Chat: "ja", nach Nennung von Link und Groesse)
+Groesse:      303891 Bytes (HEAD-Abfrage identisch)
+SHA-256:      siehe Zeile in PRUEFSUMMEN.txt
+Status:       NICHT GEOEFFNET (nur Dateityp-Pruefung: ZIP-Container "PK"). Erst nach Freigabe des SAP-Amendments durch den analyst.
+Lizenz:       ungeklaert (SAP K13)
+
+Datei:        Emissionsuebersichten_KSG-Sektoren_1990-2025.xlsx
+Quelle:       https://www.umweltbundesamt.de/system/files/document/Emissions%C3%BCbersichten%20KSG-Sektoren%201990-2025.xlsx ("Emissionsuebersichten KSG-Sektoren 1990-2025", UBA, Eintrag 15.03.2026, Last-Modified 13.03.2026)
+Heruntergeladen: 29.10.2026, per curl, nach ausdruecklicher Zustimmung von Daniel Saure (Chat: "ja")
+Groesse:      776757 Bytes (HEAD-Abfrage identisch)
+Status:       NICHT GEOEFFNET (nur Dateityp-Pruefung). Erst nach Freigabe des SAP-Amendments durch den analyst.
+Lizenz:       ungeklaert (SAP K13)
