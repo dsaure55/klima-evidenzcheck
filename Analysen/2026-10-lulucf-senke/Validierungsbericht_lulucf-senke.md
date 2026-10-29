@@ -82,3 +82,39 @@ Nach Umsetzung genuegt eine fokussierte Nachpruefung als Anhang zu dieser Datei 
 | SHA-256 xlsx (2), PDF | identisch mit Pruefsummenlisten | | 0 |
 
 Hinweis: Die ARIMA-Simulation stimmt mit demselben Seed ueberein; bei anderer Ziehungsreihenfolge waeren kleine Abweichungen normal.
+
+---
+
+## Anhang: Nachpruefung 1 (29.10.2026)
+
+Gepruefter Stand: Commit e12000f (Analyst setzt A1 bis A4 um). Geprueft wurde der tatsaechliche Dateitext und das Diff gegen den Vorstand (git show, nur lesend), nicht die Meldung. Geaendert wurden laut Diff nur Analysebericht, Abweichungsprotokoll, lulucf-senke.R (Grafik 1: Titel und Z30-Beschriftung), run_log.txt (Zeitstempel) und grafik1_zeitreihe_fenster_ziel.png. Keine CSV-Datei im Commit (0 CSV-Aenderungen).
+
+### Auflagen
+
+| Auflage | Umgesetzt | Beleg |
+|---|---|---|
+| A1 Lizenzhinweis | ja | Analysebericht Abschnitt 0, Punkt "Lizenz (SAP 3.1, 11, K13, noch offen)": Lizenz fuer PDF, beide xlsx und Data Cube nicht bestaetigt; CC BY-NC-ND 4.0 (UBA-Texte/Grafiken), DL-DE-BY-2.0 (viele Datensaetze); vor Abdruck im Wortlaut klaeren. Entspricht SAP 3.1/12.2 |
+| A2 SAP-8.2/8.3/8.4-Saetze und Vorwissen | ja | Punkt "Einordnung (SAP 8.2, 8.3, 8.4)": Methodik-/Modelleffekt moeglich und nicht herausgerechnet; LULUCF nicht Teil von Gesamt ohne LULUCF; Senken nicht dauerhaft garantiert, ohne Bewertung. Vorwissen jetzt (a), (b), (c) wie SAP 8.5; (c) nennt Gesamtsektor 1990/2024 und Kategorien 2024 (deckt sich mit SAP Abschnitt 0); Pdftotext-Einsicht des Analysten benannt |
+| A3 p-Werte, Protokollkopf, Grafik 1 | ja | Berichtstext: "< 0,001" statt 0,000 (B, A; unadjustiert, Holm, HAC), C 0,230/0,230 und 0,088/0,088 unveraendert. Protokollkopf: "Status (Endstand): Analyse nach Amendment 1 durchgefuehrt; Stopp siehe Eintrag 1" mit Erlaeuterung des Stopp-Abschnitts. Grafik 1 siehe unten |
+| A4 Tabellenzuschnitt benennen | ja | Punkt "Tabellenzuschnitt (Hinweis)": nennt tab_diagnostik, tab_S1_arima, tab_S2_Q_HAC, tab3, tab_S6c, tab_S6d, tab5 (S3, S5, S6a, S7) |
+
+### Zahlen
+
+Keine CSV-Aenderung (0 CSV-Dateien im Commit). Alle im Bericht stehenden Zahlen ausserhalb der p-Werte-Zeile sind im Diff unberuehrt; die p-Werte-Zeile aendert nur die Darstellung. Meine fruehere Nachrechnung (M(2024) = 58,414; Fenster B 86,752 [63,601; 109,903]; A 53,710; C 73,990; HAC, S1 bis S7) bleibt damit unveraendert gueltig. Abweichung: 0. Das Skript wurde nur in Grafik 1 geaendert (Titel, Beschriftung); keine Rechenzeile.
+
+### Neue Sprache / neue Aussagen
+
+Keine Kausalaussagen oder Zuspitzungen eingefuehrt. Die neuen Saetze sind neutral und stehen im Einklang mit SAP 8.2 bis 8.4 (Methodik-/Modelleffekt "kann zum Teil", Senken "nicht dauerhaft garantiert ... ohne Bewertung"). Lizenzaussage mit Vorbehalt ("voraussichtlich unkritisch", Klaerung vor Abdruck) wie im SAP.
+
+### Grafik 1 (neu angesehen)
+
+Titel jetzt "UBA-Trendtabelle THG 1990-2024, Stand 15.01.2026" (keine Bezeichnung "Submission 2026" mehr); Z30-Beschriftung vollstaendig lesbar: "Zielwert gilt fuer das 4-Jahres-Mittel 2027-2030, nicht fuer das Einzeljahr". Inhalt sonst unveraendert (Fenster A/B/C, Modelljahre 2023/2024 als Dreiecke, Marker 2017/2018, Nulllinie, Trend nur bis 2030). Die Beschriftung beginnt knapp links der senkrechten 2018-Linie und ueberschneidet sie leicht (kosmetisch).
+
+### Neue Befunde
+
+N1 (gering): Run-Log-Zeitstempel ueberschrieben. In run_log.txt steht jetzt "Erstes Oeffnen der beiden xlsx-Dateien durch den Analysten: 2026-10-29 10:27:16", der Lauf vom 10:18:30 wurde ersetzt (erstes echtes Oeffnen 10:18:30, nur noch in Git-Historie sichtbar). Der Bericht verweist weiter auf den "Zeitstempel im Run-Log" als Beleg fuer das erste Oeffnen; weder Bericht noch Abweichungsprotokoll erwaehnen den Wiederholungslauf. Behebung: ein Satz im Abweichungsprotokoll (Eintrag 11): "Lauf wiederholt am 29.10.2026 10:27 nach Auflagen A1-A4 (nur Grafik 1 und Berichtstext geaendert); Erstlauf 10:18:30; erstes Oeffnen der xlsx war 10:18:30". Keine Auswirkung auf Zahlen.
+N2 (Hinweis): Z30-Beschriftung in Grafik 1 beruehrt die 2018-Linie (kosmetisch, optional).
+
+### Aktualisiertes Gesamturteil: GERING (freigabefaehig, sobald N1 mit einem Satz dokumentiert ist)
+
+Kritisch 0, wesentlich 0 (der fruehere wesentliche Befund 2 ist behoben), gering 1 (N1), Hinweis 1 (N2). Alle Auflagen A1 bis A4 umgesetzt; Zahlen unveraendert; keine neuen unzulaessigen Aussagen. Eine weitere Nachpruefung der Rechenwerte ist nicht noetig; N1 ist durch Sichtkontrolle des Protokolls erledigbar.

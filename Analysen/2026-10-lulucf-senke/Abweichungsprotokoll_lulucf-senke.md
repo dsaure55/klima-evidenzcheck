@@ -53,3 +53,7 @@ Der Stopp oben (Eintrag 1) wurde durch Amendment 1 (final, freigegeben durch Dan
 | 10 | Anhang-Grafik OWID/GCP und Thuenen/klimadashboard-Kontrolle | nicht erstellt / nicht beschafft | keine Downloads erlaubt; keine Auswirkung auf Kernzahlen |
 
 Offene Punkte aus dem SAP, vom Analysten nicht bearbeitbar: K2 (Volltext § 3a KSG durch Daniel Saure nicht ausdruecklich bestaetigt), K4 Rest (Verordnung nach § 3a Abs. 3), K13 (Lizenzen).
+
+## Eintrag 3 (29.10.2026): Wiederholter Lauf nach Validierungsauflagen
+
+Der Lauf wurde nach den Auflagen A1 bis A4 des Validators vollständig wiederholt (Zeitstempel im `run_log.txt` jetzt 10:27 Uhr). Das **erste Öffnen** der beiden xlsx-Dateien war im Erstlauf um 10:18 Uhr (dokumentiert im Commit `de7efa6`, `run_log.txt` dieser Fassung). Alle Ergebniszahlen und CSV-Dateien blieben bei der Wiederholung unverändert (Git-Vergleich, Nachprüfung 1 des Validators); geändert wurden nur Berichtstext, Protokollkopf und die Beschriftung der Grafik 1. Hinweis der Nachprüfung (Befund N1) damit erledigt.
