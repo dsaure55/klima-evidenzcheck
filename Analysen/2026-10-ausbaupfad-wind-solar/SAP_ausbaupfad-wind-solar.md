@@ -665,3 +665,11 @@ werden im Abweichungsprotokoll vermerkt, nicht stillschweigend aufgefangen.
 | K10 | Behandlung des Zwischenziels 2026 als Fortschreibung (E1b) statt Ist-Vergleich: bestätigen | offen |
 
 **Freigabe:** _(leer; wird nur von Daniel Saure nach Lektüre des Volltextes eingetragen)_
+
+---
+
+## Anhang: Klärungsstand (Stand 29.10.2026, nach Version 0.1; Version bleibt 0.1, Status `draft`)
+
+- **K1 beantwortet** (Daniel Saure, 29.10.2026, Chat: „Ja, prospektiv“): Die Analyse läuft als prospektiv mit offengelegtem Vorwissen (Wind an Land rund 68 GW laut Suchergebnis zum DIW-Monitor, ungeprüft). Das Vorwissen steht in Abschnitt 0.
+- **K2 teilweise belegt:** Die Zielwerte (§ 4 EEG, Wind an Land 69/84/99/115/157/160 GW für 2024/2026/2028/2030/2035/2040; Solar 88/128/172/215/309/400 GW) stimmen in zwei Abrufen vom 29.10.2026 überein (gesetze-im-internet.de, nichtamtliches Inhaltsverzeichnis ohne Fassungsstand; lxgesetze.de mit „zuletzt geändert 18.12.2025“). Ob § 4 durch die Änderung vom 18.12.2025 verändert wurde, ist nicht geklärt. Vor dem Einfrieren den amtlichen Volltext mit Fassungsstand prüfen.
+- Offen: K3 bis K10.
