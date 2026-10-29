@@ -1,0 +1,345 @@
+
+==============================================================================
+RUN-LOG lulucf-senke.R
+==============================================================================
+Datum/Zeit: 2026-10-29 10:18:30 CET 
+R-Version : R version 4.6.1 (2026-06-24 ucrt) 
+Seed      : 20261029 (SAP 5.7)
+SAP       : v1.0 final 29.10.2026; Amendment 1 final 29.10.2026
+
+==============================================================================
+SAP 3.5 Nr.1 / Amendment 2.2 Nr.1: Integritaet der Eingaben (SHA-256, Groesse)
+==============================================================================
+--- PRUEFSUMMEN.txt ---
+ 779fb78d4c963c107b7dd904cb7832f678eed25ad43c0a6aae933ee58d1289a7 *2026_EM_Entwicklung_in_D_Trendtabelle_THG.xlsx
+bbbb49cb8307ae0136e397e0a4ccb5e9e5d3ade1a72c96ed532c41aeb928853a *Emissionsuebersichten_KSG-Sektoren_1990-2025.xlsx 
+--- Ende ---
+                                                datei                                                           sha256  bytes in_pruefsummen in_provenienz
+q1     2026_EM_Entwicklung_in_D_Trendtabelle_THG.xlsx 779fb78d4c963c107b7dd904cb7832f678eed25ad43c0a6aae933ee58d1289a7 303891           TRUE         FALSE
+q2  Emissionsuebersichten_KSG-Sektoren_1990-2025.xlsx bbbb49cb8307ae0136e397e0a4ccb5e9e5d3ade1a72c96ed532c41aeb928853a 776757           TRUE         FALSE
+pdf            2_Tab_Emi-Senken-LULUCF_2026-07-02.pdf f8cf4f382e4e7557de4307d2055d7f6c6ad4b46b9b83c1ef64b0542cc6af4b4b 107755           TRUE          TRUE
+Erstes Oeffnen der beiden xlsx-Dateien durch den Analysten: 2026-10-29 10:18:30 (Prueffolge: Integritaet -> Fassung -> Vollstaendigkeit -> Kategorien -> Einheit/Vorzeichen)
+Eingabe-Inventarbericht 2026 (50.870.104 Bytes) wird in diesem Skript NICHT gelesen.
+
+==============================================================================
+Amendment 2.2 Nr.2: Fassung / Dateikopf (Wortlaut)
+==============================================================================
+Quelle 1, Blatt Deckblatt_Cover (nicht leere Zeilen):
+  Nationale Trendtabellen für die deutsche Berichterstattung atmosphärischer Emissionen
+  1990 - 2024
+  National Trend Tables for the German Atmospheric Emission Reporting
+  1990 - 2024
+  UMWELTBUNDESAMT
+  Impressum / Imprint
+  Herausgeber / Publisher:
+  Umweltbundesamt
+  Postfach 14 06
+  06813 Dessau
+  Email: V1.6@uba.de
+  Internet: http://www.umweltbundesamt.de/emissionen
+  Redaktion / Editor:
+  Kevin Hausmann
+  Dessau, 15.01.2026
+Quelle 1 Blaetter: Deckblatt_Cover, Anmerkungen_Notes, Trend_Summary, GHG_Summary, GHG_Fractions, GHG_CO2eq, CO2, CH4_CO2eq, CH4, N2O_CO2eq, N2O, F-Gases_CO2eq 
+Quelle 2 Blaetter: THG-Trends, THG-Anteile, THG kurz, THG, CO2, CH4, N2O, F-Gase, Daten Sektorgrafik, Sektorgrafik UBA_CI, Daten Zielpfadgrafik, Grafik Zielpfad Sektoren, Grafik Zielpfadänderung JEGM, Daten Sektor Energiew., Grafik Sektor Energiew., Daten Sektor Industrie, Grafik Sektor Industrie, Daten Sektor Gebäude, Grafik Sektor Gebäude, Daten Sektor Verkehr, Grafik Sektor Verkehr, Daten Sektor Landwirtschaft, Grafik Sektor Landwirtschaft, Daten Sektor Abfallwirtschaft, Grafik Sektor Abfallwirtschaft, Unsicherheiten 
+Textstellen zu Submission/Stand/Fassung/GWP/AR5 in Quelle 1:
+  [2026_EM_Entwicklung_in_D_Trendtabelle_THG.xlsx / Anmerkungen_Notes]
+     GWP: Global Warming Potential
+     Emissions from fuel use in public power plants, district heating plants, refineries, coal mining power plants, coking plants and the other conversion sector
+  [2026_EM_Entwicklung_in_D_Trendtabelle_THG.xlsx / CH4_CO2eq]
+     GWP
+  [2026_EM_Entwicklung_in_D_Trendtabelle_THG.xlsx / N2O_CO2eq]
+     GWP
+Textstellen zu Submission/Stand/Fassung/GWP/AR5 in Quelle 2 (ohne Grafikblaetter):
+  [Emissionsuebersichten_KSG-Sektoren_1990-2025.xlsx / CO2]
+     GWP: 1
+  [Emissionsuebersichten_KSG-Sektoren_1990-2025.xlsx / CH4]
+     GWP: 28
+  [Emissionsuebersichten_KSG-Sektoren_1990-2025.xlsx / N2O]
+     GWP: 265
+  [Emissionsuebersichten_KSG-Sektoren_1990-2025.xlsx / Unsicherheiten]
+     Vergleich der Vorjahresschätzung für das Jahr 2025 mit den Inventardaten für das Jahr 2024
+     Vorjahresschätzung 2025
+Titel Quelle 2, Blatt THG: Treibhausgas-Emissionen [tausend Tonnen CO2-äquivalent] 
+PDF-Fussnote (Quellenzeile): Quelle: Umweltbundesamt, Nationale Treibhausgas-Inventare 1990 bis 2022 (Stand 03/2024) , für 2023 vorläufige Daten (Stand 15.03.2024) 
+BEFUND Fassung: Quelle 1 nennt im Deckblatt 'Nationale Trendtabellen ... 1990 - 2024', Dessau, 15.01.2026; die Bezeichnung
+  'Submission 2026' steht NICHT woertlich im Dateikopf (siehe Textsuche oben) -> Hinweis, kein Wechsel der Referenz.
+  GWP-Basis: Quelle 1 nennt nur 'GWP: Global Warming Potential' (siehe Textsuche); AR5 laut Inventarbericht (SAP 3.5 Nr.3).
+
+==============================================================================
+Amendment 2.2 Nr.3-7 / SAP 3.5: Import Quelle 1 (Blatt GHG_CO2eq)
+==============================================================================
+Titelzeile: Emission trends for Germany since 1990, all GHGs in kt CO2 equivalent 
+Kopfzeile 3, Spalte 1-3: Emission source and sink categories Base Year 33238 
+Jahresspalten Quelle 1:  1990 - 2024 ; n = 35 
+Jahresreihe 1990-2024 lueckenlos und eindeutig: TRUE 
+Gefundene Zeilen (Zeilennr. im Blatt GHG_CO2eq):  4. Land Use, Land Use Change and Forestry = 35 ;  Wald 36, Acker 37, Gruen 38, Feucht 39, Sied 40, HWP 41 
+Fehlende Werte in Quelle 1 (Gesamt/Kategorien): 0 
+Einheit: kt CO2-Aequivalent (Titelzeile), Umrechnung /1000 nach Mt. Vorzeichen: positiv = Quelle (Total 1990 = +36.5 Mt; Wald negativ = Senke) -> deckt sich mit SAP-Konvention, keine Umkehr.
+Gase: THG gesamt (CO2, CH4, N2O, Blatt 'GHG_CO2eq'; LULUCF hier CO2/CH4/N2O). Gesamt-Zeile LULUCF vorhanden: ja; HWP eigene Zeile: ja
+Abgrenzung (SAP 3.5 Nr.7): Primaerreihe E(y) = Zeile '4. Land Use, Land Use Change and Forestry' (Quelle 1, Blatt GHG_CO2eq), Gesamtsektor inkl. HWP (Summenprobe unten).
+Summenpruefung Kategorien (inkl. HWP) vs. Gesamt: max |Differenz| = 7.28e-15 Mt; Toleranz 0.5 Mt -> ERFUELLT 
+Primaerreihe n = 35  (1990-2024). Primaerquelle nach Amendment 2.4 Fall 1: Quelle 1. Fenster A durchfuehrbar.
+
+==============================================================================
+Amendment 2.3: Abgleich Quelle 2 (alle Jahre) und PDF-Tabelle (Stichprobe)
+==============================================================================
+Quelle 2 Blatt THG: Jahre 1990 - 2025 , n = 36 ; luckenlos: TRUE 
+ total   Wald  Acker  Gruen Feucht   Sied    HWP 
+    46     47     48     49     50     51     52 
+Quelle 2 Einheit: 'tausend Tonnen CO2-aequivalent' (Titelzeile) -> kt. HWP/Kategorien als eigene Zeilen vorhanden.
+Abgleich Quelle 1 vs Quelle 2, 35 gemeinsame Jahre (1990-2024) x 7 Variablen. Max |Differenz| je Variable (Mt):
+       Acker       Feucht        Gruen          HWP         Sied        total         Wald 
+7.105427e-15 1.776357e-15 7.105427e-15 1.776357e-15 8.881784e-16 1.421085e-14 1.421085e-14 
+Anzahl Jahr-Variablen-Paare ueber Schwelle 0,5 Mt: 0 
+Gesamtsektor: Jahre ueber Schwelle:  
+
+--- PDF-Stichprobe (Amendment 2.3): Uebertragung 1 = Sichtablesung der Seite als Bild (hier hart kodiert, Tsd. t CO2-Aequiv.,
+    Block 'Treibhausgase gesamt'); Uebertragung 2 = unabhaengige maschinelle Positionsauslese (pdftools::pdf_data, Spaltenzuordnung per x-Koordinate) ---
+PDF-Spaltenkoepfe Block 1: 1990 1991 1992 1993 1994 1995 2000 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 
+-> in der PDF fehlen die Jahre 1996-1999 und 2001-2004 (Befund Stopp 1, bekannt).
+Doppelte Uebertragung: Differenzen Sichtablesung vs. maschinelle Auslese (Tsd. t); Anzahl Zellen: 42 ; Zellen mit Differenz > 0.05: 0 ; NA: 0 
+   year variable pdf_sicht_kt pdf_auto_kt       q1_kt       q2_kt diff_pdf_minus_q1_Mt ueber_schwelle_q1
+7  1990     Wald     -26452.6    -26452.6 -26452.6159 -26452.6159        1.5885022e-05             FALSE
+1  1990    Acker      26746.5     26746.5  26746.5125  26746.5125       -1.2538922e-05             FALSE
+3  1990    Gruen      25182.8     25182.8  25182.8152  25182.8152       -1.5228409e-05             FALSE
+2  1990   Feucht       8981.7      8981.7   8981.6558   8981.6558        4.4202442e-05             FALSE
+5  1990     Sied       3331.4      3331.4   3331.3814   3331.3814        1.8636035e-05             FALSE
+4  1990      HWP      -1294.9     -1294.9  -1294.8580  -1294.8580       -4.1974000e-05             FALSE
+6  1990    total      36494.9     36494.9  36494.8910  36494.8910        8.9821686e-06             FALSE
+14 2000     Wald     -52798.3    -52798.3 -52798.3026 -52798.3026        2.5831685e-06             FALSE
+8  2000    Acker      29917.3     29917.3  29917.2957  29917.2957        4.3194960e-06             FALSE
+10 2000    Gruen      24805.2     24805.2  24805.1832  24805.1832        1.6825045e-05             FALSE
+9  2000   Feucht       9394.8      9394.8   9394.8093   9394.8093       -9.2783605e-06             FALSE
+12 2000     Sied       3706.5      3706.5   3706.4646   3706.4646        3.5447977e-05             FALSE
+11 2000      HWP      -7295.5     -7295.5  -7295.5063  -7295.5063        6.2850000e-06             FALSE
+13 2000    total       7729.9      7729.9   7729.9438   7729.9438       -4.3817674e-05             FALSE
+21 2010     Wald     -39760.2    -39760.2 -39760.2392 -39760.2392        3.9247896e-05             FALSE
+15 2010    Acker      19485.4     19485.4  19485.4399  19485.4399       -3.9869609e-05             FALSE
+17 2010    Gruen      22016.7     22016.7  22016.7079  22016.7079       -7.9369900e-06             FALSE
+16 2010   Feucht       8921.9      8921.9   8921.9271   8921.9271       -2.7067938e-05             FALSE
+19 2010     Sied       4228.7      4228.7   4228.6612   4228.6612        3.8760652e-05             FALSE
+18 2010      HWP      -3580.8     -3580.8  -3580.8065  -3580.8065        6.4950000e-06             FALSE
+20 2010    total      11311.7     11311.7  11311.6904  11311.6904        9.6290104e-06             FALSE
+28 2020     Wald      -1994.1     -1994.1  -1994.1455  -1994.1455        4.5516438e-05             FALSE
+22 2020    Acker      16514.1     16514.1  16514.1033  16514.1033       -3.3388734e-06             FALSE
+24 2020    Gruen      26308.5     26308.5  26308.5031  26308.5031       -3.1445812e-06             FALSE
+23 2020   Feucht      10030.5     10030.5  10030.4850  10030.4850        1.4973782e-05             FALSE
+26 2020     Sied       4842.2      4842.2   4842.2385   4842.2385       -3.8463880e-05             FALSE
+25 2020      HWP      -8055.0     -8055.0  -8055.0283  -8055.0283        2.8339000e-05             FALSE
+27 2020    total      47646.2     47646.2  47646.1561  47646.1561        4.3881885e-05             FALSE
+35 2024     Wald       2140.5      2140.5   2140.4543   2140.4543        4.5737585e-05             FALSE
+29 2024    Acker      17515.5     17515.5  17515.5252  17515.5252       -2.5163536e-05             FALSE
+31 2024    Gruen      24178.4     24178.4  24178.4097  24178.4097       -9.6659467e-06             FALSE
+30 2024   Feucht       8952.7      8952.7   8952.6749   8952.6749        2.5098305e-05             FALSE
+33 2024     Sied       4644.2      4644.2   4644.1661   4644.1661        3.3935620e-05             FALSE
+32 2024      HWP        407.6       407.6    407.6226    407.6226       -2.2601000e-05             FALSE
+34 2024    total      57838.9     57838.9  57838.8527  57838.8527        4.7341027e-05             FALSE
+42 2025     Wald     -19286.1    -19286.1          NA -19286.0727                   NA                NA
+36 2025    Acker       6788.5      6788.5          NA   6788.5153                   NA                NA
+38 2025    Gruen      26687.3     26687.3          NA  26687.2586                   NA                NA
+37 2025   Feucht       9964.7      9964.7          NA   9964.6970                   NA                NA
+40 2025     Sied       4440.8      4440.8          NA   4440.8044                   NA                NA
+39 2025      HWP      -1740.1     -1740.1          NA  -1740.1012                   NA                NA
+41 2025    total      26855.1     26855.1          NA  26855.1014                   NA                NA
+PDF vs Quelle 1, Gesamtsektor, 5 Stichprobenjahre: Jahre ueber 0,5 Mt: 0 (Regel: >=3 -> 'vermutlich andere Fassung')
+PDF vs Quelle 1, alle Kategorien x 5 Jahre ueber 0,5 Mt: 0 von 35
+FUSSNOTENFRAGE: Die PDF-Werte stimmen in der Stichprobe mit Quelle 1 ueberein; die Fussnote 'Stand 03/2024' erscheint nach diesem Abgleich veraltet (Hinweis, keine Aenderung).
+Zusatz (maschinell, alle PDF-Jahre 1990-2024 ausser 2025): Gesamtsektor PDF vs Quelle 1 innerhalb 0,5 Mt: TRUE 
+Vollstaendigkeit Fenster B in PDF (2010-2024, Kontrolle, nicht Primaerquelle): TRUE 
+Regel: Primaerquelle gilt; Kontrollquellen aendern keinen Wert der Primaerreihe.
+Schaetzwert 2025 (unsichere Vorjahresschaetzung, KEIN Inventarwert): Quelle 2 = 26.8551 Mt; PDF = 26.8551 Mt; Differenz = 0 Mt
+
+==============================================================================
+SAP 2.1/5.1: Messwert M(T) (4-Jahres-Mittel), E1, E4
+==============================================================================
+E(2021..2024) [Mt]: 44.949, 57.599, 73.271, 57.839  (2023, 2024 = Modellfortschreibung)
+M(2024) = 58.41427  D30 = 83.41427  D40 = 93.41427  D45 = 98.41427 
+Kategorie F1: M(2024) liegt UEBER (Ziel nicht erreicht im juengsten Messwert) 
+r_req = (Z30 - M(2024))/6 = -13.90238 Mt/Jahr
+
+==============================================================================
+SAP 4.2/5.1/2.2: Primaeranalyse (OLS auf Jahreswerten, Prognoseintervall fuer Mittel 2027-2030)
+==============================================================================
+n je Fenster: A = 35 , B = 15 , C = 7  (soll 35/15/7)
+                       B            A            C                          
+fenster                B (primaer)  A            C                          
+von                    2010         1990         2018                       
+bis                    2024         2024         2024                       
+n                      15           35            7                         
+beta                   4.936245     1.957152     2.616011                   
+beta_lo                 3.378620     1.375147    -2.302746                  
+beta_hi                6.493870     2.539157     7.534767                   
+beta_lo_HAC             3.6281557    1.1141817   -0.5667475                 
+beta_hi_HAC            6.244335     2.800123     5.798769                   
+NW_lag                 2            3            2                          
+p_klass                1.176725e-05 8.291289e-08 2.298360e-01               
+p_HAC                  1.817590e-06 4.155573e-05 8.830296e-02               
+Mhat2030               86.75201     53.71047     73.99033                   
+L                      63.60062     31.49686     33.65353                   
+U                      109.90341     75.92407    114.32714                  
+kategorie              K-ueber      K-ueber      K-ueber                    
+abstand_Mhat_minus_Z30 111.75201     78.71047     98.99033                  
+Mend                   58.41427     58.41427     58.41427                   
+D30                    83.41427     83.41427     83.41427                   
+r_req                  -13.90238    -13.90238    -13.90238                  
+r_obs                  4.936245     1.957152     2.616011                   
+Q                      <NA>         <NA>         <NA>                       
+Q_beta_lo              <NA>         <NA>         <NA>                       
+Q_beta_hi              <NA>         <NA>         <NA>                       
+belastbarkeit                                    n<10, geringe Belastbarkeit
+p_holm_klass           2.353450e-05 2.487387e-07 2.298360e-01               
+p_holm_HAC             5.452769e-06 8.311147e-05 8.830296e-02               
+
+Gesamtaussage (SAP 5.6): Kategorien A/B/C = K-ueber / K-ueber / K-ueber -> uebereinstimmend: K-ueber 
+Hinweis: drei 95-%-Intervalle sind nicht simultan 95 %-sicher (SAP 5.5).
+
+E3: r_req = -13.90238  r_obs5 = 5.458815  r_obs10 = 5.189084  Q5 = NA  Q10 = NA 
+r_obs(A/B/C) = 4.936 / 1.957 / 2.616  Q(A/B/C) = NA / NA / NA 
+  Fenster B (primaer) : keine Verbesserung beobachtet (r_obs >= 0), Rate nicht vergleichbar, kein Quotient.
+  Fenster A : keine Verbesserung beobachtet (r_obs >= 0), Rate nicht vergleichbar, kein Quotient.
+  Fenster C : keine Verbesserung beobachtet (r_obs >= 0), Rate nicht vergleichbar, kein Quotient.
+  r_obs5: keine Verbesserung (>= 0), nicht vergleichbar.
+  r_obs10: keine Verbesserung (>= 0), nicht vergleichbar.
+
+==============================================================================
+SAP 5.2: Diagnostik je Fenster (DW einseitig 'greater', ACF, Shapiro, Breusch-Pagan, Cook, Hebel)
+==============================================================================
+
+-- Fenster B (n = 15 ) --
+Durbin-Watson (positiv, einseitig): DW = 1.691 , p = 0.174  
+Breusch-Pagan: BP = 0.257 , p = 0.612  (deskriptiv)
+Shapiro-Wilk: W = 0.954, p = 0.595 
+ACF Residuen Lag 1..5: 0.076, -0.103, -0.166, 0.041, -0.041
+Cook-Distanz > 4/n =0.267: 2010 (max Cook = 0.364 im Jahr 2010)
+Hebelwerte 2023/2024: 0.195, 0.242 ; maximaler Hebel 0.242 im Jahr 2010  (Schwelle 2p/n = 0.267 )
+Residuen 2023/2024 [Mt]: 13.67, -6.7 
+
+-- Fenster A (n = 35 ) --
+Durbin-Watson (positiv, einseitig): DW = 1.136 , p = 0.002  
+Breusch-Pagan: BP = 0.371 , p = 0.542  (deskriptiv)
+Shapiro-Wilk: W = 0.912, p = 0.009 
+ACF Residuen Lag 1..5: 0.248, 0.204, 0.092, 0.129, 0.089
+Cook-Distanz > 4/n =0.114: 1990, 2023 (max Cook = 0.799 im Jahr 1990)
+Hebelwerte 2023/2024: 0.1, 0.11 ; maximaler Hebel 0.11 im Jahr 1990  (Schwelle 2p/n = 0.114 )
+Residuen 2023/2024 [Mt]: 30.32, 12.94 
+
+-- Fenster C (n = 7 ) --
+Durbin-Watson (positiv, einseitig): DW = 2.006 , p = 0.289   [n=7: kaum trennscharf, nicht zur Entscheidung herangezogen] 
+Breusch-Pagan: BP = 0.131 , p = 0.717  (deskriptiv)
+Shapiro-Wilk: n < 8: nur Q-Q-Plot 
+ACF Residuen Lag 1..2: -0.155, -0.207
+Cook-Distanz > 4/n =0.571: 2018 (max Cook = 1.073 im Jahr 2018)
+Hebelwerte 2023/2024: 0.286, 0.464 ; maximaler Hebel 0.464 im Jahr 2018  (Schwelle 2p/n = 0.571 )
+Residuen 2023/2024 [Mt]: 13.67, -4.38 
+null device 
+          1 
+
+==============================================================================
+SAP 5.4/S1: ARIMA(p,0,q)-Fehler, p,q<=2, AICc, exhaustive Suche, 10000 Pfade, Seed 20261029 (nur A, B; C: n<10)
+==============================================================================
+Fenster B : gewaehlte Ordnung (p,d,q) = ( 0 , 0 , 0 ); AICc = 123.31 ; Koeffizienten:
+ intercept       year 
+-9926.4213     4.9362 
+Fenster A : gewaehlte Ordnung (p,d,q) = ( 1 , 0 , 0 ); AICc = 301.68 ; Koeffizienten:
+       ar1  intercept       year 
+    0.3938 -3639.1358     1.8197 
+  fenster                            ordnung Mhat2030_arima    L_sim    U_sim Median_sim kategorie_S1
+1       B                            (0,0,0)       86.75201 74.50115 98.44429   86.75025      K-ueber
+2       A                            (1,0,0)       52.37002 28.33107 75.41835   52.45399      K-ueber
+3       C nicht durchgefuehrt, Grund: n < 10             NA       NA       NA         NA         <NA>
+Hinweis: Simulation ohne Parameterunsicherheit (parametrische Simulation des angepassten Modells, SAP 5.4).
+
+==============================================================================
+SAP 6 S2: Newey-West-Konfidenzintervall fuer beta (Lag = floor(4*(n/100)^(2/9)), ohne Prewhitening), DW
+==============================================================================
+      fenster  n NW_lag     beta   beta_lo  beta_hi beta_lo_HAC beta_hi_HAC      p_klass        p_HAC p_holm_klass   p_holm_HAC       DW        DW_p
+1 B (primaer) 15      2 4.936245  3.378620 6.493870   3.6281557    6.244335 1.176725e-05 1.817590e-06 2.353450e-05 5.452769e-06 1.690717 0.173680352
+2           A 35      3 1.957152  1.375147 2.539157   1.1141817    2.800123 8.291289e-08 4.155573e-05 2.487387e-07 8.311147e-05 1.135559 0.001805503
+3           C  7      2 2.616011 -2.302746 7.534767  -0.5667475    5.798769 2.298360e-01 8.830296e-02 2.298360e-01 8.830296e-02 2.006448 0.288554632
+Q mit HAC-Intervall nur, wenn das gesamte Intervall < 0:  B (primaer) nein; A nein; C nein 
+
+==============================================================================
+SAP 6 S3a/S3b: ohne letztes Jahr (Ende 2023) bzw. ohne die letzten zwei Jahre (Ende 2022)
+==============================================================================
+S3a: M(2023) = 55.86609; D30 = 80.86609
+S3b: M(2022) = 47.82433; D30 = 72.82433
+
+==============================================================================
+SAP 6 S5: Primaerreihe abzueglich HWP (HWP liegt als eigene Jahreswerte vor); Zielwert unveraendert Z30 = -25
+==============================================================================
+M(2024) ohne HWP = 61.88957 ; D30 = 86.88957 
+
+==============================================================================
+SAP 6 S6a-d: Bruchjahr-Kandidaten B* = 2017 und 2018
+==============================================================================
+S6a: n = 8, n<10 geringe Belastbarkeit; Kategorie K-ueber 
+S6b: identisch mit Fenster C (Kategorie K-ueber ), keine eigene Rechnung.
+      fenster Bstar  n    gamma        se     ci_lo    ci_hi            p beta_gemeinsam
+2010        B  2017 15 17.43370 11.984173 -8.677574 43.54497 1.713989e-01      3.1928756
+20101       B  2018 15 34.80058  8.247719 16.830341 52.77081 1.190132e-03      1.4561875
+1990        A  2017 35 30.96957  8.588676 13.475009 48.46413 1.044521e-03      1.0202576
+19901       A  2018 35 36.89905  7.809599 20.991413 52.80668 4.414016e-05      0.9442371
+S6c nur deskriptiv: keine Prognose, keine Kategorie.
+S6d (deskriptiv, n = 3, ohne Intervall/Kategorie):
+                 jahr     E_Mt
+2022             2022 57.59898
+2023             2023 73.27053
+2024             2024 57.83885
+1    Mittel 2022-2024 62.90279
+
+==============================================================================
+SAP 6 S7: Reihe um den Schaetzwert 2025 verlaengert (unsichere Schaetzung, KEIN Inventarwert; Wert aus Quelle 2)
+==============================================================================
+Schaetzwert 2025 = 26.8551 Mt (Quelle 2; PDF identisch bis auf Rundung: 26.8551 ); M(2025) = Mittel 2022-2025 = 53.89087 ; D30 = 78.89087 
+Hinweis: In S7 liegen 2027-2030 weiterhin nach dem Fensterende; Formel unveraendert (alpha + beta*2028,5).
+
+==============================================================================
+SAP 6 S4: Fruehere Submissions
+==============================================================================
+S4 NICHT DURCHGEFUEHRT. Grund: Submissions 2025/2024/2023 nicht ohne Download beschaffbar (keine weiteren Downloads erlaubt);
+Data Cube: nicht durchgefuehrt (keine Zustimmung). Keine Teilmenge gerechnet. Revisionstabelle entfaellt.
+     sens     fenster  von  bis  n    beta Mhat2030       L      U kategorie  Mend   D30   r_req     Q               belastbarkeit
+yr1   S3a       S3a A 1990 2023 34  1.8880    51.81  28.923  74.69   K-ueber 55.87 80.87 -11.552    NA                            
+yr    S3a       S3a B 2010 2023 14  5.1571    89.88  63.574 116.19   K-ueber 55.87 80.87 -11.552    NA                            
+yr2   S3a       S3a C 2018 2023  6  3.4919    81.73  20.545 142.91   K-ueber 55.87 80.87 -11.552    NA n<10, geringe Belastbarkeit
+yr4   S3b       S3b A 1990 2022 33  1.7070    46.77  24.384  69.16   K-ueber 47.82 72.82  -9.103    NA                            
+yr3   S3b       S3b B 2010 2022 13  4.7051    83.33  54.003 112.65   K-ueber 47.82 72.82  -9.103    NA                            
+yr5   S3b       S3b C 2018 2022  5  0.2673    52.17 -25.727 130.06      K-im 47.82 72.82  -9.103    NA n<10, geringe Belastbarkeit
+yr7    S5        S5 A 1990 2024 35  1.9906    59.17  35.174  83.18   K-ueber 61.89 86.89 -14.482    NA                            
+yr6    S5        S5 B 2010 2024 15  5.0529    91.39  66.334 116.45   K-ueber 61.89 86.89 -14.482    NA                            
+yr8    S5        S5 C 2018 2024  7  1.6444    71.33  36.150 106.50   K-ueber 61.89 86.89 -14.482    NA n<10, geringe Belastbarkeit
+yr9   S6a S6a ab 2017 2017 2024  8  5.1269    90.31  45.873 134.75   K-ueber 58.41 83.41 -13.902    NA n<10, geringe Belastbarkeit
+yr11   S7        S7 A 1990 2025 36  1.8670    51.26  29.463  73.06   K-ueber 53.89 78.89 -15.778    NA                            
+yr10   S7        S7 B 2010 2025 16  3.9961    73.75  46.848 100.65   K-ueber 53.89 78.89 -15.778    NA                            
+yr12   S7        S7 C 2018 2025  8 -0.5489    47.09   1.448  92.73   K-ueber 53.89 78.89 -15.778 28.74 n<10, geringe Belastbarkeit
+
+Kategorien-Robustheit (Primaer B = K-ueber ):
+  S3a A         : K-ueber 
+  S3a B         : K-ueber 
+  S3a C         : K-ueber 
+  S3b A         : K-ueber 
+  S3b B         : K-ueber 
+  S3b C         : K-im  <- andere Kategorie als Primaeranalyse desselben Fensters: Ergebnis nicht robust gegenueber dieser Sensitivitaet
+  S5 A          : K-ueber 
+  S5 B          : K-ueber 
+  S5 C          : K-ueber 
+  S6a ab 2017   : K-ueber NA
+  S7 A          : K-ueber 
+  S7 B          : K-ueber 
+  S7 C          : K-ueber 
+
+==============================================================================
+SAP 11: Grafiken
+==============================================================================
+null device 
+          1 
+null device 
+          1 
+Grafiken geschrieben: grafik1_zeitreihe_fenster_ziel.png, grafik2_4jahresmittel_intervall.png, anhang_diagnostik.png
+Anhang-Grafik OWID/GCP-Vergleich: nicht erstellt (OWID-Daten nicht beschafft, keine Downloads; SAP 3.3/9: nur Plausibilisierung).
+
+==============================================================================
+ENDE des Laufs (fehlerfrei bis hierher)
+==============================================================================
+Zeit: 2026-10-29 10:18:38 
