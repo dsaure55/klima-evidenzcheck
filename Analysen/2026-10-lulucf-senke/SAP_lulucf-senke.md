@@ -714,5 +714,5 @@ Entscheidung und Zeitpunkt (vor Berechnung der betroffenen Größen).
 - **K1 beantwortet** (Daniel Saure, 29.10.2026, Chat: „Ja, prospektiv“): Die Analyse läuft als prospektiv mit offengelegtem Vorwissen (26,9 Mt für 2025 aus einer Pressemitteilung, ungeprüft). Das Vorwissen steht in Abschnitt 0.
 - **K2 teilweise belegt:** Abruf von gesetze-im-internet.de am 29.10.2026 (per Zusammenfassungswerkzeug, nicht wörtlich geprüft): KSG, Ausfertigung 12.12.2019, zuletzt geändert durch Art. 1 G v. 15.7.2024 (BGBl. I Nr. 235). § 3a Abs. 1 bestätigt: Mittelwert aus Zieljahr und den drei vorhergehenden Kalenderjahren, mindestens minus 25 Mt (2030), minus 35 Mt (2040), minus 40 Mt (2045). Vor dem Einfrieren Volltext selbst lesen.
 - **K4 Hinweis (nicht abschließend):** § 5 Abs. 2 Nr. 3 KSG erwähnt Holzprodukte nicht; Anlage 1 Nr. 7 nennt „Holzprodukte“ ausdrücklich als Teil des Sektors. Das spricht dafür, dass Holzprodukte zur gesetzlichen Größe gehören. Vor dem Einfrieren Anlage 1 im Volltext und die Verordnung nach § 3a Abs. 3 Nr. 3 prüfen.
-- **K5 offen** (Fenster B als Hauptfenster, Entscheidung Daniel Saure).
-- Offen: K3, K6 bis K13.
+- **K5 beantwortet** (Daniel Saure, 29.10.2026, Chat: „Ja, Fenster B“): Hauptfenster ist 2010 bis letztes Berichtsjahr; Fenster A (ab 1990) und C (ab 2018) bleiben gleichrangig berichtete Sensitivität.
+- Offen: K3, K6 bis K13 (K2 und K4 nur teilweise belegt).
