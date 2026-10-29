@@ -2,11 +2,11 @@
 
 **Bezug:** `Analysen/2026-10-lulucf-senke/SAP_lulucf-senke.md`, Version 1.0 (final, eingefroren und freigegeben am 29.10.2026). Der SAP selbst wird durch diese Datei **nicht** verändert.
 **Titel:** Datenquellen neu geordnet, Prüfregeln beim ersten Öffnen und vorab festgelegter Rückfall bei Lücken in der UBA-PDF-Tabelle.
-**Amendment-Version:** 0.1
+**Amendment-Version:** 1.0 (freigegeben)
 **Datum:** 29.10.2026
-**Autor:in:** Claude (sap-autor-Subagent). Entwurf, noch nicht von einem Menschen gelesen.
-**Status: draft.** Das Amendment ist erst wirksam, wenn Daniel Saure den vollständigen Text gelesen und freigegeben hat. Bis dahin bleibt die Analyse gestoppt.
-**Freigabe:** _________________________ Datum: __________ (leer; steht aus)
+**Autor:in:** Claude (sap-autor-Subagent). Volltext von Daniel Saure gelesen und freigegeben am 29.10.2026.
+**Status: final (freigegeben am 29.10.2026).** Das Amendment ist wirksam; der analyst darf mit den Festlegungen unten fortsetzen.
+**Freigabe:** Freigegeben durch Daniel Saure am 29.10.2026 (Volltext gelesen; Wortlaut im Chat: „Gelesen, freigeben“; damit bestätigt: Schwelle 0,5 Mt je Jahr, Stichprobenjahre 1990, 2000, 2010, 2020, 2024, Rückfall, Zusatzregeln zu Quelle 2 und zur Summe der Kategorien).
 
 Alle Festlegungen unten sind **Vorschläge für Daniel Saure** und wurden **vor dem Öffnen** der beiden Excel-Dateien getroffen. Niemand hat deren Inhalt gesehen.
 
@@ -111,6 +111,6 @@ Der SAP wird erst nach Freigabe dieses Amendments im Abschnitt 17 (Amendments) d
 
 ## 7. Freigabe
 
-**Freigabe:** _________________________ Datum: __________
+**Freigabe:** Freigegeben durch Daniel Saure am 29.10.2026 (siehe Kopf).
 
 (Leer. Die Freigabe schreibt ausschließlich Daniel Saure, nachdem er den vollständigen Text dieses Amendments gelesen hat. Erst danach wird der SAP im Abschnitt 17 auf dieses Amendment verwiesen.)

@@ -922,5 +922,5 @@ Auswirkung festgehalten und im Bericht als „Post-hoc" gekennzeichnet.
 
 ## 17. Amendments
 
-Bisher keine. Änderungen nach dem Einfrieren nur als datiertes Amendment mit Anlass,
+**Amendment 1 (freigegeben 29.10.2026):** `Amendment_1_lulucf-senke.md` (Datenquellen neu geordnet, Prüfregeln beim ersten Öffnen, vorab festgelegter Rückfall bei Lücken in der UBA-PDF-Tabelle). Weitere Änderungen nach dem Einfrieren nur als datiertes Amendment mit Anlass,
 Entscheidung und Zeitpunkt (vor Berechnung der betroffenen Größen).
