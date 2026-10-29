@@ -839,3 +839,7 @@ Auswirkung festgehalten und im Bericht als „Post-hoc" gekennzeichnet.
 
 Bisher keine. Änderungen nach dem Einfrieren nur als datiertes Amendment mit Anlass,
 Entscheidung und Zeitpunkt (vor Berechnung der betroffenen Größen).
+
+### Nachtrag 29.10.2026 (nach Version 0.2)
+
+- **K7 (Beschaffung) erledigt:** Daniel Saure hat dem Herunterladen der UBA-Tabelle zugestimmt (Chat, 29.10.2026: „Ja, PDF laden“). Die Datei liegt unter `Analysen/2026-10-lulucf-senke/rohdaten/2_Tab_Emi-Senken-LULUCF_2026-07-02.pdf` (107.755 Bytes, SHA-256 `f8cf4f38…4b4b`, siehe `rohdaten/PROVENIENZ.txt`). Sie wurde **nicht geöffnet und nicht gelesen**; geprüft wurde nur, dass sie mit `%PDF` beginnt. Der Data Cube ist nicht abgerufen.

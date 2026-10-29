@@ -1,0 +1,8 @@
+Datei:        2_Tab_Emi-Senken-LULUCF_2026-07-02.pdf
+Quelle:       https://www.umweltbundesamt.de/system/files/medien/384/bilder/dateien/2_Tab_Emi-Senken-LULUCF_2026-07-02.pdf
+Seite:        UBA, "Emissionen der Landnutzung, -aenderung und Forstwirtschaft" (zuletzt aktualisiert 02.07.2026)
+Heruntergeladen: 29.10.2026, durch die Top-Level-Session (Claude) per curl, nach ausdruecklicher Zustimmung von Daniel Saure (29.10.2026, Chat: "Ja, PDF laden")
+Groesse:      107755 Bytes (Server-Angabe auf der Seite: 105,23 kB)
+SHA-256:      f8cf4f382e4e7557de4307d2055d7f6c6ad4b46b9b83c1ef64b0542cc6af4b4b
+Status:       NICHT GEOEFFNET und nicht gelesen (nur Dateityp-Pruefung: beginnt mit %PDF). Wird erst nach Einfrieren des SAP (Status final) vom analyst geoeffnet.
+Lizenz:       ungeklaert (SAP K13)
