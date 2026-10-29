@@ -49,3 +49,38 @@ Alle Zahlen der Tabelle und des Fließtexts zu [1] und [2] stimmen mit den Quell
 ## Gesamturteil
 
 ok mit Auflagen. Vor Freigabe: Befund 1 (hoch) zwingend klären, Befunde 2 bis 4 einarbeiten, 5 bis 7 nach Ermessen. Nach Einarbeitung kurze Differenzprüfung. Dieses Dokument ist kein Freigabevermerk.
+
+---
+
+## Anhang: Nachprüfung 1 (29.10.2026)
+
+Geprüft: `04b-kasten-hitzezahlen.md` Version 0.2 gegen die Auflagen oben. Methode: Text gelesen und Zeile für Zeile mit Befundtabelle und Stichprobenliste abgeglichen. Die Quellen [1] und [2] wurden nicht erneut abgerufen; die Zahlen der Tabelle sind gegenüber v0.1 unverändert und waren im Erstcheck bestätigt. Text des Kastens nicht verändert, kein Freigabevermerk.
+
+### 1. Umsetzung der Auflagen
+
+| Nr. | Auflage | Stand in v0.2 | Ergebnis |
+|---|---|---|---|
+| 1 (hoch) | 5.120-Vergleich und Quelle [3] | Absatz mit 5.120/9.600-Vergleich vollständig gestrichen, Quelle [3] aus Literaturliste entfernt, Quellen [1] und [2] lückenlos nummeriert. Der Nachmeldungs-Satz steht jetzt als reine Quellenaussage ("Die Werte der letzten neun Wochen können sich durch Nachmeldungen noch ändern [1]"), ohne Behauptung, eine konkrete Revision beruhe darauf. | umgesetzt, bestätigt |
+| 2 (mittel) | KW-Zuordnung Destatis-Zahl | Zeile 4 Zeitraum: "letzte vollständige Juniwoche", keine KW-Angabe mehr. Nahe an der PM ("letzte komplette Juniwoche"). | umgesetzt, bestätigt |
+| 3 (mittel) | Todesursachenstatistik-Aussage | Ersetzt durch: Hitze steht auf Totenscheinen meist nicht als Todesursache, weil sie oft zusammen mit Vorerkrankungen wirkt; deshalb statistisch geschätzt [1]. Deckt sich mit der im Erstcheck bestätigten Quellenaussage; "betont" und "Todesursachenstatistik" sind weg. | umgesetzt, bestätigt |
+| 4 (mittel) | Erwartungswert-Satz | Satz gestrichen. Neu: "Die Übersterblichkeit fragt etwas anderes und umfasst einen anderen Zeitraum." Die Zeiträume stehen belegt in der Tabelle (KW 15–37 gegenüber KW 20–33). Keine Kausalbehauptung ("deshalb") mehr. | umgesetzt, bestätigt |
+| 5 (niedrig) | Paraphrase "Frage dahinter" | Beibehalten (Ermessen, wie vorgeschlagen). Weiterhin erklärende Paraphrase, inhaltlich gedeckt. | offen nach Ermessen, unkritisch |
+| 6 (niedrig) | Gegensatzformeln | "Sie widersprechen sich nicht" und "nicht um eine Todesursachenstatistik" entfallen. Es bleibt "Sie beantworten verschiedene Fragen." (positiv formuliert). | umgesetzt |
+| 7 (niedrig) | Satz "hinter den Zahlen stehen Menschen" | Ergänzt: "Hinter jeder dieser Zahlen stehen Menschen." | umgesetzt |
+
+### 2. Neue Fehler oder Zuspitzungen durch die Änderung
+
+| Stelle | Prüfung | Ergebnis | Schweregrad |
+|---|---|---|---|
+| Tabelle, alle Zahlen und Intervalle (16.000; 14.400–17.600; 9.600; 18.800; 13.300–23.400; 36 %; 85.196; 7.897) | Gegenüber v0.1 unverändert; im Erstcheck bestätigt | bestätigt | – |
+| Zuordnung [1] (RKI) zu Zeilen 1 bis 3 und [2] (Destatis) zu Zeilen 4 und 5; Fließtext: Modellierung, 52 Stationen, Deckelung bei etwa 20 Grad, Nachmeldungen = [1]; "auch das Statistische Bundesamt nennt seine Angaben vorläufig" = [2] | Zuordnung stimmig, keine Vermischung | bestätigt | – |
+| Einleitung: "Im Sommer 2026 nannten Presse und Behörden mehrere Zahlen" | Neu formuliert. Belegt sind Behörden (RKI, Destatis); "Presse" ist durch [1] und [2] nicht belegt. Harmlos, aber nicht quellengedeckt. | Hinweis | niedrig |
+| Zeile 2 "davon etwa 9.600" | "davon" ist als Teilmenge der 16.000 lesbar (KW 26 liegt in KW 15–37, formal richtig). Keine Rechnung. Eine Zeitraum-Spalte nennt KW 26 ausdrücklich. | akzeptabel | – |
+| Zeile 3: "Wie viele Menschen starben mehr als erwartet, ganz gleich warum?" | Paraphrase der Übersterblichkeit; "erwartet" führt den Erwartungswert in Frageform ein, ohne Mechanismus zu behaupten. Als Paraphrase gedeckt. | akzeptabel | – |
+| "Wer eine Zahl zitiert, sollte deshalb das Berichtsdatum dazuschreiben" und "vier Dinge" im Schlussabsatz | Handlungsempfehlung, keine Tatsachenbehauptung; Vorbehalte (vorläufig, Schätzung) bleiben erhalten. | unkritisch | – |
+| Neue Berechnung/Inferenz | Keine. Die verbliebenen Folgerungen aus dem Erstcheck (5.120-Revision, Erwartungswert-Kausalität) sind entfernt; die KW-Zuordnung der Destatis-Zahl ist entfernt. | bestätigt, Stufe Einordnung gewahrt | – |
+| Kopfzeile v0.2 | Nennt "nicht geprüft, nicht freigegeben" und ist vor Satz/Export zu entfernen (technischer Hinweis, nicht Inhalt). Der Hinweis zum Lancet-Wert steht nur dort. | zur Kenntnis | – |
+
+### 3. Gesamturteil Nachprüfung 1
+
+**ok, die Auflagen sind umgesetzt.** Der hohe Befund 1 ist durch Streichung erledigt (kein unbelegter Primärverweis mehr, kein Vergleich ungleicher Größen); die mittleren Befunde 2 bis 4 sind quellennah umgesetzt; die niedrigen Befunde 6 und 7 sind umgesetzt, Befund 5 bleibt als Ermessensfrage unkritisch. Neue Fehler: keine. Ein neuer niedriger Hinweis: "Presse" in der Einleitung ist durch die Quellen [1] und [2] nicht gedeckt (Vorschlag: "Behörden nannten" oder Presse-Beleg ergänzen). Offene Prüfgrenze unverändert: [1] und [2] wurden im Erstcheck nur über WebFetch-Zusammenfassungen geprüft, Intervalle und Zahlen nicht zeichengenau am Volltext. Dieses Dokument ist kein Freigabevermerk; die Freigabe liegt bei Daniel Saure.

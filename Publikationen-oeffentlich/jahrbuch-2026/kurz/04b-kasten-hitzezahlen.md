@@ -1,8 +1,8 @@
-**KURZFASSUNG-ENTWURF v0.2 (29.10.2026, Auflagen des Faktenchecks eingearbeitet: 5.120-Vergleich gestrichen, Quelle [3] entfernt), neuer Kasten zu Kapitel 5 (Stufe Einordnung, keine eigene Rechnung); nicht geprüft, nicht freigegeben, Faktencheck und Freigabe durch Daniel Saure nötig. Gliederung von Daniel Saure bestätigt (29.10.2026, „Ja, so“); der Lancet-Wert für Europa ist nicht enthalten, weil der Volltext nicht abrufbar war. Platz: am Ende von Kapitel 5, vor „Woher wir das wissen“. Vor Satz/Export entfernen.**
+**KURZFASSUNG-ENTWURF v0.3 (29.10.2026, Auflagen des Faktenchecks eingearbeitet, Nachprüfung 1 ok; Einleitung „Presse“ gestrichen), neuer Kasten zu Kapitel 5 (Stufe Einordnung, keine eigene Rechnung); nicht geprüft, nicht freigegeben, Faktencheck und Freigabe durch Daniel Saure nötig. Gliederung von Daniel Saure bestätigt (29.10.2026, „Ja, so“); der Lancet-Wert für Europa ist nicht enthalten, weil der Volltext nicht abrufbar war. Platz: am Ende von Kapitel 5, vor „Woher wir das wissen“. Vor Satz/Export entfernen.**
 
 ## Kasten: Warum die Zahlen zu hitzebedingten Todesfällen so verschieden sind
 
-Im Sommer 2026 nannten Presse und Behörden mehrere Zahlen zu den Folgen der Hitze. Sie beantworten verschiedene Fragen. Hinter jeder dieser Zahlen stehen Menschen.
+Im Sommer 2026 nannten Behörden mehrere Zahlen zu den Folgen der Hitze. Sie beantworten verschiedene Fragen. Hinter jeder dieser Zahlen stehen Menschen.
 
 | Zahl | Quelle | Gezählt oder geschätzt | Zeitraum | Die Frage dahinter |
 |---|---|---|---|---|
