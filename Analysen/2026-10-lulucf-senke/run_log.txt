@@ -2,7 +2,7 @@
 ==============================================================================
 RUN-LOG lulucf-senke.R
 ==============================================================================
-Datum/Zeit: 2026-10-29 10:18:30 CET 
+Datum/Zeit: 2026-10-29 10:27:16 CET 
 R-Version : R version 4.6.1 (2026-06-24 ucrt) 
 Seed      : 20261029 (SAP 5.7)
 SAP       : v1.0 final 29.10.2026; Amendment 1 final 29.10.2026
@@ -18,7 +18,7 @@ bbbb49cb8307ae0136e397e0a4ccb5e9e5d3ade1a72c96ed532c41aeb928853a *Emissionsueber
 q1     2026_EM_Entwicklung_in_D_Trendtabelle_THG.xlsx 779fb78d4c963c107b7dd904cb7832f678eed25ad43c0a6aae933ee58d1289a7 303891           TRUE         FALSE
 q2  Emissionsuebersichten_KSG-Sektoren_1990-2025.xlsx bbbb49cb8307ae0136e397e0a4ccb5e9e5d3ade1a72c96ed532c41aeb928853a 776757           TRUE         FALSE
 pdf            2_Tab_Emi-Senken-LULUCF_2026-07-02.pdf f8cf4f382e4e7557de4307d2055d7f6c6ad4b46b9b83c1ef64b0542cc6af4b4b 107755           TRUE          TRUE
-Erstes Oeffnen der beiden xlsx-Dateien durch den Analysten: 2026-10-29 10:18:30 (Prueffolge: Integritaet -> Fassung -> Vollstaendigkeit -> Kategorien -> Einheit/Vorzeichen)
+Erstes Oeffnen der beiden xlsx-Dateien durch den Analysten: 2026-10-29 10:27:16 (Prueffolge: Integritaet -> Fassung -> Vollstaendigkeit -> Kategorien -> Einheit/Vorzeichen)
 Eingabe-Inventarbericht 2026 (50.870.104 Bytes) wird in diesem Skript NICHT gelesen.
 
 ==============================================================================
@@ -342,4 +342,4 @@ Anhang-Grafik OWID/GCP-Vergleich: nicht erstellt (OWID-Daten nicht beschafft, ke
 ==============================================================================
 ENDE des Laufs (fehlerfrei bis hierher)
 ==============================================================================
-Zeit: 2026-10-29 10:18:38 
+Zeit: 2026-10-29 10:27:31 

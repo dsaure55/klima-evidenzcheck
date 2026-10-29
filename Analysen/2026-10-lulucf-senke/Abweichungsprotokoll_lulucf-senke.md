@@ -1,6 +1,6 @@
 # Abweichungsprotokoll LULUCF-Senke (Analyst, 29.10.2026)
 
-**Status: Analyse GESTOPPT, keine Auswertung durchgefuehrt, kein Skript, keine Ergebnisse.**
+**Status (Endstand): Analyse nach Amendment 1 durchgefuehrt; Stopp siehe Eintrag 1.** Der Abschnitt "Durchgefuehrt / Stopp-Grund" unmittelbar darunter dokumentiert den Stand zum Zeitpunkt des Stopps (nur Oeffnen der PDF, keine Auswertung); die Fortsetzung steht ab dem Trennstrich.
 
 ## Durchgefuehrt
 - SHA-256 der UBA-Tabelle geprueft: f8cf4f382e4e7557de4307d2055d7f6c6ad4b46b9b83c1ef64b0542cc6af4b4b = PROVENIENZ.txt (erfuellt).

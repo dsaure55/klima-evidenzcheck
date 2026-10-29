@@ -466,7 +466,7 @@ png(file.path(outdir, "grafik1_zeitreihe_fenster_ziel.png"), width = 2000, heigh
 par(mar = c(4.5, 4.8, 3.5, 1))
 yr_rng <- range(c(E, -25, unlist(lapply(W, function(w) w$alpha + w$beta * 2030))), na.rm = TRUE)
 plot(yrsall, E, type = "n", xlim = xl, ylim = yr_rng, xlab = "Jahr", ylab = "Netto-Emissionsbilanz LULUCF inkl. HWP (Mt CO2-Aequiv.; positiv = Quelle)",
-     main = "LULUCF-Jahreswerte (Submission 2026, Quelle 1) mit Trendgeraden A/B/C", cex.main = 1, cex.lab = 0.9)
+     main = "LULUCF-Jahreswerte (UBA-Trendtabelle THG 1990-2024, Stand 15.01.2026) mit Trendgeraden A/B/C", cex.main = 1, cex.lab = 0.9)
 abline(h = 0, col = "grey40"); abline(v = c(2017, 2018), col = "grey70", lwd = 0.7)
 text(c(2017, 2018), yr_rng[2], c("2017", "2018"), cex = 0.6, col = "grey40", pos = c(2, 4), xpd = NA)
 lines(yrsall, E, col = "black", lwd = 1)
@@ -475,7 +475,7 @@ cols <- c(A = "steelblue", B = "firebrick", C = "darkgreen")
 for (nm in c("A", "B", "C")) { w <- W[[nm]]
   segments(w$a, w$alpha + w$beta * w$a, 2024, w$alpha + w$beta * 2024, col = cols[nm], lwd = ifelse(nm == "B", 3.2, 2))
   segments(2024, w$alpha + w$beta * 2024, 2030, w$alpha + w$beta * 2030, col = cols[nm], lwd = ifelse(nm == "B", 3.2, 2), lty = 2) }
-points(2030, Z30, pch = 23, bg = "gold", cex = 1.8); text(2030, Z30, "Z30 = -25\n(gilt fuer 4-Jahres-Mittel 2027-2030)", pos = 1, cex = 0.6, offset = 1.2)
+points(2030, Z30, pch = 23, bg = "gold", cex = 1.8); text(2030, Z30, "Z30 = -25 (Zielwert gilt fuer das\n4-Jahres-Mittel 2027-2030, nicht fuer das Einzeljahr)", pos = 2, cex = 0.6, offset = 0.8)
 points(2028.5, W$B$mhat, pch = 4, col = "firebrick", cex = 1.5)
 legend("topleft", cex = 0.65, bty = "n", ncol = 1,
        legend = c("Jahreswert (Inventar)", "2023/2024: Modellfortschreibung", "Fenster B 2010-2024 (PRIMAER)", "Fenster A 1990-2024", "Fenster C 2018-2024",
