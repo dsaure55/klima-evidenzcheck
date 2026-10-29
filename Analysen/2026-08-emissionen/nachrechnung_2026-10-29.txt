@@ -1,0 +1,24 @@
+Lade nötiges Paket: zoo
+
+Attache Paket: 'zoo'
+
+Die folgenden Objekte sind maskiert von 'package:base':
+
+    as.Date, as.Date.numeric
+
+
+Fenster 1990-2025: Projektion 2040 486.030, 95%-PI 406.610 bis 565.451
+     Estimate    Std. Error       t value      Pr(>|t|) 
+-1.454937e+01  5.499807e-01 -2.645433e+01  2.902190e-24 
+Steigung -14.5494; SE klassisch 0.5500; SE Newey-West 1.8891; DW p 0.000
+
+Fenster 2015-2025: Projektion 2040 207.040, 95%-PI 86.302 bis 327.778
+     Estimate    Std. Error       t value      Pr(>|t|) 
+-2.847918e+01  2.340552e+00 -1.216772e+01  6.840662e-07 
+Steigung -28.4792; SE klassisch 2.3406; SE Newey-West 1.2544; DW p 0.308
+
+Fenster 2020-2025: Projektion 2040 287.240, 95%-PI -69.938 bis 644.418
+    Estimate   Std. Error      t value     Pr(>|t|) 
+-23.69114286   7.11776528  -3.32845239   0.02914769 
+Steigung -23.6911; SE klassisch 7.1178; SE Newey-West 2.0796; DW p 0.214
+[1] "R version 4.6.1 (2026-06-24 ucrt)"

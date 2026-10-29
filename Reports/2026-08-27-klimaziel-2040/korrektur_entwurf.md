@@ -23,7 +23,9 @@
 
 *Arbeitsweise falsch beschrieben.* Wir schrieben, der Analyseplan sei vor der Modellierung festgelegt worden. Tatsächlich haben wir ihn nach einer ersten Sichtung der Daten erstellt; im Plan ist er als „retrospektiv“ gekennzeichnet. Die Analyse ist deshalb explorativ und nicht vorab festgelegt. Außerdem gilt die Korrektur für Autokorrelation (Newey-West) nur für den Test, ob der Trend wirklich fällt. Die Bereiche für 2040 sind klassische Prognoseintervalle. Hängen die Abweichungen vom Trend von Jahr zu Jahr zusammen, fallen solche Intervalle eher zu eng aus. Beim Langfrist-Trend ist das der Fall.
 
-[OPTIONAL, Entscheidung Daniel – A2:] *Ein Zeitfenster fehlte.* Der Plan sah ein drittes, kurzes Zeitfenster vor (2020–2025), nur zur Beschreibung. Es fehlte im Artikel. Die Fortschreibung ergibt dort 287 Millionen Tonnen für 2040. Bei nur sechs Jahreswerten ist das nicht belastbar.
+*Prüfung ungenau beschrieben.* Wir schrieben, ein zweiter Prüfschritt habe den Code gegen den Plan abgeglichen. Dokumentiert ist nur ein Vermerk von damals, dass die Ergebnisse der Rechnung mit vorher bekannten Vergleichswerten übereinstimmten. Außerdem schrieben wir, die Korrektur für Autokorrelation sei immer angewendet worden und das sei „konservativer“ als geplant. Angewendet wurde sie tatsächlich immer, der Plan sah sie nur bei nachgewiesener Autokorrelation vor. Beim 10-Jahres-Trend war keine Autokorrelation nachgewiesen; nach Plan hätte dort also die einfache Rechnung gegolten. Die Korrektur macht den Test dort weniger vorsichtig, nicht vorsichtiger. Dass der Trend deutlich fällt, gilt mit und ohne diese Korrektur.
+
+*Ein Zeitfenster fehlte.* Der Plan sah ein drittes, kurzes Zeitfenster vor (2020–2025), nur zur Beschreibung. Es fehlte im Artikel. Die Fortschreibung ergibt dort 287 Millionen Tonnen für 2040. Bei nur sechs Jahreswerten ist das nicht belastbar.
 
 Die Kernaussage bleibt: Das gewählte Zeitfenster entscheidet über die Schlagzeile.
 
@@ -31,17 +33,25 @@ Die Kernaussage bleibt: Das gewählte Zeitfenster entscheidet über die Schlagze
 
 | Stelle | bisher | neu |
 |---|---|---|
-| 1 | „Bereich 407–598 Mt“ | „Bereich 407–565 Mt“ (Rechenlauf 406,61–565,45; nachgerechnet 29.10.2026) |
+| 1 | „Bereich 407–598 Mt“ | „Bereich 407–565 Mt“ (run_log 24.10.: 406.6–565.5; Nachrechnung 29.10.: 406,610–565,451, Datei `Analysen/2026-08-emissionen/nachrechnung_2026-10-29.txt`) |
 | 1 | „Bereich 16–328 Mt“ | „Bereich 86–328 Mt“ |
-| 2 | „mit einem vorab festgelegten Analyseplan, offenem Code und zwei unabhängigen statistischen Methoden“ | „mit einem schriftlichen Analyseplan, offenem Code [Link, A4] und zwei statistischen Methoden“ |
+| 2 | „mit einem vorab festgelegten Analyseplan, offenem Code und zwei unabhängigen statistischen Methoden“ | „mit einem schriftlichen Analyseplan, offenem Code und zwei statistischen Methoden“, dabei „offenem Code“ verlinkt auf https://github.com/dsaure55/klima-evidenzcheck/tree/main/Analysen/2026-08-emissionen (Link geprüft 29.10.2026, HTTP 200) |
 | 3 | „lineare Trendregression mit Newey-West-korrigierten Standardfehlern (robust gegenüber der Autokorrelation, die in Jahreszeitreihen typisch ist)“ | „lineare Trendregression; der Test der Trendsteigung mit Newey-West-korrigierten Standardfehlern (robust gegenüber Autokorrelation), die Bereiche für 2040 als klassische Prognoseintervalle“ |
 | 3a | „ein ARIMA-Modell als unabhängige Sensitivitätsanalyse“ | „ein ARIMA-Modell als zweite Rechnung zur Kontrolle“ |
 | 4 | „Der Analyseplan (…) wurde vor der Modellierung festgelegt, um nachträgliches Auswählen des günstigsten Ergebnisses auszuschließen“ | „Der Analyseplan (…) wurde nach einer ersten Sichtung der Daten schriftlich festgelegt (retrospektiv). Die Analyse ist deshalb explorativ.“ |
+| 4a | „Unabhängige Prüfung: Ein zweiter, vom eigentlichen Analyse-Code getrennter Prüfschritt hat den Code gegen den Plan abgeglichen.“ | „Prüfung: Ein zweiter Prüfschritt hat die R-Ergebnisse gegen Referenzwerte abgeglichen.“ |
+| 4b | „Dabei wurde eine Präzisierung nötig: Die Korrektur der Standardfehler wird unabhängig vom Testergebnis auf Autokorrelation angewendet, nicht nur bei nachgewiesener Autokorrelation – das ist konservativer als ursprünglich geplant und wurde entsprechend dokumentiert“ | „Abweichend vom Plan wurde die Korrektur der Standardfehler (Newey-West) immer angewendet, nicht nur bei nachgewiesener Autokorrelation.“ |
 | 5 | „mit transparenter, vorab festgelegter Methodik“ | „mit transparenter, schriftlich festgelegter Methodik“ |
 
-Die Grafik im Artikel wird nicht geändert. Geprüft an `Analysen/2026-08-emissionen/output/emissionen_trendprojektion_2040.png` (29.10.2026): Sie zeigt die beiden OLS-Linien und nur für den 10-Jahres-Trend ein unbeschriftetes Band mit den richtigen Werten (etwa 86–328), keine Zahlenangaben zu den Bereichen. Ob die Live-Grafik dieselbe Datei ist, vor dem Setzen kurz ansehen.
+Die Grafik im Artikel wird nicht geändert. Geprüft an `Analysen/2026-08-emissionen/output/emissionen_trendprojektion_2040.png` (29.10.2026): Sie zeigt die beiden OLS-Linien und nur für den 10-Jahres-Trend ein unbeschriftetes Band mit den richtigen Werten (etwa 86–328), keine Zahlenangaben zu den Bereichen. Die Live-Grafik ist byte-identisch mit dieser Datei (SHA-256 6f2fa88e…b400, abgeglichen 29.10.2026).
 
-## Offene Entscheidungen (Daniel)
+## Entscheidungen (Daniel, 29.10.2026: „Alle drei Empfehlungen“)
+
+A2: Absatz zum dritten Zeitfenster aufgenommen. A4: Link gesetzt. A7: Satz zum Prüfschritt geändert (Zeile 4a).
+
+Nach Nachtrag 1 des Faktenchecks (29.10.2026): N1 (Folgesatz „konservativer“ falsch für den 10-Jahres-Trend; Zeile 4b und Absatz „Prüfung ungenau beschrieben“), N2 (Rücknahme offengelegt), N3 („R-Ergebnisse“), N4 (Nachrechnung als Datei: `Analysen/2026-08-emissionen/nachrechnung_2026-10-29.R` und `.txt`; 10-Jahres-Trend: SE klassisch 2,3406, Newey-West 1,2544). N5 (Jahrbuch 566 → 565) gehört in die Jahrbuch-Runde, nicht in diesen Vermerk.
+
+Hintergrund:
 
 - **A2 – drittes Zeitfenster:** Absatz „Ein Zeitfenster fehlte“ in den Hinweis aufnehmen oder weglassen. SAP 7 verlangte, alle drei Fenster zu berichten (Rechenlauf: 287,2 Mt, Intervall −69,9 bis 644,4, rein beschreibend).
 - **A4 – „offenem Code“:** Das Repo ist öffentlich (https://github.com/dsaure55/klima-evidenzcheck), der Artikel verlinkt es aber nicht. Vorschlag: Link auf `https://github.com/dsaure55/klima-evidenzcheck/tree/main/Analysen/2026-08-emissionen` setzen, sonst „offenem Code“ streichen.
