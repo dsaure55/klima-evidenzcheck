@@ -10,7 +10,7 @@ Wann wären die Ausbauziele für 2030 erreicht, wenn der Zubau bleibt, wie er zu
 
 ☀️ Solar (Ziel 215 GW): Je nach Zählweise zwischen 2031 und 2032 (brutto, 128,1 GW) oder zwischen 2033 und 2034 (netto, 113,5 GW).
 
-⚠️ Das ist eine Fortschreibung, keine Prognose. Die Zeitpunkte nennen wir nur als Spanne. Die Gegenprobe mit Energy-Charts ist wohl keine unabhängige Bestätigung, weil beide Reihen vermutlich auf demselben Register beruhen. Rechnung und Prüfung liefen mit KI-Werkzeugen, die Redaktion verantwortet sie.
+⚠️ Das ist eine Fortschreibung, keine Prognose. Die Zeitpunkte nennen wir nur als Spanne. Die zweite Quelle (Energy-Charts) ist wohl keine unabhängige Bestätigung, weil beide Reihen vermutlich auf demselben Register beruhen. Rechnung und Prüfung liefen mit KI-Werkzeugen, die Redaktion verantwortet sie.
 
 ✅ Fazit: Bei Wind an Land entspricht der Zubau der Fenster 30 bis 46 Prozent des Nötigen. Bei Solar sind es brutto 75 bis 87 Prozent.
 

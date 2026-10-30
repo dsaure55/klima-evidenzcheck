@@ -39,7 +39,7 @@ Solar netto: 90,1 GW (2,1 GW darüber).
 Eine Fortschreibung ist keine Prognose.
 Genehmigungen, Förderung, Netzausbau und Lieferketten fließen nicht ein. Über Ursachen sagen wir nichts.
 Die Intervalle bei den langen Fenstern sind zu eng, darum nur Spannen.
-Die Gegenprobe (Energy-Charts) beruht wohl auf demselben Register.
+Die zweite Quelle (Energy-Charts) beruht vermutlich auf demselben Register.
 Installierte Leistung ist keine Stromerzeugung.
 
 **Folie 6 (Fazit)**
@@ -61,7 +61,7 @@ Im Juli 2026 standen im Register rund 70,4 GW. Ziel 2030 sind 115 GW. Bei unver�
 Brutto zwischen 2031 und 2032, netto zwischen 2033 und 2034. Welche Größe näher am Begriff „installierte Leistung“ im Gesetz liegt, haben wir nicht geprüft.
 
 ⚠️ Was die Zahlen nicht sagen
-Fortschreibung, keine Prognose. Die Zeitpunkte nennen wir nur als Spanne, weil die Intervalle bei den langen Fenstern zu eng sind. Die Gegenprobe mit Energy-Charts ist wohl keine unabhängige Bestätigung.
+Fortschreibung, keine Prognose. Die Zeitpunkte nennen wir nur als Spanne, weil die Intervalle bei den langen Fenstern zu eng sind. Die zweite Quelle (Energy-Charts) ist wohl keine unabhängige Bestätigung.
 
 🤖 Hinweis zu KI
 Rechnung und Prüfung liefen mit KI-Werkzeugen (Sprachmodelle von Anthropic). Die Redaktion hat Plan, Ergebnisse und Text gelesen, freigegeben und verantwortet die Veröffentlichung.
