@@ -28,7 +28,7 @@ Unsere Frage war bescheidener: Was ergibt sich, wenn man nur den bisherigen Tren
 
 Den Analyseplan haben wir am 29. August 2026 schriftlich festgelegt und eingefroren. Das war, bevor wir die Daten zum Halbjahr 2026 und den Bericht des Expertenrats ausgewertet haben. Die Schlagzeilen-Zahlen kannten wir aus der Presse: 60 bis 100 Millionen Tonnen und rund 2 Prozent weniger im Halbjahr. Sie waren der Anlass der Analyse. Gerechnet haben wir am 23. Oktober.
 
-Zur Offenheit gehört zweierlei. Erstens stammen die Trendmodelle aus unserer Analyse vom 27. August. Diese Analyse war explorativ, ihr Plan entstand erst nach einem ersten Blick in die Daten. Den Artikel dazu haben wir inzwischen korrigiert [5]. Zweitens war der neue Plan nicht fehlerfrei. Er hielt 625 Millionen Tonnen fälschlich für den Emissionswert 2025, enthielt widersprüchliche Statusangaben und ließ einige technische Details offen, etwa beim Bootstrap. Diese Details haben wir während der Auswertung festgelegt. Ein Nachtrag zum Plan (Erratum) hält das fest. Er wurde nach dem ersten Rechenlauf geschrieben und ändert weder die Fragestellung noch die Methoden [6].
+Zur Offenheit gehört zweierlei. Erstens stammen die Trendmodelle aus unserer Analyse vom 27. August. Diese Analyse war explorativ, ihr Plan entstand erst nach einem ersten Blick in die Daten. Den Artikel dazu korrigieren wir gerade [5]. Zweitens war der neue Plan nicht fehlerfrei. Er hielt 625 Millionen Tonnen fälschlich für den Emissionswert 2025, enthielt widersprüchliche Statusangaben und ließ einige technische Details offen, etwa beim Bootstrap. Diese Details haben wir während der Auswertung festgelegt. Ein Nachtrag zum Plan (Erratum) hält das fest. Er wurde nach dem ersten Rechenlauf geschrieben und ändert weder die Fragestellung noch die Methoden [6].
 
 Die Grundlage sind die Emissionen von 1990 bis 2025 laut Umweltbundesamt [7]. 2021 bis 2025 sind bereits 3480 Millionen Tonnen angefallen. Die Jahre 2026 bis 2030 haben wir fortgeschrieben, in drei Zeitfenstern:
 
@@ -107,7 +107,7 @@ Analyseplan (eingefroren 29.08.2026), Erratum, R-Code, Rohdaten mit Prüfsummen,
 
 [4] Umweltbundesamt: Emissionsdaten 2025 & Projektionsdaten 2026, Pressehintergrundinformation, Stand 14.03.2026. https://www.umweltbundesamt.de/system/files/document/UBA%20Emissionsdaten%202025_Projektionsdaten%202026_Hintergrundpapier_2026_03_14.pdf
 
-[5] Klima Kompass · Evidenzcheck: Erreicht Deutschland sein Klimaziel 2040? Die Antwort hängt vom Blickwinkel ab, 27.08.2026, korrigiert am [Datum]. https://klimaevidenzcheck.substack.com/p/erreicht-deutschland-sein-klimaziel
+[5] Klima Kompass · Evidenzcheck: Erreicht Deutschland sein Klimaziel 2040? Die Antwort hängt vom Blickwinkel ab, 27.08.2026. https://klimaevidenzcheck.substack.com/p/erreicht-deutschland-sein-klimaziel
 
 [6] Klima Kompass: Analyseplan v1.1, Erratum 1, Analysebericht (Fassung 5b) und Validierungsbericht zum Expertenrat-Budgetabgleich 2030. https://github.com/dsaure55/klima-evidenzcheck/tree/main/Analysen/2026-08-expertenrat-budgetabgleich
 
