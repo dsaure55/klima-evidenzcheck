@@ -1,6 +1,6 @@
 **ENTWURF – nicht gepostet. Posten nur nach ausdrücklichem OK von Daniel Saure pro Post.**
 
-Quelle: `substack.md` (Stand v3.1, freigegeben). Bild: Folie 1 des Instagram-Karussells (`assets/folie-1.png`, nach Export). Link-Slug: `ausbaupfad`.
+Quelle: `substack.md` (Stand v3.1, freigegeben). Bild: Folie 1 des Instagram-Karussells (`assets/folie-1.png`). Link-Slug: `ausbaupfad`.
 
 ---
 

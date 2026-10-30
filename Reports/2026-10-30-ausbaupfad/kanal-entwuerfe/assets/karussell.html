@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!-- **ENTWURF – nicht gepostet. Posten nur nach ausdrücklichem OK von Daniel Saure pro Post.** -->
+<!-- Klima Kompass · Evidenzcheck · Ausbaupfad Wind und Solar · Instagram-Karussell, 6 Folien à 1080×1350 -->
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>ENTWURF – Karussell Ausbaupfad (Klima Kompass · Evidenzcheck)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root { --bg: #0E3B43; --flaeche: #14505A; --text: #F2F5F4; --mint: #5FD3B3; --koralle: #F26B5B; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #222; font-family: 'IBM Plex Sans', sans-serif; color: var(--text); }
+  .slide { width: 1080px; height: 1350px; background: var(--bg); padding: 96px 88px 80px; position: relative; overflow: hidden; display: flex; flex-direction: column; margin: 0 auto 40px; }
+  .reihe { font-family: 'IBM Plex Mono', monospace; font-size: 30px; color: var(--mint); letter-spacing: 1px; margin-bottom: 40px; }
+  h1 { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 80px; line-height: 1.05; margin-bottom: 40px; }
+  h2 { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 58px; line-height: 1.1; margin-bottom: 28px; }
+  p { font-size: 33px; line-height: 1.4; margin-bottom: 20px; }
+  .zeile { display: flex; align-items: center; gap: 32px; background: var(--flaeche); border-radius: 24px; padding: 20px 36px; margin-bottom: 16px; }
+  .zeile .wert { font-family: 'IBM Plex Mono', monospace; font-size: 56px; font-weight: 600; color: var(--mint); min-width: 300px; }
+  .zeile .bezug { font-size: 30px; line-height: 1.3; }
+  .zeile .bezug b { font-weight: 600; display: block; }
+  .zeile .bezug small { font-family: 'IBM Plex Mono', monospace; font-size: 23px; opacity: .8; }
+  .hinweis { font-size: 30px; line-height: 1.4; opacity: .92; }
+  ul { list-style: none; }
+  li { font-size: 33px; line-height: 1.36; margin-bottom: 26px; padding-left: 44px; position: relative; }
+  li::before { content: "–"; position: absolute; left: 0; color: var(--koralle); font-weight: 700; }
+  li b { font-weight: 600; }
+  .koralle { color: var(--koralle); }
+  .mint { color: var(--mint); }
+  .spacer { flex: 1; }
+  .karte { background: var(--flaeche); border-radius: 24px; padding: 26px 38px; margin-bottom: 22px; }
+  .karte .kopf { font-family: 'IBM Plex Mono', monospace; font-size: 26px; letter-spacing: 1px; margin-bottom: 12px; }
+  .karte p { font-size: 32px; margin-bottom: 0; }
+  .karte.befund { border-left: 12px solid var(--mint); }
+  .cta { font-family: 'Space Grotesk', sans-serif; font-size: 46px; font-weight: 700; color: var(--bg); background: var(--mint); border-radius: 20px; padding: 26px 40px; display: inline-block; align-self: flex-start; }
+  .fuss { position: absolute; left: 88px; right: 88px; bottom: 44px; display: flex; justify-content: space-between; gap: 32px; font-family: 'IBM Plex Mono', monospace; font-size: 22px; opacity: .75; border-top: 1px solid rgba(242,245,244,.25); padding-top: 18px; }
+  .fuss .quelle { text-align: right; }
+  .nummer { position: absolute; top: 96px; right: 88px; font-family: 'IBM Plex Mono', monospace; font-size: 26px; opacity: .6; }
+  .bild { width: 100%; border-radius: 16px; margin: 6px 0 18px; background: #fff; }
+  .slide{display:none!important}.slide.on{display:flex!important}
+  .allv .slide{display:flex!important}
+</style>
+</head>
+<body>
+
+<section class="slide" id="folie-1">
+  <div class="reihe">KLIMA KOMPASS · EVIDENZCHECK</div>
+  <div class="nummer">1/6</div>
+  <h1>Wann erreicht Wind an Land das Ausbauziel für 2030?</h1>
+  <h2 class="mint">Wenn der Zubau so bleibt: zwischen 2036 und 2041.</h2>
+  <p class="hinweis">Fortschreibung, keine Prognose.</p>
+  <div class="spacer"></div>
+  <div class="fuss"><span>Klima Kompass · Evidenzcheck</span><span class="quelle">Quelle: Marktstammdatenregister; § 4 EEG</span></div>
+</section>
+
+<section class="slide" id="folie-2">
+  <div class="reihe">WIND AN LAND</div>
+  <div class="nummer">2/6</div>
+  <h2>70,4 GW im Juli 2026, Ziel 2030: 115 GW</h2>
+  <img class="bild" src="grafik1_wind_an_land.png" alt="Windenergie an Land: Bestand, Zielpfad und Fortschreibung je Fenster">
+  <p>Nötig wären 10,1 GW Zubau pro Jahr. Die Geraden der Fenster (12 / 24 / 60 Monate) ergeben 4,7 / 4,3 / 3,0 GW pro Jahr.</p>
+  <div class="spacer"></div>
+  <div class="fuss"><span>Klima Kompass · Evidenzcheck</span><span class="quelle">Quelle: Marktstammdatenregister; § 4 EEG; Auswertung Klima Kompass</span></div>
+</section>
+
+<section class="slide" id="folie-3">
+  <div class="reihe">SOLAR · BRUTTO UND NETTO</div>
+  <div class="nummer">3/6</div>
+  <h2>Solar: Ziel 2030 sind 215 GW</h2>
+  <img class="bild" src="grafik2_solar.png" alt="Solar: Bestand, Zielpfad und Fortschreibung je Fenster">
+  <p><b class="mint">Brutto:</b> 128,1 GW im Juli 2026, Ziel erreicht zwischen 2031 und 2032. Nötig: 19,7 GW pro Jahr.</p>
+  <p><b class="mint">Netto:</b> 113,5 GW, Ziel erreicht zwischen 2033 und 2034. Nötig: 23,0 GW pro Jahr.</p>
+  <div class="spacer"></div>
+  <div class="fuss"><span>Klima Kompass · Evidenzcheck</span><span class="quelle">Quelle: Marktstammdatenregister; § 4 EEG; Auswertung Klima Kompass</span></div>
+</section>
+
+<section class="slide" id="folie-4">
+  <div class="reihe">ZWISCHENZIEL ENDE 2024 · GW</div>
+  <div class="nummer">4/6</div>
+  <h2>Wo der Bestand 2024 stand</h2>
+  <div class="zeile"><div class="wert">63,5</div><div class="bezug"><b>Wind an Land</b><small>Ziel 69 · 5,5 GW darunter</small></div></div>
+  <div class="zeile"><div class="wert">100,8</div><div class="bezug"><b>Solar brutto</b><small>Ziel 88 · 12,8 GW darüber</small></div></div>
+  <div class="zeile"><div class="wert">90,1</div><div class="bezug"><b>Solar netto</b><small>Ziel 88 · 2,1 GW darüber</small></div></div>
+  <p class="hinweis" style="margin-top:14px">Bei Solar kommt es darauf an, welche Größe man zählt. Die Nettoleistung liegt rund 11 Prozent niedriger.</p>
+  <div class="spacer"></div>
+  <div class="fuss"><span>Klima Kompass · Evidenzcheck</span><span class="quelle">Quelle: Marktstammdatenregister; § 4 EEG</span></div>
+</section>
+
+<section class="slide" id="folie-5">
+  <div class="reihe">WAS DIE DATEN NICHT SAGEN</div>
+  <div class="nummer">5/6</div>
+  <ul>
+    <li><b>Fortschreibung.</b> Eine Prognose ist das nicht. Genehmigungen, Förderung, Netzausbau und Lieferketten fließen nicht ein.</li>
+    <li><b>Ursachen.</b> Dazu sagen wir nichts, und wir bewerten keine Maßnahmen.</li>
+    <li><b>Intervalle.</b> Bei den langen Fenstern sind sie zu eng, darum nennen wir nur Spannen.</li>
+    <li><b class="koralle">Zweite Quelle.</b> Energy-Charts beruht vermutlich auf demselben Register und ist keine unabhängige Bestätigung.</li>
+    <li><b>Leistung.</b> Installierte Leistung ist keine Stromerzeugung.</li>
+  </ul>
+  <div class="spacer"></div>
+  <div class="fuss"><span>Klima Kompass · Evidenzcheck</span><span class="quelle">Quelle: Analysebericht Klima Kompass</span></div>
+</section>
+
+<section class="slide" id="folie-6">
+  <div class="reihe">FAZIT</div>
+  <div class="nummer">6/6</div>
+  <div class="karte befund">
+    <div class="kopf mint">BEI UNVERÄNDERTEM ZUBAU</div>
+    <p>Ziel 2030: Wind an Land zwischen 2036 und 2041, Solar zwischen 2031 und 2034, je nach Zählweise.</p>
+  </div>
+  <div class="karte">
+    <div class="kopf">OFFENLEGUNG</div>
+    <p>Rechnung und Prüfung mit KI-Werkzeugen, die Redaktion verantwortet sie.</p>
+  </div>
+  <div class="spacer"></div>
+  <div class="cta">Ganzer Artikel: Link in Bio</div>
+  <div style="height:90px"></div>
+  <div class="fuss"><span>Klima Kompass · Evidenzcheck</span><span class="quelle">Quelle: Marktstammdatenregister; Auswertung Klima Kompass</span></div>
+</section>
+<script>{const q=new URLSearchParams(location.search).get('p');if(q==='all')document.body.classList.add('allv');else{const e=document.getElementById(q||'folie-1');if(e)e.classList.add('on')}}</script>
+</body>
+</html>

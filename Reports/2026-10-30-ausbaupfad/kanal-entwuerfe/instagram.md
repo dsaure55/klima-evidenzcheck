@@ -1,6 +1,6 @@
 **ENTWURF – nicht gepostet. Posten nur nach ausdrücklichem OK von Daniel Saure pro Post.**
 
-Quelle: `substack.md` (Stand v3.1, freigegeben). Link-Slug: `ausbaupfad`. Format: 6 Folien, 1080×1350 px. Die HTML-Datei `assets/karussell.html` und die PNG-Exporte sind noch nicht erstellt (Export durch die Hauptsession).
+Quelle: `substack.md` (Stand v3.1, freigegeben). Link-Slug: `ausbaupfad`. Format: 6 Folien, 1080×1350 px. Die HTML-Datei `assets/karussell.html` und die PNG-Exporte `assets/folie-1.png` bis `folie-6.png` wurden am 30.10.2026 erstellt.
 
 Grafiken (nur Folie 2 und 3, unverändert aus dem Artikel):
 - `C:\Users\dsaur\klima-evidenzcheck\Reports\2026-10-30-ausbaupfad\kanal-entwuerfe\assets\grafik1_wind_an_land.png`
