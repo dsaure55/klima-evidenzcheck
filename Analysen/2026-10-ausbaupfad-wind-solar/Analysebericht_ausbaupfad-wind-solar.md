@@ -6,6 +6,12 @@
 **Datenstand:** Marktstammdatenregister, Gesamtdatenexport 20261029_26.2 (Stand 29.10.2026, 00:00 Uhr). SHA-256 aller 79 verschiedenen Dateien der Prüfsummenliste stimmen überein (`output/pruefsummen_abgleich.csv`).
 **Läuft ein Stopp?** Nein. Keine Stopp-Regel des SAP wurde ausgelöst.
 
+## Zusammenfassung (Nachtrag nach Validierungsbericht vom 30.10.2026, Auflagen H-1, H-2, M-4)
+
+- **E1 hängt an der Leistungsgröße.** Bestand Dezember 2024 brutto / netto: Wind an Land 63,5 / 63,5 GW (Abstand zum Ziel 69 GW: −5,5 / −5,5 GW); **Solar 100,8 / 90,1 GW (Abstand zum Ziel 88 GW: +12,8 / +2,1 GW)**. Die Wahl zwischen Brutto- und Nettonennleistung verschiebt die Aussage bei Solar deutlich (Abschnitt 2, 6). Eine Zweitquelle zur Plausibilisierung liegt **nicht** vor (S3 nicht durchgeführt); welche Größe näher am Gesetzesbegriff liegt, ist ungeprüft.
+- **E2 (Punktzeitpunkt Ziel 2030, Spanne über die drei Fenster):** Wind an Land 2036 bis 2041; Solar 2031 bis 2032. Das Ergebnis hängt vom Fenster ab.
+- **Autokorrelation (Aussagegrenze):** Die Residuen sind bei F24 und F60 stark autokorreliert und systematisch gekrümmt (U-förmig). Durbin-Watson: Wind an Land F24 0,47 und F60 0,04; Solar F60 0,02 (schwächer, aber ebenfalls auffällig: Solar F24 1,09, Wind F12 1,12). **Die klassischen Prognoseintervalle sind bei F24 und F60 zu eng, die invertierten Intervalle "frühestens/spätestens" dort nicht belastbar.** Auch die Zusatzrechnungen S5 (Newey-West mit Lag 2 bis 3, Block-Bootstrap mit Blocklänge 3 bis 4) beheben das nicht: Bei einer Autokorrelation erster Ordnung von etwa 0,9 bilden so kurze Lags und Blöcke die Abhängigkeit nicht ab, und das Bootstrap-Intervall des Zeitpunkts ist praktisch so schmal wie das klassische. S5 ist deshalb **keine** Absicherung gegen dieses Problem. Zeitpunkte sind nur als Spanne über die Fenster zu zitieren.
+
 ## 0. Wichtige Vorbemerkungen (laut SAP Pflicht im Bericht)
 
 - **Fortschreibung ist keine Prognose.** Die Rechnung beantwortet nur: "Wann wäre das Ziel erreicht, wenn der Netto-Zubau des Fensters konstant bliebe?" Sie enthält keine Annahmen zu Politik, Förderung, Genehmigungen, Netzausbau, Lieferketten oder Marktlage. Ein Abstand zwischen Fortschreibung und Ziel ist keine Bewertung von Politik oder Maßnahmen; Ursachen werden nicht untersucht.
@@ -41,8 +47,12 @@ Rechenprobe C(m) − C(m−1) = Z − S: erfüllt (Abweichung ≤ 1,4·10⁻⁸ 
 
 | Technologie | Bestand Dez 2024 | Ziel 2024 | Δ (GW) | Δ (% des Ziels) | Einordnung (SAP 12) |
 |---|---|---|---|---|---|
-| Wind an Land | 63,5 GW | 69 GW | −5,5 | −8,0 % | Bestand unter dem Zwischenziel |
-| Solar | 100,8 GW | 88 GW | +12,8 | +14,6 % | Bestand auf oder über dem Zwischenziel |
+| Wind an Land (brutto, primär) | 63,5 GW | 69 GW | −5,5 | −8,0 % | Bestand unter dem Zwischenziel |
+| Wind an Land (netto, S6; identisch, Netto = Brutto in den Daten) | 63,5 GW | 69 GW | −5,5 | −8,0 % | Bestand unter dem Zwischenziel |
+| Solar (**brutto**, primär) | 100,8 GW | 88 GW | +12,8 | +14,6 % | Bestand auf oder über dem Zwischenziel |
+| Solar (**netto**, S6) | 90,1 GW | 88 GW | +2,1 | +2,3 % | Bestand auf oder über dem Zwischenziel |
+
+**Die Leistungsgröße verschiebt die Aussage bei Solar:** Abstand zum Ziel 2024 +12,8 GW (brutto) gegenüber +2,1 GW (netto). Die Felddokumentation definiert beide Größen nicht; eine Zweitquelle zum Abgleich liegt nicht vor (S3 nicht durchgeführt). Welche Größe näher am Gesetzesbegriff der installierten Leistung liegt, ist ungeprüft.
 
 Der Bestand ist aus dem Registerstand vom 29.10.2026 rekonstruiert (rückwirkend vervollständigt, SAP 3.5 Nr.1). Unter S6 (Nettonennleistung) beträgt der Solar-Bestand Dez 2024 90,1 GW (Δ +2,1 GW); Wind an Land ist unverändert (Nettonennleistung = Bruttoleistung in den Daten, siehe Abschnitt 6).
 
@@ -63,6 +73,8 @@ Bestand am Ende T (Juli 2026): Wind an Land C(T) = 70,4 GW (Ziel 2030: 115 GW), 
 
 Zusammenfassung nach SAP 12: bei Wind an Land liegt das Ziel 2030 in **3 von 3** Fenstern oberhalb des 95-%-Prognoseintervalls (0 von 3 im Intervall, 0 von 3 unterhalb); bei Solar ebenso in **3 von 3** Fenstern oberhalb. Bei beiden Technologien variiert der Punktzeitpunkt zwischen den Fenstern (Wind an Land 2036 bis 2041; Solar 2031 bis 2032); **das Ergebnis hängt vom Fenster ab.** Das Intervall deckt nur die Streuung um die Gerade ab, nicht die Annahme konstanten Zubaus.
 
+**Aussagegrenze Autokorrelation (Auflage H-1):** Die Durbin-Watson-Werte (Wind an Land F24 0,47, F60 0,04; Solar F60 0,02; Abschnitt 7) und die U-förmigen Residuen zeigen, dass die lineare Gerade bei F24 und F60 den Verlauf des kumulierten Bestands nicht trifft. Das klassische Prognoseintervall und das daraus invertierte Intervall "frühestens/spätestens" sind bei F24 und F60 (Wind an Land und Solar) **zu eng** und dort nicht belastbar; auch unter S5 bleiben sie zu eng (Abschnitt 6). Zeitpunkte werden nur als Spanne über die drei Fenster genannt.
+
 **E3: erforderlicher jährlicher Netto-Zubau (R) gegenüber dem Zubau der Fenster** (R = (Ziel 2030 − C(T)) / (53/12 Jahre)):
 
 | Technologie | R (GW/Jahr) | Fenster | s_W = 12·b (GW/Jahr) [95-%-KI] | ā_W (GW/Jahr) | s_W / R | R − s_W (GW/Jahr) |
@@ -74,7 +86,7 @@ Zusammenfassung nach SAP 12: bei Wind an Land liegt das Ziel 2030 in **3 von 3**
 | | | 24 | 17,2 [17,0; 17,4] | 17,3 | 0,87 | 2,5 |
 | | | 60 | 14,8 [14,3; 15,3] | 14,0 | 0,75 | 4,9 |
 
-(Steigung je Monat b in GW: Wind 0,391 / 0,360 / 0,250; Solar 1,434 / 1,435 / 1,232.)
+(Rundung, G-2: Die gerundete CSV `tabelle3_E2_E3_E4_...csv` zeigt s_W/R mit einer Nachkommastelle, der Bericht mit zwei; bei Solar F12 ergeben die gerundeten Werte Brutto 18,0, Stilllegung 0,2, Netto 17,9 ein Rundungsartefakt. Volle Genauigkeit: `output/zwischen/voll_tabelle3_primaer.csv`.) (Steigung je Monat b in GW: Wind 0,391 / 0,360 / 0,250; Solar 1,434 / 1,435 / 1,232.)
 
 **E4: Anteil der Stilllegungen am Brutto-Zubau (Q_W)** und Jahreswerte (GW/Jahr, Summe über die W Monate des Fensters):
 
@@ -101,6 +113,8 @@ Der Stichtag 31.12.2026 liegt nach dem Exportdatum; ein Vergleich von Ist und Zi
 | Solar | 12 | 135,0 [134,2; 135,7] | 128 | Ziel unterhalb des Intervalls |
 | | 24 | 135,0 [134,2; 135,7] | 128 | unterhalb |
 | | 60 | 130,5 [124,4; 136,6] | 128 | Ziel im Intervall |
+
+**Bei Solar fallen die Fenster in verschiedene Kategorien (F12 und F24: Ziel unterhalb des Intervalls; F60: Ziel im Intervall). Das Ergebnis hängt vom Fenster ab** (SAP 7 Nr. 4). Zusammenfassung "k von 3": Wind an Land 3 von 3 Fenstern Ziel oberhalb; Solar 2 von 3 unterhalb, 1 von 3 im Intervall.
 
 Deskriptive Hilfsgröße (linear zwischen den Zielen 2024 und 2026 interpolierter Zielwert für Juli 2026, Operationalisierung siehe Abweichungsprotokoll A-11): Wind an Land 80,9 GW, C(T) 70,4 GW, Abstand −10,5 GW (−13,0 %); Solar 119,7 GW, C(T) 128,1 GW, Abstand +8,4 GW (+7,0 %).
 
@@ -130,8 +144,9 @@ Punktzeitpunkt für das Ziel 2030 (Fenster 12 / 24 / 60), in Klammern frühesten
 | **S7** weiche Fälle ausgeschlossen | wie primär (0 weiche Fälle) | wie primär (0 weiche Fälle) |
 
 - **S3** (Zweitquelle) und die Zweitquellen-Plausibilisierung: **nicht durchgeführt**, Grund: Zweitquelle nicht beschafft, kein Netzzugriff im Analyselauf (SAP 3.2: blockiert nichts). Ein Abgleich mit Energy-Charts, Bundesnetzagentur oder OWID liegt damit nicht vor.
-- **S5** (autokorrelationsrobust): Newey-West-Lag 2, 2, 3 (Soll nach SAP geprüft); Block-Bootstrap mit Blocklänge 3, 3, 4, B = 10 000, Seed 20261029. Beispiele (95-%-Perzentilintervall des Erreichungszeitpunkts / Wert 2030): Wind an Land F12 06/2035 bis 10/2036 / 89,7 bis 92,7; F24 07/2036 bis 05/2037 / 88,3 bis 90,3; F60 10/2040 bis 04/2043 / 80,3 bis 84,1; Solar F12 07/2031 bis 10/2031 / 201,6 bis 206,0; F24 07/2031 bis 09/2031 / 202,3 bis 205,4; F60 03/2032 bis 04/2033 / 181,6 bis 197,9. In keiner Wiederholung wurde das Ziel "nicht erreicht" (Anteil 0). Newey-West-Standardfehler von b weichen vom klassischen ab (zum Beispiel Wind F60: 0,011 statt 0,005 GW/Monat; Solar F60: 0,046 statt 0,021), das Konfidenzintervall von s_W wird bei F60 breiter (Wind 2,7 bis 3,3 statt 2,9 bis 3,1; Solar 13,7 bis 15,9 statt 14,3 bis 15,3). Volle Tabelle: `output/tabelle4_S5_autokorrelationsrobust.csv`.
-- **S6:** Für Wind an Land sind Brutto- und Nettonennleistung in den Daten identisch; bei Solar liegt die Nettonennleistung deutlich unter der Bruttoleistung (C(Dez 2024): 90,1 statt 100,8 GW; C(T): 113,5 statt 128,1 GW). Die Wahl der Leistungsgröße verschiebt bei Solar den Erreichungszeitpunkt um rund ein bis zwei Jahre (Punkt: 06/2033 bzw. 09/2034 gegenüber 08/2031 bzw. 09/2032).
+- **S5** (Zusatzrechnung mit Newey-West und Block-Bootstrap nach SAP 5.3; **nicht** als "robust" zu lesen, Auflage H-1): Newey-West-Lag 2, 2, 3 (Soll nach SAP geprüft); Block-Bootstrap mit Blocklänge 3, 3, 4, B = 10 000, Seed 20261029. Beispiele (95-%-Perzentilintervall des Erreichungszeitpunkts / Wert 2030): Wind an Land F12 06/2035 bis 10/2036 / 89,7 bis 92,7; F24 07/2036 bis 05/2037 / 88,3 bis 90,3; F60 10/2040 bis 04/2043 / 80,3 bis 84,1; Solar F12 07/2031 bis 10/2031 / 201,6 bis 206,0; F24 07/2031 bis 09/2031 / 202,3 bis 205,4; F60 03/2032 bis 04/2033 / 181,6 bis 197,9. In keiner Wiederholung wurde das Ziel "nicht erreicht" (Anteil 0). Newey-West-Standardfehler von b weichen vom klassischen ab (zum Beispiel Wind F60: 0,011 statt 0,005 GW/Monat; Solar F60: 0,046 statt 0,021), das Konfidenzintervall von s_W wird bei F60 breiter (Wind 2,7 bis 3,3 statt 2,9 bis 3,1; Solar 13,7 bis 15,9 statt 14,3 bis 15,3). Volle Tabelle: `output/tabelle4_S5_autokorrelationsrobust.csv` (Dateiname historisch). **Einschränkung:** Bei F24 und F60 (Residuen-ACF Lag 1 bei F60 etwa 0,9, bei F24 0,65 bei Wind und 0,44 bei Solar; Durbin-Watson unter 1; gekrümmte Residuen) bilden Lag 2 bis 3 und Blocklänge 3 bis 4 die Abhängigkeit nicht ab; das Bootstrap-Intervall des Zeitpunkts ist dort praktisch so schmal wie das klassische (Wind an Land F60: Bootstrap 10/2040 bis 04/2043 gegenüber invertiertem klassischem Intervall 02/2041 bis 10/2042). **Die Intervalle bei F24 und F60 sind auch unter S5 zu eng.**
+- **S6:** Für Wind an Land sind Brutto- und Nettonennleistung in den Daten identisch; bei Solar liegt die Nettonennleistung deutlich unter der Bruttoleistung (C(Dez 2024): 90,1 statt 100,8 GW; C(T): 113,5 statt 128,1 GW). Die Wahl der Leistungsgröße verschiebt bei Solar den Erreichungszeitpunkt um 22 bis 24 Monate, also rund zwei Jahre (Punkt: F12 und F24 08/2031 nach 06/2033, F60 09/2032 nach 09/2034; Korrektur G-1).
+- **S1, weitere Kennzahlen:** E1b, E3 und E4 unter S1 stehen in `output/tabelle4_sensitivitaeten_S1_S2_S6_S7.csv` (Zeilen mit "S1"), nicht im Berichtstext (G-3).
 - **S7:** keine weich markierten Einheiten; Ergebnis identisch mit primär. **S8:** deskriptiv (Abschnitt 7). **S9:** nicht durchgeführt, Grund: keine Überlappung.
 
 ## 7. Diagnostik (SAP 5.2; `output/diagnostik_je_technologie_und_fenster.csv`, `output/grafiken/diagnostik_*.png`)
@@ -148,7 +163,7 @@ Durbin-Watson (zweiseitig, α = 0,05) und Shapiro-Wilk (α = 0,05) der OLS-Resid
 | | 60 | 0,02 (< 0,0001) | 0,92 | 0,953 (0,021) | 4 |
 | Wind auf See (E5) | 12 / 24 / 60 | 0,81 (0,003) / 0,13 (< 0,0001) / 0,11 (< 0,0001) | 0,44 / 0,85 / 0,84 | 0,929 (0,334) / 0,977 (0,809) / 0,924 (0,001) | 1 / 2 / 5 |
 
-Die Residuen sind in den meisten Kombinationen positiv autokorreliert (stark bei F24 und F60); das klassische Prognoseintervall ist dann tendenziell zu eng (SAP 5.3; deshalb S5 zusätzlich). Bei n = 13 und n = 25 ist die Aussagekraft der Tests begrenzt, bei n = 13 hat Shapiro-Wilk sehr geringe Trennschärfe. Die Diagnostik ändert die Primärspezifikation nicht und wählt kein Fenster aus. Cook-Markierungen sind nur Markierungen (`output/diagnostik_cook_markierungen.csv`); es wurde nichts ausgeschlossen.
+Die Residuen sind in den meisten Kombinationen positiv autokorreliert (stark bei F24 und F60) und bei F24/F60 sichtbar U-förmig gekrümmt (`output/grafiken/diagnostik_*.png`). **Das klassische Prognoseintervall ist bei F24 und F60 zu eng; S5 behebt das nicht** (Abschnitt 6; Auflage H-1). Bei n = 13 und n = 25 ist die Aussagekraft der Tests begrenzt, bei n = 13 hat Shapiro-Wilk sehr geringe Trennschärfe. Die Diagnostik ändert die Primärspezifikation nicht und wählt kein Fenster aus. Cook-Markierungen sind nur Markierungen (`output/diagnostik_cook_markierungen.csv`); es wurde nichts ausgeschlossen. Laut Validierungsbericht (G-4) gehen die Cook-Markierungen bei F60 (Wind an Land 8, Solar 4) auf die systematische Krümmung der Residuen zurück, nicht auf einzelne Ausreißer; die Markierungen liegen überwiegend an den Fensterrändern.
 
 Saisonalität des Monats-Nettozubaus (60 Monate bis Juli 2026, deskriptiv, keine Tests; `output/saisonalitaet_monatszubau_60m_je_kalendermonat.csv`, `output/grafiken/diagnostik_saisonalitaet.png`): Der mittlere Monats-Nettozubau je Kalendermonat liegt bei Wind an Land zwischen 0,13 GW (Januar) und 0,41 GW (Dezember), bei Solar zwischen 0,98 GW (September) und 1,45 GW (Juli); je Kalendermonat liegen nur fünf Beobachtungen vor, die Spannweite der Einzelwerte ist groß (Solar zum Beispiel Dezember 0,47 bis 2,02 GW).
 
@@ -156,14 +171,16 @@ Saisonalität des Monats-Nettozubaus (60 Monate bis Juli 2026, deskriptiv, keine
 
 1. **Fortschreibung, nicht Prognose.** Konstanter Netto-Zubau je Fenster; keine Beschleunigung oder Verlangsamung; Extrapolation bis 2030 liegt außerhalb der Daten. Das Intervall ist punktweise und deckt nur die Streuung um die Gerade ab.
 2. **Das Ergebnis hängt vom Fenster ab** (Wind an Land: Punktjahr 2036 bis 2041; Solar 2031 bis 2032). F12 ist anfällig für Einzelmonate, F60 kann strukturelle Änderungen verwischen. Kein Fenster ist "das beste".
-3. **Rechtszensierung und Nachmeldungen:** Der Bestand ist aus dem Stand vom 29.10.2026 rekonstruiert; auch die Monate bis Juli 2026 können noch unterzählt sein. Keine Nachmeldekorrektur. Stilllegungen können verspätet oder gar nicht gemeldet sein (bei gelöschten/deaktivierten Einheiten ohne Leistung und Datum kann der Stilllegungsanteil nicht nachgebildet werden, SAP 3.5 Nr.12).
-4. **Leistungsgröße:** Bruttoleistung ist eine Setzung; bei Solar liegt die Nettonennleistung um rund 11 % darunter (S6), mit Folgen für E1 (Δ +12,8 gegenüber +2,1 GW) und E2.
+3. **Rechtszensierung und Nachmeldungen:** Der Bestand ist aus dem Stand vom 29.10.2026 rekonstruiert; auch die Monate bis Juli 2026 können noch unterzählt sein. Keine Nachmeldekorrektur. Stilllegungen können verspätet oder gar nicht gemeldet sein (bei gelöschten/deaktivierten Einheiten ohne Leistung und Datum kann der Stilllegungsanteil nicht nachgebildet werden, SAP 3.5 Nr.12). **Zusätzlich (Auflage M-2):** In den Dateien der gelöschten und deaktivierten Einheiten haben 1 121 Windeinheiten und 142 845 Solareinheiten den Betriebsstatus "In Betrieb" (davon nur Systemstatus "Deaktiviert": Wind 128, Solar 62 447). Sie tragen in dieser Datei weder Leistung noch Datum und stehen nicht in den Einheitendateien; sie gehen laut SAP-Regel nicht in den Bestand ein. Ob sie in der Realität bestehende Anlagen darstellen (dann wäre der Bestand unterzählt) oder zu Recht gelöscht wurden (zum Beispiel Duplikate), ist aus den Daten nicht erkennbar; die Richtung der Wirkung auf das Bestandsniveau ist **unbekannt** und wurde nicht geschätzt.
+4. **Leistungsgröße:** Bruttoleistung ist eine Setzung; bei Solar liegt die Nettonennleistung um rund 11 % darunter (S6), mit Folgen für E1 (Δ +12,8 gegenüber +2,1 GW) und E2 (Auflage H-2). Ohne Zweitquelle bleibt offen, welche Größe näher am Gesetzesbegriff liegt.
 5. **Zielwerte:** Der amtliche Fassungsstand von § 4 EEG und § 1 WindSeeG ist nicht belegbar (Limitation des SAP); bei Abweichung Amendment.
 6. **Installierte Leistung ist nicht Stromerzeugung**, nicht Anteil am Strommix und keine Emissionsminderung.
 7. **Repowering** wird nicht herausgerechnet; die Leistung der Ersatzanlage steht im Brutto-Zubau, die ersetzte Leistung in den Stilllegungen.
 8. **Zielvergleich 2026** nur als Fortschreibung möglich (Stichtag nach dem Export).
 9. **Zweitquelle nicht herangezogen** (S3 und Plausibilisierung nicht durchgeführt). Es gibt keine unabhängige Bestätigung der MaStR-Rekonstruktion; die Bestandsreihe ist durch eine interne Rechenprobe geprüft, nicht gegen eine zweite Quelle.
-10. **Datenintegrität:** Prüfsummen der XML-Dateien stimmen; die ZIP-Prüfsumme ist unbekannt; 364 nicht benötigte Dateien wurden vor der Analyse gelöscht (SAP 3.1). Fünf XML-Dateien im Ordner (nicht benötigt) stehen nicht in der Prüfsummenliste (Abweichungsprotokoll H-02).
+10. **Datenintegrität:** Prüfsummen der XML-Dateien stimmen; die ZIP-Prüfsumme ist unbekannt; 364 nicht benötigte Dateien wurden vor der Analyse gelöscht (SAP 3.1). **Offenlegung (Auflage M-3):** Fünf XML-Dateien im Ordner `rohdaten/` (`Bilanzierungsgebiete.xml`, `Lokationstypen.xml`, `Marktfunktionen.xml`, `Marktrollen.xml`, `Netze.xml`) stehen nicht in der Prüfsummenliste, wurden nicht geprüft und nicht verwendet (Abweichungsprotokoll H-02). **Bestätigung Daniel Saure: offen.**
+10a. **Zweitquelle und Veröffentlichung:** Eine Zweitquelle fehlt (Auflage H-2). Vor einer Veröffentlichung ist der Abgleich (Toleranz 3 %) nachzuholen, oder die Lücke ist in jedem Kanaltext zu nennen.
+10b. **Testlauf (Auflage M-5):** Der Schätzteil wurde vor dem Endlauf in einem Testlauf ausgeführt, dessen Skriptversion (Entwicklungsdatei im Scratchpad) und Log **nicht erhalten** sind; der Endlauf hat Log und Outputs überschrieben, und es gibt keinen Commit vor dem Testlauf. Die Aussage des Analysten, nach Sichtung der Zwischenergebnisse seien nur Darstellung, Logtexte, Beschriftungen und `unname`-Aufrufe geändert worden, ist **nicht verifizierbar**. Der Validierungsbericht hält sie per Code-Review für plausibel (keine ergebnisabhängige Wahl erkennbar).
 11. **Keine Ursachenaussagen:** Die Analyse sagt nichts über Genehmigungen, Förderung, Netz, Flächen, Lieferketten oder Politik und bewertet keine Maßnahmen.
 
 ## 9. Nicht durchgeführt (vollständige Liste)

@@ -95,3 +95,60 @@ Keine.
 3. M-1: Bestaetigung der Post-hoc-Punkte durch Daniel Saure.
 4. M-2, M-4, G-1: Textkorrekturen im Bericht.
 5. Nach Behebung kurze Nachpruefung als Nachtrag zu dieser Datei (CLAUDE.md, Dokumentationspflicht).
+
+## Nachprüfung 1 (30.10.2026)
+
+Gegenstand: Einarbeitung der Auflagen aus diesem Bericht durch den analyst in `Analysebericht_ausbaupfad-wind-solar.md` und `Abweichungsprotokoll_ausbaupfad-wind-solar.md` (Diff gegen Commit 671ce61). Geprüft durch den validator-Subagenten, unabhängig, direkt an den Dateien und `output/`-Tabellen.
+
+### Gesamturteil
+
+**Freigabe zur Übernahme in einen Report-Entwurf unter Vorbehalt (0 kritisch, 0 hoch, 1 mittel offen, 2 gering).** Die beiden hohen Befunde (H-1, H-2) sind im Text sachlich korrekt und gut sichtbar umgesetzt. Offen bleiben die menschliche Bestätigung der Post-hoc-Punkte (M-1, M-3; nicht vom analyst erledigbar), die nachzuholende Zweitquelle (H-2, als Veröffentlichungsbedingung im Bericht benannt) und G-5 (bewusst nicht umgesetzt).
+
+### 1. Auflagen einzeln
+
+| Auflage | Status | Fundstelle / Bemerkung |
+|---|---|---|
+| H-1 Aussagegrenze Autokorrelation | umgesetzt | Bericht: Zusammenfassung (Punkt Autokorrelation), Abschn. 3 ("Aussagegrenze Autokorrelation"), Abschn. 6 (S5, "Einschränkung ... auch unter S5 zu eng"), Abschn. 7. Klartext: klassisches PI und invertiertes Intervall bei F24/F60 zu eng, S5 behebt das nicht, Zeitpunkte nur als Spanne über die Fenster. Zahlen DW/Bootstrap-Vergleich stimmen mit `diagnostik_je_technologie_und_fenster.csv` und `tabelle4_S5_autokorrelationsrobust.csv`. |
+| H-2 Zweitquelle / Brutto-Netto | umgesetzt (Zweitquellenabgleich selbst weiterhin offen) | Bericht: Zusammenfassung (E1), Abschn. 2 (Tabelle mit Brutto- und Netto-Zeile je Technologie, Fettdruck), Abschn. 8 Nr. 4, neue Nr. 10a (Abgleich vor Veröffentlichung nachholen oder Lücke in jedem Kanaltext nennen). Der Abgleich ist nicht nachgeholt; das war nach SAP 3.2 auch nicht gefordert. |
+| M-1 Spalte "Entscheidung Daniel Saure" | umgesetzt (Spalte), Entscheidungen offen | Protokoll: Spalte in Tabellen A-01..A-17 und H-01..H-09, Abschn. 6 Nachtrag, methodenrelevante Punkte A-07, A-08, A-11, A-16 markiert. Die inhaltliche Bestätigung durch Daniel Saure steht aus (siehe 4). |
+| M-2 Limitation gelöschte/deaktivierte Einheiten | umgesetzt | Bericht Abschn. 8 Nr. 3: 1 121 Wind, 142 845 Solar "In Betrieb" ohne Leistung/Datum, davon "Deaktiviert" 128 / 62 447; Richtung der Wirkung "unbekannt". Alle vier Zahlen stimmen mit `tabelle1_G_ohne_datensatz_je_typ_betriebsstatus.csv` und `tabelle1_geloeschte_deaktivierte_je_typ_grund_status.csv` überein. |
+| M-3 Fünf XML-Dateien ohne Prüfsumme | umgesetzt | Bericht Abschn. 8 Nr. 10 nennt die fünf Dateien namentlich, "Bestätigung Daniel Saure: offen"; Protokoll H-02 "offen". |
+| M-4 SAP 7 Nr. 4 bei E1b | umgesetzt | Bericht Abschn. 4: Satz "Das Ergebnis hängt vom Fenster ab" mit "k von 3" (Wind 3 von 3 oberhalb; Solar 2 unterhalb, 1 im Intervall); stimmt mit `tabelle2_E1b_fortschreibung_2026.csv`. |
+| M-5 Testlauf nicht verifizierbar | umgesetzt (Offenlegung) | Bericht Abschn. 8 Nr. 10b, Protokoll Abschn. 6. Die Unverifizierbarkeit bleibt naturgemäß bestehen; Auflage "künftig vor Testlauf committen" ist vermerkt. |
+| G-1 "22 bis 24 Monate" | umgesetzt | Bericht Abschn. 6 (S6): "22 bis 24 Monate, also rund zwei Jahre" (F12/F24 08/2031 -> 06/2033 = 22; F60 09/2032 -> 09/2034 = 24). Gegen `tabelle4_sensitivitaeten_S1_S2_S6_S7.csv` geprüft. |
+| G-2 Rundung | umgesetzt | Bericht Abschn. 4: Rundungshinweis (Solar F12 18,0 / 0,2 / 17,9), Verweis auf `output/zwischen/voll_tabelle3_primaer.csv`. |
+| G-3 S1-Kennzahlen | umgesetzt | Bericht Abschn. 6: Verweis auf `tabelle4_sensitivitaeten_S1_S2_S6_S7.csv`. |
+| G-4 Cook-Deutung | umgesetzt | Bericht Abschn. 7; 8 bzw. 4 Markierungen bei F60 und Lage an den Fensterrändern stimmen mit `diagnostik_cook_markierungen.csv` (Wind 2021-07..09, 2026-03..07; Solar 2021-07..10). |
+| G-5 Grafiktitel "Paragraf" | nicht umgesetzt (begründet) | Protokoll Abschn. 6: Neulauf nötig, nicht vorgesehen. Offen gelegt; kosmetisch, akzeptabel. Vor Veröffentlichung der Grafiken beim nächsten Lauf beheben. |
+
+### 2. Skript, output/, run_log.txt unverändert
+
+Bestanden. `git diff --stat 671ce61 -- ausbaupfad-wind-solar.R output run_log.txt` leer; `git status` im Analyseordner zeigt nur die beiden .md-Dateien als geändert. Zeitstempel: Skript 29.10. 21:16, run_log 29.10. 21:37, beide vor den Textänderungen (30.10. 12:44/12:45). Untracked sind nur `rohdaten/download_result.txt` und `download_start.txt` (Zeitstempel 29.10. 10:19, vor der Analyse, nicht Teil der Nachbesserung).
+
+### 3. Deckung neuer Zahlen und Aussagen durch output/
+
+Stichprobe, alle gedeckt: E1 Brutto/Netto (63,5 / 63,5; 100,8 / 90,1; Δ −5,5 / +12,8 / +2,1; `tabelle2_E1`, `tabelle4_S6_S7_E1`); E2-Spannen (Wind 01/2036, 12/2036, 12/2041 = "2036 bis 2041"; Solar 08/2031, 08/2031, 09/2032 = "2031 bis 2032"); DW 0,47 / 0,04 / 0,02 / 1,09 / 1,12; Wind-F60-Intervallvergleich (Bootstrap 10/2040-04/2043, klassisch invertiert 02/2041-10/2042); NW-SE 0,011 vs. 0,005 und 0,046 vs. 0,021; 1 121 / 142 845 / 128 / 62 447; 22 bis 24 Monate; C(T) 113,5 / 128,1.
+
+Beanstandung (gering, **G-6**): Bericht Abschn. 6 (S5-Einschränkung) nennt "Residuen-ACF Lag 1 bis etwa 0,9" für "F24 und F60". Nach `diagnostik_je_technologie_und_fenster.csv` gilt ~0,91 nur für F60 (Wind 0,91, Solar 0,92); bei F24 liegt Lag-1-ACF bei 0,65 (Wind) bzw. 0,44 (Solar). Der Schluss (Lag 2-3 / Blocklänge 3-4 zu kurz) hält bei F60, bei F24 ist er schwächer begründet (Wind F24 DW 0,47 bleibt klar auffällig, Solar F24 DW 1,09 moderat). Behebung: Formulierung auf "F60: ACF etwa 0,9; F24: Wind 0,65, Solar 0,44" präzisieren. Dieselbe Zusammenfassung ("bei F24 und F60 ... zu eng") ist für Solar F24 etwas pauschal; vorsichtiger fassen oder Solar F24 gesondert benennen.
+
+Weiterer Hinweis (gering, **G-7**): Die Zusammenfassung sagt "Wind F12 1,12" und "Solar F24 1,09" seien "ebenso" stark autokorreliert. Beide DW-Werte sind zweiseitig signifikant, aber nicht vergleichbar mit 0,02 bis 0,47; "ebenso" ist übertrieben. Behebung: "ebenfalls auffällig, aber schwächer".
+
+Keine Aussage ohne Tabellenbeleg gefunden. Die Textteile "Richtung unbekannt" und "Duplikate" in Nr. 3 sind als Hypothese gekennzeichnet, nicht als Befund.
+
+### 4. Spalte "Entscheidung Daniel Saure"
+
+Bestanden. Alle 26 Einträge (A-01..A-17, H-01..H-09) lauten "offen" (H-02: "offen (Bestätigung Daniel offen)"). Nirgends ist etwas als bestätigt, freigegeben oder entschieden eingetragen. Im Bericht (Nr. 10) ebenfalls "Bestätigung Daniel Saure: offen".
+
+### Schweregrade der Nachprüfung
+
+- Kritisch: 0
+- Hoch: 0 (H-1, H-2 geschlossen)
+- Mittel: 1 offen (M-1 inhaltliche Bestätigung A-01, A-07, A-08, A-11, A-14, A-16, H-02 durch Daniel Saure; M-3 Bestätigung ebenfalls dort enthalten). Nicht vom analyst lösbar.
+- Gering: G-5 offen (begründet), G-6 und G-7 neu (Formulierungsschärfe Autokorrelation)
+
+### Verbleibende Auflagen vor Übernahme in Report-Entwurf
+
+1. Daniel Saure bestätigt oder verwirft die Post-hoc-Punkte (Spalte "Entscheidung") nach Lesen des Protokolls.
+2. H-2: Zweitquellenabgleich nachholen oder Lücke in jedem Kanaltext nennen (Bericht Nr. 10a).
+3. G-6 und G-7 textlich glätten (optional vor Report; nicht blockierend).
+4. G-5 beim nächsten Neulauf beheben, spätestens vor Veröffentlichung der Grafiken.
