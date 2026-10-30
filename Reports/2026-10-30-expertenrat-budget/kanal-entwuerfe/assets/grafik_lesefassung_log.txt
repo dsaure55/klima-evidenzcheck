@@ -1,0 +1,13 @@
+Langfrist 1990–2025 · Trendgerade: 584 [39; 1129]
+Langfrist 1990–2025 · Bootstrap: 584 [429; 737]
+Langfrist 1990–2025 · ARIMA: 266 [-133; 665]
+10 Jahre 2015–2025 · Trendgerade: 25 [-203; 253]
+10 Jahre 2015–2025 · Bootstrap: 25 [-159; 201]
+10 Jahre 2015–2025 · ARIMA: 151 [-343; 644]
+kurz 2020–2025 (nur beschreibend) · Trendgerade: 139 [-430; 708]
+kurz 2020–2025 (nur beschreibend) · Bootstrap: 139 [-116; 502]
+kurz 2020–2025 (nur beschreibend) · ARIMA: 525 [-54; 1104]
+Warnmeldung:
+`geom_errorbarh()` was deprecated in ggplot2 4.0.0.
+ℹ Please use the `orientation` argument of `geom_errorbar()` instead. 
+`height` was translated to `width`.
