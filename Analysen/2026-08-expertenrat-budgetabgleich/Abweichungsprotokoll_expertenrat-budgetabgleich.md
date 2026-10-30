@@ -110,3 +110,5 @@ Grundlage: Nachtrag 3 des Validierungsberichts (freigabefaehig mit Auflagen, 0 k
 |---|---|
 | N4.1 | Bericht 2.4: Ueberschrift "Zur Seed-Beschriftung" und die beiden Einleitungssaetze (Wortlaut Fassung 3) wiederhergestellt, Einrueckung unter dem Aufzaehlungspunkt, Fenster-C-Satz schliesst daran an. |
 | N4.2 | **Bekannter, bewusst nicht behobener Widerspruch:** Die Spalte `Hinweis` in `output/posthoc_bootstrap_sensitivitaet.csv` sagt weiter "B und C weichen davon ab (Monte-Carlo-Fehler)"; der Bericht (2.4) erklaert C als Diskretisierungswirkung (nahezu gleiche Zeilen). Der Text ist im Skript fest verdrahtet (`Hinweis = ...`); eine Korrektur braeuchte eine Skriptaenderung und wurde nicht vorgenommen. Massgeblich ist der Bericht. Im Bericht (2.4) ebenfalls als bekannt vermerkt. |
+
+Nachtrag Fassung 5a (30.10.2026): N5.1 Kopf/Status, nur Dokumentation
