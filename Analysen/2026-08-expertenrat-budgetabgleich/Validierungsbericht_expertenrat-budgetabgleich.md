@@ -473,3 +473,39 @@ Der Abschnitt "Nachtrag 2" lag beim Fortsetzen bereits vollstaendig vor; die Rep
 - Kein erneuter Skriptlauf (Skript und `output/` nachweislich nicht im Diff; Reproduktion aus Nachtrag 3 gilt).
 - Keine erneute Pruefung von Methodik, Diagnostik, SAP-Konformitaet oder Grafiken (unveraendert aus Nachtrag 1-3).
 - Die Chat-Antworten 6a/6b und das Lesen des Erratum-Volltextes durch Daniel Saure (unveraendert nicht pruefbar, siehe Nachtrag 2 und 3).
+
+## Nachtrag 5 (Nachpruefung der Fassung 5a, 30.10.2026)
+
+**Datum:** 30.10.2026. **Gepruefter Stand:** Commit 51ccedc (Fassung 5a), verglichen mit Commit cd11417 (Stand Nachtrag 4; alte Nummer 435d407 laut `COMMIT-ZUORDNUNG_2026-10-29.md`). Umfang: nur Auflage N5.1 aus Nachtrag 4, der Fassungsvergleich und die Frage, ob die neuen Zeilen Nachtrag 4 korrekt wiedergeben. SAP, Erratum, Bestaetigungsdatei, Bericht, Protokoll und Skript wurden von mir nicht veraendert; ich habe nur diesen Abschnitt angehaengt.
+
+**Diff:**
+- `git show --stat 51ccedc`: im Analyseordner nur `Analysebericht_expertenrat-budgetabgleich.md` (Kopfzeile und Statuszeile ersetzt, Tabelle "Fassung 5 und 5a" am Ende angehaengt; 11 Zeilen hinzu, 2 ersetzt) und `Abweichungsprotokoll_expertenrat-budgetabgleich.md` (eine Leerzeile und eine Textzeile "Nachtrag Fassung 5a (30.10.2026): N5.1 Kopf/Status, nur Dokumentation" angehaengt). Ausserhalb des Ordners nur eine Blog-Gliederung unter `Reports/` (nicht Gegenstand dieser Pruefung). **Skript, `run_log.txt`, `output/` (CSV, PNG), Rohdaten, SAP, Erratum und Bestaetigungsdatei sind nicht im Diff.** Arbeitsverzeichnis des Ordners sauber. Zeilenenden der beiden Dateien einheitlich (CRLF im Arbeitsverzeichnis, LF im Index, wie vorher).
+- `git diff 435d407 HEAD` zeigt zusaetzlich `rohdaten/klimadashboard/.gitignore` (neu) und das Entfernen von `rohdaten/klimadashboard/kd_emissionen.html`. Das stammt nicht aus Fassung 5a, sondern aus der Verlaufsbereinigung (Commit 2f78e3e, Token in Fremdseiten-Kopie), siehe N6.1.
+- In den geaenderten Zeilen keine neue oder geaenderte Zahl (nur Daten 24./26./28./30.10.2026 und Befundnummern). Kernzahlen, Intervalle, Klassifikationen und Aussagen unveraendert gegenueber Fassung 5.
+
+### Befunde
+
+| Punkt | Ampel | Pruefung |
+|---|---|---|
+| **N5.1** Kopfzeile | **bestanden** | Kopf beginnt jetzt mit "**Fassung 5 (nur Dokumentation), 26.10.2026.**", Fassung 5a (30.10.2026) als Zusatz, Historie der Fassungen 1-4 vollstaendig erhalten (Fassung 4 mit "nach Nachpruefung 2", 24.10.2026). Nur noch eine fuehrende Fassungsangabe. |
+| **N5.1** Statuszeile | **bestanden** | "Nachpruefung 4 (28.10.2026) liegt vor: Fassung 5 freigabefaehig mit Auflagen, 0 kritisch; einzige Auflage N5.1" gibt Nachtrag 4 korrekt wieder (Datum, Urteil, 0 kritisch; N5.2 ist dort nur Hinweis, "einzige Auflage" stimmt). "Keine Freigabe durch Daniel Saure, keine Veroeffentlichung" korrekt. |
+| Optionale Tabelle "Fassung 5" | **bestanden** | Tabelle "Fassung 5 und 5a" ergaenzt. N4.1 und N4.2 entsprechen wortgleich dem Protokoll-Nachtrag Fassung 5 und dem in Nachtrag 4 Geprueften; N5.1-Zeile beschreibt die Aenderung zutreffend; Zeile "Zahlen unveraendert" stimmt mit dem Diff ueberein. |
+| Protokollzeile | **bestanden (Hinweis)** | Inhalt korrekt, aber nur eine lose Textzeile ohne Ueberschrift/Tabelle wie bei den frueheren Nachtraegen. Kosmetisch, keine Auflage. |
+| Statuszeile "mit Fassung 5a erledigt" | **Hinweis** | Die Zeile erklaert die Auflage selbst fuer erledigt, bevor der validator geprueft hatte (gleiches Muster wie in N4.2 (b) (1)). Durch diesen Nachtrag 5 jetzt bestaetigt; keine Aenderung noetig. |
+| Neue Widersprueche Bericht/Protokoll/SAP/Erratum | **bestanden** | Keine. Die im Bericht genannten Commits 78250e3 und d20e448 sind alte Nummern vor der Verlaufsbereinigung; sie sind in `COMMIT-ZUORDNUNG_2026-10-29.md` zugeordnet (d9215cb ist unveraendert gueltig). Hinweis, keine Auflage. |
+
+### Neue Befunde
+
+| Nr. | Schweregrad | Befund und Auflage |
+|---|---|---|
+| N6.1 | gering (Abweichung, Reproduzierbarkeit) | `rohdaten/klimadashboard/kd_emissionen.html` ist seit Commit 2f78e3e nicht mehr versioniert (lokal per `.gitignore` ausgeschlossen). Das Skript liest die Datei zwingend (`expertenrat-budgetabgleich.R`, Zeile 202, Identitaetsnachweis Q1), und sie steht in `rohdaten/SHA256SUMS.txt` (Zeile 9). Die lokale Kopie ist vorhanden und hat die dokumentierte Pruefsumme (1dbd88f6..., von mir nachgerechnet). Wer aber das oeffentliche Repository klont, kann das Skript nicht ausfuehren; Bericht und Abweichungsprotokoll erwaehnen das nicht. Nicht durch Fassung 5a verursacht und ohne Einfluss auf die Zahlen. Auflage: im Abweichungsprotokoll (und kurz im Bericht, Datenquellen/Reproduktion) vermerken, dass die Datei aus rechtlichen/Sicherheitsgruenden (Token) nicht veroeffentlicht ist, mit Pruefsumme, Abrufdatum und Hinweis, wie sie neu abgerufen werden kann bzw. dass der Q1-Abgleich ohne sie entfaellt; optional das Skript so anpassen, dass es bei fehlender Datei mit klarer Meldung weiterlaeuft (dann Skriptaenderung mit Pruefsummenvergleich, ggf. zusammen mit N5.2). Kein Hindernis fuer die inhaltliche Freigabe, aber vor Veroeffentlichung mit Reproduzierbarkeitsanspruch zu erledigen. |
+
+### Gesamturteil Fassung 5a
+
+**N5.1 ERFUELLT.** Fassung 5a ist aus Validierungssicht **freigabefaehig**; 0 kritisch, 0 wesentlich. Einzige neue Auflage N6.1 (gering, Dokumentation der nicht versionierten Rohdatei, nicht durch 5a verursacht); dazu Hinweis N5.2 (CSV-Spalte `Hinweis`) unveraendert offen. Zahlen, Grafiken, CSV und Skript unveraendert. Die Freigabe der Analyse liegt bei Daniel Saure.
+
+### Nicht geprueft (Nachtrag 5)
+
+- Kein erneuter Skriptlauf (Skript und `output/` nicht im Diff; Reproduktion aus Nachtrag 3 gilt; Pruefsumme der lokalen `kd_emissionen.html` nachgerechnet).
+- Keine erneute Pruefung von Methodik, Diagnostik, SAP-Konformitaet oder Grafiken (unveraendert aus Nachtrag 1-3).
+- Die Blog-Gliederung unter `Reports/` aus demselben Commit.
