@@ -86,3 +86,24 @@ Verhältnisse), A-16 (Verzicht auf Zweitquelle) und H-02 (fünf nicht geprüfte 
 ## 7. Entscheidungen von Daniel Saure (30.10.2026)
 
 Daniel Saure hat Analysebericht und Abweichungsprotokoll gelesen (Chat: „Lesen, dann entscheiden“, dann „Freigabe alle 5 Dateien. Alles gut so, weiter bitte“; auf meine Rückfrage zur genauen Bedeutung: „ja, so“). Gemeint und eingetragen sind: (1) die fünf nicht geprüften XML-Dateien (H-02) sind in Ordnung, sie wurden nicht verwendet; (2) alle Festlegungen A-01 bis A-17 und Hinweise H-01 bis H-09, darunter die methodenrelevanten A-07, A-08, A-11 und A-16, sind bestätigt; (3) die Ergebnisse sind freigegeben, siehe `Freigabe_Ergebnisse_Daniel_Saure_2026-10-30.md`. Bestehen bleiben: G-5 (Grafiktitel „Paragraf“, beim nächsten Neulauf), die fehlende Zweitquelle (in jedem Text zu nennen, Abgleich nachholen oder Lücke ausweisen) und die nicht verifizierbare Testlauf-Version (M-5).
+
+## 8. Nachtrag Neulauf nach Freigabe (nur Beschriftungen)
+
+Datum: 30.10.2026. Anlass: Auflage G-5 des Validierungsberichts und Befund R-6 des Faktenchecks (`Reports/2026-10-30-ausbaupfad/faktencheck.md`); Anweisung Daniel Saure im Chat vom 30.10.2026.
+
+**Geändert wurden ausschließlich Beschriftungstexte in `make_plot()` (Grafiken 1 bis 3), keine Methode, Daten, Fenster, Schwellen, Rechnung, Tabellen-Spalten oder Dateinamen:**
+
+| Alt | Neu |
+|---|---|
+| Titel "Grafik 1: Wind an Land - Bestand, Zielpfad (Paragraf 4 EEG) und Fortschreibung" | "Wind an Land - Bestand, Zielpfad (§ 4 EEG) und Fortschreibung" |
+| Titel "Grafik 2: Solar - Bestand, Zielpfad (Paragraf 4 EEG) und Fortschreibung" | "Solar (Bruttoleistung) - Bestand, Zielpfad (§ 4 EEG) und Fortschreibung" |
+| Titel "Grafik 3 (E5): Wind auf See - Bestand, Zielpfad (WindSeeG) und Fortschreibung" | "Wind auf See (E5) - Bestand, Zielpfad (WindSeeG) und Fortschreibung" |
+| Untertitel "Verlaengerung der OLS-Geraden" | "Verlängerung der OLS-Geraden" |
+| Legende "95-%-Prognoseband" | "95-%-Intervall der Fortschreibung (keine Prognose)" |
+| Legende "Monate nach T bis T_S1 (nicht in Fortschreibung)" | "Monate nach Juli 2026 (nicht in der Fortschreibung)" |
+
+Der Untertitel nannte "Bruttoleistung" bereits; sie steht jetzt zusätzlich im Titel von Grafik 2. Diagnostikgrafiken enthalten keinen der Fehler und blieben unverändert. Die Zeichen "§", "ä" und die Legendentexte wurden in den neu erzeugten PNGs visuell geprüft und werden korrekt dargestellt.
+
+**Vergleich:** Vor dem Lauf wurde `output/` gesichert (Scratchpad `neulauf_vorher`). Nach dem vollständigen Neulauf (Einheiten-Extrakte aus dem Cache, Lauf beendet ohne Stopp) sind alle CSV- und TXT-Dateien in `output/` (inklusive `output/zwischen/`, `sessionInfo.txt`, `STOPP_befund.txt`) byte-gleich zum Stand vorher (`git diff --stat -- output` zeigt nur die drei PNG-Dateien der Grafiken 1 bis 3; Diagnostik-PNGs byte-gleich). `run_log.txt` wurde nicht überschrieben, sondern um den Neulauf ergänzt.
+
+**G-5 ist damit erledigt.** Offener Hinweis: Die Bildunterschrift (Caption) der Grafiken nennt weiterhin "punktweise 95-%-Prognoseintervalle der klassischen OLS"; sie war nicht Teil der Anweisung und blieb unverändert.

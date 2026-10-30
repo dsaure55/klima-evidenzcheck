@@ -1030,7 +1030,7 @@ logm("Tabellen geschrieben (output/*.csv, Vollpraezisions-Dateien in output/zwis
 eom <- function(m) as.Date(sprintf("%04d-%02d-01", mi_year(m + 1L), mi_month(m + 1L))) - 1
 make_plot <- function(tech, title, file, y_ziele, jahre_ziel, ylab) {
   s <- SRC$prim[[tech]]; s <- s[s$m >= mi(2019L, 1L) & s$m <= T_S1, ]
-  obs <- data.frame(datum = eom(s$m), C = s$C, phase = ifelse(s$m <= T_M, paste0("Bestand bis T (", mi_lab(T_M), ")"), paste0("Monate nach T bis T_S1 (nicht in Fortschreibung)")))
+  obs <- data.frame(datum = eom(s$m), C = s$C, phase = ifelse(s$m <= T_M, paste0("Bestand bis T (", mi_lab(T_M), ")"), "Monate nach Juli 2026 (nicht in der Fortschreibung)"))
   zp <- data.frame(datum = as.Date(sprintf("%d-12-31", jahre_ziel)), Y = y_ziele)
   fl <- do.call(rbind, lapply(FENSTER, function(W) {
     o <- if (tech == "See") E5[[as.character(W)]] else PRIM[[paste(tech, W)]]; xs <- 0:o$x30; P <- pi_at(o$m, xs)
@@ -1043,15 +1043,15 @@ make_plot <- function(tech, title, file, y_ziele, jahre_ziel, ylab) {
     geom_point(data = zp[zp$datum == as.Date("2030-12-31"), ], aes(datum, Y), colour = "black", shape = 8, size = 4) +
     geom_point(data = obs, aes(datum, C, shape = phase), size = 1.2) +
     scale_linetype_manual(values = c("solid", "longdash", "dotdash"), name = "Fortschreibung") + scale_shape_manual(values = c(16, 1), name = NULL) + scale_colour_manual(values = c("#1b9e77", "#d95f02", "#7570b3"), name = "Fortschreibung") +
-    scale_fill_manual(values = c("#1b9e77", "#d95f02", "#7570b3"), name = "95-%-Prognoseband") +
-    labs(title = title, subtitle = paste0("Monatsende-Bestand laut MaStR (Export 29.10.2026), Bruttoleistung; Fortschreibung = Verlaengerung der OLS-Geraden je Fenster (keine Prognose). Zielpfad (gestrichelt, Linie nur zur Orientierung); Stern = Ziel 2030."),
+    scale_fill_manual(values = c("#1b9e77", "#d95f02", "#7570b3"), name = "95-%-Intervall der Fortschreibung (keine Prognose)") +
+    labs(title = title, subtitle = paste0("Monatsende-Bestand laut MaStR (Export 29.10.2026), Bruttoleistung; Fortschreibung = Verlängerung der OLS-Geraden je Fenster (keine Prognose). Zielpfad (gestrichelt, Linie nur zur Orientierung); Stern = Ziel 2030."),
          x = NULL, y = ylab, caption = "Fortschreibung bis 31.12.2030 dargestellt; punktweise 95-%-Prognoseintervalle der klassischen OLS.") +
     theme_minimal(base_size = 10) + theme(legend.position = "bottom", plot.subtitle = element_text(size = 7.5), legend.box = "vertical")
   ggsave(file.path(OUT, "grafiken", file), g, width = 11, height = 7, dpi = 150)
 }
-make_plot("Wind", "Grafik 1: Wind an Land - Bestand, Zielpfad (Paragraf 4 EEG) und Fortschreibung", "grafik1_wind_an_land.png", ZIELE$Wind, ZIELE$Jahr, "installierte Leistung (GW)")
-make_plot("Solar", "Grafik 2: Solar - Bestand, Zielpfad (Paragraf 4 EEG) und Fortschreibung", "grafik2_solar.png", ZIELE$Solar, ZIELE$Jahr, "installierte Leistung (GW)")
-make_plot("See", "Grafik 3 (E5): Wind auf See - Bestand, Zielpfad (WindSeeG) und Fortschreibung", "grafik3_wind_auf_see_E5.png", SEE_ZIELE$See, SEE_ZIELE$Jahr, "installierte Leistung (GW)")
+make_plot("Wind", "Wind an Land - Bestand, Zielpfad (§ 4 EEG) und Fortschreibung", "grafik1_wind_an_land.png", ZIELE$Wind, ZIELE$Jahr, "installierte Leistung (GW)")
+make_plot("Solar", "Solar (Bruttoleistung) - Bestand, Zielpfad (§ 4 EEG) und Fortschreibung", "grafik2_solar.png", ZIELE$Solar, ZIELE$Jahr, "installierte Leistung (GW)")
+make_plot("See", "Wind auf See (E5) - Bestand, Zielpfad (WindSeeG) und Fortschreibung", "grafik3_wind_auf_see_E5.png", SEE_ZIELE$See, SEE_ZIELE$Jahr, "installierte Leistung (GW)")
 logm("Grafiken gespeichert: output/grafiken/grafik1_wind_an_land.png, grafik2_solar.png, grafik3_wind_auf_see_E5.png")
 
 logsec("Ende")
