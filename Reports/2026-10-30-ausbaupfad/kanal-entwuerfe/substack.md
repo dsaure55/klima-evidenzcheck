@@ -1,4 +1,4 @@
-**ENTWURF v3 (30.10.2026, Auflagen aus `../faktencheck.md` und Nachprüfung 1 eingearbeitet, Nachprüfung 2 steht aus) – nicht veröffentlicht. Freigabe durch Daniel Saure erforderlich vor Publikation. Vor Veröffentlichung nötig: (1) Analyseordner inklusive Nachtrag Zweitquelle und Freigabedatei auf GitHub pushen, sonst läuft Quelle [5] ins Leere; (2) Grafiken in den PNG-Dateien tragen noch „Grafik 1/2“, „Paragraf 4 EEG“, „Prognoseband“, „T_S1“ (Neulauf des Skripts nötig, G-5); (3) Entscheidung Daniel Saure, ob die Methodik offenlegt, dass Analyse und Prüfung von KI-Agenten erstellt wurden. Diesen Kopf vor Veröffentlichung entfernen.**
+**ENTWURF v3 (30.10.2026, Auflagen aus `../faktencheck.md` und Nachprüfung 1 eingearbeitet, Nachprüfung 2 steht aus) – nicht veröffentlicht. Freigabe durch Daniel Saure erforderlich vor Publikation. Vor Veröffentlichung nötig: (1) [erledigt] Analyseordner inklusive Nachtrag Zweitquelle und Freigabedatei sind auf GitHub; (2) [Neulauf angewiesen] Grafiken in den PNG-Dateien tragen noch „Grafik 1/2“, „Paragraf 4 EEG“, „Prognoseband“, „T_S1“ (Neulauf des Skripts nötig, G-5); (3) KI-Offenlegung ist auf Anweisung von Daniel Saure (30.10.2026) eingebaut; der Satz „diesen Text … freigegeben“ gilt erst nach seiner Freigabe des Textes. Push der Analyse ist erledigt (Links geprüft, 30.10.2026); Grafik-Neulauf läuft. Diesen Kopf vor Veröffentlichung entfernen.**
 
 Klima Kompass · Evidenzcheck
 
@@ -24,7 +24,7 @@ Das Gesetz legt Zwischenziele fest. Für Ende 2024 sind es 69 GW Wind an Land un
 | Solar, brutto | 100,8 GW | 88 GW | +12,8 GW (+14,6 %) |
 | Solar, netto | 90,1 GW | 88 GW | +2,1 GW (+2,3 %) |
 
-Bei Solar kommt es darauf an, was man zählt. Das Register führt zwei Größen, die Bruttoleistung und die Nettonennleistung. Die Nettonennleistung liegt bei Solar rund 11 Prozent niedriger, bei Windenergie an Land sind beide Werte gleich. Die Felddokumentation des Registers erklärt den Unterschied nicht. Bei EEG-Anlagen nennt das Register die Nettonennleistung „installierte Leistung“. Wir haben die Bruttoleistung als Hauptgröße festgelegt, bevor wir die Daten ausgewertet haben, und die Nettonennleistung als zweite Rechnung danebengestellt. Welche Größe näher am Begriff „installierte Leistung“ im Gesetz liegt, haben wir nicht geprüft.
+Bei Solar kommt es darauf an, was man zählt. Das Register führt zwei Größen, die Bruttoleistung und die Nettonennleistung. Die Nettonennleistung liegt bei Solar rund 11 Prozent niedriger, bei Windenergie an Land sind beide Werte gleich. Die Felddokumentation des Registers erklärt den Unterschied nicht. Eine weitere Hilfeseite des Registers mit Datendefinitionen haben wir nicht geprüft. Bei EEG-Anlagen nennt das Register die Nettonennleistung „installierte Leistung“. Wir haben die Bruttoleistung als Hauptgröße festgelegt, bevor wir die Daten ausgewertet haben, und die Nettonennleistung als zweite Rechnung danebengestellt. Welche Größe näher am Begriff „installierte Leistung“ im Gesetz liegt, haben wir nicht geprüft.
 
 Wir enden mit der Rechnung im Juli 2026, obwohl der Registerstand vom Oktober ist. Die letzten drei Monate sind noch nicht vollständig gemeldet, weil Anlagen teils nachträglich eingetragen werden.
 
@@ -58,7 +58,7 @@ Um das Ziel 2030 zu erreichen, müsste von Juli 2026 an rechnerisch jedes Jahr g
 |---|---|---|---|
 | Wind an Land | 10,1 GW | 4,7 / 4,3 / 3,0 GW | 46 / 43 / 30 % |
 | Solar, brutto | 19,7 GW | 17,2 / 17,2 / 14,8 GW | 87 / 87 / 75 % |
-| Solar, netto | 23,0 GW | 14,9 / 14,8 / 12,8 GW | etwa 65 / 64 / 56 % |
+| Solar, netto | 23,0 GW | 14,9 / 14,8 / 12,8 GW | etwa 56 bis 65 % |
 
 Die Steigung ist der Zubau pro Jahr, den die Gerade in dem Fenster ergibt. Zieht man vom Zubau die Stilllegungen ab, ergeben die Registerdaten bei Solar (brutto) 17,9 / 17,3 / 14,0 GW pro Jahr.
 
@@ -84,13 +84,15 @@ Die Zielzahlen haben wir von der Webseite gesetze-im-internet.de gelesen. Dort s
 
 ## Die Gegenprobe
 
-Eine zweite Quelle zum Abgleich ist die Reihe der Energy-Charts des Fraunhofer ISE [4]. Bei Windenergie an Land weicht sie um 0,12 Prozent von unserem Bestand ab, bei Solar in der Gleichstromleistung um 0,01 bis 0,04 Prozent. Die Wechselstromleistung liegt 8 bis 9 Prozent darunter und 2,7 Prozent über unserer Nettonennleistung. Energy-Charts führt Solar in zwei Größen, als Gleichstromleistung (DC) und als Wechselstromleistung (AC). Bei der Bruttoleistung stimmen die Zeitpunkte mit unseren überein. Bei der Wechselstromleistung liegen sie ebenfalls zwischen 2033 und 2034, wie bei unserer Nettonennleistung.
+Als einzige zweite Quelle haben wir die Reihe der Energy-Charts des Fraunhofer ISE herangezogen [4]. Die Bundesnetzagentur-Statistik und weitere Quellen haben wir nicht abgerufen. Bei Windenergie an Land weicht sie um 0,12 Prozent von unserem Bestand ab, bei Solar in der Gleichstromleistung um 0,01 bis 0,04 Prozent. Die Wechselstromleistung liegt 8 bis 9 Prozent darunter und 2,7 Prozent über unserer Nettonennleistung. Energy-Charts führt Solar in zwei Größen, als Gleichstromleistung (DC) und als Wechselstromleistung (AC). Welche davon dem Register entspricht, ist nicht dokumentiert. Die Zahlen sprechen dafür, dass DC unserer Bruttoleistung und AC ungefähr unserer Nettonennleistung entspricht. Die DC-Zeitpunkte stimmen mit unseren Bruttowerten Monat für Monat überein. Die AC-Zeitpunkte liegen wie unsere Nettowerte zwischen 2033 und 2034, aber nicht monatsgleich.
 
 Das ist vermutlich keine unabhängige Bestätigung. Die Abweichungen sind so klein, dass beide Reihen vermutlich auf demselben Register beruhen. Belegt haben wir das nicht. Wir sehen den Abgleich deshalb als Kontrolle unserer Aufbereitung. Die Gegenprobe haben wir nach der unabhängigen Prüfung nachgeholt, sie ist daher nicht Teil dieser Prüfung. Die Lizenz der Energy-Charts-Reihe konnten wir nicht bestätigen und zeigen darum keine Originaldaten daraus.
 
 ## Wie wir gerechnet haben
 
 Den Analyseplan haben wir am 29.10.2026 festgelegt und eingefroren, bevor wir die Daten ausgewertet haben. Eine unabhängige Prüfung hat die Zahlen mit eigenem Code aus den Registerdateien nachgerechnet und kein kritisches Problem gefunden. Während der Auswertung mussten 17 Festlegungen getroffen werden, die der Plan offenließ, dazu kamen neun Hinweise zum Datenformat. Alle stehen im Abweichungsprotokoll im Repository [5].
+
+**Offenlegung zu KI:** Rechnung, Prüfung und Textentwurf dieses Beitrags wurden mit KI-Werkzeugen erstellt (Sprachmodelle von Anthropic). Die Prüfung lief als getrennter zweiter KI-Durchlauf mit eigenem Code. Die Redaktion hat den Analyseplan, die Ergebnisse und diesen Text vor der Veröffentlichung gelesen und freigegeben und verantwortet die Veröffentlichung.
 
 Ganz ohne Vorwissen waren wir nicht. Aus einem ungeprüften Suchergebnis zu einem Monitoring des DIW wussten wir vorab, dass Wind an Land bei rund 68 GW stand und Solar näher am Pfad lag. Daran haben wir den Plan nicht angepasst. Außerdem gab es vor dem Endlauf einen Testlauf, dessen Skriptversion nicht erhalten ist. Nach den Angaben der Bearbeitung wurden nach Sichtung der Zwischenergebnisse nur Darstellung, Beschriftungen und Logtexte geändert. Das Protokoll des Testlaufs wurde beim Endlauf überschrieben, und vor dem Testlauf gibt es keinen Commit. Deshalb lässt sich die Angabe nicht nachprüfen. Im Code der Endfassung erkennt die Prüfung keine Methodenwahl, die vom Ergebnis abhängt.
 
