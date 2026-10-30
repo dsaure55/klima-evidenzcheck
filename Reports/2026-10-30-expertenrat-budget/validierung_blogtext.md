@@ -110,3 +110,41 @@ Keine Zahl aus Anhang A (546,1, -53,0 usw.), kein Post-hoc-Prognoseintervall aus
 
 ## Nachprüfung
 Nach Umsetzung der Auflagen ist eine fokussierte Nachprüfung als Nachtrag in dieser Datei festzuhalten (CLAUDE.md, Dokumentationspflicht). Danach Freigabe des Blogtexts durch Daniel Saure nach Volltextlektüre.
+
+## Nachtrag 1 (Nachpruefung, 30.10.2026)
+
+**Geprüfter Stand:** `kanal-entwuerfe/substack.md`, `kanal-entwuerfe/assets/grafik_lesefassung.R`, `grafik_lesefassung_log.txt`, `grafik_ueberschreitung.png`, alle in Commit d2c72bd. Der zuerst geprüfte Entwurf war nicht versioniert (vor d2c72bd gibt es keine Fassung im Repository). Geprüft wurde deshalb gegen die Auflagentexte A1 bis A12 oben, nicht per Diff. Prüfer: validator-Subagent (KI, getrennte Rolle). Blogtext und Grafik wurden nicht verändert.
+
+### Urteil: **bestanden für A3 bis A12, 0 kritisch, keine neue Auflage. Veröffentlichung weiter gesperrt, solange A1 und A2 offen sind.**
+
+| Auflage | Status | Beleg im Text |
+|---|---|---|
+| A1 Korrektur 27.08. | **offen (blockierend, Daniel)** | Satz "inzwischen korrigiert [5]" steht weiter da, Quelle [5] enthält weiter "korrigiert am [Datum]". |
+| A2 Push | **offen (blockierend, Daniel)** | Am 30.10.2026 ist `main` 21 Commits vor `origin/main`; auf GitHub fehlen u. a. die Freigabedatei, Fassung 5b, Nachtrag 6 und dieser Report-Ordner. |
+| A3 Breite der Bereiche | erfüllt | Text wie vorgeschlagen ("meist breiter", Langfrist-Ausnahme wegen Korrektur, "nicht direkt vergleichen"). "Meist" ist gedeckt: ARIMA ist in B deutlich breiter (987 vs. 456) und in C knapp breiter (1158 vs. 1138), in A schmaler. |
+| A4 Fußnote 27 | erfüllt | Zuschreibung entschärft, Grenze ausdrücklich genannt ("sagen die Quellen nicht"). Hinweis ohne Auflage: Die Fußnote spricht von **sektoralen** Werten und UBA (2026p); "seine Werte" verallgemeinert leicht. Mit dem Nachsatz vertretbar. |
+| A5 Wertung | erfüllt | (a) "Abstand ... (rund 65 bis 105) ... im Vergleich zur Unsicherheit einer reinen Trendrechnung"; (b) politischer Satz ersetzt durch Puffer 4,5 / 0,07 % [2] und UBA "nicht richtungssicher" [4] (Wortlaut in `UBA.txt` Z. 33-34 und 65 geprüft); (c) "für die Summe bis 2030". |
+| A6 kurze Fenster | erfüllt | Wortlaut wie vorgeschlagen. |
+| A7 Niveaueffekt | erfüllt | "schon 2025 rund 55 ... über dem tatsächlichen Wert (648,8)", "fast die Hälfte der 584". |
+| A8 Methodenbeschreibung | erfüllt | "im Langfrist-Fenster mit Korrektur für Autokorrelation"; "Wir haben für die Autokorrelation korrigiert, trotzdem ..."; Bootstrap-Beschreibung präzisiert. |
+| A9 Halbjahr | erfüllt | "Tempo der Langfrist-Geraden (1,5 ...) / 10-Jahres-Geraden (3,6 ...)", Agora "2 Prozent", "genau gerechnet 2,1"; Kurzüberblick "liegt näher am". |
+| A10 Formulierungen | erfüllt | (a) "geht dagegen von ... aus", (b) "rund 6194", (c) "Ob Deutschland das einhält". |
+| A11 Präregistrierung | erfüllt | Satz zu den bekannten Schlagzeilen-Zahlen ergänzt; "Acht der neun Bereiche, gleich welcher Art" steht jetzt nach dem Absatz über die zwei Arten. Im Kurzüberblick steht die Zählung weiter vorn; für eine Zusammenfassung vertretbar. |
+| A12 Grafik | erfüllt | Lesefassung (siehe unten), Bildunterschrift erklärt Grün/Blau. |
+| Empfehlungen (a), (b) | umgesetzt | "Ein getrennter Prüfschritt (ein eigener KI-Prüfer ...)", "am 28. Oktober". |
+
+### Neue Zahlen
+- **"rund 65 bis 105 Millionen Tonnen":** Abstand Expertenrat (+60 bis +100) zu Projektionsdaten (Puffer 4,5, also -4,5) = 64,5 bis 104,5 Mt; mit dem UBA-Wert 3,8 wären es 63,8 bis 103,8. "Rund 65 bis 105" ist korrekt gerundet und passt zum im Text verwendeten Puffer 4,5.
+- **"fast die Hälfte der 584":** Nachgerechnet (R 4.6.1, OLS 1990-2025 auf `datenabgleich_basiszeitreihe.csv`): Residuum 2025 = -55,44 Mt; Overshoot A = 584,19; mit gleicher Steigung ab beobachtetem Wert 2025: 306,99; Niveaueffekt 5 x 55,44 = 277,2 Mt = 47,5 % von 584. "Fast die Hälfte" und "rund 55" sind gedeckt.
+
+### Lesefassung der Grafik
+- **Reproduktion:** `grafik_lesefassung.R` mit `estimand2_tabelle.csv` erneut ausgeführt (R 4.6.1). Die erzeugte PNG ist **bytegleich** mit `assets/grafik_ueberschreitung.png` (SHA-256 4a203e00...6278). Die Konsolenausgabe stimmt zeilengleich mit `grafik_lesefassung_log.txt` überein (nur die Deprecation-Warnung zu `geom_errorbarh()`, ohne Einfluss auf die Werte).
+- **Nur Layout:** Das Skript liest ausschließlich `Overshoot_eigen`, `Overshoot_Intervall_unten/oben`, `Fenster` und `Methode` aus der CSV. Es rechnet nichts um und filtert nichts weg. Alle 9 Zeilen sind enthalten. Konstant gesetzt sind nur der Korridor 60 bis 100, die Nulllinie und Textbeschriftungen.
+- **Werte und Zuordnung:** Alle neun Punkte und Balken stimmen visuell und laut Log mit der CSV und der Blogtabelle überein (584 [39; 1129], 584 [429; 737], 266 [-133; 665], 25 [-203; 253], 25 [-159; 201], 151 [-343; 644], 139 [-430; 708], 139 [-116; 502], 525 [-54; 1104]). Die Reihenfolge entspricht der Tabelle. Die Fenster sind richtig beschriftet, C ist als "nur beschreibend" gekennzeichnet.
+- **Farben:** `scale_colour_manual` nutzt unbenannte Werte, die Zuordnung folgt also der alphabetischen Faktorreihenfolge. Geprüft: Level 1 = "Bereich der tatsächlichen Summe (ARIMA)" → Blau, Level 2 = "Bereich des Trends ..." → Grün. Das passt zur Bildunterschrift und zur Legende. Hinweis ohne Auflage: Bei einer künftigen Änderung die Werte benennen (`values = c("Bereich der ..." = ..., ...)`), damit die Zuordnung nicht von der Sortierung abhängt.
+- **Beschriftung:** Umlaute vorhanden, kein "Estimand", kein "Overshoot", kein "Bundesregierung". Die Projektionsdaten werden nur im Untertitel genannt (Puffer 4,5, praktisch auf der Nulllinie) und nicht als eigenes Element gezeichnet. Das deckt sich mit der Bildunterschrift. Achse und Quellenzeile sind korrekt.
+
+### Offen vor Veröffentlichung
+1. A1: Korrektur des Artikels vom 27.08. veröffentlichen, Datum in [5] eintragen, Link öffnen und prüfen. Andernfalls den Satz ändern.
+2. A2: Pushen und danach die Links [6] und "Repository" auf GitHub öffnen und prüfen. Dabei muss Fassung 5b sichtbar sein.
+3. Freigabe des Blogtexts durch Daniel Saure nach Lektüre des Volltexts.
