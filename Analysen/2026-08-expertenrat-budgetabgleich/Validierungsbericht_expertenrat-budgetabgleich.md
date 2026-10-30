@@ -509,3 +509,40 @@ Der Abschnitt "Nachtrag 2" lag beim Fortsetzen bereits vollstaendig vor; die Rep
 - Kein erneuter Skriptlauf (Skript und `output/` nicht im Diff; Reproduktion aus Nachtrag 3 gilt; Pruefsumme der lokalen `kd_emissionen.html` nachgerechnet).
 - Keine erneute Pruefung von Methodik, Diagnostik, SAP-Konformitaet oder Grafiken (unveraendert aus Nachtrag 1-3).
 - Die Blog-Gliederung unter `Reports/` aus demselben Commit.
+
+## Nachtrag 6 (Nachpruefung der Fassung 5b, 30.10.2026)
+
+**Datum:** 30.10.2026. **Gepruefter Stand:** Commit aacfb9d (Fassung 5b), verglichen mit Commit 4350a19 (Stand Nachtrag 5). Umfang: nur Auflage N6.1 aus Nachtrag 5, der Diff von Fassung 5b und die Frage, ob die neue Statuszeile Nachtrag 5 und die Freigabedatei korrekt wiedergibt. SAP, Erratum, Bestaetigungs- und Freigabedatei, Bericht, Protokoll und Skript wurden von mir nicht veraendert; ich habe nur diesen Abschnitt angehaengt.
+
+**Diff:**
+- `git show --stat aacfb9d`: nur `Analysebericht_expertenrat-budgetabgleich.md` (Kopfzeile um Satz zu Fassung 5b ergaenzt, Statuszeile ersetzt, ein Satz in Abschnitt 0 nach "Pruefsummen (SHA-256)", Tabellenueberschrift "Fassung 5, 5a und 5b", neue Tabellenzeile N6.1; 5 Zeilen ersetzt/hinzu) und `Abweichungsprotokoll_expertenrat-budgetabgleich.md` (Abschnitt "Nachtrag Fassung 5b", 12 Zeilen angehaengt). Keine weitere Datei im Commit.
+- **Skript, `run_log.txt`, `output/` (CSV, PNG), Rohdaten, `SHA256SUMS.txt`, SAP, Erratum, Bestaetigungs- und Freigabedatei sind nicht im Diff.** Arbeitsverzeichnis des Analyseordners vor meinem Anhang sauber (`git status --short .` leer).
+- In den geaenderten Zeilen keine neue oder geaenderte Ergebniszahl (nur Daten, Befundnummern, Zeilennummer 202, Zeile 9, die Pruefsumme und der Verweis "Abweichung 0,0000 Mt").
+
+### Befunde
+
+| Punkt | Ampel | Pruefung |
+|---|---|---|
+| Nur Dokumentation | **bestanden** | Siehe Diff. Kein Skript, keine CSV, keine Grafik, keine Rohdatei geaendert. |
+| N6.1 Vermerk Protokoll | **bestanden** | Eigener Abschnitt "Nachtrag Fassung 5b" mit Grund (Token, Verlaufsbereinigung, Verweis auf `COMMIT-ZUORDNUNG_2026-10-29.md` und Commit 2f78e3e; beides geprueft, Commit existiert, Zuordnungsdatei nennt `kd_emissionen.html`), Ausschluss per `rohdaten/klimadashboard/.gitignore` (geprueft: `git check-ignore` bestaetigt, Datei nicht in `git ls-files`), Folgen fuer die Reproduktion, Neuabruf und Wirkung. |
+| N6.1 Pruefsumme | **bestanden** | Von mir per `sha256sum rohdaten/klimadashboard/kd_emissionen.html` nachgerechnet: `1dbd88f648d72f8c9bf38be768972a2091af791b1304776062c9d4f4d3bcb873`, identisch mit `rohdaten/SHA256SUMS.txt` Zeile 9 und dem Wert im Protokoll. |
+| N6.1 Skriptzeile | **bestanden** | `expertenrat-budgetabgleich.R` Zeile 202 ist die angegebene `readLines(file.path(ROH, "klimadashboard", "kd_emissionen.html"), ...)`-Zeile. Beschreibung des Verhaltens bei fehlender Datei zutreffend: Die Pruefsummenschleife (Z. 168-187) liest nur vorhandene Dateien und gibt dann eine WARNUNG (fehlender Eintrag), der Abbruch erfolgt erst in Z. 202. |
+| N6.1 URL und Abrufdatum | **bestanden** | URL https://klimadashboard.de/emissionen steht im Skriptkopf (Z. 81); "Zugriff 23.10.2026" im Skriptkopf (Z. 79) und Bericht Abschnitt 0, Quellentabelle Zeile 1; lokaler Dateizeitstempel 23.10.2026 17:13 (geprueft). |
+| N6.1 Wirkung | **bestanden** | `output/datenabgleich_basiszeitreihe.csv`: `diff_html` fuer alle 36 Jahre 0; Aussage "Abweichung 0,0000 Mt" und "Modellinput ist die Reihe aus dem archivierten Skript" stimmen. Der API-Abgleich (`kd_api_emissions_DE.csv`, versioniert) bleibt nachvollziehbar. |
+| N6.1 Bericht Abschnitt 0 | **bestanden** | Kurzer Hinweis mit Verweis aufs Protokoll vorhanden, wie in der Auflage verlangt. Die optionale Skriptanpassung (Weiterlauf bei fehlender Datei) wurde nicht umgesetzt; das war ausdruecklich optional. |
+| Statuszeile gibt Nachtrag 5 wieder | **bestanden** | "Nachpruefung 5 (30.10.2026) liegt vor: Fassung 5a freigabefaehig, 0 kritisch, neu N6.1 (gering ...)" entspricht dem Gesamturteil von Nachtrag 5. Nicht erwaehnt ist der weiter offene Hinweis N5.2 (CSV-Spalte `Hinweis`); er ist als N4.2 im Bericht (2.4 und Tabelle) dokumentiert, daher keine Auflage. |
+| Statuszeile gibt Freigabedatei wieder | **bestanden** | "Analyse (Fassung 5a) freigegeben durch Daniel Saure am 30.10.2026 (`Freigabe_Analyse_Daniel_Saure_2026-10-30.md`); noch keine Veroeffentlichung" entspricht der Datei (Gegenstand Fassung 5a, Commit 51ccedc, Datum 30.10.2026, keine Freigabe eines Blogtexts). Die Statuszeile behauptet korrekt keine Freigabe von 5b. |
+| Freigabedatei Ergaenzung 5b | **Hinweis (offen, nicht Sache des Analysten)** | Die Freigabedatei kuendigt an, der Dokumentationsvermerk N6.1 werde "nach Umsetzung im Diff geprueft und hier ergaenzt". Diese Ergaenzung fehlt noch. Sie darf nicht vom Analysten oder validator geschrieben werden, sondern nach Kenntnisnahme durch Daniel Saure (CLAUDE.md, Verifikationspflicht). Aus meiner Sicht aendert 5b keine Zahl und keine Aussage, die Freigabe von 5a wird inhaltlich nicht beruehrt. |
+| Statuszeile "mit Fassung 5b dokumentiert" | **Hinweis** | Erneut erklaert die Zeile die Auflage fuer erledigt, bevor der validator geprueft hat (gleiches Muster wie in Nachtrag 5); durch diesen Nachtrag 6 jetzt bestaetigt. |
+| Format Protokoll | **bestanden (Hinweis)** | Ueberschriftenebene "# Nachtrag Fassung 5b" passt zu den frueheren Nachtraegen. Die lose Zeile "Nachtrag Fassung 5a ..." davor (aus 5a) bleibt kosmetisch uneinheitlich; keine Auflage. |
+
+### Gesamturteil Fassung 5b
+
+**N6.1 ERFUELLT** (Dokumentationsvariante). Fassung 5b ist aus Validierungssicht **freigabefaehig**; 0 kritisch, 0 wesentlich, keine neue Auflage. Zahlen, Grafiken, CSV, Rohdaten und Skript unveraendert. Weiter offen: Hinweis N5.2 (CSV-Spalte `Hinweis`, bekannt und dokumentiert) und die angekuendigte Ergaenzung der Freigabedatei durch bzw. nach Kenntnisnahme von Daniel Saure.
+
+### Nicht geprueft (Nachtrag 6)
+
+- Kein erneuter Skriptlauf (Skript, Rohdaten und `output/` nicht im Diff; Reproduktion aus Nachtrag 3 gilt).
+- Ob ein Neuabruf von https://klimadashboard.de/emissionen heute noch das vom Skript erwartete Muster `{year:"...",...,total:"..."}` liefert.
+- Keine erneute Pruefung von Methodik, Diagnostik, SAP-Konformitaet oder Grafiken (unveraendert aus Nachtrag 1-3).
+- Der Blogtext und `Reports/.../validierung_blogtext.md` (nicht Gegenstand).
