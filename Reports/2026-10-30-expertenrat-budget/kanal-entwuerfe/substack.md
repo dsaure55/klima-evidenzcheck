@@ -1,4 +1,4 @@
-**ENTWURF – nicht veröffentlicht. Freigabe durch Daniel Saure erforderlich vor Publikation.**
+**FREIGEGEBEN durch Daniel Saure am 30.10.2026 (im Chat: „Gelesen, frei“ auf die Frage, ob er den Blogtext nach vollständigem Lesen freigibt, einschließlich des Vermerks in Fassung 5b) – noch nicht veröffentlicht. Bedingung: erst veröffentlichen, wenn die Korrektur des Artikels vom 27.08. online ist; dann „[Datum]“ in Quelle [5] ersetzen. Diese Kopfzeile nicht mit nach Substack übernehmen.**
 
 Klima Kompass · Evidenzcheck
 
