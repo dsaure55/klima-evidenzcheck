@@ -1,4 +1,4 @@
-**ENTWURF – nicht gepostet. Posten nur nach ausdrücklichem OK von Daniel Saure pro Post.**
+**FREIGEGEBEN ZUM POSTEN durch Daniel Saure am 30.10.2026 (Chat: „ok für jeden Kanal“, nach Zeigen der Texte und Folien). Gepostet wird durch Daniel Saure selbst. Stand: Commit nach 10c7ae5; vor dem Posten Kopfzeile und Quellenzeile entfernen.**
 
 Quelle: `substack.md` (Stand v3.1, freigegeben). Link-Slug: `ausbaupfad`. Format: 6 Folien, 1080×1350 px. Die HTML-Datei `assets/karussell.html` und die PNG-Exporte `assets/folie-1.png` bis `folie-6.png` wurden am 30.10.2026 erstellt.
 

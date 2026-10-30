@@ -1,4 +1,4 @@
-**ENTWURF – nicht gepostet. Posten nur nach ausdrücklichem OK von Daniel Saure pro Post.**
+**FREIGEGEBEN ZUM POSTEN durch Daniel Saure am 30.10.2026 (Chat: „ok für jeden Kanal“, nach Zeigen der Texte und Folien). Gepostet wird durch Daniel Saure selbst. Stand: Commit nach 10c7ae5; vor dem Posten Kopfzeile und Quellenzeile entfernen.**
 
 Quelle: `substack.md` (Stand v3.1, freigegeben). Bild: Folie 1 des Instagram-Karussells (`assets/folie-1.png`). Link-Slug: `ausbaupfad`.
 
