@@ -1,12 +1,12 @@
 # Nachwort und Ausblick
-**KURZFASSUNG-ENTWURF v0.1 (28.10.2026), gekürzt aus dem Nachwort der Langfassung; nicht geprüft, nicht freigegeben. Alle Aussagen zu 2027 sind „geplant“; der Ausblick auf nicht umgesetzte Analysen darf nur stehen, was Daniel Saure dann tatsächlich plant (Entscheidung offen). Vor Satz/Export entfernen.**
+**KURZFASSUNG-ENTWURF v0.1 (28.10.2026), gekürzt aus dem Nachwort der Langfassung; nicht geprüft, nicht freigegeben. Alle Aussagen zu 2027 sind „geplant“; der Ausblick auf nicht umgesetzte Analysen darf nur stehen, was Daniel Saure dann tatsächlich plant (Entscheidung offen). Stilpass 28.10.2026 (Stilregeln v0.3), Differenzprüfung 09.11.2026 (Datei in pruefung/stilpass_differenzpruefung_gruppe*), Freigabe durch Daniel Saure steht aus. Vor Satz/Export entfernen.**
 
 Der Herbst 2026 hat uns eine Menge Zahlen geliefert. Einige davon haben wir geprüft, einige erklärt, und bei einigen haben wir uns selbst korrigiert. Wenn du bis hierher gelesen hast, kennst du unsere Arbeitsweise und weißt, wo du uns widersprechen kannst.
 
 ## Was 2027 ansteht
 
-- **Das Prognose-Register.** Der erste Eintrag, die Gasspeicher-Entnahme im Winter 2026/27, ist registriert. Die Auswertung folgt, sobald die Daten vorliegen, voraussichtlich im Mai oder Juni 2027. Für 2027 planen wir vier weitere Vorhersagen (Kapitel 8). Termine können sich verschieben.
-- **Offene Analysen.** Wo der Prognose-Check und der Abgleich mit dem Expertenrat zum Redaktionsschluss noch nicht abgeschlossen sind, wollen wir sie auf Substack veröffentlichen, sobald sie geprüft und freigegeben sind.
+- Im Prognose-Register ist der erste Eintrag, die Gasspeicher-Entnahme im Winter 2026/27, registriert. Die Auswertung folgt, sobald die Daten vorliegen, voraussichtlich im Mai oder Juni 2027. Für 2027 planen wir vier weitere Vorhersagen (Kapitel 8). Termine können sich verschieben.
+- Wo der Prognose-Check und der Abgleich mit dem Expertenrat zum Redaktionsschluss noch nicht abgeschlossen sind, wollen wir sie auf Substack veröffentlichen, sobald sie geprüft und freigegeben sind.
 - [Ausblick auf Analysen, die nicht ins Buch kamen: nur aufnehmen, wenn Daniel Saure sie plant.]
 
 ## Wie es weitergeht
