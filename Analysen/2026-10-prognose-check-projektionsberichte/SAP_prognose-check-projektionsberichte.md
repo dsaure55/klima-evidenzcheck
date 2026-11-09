@@ -8,7 +8,7 @@ Treibhausgasemissionen (gesamt und je Sektor), Berichte 2015–2023.
 "Prognose-Check" (erster Check dieser Art). Umfang größer als ein
 Schnellcheck, ca. eine Woche Bearbeitung (Entscheidung Daniel Saure,
 22.10.2026).
-**Version:** 1.1 (**final**, eingefroren am 22.10.2026 als v1.0; ergänzt um Amendment 1 vom 22.10.2026, Amendment 1 freigegeben durch Daniel Saure am 22.10.2026)
+**Version:** 1.2 (**final**, eingefroren am 22.10.2026 als v1.0; ergänzt um Amendment 1 vom 22.10.2026 (freigegeben 22.10.2026) und Amendment 2 vom 09.11.2026 (freigegeben durch Daniel Saure am 09.11.2026))
 **Datum:** 22.10.2026
 **Autor:in:** Claude (sap-autor-Subagent), geprüft durch Daniel Saure
 **Status: final, eingefroren am 22.10.2026, freigegeben durch Daniel Saure.**
@@ -809,7 +809,7 @@ wird vor der Auswertung gesondert entschieden.
 
 ### Amendment 2 (09.11.2026): Behandlung des Wertes für 2020 in Tab. 126 des Berichts 2021
 
-**ENTWURF. Nicht freigegeben. Freigabe durch Daniel Saure erst nach Lektüre dieses vollständigen Amendment-Textes. Dieses Amendment ändert keine andere Regel des SAP.**
+**Freigegeben durch Daniel Saure am 09.11.2026 (Chat: „Gelesen, freigeben“, nach Lektüre des vollständigen Amendment-Textes). Dieses Amendment ändert keine andere Regel des SAP.**
 
 **Anlass.** Amendment 1 hat offengelassen, ob der in Bericht 2021 (Tab. 126) für 2020 ausgewiesene Wert, der laut Bericht eine Vorjahresschätzung und kein Inventarwert ist, bei J_b = 2018 als projizierter Wert P(2021,s,2020,k) und damit als Auswertungspaar (h = 2, u. a. relevant für E1) gilt.
 
