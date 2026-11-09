@@ -806,3 +806,15 @@ für 2020 ausgewiesene Wert, der laut Bericht eine Vorjahresschätzung ist, bei
 J_b = 2018 als projizierter Wert P(2021,s,2020,k) und damit als
 Auswertungspaar (h = 2, u. a. relevant für E1) gilt. Diese Frage ist offen und
 wird vor der Auswertung gesondert entschieden.
+
+### Amendment 2 (09.11.2026): Behandlung des Wertes für 2020 in Tab. 126 des Berichts 2021
+
+**ENTWURF. Nicht freigegeben. Freigabe durch Daniel Saure erst nach Lektüre dieses vollständigen Amendment-Textes. Dieses Amendment ändert keine andere Regel des SAP.**
+
+**Anlass.** Amendment 1 hat offengelassen, ob der in Bericht 2021 (Tab. 126) für 2020 ausgewiesene Wert, der laut Bericht eine Vorjahresschätzung und kein Inventarwert ist, bei J_b = 2018 als projizierter Wert P(2021,s,2020,k) und damit als Auswertungspaar (h = 2, u. a. relevant für E1) gilt.
+
+**Entscheidung (Daniel Saure, 09.11.2026, Chat, Antwort auf die Auswahlfrage „Nein, nicht zählen (Empfehlung)“):** Der Wert gilt **nicht** als Auswertungspaar. Er ist eine Schätzung des Vorjahres und keine Projektion.
+
+**Folge.** Für Bericht 2021 gibt es bei J_b = 2018 kein Auswertungspaar bei h = 2 aus diesem Wert. Alle übrigen Paare des Berichts 2021 (Zieljahre mit ausdrücklich ausgewiesenen Projektionswerten) bleiben unverändert. Der Wert darf in einer ausdrücklich gekennzeichneten Sensitivität (Post-hoc, nur zur Information, ohne Einfluss auf Haupt- und Entscheidungsergebnisse) gesondert gezeigt werden. Die Regel 2.1 Nr. 3 (kein Ersatzwert) bleibt unverändert.
+
+**Zeitpunkt.** Die Entscheidung wird getroffen, bevor Fehlermaße, Estimands E1 bis E5, Umskalierung P → P* oder Sensitivitäten berechnet wurden (Stand: nur Integritäts-Checks nach Abschnitt 3.5, Punkte 1 bis 6, liegen vor).
