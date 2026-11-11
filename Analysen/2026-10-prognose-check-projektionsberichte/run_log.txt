@@ -1,6 +1,6 @@
 RUN-LOG – Prognose-Check #1: Projektionsberichte der Bundesregierung 2015–2023
 ==============================================================================
-SAP: SAP_prognose-check-projektionsberichte.md, Version 1.0 (final, eingefroren
+SAP: SAP_prognose-check-projektionsberichte.md, Version 1.0 (final, eingefroren; AKTUELL v1.2 inkl. Amendment 1 und 2 -- Korrektur 11.11.2026)
 22.10.2026, freigegeben durch Daniel Saure). Der SAP selbst wurde NICHT editiert.
 
 ------------------------------------------------------------------------------
@@ -248,4 +248,16 @@ Nicht durchgefuehrt: S2 (fruehere Submissionen nicht beschafft), S6 (kein
 historischer Wert fuer J_b in den UBA-Projektionsdaten 2024/2025).
 Stopp-Regel ausgeloest: NEIN (J_b fuer alle fuenf Berichte durch Amendment 1
 festgelegt; P(b,s,J_b,gesamt) fuer alle Berichte/Szenarien vorhanden).
-Post-hoc-Festlegungen H1-H11: siehe Abweichungsprotokoll_prognose-check-projektionsberichte.md.
+Post-hoc-Festlegungen H1-H17 (Nachtraege nach Validierung H18-H25, Abschnitt E): siehe Abweichungsprotokoll_prognose-check-projektionsberichte.md.
+
+------------------------------------------------------------------------------
+7. LAUFPROTOKOLL 03_ergaenzungen.R (nach Validierung, 11.11.2026)
+------------------------------------------------------------------------------
+Lauf 11.11.2026, ca. 11:38 Ortszeit; Rscript 03_ergaenzungen.R; Exit-Code 0. Liest nur
+Ausgaben von 02 (output/*.csv) und Rohdaten (nur xlsx der UBA-Projektionsdaten 2024
+fuer eine Informationszeile). Keine Netzzugriffe. Inhalt: Ist-Wert im
+Sensitivitaetsband (SAP 5.4), Abfall-Faktoren, E3-Leave-one-report-out, S6-Pruefung,
+Grafik 1 neu. Alle Ergaenzungen: "Post-hoc / nach Validierung" (Abweichungsprotokoll
+Abschnitt E, H18-H25). Konsole: output/03_ergaenzungen_konsole.txt, 03_lauf_stdout.log.
+Skript 02 wurde nicht neu ausgefuehrt; seine Ausgaben (Lauf 11.11.2026 11:21) sind
+unveraendert. Im Kopfkommentar von 02 wurde nur die H-Nummerierung angeglichen.

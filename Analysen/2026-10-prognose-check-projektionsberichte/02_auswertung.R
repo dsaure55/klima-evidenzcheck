@@ -50,22 +50,30 @@
 #       eindeutig zuordenbar; Energiewirtschaft, Gebaeude, Verkehr,
 #       Landwirtschaft entfallen fuer PB2015 (1.A.4.c steckt im Bericht in GHD,
 #       1.A.3.e im Verkehr; KSG ordnet anders zu).
-#  (H5) S2 (R5): NICHT durchgefuehrt - frueheren Inventarsubmissionen nicht
-#       beschafft (SAP 6: "nicht durchgefuehrt, Grund: ...").
-#  (H6) S6: NICHT durchgefuehrt - die UBA-Projektionsdaten 2024/2025
-#       enthalten keinen historischen Wert fuer J_b (Daten beginnen 2024 bzw.
-#       2025), J_b ist fuer diese Berichte nicht bestimmt (3.5-Checks fuer S6
-#       wurden in Skript 01 nicht gemacht). Regel 2.1 Nr. 3.
+#  (H5) S2 (R5): NICHT durchgefuehrt - fruehere Inventarsubmissionen nicht
+#       beschafft (Unterlassung; Definition "erste Submission mit t" offen).
+#  (H6) R6: zweite unabhaengige Uebertragung der Sektorwerte ohne EEA-
+#       Gegenstueck bleibt offen; hier nicht behebbar.
 #  (H7) S5: Stuetzjahre = nur explizit ausgewiesene PROJEKTIONSjahre
 #       (kein historischer J_b-Wert als Stuetzstelle).
 #  (H8) S8: Horizontklasse "<= 0" ergaenzt (t - Berichtsjahr kann 0 sein).
 #  (H9) S9: "Gesamt mit LULUCF" = Gesamt + Zeile LULUCF des Berichts (ohne
-#       internationalen Verkehr); Referenz: Zeile "mit LULUCF" der KSG-
-#       Uebersicht.
-#  (H10) Zusaetzliche Post-hoc-Information (Amendment 2): 2020-Wert Tab. 126
-#       Bericht 2021, getrennt ausgewiesen, in keiner Kennzahl enthalten.
-#  (H11) R6 (zweite unabhaengige Uebertragung der Sektorwerte ohne EEA-
-#       Gegenstueck) bleibt offen; hier nicht behebbar.
+#       internationalen Verkehr); Referenz: Zeile "mit LULUCF" der KSG-Uebersicht.
+#  (H10) Amendment 2: 2020-Wert Tab. 126 Bericht 2021 getrennt als Post-hoc-
+#       Information, in keiner Kennzahl.
+#  (H11) Mindestzellgroesse 3 auch fuer k/n, Min/Max und Median von D.
+#  (H12) Keine DW/Ljung-Box/Shapiro-Wilk (SAP 5.2 schliesst sie aus).
+#  (H13) SAP 5.4: Band-Pruefung in 02 nur als Textsuche; nachgeholt in
+#       03_ergaenzungen.R (H18).
+#  (H14) OWID 5,7-6,6 % unter UBA: Hypothese nicht verifiziert.
+#  (H15) Gesamt aus Trendtabelle, Sektoren aus KSG-Uebersicht (identisch).
+#  (H16) PB2023: J_b-Wert 2019 aus PDF-Tab. 17 (gerundet), Zieljahre aus Datenanhang.
+#  (H17) Extraktion ueber Wortkoordinaten (Skript 01, P2).
+#  (H18-H25) Ergaenzungen NACH Validierung: Abweichungsprotokoll Abschnitt E,
+#       Skript 03_ergaenzungen.R. S6: J_b PB2024 = 2022, kein P(b,s,J_b) in den
+#       beschafften Dateien -> nicht berechenbar (belegt in 03).
+#  Massgebliche Nummerierung: Abweichungsprotokoll (H1-H25). Diese Zeilen sind
+#  Kommentar; Rechnung und Ausgaben von 02 wurden dadurch nicht veraendert.
 # =============================================================================
 
 suppressPackageStartupMessages({
