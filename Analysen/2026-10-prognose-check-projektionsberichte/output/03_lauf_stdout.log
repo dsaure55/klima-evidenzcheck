@@ -1,4 +1,4 @@
-03_ergaenzungen.R - Post-hoc / nach Validierung; 2026-11-11 11:38:07 
+03_ergaenzungen.R - Post-hoc / nach Validierung; 2026-11-11 11:44:13 
  R version 4.6.1 (2026-06-24 ucrt) 
 
 == (A) SAP 5.4: Ist-Wert 2020 im Band der berichtseigenen Sensitivitaetsrechnungen ==
@@ -36,10 +36,10 @@ PB2015 kombinierter Korridor (Naeherung aus Prozentangaben): 850.5 bis 811.8 Mt 
 
 == (C) E3 Leave-one-report-out ==
  ohne_Bericht n median_D n_D_neg              hinweis
-           NA 5     -1.5       4 alle Paare (Primaer)
-         2015 3     -1.5       3                     
-         2017 4     -1.5       3                     
-         2023 3     -1.5       2                     
+           NA 5    -1.47       4 alle Paare (Primaer)
+         2015 3    -1.47       3                     
+         2017 4    -1.57       3                     
+         2023 3    -1.47       2                     
 
 == (D) S6: Pruefung ==
                                                                   kennzeichnung szenario P_2024_Mt A_2024_Mt RE_unb_pct
@@ -48,4 +48,4 @@ PB2015 kombinierter Korridor (Naeherung aus Prozentangaben): 850.5 bis 811.8 Mt 
 null device 
           1 
 
-Fertig: 2026-11-11 11:38:12 
+Fertig: 2026-11-11 11:44:15 

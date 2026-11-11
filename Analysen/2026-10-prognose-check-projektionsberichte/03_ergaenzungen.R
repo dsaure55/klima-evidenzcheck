@@ -99,10 +99,13 @@ wcsv(fs, "faktorbereich_je_sektor.csv"); print(fs, row.names = FALSE)
 # (C) Auflage B7: Leave-one-report-out fuer E3
 # ---------------------------------------------------------------------------
 cat("\n== (C) E3 Leave-one-report-out ==\n")
-e3 <- read.csv(of("e3_einzelwerte.csv"), encoding = "UTF-8")
+# Nach Nachpruefung N1: aus UNGERUNDETEN Werten (paare_alle_voll.csv) statt aus der gerundeten e3_einzelwerte.csv
+pg_ <- pairs[pairs$sektor == "gesamt", ]
+m_ <- pg_[pg_$szenario == "MMS", c("bericht", "t", "ARE_star")]; w_ <- pg_[pg_$szenario == "MWMS", c("bericht", "t", "ARE_star")]
+e3 <- merge(m_, w_, by = c("bericht", "t"), suffixes = c("_MMS", "_MWMS")); e3$D <- e3$ARE_star_MWMS - e3$ARE_star_MMS; e3$Bericht <- e3$bericht
 loo3 <- rbind(data.frame(ohne_Bericht = NA, n = nrow(e3), median_D = median(e3$D), n_D_neg = sum(e3$D < 0)),
               do.call(rbind, lapply(sort(unique(e3$Bericht)), function(b) { d <- e3[e3$Bericht != b, ]; data.frame(ohne_Bericht = b, n = nrow(d), median_D = median(d$D), n_D_neg = sum(d$D < 0)) })))
-loo3$median_D <- round(loo3$median_D, 1)
+loo3$median_D <- round(loo3$median_D, 2)
 loo3$hinweis <- ifelse(loo3$n < 3, "n < 3: nur Einzelwerte, Median nicht als Kennzahl", ""); loo3$hinweis[1] <- "alle Paare (Primaer)"
 wcsv(loo3, "diag_e3_leave_one_report_out.csv"); print(loo3, row.names = FALSE)
 

@@ -62,7 +62,15 @@ Anlass: `Validierungsbericht_prognose-check-projektionsberichte.md` (bedingt fre
 | H21 | B5 (S2) | Begründung korrigiert: Unterlassung (früheren Submissionen nicht beschafft), nicht Datenlage. Nicht nachgeholt, weil „erste Submission mit t“ nicht eindeutig (EU Januar vs. UNFCCC April, R5 unbeantwortet; Januar-Fassung 2024 nicht gefunden) und eine Festlegung Daniel zusteht. Kein Netzzugriff versucht. | S2 fehlt weiter. | offen |
 | H22 | D1 | Satz „gemeinsamer Ausschlag in 2020, konsistent mit Corona“ ersetzt durch zahlengedeckte Aussage (MRE 10,9 → 10,4 % ohne 2020; 2023/2024 höher als 2020); keine Ursachenzuschreibung. | Nur Text. | offen |
 | H23 | L1 | Limitationen ergänzt: kleine Primärpopulation (H3), 6 von 10 Paaren aus PB2021/PB2023, Corona-Schock gilt dort nicht gleich, h' = 0/1 bei PB2023/PB2021, Abfall-Sektor. | Nur Text. | offen |
-| H24 | B7 | Leave-one-report-out für E3 ergänzt (`diag_e3_leave_one_report_out.csv`): Median D −1,5 in allen Varianten; „4 von 5“ hängt an PB2015 (ohne PB2015: 3 von 3). Herkunft PB2015-MWMS (Fassung Sept. 2016) im Bericht genannt. | Nur Ergänzung. | offen |
+| H24 | B7 | Leave-one-report-out für E3 ergänzt (`diag_e3_leave_one_report_out.csv`): Median D etwa −1,5 bis −1,6 (ungerundet −1,47 / −1,47 / −1,57 / −1,47); „4 von 5“ hängt an PB2015 (ohne PB2015: 3 von 3). Herkunft PB2015-MWMS (Fassung Sept. 2016) im Bericht genannt. | Nur Ergänzung. | offen |
 | H25 | B10, R1, R2, G* | H-Nummerierung im Skriptkopf 02 an dieses Protokoll angeglichen (nur Kommentar); `run_log.txt` auf „H1–H25“ und SAP v1.2 korrigiert; Mt-Rundung im Analysebericht nach SAP 11 (ganzzahlig); Prüfdateien (`summe_bereinigte_sektoren_vs_gesamt.csv`, `paare_alle_voll.csv`) behalten bewusst Nachkommastellen (keine Artikeltabellen). Grafik 1: Legende nach unten links, Jahresbeschriftungen versetzt (Datenbasis unverändert, in 03 neu erzeugt). B8 (PB2015 SAR/AR4 in einem Satz): im Analysebericht genannt. | Keine auf Zahlen. | offen |
 
 Nicht umgesetzt: Entscheidungen zu B1 (H3) und B2 (H4/H6) (liegen bei Daniel), Prüfung der KSG-Definitionen für PB2021/2023 und zweite Übertragung (H6), Nachholen von S2 (H21).
+
+### E.2 Textkorrekturen nach Nachprüfung 1 des validators (Post-hoc nach Nachprüfung, 11.11.2026; nur Texte, keine Methodenänderung)
+
+| Nr. | Befund | Änderung | Entscheidung Daniel Saure |
+|---|---|---|---|
+| N1 | E3-Leave-one-report-out war aus gerundeten D-Werten berechnet („−1,5 in allen Varianten“) | `03_ergaenzungen.R` rechnet jetzt aus ungerundeten Werten (`paare_alle_voll.csv`) und neu gelaufen: Median D −1,47 (alle), −1,47 (ohne PB2015), −1,57 (ohne PB2017), −1,47 (ohne PB2023); `output/diag_e3_leave_one_report_out.csv` neu (2 Nachkommastellen); Analysebericht und H24 auf „etwa −1,5 bis −1,6“ geändert. n_D<0 unverändert. | offen |
+| N2 | Sensitivitätsband: Einordnung | Analysebericht: Sensitivitäten variieren nur Wachstum, Bevölkerung, Preise, Stromexport, kein Pandemie-/Krisenszenario; Lage des Ist-Werts unter dem Band ist keine Aussage über die Modellierungsqualität (SAP 8.1). | offen |
+| N3 | PB2017-Bandminimum | Analysebericht: Minimum 780,6 Mt stammt aus MWMS-Übernahme (Fußn. 3); ohne diesen Wert 816,9 Mt (bereinigt 811 Mt), Aussage unverändert. | offen |
