@@ -224,3 +224,28 @@ Lauf 01_integritaet.R (SAP 3.5, Punkte 1–6), 22.10.2026, 19:23 Ortszeit:
   Mehrere Vorläufe am selben Tag dienten der Fehlerbehebung im Skript
   (Pfadlänge, Tabellenzerlegung); alle Ausgabedateien stammen aus dem letzten
   Lauf.
+
+------------------------------------------------------------------------------
+6. LAUFPROTOKOLL 02_auswertung.R (Auswertung nach SAP v1.2 inkl. Amendment 1 und 2)
+------------------------------------------------------------------------------
+Lauf: 11.11.2026, ca. 11:21 Ortszeit; Aufruf: Rscript 02_auswertung.R (R 4.6.1),
+Arbeitsverzeichnis = Analyseordner. Exit-Code 0 (fehlerfrei). Zwei Vorlaeufe am
+selben Tag brachen mit Programmierfehlern ab (nicht-numerische Spalte in
+Rundungsfunktion bei S2/S6-Zeilen; Rundung einer Textspalte im Post-hoc-Block);
+beide Fehler behoben, alle Ausgaben stammen aus dem letzten Lauf. Die Meldungen
+"Expecting numeric ... got a date" stammen vom Einlesen der Excel-Kopfzeilen
+(readxl) und betreffen keine Werte.
+Konsole: output/02_auswertung_konsole.txt (sink) und output/02_lauf_stdout.log
+(inkl. Warnungen). Sitzungsinfo: output/sessionInfo_02_auswertung.txt.
+Pruefsummen: 68/68 Rohdateien vor der Auswertung erneut geprueft, alle identisch
+mit der Dateitabelle oben (output/02_pruefsummen_vor_auswertung.csv).
+Keine Netzzugriffe. Keine Zufallskomponente.
+Referenzinventar unveraendert: Submission 2026 (Trendtabelle 15.01.2026 fuer
+Gesamt; KSG-Uebersicht 15.03.2026 fuer Sektoren). 2025-Wert (Vorjahresschaetzung,
+648,87 Mt) nur in S7; im UBA-Hintergrundpapier findet sich der Wert "648,9 Mio."
+(Plausibilisierung, output/plausi_vorjahresschaetzung_2025.csv).
+Nicht durchgefuehrt: S2 (fruehere Submissionen nicht beschafft), S6 (kein
+historischer Wert fuer J_b in den UBA-Projektionsdaten 2024/2025).
+Stopp-Regel ausgeloest: NEIN (J_b fuer alle fuenf Berichte durch Amendment 1
+festgelegt; P(b,s,J_b,gesamt) fuer alle Berichte/Szenarien vorhanden).
+Post-hoc-Festlegungen H1-H11: siehe Abweichungsprotokoll_prognose-check-projektionsberichte.md.

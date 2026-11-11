@@ -1,0 +1,15 @@
+"Sektor","Bericht","h","P_star_Mt","A_2020_Mt","E_star_Mt","RE_star_pct"
+"Energiewirtschaft",2017,6,296,220,76,34.5
+"Energiewirtschaft",2019,4,297,220,77,35
+"Industrie",2015,8,173,172,1,0.7
+"Industrie",2017,6,169,172,-3,-2
+"Industrie",2019,4,175,172,2,1.4
+"Gebäude",2017,6,113,122,-9,-7.1
+"Gebäude",2019,4,111,122,-10,-8.5
+"Verkehr",2017,6,156,146,10,6.6
+"Verkehr",2019,4,168,146,22,15.4
+"Landwirtschaft",2017,6,70,65,5,7
+"Landwirtschaft",2019,4,68,65,3,4.7
+"Abfallwirtschaft und Sonstiges",2015,8,7,6,1,12.1
+"Abfallwirtschaft und Sonstiges",2017,6,7,6,1,9.8
+"Abfallwirtschaft und Sonstiges",2019,4,6,6,0,5.8

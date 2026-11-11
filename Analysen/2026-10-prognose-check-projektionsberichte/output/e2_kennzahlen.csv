@@ -1,0 +1,5 @@
+"zelle","n","k","MRE","MdRE","MAPE","min","max","hinweis"
+"alle Paare",10,9,10.9,12.6,11.2,-1.4,18.6,""
+"h 1-3",2,,,,,,,"n=2 < 3: nur Einzelwerte"
+"h 4-6",7,7,13.6,13.9,13.6,5,18.6,""
+"h >=7",1,,,,,,,"n=1 < 3: nur Einzelwerte"

@@ -1,0 +1,49 @@
+"bericht","szenario","sektor","J_b","P_Jb","A_Jb","faktor","ausserhalb_0.90_1.10"
+2015,"MMS","gesamt",2012,939.1,916.95,0.976,FALSE
+2015,"MWMS","gesamt",2012,939.1,916.95,0.976,FALSE
+2017,"MMS","gesamt",2014,901.8,895.23,0.993,FALSE
+2017,"MWMS","gesamt",2014,901.8,895.23,0.993,FALSE
+2019,"MMS","gesamt",2016,909.4,899.03,0.989,FALSE
+2021,"MMS","gesamt",2018,858.3,850.14,0.99,FALSE
+2023,"MMS","gesamt",2019,802,798,0.995,FALSE
+2023,"MWMS","gesamt",2019,802,798,0.995,FALSE
+2015,"MMS","Industrie",2012,185.1,176.99,0.956,FALSE
+2015,"MWMS","Industrie",2012,185.1,176.99,0.956,FALSE
+2015,"MMS","Abfallwirtschaft und Sonstiges",2012,13.6,10.48,0.771,TRUE
+2015,"MWMS","Abfallwirtschaft und Sonstiges",2012,13.6,10.48,0.771,TRUE
+2017,"MMS","Energiewirtschaft",2014,358,363.02,1.014,FALSE
+2017,"MWMS","Energiewirtschaft",2014,358,363.02,1.014,FALSE
+2019,"MMS","Energiewirtschaft",2016,343.4,346.39,1.009,FALSE
+2021,"MMS","Energiewirtschaft",2018,305.1,311.7,1.022,FALSE
+2023,"MMS","Energiewirtschaft",2019,259.5,259.18,0.999,FALSE
+2023,"MWMS","Energiewirtschaft",2019,259.5,259.18,0.999,FALSE
+2017,"MMS","Industrie",2014,180.7,176.05,0.974,FALSE
+2017,"MWMS","Industrie",2014,180.7,176.05,0.974,FALSE
+2019,"MMS","Industrie",2016,188.2,186.57,0.991,FALSE
+2021,"MMS","Industrie",2018,194.9,184.73,0.948,FALSE
+2023,"MMS","Industrie",2019,182.7,179.01,0.98,FALSE
+2023,"MWMS","Industrie",2019,182.7,179.01,0.98,FALSE
+2017,"MMS","Gebäude",2014,118.9,118.64,0.998,FALSE
+2017,"MWMS","Gebäude",2014,118.9,118.64,0.998,FALSE
+2019,"MMS","Gebäude",2016,130,124.16,0.955,FALSE
+2021,"MMS","Gebäude",2018,116.6,117.69,1.009,FALSE
+2023,"MMS","Gebäude",2019,121.4,123.48,1.017,FALSE
+2023,"MWMS","Gebäude",2019,121.4,123.48,1.017,FALSE
+2017,"MMS","Verkehr",2014,159.9,157.64,0.986,FALSE
+2017,"MWMS","Verkehr",2014,159.9,157.64,0.986,FALSE
+2019,"MMS","Verkehr",2016,165.6,163.89,0.99,FALSE
+2021,"MMS","Verkehr",2018,162.3,162.64,1.002,FALSE
+2023,"MMS","Verkehr",2019,163.8,163.62,0.999,FALSE
+2023,"MWMS","Verkehr",2019,163.8,163.62,0.999,FALSE
+2017,"MMS","Landwirtschaft",2014,72.6,70.82,0.975,FALSE
+2017,"MWMS","Landwirtschaft",2014,72.6,70.82,0.975,FALSE
+2019,"MMS","Landwirtschaft",2016,71.8,70.11,0.976,FALSE
+2021,"MMS","Landwirtschaft",2018,69.8,66.25,0.949,FALSE
+2023,"MMS","Landwirtschaft",2019,64.4,66.11,1.026,FALSE
+2023,"MWMS","Landwirtschaft",2019,64.4,66.11,1.026,FALSE
+2017,"MMS","Abfallwirtschaft und Sonstiges",2014,11.6,9.06,0.781,TRUE
+2017,"MWMS","Abfallwirtschaft und Sonstiges",2014,11.6,9.06,0.781,TRUE
+2019,"MMS","Abfallwirtschaft und Sonstiges",2016,10.5,7.9,0.753,TRUE
+2021,"MMS","Abfallwirtschaft und Sonstiges",2018,9.7,7.13,0.735,TRUE
+2023,"MMS","Abfallwirtschaft und Sonstiges",2019,10.1,6.61,0.654,TRUE
+2023,"MWMS","Abfallwirtschaft und Sonstiges",2019,10.1,6.61,0.654,TRUE

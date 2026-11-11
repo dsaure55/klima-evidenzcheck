@@ -1,0 +1,317 @@
+Prognose-Check #1 - 02_auswertung.R
+SAP v1.2 final (inkl. Amendment 1 und 2)
+Basisordner: C:/Users/dsaur/klima-evidenzcheck/Analysen/2026-10-prognose-check-projektionsberichte 
+Laufzeit: 2026-11-11 11:21:34 CET 
+R version 4.6.1 (2026-06-24 ucrt) 
+
+== SAP 3.4/10: Pruefsummen der Rohdateien (erneut) ==
+
+ok 
+68 
+Anzahl Rohdateien: 68 
+-> 68/68 Pruefsummen identisch mit run_log.txt
+
+== SAP 3.2: Referenzinventar ==
+Warnung: Expecting numeric in C3 / R3C3: got a date
+Warnung: Expecting numeric in D3 / R3C4: got a date
+Warnung: Expecting numeric in E3 / R3C5: got a date
+Warnung: Expecting numeric in F3 / R3C6: got a date
+Warnung: Expecting numeric in G3 / R3C7: got a date
+Warnung: Expecting numeric in H3 / R3C8: got a date
+Warnung: Expecting numeric in I3 / R3C9: got a date
+Warnung: Expecting numeric in J3 / R3C10: got a date
+Warnung: Expecting numeric in K3 / R3C11: got a date
+Warnung: Expecting numeric in L3 / R3C12: got a date
+Warnung: Expecting numeric in M3 / R3C13: got a date
+Warnung: Expecting numeric in N3 / R3C14: got a date
+Warnung: Expecting numeric in O3 / R3C15: got a date
+Warnung: Expecting numeric in P3 / R3C16: got a date
+Warnung: Expecting numeric in Q3 / R3C17: got a date
+Warnung: Expecting numeric in R3 / R3C18: got a date
+Warnung: Expecting numeric in S3 / R3C19: got a date
+Warnung: Expecting numeric in T3 / R3C20: got a date
+Warnung: Expecting numeric in U3 / R3C21: got a date
+Warnung: Expecting numeric in V3 / R3C22: got a date
+Warnung: Expecting numeric in W3 / R3C23: got a date
+Warnung: Expecting numeric in X3 / R3C24: got a date
+Warnung: Expecting numeric in Y3 / R3C25: got a date
+Warnung: Expecting numeric in Z3 / R3C26: got a date
+Warnung: Expecting numeric in AA3 / R3C27: got a date
+Warnung: Expecting numeric in AB3 / R3C28: got a date
+Warnung: Expecting numeric in AC3 / R3C29: got a date
+Warnung: Expecting numeric in AD3 / R3C30: got a date
+Warnung: Expecting numeric in AE3 / R3C31: got a date
+Warnung: Expecting numeric in AF3 / R3C32: got a date
+Warnung: Expecting numeric in AG3 / R3C33: got a date
+Warnung: Expecting numeric in AH3 / R3C34: got a date
+Warnung: Expecting numeric in AI3 / R3C35: got a date
+Warnung: Expecting numeric in AJ3 / R3C36: got a date
+Warnung: Expecting numeric in AK3 / R3C37: got a date
+Warnung: Expecting numeric in C4 / R4C3: got a date
+Warnung: Expecting numeric in D4 / R4C4: got a date
+Warnung: Expecting numeric in E4 / R4C5: got a date
+Warnung: Expecting numeric in F4 / R4C6: got a date
+Warnung: Expecting numeric in G4 / R4C7: got a date
+Warnung: Expecting numeric in H4 / R4C8: got a date
+Warnung: Expecting numeric in I4 / R4C9: got a date
+Warnung: Expecting numeric in J4 / R4C10: got a date
+Warnung: Expecting numeric in K4 / R4C11: got a date
+Warnung: Expecting numeric in L4 / R4C12: got a date
+Warnung: Expecting numeric in M4 / R4C13: got a date
+Warnung: Expecting numeric in N4 / R4C14: got a date
+Warnung: Expecting numeric in O4 / R4C15: got a date
+Warnung: Expecting numeric in P4 / R4C16: got a date
+Warnung: Expecting numeric in Q4 / R4C17: got a date
+Warnung: Expecting numeric in R4 / R4C18: got a date
+Warnung: Expecting numeric in S4 / R4C19: got a date
+Warnung: Expecting numeric in T4 / R4C20: got a date
+Warnung: Expecting numeric in U4 / R4C21: got a date
+Warnung: Expecting numeric in V4 / R4C22: got a date
+Warnung: Expecting numeric in W4 / R4C23: got a date
+Warnung: Expecting numeric in X4 / R4C24: got a date
+Warnung: Expecting numeric in Y4 / R4C25: got a date
+Warnung: Expecting numeric in Z4 / R4C26: got a date
+Warnung: Expecting numeric in AA4 / R4C27: got a date
+Warnung: Expecting numeric in AB4 / R4C28: got a date
+Warnung: Expecting numeric in AC4 / R4C29: got a date
+Warnung: Expecting numeric in AD4 / R4C30: got a date
+Warnung: Expecting numeric in AE4 / R4C31: got a date
+Warnung: Expecting numeric in AF4 / R4C32: got a date
+Warnung: Expecting numeric in AG4 / R4C33: got a date
+Warnung: Expecting numeric in AH4 / R4C34: got a date
+Warnung: Expecting numeric in AI4 / R4C35: got a date
+Warnung: Expecting numeric in AJ4 / R4C36: got a date
+Warnung: Expecting numeric in AK4 / R4C37: got a date
+Warnung: Expecting numeric in AL4 / R4C38: got a date
+Max. Differenz Gesamt Trendtabelle vs KSG-Uebersicht 1990-2024: 0.00000 Mt
+Max. Abweichung Summe KSG-Sektoren vs Gesamt (1990-2025): 0.00000 Mt
+A(2020, gesamt) = 730.972 Mt; A(2024, gesamt) = 649.770 Mt; 2025 (Vorjahresschaetzung, nur S7) = 648.867 Mt
+Hintergrundpapier: Treffer fuer 6xx Mio. t im Text (Plausibilisierung 2025): 648,9 Mio | 661,6 Mio 
+
+== Projektionsreihen P(b,s,t,k) aus Extraktionstabelle ==
+Reihen: 48  Zeilen: 720 
+
+== SAP 3.5.6: Verfuegbarkeit P(b,s,J_b,k) ==
+ bericht szenario  J_b P_Jb_vorhanden  P_Jb in_Primaerpopulation
+    2015      MMS 2012           TRUE 939.1                 TRUE
+    2015     MWMS 2012           TRUE 939.1                 TRUE
+    2017      MMS 2014           TRUE 901.8                 TRUE
+    2017     MWMS 2014           TRUE 901.8                 TRUE
+    2019      MMS 2016           TRUE 909.4                 TRUE
+    2021      MMS 2018           TRUE 858.3                 TRUE
+    2023      MMS 2019           TRUE 802.0                 TRUE
+    2023     MWMS 2019           TRUE 802.0                 TRUE
+Sektor-Reihen mit P(J_b): 48 von 48 
+Amendment 2: PB2021 2020-Wert (739.5Mt) ist als 'hist' (Vorjahresschaetzung) gefuehrt -> kein Paar.
+Paare insgesamt (alle Sektoren/Szenarien): 89 ; mit P* berechenbar: 89 
+Primaerpopulation gesamt/MMS: n = 10 ; gesamt/MWMS: n = 5 
+ bericht    t h     P P_star     A RE_star  RE_unb
+    2015 2015 3 907.4  886.0 898.6  -1.404  0.9787
+    2015 2020 8 840.5  820.7 731.0  12.271 14.9838
+    2017 2020 6 816.4  810.5 731.0  10.873 11.6868
+    2019 2020 4 835.6  826.1 731.0  13.010 14.3135
+    2021 2021 3 792.5  785.0 762.8   2.909  3.8973
+    2021 2022 4 794.6  787.0 749.3   5.042  6.0504
+    2021 2023 5 783.6  776.1 669.6  15.916 17.0289
+    2021 2024 6 771.2  763.9 649.8  17.559 18.6882
+    2023 2023 4 798.4  794.4 669.6  18.649 19.2436
+    2023 2024 5 743.9  740.2 649.8  13.910 14.4808
+
+== Umskalierungsfaktoren (gesamt) ==
+ bericht szenario  J_b  P_Jb     A_Jb faktor
+    2015      MMS 2012 939.1 916.9454  0.976
+    2015     MWMS 2012 939.1 916.9454  0.976
+    2017      MMS 2014 901.8 895.2319  0.993
+    2017     MWMS 2014 901.8 895.2319  0.993
+    2019      MMS 2016 909.4 899.0301  0.989
+    2021      MMS 2018 858.3 850.1350  0.990
+    2023      MMS 2019 802.0 798.0005  0.995
+    2023     MWMS 2019 802.0 798.0005  0.995
+Faktoren ausserhalb 0,90-1,10: 8 von 48 
+ bericht szenario                         sektor faktor
+    2015      MMS Abfallwirtschaft und Sonstiges  0.771
+    2015     MWMS Abfallwirtschaft und Sonstiges  0.771
+    2017      MMS Abfallwirtschaft und Sonstiges  0.781
+    2017     MWMS Abfallwirtschaft und Sonstiges  0.781
+    2019      MMS Abfallwirtschaft und Sonstiges  0.753
+    2021      MMS Abfallwirtschaft und Sonstiges  0.735
+    2023      MMS Abfallwirtschaft und Sonstiges  0.654
+    2023     MWMS Abfallwirtschaft und Sonstiges  0.654
+Max. Faktor-Differenz MMS vs MWMS: 0 
+
+== E1: RE* fuer Zieljahr 2020, gesamt, MMS ==
+ bericht  J_b     P P_star   A E_star RE_star ARE_star RE_unb  h                                                                                                         hinweis
+    2015 2012 840.5  820.7 731  89.70   12.27    12.27  14.98  8                                                                                                                
+    2017 2014 816.4  810.5 731  79.48   10.87    10.87  11.69  6                                                                                                                
+    2019 2016 835.6  826.1 731  95.10   13.01    13.01  14.31  4                                                                                                                
+    2021 2018    NA     NA  NA     NA      NA       NA     NA NA              kein Auswertungspaar: 2020-Wert in Tab. 126 ist Vorjahresschaetzung, zaehlt laut Amendment 2 nicht
+    2023 2019    NA     NA  NA     NA      NA       NA     NA NA kein Auswertungspaar: Bericht 2023 weist keinen Projektionswert fuer 2020 aus (J_b = 2019; Datenanhang ab 2023)
+E1: n=3; k/n (RE*>0) = 3/3; Spannweite 10.9 bis 13.0 %
+
+== E2: Kennzahlen gesamt, MMS, basisjahrbereinigt ==
+      zelle  n  k  MRE MdRE MAPE  min  max                  hinweis
+ alle Paare 10  9 10.9 12.6 11.2 -1.4 18.6                         
+      h 1-3  2 NA   NA   NA   NA   NA   NA n=2 < 3: nur Einzelwerte
+      h 4-6  7  7 13.6 13.9 13.6  5.0 18.6                         
+      h >=7  1 NA   NA   NA   NA   NA   NA n=1 < 3: nur Einzelwerte
+
+== E3: MMS vs MWMS (gesamt, basisjahrbereinigt) ==
+ bericht    t h RE_star_MMS ARE_star_MMS RE_star_MWMS ARE_star_MWMS     D   dRE
+    2015 2015 3       -1.40         1.40        -1.51          1.51  0.11 -0.11
+    2015 2020 8       12.27        12.27         5.41          5.41 -6.87 -6.87
+    2017 2020 6       10.87        10.87         9.41          9.41 -1.47 -1.47
+    2023 2023 4       18.65        18.65        17.25         17.25 -1.39 -1.39
+    2023 2024 5       13.91        13.91        12.17         12.17 -1.74 -1.74
+ n  median_D n_D_neg hinweis
+ 5 -1.466723       4        
+Berichte ohne MWMS (fallen aus E3):  2019, 2021 
+
+== E4: Sektoren (MMS) ==
+                         sektor      zelle  n k  MRE MdRE MAPE  min  max hinweis
+              Energiewirtschaft alle Paare  8 8 28.4 33.1 28.4  7.6 40.4        
+                      Industrie alle Paare 10 7  4.4  1.1  6.9 -9.4 16.2        
+                        Gebäude alle Paare  8 5  3.5  6.4  7.6 -8.5 11.3        
+                        Verkehr alle Paare  8 8  7.5  7.0  7.5  3.9 15.4        
+                 Landwirtschaft alle Paare  8 7  3.2  3.3  3.4 -0.7  7.0        
+ Abfallwirtschaft und Sonstiges alle Paare 10 6  2.8  1.6  4.0 -2.3 12.1        
+                         sektor bericht E_star RE_star
+              Energiewirtschaft    2017   76.0    34.5
+              Energiewirtschaft    2019   77.1    35.0
+                      Industrie    2015    1.1     0.7
+                      Industrie    2017   -3.4    -2.0
+                      Industrie    2019    2.3     1.4
+                        Gebäude    2017   -8.6    -7.1
+                        Gebäude    2019  -10.4    -8.5
+                        Verkehr    2017    9.7     6.6
+                        Verkehr    2019   22.5    15.4
+                 Landwirtschaft    2017    4.6     7.0
+                 Landwirtschaft    2019    3.1     4.7
+ Abfallwirtschaft und Sonstiges    2015    0.7    12.1
+ Abfallwirtschaft und Sonstiges    2017    0.6     9.8
+ Abfallwirtschaft und Sonstiges    2019    0.4     5.8
+
+Summe bereinigter Sektoren vs bereinigter Gesamtwert: max |Abweichung| = 0.63 Mt (0.08 %)
+
+== E5: Zerlegung (unbereinigt) ==
+ bericht E_unb start verlauf E_star faktor
+    2015 109.5  22.2    87.4   89.7  0.976
+    2017  85.4   6.6    78.9   79.5  0.993
+    2019 104.6  10.4    94.3   95.1  0.989
+
+== SAP 5.2: Diagnostik ==
+ bericht    t Freq berichte_mit_gleichem_Zieljahr paare_im_selben_Bericht
+    2015 2015    1                           2015                       2
+    2015 2020    1               2015, 2017, 2019                       2
+    2017 2020    1               2015, 2017, 2019                       1
+    2019 2020    1               2015, 2017, 2019                       1
+    2021 2021    1                           2021                       4
+    2021 2022    1                           2021                       4
+    2021 2023    1                     2021, 2023                       4
+    2023 2023    1                     2021, 2023                       2
+    2021 2024    1                     2021, 2023                       4
+    2023 2024    1                     2021, 2023                       2
+ ohne_Bericht  n k  MRE MdRE MAPE vorzeichen_MRE_umgekehrt vorzeichen_MdRE_umgekehrt MAPE_rel_aenderung_pct MAPE_aenderung_ueber_25pct meldepflichtig
+           NA 10 9 10.9 12.6 11.2                       NA                        NA                     NA                         NA             NA
+         2015  8 8 12.2 13.5 12.2                    FALSE                     FALSE                    9.7                      FALSE          FALSE
+         2017  9 8 10.9 13.0 11.2                    FALSE                     FALSE                    0.3                      FALSE          FALSE
+         2019  9 8 10.6 12.3 10.9                    FALSE                     FALSE                   -1.8                      FALSE          FALSE
+         2021  6 5 11.2 12.6 11.7                    FALSE                     FALSE                    4.8                      FALSE          FALSE
+         2023  8 7  9.5 11.6  9.9                    FALSE                     FALSE                  -11.5                      FALSE          FALSE
+
+== SAP 6: Sensitivitaeten ==
+                                                spez  n  k  MRE MdRE MAPE  min  max                  hinweis
+                   Primaer (P*, 2015-2024, explizit) 10  9 10.9 12.6 11.2 -1.4 18.6                         
+                             S1 unbereinigt (RE_unb) 10 10 12.1 14.4 12.1  1.0 19.2                         
+                   S1 + S3a (unbereinigt, ohne 2020)  7  7 11.5 14.5 11.5  1.0 19.2                         
+         S2 Inventarrevision (Erstveroeffentlichung) NA NA   NA   NA   NA   NA   NA      nicht durchgefuehrt
+                              S3a ohne Zieljahr 2020  7  6 10.4 13.9 10.8 -1.4 18.6                         
+                              S3b ohne 2020 und 2021  6  5 11.6 14.9 12.1 -1.4 18.6                         
+                                        S4 ohne 2022  9  8 11.5 13.0 11.8 -1.4 18.6                         
+                       S5 mit linearer Interpolation 26 22 10.4  9.6 11.0 -3.0 22.8                         
+         S6 erweiterte Berichtsmenge (UBA 2024/2025) NA NA   NA   NA   NA   NA   NA      nicht durchgefuehrt
+          S7 mit Zieljahr 2025 (Vorjahresschaetzung) 15 14 12.9 13.9 13.1 -1.4 21.9                         
+ S8 alt. Horizont h' = t - Berichtsjahr (alle Paare) 10  9 10.9 12.6 11.2 -1.4 18.6                         
+                                S9 Gesamt mit LULUCF  2 NA   NA   NA   NA   NA   NA n=2 < 3: nur Einzelwerte
+ bericht RE_star S1_RE_unb S9_RE_star_mit_LULUCF                  S2
+    2015    12.3      15.0                    NA nicht durchgefuehrt
+    2017    10.9      11.7                  11.3 nicht durchgefuehrt
+    2019    13.0      14.3                  13.0 nicht durchgefuehrt
+    2021      NA        NA                    NA nicht durchgefuehrt
+    2023      NA        NA                    NA nicht durchgefuehrt
+  zelle n  k  MRE MdRE MAPE  min  max                  hinweis
+ h' <=0 3  2  6.7  2.9  7.7 -1.4 18.6                         
+ h' 1-3 6  6 12.7 13.5 12.7  5.0 17.6                         
+ h' 4-6 1 NA   NA   NA   NA   NA   NA n=1 < 3: nur Einzelwerte
+ h' >=7 0 NA   NA   NA   NA   NA   NA n=0 < 3: nur Einzelwerte
+                spez  n median_D n_D_neg                                                          hinweis
+             Primaer  5     -1.5       4                                                                 
+      S1 unbereinigt  5     -1.5       5                                                                 
+       S3a ohne 2020  3     -1.4       2                                                                 
+ S3b ohne 2020, 2021  3     -1.4       2                                                                 
+        S4 ohne 2022  5     -1.5       4                                                                 
+    S5 Interpolation 17     -2.6      13                                                                 
+         S7 mit 2025  8     -1.8       7                                                                 
+                  S2 NA       NA      NA nicht durchgefuehrt (E3 nicht von S2 betroffen laut SAP-Tabelle)
+                  S6 NA       NA      NA                              nicht durchgefuehrt, Grund s. E2/S6
+
+== POST-HOC (nur zur Information) ==
+                    [,1]                                                                                           
+kennzeichnung       "POST-HOC, nur zur Information (Amendment 2); NICHT in E1/E2/E3/E4/E5 oder Tabelle 3 enthalten"
+bericht             "2021"                                                                                         
+zieljahr            "2020"                                                                                         
+P_Tab126_Mt         "739.5"                                                                                        
+quelle_laut_Bericht "Vorjahresschaetzung (kein Inventarwert, keine Projektion)"                                    
+A_2020_Mt           "730.972"                                                                                      
+faktor_Jb2018       "0.99"                                                                                         
+P_star_Mt           "732.465"                                                                                      
+RE_unb_pct          "1.167"                                                                                        
+RE_star_pct         "0.204"                                                                                        
+ szenario    t RE_star_SAR_Haupttabelle RE_unb_SAR_Haupttabelle faktor_SAR_Haupttabelle RE_star_AR4_Anhang RE_unb_AR4_Anhang faktor_AR4_Anhang
+      MMS 2015                   -1.404                   0.979                   0.976             -1.481             0.244             0.983
+      MMS 2020                   12.271                  14.984                   0.976             12.024            13.985             0.983
+     MWMS 2015                   -1.512                   0.867                   0.976             -1.590             0.133             0.983
+     MWMS 2020                    5.405                   7.952                   0.976              5.247             7.090             0.983
+                                                                                    kennzeichnung
+ POST-HOC (H2): Vergleich SAR-Haupttabelle (primaer) vs AR4-Umrechnung Anhang A6, nur Information
+ POST-HOC (H2): Vergleich SAR-Haupttabelle (primaer) vs AR4-Umrechnung Anhang A6, nur Information
+ POST-HOC (H2): Vergleich SAR-Haupttabelle (primaer) vs AR4-Umrechnung Anhang A6, nur Information
+ POST-HOC (H2): Vergleich SAR-Haupttabelle (primaer) vs AR4-Umrechnung Anhang A6, nur Information
+
+== SAP 5.4: Textsuche nach Unsicherheits-/Bandbreitenangaben (Fundstellen) ==
+ bericht                                                                                         muster n_seiten                                                                          seiten
+    2015 Unsicherheitsband|Unsicherheitsbereich|Bandbreite der Projektion|Konfidenz|Unsicherheitsspanne        0                                                                                
+    2015                                                                                     Sensitivit       25 2,5,8,9,11,13,14,18,21,22,25,33,34,38,41,50,115,189,190,191,192,193,194,195,196
+    2017 Unsicherheitsband|Unsicherheitsbereich|Bandbreite der Projektion|Konfidenz|Unsicherheitsspanne        0                                                                                
+    2017                                                                                     Sensitivit       25 6,10,16,17,28,31,32,36,37,40,42,43,44,45,46,47,48,50,51,270,271,273,274,275,276
+    2019 Unsicherheitsband|Unsicherheitsbereich|Bandbreite der Projektion|Konfidenz|Unsicherheitsspanne        0                                                                                
+    2019                                                                                     Sensitivit       20                  3,7,11,22,24,28,30,33,34,35,36,37,38,39,41,212,213,214,215,216
+    2021 Unsicherheitsband|Unsicherheitsbereich|Bandbreite der Projektion|Konfidenz|Unsicherheitsspanne        0                                                                                
+    2021                                                                                     Sensitivit       22       2,8,12,19,25,26,28,42,43,44,45,53,137,335,336,337,338,339,340,341,342,343
+    2023 Unsicherheitsband|Unsicherheitsbereich|Bandbreite der Projektion|Konfidenz|Unsicherheitsspanne        0                                                                                
+    2023                                                                                     Sensitivit       19                        5,7,10,13,14,24,56,64,73,79,80,81,84,85,87,88,89,153,154
+Hinweis: Treffer sind NICHT inhaltlich ausgewertet; in den extrahierten Gesamt-Ergebnistabellen (Zieljahr 2020) ist kein Band ausgewiesen.
+ Bericht  J_b P_Jb_gesamt_vorhanden         Faktor_gesamt Zieljahre_2015_2024_explizit Szenarien                                                GWP                                         Fundstelle
+    2015 2012       MMS:ja; MWMS:ja MMS 0.976; MWMS 0.976                   2015, 2020 MMS, MWMS IPCC SAR (Haupttabellen); AR4-Umrechnung Anhang A6                           PB2015o_T1-2 (PDF-S. 20)
+    2017 2014       MMS:ja; MWMS:ja MMS 0.993; MWMS 0.993                         2020 MMS, MWMS                                           IPCC AR4                            PB2017_T1-2 (PDF-S. 29)
+    2019 2016                MMS:ja             MMS 0.989                         2020       MMS   IPCC AR4 (Ableitung, im Bericht nicht woertlich)                            PB2019_TZ-2 (PDF-S. 22)
+    2021 2018                MMS:ja             MMS 0.990       2021, 2022, 2023, 2024       MMS                                           IPCC AR4                           PB2021_T126 (PDF-S. 326)
+    2023 2019       MMS:ja; MWMS:ja MMS 0.995; MWMS 0.995                   2023, 2024 MMS, MWMS                                           IPCC AR5 PB2023x_Blatt1 (PDF-S. NA); PB2023_T17 (PDF-S. 74)
+Hinweis: KSG-Referenz-Zuordnung (CRF -> KSG-Sektor) steht im Blatt 'THG' der KSG-Uebersicht (Referenzinventar).
+
+== SAP 11: Grafiken ==
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+Grafiken geschrieben.
+
+== Fertig: 2026-11-11 11:21:41  ==
+EXIT 0
