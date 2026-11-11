@@ -225,3 +225,23 @@ Die Aussage "Ist-Wert 731 Mt unterhalb der gesamten Spannweite" ist durch die Za
 - **Offen, vor einer Veröffentlichung von Daniel zu entscheiden:** B1/H3 (Zählen der Templates); B2/H4 und H6 (Sektorzuordnung, Zweitübertragung, KSG-Definitionen PB2021/2023); S2 (nachholen oder bewusst weglassen, Definition "erste Submission mit t"); J_b = 2022 für PB2024 (nur falls S6 je gerechnet werden soll); Eintrag der Entscheidungen zu H1–H25 in der Protokollspalte.
 - **Vor der Artikelfassung vom analyst zu erledigen:** N1 (Median −1,6 korrigieren), N2 und N3 (zwei Sätze), optisch N4.
 - Nicht erneut geprüft in dieser Nachprüfung (soweit nicht oben ausdrücklich genannt): alles, was in Abschnitt 8 oben als nicht geprüft aufgeführt ist, insbesondere KSG-Definitionen, Sektorwerte der Berichte, Fußnote 3 von PB2017 Tab. 1-4, PDF-S. 22 von PB2015, Grafiken 1b, 2, 3 und `tabelle2_paare_gesamt.csv`. `03_ergaenzungen.R` habe ich in den Teilen Band, Abfall und LOO gelesen und die Ergebnisse unabhängig nachgerechnet; die Teile S6 und Grafik habe ich nur über Ausgaben bzw. Ansicht geprüft, das Skript nicht neu ausgeführt.
+
+---
+
+## Nachprüfung 2 (11.11.2026): korrigierte E3-Leave-one-report-out-Werte (N1)
+
+Fokussierte Nachprüfung durch den validator-Subagenten (nur lesen), Ergebnis vom Top-Level-Agenten gegen `output/diag_e3_leave_one_report_out.csv` abgeglichen.
+
+Unabhängige Neuberechnung in Base-R aus `output/paare_alle_voll.csv` (sektor = gesamt, RE\* vorhanden; D = ARE\*(MWMS) − ARE\*(MMS)). Die fünf Paare: 2015/2015 +0,109; 2015/2020 −6,866; 2017/2020 −1,467; 2023/2023 −1,394; 2023/2024 −1,737.
+
+| Variante | n | Median D (CSV) | Median D (Neuberechnung) | n_D<0 (CSV / neu) | Übereinstimmung |
+|---|---|---|---|---|---|
+| alle Paare | 5 | −1,47 | −1,4667 | 4 / 4 | ja |
+| ohne PB2015 | 3 | −1,47 | −1,4667 | 3 / 3 | ja |
+| ohne PB2017 | 4 | −1,57 | −1,5657 | 3 / 3 | ja |
+| ohne PB2023 | 3 | −1,47 | −1,4667 | 2 / 2 | ja |
+
+- Analysebericht (Aussage „etwa −1,5 bis −1,6“, „4 von 5 hängt an PB2015“), Abweichungsprotokoll (H24, N1) und CSV sind konsistent. `03_ergaenzungen.R` rechnet aus ungerundeten Werten.
+- Die CSV entspricht dem Stand von Commit 1535caa; keine uncommitteten Änderungen an CSV und Skript.
+- Befund: keiner. Anmerkung (kosmetisch): Der Status von N1 und H24 im Protokoll bleibt „offen“, bis Daniel Saure die Nachprüfung abnimmt.
+- Nicht Gegenstand dieser Nachprüfung: alles, was in Abschnitt 8 als nicht geprüft aufgeführt ist.
