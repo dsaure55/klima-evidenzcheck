@@ -160,3 +160,68 @@ Vorschlag: diese Punkte in Abschnitt 7 des Analyseberichts (und später im Artik
 7. (gering) B10, R1–R3: Nummerierung H1–H17 vereinheitlichen; Rundung nach SAP 11 im Artikeltext.
 
 Nach Umsetzung der Auflagen 1–3 ist eine fokussierte Nachprüfung durch den validator vorgesehen; sie muss gemäß CLAUDE.md als Nachtrag in dieser Datei festgehalten werden, nicht nur im Chat.
+
+---
+
+# Nachprüfung 1 (validator, 11.11.2026)
+
+Gegenstand: Umsetzung der Auflagen aus diesem Bericht durch den analyst, Commit 7341f98 (Texte, neues Skript `03_ergaenzungen.R`, neue Outputs). Geprüft: `git diff 7341f98~1 7341f98` für `02_auswertung.R`, Analysebericht, Abweichungsprotokoll und `run_log.txt`; die neuen Output-Dateien; die Handübertragungen aus den PDFs. Am Analysematerial wurde nichts geändert.
+
+## Ergebnis in Kürze
+
+**Gesamturteil nach Nachprüfung: bedingt freigabefähig, weiterhin keine kritischen Befunde.** Von den vier Befunden mit Schweregrad hoch sind B3 und B4 umgesetzt, B1 und B2 sind bewusst unverändert und im Analysebericht jetzt klar als offen benannt. Offen bleiben B1/B2 (Entscheidung Daniel Saure), B5/S2 (nicht nachgeholt, jetzt ehrlich als Unterlassung benannt) und die Entscheidungsspalte aller Post-hoc-Punkte H1–H25 (überall "offen"). Neu gefunden: ein Rundungsfehler in der E3-Leave-one-report-out-Tabelle (gering, N1) und drei Textpunkte, die vor Veröffentlichung zu präzisieren sind (N2–N4).
+
+Die Skript-Diff-Prüfung bestätigt: In `02_auswertung.R` wurden ausschließlich Kommentarzeilen (H-Nummerierung im Kopf) geändert; Rechnung und Ausgaben von 02 sind unverändert (`run_log.txt` Abschnitt 7 sagt dasselbe).
+
+## 1. Auflagen einzeln
+
+| Auflage | Status | Fundstelle / Befund |
+|---|---|---|
+| B1 (H3, Templates/EEA) | unverändert, bewusst offen; im Bericht klar genug benannt | Analysebericht Abschnitt 7, Punkt "Offene, methodenrelevante Festlegungen": nennt n = 10, leere Horizontklassen (n = 2 bzw. 1), nur interpolierte Zieljahre 2016–2019 (S5, 16 Paare) und dass bei Anerkennung der Templates neu gerechnet werden müsste. Protokoll Abschnitt E: "Nicht umgesetzt". Ausreichend. Entscheidung Daniel steht aus. |
+| B2 (H4/H6, Sektoren) | unverändert, bewusst offen; im Bericht klar genug benannt | Analysebericht Abschnitt 4: Block "E4 ist vorläufig" mit (a) PB2015 nur 2 von 6 Sektoren, ungleiche n, MRE nicht direkt vergleichbar, (b) PB2021/2023 nur Namensgleichheit, (c) keine Zweitübertragung, (d) Abfall nicht belastbar; Hinweis, dass Sektorergebnisse nicht in Überschrift, Teaser, Grafik 1 gehören. Ausreichend. Die KSG-Definitionen für PB2021/2023 wurden weiterhin nicht geprüft (im Protokoll benannt). |
+| B3 (Abfall-Faktoren) | umgesetzt, mit einer Einschränkung | Analysebericht Abschnitt 3 und 5, `abfall_faktoren_beschreibung.csv`, `faktorbereich_je_sektor.csv`. Die Zuschreibung "Inventarrevision/GWP-Wechsel" ist gestrichen; die Ursache wird als "nicht belegt" bezeichnet, Hypothesen als ungeprüft markiert, Sektor als nicht belastbar gekennzeichnet. Zahlen nachgeprüft: Bericht/Inventar 13,6/10,5; 11,6/9,1; 10,5/7,9; 9,7/7,1; 10,1/6,6 Mt; Überschuss 28–53 % bezogen auf den Inventarwert (mein früherer Wert 23–35 % war auf den Berichtswert bezogen; beides rechnerisch richtig); Faktorbereiche der anderen Sektoren 0,948–1,026. Einschränkung: Die SAP-Pflicht "Ursache laut Bericht/Inventar" ist weiterhin nicht erfüllt (nicht nachgeschlagen), dies ist offen benannt. Das Argument, ein GWP-Wechsel würde einen höheren Inventarwert erwarten lassen (CH4-GWP SAR 21, AR4 25, AR5 28), ist plausibel, aber nicht belegt; es steht als Hinweis, nicht als Befund. Akzeptabel. |
+| B4 (Band, SAP 5.4) | umgesetzt (Prüfung nachgeholt), Handübertragung bestätigt | Siehe Abschnitt 2. |
+| B5 (S2) | teilweise: Begründung korrigiert, S2 nicht nachgeholt | Analysebericht Abschnitt 5 ("S2 nicht durchgeführt: Das ist eine Unterlassung, keine Datenlage"), Protokoll H21. Angesichts der offenen Definitionsfrage R5 (EU Januar vs. UNFCCC April) vertretbar, die Entscheidung liegt bei Daniel. Offen. |
+| B6 (S6) | umgesetzt, Begründung nachvollziehbar belegt, mit Vorbehalt | Siehe Abschnitt 2. |
+| B7 (H1/E3) | umgesetzt, mit Rundungsfehler in einer Zelle | `diag_e3_leave_one_report_out.csv`, Analysebericht E3; Herkunft PB2015-MWMS genannt. Fehler siehe N1. |
+| B8 (H2 in einem Satz) | umgesetzt | Protokoll H25 und Analysebericht. |
+| B9 (H7–H17) | keine Auflage; unverändert in Ordnung | |
+| B10 (Nummerierung, run_log) | umgesetzt | Skriptkopf 02 jetzt H1–H25-konform (H6 = R6, H10 = Amendment 2, H11 = Mindestzellgröße, H12–H17 ergänzt); `run_log.txt` nennt SAP v1.2 und H1–H17 plus H18–H25. Entscheidungsspalte weiterhin überall "offen" (Sache von Daniel). |
+| B11 (PB2021/23 nur Namensgleichheit) | nicht behoben, aber im Bericht sichtbar | siehe B2. |
+| D1 (Satz "gemeinsamer Ausschlag 2020") | umgesetzt | Analysebericht Abschnitt 6 Nr. 4: neue Formulierung durch die Zahlen gedeckt (MRE 10,9 auf 10,4 ohne 2020, Median 12,6 auf 13,9, S3b 11,6; keine Ursachenzuschreibung). |
+| L1 (Limitationen) | umgesetzt | Analysebericht Abschnitt 7: kleine Primärpopulation (H3), 6 von 10 Paaren aus PB2021/PB2023, Corona-Schock gilt dort nicht gleich, h_alt = 0/1, Abfall. |
+| G* (R1 Rundung, R2 Grafik, R3 Tabelle 2) | R1 umgesetzt, R2 teilweise, R3 nicht geprüft | R1: Mt im Analysebericht ganzzahlig, ausdrückliche Rundungsnotiz (Prüfdateien bewusst mit Nachkommastellen, zulässig). R2: Legende steht jetzt unten links ohne Überdeckung der Pfade, "Zieljahr 2020" beschriftet; die Jahresbeschriftungen "2017", "2021", "2023" liegen aber weiterhin auf Linien bzw. Markern (gering, optisch). |
+
+## 2. `03_ergaenzungen.R` und neue Outputs
+
+**Sensitivitätsband (B4).** Ich habe die drei Tabellen selbst per pdftotext gelesen:
+- PB2015 Tab. 3-77 (PDF-S. 196), Gesamtemissionen 2020: MMS 840,5; 826,5; 842,2; 848,8; 825,1. Stimmt.
+- PB2017 Tab. 3-133 (PDF-S. 274), Gesamtemissionen 2020: MMS 816,4; 829,1; 826,9; 816,9; 780,6. Stimmt.
+- PB2019 Tab. 106 (PDF-S. 216), Gesamtemissionen 2020: MMS 835,6; 822,8; 833,7; 830,4. Stimmt.
+Das Textlayout der PDFs ist verschachtelt; die Zuordnung der einzelnen Werte zu den Sensitivitätsnamen ist aus der Textebene nicht lückenlos nachprüfbar (die Werte stehen in Reihenfolge, meist knapp über dem Label). Das ändert nichts am Ergebnis: Das Band ist die Spannweite der Einzelwerte, und die Wertemengen sind bestätigt. Nicht geprüft habe ich die Fußnote 3 (Tab. 1-4) von PB2017, auf der die Übernahme des Wertes "weniger Stromexport" aus dem MWMS für das MMS beruht (780,6, zugleich das Bandminimum von PB2017).
+Nachrechnung: Faktor mal Spannweite = 805,3–828,4 (PB2015), 775,1–823,3 (PB2017), 813,7–824,5 (PB2019); Abstand Ist (731) zum bereinigten Bandminimum −74,3 / −44,2 / −82,8 Mt. Stimmt mit `e1_ist_im_sensitivitaetsband.csv` und den Textangaben (74/44/83 Mt) überein. Der PB2015-Korridor (−31,9 % bis −35,0 % gegenüber 1990) lässt sich aus der MMS-Prozentangabe (−32,7 %) zurückrechnen (850 bzw. 812 Mt); der Hinweis im Analysebericht, er sei nur näherungsweise ableitbar, ist korrekt; PDF-S. 22 habe ich nicht gelesen.
+Die Aussage "Ist-Wert 731 Mt unterhalb der gesamten Spannweite" ist durch die Zahlen gedeckt, auch unbereinigt. Der Bericht nennt die Sensitivitäten ausdrücklich keine statistischen Unsicherheitsbänder (gut); siehe N2.
+
+**Abfall-Beschreibung.** Zahlen siehe B3 oben, stimmen mit meiner früheren Nachrechnung überein.
+
+**E3-LOO.** Nachgerechnet mit ungerundeten D-Werten: ohne PB2015 Median −1,47 (3 von 3 negativ); ohne PB2023 −1,47 (2 von 3); **ohne PB2017 Median −1,57, gerundet −1,6 (3 von 4)**; Datei und Analysebericht nennen −1,5 (N1).
+
+**S6-Prüfung.** Ich habe `thg-projektionen_2024_ergebnisse_kompakt.pdf` gelesen: Die Daten beruhen auf dem Inventar "einschließlich der Zeitreihe bis 2022", die Vorjahresschätzung 2023 "flossen nicht in die Modellierung ein" (PDF-S. 8). J_b der Projektionsdaten 2024 ist damit 2022; meine Vermutung 2023 in B6 war falsch, der analyst hat sie zutreffend korrigiert. Für die Projektionsdaten 2025 steht im Projektionsbericht 2025 (S. 54) "Daten für die Jahre 1990 bis 2023"; Basisjahr 2023 und Datenblatt ab 2025 passen zur Aussage "kein Zieljahr im Fenster". Die Begründung ist tragfähig. Vorbehalt: "kein P(b,s,2022,k)" gilt nur für die beschafften Dateien (Hauptbericht 2024 nicht beschafft, historische Werte nur in Abbildungen); ob der Hauptbericht eine Tabelle mit dem Wert enthält, ist ungeprüft. Das ist eine Beschaffungsfrage wie bei S2, im Bericht aber offen so benannt. Die Zusatzinfo (2024-Wert 677,4 Mt gegenüber Ist 649,8 Mt) stimmt mit dem xlsx überein, ist als Post-hoc-Information gekennzeichnet und in keiner Kennzahl.
+
+## 3. Neue Befunde der Nachprüfung
+
+**N1 (gering) – Rundungsfehler E3-LOO ohne PB2017.** `diag_e3_leave_one_report_out.csv`, Zeile "2017": median_D = −1,5; richtig −1,6 (−1,57). Die Aussage "Median D −1,5 in allen Varianten" (Analysebericht, Protokoll H24) stimmt damit für diese Variante nicht ganz. Die Substanz (Median etwa −1,5 bis −1,6, Vorzeichen stabil) bleibt. Ursache vermutlich Rundung auf einer bereits gerundeten Eingabe (`e3_einzelwerte.csv`). Vorschlag: Median aus ungerundeten Werten bilden (03, Abschnitt C), Text und H24 anpassen.
+
+**N2 (gering) – Interpretationsgrenze beim Band-Befund.** Der Analysebericht sollte ausdrücklich sagen, dass die berichtseigenen Sensitivitäten nur Wachstum, Bevölkerung, Preise und Stromexport variieren und kein Pandemie- oder Krisenszenario enthalten; "Ist lag unterhalb aller Sensitivitäten" ist keine Aussage über die Qualität der Modellierung (SAP 8.1). Die aktuelle Formulierung ist neutral, der Satz zur Interpretationsgrenze fehlt. Vor der Artikelfassung ergänzen.
+
+**N3 (gering) – PB2017-Bandminimum.** Das Minimum 780,6 stammt aus einer MWMS-Übernahme (laut Bericht Fußnote 3; H18 nennt das). Bei Nennung des Bandes im Artikel erwähnen; ohne diesen Wert läge das Minimum bei 816,9, die Aussage "Ist unterhalb" bliebe unverändert.
+
+**N4 (gering) – Grafik 1.** Jahresbeschriftungen "2017", "2021", "2023" liegen weiter auf Linien (siehe G*, R2).
+
+## 4. Gesamturteil und offene Punkte
+
+- Alle Auflagen, die der analyst umsetzen konnte, sind umgesetzt oder begründet zurückgestellt; kein neuer kritischer oder hoher Befund. Primärergebnisse E1 und E2 unverändert.
+- Gate nach CLAUDE.md (Validierungsbericht ohne kritisch): erfüllt.
+- **Offen, vor einer Veröffentlichung von Daniel zu entscheiden:** B1/H3 (Zählen der Templates); B2/H4 und H6 (Sektorzuordnung, Zweitübertragung, KSG-Definitionen PB2021/2023); S2 (nachholen oder bewusst weglassen, Definition "erste Submission mit t"); J_b = 2022 für PB2024 (nur falls S6 je gerechnet werden soll); Eintrag der Entscheidungen zu H1–H25 in der Protokollspalte.
+- **Vor der Artikelfassung vom analyst zu erledigen:** N1 (Median −1,6 korrigieren), N2 und N3 (zwei Sätze), optisch N4.
+- Nicht erneut geprüft in dieser Nachprüfung (soweit nicht oben ausdrücklich genannt): alles, was in Abschnitt 8 oben als nicht geprüft aufgeführt ist, insbesondere KSG-Definitionen, Sektorwerte der Berichte, Fußnote 3 von PB2017 Tab. 1-4, PDF-S. 22 von PB2015, Grafiken 1b, 2, 3 und `tabelle2_paare_gesamt.csv`. `03_ergaenzungen.R` habe ich in den Teilen Band, Abfall und LOO gelesen und die Ergebnisse unabhängig nachgerechnet; die Teile S6 und Grafik habe ich nur über Ausgaben bzw. Ansicht geprüft, das Skript nicht neu ausgeführt.
