@@ -78,3 +78,12 @@ Nicht umgesetzt: Entscheidungen zu B1 (H3) und B2 (H4/H6) (liegen bei Daniel), P
 ## F. Entscheidungen von Daniel Saure (11.11.2026)
 
 Auf die Frage zu B1 (H3) und B2 (H4/H6) hat Daniel Saure im Chat geantwortet: „Empfehlung übernehmen“. Gemeint ist die zuvor vorgelegte Empfehlung: **B1:** Datenbasis so lassen wie vorab festgelegt, die kleine Primärpopulation (n = 10, davon 6 aus PB2021 und PB2023) als Limitation nennen. **B2:** Sektorergebnisse (E4) nur als Anhang mit Vorbehalt (vorläufig, nicht belastbar), der Haupttext stützt sich auf die Gesamtemissionen. Eingetragen sind nur H3, H4 und H6. **Nicht entschieden und weiter „offen“:** S2 (B5), alle übrigen Einträge H1, H2, H5 und H7 bis H25, J_b = 2022 für PB2024. Das ersetzt nicht das Lesen des Gesamtberichts und die Freigabe der Ergebnisse.
+
+## G. Änderungen nach dem Faktencheck des Artikelentwurfs (12.11.2026)
+
+Anlass: `Reports/2026-11-12-prognose-check/faktencheck.md` und `faktencheck_nachpruefung1.md`. Nur Beschriftung und Rundung, keine Methode und keine Kennzahl.
+
+| Nr. | Befund | Änderung | Entscheidung Daniel Saure |
+|---|---|---|---|
+| H26 | Faktencheck H1/N6: E1-Tabelle im Analysebericht nannte für PB2017 die bereinigte Projektion 811 Mt, `e1_ergebnisse.csv` und `tabelle2_paare_gesamt.csv` nennen 810 Mt (Abstand 79 und RE\* 10,9 % unverändert). | Analysebericht, Tabelle E1: 811 → 810. Im Text des Berichts an anderer Stelle genannte 811 Mt (PB2017-Band bereinigt ohne MWMS-Übernahme: 816,9 × 0,993 = 811) bleiben richtig. Post-hoc. | offen |
+| H27 | Faktencheck (Grafik 3): Legende nannte „Inventarrevision/GWP des Ausgangsjahres“ als Ursache des Startpunkts; unbelegt (siehe H19). | Neues Skript `04_grafik3_beschriftung.R` zeichnet Grafik 3 neu (Legende „Abstand im Ausgangsjahr“). Daten aus `output/e5_zerlegung.csv` (auf ganze Mt gerundet), daher Balken bis 0,5 Mt abweichend von der ursprünglichen Grafik. Skripte 02 und 03 unverändert. Post-hoc. | offen |
