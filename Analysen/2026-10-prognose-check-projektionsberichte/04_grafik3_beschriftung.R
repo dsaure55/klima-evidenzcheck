@@ -36,6 +36,6 @@ axis(1, at = seq_len(nrow(d3)), labels = paste0("Bericht ", d3$Bericht, "\nFakto
 legend("topright", legend = c("Startpunktabweichung (Abstand im Ausgangsjahr)", "additive Verlaufsabweichung", "E_unb gesamt"),
        fill = c("#4575b4", "#fdae61", NA), pch = c(NA, NA, 18), border = c("grey30", "grey30", NA), cex = 0.75, bg = "white")
 title(main = "Grafik 3: Zerlegung der unbereinigten Abweichung fuer Zieljahr 2020 (gesamt, MMS)", line = 2.2, cex.main = 1.0)
-mtext("Ohne Bereinigung um spaetere Inventarrevisionen; Zerlegung ist keine Ursachenanalyse", side = 3, line = 0.6, cex = 0.7)
+mtext("Ohne Umrechnung auf das heutige Inventar des Ausgangsjahres; Zerlegung ist keine Ursachenanalyse", side = 3, line = 0.6, cex = 0.7)
 dev.off()
 cat("Grafik 3 neu beschriftet:", format(Sys.time(), "%Y-%m-%d %H:%M:%S"), "\n")
