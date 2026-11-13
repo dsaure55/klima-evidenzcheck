@@ -153,7 +153,7 @@
 
 [2] Umweltbundesamt (UBA): Emissionsdaten 2025 (Stand 14.03.2026), bereitgestellt über klimadashboard.de (CC BY 4.0). https://klimadashboard.de/emissionen
 
-[3] Expertenrat für Klimafragen: Prüfbericht zu den Emissionsdaten 2025 und den Projektionsdaten 2026, veröffentlicht 18.05.2026 (Gesamtbudget 2021–2030: 6.199 Mt; Puffer 4,5 Mt; Pfad mit gleicher Über- und Unterschreitungswahrscheinlichkeit 60–100 Mt über Budget). https://expertenrat-klima.de/publikationen/pruefbericht-zur-berechnung-der-deutschen-treibhausgasemissionen-fuer-das-jahr-2025-und-zu-den-projektionsdaten-2026
+[3] Expertenrat für Klimafragen: Prüfbericht zu den Emissionsdaten 2025 und den Projektionsdaten 2026, veröffentlicht 15.05.2026 (Gesamtbudget 2021–2030: 6.199 Mt; Puffer 4,5 Mt; Pfad mit gleicher Über- und Unterschreitungswahrscheinlichkeit 60–100 Mt über Budget). https://expertenrat-klima.de/publikationen/pruefbericht-zur-berechnung-der-deutschen-treibhausgasemissionen-fuer-das-jahr-2025-und-zu-den-projektionsdaten-2026
 
 [4] Klima Kompass: Analysebericht Expertenrat-Budgetabgleich 2021–2030, Fassung 5b (Analyse am 30.10.2026 von Daniel Saure freigegeben; Validierungsbericht ohne kritischen Befund im Endstand; ein früher Rechenfehler in den ARIMA-Bereichen wurde bei der Validierung gefunden und behoben), und SAP v1.1 (eingefroren 29.08.2026, Erratum 1 freigegeben 23.10.2026), `Analysen/2026-08-expertenrat-budgetabgleich/`. Halbjahreswert: Agora Energiewende, Halbjahresbilanz 2026 (Pressemitteilung 28.08.2026).
 
