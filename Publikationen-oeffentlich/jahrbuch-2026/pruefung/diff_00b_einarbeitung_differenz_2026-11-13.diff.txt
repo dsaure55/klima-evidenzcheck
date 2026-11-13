@@ -1,0 +1,52 @@
+diff --git a/C:/Users/dsaur/AppData/Local/Temp/00b_v03.md b/kurz/00b-ueberblick.md
+index bf79bd9..cfbfb9e 100644
+--- a/C:/Users/dsaur/AppData/Local/Temp/00b_v03.md
++++ b/kurz/00b-ueberblick.md
+@@ -1,5 +1,5 @@
+ # Auf einen Blick – Das Jahr in zehn Fragen
+~
+ **KURZFASSUNG-ENTWURF v0.3 (13.11.2026; gegenüber v0.2 geändert: Zeile zu Kapitel 7 statt Platzhalter (Budget-Satz aus Kapitel 7 „Kurz gesagt“, Prognose-Check-Satz aus Kapitel 7 und 8), Semikolons in Zeilen zu Kapitel 2, 4, 5, 7 und 9 zu Punkten, Aussagen unverändert; Differenzdatei `pruefung/diff_00b_v03_2026-11-13.diff.txt`, Differenzprüfung 
+-durch den faktenpruefer und
++als Datei `pruefung/faktencheck_kurz_00b_differenz_v03_2026-11-13.md`: ok mit Auflagen, 0 kritisch, 2 hoch, 2 mittel, 7 gering; eingearbeitet: H1, H2, M1 (Zeile zu Kapitel 7 mit Umrechnung, Einschränkungen, ohne „zeigt“), M2 (Emissionsbudget eingeführt); die Einarbeitung ist nicht erneut geprüft;
+  Freigabe 
+-stehen
++steht
+  aus) und v0.2 (28.10.2026), neu geordnet nach Daniels Reihenfolge (28.10.2026); nicht geprüft, nicht freigegeben. Jede Zeile fasst den Kurz-gesagt-Absatz des Kapitels 
+-zusammen;
++zusammen (die Zeile zu Kapitel 7 zusätzlich den Prognose-Check aus dem Kapiteltext);
+  bei Änderungen an einem Kapitel muss die Zeile mitgeändert werden (Differenzprüfung nach Fertigstellung der Kapitel). Der Text der Zeilen ist aus v0.1 übernommen, nur die Kapitelnummern haben sich geändert. Seitenverweise folgen beim Satz. Vor Satz/Export: diese Kopfzeile entfernen.**
+~
+ 
+~
+ ## Teil 1 – Was stimmt
+~
+ 
+~
+@@ -11,7 +11,7 @@
+ | 4 | Reicht die Energie: Gas im Winter, Strom bei Dunkelflaute? | Ein Füllstand in Prozent sagt wenig. Wichtig sind Menge, Temperatur und laufende Lieferungen. Die heute installierten Batteriespeicher hätten die Dunkelflauten seit 2015 in unserer Rechnung nur zu rund 0,5 bis 1 Prozent abdecken können (mit nachträglich bereinigten Kapazitätsdaten, ohne Nachladung und ohne Importe). |
+~
+ | 5 | War dieser Sommer normal, und was sagen die Zahlen? | „Normal“ hängt vom Vergleich ab. Mit 19,6 °C war der Sommer 2026 der zweitwärmste seit 1881. Die vom RKI geschätzten 16.000 hitzebedingten Sterbefälle im Sommerhalbjahr liegen deutlich außerhalb der Bandbreite seit 1992. Warum, sagen diese Zahlen nicht. |
+~
+ | 6 | Wo steht die Welt beim 1,5-Grad-Ziel, und kann man CO₂ einfach aus der Luft holen? | Ein Monat über 1,5 Grad bedeutet nicht, dass das Ziel gerissen ist. Für den Weg zurück auf 1,5 Grad wären bis 2030 laut UNEP minus 18 Prozent nötig (gegenüber 2025), die neuen Klimazusagen bringen bei voller Umsetzung 5 bis 8 Prozent. CO₂-Entnahme ergänzt die Minderung, ersetzt sie aber nicht. |
+~
+ | 7 | Schafft Deutschland sein Klimaziel? | Das hängt vom Zeitfenster ab. Schreibt man den Trend seit 1990 fort, wird das Ziel für 2040 deutlich verfehlt. Schreibt man die letzten zehn Jahre fort, liegt es noch im Unsicherheitsbereich. Beides ist keine Prognose. Ob Deutschland sein 
+-Budget
++Emissionsbudget für 2021
+  bis 2030 einhält, kann unsere Rechnung nicht entscheiden. Der Prognose-Check 
+-zeigt, dass für
++hat frühere Projektionen der Bundesregierung mit den späteren Werten verglichen. Für
+  2020 
++lag
+  die Projektion in allen drei auswertbaren Berichten 
++darüber (umgerechnet auf das heutige Inventar ihres Ausgangsjahres). Das ist eine kleine Auswahl und sagt nichts
+  über 
+-dem tatsächlichen Wert lag.
++künftige Projektionen.
+  |
+~
+ | 8 | Was kommt 2027, und woran kannst du uns messen? | Wir legen uns vorab fest, mit Spanne, Bewertungsregel und Zeitstempel, und melden später „getroffen“ oder „nicht getroffen“. |
+~
+ 
+~
+ ## Teil 2 – Was nicht
+~
