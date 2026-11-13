@@ -1,0 +1,145 @@
+diff --git a/C:/Users/dsaur/AppData/Local/Temp/06_v02.md b/kurz/06-klimaziel.md
+index 10d9f90..0adef33 100644
+--- a/C:/Users/dsaur/AppData/Local/Temp/06_v02.md
++++ b/kurz/06-klimaziel.md
+@@ -1,5 +1,5 @@
+ # Kapitel 7 – Schafft Deutschland sein Klimaziel?
+~
+ **KURZFASSUNG-ENTWURF v0.2 (13.11.2026), gekürzt aus Kapitel 4 der Langfassung; nicht freigegeben, erneute Freigabe durch Daniel Saure nach Volltextlektüre nötig. Gegenüber v0.1 aktualisiert: Der Abschnitt zum Expertenrat-Budgetabgleich beruht jetzt auf der am 30.10.2026 freigegebenen Analyse (Fassung 5b) und dem am selben Tag veröffentlichten Artikel; der Abschnitt zum Prognose-Check nennt die am 12.11.2026 veröffentlichten Ergebnisse (nur Zahlen und Aussagen des Artikels, wie in Kapitel 10); der Vorbehalt „vorläufig“ und die Platzhalter sind entfernt. Offen: Die Intervalle zum 2040-Trend weichen vom Artikel vom 27.08.2026 ab (Kapitel 10, Fall 6). Faktencheck zu v0.1: pruefung/faktencheck_kurz_kap06.md (ok mit Auflagen, mittlere Auflagen eingearbeitet am 28.10.2026). Stilpass 28.10.2026 (Stilregeln v0.3), Differenzprüfung 09.11.2026. 
+-Die Änderungen von v0.2 sind noch
++Faktencheck v0.2: pruefung/faktencheck_kurz_kap06_v02_2026-11-13.md (0 kritisch, 2 hoch, 5 mittel, 7 gering); eingearbeitet am 13.11.2026: H1 (Grafik 2 neu erzeugt, ohne „vorläufig“), M1 bis M5, G1 bis G4; offen: H2 (Entscheidung Daniel Saure, ob die
+  nicht 
+-vom faktenpruefer geprüft (Differenzdatei folgt in pruefung/).
++durchgeführten Rechnungen S2 und S6 mit Grund genannt werden müssen), G5 bis G7, Nachprüfung der Einarbeitung, Freigabe.
+  Vor Satz/Export entfernen.**
+~
+ 
+~
+ **Kurz gesagt:** Deutschland hat sich gesetzlich verpflichtet, die Treibhausgasemissionen bis 2040 um mindestens 88 Prozent gegenüber 1990 zu senken, das sind höchstens rund 150 Millionen Tonnen CO₂-Äquivalent. Ob das Tempo dafür reicht, hängt davon ab, welche Jahre man betrachtet. Schreibt man den Trend seit 1990 fort, wird das Ziel deutlich verfehlt. Schreibt man nur die letzten zehn Jahre fort, liegt das Ziel noch im Unsicherheitsbereich. Beides ist keine Prognose. Ob Deutschland sein Budget bis 2030 einhält, kann unsere Rechnung nicht entscheiden.
+~
+ 
+~
+@@ -29,9 +29,9 @@ Die Intervalle sind eher zu eng. Das Hauptverfahren unterschätzt die Unsicherhe
+ 
+~
+ ## Wie weit sind wir bis 2030? Der Expertenrat-Budgetabgleich
+~
+ 
+~
+ Neben dem Ziel für 2040 gibt es ein Budget für die Jahre 2021 bis 2030. Das Klimaschutzgesetz erlaubt in dieser Zeit insgesamt 6.199 Millionen Tonnen CO₂-Äquivalent (ohne Landnutzung). Der Expertenrat für Klimafragen hat im Mai 2026 die Daten der Bundesregierung geprüft. Nach den Projektionsdaten 
+-bleibt
++bliebe
+  Deutschland knapp unter dem Budget, mit einem Puffer von 4,5 Millionen Tonnen (0,07 
+-Prozent).
++Prozent) nach der Rechnung des Expertenrats. Das Umweltbundesamt nennt 3,8 Millionen Tonnen, aus einer anderen Berechnung [6].
+  Der Expertenrat weist aber darauf hin, dass ein Pfad, der ebenso wahrscheinlich über- wie unterschritten wird, nach seiner Einschätzung etwa 60 bis 100 Millionen Tonnen über dem Budget läge [3].
+~
+ 
+~
+ Wir wollten wissen, was eine eigene, einfache Trendfortschreibung dazu sagt. Dafür haben wir vorab einen Analyseplan festgelegt und eingefroren und die beiden Zeitfenster von oben benutzt (dazu kommt ein drittes, 2020 bis 2025, das nur beschreibend dient) [4]. Den Plan haben wir am 29. August 2026 eingefroren, gerechnet haben wir am 23. Oktober, die Analyse wurde am 30. Oktober freigegeben und der Artikel dazu am selben Tag veröffentlicht [4][6]. 
++Zur Offenheit gehört: Die Trendmodelle stammen aus der explorativen Analyse vom 27. August, und der Plan hielt 625 Millionen Tonnen fälschlich für den Emissionswert 2025. Ein Nachtrag zum Plan (Erratum), der nach dem ersten Rechenlauf geschrieben wurde, hält das fest [4][6].
+~
+ 
+~
+ Das Ergebnis hat drei Teile. Der Halbjahreswert 2026 liegt näher am langen Trend. Agora Energiewende schätzt die Emissionen im ersten Halbjahr 2026 auf 327 Millionen Tonnen, rund 7 Millionen weniger als im ersten Halbjahr 2025. Nach unserer Rechnung aus den gerundeten Agora-Zahlen sind das rund 2,1 Prozent weniger (Agora selbst nennt rund 2 Prozent). Agora führt den Rückgang größtenteils auf die gestiegenen fossilen Energiepreise zurück. Das ist näher an der mittleren Jahresrate des Langfrist-Trends (minus 1,5 Prozent) als an der des 10-Jahres-Trends (minus 3,6 Prozent). Das ist ein Wert aus einer vorläufigen Schätzung und eine einzelne Beobachtung, kein Test [4].
+~
+ 
+~
+@@ -45,11 +45,13 @@ Drittens ist der Wert für den Langfrist-Trend mit Vorsicht zu lesen. Das Modell
+ 
+~
+ Unsere Fortschreibung bestätigt den Expertenrat nicht und widerlegt ihn nicht. Das Ergebnis hängt von Zeitfenster und Methode ab. Dazu ein Vorbehalt: Eine einfache Gerade ist nicht die Methode des Expertenrats. Der arbeitet mit Sektorzielen, Sonderregeln und Übertragungen zwischen Jahren.
+~
+ 
+~
+ ## Ein 
+-Maßstab für Prognosen:
++Blick zurück:
+  der Prognose-Check
+~
+ 
+~
+ Ein verwandter Evidenzcheck blickt zurück. Der Prognose-Check vergleicht die Projektionen der Bundesregierung aus früheren Jahren (Projektionsberichte 2015 bis 2023) mit 
+-den Emissionen, die später tatsächlich inventarisiert (gemeldet) wurden.
++dem heutigen Treibhausgasinventar des Umweltbundesamts (Stand 2026).
+  Den Analyseplan haben wir am 22. Oktober 2026 eingefroren, den Check am 12. November 2026 veröffentlicht [5][7].
+~
+ 
+~
+ Für das Jahr 2020 lag die Projektion in allen drei auswertbaren Berichten (2015, 2017 und 2019) über dem tatsächlichen Wert, um 10,9 bis 13,0 Prozent. 
++Die Projektionen sind dabei auf den heutigen Inventarwert ihres Ausgangsjahres umgerechnet, damit der Vergleich den Verlauf misst.
+  Der tatsächliche Wert für 2020 liegt bei 731 Millionen Tonnen CO₂-Äquivalent. Über alle zehn auswertbaren Vergleiche aus fünf Berichten lag die Projektion im Mittel 10,9 Prozent zu 
+-hoch, in
++hoch. In
+  neun von zehn 
+-Fällen
++Vergleichen lag sie über dem tatsächlichen Wert
+  [7].
+~
+~
+ Die Zahlen gelten für diese kleine 
+-Auswahl, die
++Auswahl. Die
+  Vergleiche sind nicht unabhängig voneinander. Eine Projektion ist eine bedingte Rechnung und keine Vorhersage. 
++Das Jahr 2020 war von der Pandemie geprägt, ob sie die Abweichung erklärt, lässt sich aus den Zahlen nicht ablesen. Wir sagen nicht, wer wo falsch lag, und nennen keine Ursachen. Zwei Rechnungen aus dem Analyseplan des Checks haben wir nicht durchgeführt, welche, steht im Artikel [7].
+  Mehr 
+-dazu
++zum Register für unsere eigenen Vorhersagen
+  in Kapitel 8.
+~
+ 
+~
+ ## Was heißt das für dich?
+~
+ 
+~
+@@ -62,7 +64,7 @@ Für das Jahr 2020 lag die Projektion in allen drei auswertbaren Berichten (2015
+ Wir haben keine Prognose abgegeben, ein „Treffer“ ist deshalb nicht definiert. Zwei Dinge können wir dennoch sagen.
+~
+ 
+~
+ - Die Zahlen stimmen mit unserer Rechnung überein, bis auf die Intervalle. Bei der Wiederholung der Rechnung ergaben sich dieselben 486 und 207 Millionen Tonnen für 2040. Im Artikel vom 27. August passen aber zwei Bereichsangaben nicht zur Rechnung. Für den Langfrist-Trend stand „407–598“, aus der Rechnung folgen 407 bis 566 (die 598 ist die Obergrenze des ARIMA-Intervalls). Für den 10-Jahres-Trend stand „16–328“, aus der Rechnung folgen 86 bis 328 (die 16 ist die Untergrenze des ARIMA-Intervalls). An den Schlüssen ändert das nichts. Es steht deshalb auch in Kapitel 10.
+~
+ -
+-Ein Prüfstein für Prognosen liegt inzwischen vor.
+  Der Prognose-Check 
+-zeigt rückblickend,
++(siehe oben) hat zurückgeschaut,
+  wie
+-gut frühere Projektionen
+  die 
+-Wirklichkeit trafen (siehe oben).
++Projektionen der Bundesregierung abschnitten. Er sagt nichts über künftige Projektionen.
+  Der geplante Eintrag zu den deutschen Emissionen 2027 (Kapitel 8) legt uns auf eine eigene Vorhersage fest.
+~
+ 
+~
+ ## Woher wir das wissen
+~
+ 
+~
+@@ -72,8 +74,8 @@ Datenquelle ist das Umweltbundesamt, bereitgestellt über klimadashboard.de (CC
+ 
+~
+ [1] Klima Kompass: „Erreicht Deutschland sein Klimaziel 2040? Die Antwort hängt vom Blickwinkel ab“, 27.08.2026. https://klimaevidenzcheck.substack.com/p/erreicht-deutschland-sein-klimaziel
+~
+ [2] Umweltbundesamt (UBA): Emissionsdaten 2025 (Stand 14.03.2026), bereitgestellt über klimadashboard.de (CC BY 4.0). https://klimadashboard.de/emissionen
+~
+ [3] Expertenrat für Klimafragen: Prüfbericht zu den Emissionsdaten 2025 und den Projektionsdaten 2026, veröffentlicht 18.05.2026 (Gesamtbudget 2021–2030: 6.199 Mt; Puffer 4,5 Mt; 
+-50/50-Pfad
++Pfad mit gleicher Über- und Unterschreitungswahrscheinlichkeit
+  60–100 Mt über Budget). 
+-https://expertenrat-klima.de
++https://expertenrat-klima.de/publikationen/pruefbericht-zur-berechnung-der-deutschen-treibhausgasemissionen-fuer-das-jahr-2025-und-zu-den-projektionsdaten-2026
+~
+ [4] Klima Kompass: Analysebericht Expertenrat-Budgetabgleich 2021–2030, Fassung 5b (Analyse am 30.10.2026 von Daniel Saure freigegeben; Validierungsbericht ohne kritischen 
+-Befund),
++Befund im Endstand; ein früher Rechenfehler in den ARIMA-Bereichen wurde dabei gefunden und behoben),
+  und SAP v1.1 (eingefroren 29.08.2026, Erratum 1 freigegeben 23.10.2026), `Analysen/2026-08-expertenrat-budgetabgleich/`. Halbjahreswert: Agora Energiewende, Halbjahresbilanz 2026 (Pressemitteilung 28.08.2026).
+~
+ [5] Klima Kompass: SAP „Prognose-Check #1: Wie treffsicher waren die Projektionsberichte der Bundesregierung?“, v1.2 (als v1.0 am 22.10.2026 eingefroren, ergänzt durch Amendments vom 22.10. und 09.11.2026), Analysebericht, Validierungsbericht und Freigabe der Ergebnisse (11.11.2026) (`Analysen/2026-10-prognose-check-projektionsberichte/`).
+~
+ [6] Klima Kompass: „Klimabudget bis 2030: Wie groß ist die Lücke – und wie sicher kann man das sagen?“, 30.10.2026. https://klimaevidenzcheck.substack.com/p/klimabudget-bis-2030-wie-gro-ist
+~
+ [7] Klima Kompass: „Wie gut trafen die Projektionsberichte der Bundesregierung die Emissionen von 2020?“, 12.11.2026. https://klimaevidenzcheck.substack.com/p/wie-gut-trafen-die-projektionsberichte
+~

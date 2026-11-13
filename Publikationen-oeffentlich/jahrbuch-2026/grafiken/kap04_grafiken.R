@@ -49,7 +49,7 @@ quelle("Quelle: Umweltbundesamt via klimadashboard.de (CC BY 4.0), Auswertung Kl
 dev.off()
 
 ## ---------------------------------------------------------------- Grafik 2
-# Analysen/2026-08-expertenrat-budgetabgleich, Analysebericht Fassung 4, Tabelle 2.2 (nur Fenster A und B).
+# Analysen/2026-08-expertenrat-budgetabgleich, Analysebericht Fassung 5b (Zahlen unveraendert gegenueber Fassung 4), Tabelle 2.2 (nur Fenster A und B).
 # Ueberschreitung des Budgets 2021-2030 (6199 Mt): Punktwert und 95-%-Intervall.
 png(file.path(out, "kap04_grafik2_budget_overshoot.png"), width = 2000, height = 1200, res = 200)
 theme_start(mar = c(8.5, 15, 4.6, 3))
@@ -72,7 +72,7 @@ farbe <- ifelse(typ == "P", blau, grau)
 segments(lo, y, hi, y, col = farbe, lwd = 3)
 points(pt, y, pch = 21, bg = farbe, col = "white", cex = 2.2, lwd = 1.5)
 titel("Unsere Fortschreibung entscheidet die Frage nicht",
-      "Budgetüberschreitung 2021–2030 nach Zeitfenster und Methode, Punktwert und 95-%-Intervall (vorläufig)")
-quelle("Quelle: Klima Kompass, Analyse Expertenrat-Budgetabgleich (Analysebericht Fassung 4, vorläufig, nicht freigegeben); Expertenrat für Klimafragen, Prüfbericht 2026 (Korridor 60–100). Blau: Parameterintervall (Unsicherheit des Trends), grau: Prognoseintervall (ARIMA, auch Streuung künftiger Jahre). Die beiden Typen sind nicht direkt vergleichbar. Fenster A: Modellartefakt durch Niveausprung.")
+      "Budgetüberschreitung 2021–2030 nach Zeitfenster und Methode, Punktwert und 95-%-Intervall")
+quelle("Quelle: Klima Kompass, Analyse Expertenrat-Budgetabgleich (Analysebericht Fassung 5b, am 30.10.2026 freigegeben); Expertenrat für Klimafragen, Prüfbericht 2026 (Korridor 60–100). Blau: Parameterintervall (Unsicherheit des Trends), grau: Prognoseintervall (ARIMA, auch Streuung künftiger Jahre). Die beiden Typen sind nicht direkt vergleichbar. Fenster A: Modellartefakt durch Niveausprung.")
 dev.off()
 cat("Grafiken geschrieben nach", out, "\n")
