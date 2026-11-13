@@ -1,0 +1,75 @@
+diff --git a/C:/Users/dsaur/AppData/Local/Temp/00b_vor.md b/kurz/00b-ueberblick.md
+index 6160030..bf79bd9 100644
+--- a/C:/Users/dsaur/AppData/Local/Temp/00b_vor.md
++++ b/kurz/00b-ueberblick.md
+@@ -1,22 +1,22 @@
+ # Auf einen Blick – Das Jahr in zehn Fragen
+~
+ **KURZFASSUNG-ENTWURF 
++v0.3 (13.11.2026; gegenüber v0.2 geändert: Zeile zu Kapitel 7 statt Platzhalter (Budget-Satz aus Kapitel 7 „Kurz gesagt“, Prognose-Check-Satz aus Kapitel 7 und 8), Semikolons in Zeilen zu Kapitel 2, 4, 5, 7 und 9 zu Punkten, Aussagen unverändert; Differenzdatei `pruefung/diff_00b_v03_2026-11-13.diff.txt`, Differenzprüfung durch den faktenpruefer und Freigabe stehen aus) und
+  v0.2 (28.10.2026), neu geordnet nach Daniels Reihenfolge (28.10.2026); nicht geprüft, nicht freigegeben. Jede Zeile fasst den Kurz-gesagt-Absatz des Kapitels zusammen; bei Änderungen an einem Kapitel muss die Zeile mitgeändert werden (Differenzprüfung nach Fertigstellung der Kapitel). Der Text der Zeilen ist aus v0.1 übernommen, nur die Kapitelnummern haben sich geändert. Seitenverweise folgen beim Satz. Vor Satz/Export: diese Kopfzeile entfernen.**
+~
+ 
+~
+ ## Teil 1 – Was stimmt
+~
+ 
+~
+ | Kapitel | Die Frage | Die Antwort in Kürze |
+~
+ |---|---|---|
+~
+ | 1 | Wie erkenne ich, ob eine Klimazahl etwas taugt? | Mit zehn Fragen, von „Wer sagt das, und woher stammt die Zahl?“ bis „Folgt daraus, was behauptet wird?“. |
+~
+ | 2 | Was kostet Klimapolitik, und wer zahlt? | Nach unserer Rechnung hob der Tankrabatt 91 bis 95 Prozent des CO₂-Preises auf Benzin auf. Die „6 Billionen Euro“ für die Klimaneutralität sind 
+-Bruttoinvestitionen; zusätzlich
++Bruttoinvestitionen. Zusätzlich
+  nötig sind laut KfW rund 65 Milliarden Euro pro Jahr. |
+~
+ | 3 | Ist Deutschland „zu klein, um zu zählen“? | Deutschland verursachte 2024 rund 1,3 Prozent der weltweiten Treibhausgasemissionen, aber alle Länder mit höchstens diesem Anteil zusammen fast ein Drittel. Das ist ein Gedankenexperiment, keine Schuldfrage. |
+~
+ | 4 | Reicht die Energie: Gas im Winter, Strom bei Dunkelflaute? | Ein Füllstand in Prozent sagt 
+-wenig; wichtig
++wenig. Wichtig
+  sind Menge, Temperatur und laufende Lieferungen. Die heute installierten Batteriespeicher hätten die Dunkelflauten seit 2015 in unserer Rechnung nur zu rund 0,5 bis 1 Prozent abdecken können (mit nachträglich bereinigten Kapazitätsdaten, ohne Nachladung und ohne Importe). |
+~
+ | 5 | War dieser Sommer normal, und was sagen die Zahlen? | „Normal“ hängt vom Vergleich 
+-ab:
++ab.
+  Mit 19,6 °C war der Sommer 2026 der zweitwärmste seit 1881. Die vom RKI geschätzten 16.000 hitzebedingten Sterbefälle im Sommerhalbjahr liegen deutlich außerhalb der Bandbreite seit 
+-1992; warum,
++1992. Warum,
+  sagen diese Zahlen nicht. |
+~
+ | 6 | Wo steht die Welt beim 1,5-Grad-Ziel, und kann man CO₂ einfach aus der Luft holen? | Ein Monat über 1,5 Grad bedeutet nicht, dass das Ziel gerissen ist. Für den Weg zurück auf 1,5 Grad wären bis 2030 laut UNEP minus 18 Prozent nötig (gegenüber 2025), die neuen Klimazusagen bringen bei voller Umsetzung 5 bis 8 Prozent. CO₂-Entnahme ergänzt die Minderung, ersetzt sie aber nicht. |
+~
+ | 7 | Schafft Deutschland sein Klimaziel? | Das hängt vom Zeitfenster 
+-ab:
++ab.
+  Schreibt man den Trend seit 1990 fort, wird das Ziel für 2040 deutlich 
+-verfehlt; schreibt
++verfehlt. Schreibt
+  man die letzten zehn Jahre fort, liegt es noch im Unsicherheitsbereich. Beides ist keine Prognose. 
+-[Expertenrat-Abgleich und Prognose-Check: Stand beim Satz ergänzen.]
++Ob Deutschland sein Budget bis 2030 einhält, kann unsere Rechnung nicht entscheiden. Der Prognose-Check zeigt, dass für 2020 die Projektion in allen drei auswertbaren Berichten über dem tatsächlichen Wert lag.
+  |
+~
+ | 8 | Was kommt 2027, und woran kannst du uns messen? | Wir legen uns vorab fest, mit Spanne, Bewertungsregel und Zeitstempel, und melden später „getroffen“ oder „nicht getroffen“. |
+~
+ 
+~
+ ## Teil 2 – Was nicht
+~
+ 
+~
+ | Kapitel | Die Frage | Die Antwort in Kürze |
+~
+ |---|---|---|
+~
+ | 9 | Wie entsteht ein Evidenzcheck, und welche Rolle spielt KI? | Erst festlegen, dann rechnen, dann unabhängig prüfen. KI schreibt Pläne, Code und 
+-Entwürfe;
++Entwürfe.
+  Einfrieren, Freigeben und Veröffentlichen sind Aufgabe von Menschen. |
+~
+ | 10 | Wo lagen wir falsch? | Wir nennen die Fälle, in denen wir Fehler oder Unbelegtes gefunden haben, mit Datum und, soweit geklärt, Ursache. Keine Korrektur hat bisher eine Kernaussage umgeworfen. |
+~
