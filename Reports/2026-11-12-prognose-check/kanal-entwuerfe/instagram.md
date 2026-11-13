@@ -1,4 +1,4 @@
-**ENTWURF – nicht veröffentlicht. Freigabe durch Daniel Saure erforderlich vor Publikation.**
+**FREIGEGEBEN ZUM POSTEN durch Daniel Saure am 13.11.2026 (Chat: „passt so“ nach Lektüre der Entwürfe) und laut Daniel am 13.11.2026 veröffentlicht (Chat: „alles veröffentlicht“, von uns nicht auf den Kanälen geprüft).**
 
 Quelle: `substack.md` (v0.3, freigegeben 12.11.2026). Link-Slug: `prognose-check-projektionsberichte`. Format: 6 Folien, 1080×1350 px. `assets/karussell.html` ist erstellt, die PNG-Exporte `assets/folie-1.png` bis `folie-6.png` erzeugt die Hauptsession. Vor dem Posten Kopfzeile und diese Zeilen entfernen.
 
