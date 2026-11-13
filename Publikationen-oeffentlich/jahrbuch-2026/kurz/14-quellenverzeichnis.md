@@ -1,5 +1,5 @@
 # Quellenverzeichnis
-**KURZFASSUNG-ENTWURF v0.4 (13.11.2026), automatisch aus den „Quellen“-Abschnitten der gekürzten Kapitel zusammengestellt (neue Reihenfolge). Gegenüber v0.3 ergänzt: Quellen des Kastens zu Kapitel 5 (Hitzezahlen), des Kapitels 7a (Wald, Arbeitsnummer) und die Quellen [5] und [6] des Kapitels 8 (Prognose-Register, jetzt mit den veröffentlichten Ergebnissen des Prognose-Checks), jeweils wortgleich aus den freigegebenen Kapiteln übernommen. Nicht geändert: Kapitel 7, Quelle [5] (SAP v1.1) und Quelle [4] (Stand Expertenrat-Analyse), weil sie wortgleich in Kapitel 7 stehen und dort noch nicht aktualisiert sind. Nicht geprüft, nicht freigegeben. Vor Satz/Export: diese Kopfzeile entfernen.**
+**KURZFASSUNG-ENTWURF v0.4 (13.11.2026), automatisch aus den „Quellen“-Abschnitten der gekürzten Kapitel zusammengestellt (neue Reihenfolge). Gegenüber v0.3 ergänzt: Quellen des Kastens zu Kapitel 5 (Hitzezahlen), des Kapitels 7a (Wald, Arbeitsnummer) und die Quellen [5] und [6] des Kapitels 8 (Prognose-Register, jetzt mit den veröffentlichten Ergebnissen des Prognose-Checks), jeweils wortgleich aus den freigegebenen Kapiteln übernommen. Kapitel 7: Quellen [4] bis [7] wortgleich aus Kapitel 7 v0.2 übernommen (Kapitel 7 noch nicht freigegeben). Nicht geprüft, nicht freigegeben. Vor Satz/Export: diese Kopfzeile entfernen.**
 
 ## Kapitel 1 – Zehn Fragen an jede Klimazahl
 
@@ -155,9 +155,11 @@
 
 [3] Expertenrat für Klimafragen: Prüfbericht zu den Emissionsdaten 2025 und den Projektionsdaten 2026, veröffentlicht 18.05.2026 (Gesamtbudget 2021–2030: 6.199 Mt; Puffer 4,5 Mt; 50/50-Pfad 60–100 Mt über Budget). https://expertenrat-klima.de
 
-[4] Klima Kompass: Analysebericht Expertenrat-Budgetabgleich 2021–2030, Fassung 5, 26.10.2026 (vorläufig; Nachprüfung der Fassung 5 durch den Validator liegt seit 28.10.2026 vor: freigabefähig mit Auflagen, Freigabe der Analyse durch Daniel Saure steht aus), und SAP v1.1 (eingefroren 29.08.2026, Erratum 1 freigegeben 23.10.2026), `Analysen/2026-08-expertenrat-budgetabgleich/`. Halbjahreswert: Agora Energiewende, Halbjahresbilanz 2026 (Pressemitteilung 28.08.2026).
+[4] Klima Kompass: Analysebericht Expertenrat-Budgetabgleich 2021–2030, Fassung 5b (Analyse am 30.10.2026 von Daniel Saure freigegeben; Validierungsbericht ohne kritischen Befund), und SAP v1.1 (eingefroren 29.08.2026, Erratum 1 freigegeben 23.10.2026), `Analysen/2026-08-expertenrat-budgetabgleich/`. Halbjahreswert: Agora Energiewende, Halbjahresbilanz 2026 (Pressemitteilung 28.08.2026).
+[5] Klima Kompass: SAP „Prognose-Check #1: Wie treffsicher waren die Projektionsberichte der Bundesregierung?“, v1.2 (als v1.0 am 22.10.2026 eingefroren, ergänzt durch Amendments vom 22.10. und 09.11.2026), Analysebericht, Validierungsbericht und Freigabe der Ergebnisse (11.11.2026) (`Analysen/2026-10-prognose-check-projektionsberichte/`).
+[6] Klima Kompass: „Klimabudget bis 2030: Wie groß ist die Lücke – und wie sicher kann man das sagen?“, 30.10.2026. https://klimaevidenzcheck.substack.com/p/klimabudget-bis-2030-wie-gro-ist
+[7] Klima Kompass: „Wie gut trafen die Projektionsberichte der Bundesregierung die Emissionen von 2020?“, 12.11.2026. https://klimaevidenzcheck.substack.com/p/wie-gut-trafen-die-projektionsberichte
 
-[5] Klima Kompass: SAP „Prognose-Check #1“, v1.1, eingefroren 22.10.2026, `Analysen/2026-10-prognose-check-projektionsberichte/`.
 
 ## Kapitel 7a – Wie weit ist die Landnutzung von der gesetzlichen Senke entfernt? (Arbeitsnummer)
 
