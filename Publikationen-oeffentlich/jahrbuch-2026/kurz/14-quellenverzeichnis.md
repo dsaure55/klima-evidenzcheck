@@ -1,5 +1,5 @@
 # Quellenverzeichnis
-**KURZFASSUNG-ENTWURF v0.3 (28.10.2026), automatisch aus den „Quellen“-Abschnitten der gekürzten Kapitel zusammengestellt (neue Reihenfolge). Vor Satz/Export: diese Kopfzeile entfernen.**
+**KURZFASSUNG-ENTWURF v0.4 (13.11.2026), automatisch aus den „Quellen“-Abschnitten der gekürzten Kapitel zusammengestellt (neue Reihenfolge). Gegenüber v0.3 ergänzt: Quellen des Kastens zu Kapitel 5 (Hitzezahlen), des Kapitels 7a (Wald, Arbeitsnummer) und die Quellen [5] und [6] des Kapitels 8 (Prognose-Register, jetzt mit den veröffentlichten Ergebnissen des Prognose-Checks), jeweils wortgleich aus den freigegebenen Kapiteln übernommen. Nicht geändert: Kapitel 7, Quelle [5] (SAP v1.1) und Quelle [4] (Stand Expertenrat-Analyse), weil sie wortgleich in Kapitel 7 stehen und dort noch nicht aktualisiert sind. Nicht geprüft, nicht freigegeben. Vor Satz/Export: diese Kopfzeile entfernen.**
 
 ## Kapitel 1 – Zehn Fragen an jede Klimazahl
 
@@ -105,6 +105,12 @@
 
 [8] KLIMA° vor acht e. V.: MedienKlimaBericht Nr. 1, Erstes Halbjahr 2026, Das Erste und ZDF (Juli 2026). https://klimavoracht.de/wp-content/uploads/2026/07/KlimaMedienBericht_1_Halbjahr_2026.pdf
 
+## Kasten zu Kapitel 5 – Warum die Zahlen zu hitzebedingten Todesfällen so verschieden sind
+
+[1] Robert Koch-Institut: Wochenbericht zur hitzebedingten Mortalität, KW 37/2026 (07.–13.09.2026), Stand 24.09.2026 (letzter Wochenbericht 2026). https://www.rki.de/DE/Themen/Gesundheit-und-Gesellschaft/Gesundheitliche-Einflussfaktoren-A-Z/H/Hitze/Bericht_Hitzemortalitaet.html
+
+[2] Statistisches Bundesamt: Pressemitteilung Nr. 365 vom 13.10.2026, „Sterbefallzahlen im 3. Quartal 2026: Hitzewellen führen zu vorübergehenden Anstiegen“ (vorläufige Angaben, Stand der Monatswerte 12.10.2026). https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_365_126.html
+
 ## Kapitel 6 – Wo steht die Welt beim 1,5-Grad-Ziel, und kann man CO₂ einfach wieder aus der Luft holen?
 
 [1] Copernicus Climate Change Service (C3S): Second warmest September as global temperatures stay above 1.5°C, 12.10.2026. https://climate.copernicus.eu/copernicus-second-warmest-september-global-temperatures-stay-above-15degc
@@ -153,6 +159,16 @@
 
 [5] Klima Kompass: SAP „Prognose-Check #1“, v1.1, eingefroren 22.10.2026, `Analysen/2026-10-prognose-check-projektionsberichte/`.
 
+## Kapitel 7a – Wie weit ist die Landnutzung von der gesetzlichen Senke entfernt? (Arbeitsnummer)
+
+[1] Klimaschutzgesetz (KSG), § 3a, nichtamtliche Fassung auf gesetze-im-internet.de, abgerufen 29.10.2026. https://www.gesetze-im-internet.de/ksg/__3a.html · Anlage 1 (Holzprodukte): https://www.gesetze-im-internet.de/ksg/anlage_1.html
+
+[2] Umweltbundesamt: Nationale Treibhausgas-Trendtabellen 1990–2024 (15.01.2026). https://www.umweltbundesamt.de/system/files/document/2026_EM_Entwicklung_in_D_Trendtabelle_THG.xlsx · Kontrolle: Emissionsübersichten KSG-Sektoren 1990–2025 (15.03.2026), identische Werte.
+
+[3] Umweltbundesamt: Nationaler Inventarbericht 1990–2024 (Climate Change 30/2026, Mai 2026), PDF-Seiten 643, 645 und 675 (Seitenzählung der PDF-Datei). https://www.umweltbundesamt.de/system/files/medien/11850/publikationen/2026-05/30_2026_CC.pdf
+
+[4] Klima Kompass · Evidenzcheck: „Wie weit ist Deutschlands Landnutzung von der gesetzlichen Senke entfernt?“, 29.10.2026, und Repository-Ordner `Analysen/2026-10-lulucf-senke`. https://klimaevidenzcheck.substack.com/p/wie-weit-ist-deutschlands-landnutzung · https://github.com/dsaure55/klima-evidenzcheck/tree/main/Analysen/2026-10-lulucf-senke
+
 ## Kapitel 8 – Das Prognose-Register: Wir legen uns fest, bevor wir es wissen
 
 [1] Klima Kompass: „Reichen 136 Terawattstunden? Was der Vergleich der Bundesnetzagentur nicht zeigt“, 14.09.2026. https://klimaevidenzcheck.substack.com/p/reichen-136-terawattstunden-was-der
@@ -163,7 +179,9 @@
 
 [4] Klima Kompass: SAP „Prognose-Register 2027“ (`Analysen/2026-10-prognose-register-2027/SAP_prognose-register-2027.md`), Stand 23.10.2026 (Teilfreigabe: V3 und allgemeine Abschnitte; V1, V2, V4 Entwurf).
 
-[5] Klima Kompass: SAP „Prognose-Check #1: Wie treffsicher waren die Projektionsberichte der Bundesregierung?“, v1.1, eingefroren 22.10.2026 (`Analysen/2026-10-prognose-check-projektionsberichte/`).
+[5] Klima Kompass: SAP „Prognose-Check #1: Wie treffsicher waren die Projektionsberichte der Bundesregierung?“, v1.2 (als v1.0 am 22.10.2026 eingefroren, ergänzt durch Amendments vom 22.10. und 09.11.2026), Analysebericht, Validierungsbericht und Freigabe der Ergebnisse (11.11.2026) (`Analysen/2026-10-prognose-check-projektionsberichte/`).
+
+[6] Klima Kompass: „Wie gut trafen die Projektionsberichte der Bundesregierung die Emissionen von 2020?“, 12.11.2026. https://klimaevidenzcheck.substack.com/p/wie-gut-trafen-die-projektionsberichte
 
 ## Kapitel 9 – So prüfen wir (und welche Rolle KI dabei spielt)
 

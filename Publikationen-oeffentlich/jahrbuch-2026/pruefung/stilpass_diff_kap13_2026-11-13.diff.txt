@@ -1,0 +1,23 @@
+diff --git a/Publikationen-oeffentlich/jahrbuch-2026/kurz/13-kanaele-impressum.md b/Publikationen-oeffentlich/jahrbuch-2026/kurz/13-kanaele-impressum.md
+index 61343d8..a8285ff 100644
+--- a/Publikationen-oeffentlich/jahrbuch-2026/kurz/13-kanaele-impressum.md
++++ b/Publikationen-oeffentlich/jahrbuch-2026/kurz/13-kanaele-impressum.md
+@@ -1,3 +1,3 @@
+# Kanäle und Impressum
+**ENTWURF [-v0.1 (24.10.2026)-]{+v0.2 (13.11.2026)+} – nicht [-geprüft, nicht freigegeben.-]{+freigegeben; Stilpass 13.11.2026 (Stilregeln v0.3; die Liste der drei Formate steht als Fließtext, Aussagen unverändert). Impressum und Beschreibung am 13.11.2026 gegen die Live-Seite https://klimaevidenzcheck.substack.com/about abgeglichen und im Wortlaut angepasst (Live-Seite: „Jede Zahl hat eine Quelle“, „Dieser Newsletter wird …“; Substack-Datenschutzlink dort ohne ausgeschriebene URL). Die About-Seite nennt noch keinen KI-Hinweis.+} URLs aus `CLAUDE.md` (feste Kanal-URLs). Das Impressum ist der von Daniel Saure am 24.10.2026 im Chat gelieferte Wortlaut der Substack-Seite „Über / [-Impressum“; vor Satz gegen die Live-Seite abgleichen.-]{+Impressum“.+} Vor Satz/Export: diese Kopfzeile entfernen.**
+
+@@ -14,9 +14,5 @@
+
+Klima Kompass prüft Aussagen zu Klima und Energie an öffentlichen Daten, zum Beispiel vom Umweltbundesamt, vom Deutschen Wetterdienst oder von Copernicus. Jede Zahl [-nennt ihre-]{+hat eine+} Quelle.
+
+[-Drei Formate:-]
+
+[-- **Evidenzcheck:**-]{+Klima Kompass kennt drei Formate. Ein Evidenzcheck ist eine+} eigene Analyse. Bevor wir die Daten auswerten, legen wir in einem Analyseplan fest, wie wir rechnen. Danach prüft eine unabhängige Validierung Code und Ergebnisse. [-- **Einordnung:**-]{+Eine Einordnung stellt+} ein aktuelles Thema [-im Licht-]{+in den Zusammenhang+} bereits veröffentlichter Ergebnisse, ohne neue Berechnung. [-- **Wissen:** Erklärstücke-]{+Ein Wissensstück erklärt etwas+} auf Basis seriöser Quellen.
+
+@@ -35,3 +31,3 @@ Kontakt: dsaure55@gmail.com
+
+Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV: Dr. Daniel Saure, Anschrift wie [-oben.-]{+oben+}
+
+@@ -41,2 +37,2 @@ Dieses Impressum gilt auch für die Auftritte von Klima Kompass auf Instagram, F
+
+[-Der-]{+Dieser+} Newsletter wird über die Plattform Substack betrieben. Informationen zur Verarbeitung personenbezogener Daten finden sich in der Datenschutzerklärung von Substack: https://substack.com/privacy

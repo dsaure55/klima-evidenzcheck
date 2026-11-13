@@ -1,5 +1,5 @@
 # Kanäle und Impressum
-**ENTWURF v0.1 (24.10.2026) – nicht geprüft, nicht freigegeben. URLs aus `CLAUDE.md` (feste Kanal-URLs). Das Impressum ist der von Daniel Saure am 24.10.2026 im Chat gelieferte Wortlaut der Substack-Seite „Über / Impressum“; vor Satz gegen die Live-Seite abgleichen. Vor Satz/Export: diese Kopfzeile entfernen.**
+**ENTWURF v0.2 (13.11.2026) – nicht freigegeben; Stilpass 13.11.2026 (Stilregeln v0.3; die Liste der drei Formate steht als Fließtext, Aussagen unverändert). Impressum und Beschreibung am 13.11.2026 gegen die Live-Seite https://klimaevidenzcheck.substack.com/about abgeglichen und im Wortlaut angepasst (Live-Seite: „Jede Zahl hat eine Quelle“, „Dieser Newsletter wird …“; Substack-Datenschutzlink dort ohne ausgeschriebene URL). Die About-Seite nennt noch keinen KI-Hinweis. URLs aus `CLAUDE.md` (feste Kanal-URLs). Das Impressum ist der von Daniel Saure am 24.10.2026 im Chat gelieferte Wortlaut der Substack-Seite „Über / Impressum“. Vor Satz/Export: diese Kopfzeile entfernen.**
 
 ## Wo du Klima Kompass findest
 
@@ -12,13 +12,9 @@
 
 ## Über Klima Kompass
 
-Klima Kompass prüft Aussagen zu Klima und Energie an öffentlichen Daten, zum Beispiel vom Umweltbundesamt, vom Deutschen Wetterdienst oder von Copernicus. Jede Zahl nennt ihre Quelle.
+Klima Kompass prüft Aussagen zu Klima und Energie an öffentlichen Daten, zum Beispiel vom Umweltbundesamt, vom Deutschen Wetterdienst oder von Copernicus. Jede Zahl hat eine Quelle.
 
-Drei Formate:
-
-- **Evidenzcheck:** eigene Analyse. Bevor wir die Daten auswerten, legen wir in einem Analyseplan fest, wie wir rechnen. Danach prüft eine unabhängige Validierung Code und Ergebnisse.
-- **Einordnung:** ein aktuelles Thema im Licht bereits veröffentlichter Ergebnisse, ohne neue Berechnung.
-- **Wissen:** Erklärstücke auf Basis seriöser Quellen.
+Klima Kompass kennt drei Formate. Ein Evidenzcheck ist eine eigene Analyse. Bevor wir die Daten auswerten, legen wir in einem Analyseplan fest, wie wir rechnen. Danach prüft eine unabhängige Validierung Code und Ergebnisse. Eine Einordnung stellt ein aktuelles Thema in den Zusammenhang bereits veröffentlichter Ergebnisse, ohne neue Berechnung. Ein Wissensstück erklärt etwas auf Basis seriöser Quellen.
 
 Einordnungen und Wissensstücke durchlaufen vor der Veröffentlichung einen Faktencheck. Code und Analysepläne sind öffentlich: https://github.com/dsaure55/klima-evidenzcheck
 
@@ -33,10 +29,10 @@ Deutschland
 
 Kontakt: dsaure55@gmail.com
 
-Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV: Dr. Daniel Saure, Anschrift wie oben.
+Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV: Dr. Daniel Saure, Anschrift wie oben
 
 Dieses Impressum gilt auch für die Auftritte von Klima Kompass auf Instagram, Facebook und WhatsApp.
 
 **Datenschutz**
 
-Der Newsletter wird über die Plattform Substack betrieben. Informationen zur Verarbeitung personenbezogener Daten finden sich in der Datenschutzerklärung von Substack: https://substack.com/privacy
+Dieser Newsletter wird über die Plattform Substack betrieben. Informationen zur Verarbeitung personenbezogener Daten finden sich in der Datenschutzerklärung von Substack: https://substack.com/privacy
