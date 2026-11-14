@@ -1,5 +1,5 @@
 # Quellenverzeichnis
-**KURZFASSUNG-ENTWURF v0.4 (13.11.2026), automatisch aus den „Quellen“-Abschnitten der gekürzten Kapitel zusammengestellt (neue Reihenfolge). Gegenüber v0.3 ergänzt: Quellen des Kastens zu Kapitel 5 (Hitzezahlen), des Kapitels 7a (Wald, Arbeitsnummer) und die Quellen [5] und [6] des Kapitels 8 (Prognose-Register, jetzt mit den veröffentlichten Ergebnissen des Prognose-Checks), jeweils wortgleich aus den freigegebenen Kapiteln übernommen. Kapitel 7: Quellen [4] bis [7] wortgleich aus Kapitel 7 v0.2 übernommen (Kapitel 7 noch nicht freigegeben). Freigegeben durch Daniel Saure am 13.11.2026 (Chat: „13 und 14 habe ich gelesen und freigegeben“; Stand Commit 392497a). Das Verzeichnis übernimmt wortgleich die Quellen der Kapitel; die Freigabe der einzelnen Kapitel gilt unabhängig davon. Vor Satz/Export: diese Kopfzeile entfernen.**
+**KURZFASSUNG-ENTWURF v0.5 (14.11.2026: Abschnitt Kapitel 10 um Quellen [9] bis [11] ergänzt, wortgleich mit Kapitel 10 v0.5; erneute Freigabe steht aus, die Freigabe vom 13.11.2026 gilt für diesen Abschnitt nicht) und v0.4 (13.11.2026), automatisch aus den „Quellen“-Abschnitten der gekürzten Kapitel zusammengestellt (neue Reihenfolge). Gegenüber v0.3 ergänzt: Quellen des Kastens zu Kapitel 5 (Hitzezahlen), des Kapitels 7a (Wald, Arbeitsnummer) und die Quellen [5] und [6] des Kapitels 8 (Prognose-Register, jetzt mit den veröffentlichten Ergebnissen des Prognose-Checks), jeweils wortgleich aus den freigegebenen Kapiteln übernommen. Kapitel 7: Quellen [4] bis [7] wortgleich aus Kapitel 7 v0.2 übernommen (Kapitel 7 noch nicht freigegeben). Freigegeben durch Daniel Saure am 13.11.2026 (Chat: „13 und 14 habe ich gelesen und freigegeben“; Stand Commit 392497a). Das Verzeichnis übernimmt wortgleich die Quellen der Kapitel; die Freigabe der einzelnen Kapitel gilt unabhängig davon. Vor Satz/Export: diese Kopfzeile entfernen.**
 
 ## Kapitel 1 – Zehn Fragen an jede Klimazahl
 
@@ -212,4 +212,10 @@
 [7] Klima Kompass: „Erreicht Deutschland sein Klimaziel 2040? Die Antwort hängt vom Blickwinkel ab“, 27.08.2026. https://klimaevidenzcheck.substack.com/p/erreicht-deutschland-sein-klimaziel
 
 [8] Repository: Korrekturvermerke und Faktenchecks unter `Reports/` (https://github.com/dsaure55/klima-evidenzcheck).
+
+[9] Klima Kompass: „Verfehlt Deutschland 2026 erstmals sein Klimaziel?“, 28.10.2026. https://klimaevidenzcheck.substack.com/p/verfehlt-deutschland-2026-erstmals
+
+[10] Klima Kompass: „Klimabudget bis 2030: Wie groß ist die Lücke – und wie sicher kann man das sagen?“, 30.10.2026. https://klimaevidenzcheck.substack.com/p/klimabudget-bis-2030-wie-gro-ist
+
+[11] Klima Kompass: „Wie gut trafen die Projektionsberichte der Bundesregierung die Emissionen von 2020?“, 12.11.2026. https://klimaevidenzcheck.substack.com/p/wie-gut-trafen-die-projektionsberichte
 

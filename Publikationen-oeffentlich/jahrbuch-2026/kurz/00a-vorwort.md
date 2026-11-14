@@ -7,6 +7,6 @@ Am 27. August 2026 ist unser erster Artikel erschienen. In diesem Buch stehen di
 
 Bei der Arbeit hilft uns Künstliche Intelligenz. Sie schreibt Analysepläne, Programmcode und Entwürfe. Ich lese, prüfe und gebe frei, und ich veröffentliche. Wie das abläuft, steht in Kapitel 9.
 
-Wir haben uns auch geirrt. Sieben Fälle in sechs Artikeln stehen in Kapitel 10, mit dem, was falsch war.
+Wir haben uns auch geirrt. Acht Fälle in neun Artikeln stehen in Kapitel 10, mit dem, was falsch war.
 
 Du musst das Buch nicht der Reihe nach lesen. Wer nur eine Frage hat, schlägt das Kapitel dazu auf. Die zehn Fragen in Kapitel 1 helfen bei jeder Klimazahl, auch bei solchen, die nicht in diesem Buch vorkommen. Wenn dir ein Fehler auffällt, sag es uns. In Kapitel 10 steht, wie.
