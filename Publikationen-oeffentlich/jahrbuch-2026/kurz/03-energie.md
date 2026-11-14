@@ -20,7 +20,7 @@ Der Vergleichswinter war nicht mild. Mit 4,41 °C lag das Winterhalbjahr 2025/26
 
 *Grafik 1: Netto-Entnahme aus den deutschen Gasspeichern pro Winterhalbjahr (Oktober bis März). Quelle: Eurostat (nrg_cb_gasm), Auswertung Klima Kompass, Evidenzcheck vom 14.09.2026 [1][6]. Dargestellt sind vorhandene Zahlen, keine neue Rechnung. Die 136 TWh sind der Speicherstand von Mitte September laut Medienberichten, keine Entnahme.*
 
-Die Temperatur macht viel aus. Pro Grad kälter wurden im Schnitt etwa 49 Terawattstunden mehr entnommen (95-Prozent-Konfidenzintervall: 17 bis 81). Rechnerisch wird die Marke von 136 Terawattstunden ab einem Winterhalbjahr unter 4,5 °C erreicht. Kälter waren 60 Prozent der letzten dreißig Winter [1].
+Die Temperatur macht viel aus. Pro Grad kälter wurden im Schnitt etwa 49 Terawattstunden mehr entnommen (Unsicherheitsspanne, 95-Prozent-Konfidenzintervall: 17 bis 81). Rechnerisch wird die Marke von 136 Terawattstunden ab einem Winterhalbjahr unter 4,5 °C erreicht. Kälter waren 60 Prozent der letzten dreißig Winter [1].
 
 Für einen durchschnittlich kalten Winter (4,21 °C, die Norm der letzten dreißig Winter; sie ist kälter als der Schnitt des letzten Jahrzehnts) erwarten wir rund 150 Terawattstunden Entnahme. Die Prognosespanne reicht von 69 bis 230 Terawattstunden und schließt die 136 ein. Daraus lässt sich weder ein belastbares „reicht nicht“ noch ein belastbares „reicht“ ableiten [1].
 
