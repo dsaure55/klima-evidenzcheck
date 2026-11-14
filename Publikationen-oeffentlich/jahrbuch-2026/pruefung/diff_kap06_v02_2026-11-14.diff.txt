@@ -1,0 +1,41 @@
+diff --git a/C:/Users/dsaur/AppData/Local/Temp/kap6_v01.md b/kurz/05-welt.md
+index d7bd403..3946d85 100644
+--- a/C:/Users/dsaur/AppData/Local/Temp/kap6_v01.md
++++ b/kurz/05-welt.md
+@@ -1,5 +1,5 @@
+ # Kapitel 6 – Wo steht die Welt beim 1,5-Grad-Ziel, und kann man CO₂ einfach wieder aus der Luft holen?
+~
+ **KURZFASSUNG-ENTWURF 
++v0.2 (14.11.2026, Stilpass: Anomalie erklärt, Kapitelverweis im Vermerk auf Kapitel 10 korrigiert; Text sonst wortgleich;
+  v0.1 
+-(28.10.2026),
++vom 28.10.2026),
+  gekürzt aus Kapitel 6 der Langfassung; nicht geprüft, nicht freigegeben, erneute Freigabe durch Daniel Saure und Faktencheck nötig. Hinweis: Die Änderung „neue Klimazusagen“ vom 26.10.2026 wurde nicht erneut gelesen, der UNEP-Bericht wurde nur über Executive Summary und Pressemitteilung geprüft, und die Korrektur des Stücks „Zurück auf 1,5 Grad“ auf Substack (Kapitel 
+-7,
++10,
+  Fall 5) steht noch aus. Faktencheck: pruefung/faktencheck_kurz_kap05.md (ok mit Auflagen, mittlere Auflagen eingearbeitet am 28.10.2026, Gegenprüfung der Einarbeitung steht aus). Stilpass 28.10.2026 (Stilregeln v0.3), Differenzprüfung 09.11.2026 (Datei in pruefung/stilpass_differenzpruefung_gruppe*), Freigabe durch Daniel Saure steht aus. Vor Satz/Export entfernen.**
+~
+ 
+~
+ 
+~
+ **Kurz gesagt:** Ein einzelner Monat über 1,5 Grad bedeutet nicht, dass das Pariser Ziel gerissen ist. Es zählt die Erwärmung über Jahrzehnte (beim Weltklimarat IPCC das 20-Jahres-Mittel). Das UN-Umweltprogramm UNEP geht trotzdem inzwischen davon aus, dass die Welt die 1,5 Grad überschreitet, und rechnet einen Weg zurück. Dafür müssten die Emissionen bis 2030 um 18 Prozent sinken (gegenüber 2025). Die neuen Klimazusagen der Staaten bringen 5 bis 8 Prozent. CO₂ aus der Luft zu holen ist keine Abkürzung. Heute geschieht das fast nur über Wälder und Böden, und es ergänzt die Minderung, ersetzt sie aber nicht.
+~
+@@ -14,7 +14,7 @@ Nach Angaben der Weltorganisation für Meteorologie (WMO) sind die Temperatursch
+ 
+~
+ Ein Monat mit 1,63 Grad zeigt, wie warm es gerade ist. Ob das Pariser Ziel verfehlt ist, lässt sich daraus allein nicht ablesen. 2024 lag nach WMO-Angaben bei etwa 1,55 Grad und war damit wahrscheinlich das erste Kalenderjahr über 1,5 Grad [6]. 2025 war mit etwa 1,43 Grad kühler [8], unter anderem wegen La Niña. Es war trotzdem eines der drei wärmsten Jahre seit Messbeginn [7]. Beide Werte haben eine Unsicherheit von ±0,13 Grad [6][8]. Die langfristige Erwärmung schätzte die WMO für 2024 auf 1,34 bis 1,41 Grad [6]. Nach IPCC-Bewertung erreicht das 20-Jahres-Mittel die 1,5 Grad in den meisten betrachteten Szenarien nach zentraler Schätzung Anfang der 2030er-Jahre. Im Szenario mit sehr hohen Emissionen geschieht das noch früher [9].
+~
+ 
+~
+ Zur Schwankung gehört auch El Niño, die warme Phase eines wiederkehrenden Musters im tropischen Pazifik. Der aktuelle El Niño ist ungewöhnlich stark. Die US-Wetterbehörde NOAA meldete am 8. Oktober für den vergangenen Monat eine 
+-Anomalie
++Abweichung vom Normalwert (Anomalie)
+  von +2,1 Grad in der zentralen Messregion. Die Wahrscheinlichkeit, dass er von Oktober bis Dezember die Schwelle eines historisch starken Ereignisses erreicht, gibt sie mit 83 Prozent an [10]. Seit Februar 2026 nutzt die NOAA einen neuen Index (RONI), deshalb lassen sich Angaben aus anderen Quellen nicht ohne Weiteres vergleichen [11]. Nach Einschätzung von Copernicus dürfte dieser El Niño einer der stärksten seit Beginn der Aufzeichnungen werden [1].
+~
+ 
+~
+ Umgekehrt stimmt auch der Satz „Dann ist ja noch reichlich Luft“ nicht. Die Schwelle ist nah, das zeigen die Monate über 1,5 Grad, zuletzt August und September 2026 [1].
+~
+ 
+~
