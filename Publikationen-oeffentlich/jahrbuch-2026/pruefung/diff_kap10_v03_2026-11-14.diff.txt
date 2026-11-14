@@ -1,0 +1,41 @@
+diff --git a/C:/Users/dsaur/AppData/Local/Temp/kap10_v02.md b/kurz/07-korrekturen.md
+index 743e3ae..ad765fe 100644
+--- a/C:/Users/dsaur/AppData/Local/Temp/kap10_v02.md
++++ b/kurz/07-korrekturen.md
+@@ -49,11 +49,11 @@ Die Liste hat den Stand vom Redaktionsschluss dieses Buchs [Anzahl der Artikel z
+ 
+~
+ ### 4. „Der Hitzesommer 2026“ (29.08.), Vergleichszahl für 2018
+~
+ 
+~
+ **Fehler.** 
+-Vor der Veröffentlichung kursierte
++Im Analyseplan stand
+  für 2018 eine Vergleichszahl von 9.400 hitzebedingten Sterbefällen.
+-Der Analyseplan nennt sie.
+  Gerechnet haben wir mit dem RKI-Wert von rund 8.500 (Epidemiologisches Bulletin 19/2025). Im Artikel haben wir den Unterschied mit einer Verwechslung in einer Sekundärquelle erklärt. Diese Erklärung ist nicht belegt. Das Laufprotokoll vom 29. August (Schritt 5c) hielt bereits fest, dass sich die 9.400 für 2018 in keiner der drei RKI-Ausgaben (2022, 2023, 2025) bestätigen ließ. Der Artikel erschien am selben Tag und sprach trotzdem von einer aufgedeckten Verwechslung. [Reihenfolge am selben Tag vor Satz klären.] Möglicherweise stammt sie aus dem Bulletin 42/2022. Dort ist 9.400 die obere Grenze des Unsicherheitsintervalls für 2019. Das ist eine Vermutung, abschließend geklärt haben wir es nicht.
+~
+ 
+~
+ **Was stimmt.** Die Aussage des Artikels, dass der Sommer 2026 außerhalb der bisherigen Bandbreite lag, hängt nicht an dieser Zahl. 
+-Falsch
++Nicht belegt
+  ist nur die Erklärung im Abschnitt „Was das nicht bedeutet“.
+~
+ 
+~
+ **Gekennzeichnet:** 
+-Bisher
++Am Artikel auf Substack ist
+  nichts 
+-am Artikel. [Entscheidung offen, ob ein Hinweis gesetzt wird.]
++geändert, und dabei bleibt es.
+  Hier im Buch ist die Sache offengelegt, ebenso in Kapitel 5.
+~
+ 
+~
+ **Lehre.** Wir erklären keine Abweichung, die wir nicht belegen können. „Wir konnten es nicht bestätigen“ ist eine zulässige Aussage.
+~
+ 
+~
