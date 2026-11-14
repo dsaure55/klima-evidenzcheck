@@ -1,0 +1,70 @@
+diff --git a/C:/Users/dsaur/AppData/Local/Temp/06a_vor.md b/kurz/06a-wald.md
+index a24cd9b..74991c8 100644
+--- a/C:/Users/dsaur/AppData/Local/Temp/06a_vor.md
++++ b/kurz/06a-wald.md
+@@ -1,7 +1,7 @@
+ # Kapitel 7a – Wie weit ist die Landnutzung von der gesetzlichen Senke entfernt?
+~
+ **KURZFASSUNG 
++v0.4 (14.11.2026; Stilpass „weniger technisch“: „Intervall“ im Fließtext zu „Spanne“ (Kurz gesagt, Fortschreibung, Grenzen), Tabellenkopf und Grafikbeschriftungen unverändert; Aussagen und Zahlen unverändert; Differenzdatei `pruefung/diff_kap07a_v04_2026-11-14.diff.txt`, Differenzprüfung und erneute Freigabe stehen aus; die Freigabe von v0.3 gilt nicht für v0.4) und
+  v0.3 (29.10.2026), abgeleitet aus dem veröffentlichten Evidenzcheck „Wie weit ist Deutschlands Landnutzung von der gesetzlichen Senke entfernt?“ (Substack, 29.10.2026). Keine neue Rechnung. Faktencheck und Nachprüfung 1 liegen als Datei vor (`pruefung/faktencheck_kurz_kap07a_wald.md`, 0 kritisch, 0 hoch). Freigegeben durch Daniel Saure am 29.10.2026 (Volltext der Version 0.3 gelesen; Wortlaut im Chat: „ja habe ich“ auf die Rückfrage, zuvor „freigabe erteilt“). Offene Hinweise: Grafikbeschriftungen („Messwert“, „PRIMAER“) in den PNG-Dateien, Inventarbericht-Seiten nur gegen Bericht und SAP abgeglichen, Stilpass mit allen Kapiteln steht aus. Kapitelnummer offen (7a als Arbeitsnummer). Vor Satz/Export diesen Kopf entfernen.**
+~
+ 
+~
+ **Kurz gesagt:** Nach dem Klimaschutzgesetz sollen Wälder, Äcker, Grünland, Feuchtgebiete, Siedlungen und Holzprodukte zusammen mehr Treibhausgase aufnehmen als abgeben, im Mittel der Jahre 2027 bis 2030 netto mindestens 25 Millionen Tonnen CO₂-Äquivalent. Der Mittelwert der Jahre 2021 bis 2024, auf den das Gesetz abstellt, liegt bei plus 58,4 Millionen Tonnen. Der Sektor gibt also Treibhausgase ab. Schreibt man den bisherigen Trend unverändert fort, liegt das Ziel in allen drei Zeitfenstern außerhalb 
+-des 95-Prozent-Intervalls
++der 95-Prozent-Spanne
+  der Rechnung. Das ist keine Prognose, und ein Teil des Trends kann auf die Rechenmethode zurückgehen.
+~
+ 
+~
+ ## Wo wir stehen
+~
+ 
+~
+@@ -29,15 +29,15 @@ Wir haben die Jahreswerte in drei Zeitfenstern mit einer Geraden fortgeschrieben
+ 
+~
+ *Grafik 2: Gesetzlicher Vierjahresmittelwert mit 95-Prozent-Intervall für 2030, je Zeitfenster. In der Grafik heißt „Messwert“ der gesetzlich zugrunde gelegte Wert aus Modellrechnungen. Angaben in Millionen Tonnen CO₂-Äquivalent. Quelle: Umweltbundesamt [2], Auswertung Klima Kompass, Datenstand 15.01.2026.*
+~
+ 
+~
+ In allen drei Fenstern liegt das Ziel von minus 25 außerhalb 
+-des Intervalls.
++der Spanne.
+  Im Hauptfenster ist die Reihe bisher um rund 4,9 Millionen Tonnen pro Jahr gestiegen. Damit das Mittel 2027 bis 2030 das Ziel erreicht, müsste es sich vom Stand 2024 aus über sechs Jahre um etwa 13,9 Millionen Tonnen pro Jahr verbessern.
+~
+ 
+~
+ Das Fenster ab 2018 umfasst nur sieben Jahre, die Steigung ist dort statistisch nicht von null zu unterscheiden. Wir behandeln es als wenig belastbar. Lässt man die beiden Modelljahre 2023 und 2024 weg, bleibt bei den langen Fenstern die Einordnung gleich (die Zahlen verschieben sich etwas, etwa im langen Fenster von 53,7 auf 46,8). Beim kurzen Fenster reicht 
+-das Intervall
++die Spanne
+  dann von minus 26 bis 130 und schließt das Ziel ein, dieses Ergebnis ist also nicht stabil. Ein zweites Rechenverfahren (ein Zeitreihenmodell namens ARIMA) kommt im Hauptfenster auf 87 und im langen Fenster auf 52 Millionen Tonnen.
+~
+ 
+~
+ Im langen Fenster ab 1990 ist 
+-das Intervall
++die Spanne
+  vermutlich zu eng, weil die Abweichungen der einzelnen Jahre vom Trend zusammenhängen. Außerdem überlappen sich die drei Fenster. Die drei 
+-Intervalle
++Spannen
+  sind deshalb nicht gemeinsam zu 95 Prozent sicher.
+~
+ 
+~
+ ## Was die Rechnung nicht sagt
+~
+ 
+~
+ Eine Trendfortschreibung beschreibt, was herauskäme, wenn die Entwicklung eines Fensters unverändert weiterliefe. Sie ist keine Prognose. Neue Maßnahmen, Witterung, Störungen im Wald und Änderungen der Rechenmethode fließen nicht ein, und 
+-das Intervall
++die Spanne
+  deckt nur die Streuung im linearen Modell ab.
+~
+ 
+~
+ Die Jahre 2023 und 2024 sind Modellrechnungen, keine Messungen. Das Umweltbundesamt rechnet die gesamte Reihe jedes Jahr neu, und mit dem Bericht von 2026 gab es grundlegende Änderungen an der Rechenmethode. Für die Jahre nach der letzten Waldinventur, einer bundesweiten Stichprobenerhebung der Wälder, wird die Entwicklung mit einem Modell fortgeschrieben [3]. Ein Teil des Trends kann deshalb auf die Methodik zurückgehen. Unsere Zahlen gelten für die Fassung, die wir ausgewertet haben.
+~
+ 
+~
