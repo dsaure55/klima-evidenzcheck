@@ -81,7 +81,7 @@ Die Liste hat den Stand vom Redaktionsschluss dieses Buchs [Anzahl der Artikel z
 
 ### 7. Derselbe Artikel (27. August 2026), Angabe zur Arbeitsweise
 
-**Fehler.** Der Artikel schreibt, der Analyseplan sei „vor der Modellierung festgelegt“ worden, um nachträgliches Auswählen auszuschließen. Der Analyseplan selbst trägt die Kennzeichnung „retrospektiv erstellt“. Er wurde nach einer ersten Sichtung der Daten verfasst, bei der drei Zeitfenster informell verglichen wurden. Die Analyse gilt deshalb als erkundend (explorativ) und nicht als vorab festgelegte Prüfung. Außerdem betrifft die Korrektur für zusammenhängende Jahreswerte (Newey-West) im Plan nur den Test der Steigung. Die Spanne für 2040 stammt im Hauptverfahren aus einer klassischen Trendrechnung, die bei zusammenhängenden Jahreswerten tendenziell zu eng ausfällt.
+**Fehler.** Der Artikel schreibt, der Analyseplan sei „vor der Modellierung festgelegt“ worden, um nachträgliches Auswählen auszuschließen. Der Analyseplan selbst trägt die Kennzeichnung „retrospektiv erstellt“. Er wurde nach einer ersten Sichtung der Daten verfasst, bei der drei Zeitfenster informell verglichen wurden. Die Analyse gilt deshalb als erkundend (explorativ) und nicht als vorab festgelegte Prüfung. Außerdem betrifft die Korrektur für zusammenhängende Jahreswerte (Newey-West) im Plan nur den Test der Steigung. Die Spanne für 2040 stammt im Hauptverfahren aus einer klassischen Trendrechnung und fällt bei zusammenhängenden Jahreswerten tendenziell zu eng aus.
 
 **Was stimmt.** Die Kernaussage des Artikels bleibt bestehen: Das Zeitfenster entscheidet über die Schlagzeile. Die Zahlen sind davon nicht betroffen.
 
