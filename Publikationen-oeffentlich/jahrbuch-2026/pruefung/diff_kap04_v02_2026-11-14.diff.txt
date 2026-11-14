@@ -1,0 +1,113 @@
+diff --git a/C:/Users/dsaur/AppData/Local/Temp/kap4_v01.md b/kurz/03-energie.md
+index 6353350..0c307ac 100644
+--- a/C:/Users/dsaur/AppData/Local/Temp/kap4_v01.md
++++ b/kurz/03-energie.md
+@@ -1,4 +1,4 @@
+ **KURZFASSUNG-ENTWURF 
++v0.2 (14.11.2026, Stilpass: Intervall zu Spanne, Fachwörter in Halbsätzen erklärt;
+  v0.1 
+-(28.10.2026),
++vom 28.10.2026),
+  gekürzt aus Kapitel 2 der Langfassung; nicht geprüft, nicht freigegeben, erneute Freigabe durch Daniel Saure und Faktencheck nötig. Hinweis: Die Datenstände (Gasspeicherfüllstand, BNetzA-Seite) müssen zum Stichtag 15.11. erneut abgeglichen werden, der DWD-Abgleich der Wintertemperaturen ist nicht als erledigt dokumentiert, und eine Gegenprüfung der Faktencheck-Auflagen durch den Faktenprüfer fand nicht statt. Faktencheck: pruefung/faktencheck_kurz_kap03.md (ok mit Auflagen, mittlere Auflagen eingearbeitet am 28.10.2026, Gegenprüfung der Einarbeitung steht aus). Stilpass 28.10.2026 (Stilregeln v0.3), Differenzprüfung 09.11.2026 (Datei in pruefung/stilpass_differenzpruefung_gruppe*), Freigabe durch Daniel Saure steht aus. Vor Satz/Export entfernen.**
+~
+ 
+~
+ # Kapitel 4 – Reicht die Energie: Gas im Winter, Strom bei Dunkelflaute?
+~
+ 
+~
+@@ -14,7 +14,7 @@ Müller vergleicht mit genau einem Winter. Wir haben nachgesehen, wie dieser Win
+ 
+~
+ Aus den Monatsdaten von Eurostat haben wir für jedes Winterhalbjahr (Oktober bis März) die Netto-Entnahme aus den deutschen Gasspeichern berechnet. Für 2025/26 kommen 133,7 Terawattstunden heraus. Den Speicherstand von 136 Terawattstunden selbst haben wir nicht nachgerechnet [1].
+~
+ 
+~
+ Der Vergleichswinter war nicht mild. Mit 4,41 °C lag das Winterhalbjahr 2025/26 fast genau im Mittel der letzten dreißig Winter. Der Einwand liegt in der Streuung. Die Entnahmen der letzten zehn Winter reichen von 42 bis 178 Terawattstunden, der Median liegt bei 122. In vier von zehn Wintern lag die Entnahme über 136. Bei nur zehn Wintern ist diese Quote sehr ungenau 
+-(95-Prozent-Konfidenzintervall:
++(statistische Unsicherheitsspanne, 95-Prozent-Konfidenzintervall:
+  12 bis 74 Prozent). Sie taugt als Größenordnung, nicht als Prognose [1].
+~
+ 
+~
+ ![Netto-Entnahme aus den deutschen Gasspeichern in den Wintern 2016/17 bis 2025/26](../grafiken/kap02_grafik1_gas_entnahme.png)
+~
+ 
+~
+@@ -22,7 +22,7 @@ Der Vergleichswinter war nicht mild. Mit 4,41 °C lag das Winterhalbjahr 2025/26
+ 
+~
+ Die Temperatur macht viel aus. Pro Grad kälter wurden im Schnitt etwa 49 Terawattstunden mehr entnommen (95-Prozent-Konfidenzintervall: 17 bis 81). Rechnerisch wird die Marke von 136 Terawattstunden ab einem Winterhalbjahr unter 4,5 °C erreicht. Kälter waren 60 Prozent der letzten dreißig Winter [1].
+~
+ 
+~
+ Für einen durchschnittlich kalten Winter (4,21 °C, die Norm der letzten dreißig Winter; sie ist kälter als der Schnitt des letzten Jahrzehnts) erwarten wir rund 150 Terawattstunden Entnahme. 
+-Das Prognoseintervall
++Die Prognosespanne
+  reicht von 69 bis 230 Terawattstunden und schließt die 136 ein. Daraus lässt sich weder ein belastbares „reicht nicht“ noch ein belastbares „reicht“ ableiten [1].
+~
+ 
+~
+ Die Speicher decken ohnehin nur einen Teil der Versorgung. In den letzten zehn Wintern waren es im Median 19 Prozent des deutschen Gasverbrauchs. Der größere Teil wird laufend geliefert [1].
+~
+ 
+~
+@@ -42,7 +42,7 @@ Beim Strom kursieren Einzelzahlen, die man nicht ohne Weiteres vergleichen kann.
+ 
+~
+ Wir haben deshalb selbst gerechnet, aus amtlichen SMARD-Rohdaten und mit vorab festgelegtem Analyseplan. Als Dunkelflaute gilt eine Phase von mindestens drei Tagen in Folge mit besonders wenig Wind- und Solarstrom im Verhältnis zum Verbrauch. Das Energiedefizit ist die Energie, die in dieser Zeit nicht aus Wind und Sonne kam (Verbrauch minus Wind- und Solarerzeugung). Dem haben wir die tatsächlich installierte Batteriekapazität gegenübergestellt, mit realistischen Annahmen zu Ladezustand und Wirkungsgrad. Wo die Schwelle für eine Dunkelflaute liegt, haben wir mit Ermessensspielraum festgelegt, eine objektive Wahrheit gibt es dafür nicht. Wir haben sie deshalb in Varianten durchgespielt [3].
+~
+ 
+~
+ Zwischen Januar 2015 und Juli 2026 haben wir 50 solcher Episoden gefunden. Das Energiedefizit lag im Median bei 4.301 GWh pro Episode 
+-(Interquartilsabstand
++(die mittlere Hälfte der Episoden liegt zwischen
+  3.921 
+-bis
++und
+  5.994 GWh). Die bereinigte Batteriekapazität liegt bei 31,5 GWh (Marktstammdatenregister, nach der Bereinigung, siehe unten). Damit hätte sie im Median etwa 1 Prozent des Defizits decken können (gerundet; ungerundet rund 0,5 Prozent, über alle 50 Episoden zwischen 0 und 1 Prozent). Für die Ende 2026 erwartete Kapazität (rund 35 GWh, eine Schätzung des Branchendienstes IWR und keine amtliche Zahl) ergibt sich eine ähnliche Größenordnung [3].
+~
+ 
+~
+ ![Energiedefizit der 50 Dunkelflaute-Episoden seit 2015 im Vergleich zur installierten Batteriekapazität](../grafiken/kap02_grafik2_dunkelflaute_batterie.png)
+~
+ 
+~
+@@ -50,7 +50,7 @@ Zwischen Januar 2015 und Juli 2026 haben wir 50 solcher Episoden gefunden. Das E
+ 
+~
+ Zur Rechnung gibt es zwei Anmerkungen. Die Kapazitätszahl konnten wir nicht direkt aus dem Rohdatensatz übernehmen. Im Marktstammdatenregister fanden wir ein Cluster offensichtlicher Eingabefehler: 50 von 2,72 Millionen Anlagen verursachten 97,25 Prozent einer sonst 46-fach überhöhten Summe. Wir haben Einzelanlagen über 100 MWh entfernt. Diese Schwelle war nicht im Analyseplan vorgesehen. Sie ist technisch nicht begründet, sondern so gewählt, dass sie nahe an zwei unabhängigen Quellen liegt (Branchenverband BVES: 24 GWh, IWR: rund 35 GWh). Das birgt ein Risiko für eine Verzerrung [3].
+~
+ 
+~
+ Außerdem liegt das Ergebnis in praktisch allen Varianten (acht 
++Varianten-Rechnungen, sogenannte
+  Sensitivitätsanalysen) zwischen 0 und 1 Prozent. Die Größenordnung ist also stabil [3].
+~
+ 
+~
+ Importe sind im Energiedefizit nicht berücksichtigt. Ein Teil des historischen Defizits wurde in Wirklichkeit eingeführt. Eine Nachlade-Simulation haben wir angekündigt, aber bisher nicht abgeschlossen. Bis dahin ist der Deckungsgrad eher eine zu niedrige Näherung. Die Rechnung bewertet nicht, ob Batterien die richtige Antwort auf Dunkelflauten sind, auch nicht im Vergleich zu Gaskraftwerken, Importen oder Wasserstoff [3].
+~
+ 
+~
+@@ -62,7 +62,7 @@ Importe sind im Energiedefizit nicht berücksichtigt. Ein Teil des historischen
+ 
+~
+ ## Lagen wir richtig?
+~
+ 
+~
+ - Beim Gas im Winter 2026/27 lässt sich das noch nicht sagen. Wir haben unsere Erwartung am 22. Oktober 2026 im Prognose-Register festgelegt (Eintrag #1) [7]. Es zählt, ob die tatsächliche Entnahme bei der tatsächlichen Wintertemperatur 
+-im
++in der
+  zugehörigen 
+-95-Prozent-Prognoseintervall
++95-Prozent-Prognosespanne
+  liegt. Liegt die Temperatur außerhalb von 3,75 bis 6,18 °C, bewerten wir nicht. Die Auswertung kommt, sobald Eurostat die Werte bis März 2027 veröffentlicht, voraussichtlich im Mai oder Juni 2027. Bei der Registrierung war der Winter schon drei Wochen alt, und der Füllstand von 60,5 Prozent war bekannt (siehe Kapitel 8).
+~
+ - Der Gasstand vom Oktober ist ein Hinweis zum Stand, keine Rückschau. Der Stand dieses Kapitels ist der 16. Oktober.
+~
+ - Beim Strom ist noch offen, dass die Nachlade-Simulation fehlt und die Datenbereinigung ein Risiko für eine Verzerrung bleibt.
+~
+ 
+~
