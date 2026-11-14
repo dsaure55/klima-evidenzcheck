@@ -1,4 +1,4 @@
-**KURZFASSUNG-ENTWURF v0.1 (28.10.2026), gekürzt aus Kapitel 5 der Langfassung; nicht geprüft, nicht freigegeben, erneute Freigabe durch Daniel Saure und Faktencheck nötig. Hinweis: Offen sind die direkte Prüfung der Primärdaten (EDGAR, Global Carbon Project, Weltbank, OWID) und neuerer Ausgaben sowie der Abgleich des Verweises auf das Kapitel zu den Fehlern (jetzt Kapitel 10) mit dem fertigen Kapitel. Faktencheck: pruefung/faktencheck_kurz_kap02.md (ok mit Auflagen, mittlere Auflagen eingearbeitet am 28.10.2026, Gegenprüfung der Einarbeitung steht aus). Stilpass 28.10.2026 (Stilregeln v0.3), Differenzprüfung 09.11.2026 (Datei in pruefung/stilpass_differenzpruefung_gruppe*), Freigabe durch Daniel Saure steht aus. Vor Satz/Export entfernen.**
+**KURZFASSUNG-ENTWURF v0.2 (14.11.2026, Stilpass: Fachwörter in Halbsätzen erklärt; v0.1 vom 28.10.2026), gekürzt aus Kapitel 5 der Langfassung; nicht geprüft, nicht freigegeben, erneute Freigabe durch Daniel Saure und Faktencheck nötig. Hinweis: Offen sind die direkte Prüfung der Primärdaten (EDGAR, Global Carbon Project, Weltbank, OWID) und neuerer Ausgaben sowie der Abgleich des Verweises auf das Kapitel zu den Fehlern (jetzt Kapitel 10) mit dem fertigen Kapitel. Faktencheck: pruefung/faktencheck_kurz_kap02.md (ok mit Auflagen, mittlere Auflagen eingearbeitet am 28.10.2026, Gegenprüfung der Einarbeitung steht aus). Stilpass 28.10.2026 (Stilregeln v0.3), Differenzprüfung 09.11.2026 (Datei in pruefung/stilpass_differenzpruefung_gruppe*), Freigabe durch Daniel Saure steht aus. Vor Satz/Export entfernen.**
 
 # Kapitel 3 – Ist Deutschland „zu klein, um zu zählen“?
 
@@ -36,7 +36,7 @@ Rechnet man nur mit CO₂ statt mit allen Treibhausgasen (2024), liegt Deutschla
 
 Zählt man konsumbasiert statt produktionsbasiert (CO₂, 2023), gelten die Emissionen dort, wo die Güter verbraucht werden, und nicht dort, wo sie entstehen. Deutschlands Anteil liegt dann bei 2,1 Prozent, alle Länder bis dahin kommen auf 40,5 Prozent. Diese Werte sind nicht direkt vergleichbar mit den 31,7 Prozent, weil Gase und Jahr abweichen.
 
-Rechnet man bei der historischen Zahl auch Emissionen aus Landnutzungsänderungen dazu (Mittel dreier Modelle), liegt Deutschlands Anteil bei 3,5 Prozent und die Summe bei 54,0 Prozent (statt 53,1). Diese Teilkomponente ist modellunsicherer.
+Rechnet man bei der historischen Zahl auch Emissionen aus Landnutzungsänderungen dazu (Mittel dreier Modelle), liegt Deutschlands Anteil bei 3,5 Prozent und die Summe bei 54,0 Prozent (statt 53,1). Dieser Teil ist unsicherer, weil er auf Modellen beruht.
 
 Pro Kopf liegt Deutschland mit 8,07 Tonnen CO₂-Äquivalent pro Person (2024) über dem weltweiten Durchschnitt von 6,36 Tonnen. Rechnet man nur mit den 58 Ländern über dem Durchschnitt, steht Deutschland dort auf Rang 8, und die Länder dieser Gruppe mit einem Anteil bis zum deutschen kommen auf 14,2 Prozent der weltweiten Emissionen.
 
@@ -62,13 +62,13 @@ Anlass unseres Stücks war die UN-Klimakonferenz COP31 (9. bis 20. November 2026
 
 Seit der Veröffentlichung am 31. August haben wir keine Änderungen an den Kernzahlen vorgenommen. Neuere EDGAR- oder GCP-Daten nennen wir nur mit Quelle und Datum und rechnen sie nicht neu.
 
-Vor der Veröffentlichung fand die unabhängige Validierung in der ersten Prüfrunde einen kritischen Fehler in einem Datenkonverter. Er verfälschte die historische Kernzahl sowie die konsumbasierte und die Landnutzungsvariante. Der falsche Wert wurde nie veröffentlicht. Nach der Korrektur wurden die betroffenen Werte unabhängig nachgerechnet und bestätigt, die übrigen waren bereits geprüft. Das war also keine nachträgliche Korrektur (mehr dazu in Kapitel 10) [1].
+Vor der Veröffentlichung fand die unabhängige Validierung in der ersten Prüfrunde einen kritischen Fehler in einem Programmschritt zum Umwandeln der Daten (Datenkonverter). Er verfälschte die historische Kernzahl sowie die konsumbasierte und die Landnutzungsvariante. Der falsche Wert wurde nie veröffentlicht. Nach der Korrektur wurden die betroffenen Werte unabhängig nachgerechnet und bestätigt, die übrigen waren bereits geprüft. Das war also keine nachträgliche Korrektur (mehr dazu in Kapitel 10) [1].
 
 Zur COP31 machen unsere Stücke keine Vorhersage.
 
 ## Woher wir das wissen
 
-Die Zahlen stammen aus EDGAR (EU JRC, Treibhausgase 2024, 208 Länder) und dem Global Carbon Project (fossile CO₂-Emissionen inklusive Zement, 1850–2024, 214 Länder). Our World in Data diente nur als Sekundärquelle zur Kreuzprüfung und für die konsumbasierte Variante. Zugriffsdatum aller Rohdaten: 31. August 2026. Die Analyse ist deskriptiv (keine p-Werte, keine Konfidenzintervalle), der Analyseplan wurde vorab festgelegt [1]. Einzelheiten stehen in der Langfassung und im Methodenanhang.
+Die Zahlen stammen aus EDGAR (EU JRC, Treibhausgase 2024, 208 Länder) und dem Global Carbon Project (fossile CO₂-Emissionen inklusive Zement, 1850–2024, 214 Länder). Our World in Data diente nur als Sekundärquelle zur Kreuzprüfung und für die konsumbasierte Variante. Zugriffsdatum aller Rohdaten: 31. August 2026. Die Analyse beschreibt nur (deskriptiv): keine p-Werte (Signifikanztests) und keine Konfidenzintervalle (statistische Unsicherheitsspannen), der Analyseplan wurde vorab festgelegt [1]. Einzelheiten stehen in der Langfassung und im Methodenanhang.
 
 **Quellen**
 [1] Klima Kompass · Evidenzcheck: „Die Trittbrettfahrer-Rechnung: Was, wenn ‚zu klein, um zu zählen‘ für alle gelten würde?“, 31.08.2026. https://klimaevidenzcheck.substack.com/p/die-trittbrettfahrer-rechnung-was
