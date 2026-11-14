@@ -1,4 +1,4 @@
-**ENTWURF vom 14.11.2026 (Stellen im Live-Text am 14.11.2026 abgerufen) – nicht freigegeben, auf Substack nicht umgesetzt. Freigabe durch Daniel Saure erforderlich. Datum im Hinweis: Tag der Veröffentlichung eintragen.**
+**ENTWURF vom 14.11.2026 (Stellen im Live-Text am 14.11.2026 abgerufen) – Freigegeben durch Daniel Saure am 14.11.2026 (Chat: „Gelesen, freigeben“ auf die Frage, ob er Hinweistext und Änderungen gelesen hat und freigibt; die Freigabe galt ausdrücklich vorbehaltlich der Prüfung am Original, die danach in `faktencheck_korrektur_fall5_2026-11-14.md` (Nachtrag) bestätigt wurde: 2,8 Grad unverändert, 2,6 und 2,1 Grad schlechter, 66 Prozent für alle drei; Wortlaut danach nicht geändert; Stand Commit 6389dc4). Auf Substack noch nicht umgesetzt. Datum im Hinweis: Tag der Veröffentlichung eintragen.**
 
 # Korrekturvermerk – „Zurück auf 1,5 Grad – was der neue UN-Bericht wirklich verlangt“ (21.10.2026)
 
