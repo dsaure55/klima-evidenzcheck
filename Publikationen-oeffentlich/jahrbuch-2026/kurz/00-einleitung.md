@@ -1,11 +1,11 @@
 # Einleitung – Wer wir sind und wie du dieses Buch liest
-**KURZFASSUNG-ENTWURF v0.1 (28.10.2026), gekürzt aus der Einleitung der Langfassung; nicht geprüft, nicht freigegeben. Enthält Platzhalter `[FAKT n]` (Angaben von Daniel Saure); ohne sie wird nichts ergänzt. Stilpass 28.10.2026 (Stilregeln v0.3), Differenzprüfung 09.11.2026 (Datei in pruefung/stilpass_differenzpruefung_gruppe*), Freigabe durch Daniel Saure steht aus. Vor Satz/Export entfernen.**
+**KURZFASSUNG-ENTWURF v0.2 (14.11.2026: Platzhalter FAKT 2 und FAKT 4 gestrichen, FAKT 3 durch Verweis auf Kapitel 10 ersetzt, Zeitraum bis 12.11.2026, Redaktionsschluss 15.11.2026 eingesetzt (Datum von Daniel Saure zu bestätigen); nicht geprüft, nicht freigegeben) und v0.1 (28.10.2026), gekürzt aus der Einleitung der Langfassung. Stilpass 28.10.2026 (Stilregeln v0.3), Differenzprüfung 09.11.2026 (Datei in pruefung/stilpass_differenzpruefung_gruppe*), Freigabe durch Daniel Saure steht aus. Vor Satz/Export entfernen.**
 
-Dieses Buch sammelt unsere Antworten aus dem Herbst 2026 (27. August bis 21. Oktober): War der Sommer normal? Reicht das Gas für den Winter? Was kostet Klimapolitik? Schafft Deutschland sein Klimaziel? Zu jeder dieser Fragen gab es in diesem Jahr Zahlen, die stimmten, Zahlen, die verkürzt waren, und Zahlen, bei denen ein Vergleich fehlte. Wir haben nachgesehen, was die Daten zeigen, und schreiben auf, was herauskam.
+Dieses Buch sammelt unsere Antworten aus dem Herbst 2026 (27. August bis 12. November): War der Sommer normal? Reicht das Gas für den Winter? Was kostet Klimapolitik? Schafft Deutschland sein Klimaziel? Zu jeder dieser Fragen gab es in diesem Jahr Zahlen, die stimmten, Zahlen, die verkürzt waren, und Zahlen, bei denen ein Vergleich fehlte. Wir haben nachgesehen, was die Daten zeigen, und schreiben auf, was herauskam.
 
 ## Wer wir sind
 
-Klima Kompass prüft und erklärt Aussagen zu Klima und Energie an öffentlichen Daten. Hinter Klima Kompass steht der Mathematiker Dr. Daniel Saure, den der Klimawandel besorgt und der dazu einen Beitrag leisten will. Aus seiner Sicht fehlt es in der öffentlichen Diskussion oft an Daten und Analysen. Unseren ersten Artikel haben wir am 27. August 2026 veröffentlicht. [FAKT 2 offen: Nur nötig, falls es Klima Kompass schon vor dem ersten Artikel gab.]
+Klima Kompass prüft und erklärt Aussagen zu Klima und Energie an öffentlichen Daten. Hinter Klima Kompass steht der Mathematiker Dr. Daniel Saure, den der Klimawandel besorgt und der dazu einen Beitrag leisten will. Aus seiner Sicht fehlt es in der öffentlichen Diskussion oft an Daten und Analysen. Unseren ersten Artikel haben wir am 27. August 2026 veröffentlicht.
 
 Bei uns nennt jede Zahl ihre Quelle, und bei Evidenzchecks legen wir vorab fest, wie wir rechnen. Künstliche Intelligenz hilft uns dabei. Sie schreibt Analysepläne, Programmcode und Entwürfe. Ein Mensch gibt frei und veröffentlicht (Kapitel 9).
 
@@ -26,7 +26,7 @@ Das Buch hat zwei Teile. Der erste, **Was stimmt** (Kapitel 1 bis 8), beginnt mi
 
 Jedes Kapitel folgt demselben Raster: **Kurz gesagt**, der Haupttext, **Was heißt das für dich?**, **Lagen wir richtig?** und **Woher wir das wissen**. Die ausführlichen Methodenbeschreibungen stehen in der Langfassung und im Methodenanhang.
 
-- Redaktionsschluss ist der [Datum, voraussichtlich 15.11.2026]. Was danach passiert ist, steht nicht im Buch.
+- Redaktionsschluss ist der 15. November 2026. Was danach passiert ist, steht nicht im Buch.
 - Die Grafiken zeigen vorhandene Zahlen aus unseren Analysen oder den genannten Quellen. Neue Analysen sind nicht darunter.
 - Das Buch ist kein Lehrbuch der Statistik und gibt keine Empfehlung zu Geld, Gesundheit oder Politik. Hinter den Zahlen zu hitzebedingten Sterbefällen stehen Menschen. Wir gehen damit so um.
 
@@ -34,6 +34,4 @@ Das Buch richtet sich an alle, die Klimazahlen verstehen und prüfen wollen. Vor
 
 ## Wo es weitergeht
 
-Klima Kompass gibt es auf Substack, Instagram, Facebook und als WhatsApp-Kanal. Die Seite „Über / Impressum“ auf Substack ist der Knotenpunkt, dort stehen alle Links (siehe letzte Seite). [FAKT 3: Aufforderung zur Rückmeldung (Fehler melden, Fragen schicken), Kontaktweg laut Impressum. Daniel Saure, 24.10.2026: „Ja“.]
-
-[FAKT 4: Dank an wen? Oder streichen.]
+Klima Kompass gibt es auf Substack, Instagram, Facebook und als WhatsApp-Kanal. Die Seite „Über / Impressum“ auf Substack ist der Knotenpunkt, dort stehen alle Links (siehe letzte Seite). Findest du einen Fehler oder hast du eine Frage, schreib uns. Wie das geht, steht in Kapitel 10.
