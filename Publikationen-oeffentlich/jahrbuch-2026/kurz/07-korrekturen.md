@@ -1,5 +1,5 @@
 # Kapitel 10 – Korrekturen 2026: Wo wir falsch lagen
-**KURZFASSUNG v0.3 (14.11.2026, Fall 4 angeglichen: „nicht belegt“ statt „falsch“, „stand im Analyseplan“ statt „kursierte“, Hinweis auf Substack entschieden (Daniel Saure, 14.11.2026, Chat: „letzteres bleibt so“); Differenzdatei `pruefung/diff_kap10_v03_2026-11-14.diff.txt`; Differenzprüfung als Datei `pruefung/faktencheck_kurz_kap10_differenz_v03_2026-11-14.md` (ok mit Auflagen, 0 kritisch/hoch, 3 mittel, 5 gering; mittlere Auflagen offen: Abschnittsangabe „Was das nicht bedeutet“ im Live-Artikel nicht bestätigt, Zusage „dabei bleibt es“ liegt bei Daniel Saure, „trotzdem“ hängt an der offenen Reihenfolge am selben Tag); Freigegeben durch Daniel Saure am 14.11.2026 (Chat: „ok gelesen freigabe“ auf die Frage, ob er die geänderte Stelle in Fall 4 liest und freigibt; Stand Commit 73599f8; die Freigabe von v0.2 galt für v0.3 nicht, diese ersetzt sie) und v0.2 (14.11.2026, Stilpass Fachbegriffe; Differenzprüfung als Datei `pruefung/faktencheck_kurz_kap10_differenz_v02_2026-11-14.md` (ok, 0 kritisch/hoch/mittel, 10 gering); Freigegeben durch Daniel Saure am 14.11.2026 (Chat: „freigabe und gelesen“ auf die Frage nach der Differenzprüfung; Stand Commit 3906acf; die Platzhalter in eckigen Klammern sind damit nicht gefüllt und bleiben vor Satz zu klären); v0.1 vom 28.10.2026), gekürzt aus Kapitel 8 der Langfassung; Ursprünglicher Faktencheck (v0.1): pruefung/faktencheck_kurz_kap07.md (ok mit Auflagen, mittlere Auflagen eingearbeitet am 28.10.2026, Gegenprüfung der Einarbeitung steht aus). Hinweis: Offen sind die Anzahl der Artikel zum Redaktionsschluss, ob und wann Hinweise auf Substack gesetzt werden (Fall 5 bis 7; Fall 4 entschieden: kein Hinweis), Ursache und Lehre bei Fall 5 bis 7 sowie der Stand der Kanalposts zum CO₂-Preis; vor Satz Liste gegen alle bis dahin veröffentlichten Artikel neu abgleichen. Stilpass 28.10.2026 (Stilregeln v0.3), Differenzprüfung 09.11.2026 (Datei in pruefung/stilpass_differenzpruefung_gruppe*), Vor Satz/Export entfernen.**
+**KURZFASSUNG-ENTWURF v0.4 (14.11.2026, Platzhalter aus Recherche gefüllt: 42 Milliarden nicht dokumentiert, Kanalposts (Wortlaut), Fall 4 Zeiten 12:51/13:25 Uhr, Fall 5 Pressemitteilung belegt, Ursachen Fall 6 und 7 „nicht dokumentiert“, Lehren Fall 5 bis 7, Obergrenze in Fall 6 von 566 auf 565 Millionen Tonnen korrigiert (565,451 aus der Nachrechnung vom 29.10.2026); offen für Daniel Saure: Stand der Liste, Instagram/Facebook angepasst?, Hinweise auf Substack bei Fall 5 bis 7; Differenzprüfung und erneute Freigabe stehen aus, die Freigabe von v0.3 gilt für v0.4 nicht) und v0.3 (14.11.2026, Fall 4 angeglichen: „nicht belegt“ statt „falsch“, „stand im Analyseplan“ statt „kursierte“, Hinweis auf Substack entschieden (Daniel Saure, 14.11.2026, Chat: „letzteres bleibt so“); Differenzdatei `pruefung/diff_kap10_v03_2026-11-14.diff.txt`; Differenzprüfung als Datei `pruefung/faktencheck_kurz_kap10_differenz_v03_2026-11-14.md` (ok mit Auflagen, 0 kritisch/hoch, 3 mittel, 5 gering; mittlere Auflagen offen: Abschnittsangabe „Was das nicht bedeutet“ im Live-Artikel nicht bestätigt, Zusage „dabei bleibt es“ liegt bei Daniel Saure, „trotzdem“ hängt an der offenen Reihenfolge am selben Tag); Freigegeben durch Daniel Saure am 14.11.2026 (Chat: „ok gelesen freigabe“ auf die Frage, ob er die geänderte Stelle in Fall 4 liest und freigibt; Stand Commit 73599f8; die Freigabe von v0.2 galt für v0.3 nicht, diese ersetzt sie) und v0.2 (14.11.2026, Stilpass Fachbegriffe; Differenzprüfung als Datei `pruefung/faktencheck_kurz_kap10_differenz_v02_2026-11-14.md` (ok, 0 kritisch/hoch/mittel, 10 gering); Freigegeben durch Daniel Saure am 14.11.2026 (Chat: „freigabe und gelesen“ auf die Frage nach der Differenzprüfung; Stand Commit 3906acf; die Platzhalter in eckigen Klammern sind damit nicht gefüllt und bleiben vor Satz zu klären); v0.1 vom 28.10.2026), gekürzt aus Kapitel 8 der Langfassung; Ursprünglicher Faktencheck (v0.1): pruefung/faktencheck_kurz_kap07.md (ok mit Auflagen, mittlere Auflagen eingearbeitet am 28.10.2026, Gegenprüfung der Einarbeitung steht aus). Hinweis: Offen sind die Anzahl der Artikel zum Redaktionsschluss, ob und wann Hinweise auf Substack gesetzt werden (Fall 5 bis 7; Fall 4 entschieden: kein Hinweis), Ursache und Lehre bei Fall 5 bis 7 sowie der Stand der Kanalposts zum CO₂-Preis; vor Satz Liste gegen alle bis dahin veröffentlichten Artikel neu abgleichen. Stilpass 28.10.2026 (Stilregeln v0.3), Differenzprüfung 09.11.2026 (Datei in pruefung/stilpass_differenzpruefung_gruppe*), Vor Satz/Export entfernen.**
 
 **Kurz gesagt:** Wir haben in diesem Jahr in sechs unserer bis Redaktionsschluss veröffentlichten Artikel sieben Fälle von Fehlern oder Unbelegtem gefunden. Bei zwei Artikeln waren Zahlen falsch, bei einem ein Verweis, bei einem fehlte der Gesetzgebungsstand, bei einem war eine Erklärung unbelegt, bei einem war eine Quelle ungenau wiedergegeben, und bei einem stimmte eine Angabe zur Arbeitsweise nicht. Keine Korrektur hat die Kernaussage eines Artikels umgeworfen. Zum Freuen gibt das keinen Anlass, denn bei den meisten Fällen wäre ein anderer Ablauf möglich gewesen, der den Fehler früher gefunden hätte.
 
@@ -7,7 +7,7 @@
 
 Fehler wollen wir sichtbar korrigieren, wo es geht im Artikel selbst, mit Datum und Grund. Die Dateien dazu liegen im öffentlichen Repository.
 
-Die Liste hat den Stand vom Redaktionsschluss dieses Buchs [Anzahl der Artikel zum Redaktionsschluss eintragen, derzeit mindestens 17]. Wir haben die veröffentlichten Fassungen mit den Entwürfen im Repository auf Wortlaut verglichen (Textkern, keine inhaltliche Prüfung; für drei Evidenzchecks gab es keinen Entwurf). Drei der Fälle sind uns erst beim Schreiben dieses Buchs aufgefallen, nämlich Fall 5, 6 und 7. Änderungen, die nirgends dokumentiert sind, können wir damit nicht ausschließen.
+Die Liste hat den Stand vom Redaktionsschluss dieses Buchs [Daniel Saure: Stand der Liste. Abgeglichen sind die 16 Beiträge bis zum 21. Oktober; danach folgten sieben weitere bis zum 12. November, die noch nicht abgeglichen sind. Entweder Stand „22. Oktober“ nennen oder die sieben noch abgleichen, dann 23 Beiträge.]. Wir haben die veröffentlichten Fassungen mit den Entwürfen im Repository auf Wortlaut verglichen (Textkern, keine inhaltliche Prüfung; für drei Evidenzchecks gab es keinen Entwurf). Drei der Fälle sind uns erst beim Schreiben dieses Buchs aufgefallen, nämlich Fall 5, 6 und 7. Änderungen, die nirgends dokumentiert sind, können wir damit nicht ausschließen.
 
 ## Die Fälle im Einzelnen
 
@@ -17,7 +17,7 @@ Die Liste hat den Stand vom Redaktionsschluss dieses Buchs [Anzahl der Artikel z
 
 **Was stimmt.** Die Kernaussage hielt: Der Tankrabatt hob 91 bis 95 Prozent des CO₂-Preises auf Benzin auf.
 
-**Ursache.** Das Stück war ein Rechenkommentar und kein Evidenzcheck, es hatte also weder einen Analyseplan noch eine unabhängige Validierung. Ein nachträglicher Faktencheck fand den Fehler. [Woher die 42 Milliarden stammen, ist nicht dokumentiert; Satz dazu nur, wenn Daniel Saure es bestätigt.]
+**Ursache.** Das Stück war ein Rechenkommentar und kein Evidenzcheck, es hatte also weder einen Analyseplan noch eine unabhängige Validierung. Ein nachträglicher Faktencheck fand den Fehler. Woher die 42 Milliarden stammen, ist nicht dokumentiert.
 
 **Gekennzeichnet:** Hinweis oben im Artikel. Zahlen korrigiert, Quellen verlinkt. Die drei Grafiken zeigen noch den ursprünglichen Stand; ein Hinweis am Ende sagt, wo sie abweichen.
 
@@ -43,13 +43,13 @@ Die Liste hat den Stand vom Redaktionsschluss dieses Buchs [Anzahl der Artikel z
 
 **Gekennzeichnet:** Neuer Titel („Bundestag friert CO₂-Preis 2027 ein – was das an der Zapfsäule bedeutet“), angepasste Formulierungen („soll“, „tritt das Gesetz wie beschlossen in Kraft“), eine neue Quelle zum Bundesrat und oben der Hinweis „Aktualisiert am 22.10.2026“.
 
-**Die Kanäle.** Die Posts auf WhatsApp, Instagram und Facebook waren schon vor der Korrektur veröffentlicht und verlinken auf die korrigierte Fassung. Dass der Preis eingefroren sei und 2027 bleibe, war nur als Beschlussstand des Bundestags richtig. [Wortlaut aus den Kanalentwürfen vor Satz abgleichen.] [Stand der Anpassung von Instagram-Text und Facebook-Text zum Redaktionsschluss: offen, vor Satz klären.]
+**Die Kanäle.** Die Posts auf WhatsApp, Instagram und Facebook waren schon vor der Korrektur veröffentlicht und verlinken auf die korrigierte Fassung. Dass der Preis eingefroren sei und 2027 bleibe, war nur als Beschlussstand des Bundestags richtig. Die Entwürfe der Posts nennen den Bundestagsbeschluss vom 15. Oktober, aber nicht, dass der Bundesrat noch beteiligt ist. Gepostet wurden sie laut unserer Redaktionsliste am 18. Oktober. [Daniel Saure: Wurden Instagram-Text und Facebook-Text nach dem 22. Oktober angepasst? Der Satz dazu richtet sich nach deiner Antwort.]
 
 **Lehre.** Bei allem, was ein Gesetz betrifft, nennen wir den Stand mit Datum: Entwurf, beschlossen, in Kraft.
 
 ### 4. „Der Hitzesommer 2026“ (29.08.), Vergleichszahl für 2018
 
-**Fehler.** Im Analyseplan stand für 2018 eine Vergleichszahl von 9.400 hitzebedingten Sterbefällen. Gerechnet haben wir mit dem RKI-Wert von rund 8.500 (Epidemiologisches Bulletin 19/2025). Im Artikel haben wir den Unterschied mit einer Verwechslung in einer Sekundärquelle erklärt. Diese Erklärung ist nicht belegt. Das Laufprotokoll vom 29. August (Schritt 5c) hielt bereits fest, dass sich die 9.400 für 2018 in keiner der drei RKI-Ausgaben (2022, 2023, 2025) bestätigen ließ. Der Artikel erschien am selben Tag und sprach trotzdem von einer aufgedeckten Verwechslung. [Reihenfolge am selben Tag vor Satz klären.] Möglicherweise stammt sie aus dem Bulletin 42/2022. Dort ist 9.400 die obere Grenze des Unsicherheitsintervalls für 2019. Das ist eine Vermutung, abschließend geklärt haben wir es nicht.
+**Fehler.** Im Analyseplan stand für 2018 eine Vergleichszahl von 9.400 hitzebedingten Sterbefällen. Gerechnet haben wir mit dem RKI-Wert von rund 8.500 (Epidemiologisches Bulletin 19/2025). Im Artikel haben wir den Unterschied mit einer Verwechslung in einer Sekundärquelle erklärt. Diese Erklärung ist nicht belegt. Das Laufprotokoll vom 29. August (Schritt 5c) hielt bereits fest, dass sich die 9.400 für 2018 in keiner der drei RKI-Ausgaben (2022, 2023, 2025) bestätigen ließ. Der Artikel erschien am selben Tag um 13:25 Uhr, rund eine halbe Stunde nach dem Ende des Laufs (12:51 Uhr), und sprach trotzdem von einer aufgedeckten Verwechslung. Möglicherweise stammt sie aus dem Bulletin 42/2022. Dort ist 9.400 die obere Grenze des Unsicherheitsintervalls für 2019. Das ist eine Vermutung, abschließend geklärt haben wir es nicht.
 
 **Was stimmt.** Die Aussage des Artikels, dass der Sommer 2026 außerhalb der bisherigen Bandbreite lag, hängt nicht an dieser Zahl. Nicht belegt ist nur die Erklärung im Abschnitt „Was das nicht bedeutet“.
 
@@ -61,23 +61,23 @@ Die Liste hat den Stand vom Redaktionsschluss dieses Buchs [Anzahl der Artikel z
 
 **Fehler.** Unser Stück zum UNEP-Bericht gab die drei Temperaturwerte (2,8, 2,6 und 2,1 Grad bis zum Ende des Jahrhunderts) so wieder, als seien alle drei schlechter als im Vorjahr. Laut Zusammenfassung des Berichts gilt das nur für 2,6 und 2,1 Grad. Der Wert bei aktueller Politik, 2,8 Grad, ist gegenüber dem Vorjahr unverändert. Außerdem fehlte der Hinweis, dass die Werte mit einer Wahrscheinlichkeit von 66 Prozent gelten.
 
-**Ursache.** Die Pressemitteilung schreibt, diese Ergebnisse seien schlechter als die Projektionen des Vorjahres („These outcomes are worse than last year’s projections“). Unser Stück hat das für alle drei Werte übernommen. [Wortlaut der Pressemitteilung vor Satz abrufen und belegen.] Beim Abgleich mit der Executive Summary für Kapitel 6 fiel die Abweichung auf.
+**Ursache.** Die Pressemitteilung schreibt, diese Ergebnisse seien schlechter als die Projektionen des Vorjahres („These outcomes are worse than last year’s projections“). Unser Stück hat das für alle drei Werte übernommen. Der Satz steht in der Pressemitteilung vom 21. Oktober 2026 im Abschnitt „Temperature projections still far too high“, direkt nach den Werten für 2,8 und 2,6 Grad (abgerufen am 14. November 2026). Beim Abgleich mit der Executive Summary für Kapitel 6 fiel die Abweichung auf.
 
 **Gekennzeichnet:** Kapitel 6 gibt die richtige Fassung wieder. Am Artikel auf Substack ist bisher nichts geändert. [Entscheidung offen.]
 
-**Lehre.** [Erst nach Klärung der Ursache formulieren.] Vorläufig: Zahlen aus einem Bericht gleichen wir mit dessen Zusammenfassung ab, bevor wir sie veröffentlichen.
+**Lehre.** Zahlen aus einem Bericht gleichen wir mit dessen Zusammenfassung ab, bevor wir sie veröffentlichen.
 
 ### 6. „Erreicht Deutschland sein Klimaziel 2040?“ (27. August 2026)
 
-**Fehler.** Im Artikel standen für die beiden Fortschreibungen die Bereiche „407–598 Mt“ (Langfrist-Trend) und „16–328 Mt“ (10-Jahres-Trend). Beim Nachrechnen für Kapitel 7 am 24. Oktober haben wir festgestellt, dass das Hauptverfahren der Analyse (eine einfache Trendrechnung mit ihrer Unsicherheitsspanne) 407 bis 566 und 86 bis 328 Millionen Tonnen ergibt. Die Randwerte 598 und 16 stimmen mit den Grenzen der Kontrollrechnung mit einem zweiten Verfahren (ARIMA) überein (Spannen 182 bis 598 und 16 bis 532). Die Bereiche im Artikel mischen also je eine Grenze aus beiden Verfahren.
+**Fehler.** Im Artikel standen für die beiden Fortschreibungen die Bereiche „407–598 Mt“ (Langfrist-Trend) und „16–328 Mt“ (10-Jahres-Trend). Beim Nachrechnen für Kapitel 7 am 24. Oktober haben wir festgestellt, dass das Hauptverfahren der Analyse (eine einfache Trendrechnung mit ihrer Unsicherheitsspanne) 407 bis 565 und 86 bis 328 Millionen Tonnen ergibt. Die Randwerte 598 und 16 stimmen mit den Grenzen der Kontrollrechnung mit einem zweiten Verfahren (ARIMA) überein (Spannen 182 bis 598 und 16 bis 532). Die Bereiche im Artikel mischen also je eine Grenze aus beiden Verfahren.
 
 **Was stimmt.** Die Projektionen selbst (486 und 207 Millionen Tonnen) und die Aussagen sind unberührt. Beim Langfrist-Trend liegt das Ziel von 150 außerhalb aller Spannen, beim 10-Jahres-Trend innerhalb aller.
 
-**Ursache.** Das haben wir noch nicht aufgearbeitet. [Ursache vor Satz klären, nicht vermuten.]
+**Ursache.** Wie es dazu kam, ist nicht dokumentiert, und wir vermuten es nicht.
 
 **Gekennzeichnet:** Kapitel 7 nennt die Spannen aus der Rechnung. Am Artikel auf Substack ist bisher nichts geändert. [Entscheidung offen.]
 
-**Lehre.** [Erst nach Klärung der Ursache formulieren.] Vorläufig: Zahlen im Text gleichen wir vor der Veröffentlichung noch einmal mit der Ergebnistabelle des Rechenlaufs ab.
+**Lehre (vorläufig, die Ursache ist ungeklärt).** Zahlen im Text gleichen wir vor der Veröffentlichung noch einmal mit der Ergebnistabelle des Rechenlaufs ab.
 
 ### 7. Derselbe Artikel (27. August 2026), Angabe zur Arbeitsweise
 
@@ -85,11 +85,11 @@ Die Liste hat den Stand vom Redaktionsschluss dieses Buchs [Anzahl der Artikel z
 
 **Was stimmt.** Die Kernaussage des Artikels bleibt bestehen: Das Zeitfenster entscheidet über die Schlagzeile. Die Zahlen sind davon nicht betroffen.
 
-**Ursache.** [Noch nicht aufgearbeitet, nicht vermuten.]
+**Ursache.** Wie es dazu kam, ist nicht dokumentiert, und wir vermuten es nicht.
 
 **Gekennzeichnet:** Kapitel 7 beschreibt die Analyse als explorativ und nennt die Einschränkungen zur Spanne. Am Artikel auf Substack ist bisher nichts geändert. [Entscheidung offen.]
 
-**Lehre.** [Erst nach Klärung der Ursache formulieren.] Vorläufig: Beschreiben wir unser Vorgehen im Artikel, gleichen wir es vorher mit dem Analyseplan und seinem Status ab.
+**Lehre (vorläufig, die Ursache ist ungeklärt).** Beschreiben wir unser Vorgehen im Artikel, gleichen wir es vorher mit dem Analyseplan und seinem Status ab.
 
 ## Was wir vor der Veröffentlichung gefunden haben
 
