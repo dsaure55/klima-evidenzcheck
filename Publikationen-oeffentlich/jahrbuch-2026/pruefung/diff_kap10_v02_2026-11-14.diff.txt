@@ -1,0 +1,107 @@
+diff --git a/C:/Users/dsaur/AppData/Local/Temp/kap10_v01.md b/kurz/07-korrekturen.md
+index 69f360b..5ed374b 100644
+--- a/C:/Users/dsaur/AppData/Local/Temp/kap10_v01.md
++++ b/kurz/07-korrekturen.md
+@@ -1,5 +1,5 @@
+ # Kapitel 10 – Korrekturen 2026: Wo wir falsch lagen
+~
+ **KURZFASSUNG-ENTWURF 
++v0.2 (14.11.2026, Stilpass Fachbegriffe;
+  v0.1 
+-(28.10.2026),
++vom 28.10.2026),
+  gekürzt aus Kapitel 8 der Langfassung; nicht geprüft, nicht freigegeben, erneute Freigabe durch Daniel Saure und Faktencheck nötig. Faktencheck: pruefung/faktencheck_kurz_kap07.md (ok mit Auflagen, mittlere Auflagen eingearbeitet am 28.10.2026, Gegenprüfung der Einarbeitung steht aus). Hinweis: Offen sind die Anzahl der Artikel zum Redaktionsschluss, ob und wann Hinweise auf Substack gesetzt werden (Fall 4 bis 7, setzt Daniel selbst), Ursache und Lehre bei Fall 5 bis 7 sowie der Stand der Kanalposts zum CO₂-Preis; vor Satz Liste gegen alle bis dahin veröffentlichten Artikel neu abgleichen. Stilpass 28.10.2026 (Stilregeln v0.3), Differenzprüfung 09.11.2026 (Datei in pruefung/stilpass_differenzpruefung_gruppe*), Freigabe durch Daniel Saure steht aus. Vor Satz/Export entfernen.**
+~
+ 
+~
+ **Kurz gesagt:** Wir haben in diesem Jahr in sechs unserer bis Redaktionsschluss veröffentlichten Artikel sieben Fälle von Fehlern oder Unbelegtem gefunden. Bei zwei Artikeln waren Zahlen falsch, bei einem ein Verweis, bei einem fehlte der Gesetzgebungsstand, bei einem war eine Erklärung unbelegt, bei einem war eine Quelle ungenau wiedergegeben, und bei einem stimmte eine Angabe zur Arbeitsweise nicht. Keine Korrektur hat die Kernaussage eines Artikels umgeworfen. Zum Freuen gibt das keinen Anlass, denn bei den meisten Fällen wäre ein anderer Ablauf möglich gewesen, der den Fehler früher gefunden hätte.
+~
+ 
+~
+@@ -69,25 +69,25 @@ Die Liste hat den Stand vom Redaktionsschluss dieses Buchs [Anzahl der Artikel z
+ 
+~
+ ### 6. „Erreicht Deutschland sein Klimaziel 2040?“ (27. August 2026)
+~
+ 
+~
+ **Fehler.** Im Artikel standen für die beiden Fortschreibungen die Bereiche „407–598 Mt“ (Langfrist-Trend) und „16–328 Mt“ (10-Jahres-Trend). Beim Nachrechnen für Kapitel 7 am 24. Oktober haben wir festgestellt, dass das Hauptverfahren der Analyse 
+-(das OLS-Prognoseintervall)
++(eine einfache Trendrechnung mit ihrer Unsicherheitsspanne)
+  407 bis 566 und 86 bis 328 Millionen Tonnen ergibt. Die Randwerte 598 und 16 stimmen mit den Grenzen der Kontrollrechnung mit 
+-ARIMA
++einem zweiten Verfahren (ARIMA)
+  überein 
+-(Intervalle
++(Spannen
+  182 bis 598 und 16 bis 532). Die Bereiche im Artikel mischen also je eine Grenze aus beiden Verfahren.
+~
+ 
+~
+ **Was stimmt.** Die Projektionen selbst (486 und 207 Millionen Tonnen) und die Aussagen sind unberührt. Beim Langfrist-Trend liegt das Ziel von 150 außerhalb aller 
+-Intervalle,
++Spannen,
+  beim 10-Jahres-Trend innerhalb aller.
+~
+ 
+~
+ **Ursache.** Das haben wir noch nicht aufgearbeitet. [Ursache vor Satz klären, nicht vermuten.]
+~
+ 
+~
+ **Gekennzeichnet:** Kapitel 7 nennt die 
+-Intervalle
++Spannen
+  aus der Rechnung. Am Artikel auf Substack ist bisher nichts geändert. [Entscheidung offen.]
+~
+ 
+~
+ **Lehre.** [Erst nach Klärung der Ursache formulieren.] Vorläufig: Zahlen im Text gleichen wir vor der Veröffentlichung noch einmal mit der Ergebnistabelle des Rechenlaufs ab.
+~
+ 
+~
+ ### 7. Derselbe Artikel (27. August 2026), Angabe zur Arbeitsweise
+~
+ 
+~
+ **Fehler.** Der Artikel schreibt, der Analyseplan sei „vor der Modellierung festgelegt“ worden, um nachträgliches Auswählen auszuschließen. Der Analyseplan selbst trägt die Kennzeichnung „retrospektiv erstellt“. Er wurde nach einer ersten Sichtung der Daten verfasst, bei der drei Zeitfenster informell verglichen wurden. Die Analyse gilt deshalb als 
+-exploratorisch
++erkundend (explorativ)
+  und nicht als 
+-präregistriert-konfirmatorisch.
++vorab festgelegte Prüfung.
+  Außerdem betrifft die 
+-Newey-West-Korrektur
++Korrektur für zusammenhängende Jahreswerte (Newey-West)
+  im Plan nur den Test der Steigung. 
+-Das Prognoseintervall
++Die Spanne
+  für 2040 
+-ist
++stammt
+  im Hauptverfahren 
+-ein klassisches OLS-Intervall, das
++aus einer klassischen Trendrechnung, die
+  bei zusammenhängenden Jahreswerten tendenziell zu eng ausfällt.
+~
+ 
+~
+ **Was stimmt.** Die Kernaussage des Artikels bleibt bestehen: Das Zeitfenster entscheidet über die Schlagzeile. Die Zahlen sind davon nicht betroffen.
+~
+ 
+~
+ **Ursache.** [Noch nicht aufgearbeitet, nicht vermuten.]
+~
+ 
+~
+ **Gekennzeichnet:** Kapitel 7 beschreibt die Analyse als explorativ und nennt die Einschränkungen 
+-zum Intervall.
++zur Spanne.
+  Am Artikel auf Substack ist bisher nichts geändert. [Entscheidung offen.]
+~
+ 
+~
+ **Lehre.** [Erst nach Klärung der Ursache formulieren.] Vorläufig: Beschreiben wir unser Vorgehen im Artikel, gleichen wir es vorher mit dem Analyseplan und seinem Status ab.
+~
+ 
+~
