@@ -36,7 +36,7 @@ Rechnet man nur mit CO₂ statt mit allen Treibhausgasen (2024), liegt Deutschla
 
 Zählt man konsumbasiert statt produktionsbasiert (CO₂, 2023), gelten die Emissionen dort, wo die Güter verbraucht werden, und nicht dort, wo sie entstehen. Deutschlands Anteil liegt dann bei 2,1 Prozent, alle Länder bis dahin kommen auf 40,5 Prozent. Diese Werte sind nicht direkt vergleichbar mit den 31,7 Prozent, weil Gase und Jahr abweichen.
 
-Rechnet man bei der historischen Zahl auch Emissionen aus Landnutzungsänderungen dazu (Mittel dreier Modelle), liegt Deutschlands Anteil bei 3,5 Prozent und die Summe bei 54,0 Prozent (statt 53,1). Dieser Teil ist unsicherer, weil er auf Modellen beruht.
+Rechnet man bei der historischen Zahl auch Emissionen aus Landnutzungsänderungen dazu (Mittel dreier Modelle), liegt Deutschlands Anteil bei 3,5 Prozent und die Summe bei 54,0 Prozent (statt 53,1). Der Landnutzungsanteil ist unsicherer, weil er auf Modellen beruht.
 
 Pro Kopf liegt Deutschland mit 8,07 Tonnen CO₂-Äquivalent pro Person (2024) über dem weltweiten Durchschnitt von 6,36 Tonnen. Rechnet man nur mit den 58 Ländern über dem Durchschnitt, steht Deutschland dort auf Rang 8, und die Länder dieser Gruppe mit einem Anteil bis zum deutschen kommen auf 14,2 Prozent der weltweiten Emissionen.
 
@@ -68,7 +68,7 @@ Zur COP31 machen unsere Stücke keine Vorhersage.
 
 ## Woher wir das wissen
 
-Die Zahlen stammen aus EDGAR (EU JRC, Treibhausgase 2024, 208 Länder) und dem Global Carbon Project (fossile CO₂-Emissionen inklusive Zement, 1850–2024, 214 Länder). Our World in Data diente nur als Sekundärquelle zur Kreuzprüfung und für die konsumbasierte Variante. Zugriffsdatum aller Rohdaten: 31. August 2026. Die Analyse beschreibt nur (deskriptiv): keine p-Werte (Signifikanztests) und keine Konfidenzintervalle (statistische Unsicherheitsspannen), der Analyseplan wurde vorab festgelegt [1]. Einzelheiten stehen in der Langfassung und im Methodenanhang.
+Die Zahlen stammen aus EDGAR (EU JRC, Treibhausgase 2024, 208 Länder) und dem Global Carbon Project (fossile CO₂-Emissionen inklusive Zement, 1850–2024, 214 Länder). Our World in Data diente nur als Sekundärquelle zur Kreuzprüfung und für die konsumbasierte Variante. Zugriffsdatum aller Rohdaten: 31. August 2026. Die Analyse beschreibt nur (deskriptiv): keine p-Werte (Ergebnisse von Signifikanztests) und keine Konfidenzintervalle (statistische Unsicherheitsspannen), der Analyseplan wurde vorab festgelegt [1]. Einzelheiten stehen in der Langfassung und im Methodenanhang.
 
 **Quellen**
 [1] Klima Kompass · Evidenzcheck: „Die Trittbrettfahrer-Rechnung: Was, wenn ‚zu klein, um zu zählen‘ für alle gelten würde?“, 31.08.2026. https://klimaevidenzcheck.substack.com/p/die-trittbrettfahrer-rechnung-was
