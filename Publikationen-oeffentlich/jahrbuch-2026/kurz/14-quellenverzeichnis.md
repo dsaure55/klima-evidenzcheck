@@ -145,7 +145,7 @@
 
 [16] Klima Kompass · Wissen: „Kann man CO₂ einfach wieder aus der Luft holen?“, 18.10.2026. https://klimaevidenzcheck.substack.com/p/kann-man-co-einfach-wieder-aus-der
 
-[17] Klima Kompass · Einordnung: „Zurück auf 1,5 Grad – was der neue UN-Bericht wirklich verlangt“, 21.10.2026. https://klimaevidenzcheck.substack.com/p/zuruck-auf-15-grad-was-der-neue-un
+[17] Klima Kompass · Einordnung: „Zurück auf 1,5 Grad – was der neue UN-Bericht wirklich verlangt“, 21.10.2026, korrigiert am 15.11.2026. https://klimaevidenzcheck.substack.com/p/zuruck-auf-15-grad-was-der-neue-un
 
 [18] Copernicus Climate Change Service (C3S): Surface air temperature for October 2026 (abgerufen 15.11.2026). https://climate.copernicus.eu/surface-air-temperature-october-2026
 
@@ -153,7 +153,7 @@
 
 ## Kapitel 7 – Schafft Deutschland sein Klimaziel?
 
-[1] Klima Kompass: „Erreicht Deutschland sein Klimaziel 2040? Die Antwort hängt vom Blickwinkel ab“, 27.08.2026. https://klimaevidenzcheck.substack.com/p/erreicht-deutschland-sein-klimaziel
+[1] Klima Kompass: „Erreicht Deutschland sein Klimaziel 2040? Die Antwort hängt vom Blickwinkel ab“, 27.08.2026, korrigiert am 15.11.2026. https://klimaevidenzcheck.substack.com/p/erreicht-deutschland-sein-klimaziel
 
 [2] Umweltbundesamt (UBA): Emissionsdaten 2025 (Stand 14.03.2026), bereitgestellt über klimadashboard.de (CC BY 4.0). https://klimadashboard.de/emissionen
 
@@ -211,9 +211,9 @@
 
 [5] Klima Kompass: „Der Hitzesommer 2026: Ausreißer oder Teil der Bandbreite?“, 29.08.2026. https://klimaevidenzcheck.substack.com/p/der-hitzesommer-2026-ausreier-oder
 
-[6] Klima Kompass: „Zurück auf 1,5 Grad – was der neue UN-Bericht wirklich verlangt“, 21.10.2026. https://klimaevidenzcheck.substack.com/p/zuruck-auf-15-grad-was-der-neue-un
+[6] Klima Kompass: „Zurück auf 1,5 Grad – was der neue UN-Bericht wirklich verlangt“, 21.10.2026, korrigiert am 15.11.2026. https://klimaevidenzcheck.substack.com/p/zuruck-auf-15-grad-was-der-neue-un
 
-[7] Klima Kompass: „Erreicht Deutschland sein Klimaziel 2040? Die Antwort hängt vom Blickwinkel ab“, 27.08.2026. https://klimaevidenzcheck.substack.com/p/erreicht-deutschland-sein-klimaziel
+[7] Klima Kompass: „Erreicht Deutschland sein Klimaziel 2040? Die Antwort hängt vom Blickwinkel ab“, 27.08.2026, korrigiert am 15.11.2026. https://klimaevidenzcheck.substack.com/p/erreicht-deutschland-sein-klimaziel
 
 [8] Repository: Korrekturvermerke und Faktenchecks unter `Reports/` (https://github.com/dsaure55/klima-evidenzcheck).
 
