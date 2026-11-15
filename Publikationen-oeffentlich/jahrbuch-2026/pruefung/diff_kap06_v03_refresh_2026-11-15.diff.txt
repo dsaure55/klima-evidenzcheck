@@ -1,0 +1,41 @@
+diff --git a/Publikationen-oeffentlich/jahrbuch-2026/kurz/05-welt.md b/Publikationen-oeffentlich/jahrbuch-2026/kurz/05-welt.md
+index 964ac32..0cddc18 100644
+--- a/Publikationen-oeffentlich/jahrbuch-2026/kurz/05-welt.md
++++ b/Publikationen-oeffentlich/jahrbuch-2026/kurz/05-welt.md
+@@ -1,12 +1,12 @@
+# Kapitel 6 – Wo steht die Welt beim 1,5-Grad-Ziel, und kann man CO₂ einfach wieder aus der Luft holen?
+[-**KURZFASSUNG-]{+**KURZFASSUNG-ENTWURF v0.3 (15.11.2026, Daten-Refresh: Nachträge zu Copernicus (Oktober 2026) und NOAA (12.11.2026), Quellen [18] und [19]; erneute Freigabe steht aus, die Freigabe von v0.2 gilt für v0.3 nicht) und+} v0.2 (14.11.2026, Stilpass: Anomalie erklärt, Kapitelverweis im Vermerk auf Kapitel 10 korrigiert; Text sonst wortgleich; Differenzprüfung als Datei `pruefung/faktencheck_kurz_kap06_differenz_v02_2026-11-14.md` (ok, 0 kritisch/hoch/mittel, 1 gering); Freigegeben durch Daniel Saure am 14.11.2026 (Chat: „Gelesen, freigeben“ auf die Frage, ob er Kapitel 6 v0.2 gelesen hat und freigibt; Stand Commit 2c1cb02; die unten genannten offenen Punkte, auch die NOAA-Angaben zu El Niño mit Stand 08.10., bleiben offen); v0.1 vom 28.10.2026), gekürzt aus Kapitel 6 der Langfassung; Hinweis: Die Änderung „neue Klimazusagen“ vom 26.10.2026 wurde nicht erneut gelesen, der UNEP-Bericht wurde nur über Executive Summary und Pressemitteilung geprüft, und die Korrektur des Stücks „Zurück auf 1,5 Grad“ auf Substack (Kapitel 10, Fall 5) steht noch aus. Faktencheck: pruefung/faktencheck_kurz_kap05.md (ok mit Auflagen, mittlere Auflagen eingearbeitet am 28.10.2026, Gegenprüfung der Einarbeitung steht aus). Stilpass 28.10.2026 (Stilregeln v0.3), Differenzprüfung 09.11.2026 (Datei in pruefung/stilpass_differenzpruefung_gruppe*), Vor Satz/Export entfernen.**
+
+
+**Kurz gesagt:** Ein einzelner Monat über 1,5 Grad bedeutet nicht, dass das Pariser Ziel gerissen ist. Es zählt die Erwärmung über Jahrzehnte (beim Weltklimarat IPCC das 20-Jahres-Mittel). Das UN-Umweltprogramm UNEP geht trotzdem inzwischen davon aus, dass die Welt die 1,5 Grad überschreitet, und rechnet einen Weg zurück. Dafür müssten die Emissionen bis 2030 um 18 Prozent sinken (gegenüber 2025). Die neuen Klimazusagen der Staaten bringen 5 bis 8 Prozent. CO₂ aus der Luft zu holen ist keine Abkürzung. Heute geschieht das fast nur über Wälder und Böden, und es ergänzt die Minderung, ersetzt sie aber nicht.
+
+## Was gemessen wurde
+
+Der EU-Klimadienst Copernicus meldete am 12. Oktober 2026, der September 2026 sei weltweit der zweitwärmste September seit Beginn der Datenreihe gewesen. Er lag 1,63 Grad über dem Mittel von 1850 bis 1900, das als Näherung für die vorindustrielle Zeit dient. Es war der zweite Monat in Folge über 1,5 Grad [1]. {+Nachtrag, Stand 15. November 2026: Für den Oktober 2026 meldet Copernicus den wärmsten Oktober seit Beginn der Datenreihe, 1,75 Grad über dem Mittel von 1850 bis 1900. Das ist der dritte Monat in Folge über 1,5 Grad [18].+} Auch in Deutschland war der September warm. Laut vorläufiger Bilanz des Deutschen Wetterdienstes lag das Monatsmittel bei 15,9 °C, 2,1 Grad über dem Mittel von 1991 bis 2020 [2].
+
+## Wie das Ziel gemessen wird
+
+@@ -14,7 +14,7 @@ Nach Angaben der Weltorganisation für Meteorologie (WMO) sind die Temperatursch
+
+Ein Monat mit 1,63 Grad zeigt, wie warm es gerade ist. Ob das Pariser Ziel verfehlt ist, lässt sich daraus allein nicht ablesen. 2024 lag nach WMO-Angaben bei etwa 1,55 Grad und war damit wahrscheinlich das erste Kalenderjahr über 1,5 Grad [6]. 2025 war mit etwa 1,43 Grad kühler [8], unter anderem wegen La Niña. Es war trotzdem eines der drei wärmsten Jahre seit Messbeginn [7]. Beide Werte haben eine Unsicherheit von ±0,13 Grad [6][8]. Die langfristige Erwärmung schätzte die WMO für 2024 auf 1,34 bis 1,41 Grad [6]. Nach IPCC-Bewertung erreicht das 20-Jahres-Mittel die 1,5 Grad in den meisten betrachteten Szenarien nach zentraler Schätzung Anfang der 2030er-Jahre. Im Szenario mit sehr hohen Emissionen geschieht das noch früher [9].
+
+Zur Schwankung gehört auch El Niño, die warme Phase eines wiederkehrenden Musters im tropischen Pazifik. Der aktuelle El Niño ist ungewöhnlich stark. Die US-Wetterbehörde NOAA meldete am 8. Oktober für den vergangenen Monat eine Abweichung vom Normalwert (Anomalie) von +2,1 Grad in der zentralen Messregion. Die Wahrscheinlichkeit, dass er von Oktober bis Dezember die Schwelle eines historisch starken Ereignisses erreicht, gibt sie mit 83 Prozent an [10]. Seit Februar 2026 nutzt die NOAA einen neuen Index (RONI), deshalb lassen sich Angaben aus anderen Quellen nicht ohne Weiteres vergleichen [11]. Nach Einschätzung von Copernicus dürfte dieser El Niño einer der stärksten seit Beginn der Aufzeichnungen werden [1]. {+Nachtrag, Stand 15. November 2026: Die NOAA hat am 12. November ihre Lage neu bewertet. Der El Niño wird weiter stärker, ein starkes bis sehr starkes Ereignis ist bis Januar bis März 2027 mit mehr als 79 Prozent Wahrscheinlichkeit zu erwarten. Für ein historisches Ereignis, bei dem der Dreimonatswert des Index mit +2,5 Grad oder mehr über allen El Niños seit 1950 läge, nennt sie rund 60 Prozent für Oktober bis Dezember und für November bis Januar [19]. Die Zahl vom 8. Oktober (83 Prozent) lässt sich damit nicht direkt vergleichen, weil wir die Abgrenzung der beiden Angaben nicht erneut geprüft haben.+}
+
+Umgekehrt stimmt auch der Satz „Dann ist ja noch reichlich Luft“ nicht. Die Schwelle ist nah, das zeigen die Monate über 1,5 Grad, zuletzt August und September 2026 [1].
+
+@@ -72,7 +72,7 @@ Alle Temperaturwerte aus dem UNEP-Bericht sind Projektionen unter Annahmen, kein
+
+## Lagen wir richtig?
+
+- El Niño und Temperatur: Am 16. Oktober schrieben wir, der El Niño dürfte einer der stärksten seit Beginn der Aufzeichnungen werden, und die NOAA gebe 83 Prozent für ein historisch starkes Ereignis von Oktober bis Dezember an [10]. Ob das so kommt, lässt sich noch nicht sagen, denn der Zeitraum ist noch nicht abgeschlossen. {+Am 12. November nannte die NOAA für ein historisches Ereignis rund 60 Prozent für Oktober bis Dezember [19].+}
+- UNEP-Bericht: Unser Stück vom 21. Oktober stützte sich auf die Pressemitteilung und nicht auf den vollständigen Bericht. Für das Buch haben wir die Zahlen mit der Zusammenfassung des Berichts abgeglichen. Fast alles stimmt. Eine Angabe in unserem Stück stimmt nicht. Der Wert von 2,8 Grad bei aktueller Politik ist gegenüber dem Vorjahr unverändert, wir hatten alle drei Werte als verschlechtert wiedergegeben. Den Volltext des Berichts haben wir nicht gelesen.
+- Offen: Ob der Weg zurück auf 1,5 Grad gelingt, ist offen (UNEP: etwa 50 Prozent im günstigsten Weg).
+
+@@ -98,3 +98,7 @@ Die Temperaturdaten stammen von Copernicus, dem Deutschen Wetterdienst, der WMO,
+[15] Klima Kompass · Wissen: „Monate über 1,5 Grad – ist das Pariser Ziel damit schon gerissen?“, 16.10.2026. https://klimaevidenzcheck.substack.com/p/monate-uber-15-grad-ist-das-pariser
+[16] Klima Kompass · Wissen: „Kann man CO₂ einfach wieder aus der Luft holen?“, 18.10.2026. https://klimaevidenzcheck.substack.com/p/kann-man-co-einfach-wieder-aus-der
+[17] Klima Kompass · Einordnung: „Zurück auf 1,5 Grad – was der neue UN-Bericht wirklich verlangt“, 21.10.2026. https://klimaevidenzcheck.substack.com/p/zuruck-auf-15-grad-was-der-neue-un
+
+{+[18] Copernicus Climate Change Service (C3S): Surface air temperature for October 2026 (abgerufen 15.11.2026). https://climate.copernicus.eu/surface-air-temperature-october-2026+}
+
+{+[19] NOAA Climate Prediction Center: ENSO Diagnostic Discussion, 12.11.2026 (abgerufen 15.11.2026). https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.shtml+}

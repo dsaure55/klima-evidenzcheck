@@ -1,0 +1,29 @@
+diff --git a/Publikationen-oeffentlich/jahrbuch-2026/kurz/14-quellenverzeichnis.md b/Publikationen-oeffentlich/jahrbuch-2026/kurz/14-quellenverzeichnis.md
+index e772ef6..3e6381e 100644
+--- a/Publikationen-oeffentlich/jahrbuch-2026/kurz/14-quellenverzeichnis.md
++++ b/Publikationen-oeffentlich/jahrbuch-2026/kurz/14-quellenverzeichnis.md
+@@ -1,5 +1,5 @@
+# Quellenverzeichnis
+**KURZFASSUNG-ENTWURF {+v0.6 (15.11.2026: Daten-Refresh, Quelle [5] in Kapitel 4 ergänzt, Quellen [18] und [19] in Kapitel 6 ergänzt, wortgleich mit Kapitel 4 und 6 v0.3; erneute Freigabe steht aus, die Freigabe von v0.5 gilt für diese Stellen nicht) und+} v0.5 (14.11.2026: Abschnitt Kapitel 10 um Quellen [9] bis [11] ergänzt, wortgleich mit Kapitel 10 v0.5; Freigegeben durch Daniel Saure am 14.11.2026 (Chat: „Gelesen, freigeben“ auf die Frage, ob er Kapitel 10 v0.5, Kapitel 7 v0.3a, Kapitel 14 und das Vorwort gelesen hat und freigibt; Stand Commit 6d5f40e; Prüfdatei `pruefung/faktencheck_kurz_kap10_v05_kap07_v03a_kap14_vorwort_2026-11-14.md` (ok mit Auflagen, 0 kritisch, 1 hoch, 2 mittel, 5 gering; Auflagen H1 und M1 eingearbeitet; M2 und die Einleitungszeile „27. August bis 21. Oktober“ offen))) und v0.4 (13.11.2026), automatisch aus den „Quellen“-Abschnitten der gekürzten Kapitel zusammengestellt (neue Reihenfolge). Gegenüber v0.3 ergänzt: Quellen des Kastens zu Kapitel 5 (Hitzezahlen), des Kapitels 7a (Wald, Arbeitsnummer) und die Quellen [5] und [6] des Kapitels 8 (Prognose-Register, jetzt mit den veröffentlichten Ergebnissen des Prognose-Checks), jeweils wortgleich aus den freigegebenen Kapiteln übernommen. Kapitel 7: Quellen [4] bis [7] wortgleich aus Kapitel 7 v0.2 übernommen (Kapitel 7 noch nicht freigegeben). Freigegeben durch Daniel Saure am 13.11.2026 (Chat: „13 und 14 habe ich gelesen und freigegeben“; Stand Commit 392497a). Das Verzeichnis übernimmt wortgleich die Quellen der Kapitel; die Freigabe der einzelnen Kapitel gilt unabhängig davon. Vor Satz/Export: diese Kopfzeile entfernen.**
+
+## Kapitel 1 – Zehn Fragen an jede Klimazahl
+
+@@ -77,7 +77,7 @@
+
+[4] Bundesnetzagentur: Aktuelle Lage der Gasversorgung in Deutschland, Lagebewertung vom 16.10.2026 (abgerufen am 16.10.2026; die Seite wird laufend aktualisiert). https://www.bundesnetzagentur.de/gasversorgung
+
+[5] Bundesnetzagentur: Verlauf der Speicherfüllstände in Prozent [-(mit-]{+(Datenreihe abgerufen am 15.11.2026, Aktualisierung der Seite 14.11.2026; mit+} Füllstandsvorgaben nach Gasspeicherfüllstandsverordnung und §§ 35a ff. EnWG). https://www.bundesnetzagentur.de/DE/Gasversorgung/aktuelle_gasversorgung/_svg/Gasspeicher_Fuellstand/Speicherfuellstand.html
+
+[6] Eurostat: Bestandsveränderungen Gas, Monatswerte (nrg_cb_gasm), Stand der Daten 08.09.2026. https://ec.europa.eu/eurostat/databrowser/view/nrg_cb_gasm/ · Deutscher Wetterdienst: Climate Data Center, Gebietsmittel Deutschland. https://opendata.dwd.de/climate_environment/CDC/
+
+@@ -147,6 +147,10 @@
+
+[17] Klima Kompass · Einordnung: „Zurück auf 1,5 Grad – was der neue UN-Bericht wirklich verlangt“, 21.10.2026. https://klimaevidenzcheck.substack.com/p/zuruck-auf-15-grad-was-der-neue-un
+
+{+[18] Copernicus Climate Change Service (C3S): Surface air temperature for October 2026 (abgerufen 15.11.2026). https://climate.copernicus.eu/surface-air-temperature-october-2026+}
+
+{+[19] NOAA Climate Prediction Center: ENSO Diagnostic Discussion, 12.11.2026 (abgerufen 15.11.2026). https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.shtml+}
+
+## Kapitel 7 – Schafft Deutschland sein Klimaziel?
+
+[1] Klima Kompass: „Erreicht Deutschland sein Klimaziel 2040? Die Antwort hängt vom Blickwinkel ab“, 27.08.2026. https://klimaevidenzcheck.substack.com/p/erreicht-deutschland-sein-klimaziel
