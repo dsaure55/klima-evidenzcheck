@@ -217,3 +217,151 @@ Nach der Umsetzung: fokussierte Nachprüfung als Nachtrag zu dieser Datei (CLAUD
   identisch.
 - Hinweis: `output/console_log.txt` erzeugt nicht das Skript, sondern die Umleitung der
   Konsole beim Aufruf. Inhaltlich deckt sie sich mit dem run_log-Block.
+
+---
+
+## Nachtrag 1: Nachprüfung der Auflagen (23.11.2026)
+
+**Gegenstand:** Umsetzung der Auflagen V-1 bis V-5 aus Abschnitt 7 dieses Berichts.
+**Geprüfter Stand:** Commit a60b58d (HEAD) gegen 5c15e79, Grundlage
+`git diff 5c15e79 HEAD -- Analysen/2026-11-kaeltewinter-2010`. Der Commit ändert genau
+6 Dateien, alle in diesem Ordner: Analysebericht, Abweichungsprotokoll, Skript,
+`run_log.txt`, Grafik 1, Grafik 2. SAP und dieser Validierungsbericht sind unverändert.
+**Prüfer:** Claude (validator-Subagent), unabhängig.
+**Arbeitsweise:** Diff gelesen, sha256 aller 16 Dateien in `output/` selbst berechnet,
+Skript in einer Scratch-Kopie neu ausgeführt (`KW_NO_RUNLOG=1`, R 4.6.1), beide Grafiken
+gesichtet, Textstellen 7.1/7.2 wörtlich gegen SAP 8 und 9 abgeglichen,
+DWD-Nutzungsbedingungen selbst abgerufen. Außer dem Anhängen dieses Nachtrags habe ich
+nichts verändert. Kein Commit, kein Freigabevermerk.
+
+### N1.1 Auflagen im Einzelnen
+
+| Auflage | Ergebnis | Befund |
+|---|---|---|
+| V-1 (M-1) | **erfüllt** (für den Analysebericht) | 7.1 gibt die SAP-8-Pflichtinhalte fast wörtlich wieder: INES vertritt Speicherbetreiber, ohne Motivzuschreibung; Kälteszenario methodisch üblich, kein Urteil über die Szenariowahl; Kombinationscharakter keine Kritik; Auswahleffekt. 7.2 enthält alle sieben Spiegelstriche aus SAP 9 einzeln und inhaltlich deckungsgleich, auch die vier, die ich in M-1 vermisst hatte. Einzige Ergänzung gegenüber dem SAP-Wortlaut steht in Limitation 2: „Das betrifft vor allem E1 (1881–2026) und S6/S8“. Sachlich richtig, weil diese Rechnungen Werte vor 1951 nutzen, aber nicht vollständig: Auch die E1-Teilzeiträume vor 1951 und die E1-Angaben zu S1, S2 und S14 sind betroffen (gering, N-4). Der zweite Adressat von V-1 („später den Veröffentlichungstext“) bleibt offen, bis ein Artikelentwurf existiert. |
+| V-2 (M-2) | **erfüllt** | Abschnitt 5 legt offen, dass S9b das Referenzjahr mitzählt, dass genau S9b das Maximum der Spannbreite bildet, und nennt 2/29 = 7 % mit Verweis auf Tabelle 1 (2/29 = 6,9 %, richtig gerundet). Es wird ausdrücklich gesagt, dass 7 % keine alternative Spannbreite ist. Es gab keine Neuberechnung: Tabelle 2, `ergebnisse.json` und die Spannbreite sind bitidentisch. Die Entscheidung von Daniel Saure zu A4(b) ist korrekt als offener Punkt geführt. Redaktionelle Unstimmigkeit: In Abschnitt 10 des Analyseberichts steht als Ort „Abweichungsprotokoll A4/A11“, die Zeilen A4 und A11 sind aber unverändert (0 gelöschte Zeilen im Protokoll). Die Offenlegung steht nur im Nachtrag des Protokolls. A4 nennt „einschließlich 2010“ schon im Original, die Transparenz leidet also nicht (gering, N-3). |
+| V-3 (M-3) | **im Analysebericht erfüllt; für die Veröffentlichungsgrafik offen** (N-1) | Der Lesehinweis in 4.3 nennt die 3 % nur mit der Spanne 0,5 % bis 10 %, erwähnt die Linksschiefe (g₁ = −0,51), den Q-Q-Befund und die Bootstrap-Schätzer (5 %) und verweist auf die Spannbreite über die Rechenwege. Der Primärschätzer wird nicht gewechselt. Formulierung „kann … eher knapp schätzen“, nicht „unterschätzt“: angemessen. Grafik 2: siehe N1.4. |
+| V-4 (G-1) | **erfüllt** | `run_log.txt` hat 77 neue Zeilen und 0 gelöschte, wurde also nur ergänzt. Den Lizenz-Nachtrag habe ich gegengeprüft: `Nutzungsbedingungen_German.txt` am 23.11.2026 selbst abgerufen, Wortlaut („Creative Commons BY 4.0 … Stand: Mai 2024“) identisch. Hinweis: Die OWID-Lizenz ist als „zu prüfen“ vermerkt. V-4 hat das nicht verlangt, und OWID-Werte werden nicht veröffentlicht. Vor einer Veröffentlichung, die OWID nennt, trotzdem klären (gering). |
+| V-5 (G-3) | **erfüllt** | Rundungen gegen die ungerundeten Werte im run_log geprüft: σ̂ 1,6657 → 1,7; Residual-SD 1,863 / 1,442 → 1,9 / 1,4; S8-SD 1,649 → 1,6; S9a-SD 1,47 → 1,5; Trend 0,381 → 0,4 K/Dekade. Alle korrekt. Ausnahmen: siehe N1.3. |
+| V-5 (G-5) | **erfüllt** | Beide Grafiken gesichtet: „März“, „wärmer“, „Fläche“, „Verlängerung“, „für“ werden richtig dargestellt (Skript UTF-8). A14 ist korrekt als Post-hoc-Darstellungsänderung gekennzeichnet. Die Zeilen A1–A13 sind unverändert. |
+| V-6 | nicht Gegenstand | Liegt bei Daniel Saure, weiterhin offen (Analysebericht Abschnitt 10, Punkt 2). |
+
+### N1.2 Ergebnisdateien unverändert, Skript-Diff
+
+- `git diff 5c15e79 HEAD -- output/`: geändert sind nur `grafik1_zeitreihe_jfm.png` und
+  `grafik2_praediktive_verteilung_2027.png`. Alle Tabellen, `ergebnisse.json`, alle CSV,
+  `diagnostik_M1.png`, `session_info.txt` und `console_log.txt` sind im Git unverändert.
+- sha256 aller 16 Dateien in `output/` selbst berechnet: Alle stimmen mit der Spalte
+  „nachher“ im run_log überein. Bei den 14 nicht geänderten Dateien ist „vorher“ =
+  „nachher“.
+- **Eigener Neulauf** (Scratch-Kopie mit Skript HEAD, `rohdaten/` und
+  Gasspeicher-Vergleichsdatei, Exit-Code 0): Alle 15 vom Skript erzeugten Dateien sind
+  per `cmp` **bitidentisch** mit HEAD, **auch die beiden neuen PNG-Dateien**. Die
+  eingecheckten Grafiken stammen also nachweislich aus dem eingecheckten Skript. Die
+  Konsolenausgabe ist identisch bis auf den Zeitstempel und die Dateiliste
+  (`console_log.txt` fehlt in der Scratch-Kopie, weil diese Datei durch Umleitung
+  entsteht).
+- **Skript-Diff:** 5 Kommentarzeilen im Kopf (A14), 2 Kommentarzeilen vor `labs()` und 7
+  geänderte Beschriftungsstrings (Legende, Titel, Untertitel, Achse, Caption von Grafik
+  1 und 2). Keine Rechenzeile, kein Filter, kein Seed und keine Reihenfolge der
+  Zufallsziehungen sind betroffen. **Bestanden.**
+- Gering (N-5): Der Kopf des Analyseberichts nennt weiterhin nur den Lauf „21:11 MEZ“.
+  Der Neulauf 21:29:39 MEZ steht nur in Abschnitt 10 und im run_log. Da die Ergebnisse
+  bitidentisch sind, ist das inhaltlich folgenlos. Ein Halbsatz im Kopf wäre trotzdem
+  sauberer.
+
+### N1.3 Rundungsausnahmen (Analysebericht Abschnitt 10)
+
+SAP 11 legt fest: „Temperaturen 0,1 °C (Rechnung ungerundet, Vergleich auf 0,01 °C …)“.
+
+| Ausnahme | Bewertung |
+|---|---|
+| (a) Spalte „Wert (ungerundet)“ in Abschnitt 2 | **vertretbar.** Sie ist als ungerundet gekennzeichnet, die gerundete Spalte steht daneben, und der Analysebericht ist ein Prüfdokument, kein Veröffentlichungstext. Nicht in den Artikel übernehmen. |
+| (b) 1883 mit 0,0336 °C gegenüber 0,0339 °C | **vertretbar und nötig.** Der Gleichstand entsteht erst durch den Vergleich auf 0,01 °C nach SAP 2.0. Bei 0,1 °C wäre er nicht nachvollziehbar. |
+| (c) 3.5-2: 0,19 K / 0,003 K | **vertretbar.** Die Toleranz in SAP 3.5 (0,05 K) ist feiner als 0,1 K. Bei Rundung auf 0,1 K stünde dort 0,0 K und der Check wäre nicht mehr lesbar. |
+| (d) b̂₀ / b̂₁ (0,0381 K pro Jahr) | **vertretbar.** Das sind Modellparameter bzw. eine Rate, keine Temperatur. Auf 0,1 K/Jahr gerundet ergäbe sich 0,0, also eine Falschaussage. Die Dekadenrate 0,4 K steht daneben. |
+
+Nicht aufgeführt, aber gleich zu behandeln (gering, N-6): In 4.3 stehen in Klammern
+Wahrscheinlichkeiten als Dezimalzahlen (0,0331; 0,0048 bis 0,0995; 0,0328). SAP 11
+verlangt Prozent ohne Nachkommastelle. Für das Prüfdokument ist das vertretbar (gleiche
+Logik wie (a)), es stand schon im Erstbericht. Nicht in den Artikel übernehmen. Gesamt:
+**bestanden.**
+
+### N1.4 Grafik 2: „(3 %)“ ohne Spanne
+
+Der Untertitel lautet: „Fläche links der Linie: mindestens so kalt wie Jan.-März 2010
+(3 %)“. Bewertung:
+
+- **Keine SAP-Abweichung.** SAP 11 verlangt für Grafik 2 die prädiktive Verteilung, die
+  schattierte Fläche und die Beschriftung „klimatologische Wahrscheinlichkeit, keine
+  Wettervorhersage“. Alles drei ist vorhanden. Eine Spanne in der Grafik schreibt der SAP
+  nicht vor.
+- **V-3 ist für die Grafik aber nicht erfüllt.** V-3 verlangt, die Kernaussage zu E2
+  *immer* mit Unsicherheitsspanne zu nennen. Der Untertitel ist genau diese Kernzahl.
+  Grafiken werden erfahrungsgemäß ohne den Begleittext geteilt (Instagram, Facebook,
+  Weiterverbreitung). Dort stünde die 3 % ohne Spanne, also in der Darstellung, die M-3
+  verhindern sollte. Hinzu kommt: Die Grafik zeigt die Normalverteilung von M1. Gerade
+  deren linke Flanke ist nach M-3 der unsichere Teil.
+- **Einstufung: N-1, mittel, offene Auflage vor der Veröffentlichung.** Sie blockiert das
+  Gate nicht, weil sie nicht kritisch ist, und betrifft den Analysebericht nicht. Bevor
+  Grafik 2 in einem Artikel oder Kanalpost verwendet wird, ist sie umzusetzen.
+  Vorschlag (Umsetzung durch analyst, nicht durch mich): Untertitel z. B. „… (3 %,
+  Spanne 0,5 % bis 10 %; je nach Rechenweg 0,4 % bis 10 %)“ oder mindestens „(3 %,
+  Spanne 0,5 % bis 10 %)“. Das ist eine reine Beschriftungsänderung wie A14: als
+  Post-hoc-Darstellung kennzeichnen, neu laufen lassen, sha256 nachweisen.
+  Unzureichend wäre, die Spanne nur in den Artikeltext zu schreiben und die Grafik
+  unverändert zu lassen.
+- **Nebenbefund (gering, N-2):** Die Caption von Grafik 2 lautet „Daten: DWD“. Der
+  Lizenz-Nachtrag V-4 legt für Artikel und Grafiken die Namensnennung „Quelle: Deutscher
+  Wetterdienst“ fest. Grafik 1 erfüllt das sinngemäß („Daten: Deutscher Wetterdienst
+  (DWD)“), Grafik 2 nur mit Abkürzung. Mit N-1 zusammen angleichen.
+
+### N1.5 Neue Probleme durch die Änderungen, insbesondere 7.1
+
+- **7.1: keine neue Interpretation über den SAP hinaus.** Alle vier Spiegelstriche
+  entsprechen SAP 8 („Keine implizite Politik-/Verhaltensbewertung“ und „Regression zur
+  Mitte / Auswahleffekt“) inhaltlich und weitgehend wörtlich. Auch der Satz „Eine
+  niedrige oder hohe Wahrscheinlichkeit P̂₂₀₂₇ ist deshalb kein Urteil über die
+  Szenariowahl von INES“ steht so im SAP. Es gibt keine Wertung von INES, keine
+  Gasbilanzaussage und keine ausgeschlossene Formulierung aus 8.2. **Bestanden.**
+- 4.3 Lesehinweis: Die qualitative Aussage zur linken Flanke ist durch SAP 5.2, den
+  Q-Q-Plot und S10 gedeckt und vorsichtig formuliert. Es wird keine Sensitivität als
+  „eigentliches“ Ergebnis herausgestellt (SAP 7). **Bestanden.**
+- Gering: N-3 (Ortsangabe A4/A11), N-4 (Limitation 2 unvollständig konkretisiert), N-5
+  (Laufzeitpunkt im Kopf), N-6 (Dezimal-Wahrscheinlichkeiten in 4.3), jeweils oben
+  beschrieben. Keiner dieser Punkte berührt Zahlen.
+- Der Status im Kopf des Analyseberichts („Nachprüfung durch den validator steht aus“)
+  und Punkt 3 in dessen Abschnitt 10 sind mit diesem Nachtrag überholt. Die
+  Aktualisierung ist Sache des analyst bzw. der Top-Level-Session.
+
+### N1.6 Ampel (Nachprüfung)
+
+| Prüfpunkt | Ampel |
+|---|---|
+| V-1 | bestanden (Hinweis N-4; Veröffentlichungstext später erneut prüfen) |
+| V-2 | bestanden (Hinweis N-3; Entscheidung A4(b) durch Daniel Saure offen) |
+| V-3 | Abweichung: im Bericht erfüllt, Grafik 2 offen (N-1, mittel) |
+| V-4 | bestanden (DWD-Wortlaut selbst verifiziert; Hinweis OWID-Lizenz) |
+| V-5 | bestanden (Ausnahmen a bis d vertretbar; Hinweis N-6) |
+| Ergebnisdateien / Skript-Diff | bestanden (eigener Neulauf bitidentisch, auch PNG) |
+| Neue Interpretation (7.1, 4.3) | bestanden |
+
+### N1.7 Gesamturteil Nachtrag 1
+
+**Auflagen V-1, V-2, V-4 und V-5 erfüllt. V-3 ist im Analysebericht erfüllt, für Grafik 2
+offen (N-1, mittel). Kein Befund „kritisch“, kein Befund „hoch“.** Alle Zahlen und
+Ergebnisdateien sind unverändert und von mir bitidentisch reproduziert. Das Gate
+„Validierungsbericht ohne kritisch“ (SAP 11) ist weiterhin formal erfüllt.
+
+Vor einer Veröffentlichung offen:
+1. **N-1:** Spanne in den Untertitel von Grafik 2 (mit N-2, Quellenangabe) als
+   gekennzeichnete Darstellungsänderung mit sha256-Nachweis.
+2. **V-2:** Entscheidung Daniel Saure zur Auslegung A4(b).
+3. **V-6:** Bestätigungen Daniel Saure zu A1b und A9.
+4. **V-1/V-3 im Artikeltext:** SAP-8-Inhalte, Limitationen und „3 % nur mit Spanne“ sind
+   in den Veröffentlichungstext zu übernehmen. Das prüft der Faktencheck bzw. eine
+   weitere Nachprüfung am Entwurf.
+
+Die geringen Punkte N-2 bis N-6 können gesammelt mit N-1 erledigt werden. Eine erneute
+Nachprüfung durch den validator ist nur für N-1 nötig (Grafik und sha256-Nachweis) und
+kann als Nachtrag 2 zu dieser Datei erfolgen.
