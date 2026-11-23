@@ -43,6 +43,11 @@
 #     dieser Vergleich zusaetzlich ausgegeben. Keine Rechnung wird geaendert.
 # A10 (Post-hoc, Zusatzinformation zu E1): Gleichstaende bei 0,01-Rundung werden
 #     im Log namentlich genannt.
+# A14 (Darstellungsaenderung, Validierungsauflage V-5, 23.11.2026): In Grafik 1
+#     und Grafik 2 wurden ausschliesslich Umlaute in Beschriftungen korrigiert
+#     (Maerz -> März, waermer -> wärmer, Flaeche -> Fläche, Verlaengerung ->
+#     Verlängerung, fuer -> für). Keine Rechenzeile geaendert; Ergebnisdateien
+#     nach Neulauf per sha256 als bitidentisch geprueft (run_log.txt).
 # Keine "Abweichung vom SAP - Rueckfrage an Mensch" im Sinne einer nicht
 # umsetzbaren Vorgabe, ausser sie wird unten zur Laufzeit gemeldet.
 # =============================================================================
@@ -664,15 +669,16 @@ g1 <- ggplot(g1d, aes(year, T_jfm)) +
   geom_line(colour = "grey60") +
   geom_point(aes(colour = kalt), size = 1.6) +
   scale_colour_manual(values = c(`FALSE` = "grey40", `TRUE` = "#1f5fa8"),
-                      labels = c(`FALSE` = "waermer als 2010", `TRUE` = "mindestens so kalt wie 2010"), name = NULL) +
+                      labels = c(`FALSE` = "wärmer als 2010", `TRUE` = "mindestens so kalt wie 2010"), name = NULL) +
   geom_hline(yintercept = T_ref, linetype = "dashed", colour = "#1f5fa8") +
   geom_line(data = tr, aes(year, y), colour = "#c0392b", linewidth = 0.9, inherit.aes = FALSE) +
   annotate("point", x = 2027, y = f1$b[1] + f1$b[2] * 2027, colour = "#c0392b", shape = 4, size = 2.5) +
-  labs(title = "Januar bis Maerz in Deutschland, 1881-2026",
-       subtitle = paste0("Mitteltemperatur Jan.-Maerz (DWD-Gebietsmittel); gestrichelt: Jan.-Maerz 2010 (",
+  # V-5 (Darstellungsänderung 23.11.2026): nur Umlaute in Beschriftungen, keine Rechnung
+  labs(title = "Januar bis März in Deutschland, 1881-2026",
+       subtitle = paste0("Mitteltemperatur Jan.-März (DWD-Gebietsmittel); gestrichelt: Jan.-März 2010 (",
                          format(round(T_ref, 1), nsmall = 1, decimal.mark = ","), " °C)\n",
-                         "rot: linearer Trend 1971-2026, Kreuz: Trendniveau 2027 (Verlaengerung, kein Messwert)"),
-       x = NULL, y = "°C", caption = "Daten: Deutscher Wetterdienst (DWD), Datenschnitt Maerz 2026") +
+                         "rot: linearer Trend 1971-2026, Kreuz: Trendniveau 2027 (Verlängerung, kein Messwert)"),
+       x = NULL, y = "°C", caption = "Daten: Deutscher Wetterdienst (DWD), Datenschnitt März 2026") +
   theme(legend.position = "bottom")
 ggsave(file.path(out_dir, "grafik1_zeitreihe_jfm.png"), g1, width = 9, height = 5, dpi = 150)
 
@@ -691,11 +697,12 @@ g2 <- ggplot(dd, aes(x, d)) +
   geom_area(data = dd[dd$x <= T_ref, ], fill = "#1f5fa8", alpha = 0.6) +
   geom_line() +
   geom_vline(xintercept = T_ref, linetype = "dashed", colour = "#1f5fa8") +
+  # V-5 (Darstellungsänderung 23.11.2026): nur Umlaute in Beschriftungen, keine Rechnung
   labs(title = "Klimatologische Wahrscheinlichkeit, keine Wettervorhersage",
-       subtitle = sprintf("Verteilung der Jan.-Maerz-Mitteltemperatur unter dem Klimazustand 2027 (Modell %s)\nFlaeche links der Linie: mindestens so kalt wie Jan.-Maerz 2010 (%s)",
+       subtitle = sprintf("Verteilung der Jan.-März-Mitteltemperatur unter dem Klimazustand 2027 (Modell %s)\nFläche links der Linie: mindestens so kalt wie Jan.-März 2010 (%s)",
                           primary, fmt_p(prim$p)),
-       x = "Mitteltemperatur Januar-Maerz (°C)", y = "Dichte",
-       caption = "Daten: DWD; Modell: Trend 1971-2026. Grundrate, keine Prognose fuer den Winter 2026/27.")
+       x = "Mitteltemperatur Januar-März (°C)", y = "Dichte",
+       caption = "Daten: DWD; Modell: Trend 1971-2026. Grundrate, keine Prognose für den Winter 2026/27.")
 ggsave(file.path(out_dir, "grafik2_praediktive_verteilung_2027.png"), g2, width = 9, height = 5, dpi = 150)
 
 # Diagnostikgrafiken (SAP 5.2)

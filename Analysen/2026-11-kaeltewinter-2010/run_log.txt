@@ -73,3 +73,80 @@ S14: T_ref^S14 = 0.21; Rang 22 von 146; Liste: 1886 1888 1889 1891 1893 1895 190
 3.5-5 Gesamtergebnis Integritaets-Checks: 3.5-1 Vollstaendigkeit/Fehlwerte/Bereich: bestanden; 3.5-2 DJF Monatswerte vs. Winterdatei (<= 0,05 K): nicht bestanden; 3.5-3 Abgleich Gasspeicher-Datei Okt 2013-Maerz 2026: bestanden; 3.5-4 kein Wert nach Maerz 2026: bestanden
 Ausgaben: arbeitsdaten_monatswerte_bis_2026-03.csv, check_3-5-2_djf_vs_winterdatei.csv, check_3-5-3_abgleich_gasspeicher.csv, console_log.txt, diagnostik_M1.png, ergebnisse.json, grafik1_zeitreihe_jfm.png, grafik2_praediktive_verteilung_2027.png, M1_acf_pacf.csv, M1_residuen_cooksD.csv, owid_vergleich_jfm.csv, session_info.txt, tabelle1_E1.csv, tabelle2_E2_sensitivitaeten.csv, tabelle3_diagnostik.csv, zielgroessen_jahreswerte_1881-2026.csv
 Lauf ohne Fehler beendet.
+
+## Nachtrag Lizenz (V-4), 23.11.2026, Top-Level-Session
+DWD-Nutzungsbedingungen geprüft am 23.11.2026: https://opendata.dwd.de/climate_environment/CDC/Nutzungsbedingungen_German.txt
+Wortlaut: "Es gelten die Bedingungen der Lizenz Creative Commons BY 4.0 "CC BY 4.0". Einzelheiten unter https://www.dwd.de/copyright" (Stand: Mai 2024).
+Folge: Nutzung und Veröffentlichung erlaubt mit Namensnennung "Quelle: Deutscher Wetterdienst" in Artikel und Grafiken.
+OWID-Lizenz: laut OWID-Metadaten im Datensatz zu prüfen (nur Plausibilisierung, keine Veröffentlichung der OWID-Werte vorgesehen).
+
+## Neulauf V-5 (Darstellungsänderung Grafik-Beschriftungen), 23.11.2026, analyst-Subagent
+Anlass: Validierungsauflage V-5 (Umlaute in Grafik 1 und 2). Geändert nur Beschriftungsstrings und Kommentare in kaeltewinter-2010.R (A14). Folgender Logblock stammt vom Neulauf; sha256-Vergleich vorher/nachher am Ende dieses Abschnitts.
+
+## Analyselauf analyst (Claude), 2026-11-23T21:29:39+0100
+Skript: kaeltewinter-2010.R; SAP v1.0 final (Commit 2a2353e); R version 4.6.1 (2026-06-24 ucrt)
+Seed 20261123, B = 10000
+Datenschnitt Maerz 2026 angewendet direkt nach dem Einlesen. Verworfene Zeilen (Anzahl, ohne Werte): tm_01: 0, tm_02: 0, tm_03: 0, tm_10: 1, tm_11: 0, tm_12: 0; winter: 0; OWID DEU: 7
+DWD-Dateikoepfe ('erstellt am'): tm_01: 20261102, tm_02: 20261102, tm_03: 20261102, tm_10: 20261102, tm_11: 20261102, tm_12: 20261102; winter: 20260302
+DWD-Winterdatei: Jahreszahl = Jahr von Januar/Februar (erster Eintrag 1882 = Dez. 1881-Feb. 1882); S1 nutzt Jahr 2010 = Dez. 2009-Feb. 2010.
+3.5-1: fehlende Monate = 0, NA = 0, Duplikate = 0, ausserhalb [-15, 15] = 0 -> bestanden
+3.5-2: Winter 1882-2026, max |Abweichung| = 0.1878 K, Anzahl > 0,05 K = 52 -> NICHT bestanden (dokumentiert)
+3.5-2 Zusatz (Post-hoc A9, nur Erklaerung): ungewichtetes Monatsmittel vs. Winterdatei: max |Abweichung| = 0.0033 K, Anzahl > 0,05 K = 0. S1 bleibt nach SAP 6 tagesgewichtet.
+3.5-3: Abgleich Okt. 2013-Maerz 2026 mit Gasspeicher-Datei: 78 Monate verglichen, 0 fehlen in Gasspeicher-Datei, 0 abweichend -> bestanden
+3.5-4: kein Monatswert nach Maerz 2026 im Arbeitsdatensatz -> bestanden
+Referenzwerte (ungerundet): T_ref(JFM 2010) = 0.0339; DJF 2009/10 = -1.3026; Okt-Mar 2009/10 = 2.6793; T_ref^S14 = 0.2145
+E1: T_ref = 0.03 degC; k1 = 35 von n = 145; h1 = 0.2414 [CP 0.1743; 0.3194]; Rang 2010 = 35 von 146 (1 = kaeltestes, ties = min)
+E1 Zusatz (A10): Gleichstand mit T_ref nach 0,01-Rundung (zaehlt als 'mindestens so kalt'): 1883 (ungerundet 0.0336)
+E1: Jahre mit T_y <= T_ref: 1881 1883 1886 1887 1888 1889 1891 1892 1893 1895 1901 1909 1917 1922 1924 1929 1931 1940 1941 1942 1947 1954 1955 1956 1963 1964 1969 1970 1979 1985 1986 1987 1996 2006 2013; letztes vor 2010: 2006; erstes nach 2010: 2013
+M1: b0 = -73.90951, b1 = 0.038076 K/Jahr (0.381 K/Dekade), sigma = 1.6657, h2027 = 0.07338, yhat2027 = 3.2709, P_M1 = 0.03305
+M1: yhat2027 95%-KI [2.366; 4.176]; yhat2010 = 2.624 [2.076; 3.171]; Residuum 2010 z = -1.555, Rang 7 von 56 (1 = negativstes)
+5.2 Diagnostik M1: Ljung-Box(Lag 5) Q = 5.149, p = 0.3980; Durbin-Watson = 1.547 (p = 0.0308); Shapiro-Wilk W = 0.9679, p = 0.1408; Schiefe g1 = -0.505; Breusch-Pagan BP = 1.015, p = 0.3136; Residual-SD 1971-1998 = 1.863, 1999-2026 = 1.442; Cook's D > 4/n: 1974 1985 1987
+5.3 Umschaltregel: Ljung-Box p < 0,05: nein; Shapiro-Wilk p < 0,05: nein -> Primaerschaetzer: M1
+5.4 M1: Mittel P*_b = 0.03281 vs. t-praediktiv 0.03305 (Differenz -0.024 Pp) -> ok (<= 0,5 Pp)
+M1-AR: phi = 0.2211, sigma_e = 1.5940, b0 = -74.2229, b1 = 0.038230, u2026 = -0.4713, yhat2027 = 3.1650, P = 0.03186; verworfene phi-Ziehungen: 0 (Anteil 0.0000)
+E2 PRIMAER (M1): P2027 = 0.03305 [0.00481; 0.09948]; Wiederkehrzeit 30.3 Jahre [10.1; 207.8]
+Spannbreite P_hat ueber E2-Sensitivitaeten (S1, S2, S6-S10, S12-S14): 0.00363 (S14) bis 0.10000 (S9b)
+  Primaer JFM, Referenz JFM 2010: P = 0.03305 [0.00481; 0.09948] = 3 % (0,5 % bis 10 %); Wiederkehr 30 [10; 210]; E1 k = 35/145, 0.2414 [CP 0.1743; 0.3194]
+  S1 DJF-Mittel, Referenz Dez. 2009-Feb. 2010: P = 0.01732 [0.00170; 0.05834] = 2 % (0,2 % bis 6 %); Wiederkehr 60 [17; 590]; E1 k = 26/144, 0.1806 [CP 0.1215; 0.2533]
+  S2 Okt.-Mar.-Mittel, Referenz Winterhalbjahr 2009/10: P = 0.02324 [0.00288; 0.07303] = 2 % (0,3 % bis 7 %); Wiederkehr 45 [14; 350]; E1 k = 52/144, 0.3611 [CP 0.2828; 0.4453]
+  S3: entfallen per SAP v0.2, Grund: keine geeigneten Tagesdaten ohne unverhaeltnismaessigen Aufwand (3.2)
+  S4: entfallen per SAP v0.2, Grund: keine geeigneten Tagesdaten ohne unverhaeltnismaessigen Aufwand (3.2)
+  S5: entfallen per SAP v0.2, Grund: keine geeigneten Tagesdaten ohne unverhaeltnismaessigen Aufwand (3.2)
+  S6 Trendfenster 1881-2026 (linear): P = 0.08903 [0.04199; 0.15535] = 9 % (4 % bis 16 %); Wiederkehr 11 [6; 25]
+  S7 Trendfenster 1961-2026 (linear): P = 0.03113 [0.00533; 0.08878] = 3 % (0,5 % bis 9 %); Wiederkehr 30 [11; 185]
+  S8 LOESS 1881-2026 (Grad 2, span 0,5, gaussian), Niveau 2026, SD LOESS-Residuen 1971-2026: P = 0.01593 [0.00111; 0.11620] = 2 % (0,1 % bis 12 %); Wiederkehr 65 [9; 905]
+  S9a Ohne Trend, 1997-2026 stationaer, t-praediktiv: P = 0.04097 [0.00811; 0.10639] = 4 % (0,8 % bis 11 %); Wiederkehr 25 [9; 125]
+  S9b Ohne Trend, 1997-2026, empirischer Anteil (inkl. 2010): P = 0.10000 [0.02112; 0.26529] = 10 % (2 % bis 27 %); Wiederkehr 10 [4; 45]
+  S10 Nicht gewaehlter Schaetzer: M1-AR: P = 0.03186 [0.00395; 0.08796] = 3 % (0,4 % bis 9 %); Wiederkehr 30 [11; 255]
+  S10 Nicht gewaehlter Schaetzer: M1-Boot: P = 0.05357 [0.00000; 0.14286] = 5 % (0 % bis 14 %); Wiederkehr 19 [7; nicht begrenzt]
+  S10 Nicht gewaehlter Schaetzer: M1-Block-Boot: P = 0.05357 [0.00000; 0.16071] = 5 % (0 % bis 16 %); Wiederkehr 19 [6; nicht begrenzt]
+  S11: entfallen per SAP v0.2, Grund: keine geeigneten Tagesdaten ohne unverhaeltnismaessigen Aufwand (3.2)
+  S12 M1 ohne 2010 im Trendfenster 1971-2026 (n = 55): P = 0.02739 [0.00354; 0.08427] = 3 % (0,4 % bis 8 %); Wiederkehr 35 [12; 280]
+  S13 Trendniveau 2026 statt 2027 (Hebelwert 2026): P = 0.03439 [0.00549; 0.10078] = 3 % (0,5 % bis 10 %); Wiederkehr 30 [10; 180]
+  S14 INES-Kombinationszeitraum Nov.-Mar. (U_t), Referenz Nov./Dez. 2010 + Jan.-Mar. 2010: P = 0.00363 [0.00013; 0.01729] = 0,4 % (0,01 % bis 2 %); Wiederkehr 275 [60; 7870]; E1 k = 21/145, 0.1448 [CP 0.0919; 0.2128]; E1 ohne 2010/2011: k = 21, n = 143, Anteil = 0.1469 [CP 0.0933; 0.2157]
+S14: T_ref^S14 = 0.21; Rang 22 von 146; Liste: 1886 1888 1889 1891 1893 1895 1909 1917 1922 1924 1929 1940 1941 1942 1947 1956 1963 1969 1970 1985 1996
+3.4 OWID (average-monthly-surface-temperature, ERA5, lastUpdated 2026-11-11): gemeinsamer Zeitraum 1940-2026 (n = 87); Rang JFM 2010: DWD 19, OWID 19 (1 = kaeltestes); Pearson r = 0.9959
+3.5-5 Gesamtergebnis Integritaets-Checks: 3.5-1 Vollstaendigkeit/Fehlwerte/Bereich: bestanden; 3.5-2 DJF Monatswerte vs. Winterdatei (<= 0,05 K): nicht bestanden; 3.5-3 Abgleich Gasspeicher-Datei Okt 2013-Maerz 2026: bestanden; 3.5-4 kein Wert nach Maerz 2026: bestanden
+Ausgaben: arbeitsdaten_monatswerte_bis_2026-03.csv, check_3-5-2_djf_vs_winterdatei.csv, check_3-5-3_abgleich_gasspeicher.csv, console_log.txt, diagnostik_M1.png, ergebnisse.json, grafik1_zeitreihe_jfm.png, grafik2_praediktive_verteilung_2027.png, M1_acf_pacf.csv, M1_residuen_cooksD.csv, owid_vergleich_jfm.csv, session_info.txt, tabelle1_E1.csv, tabelle2_E2_sensitivitaeten.csv, tabelle3_diagnostik.csv, zielgroessen_jahreswerte_1881-2026.csv
+Lauf ohne Fehler beendet.
+
+## sha256-Vergleich output/ vor und nach Neulauf V-5 (analyst-Subagent, 23.11.2026)
+Neulauf: Rscript kaeltewinter-2010.R . (R 4.6.1), Exit-Code 0. Konsolenausgabe des Neulaufs bis auf den Zeitstempel identisch mit output/console_log.txt (Lauf 21:11:07); console_log.txt selbst wurde nicht neu erzeugt.
+Format: Datei | sha256 vorher | sha256 nachher | Ergebnis
+M1_acf_pacf.csv | 8de7b6795b45df341db45ca2f179d6a3244a6058fbf485bff5a2c7fd06f5096a | 8de7b6795b45df341db45ca2f179d6a3244a6058fbf485bff5a2c7fd06f5096a | bitidentisch
+M1_residuen_cooksD.csv | d3ac8c4985d01c5b22205ff776fc9451cf6d3416a6bd0961ada7c7a7a465cfcc | d3ac8c4985d01c5b22205ff776fc9451cf6d3416a6bd0961ada7c7a7a465cfcc | bitidentisch
+arbeitsdaten_monatswerte_bis_2026-03.csv | aa246100776e76bbe6bcc0c276f26e1c933385d922938c5a33f66ace46845ed1 | aa246100776e76bbe6bcc0c276f26e1c933385d922938c5a33f66ace46845ed1 | bitidentisch
+check_3-5-2_djf_vs_winterdatei.csv | cc6d8d97c53d2151ba696e66182a080d66545c690af5288c8db519cb8a6f153d | cc6d8d97c53d2151ba696e66182a080d66545c690af5288c8db519cb8a6f153d | bitidentisch
+check_3-5-3_abgleich_gasspeicher.csv | 2304e212aa4f0d37e59a2c301a75b2bbf03afcb645adaf58c506ae56ebcf19aa | 2304e212aa4f0d37e59a2c301a75b2bbf03afcb645adaf58c506ae56ebcf19aa | bitidentisch
+console_log.txt | 30b173649fef48ff525ef6f1b9c554e4e79f48771140f10aaeabb54a61c31455 | 30b173649fef48ff525ef6f1b9c554e4e79f48771140f10aaeabb54a61c31455 | bitidentisch
+diagnostik_M1.png | 2ca9e710b2c37fd5b756429a56bb81ace8948f0f49a77ad9466d3a61a8da373f | 2ca9e710b2c37fd5b756429a56bb81ace8948f0f49a77ad9466d3a61a8da373f | bitidentisch
+ergebnisse.json | e62a2d88c65c8705ad5ccb82bdc78b081eda3d48e6162d5bd766490ef87b54dc | e62a2d88c65c8705ad5ccb82bdc78b081eda3d48e6162d5bd766490ef87b54dc | bitidentisch
+grafik1_zeitreihe_jfm.png | e13d1054ffdf745a63f9a2f7be6a6ef1c1eae8e645a48d68d0760ccea8f1fc95 | 4b08968227fa6db7c15b18b7210f23399dd045a810384f6e81c6dbee7c5e8b46 | geaendert (erwartet: nur Beschriftung, V-5)
+grafik2_praediktive_verteilung_2027.png | 89562728f62bf0c50a23f041ba4696512125a4049ca3d413adbe4b49969c1f34 | 22c3af3e331d71cb80d5fce15db94c0cd6eb1212e1c6a7e6fd2b723f2bcc8f95 | geaendert (erwartet: nur Beschriftung, V-5)
+owid_vergleich_jfm.csv | b94001e89be66dc8850d4cb4b10ecbf7ee01de3556da580cb101a003ef34a5a9 | b94001e89be66dc8850d4cb4b10ecbf7ee01de3556da580cb101a003ef34a5a9 | bitidentisch
+session_info.txt | 41faa7ab5ccd9c11799e974cc594183bb33d64e9c81a3be680780481677c88ca | 41faa7ab5ccd9c11799e974cc594183bb33d64e9c81a3be680780481677c88ca | bitidentisch
+tabelle1_E1.csv | dfacc2253e313aac53e786822b10cf3eacc0bd5d751299b48cf8c8775e8c3b20 | dfacc2253e313aac53e786822b10cf3eacc0bd5d751299b48cf8c8775e8c3b20 | bitidentisch
+tabelle2_E2_sensitivitaeten.csv | 7565df38f8d42265cf6fe029c60baa36577c18a2b2dacf19e4d8fa67fee3b77a | 7565df38f8d42265cf6fe029c60baa36577c18a2b2dacf19e4d8fa67fee3b77a | bitidentisch
+tabelle3_diagnostik.csv | 24ff28268f2cff53d909b0bc927575784424d7b962b27e361e2a11de4da8139b | 24ff28268f2cff53d909b0bc927575784424d7b962b27e361e2a11de4da8139b | bitidentisch
+zielgroessen_jahreswerte_1881-2026.csv | 12aac2b61693c1bbe1bdd0008d75fd796a60ca27f441a6b9c13a85019501ab15 | 12aac2b61693c1bbe1bdd0008d75fd796a60ca27f441a6b9c13a85019501ab15 | bitidentisch
+Ergebnis: Alle Tabellen (tabelle1-3), ergebnisse.json, alle uebrigen CSV, diagnostik_M1.png und session_info.txt bitidentisch. Geaendert nur grafik1_zeitreihe_jfm.png und grafik2_praediktive_verteilung_2027.png (Umlaute in Beschriftungen).

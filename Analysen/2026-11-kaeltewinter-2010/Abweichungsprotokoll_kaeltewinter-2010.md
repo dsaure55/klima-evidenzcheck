@@ -27,6 +27,7 @@ Abweichung wurde nach der Höhe eines Ergebnisses gewählt.
 | A11 | Auslegung | 6 (Spannbreiten-Aussage) | Min./Max. von P̂ über alle E2-Sensitivitätszeilen einschließlich S9a, S9b und aller drei S10-Schätzer. | SAP: „über alle durchgeführten E2-Sensitivitäten“. Ohne S9b läge das Maximum bei S6 (9 %). | Spannbreite 0,4 % (S14) bis 10 % (S9b) |
 | A12 | gering | 5.2 (Linearität) | Glättung in der Grafik „Residuen gegen angepasste Werte“ mit `lowess` statt `loess`. | Nur grafisch, keine Rechnung. | keine |
 | A13 | Hinweis | 10 | Pakete `binom` und `tseries` nicht installiert; verwendet wurden die im SAP zugelassenen Alternativen `stats::binom.test` (Clopper-Pearson) und eine eigene, im Skript dokumentierte Moving-Block-Bootstrap-Funktion (`mbb_index`, Blocklänge 3, Startpunkte gleichverteilt auf 1…54, 19 Blöcke, auf 56 gekürzt). | Keine Abweichung, nur Dokumentation. | keine |
+| A14 | Post-hoc (Darstellung, Validierungsauflage V-5, 23.11.2026) | 11 | Umlaute in den Beschriftungen von Grafik 1 und Grafik 2 korrigiert (Maerz → März, waermer → wärmer, Flaeche → Fläche, Verlaengerung → Verlängerung, fuer → für). Nur Beschriftungsstrings und Kommentare in `kaeltewinter-2010.R` geändert; Skript neu ausgeführt (Exit-Code 0). | Validierungsbericht G-5/V-5; Freigabe Daniel Saure im Chat 23.11.2026 („Ja, umsetzen“). | keine auf Ergebnisse: sha256 vorher/nachher in `run_log.txt`; alle Tabellen, `ergebnisse.json`, alle CSV, `diagnostik_M1.png`, `session_info.txt` bitidentisch; geändert nur die PNG-Dateien von Grafik 1 und 2 |
 
 ## Offene Punkte / Rückfragen an Mensch
 
@@ -37,3 +38,23 @@ Abweichung wurde nach der Höhe eines Ergebnisses gewählt.
    keinen Netzzugriff auf die DWD-Seite für diese Prüfung genutzt.
 3. Keine SAP-Vorgabe war technisch nicht umsetzbar. Keine „Abweichung vom SAP –
    Rückfrage an Mensch“ im Sinne einer nicht umsetzbaren Vorgabe.
+
+## Nachtrag: Umsetzung der Validierungsauflagen (23.11.2026)
+
+*Durch: Claude (analyst-Subagent). Grundlage: `Validierungsbericht_kaeltewinter-2010.md`,
+Abschnitt 7. Freigabe: Daniel Saure im Chat 23.11.2026, „Ja, umsetzen“ (V-1 bis V-5,
+S9b nur offengelegt). SAP v1.0 final unverändert. Die Tabelle oben (A1–A13) bleibt im
+ursprünglichen Wortlaut stehen; neu ist nur A14.*
+
+| Auflage | Art | Änderung | Datei(en) | Wirkung auf Zahlen |
+|---|---|---|---|---|
+| V-1 | Bericht (Text) | SAP-8-Pflichtinhalte und alle sieben SAP-9-Limitationen einzeln ausgeschrieben | Analysebericht, Abschnitt 7.1/7.2 | keine |
+| V-2 | Bericht (Offenlegung zu A4(b)/A11) | Offengelegt: S9b zählt das Referenzjahr 2010 selbst mit (3/30 = 10 %); ohne 2010 2/29 = 7 % (Tabelle 1, Teilzeitraum 1997–2026); S9b bildet das Maximum der Spannbreite 0,4 % bis 10 %. **Nicht neu gerechnet**, Tabelle 2, `ergebnisse.json` und Spannbreite unverändert. Auslegung A4(b) bleibt bis zur Entscheidung durch Daniel Saure bestehen. | Analysebericht, Abschnitt 5 und 10 | keine |
+| V-3 | Bericht (Text) | Lesehinweis: 3 % nur mit Spanne 0,5 % bis 10 %; Modellabhängigkeit (Schiefe −0,51, Bootstrap-Schätzer 5 %). Primärschätzer M1 unverändert (Regel 5.3). | Analysebericht, Abschnitt 4.3 | keine |
+| V-4 | – | nicht vom analyst bearbeitet (Adressat Top-Level-Session). Stand 23.11.2026: Nachtrag „Lizenz (V-4)“ der Top-Level-Session steht in `run_log.txt`; damit betrifft offener Punkt 2 oben diesen Nachtrag (vom analyst nicht geprüft). | `run_log.txt` (nicht vom analyst) | keine |
+| V-5 | Bericht (Rundung) | Temperaturangaben auf 0,1: σ̂ 1,7 K; Residual-SD 1,9 / 1,4 K; S8 SD 1,6 K; S9a SD 1,5 K; Trend 0,4 K pro Dekade. Ausnahmen mit Begründung im Analysebericht, Abschnitt 10. | Analysebericht, 4.1, 4.2, 5 | keine |
+| V-5 | Skript (Darstellung), A14 | Umlaute in Grafik 1 und 2; Neulauf; sha256-Vergleich aller `output/`-Dateien in `run_log.txt` | `kaeltewinter-2010.R`, `output/grafik1_zeitreihe_jfm.png`, `output/grafik2_praediktive_verteilung_2027.png`, `run_log.txt` | keine (Ergebnisdateien bitidentisch) |
+
+**Neuer offener Punkt (V-2):** Entscheidung Daniel Saure, ob die Auslegung A4(b)
+(empirischer Anteil S9b einschließlich 2010) bestehen bleibt. Jede Änderung wäre
+Post-hoc zu kennzeichnen; beide Varianten wären zu berichten.

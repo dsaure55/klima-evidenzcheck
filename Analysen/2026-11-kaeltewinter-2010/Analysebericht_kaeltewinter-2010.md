@@ -1,6 +1,9 @@
 # Analysebericht – Kältewinter wie 2010
 
-**Status: vor Validierung.** Dieser Bericht dokumentiert die Umsetzung des SAP und
+**Status: validiert mit Auflagen** (`Validierungsbericht_kaeltewinter-2010.md`,
+23.11.2026: 0 kritisch, 0 hoch, 3 mittel). Auflagen V-1, V-2, V-3 und V-5 durch den
+analyst umgesetzt (siehe Abschnitt 10); fokussierte Nachprüfung durch den
+validator steht aus. Dieser Bericht dokumentiert die Umsetzung des SAP und
 die Rechenergebnisse. Kernaussagen für eine Veröffentlichung werden nach SAP 11
 erst nach dem Validierungsbericht formuliert. Keine Kanaltexte.
 
@@ -15,8 +18,9 @@ erst nach dem Validierungsbericht formuliert. Keine Kanaltexte.
 - **Datenschnitt März 2026:** angewendet direkt nach dem Einlesen. Monatswerte
   ab Oktober 2026 sind in keiner Ausgabe, keiner Grafik und keiner Logzeile
   enthalten; U₂₀₂₇ wurde nicht berechnet.
-- **Abweichungen:** siehe `Abweichungsprotokoll_kaeltewinter-2010.md` (A1–A13;
-  keine betrifft Primärgröße, Fenster, Referenz oder Umschaltregel).
+- **Abweichungen:** siehe `Abweichungsprotokoll_kaeltewinter-2010.md` (A1–A14;
+  keine betrifft Primärgröße, Fenster, Referenz oder Umschaltregel; A14 ist eine
+  reine Darstellungsänderung nach Auflage V-5).
 
 ## 1. Integritäts-Checks (SAP 3.5)
 
@@ -66,8 +70,8 @@ Vergleich T_y ≤ T_ref nach Rundung auf 0,01 °C; 2010 ausgeschlossen.
 
 | Kenngröße | Wert |
 |---|---|
-| b̂₀ / b̂₁ | −73,910 / 0,0381 K pro Jahr (0,38 K pro Dekade) |
-| σ̂ (Divisor n − 2) | 1,67 K |
+| b̂₀ / b̂₁ | −73,910 / 0,0381 K pro Jahr (Modellkoeffizienten; gerundet 0,4 K pro Dekade) |
+| σ̂ (Divisor n − 2) | 1,7 K |
 | h₂₀₂₇ | 0,0734 |
 | ŷ₂₀₂₇ (95-%-KI) | 3,3 °C (2,4 bis 4,2 °C) |
 | ŷ₂₀₁₀ (95-%-KI) | 2,6 °C (2,1 bis 3,2 °C) |
@@ -86,7 +90,7 @@ Außergewöhnlichkeit.
 | Durbin-Watson | DW = 1,547 | 0,031 | nur Information (p < 0,05) |
 | Schiefe g₁ (Momentenschiefe) | −0,505 | – | nur Information |
 | Breusch-Pagan gegen Jahr | BP = 1,015 | 0,314 | nur Information |
-| Residual-SD 1971–1998 / 1999–2026 | 1,86 / 1,44 K | – | beschreibend |
+| Residual-SD 1971–1998 / 1999–2026 | 1,9 / 1,4 K | – | beschreibend |
 | Cook's D > 4/56 | 1974, 1985, 1987 | – | kein Ausschluss |
 
 - ACF/PACF bis Lag 10 und Q-Q-Plot: `output/diagnostik_M1.png`,
@@ -107,6 +111,17 @@ Außergewöhnlichkeit.
 Die Spanne bildet nur die statistische Unsicherheit von M1 ab, nicht die
 Modellwahl (dafür Abschnitt 5).
 
+**Lesehinweis zur Primärzahl (Auflage V-3):** Die 3 % werden nur zusammen mit
+der Unsicherheitsspanne **0,5 % bis 10 %** genannt, nicht als alleinstehende
+Zahl. Die Primärzahl ist modellabhängig: M1 nimmt normalverteilte Residuen an.
+Die Residuen sind linksschief (Schiefe g₁ = −0,51); im Q-Q-Plot liegen die
+kältesten Residuen unter der Normalverteilungslinie. Shapiro-Wilk (p = 0,14)
+löst die Umschaltregel 5.3 nicht aus, M1 bleibt daher nach SAP Primärschätzer.
+Das Normalmodell kann kalte Extreme aber eher knapp schätzen: Die
+Bootstrap-Schätzer, die keine Normalverteilung annehmen (S10, M1-Boot und
+M1-Block-Boot), liefern 5 % statt 3 %. Die Modellabhängigkeit über alle
+Rechenwege zeigt die Spannbreite in Abschnitt 5.
+
 ## 5. Sensitivitäten (SAP 6), Tabelle 2
 
 | Nr. | Variation | Verfahren | P̂ | Spanne 95 % | Wiederkehr (Jahre) | E1 (k/n, Anteil, CP) |
@@ -119,8 +134,8 @@ Modellwahl (dafür Abschnitt 5).
 | S5 | kälteste 30-Tage-Phase | entfallen per SAP v0.2, Grund wie S3 | – | – | – | – |
 | S6 | Trendfenster 1881–2026 | M1 | 9 % | 4–16 % | 11 [6; 25] | – |
 | S7 | Trendfenster 1961–2026 | M1 | 3 % | 0,5–9 % | 30 [11; 185] | – |
-| S8 | LOESS 1881–2026, Niveau 2026 (3,6 °C), SD 1,65 K | Normal-prädiktiv, Residuen-Bootstrap | 2 % | 0,1–12 % | 65 [9; 905] | – |
-| S9a | ohne Trend, 1997–2026, t-prädiktiv (Mittel 2,7 °C, SD 1,47 K) | Parametersimulation (A4, Post-hoc) | 4 % | 0,8–11 % | 25 [9; 125] | – |
+| S8 | LOESS 1881–2026, Niveau 2026 (3,6 °C), SD 1,6 K | Normal-prädiktiv, Residuen-Bootstrap | 2 % | 0,1–12 % | 65 [9; 905] | – |
+| S9a | ohne Trend, 1997–2026, t-prädiktiv (Mittel 2,7 °C, SD 1,5 K) | Parametersimulation (A4, Post-hoc) | 4 % | 0,8–11 % | 25 [9; 125] | – |
 | S9b | ohne Trend, 1997–2026, empirischer Anteil inkl. 2010 (3/30: 2006, 2010, 2013) | Clopper-Pearson (A4, Post-hoc) | 10 % | 2–27 % | 10 [4; 45] | – |
 | S10 | M1-AR (φ̂ = 0,22) | GLS AR(1), ML | 3 % | 0,4–9 % | 30 [11; 255] | – |
 | S10 | M1-Boot | Residuen-Bootstrap | 5 % | 0–14 % | 19 [7; nicht begrenzt] | – |
@@ -136,6 +151,18 @@ SAP 11 gerundet (ganze Jahre, ab 20 auf 5 Jahre).
 **Spannbreite (SAP 6):** Je nach Rechenweg liegt P̂ zwischen **0,4 % (S14)** und
 **10 % (S9b)** (Auslegung A11: alle Zeilen einschließlich S9b; ohne S9b wäre das
 Maximum 9 % bei S6).
+
+**Offenlegung zu S9b (Auflage V-2):** Das Maximum der Spannbreite (10 %) stammt
+genau aus S9b. Der empirische Anteil in S9b zählt das Referenzjahr 2010 selbst
+mit (3/30: 2006, 2010, 2013). 2010 erfüllt „mindestens so kalt wie 2010“
+zwangsläufig. In E1 (2.1) und bei S1/S2 (A6) wird das Referenzjahr dagegen
+ausgeschlossen. Ohne 2010 ergäbe der empirische Anteil 1997–2026 **2/29 = 7 %**
+(dieser Wert steht bereits in Tabelle 1, Teilzeitraum 1997–2026). Die Auslegung
+A4(b) wurde nicht geändert und nicht neu gerechnet; Zahlen und Tabellen
+bleiben unverändert. Ob die Auslegung A4(b) bestehen bleibt, entscheidet
+Daniel Saure (**offener Punkt**, siehe Abschnitt 10). Bis dahin gilt die
+Spannbreite 0,4 % bis 10 % wie vorab festgelegt; der Wert 7 % ist eine
+Offenlegung, keine alternative Spannbreite.
 
 **S14 im Detail (SAP 2.5):** Rang von T_ref^S14 unter 146 Werten: 22. Jahre mit
 U_t ≤ T_ref^S14: 1886 1888 1889 1891 1893 1895 1909 1917 1922 1924 1929 1940
@@ -173,8 +200,52 @@ Daten: `output/owid_vergleich_jfm.csv`.
 - **Kombinationszeitraum (2.5, 9):** Das INES-Szenario kombiniert November–
   Dezember 2010 mit Januar–März 2010; so ist es nie als ein zusammenhängender
   Winter aufgetreten.
-- Limitationen nach SAP 9 gelten unverändert (Monatsmittel glätten kurze
-  Kältewellen; keine Tagesdaten-Sensitivitäten).
+
+### 7.1 Interpretationsrahmen (SAP 8; ergänzt nach Auflage V-1)
+
+- **Kontext INES:** INES vertritt Speicherbetreiber. Das wird hier sachlich als
+  Kontext genannt; die Analyse schreibt INES keine Motive zu und bewertet weder
+  INES noch Bundesregierung noch Bundesnetzagentur.
+- **Kälteszenario ist methodisch üblich:** Ein Kälteszenario in einer
+  Risikorechnung ist methodisch üblich, unabhängig davon, wie wahrscheinlich es
+  ist. Eine niedrige oder hohe Wahrscheinlichkeit P̂₂₀₂₇ ist deshalb kein Urteil
+  über die Szenariowahl von INES.
+- **Kombinationscharakter ist keine Kritik:** Dass das INES-Szenario
+  November–Dezember 2010 mit Januar–März 2010 kombiniert (2.5, S14), wird
+  sachlich beschrieben, nicht als Kritik.
+- **Auswahleffekt:** Das Referenzjahr wurde wegen seiner Kälte ausgewählt; Rang
+  und Residuum von 2010 sind eine Beschreibung, keine unabhängige Bestätigung
+  seiner Außergewöhnlichkeit (siehe auch 4.1).
+
+### 7.2 Limitationen (SAP 9, einzeln; ergänzt nach Auflage V-1)
+
+1. **Monatsmittel glätten kurze Kältewellen**, die für die Gasspitzenlast
+   entscheidend sind. Die Tagesdaten-Sensitivitäten (Gradtage, Kältephasen,
+   Extremwertansatz; S3–S5, S11) entfallen mangels täglichem
+   DWD-Gebietsmittel und wegen des Aufwands und des späteren Beginns (1951) der
+   HYRAS-Raster (3.2). Kurze Kältewellen werden daher nicht abgebildet.
+2. **Weniger Stationen vor 1951:** Die DWD-Gebietsmittel vor 1951 beruhen auf
+   weniger Stationen; die Unsicherheit früher Werte ist größer, wird aber nicht
+   modelliert. Das betrifft vor allem E1 (1881–2026) und S6/S8.
+3. **Begrenzte Grundlage für die linke Flanke:** E2 beruht mit n = 56
+   (1971–2026) auf einer begrenzten Grundlage für Aussagen über die kalte
+   Flanke der Verteilung; die Spanne ist deshalb Teil der Kernaussage (siehe
+   auch Lesehinweis in 4.3).
+4. **Referenzjahr als Punktdefinition:** Ein einzelnes Referenzjahr ist eine
+   Punktdefinition von „Kälte“; die Wahl stammt von INES und wurde nicht
+   optimiert.
+5. **Kombiniertes Szenario:** Das INES-Szenario kombiniert November–Dezember
+   2010 mit Januar–März 2010 (3.3). Die Primärgröße (JFM) bildet nur den
+   zweiten Teil ab; S14 bildet die Kombination ab, vergleicht sie aber mit
+   zusammenhängenden historischen Zeiträumen. Beides ist eine Näherung an ein
+   Szenario, das so nie als ein Winter aufgetreten ist.
+6. **Keine Aussage zum laufenden Winter:** Die Analyse sagt nichts zu den
+   Monaten Oktober–Dezember 2026 und nichts darüber, wie der Winter 2026/27
+   bisher verlaufen ist (Datenschnitt März 2026), auch nicht in S14.
+7. **INES-Einordnung nicht vom sap-autor geprüft:** Die INES-Primärquelle
+   wurde von der Top-Level-Session gesichert und in SAP 3.3 eingetragen; der
+   sap-autor hat die Dokumente nicht selbst gelesen. Die INES-Einordnung in
+   SAP 3.3 ist als „nicht vom sap-autor geprüft“ gekennzeichnet.
 
 ## 8. Grafiken
 
@@ -192,3 +263,42 @@ Daten: `output/owid_vergleich_jfm.csv`.
 ohne Anhang an `run_log.txt` mit Umgebungsvariable `KW_NO_RUNLOG=1`.
 Paketversionen: `output/session_info.txt`. Reihenfolge der Zufallsziehungen im
 Skriptkopf (SAP 10).
+
+## 10. Umsetzung der Validierungsauflagen (23.11.2026)
+
+Grundlage: `Validierungsbericht_kaeltewinter-2010.md` (23.11.2026), Abschnitt 7.
+Freigabe der Umsetzung: Daniel Saure im Chat am 23.11.2026, „Ja, umsetzen“, auf
+die Frage der Top-Level-Session, ob V-1 bis V-5 umgesetzt werden (S9b nur
+offengelegt). Umsetzung durch den analyst-Subagenten. SAP v1.0 final bleibt
+maßgeblich und wurde nicht geändert. Keine Zahl, keine Tabelle und keine
+Ergebnisdatei wurde neu gerechnet oder verändert.
+
+| Auflage | Umsetzung | Ort |
+|---|---|---|
+| V-1 (M-1) | SAP-8-Pflichtinhalte ergänzt (INES vertritt Speicherbetreiber, sachlich ohne Motivzuschreibung; Kälteszenario in Risikorechnung methodisch üblich; Kombinationscharakter keine Kritik; Auswahleffekt). Pauschalverweis „Limitationen gelten unverändert“ ersetzt durch alle sieben Limitationen aus SAP 9 einzeln. | Abschnitt 7.1, 7.2 |
+| V-2 (M-2) | Offengelegt: S9b zählt 2010 selbst mit; ohne 2010 2/29 = 7 % (Tabelle 1); S9b bildet das Maximum der Spannbreite. Nicht neu gerechnet, Tabelle 2 und Spannbreite unverändert. | Abschnitt 5, nach dem Spannbreiten-Satz; Abweichungsprotokoll A4/A11 |
+| V-3 (M-3) | Lesehinweis: 3 % nur mit Spanne 0,5 % bis 10 %; Modellabhängigkeit (Schiefe −0,51, kalte Residuen unter der Normallinie, Bootstrap-Schätzer 5 %). Primärschätzer M1 unverändert. | Abschnitt 4.3 |
+| V-4 (G-1) | nicht durch den analyst bearbeitet (Adressat Top-Level-Session; Nachtrag Lizenz steht in `run_log.txt`) | – |
+| V-5 (G-3) | Temperaturangaben auf 0,1 °C bzw. 0,1 K: σ̂ 1,67 → 1,7 K; Residual-SD 1,86 / 1,44 → 1,9 / 1,4 K; S8 SD 1,65 → 1,6 K (ungerundet 1,649); S9a SD 1,47 → 1,5 K; Trend 0,38 → 0,4 K pro Dekade. | Abschnitte 4.1, 4.2, 5 |
+| V-5 (G-5) | Umlaute in Grafik 1 und Grafik 2 korrigiert (März, wärmer, Fläche, Verlängerung, für). Nur Beschriftungsstrings im Skript geändert (A14), Skript neu ausgeführt (Exit-Code 0). sha256 aller Dateien in `output/` vorher/nachher in `run_log.txt`: alle Tabellen, `ergebnisse.json`, alle CSV, `diagnostik_M1.png` und `session_info.txt` bitidentisch; geändert nur `grafik1_zeitreihe_jfm.png` und `grafik2_praediktive_verteilung_2027.png`. | `kaeltewinter-2010.R`, `output/`, `run_log.txt` |
+
+**Bewusst nicht auf 0,1 gerundet (Auslegung zu V-5, zur Nachprüfung durch den
+validator):** (a) die Spalte „Wert (ungerundet)“ in Abschnitt 2, die ausdrücklich
+als ungerundet gekennzeichnet ist und neben der gerundeten Spalte steht; (b) der
+Vergleich 1883 (0,0336 °C) mit 2010 (0,0339 °C) in Abschnitt 3, weil er den
+Gleichstand nach 0,01-°C-Rundung erklärt; (c) die Differenzen im Integritäts-Check
+3.5-2 (max. 0,19 K bzw. 0,003 K), weil sie gegen die Toleranz 0,05 K aus SAP 3.5
+geprüft werden und bei 0,1-Rundung nicht mehr aussagekräftig wären; (d) die
+Modellkoeffizienten b̂₀/b̂₁ in 4.1 (Parameter, keine Temperaturangabe).
+
+**Offene Punkte für Daniel Saure:**
+
+1. **S9b / Auslegung A4(b) (V-2):** Entscheidung, ob der empirische Anteil
+   1997–2026 in S9b das Referenzjahr 2010 weiter mitzählt (3/30 = 10 %, derzeit,
+   bildet das Maximum der Spannbreite) oder nicht (2/29 = 7 %). Jede Änderung
+   wäre Post-hoc zu kennzeichnen, beide Varianten wären zu berichten
+   (Validierungsbericht V-2).
+2. **V-6** (Bestätigung A1b-Wortlaut „Du lädst sie“ und A9 „Dokumentation
+   genügt“) liegt beim Menschen und ist hier nicht bearbeitet.
+3. Fokussierte Nachprüfung dieser Umsetzung durch den validator als Nachtrag
+   zum Validierungsbericht (CLAUDE.md, Dokumentationspflicht) steht aus.
