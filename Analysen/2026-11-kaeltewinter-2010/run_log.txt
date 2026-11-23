@@ -1,0 +1,75 @@
+# run_log Kaeltewinter wie 2010
+## Rohdaten-Download
+Durchgefuehrt durch: Claude (Top-Level-Session) im Auftrag von Daniel Saure (Chat 23.11.2026: "Du lädst sie"). Abweichung von SAP 13 (dort: Download durch Daniel Saure), vor jedem Datenzugriff entschieden; die Werte wurden beim Download nicht angesehen.
+Zugriff (UTC): 2026-11-23T20:02:42Z
+## SHA-256
+f4ec08312a25ba1868638911c42cee512aed3d0445695a0de467f4db3f6c5844 *regional_averages_tm_01.txt
+345d5d1293d5d36a8687888f6ab3a2af6141106fabe7ead88696b447af5fe171 *regional_averages_tm_02.txt
+af80a23d2130510313952898a308e4e5d594dc26992c760cf458c5b1d61da746 *regional_averages_tm_03.txt
+014f0f0af52946ec416a0405ec1e65f9ae79c67ea7f3a62fb5e81fa89ad6adcd *regional_averages_tm_10.txt
+53924b4570504e0ba38d9c9ebc8ec4f3da65105457f9055c1497f5aca92cfb6f *regional_averages_tm_11.txt
+d23be96d6156420953e131065c362dfdd55140b522534cb2b8d7e405a3d52708 *regional_averages_tm_12.txt
+19736a0375063a58836cb6b36541f3e957ca1e41886c91883ef45a628e175655 *regional_averages_tm_winter.txt
+Quelle: https://opendata.dwd.de/climate_environment/CDC/regional_averages_DE/monthly/air_temperature_mean/ und https://opendata.dwd.de/climate_environment/CDC/regional_averages_DE/seasonal/air_temperature_mean/
+OWID (optional, 3.4/R9): nicht heruntergeladen; Pruefung, ob der Datensatz existiert, durch den analyst.
+
+## SHA-256-Pruefung durch analyst (Claude), 2026-11-23T20:10:59Z
+Alle 7 DWD-Rohdateien gegen die SHA-256-Liste oben geprueft: alle OK (sha256sum -c). Ablage unter rohdaten/ (nicht rohdaten/dwd/ wie in SAP 3.1; siehe Abweichungsprotokoll A1).
+
+## OWID-Download durch analyst (Claude), Auftrag der Top-Level-Session (SAP 3.4/R9; Abweichungsprotokoll A3)
+Datensatz: Our World in Data, "average-monthly-surface-temperature" (Grapher, Spalte temperature_2m, Copernicus ERA5, lastUpdated laut Metadaten 2026-11-11)
+URL Daten: https://ourworldindata.org/grapher/average-monthly-surface-temperature.csv?v=1&csvType=full&useColumnShortNames=true
+URL Metadaten: https://ourworldindata.org/grapher/average-monthly-surface-temperature.metadata.json?v=1&csvType=full&useColumnShortNames=true
+Zugriff (UTC): 2026-11-23T20:04:15Z (zwei vorherige Abrufe mit Laenderfilter lieferten nur Querschnitte aller Laender und wurden ungenutzt geloescht)
+Inhalt: alle Laender, monatlich ab 1940-01; Deutschland (code DEU) 1940-01 bis zuletzt verfuegbar. Datenschnitt Maerz 2026 wird im Skript direkt nach dem Einlesen angewendet.
+Lizenz: OWID CC BY 4.0; "Contains modified Copernicus Climate Change Service information (2026) - with major processing by Our World in Data"
+SHA-256 (rohdaten/owid/):
+67a1b3668b3ff8ef8b08ddb677cbfa3e8ec23bb335b5b34f1195f22dd4f82c8e *average-monthly-surface-temperature_full.csv
+e4de3674ea9a0e3aa471eac0a0e571d8e8afffb6a53a3fb889a433c4f910aca4 *average-monthly-surface-temperature.metadata.json
+
+## Analyselauf analyst (Claude), 2026-11-23T21:11:07+0100
+Skript: kaeltewinter-2010.R; SAP v1.0 final (Commit 2a2353e); R version 4.6.1 (2026-06-24 ucrt)
+Seed 20261123, B = 10000
+Datenschnitt Maerz 2026 angewendet direkt nach dem Einlesen. Verworfene Zeilen (Anzahl, ohne Werte): tm_01: 0, tm_02: 0, tm_03: 0, tm_10: 1, tm_11: 0, tm_12: 0; winter: 0; OWID DEU: 7
+DWD-Dateikoepfe ('erstellt am'): tm_01: 20261102, tm_02: 20261102, tm_03: 20261102, tm_10: 20261102, tm_11: 20261102, tm_12: 20261102; winter: 20260302
+DWD-Winterdatei: Jahreszahl = Jahr von Januar/Februar (erster Eintrag 1882 = Dez. 1881-Feb. 1882); S1 nutzt Jahr 2010 = Dez. 2009-Feb. 2010.
+3.5-1: fehlende Monate = 0, NA = 0, Duplikate = 0, ausserhalb [-15, 15] = 0 -> bestanden
+3.5-2: Winter 1882-2026, max |Abweichung| = 0.1878 K, Anzahl > 0,05 K = 52 -> NICHT bestanden (dokumentiert)
+3.5-2 Zusatz (Post-hoc A9, nur Erklaerung): ungewichtetes Monatsmittel vs. Winterdatei: max |Abweichung| = 0.0033 K, Anzahl > 0,05 K = 0. S1 bleibt nach SAP 6 tagesgewichtet.
+3.5-3: Abgleich Okt. 2013-Maerz 2026 mit Gasspeicher-Datei: 78 Monate verglichen, 0 fehlen in Gasspeicher-Datei, 0 abweichend -> bestanden
+3.5-4: kein Monatswert nach Maerz 2026 im Arbeitsdatensatz -> bestanden
+Referenzwerte (ungerundet): T_ref(JFM 2010) = 0.0339; DJF 2009/10 = -1.3026; Okt-Mar 2009/10 = 2.6793; T_ref^S14 = 0.2145
+E1: T_ref = 0.03 degC; k1 = 35 von n = 145; h1 = 0.2414 [CP 0.1743; 0.3194]; Rang 2010 = 35 von 146 (1 = kaeltestes, ties = min)
+E1 Zusatz (A10): Gleichstand mit T_ref nach 0,01-Rundung (zaehlt als 'mindestens so kalt'): 1883 (ungerundet 0.0336)
+E1: Jahre mit T_y <= T_ref: 1881 1883 1886 1887 1888 1889 1891 1892 1893 1895 1901 1909 1917 1922 1924 1929 1931 1940 1941 1942 1947 1954 1955 1956 1963 1964 1969 1970 1979 1985 1986 1987 1996 2006 2013; letztes vor 2010: 2006; erstes nach 2010: 2013
+M1: b0 = -73.90951, b1 = 0.038076 K/Jahr (0.381 K/Dekade), sigma = 1.6657, h2027 = 0.07338, yhat2027 = 3.2709, P_M1 = 0.03305
+M1: yhat2027 95%-KI [2.366; 4.176]; yhat2010 = 2.624 [2.076; 3.171]; Residuum 2010 z = -1.555, Rang 7 von 56 (1 = negativstes)
+5.2 Diagnostik M1: Ljung-Box(Lag 5) Q = 5.149, p = 0.3980; Durbin-Watson = 1.547 (p = 0.0308); Shapiro-Wilk W = 0.9679, p = 0.1408; Schiefe g1 = -0.505; Breusch-Pagan BP = 1.015, p = 0.3136; Residual-SD 1971-1998 = 1.863, 1999-2026 = 1.442; Cook's D > 4/n: 1974 1985 1987
+5.3 Umschaltregel: Ljung-Box p < 0,05: nein; Shapiro-Wilk p < 0,05: nein -> Primaerschaetzer: M1
+5.4 M1: Mittel P*_b = 0.03281 vs. t-praediktiv 0.03305 (Differenz -0.024 Pp) -> ok (<= 0,5 Pp)
+M1-AR: phi = 0.2211, sigma_e = 1.5940, b0 = -74.2229, b1 = 0.038230, u2026 = -0.4713, yhat2027 = 3.1650, P = 0.03186; verworfene phi-Ziehungen: 0 (Anteil 0.0000)
+E2 PRIMAER (M1): P2027 = 0.03305 [0.00481; 0.09948]; Wiederkehrzeit 30.3 Jahre [10.1; 207.8]
+Spannbreite P_hat ueber E2-Sensitivitaeten (S1, S2, S6-S10, S12-S14): 0.00363 (S14) bis 0.10000 (S9b)
+  Primaer JFM, Referenz JFM 2010: P = 0.03305 [0.00481; 0.09948] = 3 % (0,5 % bis 10 %); Wiederkehr 30 [10; 210]; E1 k = 35/145, 0.2414 [CP 0.1743; 0.3194]
+  S1 DJF-Mittel, Referenz Dez. 2009-Feb. 2010: P = 0.01732 [0.00170; 0.05834] = 2 % (0,2 % bis 6 %); Wiederkehr 60 [17; 590]; E1 k = 26/144, 0.1806 [CP 0.1215; 0.2533]
+  S2 Okt.-Mar.-Mittel, Referenz Winterhalbjahr 2009/10: P = 0.02324 [0.00288; 0.07303] = 2 % (0,3 % bis 7 %); Wiederkehr 45 [14; 350]; E1 k = 52/144, 0.3611 [CP 0.2828; 0.4453]
+  S3: entfallen per SAP v0.2, Grund: keine geeigneten Tagesdaten ohne unverhaeltnismaessigen Aufwand (3.2)
+  S4: entfallen per SAP v0.2, Grund: keine geeigneten Tagesdaten ohne unverhaeltnismaessigen Aufwand (3.2)
+  S5: entfallen per SAP v0.2, Grund: keine geeigneten Tagesdaten ohne unverhaeltnismaessigen Aufwand (3.2)
+  S6 Trendfenster 1881-2026 (linear): P = 0.08903 [0.04199; 0.15535] = 9 % (4 % bis 16 %); Wiederkehr 11 [6; 25]
+  S7 Trendfenster 1961-2026 (linear): P = 0.03113 [0.00533; 0.08878] = 3 % (0,5 % bis 9 %); Wiederkehr 30 [11; 185]
+  S8 LOESS 1881-2026 (Grad 2, span 0,5, gaussian), Niveau 2026, SD LOESS-Residuen 1971-2026: P = 0.01593 [0.00111; 0.11620] = 2 % (0,1 % bis 12 %); Wiederkehr 65 [9; 905]
+  S9a Ohne Trend, 1997-2026 stationaer, t-praediktiv: P = 0.04097 [0.00811; 0.10639] = 4 % (0,8 % bis 11 %); Wiederkehr 25 [9; 125]
+  S9b Ohne Trend, 1997-2026, empirischer Anteil (inkl. 2010): P = 0.10000 [0.02112; 0.26529] = 10 % (2 % bis 27 %); Wiederkehr 10 [4; 45]
+  S10 Nicht gewaehlter Schaetzer: M1-AR: P = 0.03186 [0.00395; 0.08796] = 3 % (0,4 % bis 9 %); Wiederkehr 30 [11; 255]
+  S10 Nicht gewaehlter Schaetzer: M1-Boot: P = 0.05357 [0.00000; 0.14286] = 5 % (0 % bis 14 %); Wiederkehr 19 [7; nicht begrenzt]
+  S10 Nicht gewaehlter Schaetzer: M1-Block-Boot: P = 0.05357 [0.00000; 0.16071] = 5 % (0 % bis 16 %); Wiederkehr 19 [6; nicht begrenzt]
+  S11: entfallen per SAP v0.2, Grund: keine geeigneten Tagesdaten ohne unverhaeltnismaessigen Aufwand (3.2)
+  S12 M1 ohne 2010 im Trendfenster 1971-2026 (n = 55): P = 0.02739 [0.00354; 0.08427] = 3 % (0,4 % bis 8 %); Wiederkehr 35 [12; 280]
+  S13 Trendniveau 2026 statt 2027 (Hebelwert 2026): P = 0.03439 [0.00549; 0.10078] = 3 % (0,5 % bis 10 %); Wiederkehr 30 [10; 180]
+  S14 INES-Kombinationszeitraum Nov.-Mar. (U_t), Referenz Nov./Dez. 2010 + Jan.-Mar. 2010: P = 0.00363 [0.00013; 0.01729] = 0,4 % (0,01 % bis 2 %); Wiederkehr 275 [60; 7870]; E1 k = 21/145, 0.1448 [CP 0.0919; 0.2128]; E1 ohne 2010/2011: k = 21, n = 143, Anteil = 0.1469 [CP 0.0933; 0.2157]
+S14: T_ref^S14 = 0.21; Rang 22 von 146; Liste: 1886 1888 1889 1891 1893 1895 1909 1917 1922 1924 1929 1940 1941 1942 1947 1956 1963 1969 1970 1985 1996
+3.4 OWID (average-monthly-surface-temperature, ERA5, lastUpdated 2026-11-11): gemeinsamer Zeitraum 1940-2026 (n = 87); Rang JFM 2010: DWD 19, OWID 19 (1 = kaeltestes); Pearson r = 0.9959
+3.5-5 Gesamtergebnis Integritaets-Checks: 3.5-1 Vollstaendigkeit/Fehlwerte/Bereich: bestanden; 3.5-2 DJF Monatswerte vs. Winterdatei (<= 0,05 K): nicht bestanden; 3.5-3 Abgleich Gasspeicher-Datei Okt 2013-Maerz 2026: bestanden; 3.5-4 kein Wert nach Maerz 2026: bestanden
+Ausgaben: arbeitsdaten_monatswerte_bis_2026-03.csv, check_3-5-2_djf_vs_winterdatei.csv, check_3-5-3_abgleich_gasspeicher.csv, console_log.txt, diagnostik_M1.png, ergebnisse.json, grafik1_zeitreihe_jfm.png, grafik2_praediktive_verteilung_2027.png, M1_acf_pacf.csv, M1_residuen_cooksD.csv, owid_vergleich_jfm.csv, session_info.txt, tabelle1_E1.csv, tabelle2_E2_sensitivitaeten.csv, tabelle3_diagnostik.csv, zielgroessen_jahreswerte_1881-2026.csv
+Lauf ohne Fehler beendet.

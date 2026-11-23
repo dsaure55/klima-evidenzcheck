@@ -1,0 +1,39 @@
+# Abweichungsprotokoll – Kältewinter wie 2010
+
+**Bezug:** SAP_kaeltewinter-2010.md, Version 1.0, Status final, eingefroren durch
+Daniel Saure am 23.11.2026 (Commit 2a2353e)
+**Skript:** `kaeltewinter-2010.R` (Lauf 23.11.2026, 21:11 MEZ, R 4.6.1)
+**Erstellt durch:** Claude (analyst-Subagent), 23.11.2026
+
+Alle Punkte sind als **Post-hoc** (nach dem Einfrieren festgelegt) oder als
+**Auslegung** (Präzisierung einer im SAP nicht eindeutig geregelten Stelle, vor
+Sichtung der Ergebnisse festgelegt) gekennzeichnet. Keine Abweichung ändert
+Primärgröße, Fenster, Referenz, Signifikanzniveau oder die Umschaltregel. Keine
+Abweichung wurde nach der Höhe eines Ergebnisses gewählt.
+
+| Nr. | Art | SAP-Stelle | Abweichung / Festlegung | Begründung | Auswirkung |
+|---|---|---|---|---|---|
+| A1 | Post-hoc (Ablage) | 3.1, 13 | DWD-Rohdateien liegen unter `rohdaten/` statt `rohdaten/dwd/`. | So von der Top-Level-Session abgelegt; nicht verschoben, damit Pfade und Prüfsummen in `run_log.txt` gültig bleiben. | keine auf Ergebnisse |
+| A1b | Post-hoc (Beschaffung, nicht durch analyst) | 3.1, 13 | Download der DWD-Dateien durch die Top-Level-Session statt durch Daniel Saure im Browser. | Laut `run_log.txt` Entscheidung Daniel Saure im Chat vom 23.11.2026 („Du lädst sie“), vor Datenzugriff. Downloaddatum 23.11.2026 liegt vor dem 31.12.2026 (R6). SHA-256 aller 7 Dateien vom analyst nachgeprüft: alle OK. | keine |
+| A2 | Post-hoc (Pfad) | 3.5 Nr. 3 | Vergleichsdatei liegt unter `Analysen/2026-09-gasspeicher-winter/rohdaten/dwd_gebietsmittel_deutschland_wintermonate.csv`, nicht unter `.../rohdaten/dwd/`. | Datei existiert nur dort. Nur gelesen, nicht verändert. | keine |
+| A3 | Post-hoc (Beschaffung) | 3.4, 13 Nr. 5 | OWID-Datensatz vom analyst heruntergeladen (SAP 13: Download durch Daniel Saure). Datensatz „average-monthly-surface-temperature“ (ERA5), alle Länder, Ablage `rohdaten/owid/`, SHA-256 und URL in `run_log.txt`. | Ausdrücklicher Auftrag der Top-Level-Session („nur, wenn der Datensatz existiert und du ihn herunterladen kannst“). Zwei vorherige Abrufe mit Länderfilter lieferten nur Querschnitte aller Länder (falscher Filter) und wurden ungenutzt gelöscht. **Transparenzhinweis:** Beim ersten Fehlabruf erschien in der Konsole des analyst ein einzelner OWID-Wert für **Afghanistan, Oktober 2026** (Strukturprüfung der Kopfzeilen). Kein Wert für Deutschland ab Oktober 2026 wurde angezeigt; der Wert steht in keiner Datei des Analyseordners. | keine auf Ergebnisse; Datenschnitt der Ausgaben eingehalten |
+| A4 | Post-hoc (Verfahren) | 6, S9 | Für S9 nennt der SAP kein Spannenverfahren. Festgelegt: (a) t-prädiktiv mit Spanne aus derselben Parametersimulation wie M1 (5.4), angewendet auf das Modell ohne Trend (σ*² aus χ²₂₉, μ* ~ N(Mittel, σ*²/30)); (b) empirischer Anteil 1997–2026 **einschließlich 2010** (das Jahr liegt im Schätzfenster) mit Clopper-Pearson. | Analog zum Primärverfahren; vor Sichtung der Ergebnisse festgelegt. | S9 erscheint als zwei Zeilen (S9a, S9b) |
+| A5 | Auslegung | 2.0, 2.2, 11 | E2 und alle E2-Sensitivitäten rechnen mit **ungerundetem** T_ref (0,0339 °C); die 0,01-°C-Rundung beider Seiten gilt für die Zählvergleiche in E1, S1, S2, S14 und S9b. | SAP 11: „Rechnung ungerundet, Vergleich auf 0,01 °C“; bei stetigen Verteilungen ist der Unterschied < 0,005 °C. | vernachlässigbar |
+| A6 | Auslegung | 6 (S1, S2), 4 | E1 für S1 und S2: Grundgesamtheit 1882–2026 **ohne 2010** (n = 144), analog zu 2.1, weil das Referenzjahr selbst in der Reihe liegt. S14 ohne Ausschluss (2.5 ausdrücklich), zusätzlich ohne 2010/2011 (n = 143). | SAP 6 nennt nur „1882–2026“; Ausschluss des Referenzwerts entspricht der Logik von 2.1. | E1 S1/S2 mit n = 144 |
+| A7 | Auslegung | 5.4 (M1-AR) | Ziehung von (b₀, b₁, φ, log σ_e): b aus `vcov(gls)`, (φ, log σ_e) aus der asymptotischen Kovarianz von `nlme::gls` (`apVar`, Parameter θ = log((1+φ)/(1−φ)) und log σ_u), per Delta-Methode transformiert; Blöcke unabhängig (asymptotisch block-diagonale Information). σ_e = σ_u·√(1−φ²). P*_b = Φ((T_ref − ŷ*₂₀₂₇)/σ*_e) mit ŷ*₂₀₂₇ = b₀* + b₁*·2027 + φ*·(T₂₀₂₆ − b₀* − b₁*·2026). Punktschätzer wörtlich nach 5.3 (Prognosevarianz σ̂²_e + x₂₀₂₇'Var(b̂)x₂₀₂₇). | SAP legt Ziehung „aus der asymptotischen Normalverteilung der ML-Schätzer“ fest, aber nicht die Parametrisierung. Verworfene φ-Ziehungen: 0. | betrifft nur S10 (M1-AR nicht primär) |
+| A8 | Auslegung | 6 (S6, S7, S12, S13) | S6, S7, S12, S13 mit M1 (t-prädiktiv, Spanne Parametersimulation 5.4). | SAP 6 bindet nur S1, S2, S14 an den Primärschätzer; S12 nennt M1 ausdrücklich. Da nach 5.3 **M1 primär** wurde, ist die Auslegung ohne Wirkung. | keine |
+| A9 | Post-hoc (Zusatzinformation) | 3.5 Nr. 2 | Check 3.5-2 **nicht bestanden** (52 von 145 Wintern > 0,05 K, max. 0,19 K). Zusätzlich ausgegeben: Vergleich mit dem **ungewichteten** Mittel der drei Monate (max. 0,003 K, 0 Überschreitungen). | Erklärt die Abweichung: Die DWD-Winterdatei ist offenbar das ungewichtete Monatsmittel; der SAP schreibt für S1 Tagesgewichtung vor. Keine Rechnung geändert; S1 bleibt tagesgewichtet aus Monatswerten. **Hinweis an Mensch:** SAP 3.5 Nr. 2 verlangt „dokumentieren“, keinen Stopp; bitte bestätigen, dass dies ausreicht. | keine auf Ergebnisse |
+| A10 | Post-hoc (Zusatzinformation) | 2.1 | Gleichstand nach 0,01-Rundung im Log genannt: 1883 (ungerundet 0,0336 °C) vs. 2010 (0,0339 °C); zählt nach 2.0 als „mindestens so kalt“. | Transparenz; 1883 ist auch ungerundet kälter. | keine |
+| A11 | Auslegung | 6 (Spannbreiten-Aussage) | Min./Max. von P̂ über alle E2-Sensitivitätszeilen einschließlich S9a, S9b und aller drei S10-Schätzer. | SAP: „über alle durchgeführten E2-Sensitivitäten“. Ohne S9b läge das Maximum bei S6 (9 %). | Spannbreite 0,4 % (S14) bis 10 % (S9b) |
+| A12 | gering | 5.2 (Linearität) | Glättung in der Grafik „Residuen gegen angepasste Werte“ mit `lowess` statt `loess`. | Nur grafisch, keine Rechnung. | keine |
+| A13 | Hinweis | 10 | Pakete `binom` und `tseries` nicht installiert; verwendet wurden die im SAP zugelassenen Alternativen `stats::binom.test` (Clopper-Pearson) und eine eigene, im Skript dokumentierte Moving-Block-Bootstrap-Funktion (`mbb_index`, Blocklänge 3, Startpunkte gleichverteilt auf 1…54, 19 Blöcke, auf 56 gekürzt). | Keine Abweichung, nur Dokumentation. | keine |
+
+## Offene Punkte / Rückfragen an Mensch
+
+1. **A9 (3.5 Nr. 2):** Check formal nicht bestanden; Ursache vollständig durch die
+   Gewichtungskonvention erklärt. Bestätigung erbeten, dass Dokumentation genügt.
+2. **Lizenzfeld DWD (SAP 3, Template-Pflichtfeld):** Die Bestätigung der aktuellen
+   DWD-Nutzungsbedingung ist in `run_log.txt` nicht eingetragen; der analyst hat
+   keinen Netzzugriff auf die DWD-Seite für diese Prüfung genutzt.
+3. Keine SAP-Vorgabe war technisch nicht umsetzbar. Keine „Abweichung vom SAP –
+   Rückfrage an Mensch“ im Sinne einer nicht umsetzbaren Vorgabe.
