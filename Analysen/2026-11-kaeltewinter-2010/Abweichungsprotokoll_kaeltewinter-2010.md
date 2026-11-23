@@ -2,7 +2,7 @@
 
 **Bezug:** SAP_kaeltewinter-2010.md, Version 1.0, Status final, eingefroren durch
 Daniel Saure am 23.11.2026 (Commit 2a2353e)
-**Skript:** `kaeltewinter-2010.R` (Lauf 23.11.2026, 21:11 MEZ, R 4.6.1)
+**Skript:** `kaeltewinter-2010.R` (Lauf 23.11.2026, 21:11 MEZ, R 4.6.1; Neuläufe nach Beschriftungsänderungen 21:29 MEZ (A14) und 21:40 MEZ (A15), Ergebnisdateien bitidentisch)
 **Erstellt durch:** Claude (analyst-Subagent), 23.11.2026
 
 Alle Punkte sind als **Post-hoc** (nach dem Einfrieren festgelegt) oder als
@@ -58,3 +58,31 @@ ursprünglichen Wortlaut stehen; neu ist nur A14.*
 **Neuer offener Punkt (V-2):** Entscheidung Daniel Saure, ob die Auslegung A4(b)
 (empirischer Anteil S9b einschließlich 2010) bestehen bleibt. Jede Änderung wäre
 Post-hoc zu kennzeichnen; beide Varianten wären zu berichten.
+
+## Bestätigungen Daniel Saure (23.11.2026, Chat)
+
+Wortlaut: „Ja, alle drei“ auf die Frage, ob er A1b und A9 bestätigt und S9b so stehen lässt wie offengelegt.
+
+- A1b (Rohdaten-Download durch die Top-Level-Session statt durch Daniel Saure): bestätigt.
+- A9 (Integritätscheck 3.5-2 nicht bestanden, Ursache ungewichtetes DWD-Wintermittel, nur dokumentiert): bestätigt.
+- S9b / A4(b): Auslegung bleibt wie gerechnet und offengelegt (2010 zählt im empirischen Anteil mit); Spannbreite bleibt 0,4 % bis 10 %. Keine Neuberechnung.
+
+## Nachtrag 2: Darstellungsänderung nach Validierungsbericht Nachtrag 1 (23.11.2026)
+
+*Durch: Claude (analyst-Subagent). Grundlage: `Validierungsbericht_kaeltewinter-2010.md`,
+Nachtrag 1 (N-1, N-2, N-3, N-5) und Auftrag der Top-Level-Session nach den Bestätigungen
+Daniel Saure (Abschnitt oben). SAP v1.0 final unverändert. Tabelle A1–A13 und A14 bleiben
+im Wortlaut stehen; neu ist nur A15.*
+
+| Nr. | Art | SAP-Stelle | Abweichung / Festlegung | Begründung | Auswirkung |
+|---|---|---|---|---|---|
+| A15 | Post-hoc (Darstellung, Validierungsbericht Nachtrag 1, N-1/N-2, 23.11.2026) | 11 | (a) Untertitel Grafik 2 von „(3 %)“ auf „(3 %, Spanne 0,5 % bis 10 %)“ geändert. Die Spanne wird nicht neu gerechnet, sondern aus dem vorhandenen Objekt `prim_q` (= Tabelle 2, `Spanne_fmt`; `ergebnisse.json`, `E2.span`) mit demselben Formatierer `fmt_p` formatiert. (b) Quellenangabe in Grafik 1 („Daten: Deutscher Wetterdienst (DWD)“) und Grafik 2 („Daten: DWD“) auf „Quelle: Deutscher Wetterdienst“ angeglichen. Nur Beschriftungsstrings und Kommentare in `kaeltewinter-2010.R` geändert; Neulauf 21:40:55 MEZ, Exit-Code 0. | N-1 (V-3 für Grafik 2: Kernzahl nur mit Spanne); N-2 (Namensnennung nach Lizenz-Nachtrag V-4, CC BY 4.0). | keine auf Ergebnisse: sha256 vorher/nachher in `run_log.txt`; alle Tabellen, `ergebnisse.json`, alle CSV, `diagnostik_M1.png`, `session_info.txt`, `console_log.txt` bitidentisch; geändert nur die PNG-Dateien von Grafik 1 und 2 |
+
+Zusätzlich (nur Bericht, kein Skript): N-3 Ortsangabe zu V-2 im Analysebericht, Abschnitt 10,
+verweist jetzt auf den Nachtrag dieses Protokolls; N-5 Berichtskopf nennt die Neuläufe
+21:29 MEZ (A14) und 21:40 MEZ (A15) und den aktualisierten Validierungsstatus; die
+Bestätigungen Daniel Saure (A1b, A9, S9b) sind im Analysebericht, Abschnitt 10.1, mit Verweis
+auf dieses Protokoll vermerkt.
+
+`diagnostik_M1.png` (interne Diagnosegrafik nach SAP 5.2, Basis-R) trägt keine Quellenzeile
+und wurde nicht geändert; N-2 betrifft nur die beiden Veröffentlichungsgrafiken.

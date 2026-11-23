@@ -48,6 +48,15 @@
 #     (Maerz -> März, waermer -> wärmer, Flaeche -> Fläche, Verlaengerung ->
 #     Verlängerung, fuer -> für). Keine Rechenzeile geaendert; Ergebnisdateien
 #     nach Neulauf per sha256 als bitidentisch geprueft (run_log.txt).
+# A15 (Post-hoc, Darstellungsaenderung, Validierungsbericht Nachtrag 1, N-1/N-2,
+#     23.11.2026): (a) Untertitel Grafik 2 nennt zur Primaerzahl die Spanne:
+#     "(3 %, Spanne 0,5 % bis 10 %)". Die Spanne wird NICHT neu gerechnet, sondern
+#     aus dem bereits vorhandenen Objekt prim_q (= Tabelle 2 / ergebnisse.json
+#     E2.span) mit demselben Formatierer fmt_p wie Spalte Spanne_fmt formatiert.
+#     (b) Quellenangabe in Grafik 1 und 2 auf "Quelle: Deutscher Wetterdienst"
+#     angeglichen (Lizenz CC BY 4.0, run_log.txt Nachtrag V-4). Nur
+#     Beschriftungsstrings geaendert; keine Rechenzeile, kein Seed, keine
+#     Reihenfolge der Zufallsziehungen. sha256 vorher/nachher in run_log.txt.
 # Keine "Abweichung vom SAP - Rueckfrage an Mensch" im Sinne einer nicht
 # umsetzbaren Vorgabe, ausser sie wird unten zur Laufzeit gemeldet.
 # =============================================================================
@@ -678,7 +687,8 @@ g1 <- ggplot(g1d, aes(year, T_jfm)) +
        subtitle = paste0("Mitteltemperatur Jan.-März (DWD-Gebietsmittel); gestrichelt: Jan.-März 2010 (",
                          format(round(T_ref, 1), nsmall = 1, decimal.mark = ","), " °C)\n",
                          "rot: linearer Trend 1971-2026, Kreuz: Trendniveau 2027 (Verlängerung, kein Messwert)"),
-       x = NULL, y = "°C", caption = "Daten: Deutscher Wetterdienst (DWD), Datenschnitt März 2026") +
+       # A15 (N-2): Quellenangabe nach Lizenz-Nachtrag V-4
+       x = NULL, y = "°C", caption = "Quelle: Deutscher Wetterdienst, Datenschnitt März 2026") +
   theme(legend.position = "bottom")
 ggsave(file.path(out_dir, "grafik1_zeitreihe_jfm.png"), g1, width = 9, height = 5, dpi = 150)
 
@@ -699,10 +709,12 @@ g2 <- ggplot(dd, aes(x, d)) +
   geom_vline(xintercept = T_ref, linetype = "dashed", colour = "#1f5fa8") +
   # V-5 (Darstellungsänderung 23.11.2026): nur Umlaute in Beschriftungen, keine Rechnung
   labs(title = "Klimatologische Wahrscheinlichkeit, keine Wettervorhersage",
-       subtitle = sprintf("Verteilung der Jan.-März-Mitteltemperatur unter dem Klimazustand 2027 (Modell %s)\nFläche links der Linie: mindestens so kalt wie Jan.-März 2010 (%s)",
-                          primary, fmt_p(prim$p)),
+       # A15 (N-1): Spanne aus vorhandenem prim_q, gleicher Formatierer wie Tabelle 2 (Spanne_fmt), keine Neuberechnung
+  subtitle = sprintf("Verteilung der Jan.-März-Mitteltemperatur unter dem Klimazustand 2027 (Modell %s)\nFläche links der Linie: mindestens so kalt wie Jan.-März 2010 (%s, Spanne %s bis %s)",
+                          primary, fmt_p(prim$p), fmt_p(prim_q[1]), fmt_p(prim_q[2])),
        x = "Mitteltemperatur Januar-März (°C)", y = "Dichte",
-       caption = "Daten: DWD; Modell: Trend 1971-2026. Grundrate, keine Prognose für den Winter 2026/27.")
+       # A15 (N-2): Quellenangabe nach Lizenz-Nachtrag V-4
+       caption = "Quelle: Deutscher Wetterdienst; Modell: Trend 1971-2026. Grundrate, keine Prognose für den Winter 2026/27.")
 ggsave(file.path(out_dir, "grafik2_praediktive_verteilung_2027.png"), g2, width = 9, height = 5, dpi = 150)
 
 # Diagnostikgrafiken (SAP 5.2)

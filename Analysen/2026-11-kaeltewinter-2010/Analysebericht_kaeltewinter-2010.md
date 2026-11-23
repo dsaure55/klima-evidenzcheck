@@ -1,16 +1,25 @@
 # Analysebericht – Kältewinter wie 2010
 
-**Status: validiert mit Auflagen** (`Validierungsbericht_kaeltewinter-2010.md`,
+**Status: Validierung bestanden mit Auflagen** (`Validierungsbericht_kaeltewinter-2010.md`,
 23.11.2026: 0 kritisch, 0 hoch, 3 mittel). Auflagen V-1, V-2, V-3 und V-5 durch den
-analyst umgesetzt (siehe Abschnitt 10); fokussierte Nachprüfung durch den
-validator steht aus. Dieser Bericht dokumentiert die Umsetzung des SAP und
+analyst umgesetzt (siehe Abschnitt 10). **Nachtrag 1** (Nachprüfung der Auflagen
+durch den validator) liegt im Validierungsbericht vor: V-1, V-2, V-4, V-5 erfüllt,
+V-3 für Grafik 2 offen (N-1, mittel), 0 kritisch, 0 hoch. **N-1 in Umsetzung**
+(Spanne im Untertitel von Grafik 2, zusammen mit N-2, N-3, N-5; A15, Abschnitt
+10.1); die Nachprüfung von N-1 durch den validator (Nachtrag 2) steht aus.
+Bestätigungen Daniel Saure vom 23.11.2026 zu A1b, A9 und S9b liegen vor (siehe
+Abschnitt 10.1 und Abweichungsprotokoll, Abschnitt „Bestätigungen Daniel
+Saure“). Dieser Bericht dokumentiert die Umsetzung des SAP und
 die Rechenergebnisse. Kernaussagen für eine Veröffentlichung werden nach SAP 11
 erst nach dem Validierungsbericht formuliert. Keine Kanaltexte.
 
 - **SAP:** `SAP_kaeltewinter-2010.md`, v1.0 final, eingefroren durch Daniel Saure
   am 23.11.2026 (Commit 2a2353e)
 - **Skript:** `kaeltewinter-2010.R`; Lauf 23.11.2026, 21:11 MEZ, R 4.6.1,
-  fehlerfrei (Exit-Code 0); Seed 20261123, B = 10 000
+  fehlerfrei (Exit-Code 0); Seed 20261123, B = 10 000. Neuläufe nach reinen
+  Beschriftungsänderungen: 21:29 MEZ (A14, V-5) und 21:40 MEZ (A15, N-1/N-2),
+  jeweils Exit-Code 0; alle Tabellen, CSV und `ergebnisse.json` per sha256
+  bitidentisch, geändert nur die PNG-Dateien von Grafik 1 und 2 (`run_log.txt`)
 - **Daten:** DWD CDC, Gebietsmittel Deutschland, Monatsmitteltemperatur (Dateien
   01, 02, 03, 10, 11, 12; Dateikopf „erstellt am 20261102“) und Winterdatei
   („erstellt am 20260302“); Zugriff 23.11.2026; SHA-256 geprüft, alle OK.
@@ -18,9 +27,9 @@ erst nach dem Validierungsbericht formuliert. Keine Kanaltexte.
 - **Datenschnitt März 2026:** angewendet direkt nach dem Einlesen. Monatswerte
   ab Oktober 2026 sind in keiner Ausgabe, keiner Grafik und keiner Logzeile
   enthalten; U₂₀₂₇ wurde nicht berechnet.
-- **Abweichungen:** siehe `Abweichungsprotokoll_kaeltewinter-2010.md` (A1–A14;
-  keine betrifft Primärgröße, Fenster, Referenz oder Umschaltregel; A14 ist eine
-  reine Darstellungsänderung nach Auflage V-5).
+- **Abweichungen:** siehe `Abweichungsprotokoll_kaeltewinter-2010.md` (A1–A15;
+  keine betrifft Primärgröße, Fenster, Referenz oder Umschaltregel; A14 und A15
+  sind reine Darstellungsänderungen nach Auflage V-5 bzw. Nachtrag 1, N-1/N-2).
 
 ## 1. Integritäts-Checks (SAP 3.5)
 
@@ -253,7 +262,10 @@ Daten: `output/owid_vergleich_jfm.csv`.
   1971–2026 mit Trendniveau 2027, Linie bei T_ref, Jahre ≤ T_ref hervorgehoben.
 - `output/grafik2_praediktive_verteilung_2027.png` – prädiktive Verteilung 2027
   (M1), Fläche ≤ T_ref, Beschriftung „klimatologische Wahrscheinlichkeit, keine
-  Wettervorhersage“.
+  Wettervorhersage“; Untertitel nennt die Primärzahl mit Spanne „(3 %, Spanne
+  0,5 % bis 10 %)“ (A15, N-1).
+- Quellenangabe in Grafik 1 und 2: „Quelle: Deutscher Wetterdienst“ (Lizenz
+  CC BY 4.0, `run_log.txt` Nachtrag V-4; A15, N-2).
 - `output/diagnostik_M1.png` – ACF, PACF, Q-Q, Residuen gegen Jahr und gegen
   angepasste Werte, Cook's Distance.
 
@@ -276,7 +288,7 @@ Ergebnisdatei wurde neu gerechnet oder verändert.
 | Auflage | Umsetzung | Ort |
 |---|---|---|
 | V-1 (M-1) | SAP-8-Pflichtinhalte ergänzt (INES vertritt Speicherbetreiber, sachlich ohne Motivzuschreibung; Kälteszenario in Risikorechnung methodisch üblich; Kombinationscharakter keine Kritik; Auswahleffekt). Pauschalverweis „Limitationen gelten unverändert“ ersetzt durch alle sieben Limitationen aus SAP 9 einzeln. | Abschnitt 7.1, 7.2 |
-| V-2 (M-2) | Offengelegt: S9b zählt 2010 selbst mit; ohne 2010 2/29 = 7 % (Tabelle 1); S9b bildet das Maximum der Spannbreite. Nicht neu gerechnet, Tabelle 2 und Spannbreite unverändert. | Abschnitt 5, nach dem Spannbreiten-Satz; Abweichungsprotokoll A4/A11 |
+| V-2 (M-2) | Offengelegt: S9b zählt 2010 selbst mit; ohne 2010 2/29 = 7 % (Tabelle 1); S9b bildet das Maximum der Spannbreite. Nicht neu gerechnet, Tabelle 2 und Spannbreite unverändert. | Abschnitt 5, nach dem Spannbreiten-Satz; Abweichungsprotokoll, Abschnitt „Nachtrag: Umsetzung der Validierungsauflagen“, Zeile V-2 (die Tabellenzeilen A4 und A11 selbst sind unverändert; korrigiert nach N-3) |
 | V-3 (M-3) | Lesehinweis: 3 % nur mit Spanne 0,5 % bis 10 %; Modellabhängigkeit (Schiefe −0,51, kalte Residuen unter der Normallinie, Bootstrap-Schätzer 5 %). Primärschätzer M1 unverändert. | Abschnitt 4.3 |
 | V-4 (G-1) | nicht durch den analyst bearbeitet (Adressat Top-Level-Session; Nachtrag Lizenz steht in `run_log.txt`) | – |
 | V-5 (G-3) | Temperaturangaben auf 0,1 °C bzw. 0,1 K: σ̂ 1,67 → 1,7 K; Residual-SD 1,86 / 1,44 → 1,9 / 1,4 K; S8 SD 1,65 → 1,6 K (ungerundet 1,649); S9a SD 1,47 → 1,5 K; Trend 0,38 → 0,4 K pro Dekade. | Abschnitte 4.1, 4.2, 5 |
@@ -291,14 +303,51 @@ Gleichstand nach 0,01-°C-Rundung erklärt; (c) die Differenzen im Integritäts-
 geprüft werden und bei 0,1-Rundung nicht mehr aussagekräftig wären; (d) die
 Modellkoeffizienten b̂₀/b̂₁ in 4.1 (Parameter, keine Temperaturangabe).
 
-**Offene Punkte für Daniel Saure:**
+**Offene Punkte für Daniel Saure (Stand der Erstumsetzung; Erledigung siehe 10.1):**
 
 1. **S9b / Auslegung A4(b) (V-2):** Entscheidung, ob der empirische Anteil
    1997–2026 in S9b das Referenzjahr 2010 weiter mitzählt (3/30 = 10 %, derzeit,
    bildet das Maximum der Spannbreite) oder nicht (2/29 = 7 %). Jede Änderung
    wäre Post-hoc zu kennzeichnen, beide Varianten wären zu berichten
-   (Validierungsbericht V-2).
+   (Validierungsbericht V-2). *Erledigt: bestätigt, siehe 10.1.*
 2. **V-6** (Bestätigung A1b-Wortlaut „Du lädst sie“ und A9 „Dokumentation
-   genügt“) liegt beim Menschen und ist hier nicht bearbeitet.
+   genügt“) liegt beim Menschen und ist hier nicht bearbeitet. *Erledigt:
+   bestätigt, siehe 10.1.*
 3. Fokussierte Nachprüfung dieser Umsetzung durch den validator als Nachtrag
    zum Validierungsbericht (CLAUDE.md, Dokumentationspflicht) steht aus.
+   *Erledigt: Nachtrag 1 im Validierungsbericht liegt vor.*
+
+### 10.1 Nachtrag 1 des Validierungsberichts und Bestätigungen (23.11.2026)
+
+**Bestätigungen Daniel Saure** (Chat 23.11.2026, Wortlaut „Ja, alle drei“;
+dokumentiert im Abweichungsprotokoll, Abschnitt „Bestätigungen Daniel Saure“):
+
+- **A1b** (Rohdaten-Download durch die Top-Level-Session statt durch Daniel
+  Saure): bestätigt.
+- **A9** (Integritäts-Check 3.5-2 nicht bestanden, Ursache ungewichtetes
+  DWD-Wintermittel, nur dokumentiert): bestätigt.
+- **S9b / A4(b):** Auslegung bleibt wie gerechnet und offengelegt (2010 zählt im
+  empirischen Anteil mit); Spannbreite bleibt 0,4 % bis 10 %. Keine
+  Neuberechnung.
+
+**Umsetzung der Punkte aus Nachtrag 1** (analyst-Subagent, A15; SAP v1.0 final
+unverändert; keine Zahl neu gerechnet):
+
+| Punkt | Umsetzung | Ort |
+|---|---|---|
+| N-1 (mittel) | Untertitel Grafik 2: „… mindestens so kalt wie Jan.-März 2010 (3 %, Spanne 0,5 % bis 10 %)“. Spanne aus dem vorhandenen Ergebnisobjekt (= Tabelle 2, Spalte `Spanne_fmt`, und `ergebnisse.json`, `E2.span` 0,00481 / 0,09948) mit demselben Formatierer; nicht neu gerechnet. | `kaeltewinter-2010.R`, `output/grafik2_praediktive_verteilung_2027.png` |
+| N-2 (gering) | Quellenangabe in Grafik 1 und 2 einheitlich „Quelle: Deutscher Wetterdienst“ (Lizenz CC BY 4.0, `run_log.txt` Nachtrag V-4). | `kaeltewinter-2010.R`, beide Grafik-PNG |
+| N-3 (gering) | Ortsangabe zu V-2 in der Tabelle oben korrigiert: verweist jetzt auf den Nachtrag im Abweichungsprotokoll statt auf A4/A11. | dieser Abschnitt |
+| N-5 (gering) | Berichtskopf nennt die Neuläufe 21:29 MEZ (A14) und 21:40 MEZ (A15); Status aktualisiert. | Kopf dieses Berichts |
+
+Neulauf A15: 23.11.2026, 21:40:55 MEZ, Exit-Code 0. sha256 aller 16 Dateien in
+`output/` vorher/nachher in `run_log.txt`: alle Tabellen, alle CSV,
+`ergebnisse.json`, `diagnostik_M1.png`, `session_info.txt` und
+`console_log.txt` bitidentisch; geändert nur `grafik1_zeitreihe_jfm.png` und
+`grafik2_praediktive_verteilung_2027.png`. Beide Grafiken gesichtet, Text
+vollständig lesbar.
+
+**Weiterhin offen:** Nachprüfung von N-1 (Grafik 2, sha256-Nachweis) durch den
+validator als Nachtrag 2 zum Validierungsbericht. N-4 und N-6 (gering) waren
+nicht Teil dieses Auftrags und sind unverändert. V-1/V-3 im späteren
+Veröffentlichungstext prüft der Faktencheck bzw. eine weitere Nachprüfung.
