@@ -365,3 +365,140 @@ Vor einer Veröffentlichung offen:
 Die geringen Punkte N-2 bis N-6 können gesammelt mit N-1 erledigt werden. Eine erneute
 Nachprüfung durch den validator ist nur für N-1 nötig (Grafik und sha256-Nachweis) und
 kann als Nachtrag 2 zu dieser Datei erfolgen.
+
+---
+
+## Nachtrag 2: Nachprüfung N-1 (23.11.2026)
+
+**Gegenstand:** Umsetzung von N-1 (Spanne im Untertitel von Grafik 2), N-2
+(Quellenzeile), N-3 und N-5 aus Nachtrag 1 (Abweichung A15) sowie die Dokumentation der
+Bestätigungen Daniel Saure zu A1b, A9 und S9b.
+**Geprüfter Stand:** Commit 02e46c3 gegen 378092b, Grundlage
+`git diff 378092b 02e46c3 -- Analysen/2026-11-kaeltewinter-2010`. Der Commit ändert in
+diesem Ordner genau 6 Dateien: Abweichungsprotokoll (+30/−1), Analysebericht, Skript
+(+16/−4), `run_log.txt` (+72/−0, nur angehängt), Grafik 1, Grafik 2. SAP und dieser
+Validierungsbericht sind unverändert. Arbeitsverzeichnis des Ordners vor diesem Nachtrag
+ohne uncommittete Änderungen.
+**Prüfer:** Claude (validator-Subagent), unabhängig.
+**Arbeitsweise:** Diff gelesen; sha256 aller 16 Dateien in `output/` selbst berechnet und
+mit der Spalte „nachher“ des A15-Blocks im run_log verglichen; Skript (Stand 02e46c3) in
+einer Scratch-Kopie mit `rohdaten/` und der Gasspeicher-Vergleichsdatei neu ausgeführt
+(`KW_NO_RUNLOG=1`, R 4.6.1, Exit-Code 0) und alle 15 erzeugten Dateien per `cmp`
+verglichen; beide Grafiken gesichtet. Außer dem Anhängen dieses Nachtrags habe ich nichts
+verändert. Kein Commit, kein Freigabevermerk.
+
+### N2.1 N-1 und N-2 (Grafiken)
+
+| Punkt | Ergebnis | Befund |
+|---|---|---|
+| N-1 (mittel) | **erfüllt** | Der Untertitel von Grafik 2 lautet jetzt: „Fläche links der Linie: mindestens so kalt wie Jan.-März 2010 (3 %, Spanne 0,5 % bis 10 %)“. Er entspricht damit der Mindestvariante aus N1.4. Die Werte stimmen überein: `ergebnisse.json` `E2.p` = 0,03305 und `E2.span` = [0,00481; 0,09948]; Tabelle 2, Zeile „Primaer“: `P_fmt` „3 %“, `Spanne_fmt` „0,5 % bis 10 %“; run_log „= 3 % (0,5 % bis 10 %)“. Im Skript kommt die Spanne aus `prim_q`. Das ist dasselbe Objekt, das in `ergebnisse.json` als `E2.span` geschrieben wird, und es wird mit demselben Formatierer `fmt_p` formatiert wie die Spalte `Spanne_fmt`. Neu gerechnet wird nichts. Die Zahl im Untertitel kann also nicht von der Tabelle abweichen. |
+| N-2 (gering) | **erfüllt** | Die Caption lautet in Grafik 1 „Quelle: Deutscher Wetterdienst, Datenschnitt März 2026“ und in Grafik 2 „Quelle: Deutscher Wetterdienst; Modell: Trend 1971-2026. Grundrate, keine Prognose für den Winter 2026/27.“ Das entspricht der Namensnennung aus dem Lizenz-Nachtrag V-4. Dass `diagnostik_M1.png` keine Quellenzeile trägt, ist vertretbar: Es ist eine interne Diagnosegrafik und nicht zur Veröffentlichung bestimmt. Wird sie doch veröffentlicht, braucht auch sie die Quellenzeile. |
+| Lesbarkeit | **bestanden** | Beide PNG gesichtet (9 × 5 Zoll, 150 dpi). Titel, Untertitel, Achsen, Legende und Caption sind vollständig und nicht abgeschnitten, Umlaute werden korrekt dargestellt. Die schattierte Fläche und die Beschriftung „Klimatologische Wahrscheinlichkeit, keine Wettervorhersage“ (SAP 11) sind weiterhin vorhanden. Grafik 1 zeigt T_ref als „0,0 °C“. Das ist SAP-konform (0,1 °C), siehe A10. |
+
+### N2.2 Ergebnisdateien und Skript-Diff
+
+- **Ergebnisdateien:** `git diff --stat` zeigt in `output/` nur die beiden Grafik-PNG als
+  geändert. Meine eigenen sha256-Werte aller 16 Dateien stimmen mit der Spalte „nachher“
+  des A15-Blocks im run_log überein. Bei den 14 nicht geänderten Dateien ist dort
+  „vorher“ = „nachher“. Das gilt auch für `ergebnisse.json`, `tabelle1_E1.csv`,
+  `tabelle2_E2_sensitivitaeten.csv`, `tabelle3_diagnostik.csv` und alle übrigen CSV.
+  Die Hashwerte sind dieselben wie beim validierten Stand (Nachtrag 1, N1.2).
+- **Eigener Neulauf:** Alle 15 vom Skript erzeugten Dateien sind per `cmp` **bitidentisch**
+  mit 02e46c3, **auch beide neuen PNG**. Die eingecheckten Grafiken stammen damit
+  nachweislich aus dem eingecheckten Skript. Die Konsolenausgabe stimmt bis auf den
+  Zeitstempel und die Dateiliste mit `console_log.txt` überein. Die Dateiliste
+  unterscheidet sich nur um `console_log.txt`, das durch Umleitung entsteht.
+- **Skript-Diff (+16/−4):** Hinzugekommen sind 9 Kommentarzeilen im Kopf (A15) und 3
+  Kommentarzeilen vor den geänderten `labs()`-Argumenten. Geändert sind die Caption von
+  Grafik 1 sowie Untertitel und Caption von Grafik 2. Im Untertitel kommen nur zwei
+  Formatierungsaufrufe auf ein bereits berechnetes Objekt hinzu (`fmt_p(prim_q[1])`,
+  `fmt_p(prim_q[2])`). Keine Rechenzeile, kein Filter, kein Seed und keine Reihenfolge der
+  Zufallsziehungen sind betroffen. Kosmetisch: Die `subtitle`-Zeile ist anders eingerückt
+  als die übrigen `labs()`-Argumente, ohne Wirkung. **Bestanden.**
+- A15 ist im Abweichungsprotokoll korrekt als Post-hoc-Darstellungsänderung
+  gekennzeichnet. Die Zeilen A1–A14 sind im Wortlaut unverändert (im Protokoll wurde nur
+  die Kopfzeile „Skript“ ergänzt, das ist die einzige gelöschte Zeile).
+
+### N2.3 N-3 und N-5
+
+| Punkt | Ergebnis | Befund |
+|---|---|---|
+| N-3 (gering) | **erfüllt** | Die Ortsangabe zu V-2 in Abschnitt 10 des Analyseberichts verweist jetzt auf den Abschnitt „Nachtrag: Umsetzung der Validierungsauflagen“, Zeile V-2, des Abweichungsprotokolls. Dazu steht der Hinweis, dass die Zeilen A4/A11 unverändert sind. Die Zeile V-2 ist dort tatsächlich vorhanden (Protokoll, Zeile 52). |
+| N-5 (gering) | **erfüllt** | Im Kopf von Analysebericht und Abweichungsprotokoll stehen die Neuläufe 21:29 MEZ (A14) und 21:40 MEZ (A15) mit dem Hinweis „Ergebnisdateien bitidentisch“. Der Zeitstempel 21:40:55 stimmt mit dem run_log überein. |
+
+### N2.4 Bestätigungen Daniel Saure (A1b, A9, S9b)
+
+- **Inhaltlich konsistent.** Die neuen Abschnitte im Abweichungsprotokoll
+  („Bestätigungen Daniel Saure“) und im Analysebericht (10.1) stimmen wörtlich überein.
+  Beide geben den Wortlaut „Ja, alle drei“ an und nennen die Frage, auf die er sich
+  bezieht. A1b passt zur Zeile A1b (Download durch die Top-Level-Session, „Du lädst
+  sie“). A9 passt zur Zeile A9 und zu meiner Bewertung in Abschnitt 5 (Dokumentation
+  genügt). Für S9b/A4(b) steht dort „Spannbreite bleibt 0,4 % bis 10 %“. Das stimmt
+  überein mit A11, mit `ergebnisse.json` (`spannbreite` = [0,00363; 0,1]), mit
+  Analysebericht Abschnitt 5 und mit Tabelle 2. Ich finde keinen Zahlenwiderspruch.
+- **Keine Zahl geändert.** Die Entscheidung zu A4(b) hält die vorab festgelegte
+  Auslegung bei. Es gibt deshalb keine Post-hoc-Neuberechnung und keine zweite Variante,
+  die berichtet werden müsste. Mein Sachbefund zu M-2 bleibt bestehen: S9b zählt 2010
+  mit, entgegen der Logik von 2.1 und A6. Er ist aber offengelegt (Abschnitt 5 des
+  Berichts), und die Entscheidung liegt beim Menschen. Das ist kein Widerspruch, sondern
+  eine dokumentierte, bewusst getroffene Auslegung.
+- **Nicht prüfbar (Hinweis, Verifikationspflicht CLAUDE.md):** Den Chat kann ich nicht
+  einsehen. Ob Daniel Saure „Ja, alle drei“ so geschrieben hat, belegt allein der
+  Protokolleintrag. Wer den Abschnitt „Bestätigungen“ geschrieben hat, steht dort nicht
+  (anders als bei den Nachträgen, die „Durch: …“ nennen). Laut Nachtrag 2 des Protokolls
+  lag er schon vor A15 vor. Es handelt sich ausdrücklich um keinen Freigabevermerk. Er
+  betrifft nur Abweichungsbestätigungen. Empfehlung: Daniel Saure liest den Abschnitt
+  einmal selbst gegen. Der Verfasser des Eintrags sollte bei nächster Gelegenheit
+  ergänzt werden (gering, N-7).
+- **Formale Restunstimmigkeit (gering, N-8):** Im Abweichungsprotokoll stehen weiter
+  oben unverändert „Offene Punkte / Rückfragen an Mensch“ (Punkt 1 A9, Punkt 2
+  Lizenzfeld DWD) und „Neuer offener Punkt (V-2)“, jeweils ohne Erledigungsvermerk. Das
+  ist wegen der Regel „nur anhängen“ verständlich, und die Erledigung folgt weiter unten
+  bzw. in `run_log.txt` (V-4). Wer nur den oberen Teil liest, hält diese Punkte aber
+  für offen. Vorschlag: am Ende des Protokolls eine kurze Statuszeile anhängen, die
+  diese Punkte als erledigt mit Fundstelle führt. Der Originaltext wird dabei nicht
+  geändert.
+- **Status im Analysebericht (gering, N-9):** Kopf und Abschnitt 10.1 („N-1 in
+  Umsetzung“, „Nachprüfung … steht aus“) sind mit diesem Nachtrag überholt. Die
+  Aktualisierung ist Sache des analyst bzw. der Top-Level-Session.
+
+### N2.5 Was vor einer Veröffentlichung offen bleibt
+
+| Punkt | Bewertung | blockierend? |
+|---|---|---|
+| N-4 (gering): Limitation 2 in 7.2 nennt die betroffenen Rechnungen vor 1951 nicht vollständig (E1-Teilzeiträume vor 1951, E1-Angaben zu S1/S2/S14). | Betrifft nur die Konkretisierung, die SAP-9-Limitation selbst steht vollständig da. | **nein.** Im Artikeltext darf die Einschränkung aber nicht auf „E1 und S6/S8“ verengt werden. Das prüft der Faktencheck. |
+| N-6 (gering): In 4.3 stehen Wahrscheinlichkeiten als Dezimalzahlen. | Im Prüfdokument vertretbar. | **nein.** Nicht in den Artikel übernehmen; dort gilt SAP 11 (Prozent). |
+| N-7 bis N-9 (gering): Verfasserangabe Bestätigungen, Statuszeile offene Punkte im Protokoll, Statuskopf Analysebericht. | Nur Dokumentation, keine Zahl berührt. | **nein** |
+| OWID-Lizenz (Hinweis aus N1.1, V-4) | Nur relevant, wenn OWID im Artikel genannt wird. | **nein**, sonst vorher klären |
+| V-1/V-3 im Veröffentlichungstext | Die SAP-8-Inhalte, alle SAP-9-Limitationen, „3 % nur mit Spanne“ und die Offenlegung zu S9b (Maximum 10 % zählt 2010 mit) müssen im Artikel stehen. | Offen bis zum Artikelentwurf. Prüfung durch den Faktencheck bzw. eine Nachprüfung am Entwurf. |
+| Begriffsklarheit (Hinweis, neu) | Grafik 2 nennt die **Spanne** 0,5 % bis 10 % (95-%-Unsicherheit von M1). Der Bericht nennt die **Spannbreite** 0,4 % bis 10 % über die Rechenwege (SAP 6). Beide enden bei 10 %, haben aber verschiedene Quellen (9,948 % aus M1 bzw. 10,0 % aus S9b). | **nein.** Im Artikel beide Begriffe klar trennen und nicht vermischen. Die Grafik ist für sich korrekt beschriftet. |
+
+### N2.6 Ampel (Nachprüfung 2)
+
+| Prüfpunkt | Ampel |
+|---|---|
+| N-1 Spanne in Grafik 2, Werte = Tabelle 2 / `ergebnisse.json` | bestanden |
+| N-2 Quellenzeile Grafik 1 und 2 | bestanden |
+| Lesbarkeit der Grafiken | bestanden |
+| Ergebnisdateien bitidentisch, Skript-Diff nur Beschriftung/Kommentar | bestanden (eigener Neulauf bitidentisch, auch PNG) |
+| N-3, N-5 | bestanden |
+| Bestätigungen A1b/A9/S9b | bestanden, mit Hinweis: Chat nicht prüfbar, Verfasser des Eintrags nicht genannt (N-7); formale Statusreste (N-8, N-9) |
+| Offene Punkte vor Veröffentlichung | Abweichung (gering): N-4, N-6 bis N-9 nicht blockierend; Artikeltext noch ungeprüft |
+
+### N2.7 Gesamturteil Nachtrag 2
+
+**N-1 ist erfüllt.** V-3 ist damit auch für Grafik 2 erfüllt. N-2, N-3 und N-5 sind
+ebenfalls erfüllt. Alle Zahlen und Ergebnisdateien sind gegenüber dem validierten Stand
+unverändert und von mir bitidentisch reproduziert, die Grafiken eingeschlossen. Die
+Bestätigungen zu A1b, A9 und S9b sind konsistent dokumentiert und erzeugen keinen
+Zahlenwiderspruch. **Kein Befund „kritisch“, kein Befund „hoch“, kein offener Befund
+„mittel“.** Das Gate „Validierungsbericht ohne kritisch“ (SAP 11) ist erfüllt.
+
+Aus Validator-Sicht blockiert keiner der verbleibenden Punkte (N-4, N-6 bis N-9, alle
+gering) eine Veröffentlichung. Sie betreffen den Analysebericht als Prüfdokument oder die
+Dokumentation. Offen bleibt die Prüfung des späteren Veröffentlichungstextes auf V-1/V-3,
+die Offenlegung zu S9b und die Begriffstrennung Spanne/Spannbreite. Das ist Sache des
+Faktenchecks bzw. einer Nachprüfung am Entwurf. Eine weitere Nachprüfung des
+Analyseordners durch den validator ist nicht erforderlich. Ausnahme: Es ändern sich
+Skript, Ergebnisdateien oder Grafiken. Dieser Nachtrag ist kein Freigabevermerk. Die
+Freigabe erteilt der Mensch.

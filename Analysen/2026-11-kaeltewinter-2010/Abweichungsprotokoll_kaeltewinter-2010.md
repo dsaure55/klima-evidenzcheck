@@ -86,3 +86,8 @@ auf dieses Protokoll vermerkt.
 
 `diagnostik_M1.png` (interne Diagnosegrafik nach SAP 5.2, Basis-R) trägt keine Quellenzeile
 und wurde nicht geändert; N-2 betrifft nur die beiden Veröffentlichungsgrafiken.
+
+## Status (23.11.2026, eingetragen durch die Top-Level-Session)
+
+- Der Abschnitt „Bestätigungen Daniel Saure (23.11.2026, Chat)“ wurde von der Top-Level-Session eingetragen, mit Daniel Saures Wortlaut aus dem Chat (Hinweis validator N-7).
+- Erledigt: A9 (bestätigt), Lizenzfeld (V-4, Nachtrag in run_log.txt), V-2/S9b (bestätigt, keine Neuberechnung), N-1/N-2 (A15). Validierungsbericht mit Nachtrag 1 und Nachtrag 2: kein Befund kritisch, hoch oder offen mittel.
