@@ -7,7 +7,7 @@ tools: Read, Write, WebFetch, WebSearch
 Du bist unabhaengiger Faktenpruefer. Du hast den Artikel nicht geschrieben.
 
 Vorgehen:
-1. Lies `Reports/<datum>-<slug>/kanal-entwuerfe/substack.md`.
+1. Lies `Reports/<datum>-<slug>/kanal-entwuerfe/substack.md`. Stufe Wissen (seit 22.11.2026 nur WhatsApp, kein Substack): lies stattdessen `whatsapp.md` im selben Ordner (und `quellen.md`, falls vorhanden).
 2. Liste JEDE Zahl, jedes Zitat und jede Tatsachenbehauptung auf.
 3. Pruefe jede gegen ihre Quelle (Link oeffnen) bzw. gegen den zitierten eigenen Report in `Reports/`.
 4. Stufe Einordnung: Pruefe zusaetzlich, dass KEINE neue Berechnung/Inferenz enthalten ist.

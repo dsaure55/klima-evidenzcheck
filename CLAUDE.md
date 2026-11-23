@@ -103,12 +103,13 @@ Daniel Saure), es werden keine LinkedIn-Entwuerfe mehr erstellt. „Evidenzcheck
 |---|---|---|
 | Evidenzcheck | neue SAP-Analyse (bestehender Workflow oben) | Validierungsbericht ohne „kritisch“ |
 | Einordnung | aktuelles Thema + bereits veroeffentlichte eigene Ergebnisse oder rein beschreibende Zahlen aus der Quelle. KEINE neue Inferenz. | Faktencheck-Datei (Subagent `faktenpruefer`) |
-| Wissen | Erklaerstueck auf Basis serioeser Quellen | Faktencheck-Datei (Subagent `faktenpruefer`) |
+| Wissen | Erklaerstueck auf Basis serioeser Quellen. **Nur WhatsApp-Kanal** (kein Substack, kein Instagram, kein Facebook; Entscheidung Daniel Saure, 22.11.2026) | Faktencheck-Datei (Subagent `faktenpruefer`) |
 
 **Regeln**
 - Einordnung/Wissen starten nie eine Analyse. Die frühere Regel „Eine Analyse zur Zeit“ ist seit 23.10.2026 gestrichen (Entscheidung Daniel Saure); mehrere Evidenzchecks dürfen parallel laufen. Sonstige Sperren aus einzelnen SAPs (z. B. Reihenfolge-Sperren im SAP Prognose-Register 2027) bleiben bestehen, weil sie dort vorab festgelegt wurden.
 - Braucht eine Einordnung eine neue Berechnung, wird sie zur Evidenzcheck-Idee im Backlog – nicht nebenbei rechnen.
 - Ablauf: `themenradar` (Skill) → Daniel waehlt → Blog (`blog-artikel`) → Gate → Freigabe Daniel → Substack-Veroeffentlichung durch Daniel → `kommunikation` erzeugt Kanalposts (Skill `distribution`) → Posten nur nach ausdruecklichem OK pro Post.
+- **Wissen nur auf WhatsApp** (seit 22.11.2026, Entscheidung Daniel Saure): Kein Blog-Artikel, kein Substack-Beitrag, keine Instagram- und Facebook-Posts. Ablauf: `themenradar` → Daniel waehlt → WhatsApp-Text direkt schreiben (Skill `distribution`, Abschnitt „Wissen“, Datei `Reports/<datum>-<slug>/kanal-entwuerfe/whatsapp.md`) → Faktencheck-Datei (`faktenpruefer` prueft diese Datei) → Freigabe Daniel → Posten durch Daniel nur nach OK. Das Gate bleibt. Bereits veroeffentlichte Wissen-Stuecke auf Substack bleiben unveraendert stehen; das Jahrbuch ist davon nicht beruehrt.
 - Nichts wird automatisch veroeffentlicht. Geplante Aufgaben schreiben nur in `Redaktion/`.
 - Status jeder Idee nur in `Redaktion/redaktion.md` pflegen (eine Zeile pro Stueck).
 - `Redaktion/` ist per `.gitignore` privat (Repo ist oeffentlich).

@@ -13,7 +13,7 @@ Ziel: 3–5 bewertete Themenvorschlaege. Du startest NICHTS – keine SAP, keine
 3. Sammle Kandidaten. Pro Kandidat pruefen:
    - Gibt es eine passende eigene veroeffentlichte Analyse? → Stufe Einordnung (bevorzugt).
    - Braucht es eine neue Berechnung? → Stufe Evidenzcheck (nur als Backlog-Idee).
-   - Reiner Erklaerbedarf? → Stufe Wissen.
+   - Reiner Erklaerbedarf? → Stufe Wissen. Wissen erscheint seit 22.11.2026 NUR im WhatsApp-Kanal (ca. 80 Woerter, kein Substack): nur Themen vorschlagen, die sich so kurz und mit Primaerquelle erklaeren lassen.
 4. Bewerte jeden Kandidaten 1–3 in: Aktualitaet, Eigener Mehrwert (was koennen WIR, was andere nicht), Datenlage, Aufwand (3 = gering), Publikumsrelevanz. "Eigener Mehrwert" zaehlt doppelt. Summe bilden (max. 18).
 5. Schreibe `Redaktion/themenradar/JJJJ-MM-TT.md` mit Tabelle (Top 3–5) und je Thema:
    Anlass (Quelle + Link + Datum), vorgeschlagene Stufe, Kernfrage in einem Satz, Bezug zu eigener Analyse, moeglicher Hook.

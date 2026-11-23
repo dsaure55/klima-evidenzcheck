@@ -1,6 +1,6 @@
 ---
 name: blog-artikel
-description: Substack-Artikel fuer Klima Kompass schreiben (Stufen Evidenzcheck, Einordnung, Wissen) mit Quellenpflicht und Freigabevermerk. Ausloeser: Blog, Artikel, Substack-Text, Beitrag schreiben.
+description: Substack-Artikel fuer Klima Kompass schreiben (Stufen Evidenzcheck und Einordnung; Wissen nur WhatsApp, siehe distribution) mit Quellenpflicht und Freigabevermerk. Ausloeser: Blog, Artikel, Substack-Text, Beitrag schreiben.
 ---
 
 # Blog-Artikel (Substack)
@@ -13,7 +13,7 @@ description: Substack-Artikel fuer Klima Kompass schreiben (Stufen Evidenzcheck,
 
 ## Kopf (immer)
 `**ENTWURF – nicht veröffentlicht. Freigabe durch Daniel Saure erforderlich vor Publikation.**`
-Darunter die Reihenzeile: `Klima Kompass · Evidenzcheck #n` bzw. `Klima Kompass · Einordnung` bzw. `Klima Kompass · Wissen`.
+Darunter die Reihenzeile: `Klima Kompass · Evidenzcheck #n` bzw. `Klima Kompass · Einordnung`.
 
 ## Struktur Evidenzcheck (bewaehrtes Format)
 Titel als pruefbare Frage → Einleitung (Anlass mit Quelle) → Die Ergebnisse auf einen Blick (3–5 Punkte) → Hauptteil (Tabelle/Grafik) → Was diese Analyse nicht sagt → Methodik-Box (SAP-Link, Repo, Zenodo) → Quellen → Mehr erfahren.
@@ -22,8 +22,8 @@ Titel als pruefbare Frage → Einleitung (Anlass mit Quelle) → Die Ergebnisse 
 Anlass (wer hat was behauptet, Link, Datum) → Die Frage dahinter → Was unsere Daten zeigen (Verweis auf eigenen Evidenzcheck mit Link) → Was die Daten nicht zeigen → Fazit in 2–3 Saetzen → Quellen.
 Hinweiszeile: „Diese Einordnung nutzt bereits veroeffentlichte Ergebnisse; es wurde keine neue Analyse durchgefuehrt.“
 
-## Struktur Wissen (500–900 Woerter)
-Alltagsfrage als Titel → kurze Antwort vorweg → Erklaerung in 3–4 Abschnitten → haeufiger Irrtum vs. Befund → Quellen.
+## Stufe Wissen: KEIN Blog-Artikel
+Seit 22.11.2026 (Entscheidung Daniel Saure) erscheint die Stufe Wissen nur im WhatsApp-Kanal, nicht auf Substack. Dieser Skill schreibt dafuer nichts; siehe Skill `distribution`, Abschnitt „Wissen (nur WhatsApp)“. Aeltere Wissen-Artikel auf Substack bleiben unveraendert.
 
 ## Schlusszeile (immer, nach den Quellen)
 ```

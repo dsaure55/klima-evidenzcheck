@@ -23,6 +23,13 @@ Eingang: freigegebener `substack.md` (Kopfvermerk FREIGEGEBEN) + Substack-URL (f
    Danach jede PNG ansehen: Text darf nicht abgeschnitten sein und nicht ueber den Rand laufen. Bei Ueberlauf nur das Layout anpassen
    (z. B. Schriftgroesse), nie den Inhalt, dann neu exportieren. Facebook nutzt `folie-1.png`.
 
+## Wissen (nur WhatsApp, seit 22.11.2026)
+Die Stufe Wissen hat keinen Substack-Artikel und keine Instagram-/Facebook-Posts (Entscheidung Daniel Saure). Es entsteht nur `Reports/<datum>-<slug>/kanal-entwuerfe/whatsapp.md`:
+- Der WhatsApp-Text ist hier das Original, nicht eine Kurzfassung. Alltagsfrage vorweg, kurze Antwort, 1–2 Erklaersaetze, Quellen-Link(s) (Primaerquelle) am Ende. Format nach `references/whatsapp.md` (Reihenzeile `*🌡️ Klima Kompass · Wissen:*`); da es keinen Artikel gibt, kein UTM-Link auf Substack, sondern Link zur Primaerquelle.
+- Jede Zahl und Aussage muss einer serioesen Quelle zuordenbar sein; Quellen in einer Zeile oder in einer kurzen Begleitdatei `quellen.md` im selben Ordner (fuer den Faktencheck).
+- Gate: `faktenpruefer` prueft `whatsapp.md` (statt `substack.md`) und schreibt `Faktencheck_<slug>.md`. Erst danach Freigabe durch Daniel, Posten nur nach OK.
+- Themen, die mehr als ca. 80 Woerter brauchen, sind keine Wissen-Themen; dann als Einordnung/Evidenzcheck neu zuschneiden.
+
 ## Gemeinsame Regeln
 - Keine neuen Zahlen, keine Aussage, die nicht im Artikel steht. Vereinfachen ja, verzerren nie.
 - Unsicherheit mitnehmen, wenn sie im Artikel zentral ist.

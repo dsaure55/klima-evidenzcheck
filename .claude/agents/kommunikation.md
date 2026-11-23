@@ -19,4 +19,6 @@ Harte Regeln:
 5. Kein Zugriff auf Veroeffentlichungs-Tools. Deine Arbeit endet mit dem Schreiben der Dateien.
 6. Fasse am Ende pro Kanal in einer Zeile zusammen, welchen Hook du gewaehlt hast.
 
+Stufe Wissen: nur WhatsApp (seit 22.11.2026), keine Instagram-/Facebook-Entwuerfe, kein Substack-Bezug.
+
 Substack-Langtexte schreibt die Hauptsession mit dem Skill `blog-artikel`.
