@@ -1,0 +1,69 @@
+Kritische Punkte/Modelleffekte:
+     Für die deutschen Gas-Importe und -Exporte können sich modellbedingt von der
+         Realität abweichende Ergebnisse ergeben. Weisen die Infrastrukturen in der Realität
+         nur noch geringe Freiheitsgrade (d.h. wenige ungenutzte Potenziale) auf, konvergieren
+         die realen Marktergebnisse und die Modellergebnisse zunehmend.
+     Die ökonomische Optimierung der Speicherkunden kann zu einem abweichenden
+         Speicherverhalten (nicht nur in Deutschland) führen. Aufgrund der ökonomischen
+         Verwerfungen an den Handelsmärkten kann das Speicherverhalten derzeit nicht
+         belastbar beschrieben werden. Darüber hinaus könnte eine staatliche Intervention zu
+         höheren Gasspeicherfüllständen führen.
+
+3.3. Sensitivitätsanalyse unterschiedlicher Temperaturverläufe
+
+Für die Ergebnisse aus dem Szenario „Winter 26/27 bei Normaltemperaturen“ wurde eine
+Sensitivitätsanalyse vorgenommen. Dazu wurden unter der gleichen Modell-Parametrisierung
+zwei weitere Wetterjahre gerechnet:
+
+     Kalte Temperaturen: EU-Wetterjahr 2010
+     Warme Temperaturen: EU-Wetterjahr 2020
+Normaltemperaturen im Vergleich
+Die Betrachtung der beiden extremen Wetterbedingungen ermöglicht für Europa eine stark
+ausdifferenzierte Betrachtung des Winters. Im Sommerzeitraum spielt die Temperatur in den
+Modellierungen keine Rolle, weil der Verbrauch auf den temperaturunabhängigen Anteil
+reduziert ist. Für den EU-Binnenmarkt und Deutschland können mit den betrachteten
+Wetterjahren im Winter, insbesondere für die Monate Dezember, Januar und Februar stark
+unterschiedliche Temperaturniveaus betrachtet werden (vgl.
+Abbildung 8).
+
+                                                       13
+Abbildung 8: INES-Szenarien: „Normaltemperaturen“ im Vergleich
+Quellen: DWD (2025/2026), INES (2026)
+Ein Temperaturvergleich (vgl. Abbildung 9) zeigt, dass die extrem kalten Temperaturen des
+Jahres 2010 in den Monaten Dezember und Januar signifikant unter den Temperaturen der
+letzten Jahre (2018 – 2023) liegen.
+
+Abbildung 9: INES-Szenarien: „Analyse-Temperaturen“ im Mehrjahresvergleich
+Quellen: DWD (2024), INES (2024)
+Eine Füllstandsentwicklung, die für diese Monate aus den Temperaturen des Jahres 2010
+abgeleitet wird, ist vor dem Hintergrund des Temperaturvergleichs als weniger wahrscheinlich
+
+                                                       14
+zu bewerten. Allerdings gab es beispielsweise im Jahr 2018 Temperaturverläufe, die im
+Februar und März deutlich niedrigere Temperaturen aufwiesen, als sie im Rahmen der
+Sensitivitätsanalyse von INES betrachtet werden.
+Füllstände bei unterschiedlichen Temperaturverläufen
+Aus den unterschiedlichen Temperaturverläufen lassen sich unterschiedliche
+Füllstandsverläufe ableiten (vgl. Abbildung 10).
+
+Hinweis: Es handelt sich um Modellrechnungen ohne Anspruch auf Abbildung der Realität; alle Angaben ohne Gewähr
+
+Abbildung 10: INES-Szenarien: Füllstände bei unterschiedlichen Temperaturen*
+Quellen: INES (2026)
+Die Kernergebnisse im Überblick:
+
+     Der Füllstand der bereits im Vorjahr unterdurchschnittlich gefüllten Speicher erhöhte
+         sich von rund 21 % Anfang März auf lediglich 61 % zum 1. November. Dies verdeutlicht,
+         dass die Wiederbefüllung nur in begrenztem Umfang erfolgte. Die Sperrung der Straße
+         von Hormus hat erhebliche Preissteigerungen auf den globalen LNG-Märkten
+         ausgelöst. In der Folge hat sich der saisonale Sommer-Winter-Spread ins Negative
+         gedreht. Gas für den kommenden Winter war günstiger als im vorangegangenen
+         Sommer. Damit fehlten dem Markt jegliche ökonomischen Anreize zur Einspeicherung
+         von Gas in die Speicher.
+
+     Die Modellierung extrem kalter Temperaturen zeigt, dass ein Speicherfüllstand von
+         61% bei unveränderten Verbrauchsmustern nicht ausreichen würde, um die
+         Versorgungssicherheit im Winter 2026/27 vollständig zu gewährleisten. In diesem
+         Szenario kommt es im Januar, Februar und März 2027 zu Unterdeckungen von bis zu
+                                                       15
+
