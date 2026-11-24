@@ -1,4 +1,5 @@
 **ENTWURF – nicht veröffentlicht. Freigabe durch Daniel Saure erforderlich vor Publikation.**
+**FREIGEGEBEN zum Posten durch Daniel Saure am 24.11.2026 (Chat: „Alle drei frei“ auf die Frage, welche Posts er zum Posten freigibt; Stand Commit b1f99dc). Posten manuell durch Daniel. Diese Kopfzeilen nicht mitposten.**
 
 Gate-Nachweis: `Analysen/2026-11-kaeltewinter-2010/Validierungsbericht_kaeltewinter-2010.md` (Gesamturteil und Nachträge 1/2: kein Befund „kritisch“); `Reports/2026-11-23-kaeltewinter-2010/faktencheck.md` (0 kritisch) und `faktencheck_nachpruefung1.md` (0 kritisch/hoch/mittel); Artikel-Kopf FREIGEGEBEN am 24.11.2026. Artikel auf Substack veröffentlicht.
 
