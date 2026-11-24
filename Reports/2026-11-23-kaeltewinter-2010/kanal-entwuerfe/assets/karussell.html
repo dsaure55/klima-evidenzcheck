@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--
+  ENTWURF – nicht veröffentlicht. Freigabe durch Daniel Saure erforderlich vor Publikation.
+  Posten nur nach ausdrücklichem OK von Daniel pro Post.
+  Instagram-Karussell „Kälte wie 2010“ (Evidenzcheck), 6 Folien à 1080×1350 px, Design Jahresring.
+  Keine eingebetteten Bilddateien, kein Logo (Export läuft aus einem Temp-Ordner).
+  Export: .claude/skills/distribution/scripts/export_karussell.ps1
+-->
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>ENTWURF – Karussell: Kälte wie 2010</title>
+<style>
+  :root { --bg:#FFFFFF; --navy:#1B2A41; --grau:#6B7280; --linie:#DFE2E7; --salbei:#7FB38F; --salbeitext:#3F7552; --koralle:#EC6F6F; --koralltext:#C9504F; --hellblau:#7FB6D5; --flaeche:#F3F6F8; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { background:#999; font-family:Bahnschrift,"Segoe UI",sans-serif; color:var(--navy); }
+  .draft-note { max-width:1080px; margin:24px auto; padding:16px 24px; background:#fff3cd; color:#5a4300; font-weight:600; border-radius:8px; }
+  .slide { width:1080px; height:1350px; margin:40px auto; padding:96px 88px 72px; background:var(--bg); display:flex; flex-direction:column; position:relative; overflow:hidden; }
+  .series { font-size:30px; letter-spacing:3px; text-transform:uppercase; color:var(--grau); }
+  h1, h2 { font-weight:600; line-height:1.08; font-variation-settings:"wdth" 88,"wght" 620; }
+  h1 { font-size:104px; margin-top:48px; }
+  h1 .p1 { color:#3F86AB; } h1 .p2 { color:var(--navy); }
+  h2 { font-size:68px; margin-top:40px; }
+  p { font-size:42px; line-height:1.4; margin-top:32px; }
+  .sub { font-size:40px; color:var(--grau); margin-top:36px; border-top:3px solid var(--navy); padding-top:28px; }
+  .spacer { flex:1; }
+  ol.q { list-style:none; margin-top:36px; counter-reset:q; }
+  ol.q li { counter-increment:q; font-size:40px; line-height:1.28; padding:24px 0 24px 90px; position:relative; border-top:2px solid var(--linie); }
+  ol.q li::before { content:counter(q); position:absolute; left:0; top:20px; font-size:60px; font-variation-settings:"wdth" 75,"wght" 300; color:var(--salbei); }
+  ol.q li b { font-weight:600; }
+  .big { display:flex; align-items:baseline; gap:24px; margin-top:44px; }
+  .big .n { white-space:nowrap; font-size:150px; line-height:1; font-variation-settings:"wdth" 75,"wght" 300; letter-spacing:-4px; }
+  .big .t { font-size:38px; line-height:1.3; }
+  .big.k .n { color:var(--koralltext); } .big.b .n { color:#3F86AB; } .big.s .n { color:var(--salbeitext); }
+  .note { font-size:32px; color:var(--grau); line-height:1.4; margin-top:40px; }
+  .card { background:var(--flaeche); border-left:10px solid var(--koralle); padding:32px 40px; margin-top:36px; font-size:38px; line-height:1.35; }
+  .card.s { border-left-color:var(--salbei); }
+  .card.b { border-left-color:var(--hellblau); }
+  .cta { font-size:72px; line-height:1.15; font-variation-settings:"wdth" 88,"wght" 620; color:var(--salbeitext); margin-top:48px; }
+  footer { font-size:22px; line-height:1.5; color:var(--grau); border-top:2px solid var(--linie); padding-top:20px; margin-top:32px; }
+</style>
+</head>
+<body>
+
+<div class="draft-note">ENTWURF – nicht veröffentlicht. Freigabe durch Daniel Saure erforderlich vor Publikation. Posten nur nach ausdrücklichem OK von Daniel pro Post. (Dieser Hinweis ist keine Folie.)</div>
+
+<section class="slide" id="folie-1">
+  <div class="series">Klima Kompass · Evidenzcheck</div>
+  <h1><span class="p1">Kälte wie 2010.</span> <span class="p2">Wie wahrscheinlich ist so ein Spätwinter heute?</span></h1>
+  <div class="sub">Wir haben 146 Spätwinter in Deutschland verglichen, jeweils Januar bis März, seit 1881.</div>
+  <div class="spacer"></div>
+  <footer>Klima Kompass · Klimadaten, geprüft</footer>
+</section>
+
+<section class="slide" id="folie-2">
+  <div class="series">Der Anlass</div>
+  <h2>Warum gerade 2010?</h2>
+  <p>INES, der Verband der Gasspeicherbetreiber, hat am 10. November neue Szenarien veröffentlicht. Für den Kältefall rechnet INES mit einem extrem kalten Winter „entsprechend dem Referenzjahr 2010“.</p>
+  <div class="card b">Ein Kälteszenario ist in einer Risikorechnung methodisch üblich. Unsere Zahlen bewerten die Szenarien nicht. Wir prüfen nur, wie oft es so kalt war.</div>
+  <div class="spacer"></div>
+  <footer>Quelle: INES, Pressemitteilung vom 10.11.2026</footer>
+</section>
+
+<section class="slide" id="folie-3">
+  <div class="series">Seit 1881</div>
+  <h2>Etwa jeder vierte Spätwinter war so kalt</h2>
+  <div class="big b"><div class="n">24 %</div><div class="t">der Spätwinter seit 1881 waren mindestens so kalt wie 2010: 35 von 145 Jahren (95-%-Bereich 17 % bis 32 %).</div></div>
+  <div class="big k"><div class="n">32 %</div><div class="t">waren es von 1881 bis 1930. In den letzten 30 Jahren nur 2006 und 2013.</div></div>
+  <div class="note">Januar bis März 2010 hatte ein Mittel von 0,0 °C. 2010 selbst ist nicht mitgezählt. Die Anteile sind nicht um den Klimatrend bereinigt.</div>
+  <div class="spacer"></div>
+  <footer>Quelle: Deutscher Wetterdienst, Gebietsmittel Deutschland, Datenstand März 2026</footer>
+</section>
+
+<section class="slide" id="folie-4">
+  <div class="series">Im heutigen Klima</div>
+  <h2>Und heute?</h2>
+  <div class="big s"><div class="n">3 %</div><div class="t">pro Jahr, geschätzt. Unsicherheitsspanne 0,5 % bis 10 %. Grob ein solcher Spätwinter in 30 Jahren.</div></div>
+  <div class="card s">Seit 1971 ist der Spätwinter im Mittel um etwa 0,4 Grad pro Jahrzehnt wärmer geworden.</div>
+  <div class="note">Unser Modell nimmt normalverteilte Abweichungen vom Trend an. Bootstrap-Rechenwege ohne diese Annahme ergeben 5 %.</div>
+  <div class="spacer"></div>
+  <footer>Quelle: Deutscher Wetterdienst; Trend 1971–2026, Auswertung Klima Kompass</footer>
+</section>
+
+<section class="slide" id="folie-5">
+  <div class="series">Grenzen</div>
+  <h2>Was die Daten nicht sagen</h2>
+  <ol class="q">
+    <li><b>Nichts über die Gasversorgung.</b> Temperatur ist nicht Gasbedarf.</li>
+    <li><b>Keine Vorhersage für diesen Winter.</b> Daten nach März 2026 haben wir bewusst nicht verwendet.</li>
+    <li><b>Nur Deutschland.</b> INES rechnet mit dem Wetter in Europa.</li>
+    <li><b>Keine kurzen Kältewellen.</b> Monatsmittel glätten harte Kältetage.</li>
+  </ol>
+  <div class="spacer"></div>
+  <footer>Klima Kompass · Evidenzcheck</footer>
+</section>
+
+<section class="slide" id="folie-6">
+  <div class="series">Klima Kompass · Evidenzcheck</div>
+  <h2>So kalt wie 2010 war seit 1881 etwa jeder vierte Spätwinter.</h2>
+  <p>Heute schätzen wir etwa 3 % pro Jahr, Spanne 0,5 % bis 10 %.</p>
+  <div class="cta">Ganzer Artikel:<br>Link in Bio</div>
+  <div class="spacer"></div>
+  <footer>Quelle: Deutscher Wetterdienst · Klima Kompass · Evidenzcheck</footer>
+</section>
+
+</body>
+</html>
