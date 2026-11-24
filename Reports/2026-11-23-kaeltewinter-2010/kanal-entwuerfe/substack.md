@@ -1,4 +1,5 @@
 **ENTWURF – nicht veröffentlicht. Freigabe durch Daniel Saure erforderlich vor Publikation.**
+**FREIGEGEBEN durch Daniel Saure am 24.11.2026 (Chat: „Gelesen, freigeben“ auf die Frage, ob er den Artikel komplett gelesen hat und ihn freigibt; Stand Commit cd6c0cf, Fassung v2 inkl. Einarbeitung N-1 bis N-3). Veröffentlichung auf Substack durch Daniel.**
 
 Klima Kompass · Evidenzcheck
 
